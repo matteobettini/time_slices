@@ -1729,6 +1729,9 @@ function showMapView() {
   document.getElementById('viewToggle').textContent = '📜';
   document.getElementById('viewToggle').title = 'Timeline view';
 
+  // Hide timeline's thread banner — header is z-100, above map z-50
+  document.getElementById('threadBanner').classList.remove('visible');
+
   // Fix Leaflet rendering (needs invalidateSize after display:block)
   setTimeout(() => {
     map.invalidateSize();
