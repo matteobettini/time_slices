@@ -82,5 +82,33 @@
         "funFact": "Eliot dedicated The Waste Land to Ezra Pound, who edited it ruthlessly — cutting it nearly in half. The original draft, discovered in 1968, shows Pound may have been the greatest editor in literary history."
       }
     }
+  },
+  {
+    "year": "850",
+    "title": "Baghdad — The Translation of Everything",
+    "teaser": "While Europe sleeps in its Dark Age, Baghdad builds the world's largest mosque and translates all of Greek thought into Arabic. Philosophy, science, and literature converge in the richest city on Earth.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "Caliph <strong>al-Mutawakkil</strong> commissions the <strong>Great Mosque of Samarra</strong> (completed ~851) — the largest mosque in the world, with its extraordinary spiral minaret, the <em>Malwiya</em>, rising 52 meters in a coiling ramp to the sky. It's architecture as cosmic statement: the spiral as infinite ascent toward God.<br><br>Islamic art is inventing an entirely new visual language. Banned from depicting the human form in sacred contexts, artists develop the <strong>arabesque</strong> — infinitely repeating geometric and vegetal patterns that encode mathematical relationships into pure beauty. Lustre-glazed ceramics from Samarra shimmer with metallic iridescence, a technique no other civilization has mastered. The art isn't decorative — it's theological: infinite pattern as proof of divine unity."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Al-Jahiz</strong> (776–868/9) is at the height of his powers in Basra and Baghdad — the most original prose writer in the Arabic language. His <em>Kitab al-Hayawan</em> (Book of Animals) is a seven-volume encyclopedia that fuses zoology, philosophy, humor, and anecdote into something utterly unprecedented. He describes food chains, environmental adaptation, and animal mimicry — observations that prefigure evolutionary thinking by a millennium.<br><br>The earliest core of the <em>One Thousand and One Nights</em> is circulating as oral tradition, absorbing Persian, Indian, and Arabic tales into its frame narrative. <strong>Abu Tammam</strong> compiles the <em>Hamasa</em>, the great anthology of pre-Islamic and early Arabic poetry — curating the literary past just as translators are importing the Greek one."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Al-Kindi</strong> (c. 801–873), the \"Philosopher of the Arabs,\" is active in Baghdad — the first systematic attempt to reconcile <strong>Greek philosophy with Islamic revelation</strong>. He argues that truth is truth regardless of its source, and that reason and faith illuminate each other. His <em>On First Philosophy</em> adapts Aristotelian metaphysics for monotheism.<br><br>The <strong>Mu'tazila</strong> school of rational theology dominates intellectual life (until al-Mutawakkil suppresses it around 848–851). They insist the Quran was <em>created</em>, not eternal — a position with enormous philosophical implications: it means sacred texts are subject to reason. The suppression of the Mu'tazila marks one of intellectual history's great what-ifs."
+      },
+      "hist": {
+        "label": "History",
+        "content": "Baghdad is the <strong>largest city in the world</strong> — population near one million. The Abbasid Caliphate stretches from North Africa to Central Asia. The <strong>House of Wisdom</strong> (Bayt al-Hikma) functions as library and translation center, where scholars render Greek, Persian, Syriac, and Sanskrit texts into Arabic.<br><br><strong>Hunayn ibn Ishaq</strong> (808–873), a Nestorian Christian, leads the translation movement — personally translating 129 works of Galen and key texts of Plato and Aristotle. The translation isn't passive reception: scholars improve, annotate, and extend what they translate. Meanwhile, al-Mutawakkil moves the capital to <strong>Samarra</strong> (836–892), building a new imperial city from scratch — the Versailles of the medieval world, stretching 40 km along the Tigris."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The deep connection: <strong>translation as creation</strong>. Hunayn ibn Ishaq translating Galen isn't just preservation — it's transformation. Greek ideas pass through Syriac into Arabic and emerge <em>changed</em>, adapted, sharpened. Al-Kindi philosophizes in a language Aristotle never spoke, and asks questions Aristotle never imagined. Al-Jahiz writes zoology that reads like literature, because in Arabic intellectual culture, <strong>eloquence and knowledge are inseparable</strong> — the word <em>adab</em> means both \"literature\" and \"refinement of mind.\"<br><br>And here's the historical irony: everything these scholars translate and extend will travel back to Europe via Islamic Spain and Sicily, seeding the very Renaissance that posterity will celebrate as \"Western\" achievement. Without 850 Baghdad, there is no 1504 Florence.",
+        "funFact": "Al-Jahiz allegedly died when a tower of books in his private library collapsed on him. The greatest Arabic prose stylist, killed by his own collection — literature's most on-brand death."
+      }
+    }
   }
 ]
