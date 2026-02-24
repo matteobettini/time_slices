@@ -1811,7 +1811,7 @@ async function startThreadTour() {
     });
   }
 
-  // Helper: draw a single arc between two markers, animated
+  // Helper: draw a single arc between two markers, animated — camera follows the tip
   function drawSingleArc(fromSlice, toSlice) {
     return new Promise(resolve => {
       const fromMarker = mapMarkers.find(m => m._sliceYear === parseInt(fromSlice.year));
@@ -1820,7 +1820,7 @@ async function startThreadTour() {
 
       const from = fromMarker.getLatLng();
       const to = toMarker.getLatLng();
-      const latlngs = generateArc(from, to, 50);
+      const latlngs = generateArc(from, to, 100);
 
       const glowArc = L.polyline([], {
         color: 'rgba(124,111,247,0.2)',
@@ -1834,39 +1834,59 @@ async function startThreadTour() {
 
       mapArcs.push(glowArc, arc);
 
-      // Year gap label at midpoint
       const gap = parseInt(toSlice.year) - parseInt(fromSlice.year);
       const midIdx = Math.floor(latlngs.length / 2);
-      const yearLabel = L.marker(latlngs[midIdx], {
-        icon: L.divIcon({
-          className: '',
-          html: `<div style="
-            color:rgba(124,111,247,0.85);
-            font-family:var(--mono);
-            font-size:0.65rem;
-            font-weight:600;
-            text-shadow:0 0 8px rgba(124,111,247,0.5), 0 1px 4px rgba(0,0,0,0.8);
-            white-space:nowrap;
-            pointer-events:none;
-          ">${gap} yrs →</div>`,
-          iconSize: [60, 16],
-          iconAnchor: [30, 8],
-        }),
-        interactive: false,
-      }).addTo(map);
-      mapArcs.push(yearLabel);
 
-      // Animate arc drawing
+      // Animate arc drawing — 1 point per frame for ~1.7s at 60fps
       let frame = 0;
       const totalFrames = latlngs.length;
+      // Pan camera every N frames to follow the arc tip smoothly
+      const panEvery = 10;
+
       function animateArc() {
         if (_threadTourAbort || !mapIsPlaying) { resolve(); return; }
-        frame += 2;
+        frame++;
         const partial = latlngs.slice(0, Math.min(frame, totalFrames));
         glowArc.setLatLngs(partial);
         arc.setLatLngs(partial);
-        if (frame < totalFrames) requestAnimationFrame(animateArc);
-        else resolve();
+
+        // Gently pan to keep arc tip in view
+        if (frame % panEvery === 0 && frame < totalFrames) {
+          const tip = latlngs[Math.min(frame, totalFrames - 1)];
+          map.panTo(tip, { animate: true, duration: 0.3, noMoveStart: true });
+        }
+
+        if (frame < totalFrames) {
+          requestAnimationFrame(animateArc);
+        } else {
+          // Add year label after arc completes
+          const yearLabel = L.marker(latlngs[midIdx], {
+            icon: L.divIcon({
+              className: '',
+              html: `<div style="
+                color:rgba(124,111,247,0.85);
+                font-family:var(--mono);
+                font-size:0.65rem;
+                font-weight:600;
+                text-shadow:0 0 8px rgba(124,111,247,0.5), 0 1px 4px rgba(0,0,0,0.8);
+                white-space:nowrap;
+                pointer-events:none;
+                opacity:0;
+                transition:opacity 0.4s ease;
+              ">${gap} yrs →</div>`,
+              iconSize: [60, 16],
+              iconAnchor: [30, 8],
+            }),
+            interactive: false,
+          }).addTo(map);
+          mapArcs.push(yearLabel);
+          // Fade in label
+          requestAnimationFrame(() => {
+            const el = yearLabel.getElement();
+            if (el) el.querySelector('div').style.opacity = '1';
+          });
+          resolve();
+        }
       }
       animateArc();
     });
@@ -1912,7 +1932,7 @@ async function startThreadTour() {
     const currentYear = parseInt(current.year);
     const nextYear = parseInt(next.year);
 
-    // Zoom out to show both points
+    // Zoom out to show both endpoints before drawing
     const fromMarker = mapMarkers.find(m => m._sliceYear === currentYear);
     const toMarker = mapMarkers.find(m => m._sliceYear === nextYear);
     if (fromMarker && toMarker) {
@@ -1922,24 +1942,16 @@ async function startThreadTour() {
       if (_threadTourAbort) break;
     }
 
-    // Animate slider from current year to next year
-    const sliderDuration = Math.min(Math.max((nextYear - currentYear) * 3, 800), 2500);
-    await animateSlider(nextYear, sliderDuration);
+    // Animate slider while arc draws — run both concurrently
+    const sliderDuration = Math.min(Math.max((nextYear - currentYear) * 3, 800), 2000);
+    const arcPromise = drawSingleArc(current, next);
+    const sliderPromise = animateSlider(nextYear, sliderDuration);
+    await Promise.all([arcPromise, sliderPromise]);
     if (_threadTourAbort) break;
 
-    // Draw arc
-    await drawSingleArc(current, next);
-    if (_threadTourAbort) break;
-
-    // Fly to next entry
-    const nextLoc = next.location;
-    map.flyTo([nextLoc.lat, nextLoc.lon], 5, { duration: 1.0 });
-    await wait(1200);
-    if (_threadTourAbort) break;
-
-    // Pulse the destination marker
+    // Brief pause at destination — camera is already there from arc following
     pulseMarker(next.year);
-    await wait(1000);
+    await wait(1200);
   }
 
   _suppressAutoFit = false;
