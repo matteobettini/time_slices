@@ -1745,6 +1745,8 @@ function fitToVisibleMarkers(maxYear) {
 }
 
 document.getElementById('timeSlider').addEventListener('input', (e) => {
+  // If a thread tour is playing, stop it — user takes over
+  if (mapIsPlaying) stopMapPlay();
   updateTimeFilter(parseInt(e.target.value));
 });
 
