@@ -107,7 +107,7 @@ Every dimension MUST contextualise within the broader cultural/intellectual MOVE
 - **Literature**: Place works in their literary movement, explain what that movement was responding to
 - **Philosophy**: Name the school of thought, its predecessors, what problem it was trying to solve
 - **History**: Frame events within larger political/economic/social currents
-- **Connections**: Show how movements ACROSS dimensions influenced each other — this is the heart of Time Slices
+- **Connections**: Show how movements ACROSS dimensions influenced each other — this is the heart of Time Slices. **Every connection MUST be grounded in documented historical fact** — real influence, real correspondence, real patronage, real shared context. Don't invent poetic parallels that sound good but aren't historically attested. If Descartes actually read Montaigne, say so. If two figures just happened to live in the same century with no documented link, don't pretend they were in conversation. The connections should make the reader learn something true, not just feel clever.
 
 ### Research (mandatory before writing)
 1. Do AT LEAST 3 separate web searches
