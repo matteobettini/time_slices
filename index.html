@@ -551,7 +551,12 @@
     color: var(--text) !important;
     box-shadow: 0 8px 32px rgba(124,111,247,0.2) !important;
   }
-  .leaflet-popup-tip { background: var(--surface) !important; }
+  .leaflet-popup-tip {
+    background: var(--surface) !important;
+    border: 1px solid var(--accent) !important;
+    box-shadow: none !important;
+  }
+  .leaflet-popup-tip-container { overflow: visible !important; }
   .leaflet-popup-content {
     margin: 14px 18px !important;
     font-family: var(--font) !important;
