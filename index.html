@@ -1004,6 +1004,8 @@
 let SLICES = [];
 let activeThread = null;
 let currentLang = (navigator.language || '').startsWith('it') ? 'it' : 'en';
+let _slicesReadyResolve;
+let slicesReady = new Promise(r => { _slicesReadyResolve = r; });
 
 const DIM_ICONS = { art: '🎨', lit: '📖', phil: '🧠', hist: '⚔️', conn: '🔗' };
 
@@ -1525,6 +1527,9 @@ function updateUILabels() {
 
 // Load slices for current language and rebuild timeline
 function loadSlices(restoreYear) {
+  // Reset the ready promise so buttons wait for the new data
+  slicesReady = new Promise(r => { _slicesReadyResolve = r; });
+
   // If no explicit year to restore, find the entry currently in view
   if (!restoreYear) {
     const viewportCenter = window.innerHeight / 2;
@@ -1572,6 +1577,9 @@ function loadSlices(restoreYear) {
 
       lazyLoadImages();
       setupScrollReveal();
+
+      // Signal that slices are ready for dice/coffee buttons
+      _slicesReadyResolve();
 
       // Restore scroll position to the same entry
       if (restoreYear) {
@@ -2525,11 +2533,12 @@ function revealAllEntries() {
 }
 
 // 🎲 Random dice — scroll to a random slice
-document.getElementById('diceBtn').addEventListener('click', () => {
+document.getElementById('diceBtn').addEventListener('click', async () => {
   const btn = document.getElementById('diceBtn');
   btn.classList.add('rolling');
   setTimeout(() => btn.classList.remove('rolling'), 500);
 
+  await slicesReady;
   revealAllEntries();
 
   const entries = document.querySelectorAll('.entry');
@@ -2541,7 +2550,8 @@ document.getElementById('diceBtn').addEventListener('click', () => {
 });
 
 // ☕ Coffee button — scroll to the freshest entry (the one with the badge)
-document.getElementById('coffeeBtn').addEventListener('click', () => {
+document.getElementById('coffeeBtn').addEventListener('click', async () => {
+  await slicesReady;
   revealAllEntries();
 
   const freshEntry = document.querySelector('.entry .fresh-badge');
