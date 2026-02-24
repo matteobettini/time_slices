@@ -187,8 +187,9 @@
   /* Hero image — inline (collapsed state + mobile) */
   .card-image-inline {
     width: 100%;
-    max-height: 200px;
-    object-fit: contain;
+    height: 180px;
+    object-fit: cover;
+    object-position: center 20%;
     display: block;
     background: var(--surface2);
     opacity: 0;
@@ -431,7 +432,7 @@
     .header-top { margin-bottom: 8px; }
     .timeline-container { padding: 40px 16px 80px; margin-top: 120px; }
     .subtitle { display: none; }
-    .card-image-inline { max-height: none; }
+    .card-image-inline { max-height: none; height: auto; object-fit: contain; object-position: center; }
     /* On mobile: no floating image, keep inline visible when expanded */
     .floating-image { display: none !important; }
     .entry.expanded .card-image-inline { display: block; }
