@@ -950,7 +950,7 @@
       <span class="subtitle" id="subtitle">Cross-disciplinary history exploration</span>
     </div>
     <div class="header-right">
-      <button class="view-toggle" id="viewToggle">Map</button>
+      <button class="view-toggle" id="viewToggle"></button>
       <button class="lang-btn active" data-lang="en">EN</button>
       <button class="lang-btn" data-lang="it">IT</button>
     </div>
@@ -963,8 +963,8 @@
 </header>
 
 <div class="quick-actions" id="quickActions">
-  <button class="quick-btn" id="coffeeBtn" title="Today's fresh entry">☕</button>
-  <button class="quick-btn" id="diceBtn" title="Random slice">🎲</button>
+  <button class="quick-btn" id="coffeeBtn">☕</button>
+  <button class="quick-btn" id="diceBtn">🎲</button>
 </div>
 
 <div class="timeline-container">
@@ -977,10 +977,10 @@
   <div class="map-header">
     <div style="display:flex;align-items:baseline;">
       <h1>Time Slices</h1>
-      <span class="subtitle" id="mapSubtitle">Map</span>
+      <span class="subtitle" id="mapSubtitle"></span>
     </div>
     <div style="display:flex;align-items:center;gap:8px;">
-      <button class="view-toggle active" id="mapBackBtn">Timeline</button>
+      <button class="view-toggle active" id="mapBackBtn"></button>
       <button class="lang-btn" data-lang="en" data-map="1">EN</button>
       <button class="lang-btn" data-lang="it" data-map="1">IT</button>
     </div>
@@ -1015,6 +1015,11 @@ const I18N = {
     expandHint: 'Click to explore →', sources: 'Sources',
     yearsLater: 'years later…',
     slicesFile: 'slices.json',
+    viewMap: 'Map',
+    viewTimeline: 'Timeline',
+    viewInTimeline: 'View in timeline →',
+    freshEntry: "Today's fresh entry",
+    randomSlice: 'Random slice',
   },
   it: {
     subtitle: 'Esplorazione interdisciplinare della storia',
@@ -1023,6 +1028,11 @@ const I18N = {
     expandHint: 'Clicca per esplorare →', sources: 'Fonti',
     yearsLater: 'anni dopo…',
     slicesFile: 'slices.it.json',
+    viewMap: 'Mappa',
+    viewTimeline: 'Cronologia',
+    viewInTimeline: 'Vedi nella cronologia →',
+    freshEntry: 'Voce fresca di oggi',
+    randomSlice: 'Voce casuale',
   }
 };
 
@@ -1498,6 +1508,19 @@ function updateUILabels() {
   document.querySelector('.thread-banner span:first-child').innerHTML =
     `🧵 ${t('thread')}: <span class="thread-name" id="threadName"></span>`;
   document.documentElement.lang = currentLang;
+
+  // Toggle button: update to current language
+  const toggle = document.getElementById('viewToggle');
+  const isMapActive = toggle.classList.contains('active');
+  toggle.textContent = isMapActive ? t('viewTimeline') : t('viewMap');
+
+  // Quick action button titles
+  document.getElementById('coffeeBtn').title = t('freshEntry');
+  document.getElementById('diceBtn').title = t('randomSlice');
+
+  // Map view labels
+  document.getElementById('mapSubtitle').textContent = t('viewMap');
+  document.getElementById('mapBackBtn').textContent = t('viewTimeline');
 }
 
 // Load slices for current language and rebuild timeline
@@ -1650,7 +1673,7 @@ function createMapMarker(slice) {
     <div class="map-popup-title">${slice.title}</div>
     <div class="map-popup-teaser">${slice.teaser}</div>
     <div class="map-popup-threads">${threads}</div>
-    <a class="map-popup-link" onclick="scrollToEntry('${slice.year}')">View in timeline →</a>
+    <a class="map-popup-link" onclick="scrollToEntry('${slice.year}')">${t('viewInTimeline')}</a>
   `);
 
   marker.bindPopup(popup);
@@ -2396,7 +2419,7 @@ function showMapView() {
   document.getElementById('mapView').classList.add('active');
   document.getElementById('mapTimeControl').classList.add('visible');
   document.getElementById('viewToggle').classList.add('active');
-  document.getElementById('viewToggle').textContent = 'Timeline';
+  document.getElementById('viewToggle').textContent = t('viewTimeline');
   document.getElementById('quickActions').style.display = 'none';
 
   // Hide timeline's thread banner — header is z-100, above map z-50
@@ -2415,7 +2438,7 @@ function showTimelineView() {
   document.getElementById('mapView').classList.remove('active');
   document.getElementById('mapTimeControl').classList.remove('visible');
   document.getElementById('viewToggle').classList.remove('active');
-  document.getElementById('viewToggle').textContent = 'Map';
+  document.getElementById('viewToggle').textContent = t('viewMap');
   document.getElementById('quickActions').style.display = 'flex';
 
   // Sync thread state: apply whatever thread is active (or clear)
