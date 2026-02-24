@@ -2109,9 +2109,8 @@ function activateMapThread(threadId) {
     .map(s => parseInt(s.year)).sort((a, b) => a - b);
   if (threadYears.length >= 1) {
     const slider = document.getElementById('timeSlider');
-    const padding = Math.max(50, Math.round((threadYears[threadYears.length - 1] - threadYears[0]) * 0.15));
-    slider.min = threadYears[0] - padding;
-    slider.max = threadYears[threadYears.length - 1] + padding;
+    slider.min = threadYears[0];
+    slider.max = threadYears[threadYears.length - 1];
     slider.value = slider.max;
     updateTimeFilter(parseInt(slider.max));
   }
