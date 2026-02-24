@@ -1500,6 +1500,9 @@ function updateTimeFilter(maxYear) {
       dot.style.opacity = opacity;
       if (label) label.style.opacity = opacity;
 
+      // Close popup if marker has mostly faded
+      if (opacity < 0.3 && marker.isPopupOpen()) marker.closePopup();
+
       if (wasHidden && opacity > 0.3) {
         dot.classList.add('arriving');
         setTimeout(() => dot.classList.remove('arriving'), 1000);
