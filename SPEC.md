@@ -1,0 +1,154 @@
+# Time Slices — Project Spec
+
+**Last updated:** 2026-02-24
+
+This is the single source of truth for the Time Slices cron job.
+Read this file FIRST before doing anything.
+
+---
+
+## What Is This?
+
+An interactive cross-disciplinary timeline exploring how art, literature, philosophy, and history connect across eras. Each entry ("slice") covers a pivotal moment in (primarily Western) history through 5 dimensions.
+
+**Live site:** https://matteobettini.github.io/time_slices/  
+**Repo:** https://github.com/matteobettini/time_slices  
+**Project dir:** /home/cloud-user/.openclaw/workspace/time-slices/
+
+---
+
+## Entry Schema
+
+Every entry in `slices.json` MUST have this structure:
+
+```json
+{
+  "year": "1504",
+  "title": "Florence — The Duel of Giants",
+  "teaser": "Short evocative hook, 1-2 sentences.",
+  "dimensions": {
+    "art":  { "label": "Art",         "content": "HTML string" },
+    "lit":  { "label": "Literature",  "content": "HTML string" },
+    "phil": { "label": "Philosophy",  "content": "HTML string" },
+    "hist": { "label": "History",     "content": "HTML string" },
+    "conn": { "label": "Connections", "content": "HTML string", "funFact": "optional" }
+  },
+  "sources": [
+    { "url": "https://...", "title": "Source Name" }
+  ],
+  "image": {
+    "url": "WIKIMEDIA_THUMB_URL",
+    "caption": "Description of the image",
+    "attribution": "Author, License, via Wikimedia Commons"
+  },
+  "threads": ["thread-tag-1", "thread-tag-2"]
+}
+```
+
+### Field Details
+
+#### dimensions
+- All 5 dimensions are **mandatory**: art, lit, phil, hist, conn
+- Each dimension: 2-4 sentences, ~300-500 chars max
+- Use `<strong>` and `<em>` tags for emphasis (it's rendered as HTML)
+- At most 1-2 `funFact` fields across the WHOLE entry (usually on `conn`)
+- Fun facts go in the dimension object: `"funFact": "Text here"`
+
+#### image (mandatory)
+- Must be PUBLIC DOMAIN or CC-licensed from Wikimedia Commons
+- Get a thumbnail URL via the Wikipedia API (iiurlwidth=800):
+  `https://en.wikipedia.org/w/api.php?action=query&titles=File:FILENAME&prop=imageinfo&iiprop=url&iiurlwidth=800&format=json`
+- Pick something visually compelling: a painting, building, map, manuscript, photograph
+- The image appears at the top of the card — it's the first thing people see
+
+#### threads (mandatory)
+- Array of 3-6 kebab-case strings identifying intellectual/cultural threads
+- **REUSE existing thread tags** from other entries where they genuinely apply — this is how cross-entry connections become visible
+- Add 1-2 NEW thread tags specific to this entry's unique themes
+- When adding NEW tags: also update `THREAD_LABELS` in `index.html` (see below)
+- Examples: `"renaissance-humanism"`, `"death-of-god"`, `"fragmentation"`, `"modernity"`
+
+#### sources (mandatory)
+- 3-5 URLs you actually consulted during research
+- Format: `[{"url": "...", "title": "..."}]`
+
+---
+
+## Writing Guidelines
+
+### Scope
+- **Primarily Western** history and culture (Europe, Americas, Mediterranean)
+- Non-Western entries RARELY — only truly pivotal moments (maybe 1 in 10)
+- When a Western entry has non-Western connections, mention them in the Connections dimension
+
+### Tone & Length
+- Total entry: ~2000-2800 chars across all dimensions (NOT 4000+)
+- Match existing entries in tone: vivid, precise, intellectually exciting
+- Write for a curious person, not an academic — but never dumb it down
+
+### Movement Contextualisation (CRITICAL)
+Every dimension MUST contextualise within the broader cultural/intellectual MOVEMENT:
+- **Art**: Don't just say "X painted Y" — explain the movement (Impressionism, Constructivism, etc.), what it was reacting against, and why it emerged THEN
+- **Literature**: Place works in their literary movement, explain what that movement was responding to
+- **Philosophy**: Name the school of thought, its predecessors, what problem it was trying to solve
+- **History**: Frame events within larger political/economic/social currents
+- **Connections**: Show how movements ACROSS dimensions influenced each other — this is the heart of Time Slices
+
+### Research (mandatory before writing)
+1. Do AT LEAST 3 separate web searches
+2. Prefer: Wikipedia, Britannica, Stanford Encyclopedia of Philosophy, .edu sites, museum sites
+3. Actually READ pages with web_fetch, don't just skim search snippets
+4. If sources disagree, use qualifiers: "c.", "traditionally attributed to", "according to..."
+5. Separate legends from documented facts
+
+---
+
+## index.html: Things You May Need to Update
+
+### THREAD_LABELS object
+When you add a NEW thread tag, you MUST add a human-readable label to the `THREAD_LABELS` object in `index.html`. Find it in the `<script>` section:
+
+```javascript
+const THREAD_LABELS = {
+  'renaissance-humanism': 'Renaissance Humanism',
+  'death-of-god': 'Death of God',
+  // ... add new ones here
+};
+```
+
+If a thread tag has no label, it auto-formats from kebab-case, but an explicit label is better.
+
+### MARKERS array
+Reference markers are small date labels on the timeline (e.g., "1453 — Fall of Constantinople"). If your new slice falls in a time period with no nearby markers, consider adding one. Find it in the `<script>` section:
+
+```javascript
+const MARKERS = [
+  { year: 1453, label: "Fall of Constantinople" },
+  // ...
+];
+```
+
+---
+
+## Deploy Checklist
+
+After writing a new entry:
+
+1. ✅ Read `slices.json`, append new entry, write back
+2. ✅ Validate it's proper JSON (parse it!)
+3. ✅ Check for new thread tags → update `THREAD_LABELS` in `index.html`
+4. ✅ Check if a new MARKER would help → update `MARKERS` in `index.html`
+5. ✅ `git add -A && git commit -m "Add slice: YEAR — TITLE" && git push origin main`
+6. ✅ Reply with summary: year, title, teaser, one highlight connection (3-5 sentences max)
+
+**DO NOT** deploy, tunnel, or expose anything. Only commit and push to git.
+
+---
+
+## Variety
+
+Pick years/moments NOT already in `slices.json`. Aim for:
+- Different centuries
+- Different regions (within the Western focus)
+- Different kinds of moments (artistic peaks, philosophical ruptures, political turning points)
+- Don't cluster in the same era as existing entries
