@@ -1822,6 +1822,12 @@ function flyToEntry(year) {
   if (!slice || !slice.location) return;
   showMapView();
   setTimeout(() => {
+    // Set slider to the entry's year so it (and its contemporaries) are visible
+    const slider = document.getElementById('timeSlider');
+    const numYear = parseInt(year);
+    slider.value = Math.max(parseInt(slider.min), Math.min(parseInt(slider.max), numYear));
+    updateTimeFilter(parseInt(slider.value));
+
     map.flyTo([slice.location.lat, slice.location.lon], 5, { duration: 1.2 });
     // Open the marker popup
     const marker = mapMarkers.find(m => String(m._sliceYear) === String(year));
