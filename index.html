@@ -344,14 +344,19 @@
   /* Fun fact callout */
   .fun-fact {
     background: var(--surface2);
-    border-left: 3px solid var(--conn);
+    border-left: 3px solid var(--border);
     border-radius: 0 8px 8px 0;
     padding: 10px 14px;
     margin-top: 10px;
     font-size: 0.85rem;
     color: var(--text-dim);
+    transition: border-color 0.4s ease, background 0.4s ease;
   }
   .fun-fact::before { content: '💡 '; }
+  .entry.expanded .fun-fact {
+    border-left-color: var(--accent);
+    background: rgba(124,111,247,0.06);
+  }
 
   /* Sources */
   .card-sources {
