@@ -1527,20 +1527,38 @@ function updateTimeFilter(maxYear) {
 
 let _fitBoundsTimer = null;
 let _lastFitSet = null;
+let _lastVisibleSet = '';  // track which markers are visible to only refit on change
 function fitToVisibleMarkers(maxYear) {
-  // Throttle to one fit every 600ms (not debounce — fires during sliding, not just after)
-  const now = Date.now();
-  if (_lastFitSet && now - _lastFitSet < 600) return;
-  _lastFitSet = now;
+  if (_suppressAutoFit) return;
 
-  if (_suppressAutoFit || mapIsPlaying) return;
   const visible = mapMarkers.filter(m => Math.abs(maxYear - m._sliceYear) <= TIME_WINDOW);
   if (visible.length === 0) return;
-  if (visible.length === 1) {
-    map.flyTo(visible[0].getLatLng(), 5, { duration: 0.5 });
+
+  // Build a key from visible marker years to detect actual changes
+  const visibleKey = visible.map(m => m._sliceYear).sort().join(',');
+
+  if (mapIsPlaying) {
+    // During autoplay: only refit when the visible set changes (marker enters/exits)
+    if (visibleKey === _lastVisibleSet) return;
+    _lastVisibleSet = visibleKey;
+    if (visible.length === 1) {
+      map.flyTo(visible[0].getLatLng(), 5, { duration: 1.0 });
+    } else {
+      const group = L.featureGroup(visible);
+      map.flyToBounds(group.getBounds().pad(0.4), { maxZoom: 6, duration: 1.0 });
+    }
   } else {
-    const group = L.featureGroup(visible);
-    map.flyToBounds(group.getBounds().pad(0.4), { maxZoom: 6, duration: 0.5 });
+    // Manual scrubbing: throttle to one fit every 600ms
+    const now = Date.now();
+    if (_lastFitSet && now - _lastFitSet < 600) return;
+    _lastFitSet = now;
+    _lastVisibleSet = visibleKey;
+    if (visible.length === 1) {
+      map.flyTo(visible[0].getLatLng(), 5, { duration: 0.5 });
+    } else {
+      const group = L.featureGroup(visible);
+      map.flyToBounds(group.getBounds().pad(0.4), { maxZoom: 6, duration: 0.5 });
+    }
   }
 }
 
@@ -1551,6 +1569,7 @@ document.getElementById('timeSlider').addEventListener('input', (e) => {
 // Auto-play — density-proportional speed
 function startMapPlay() {
   mapIsPlaying = true;
+  _lastVisibleSet = '';  // reset so first frame triggers a fit
   document.getElementById('timePlayBtn').textContent = '⏸';
   document.getElementById('timePlayBtn').classList.add('playing');
 
