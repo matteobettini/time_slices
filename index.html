@@ -1763,10 +1763,13 @@ function startMapPlay() {
   const slider = document.getElementById('timeSlider');
   const min = parseInt(slider.min);
   const max = parseInt(slider.max);
+  const current = parseInt(slider.value);
 
-  // Start from minimum
-  slider.value = min;
-  updateTimeFilter(min);
+  // Only reset to start if slider is at the end; otherwise resume from current position
+  if (current >= max) {
+    slider.value = min;
+    updateTimeFilter(min);
+  }
 
   // Build a speed map: faster in empty stretches, slower near entries
   const entryYears = SLICES.map(s => parseInt(s.year)).sort((a, b) => a - b);
