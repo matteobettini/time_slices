@@ -2489,13 +2489,8 @@ document.getElementById('diceBtn').addEventListener('click', () => {
   if (!entries.length) return;
   const target = entries[Math.floor(Math.random() * entries.length)];
 
-  // Expand it and scroll to it
+  // Scroll to it (don't auto-expand)
   target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  setTimeout(() => {
-    if (!target.classList.contains('expanded')) {
-      target.click();
-    }
-  }, 600);
 });
 
 // ☕ Coffee button — scroll to the freshest entry (the one with the badge)
@@ -2506,11 +2501,6 @@ document.getElementById('coffeeBtn').addEventListener('click', () => {
   if (!entry) return;
 
   entry.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  setTimeout(() => {
-    if (!entry.classList.contains('expanded')) {
-      entry.click();
-    }
-  }, 600);
 });
 </script>
 
