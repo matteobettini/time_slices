@@ -1,5 +1,42 @@
 [
   {
+    "year": "762",
+    "title": "Baghdad — The Round City of Reason",
+    "teaser": "A caliph builds a perfect circle in the desert. Inside it, Greek philosophy meets Arab poetry and Persian administration — the Islamic Golden Age ignites.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "Early <strong>Abbasid art</strong> fuses Umayyad, Persian, and Central Asian traditions into something new — a cosmopolitan visual language for a cosmopolitan empire. Al-Mansur's <strong>Round City</strong> itself is the masterpiece: a perfect circle nearly 2 km across, with the caliph's palace and grand mosque at the centre — geometry as theology, power radiating outward from a divine axis. The <strong>aniconism</strong> of Islamic art channels creative energy into breathtaking <em>arabesque</em> patterns and calligraphy, transforming the written word itself into visual art."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Arabic poetry</strong> enters its most inventive phase. The Abbasid revolution shifts literary patronage from Damascus to Iraq, and poets begin breaking the rigid pre-Islamic <em>qasida</em> form. A generation of <em>muhdath</em> (\"modern\") poets is emerging — figures like <strong>Abu Nuwas</strong> (born c. 756) will soon scandalise Baghdad with wine poems that mock Bedouin nostalgia and celebrate urban Persian cosmopolitanism. The <strong>translation movement</strong> is beginning: Greek, Syriac, Sanskrit, and Persian texts are being rendered into Arabic, creating the largest body of translated knowledge the ancient world had seen."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "The <strong>Mu'tazila</strong>, founded by <strong>Wasil ibn Ata</strong> (d. 748), are the first systematic school of <strong>Islamic rationalist theology</strong> (<em>kalam</em>) — arguing that reason, not tradition alone, can determine truth. Their insistence on divine justice and human free will directly challenges fatalist interpretations of the Quran. Under the Abbasids, the Mu'tazila gain state patronage — an extraordinary moment when a government officially endorses rational inquiry as the path to religious truth. Meanwhile, the <strong>translation of Aristotle</strong> into Arabic is just beginning, laying the groundwork for falsafa (Islamic philosophy proper)."
+      },
+      "hist": {
+        "label": "History",
+        "content": "The <strong>Abbasid Revolution</strong> (750) overthrows the Umayyads in one of history's great political ruptures — a coalition of Persian converts, Shia sympathisers, and discontented frontier armies united under the black banners. <strong>Al-Mansur</strong> founds Baghdad in 762 as a deliberate break from the old Umayyad capital Damascus, placing power at the crossroads of Persian, Mesopotamian, and Arab worlds. In 751, the <strong>Battle of Talas</strong> against Tang China halts Chinese expansion westward and — according to tradition — brings papermaking technology to the Islamic world, revolutionising scholarship."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "Everything converges on <strong>translation as power</strong>. The Abbasids legitimise their rule not through Arab tribal prestige (as the Umayyads did) but through <em>universal knowledge</em> — Persian administration, Greek science, Indian mathematics, all filtered through Arabic. The Round City's perfect geometry embodies the Mu'tazila's rationalism: both insist the cosmos is orderly and knowable. Poetry's break from Bedouin forms mirrors the political break from Umayyad tribalism. When Abu Nuwas praises wine in Persian-inflected Arabic, he's enacting the same cultural synthesis that the House of Wisdom will soon institutionalise.",
+        "funFact": "Al-Mansur reportedly chose Baghdad's site after sleeping a night there and finding it pleasant. He allegedly consulted astrologers who confirmed the stars favoured the location — reason and superstition coexisting, as they so often did in the Age of Reason's first draft."
+      }
+    },
+    "sources": [
+      {"url": "https://en.wikipedia.org/wiki/Abbasid_Caliphate", "title": "Abbasid Caliphate — Wikipedia"},
+      {"url": "https://en.wikipedia.org/wiki/Islamic_Golden_Age", "title": "Islamic Golden Age — Wikipedia"},
+      {"url": "https://en.wikipedia.org/wiki/Round_city_of_Baghdad", "title": "Round City of Baghdad — Wikipedia"},
+      {"url": "https://en.wikipedia.org/wiki/Mu%27tazila", "title": "Mu'tazila — Wikipedia"},
+      {"url": "https://en.wikipedia.org/wiki/Abu_Nuwas", "title": "Abu Nuwas — Wikipedia"},
+      {"url": "https://en.wikipedia.org/wiki/Battle_of_Talas", "title": "Battle of Talas — Wikipedia"},
+      {"url": "https://en.wikipedia.org/wiki/Barmakids", "title": "Barmakids — Wikipedia"}
+    ]
+  },
+  {
     "year": "1504",
     "title": "Florence — The Duel of Giants",
     "teaser": "Michelangelo and Leonardo compete for the same wall. The Renaissance peaks.",
