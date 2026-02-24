@@ -2496,11 +2496,18 @@ document.querySelectorAll('[data-map="1"]').forEach(btn => {
   });
 });
 
+// Helper: reveal all entries so scroll targets are visible
+function revealAllEntries() {
+  document.querySelectorAll('.entry:not(.visible)').forEach(el => el.classList.add('visible'));
+}
+
 // 🎲 Random dice — scroll to a random slice
 document.getElementById('diceBtn').addEventListener('click', () => {
   const btn = document.getElementById('diceBtn');
   btn.classList.add('rolling');
   setTimeout(() => btn.classList.remove('rolling'), 500);
+
+  revealAllEntries();
 
   const entries = document.querySelectorAll('.entry');
   if (!entries.length) return;
@@ -2512,6 +2519,8 @@ document.getElementById('diceBtn').addEventListener('click', () => {
 
 // ☕ Coffee button — scroll to the freshest entry (the one with the badge)
 document.getElementById('coffeeBtn').addEventListener('click', () => {
+  revealAllEntries();
+
   const freshEntry = document.querySelector('.entry .fresh-badge');
   if (!freshEntry) return;
   const entry = freshEntry.closest('.entry');
