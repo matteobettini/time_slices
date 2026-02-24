@@ -1797,7 +1797,7 @@ function flyToEntry(year) {
   if (!slice || !slice.location) return;
   showMapView();
   setTimeout(() => {
-    map.flyTo([slice.location.lat, slice.location.lon], 8, { duration: 1.2 });
+    map.flyTo([slice.location.lat, slice.location.lon], 5, { duration: 1.2 });
     // Open the marker popup
     const marker = mapMarkers.find(m => String(m._sliceYear) === String(year));
     if (marker) {
