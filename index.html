@@ -793,7 +793,7 @@
       <span class="subtitle" id="subtitle">Cross-disciplinary history exploration</span>
     </div>
     <div class="header-right">
-      <button class="view-toggle" id="viewToggle" title="Map view">🗺️</button>
+      <button class="view-toggle" id="viewToggle">Map</button>
       <button class="lang-btn active" data-lang="en">EN</button>
       <button class="lang-btn" data-lang="it">IT</button>
     </div>
@@ -818,7 +818,7 @@
       <span class="subtitle" id="mapSubtitle">Map</span>
     </div>
     <div style="display:flex;align-items:center;gap:8px;">
-      <button class="view-toggle active" id="mapBackBtn" title="Timeline view">📜</button>
+      <button class="view-toggle active" id="mapBackBtn">Timeline</button>
       <button class="lang-btn" data-lang="en" data-map="1">EN</button>
       <button class="lang-btn" data-lang="it" data-map="1">IT</button>
     </div>
@@ -1747,8 +1747,7 @@ function showMapView() {
   document.getElementById('mapView').classList.add('active');
   document.getElementById('mapTimeControl').classList.add('visible');
   document.getElementById('viewToggle').classList.add('active');
-  document.getElementById('viewToggle').textContent = '📜';
-  document.getElementById('viewToggle').title = 'Timeline view';
+  document.getElementById('viewToggle').textContent = 'Timeline';
 
   // Hide timeline's thread banner — header is z-100, above map z-50
   document.getElementById('threadBanner').classList.remove('visible');
@@ -1766,8 +1765,7 @@ function showTimelineView() {
   document.getElementById('mapView').classList.remove('active');
   document.getElementById('mapTimeControl').classList.remove('visible');
   document.getElementById('viewToggle').classList.remove('active');
-  document.getElementById('viewToggle').textContent = '🗺️';
-  document.getElementById('viewToggle').title = 'Map view';
+  document.getElementById('viewToggle').textContent = 'Map';
 
   // Sync thread state: apply whatever thread is active (or clear)
   if (activeThread) {
