@@ -1531,6 +1531,12 @@ function loadSlices(restoreYear) {
   // Reset the ready promise so buttons wait for the new data
   slicesReady = new Promise(r => { _slicesReadyResolve = r; });
 
+  // Capture expanded entries before rebuild
+  const expandedYears = new Set();
+  document.querySelectorAll('.entry.expanded[data-year]').forEach(el => {
+    expandedYears.add(el.dataset.year);
+  });
+
   // If no explicit year to restore, find the entry currently in view
   if (!restoreYear) {
     const viewportCenter = window.innerHeight / 2;
@@ -1587,6 +1593,20 @@ function loadSlices(restoreYear) {
         requestAnimationFrame(() => {
           const target = document.querySelector(`.entry[data-year="${restoreYear}"]`);
           if (target) target.scrollIntoView({ block: 'center' });
+        });
+      }
+
+      // Restore expanded entries
+      if (expandedYears.size > 0) {
+        expandedYears.forEach(year => {
+          const el = document.querySelector(`.entry[data-year="${year}"]`);
+          if (!el) return;
+          el.classList.add('expanded');
+          const details = el.querySelector('.card-details');
+          if (details) details.style.maxHeight = 'none';
+          // Eagerly load floating image
+          const floatImg = el.querySelector('.floating-image img[data-src]');
+          if (floatImg && !floatImg.src) floatImg.src = floatImg.dataset.src;
         });
       }
     });
