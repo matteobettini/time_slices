@@ -1509,6 +1509,7 @@ function updateTimeFilter(maxYear) {
       dot.classList.remove('arriving');
       dot.style.opacity = '';
       if (label) label.style.opacity = '0';
+      if (marker.isPopupOpen()) marker.closePopup();
     }
   });
 
