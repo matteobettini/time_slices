@@ -95,10 +95,12 @@
     margin-left: auto;
     cursor: pointer;
     color: var(--text-dim);
-    font-size: 1rem;
-    padding: 0 4px;
+    font-size: 1.2rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.15s ease, color 0.15s ease;
   }
-  .thread-banner .thread-close:hover { color: var(--text); }
+  .thread-banner .thread-close:hover { color: var(--text); background: rgba(255,255,255,0.1); }
   .thread-banner .thread-count { color: var(--text-dim); }
 
   /* Timeline container */
@@ -734,7 +736,7 @@
     position: fixed;
     top: 56px; left: 50%;
     transform: translateX(-50%);
-    z-index: 75;
+    z-index: 1100; /* above Leaflet popups (z-index ~700) */
     align-items: center;
     gap: 10px;
     padding: 8px 18px;
@@ -746,14 +748,18 @@
     color: var(--text);
     animation: fadeIn 0.2s ease;
     margin-top: 10px;
+    cursor: pointer; /* whole banner is clickable to dismiss */
   }
   .map-thread-banner.visible { display: flex; }
   .map-thread-banner .thread-name { font-weight: 600; color: var(--accent); }
   .map-thread-banner .thread-close {
     margin-left: auto; cursor: pointer;
-    color: var(--text-dim); font-size: 1rem; padding: 0 4px;
+    color: var(--text-dim); font-size: 1.2rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.15s ease, color 0.15s ease;
   }
-  .map-thread-banner .thread-close:hover { color: var(--text); }
+  .map-thread-banner .thread-close:hover { color: var(--text); background: rgba(255,255,255,0.1); }
 
   @media (max-width: 768px) {
     .map-time-control { padding: 12px 16px 16px; }
@@ -1774,6 +1780,7 @@ document.getElementById('viewToggle').addEventListener('click', () => {
 
 document.getElementById('mapBackBtn').addEventListener('click', showTimelineView);
 document.getElementById('mapThreadClose').addEventListener('click', clearMapThread);
+document.getElementById('mapThreadBanner').addEventListener('click', clearMapThread);
 
 // Map lang switcher
 document.querySelectorAll('[data-map="1"]').forEach(btn => {
