@@ -205,6 +205,45 @@
     0%, 100% { box-shadow: 0 0 0 0 rgba(124, 111, 247, 0.3); }
     50% { box-shadow: 0 0 12px 4px rgba(124, 111, 247, 0.15); }
   }
+
+  /* 🎲 Random dice button */
+  .dice-btn {
+    position: fixed;
+    top: 72px;
+    right: 32px;
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 50%;
+    background: rgba(124, 111, 247, 0.12);
+    border: 1.5px solid var(--accent);
+    color: var(--text);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.2s ease;
+    backdrop-filter: blur(8px);
+  }
+  .dice-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 16px rgba(124, 111, 247, 0.3);
+    background: rgba(124, 111, 247, 0.25);
+  }
+  .dice-btn:active { transform: scale(0.95); }
+  .dice-btn.rolling { animation: diceRoll 0.5s ease-out; }
+  @keyframes diceRoll {
+    0% { transform: rotate(0deg) scale(1); }
+    25% { transform: rotate(90deg) scale(1.2); }
+    50% { transform: rotate(180deg) scale(1); }
+    75% { transform: rotate(270deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+  }
+  @media (max-width: 600px) {
+    .dice-btn { top: 68px; right: 16px; width: 36px; height: 36px; font-size: 1.1rem; }
+  }
   .entry:hover .card {
     border-color: var(--accent);
     box-shadow: 0 4px 24px rgba(124,111,247,0.15);
@@ -899,6 +938,8 @@
   </div>
 </header>
 
+<button class="dice-btn" id="diceBtn" title="Random slice">🎲</button>
+
 <div class="timeline-container">
   <div class="timeline-line"></div>
   <div id="timeline"></div>
@@ -1021,28 +1062,28 @@ const THREAD_LABELS = {
 };
 
 const MARKERS = [
-  { year: -3000, label: "First writing (Sumer)" },
-  { year: -776, label: "First Olympics" },
-  { year: -509, label: "Roman Republic founded" },
-  { year: -323, label: "Death of Alexander the Great" },
-  { year: 0, label: "Year Zero" },
-  { year: 476, label: "Fall of Western Rome" },
-  { year: 622, label: "Hijra — birth of Islam" },
-  { year: 800, label: "Charlemagne crowned Emperor" },
-  { year: 1066, label: "Norman Conquest" },
-  { year: 1215, label: "Magna Carta" },
-  { year: 1347, label: "Black Death arrives in Europe" },
-  { year: 1453, label: "Fall of Constantinople" },
-  { year: 1492, label: "Columbus reaches the Americas" },
-  { year: 1517, label: "Luther's 95 Theses" },
-  { year: 1648, label: "Peace of Westphalia" },
-  { year: 1776, label: "American Independence" },
-  { year: 1789, label: "French Revolution" },
-  { year: 1815, label: "Waterloo" },
-  { year: 1914, label: "World War I begins" },
-  { year: 1945, label: "World War II ends" },
-  { year: 1969, label: "Moon landing" },
-  { year: 1989, label: "Fall of the Berlin Wall" },
+  { year: -3000, label: { en: "First writing (Sumer)", it: "Prima scrittura (Sumeri)" } },
+  { year: -776, label: { en: "First Olympics", it: "Prime Olimpiadi" } },
+  { year: -509, label: { en: "Roman Republic founded", it: "Fondazione della Repubblica Romana" } },
+  { year: -323, label: { en: "Death of Alexander the Great", it: "Morte di Alessandro Magno" } },
+  { year: 0, label: { en: "Year Zero", it: "Anno Zero" } },
+  { year: 476, label: { en: "Fall of Western Rome", it: "Caduta dell'Impero Romano d'Occidente" } },
+  { year: 622, label: { en: "Hijra — birth of Islam", it: "Egira — nascita dell'Islam" } },
+  { year: 800, label: { en: "Charlemagne crowned Emperor", it: "Carlo Magno incoronato Imperatore" } },
+  { year: 1066, label: { en: "Norman Conquest", it: "Conquista normanna" } },
+  { year: 1215, label: { en: "Magna Carta", it: "Magna Carta" } },
+  { year: 1347, label: { en: "Black Death arrives in Europe", it: "La Peste Nera arriva in Europa" } },
+  { year: 1453, label: { en: "Fall of Constantinople", it: "Caduta di Costantinopoli" } },
+  { year: 1492, label: { en: "Columbus reaches the Americas", it: "Colombo raggiunge le Americhe" } },
+  { year: 1517, label: { en: "Luther's 95 Theses", it: "Le 95 tesi di Lutero" } },
+  { year: 1648, label: { en: "Peace of Westphalia", it: "Pace di Vestfalia" } },
+  { year: 1776, label: { en: "American Independence", it: "Indipendenza americana" } },
+  { year: 1789, label: { en: "French Revolution", it: "Rivoluzione francese" } },
+  { year: 1815, label: { en: "Waterloo", it: "Waterloo" } },
+  { year: 1914, label: { en: "World War I begins", it: "Inizio della Prima Guerra Mondiale" } },
+  { year: 1945, label: { en: "World War II ends", it: "Fine della Seconda Guerra Mondiale" } },
+  { year: 1969, label: { en: "Moon landing", it: "Sbarco sulla Luna" } },
+  { year: 1989, label: { en: "Fall of the Berlin Wall", it: "Caduta del Muro di Berlino" } },
 ];
 
 const timeline = document.getElementById('timeline');
@@ -1171,9 +1212,10 @@ function renderMarker(marker) {
   const el = document.createElement('div');
   el.className = 'marker';
   const yearStr = marker.year < 0 ? `${Math.abs(marker.year)} BC` : marker.year === 0 ? '0' : marker.year;
+  const labelText = typeof marker.label === 'object' ? (marker.label[currentLang] || marker.label.en) : marker.label;
   el.innerHTML = `
     <div class="marker-line"></div>
-    <span class="marker-label">${yearStr} — ${marker.label}</span>
+    <span class="marker-label">${yearStr} — ${labelText}</span>
   `;
   return el;
 }
@@ -2328,6 +2370,7 @@ function showMapView() {
   document.getElementById('mapTimeControl').classList.add('visible');
   document.getElementById('viewToggle').classList.add('active');
   document.getElementById('viewToggle').textContent = 'Timeline';
+  document.getElementById('diceBtn').style.display = 'none';
 
   // Hide timeline's thread banner — header is z-100, above map z-50
   document.getElementById('threadBanner').classList.remove('visible');
@@ -2346,6 +2389,7 @@ function showTimelineView() {
   document.getElementById('mapTimeControl').classList.remove('visible');
   document.getElementById('viewToggle').classList.remove('active');
   document.getElementById('viewToggle').textContent = 'Map';
+  document.getElementById('diceBtn').style.display = 'flex';
 
   // Sync thread state: apply whatever thread is active (or clear)
   if (activeThread) {
@@ -2423,6 +2467,25 @@ document.querySelectorAll('[data-map="1"]').forEach(btn => {
     // Repopulate map after slices load
     setTimeout(populateMap, 500);
   });
+});
+
+// 🎲 Random dice — scroll to a random slice
+document.getElementById('diceBtn').addEventListener('click', () => {
+  const btn = document.getElementById('diceBtn');
+  btn.classList.add('rolling');
+  setTimeout(() => btn.classList.remove('rolling'), 500);
+
+  const entries = document.querySelectorAll('.entry');
+  if (!entries.length) return;
+  const target = entries[Math.floor(Math.random() * entries.length)];
+
+  // Expand it and scroll to it
+  target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  setTimeout(() => {
+    if (!target.classList.contains('expanded')) {
+      target.click();
+    }
+  }, 600);
 });
 </script>
 
