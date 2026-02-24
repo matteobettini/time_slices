@@ -8,54 +8,63 @@
 - Daily cron adds a new slice (9 AM Paris)
 - Mobile responsive layout
 - Dark aesthetic, scroll animations
+- Hero images per entry (Wikimedia Commons, locally hosted)
+- Floating images on desktop (opposite side of timeline when expanded)
+- Dimension filter buttons in header
+- Cross-entry thread tags (clickable, filterable)
+- Thread activation collapses non-matching entries
+- Narrative connectors between thread entries
+- SVG thread lines with animated glow
+- Auto-scroll to first match on thread activation
+- Fun fact callout boxes with accent border on expand
+- Lazy-loaded images with scroll reveal
 
-## 🚧 In Progress (Phase 1 — the big three)
+## 📋 Backlog
 
-### 1. Images (Wikimedia Commons)
-- Hero image per entry (public domain via Wikimedia)
-- Lazy-loaded, responsive
-- Caption with attribution
-- Fallback if image unavailable
+### 🔍 Search & Discovery
+- [ ] Full-text search across all entries
+- [ ] "Surprise Me" / Random button
+- [ ] Era quick-jump (Antiquity / Medieval / Renaissance / Enlightenment / Modern / Contemporary)
 
-### 2. Filter by Dimension
-- Toggle buttons in header to show only one dimension across all entries
-- "All" mode (default) shows everything
-- Enables tracing one thread (e.g. philosophy) through history
+### 🧵 Threads & Connections
+- [ ] Thread index page — dedicated view listing all threads with their connected entries
+- [ ] "Related entries" section — when expanded, show links to other entries sharing threads
 
-### 3. Cross-Entry Threads
-- Tag key concepts in each entry (e.g. "Neoplatonism", "fragmentation", "positivism")
-- Click a tag → highlights all entries sharing that thread
-- Visual connection lines or glow between related entries
-- The killer feature: makes influence *visible* across time
+### 🗺️ Map View
+- [ ] Geographic dimension — each entry gets lat/lon coordinates
+- [ ] Map view toggle — entries plotted on a world map
+- [ ] Animated map — scrub through time, entries light up geographically
 
-## 📋 Backlog (future phases)
+### 🔎 Context & Discovery
+- [ ] "Meanwhile..." sidebar — 1-sentence summaries of what was happening elsewhere when expanding an entry
+- [ ] "On this day" — highlight entries near today's date in history
+- [ ] Entry count / stats — total entries, date range, most-connected threads
+- [ ] Density minimap — header widget showing where entries cluster, suggesting gaps to fill
 
-### 4. Map View
-- Dots on a map for place-specific entries
-- Click dot → expand entry
-- Shows geographic patterns of cultural production
+### 🎨 Visual & UX
+- [ ] Dark/light theme toggle
+- [ ] Keyboard navigation — arrow keys between entries, Enter to expand/collapse
+- [ ] Reading progress indicator
+- [ ] Entry transition animations — stagger entrance when filtering
 
-### 5. "Surprise Me" Button
-- Random entry selector
-- Low effort, high delight
+### 📱 Mobile & PWA
+- [ ] PWA support — installable, offline reading of cached entries
+- [ ] Swipe gestures — swipe to expand/collapse on mobile
+- [ ] Full-bleed images on small screens
 
-### 6. "Meanwhile..." Sidebar
-- When expanding an entry, show 1-sentence summaries of what was happening elsewhere
-- Keeps Western focus but acknowledges wider world
+### 🤖 AI & Interactive
+- [ ] "Ask about this era" button — chat with Johnny about any entry's context
+- [ ] Entry suggestions — users propose time slices via form or Telegram
+- [ ] Quiz mode — "Which movement was X part of?" / "What connects A to B?"
+- [ ] Daily digest — Telegram message with today's new slice + an older highlight
 
-### 7. Quiz Mode
-- Generated from existing data
-- "Which movement was X part of?" / "What connects A to B?" / "Chronological order"
-- Toggle between reading and testing
+### 📝 Content & Depth
+- [ ] Deep dive links — surface sources as "Want to go deeper?" + curated external readings
+- [ ] Primary source quotes — embed actual quotes from the era in each dimension
+- [ ] Audio narration — TTS per entry (Johnny's voice?)
+- [ ] Deep dive entries — longer, more detailed format for landmark moments
+- [ ] Non-Western expansion — occasional focused series beyond Western focus
 
-### 8. Deep Dive Links
-- Surface the sources array as "Want to go deeper?" links
-- Add curated external readings (museums, primary sources)
+---
 
-### 9. Audio Narration
-- TTS per entry, play button
-- Good for mobile / accessibility
-
-### 10. Density Minimap
-- Header widget showing where entries cluster on the timeline
-- Suggests gaps to fill
+*Last updated: 2026-02-24*
