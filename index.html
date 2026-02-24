@@ -207,11 +207,17 @@
   }
 
   /* 🎲 Random dice button */
-  .dice-btn {
+  /* Floating action buttons below header */
+  .quick-actions {
     position: fixed;
     top: 72px;
     right: 32px;
     z-index: 99;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .quick-btn {
     width: 40px;
     height: 40px;
     display: flex;
@@ -227,13 +233,13 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.2s ease;
     backdrop-filter: blur(8px);
   }
-  .dice-btn:hover {
+  .quick-btn:hover {
     transform: scale(1.12);
     box-shadow: 0 0 16px rgba(124, 111, 247, 0.3);
     background: rgba(124, 111, 247, 0.25);
   }
-  .dice-btn:active { transform: scale(0.95); }
-  .dice-btn.rolling { animation: diceRoll 0.5s ease-out; }
+  .quick-btn:active { transform: scale(0.95); }
+  .quick-btn.rolling { animation: diceRoll 0.5s ease-out; }
   @keyframes diceRoll {
     0% { transform: rotate(0deg) scale(1); }
     25% { transform: rotate(90deg) scale(1.2); }
@@ -242,7 +248,8 @@
     100% { transform: rotate(360deg) scale(1); }
   }
   @media (max-width: 600px) {
-    .dice-btn { top: 68px; right: 16px; width: 36px; height: 36px; font-size: 1.1rem; }
+    .quick-actions { top: 68px; right: 16px; gap: 8px; }
+    .quick-btn { width: 36px; height: 36px; font-size: 1.1rem; }
   }
   .entry:hover .card {
     border-color: var(--accent);
@@ -938,7 +945,10 @@
   </div>
 </header>
 
-<button class="dice-btn" id="diceBtn" title="Random slice">🎲</button>
+<div class="quick-actions" id="quickActions">
+  <button class="quick-btn" id="coffeeBtn" title="Today's fresh entry">☕</button>
+  <button class="quick-btn" id="diceBtn" title="Random slice">🎲</button>
+</div>
 
 <div class="timeline-container">
   <div class="timeline-line"></div>
@@ -2370,7 +2380,7 @@ function showMapView() {
   document.getElementById('mapTimeControl').classList.add('visible');
   document.getElementById('viewToggle').classList.add('active');
   document.getElementById('viewToggle').textContent = 'Timeline';
-  document.getElementById('diceBtn').style.display = 'none';
+  document.getElementById('quickActions').style.display = 'none';
 
   // Hide timeline's thread banner — header is z-100, above map z-50
   document.getElementById('threadBanner').classList.remove('visible');
@@ -2389,7 +2399,7 @@ function showTimelineView() {
   document.getElementById('mapTimeControl').classList.remove('visible');
   document.getElementById('viewToggle').classList.remove('active');
   document.getElementById('viewToggle').textContent = 'Map';
-  document.getElementById('diceBtn').style.display = 'flex';
+  document.getElementById('quickActions').style.display = 'flex';
 
   // Sync thread state: apply whatever thread is active (or clear)
   if (activeThread) {
@@ -2484,6 +2494,21 @@ document.getElementById('diceBtn').addEventListener('click', () => {
   setTimeout(() => {
     if (!target.classList.contains('expanded')) {
       target.click();
+    }
+  }, 600);
+});
+
+// ☕ Coffee button — scroll to the freshest entry (the one with the badge)
+document.getElementById('coffeeBtn').addEventListener('click', () => {
+  const freshEntry = document.querySelector('.entry .fresh-badge');
+  if (!freshEntry) return;
+  const entry = freshEntry.closest('.entry');
+  if (!entry) return;
+
+  entry.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  setTimeout(() => {
+    if (!entry.classList.contains('expanded')) {
+      entry.click();
     }
   }, 600);
 });
