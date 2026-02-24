@@ -129,6 +129,7 @@
     margin-bottom: 48px;
     cursor: pointer;
     transition: transform 0.2s ease, opacity 0.3s ease, max-height 0.4s ease, margin-bottom 0.4s ease;
+    scroll-margin-top: 100px;
   }
   .entry:hover { transform: translateY(-2px); }
   .entry:nth-child(odd) { margin-left: 5%; }
@@ -1175,6 +1176,7 @@ function renderSlice(slice, isFresh = false) {
 
   const el = document.createElement('div');
   el.className = 'entry';
+  el.id = `entry-${slice.year}`;
   el.dataset.year = slice.year;
   el.dataset.threads = JSON.stringify(slice.threads || []);
   const freshBadgeHtml = isFresh ? '<div class="fresh-badge">☕</div>' : '';
@@ -1380,7 +1382,7 @@ function activateThread(threadId) {
   // Scroll to first matching entry
   if (matchingEntries.length > 0) {
     setTimeout(() => {
-      matchingEntries[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      highlightAndScroll(matchingEntries[0]);
     }, 300);
   }
 }
@@ -1596,8 +1598,8 @@ function loadSlices(restoreYear) {
         window.scrollTo(0, 0);
       } else if (restoreYear) {
         requestAnimationFrame(() => {
-          const target = document.querySelector(`.entry[data-year="${restoreYear}"]`);
-          if (target) target.scrollIntoView({ block: 'center' });
+          const target = document.querySelector(`#entry-${restoreYear}`);
+          if (target) highlightAndScroll(target);
         });
       }
 
@@ -2487,7 +2489,7 @@ function showTimelineView() {
 function scrollToEntryByYear(year) {
   showTimelineView();
   setTimeout(() => {
-    const entry = document.querySelector(`.entry[data-year="${year}"]`);
+    const entry = document.getElementById(`entry-${year}`);
     if (entry) {
       highlightAndScroll(entry);
     }
@@ -2559,14 +2561,11 @@ function highlightAndScroll(entry) {
   // Reveal everything else so layout is stable
   document.querySelectorAll('.entry:not(.visible)').forEach(el => el.classList.add('visible'));
 
-  // Manual scroll: don't use scrollIntoView (unreliable on mobile Safari)
+  // Use native hash navigation — most reliable across all browsers/mobile
+  // Clear hash first so re-navigating to the same entry still works
+  history.replaceState(null, '', window.location.pathname + window.location.search);
   requestAnimationFrame(() => {
-    const headerH = document.querySelector('header')?.offsetHeight || 70;
-    const rect = entry.getBoundingClientRect();
-    const entryCenter = window.scrollY + rect.top + rect.height / 2;
-    const scrollTarget = entryCenter - headerH - (window.innerHeight - headerH) / 2;
-
-    window.scrollTo({ top: Math.max(0, scrollTarget), behavior: 'smooth' });
+    location.hash = entry.id;
 
     // Warm glow highlight
     entry.style.transition = 'box-shadow 0.3s ease';
@@ -2574,6 +2573,8 @@ function highlightAndScroll(entry) {
     setTimeout(() => {
       entry.style.boxShadow = '';
       entry.style.transition = '';
+      // Clean up hash from URL bar
+      history.replaceState(null, '', window.location.pathname + window.location.search);
     }, 1500);
   });
 }
