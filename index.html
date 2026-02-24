@@ -659,9 +659,31 @@
     cursor: pointer;
     transition: all 0.2s ease;
     display: flex; align-items: center; justify-content: center;
+    position: relative;
   }
-  .time-play-btn:hover { border-color: var(--accent); color: var(--accent); }
-  .time-play-btn.playing { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .time-play-btn .play-icon,
+  .time-play-btn .pause-icon { display: flex; align-items: center; justify-content: center; }
+  .time-play-btn .play-icon {
+    width: 0; height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 10px;
+    border-color: transparent transparent transparent var(--text-dim);
+    margin-left: 2px;
+    transition: border-color 0.2s ease;
+  }
+  .time-play-btn .pause-icon {
+    display: none;
+    gap: 3px;
+  }
+  .time-play-btn .pause-icon span {
+    width: 3px; height: 12px;
+    background: #fff;
+    border-radius: 1px;
+  }
+  .time-play-btn:hover .play-icon { border-left-color: var(--accent); }
+  .time-play-btn.playing { background: var(--accent); border-color: var(--accent); }
+  .time-play-btn.playing .play-icon { display: none; }
+  .time-play-btn.playing .pause-icon { display: flex; }
 
   /* Map marker pulse */
   @keyframes markerPulse {
@@ -835,7 +857,7 @@
 
 <div class="map-time-control" id="mapTimeControl">
   <div class="time-slider-row">
-    <button class="time-play-btn" id="timePlayBtn">▶</button>
+    <button class="time-play-btn" id="timePlayBtn"><span class="play-icon"></span><span class="pause-icon"><span></span><span></span></span></button>
     <span class="time-year-display" id="timeYearDisplay">762</span>
     <input type="range" class="time-slider" id="timeSlider" min="700" max="2026" value="2026" step="1">
   </div>
@@ -1636,7 +1658,6 @@ function startMapPlay() {
 
   mapIsPlaying = true;
   _lastVisibleSet = '';  // reset so first frame triggers a fit
-  document.getElementById('timePlayBtn').textContent = '⏸';
   document.getElementById('timePlayBtn').classList.add('playing');
 
   const slider = document.getElementById('timeSlider');
@@ -1725,7 +1746,6 @@ async function startThreadTour() {
 
   mapIsPlaying = true;
   _threadTourAbort = false;
-  document.getElementById('timePlayBtn').textContent = '⏸';
   document.getElementById('timePlayBtn').classList.add('playing');
 
   const slider = document.getElementById('timeSlider');
@@ -1917,7 +1937,6 @@ function stopMapPlay() {
   mapIsPlaying = false;
   _threadTourAbort = true;
   _suppressAutoFit = false;
-  document.getElementById('timePlayBtn').textContent = '▶';
   document.getElementById('timePlayBtn').classList.remove('playing');
 }
 
