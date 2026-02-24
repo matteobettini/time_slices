@@ -75,6 +75,81 @@
     }
   },
   {
+    "year": "1347",
+    "title": "Florence — The Beautiful Catastrophe",
+    "teaser": "A third of Europe dies. From the ashes, Boccaccio writes in the vernacular, painters discover the skull beneath the skin, and philosophy learns to cut with a razor.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "The <strong>Triumph of Death</strong> becomes Europe's defining image. The anonymous Palermo fresco (c. 1446, but rooted in the iconography born now) shows Death on a skeletal horse trampling nobles and clergy alike — democracy through annihilation. The <strong><em>danse macabre</em></strong> tradition emerges: paintings and murals in churches and cemeteries depicting the living dancing with their own corpses, pope alongside peasant. This is something new — art as memento mori at civilisational scale. In Siena, <strong>Ambrogio Lorenzetti</strong> (d. 1348) has just completed his <em>Allegory of Good and Bad Government</em>, the first great secular fresco cycle; the plague kills him and halts Sienese painting for a generation. Art turns inward, devotional, haunted."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Boccaccio</strong>'s <em>Decameron</em> (written 1348–1353) frames a hundred stories inside the plague itself: ten young Florentines flee to the countryside and tell tales to hold death at bay. It's literature as survival — and the first great prose masterpiece in <strong>vernacular Italian</strong>, proving that the language of the streets can carry the weight of Ovid and Apuleius. <strong>Petrarch</strong>, who loses his beloved Laura to the plague in April 1348, transforms private grief into the <em>Canzoniere</em>'s second half — the poems <em>in morte di Madonna Laura</em> become the template for European love poetry for three centuries. Both writers are doing something radical: choosing Italian and the personal voice over Latin and scholastic authority."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>William of Ockham</strong> (d. 1347) dies this very year, likely of plague, leaving behind the most powerful philosophical weapon of the late Middle Ages: <strong>nominalism</strong>. His razor — <em>entities must not be multiplied beyond necessity</em> — demolishes the Scholastic apparatus of universals, essences, and invisible categories. Only particulars are real; everything else is a name we give them. This is a depth charge under medieval metaphysics. Combined with the plague's brutal empirical lesson that no amount of theology stops people from dying, nominalism opens a crack that will widen into the Renaissance, the Reformation, and eventually modern science."
+      },
+      "hist": {
+        "label": "History",
+        "content": "The <strong>Black Death</strong> arrives in Sicily in October 1347, carried by Genoese ships from the Crimean port of Caffa (where the Mongols allegedly catapulted infected corpses over the walls — history's first biological weapon). By 1351, it has killed between a third and half of Europe's population — perhaps 25 million people. Florence drops from 120,000 to 50,000. The social order cracks: the <strong>Flagellant</strong> movement sweeps Germany, mobs massacre Jewish communities across the Rhineland, the Church's authority wobbles as prayers prove useless. But the survivors inherit a transformed economy — labour is scarce, wages rise, serfdom weakens. The catastrophe seeds the conditions for everything that comes after."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "Ockham's razor and the plague deliver the same message from different directions: <strong>the old abstractions don't hold</strong>. Scholasticism said universals were real; Ockham says only individuals exist. The Church said God's order was legible; the plague makes it illegible. Boccaccio's storytellers don't pray — they <em>narrate</em>, replacing theology with human wit. Petrarch mourns Laura not as a Platonic symbol but as a specific, irreplaceable person. The danse macabre paintings democratise death the same way the plague democratises it: no one is exempt. All of this — nominalism, vernacular literature, the crisis of Church authority — points directly toward the Renaissance humanism that will flower 150 years later in the same Florentine streets.",
+        "funFact": "Boccaccio's Decameron contains a story (VI.10) where a friar passes off a parrot's feather as the Angel Gabriel's — mocking relic fraud. Within a generation of the plague, the Church's monopoly on truth was already being laughed at in prose."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Black_Death",
+        "title": "Black Death — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Decameron",
+        "title": "The Decameron — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Petrarch",
+        "title": "Petrarch — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/William_of_Ockham",
+        "title": "William of Ockham — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Danse_macabre",
+        "title": "Danse macabre — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Consequences_of_the_Black_Death",
+        "title": "Consequences of the Black Death — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Flagellants",
+        "title": "Flagellants — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1347-triumph-of-death.jpg",
+      "caption": "Triumph of Death (c. 1446), fresco, Palazzo Abatellis, Palermo",
+      "attribution": "Public Domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "memento-mori",
+      "nominalism",
+      "vernacular-literature",
+      "fragmentation",
+      "death-of-god"
+    ],
+    "location": {
+      "lat": 43.7696,
+      "lon": 11.2558,
+      "place": "Florence"
+    }
+  },
+  {
     "year": "1504",
     "title": "Florence — The Duel of Giants",
     "teaser": "Michelangelo and Leonardo compete for the same wall. The Renaissance peaks.",

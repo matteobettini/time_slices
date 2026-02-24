@@ -891,6 +891,9 @@ const THREAD_LABELS = {
     'logical-positivism': 'Logical Positivism',
     'existentialism': 'Existentialism',
     'totalitarianism': 'Totalitarianism',
+    'memento-mori': 'Memento Mori',
+    'nominalism': 'Nominalism',
+    'vernacular-literature': 'Vernacular Literature',
   },
   it: {
     'translation-movement': 'Traduzione come potere',
@@ -914,6 +917,9 @@ const THREAD_LABELS = {
     'logical-positivism': 'Positivismo logico',
     'existentialism': 'Esistenzialismo',
     'totalitarianism': 'Totalitarismo',
+    'memento-mori': 'Memento Mori',
+    'nominalism': 'Nominalismo',
+    'vernacular-literature': 'Letteratura in volgare',
   }
 };
 
@@ -1077,12 +1083,22 @@ function renderMarker(marker) {
 const THREAD_NARRATIVES = {
   en: {
     'death-of-god': {
+      '1347→1889': 'The Black Death made God\'s order illegible five centuries before Nietzsche declared Him dead. Ockham\'s razor stripped away metaphysical certainties; by 1889, Nietzsche finished the job — and collapsed under the weight of it.',
+      '1347→1922': 'From plague to wasteland: the crisis of divine authority that began when prayers couldn\'t stop the Black Death reaches its modernist conclusion in Eliot\'s fragments and Wittgenstein\'s silence about what cannot be said.',
       '1889→1922': 'Nietzsche declared God dead in 1882. By 1922, the void he predicted had swallowed certainty itself — Eliot\'s <em>Waste Land</em> mapped the wreckage, while logical positivism tried to rebuild meaning from scratch.',
+    },
+    'fragmentation': {
+      '1347→1922': 'The plague shattered medieval unity — Church authority, feudal order, demographic stability, all broken at once. Six centuries later, modernism made fragmentation into an art form, shattering narrative, painting, and language with the same democratic indifference.',
     },
   },
   it: {
     'death-of-god': {
+      '1347→1889': 'La Peste Nera rese illeggibile l\'ordine divino cinque secoli prima che Nietzsche ne dichiarasse la morte. Il rasoio di Ockham aveva già spogliato le certezze metafisiche; nel 1889, Nietzsche completò l\'opera — e crollò sotto il suo peso.',
+      '1347→1922': 'Dalla peste alla terra desolata: la crisi dell\'autorità divina, iniziata quando le preghiere non fermarono la Morte Nera, raggiunge la sua conclusione modernista nei frammenti di Eliot e nel silenzio di Wittgenstein su ciò che non si può dire.',
       '1889→1922': 'Nietzsche dichiarò morto Dio nel 1882. Entro il 1922, il vuoto che aveva predetto aveva inghiottito la certezza stessa — <em>La terra desolata</em> di Eliot ne mappava le macerie, mentre il positivismo logico tentava di ricostruire il significato da zero.',
+    },
+    'fragmentation': {
+      '1347→1922': 'La peste frantumò l\'unità medievale — autorità della Chiesa, ordine feudale, stabilità demografica, tutto spezzato in una volta. Sei secoli dopo, il modernismo fece della frammentazione una forma d\'arte, frantumando narrazione, pittura e linguaggio con la stessa democratica indifferenza.',
     },
   },
 };

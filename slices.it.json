@@ -71,6 +71,81 @@
     }
   },
   {
+    "year": "1347",
+    "title": "Firenze — La bella catastrofe",
+    "teaser": "Un terzo d'Europa muore. Dalle ceneri, Boccaccio scrive in volgare, i pittori scoprono il teschio sotto la pelle, e la filosofia impara a tagliare col rasoio.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Il <strong>Trionfo della Morte</strong> diventa l'immagine-simbolo dell'Europa. L'anonimo affresco di Palermo (c. 1446, ma radicato nell'iconografia che nasce proprio ora) mostra la Morte a cavallo di uno scheletro che travolge nobili e prelati senza distinzione — la democrazia attraverso l'annientamento. Nasce la tradizione della <strong><em>danse macabre</em></strong>: pitture e affreschi in chiese e cimiteri che raffigurano i vivi danzare coi propri cadaveri, il papa accanto al contadino. È qualcosa di nuovo — l'arte come memento mori su scala di civiltà. A Siena, <strong>Ambrogio Lorenzetti</strong> (m. 1348) ha appena completato l'<em>Allegoria del Buono e del Cattivo Governo</em>, il primo grande ciclo di affreschi laici; la peste lo uccide e blocca la pittura senese per un'intera generazione. L'arte si fa interiore, devozionale, tormentata."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Il <em>Decameron</em> di <strong>Boccaccio</strong> (scritto tra il 1348 e il 1353) incornicia cento novelle dentro la peste stessa: dieci giovani fiorentini fuggono in campagna e raccontano storie per tenere a bada la morte. È la letteratura come sopravvivenza — e il primo grande capolavoro in prosa in <strong>volgare italiano</strong>, la prova che la lingua della strada può reggere il peso di Ovidio e Apuleio. <strong>Petrarca</strong>, che perde l'amata Laura a causa della peste nell'aprile 1348, trasforma il lutto privato nella seconda metà del <em>Canzoniere</em> — le rime <em>in morte di Madonna Laura</em> diventeranno il modello della poesia amorosa europea per tre secoli. Entrambi fanno qualcosa di radicale: scegliere l'italiano e la voce personale al posto del latino e dell'autorità scolastica."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>Guglielmo di Ockham</strong> (m. 1347) muore proprio quest'anno, probabilmente di peste, lasciando dietro di sé l'arma filosofica più potente del tardo Medioevo: il <strong>nominalismo</strong>. Il suo rasoio — <em>entia non sunt multiplicanda praeter necessitatem</em> — demolisce l'apparato scolastico di universali, essenze e categorie invisibili. Solo i particolari sono reali; tutto il resto è un nome che gli diamo. È una carica esplosiva sotto la metafisica medievale. Unito alla lezione empirica brutale della peste — nessuna teologia ferma la gente dal morire — il nominalismo apre una crepa che si allargherà fino al Rinascimento, alla Riforma e infine alla scienza moderna."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "La <strong>Peste Nera</strong> arriva in Sicilia nell'ottobre 1347, portata da navi genovesi dal porto crimeano di Caffa (dove i Mongoli avrebbero catapultato cadaveri infetti oltre le mura — la prima arma biologica della storia). Entro il 1351 ha ucciso tra un terzo e la metà della popolazione europea — forse 25 milioni di persone. Firenze crolla da 120.000 a 50.000 abitanti. L'ordine sociale si sgretola: il movimento dei <strong>Flagellanti</strong> attraversa la Germania, folle massacrano le comunità ebraiche lungo il Reno, l'autorità della Chiesa vacilla perché le preghiere si rivelano inutili. Ma i sopravvissuti ereditano un'economia trasformata — la manodopera scarseggia, i salari salgono, la servitù della gleba s'indebolisce. La catastrofe semina le condizioni per tutto ciò che verrà dopo."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Il rasoio di Ockham e la peste consegnano lo stesso messaggio da direzioni diverse: <strong>le vecchie astrazioni non reggono più</strong>. La Scolastica diceva che gli universali erano reali; Ockham dice che esistono solo gli individui. La Chiesa diceva che l'ordine di Dio era leggibile; la peste lo rende illeggibile. I narratori di Boccaccio non pregano — <em>raccontano</em>, sostituendo la teologia con l'ingegno umano. Petrarca piange Laura non come simbolo platonico ma come persona specifica e insostituibile. Gli affreschi della danse macabre democratizzano la morte come la peste la democratizza: nessuno è risparmiato. Tutto questo — nominalismo, letteratura in volgare, crisi dell'autorità ecclesiastica — punta dritto verso l'umanesimo rinascimentale che fiorirà centocinquant'anni dopo nelle stesse strade fiorentine.",
+        "funFact": "Il Decameron contiene una novella (VI, 10) in cui un frate spaccia una piuma di pappagallo per una penna dell'Angelo Gabriele — prendendo in giro la frode delle reliquie. A una generazione dalla peste, il monopolio della Chiesa sulla verità veniva già deriso in prosa."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Peste_nera",
+        "title": "Peste nera — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Decameron",
+        "title": "Decameron — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Francesco_Petrarca",
+        "title": "Francesco Petrarca — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Guglielmo_di_Ockham",
+        "title": "Guglielmo di Ockham — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Danza_macabra",
+        "title": "Danza macabra — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Consequences_of_the_Black_Death",
+        "title": "Conseguenze della Peste Nera — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Flagellanti",
+        "title": "Flagellanti — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1347-triumph-of-death.jpg",
+      "caption": "Trionfo della Morte (c. 1446), affresco, Palazzo Abatellis, Palermo",
+      "attribution": "Pubblico dominio, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "memento-mori",
+      "nominalism",
+      "vernacular-literature",
+      "fragmentation",
+      "death-of-god"
+    ],
+    "location": {
+      "lat": 43.7696,
+      "lon": 11.2558,
+      "place": "Florence"
+    }
+  },
+  {
     "year": "1504",
     "title": "Firenze — Il duello dei giganti",
     "teaser": "Michelangelo e Leonardo competono per la stessa parete. Il Rinascimento raggiunge il suo apice.",
