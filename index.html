@@ -1542,6 +1542,25 @@ function createMapMarker(slice) {
   marker._sliceYear = parseInt(slice.year);
   marker._sliceThreads = slice.threads || [];
 
+  marker.on('popupopen', () => {
+    const el = marker.getElement();
+    if (el) {
+      const lbl = el.querySelector('.map-marker-label');
+      const yr = el.querySelector('.map-marker-year');
+      if (lbl) lbl.style.opacity = '0';
+      if (yr) yr.style.opacity = '0';
+    }
+  });
+  marker.on('popupclose', () => {
+    const el = marker.getElement();
+    if (el) {
+      const lbl = el.querySelector('.map-marker-label');
+      const yr = el.querySelector('.map-marker-year');
+      if (lbl) lbl.style.opacity = '';
+      if (yr) yr.style.opacity = '';
+    }
+  });
+
   return marker;
 }
 
