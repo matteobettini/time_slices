@@ -1635,18 +1635,6 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
   document.querySelectorAll('.lang-btn').forEach(b => {
     b.classList.toggle('active', b.dataset.lang === currentLang);
   });
-  // Dim buttons until slices are loaded
-  document.getElementById('coffeeBtn').classList.add('loading');
-  document.getElementById('diceBtn').classList.add('loading');
-  slicesReady.then(() => {
-    // Double-rAF to ensure DOM is painted before removing loading state
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        document.getElementById('coffeeBtn').classList.remove('loading');
-        document.getElementById('diceBtn').classList.remove('loading');
-      });
-    });
-  });
   updateUILabels();
   loadSlices();
 })();
@@ -1719,7 +1707,7 @@ function createMapMarker(slice) {
     <div class="map-popup-title">${slice.title}</div>
     <div class="map-popup-teaser">${slice.teaser}</div>
     <div class="map-popup-threads">${threads}</div>
-    <a class="map-popup-link" onclick="scrollToEntry('${slice.year}')">${t('viewInTimeline')}</a>
+    <a class="map-popup-link" onclick="scrollToEntryByYear('${slice.year}')">${t('viewInTimeline')}</a>
   `);
 
   marker.bindPopup(popup);
@@ -2496,18 +2484,12 @@ function showTimelineView() {
   }
 }
 
-function scrollToEntry(year) {
+function scrollToEntryByYear(year) {
   showTimelineView();
   setTimeout(() => {
     const entry = document.querySelector(`.entry[data-year="${year}"]`);
     if (entry) {
-      entry.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      // Flash highlight
-      entry.style.transition = 'box-shadow 0.3s ease';
-      entry.querySelector('.card').style.boxShadow = '0 0 30px rgba(124,111,247,0.4)';
-      setTimeout(() => {
-        entry.querySelector('.card').style.boxShadow = '';
-      }, 1500);
+      highlightAndScroll(entry);
     }
   }, 200);
 }
@@ -2565,30 +2547,22 @@ document.querySelectorAll('[data-map="1"]').forEach(btn => {
   });
 });
 
-// Helper: reveal all entries so scroll targets are visible
-function revealAllEntries() {
-  document.querySelectorAll('.entry:not(.visible)').forEach(el => el.classList.add('visible'));
-}
-
-// Helper: instantly reveal + scroll to entry (skip CSS transition for target)
-function scrollToEntry(entry) {
+// ── Shared helper: make an entry visible, scroll to it, highlight it ──
+function highlightAndScroll(entry) {
   if (!entry) return;
 
-  // Instantly reveal the target — skip the 0.5s CSS transition entirely
+  // Make sure the target is visible (skip scroll-reveal transition)
   entry.style.transition = 'none';
   entry.classList.add('visible');
-  // Force layout so the browser applies opacity:1 + transform:none synchronously
-  entry.offsetHeight;
+  entry.offsetHeight; // force reflow
 
-  // Reveal everything else normally (with their CSS transitions)
-  revealAllEntries();
+  // Reveal everything else normally
+  document.querySelectorAll('.entry:not(.visible)').forEach(el => el.classList.add('visible'));
 
-  // Double-rAF: first rAF gets us to the next frame, second ensures paint
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
       entry.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-      // Restore transition ability, then do the highlight glow
+      // Warm glow highlight
       entry.style.transition = 'box-shadow 0.3s ease';
       entry.style.boxShadow = '0 0 20px rgba(209,154,102,0.5)';
       setTimeout(() => {
@@ -2599,32 +2573,27 @@ function scrollToEntry(entry) {
   });
 }
 
-// 🎲 Random dice — scroll to a random slice
-document.getElementById('diceBtn').addEventListener('click', async () => {
+// ── 🎲 Dice: pick a random entry from whatever is in the DOM right now ──
+document.getElementById('diceBtn').addEventListener('click', () => {
   const btn = document.getElementById('diceBtn');
-  if (btn.classList.contains('loading')) return;
+  const entries = Array.from(document.querySelectorAll('.entry[data-year]'));
+  if (!entries.length) return; // nothing rendered yet — silently no-op
+
+  // Roll animation
   btn.classList.add('rolling');
   setTimeout(() => btn.classList.remove('rolling'), 500);
 
-  await slicesReady;
-
-  const entries = document.querySelectorAll('.entry');
-  if (!entries.length) return;
   const target = entries[Math.floor(Math.random() * entries.length)];
-  scrollToEntry(target);
+  highlightAndScroll(target);
 });
 
-// ☕ Coffee button — scroll to the freshest entry (the one with the badge)
-document.getElementById('coffeeBtn').addEventListener('click', async () => {
-  const btn = document.getElementById('coffeeBtn');
-  if (btn.classList.contains('loading')) return;
+// ── ☕ Coffee: scroll to the freshest entry (the one with the ☕ badge) ──
+document.getElementById('coffeeBtn').addEventListener('click', () => {
+  const badge = document.querySelector('.entry .fresh-badge');
+  if (!badge) return; // no fresh badge in DOM yet — silently no-op
 
-  await slicesReady;
-
-  const freshEntry = document.querySelector('.entry .fresh-badge');
-  if (!freshEntry) return;
-  const entry = freshEntry.closest('.entry');
-  scrollToEntry(entry);
+  const entry = badge.closest('.entry');
+  highlightAndScroll(entry);
 });
 </script>
 
