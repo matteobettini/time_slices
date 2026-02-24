@@ -27,13 +27,46 @@
       }
     },
     "sources": [
-      {"url": "https://en.wikipedia.org/wiki/Abbasid_Caliphate", "title": "Abbasid Caliphate — Wikipedia"},
-      {"url": "https://en.wikipedia.org/wiki/Islamic_Golden_Age", "title": "Islamic Golden Age — Wikipedia"},
-      {"url": "https://en.wikipedia.org/wiki/Round_city_of_Baghdad", "title": "Round City of Baghdad — Wikipedia"},
-      {"url": "https://en.wikipedia.org/wiki/Mu%27tazila", "title": "Mu'tazila — Wikipedia"},
-      {"url": "https://en.wikipedia.org/wiki/Abu_Nuwas", "title": "Abu Nuwas — Wikipedia"},
-      {"url": "https://en.wikipedia.org/wiki/Battle_of_Talas", "title": "Battle of Talas — Wikipedia"},
-      {"url": "https://en.wikipedia.org/wiki/Barmakids", "title": "Barmakids — Wikipedia"}
+      {
+        "url": "https://en.wikipedia.org/wiki/Abbasid_Caliphate",
+        "title": "Abbasid Caliphate — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Islamic_Golden_Age",
+        "title": "Islamic Golden Age — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Round_city_of_Baghdad",
+        "title": "Round City of Baghdad — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Mu%27tazila",
+        "title": "Mu'tazila — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Abu_Nuwas",
+        "title": "Abu Nuwas — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Talas",
+        "title": "Battle of Talas — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Barmakids",
+        "title": "Barmakids — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Umar_Farrukh%27s_the_round_city.png",
+      "caption": "Plan of al-Mansur's Round City of Baghdad",
+      "attribution": "Umar Farrukh, via Wikimedia Commons"
+    },
+    "threads": [
+      "translation-movement",
+      "rationalism",
+      "islamic-golden-age",
+      "cosmopolitanism",
+      "geometry-as-ideology"
     ]
   },
   {
@@ -62,7 +95,19 @@
         "content": "<strong>Machiavelli watches power while Leonardo and Michelangelo depict it</strong> — on the same walls. The Renaissance's unity of knowledge means the diplomat, the painter, and the philosopher all inhabit the same intellectual world. Neoplatonism and Christian humanism are two faces of the same rejection of medieval authority: both insist on going back to original sources — whether Plato or Scripture. The <em>David</em> isn't just sculpture; it's a political statement: the small republic standing against giants, classical form serving civic ideology.",
         "funFact": "When the committee chose where to place the David, Leonardo and Botticelli were both on the panel. Leonardo suggested hiding it in a loggia. He was outvoted."
       }
-    }
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/%27David%27_by_Michelangelo_Fir_JBU004.jpg/600px-%27David%27_by_Michelangelo_Fir_JBU004.jpg",
+      "caption": "Michelangelo's David (1501–1504), Galleria dell'Accademia, Florence",
+      "attribution": "Fir0002, CC BY-SA 3.0, via Wikimedia Commons"
+    },
+    "threads": [
+      "renaissance-humanism",
+      "neoplatonism",
+      "classical-revival",
+      "art-and-power",
+      "christian-humanism"
+    ]
   },
   {
     "year": "1889",
@@ -90,7 +135,20 @@
         "content": "Bergson's insight that <strong>lived time ≠ measured time</strong> is exactly what the Post-Impressionists are painting: Van Gogh doesn't show what the sky looks like, he shows what it <em>feels</em> like. Nietzsche's death-of-God and Van Gogh's asylum visions share the same vertigo — old certainties dissolving into energy. The Eiffel Tower embodies the era's central tension: is <strong>modernity</strong> liberation or monstrosity? Maupassant famously ate in the Tower's restaurant because \"it's the only place in Paris where you can't see the damn thing.\"",
         "funFact": "Theo van Gogh tried to sell Vincent's paintings at the 1889 World's Fair. Almost no one bought. A century later, those paintings would sell for $80+ million each."
       }
-    }
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/800px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+      "caption": "Vincent van Gogh, The Starry Night (1889), MoMA, New York",
+      "attribution": "Google Art Project, Public Domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "post-impressionism",
+      "crisis-of-positivism",
+      "modernity",
+      "death-of-god",
+      "expressionism",
+      "symbolism"
+    ]
   },
   {
     "year": "1922",
@@ -118,6 +176,19 @@
         "content": "Everything connects through <strong>fragmentation</strong>. Eliot's <em>Waste Land</em> is literally fragments. Joyce fragments narrative into a dozen styles. The Bauhaus fragments art into geometry. Wittgenstein fragments language into logical atoms. Why? Because the war fragmented <em>everything</em> — empires, bodies, certainties. <strong>Modernism</strong> isn't a style; it's the art of a shattered world trying to reassemble itself. Proust dies trying to capture all of time; Wittgenstein insists we stay silent about what we can't capture. Two responses to the same impossibility.",
         "funFact": "Ezra Pound edited The Waste Land so ruthlessly he cut it nearly in half. The original draft, found in 1968, suggests Pound may have been the greatest editor in literary history."
       }
-    }
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bauhaus.JPG/800px-Bauhaus.JPG",
+      "caption": "The Bauhaus building in Dessau, designed by Walter Gropius",
+      "attribution": "Mewes, CC BY-SA 3.0, via Wikimedia Commons"
+    },
+    "threads": [
+      "modernism",
+      "fragmentation",
+      "logical-positivism",
+      "existentialism",
+      "totalitarianism",
+      "death-of-god"
+    ]
   }
 ]

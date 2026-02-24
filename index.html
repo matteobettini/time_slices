@@ -34,12 +34,16 @@
   /* Header */
   header {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    background: rgba(10,10,15,0.92);
+    background: rgba(10,10,15,0.95);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
-    padding: 16px 32px;
-    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 32px;
   }
+  .header-top {
+    display: flex; align-items: baseline; justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .header-left { display: flex; align-items: baseline; }
   header h1 {
     font-size: 1.4rem; font-weight: 700;
     background: linear-gradient(135deg, var(--accent), var(--art));
@@ -47,18 +51,62 @@
   }
   header .subtitle { color: var(--text-dim); font-size: 0.85rem; margin-left: 12px; }
 
-  /* Legend */
-  .legend {
-    display: flex; gap: 16px; font-size: 0.8rem;
+  /* Dimension filters */
+  .filters {
+    display: flex; gap: 6px; flex-wrap: wrap;
   }
-  .legend-item { display: flex; align-items: center; gap: 5px; color: var(--text-dim); }
-  .legend-dot {
-    width: 8px; height: 8px; border-radius: 50%;
+  .filter-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 4px 14px;
+    font-size: 0.75rem;
+    font-family: var(--font);
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
   }
+  .filter-btn:hover { border-color: var(--text-dim); color: var(--text); }
+  .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .filter-btn.active[data-dim="art"] { background: var(--art); border-color: var(--art); }
+  .filter-btn.active[data-dim="lit"] { background: var(--lit); border-color: var(--lit); color: #0a0a0f; }
+  .filter-btn.active[data-dim="phil"] { background: var(--phil); border-color: var(--phil); color: #0a0a0f; }
+  .filter-btn.active[data-dim="hist"] { background: var(--hist); border-color: var(--hist); color: #0a0a0f; }
+  .filter-btn.active[data-dim="conn"] { background: var(--conn); border-color: var(--conn); color: #0a0a0f; }
+
+  /* Thread banner */
+  .thread-banner {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: var(--surface2);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    font-size: 0.8rem;
+    color: var(--text);
+    animation: fadeIn 0.2s ease;
+  }
+  .thread-banner.visible { display: flex; }
+  .thread-banner .thread-name {
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .thread-banner .thread-close {
+    margin-left: auto;
+    cursor: pointer;
+    color: var(--text-dim);
+    font-size: 1rem;
+    padding: 0 4px;
+  }
+  .thread-banner .thread-close:hover { color: var(--text); }
+  .thread-banner .thread-count { color: var(--text-dim); }
 
   /* Timeline container */
   .timeline-container {
-    margin-top: 80px;
+    margin-top: 110px;
     padding: 40px 32px 80px;
     position: relative;
   }
@@ -79,11 +127,13 @@
     width: 45%;
     margin-bottom: 48px;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, opacity 0.3s ease;
   }
   .entry:hover { transform: translateY(-2px); }
   .entry:nth-child(odd) { margin-left: 5%; }
   .entry:nth-child(even) { margin-left: 50%; }
+  .entry.thread-dimmed { opacity: 0.15; pointer-events: none; }
+  .entry.thread-highlighted { opacity: 1; }
 
   /* Dot on timeline */
   .entry::before {
@@ -120,7 +170,7 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 20px 24px;
+    overflow: hidden;
     transition: border-color 0.2s, box-shadow 0.2s;
   }
   .entry:hover .card {
@@ -131,6 +181,26 @@
     border-color: var(--accent);
     box-shadow: 0 8px 32px rgba(124,111,247,0.2);
   }
+
+  /* Hero image */
+  .card-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  .card-image.loaded { opacity: 1; }
+  .card-image-caption {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    padding: 4px 24px 0;
+    opacity: 0.6;
+    font-style: italic;
+  }
+
+  .card-body { padding: 20px 24px; }
 
   .card-year {
     font-family: var(--mono);
@@ -152,6 +222,32 @@
     line-height: 1.5;
   }
 
+  /* Thread tags */
+  .card-threads {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    margin-top: 12px;
+  }
+  .thread-tag {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2px 10px;
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .thread-tag:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(124,111,247,0.1);
+  }
+  .thread-tag.active {
+    border-color: var(--accent);
+    color: #fff;
+    background: var(--accent);
+  }
+
   /* Expanded content */
   .card-details {
     max-height: 0;
@@ -162,15 +258,22 @@
   .entry.expanded .card-details {
     opacity: 1;
     overflow: visible;
-    margin-top: 16px;
   }
 
   /* Dimension sections */
   .dimension {
     padding: 14px 0;
     border-top: 1px solid var(--border);
+    transition: opacity 0.3s ease, max-height 0.3s ease;
   }
   .dimension:first-child { border-top: none; }
+  .dimension.dim-hidden {
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    border-top: none;
+  }
   .dim-header {
     display: flex; align-items: center; gap: 8px;
     font-weight: 600; font-size: 0.9rem;
@@ -203,6 +306,29 @@
   }
   .fun-fact::before { content: '💡 '; }
 
+  /* Sources */
+  .card-sources {
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    margin-top: 4px;
+  }
+  .card-sources summary {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  .card-sources summary:hover { opacity: 1; }
+  .card-sources a {
+    display: block;
+    font-size: 0.72rem;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 2px 0;
+    opacity: 0.7;
+  }
+  .card-sources a:hover { opacity: 1; text-decoration: underline; }
+
   /* Expand hint */
   .expand-hint {
     font-size: 0.75rem;
@@ -214,17 +340,6 @@
   .entry:hover .expand-hint { opacity: 1; }
   .entry.expanded .expand-hint { display: none; }
 
-  /* Responsive */
-  @media (max-width: 768px) {
-    .timeline-line { left: 24px; }
-    .entry { width: calc(100% - 60px); margin-left: 50px !important; }
-    .entry::before { left: -33px !important; right: auto !important; }
-    .entry::after { left: -24px !important; right: auto !important; }
-    header { padding: 12px 16px; }
-    .timeline-container { padding: 40px 16px 80px; }
-    .legend { display: none; }
-  }
-
   /* Reference markers */
   .marker {
     position: relative;
@@ -234,6 +349,7 @@
     margin-bottom: 12px;
     height: 28px;
   }
+  .marker.thread-dimmed { opacity: 0.1; }
   .marker-line {
     position: absolute;
     left: calc(50% - 60px);
@@ -259,29 +375,49 @@
   }
   .marker:hover .marker-label { opacity: 1; }
 
+  /* Responsive */
   @media (max-width: 768px) {
-    .marker-line { left: 0; width: 100%; }
+    .timeline-line { left: 24px; }
+    .entry { width: calc(100% - 60px); margin-left: 50px !important; }
+    .entry::before { left: -33px !important; right: auto !important; }
+    .entry::after { left: -24px !important; right: auto !important; }
+    header { padding: 10px 16px; }
+    .header-top { margin-bottom: 8px; }
+    .timeline-container { padding: 40px 16px 80px; margin-top: 120px; }
+    .subtitle { display: none; }
+    .card-image { aspect-ratio: 3/2; }
   }
 
   /* Scroll animation */
   .entry { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
   .entry.visible { opacity: 1; transform: translateY(0); }
   .entry:hover.visible { transform: translateY(-2px); }
+  .entry.thread-dimmed.visible { opacity: 0.15; transform: translateY(0); }
+
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 </style>
 </head>
 <body>
 
 <header>
-  <div style="display:flex;align-items:baseline;">
-    <h1>Time Slices</h1>
-    <span class="subtitle">Cross-disciplinary history exploration</span>
+  <div class="header-top">
+    <div class="header-left">
+      <h1>Time Slices</h1>
+      <span class="subtitle">Cross-disciplinary history exploration</span>
+    </div>
   </div>
-  <div class="legend">
-    <div class="legend-item"><div class="legend-dot" style="background:var(--art)"></div>Art</div>
-    <div class="legend-item"><div class="legend-dot" style="background:var(--lit)"></div>Literature</div>
-    <div class="legend-item"><div class="legend-dot" style="background:var(--phil)"></div>Philosophy</div>
-    <div class="legend-item"><div class="legend-dot" style="background:var(--hist)"></div>History</div>
-    <div class="legend-item"><div class="legend-dot" style="background:var(--conn)"></div>Connections</div>
+  <div class="filters">
+    <button class="filter-btn active" data-dim="all">All</button>
+    <button class="filter-btn" data-dim="art">🎨 Art</button>
+    <button class="filter-btn" data-dim="lit">📖 Literature</button>
+    <button class="filter-btn" data-dim="phil">🧠 Philosophy</button>
+    <button class="filter-btn" data-dim="hist">⚔️ History</button>
+    <button class="filter-btn" data-dim="conn">🔗 Connections</button>
+  </div>
+  <div class="thread-banner" id="threadBanner">
+    <span>🧵 Thread: <span class="thread-name" id="threadName"></span></span>
+    <span class="thread-count" id="threadCount"></span>
+    <span class="thread-close" id="threadClose">✕</span>
   </div>
 </header>
 
@@ -292,6 +428,33 @@
 
 <script>
 let SLICES = [];
+let activeFilter = 'all';
+let activeThread = null;
+
+const DIM_ICONS = { art: '🎨', lit: '📖', phil: '🧠', hist: '⚔️', conn: '🔗' };
+const THREAD_LABELS = {
+  'translation-movement': 'Translation as Power',
+  'rationalism': 'Rationalism',
+  'islamic-golden-age': 'Islamic Golden Age',
+  'cosmopolitanism': 'Cosmopolitanism',
+  'geometry-as-ideology': 'Geometry as Ideology',
+  'renaissance-humanism': 'Renaissance Humanism',
+  'neoplatonism': 'Neoplatonism',
+  'classical-revival': 'Classical Revival',
+  'art-and-power': 'Art & Power',
+  'christian-humanism': 'Christian Humanism',
+  'post-impressionism': 'Post-Impressionism',
+  'crisis-of-positivism': 'Crisis of Positivism',
+  'modernity': 'Modernity',
+  'death-of-god': 'Death of God',
+  'expressionism': 'Expressionism',
+  'symbolism': 'Symbolism',
+  'modernism': 'Modernism',
+  'fragmentation': 'Fragmentation',
+  'logical-positivism': 'Logical Positivism',
+  'existentialism': 'Existentialism',
+  'totalitarianism': 'Totalitarianism',
+};
 
 const MARKERS = [
   { year: -3000, label: "First writing (Sumer)" },
@@ -320,13 +483,17 @@ const MARKERS = [
 
 const timeline = document.getElementById('timeline');
 
-function renderSlice(slice, index) {
+function formatThreadId(id) {
+  return THREAD_LABELS[id] || id.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+}
+
+function renderSlice(slice) {
   const dims = Object.entries(slice.dimensions).map(([key, dim]) => {
     const funFact = dim.funFact ? `<div class="fun-fact">${dim.funFact}</div>` : '';
     return `
-      <div class="dimension">
+      <div class="dimension" data-dim="${key}">
         <div class="dim-header">
-          <span class="dim-icon">${{art:'🎨',lit:'📖',phil:'🧠',hist:'⚔️',conn:'🔗'}[key]}</span>
+          <span class="dim-icon">${DIM_ICONS[key]}</span>
           <span class="dim-label-${key}">${dim.label}</span>
         </div>
         <div class="dim-content">${dim.content}${funFact}</div>
@@ -334,18 +501,47 @@ function renderSlice(slice, index) {
     `;
   }).join('');
 
+  const threads = (slice.threads || []).map(t =>
+    `<span class="thread-tag" data-thread="${t}">${formatThreadId(t)}</span>`
+  ).join('');
+
+  const sources = (slice.sources || []).map(s =>
+    `<a href="${s.url}" target="_blank" rel="noopener">${s.title}</a>`
+  ).join('');
+  const sourcesHtml = sources ? `
+    <details class="card-sources" onclick="event.stopPropagation()">
+      <summary>Sources</summary>
+      ${sources}
+    </details>` : '';
+
+  const imageHtml = slice.image ? `
+    <img class="card-image" data-src="${slice.image.url}" alt="${slice.image.caption}">
+    <div class="card-image-caption">${slice.image.caption}</div>` : '';
+
   const el = document.createElement('div');
   el.className = 'entry';
+  el.dataset.year = slice.year;
+  el.dataset.threads = JSON.stringify(slice.threads || []);
   el.innerHTML = `
     <div class="card">
-      <div class="card-year">${slice.year}</div>
-      <div class="card-title">${slice.title}</div>
-      <div class="card-teaser">${slice.teaser}</div>
-      <div class="expand-hint">Click to explore →</div>
-      <div class="card-details">${dims}</div>
+      ${imageHtml}
+      <div class="card-body">
+        <div class="card-year">${slice.year}</div>
+        <div class="card-title">${slice.title}</div>
+        <div class="card-teaser">${slice.teaser}</div>
+        <div class="card-threads">${threads}</div>
+        <div class="expand-hint">Click to explore →</div>
+        <div class="card-details">
+          ${dims}
+          ${sourcesHtml}
+        </div>
+      </div>
     </div>
   `;
-  el.addEventListener('click', () => {
+
+  // Expand/collapse
+  el.addEventListener('click', (e) => {
+    if (e.target.closest('.thread-tag') || e.target.closest('.card-sources')) return;
     const details = el.querySelector('.card-details');
     if (el.classList.contains('expanded')) {
       details.style.maxHeight = details.scrollHeight + 'px';
@@ -362,6 +558,20 @@ function renderSlice(slice, index) {
       });
     }
   });
+
+  // Thread tag clicks
+  el.querySelectorAll('.thread-tag').forEach(tag => {
+    tag.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const thread = tag.dataset.thread;
+      if (activeThread === thread) {
+        clearThread();
+      } else {
+        activateThread(thread);
+      }
+    });
+  });
+
   return el;
 }
 
@@ -376,30 +586,120 @@ function renderMarker(marker) {
   return el;
 }
 
+// Dimension filter logic
+function applyFilter(dim) {
+  activeFilter = dim;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector(`.filter-btn[data-dim="${dim}"]`).classList.add('active');
+
+  document.querySelectorAll('.dimension').forEach(d => {
+    if (dim === 'all' || d.dataset.dim === dim) {
+      d.classList.remove('dim-hidden');
+    } else {
+      d.classList.add('dim-hidden');
+    }
+  });
+
+  // Recalculate max-height for expanded entries
+  document.querySelectorAll('.entry.expanded .card-details').forEach(details => {
+    details.style.maxHeight = 'none';
+  });
+}
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => applyFilter(btn.dataset.dim));
+});
+
+// Thread logic
+function activateThread(threadId) {
+  activeThread = threadId;
+  const entries = document.querySelectorAll('.entry');
+  let count = 0;
+
+  entries.forEach(entry => {
+    const threads = JSON.parse(entry.dataset.threads || '[]');
+    if (threads.includes(threadId)) {
+      entry.classList.remove('thread-dimmed');
+      entry.classList.add('thread-highlighted');
+      count++;
+    } else {
+      entry.classList.add('thread-dimmed');
+      entry.classList.remove('thread-highlighted');
+    }
+  });
+
+  // Dim markers too
+  document.querySelectorAll('.marker').forEach(m => m.classList.add('thread-dimmed'));
+
+  // Update all thread tags
+  document.querySelectorAll('.thread-tag').forEach(t => {
+    t.classList.toggle('active', t.dataset.thread === threadId);
+  });
+
+  // Show banner
+  document.getElementById('threadName').textContent = formatThreadId(threadId);
+  document.getElementById('threadCount').textContent = `${count} ${count === 1 ? 'entry' : 'entries'}`;
+  document.getElementById('threadBanner').classList.add('visible');
+}
+
+function clearThread() {
+  activeThread = null;
+  document.querySelectorAll('.entry').forEach(e => {
+    e.classList.remove('thread-dimmed', 'thread-highlighted');
+  });
+  document.querySelectorAll('.marker').forEach(m => m.classList.remove('thread-dimmed'));
+  document.querySelectorAll('.thread-tag').forEach(t => t.classList.remove('active'));
+  document.getElementById('threadBanner').classList.remove('visible');
+}
+
+document.getElementById('threadClose').addEventListener('click', clearThread);
+
+// Lazy image loading
+function lazyLoadImages() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const img = e.target;
+        img.src = img.dataset.src;
+        img.onload = () => img.classList.add('loaded');
+        observer.unobserve(img);
+      }
+    });
+  }, { rootMargin: '200px' });
+
+  document.querySelectorAll('.card-image[data-src]').forEach(img => observer.observe(img));
+}
+
+// Scroll reveal
+function setupScrollReveal() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.entry').forEach(el => observer.observe(el));
+}
+
+// Init
 fetch('slices.json')
   .then(r => r.json())
   .then(data => {
     SLICES = data;
 
-    // Merge slices and markers, sort by year
     const items = [
       ...SLICES.map(s => ({ type: 'slice', year: parseInt(s.year), data: s })),
       ...MARKERS.map(m => ({ type: 'marker', year: m.year, data: m })),
     ];
     items.sort((a, b) => a.year - b.year || (a.type === 'marker' ? -1 : 1));
 
-    items.forEach((item, i) => {
+    items.forEach((item) => {
       if (item.type === 'slice') {
-        timeline.appendChild(renderSlice(item.data, i));
+        timeline.appendChild(renderSlice(item.data));
       } else {
         timeline.appendChild(renderMarker(item.data));
       }
     });
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.entry').forEach(el => observer.observe(el));
+    lazyLoadImages();
+    setupScrollReveal();
   });
 </script>
 
