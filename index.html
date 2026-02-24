@@ -1375,11 +1375,6 @@ function initMap() {
 
   // Zoom control in bottom-right (away from time slider)
   L.control.zoom({ position: 'bottomright' }).addTo(map);
-
-  // Attribution (small, bottom-right)
-  L.control.attribution({ position: 'bottomright', prefix: false })
-    .addAttribution('© <a href="https://carto.com/">CARTO</a> © <a href="https://www.openstreetmap.org/">OSM</a>')
-    .addTo(map);
 }
 
 function createMapMarker(slice) {
