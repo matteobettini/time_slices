@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Slices</title>
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #14141f;
+    --surface2: #1e1e2e;
+    --border: #2a2a3a;
+    --text: #e0e0e8;
+    --text-dim: #8888a0;
+    --accent: #7c6ff7;
+    --art: #e06090;
+    --lit: #60c0e0;
+    --phil: #e0a050;
+    --hist: #60e080;
+    --conn: #c080e0;
+    --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    overflow-x: hidden;
+  }
+
+  /* Header */
+  header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10,10,15,0.92);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 32px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  header h1 {
+    font-size: 1.4rem; font-weight: 700;
+    background: linear-gradient(135deg, var(--accent), var(--art));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  header .subtitle { color: var(--text-dim); font-size: 0.85rem; margin-left: 12px; }
+
+  /* Legend */
+  .legend {
+    display: flex; gap: 16px; font-size: 0.8rem;
+  }
+  .legend-item { display: flex; align-items: center; gap: 5px; color: var(--text-dim); }
+  .legend-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+  }
+
+  /* Timeline container */
+  .timeline-container {
+    margin-top: 80px;
+    padding: 40px 32px 80px;
+    position: relative;
+  }
+
+  /* Central line */
+  .timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0; bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, var(--border) 80px, var(--border) calc(100% - 80px), transparent);
+    transform: translateX(-50%);
+  }
+
+  /* Entry */
+  .entry {
+    position: relative;
+    width: 45%;
+    margin-bottom: 48px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  .entry:hover { transform: translateY(-2px); }
+  .entry:nth-child(odd) { margin-left: 5%; }
+  .entry:nth-child(even) { margin-left: 50%; }
+
+  /* Dot on timeline */
+  .entry::before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 3px solid var(--bg);
+    z-index: 2;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .entry:hover::before {
+    transform: scale(1.3);
+    box-shadow: 0 0 16px var(--accent);
+  }
+  .entry:nth-child(odd)::before { right: -32px; }
+  .entry:nth-child(even)::before { left: -32px; }
+
+  /* Connector line */
+  .entry::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    width: 24px; height: 2px;
+    background: var(--border);
+  }
+  .entry:nth-child(odd)::after { right: -24px; }
+  .entry:nth-child(even)::after { left: -24px; }
+
+  /* Card */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .entry:hover .card {
+    border-color: var(--accent);
+    box-shadow: 0 4px 24px rgba(124,111,247,0.15);
+  }
+  .entry.expanded .card {
+    border-color: var(--accent);
+    box-shadow: 0 8px 32px rgba(124,111,247,0.2);
+  }
+
+  .card-year {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .card-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .card-teaser {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+
+  /* Expanded content */
+  .card-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+  .entry.expanded .card-details {
+    max-height: 2000px;
+    opacity: 1;
+    margin-top: 16px;
+  }
+
+  /* Dimension sections */
+  .dimension {
+    padding: 14px 0;
+    border-top: 1px solid var(--border);
+  }
+  .dimension:first-child { border-top: none; }
+  .dim-header {
+    display: flex; align-items: center; gap: 8px;
+    font-weight: 600; font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  .dim-icon { font-size: 1.1rem; }
+  .dim-label-art { color: var(--art); }
+  .dim-label-lit { color: var(--lit); }
+  .dim-label-phil { color: var(--phil); }
+  .dim-label-hist { color: var(--hist); }
+  .dim-label-conn { color: var(--conn); }
+
+  .dim-content {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: var(--text-dim);
+  }
+  .dim-content strong { color: var(--text); font-weight: 500; }
+  .dim-content em { color: var(--text); font-style: italic; }
+
+  /* Fun fact callout */
+  .fun-fact {
+    background: var(--surface2);
+    border-left: 3px solid var(--conn);
+    border-radius: 0 8px 8px 0;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+  }
+  .fun-fact::before { content: '💡 '; }
+
+  /* Expand hint */
+  .expand-hint {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    margin-top: 10px;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+  }
+  .entry:hover .expand-hint { opacity: 1; }
+  .entry.expanded .expand-hint { display: none; }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .timeline-line { left: 24px; }
+    .entry { width: calc(100% - 60px); margin-left: 50px !important; }
+    .entry::before { left: -33px !important; right: auto !important; }
+    .entry::after { left: -24px !important; right: auto !important; }
+    header { padding: 12px 16px; }
+    .timeline-container { padding: 40px 16px 80px; }
+    .legend { display: none; }
+  }
+
+  /* Scroll animation */
+  .entry { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .entry.visible { opacity: 1; transform: translateY(0); }
+  .entry:hover.visible { transform: translateY(-2px); }
+</style>
+</head>
+<body>
+
+<header>
+  <div style="display:flex;align-items:baseline;">
+    <h1>Time Slices</h1>
+    <span class="subtitle">Cross-disciplinary history exploration</span>
+  </div>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:var(--art)"></div>Art</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--lit)"></div>Literature</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--phil)"></div>Philosophy</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--hist)"></div>History</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--conn)"></div>Connections</div>
+  </div>
+</header>
+
+<div class="timeline-container">
+  <div class="timeline-line"></div>
+  <div id="timeline"></div>
+</div>
+
+<script>
+const SLICES = [
+  {
+    year: "1504",
+    title: "Florence — The Duel of Giants",
+    teaser: "Michelangelo and Leonardo compete for the same wall. The Renaissance peaks.",
+    dimensions: {
+      art: {
+        label: "Art",
+        content: `<strong>Leonardo da Vinci</strong> and <strong>Michelangelo Buonarroti</strong> are both commissioned to paint opposing walls of the Sala del Cinquecento in Florence's Palazzo Vecchio. Leonardo works on <em>The Battle of Anghiari</em>; Michelangelo on <em>The Battle of Cascina</em>. Neither finishes — but the rivalry electrifies all of Florence.<br><br>Meanwhile, Michelangelo's <em>David</em> is unveiled in Piazza della Signoria. Raphael, just 21, arrives in Florence and begins absorbing both masters' techniques.`
+      },
+      lit: {
+        label: "Literature",
+        content: `<strong>Niccolò Machiavelli</strong> is serving as Florence's Second Chancellor, running diplomatic missions across Italy. He's watching Cesare Borgia's ruthless statecraft firsthand — notes that will fuel <em>The Prince</em> (written 1513). <strong>Ludovico Ariosto</strong> is drafting early cantos of <em>Orlando Furioso</em> in Ferrara, fusing medieval romance with Renaissance irony.`
+      },
+      phil: {
+        label: "Philosophy",
+        content: `<strong>Erasmus of Rotterdam</strong> publishes <em>Enchiridion militis Christiani</em> (Handbook of a Christian Knight), arguing for an inner, philosophical Christianity over empty ritual. Neoplatonism still dominates Florentine intellectual life — Marsilio Ficino's translations of Plato shaped this entire generation. The idea that <em>beauty reveals divine truth</em> is taken literally: art IS philosophy made visible.`
+      },
+      hist: {
+        label: "History",
+        content: `Italy is a chessboard of warring city-states and foreign powers. France and Spain are fighting over Naples. Pope Julius II is scheming to expand papal territory. Florence, recently rid of Savonarola's theocratic rule (burned 1498), is a fragile republic under Piero Soderini. Columbus made his fourth and final voyage. Portugal's empire expands in the Indian Ocean.`
+      },
+      conn: {
+        label: "Connections",
+        content: `The collision is staggering: <strong>Machiavelli watches power</strong> while <strong>Leonardo and Michelangelo depict it</strong> on the same walls. Machiavelli personally knew both artists — he helped arrange Leonardo's commission. Erasmus's rational Christianity and Florence's Neoplatonism are two faces of the same coin: both reject medieval scholasticism for something more human, more direct. The <em>David</em> isn't just sculpture — it's a political statement: the small republic standing against giants.`,
+        funFact: "When the committee chose where to place the David, both Leonardo and Botticelli were on the panel. Leonardo suggested hiding it in a loggia. He was outvoted."
+      }
+    }
+  },
+  {
+    year: "1889",
+    title: "Paris — The Year Everything Changed",
+    teaser: "The Eiffel Tower rises. Van Gogh paints Starry Night. Nietzsche collapses. Bergson rethinks time itself.",
+    dimensions: {
+      art: {
+        label: "Art",
+        content: `<strong>Vincent van Gogh</strong> paints <em>The Starry Night</em> from the asylum at Saint-Rémy-de-Provence — swirling cosmos as felt truth, not observed fact. <strong>Paul Gauguin</strong> has fled to Brittany, painting <em>The Yellow Christ</em>, pushing toward symbolism. <strong>Claude Monet</strong> is deep into his series paintings. <strong>Paul Cézanne</strong> quietly revolutionizes form in Aix-en-Provence — the bridge between Impressionism and everything that follows.`
+      },
+      lit: {
+        label: "Literature",
+        content: `<strong>Guy de Maupassant</strong> publishes <em>Fort comme la mort</em>, his penultimate novel before syphilis claims his mind. <strong>W.B. Yeats</strong> releases <em>The Wanderings of Oisin</em>, his first major work. <strong>Mark Twain</strong> publishes <em>A Connecticut Yankee in King Arthur's Court</em> — time travel as social satire. <strong>Tolstoy</strong> has just finished <em>The Kreutzer Sonata</em>, banned for its frank treatment of sexuality.`
+      },
+      phil: {
+        label: "Philosophy",
+        content: `<strong>Friedrich Nietzsche</strong> collapses in Turin in January, embracing a beaten horse — his productive life ends. <em>Twilight of the Idols</em> is published this year, declaring "God is dead" to a world not yet ready to listen. <strong>Henri Bergson</strong> publishes <em>Essai sur les données immédiates de la conscience</em> (Time and Free Will), arguing that lived time is fundamentally different from clock time — a direct challenge to scientific determinism.`
+      },
+      hist: {
+        label: "History",
+        content: `The <strong>Eiffel Tower</strong> opens for the World's Fair, built in just 2 years — the tallest structure on Earth. It's meant to be temporary. The fair celebrates the centennial of the French Revolution. <strong>Brazil</strong> becomes a republic. The <strong>Meiji Constitution</strong> takes effect in Japan. In London, the dock workers' strike marks a turning point for organized labor. The Scramble for Africa is in full swing.`
+      },
+      conn: {
+        label: "Connections",
+        content: `Bergson's insight that <strong>time as lived ≠ time as measured</strong> connects directly to what the painters are doing: Van Gogh doesn't paint what the sky <em>looks</em> like — he paints what it <em>feels</em> like. Nietzsche's death-of-God moment and Van Gogh's asylum visions share the same vertigo: a world where old certainties dissolve into swirling energy. The Eiffel Tower — pure engineering, no ornament — embodies the same tension: is modernity beautiful or monstrous? Maupassant famously ate lunch in the Tower's restaurant because "it's the only place in Paris where you can't see the damn thing."`,
+        funFact: "Van Gogh's brother Theo tried to sell his paintings at the 1889 World's Fair. Almost no one bought. A century later, those paintings would sell for $80+ million each."
+      }
+    }
+  },
+  {
+    year: "1922",
+    title: "The Modernist Explosion",
+    teaser: "Joyce, Eliot, Woolf, Wittgenstein — in a single year, the old world of art and thought is detonated.",
+    dimensions: {
+      art: {
+        label: "Art",
+        content: `<strong>Bauhaus</strong> is in full swing in Weimar under Gropius — Klee, Kandinsky, and Moholy-Nagy teaching there. <strong>Man Ray</strong> creates his first "rayographs" in Paris. <strong>Mondrian</strong> pushes into pure geometric abstraction. In Mexico, <strong>Diego Rivera</strong> begins his first major mural at the Escuela Nacional Preparatoria. The Salon des Indépendants shows 5,000+ works — the art world is exploding in every direction simultaneously.`
+      },
+      lit: {
+        label: "Literature",
+        content: `The single greatest year in literary history? <strong>James Joyce</strong>'s <em>Ulysses</em> is published in Paris by Sylvia Beach (banned in the US and UK). <strong>T.S. Eliot</strong> publishes <em>The Waste Land</em> — modernism's anthem. <strong>Virginia Woolf</strong>'s <em>Jacob's Room</em> appears. <strong>Marcel Proust</strong> dies in November, leaving <em>In Search of Lost Time</em> unfinished. <strong>Rainer Maria Rilke</strong> completes the <em>Duino Elegies</em> and <em>Sonnets to Orpheus</em> in a single feverish burst. <strong>Hermann Hesse</strong> publishes <em>Siddhartha</em>.`
+      },
+      phil: {
+        label: "Philosophy",
+        content: `<strong>Ludwig Wittgenstein</strong>'s <em>Tractatus Logico-Philosophicus</em> is published in English (German edition 1921). Its final line — "Whereof one cannot speak, thereof one must be silent" — becomes philosophy's most quoted sentence. <strong>Martin Heidegger</strong> is lecturing at Freiburg, developing the ideas that will become <em>Being and Time</em> (1927). The Vienna Circle is forming around Moritz Schlick — logical positivism is about to reshape everything.`
+      },
+      hist: {
+        label: "History",
+        content: `The <strong>Soviet Union</strong> is formally established in December. <strong>Mussolini</strong> marches on Rome in October — fascism takes power in Italy. The <strong>Ottoman Empire</strong> collapses; Turkey becomes a republic under Atatürk. The <strong>BBC</strong> begins broadcasting. <strong>Egypt</strong> gains nominal independence from Britain. <strong>Tutankhamun's tomb</strong> is discovered by Howard Carter. The world is 4 years past WWI and still reeling.`
+      },
+      conn: {
+        label: "Connections",
+        content: `Everything connects through <strong>fragmentation</strong>. Eliot's <em>Waste Land</em> is fragments shored against ruins — literally. Joyce's <em>Ulysses</em> fragments narrative into a dozen styles. The Bauhaus fragments art into geometry. Wittgenstein fragments language into logical atoms. Why? Because the war fragmented <em>everything</em> — empires, bodies, certainties. Modernism isn't a style; it's the art of a shattered world trying to reassemble itself. Proust dies trying to capture all of time; Wittgenstein insists we stay silent about what we can't capture. Two responses to the same impossibility.`,
+        funFact: "Eliot dedicated The Waste Land to Ezra Pound, who edited it ruthlessly — cutting it nearly in half. The original draft, discovered in 1968, shows Pound may have been the greatest editor in literary history."
+      }
+    }
+  }
+];
+
+// Render
+const timeline = document.getElementById('timeline');
+
+function renderSlice(slice, index) {
+  const dims = Object.entries(slice.dimensions).map(([key, dim]) => {
+    const funFact = dim.funFact ? `<div class="fun-fact">${dim.funFact}</div>` : '';
+    return `
+      <div class="dimension">
+        <div class="dim-header">
+          <span class="dim-icon">${{art:'🎨',lit:'📖',phil:'🧠',hist:'⚔️',conn:'🔗'}[key]}</span>
+          <span class="dim-label-${key}">${dim.label}</span>
+        </div>
+        <div class="dim-content">${dim.content}${funFact}</div>
+      </div>
+    `;
+  }).join('');
+
+  const el = document.createElement('div');
+  el.className = 'entry';
+  el.innerHTML = `
+    <div class="card">
+      <div class="card-year">${slice.year}</div>
+      <div class="card-title">${slice.title}</div>
+      <div class="card-teaser">${slice.teaser}</div>
+      <div class="expand-hint">Click to explore →</div>
+      <div class="card-details">${dims}</div>
+    </div>
+  `;
+  el.addEventListener('click', () => el.classList.toggle('expanded'));
+  return el;
+}
+
+SLICES.sort((a, b) => parseInt(a.year) - parseInt(b.year));
+SLICES.forEach((slice, i) => timeline.appendChild(renderSlice(slice, i)));
+
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.entry').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
