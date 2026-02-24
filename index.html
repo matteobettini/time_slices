@@ -722,8 +722,12 @@
   }
   .map-marker.dimmed { opacity: 0.15; }
   .map-marker.dimmed + .map-marker-ring { opacity: 0.1; }
+  .map-marker.dimmed ~ .map-marker-label { opacity: 0.15; }
+  .map-marker.dimmed ~ .map-marker-year { opacity: 0.15; }
   .map-marker.hidden-by-time { opacity: 0; pointer-events: none; }
   .map-marker.hidden-by-time + .map-marker-ring { opacity: 0; }
+  .map-marker.hidden-by-time ~ .map-marker-label { opacity: 0; }
+  .map-marker.hidden-by-time ~ .map-marker-year { opacity: 0; }
 
   .map-marker-label {
     position: absolute;
@@ -735,6 +739,22 @@
     white-space: nowrap;
     letter-spacing: 0.05em;
     text-shadow: 0 1px 6px rgba(0,0,0,0.9), 0 0 12px rgba(0,0,0,0.6);
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    z-index: 3;
+  }
+  .map-marker-year {
+    display: none;
+    position: absolute;
+    top: -18px; left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.9);
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.95), 0 0 8px rgba(0,0,0,0.7);
     pointer-events: none;
     transition: opacity 0.5s ease;
     z-index: 3;
@@ -805,6 +825,7 @@
     .time-slider::-webkit-slider-thumb { width: 26px; height: 26px; }
     .time-slider::-moz-range-thumb { width: 26px; height: 26px; }
     .map-marker-label { display: none; }
+    .map-marker-year { display: block; }
     .map-header .subtitle { display: none; }
     /* Move thread banner above time controls on mobile to avoid popup overlap */
     .map-thread-banner {
@@ -1481,6 +1502,7 @@ function createMapMarker(slice) {
              <div class="map-marker" data-year="${slice.year}"></div>
              <div class="map-marker-ring"></div>
              <div class="map-marker-label">${slice.year} · ${slice.location.place}</div>
+             <div class="map-marker-year">${slice.year}</div>
            </div>`,
     iconSize: [40, 40],
     iconAnchor: [20, 20],
