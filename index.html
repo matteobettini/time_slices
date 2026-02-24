@@ -1614,8 +1614,13 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
   document.getElementById('coffeeBtn').classList.add('loading');
   document.getElementById('diceBtn').classList.add('loading');
   slicesReady.then(() => {
-    document.getElementById('coffeeBtn').classList.remove('loading');
-    document.getElementById('diceBtn').classList.remove('loading');
+    // Double-rAF to ensure DOM is painted before removing loading state
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        document.getElementById('coffeeBtn').classList.remove('loading');
+        document.getElementById('diceBtn').classList.remove('loading');
+      });
+    });
   });
   updateUILabels();
   loadSlices();
@@ -2540,26 +2545,39 @@ function revealAllEntries() {
   document.querySelectorAll('.entry:not(.visible)').forEach(el => el.classList.add('visible'));
 }
 
-// Helper: reveal entry, wait for layout, then smooth-scroll to it
+// Helper: instantly reveal + scroll to entry (skip CSS transition for target)
 function scrollToEntry(entry) {
   if (!entry) return;
-  // 1. Make sure the target (and all others) are visible
+
+  // Instantly reveal the target — skip the 0.5s CSS transition entirely
+  entry.style.transition = 'none';
+  entry.classList.add('visible');
+  // Force layout so the browser applies opacity:1 + transform:none synchronously
+  entry.offsetHeight;
+
+  // Reveal everything else normally (with their CSS transitions)
   revealAllEntries();
-  // 2. Force a layout reflow so the browser knows the entry's position
-  entry.getBoundingClientRect();
-  // 3. Use requestAnimationFrame to ensure paint is scheduled
+
+  // Double-rAF: first rAF gets us to the next frame, second ensures paint
   requestAnimationFrame(() => {
-    entry.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    // 4. Briefly highlight the entry so user can spot it
-    entry.style.transition = 'box-shadow 0.3s ease';
-    entry.style.boxShadow = '0 0 20px rgba(209,154,102,0.5)';
-    setTimeout(() => { entry.style.boxShadow = ''; }, 1500);
+    requestAnimationFrame(() => {
+      entry.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Restore transition ability, then do the highlight glow
+      entry.style.transition = 'box-shadow 0.3s ease';
+      entry.style.boxShadow = '0 0 20px rgba(209,154,102,0.5)';
+      setTimeout(() => {
+        entry.style.boxShadow = '';
+        entry.style.transition = '';
+      }, 1500);
+    });
   });
 }
 
 // 🎲 Random dice — scroll to a random slice
 document.getElementById('diceBtn').addEventListener('click', async () => {
   const btn = document.getElementById('diceBtn');
+  if (btn.classList.contains('loading')) return;
   btn.classList.add('rolling');
   setTimeout(() => btn.classList.remove('rolling'), 500);
 
@@ -2573,6 +2591,9 @@ document.getElementById('diceBtn').addEventListener('click', async () => {
 
 // ☕ Coffee button — scroll to the freshest entry (the one with the badge)
 document.getElementById('coffeeBtn').addEventListener('click', async () => {
+  const btn = document.getElementById('coffeeBtn');
+  if (btn.classList.contains('loading')) return;
+
   await slicesReady;
 
   const freshEntry = document.querySelector('.entry .fresh-badge');
