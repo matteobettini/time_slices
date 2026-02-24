@@ -1,0 +1,172 @@
+[
+  {
+    "year": "762",
+    "title": "Baghdad — La città rotonda della ragione",
+    "teaser": "Un califfo costruisce un cerchio perfetto nel deserto. Al suo interno, la filosofia greca incontra la poesia araba e l'amministrazione persiana — si accende l'Età d'oro islamica.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "L'<strong>arte abbaside</strong> fonde tradizioni omayyadi, persiane e centroasiatiche in qualcosa di nuovo — un linguaggio visivo cosmopolita per un impero cosmopolita. La <strong>Città Rotonda</strong> di al-Mansur è essa stessa il capolavoro: un cerchio perfetto di quasi 2 km di diametro, con il palazzo del califfo e la grande moschea al centro — geometria come teologia, il potere che si irradia verso l'esterno da un asse divino. L'<strong>aniconismo</strong> dell'arte islamica canalizza l'energia creativa in arabeschi mozzafiato e calligrafia, trasformando la parola scritta stessa in arte visiva."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "La <strong>poesia araba</strong> entra nella sua fase più inventiva. La rivoluzione abbaside sposta il patronato letterario da Damasco all'Iraq, e i poeti iniziano a rompere la rigida forma preislamica della <em>qasida</em>. Sta emergendo una generazione di poeti <em>muhdath</em> (\"moderni\") — figure come <strong>Abu Nuwas</strong> (nato c. 756) scandalizzeranno presto Baghdad con poesie sul vino che deridono la nostalgia beduina e celebrano il cosmopolitismo persiano urbano. Il <strong>movimento di traduzione</strong> sta iniziando: testi greci, siriaci, sanscriti e persiani vengono resi in arabo, creando il più grande corpus di conoscenza tradotta che il mondo antico avesse mai visto."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "I <strong>Mu'tazila</strong>, fondati da <strong>Wasil ibn Ata</strong> (m. 748), sono la prima scuola sistematica di <strong>teologia razionalista islamica</strong> (<em>kalam</em>) — sostengono che la ragione, non solo la tradizione, possa determinare la verità. La loro insistenza sulla giustizia divina e il libero arbitrio umano sfida direttamente le interpretazioni fatalistiche del Corano. Sotto gli Abbasidi, i Mu'tazila ottengono il patronato statale — un momento straordinario in cui un governo approva ufficialmente l'indagine razionale come via verso la verità religiosa. Nel frattempo, la <strong>traduzione di Aristotele</strong> in arabo sta appena iniziando, gettando le basi per la <em>falsafa</em> (la filosofia islamica vera e propria)."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "La <strong>Rivoluzione abbaside</strong> (750) rovescia gli Omayyadi in una delle grandi rotture politiche della storia — una coalizione di convertiti persiani, simpatizzanti sciiti e armate di frontiera scontente, unite sotto le bandiere nere. <strong>Al-Mansur</strong> fonda Baghdad nel 762 come rottura deliberata con la vecchia capitale omayyade Damasco, collocando il potere al crocevia dei mondi persiano, mesopotamico e arabo. Nel 751, la <strong>Battaglia del Talas</strong> contro la Cina dei Tang ferma l'espansione cinese verso ovest e — secondo la tradizione — porta la tecnologia della fabbricazione della carta nel mondo islamico, rivoluzionando l'attività intellettuale."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Tutto converge sulla <strong>traduzione come potere</strong>. Gli Abbasidi legittimano il loro governo non attraverso il prestigio tribale arabo (come gli Omayyadi) ma attraverso la <em>conoscenza universale</em> — amministrazione persiana, scienza greca, matematica indiana, tutto filtrato attraverso l'arabo. La geometria perfetta della Città Rotonda incarna il razionalismo mu'tazilita: entrambi insistono sul fatto che il cosmo è ordinato e conoscibile. La rottura della poesia con le forme beduine rispecchia la rottura politica con il tribalismo omayyade. Quando Abu Nuwas loda il vino in arabo dalle inflessioni persiane, sta attuando la stessa sintesi culturale che la Casa della Saggezza istituzionalizzerà di lì a poco.",
+        "funFact": "Al-Mansur avrebbe scelto il sito di Baghdad dopo averci dormito una notte e averlo trovato piacevole. Pare abbia consultato astrologi che confermarono che le stelle favorivano il luogo — ragione e superstizione coesistenti, come accadeva così spesso nella prima bozza dell'Età della Ragione."
+      }
+    },
+    "sources": [
+      { "url": "https://it.wikipedia.org/wiki/Califfato_abbaside", "title": "Califfato abbaside — Wikipedia" },
+      { "url": "https://it.wikipedia.org/wiki/Et%C3%A0_dell%27oro_islamica", "title": "Età dell'oro islamica — Wikipedia" },
+      { "url": "https://en.wikipedia.org/wiki/Round_city_of_Baghdad", "title": "Città Rotonda di Baghdad — Wikipedia" },
+      { "url": "https://it.wikipedia.org/wiki/Mu%27tazilismo", "title": "Mu'tazilismo — Wikipedia" },
+      { "url": "https://it.wikipedia.org/wiki/Ab%C5%AB_Nuw%C4%81s", "title": "Abu Nuwas — Wikipedia" },
+      { "url": "https://it.wikipedia.org/wiki/Battaglia_del_Talas", "title": "Battaglia del Talas — Wikipedia" }
+    ],
+    "image": {
+      "url": "images/762-round-city.png",
+      "caption": "Pianta della Città Rotonda di Baghdad di al-Mansur",
+      "attribution": "Umar Farrukh, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "translation-movement",
+      "rationalism",
+      "islamic-golden-age",
+      "cosmopolitanism",
+      "geometry-as-ideology"
+    ]
+  },
+  {
+    "year": "1504",
+    "title": "Firenze — Il duello dei giganti",
+    "teaser": "Michelangelo e Leonardo competono per la stessa parete. Il Rinascimento raggiunge il suo apice.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Il <strong>Rinascimento maturo</strong> raggiunge il suo apice — il movimento che fuse ideali umanistici e maestria tecnica, convinto che l'arte potesse rivelare la verità divina attraverso lo studio della natura e dell'anatomia. <strong>Leonardo</strong> e <strong>Michelangelo</strong> ricevono entrambi l'incarico di dipingere le pareti opposte della Sala del Cinquecento a Firenze. Nessuno dei due completa l'opera — ma la rivalità incarna l'ideale rinascimentale del <em>paragone</em>, il confronto competitivo tra le arti. Nel frattempo il <em>David</em> di Michelangelo viene svelato e <strong>Raffaello</strong>, appena ventunenne, arriva per assorbire le tecniche di entrambi i maestri."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "L'<strong>umanesimo rinascimentale</strong> ha trasformato la letteratura dall'allegoria medievale all'impegno diretto con i modelli classici e la realtà politica. <strong>Machiavelli</strong>, in servizio come Secondo Cancelliere di Firenze, osserva da vicino l'arte di governo di Cesare Borgia — materia prima per <em>Il Principe</em> (1513), che romperà con la tradizione umanistica dei governanti idealizzati. <strong>Ariosto</strong> sta redigendo l'<em>Orlando Furioso</em> a Ferrara, fondendo il romanzo cavalleresco medievale con l'ironia rinascimentale — la tradizione cavalleresca che diventa consapevole di sé."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Il <strong>neoplatonismo</strong>, rinato con le traduzioni di Platone di Marsilio Ficino, domina il pensiero fiorentino — l'idea che la bellezza riveli la verità divina è presa alla lettera, rendendo arte e filosofia inseparabili. <strong>Erasmo</strong> pubblica l'<em>Enchiridion militis Christiani</em>, sostenendo un cristianesimo interiore e filosofico contro il rituale vuoto — parte dell'<strong>umanesimo cristiano</strong>, che applica la critica testuale rinascimentale alla religione stessa. Entrambe le correnti rifiutano la scolastica medievale in favore di qualcosa di più diretto e umano."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "L'Italia è frammentata tra città-stato in guerra mentre Francia e Spagna combattono per Napoli — le <strong>Guerre d'Italia</strong> (1494–1559) stanno trasformando la penisola nel campo di battaglia d'Europa. Firenze, appena liberatasi dal governo teocratico di Savonarola (arso nel 1498), è una fragile repubblica. A livello globale, l'<strong>età delle esplorazioni</strong> sta ridisegnando il mondo: Colombo ha compiuto il quarto viaggio, il Portogallo si espande nell'Oceano Indiano, e il baricentro dell'Europa si sta spostando dal Mediterraneo all'Atlantico."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "<strong>Machiavelli osserva il potere mentre Leonardo e Michelangelo lo raffigurano</strong> — sulle stesse pareti. L'unità del sapere rinascimentale fa sì che il diplomatico, il pittore e il filosofo abitino lo stesso mondo intellettuale. Neoplatonismo e umanesimo cristiano sono due facce dello stesso rifiuto dell'autorità medievale: entrambi insistono nel tornare alle fonti originali — che siano Platone o le Scritture. Il <em>David</em> non è solo scultura; è una dichiarazione politica: la piccola repubblica che resiste ai giganti, la forma classica al servizio dell'ideologia civica.",
+        "funFact": "Quando la commissione scelse dove collocare il David, Leonardo e Botticelli erano entrambi nel comitato. Leonardo suggerì di nasconderlo in una loggia. Fu messo in minoranza."
+      }
+    },
+    "image": {
+      "url": "images/1504-david.jpg",
+      "caption": "Il David di Michelangelo (1501–1504), Galleria dell'Accademia, Firenze",
+      "attribution": "Fir0002, CC BY-SA 3.0, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "renaissance-humanism",
+      "neoplatonism",
+      "classical-revival",
+      "art-and-power",
+      "christian-humanism"
+    ]
+  },
+  {
+    "year": "1889",
+    "title": "Parigi — L'anno in cui tutto cambiò",
+    "teaser": "La Tour Eiffel si erge. Van Gogh dipinge la Notte stellata. Nietzsche crolla. Bergson ripensa il tempo stesso.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Il <strong>post-impressionismo</strong> sta frantumando il consenso impressionista — dove Monet catturava la luce, la generazione successiva vuole catturare il significato. <strong>Van Gogh</strong> dipinge la <em>Notte stellata</em> dal manicomio di Saint-Rémy, spingendosi verso l'<strong>Espressionismo</strong>: il sentimento interiore sopra il fatto osservato. <strong>Gauguin</strong> in Bretagna dipinge il <em>Cristo giallo</em>, parte della rivolta del <strong>Simbolismo</strong> contro il realismo. <strong>Cézanne</strong> ad Aix getta silenziosamente un ponte tra Impressionismo e <strong>Cubismo</strong> — il pittore più importante in vita, anche se quasi nessuno lo sa ancora."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "La letteratura si divide tra <strong>Naturalismo</strong> e i suoi dissidenti. <strong>Maupassant</strong> pubblica <em>Forte come la morte</em> — lo sguardo clinico del Naturalismo rivolto all'interno, prima che la sifilide gli sottragga la mente. <strong>Yeats</strong> pubblica <em>The Wanderings of Oisin</em>, inaugurando il <strong>Celtic Revival</strong>: la mitologia come resistenza al dominio culturale britannico. Il <em>Yankee del Connecticut alla corte di Re Artù</em> di <strong>Twain</strong> usa la satira del viaggio nel tempo nella tradizione del <strong>realismo americano</strong>. La <em>Sonata a Kreutzer</em> di <strong>Tolstoj</strong>, censurata per la franchezza sessuale, segna la sua svolta da romanziere a profeta morale."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>Nietzsche</strong> crolla a Torino in gennaio — la sua vita produttiva finisce. Il <em>Crepuscolo degli idoli</em>, pubblicato quest'anno, è il culmine del suo assalto alla <strong>metafisica occidentale</strong>: Dio è morto, la morale è genealogia, la verità è interpretazione. <strong>Bergson</strong> pubblica il <em>Saggio sui dati immediati della coscienza</em>, fondando la <strong>filosofia del processo</strong>: il tempo vissuto (<em>durée</em>) è fondamentalmente diverso dal tempo dell'orologio. Entrambi rispondono alla crisi del <strong>positivismo</strong> — la sensazione che la scienza spieghi tutto tranne ciò che conta di più."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "La <strong>Tour Eiffel</strong> viene inaugurata per l'Esposizione Universale che celebra il centenario della Rivoluzione — l'ingegneria come ideologia, la <strong>Seconda Rivoluzione Industriale</strong> resa verticale. Il Brasile diventa una repubblica. La <strong>Costituzione Meiji</strong> entra in vigore in Giappone — modernizzazione per decreto imperiale. Lo sciopero dei portuali di Londra segna una svolta per il <strong>movimento operaio organizzato</strong>. La <strong>Spartizione dell'Africa</strong> è in pieno svolgimento, un continente ritagliato in possedimenti europei."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "L'intuizione di Bergson che il <strong>tempo vissuto ≠ tempo misurato</strong> è esattamente ciò che i post-impressionisti stanno dipingendo: Van Gogh non mostra com'è il cielo, mostra come lo si <em>sente</em>. La morte di Dio di Nietzsche e le visioni dal manicomio di Van Gogh condividono la stessa vertigine — vecchie certezze che si dissolvono in energia. La Tour Eiffel incarna la tensione centrale dell'epoca: la <strong>modernità</strong> è liberazione o mostruosità? Maupassant notoriamente mangiava al ristorante della Torre perché «è l'unico posto a Parigi da cui non si vede quella maledetta cosa».",
+        "funFact": "Theo van Gogh provò a vendere i quadri di Vincent all'Esposizione Universale del 1889. Quasi nessuno comprò. Un secolo dopo, quei dipinti avrebbero fruttato oltre 80 milioni di dollari l'uno."
+      }
+    },
+    "image": {
+      "url": "images/1889-starry-night.jpg",
+      "caption": "Vincent van Gogh, Notte stellata (1889), MoMA, New York",
+      "attribution": "Google Art Project, Pubblico dominio, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "post-impressionism",
+      "crisis-of-positivism",
+      "modernity",
+      "death-of-god",
+      "expressionism",
+      "symbolism"
+    ]
+  },
+  {
+    "year": "1922",
+    "title": "L'esplosione modernista",
+    "teaser": "Joyce, Eliot, Woolf, Wittgenstein — in un solo anno, il vecchio mondo dell'arte e del pensiero viene fatto saltare in aria.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Il <strong>Bauhaus</strong> è in piena attività sotto Gropius — Klee, Kandinsky, Moholy-Nagy insegnano l'idea radicale che arte, artigianato e industria debbano fondersi. È il braccio istituzionale del <strong>Costruttivismo</strong> e di <strong>De Stijl</strong>: ridurre l'arte alla forma pura, poi ricostruire il mondo. <strong>Mondrian</strong> avanza nell'astrazione geometrica. In Messico, <strong>Rivera</strong> inizia il suo primo grande murale — il <strong>Muralismo messicano</strong> insiste che l'arte debba essere pubblica, politica e monumentale, non chiusa nelle gallerie."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Il più grande anno del <strong>Modernismo</strong> letterario. L'<em>Ulisse</em> di <strong>Joyce</strong> (pubblicato a Parigi, censurato in USA e Gran Bretagna) fa deflagrare la forma narrativa — il romanzo come esperimento totale. <em>La terra desolata</em> di <strong>Eliot</strong> fa lo stesso per la poesia: frammenti puntellati contro la rovina. <em>La stanza di Jacob</em> di <strong>Woolf</strong> apre la via al flusso di coscienza. <strong>Proust</strong> muore a novembre, la <em>Ricerca del tempo perduto</em> incompiuta. <strong>Rilke</strong> completa le <em>Elegie duinesi</em> in un'unica esplosione creativa. Tutti rispondono alla distruzione delle certezze ottocentesche operata dalla Grande Guerra."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Il <em>Tractatus</em> di <strong>Wittgenstein</strong> appare in inglese — il testo fondatore del <strong>positivismo logico</strong>, che sostiene che i problemi della filosofia siano in realtà problemi di linguaggio. Il <strong>Circolo di Vienna</strong> si sta formando attorno a Schlick, portando Wittgenstein più in là di quanto lui stesso intendesse. <strong>Heidegger</strong> tiene lezione a Friburgo, sviluppando la <strong>fenomenologia esistenziale</strong> — il polo opposto, che insiste sul fatto che l'Essere, non la logica, sia il vero oggetto della filosofia. La disciplina si sta dividendo in due tradizioni che ancora non si sono riconciliate."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "L'<strong>Unione Sovietica</strong> viene formalmente istituita — l'esperimento bolscevico diventa uno Stato. <strong>Mussolini</strong> marcia su Roma — il <strong>fascismo</strong> prende il potere per la prima volta. L'<strong>Impero Ottomano</strong> crolla; la Turchia diventa una repubblica sotto Atatürk. Viene scoperta la <strong>tomba di Tutankhamon</strong>. Il mondo è a quattro anni dalla Grande Guerra, e l'ordine tra le due guerre si sta già fratturando tra comunismo, fascismo e democrazia liberale — la lotta a tre che definirà il secolo."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Tutto si connette attraverso la <strong>frammentazione</strong>. <em>La terra desolata</em> di Eliot è letteralmente fatta di frammenti. Joyce frammenta la narrazione in una dozzina di stili. Il Bauhaus frammenta l'arte in geometria. Wittgenstein frammenta il linguaggio in atomi logici. Perché? Perché la guerra aveva frammentato <em>tutto</em> — imperi, corpi, certezze. Il <strong>Modernismo</strong> non è uno stile; è l'arte di un mondo in frantumi che tenta di ricomporsi. Proust muore cercando di catturare tutto il tempo; Wittgenstein insiste che dobbiamo tacere su ciò che non possiamo catturare. Due risposte alla stessa impossibilità.",
+        "funFact": "Ezra Pound corresse La terra desolata con tale spietatezza da tagliarne quasi la metà. La bozza originale, ritrovata nel 1968, suggerisce che Pound possa essere stato il più grande editor della storia letteraria."
+      }
+    },
+    "image": {
+      "url": "images/1922-bauhaus.jpg",
+      "caption": "Joost Schmidt, manifesto per la mostra del Bauhaus (1923)",
+      "attribution": "Pubblico dominio, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "modernism",
+      "fragmentation",
+      "logical-positivism",
+      "existentialism",
+      "totalitarianism",
+      "death-of-god"
+    ]
+  }
+]

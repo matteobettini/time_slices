@@ -15,6 +15,16 @@ An interactive cross-disciplinary timeline exploring how art, literature, philos
 **Repo:** https://github.com/matteobettini/time_slices  
 **Project dir:** /home/cloud-user/.openclaw/workspace/time-slices/
 
+## Multilingual
+
+The site supports English and Italian. Content files:
+- `slices.json` — English entries (primary)
+- `slices.it.json` — Italian entries (must be kept in sync)
+- Thread labels in `index.html` — both `en` and `it` objects in `THREAD_LABELS`
+- Thread narratives in `index.html` — both `en` and `it` objects in `THREAD_NARRATIVES`
+
+When adding a new entry, **always** add it to BOTH files. Italian translations should feel natural — not literal machine translation. Use Italian Wikipedia for sources where possible.
+
 ---
 
 ## Entry Schema
@@ -111,13 +121,18 @@ Every dimension MUST contextualise within the broader cultural/intellectual MOVE
 ## index.html: Things You May Need to Update
 
 ### THREAD_LABELS object
-When you add a NEW thread tag, you MUST add a human-readable label to the `THREAD_LABELS` object in `index.html`. Find it in the `<script>` section:
+When you add a NEW thread tag, you MUST add a human-readable label to the `THREAD_LABELS` object in `index.html` — in BOTH the `en` and `it` sub-objects. Find it in the `<script>` section:
 
 ```javascript
 const THREAD_LABELS = {
-  'renaissance-humanism': 'Renaissance Humanism',
-  'death-of-god': 'Death of God',
-  // ... add new ones here
+  en: {
+    'renaissance-humanism': 'Renaissance Humanism',
+    // ...
+  },
+  it: {
+    'renaissance-humanism': 'Umanesimo rinascimentale',
+    // ...
+  }
 };
 ```
 
@@ -140,11 +155,13 @@ const MARKERS = [
 After writing a new entry:
 
 1. ✅ Read `slices.json`, append new entry, write back
-2. ✅ Validate it's proper JSON (parse it!)
-3. ✅ Check for new thread tags → update `THREAD_LABELS` in `index.html`
-4. ✅ Check if a new MARKER would help → update `MARKERS` in `index.html`
-5. ✅ `git add -A && git commit -m "Add slice: YEAR — TITLE" && git push origin main`
-6. ✅ Reply with summary: year, title, teaser, one highlight connection (3-5 sentences max)
+2. ✅ **Also** add the Italian translation to `slices.it.json` — same structure, all text translated naturally (not machine-translated), using Italian Wikipedia links for sources where available
+3. ✅ Validate both files are proper JSON (parse them!)
+4. ✅ Check for new thread tags → update `THREAD_LABELS` (both `en` and `it` sections) in `index.html`
+5. ✅ If you add thread narratives → update both `en` and `it` sections in `THREAD_NARRATIVES`
+6. ✅ Check if a new MARKER would help → update `MARKERS` in `index.html`
+7. ✅ `git add -A && git commit -m "Add slice: YEAR — TITLE" && git push origin main`
+8. ✅ Reply with summary: year, title, teaser, one highlight connection (3-5 sentences max)
 
 **DO NOT** deploy, tunnel, or expose anything. Only commit and push to git.
 

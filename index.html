@@ -46,12 +46,29 @@
     margin-bottom: 10px;
   }
   .header-left { display: flex; align-items: baseline; }
+  .header-right { display: flex; align-items: center; gap: 6px; }
   header h1 {
     font-size: 1.4rem; font-weight: 700;
     background: linear-gradient(135deg, var(--accent), var(--art));
     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   }
   header .subtitle { color: var(--text-dim); font-size: 0.85rem; margin-left: 12px; }
+
+  /* Language switcher */
+  .lang-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 3px 10px;
+    font-size: 0.75rem;
+    font-family: var(--font);
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    line-height: 1.4;
+  }
+  .lang-btn:hover { border-color: var(--text-dim); color: var(--text); }
+  .lang-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 
   /* Dimension filters */
   .filters {
@@ -510,10 +527,14 @@
   <div class="header-top">
     <div class="header-left">
       <h1>Time Slices</h1>
-      <span class="subtitle">Cross-disciplinary history exploration</span>
+      <span class="subtitle" id="subtitle">Cross-disciplinary history exploration</span>
+    </div>
+    <div class="header-right">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="it">IT</button>
     </div>
   </div>
-  <div class="filters">
+  <div class="filters" id="filters">
     <button class="filter-btn active" data-dim="all">All</button>
     <button class="filter-btn" data-dim="art">🎨 Art</button>
     <button class="filter-btn" data-dim="lit">📖 Literature</button>
@@ -537,30 +558,77 @@
 let SLICES = [];
 let activeFilter = 'all';
 let activeThread = null;
+let currentLang = (navigator.language || '').startsWith('it') ? 'it' : 'en';
 
 const DIM_ICONS = { art: '🎨', lit: '📖', phil: '🧠', hist: '⚔️', conn: '🔗' };
+
+const I18N = {
+  en: {
+    subtitle: 'Cross-disciplinary history exploration',
+    all: 'All', art: '🎨 Art', lit: '📖 Literature', phil: '🧠 Philosophy', hist: '⚔️ History', conn: '🔗 Connections',
+    thread: 'Thread', entries: 'entries', entry: 'entry',
+    expandHint: 'Click to explore →', sources: 'Sources',
+    yearsLater: 'years later…',
+    slicesFile: 'slices.json',
+  },
+  it: {
+    subtitle: 'Esplorazione interdisciplinare della storia',
+    all: 'Tutti', art: '🎨 Arte', lit: '📖 Letteratura', phil: '🧠 Filosofia', hist: '⚔️ Storia', conn: '🔗 Connessioni',
+    thread: 'Filo', entries: 'voci', entry: 'voce',
+    expandHint: 'Clicca per esplorare →', sources: 'Fonti',
+    yearsLater: 'anni dopo…',
+    slicesFile: 'slices.it.json',
+  }
+};
+
+function t(key) { return I18N[currentLang][key] || I18N.en[key] || key; }
 const THREAD_LABELS = {
-  'translation-movement': 'Translation as Power',
-  'rationalism': 'Rationalism',
-  'islamic-golden-age': 'Islamic Golden Age',
-  'cosmopolitanism': 'Cosmopolitanism',
-  'geometry-as-ideology': 'Geometry as Ideology',
-  'renaissance-humanism': 'Renaissance Humanism',
-  'neoplatonism': 'Neoplatonism',
-  'classical-revival': 'Classical Revival',
-  'art-and-power': 'Art & Power',
-  'christian-humanism': 'Christian Humanism',
-  'post-impressionism': 'Post-Impressionism',
-  'crisis-of-positivism': 'Crisis of Positivism',
-  'modernity': 'Modernity',
-  'death-of-god': 'Death of God',
-  'expressionism': 'Expressionism',
-  'symbolism': 'Symbolism',
-  'modernism': 'Modernism',
-  'fragmentation': 'Fragmentation',
-  'logical-positivism': 'Logical Positivism',
-  'existentialism': 'Existentialism',
-  'totalitarianism': 'Totalitarianism',
+  en: {
+    'translation-movement': 'Translation as Power',
+    'rationalism': 'Rationalism',
+    'islamic-golden-age': 'Islamic Golden Age',
+    'cosmopolitanism': 'Cosmopolitanism',
+    'geometry-as-ideology': 'Geometry as Ideology',
+    'renaissance-humanism': 'Renaissance Humanism',
+    'neoplatonism': 'Neoplatonism',
+    'classical-revival': 'Classical Revival',
+    'art-and-power': 'Art & Power',
+    'christian-humanism': 'Christian Humanism',
+    'post-impressionism': 'Post-Impressionism',
+    'crisis-of-positivism': 'Crisis of Positivism',
+    'modernity': 'Modernity',
+    'death-of-god': 'Death of God',
+    'expressionism': 'Expressionism',
+    'symbolism': 'Symbolism',
+    'modernism': 'Modernism',
+    'fragmentation': 'Fragmentation',
+    'logical-positivism': 'Logical Positivism',
+    'existentialism': 'Existentialism',
+    'totalitarianism': 'Totalitarianism',
+  },
+  it: {
+    'translation-movement': 'Traduzione come potere',
+    'rationalism': 'Razionalismo',
+    'islamic-golden-age': 'Età d\'oro islamica',
+    'cosmopolitanism': 'Cosmopolitismo',
+    'geometry-as-ideology': 'Geometria come ideologia',
+    'renaissance-humanism': 'Umanesimo rinascimentale',
+    'neoplatonism': 'Neoplatonismo',
+    'classical-revival': 'Rinascita classica',
+    'art-and-power': 'Arte e potere',
+    'christian-humanism': 'Umanesimo cristiano',
+    'post-impressionism': 'Post-impressionismo',
+    'crisis-of-positivism': 'Crisi del positivismo',
+    'modernity': 'Modernità',
+    'death-of-god': 'Morte di Dio',
+    'expressionism': 'Espressionismo',
+    'symbolism': 'Simbolismo',
+    'modernism': 'Modernismo',
+    'fragmentation': 'Frammentazione',
+    'logical-positivism': 'Positivismo logico',
+    'existentialism': 'Esistenzialismo',
+    'totalitarianism': 'Totalitarismo',
+  }
 };
 
 const MARKERS = [
@@ -591,7 +659,8 @@ const MARKERS = [
 const timeline = document.getElementById('timeline');
 
 function formatThreadId(id) {
-  return THREAD_LABELS[id] || id.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+  const labels = THREAD_LABELS[currentLang] || THREAD_LABELS.en;
+  return labels[id] || id.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
 }
 
 function renderSlice(slice) {
@@ -617,7 +686,7 @@ function renderSlice(slice) {
   ).join('');
   const sourcesHtml = sources ? `
     <details class="card-sources" onclick="event.stopPropagation()">
-      <summary>Sources</summary>
+      <summary>${t('sources')}</summary>
       ${sources}
     </details>` : '';
 
@@ -645,7 +714,7 @@ function renderSlice(slice) {
         <div class="card-title">${slice.title}</div>
         <div class="card-teaser">${slice.teaser}</div>
         <div class="card-threads">${threads}</div>
-        <div class="expand-hint">Click to explore →</div>
+        <div class="expand-hint">${t('expandHint')}</div>
         <div class="card-details">
           ${dims}
           ${sourcesHtml}
@@ -733,15 +802,22 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 // Thread logic
 // Narrative connectors between thread entries
 const THREAD_NARRATIVES = {
-  'death-of-god': {
-    '1889→1922': 'Nietzsche declared God dead in 1882. By 1922, the void he predicted had swallowed certainty itself — Eliot\'s <em>Waste Land</em> mapped the wreckage, while logical positivism tried to rebuild meaning from scratch.',
+  en: {
+    'death-of-god': {
+      '1889→1922': 'Nietzsche declared God dead in 1882. By 1922, the void he predicted had swallowed certainty itself — Eliot\'s <em>Waste Land</em> mapped the wreckage, while logical positivism tried to rebuild meaning from scratch.',
+    },
   },
-  // Narratives auto-generated for single-entry threads: "This thread begins here."
+  it: {
+    'death-of-god': {
+      '1889→1922': 'Nietzsche dichiarò morto Dio nel 1882. Entro il 1922, il vuoto che aveva predetto aveva inghiottito la certezza stessa — <em>La terra desolata</em> di Eliot ne mappava le macerie, mentre il positivismo logico tentava di ricostruire il significato da zero.',
+    },
+  },
 };
 
 function getThreadNarrative(threadId, yearFrom, yearTo) {
   const key = `${yearFrom}→${yearTo}`;
-  const narratives = THREAD_NARRATIVES[threadId];
+  const langNarratives = THREAD_NARRATIVES[currentLang] || THREAD_NARRATIVES.en;
+  const narratives = langNarratives[threadId];
   return narratives && narratives[key] ? narratives[key] : null;
 }
 
@@ -790,7 +866,7 @@ function activateThread(threadId) {
       connector.innerHTML = `<span class="narrative-arrow">↓</span>${narrative}`;
     } else {
       const gap = parseInt(toYear) - parseInt(fromYear);
-      connector.innerHTML = `<span class="narrative-arrow">↓</span><em>${gap} years later…</em>`;
+      connector.innerHTML = `<span class="narrative-arrow">↓</span><em>${gap} ${t('yearsLater')}</em>`;
     }
 
     // Insert after the current matching entry
@@ -808,7 +884,7 @@ function activateThread(threadId) {
   // Show banner
   const count = matchingEntries.length;
   document.getElementById('threadName').textContent = formatThreadId(threadId);
-  document.getElementById('threadCount').textContent = `${count} ${count === 1 ? 'entry' : 'entries'}`;
+  document.getElementById('threadCount').textContent = `${count} ${count === 1 ? t('entry') : t('entries')}`;
   document.getElementById('threadBanner').classList.add('visible');
 
   // Scroll to first matching entry
@@ -935,29 +1011,70 @@ function setupScrollReveal() {
   document.querySelectorAll('.entry').forEach(el => observer.observe(el));
 }
 
-// Init
-fetch('slices.json')
-  .then(r => r.json())
-  .then(data => {
-    SLICES = data;
-
-    const items = [
-      ...SLICES.map(s => ({ type: 'slice', year: parseInt(s.year), data: s })),
-      ...MARKERS.map(m => ({ type: 'marker', year: m.year, data: m })),
-    ];
-    items.sort((a, b) => a.year - b.year || (a.type === 'marker' ? -1 : 1));
-
-    items.forEach((item) => {
-      if (item.type === 'slice') {
-        timeline.appendChild(renderSlice(item.data));
-      } else {
-        timeline.appendChild(renderMarker(item.data));
-      }
-    });
-
-    lazyLoadImages();
-    setupScrollReveal();
+// Update UI labels for current language
+function updateUILabels() {
+  document.getElementById('subtitle').textContent = t('subtitle');
+  document.querySelectorAll('#filters .filter-btn').forEach(btn => {
+    btn.textContent = t(btn.dataset.dim);
   });
+  document.querySelector('.thread-banner span:first-child').innerHTML =
+    `🧵 ${t('thread')}: <span class="thread-name" id="threadName"></span>`;
+  document.documentElement.lang = currentLang;
+}
+
+// Load slices for current language and rebuild timeline
+function loadSlices() {
+  // Clear active thread
+  if (activeThread) clearThread();
+
+  fetch(t('slicesFile'))
+    .then(r => r.json())
+    .then(data => {
+      SLICES = data;
+      timeline.innerHTML = '';
+
+      const items = [
+        ...SLICES.map(s => ({ type: 'slice', year: parseInt(s.year), data: s })),
+        ...MARKERS.map(m => ({ type: 'marker', year: m.year, data: m })),
+      ];
+      items.sort((a, b) => a.year - b.year || (a.type === 'marker' ? -1 : 1));
+
+      items.forEach((item) => {
+        if (item.type === 'slice') {
+          timeline.appendChild(renderSlice(item.data));
+        } else {
+          timeline.appendChild(renderMarker(item.data));
+        }
+      });
+
+      lazyLoadImages();
+      setupScrollReveal();
+      // Reapply dimension filter
+      applyFilter(activeFilter);
+    });
+}
+
+// Language switcher
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const lang = btn.dataset.lang;
+    if (lang === currentLang) return;
+    currentLang = lang;
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    updateUILabels();
+    loadSlices();
+  });
+});
+
+// Init: set correct lang button active and load
+(function init() {
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === currentLang);
+  });
+  updateUILabels();
+  loadSlices();
+})();
 </script>
 
 </body>
