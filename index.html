@@ -1360,7 +1360,20 @@ function updateUILabels() {
 }
 
 // Load slices for current language and rebuild timeline
-function loadSlices() {
+function loadSlices(restoreYear) {
+  // If no explicit year to restore, find the entry currently in view
+  if (!restoreYear) {
+    const viewportCenter = window.innerHeight / 2;
+    const entries = document.querySelectorAll('.entry[data-year]');
+    let closest = null, closestDist = Infinity;
+    entries.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const dist = Math.abs(rect.top + rect.height / 2 - viewportCenter);
+      if (dist < closestDist) { closestDist = dist; closest = el; }
+    });
+    if (closest) restoreYear = closest.dataset.year;
+  }
+
   // Clear active thread
   if (activeThread) clearThread();
 
@@ -1386,6 +1399,14 @@ function loadSlices() {
 
       lazyLoadImages();
       setupScrollReveal();
+
+      // Restore scroll position to the same entry
+      if (restoreYear) {
+        requestAnimationFrame(() => {
+          const target = document.querySelector(`.entry[data-year="${restoreYear}"]`);
+          if (target) target.scrollIntoView({ block: 'center' });
+        });
+      }
     });
 }
 
