@@ -1607,8 +1607,8 @@ function populateMap() {
     document.getElementById('timeYearDisplay').textContent = maxY;
   }
 
-  // Fit bounds to show all markers
-  if (mapMarkers.length > 1) {
+  // Fit bounds to show all markers (skip if thread active — thread will fit its own)
+  if (mapMarkers.length > 1 && !mapActiveThread) {
     const group = L.featureGroup(mapMarkers);
     map.fitBounds(group.getBounds().pad(0.3), { maxZoom: 6 });
   }
