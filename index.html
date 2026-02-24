@@ -1537,8 +1537,11 @@ function loadSlices(restoreYear) {
     expandedYears.add(el.dataset.year);
   });
 
+  // Remember if we're at/near the top of the page
+  const wasAtTop = window.scrollY < 80;
+
   // If no explicit year to restore, find the entry currently in view
-  if (!restoreYear) {
+  if (!restoreYear && !wasAtTop) {
     const viewportCenter = window.innerHeight / 2;
     const entries = document.querySelectorAll('.entry[data-year]');
     let closest = null, closestDist = Infinity;
@@ -1588,8 +1591,10 @@ function loadSlices(restoreYear) {
       // Signal that slices are ready for dice/coffee buttons
       _slicesReadyResolve();
 
-      // Restore scroll position to the same entry
-      if (restoreYear) {
+      // Restore scroll position
+      if (wasAtTop) {
+        window.scrollTo(0, 0);
+      } else if (restoreYear) {
         requestAnimationFrame(() => {
           const target = document.querySelector(`.entry[data-year="${restoreYear}"]`);
           if (target) target.scrollIntoView({ block: 'center' });
