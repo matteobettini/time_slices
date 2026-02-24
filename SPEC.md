@@ -56,8 +56,13 @@ Every entry in `slices.json` MUST have this structure:
 
 #### image (mandatory)
 - Must be PUBLIC DOMAIN or CC-licensed from Wikimedia Commons
-- Get a thumbnail URL via the Wikipedia API (iiurlwidth=800):
+- **Download the image locally** into `images/` directory: `images/YEAR-short-name.jpg`
+- Use curl to download: `curl -sL -A "Mozilla/5.0 TimeSlices/1.0" -o "images/YEAR-name.jpg" "WIKIMEDIA_URL"`
+- Find thumbnail URLs via the Wikipedia API (iiurlwidth=800):
   `https://en.wikipedia.org/w/api.php?action=query&titles=File:FILENAME&prop=imageinfo&iiprop=url&iiurlwidth=800&format=json`
+- Set `"url"` to the **local relative path**: `"images/1504-david.jpg"` (NOT the Wikimedia URL)
+- Verify the download is a real image (`file images/...`) — Wikimedia sometimes returns 429 error pages
+- If a URL is rate-limited, try a different image from the same Wikipedia article
 - Pick something visually compelling: a painting, building, map, manuscript, photograph
 - The image appears at the top of the card — it's the first thing people see
 
