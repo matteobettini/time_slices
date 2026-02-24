@@ -121,7 +121,9 @@
     width: 2px;
     background: linear-gradient(to bottom, transparent, var(--border) 80px, var(--border) calc(100% - 80px), transparent);
     transform: translateX(-50%);
+    transition: opacity 0.4s ease;
   }
+  .timeline-line.thread-active { opacity: 0.15; }
 
   /* Entry */
   .entry {
@@ -416,8 +418,8 @@
     width: 50%;
     margin: 0 auto 32px;
     padding: 14px 20px;
-    background: rgba(124,111,247,0.06);
-    border: 1px solid rgba(124,111,247,0.2);
+    background: var(--bg);
+    border: 1px solid rgba(124,111,247,0.25);
     border-radius: 10px;
     font-size: 0.82rem;
     line-height: 1.6;
@@ -425,6 +427,8 @@
     text-align: center;
     animation: fadeIn 0.4s ease;
     z-index: 5;
+    /* Cover the timeline line behind */
+    box-shadow: 0 0 0 12px var(--bg), 0 0 20px rgba(124,111,247,0.08);
   }
   .thread-narrative .narrative-arrow {
     color: var(--accent);
@@ -746,6 +750,9 @@ function activateThread(threadId) {
   const entries = document.querySelectorAll('.entry');
   const matchingEntries = [];
 
+  // Dim the main timeline line
+  document.querySelector('.timeline-line').classList.add('thread-active');
+
   // First: record max-height of non-matching entries before hiding
   entries.forEach(entry => {
     const threads = JSON.parse(entry.dataset.threads || '[]');
@@ -815,6 +822,9 @@ function activateThread(threadId) {
 function clearThread() {
   activeThread = null;
 
+  // Restore timeline line
+  document.querySelector('.timeline-line').classList.remove('thread-active');
+
   document.querySelectorAll('.entry').forEach(e => {
     e.classList.remove('thread-hidden', 'thread-highlighted');
     e.style.maxHeight = '';
@@ -831,63 +841,68 @@ function drawThreadLines(matchingEntries) {
   clearThreadLines();
   if (matchingEntries.length < 2) return;
 
-  const container = document.querySelector('.timeline-container');
-  const containerRect = container.getBoundingClientRect();
+  // Delay drawing until layout has settled after hide/show transitions
+  setTimeout(() => {
+    const container = document.querySelector('.timeline-container');
+    const containerRect = container.getBoundingClientRect();
+    const scrollTop = container.scrollTop || 0;
 
-  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  svg.classList.add('thread-lines-svg');
-  svg.setAttribute('width', '100%');
-  svg.setAttribute('height', '100%');
-  container.appendChild(svg);
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.classList.add('thread-lines-svg');
+    // Set SVG to cover the full scrollable height of the container
+    const fullHeight = container.scrollHeight;
+    svg.setAttribute('width', '100%');
+    svg.setAttribute('height', fullHeight + 'px');
+    svg.style.height = fullHeight + 'px';
+    container.appendChild(svg);
 
-  // Add glow filter
-  const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
-  defs.innerHTML = `
-    <filter id="threadGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  `;
-  svg.appendChild(defs);
+    // Add glow filter
+    const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+    defs.innerHTML = `
+      <filter id="threadGlow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="4" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    `;
+    svg.appendChild(defs);
 
-  for (let i = 0; i < matchingEntries.length - 1; i++) {
-    const fromDot = matchingEntries[i];
-    const toDot = matchingEntries[i + 1];
-
-    // Find the dot positions (the ::before pseudo-element is on the timeline center)
-    const fromRect = fromDot.getBoundingClientRect();
-    const toRect = toDot.getBoundingClientRect();
-
-    // Dot is at top: 24px of the entry, horizontally at the timeline center
     const timelineX = container.offsetWidth / 2;
-    const fromY = fromRect.top - containerRect.top + 30;
-    const toY = toRect.top - containerRect.top + 30;
 
-    // Draw a curved line along the timeline
-    const midY = (fromY + toY) / 2;
-    const curveOffset = 30; // how far the curve bows out
+    for (let i = 0; i < matchingEntries.length - 1; i++) {
+      const fromEntry = matchingEntries[i];
+      const toEntry = matchingEntries[i + 1];
 
-    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    path.setAttribute('d', `M ${timelineX} ${fromY} Q ${timelineX + curveOffset} ${midY} ${timelineX} ${toY}`);
-    path.setAttribute('fill', 'none');
-    path.setAttribute('stroke', 'rgba(124,111,247,0.4)');
-    path.setAttribute('stroke-width', '3');
-    path.setAttribute('stroke-linecap', 'round');
-    path.setAttribute('filter', 'url(#threadGlow)');
+      const fromRect = fromEntry.getBoundingClientRect();
+      const toRect = toEntry.getBoundingClientRect();
 
-    // Animate the line drawing
-    const length = path.getTotalLength ? path.getTotalLength() : 500;
-    path.setAttribute('stroke-dasharray', length);
-    path.setAttribute('stroke-dashoffset', length);
-    path.style.transition = `stroke-dashoffset 0.8s ease ${i * 0.2}s`;
+      // Dot is at top: 24px of the entry, offset from container top
+      const fromY = fromRect.top - containerRect.top + scrollTop + 30;
+      const toY = toRect.top - containerRect.top + scrollTop + 30;
 
-    svg.appendChild(path);
+      const midY = (fromY + toY) / 2;
+      const curveOffset = 30;
 
-    // Trigger animation
-    requestAnimationFrame(() => {
-      path.setAttribute('stroke-dashoffset', '0');
-    });
-  }
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('d', `M ${timelineX} ${fromY} Q ${timelineX + curveOffset} ${midY} ${timelineX} ${toY}`);
+      path.setAttribute('fill', 'none');
+      path.setAttribute('stroke', 'rgba(124,111,247,0.35)');
+      path.setAttribute('stroke-width', '3');
+      path.setAttribute('stroke-linecap', 'round');
+      path.setAttribute('filter', 'url(#threadGlow)');
+
+      // Animate
+      const length = path.getTotalLength ? path.getTotalLength() : 500;
+      path.setAttribute('stroke-dasharray', length);
+      path.setAttribute('stroke-dashoffset', length);
+      path.style.transition = `stroke-dashoffset 0.8s ease ${i * 0.2}s`;
+
+      svg.appendChild(path);
+
+      requestAnimationFrame(() => {
+        path.setAttribute('stroke-dashoffset', '0');
+      });
+    }
+  }, 500); // wait for hide/show transitions to finish
 }
 
 function clearThreadLines() {
