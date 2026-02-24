@@ -1497,8 +1497,10 @@ function initMap() {
     subdomains: 'abcd',
   }).addTo(map);
 
-  // Zoom control in bottom-right (away from time slider)
-  L.control.zoom({ position: 'bottomright' }).addTo(map);
+  // Zoom control in bottom-right — desktop only (mobile uses pinch)
+  if (window.innerWidth > 768) {
+    L.control.zoom({ position: 'bottomright' }).addTo(map);
+  }
 }
 
 function createMapMarker(slice) {
