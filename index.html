@@ -1061,6 +1061,7 @@ function getThreadNarrative(threadId, yearFrom, yearTo) {
 
 function activateThread(threadId) {
   activeThread = threadId;
+  mapActiveThread = threadId; // keep both views in sync
   const entries = document.querySelectorAll('.entry');
   const matchingEntries = [];
 
@@ -1135,6 +1136,7 @@ function activateThread(threadId) {
 
 function clearThread() {
   activeThread = null;
+  mapActiveThread = null; // keep both views in sync
 
   // Restore timeline line
   document.querySelector('.timeline-line').classList.remove('thread-active');
@@ -1588,6 +1590,7 @@ function activateMapThread(threadId) {
 
 function clearMapThread() {
   mapActiveThread = null;
+  activeThread = null; // keep both views in sync
 
   mapMarkers.forEach(marker => {
     const el = marker.getElement();
@@ -1681,7 +1684,7 @@ function drawMapArcs(threadId, maxYear) {
 }
 
 function clearMapArcs() {
-  mapArcs.forEach(a => map.removeLayer(a));
+  if (map) mapArcs.forEach(a => map.removeLayer(a));
   mapArcs = [];
 }
 
@@ -1724,7 +1727,8 @@ function showMapView() {
   setTimeout(() => {
     map.invalidateSize();
     populateMap();
-  }, 100);
+    // populateMap() already re-activates mapActiveThread if set
+  }, 150);
 }
 
 function showTimelineView() {
@@ -1735,9 +1739,12 @@ function showTimelineView() {
   document.getElementById('viewToggle').textContent = '🗺️';
   document.getElementById('viewToggle').title = 'Map view';
 
-  // Sync thread state from map to timeline
+  // Sync thread state: map → timeline
   if (mapActiveThread && mapActiveThread !== activeThread) {
     activateThread(mapActiveThread);
+  } else if (!mapActiveThread && activeThread) {
+    // Thread was cleared on map — clear on timeline too
+    clearThread();
   }
 }
 
