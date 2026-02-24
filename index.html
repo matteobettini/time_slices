@@ -1629,19 +1629,19 @@ function updateTimeFilter(maxYear) {
     const year = marker._sliceYear;
     const isThreadMember = mapActiveThread && marker._sliceThreads.includes(mapActiveThread);
 
-    // During thread tour: thread members are always visible, others hidden
-    if (mapActiveThread && mapIsPlaying) {
-      if (isThreadMember) {
-        dot.classList.remove('hidden-by-time');
-        dot.style.opacity = 1;
-        if (label) label.style.opacity = 1;
-      } else {
-        dot.classList.add('hidden-by-time');
-        dot.style.opacity = '';
-        if (label) label.style.opacity = '0';
-        if (marker.isPopupOpen()) marker.closePopup();
-      }
-      return; // skip normal time-window logic
+    // Thread mode (playing OR manual scrub): thread members always visible, others hidden
+    if (mapActiveThread && isThreadMember) {
+      dot.classList.remove('hidden-by-time');
+      dot.style.opacity = 1;
+      if (label) label.style.opacity = 1;
+      return;
+    }
+    if (mapActiveThread && !isThreadMember) {
+      dot.classList.add('hidden-by-time');
+      dot.style.opacity = '';
+      if (label) label.style.opacity = '0';
+      if (marker.isPopupOpen()) marker.closePopup();
+      return;
     }
 
     const diff = maxYear - year; // positive = slider is past this entry
@@ -1696,6 +1696,8 @@ let _lastFitSet = null;
 let _lastVisibleSet = '';  // track which markers are visible to only refit on change
 function fitToVisibleMarkers(maxYear) {
   if (_suppressAutoFit) return;
+  // In thread mode (manual scrub), don't auto-fit — user controls the camera
+  if (mapActiveThread && !mapIsPlaying) return;
 
   const visible = mapMarkers.filter(m => Math.abs(maxYear - m._sliceYear) <= TIME_WINDOW);
   if (visible.length === 0) return;
@@ -2102,61 +2104,34 @@ function clearMapThread() {
 function drawMapArcs(threadId, maxYear) {
   clearMapArcs();
 
+  // All thread markers (always visible in thread mode), sorted chronologically
   const threadMarkers = mapMarkers
-    .filter(m => m._sliceThreads.includes(threadId) && Math.abs(maxYear - m._sliceYear) <= TIME_WINDOW)
+    .filter(m => m._sliceThreads.includes(threadId))
     .sort((a, b) => a._sliceYear - b._sliceYear);
 
   if (threadMarkers.length < 2) return;
 
+  // Only draw arcs where the slider has reached the destination event
   for (let i = 0; i < threadMarkers.length - 1; i++) {
+    const toYear = threadMarkers[i + 1]._sliceYear;
+    if (toYear > maxYear) break; // slider hasn't reached this event yet
+
     const from = threadMarkers[i].getLatLng();
     const to = threadMarkers[i + 1].getLatLng();
-
-    // Create curved arc using intermediate points
     const latlngs = generateArc(from, to, 50);
 
-    // Background glow arc (wider, more transparent)
     const glowArc = L.polyline(latlngs, {
       color: 'rgba(124,111,247,0.2)',
-      weight: 8,
-      lineCap: 'round',
-      lineJoin: 'round',
-      interactive: false,
+      weight: 8, lineCap: 'round', lineJoin: 'round', interactive: false,
     }).addTo(map);
 
-    // Main arc (solid, bright)
     const arc = L.polyline(latlngs, {
       color: 'rgba(124,111,247,0.7)',
-      weight: 3,
-      lineCap: 'round',
-      lineJoin: 'round',
-      interactive: false,
+      weight: 3, lineCap: 'round', lineJoin: 'round', interactive: false,
     }).addTo(map);
 
-    // Animate via progressive point reveal
-    const animDelay = i * 400;
-    glowArc.setLatLngs([]);
-    arc.setLatLngs([]);
-    
-    let frame = 0;
-    const totalFrames = latlngs.length;
-    setTimeout(() => {
-      function animateArc() {
-        if (frame >= totalFrames) return;
-        frame += 2; // 2 points per frame for speed
-        const partial = latlngs.slice(0, Math.min(frame, totalFrames));
-        glowArc.setLatLngs(partial);
-        arc.setLatLngs(partial);
-        if (frame < totalFrames) requestAnimationFrame(animateArc);
-      }
-      animateArc();
-    }, animDelay);
-
-    // Year label at midpoint
     const midIdx = Math.floor(latlngs.length / 2);
-    const fromYear = threadMarkers[i]._sliceYear;
-    const toYear = threadMarkers[i + 1]._sliceYear;
-    const gap = toYear - fromYear;
+    const gap = toYear - threadMarkers[i]._sliceYear;
     const yearLabel = L.marker(latlngs[midIdx], {
       icon: L.divIcon({
         className: '',
