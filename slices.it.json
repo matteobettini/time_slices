@@ -191,6 +191,74 @@
     }
   },
   {
+    "year": "1648",
+    "title": "Münster — L'esaurimento di Dio",
+    "teaser": "Trent'anni di guerre di religione sfociano in un'idea radicale: sono gli Stati, non Dio, a determinare l'ordine. Intanto ad Amsterdam, Rembrandt dipinge la luce come un filosofo e Cartesio pensa in un paese che glielo permette.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Il <strong>Barocco</strong> domina — l'arte come esperienza sensoriale travolgente, nata dal bisogno della Controriforma di riconquistare i fedeli attraverso lo spettacolo. Ma nella Repubblica olandese il Barocco prende una piega protestante: niente pale d'altare, niente committenze papali. <strong>Rembrandt</strong> dipinge invece milizie civiche, lezioni di anatomia e il proprio volto che invecchia, con un chiaroscuro che tratta la luce come indagine morale. La sua <em>Ronda di notte</em> (1642) trasforma il ritratto di gruppo da cerimonia rigida a teatro dinamico. <strong>Vermeer</strong> è a otto anni dal suo primo capolavoro; il <strong>Secolo d'oro olandese</strong> convoglia la propria ricchezza non in cattedrali ma in interni domestici, nature morte e paesaggi — il quotidiano reso luminoso."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "La guerra genera una letteratura della devastazione. Il <em>Simplicissimus</em> di <strong>Grimmelshausen</strong> (1668, ma radicato nell'esperienza di questo decennio) diventerà il grande romanzo picaresco tedesco — un ragazzo ingenuo trascinato attraverso tre decenni di atrocità, la Guerra dei trent'anni come anti-<em>Bildungsroman</em>. In Inghilterra, <strong>Milton</strong> sta già concependo il <em>Paradiso perduto</em>, l'epica barocca che trasforma Satana nel primo grande antagonista complesso della letteratura. <strong>Corneille</strong> e <strong>Racine</strong> stanno forgiando il <strong>Classicismo francese</strong> — la tragedia governata da rigide unità, la ragione che impone forma alla passione. L'ordine come estetica, perché il mondo non ne offre alcuno."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>Cartesio</strong>, che vive nella Repubblica olandese proprio perché tollera il libero pensiero, ha già pubblicato le <em>Meditazioni</em> (1641) e i <em>Principia Philosophiae</em> (1644) — i testi fondativi del <strong>Razionalismo continentale</strong>. Il suo metodo di dubbio radicale (<em>cogito ergo sum</em>) ricostruisce la conoscenza da un'unica certezza, scartando ogni autorità ereditata. Ad Amsterdam, il giovane <strong>Spinoza</strong> sta assorbendo Cartesio preparandosi a superarlo — la sua <em>Etica</em> fonderà Dio e Natura in un'unica sostanza, eliminando il Dio personale per cui si era combattuto trent'anni di guerra."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "La <strong>Pace di Vestfalia</strong> pone fine sia alla Guerra dei trent'anni sia alla Guerra degli ottant'anni, ridisegnando l'Europa attorno a un principio rivoluzionario: la <strong>sovranità statale</strong>. Ogni sovrano determina la religione del proprio territorio (<em>cuius regio, eius religio</em>), e nessuna potenza — né il Papa, né l'Imperatore — può intervenire negli affari di un altro Stato. La Germania ha perso forse un terzo della sua popolazione; alcune regioni, oltre la metà. La Repubblica olandese ottiene l'indipendenza formale dalla Spagna ed entra nel suo Secolo d'oro — un impero commerciale fondato sulla tolleranza, il commercio e la prima borsa valori al mondo."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Il metodo di Cartesio e l'assetto vestfaliano compiono la stessa operazione: <strong>sostituiscono l'autorità divina con la ragione umana come fondamento dell'ordine</strong>. Il filosofo dubita di tutto e ricostruisce dal cogito; i diplomatici dubitano della verità religiosa e ricostruiscono dalla sovranità. La pittura olandese fa lo stesso — la luce di Rembrandt non scende dal cielo, entra da una finestra, naturale e specifica. La teatralità cattolica del Barocco e il rigore protestante olandese sono risposte gemelle alla stessa crisi: come si crea significato dopo che Dio è stato usato come arma?",
+        "funFact": "Cartesio morì nel 1650 dopo essersi trasferito in Svezia su invito della regina Cristina. Era tenuto a dare lezioni di filosofia alle cinque del mattino in un palazzo gelido. Il razionalista che aveva ricostruito tutto il sapere dai principi primi fu sconfitto da un inverno scandinavo."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Pace_di_Vestfalia",
+        "title": "Pace di Vestfalia — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Guerra_dei_trent%27anni",
+        "title": "Guerra dei trent'anni — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Ronda_di_notte",
+        "title": "Ronda di notte — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Cartesio",
+        "title": "Cartesio — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Secolo_d%27oro_olandese",
+        "title": "Secolo d'oro olandese — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1648-night-watch.jpg",
+      "caption": "Rembrandt van Rijn, Ronda di notte (1642), Rijksmuseum, Amsterdam",
+      "attribution": "Pubblico dominio, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "rationalism",
+      "death-of-god",
+      "modernity",
+      "baroque",
+      "westphalian-sovereignty",
+      "dutch-golden-age"
+    ],
+    "location": {
+      "lat": 51.9607,
+      "lon": 7.6261,
+      "place": "Münster"
+    }
+  },
+  {
     "year": "1889",
     "title": "Parigi — L'anno in cui tutto cambiò",
     "teaser": "La Tour Eiffel si erge. Van Gogh dipinge la Notte stellata. Nietzsche crolla. Bergson ripensa il tempo stesso.",

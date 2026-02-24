@@ -894,6 +894,9 @@ const THREAD_LABELS = {
     'memento-mori': 'Memento Mori',
     'nominalism': 'Nominalism',
     'vernacular-literature': 'Vernacular Literature',
+    'baroque': 'Baroque',
+    'westphalian-sovereignty': 'Westphalian Sovereignty',
+    'dutch-golden-age': 'Dutch Golden Age',
   },
   it: {
     'translation-movement': 'Traduzione come potere',
@@ -920,6 +923,9 @@ const THREAD_LABELS = {
     'memento-mori': 'Memento Mori',
     'nominalism': 'Nominalismo',
     'vernacular-literature': 'Letteratura in volgare',
+    'baroque': 'Barocco',
+    'westphalian-sovereignty': 'Sovranità vestfaliana',
+    'dutch-golden-age': 'Secolo d\'oro olandese',
   }
 };
 
@@ -1083,9 +1089,18 @@ function renderMarker(marker) {
 const THREAD_NARRATIVES = {
   en: {
     'death-of-god': {
+      '1347→1648': 'The plague made God\'s order illegible; three centuries later, the wars of religion made it lethal. Westphalia\'s solution was radical: stop asking which God is right and let sovereignty decide. Ockham\'s nominalism planted the seed; Descartes\' cogito grew from the same doubt.',
       '1347→1889': 'The Black Death made God\'s order illegible five centuries before Nietzsche declared Him dead. Ockham\'s razor stripped away metaphysical certainties; by 1889, Nietzsche finished the job — and collapsed under the weight of it.',
       '1347→1922': 'From plague to wasteland: the crisis of divine authority that began when prayers couldn\'t stop the Black Death reaches its modernist conclusion in Eliot\'s fragments and Wittgenstein\'s silence about what cannot be said.',
+      '1648→1889': 'Westphalia removed God from international politics; Nietzsche removed Him from philosophy. Between them, two and a half centuries of Enlightenment slowly replaced divine authority with human reason — until reason itself began to crack.',
+      '1648→1922': 'The Peace of Westphalia made religion a private matter of state; by 1922, God had become a private matter of the individual — or nobody\'s matter at all. Eliot\'s wasteland is what Westphalia\'s secular order looks like after the trenches.',
       '1889→1922': 'Nietzsche declared God dead in 1882. By 1922, the void he predicted had swallowed certainty itself — Eliot\'s <em>Waste Land</em> mapped the wreckage, while logical positivism tried to rebuild meaning from scratch.',
+    },
+    'rationalism': {
+      '762→1648': 'The Mu\'tazila argued that reason could determine religious truth; eight centuries later, Descartes used reason to bypass religious truth entirely. Baghdad\'s translation movement preserved the Greek rationalism that Descartes inherited — the cogito\'s ancestors spoke Arabic.',
+    },
+    'modernity': {
+      '1648→1889': 'Westphalia invented the modern state; the Eiffel Tower celebrated what the modern state could build. Between them: the Enlightenment, the Industrial Revolution, the nation-state. The 1889 World\'s Fair was Westphalian sovereignty made festive — competing nations showing off in iron and glass.',
     },
     'fragmentation': {
       '1347→1922': 'The plague shattered medieval unity — Church authority, feudal order, demographic stability, all broken at once. Six centuries later, modernism made fragmentation into an art form, shattering narrative, painting, and language with the same democratic indifference.',
@@ -1093,9 +1108,18 @@ const THREAD_NARRATIVES = {
   },
   it: {
     'death-of-god': {
+      '1347→1648': 'La peste rese illeggibile l\'ordine di Dio; tre secoli dopo, le guerre di religione lo resero letale. La soluzione di Vestfalia fu radicale: smettere di chiedersi quale Dio avesse ragione e lasciare decidere alla sovranità. Il nominalismo di Ockham piantò il seme; il cogito di Cartesio crebbe dallo stesso dubbio.',
       '1347→1889': 'La Peste Nera rese illeggibile l\'ordine divino cinque secoli prima che Nietzsche ne dichiarasse la morte. Il rasoio di Ockham aveva già spogliato le certezze metafisiche; nel 1889, Nietzsche completò l\'opera — e crollò sotto il suo peso.',
       '1347→1922': 'Dalla peste alla terra desolata: la crisi dell\'autorità divina, iniziata quando le preghiere non fermarono la Morte Nera, raggiunge la sua conclusione modernista nei frammenti di Eliot e nel silenzio di Wittgenstein su ciò che non si può dire.',
+      '1648→1889': 'Vestfalia rimosse Dio dalla politica internazionale; Nietzsche lo rimosse dalla filosofia. Fra i due, due secoli e mezzo di Illuminismo sostituirono lentamente l\'autorità divina con la ragione umana — finché la ragione stessa cominciò a incrinarsi.',
+      '1648→1922': 'La Pace di Vestfalia fece della religione un affare privato degli Stati; nel 1922, Dio era diventato un affare privato dell\'individuo — o di nessuno. La terra desolata di Eliot è l\'aspetto dell\'ordine secolare vestfaliano dopo le trincee.',
       '1889→1922': 'Nietzsche dichiarò morto Dio nel 1882. Entro il 1922, il vuoto che aveva predetto aveva inghiottito la certezza stessa — <em>La terra desolata</em> di Eliot ne mappava le macerie, mentre il positivismo logico tentava di ricostruire il significato da zero.',
+    },
+    'rationalism': {
+      '762→1648': 'I Mu\'tazila sostenevano che la ragione potesse determinare la verità religiosa; otto secoli dopo, Cartesio usò la ragione per aggirare del tutto la verità religiosa. Il movimento di traduzione di Baghdad preservò il razionalismo greco che Cartesio ereditò — gli antenati del cogito parlavano arabo.',
+    },
+    'modernity': {
+      '1648→1889': 'Vestfalia inventò lo Stato moderno; la Tour Eiffel celebrò ciò che lo Stato moderno sapeva costruire. Fra i due: l\'Illuminismo, la Rivoluzione industriale, lo Stato-nazione. L\'Esposizione Universale del 1889 fu la sovranità vestfaliana in festa — nazioni in competizione che si mettevano in mostra in ferro e vetro.',
     },
     'fragmentation': {
       '1347→1922': 'La peste frantumò l\'unità medievale — autorità della Chiesa, ordine feudale, stabilità demografica, tutto spezzato in una volta. Sei secoli dopo, il modernismo fece della frammentazione una forma d\'arte, frantumando narrazione, pittura e linguaggio con la stessa democratica indifferenza.',

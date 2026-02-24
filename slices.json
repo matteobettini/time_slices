@@ -195,6 +195,74 @@
     }
   },
   {
+    "year": "1648",
+    "title": "Münster — The Exhaustion of God",
+    "teaser": "Thirty years of religious war end in a radical idea: states, not God, determine order. Meanwhile, in Amsterdam, Rembrandt paints light like a philosopher and Descartes thinks in a country that lets him.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "The <strong>Baroque</strong> dominates — art as overwhelming sensory experience, born from the Counter-Reformation's need to seduce believers back through spectacle. But in the Dutch Republic, Baroque takes a Protestant turn: no altarpieces, no papal commissions. Instead, <strong>Rembrandt</strong> paints civic militias, anatomy lessons, and his own aging face with a chiaroscuro that treats light as moral inquiry. His <em>Night Watch</em> (1642) transformed the group portrait from stiff ceremony into dynamic theatre. <strong>Vermeer</strong> is eight years from his first masterpiece; the <strong>Dutch Golden Age</strong> channels its wealth not into cathedrals but into domestic interiors, still lifes, and landscapes — the everyday made luminous."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "The war breeds its own literature of devastation. <strong>Grimmelshausen</strong>'s <em>Simplicissimus</em> (1668, but rooted in this decade's experience) will become the great German picaresque — a naïve boy dragged through three decades of atrocity, the Thirty Years' War as anti-<em>Bildungsroman</em>. In England, <strong>Milton</strong> is already formulating <em>Paradise Lost</em>, the Baroque epic that turns Satan into literature's first complex villain. <strong>Corneille</strong> and <strong>Racine</strong> are forging <strong>French Classicism</strong> — tragedy governed by strict unities, reason imposing form on passion. Order as aesthetic, because the world offers none."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Descartes</strong>, living in the Dutch Republic precisely because it tolerates free thought, has already published the <em>Meditations</em> (1641) and the <em>Principles of Philosophy</em> (1644) — the founding texts of <strong>Continental Rationalism</strong>. His method of radical doubt (<em>cogito ergo sum</em>) rebuilds knowledge from a single certainty, discarding all inherited authority. In Amsterdam, the young <strong>Spinoza</strong> is absorbing Descartes while preparing to surpass him — his <em>Ethics</em> will fuse God and Nature into one substance, eliminating the personal God that thirty years of war were fought over."
+      },
+      "hist": {
+        "label": "History",
+        "content": "The <strong>Peace of Westphalia</strong> ends both the Thirty Years' War and the Eighty Years' War, redrawing Europe around a revolutionary principle: <strong>state sovereignty</strong>. Each ruler determines their territory's religion (<em>cuius regio, eius religio</em>), and no power — not the Pope, not the Emperor — may intervene in another state's affairs. Germany has lost perhaps a third of its population; some regions, over half. The Dutch Republic gains formal independence from Spain and enters its golden age — a commercial empire built on tolerance, trade, and the world's first stock exchange."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "Descartes' method and the Westphalian settlement perform the same operation: <strong>they replace divine authority with human reason as the foundation of order</strong>. The philosopher doubts everything and rebuilds from the cogito; the diplomats doubt religious truth and rebuild from sovereignty. Dutch painting enacts this too — Rembrandt's light doesn't descend from heaven, it falls from a window, natural and specific. The Baroque's Catholic theatricality and Dutch Protestant restraint are twin responses to the same crisis: how do you make meaning after God has been weaponised?",
+        "funFact": "Descartes died in 1650 after moving to Sweden at Queen Christina's invitation. He was required to give philosophy lessons at 5 AM in a freezing palace. The rationalist who rebuilt all knowledge from first principles was defeated by a Scandinavian winter."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia",
+        "title": "Peace of Westphalia — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Thirty_Years%27_War",
+        "title": "Thirty Years' War — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Night_Watch",
+        "title": "The Night Watch — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes",
+        "title": "René Descartes — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Dutch_Golden_Age",
+        "title": "Dutch Golden Age — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1648-night-watch.jpg",
+      "caption": "Rembrandt van Rijn, The Night Watch (1642), Rijksmuseum, Amsterdam",
+      "attribution": "Public Domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "rationalism",
+      "death-of-god",
+      "modernity",
+      "baroque",
+      "westphalian-sovereignty",
+      "dutch-golden-age"
+    ],
+    "location": {
+      "lat": 51.9607,
+      "lon": 7.6261,
+      "place": "Münster"
+    }
+  },
+  {
     "year": "1889",
     "title": "Paris — The Year Everything Changed",
     "teaser": "The Eiffel Tower rises. Van Gogh paints Starry Night. Nietzsche collapses. Bergson rethinks time itself.",
