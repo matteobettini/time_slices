@@ -1523,19 +1523,22 @@ function updateTimeFilter(maxYear) {
 }
 
 let _fitBoundsTimer = null;
+let _lastFitSet = null;
 function fitToVisibleMarkers(maxYear) {
-  clearTimeout(_fitBoundsTimer);
-  _fitBoundsTimer = setTimeout(() => {
-    if (_suppressAutoFit || mapIsPlaying) return;
-    const visible = mapMarkers.filter(m => Math.abs(maxYear - m._sliceYear) <= TIME_WINDOW);
-    if (visible.length === 0) return;
-    if (visible.length === 1) {
-      map.flyTo(visible[0].getLatLng(), 5, { duration: 0.6 });
-    } else {
-      const group = L.featureGroup(visible);
-      map.flyToBounds(group.getBounds().pad(0.4), { maxZoom: 6, duration: 0.6 });
-    }
-  }, 300);
+  // Throttle to one fit every 600ms (not debounce — fires during sliding, not just after)
+  const now = Date.now();
+  if (_lastFitSet && now - _lastFitSet < 600) return;
+  _lastFitSet = now;
+
+  if (_suppressAutoFit || mapIsPlaying) return;
+  const visible = mapMarkers.filter(m => Math.abs(maxYear - m._sliceYear) <= TIME_WINDOW);
+  if (visible.length === 0) return;
+  if (visible.length === 1) {
+    map.flyTo(visible[0].getLatLng(), 5, { duration: 0.5 });
+  } else {
+    const group = L.featureGroup(visible);
+    map.flyToBounds(group.getBounds().pad(0.4), { maxZoom: 6, duration: 0.5 });
+  }
 }
 
 document.getElementById('timeSlider').addEventListener('input', (e) => {
