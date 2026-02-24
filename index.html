@@ -253,92 +253,7 @@
 </div>
 
 <script>
-const SLICES = [
-  {
-    year: "1504",
-    title: "Florence — The Duel of Giants",
-    teaser: "Michelangelo and Leonardo compete for the same wall. The Renaissance peaks.",
-    dimensions: {
-      art: {
-        label: "Art",
-        content: `<strong>Leonardo da Vinci</strong> and <strong>Michelangelo Buonarroti</strong> are both commissioned to paint opposing walls of the Sala del Cinquecento in Florence's Palazzo Vecchio. Leonardo works on <em>The Battle of Anghiari</em>; Michelangelo on <em>The Battle of Cascina</em>. Neither finishes — but the rivalry electrifies all of Florence.<br><br>Meanwhile, Michelangelo's <em>David</em> is unveiled in Piazza della Signoria. Raphael, just 21, arrives in Florence and begins absorbing both masters' techniques.`
-      },
-      lit: {
-        label: "Literature",
-        content: `<strong>Niccolò Machiavelli</strong> is serving as Florence's Second Chancellor, running diplomatic missions across Italy. He's watching Cesare Borgia's ruthless statecraft firsthand — notes that will fuel <em>The Prince</em> (written 1513). <strong>Ludovico Ariosto</strong> is drafting early cantos of <em>Orlando Furioso</em> in Ferrara, fusing medieval romance with Renaissance irony.`
-      },
-      phil: {
-        label: "Philosophy",
-        content: `<strong>Erasmus of Rotterdam</strong> publishes <em>Enchiridion militis Christiani</em> (Handbook of a Christian Knight), arguing for an inner, philosophical Christianity over empty ritual. Neoplatonism still dominates Florentine intellectual life — Marsilio Ficino's translations of Plato shaped this entire generation. The idea that <em>beauty reveals divine truth</em> is taken literally: art IS philosophy made visible.`
-      },
-      hist: {
-        label: "History",
-        content: `Italy is a chessboard of warring city-states and foreign powers. France and Spain are fighting over Naples. Pope Julius II is scheming to expand papal territory. Florence, recently rid of Savonarola's theocratic rule (burned 1498), is a fragile republic under Piero Soderini. Columbus made his fourth and final voyage. Portugal's empire expands in the Indian Ocean.`
-      },
-      conn: {
-        label: "Connections",
-        content: `The collision is staggering: <strong>Machiavelli watches power</strong> while <strong>Leonardo and Michelangelo depict it</strong> on the same walls. Machiavelli personally knew both artists — he helped arrange Leonardo's commission. Erasmus's rational Christianity and Florence's Neoplatonism are two faces of the same coin: both reject medieval scholasticism for something more human, more direct. The <em>David</em> isn't just sculpture — it's a political statement: the small republic standing against giants.`,
-        funFact: "When the committee chose where to place the David, both Leonardo and Botticelli were on the panel. Leonardo suggested hiding it in a loggia. He was outvoted."
-      }
-    }
-  },
-  {
-    year: "1889",
-    title: "Paris — The Year Everything Changed",
-    teaser: "The Eiffel Tower rises. Van Gogh paints Starry Night. Nietzsche collapses. Bergson rethinks time itself.",
-    dimensions: {
-      art: {
-        label: "Art",
-        content: `<strong>Vincent van Gogh</strong> paints <em>The Starry Night</em> from the asylum at Saint-Rémy-de-Provence — swirling cosmos as felt truth, not observed fact. <strong>Paul Gauguin</strong> has fled to Brittany, painting <em>The Yellow Christ</em>, pushing toward symbolism. <strong>Claude Monet</strong> is deep into his series paintings. <strong>Paul Cézanne</strong> quietly revolutionizes form in Aix-en-Provence — the bridge between Impressionism and everything that follows.`
-      },
-      lit: {
-        label: "Literature",
-        content: `<strong>Guy de Maupassant</strong> publishes <em>Fort comme la mort</em>, his penultimate novel before syphilis claims his mind. <strong>W.B. Yeats</strong> releases <em>The Wanderings of Oisin</em>, his first major work. <strong>Mark Twain</strong> publishes <em>A Connecticut Yankee in King Arthur's Court</em> — time travel as social satire. <strong>Tolstoy</strong> has just finished <em>The Kreutzer Sonata</em>, banned for its frank treatment of sexuality.`
-      },
-      phil: {
-        label: "Philosophy",
-        content: `<strong>Friedrich Nietzsche</strong> collapses in Turin in January, embracing a beaten horse — his productive life ends. <em>Twilight of the Idols</em> is published this year, declaring "God is dead" to a world not yet ready to listen. <strong>Henri Bergson</strong> publishes <em>Essai sur les données immédiates de la conscience</em> (Time and Free Will), arguing that lived time is fundamentally different from clock time — a direct challenge to scientific determinism.`
-      },
-      hist: {
-        label: "History",
-        content: `The <strong>Eiffel Tower</strong> opens for the World's Fair, built in just 2 years — the tallest structure on Earth. It's meant to be temporary. The fair celebrates the centennial of the French Revolution. <strong>Brazil</strong> becomes a republic. The <strong>Meiji Constitution</strong> takes effect in Japan. In London, the dock workers' strike marks a turning point for organized labor. The Scramble for Africa is in full swing.`
-      },
-      conn: {
-        label: "Connections",
-        content: `Bergson's insight that <strong>time as lived ≠ time as measured</strong> connects directly to what the painters are doing: Van Gogh doesn't paint what the sky <em>looks</em> like — he paints what it <em>feels</em> like. Nietzsche's death-of-God moment and Van Gogh's asylum visions share the same vertigo: a world where old certainties dissolve into swirling energy. The Eiffel Tower — pure engineering, no ornament — embodies the same tension: is modernity beautiful or monstrous? Maupassant famously ate lunch in the Tower's restaurant because "it's the only place in Paris where you can't see the damn thing."`,
-        funFact: "Van Gogh's brother Theo tried to sell his paintings at the 1889 World's Fair. Almost no one bought. A century later, those paintings would sell for $80+ million each."
-      }
-    }
-  },
-  {
-    year: "1922",
-    title: "The Modernist Explosion",
-    teaser: "Joyce, Eliot, Woolf, Wittgenstein — in a single year, the old world of art and thought is detonated.",
-    dimensions: {
-      art: {
-        label: "Art",
-        content: `<strong>Bauhaus</strong> is in full swing in Weimar under Gropius — Klee, Kandinsky, and Moholy-Nagy teaching there. <strong>Man Ray</strong> creates his first "rayographs" in Paris. <strong>Mondrian</strong> pushes into pure geometric abstraction. In Mexico, <strong>Diego Rivera</strong> begins his first major mural at the Escuela Nacional Preparatoria. The Salon des Indépendants shows 5,000+ works — the art world is exploding in every direction simultaneously.`
-      },
-      lit: {
-        label: "Literature",
-        content: `The single greatest year in literary history? <strong>James Joyce</strong>'s <em>Ulysses</em> is published in Paris by Sylvia Beach (banned in the US and UK). <strong>T.S. Eliot</strong> publishes <em>The Waste Land</em> — modernism's anthem. <strong>Virginia Woolf</strong>'s <em>Jacob's Room</em> appears. <strong>Marcel Proust</strong> dies in November, leaving <em>In Search of Lost Time</em> unfinished. <strong>Rainer Maria Rilke</strong> completes the <em>Duino Elegies</em> and <em>Sonnets to Orpheus</em> in a single feverish burst. <strong>Hermann Hesse</strong> publishes <em>Siddhartha</em>.`
-      },
-      phil: {
-        label: "Philosophy",
-        content: `<strong>Ludwig Wittgenstein</strong>'s <em>Tractatus Logico-Philosophicus</em> is published in English (German edition 1921). Its final line — "Whereof one cannot speak, thereof one must be silent" — becomes philosophy's most quoted sentence. <strong>Martin Heidegger</strong> is lecturing at Freiburg, developing the ideas that will become <em>Being and Time</em> (1927). The Vienna Circle is forming around Moritz Schlick — logical positivism is about to reshape everything.`
-      },
-      hist: {
-        label: "History",
-        content: `The <strong>Soviet Union</strong> is formally established in December. <strong>Mussolini</strong> marches on Rome in October — fascism takes power in Italy. The <strong>Ottoman Empire</strong> collapses; Turkey becomes a republic under Atatürk. The <strong>BBC</strong> begins broadcasting. <strong>Egypt</strong> gains nominal independence from Britain. <strong>Tutankhamun's tomb</strong> is discovered by Howard Carter. The world is 4 years past WWI and still reeling.`
-      },
-      conn: {
-        label: "Connections",
-        content: `Everything connects through <strong>fragmentation</strong>. Eliot's <em>Waste Land</em> is fragments shored against ruins — literally. Joyce's <em>Ulysses</em> fragments narrative into a dozen styles. The Bauhaus fragments art into geometry. Wittgenstein fragments language into logical atoms. Why? Because the war fragmented <em>everything</em> — empires, bodies, certainties. Modernism isn't a style; it's the art of a shattered world trying to reassemble itself. Proust dies trying to capture all of time; Wittgenstein insists we stay silent about what we can't capture. Two responses to the same impossibility.`,
-        funFact: "Eliot dedicated The Waste Land to Ezra Pound, who edited it ruthlessly — cutting it nearly in half. The original draft, discovered in 1968, shows Pound may have been the greatest editor in literary history."
-      }
-    }
-  }
-];
+let SLICES = [];
 
 // Render
 const timeline = document.getElementById('timeline');
@@ -372,14 +287,19 @@ function renderSlice(slice, index) {
   return el;
 }
 
-SLICES.sort((a, b) => parseInt(a.year) - parseInt(b.year));
-SLICES.forEach((slice, i) => timeline.appendChild(renderSlice(slice, i)));
-
-// Scroll reveal
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.1 });
-document.querySelectorAll('.entry').forEach(el => observer.observe(el));
+// Load data from JSON
+fetch('slices.json')
+  .then(r => r.json())
+  .then(data => {
+    SLICES = data;
+    SLICES.sort((a, b) => parseInt(a.year) - parseInt(b.year));
+    SLICES.forEach((slice, i) => timeline.appendChild(renderSlice(slice, i)));
+    // Scroll reveal after render
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.entry').forEach(el => observer.observe(el));
+  });
 </script>
 
 </body>
