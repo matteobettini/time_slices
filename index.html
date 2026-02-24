@@ -1462,6 +1462,11 @@ function populateMap() {
 }
 
 // Time slider logic
+// Time window: entries visible within this many years of the slider position.
+// They fade in over FADE_ZONE years before full visibility, fade out over FADE_ZONE after.
+const TIME_WINDOW = 120;   // total half-window (entry visible ±120 years from its date)
+const FADE_ZONE = 40;      // fade-in/out zone at edges
+
 function updateTimeFilter(maxYear) {
   document.getElementById('timeYearDisplay').textContent = maxYear;
 
@@ -1472,17 +1477,37 @@ function updateTimeFilter(maxYear) {
     const label = markerEl.querySelector('.map-marker-label');
     if (!dot) return;
 
-    if (marker._sliceYear <= maxYear) {
+    const year = marker._sliceYear;
+    const diff = maxYear - year; // positive = slider is past this entry
+
+    // Visible when slider is within [-TIME_WINDOW, +TIME_WINDOW] of entry year
+    // i.e. entry appears TIME_WINDOW years before its date, disappears TIME_WINDOW after
+    if (diff >= -TIME_WINDOW && diff <= TIME_WINDOW) {
       const wasHidden = dot.classList.contains('hidden-by-time');
       dot.classList.remove('hidden-by-time');
-      if (label) label.style.opacity = '1';
-      if (wasHidden) {
+
+      // Calculate opacity for smooth fade at edges
+      let opacity = 1;
+      if (diff < -TIME_WINDOW + FADE_ZONE) {
+        // Fading in (slider approaching from below)
+        opacity = (diff + TIME_WINDOW) / FADE_ZONE;
+      } else if (diff > TIME_WINDOW - FADE_ZONE) {
+        // Fading out (slider moving past)
+        opacity = (TIME_WINDOW - diff) / FADE_ZONE;
+      }
+      opacity = Math.max(0, Math.min(1, opacity));
+
+      dot.style.opacity = opacity;
+      if (label) label.style.opacity = opacity;
+
+      if (wasHidden && opacity > 0.3) {
         dot.classList.add('arriving');
         setTimeout(() => dot.classList.remove('arriving'), 1000);
       }
     } else {
       dot.classList.add('hidden-by-time');
       dot.classList.remove('arriving');
+      dot.style.opacity = '';
       if (label) label.style.opacity = '0';
     }
   });
@@ -1634,7 +1659,7 @@ function drawMapArcs(threadId, maxYear) {
   clearMapArcs();
 
   const threadMarkers = mapMarkers
-    .filter(m => m._sliceThreads.includes(threadId) && m._sliceYear <= maxYear)
+    .filter(m => m._sliceThreads.includes(threadId) && Math.abs(maxYear - m._sliceYear) <= TIME_WINDOW)
     .sort((a, b) => a._sliceYear - b._sliceYear);
 
   if (threadMarkers.length < 2) return;
