@@ -27,12 +27,30 @@
       }
     },
     "sources": [
-      { "url": "https://it.wikipedia.org/wiki/Califfato_abbaside", "title": "Califfato abbaside — Wikipedia" },
-      { "url": "https://it.wikipedia.org/wiki/Et%C3%A0_dell%27oro_islamica", "title": "Età dell'oro islamica — Wikipedia" },
-      { "url": "https://en.wikipedia.org/wiki/Round_city_of_Baghdad", "title": "Città Rotonda di Baghdad — Wikipedia" },
-      { "url": "https://it.wikipedia.org/wiki/Mu%27tazilismo", "title": "Mu'tazilismo — Wikipedia" },
-      { "url": "https://it.wikipedia.org/wiki/Ab%C5%AB_Nuw%C4%81s", "title": "Abu Nuwas — Wikipedia" },
-      { "url": "https://it.wikipedia.org/wiki/Battaglia_del_Talas", "title": "Battaglia del Talas — Wikipedia" }
+      {
+        "url": "https://it.wikipedia.org/wiki/Califfato_abbaside",
+        "title": "Califfato abbaside — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Et%C3%A0_dell%27oro_islamica",
+        "title": "Età dell'oro islamica — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Round_city_of_Baghdad",
+        "title": "Città Rotonda di Baghdad — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Mu%27tazilismo",
+        "title": "Mu'tazilismo — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Ab%C5%AB_Nuw%C4%81s",
+        "title": "Abu Nuwas — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Battaglia_del_Talas",
+        "title": "Battaglia del Talas — Wikipedia"
+      }
     ],
     "image": {
       "url": "images/762-round-city.png",
@@ -45,7 +63,12 @@
       "islamic-golden-age",
       "cosmopolitanism",
       "geometry-as-ideology"
-    ]
+    ],
+    "location": {
+      "lat": 33.3152,
+      "lon": 44.3661,
+      "place": "Baghdad"
+    }
   },
   {
     "year": "1504",
@@ -85,7 +108,12 @@
       "classical-revival",
       "art-and-power",
       "christian-humanism"
-    ]
+    ],
+    "location": {
+      "lat": 43.7696,
+      "lon": 11.2558,
+      "place": "Florence"
+    }
   },
   {
     "year": "1889",
@@ -126,7 +154,12 @@
       "death-of-god",
       "expressionism",
       "symbolism"
-    ]
+    ],
+    "location": {
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "place": "Paris"
+    }
   },
   {
     "year": "1922",
@@ -167,6 +200,11 @@
       "existentialism",
       "totalitarianism",
       "death-of-god"
-    ]
+    ],
+    "location": {
+      "lat": 50.9795,
+      "lon": 11.3235,
+      "place": "Weimar"
+    }
   }
 ]

@@ -6,6 +6,8 @@
 <title>Time Slices</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="favicon.svg">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
   :root {
     --bg: #0a0a0f;
@@ -488,6 +490,257 @@
   .entry.thread-hidden.visible { opacity: 0; transform: translateY(0); }
 
   @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+  /* View toggle */
+  .view-toggle {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 3px 10px;
+    font-size: 0.85rem;
+    font-family: var(--font);
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    line-height: 1.4;
+    margin-right: 10px;
+  }
+  .view-toggle:hover { border-color: var(--text-dim); color: var(--text); }
+  .view-toggle.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  /* Map container */
+  #mapView {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 50;
+    background: var(--bg);
+  }
+  #mapView.active { display: block; }
+
+  #map {
+    position: absolute;
+    top: 56px;
+    left: 0; right: 0;
+    bottom: 72px;
+  }
+
+  /* Override Leaflet popups */
+  .leaflet-popup-content-wrapper {
+    background: var(--surface) !important;
+    border: 1px solid var(--accent) !important;
+    border-radius: 12px !important;
+    color: var(--text) !important;
+    box-shadow: 0 8px 32px rgba(124,111,247,0.2) !important;
+  }
+  .leaflet-popup-tip { background: var(--surface) !important; }
+  .leaflet-popup-content {
+    margin: 14px 18px !important;
+    font-family: var(--font) !important;
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+  }
+  .leaflet-popup-close-button {
+    color: var(--text-dim) !important;
+    font-size: 1.2rem !important;
+  }
+  .leaflet-popup-close-button:hover { color: var(--text) !important; }
+
+  .map-popup-year {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    margin-bottom: 4px;
+  }
+  .map-popup-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .map-popup-teaser {
+    font-size: 0.82rem;
+    color: var(--text-dim);
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .map-popup-threads {
+    display: flex; flex-wrap: wrap; gap: 4px;
+    margin-bottom: 10px;
+  }
+  .map-popup-link {
+    display: inline-block;
+    font-size: 0.78rem;
+    color: var(--accent);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .map-popup-link:hover { text-decoration: underline; }
+
+  /* Map time slider */
+  .map-time-control {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 60;
+    background: rgba(10,10,15,0.95);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid var(--border);
+    padding: 16px 32px 20px;
+    display: none;
+  }
+  .map-time-control.visible { display: block; }
+
+  .time-slider-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .time-year-display {
+    font-family: var(--mono);
+    font-size: 1.4rem;
+    color: var(--accent);
+    font-weight: 700;
+    min-width: 70px;
+    text-align: center;
+  }
+  .time-slider {
+    flex: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+  }
+  .time-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 12px rgba(124,111,247,0.5);
+    cursor: pointer;
+    transition: transform 0.15s ease;
+  }
+  .time-slider::-webkit-slider-thumb:hover { transform: scale(1.3); }
+  .time-slider::-moz-range-thumb {
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: none;
+    box-shadow: 0 0 12px rgba(124,111,247,0.5);
+    cursor: pointer;
+  }
+  .time-play-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    width: 36px; height: 36px;
+    font-size: 1rem;
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .time-play-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .time-play-btn.playing { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  /* Map marker pulse */
+  @keyframes markerPulse {
+    0% { box-shadow: 0 0 0 0 rgba(124,111,247,0.6); }
+    70% { box-shadow: 0 0 0 16px rgba(124,111,247,0); }
+    100% { box-shadow: 0 0 0 0 rgba(124,111,247,0); }
+  }
+  .map-marker {
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 3px solid var(--bg);
+    box-shadow: 0 0 12px rgba(124,111,247,0.4);
+    transition: opacity 0.5s ease, transform 0.3s ease;
+  }
+  .map-marker:hover { transform: scale(1.4); }
+  .map-marker.arriving {
+    animation: markerPulse 1s ease-out;
+  }
+  .map-marker.dimmed { opacity: 0.15; }
+  .map-marker.hidden-by-time { opacity: 0; pointer-events: none; }
+
+  .map-marker-label {
+    position: absolute;
+    top: 22px; left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    color: var(--text-dim);
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+
+  /* Map thread arcs */
+  .thread-arc {
+    fill: none;
+    stroke: rgba(124,111,247,0.5);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    filter: drop-shadow(0 0 6px rgba(124,111,247,0.4));
+  }
+
+  /* Map header bar */
+  .map-header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 70;
+    background: rgba(10,10,15,0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .map-header h1 {
+    font-size: 1.4rem; font-weight: 700;
+    background: linear-gradient(135deg, var(--accent), var(--art));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .map-header .subtitle { color: var(--text-dim); font-size: 0.85rem; margin-left: 12px; }
+
+  .map-thread-banner {
+    display: none;
+    position: fixed;
+    top: 56px; left: 50%;
+    transform: translateX(-50%);
+    z-index: 75;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 18px;
+    background: rgba(10,10,15,0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    font-size: 0.8rem;
+    color: var(--text);
+    animation: fadeIn 0.2s ease;
+    margin-top: 10px;
+  }
+  .map-thread-banner.visible { display: flex; }
+  .map-thread-banner .thread-name { font-weight: 600; color: var(--accent); }
+  .map-thread-banner .thread-close {
+    margin-left: auto; cursor: pointer;
+    color: var(--text-dim); font-size: 1rem; padding: 0 4px;
+  }
+  .map-thread-banner .thread-close:hover { color: var(--text); }
+
+  @media (max-width: 768px) {
+    .map-time-control { padding: 12px 16px 16px; }
+    .time-year-display { font-size: 1.1rem; min-width: 55px; }
+    .map-marker-label { display: none; }
+    .map-header .subtitle { display: none; }
+  }
 </style>
 </head>
 <body>
@@ -499,6 +752,7 @@
       <span class="subtitle" id="subtitle">Cross-disciplinary history exploration</span>
     </div>
     <div class="header-right">
+      <button class="view-toggle" id="viewToggle" title="Map view">🗺️</button>
       <button class="lang-btn active" data-lang="en">EN</button>
       <button class="lang-btn" data-lang="it">IT</button>
     </div>
@@ -513,6 +767,34 @@
 <div class="timeline-container">
   <div class="timeline-line"></div>
   <div id="timeline"></div>
+</div>
+
+<!-- Map View -->
+<div id="mapView">
+  <div class="map-header">
+    <div style="display:flex;align-items:baseline;">
+      <h1>Time Slices</h1>
+      <span class="subtitle" id="mapSubtitle">Map</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;">
+      <button class="view-toggle active" id="mapBackBtn" title="Timeline view">📜</button>
+      <button class="lang-btn" data-lang="en" data-map="1">EN</button>
+      <button class="lang-btn" data-lang="it" data-map="1">IT</button>
+    </div>
+  </div>
+  <div class="map-thread-banner" id="mapThreadBanner">
+    <span>🧵 <span id="mapThreadLabel"></span>: <span class="thread-name" id="mapThreadName"></span></span>
+    <span class="thread-close" id="mapThreadClose">✕</span>
+  </div>
+  <div id="map"></div>
+</div>
+
+<div class="map-time-control" id="mapTimeControl">
+  <div class="time-slider-row">
+    <button class="time-play-btn" id="timePlayBtn">▶</button>
+    <span class="time-year-display" id="timeYearDisplay">762</span>
+    <input type="range" class="time-slider" id="timeSlider" min="700" max="2000" value="2000" step="1">
+  </div>
 </div>
 
 <script>
@@ -1009,6 +1291,411 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
   updateUILabels();
   loadSlices();
 })();
+
+// ========================================
+// MAP VIEW
+// ========================================
+
+let map = null;
+let mapMarkers = [];
+let mapArcs = [];
+let mapActiveThread = null;
+let mapIsPlaying = false;
+let mapPlayInterval = null;
+
+// Initialize Leaflet map (lazy — only on first toggle)
+function initMap() {
+  if (map) return;
+
+  map = L.map('map', {
+    center: [42, 20],
+    zoom: 4,
+    zoomControl: false,
+    attributionControl: false,
+  });
+
+  // CartoDB Dark Matter — matches our aesthetic
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    maxZoom: 18,
+    subdomains: 'abcd',
+  }).addTo(map);
+
+  // Zoom control in bottom-right (away from time slider)
+  L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+  // Attribution (small, bottom-right)
+  L.control.attribution({ position: 'bottomright', prefix: false })
+    .addAttribution('© <a href="https://carto.com/">CARTO</a> © <a href="https://www.openstreetmap.org/">OSM</a>')
+    .addTo(map);
+}
+
+function createMapMarker(slice) {
+  if (!slice.location) return null;
+
+  const icon = L.divIcon({
+    className: '',
+    html: `<div class="map-marker" data-year="${slice.year}"></div>
+           <div class="map-marker-label">${slice.year} · ${slice.location.place}</div>`,
+    iconSize: [16, 16],
+    iconAnchor: [8, 8],
+    popupAnchor: [0, -14],
+  });
+
+  const marker = L.marker([slice.location.lat, slice.location.lon], { icon });
+
+  // Build popup content
+  const threads = (slice.threads || []).map(t =>
+    `<span class="thread-tag" data-thread="${t}" onclick="event.stopPropagation(); activateMapThread('${t}')">${formatThreadId(t)}</span>`
+  ).join('');
+
+  const popup = L.popup({
+    maxWidth: 320,
+    minWidth: 240,
+    closeButton: true,
+  }).setContent(`
+    <div class="map-popup-year">${slice.year}</div>
+    <div class="map-popup-title">${slice.title}</div>
+    <div class="map-popup-teaser">${slice.teaser}</div>
+    <div class="map-popup-threads">${threads}</div>
+    <a class="map-popup-link" onclick="scrollToEntry('${slice.year}')">View in timeline →</a>
+  `);
+
+  marker.bindPopup(popup);
+  marker._sliceYear = parseInt(slice.year);
+  marker._sliceThreads = slice.threads || [];
+
+  return marker;
+}
+
+function populateMap() {
+  // Clear existing markers
+  mapMarkers.forEach(m => map.removeLayer(m));
+  mapMarkers = [];
+  clearMapArcs();
+
+  SLICES.forEach(slice => {
+    const marker = createMapMarker(slice);
+    if (marker) {
+      marker.addTo(map);
+      mapMarkers.push(marker);
+    }
+  });
+
+  // Update slider range
+  if (SLICES.length > 0) {
+    const years = SLICES.map(s => parseInt(s.year)).sort((a, b) => a - b);
+    const minY = Math.max(years[0] - 100, -3000);
+    const maxY = Math.min(years[years.length - 1] + 100, 2100);
+    const slider = document.getElementById('timeSlider');
+    slider.min = minY;
+    slider.max = maxY;
+    slider.value = maxY;
+    document.getElementById('timeYearDisplay').textContent = maxY;
+  }
+
+  // Fit bounds to show all markers
+  if (mapMarkers.length > 1) {
+    const group = L.featureGroup(mapMarkers);
+    map.fitBounds(group.getBounds().pad(0.3), { maxZoom: 6 });
+  }
+
+  // Update map lang buttons
+  document.querySelectorAll('[data-map="1"]').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === currentLang);
+  });
+
+  // Re-apply thread if active
+  if (mapActiveThread) {
+    activateMapThread(mapActiveThread);
+  }
+}
+
+// Time slider logic
+function updateTimeFilter(maxYear) {
+  document.getElementById('timeYearDisplay').textContent = maxYear;
+
+  mapMarkers.forEach(marker => {
+    const markerEl = marker.getElement();
+    if (!markerEl) return;
+    const dot = markerEl.querySelector('.map-marker');
+    const label = markerEl.querySelector('.map-marker-label');
+    if (!dot) return;
+
+    if (marker._sliceYear <= maxYear) {
+      const wasHidden = dot.classList.contains('hidden-by-time');
+      dot.classList.remove('hidden-by-time');
+      if (label) label.style.opacity = '1';
+      if (wasHidden) {
+        dot.classList.add('arriving');
+        setTimeout(() => dot.classList.remove('arriving'), 1000);
+      }
+    } else {
+      dot.classList.add('hidden-by-time');
+      dot.classList.remove('arriving');
+      if (label) label.style.opacity = '0';
+    }
+  });
+
+  // Redraw arcs if thread is active — only show arcs where both endpoints are visible
+  if (mapActiveThread) {
+    drawMapArcs(mapActiveThread, maxYear);
+  }
+}
+
+document.getElementById('timeSlider').addEventListener('input', (e) => {
+  updateTimeFilter(parseInt(e.target.value));
+});
+
+// Auto-play
+function startMapPlay() {
+  mapIsPlaying = true;
+  document.getElementById('timePlayBtn').textContent = '⏸';
+  document.getElementById('timePlayBtn').classList.add('playing');
+
+  const slider = document.getElementById('timeSlider');
+  const min = parseInt(slider.min);
+  const max = parseInt(slider.max);
+  const totalRange = max - min;
+
+  // Start from minimum
+  slider.value = min;
+  updateTimeFilter(min);
+
+  const step = Math.max(1, Math.floor(totalRange / 300)); // ~300 steps over full range
+  const intervalMs = 30;
+
+  mapPlayInterval = setInterval(() => {
+    const current = parseInt(slider.value);
+    if (current >= max) {
+      stopMapPlay();
+      return;
+    }
+    slider.value = current + step;
+    updateTimeFilter(parseInt(slider.value));
+  }, intervalMs);
+}
+
+function stopMapPlay() {
+  mapIsPlaying = false;
+  document.getElementById('timePlayBtn').textContent = '▶';
+  document.getElementById('timePlayBtn').classList.remove('playing');
+  if (mapPlayInterval) {
+    clearInterval(mapPlayInterval);
+    mapPlayInterval = null;
+  }
+}
+
+document.getElementById('timePlayBtn').addEventListener('click', () => {
+  if (mapIsPlaying) stopMapPlay();
+  else startMapPlay();
+});
+
+// Thread arcs on map
+function activateMapThread(threadId) {
+  mapActiveThread = threadId;
+
+  // Also activate in timeline
+  activeThread = threadId;
+
+  // Dim non-matching markers
+  mapMarkers.forEach(marker => {
+    const el = marker.getElement();
+    if (!el) return;
+    const dot = el.querySelector('.map-marker');
+    if (!dot) return;
+    if (marker._sliceThreads.includes(threadId)) {
+      dot.classList.remove('dimmed');
+    } else {
+      dot.classList.add('dimmed');
+    }
+  });
+
+  // Draw arcs
+  const maxYear = parseInt(document.getElementById('timeSlider').value);
+  drawMapArcs(threadId, maxYear);
+
+  // Show banner
+  document.getElementById('mapThreadName').textContent = formatThreadId(threadId);
+  document.getElementById('mapThreadLabel').textContent = t('thread');
+  document.getElementById('mapThreadBanner').classList.add('visible');
+
+  // Fit bounds to thread entries
+  const threadMarkers = mapMarkers.filter(m => m._sliceThreads.includes(threadId));
+  if (threadMarkers.length > 1) {
+    const group = L.featureGroup(threadMarkers);
+    map.fitBounds(group.getBounds().pad(0.4), { maxZoom: 6 });
+  }
+}
+
+function clearMapThread() {
+  mapActiveThread = null;
+
+  mapMarkers.forEach(marker => {
+    const el = marker.getElement();
+    if (!el) return;
+    const dot = el.querySelector('.map-marker');
+    if (dot) dot.classList.remove('dimmed');
+  });
+
+  clearMapArcs();
+  document.getElementById('mapThreadBanner').classList.remove('visible');
+}
+
+function drawMapArcs(threadId, maxYear) {
+  clearMapArcs();
+
+  const threadMarkers = mapMarkers
+    .filter(m => m._sliceThreads.includes(threadId) && m._sliceYear <= maxYear)
+    .sort((a, b) => a._sliceYear - b._sliceYear);
+
+  if (threadMarkers.length < 2) return;
+
+  for (let i = 0; i < threadMarkers.length - 1; i++) {
+    const from = threadMarkers[i].getLatLng();
+    const to = threadMarkers[i + 1].getLatLng();
+
+    // Create curved arc using intermediate points
+    const latlngs = generateArc(from, to, 50);
+
+    const arc = L.polyline(latlngs, {
+      color: 'rgba(124,111,247,0.6)',
+      weight: 2.5,
+      dashArray: '8 4',
+      className: 'thread-arc',
+    }).addTo(map);
+
+    // Animate: start with full dash offset, then reveal
+    const pathEl = arc.getElement();
+    if (pathEl) {
+      const length = pathEl.getTotalLength ? pathEl.getTotalLength() : 500;
+      pathEl.style.strokeDasharray = length;
+      pathEl.style.strokeDashoffset = length;
+      pathEl.style.transition = `stroke-dashoffset 1.2s ease ${i * 0.4}s`;
+      requestAnimationFrame(() => {
+        pathEl.style.strokeDashoffset = '0';
+      });
+    }
+
+    // Add a small directional arrow at midpoint
+    const midIdx = Math.floor(latlngs.length / 2);
+    const arrowMarker = L.marker(latlngs[midIdx], {
+      icon: L.divIcon({
+        className: '',
+        html: `<div style="color:rgba(124,111,247,0.7);font-size:10px;text-shadow:0 0 6px rgba(124,111,247,0.5);pointer-events:none;">→</div>`,
+        iconSize: [12, 12],
+        iconAnchor: [6, 6],
+      }),
+      interactive: false,
+    }).addTo(map);
+
+    mapArcs.push(arc, arrowMarker);
+  }
+}
+
+function clearMapArcs() {
+  mapArcs.forEach(a => map.removeLayer(a));
+  mapArcs = [];
+}
+
+// Generate a curved arc between two points
+function generateArc(from, to, numPoints) {
+  const points = [];
+  const latDiff = to.lat - from.lat;
+  const lngDiff = to.lng - from.lng;
+  const dist = Math.sqrt(latDiff * latDiff + lngDiff * lngDiff);
+
+  for (let i = 0; i <= numPoints; i++) {
+    const t = i / numPoints;
+    const lat = from.lat + latDiff * t;
+    const lng = from.lng + lngDiff * t;
+
+    // Offset perpendicular to create curve
+    // Curve height proportional to distance
+    const curveHeight = dist * 0.15;
+    const offset = Math.sin(t * Math.PI) * curveHeight;
+
+    // Perpendicular direction
+    const perpLat = -lngDiff / dist * offset;
+    const perpLng = latDiff / dist * offset;
+
+    points.push([lat + perpLat, lng + perpLng]);
+  }
+  return points;
+}
+
+// View toggle
+function showMapView() {
+  initMap();
+  document.getElementById('mapView').classList.add('active');
+  document.getElementById('mapTimeControl').classList.add('visible');
+  document.getElementById('viewToggle').classList.add('active');
+  document.getElementById('viewToggle').textContent = '📜';
+  document.getElementById('viewToggle').title = 'Timeline view';
+
+  // Fix Leaflet rendering (needs invalidateSize after display:block)
+  setTimeout(() => {
+    map.invalidateSize();
+    populateMap();
+  }, 100);
+}
+
+function showTimelineView() {
+  stopMapPlay();
+  document.getElementById('mapView').classList.remove('active');
+  document.getElementById('mapTimeControl').classList.remove('visible');
+  document.getElementById('viewToggle').classList.remove('active');
+  document.getElementById('viewToggle').textContent = '🗺️';
+  document.getElementById('viewToggle').title = 'Map view';
+
+  // Sync thread state from map to timeline
+  if (mapActiveThread && mapActiveThread !== activeThread) {
+    activateThread(mapActiveThread);
+  }
+}
+
+function scrollToEntry(year) {
+  showTimelineView();
+  setTimeout(() => {
+    const entry = document.querySelector(`.entry[data-year="${year}"]`);
+    if (entry) {
+      entry.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // Flash highlight
+      entry.style.transition = 'box-shadow 0.3s ease';
+      entry.querySelector('.card').style.boxShadow = '0 0 30px rgba(124,111,247,0.4)';
+      setTimeout(() => {
+        entry.querySelector('.card').style.boxShadow = '';
+      }, 1500);
+    }
+  }, 200);
+}
+
+document.getElementById('viewToggle').addEventListener('click', () => {
+  if (document.getElementById('mapView').classList.contains('active')) {
+    showTimelineView();
+  } else {
+    showMapView();
+  }
+});
+
+document.getElementById('mapBackBtn').addEventListener('click', showTimelineView);
+document.getElementById('mapThreadClose').addEventListener('click', clearMapThread);
+
+// Map lang switcher
+document.querySelectorAll('[data-map="1"]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const lang = btn.dataset.lang;
+    if (lang === currentLang) return;
+    currentLang = lang;
+    // Update both header lang buttons
+    document.querySelectorAll('.lang-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.lang === currentLang);
+    });
+    updateUILabels();
+    loadSlices();
+    // Repopulate map after slices load
+    setTimeout(populateMap, 500);
+  });
+});
 </script>
 
 </body>
