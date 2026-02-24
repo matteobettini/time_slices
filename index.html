@@ -129,12 +129,19 @@
     width: 45%;
     margin-bottom: 48px;
     cursor: pointer;
-    transition: transform 0.2s ease, opacity 0.3s ease;
+    transition: transform 0.2s ease, opacity 0.3s ease, max-height 0.4s ease, margin-bottom 0.4s ease;
   }
   .entry:hover { transform: translateY(-2px); }
   .entry:nth-child(odd) { margin-left: 5%; }
   .entry:nth-child(even) { margin-left: 50%; }
-  .entry.thread-dimmed { opacity: 0.15; pointer-events: none; }
+  .entry.thread-hidden {
+    max-height: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: max-height 0.4s ease, margin-bottom 0.4s ease, opacity 0.3s ease;
+  }
   .entry.thread-highlighted { opacity: 1; }
 
   /* Dot on timeline */
@@ -401,7 +408,45 @@
     margin-bottom: 12px;
     height: 28px;
   }
-  .marker.thread-dimmed { opacity: 0.1; }
+  .marker.thread-hidden { display: none; }
+
+  /* Thread narrative connector */
+  .thread-narrative {
+    position: relative;
+    width: 50%;
+    margin: 0 auto 32px;
+    padding: 14px 20px;
+    background: rgba(124,111,247,0.06);
+    border: 1px solid rgba(124,111,247,0.2);
+    border-radius: 10px;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: var(--text-dim);
+    text-align: center;
+    animation: fadeIn 0.4s ease;
+    z-index: 5;
+  }
+  .thread-narrative .narrative-arrow {
+    color: var(--accent);
+    opacity: 0.5;
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+  }
+  .thread-narrative strong { color: var(--text); font-weight: 500; }
+  .thread-narrative em { color: var(--accent); }
+
+  /* SVG thread lines overlay */
+  .thread-lines-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: visible;
+  }
   .marker-line {
     position: absolute;
     left: calc(50% - 60px);
@@ -442,13 +487,15 @@
     .floating-image { display: none !important; }
     .entry.expanded .card-image-inline { display: block; }
     .entry.expanded .card-image-caption-inline { display: block; }
+    .thread-narrative { width: 80%; }
+    .thread-lines-svg { display: none; }
   }
 
   /* Scroll animation */
   .entry { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
   .entry.visible { opacity: 1; transform: translateY(0); }
   .entry:hover.visible { transform: translateY(-2px); }
-  .entry.thread-dimmed.visible { opacity: 0.15; transform: translateY(0); }
+  .entry.thread-hidden.visible { opacity: 0; transform: translateY(0); }
 
   @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 </style>
@@ -680,25 +727,71 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 });
 
 // Thread logic
+// Narrative connectors between thread entries
+const THREAD_NARRATIVES = {
+  'death-of-god': {
+    '1889→1922': 'Nietzsche declared God dead in 1882. By 1922, the void he predicted had swallowed certainty itself — Eliot\'s <em>Waste Land</em> mapped the wreckage, while logical positivism tried to rebuild meaning from scratch.',
+  },
+  // Narratives auto-generated for single-entry threads: "This thread begins here."
+};
+
+function getThreadNarrative(threadId, yearFrom, yearTo) {
+  const key = `${yearFrom}→${yearTo}`;
+  const narratives = THREAD_NARRATIVES[threadId];
+  return narratives && narratives[key] ? narratives[key] : null;
+}
+
 function activateThread(threadId) {
   activeThread = threadId;
   const entries = document.querySelectorAll('.entry');
-  let count = 0;
+  const matchingEntries = [];
 
+  // First: record max-height of non-matching entries before hiding
   entries.forEach(entry => {
     const threads = JSON.parse(entry.dataset.threads || '[]');
     if (threads.includes(threadId)) {
-      entry.classList.remove('thread-dimmed');
+      entry.classList.remove('thread-hidden');
       entry.classList.add('thread-highlighted');
-      count++;
+      matchingEntries.push(entry);
     } else {
-      entry.classList.add('thread-dimmed');
+      // Store current height for smooth collapse
+      entry.style.maxHeight = entry.scrollHeight + 'px';
       entry.classList.remove('thread-highlighted');
+      requestAnimationFrame(() => {
+        entry.classList.add('thread-hidden');
+        entry.style.maxHeight = '0';
+      });
     }
   });
 
-  // Dim markers too
-  document.querySelectorAll('.marker').forEach(m => m.classList.add('thread-dimmed'));
+  // Hide markers
+  document.querySelectorAll('.marker').forEach(m => m.classList.add('thread-hidden'));
+
+  // Remove old narratives
+  document.querySelectorAll('.thread-narrative').forEach(n => n.remove());
+
+  // Insert narrative connectors between matching entries
+  for (let i = 0; i < matchingEntries.length - 1; i++) {
+    const fromYear = matchingEntries[i].dataset.year;
+    const toYear = matchingEntries[i + 1].dataset.year;
+    const narrative = getThreadNarrative(threadId, fromYear, toYear);
+
+    const connector = document.createElement('div');
+    connector.className = 'thread-narrative';
+
+    if (narrative) {
+      connector.innerHTML = `<span class="narrative-arrow">↓</span>${narrative}`;
+    } else {
+      const gap = parseInt(toYear) - parseInt(fromYear);
+      connector.innerHTML = `<span class="narrative-arrow">↓</span><em>${gap} years later…</em>`;
+    }
+
+    // Insert after the current matching entry
+    matchingEntries[i].after(connector);
+  }
+
+  // Draw SVG thread lines
+  drawThreadLines(matchingEntries);
 
   // Update all thread tags
   document.querySelectorAll('.thread-tag').forEach(t => {
@@ -706,19 +799,99 @@ function activateThread(threadId) {
   });
 
   // Show banner
+  const count = matchingEntries.length;
   document.getElementById('threadName').textContent = formatThreadId(threadId);
   document.getElementById('threadCount').textContent = `${count} ${count === 1 ? 'entry' : 'entries'}`;
   document.getElementById('threadBanner').classList.add('visible');
+
+  // Scroll to first matching entry
+  if (matchingEntries.length > 0) {
+    setTimeout(() => {
+      matchingEntries[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 300);
+  }
 }
 
 function clearThread() {
   activeThread = null;
+
   document.querySelectorAll('.entry').forEach(e => {
-    e.classList.remove('thread-dimmed', 'thread-highlighted');
+    e.classList.remove('thread-hidden', 'thread-highlighted');
+    e.style.maxHeight = '';
   });
-  document.querySelectorAll('.marker').forEach(m => m.classList.remove('thread-dimmed'));
+  document.querySelectorAll('.marker').forEach(m => m.classList.remove('thread-hidden'));
   document.querySelectorAll('.thread-tag').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.thread-narrative').forEach(n => n.remove());
+  clearThreadLines();
   document.getElementById('threadBanner').classList.remove('visible');
+}
+
+// SVG thread lines
+function drawThreadLines(matchingEntries) {
+  clearThreadLines();
+  if (matchingEntries.length < 2) return;
+
+  const container = document.querySelector('.timeline-container');
+  const containerRect = container.getBoundingClientRect();
+
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.classList.add('thread-lines-svg');
+  svg.setAttribute('width', '100%');
+  svg.setAttribute('height', '100%');
+  container.appendChild(svg);
+
+  // Add glow filter
+  const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+  defs.innerHTML = `
+    <filter id="threadGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  `;
+  svg.appendChild(defs);
+
+  for (let i = 0; i < matchingEntries.length - 1; i++) {
+    const fromDot = matchingEntries[i];
+    const toDot = matchingEntries[i + 1];
+
+    // Find the dot positions (the ::before pseudo-element is on the timeline center)
+    const fromRect = fromDot.getBoundingClientRect();
+    const toRect = toDot.getBoundingClientRect();
+
+    // Dot is at top: 24px of the entry, horizontally at the timeline center
+    const timelineX = container.offsetWidth / 2;
+    const fromY = fromRect.top - containerRect.top + 30;
+    const toY = toRect.top - containerRect.top + 30;
+
+    // Draw a curved line along the timeline
+    const midY = (fromY + toY) / 2;
+    const curveOffset = 30; // how far the curve bows out
+
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('d', `M ${timelineX} ${fromY} Q ${timelineX + curveOffset} ${midY} ${timelineX} ${toY}`);
+    path.setAttribute('fill', 'none');
+    path.setAttribute('stroke', 'rgba(124,111,247,0.4)');
+    path.setAttribute('stroke-width', '3');
+    path.setAttribute('stroke-linecap', 'round');
+    path.setAttribute('filter', 'url(#threadGlow)');
+
+    // Animate the line drawing
+    const length = path.getTotalLength ? path.getTotalLength() : 500;
+    path.setAttribute('stroke-dasharray', length);
+    path.setAttribute('stroke-dashoffset', length);
+    path.style.transition = `stroke-dashoffset 0.8s ease ${i * 0.2}s`;
+
+    svg.appendChild(path);
+
+    // Trigger animation
+    requestAnimationFrame(() => {
+      path.setAttribute('stroke-dashoffset', '0');
+    });
+  }
+}
+
+function clearThreadLines() {
+  document.querySelectorAll('.thread-lines-svg').forEach(s => s.remove());
 }
 
 document.getElementById('threadClose').addEventListener('click', clearThread);
