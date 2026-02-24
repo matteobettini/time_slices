@@ -1521,6 +1521,23 @@ function updateTimeFilter(maxYear) {
     if (!dot) return;
 
     const year = marker._sliceYear;
+    const isThreadMember = mapActiveThread && marker._sliceThreads.includes(mapActiveThread);
+
+    // During thread tour: thread members are always visible, others hidden
+    if (mapActiveThread && mapIsPlaying) {
+      if (isThreadMember) {
+        dot.classList.remove('hidden-by-time');
+        dot.style.opacity = 1;
+        if (label) label.style.opacity = 1;
+      } else {
+        dot.classList.add('hidden-by-time');
+        dot.style.opacity = '';
+        if (label) label.style.opacity = '0';
+        if (marker.isPopupOpen()) marker.closePopup();
+      }
+      return; // skip normal time-window logic
+    }
+
     const diff = maxYear - year; // positive = slider is past this entry
 
     // Visible when slider is within [-TIME_WINDOW, +TIME_WINDOW] of entry year
@@ -1559,8 +1576,8 @@ function updateTimeFilter(maxYear) {
     }
   });
 
-  // Redraw arcs if thread is active — only show arcs where both endpoints are visible
-  if (mapActiveThread) {
+  // Redraw arcs if thread is active (but not during tour — tour draws its own)
+  if (mapActiveThread && !mapIsPlaying) {
     drawMapArcs(mapActiveThread, maxYear);
   }
 
@@ -1609,8 +1626,14 @@ document.getElementById('timeSlider').addEventListener('input', (e) => {
   updateTimeFilter(parseInt(e.target.value));
 });
 
-// Auto-play — density-proportional speed
+// Auto-play — density-proportional speed (normal mode)
+// Thread tour — sequential fly-between with arc animation (thread mode)
 function startMapPlay() {
+  if (mapActiveThread) {
+    startThreadTour();
+    return;
+  }
+
   mapIsPlaying = true;
   _lastVisibleSet = '';  // reset so first frame triggers a fit
   document.getElementById('timePlayBtn').textContent = '⏸';
@@ -1680,8 +1703,220 @@ function startMapPlay() {
   requestAnimationFrame(tick);
 }
 
+// Thread tour: guided journey through thread entries
+let _threadTourAbort = false;
+
+async function startThreadTour() {
+  const threadId = mapActiveThread;
+  if (!threadId) return;
+
+  // Get thread entries sorted chronologically
+  const threadSlices = SLICES
+    .filter(s => (s.threads || []).includes(threadId) && s.location)
+    .sort((a, b) => parseInt(a.year) - parseInt(b.year));
+
+  if (threadSlices.length < 2) {
+    // Not enough entries for a tour — fall back to normal play
+    mapActiveThread = null;
+    startMapPlay();
+    mapActiveThread = threadId;
+    return;
+  }
+
+  mapIsPlaying = true;
+  _threadTourAbort = false;
+  document.getElementById('timePlayBtn').textContent = '⏸';
+  document.getElementById('timePlayBtn').classList.add('playing');
+
+  const slider = document.getElementById('timeSlider');
+
+  // Clear existing arcs — we'll draw them one by one
+  clearMapArcs();
+
+  // Helper: wait ms, checking for abort
+  function wait(ms) {
+    return new Promise(resolve => {
+      const start = Date.now();
+      function check() {
+        if (_threadTourAbort || !mapIsPlaying) { resolve(); return; }
+        if (Date.now() - start >= ms) { resolve(); return; }
+        requestAnimationFrame(check);
+      }
+      check();
+    });
+  }
+
+  // Helper: smoothly animate slider from current to target year
+  function animateSlider(targetYear, durationMs) {
+    return new Promise(resolve => {
+      const startVal = parseInt(slider.value);
+      const diff = targetYear - startVal;
+      const startTime = performance.now();
+      function frame(now) {
+        if (_threadTourAbort || !mapIsPlaying) { resolve(); return; }
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / durationMs, 1);
+        // Ease in-out
+        const eased = progress < 0.5
+          ? 2 * progress * progress
+          : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+        const val = Math.round(startVal + diff * eased);
+        slider.value = val;
+        updateTimeFilter(val);
+        if (progress < 1) requestAnimationFrame(frame);
+        else resolve();
+      }
+      requestAnimationFrame(frame);
+    });
+  }
+
+  // Helper: draw a single arc between two markers, animated
+  function drawSingleArc(fromSlice, toSlice) {
+    return new Promise(resolve => {
+      const fromMarker = mapMarkers.find(m => m._sliceYear === parseInt(fromSlice.year));
+      const toMarker = mapMarkers.find(m => m._sliceYear === parseInt(toSlice.year));
+      if (!fromMarker || !toMarker) { resolve(); return; }
+
+      const from = fromMarker.getLatLng();
+      const to = toMarker.getLatLng();
+      const latlngs = generateArc(from, to, 50);
+
+      const glowArc = L.polyline([], {
+        color: 'rgba(124,111,247,0.2)',
+        weight: 8, lineCap: 'round', lineJoin: 'round', interactive: false,
+      }).addTo(map);
+
+      const arc = L.polyline([], {
+        color: 'rgba(124,111,247,0.7)',
+        weight: 3, lineCap: 'round', lineJoin: 'round', interactive: false,
+      }).addTo(map);
+
+      mapArcs.push(glowArc, arc);
+
+      // Year gap label at midpoint
+      const gap = parseInt(toSlice.year) - parseInt(fromSlice.year);
+      const midIdx = Math.floor(latlngs.length / 2);
+      const yearLabel = L.marker(latlngs[midIdx], {
+        icon: L.divIcon({
+          className: '',
+          html: `<div style="
+            color:rgba(124,111,247,0.85);
+            font-family:var(--mono);
+            font-size:0.65rem;
+            font-weight:600;
+            text-shadow:0 0 8px rgba(124,111,247,0.5), 0 1px 4px rgba(0,0,0,0.8);
+            white-space:nowrap;
+            pointer-events:none;
+          ">${gap} yrs →</div>`,
+          iconSize: [60, 16],
+          iconAnchor: [30, 8],
+        }),
+        interactive: false,
+      }).addTo(map);
+      mapArcs.push(yearLabel);
+
+      // Animate arc drawing
+      let frame = 0;
+      const totalFrames = latlngs.length;
+      function animateArc() {
+        if (_threadTourAbort || !mapIsPlaying) { resolve(); return; }
+        frame += 2;
+        const partial = latlngs.slice(0, Math.min(frame, totalFrames));
+        glowArc.setLatLngs(partial);
+        arc.setLatLngs(partial);
+        if (frame < totalFrames) requestAnimationFrame(animateArc);
+        else resolve();
+      }
+      animateArc();
+    });
+  }
+
+  // Helper: pulse a marker
+  function pulseMarker(year) {
+    const marker = mapMarkers.find(m => m._sliceYear === parseInt(year));
+    if (!marker) return;
+    const el = marker.getElement();
+    if (!el) return;
+    const dot = el.querySelector('.map-marker');
+    if (dot) {
+      dot.classList.add('arriving');
+      setTimeout(() => dot.classList.remove('arriving'), 1200);
+    }
+  }
+
+  // Suppress auto-fit during tour — we control the camera
+  _suppressAutoFit = true;
+
+  // Start: set slider just before first entry, show all thread markers
+  const firstYear = parseInt(threadSlices[0].year);
+  slider.value = firstYear;
+  updateTimeFilter(firstYear);
+
+  // Fly to first entry
+  const firstLoc = threadSlices[0].location;
+  map.flyTo([firstLoc.lat, firstLoc.lon], 5, { duration: 1.2 });
+  await wait(1400);
+  if (_threadTourAbort) { _suppressAutoFit = false; return; }
+
+  pulseMarker(threadSlices[0].year);
+  await wait(1200);
+  if (_threadTourAbort) { _suppressAutoFit = false; return; }
+
+  // Journey through each consecutive pair
+  for (let i = 0; i < threadSlices.length - 1; i++) {
+    if (_threadTourAbort || !mapIsPlaying) break;
+
+    const current = threadSlices[i];
+    const next = threadSlices[i + 1];
+    const currentYear = parseInt(current.year);
+    const nextYear = parseInt(next.year);
+
+    // Zoom out to show both points
+    const fromMarker = mapMarkers.find(m => m._sliceYear === currentYear);
+    const toMarker = mapMarkers.find(m => m._sliceYear === nextYear);
+    if (fromMarker && toMarker) {
+      const group = L.featureGroup([fromMarker, toMarker]);
+      map.flyToBounds(group.getBounds().pad(0.5), { maxZoom: 6, duration: 1.0 });
+      await wait(1200);
+      if (_threadTourAbort) break;
+    }
+
+    // Animate slider from current year to next year
+    const sliderDuration = Math.min(Math.max((nextYear - currentYear) * 3, 800), 2500);
+    await animateSlider(nextYear, sliderDuration);
+    if (_threadTourAbort) break;
+
+    // Draw arc
+    await drawSingleArc(current, next);
+    if (_threadTourAbort) break;
+
+    // Fly to next entry
+    const nextLoc = next.location;
+    map.flyTo([nextLoc.lat, nextLoc.lon], 5, { duration: 1.0 });
+    await wait(1200);
+    if (_threadTourAbort) break;
+
+    // Pulse the destination marker
+    pulseMarker(next.year);
+    await wait(1000);
+  }
+
+  _suppressAutoFit = false;
+
+  // End: zoom to fit all thread entries
+  const threadMarkers = mapMarkers.filter(m => m._sliceThreads.includes(threadId));
+  if (threadMarkers.length > 1) {
+    const group = L.featureGroup(threadMarkers);
+    map.flyToBounds(group.getBounds().pad(0.4), { maxZoom: 6, duration: 1.2 });
+  }
+
+  stopMapPlay();
+}
+
 function stopMapPlay() {
   mapIsPlaying = false;
+  _threadTourAbort = true;
+  _suppressAutoFit = false;
   document.getElementById('timePlayBtn').textContent = '▶';
   document.getElementById('timePlayBtn').classList.remove('playing');
 }
@@ -1698,22 +1933,25 @@ function activateMapThread(threadId) {
   // Also activate in timeline
   activeThread = threadId;
 
-  // Dim non-matching markers
+  // Dim non-matching markers, ensure thread members are visible regardless of time window
   mapMarkers.forEach(marker => {
     const el = marker.getElement();
     if (!el) return;
     const dot = el.querySelector('.map-marker');
+    const label = el.querySelector('.map-marker-label');
     if (!dot) return;
     if (marker._sliceThreads.includes(threadId)) {
       dot.classList.remove('dimmed');
+      dot.classList.remove('hidden-by-time');
+      dot.style.opacity = 1;
+      if (label) label.style.opacity = 1;
     } else {
       dot.classList.add('dimmed');
     }
   });
 
-  // Draw arcs
-  const maxYear = parseInt(document.getElementById('timeSlider').value);
-  drawMapArcs(threadId, maxYear);
+  // Draw arcs between all thread entries (ignore time window)
+  drawMapArcsAll(threadId);
 
   // Show banner
   document.getElementById('mapThreadName').textContent = formatThreadId(threadId);
@@ -1801,6 +2039,73 @@ function drawMapArcs(threadId, maxYear) {
     const fromYear = threadMarkers[i]._sliceYear;
     const toYear = threadMarkers[i + 1]._sliceYear;
     const gap = toYear - fromYear;
+    const yearLabel = L.marker(latlngs[midIdx], {
+      icon: L.divIcon({
+        className: '',
+        html: `<div style="
+          color:rgba(124,111,247,0.85);
+          font-family:var(--mono);
+          font-size:0.65rem;
+          font-weight:600;
+          text-shadow:0 0 8px rgba(124,111,247,0.5), 0 1px 4px rgba(0,0,0,0.8);
+          white-space:nowrap;
+          pointer-events:none;
+        ">${gap} yrs →</div>`,
+        iconSize: [60, 16],
+        iconAnchor: [30, 8],
+      }),
+      interactive: false,
+    }).addTo(map);
+
+    mapArcs.push(glowArc, arc, yearLabel);
+  }
+}
+
+// Draw arcs between ALL thread entries (no time window filter) — used when thread is selected statically
+function drawMapArcsAll(threadId) {
+  clearMapArcs();
+
+  const threadMarkers = mapMarkers
+    .filter(m => m._sliceThreads.includes(threadId))
+    .sort((a, b) => a._sliceYear - b._sliceYear);
+
+  if (threadMarkers.length < 2) return;
+
+  for (let i = 0; i < threadMarkers.length - 1; i++) {
+    const from = threadMarkers[i].getLatLng();
+    const to = threadMarkers[i + 1].getLatLng();
+    const latlngs = generateArc(from, to, 50);
+
+    const glowArc = L.polyline(latlngs, {
+      color: 'rgba(124,111,247,0.2)',
+      weight: 8, lineCap: 'round', lineJoin: 'round', interactive: false,
+    }).addTo(map);
+
+    const arc = L.polyline(latlngs, {
+      color: 'rgba(124,111,247,0.7)',
+      weight: 3, lineCap: 'round', lineJoin: 'round', interactive: false,
+    }).addTo(map);
+
+    // Staggered animation
+    const animDelay = i * 400;
+    glowArc.setLatLngs([]);
+    arc.setLatLngs([]);
+    let frame = 0;
+    const totalFrames = latlngs.length;
+    setTimeout(() => {
+      function animateArc() {
+        if (frame >= totalFrames) return;
+        frame += 2;
+        const partial = latlngs.slice(0, Math.min(frame, totalFrames));
+        glowArc.setLatLngs(partial);
+        arc.setLatLngs(partial);
+        if (frame < totalFrames) requestAnimationFrame(animateArc);
+      }
+      animateArc();
+    }, animDelay);
+
+    const midIdx = Math.floor(latlngs.length / 2);
+    const gap = threadMarkers[i + 1]._sliceYear - threadMarkers[i]._sliceYear;
     const yearLabel = L.marker(latlngs[midIdx], {
       icon: L.divIcon({
         className: '',
