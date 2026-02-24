@@ -70,30 +70,6 @@
   .lang-btn:hover { border-color: var(--text-dim); color: var(--text); }
   .lang-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 
-  /* Dimension filters */
-  .filters {
-    display: flex; gap: 6px; flex-wrap: wrap;
-  }
-  .filter-btn {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 4px 14px;
-    font-size: 0.75rem;
-    font-family: var(--font);
-    color: var(--text-dim);
-    cursor: pointer;
-    transition: all 0.2s ease;
-    white-space: nowrap;
-  }
-  .filter-btn:hover { border-color: var(--text-dim); color: var(--text); }
-  .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
-  .filter-btn.active[data-dim="art"] { background: var(--art); border-color: var(--art); }
-  .filter-btn.active[data-dim="lit"] { background: var(--lit); border-color: var(--lit); color: #0a0a0f; }
-  .filter-btn.active[data-dim="phil"] { background: var(--phil); border-color: var(--phil); color: #0a0a0f; }
-  .filter-btn.active[data-dim="hist"] { background: var(--hist); border-color: var(--hist); color: #0a0a0f; }
-  .filter-btn.active[data-dim="conn"] { background: var(--conn); border-color: var(--conn); color: #0a0a0f; }
-
   /* Thread banner */
   .thread-banner {
     display: none;
@@ -340,13 +316,6 @@
     transition: opacity 0.3s ease, max-height 0.3s ease;
   }
   .dimension:first-child { border-top: none; }
-  .dimension.dim-hidden {
-    opacity: 0;
-    max-height: 0;
-    padding: 0;
-    overflow: hidden;
-    border-top: none;
-  }
   .dim-header {
     display: flex; align-items: center; gap: 8px;
     font-weight: 600; font-size: 0.9rem;
@@ -534,14 +503,6 @@
       <button class="lang-btn" data-lang="it">IT</button>
     </div>
   </div>
-  <div class="filters" id="filters">
-    <button class="filter-btn active" data-dim="all">All</button>
-    <button class="filter-btn" data-dim="art">🎨 Art</button>
-    <button class="filter-btn" data-dim="lit">📖 Literature</button>
-    <button class="filter-btn" data-dim="phil">🧠 Philosophy</button>
-    <button class="filter-btn" data-dim="hist">⚔️ History</button>
-    <button class="filter-btn" data-dim="conn">🔗 Connections</button>
-  </div>
   <div class="thread-banner" id="threadBanner">
     <span>🧵 Thread: <span class="thread-name" id="threadName"></span></span>
     <span class="thread-count" id="threadCount"></span>
@@ -556,7 +517,6 @@
 
 <script>
 let SLICES = [];
-let activeFilter = 'all';
 let activeThread = null;
 let currentLang = (navigator.language || '').startsWith('it') ? 'it' : 'en';
 
@@ -774,30 +734,6 @@ function renderMarker(marker) {
   `;
   return el;
 }
-
-// Dimension filter logic
-function applyFilter(dim) {
-  activeFilter = dim;
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  document.querySelector(`.filter-btn[data-dim="${dim}"]`).classList.add('active');
-
-  document.querySelectorAll('.dimension').forEach(d => {
-    if (dim === 'all' || d.dataset.dim === dim) {
-      d.classList.remove('dim-hidden');
-    } else {
-      d.classList.add('dim-hidden');
-    }
-  });
-
-  // Recalculate max-height for expanded entries
-  document.querySelectorAll('.entry.expanded .card-details').forEach(details => {
-    details.style.maxHeight = 'none';
-  });
-}
-
-document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => applyFilter(btn.dataset.dim));
-});
 
 // Thread logic
 // Narrative connectors between thread entries
@@ -1049,8 +985,6 @@ function loadSlices() {
 
       lazyLoadImages();
       setupScrollReveal();
-      // Reapply dimension filter
-      applyFilter(activeFilter);
     });
 }
 
