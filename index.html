@@ -1516,6 +1516,25 @@ function updateTimeFilter(maxYear) {
   if (mapActiveThread) {
     drawMapArcs(mapActiveThread, maxYear);
   }
+
+  // Fit map bounds to visible markers (debounced to avoid jitter during scrubbing)
+  fitToVisibleMarkers(maxYear);
+}
+
+let _fitBoundsTimer = null;
+function fitToVisibleMarkers(maxYear) {
+  clearTimeout(_fitBoundsTimer);
+  _fitBoundsTimer = setTimeout(() => {
+    if (_suppressAutoFit || mapIsPlaying) return;
+    const visible = mapMarkers.filter(m => Math.abs(maxYear - m._sliceYear) <= TIME_WINDOW);
+    if (visible.length === 0) return;
+    if (visible.length === 1) {
+      map.flyTo(visible[0].getLatLng(), 5, { duration: 0.6 });
+    } else {
+      const group = L.featureGroup(visible);
+      map.flyToBounds(group.getBounds().pad(0.4), { maxZoom: 6, duration: 0.6 });
+    }
+  }, 300);
 }
 
 document.getElementById('timeSlider').addEventListener('input', (e) => {
@@ -1817,6 +1836,8 @@ function scrollToEntry(year) {
   }, 200);
 }
 
+let _suppressAutoFit = false;
+
 function flyToEntry(year) {
   const slice = SLICES.find(s => String(s.year) === String(year));
   if (!slice || !slice.location) return;
@@ -1826,7 +1847,9 @@ function flyToEntry(year) {
     const slider = document.getElementById('timeSlider');
     const numYear = parseInt(year);
     slider.value = Math.max(parseInt(slider.min), Math.min(parseInt(slider.max), numYear));
+    _suppressAutoFit = true;
     updateTimeFilter(parseInt(slider.value));
+    setTimeout(() => { _suppressAutoFit = false; }, 500);
 
     map.flyTo([slice.location.lat, slice.location.lon], 5, { duration: 1.2 });
     // Open the marker popup
