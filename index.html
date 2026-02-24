@@ -1733,7 +1733,7 @@ function showMapView() {
   setTimeout(() => {
     map.invalidateSize();
     populateMap();
-    // populateMap() already re-activates mapActiveThread if set
+    // populateMap handles mapActiveThread re-activation
   }, 150);
 }
 
@@ -1745,11 +1745,11 @@ function showTimelineView() {
   document.getElementById('viewToggle').textContent = '🗺️';
   document.getElementById('viewToggle').title = 'Map view';
 
-  // Sync thread state: map → timeline
-  if (mapActiveThread && mapActiveThread !== activeThread) {
-    activateThread(mapActiveThread);
-  } else if (!mapActiveThread && activeThread) {
-    // Thread was cleared on map — clear on timeline too
+  // Sync thread state: apply whatever thread is active (or clear)
+  if (activeThread) {
+    // Re-apply visual state on the timeline DOM
+    activateThread(activeThread);
+  } else {
     clearThread();
   }
 }
