@@ -262,6 +262,22 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .card-map-link {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+    font-family: system-ui, sans-serif;
+  }
+  .card-map-link:hover {
+    opacity: 1;
+    color: var(--accent);
   }
   .card-title {
     font-size: 1.15rem;
@@ -969,6 +985,8 @@ function renderSlice(slice) {
       ${slice.image.attribution ? `<div class="floating-attribution">${slice.image.attribution}</div>` : ''}
     </div>` : '';
 
+  const mapLink = slice.location ? `<span class="card-map-link" data-year="${slice.year}" title="${slice.location.place}">📍</span>` : '';
+
   const el = document.createElement('div');
   el.className = 'entry';
   el.dataset.year = slice.year;
@@ -978,7 +996,7 @@ function renderSlice(slice) {
     <div class="card">
       ${imageInlineHtml}
       <div class="card-body">
-        <div class="card-year">${slice.year}</div>
+        <div class="card-year">${slice.year}${mapLink}</div>
         <div class="card-title">${slice.title}</div>
         <div class="card-teaser">${slice.teaser}</div>
         <div class="card-threads">${threads}</div>
@@ -993,7 +1011,7 @@ function renderSlice(slice) {
 
   // Expand/collapse
   el.addEventListener('click', (e) => {
-    if (e.target.closest('.thread-tag') || e.target.closest('.card-sources')) return;
+    if (e.target.closest('.thread-tag') || e.target.closest('.card-sources') || e.target.closest('.card-map-link')) return;
     const details = el.querySelector('.card-details');
     if (el.classList.contains('expanded')) {
       details.style.maxHeight = details.scrollHeight + 'px';
@@ -1028,6 +1046,15 @@ function renderSlice(slice) {
       }
     });
   });
+
+  // Map pin link
+  const mapLinkEl = el.querySelector('.card-map-link');
+  if (mapLinkEl) {
+    mapLinkEl.addEventListener('click', (e) => {
+      e.stopPropagation();
+      flyToEntry(mapLinkEl.dataset.year);
+    });
+  }
 
   return el;
 }
@@ -1769,6 +1796,20 @@ function scrollToEntry(year) {
       setTimeout(() => {
         entry.querySelector('.card').style.boxShadow = '';
       }, 1500);
+    }
+  }, 200);
+}
+
+function flyToEntry(year) {
+  const slice = SLICES.find(s => String(s.year) === String(year));
+  if (!slice || !slice.location) return;
+  showMapView();
+  setTimeout(() => {
+    map.flyTo([slice.location.lat, slice.location.lon], 8, { duration: 1.2 });
+    // Open the marker popup
+    const marker = mapMarkers.find(m => String(m._sliceYear) === String(year));
+    if (marker) {
+      setTimeout(() => marker.openPopup(), 1300);
     }
   }, 200);
 }
