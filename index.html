@@ -1901,7 +1901,7 @@ async function startThreadTour() {
       let frame = 0;
       const totalFrames = latlngs.length;
       // Pan camera every N frames to follow the arc tip smoothly
-      const panEvery = 10;
+      const panEvery = 20;
 
       function animateArc() {
         if (_threadTourAbort || !mapIsPlaying) { resolve(); return; }
@@ -1913,7 +1913,7 @@ async function startThreadTour() {
         // Gently pan to keep arc tip in view
         if (frame % panEvery === 0 && frame < totalFrames) {
           const tip = latlngs[Math.min(frame, totalFrames - 1)];
-          map.panTo(tip, { animate: true, duration: 0.3, noMoveStart: true });
+          map.panTo(tip, { animate: true, duration: 0.5, noMoveStart: true });
         }
 
         if (frame < totalFrames) {
@@ -1975,12 +1975,12 @@ async function startThreadTour() {
 
   // Fly to first entry
   const firstLoc = threadSlices[0].location;
-  map.flyTo([firstLoc.lat, firstLoc.lon], 5, { duration: 1.2 });
-  await wait(1400);
+  map.flyTo([firstLoc.lat, firstLoc.lon], 5, { duration: 1.5, easeLinearity: 0.1 });
+  await wait(1800);
   if (_threadTourAbort) { _suppressAutoFit = false; return; }
 
   pulseMarker(threadSlices[0].year);
-  await wait(1200);
+  await wait(1000);
   if (_threadTourAbort) { _suppressAutoFit = false; return; }
 
   // Journey through each consecutive pair
@@ -1992,13 +1992,13 @@ async function startThreadTour() {
     const currentYear = parseInt(current.year);
     const nextYear = parseInt(next.year);
 
-    // Zoom out to show both endpoints before drawing
+    // Gently fit both endpoints into view before drawing
     const fromMarker = mapMarkers.find(m => m._sliceYear === currentYear);
     const toMarker = mapMarkers.find(m => m._sliceYear === nextYear);
     if (fromMarker && toMarker) {
       const group = L.featureGroup([fromMarker, toMarker]);
-      map.flyToBounds(group.getBounds().pad(0.5), { maxZoom: 6, duration: 1.0 });
-      await wait(1200);
+      map.flyToBounds(group.getBounds().pad(0.6), { maxZoom: 5, duration: 1.5, easeLinearity: 0.1 });
+      await wait(1800);
       if (_threadTourAbort) break;
     }
 
@@ -2009,9 +2009,9 @@ async function startThreadTour() {
     await Promise.all([arcPromise, sliderPromise]);
     if (_threadTourAbort) break;
 
-    // Brief pause at destination — camera is already there from arc following
+    // Brief pause at destination
     pulseMarker(next.year);
-    await wait(1200);
+    await wait(1000);
   }
 
   _suppressAutoFit = false;
@@ -2020,7 +2020,7 @@ async function startThreadTour() {
   const threadMarkers = mapMarkers.filter(m => m._sliceThreads.includes(threadId));
   if (threadMarkers.length > 1) {
     const group = L.featureGroup(threadMarkers);
-    map.flyToBounds(group.getBounds().pad(0.4), { maxZoom: 6, duration: 1.2 });
+    map.flyToBounds(group.getBounds().pad(0.4), { maxZoom: 5, duration: 1.5, easeLinearity: 0.1 });
   }
 
   stopMapPlay();
