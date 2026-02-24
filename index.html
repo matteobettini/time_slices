@@ -225,6 +225,44 @@
     .legend { display: none; }
   }
 
+  /* Reference markers */
+  .marker {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    height: 28px;
+  }
+  .marker-line {
+    position: absolute;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 1px;
+    background: var(--border);
+    opacity: 0.6;
+  }
+  .marker-label {
+    position: relative;
+    z-index: 2;
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    letter-spacing: 0.08em;
+    background: var(--bg);
+    padding: 2px 10px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    white-space: nowrap;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+  }
+  .marker:hover .marker-label { opacity: 1; }
+
+  @media (max-width: 768px) {
+    .marker-line { left: 0; width: 100%; }
+  }
+
   /* Scroll animation */
   .entry { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
   .entry.visible { opacity: 1; transform: translateY(0); }
@@ -255,7 +293,30 @@
 <script>
 let SLICES = [];
 
-// Render
+const MARKERS = [
+  { year: -3000, label: "First writing (Sumer)" },
+  { year: -776, label: "First Olympics" },
+  { year: -509, label: "Roman Republic founded" },
+  { year: -323, label: "Death of Alexander the Great" },
+  { year: 0, label: "Year Zero" },
+  { year: 476, label: "Fall of Western Rome" },
+  { year: 622, label: "Hijra — birth of Islam" },
+  { year: 1066, label: "Norman Conquest" },
+  { year: 1215, label: "Magna Carta" },
+  { year: 1347, label: "Black Death arrives in Europe" },
+  { year: 1453, label: "Fall of Constantinople" },
+  { year: 1492, label: "Columbus reaches the Americas" },
+  { year: 1517, label: "Luther's 95 Theses" },
+  { year: 1648, label: "Peace of Westphalia" },
+  { year: 1776, label: "American Independence" },
+  { year: 1789, label: "French Revolution" },
+  { year: 1815, label: "Waterloo" },
+  { year: 1914, label: "World War I begins" },
+  { year: 1945, label: "World War II ends" },
+  { year: 1969, label: "Moon landing" },
+  { year: 1989, label: "Fall of the Berlin Wall" },
+];
+
 const timeline = document.getElementById('timeline');
 
 function renderSlice(slice, index) {
@@ -287,14 +348,37 @@ function renderSlice(slice, index) {
   return el;
 }
 
-// Load data from JSON
+function renderMarker(marker) {
+  const el = document.createElement('div');
+  el.className = 'marker';
+  const yearStr = marker.year < 0 ? `${Math.abs(marker.year)} BC` : marker.year === 0 ? '0' : marker.year;
+  el.innerHTML = `
+    <div class="marker-line"></div>
+    <span class="marker-label">${yearStr} — ${marker.label}</span>
+  `;
+  return el;
+}
+
 fetch('slices.json')
   .then(r => r.json())
   .then(data => {
     SLICES = data;
-    SLICES.sort((a, b) => parseInt(a.year) - parseInt(b.year));
-    SLICES.forEach((slice, i) => timeline.appendChild(renderSlice(slice, i)));
-    // Scroll reveal after render
+
+    // Merge slices and markers, sort by year
+    const items = [
+      ...SLICES.map(s => ({ type: 'slice', year: parseInt(s.year), data: s })),
+      ...MARKERS.map(m => ({ type: 'marker', year: m.year, data: m })),
+    ];
+    items.sort((a, b) => a.year - b.year || (a.type === 'marker' ? -1 : 1));
+
+    items.forEach((item, i) => {
+      if (item.type === 'slice') {
+        timeline.appendChild(renderSlice(item.data, i));
+      } else {
+        timeline.appendChild(renderMarker(item.data));
+      }
+    });
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.1 });
