@@ -131,7 +131,7 @@ MUSIC_POOL = {
         "url": "https://archive.org/download/lp_grgorian-chant-easter-mass-pieces-from_choeur-des-moines-de-labbaye-saintpierre-d/disc1/01.02.%20Intro%C3%AFt%20%3A%20Resurrexi.mp3",
         "filename": "gregorian-chant.mp3",
         "description": "Gregorian chant — Introït: Resurrexi (Abbey of Solesmes)",
-        "start_time": 1.0,
+        "start_time": 10.0,
         "tags": ["medieval", "sacred", "choral", "europe", "monastic"],
     },
     "gregorian-kergonan": {
@@ -193,7 +193,7 @@ MUSIC_POOL = {
         "url": "https://archive.org/download/lp_italian-songs-16th-and-17th-centuries-spa_hugues-cunod-hermann-leeb_0/disc1/01.02.%20Lute%20Solo%3A%20Fantasia.mp3",
         "filename": "renaissance-lute.mp3",
         "description": "Renaissance lute fantasia — 16th century Italian",
-        "start_time": 0,
+        "start_time": 1.0,
         "tags": ["renaissance", "lute", "italy", "instrumental", "intimate"],
     },
     "soler-harpsichord": {
@@ -209,7 +209,7 @@ MUSIC_POOL = {
         "url": "https://archive.org/download/canonic_variations_BWV_769a/01_Variation_I_%28Nel_canone_all%E2%80%99_ottava%29.mp3",
         "filename": "bach-organ.mp3",
         "description": "Bach — Canonic Variations BWV 769 (Baroque organ)",
-        "start_time": 2.0,
+        "start_time": 3.5,
         "tags": ["baroque", "organ", "germany", "sacred", "complex"],
     },
     "bach-cello-suite-1": {
@@ -278,7 +278,7 @@ MUSIC_POOL = {
         "url": "https://archive.org/download/DebussyClairDeLunevirgilFox/07-ClairDeLunefromSuiteBergamasque.mp3",
         "filename": "debussy-clair-de-lune.mp3",
         "description": "Debussy — Clair de lune (Suite Bergamasque)",
-        "start_time": 2.5,
+        "start_time": 12.0,
         "tags": ["impressionist", "piano", "france", "dreamy", "nocturnal"],
     },
     "satie-gnossiennes": {

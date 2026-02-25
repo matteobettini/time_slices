@@ -1352,9 +1352,13 @@ function renderSlice(slice, isFresh = false) {
     if (e.target.closest('.thread-tag') || e.target.closest('.card-sources') || e.target.closest('.card-map-link') || e.target.closest('.podcast-btn') || e.target.closest('.podcast-player')) return;
     const details = el.querySelector('.card-details');
     if (el.classList.contains('expanded')) {
-      // Stop podcast if playing in this card
-      if (activePodcastYear === el.dataset.year && activePodcastAudio && !activePodcastAudio.paused) {
+      // Stop & remove podcast player when closing card
+      if (activePodcastYear === el.dataset.year) {
         stopAllPodcasts();
+      } else {
+        // Remove orphaned player bar even if not the active podcast
+        const orphanPlayer = el.querySelector('.podcast-player');
+        if (orphanPlayer) orphanPlayer.remove();
       }
       details.style.maxHeight = details.scrollHeight + 'px';
       requestAnimationFrame(() => { details.style.maxHeight = '0'; });
