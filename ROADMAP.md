@@ -22,6 +22,7 @@
 - 🎲 Random entry button — picks a random visible entry, scrolls & highlights
 - ☕ Fresh entry badge — highlights most recently added entry, quick-jump button
 - 🗺️ Map view — entries plotted on Leaflet map with lat/lon coordinates
+- Animated map — time slider scrubs through entries, lighting up geographically
 - Geographic coordinates on all entries (location field with lat/lon/place)
 
 ## 📋 Backlog
@@ -33,9 +34,6 @@
 ### 🧵 Threads & Connections
 - [ ] Thread index page — dedicated view listing all threads with their connected entries
 - [ ] "Related entries" section — when expanded, show links to other entries sharing threads
-
-### 🗺️ Map View (enhancements)
-- [ ] Animated map — scrub through time, entries light up geographically
 
 ### 🔎 Context & Discovery
 - [ ] "Meanwhile..." sidebar — 1-sentence summaries of what was happening elsewhere when expanding an entry
