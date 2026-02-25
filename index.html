@@ -1377,6 +1377,10 @@ function renderSlice(slice, isFresh = false) {
       if (floatImg && !floatImg.src) {
         floatImg.src = floatImg.dataset.src;
       }
+      // Auto-show podcast player bar on expand
+      if (hasPodcast && !el.querySelector('.podcast-player')) {
+        showPodcastPlayer(el, slice.podcast.url, slice.podcast.duration);
+      }
     }
   });
 
@@ -1579,24 +1583,16 @@ function stopAllPodcasts() {
   activePodcastYear = null;
 }
 
-function togglePodcastPlayer(entryEl, audioUrl, duration) {
+function showPodcastPlayer(entryEl, audioUrl, duration) {
+  // Only creates the player — never removes it. Returns the player element.
   const existing = entryEl.querySelector('.podcast-player');
-  const btn = entryEl.querySelector('.podcast-btn');
-  const year = entryEl.dataset.year;
-  if (existing) {
-    // Toggle off — stop and remove
-    const audio = existing.querySelector('audio');
-    if (audio) { audio.pause(); audio.src = ''; }
-    existing.remove();
-    if (btn) btn.innerHTML = SVG_HEADPHONES;
-    syncMapPopupAudio(year, false);
-    activePodcastAudio = null;
-    activePodcastYear = null;
-    return;
-  }
+  if (existing) return existing;
 
   // Stop any other playing podcast
   stopAllPodcasts();
+
+  const btn = entryEl.querySelector('.podcast-btn');
+  const year = entryEl.dataset.year;
 
   // Create player
   const player = document.createElement('div');
@@ -1629,7 +1625,6 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
   audio.src = audioUrl;
   activePodcastAudio = audio;
   activePodcastYear = year;
-  if (btn) btn.innerHTML = SVG_STOP;
 
   // Auto-expand card if not expanded
   if (!entryEl.classList.contains('expanded')) {
@@ -1638,18 +1633,17 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
     if (details) details.style.maxHeight = 'none';
   }
 
-  // Sync map popup
-  syncMapPopupAudio(year, true);
-
   playBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     if (audio.paused) {
       audio.play();
       playBtn.innerHTML = SVG_PAUSE;
+      if (btn) btn.innerHTML = SVG_STOP;
       syncMapPopupAudio(year, true);
     } else {
       audio.pause();
       playBtn.innerHTML = SVG_PLAY;
+      if (btn) btn.innerHTML = SVG_HEADPHONES;
       syncMapPopupAudio(year, false);
     }
   });
@@ -1668,6 +1662,7 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
 
   audio.addEventListener('ended', () => {
     playBtn.innerHTML = SVG_PLAY;
+    if (btn) btn.innerHTML = SVG_HEADPHONES;
     progressFill.style.width = '0%';
     currentTime.textContent = '0:00';
     syncMapPopupAudio(year, false);
@@ -1696,9 +1691,33 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
     }
   });
 
-  // Auto-play
+  return player;
+}
+
+function togglePodcastPlayer(entryEl, audioUrl, duration) {
+  const existing = entryEl.querySelector('.podcast-player');
+  const btn = entryEl.querySelector('.podcast-btn');
+  const year = entryEl.dataset.year;
+  if (existing) {
+    // Toggle off — stop and remove
+    const audio = existing.querySelector('audio');
+    if (audio) { audio.pause(); audio.src = ''; }
+    existing.remove();
+    if (btn) btn.innerHTML = SVG_HEADPHONES;
+    syncMapPopupAudio(year, false);
+    activePodcastAudio = null;
+    activePodcastYear = null;
+    return;
+  }
+
+  // Show player and auto-play
+  const player = showPodcastPlayer(entryEl, audioUrl, duration);
+  const audio = player.querySelector('audio');
+  const playBtn = player.querySelector('.pp-play');
   audio.play().then(() => {
     playBtn.innerHTML = SVG_PAUSE;
+    if (btn) btn.innerHTML = SVG_STOP;
+    syncMapPopupAudio(year, true);
   }).catch(() => {
     // Autoplay blocked — user must click play
     playBtn.innerHTML = SVG_PLAY;
