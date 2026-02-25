@@ -287,7 +287,25 @@
     "podcast": {
       "url": "audio/1504-florence-duel-of-giants.mp3",
       "duration": 148
-    }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Battle_of_the_Frescoes",
+        "title": "Battle of the Frescoes — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/High_Renaissance",
+        "title": "High Renaissance — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci",
+        "title": "Leonardo da Vinci — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Michelangelo",
+        "title": "Michelangelo — Wikipedia"
+      }
+    ]
   },
   {
     "year": "1648",
@@ -489,7 +507,25 @@
     "podcast": {
       "url": "audio/1889-paris-year-everything-changed.mp3",
       "duration": 159
-    }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Exposition_Universelle_(1889)",
+        "title": "Exposition Universelle (1889) — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Post-Impressionism",
+        "title": "Post-Impressionism — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Starry_Night",
+        "title": "The Starry Night — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Henri_Bergson",
+        "title": "Henri Bergson — Wikipedia"
+      }
+    ]
   },
   {
     "year": "1922",
@@ -541,6 +577,24 @@
     "podcast": {
       "url": "audio/1922-modernist-explosion.mp3",
       "duration": 166
-    }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Modernism",
+        "title": "Modernism — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ulysses_(novel)",
+        "title": "Ulysses (novel) — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Bauhaus",
+        "title": "Bauhaus — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Waste_Land",
+        "title": "The Waste Land — Wikipedia"
+      }
+    ]
   }
 ]

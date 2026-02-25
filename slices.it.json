@@ -283,7 +283,25 @@
     "podcast": {
       "url": "audio/it/1504-florence-duel-of-giants.mp3",
       "duration": 159
-    }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Battaglia_di_Cascina_(Michelangelo)",
+        "title": "Battaglia di Cascina — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Rinascimento",
+        "title": "Rinascimento — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Leonardo_da_Vinci",
+        "title": "Leonardo da Vinci — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Michelangelo_Buonarroti",
+        "title": "Michelangelo Buonarroti — Wikipedia"
+      }
+    ]
   },
   {
     "year": "1648",
@@ -485,7 +503,25 @@
     "podcast": {
       "url": "audio/it/1889-paris-year-everything-changed.mp3",
       "duration": 158
-    }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Esposizione_universale_di_Parigi_(1889)",
+        "title": "Esposizione universale di Parigi (1889) — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Post-impressionismo",
+        "title": "Post-impressionismo — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Notte_stellata",
+        "title": "Notte stellata — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Henri_Bergson",
+        "title": "Henri Bergson — Wikipedia"
+      }
+    ]
   },
   {
     "year": "1922",
@@ -537,6 +573,24 @@
     "podcast": {
       "url": "audio/it/1922-modernist-explosion.mp3",
       "duration": 176
-    }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Modernismo_(letteratura)",
+        "title": "Modernismo — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Ulisse_(romanzo)",
+        "title": "Ulisse (romanzo) — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Bauhaus",
+        "title": "Bauhaus — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/La_terra_desolata",
+        "title": "La terra desolata — Wikipedia"
+      }
+    ]
   }
 ]
