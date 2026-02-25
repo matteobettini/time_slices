@@ -1,6 +1,6 @@
 # Time Slices — Project Spec
 
-**Last updated:** 2026-02-24
+**Last updated:** 2026-02-25
 
 This is the single source of truth for the Time Slices cron job.
 Read this file FIRST before doing anything.
@@ -52,7 +52,17 @@ Every entry in `slices.json` MUST have this structure:
     "caption": "Description of the image",
     "attribution": "Author, License, via Wikimedia Commons"
   },
-  "threads": ["thread-tag-1", "thread-tag-2"]
+  "threads": ["thread-tag-1", "thread-tag-2"],
+  "location": {
+    "lat": 43.7696,
+    "lon": 11.2558,
+    "place": "Florence"
+  },
+  "addedDate": "2026-02-25T14:30:00Z",
+  "podcast": {
+    "url": "audio/1504-florence-duel-of-giants.mp3",
+    "duration": 180
+  }
 }
 ```
 
@@ -88,6 +98,22 @@ Every entry in `slices.json` MUST have this structure:
 - Add 1-2 NEW thread tags specific to this entry's unique themes
 - When adding NEW tags: also update `THREAD_LABELS` in `index.html` (see below)
 - Examples: `"renaissance-humanism"`, `"death-of-god"`, `"fragmentation"`, `"modernity"`
+
+#### location (mandatory)
+- Object with `lat`, `lon` (decimal coordinates), and `place` (display name)
+- Used for the map view — every entry must have a pin
+- Pick the primary location that best represents the entry (where the central events occurred)
+- If dimensions span multiple cities, pick the most significant one
+
+#### addedDate (mandatory)
+- Full ISO-8601 UTC timestamp: `"2026-02-25T14:30:00Z"`
+- Used for the ☕ fresh badge — the entry with the latest `addedDate` gets the badge
+- Must include time, not just date (to disambiguate same-day additions)
+
+#### podcast (set by generate-podcast.py)
+- Object with `url` (relative path to MP3) and `duration` (seconds)
+- Initially set to `"none"` — updated automatically by `audio/generate-podcast.py`
+- English audio in `audio/{id}.mp3`, Italian audio in `audio/it/{id}.mp3`
 
 #### sources (mandatory)
 - 3-5 URLs you actually consulted during research
@@ -162,7 +188,8 @@ After writing a new entry:
 
 1. ✅ Read `slices.json`, append new entry, write back
 2. ✅ **Also** add the Italian translation to `slices.it.json` — same structure, all text translated naturally (not machine-translated), using Italian Wikipedia links for sources where available
-3. ✅ Validate both files are proper JSON (parse them!)
+3. ✅ Ensure `location` (lat/lon/place) and `addedDate` (ISO timestamp) are set
+4. ✅ Validate both files are proper JSON (parse them!)
 4. ✅ Check for new thread tags → update `THREAD_LABELS` (both `en` and `it` sections) in `index.html`
 5. ✅ If you add thread narratives → update both `en` and `it` sections in `THREAD_NARRATIVES`
 6. ✅ Check if a new MARKER would help → update `MARKERS` in `index.html`
