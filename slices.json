@@ -267,6 +267,77 @@
     "addedDate": "2026-02-24"
   },
   {
+    "year": "1784",
+    "title": "Europe — Dare to Know",
+    "teaser": "In Königsberg, Kant dares humanity to think for itself. In Paris, a servant outwits his master on stage and a painter resurrects republican Rome. The Enlightenment finds its voice — five years before the guillotine gives it teeth.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "Jacques-Louis David is in Rome, painting the work that will remake European art. The <strong>Oath of the Horatii</strong> (completed 1784, exhibited at the Paris Salon 1785) stages three brothers swearing to die for the Roman Republic — rigid, muscular, geometric, the antithesis of Rococo's languid curves. David's <strong>Neoclassicism</strong> isn't nostalgia: it's a political weapon, using antiquity to indict the present. The painting's stark tripartite composition — men on the left reaching for swords, grieving women on the right, the father's outstretched arm at the axis — is rationalism made visible: clarity, duty, structure. When it reaches Paris, the crowds understand instantly. This is what virtue looks like. Five years later, David will paint the Revolution itself."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Beaumarchais</strong>' <em>The Marriage of Figaro</em> premieres in Paris on 27 April 1784, after three years of royal censorship — Louis XVI reportedly said it would be \"dangerous\" to perform. He was right. Figaro, a servant, outmanoeuvres, outwits, and publicly humiliates his aristocratic master, Count Almaviva. The fifth-act monologue is a bomb: \"What have you done to deserve such advantages? Put yourself to the trouble of being born — nothing more.\" The theatre is so packed that three people are crushed on opening night. Danton will later say the play \"killed off the nobility\"; Napoleon will call it \"the Revolution already in action.\" Simultaneously in Germany, <strong>Schiller's</strong> <em>Kabale und Liebe</em> (Intrigue and Love) premieres — a bourgeois tragedy exposing aristocratic corruption through a doomed cross-class love affair."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "In December 1784, the <em>Berlinische Monatsschrift</em> publishes <strong>Immanuel Kant's</strong> answer to the question that defines the age: <em>\"Was ist Aufklärung?\"</em> — \"What is Enlightenment?\" His answer is a single Latin phrase that becomes a civilisational motto: <strong><em>Sapere aude</em></strong> — \"Dare to know.\" Enlightenment, Kant writes, is humanity's emergence from its \"self-incurred immaturity\" — the inability to use one's own understanding without another's guidance. The obstacle isn't stupidity but cowardice: it is comfortable to let others think for you. Three years earlier, his <strong>Critique of Pure Reason</strong> (1781) had already demolished the old metaphysics, drawing the precise boundary between what reason can and cannot reach. Now he draws the political consequence: think for yourself, in public, without fear."
+      },
+      "hist": {
+        "label": "History",
+        "content": "Europe in 1784 is a powder keg with a lit fuse. The <strong>American Revolution</strong> has just succeeded — the Treaty of Paris (1783) confirms it — and French officers who fought there return home full of republican ideals and empty treasury receipts. France's debt from financing American independence is catastrophic; within five years, Louis XVI will be forced to convene the Estates-General. <strong>Frederick the Great</strong> still rules Prussia, Europe's model \"enlightened despot\" — tolerant of religion, patron of Voltaire, yet absolute in power. <strong>Joseph II</strong> of Austria is abolishing serfdom and closing monasteries. The old order is reforming itself frantically, trying to modernise fast enough to survive. It won't be fast enough."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "Everything in 1784 turns on a single tension: <strong>reason against authority</strong>. Kant says: think for yourself. Figaro says: birth is not merit. David paints Roman republicans choosing duty over dynasty. Schiller stages aristocratic power destroying innocent love. Even the \"enlightened despots\" — Frederick, Joseph — embody the paradox: using absolute power to promote freedom, commanding their subjects to be autonomous. The American Revolution has just proved that Enlightenment ideas can topple empires. The French Revolution will soon prove that they can also devour their own children. This is the Enlightenment's high noon — the moment of maximum confidence that reason can rebuild the world. The shadows are already lengthening.",
+        "funFact": "Kant never travelled more than about ten miles from Königsberg in his entire life — yet his essay on Enlightenment, written from that provincial Prussian city, became the defining text of a movement that transformed the planet. The citizens of Königsberg reportedly set their clocks by his daily walk. Reason, apparently, keeps excellent time."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Answering_the_Question:_What_is_Enlightenment%3F",
+        "title": "Kant — What is Enlightenment? — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Marriage_of_Figaro_(play)",
+        "title": "The Marriage of Figaro (play) — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Oath_of_the_Horatii",
+        "title": "Oath of the Horatii — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Intrigue_and_Love",
+        "title": "Kabale und Liebe (Intrigue and Love) — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Age_of_Enlightenment",
+        "title": "Age of Enlightenment — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Neoclassicism",
+        "title": "Neoclassicism — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1784-oath-horatii.jpg",
+      "caption": "The Oath of the Horatii — Jacques-Louis David, 1784",
+      "attribution": "Jacques-Louis David, via Wikimedia Commons / Google Art Project"
+    },
+    "threads": [
+      "rationalism",
+      "classical-revival",
+      "art-and-power",
+      "enlightenment"
+    ],
+    "location": {
+      "lat": 54.7104,
+      "lon": 20.4522,
+      "place": "Königsberg"
+    },
+    "addedDate": "2026-02-25"
+  },
+  {
     "year": "1889",
     "title": "Paris — The Year Everything Changed",
     "teaser": "The Eiffel Tower rises. Van Gogh paints Starry Night. Nietzsche collapses. Bergson rethinks time itself.",
