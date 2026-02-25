@@ -16,8 +16,8 @@ You are Johnny, managing the Time Slices project.
    a. Write a ~350-400 word **English** podcast script (storytelling style, weaving all 5 dimensions into a narrative arc — not a list). Save to `audio/scripts/{id}.txt` where `{id}` is the entry's `id` field (e.g. `1504-florence-duel-of-giants`).
    b. Write a ~350-400 word **Italian** podcast script — NOT a literal translation, but a natural Italian narration of the same content, culturally adapted. Save to `audio/scripts/it/{id}.txt`.
    c. **Voice & music setup:** Before running the generator, add entries for the new id in `audio/generate-podcast.py`:
-      - `VOICE_MAP_EN[id]` — pick a voice + write English style instructions
-      - `VOICE_MAP_IT[id]` — same voice + Italian instructions (must include "Parla in italiano")
+      - `VOICE_MAP_EN[id]` — pick a voice + write English style instructions (epoch-appropriate tone, but conversational — like a good podcast host, not theatrical voice acting)
+      - `VOICE_MAP_IT[id]` — same voice + Italian instructions (must include "Parla in italiano", same restrained tone)
       - `MUSIC_SOURCES[id]` — a public domain recording from Internet Archive matching the era
       Available voices: alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse. Match the epoch's character.
       ⚠️ Do NOT use `onyx` — it produces buggy/glitchy audio output with gpt-4o-mini-tts.

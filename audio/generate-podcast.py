@@ -41,42 +41,42 @@ VOICE_MAP_EN = {
     # 125 Rome: authoritative, architectural — ash for deep resonance and gravitas
     "125-rome-dome-of-all-things": {
         "voice": "ash",
-        "instructions": "Speak as a historian contemplating an empire at its peak — deep, measured, with the authority of carved stone. Let the weight of Roman engineering and Stoic philosophy resonate. Unhurried, as if the dome itself has all the time in the world.",
+        "instructions": "Speak as a historian contemplating an empire at its peak — deep, measured, with quiet authority. Unhurried, as if the dome itself has all the time in the world. Keep it conversational, not theatrical.",
     },
     # 762 Baghdad: warm, storytelling — fable has a narrative quality
     "762-baghdad-round-city-of-reason": {
         "voice": "fable",
-        "instructions": "Speak as a warm storyteller narrating ancient history. Measured pace, slight wonder in the voice. This is a tale of a golden age.",
+        "instructions": "Speak as a warm storyteller narrating ancient history. Measured pace, a hint of wonder. Conversational, not performative.",
     },
     # 1347 Florence plague: somber, dramatic — ash for deep gravitas
     "1347-florence-beautiful-catastrophe": {
         "voice": "ash",
-        "instructions": "Speak with gravity and weight. This is about plague, death, and the strange beauty that emerged from catastrophe. Somber but not monotone — let the drama come through.",
+        "instructions": "Speak with gravity. This is about plague, death, and the strange beauty that emerged from catastrophe. Somber but not monotone — understated drama, not theatrical.",
     },
     # 1504 Renaissance: confident, vivid — echo has clarity and presence
     "1504-florence-duel-of-giants": {
         "voice": "echo",
-        "instructions": "Speak with confidence and vivid energy. This is about Leonardo and Michelangelo in competition — genius against genius. Bring the rivalry to life.",
+        "instructions": "Speak with confidence. Leonardo and Michelangelo in competition — genius against genius. Vivid but grounded, like a good podcast host telling a great story.",
     },
     # 1648 Westphalia: weary, reflective — ash for gravitas
     "1648-munster-exhaustion-of-god": {
         "voice": "ash",
-        "instructions": "Speak with weariness and hard-won wisdom. Thirty years of religious war have exhausted Europe. The tone is reflective, almost elegiac, but with a thread of hope at the emergence of the modern state system.",
+        "instructions": "Speak with weariness and hard-won wisdom. Thirty years of war have exhausted Europe. Reflective, with a thread of hope — but keep the emotion restrained.",
     },
     # 1784 Enlightenment: crisp, intellectual — sage for measured clarity
     "1784-europe-dare-to-know": {
         "voice": "sage",
-        "instructions": "Speak with intellectual clarity and a touch of revolutionary excitement. This is the Enlightenment — reason overthrowing tradition. Crisp, precise, but with underlying passion.",
+        "instructions": "Speak with intellectual clarity and a touch of excitement. The Enlightenment — reason overthrowing tradition. Crisp and precise, conversational not declamatory.",
     },
     # 1889 Paris: passionate, expressive — nova for warmth and energy
     "1889-paris-year-everything-changed": {
         "voice": "nova",
-        "instructions": "Speak with passion and wonder. Paris in 1889 — the Eiffel Tower rising, the world on display, art exploding in new directions. Let the excitement of a transformative moment come through.",
+        "instructions": "Speak with warmth and wonder. Paris in 1889 — the Tower rising, art exploding. Let the excitement come through naturally, not forced.",
     },
     # 1922 Modernism: staccato, urgent — coral for dynamic energy
     "1922-modernist-explosion": {
         "voice": "coral",
-        "instructions": "Speak with urgency and modernist energy. This is 1922 — Ulysses, The Waste Land, jazz, Bauhaus, everything shattering and reassembling. Quick-paced, electric, a world remaking itself.",
+        "instructions": "Speak with energy and pace. 1922 — Ulysses, The Waste Land, jazz, Bauhaus, everything shattering and reassembling. Quick but not breathless.",
     },
 }
 
@@ -84,35 +84,35 @@ VOICE_MAP_EN = {
 VOICE_MAP_IT = {
     "125-rome-dome-of-all-things": {
         "voice": "ash",
-        "instructions": "Parla in italiano come uno storico che contempla un impero al suo apice — voce profonda, misurata, con l'autorità della pietra scolpita. Lascia che il peso dell'ingegneria romana e della filosofia stoica risuoni. Senza fretta, come se la cupola stessa avesse tutto il tempo del mondo.",
+        "instructions": "Parla in italiano come uno storico che contempla un impero al suo apice — voce profonda, misurata, con quieta autorità. Senza fretta. Tono conversazionale, non teatrale.",
     },
     "762-baghdad-round-city-of-reason": {
         "voice": "fable",
-        "instructions": "Parla in italiano con il tono di un cantastorie che narra una storia antica. Ritmo misurato, un senso di meraviglia nella voce. Questa è la storia di un'età dell'oro.",
+        "instructions": "Parla in italiano con il tono di un cantastorie. Ritmo misurato, un accenno di meraviglia. Conversazionale, non declamatorio.",
     },
     "1347-florence-beautiful-catastrophe": {
         "voice": "ash",
-        "instructions": "Parla in italiano con gravità e peso. Questa storia parla di peste, morte e della strana bellezza che emerge dalla catastrofe. Cupo ma non monotono — lascia trapelare il dramma.",
+        "instructions": "Parla in italiano con gravità. Peste, morte, e la strana bellezza che emerge dalla catastrofe. Cupo ma non monotono — dramma contenuto, non teatrale.",
     },
     "1504-florence-duel-of-giants": {
         "voice": "echo",
-        "instructions": "Parla in italiano con sicurezza ed energia vivida. Questa è la storia di Leonardo e Michelangelo in competizione — genio contro genio. Dai vita alla rivalità.",
+        "instructions": "Parla in italiano con sicurezza. Leonardo e Michelangelo in competizione — genio contro genio. Vivido ma con i piedi per terra, come un buon conduttore di podcast.",
     },
     "1648-munster-exhaustion-of-god": {
         "voice": "ash",
-        "instructions": "Parla in italiano con stanchezza e saggezza duramente conquistata. Trent'anni di guerre di religione hanno esaurito l'Europa. Il tono è riflessivo, quasi elegiaco, ma con un filo di speranza.",
+        "instructions": "Parla in italiano con stanchezza e saggezza conquistata. Trent'anni di guerra hanno esaurito l'Europa. Riflessivo, con un filo di speranza — ma emozione contenuta.",
     },
     "1784-europe-dare-to-know": {
         "voice": "sage",
-        "instructions": "Parla in italiano con chiarezza intellettuale e un tocco di entusiasmo rivoluzionario. Questo è l'Illuminismo — la ragione che rovescia la tradizione. Nitido, preciso, ma con passione sottostante.",
+        "instructions": "Parla in italiano con chiarezza intellettuale e un tocco di entusiasmo. L'Illuminismo — la ragione che rovescia la tradizione. Nitido, preciso, conversazionale.",
     },
     "1889-paris-year-everything-changed": {
         "voice": "nova",
-        "instructions": "Parla in italiano con passione e meraviglia. Parigi nel 1889 — la Torre Eiffel che si innalza, il mondo in mostra, l'arte che esplode in nuove direzioni. Lascia trasparire l'emozione di un momento trasformativo.",
+        "instructions": "Parla in italiano con calore e meraviglia. Parigi nel 1889 — la Torre che si innalza, l'arte che esplode. Lascia che l'emozione emerga naturalmente, senza forzare.",
     },
     "1922-modernist-explosion": {
         "voice": "coral",
-        "instructions": "Parla in italiano con urgenza ed energia modernista. Questo è il 1922 — Ulisse, La terra desolata, jazz, Bauhaus, tutto si frantuma e si ricompone. Ritmo rapido, elettrico, un mondo che si rifà da capo.",
+        "instructions": "Parla in italiano con energia e ritmo. Il 1922 — Ulisse, La terra desolata, jazz, Bauhaus, tutto si frantuma e si ricompone. Veloce ma non affannato.",
     },
 }
 
