@@ -1352,8 +1352,10 @@ function renderSlice(slice, isFresh = false) {
     if (e.target.closest('.thread-tag') || e.target.closest('.card-sources') || e.target.closest('.card-map-link') || e.target.closest('.podcast-btn') || e.target.closest('.podcast-player')) return;
     const details = el.querySelector('.card-details');
     if (el.classList.contains('expanded')) {
-      // Prevent collapse while podcast is playing in this card
-      if (activePodcastYear === el.dataset.year && activePodcastAudio && !activePodcastAudio.paused) return;
+      // Stop podcast if playing in this card
+      if (activePodcastYear === el.dataset.year && activePodcastAudio && !activePodcastAudio.paused) {
+        stopAllPodcasts();
+      }
       details.style.maxHeight = details.scrollHeight + 'px';
       requestAnimationFrame(() => { details.style.maxHeight = '0'; });
       el.classList.remove('expanded');
