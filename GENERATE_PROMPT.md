@@ -12,9 +12,16 @@ You are Johnny, managing the Time Slices project.
 6. Add ONE new time slice following the spec (research, write, image, threads, deploy). **Location in the title:** Only include a city/place in the entry title if most dimensions genuinely converge on that location. If the dimensions are geographically scattered (e.g. art in Paris, philosophy in Germany, literature in London), don't force a city name into the title — use a thematic title instead. The `location` field for the map pin is always required regardless. **Always include `"addedDate": "YYYY-MM-DD"` (today's date) in the new entry** — this is used for the ☕ fresh badge in the UI.
 7. Add the same entry translated to Italian in slices.it.json — natural Italian, not machine translation.
 8. Update THREAD_LABELS (both en and it) in index.html if you add new thread tags.
-9. **Generate podcast.** After the entry is committed to both JSON files:
-   a. Write a ~350-400 word podcast script (storytelling style, weaving all 5 dimensions into a narrative arc — not a list). Save to `audio/scripts/{id}.txt` where `{id}` is the entry's `id` field (e.g. `1504-florence-duel-of-giants`).
-   b. Run: `python3 /home/cloud-user/.openclaw/workspace/time-slices/audio/generate-podcast.py {id}` — this generates the narration via edge-tts, downloads period-appropriate background music, mixes them with ffmpeg, and updates slices.json with the podcast field.
-   c. **Voice selection:** The script has default voice assignments per entry. For new entries, add an appropriate voice mapping in `audio/generate-podcast.py` VOICE_MAP before running it. Choose from Microsoft Edge voices — match the epoch's character (e.g. deep/grave for wars, expressive for revolutions, scholarly for intellectual periods). Also add a MUSIC_SOURCES entry with a public domain recording from Internet Archive that matches the era.
-   d. Commit the generated MP3 (tracked by Git LFS) along with the script.
+9. **Generate podcasts (EN + IT).** After the entry is committed to both JSON files:
+   a. Write a ~350-400 word **English** podcast script (storytelling style, weaving all 5 dimensions into a narrative arc — not a list). Save to `audio/scripts/{id}.txt` where `{id}` is the entry's `id` field (e.g. `1504-florence-duel-of-giants`).
+   b. Write a ~350-400 word **Italian** podcast script — NOT a literal translation, but a natural Italian narration of the same content, culturally adapted. Save to `audio/scripts/it/{id}.txt`.
+   c. **Voice & music setup:** Before running the generator, add entries for the new id in `audio/generate-podcast.py`:
+      - `VOICE_MAP_EN[id]` — pick a voice + write English style instructions
+      - `VOICE_MAP_IT[id]` — same voice + Italian instructions (must include "Parla in italiano")
+      - `MUSIC_SOURCES[id]` — a public domain recording from Internet Archive matching the era
+      Available voices: alloy, ash, ballad, coral, echo, fable, nova, onyx, sage, shimmer, verse. Match the epoch's character.
+   d. Generate English podcast: `python3 /home/cloud-user/.openclaw/workspace/time-slices/audio/generate-podcast.py {id} --lang en`
+   e. Generate Italian podcast: `python3 /home/cloud-user/.openclaw/workspace/time-slices/audio/generate-podcast.py {id} --lang it`
+      Each run uses `gpt-4o-mini-tts` via the ape API (with proper `instructions` parameter for voice styling), downloads period-appropriate background music, mixes with ffmpeg, and updates the corresponding JSON file (`slices.json` or `slices.it.json`) with the podcast field.
+   f. Commit the generated MP3s (tracked by Git LFS) along with the scripts and updated generate-podcast.py.
 10. Reply with a short summary: year, title, teaser, one highlight connection. 3-5 sentences max.

@@ -17,7 +17,8 @@
 - SVG thread lines with animated glow
 - Auto-scroll to first match on thread activation
 - Fun fact callout boxes with accent border on expand
-- Lazy-loaded images with scroll reveal
+- Audio narration podcasts per entry (EN + IT) — gpt-4o-mini-tts + period music
+- Multilingual support (EN/IT) with locale-aware content and audio
 
 ## 📋 Backlog
 
@@ -61,7 +62,6 @@
 ### 📝 Content & Depth
 - [ ] Deep dive links — surface sources as "Want to go deeper?" + curated external readings
 - [ ] Primary source quotes — embed actual quotes from the era in each dimension
-- [ ] Audio narration — TTS per entry (Johnny's voice?)
 - [ ] Deep dive entries — longer, more detailed format for landmark moments
 - [ ] Non-Western expansion — occasional focused series beyond Western focus
 
