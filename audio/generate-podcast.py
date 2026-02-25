@@ -124,41 +124,49 @@ MUSIC_SOURCES = {
         "url": "https://archive.org/download/c-2345-6-respighi-ancient-airs-suite-2-iii/C2345-6%20Respighi%20Ancient%20Airs%20Suite%202%20(ii).mp3",
         "filename": "respighi-ancient-airs.mp3",
         "description": "Respighi Ancient Airs and Dances — Danza rustica (1930)",
+        "start_time": 1.5,   # skip opening silence
     },
     "762-baghdad-round-city-of-reason": {
         "url": "https://archive.org/download/gulezyan-aram-1976-exotic-music-of-the-oud-lyrichord-side-a-archive-01/Gulezyan%2C%20Aram%20%281976%29%20-%20Exotic%20Music%20of%20the%20Oud%20Lyrichord%2C%20side%20A%20%28archive%29-01.mp3",
         "filename": "oud-arabic.mp3",
         "description": "Oud — Arabic traditional",
+        "start_time": 3.0,   # skip 2.4s opening silence, start where oud enters
     },
     "1347-florence-beautiful-catastrophe": {
         "url": "https://archive.org/download/lp_grgorian-chant-easter-mass-pieces-from_choeur-des-moines-de-labbaye-saintpierre-d/disc1/01.02.%20Intro%C3%AFt%20%3A%20Resurrexi.mp3",
         "filename": "gregorian-chant.mp3",
         "description": "Gregorian chant — Introït: Resurrexi",
+        "start_time": 1.0,   # skip brief silence
     },
     "1504-florence-duel-of-giants": {
         "url": "https://archive.org/download/lp_italian-songs-16th-and-17th-centuries-spa_hugues-cunod-hermann-leeb_0/disc1/01.02.%20Lute%20Solo%3A%20Fantasia.mp3",
         "filename": "renaissance-lute.mp3",
         "description": "Renaissance lute fantasia",
+        "start_time": 0,     # good from the start
     },
     "1648-munster-exhaustion-of-god": {
         "url": "https://archive.org/download/canonic_variations_BWV_769a/01_Variation_I_%28Nel_canone_all%E2%80%99_ottava%29.mp3",
         "filename": "bach-organ.mp3",
         "description": "Bach Canonic Variations — Baroque organ",
+        "start_time": 2.0,   # skip 1.9s opening silence
     },
     "1784-europe-dare-to-know": {
         "url": "https://archive.org/download/lp_piano-music-vol-6_arthur-balsam-wolfgang-amadeus-mozart/disc1/01.01.%20Sonata%20In%20A%20Minor%20K.310.mp3",
         "filename": "mozart-piano.mp3",
         "description": "Mozart Piano Sonata K.310 — Classical",
+        "start_time": 0,     # opens strong
     },
     "1889-paris-year-everything-changed": {
         "url": "https://archive.org/download/DebussyClairDeLunevirgilFox/07-ClairDeLunefromSuiteBergamasque.mp3",
         "filename": "debussy-clair-de-lune.mp3",
         "description": "Debussy Clair de lune — Impressionist",
+        "start_time": 2.5,   # skip 2.3s opening silence
     },
     "1922-modernist-explosion": {
-        "url": "https://archive.org/download/lp_the-rite-of-spring_igor-stravinsky-antal-dorati-minneapolis-s/disc1/01.01.%20The%20Rite%20Of%20Spring%20-%20Pictures%20Of%20Pagan%20Russia%3A%20Part%20I.mp3",
-        "filename": "stravinsky-rite.mp3",
-        "description": "Stravinsky Rite of Spring — Modernist",
+        "url": "https://archive.org/download/ThreeGnossiennesErikSatie/gnossiennes.mp3",
+        "filename": "satie-gnossiennes.mp3",
+        "description": "Satie Gnossiennes — mysterious, textural modernist piano",
+        "start_time": 0,
     },
 }
 
@@ -303,19 +311,50 @@ def generate_narration(entry_id, script_text, lang="en"):
     return narration_path, duration
 
 
-def mix_audio(narration_path, music_path, output_path, narration_duration):
-    """Mix narration with background music using ffmpeg."""
-    print(f"  🎵 Mixing with background music...")
+def mix_audio(narration_path, music_path, output_path, narration_duration, start_time=0):
+    """Mix narration with background music using ffmpeg.
+    
+    Improvements over basic mix:
+    - Music starts from a curated timestamp (skip silence/weak openings)
+    - Low-pass filter at 4kHz to avoid competing with voice frequencies
+    - Sidechain-style ducking: music at 20% during intro, ducks to 10% when voice enters
+    - Longer 3.5s music intro to establish mood before narration
+    - Gentle compression to even out music dynamics
+    """
+    print(f"  🎵 Mixing with background music (start={start_time}s)...")
 
-    total_duration = narration_duration + 4
-
-    # Music: loop if needed, trim, fade in/out, lower to 12% volume
-    # Narration: delay 2s so music establishes first
+    intro_duration = 3.5     # seconds of music before voice starts
+    outro_pad = 3.0          # seconds of music after voice ends
+    total_duration = narration_duration + intro_duration + outro_pad
+    
+    # Voice starts after intro_duration
+    voice_start_ms = int(intro_duration * 1000)
+    
+    # When voice enters, duck music. When voice ends, bring music back up.
+    voice_end_time = intro_duration + narration_duration
+    
+    # Music chain:
+    # 1. Seek to start_time in source
+    # 2. Loop if needed, trim to total duration
+    # 3. Low-pass at 4kHz to clear voice frequency space
+    # 4. Gentle compression to tame dynamics
+    # 5. Volume envelope: 20% intro → duck to 10% when voice enters → 20% outro
+    # 6. Fade in at start, fade out at end
     filter_complex = (
-        f"[1:a]aloop=loop=-1:size=2e+09,atrim=duration={total_duration},"
-        f"afade=t=in:st=0:d=3,afade=t=out:st={total_duration - 3}:d=3,"
-        f"volume=0.12[music];"
-        f"[0:a]adelay=2000|2000[voice];"
+        # Music processing
+        f"[1:a]atrim=start={start_time},asetpts=PTS-STARTPTS,"
+        f"aloop=loop=-1:size=2e+09,atrim=duration={total_duration},"
+        f"lowpass=f=4000:p=1,"
+        f"acompressor=threshold=-25dB:ratio=3:attack=20:release=200,"
+        f"volume=0.20,"
+        f"afade=t=in:st=0:d=2.5,"
+        # Duck music when voice is present: fade down at voice entry, fade up at voice exit
+        f"volume=enable='between(t,{intro_duration},{voice_end_time})':volume=0.5,"
+        f"afade=t=out:st={total_duration - 2.5}:d=2.5"
+        f"[music];"
+        # Voice: delay to start after music intro
+        f"[0:a]adelay={voice_start_ms}|{voice_start_ms}[voice];"
+        # Mix
         f"[music][voice]amix=inputs=2:duration=longest:dropout_transition=2[out]"
     )
 
@@ -388,7 +427,8 @@ def generate_podcast(entry_id, lang="en"):
     else:
         output_path = os.path.join(OUTPUT_DIR, f"{entry_id}.mp3")
     if music_path and os.path.exists(music_path) and os.path.getsize(music_path) > 10000:
-        mix_audio(narration_path, music_path, output_path, duration)
+        start_time = MUSIC_SOURCES.get(entry_id, {}).get("start_time", 0)
+        mix_audio(narration_path, music_path, output_path, duration, start_time=start_time)
     else:
         subprocess.run(["cp", narration_path, output_path])
         print(f"  ⚠ No music available, narration-only")
