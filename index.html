@@ -215,9 +215,34 @@
     50% { box-shadow: 0 0 12px 4px rgba(124, 111, 247, 0.15); }
   }
 
-  /* 🎧 Podcast button — hidden; player bar shown inline when expanded */
+  /* 🎧 Podcast button */
   .podcast-btn {
-    display: none;
+    position: absolute;
+    top: 12px;
+    right: 56px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(124, 111, 247, 0.15);
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    z-index: 10;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    padding: 0;
+    line-height: 1;
+  }
+  .podcast-btn svg { display: block; }
+  .podcast-btn:hover {
+    background: rgba(124, 111, 247, 0.3);
+    transform: scale(1.1);
+  }
+  /* Shift right if no fresh-badge sibling */
+  .card:not(:has(.fresh-badge)) .podcast-btn {
+    right: 12px;
   }
 
   /* 🎧 Podcast player */
