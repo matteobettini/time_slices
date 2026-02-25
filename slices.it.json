@@ -1,34 +1,5 @@
 [
   {
-    "year": "-431",
-    "title": "Atene — Il filo dorato del rasoio",
-    "teaser": "Il Partenone risplende d'argento imperiale. Sulla scena, Medea uccide i propri figli. Nell'agorà, un filosofo spiega che il sole è una roccia incandescente — e la democrazia che ha costruito tutto questo vota per la guerra che la distruggerà.",
-    "dimensions": {
-      "art": {
-        "label": "Arte",
-        "content": "Il <strong>Partenone</strong> si erge compiuto sull'Acropoli — iniziato nel 447 e dedicato nel 438 a.C., il programma scultoreo ultimato intorno al 432. È il capolavoro supremo dello stile <strong>alto-classico</strong>, il momento in cui l'arte greca rompe definitivamente con la rigidità arcaica verso un naturalismo idealizzato. <strong>Fidia</strong>, nominato da Pericle a sovrintendere l'intero programma dell'Acropoli, ha creato l'<em>Atena Parthenos</em> al suo interno: un colosso crisoelefantino di tredici metri — carne d'avorio, drappeggio d'oro — che consuma circa 1.140 kg d'oro, equivalente al reddito annuale dei tributi della città. L'edificio stesso è un manifesto di raffinatezza matematica: nessuna linea retta è davvero retta. Le colonne si gonfiano con l'<em>entasi</em>, lo stilobate si curva delicatamente verso l'alto, le colonne angolari sono inspessite e inclinate verso l'interno — decine di correzioni ottiche progettate per far <em>apparire</em> l'edificio perfetto all'occhio umano. L'architettura come epistemologia: la verità deve essere corretta per essere percepita come vera."
-      },
-      "lit": {
-        "label": "Letteratura",
-        "content": "Alle <strong>Dionisie cittadine</strong> del 431 a.C., <strong>Euripide</strong> presenta <em>Medea</em> — e si classifica terzo. Euforione (figlio di Eschilo) vince; Sofocle arriva secondo. Eppure <em>Medea</em> sopravvive come la tragedia greca più rappresentata del Novecento. L'opera è una deflagrazione dentro le convenzioni della <strong>tragedia attica</strong>: una donna straniera, tradita dal marito greco, uccide i loro figli a sangue freddo e fugge impunita su un carro divino. Euripide le concede il <em>logos</em> — l'argomentazione razionale — che la cultura ateniese riservava ai cittadini maschi, e lo trasforma in un'arma. Nel frattempo <strong>Sofocle</strong>, che ha servito come <em>stratego</em> al fianco di Pericle, è all'apice della sua potenza — <em>Antigone</em> (c. 441) e <em>Edipo re</em> (c. 429) incorniciano questo momento, mettendo in scena la collisione tra coscienza individuale e legge civica."
-      },
-      "phil": {
-        "label": "Filosofia",
-        "content": "<strong>Anassagora</strong> di Clazomene, maestro e amico di Pericle, è stato recentemente processato per <em>asebeia</em> (empietà) ed espulso da Atene — probabilmente intorno al 437–432 a.C. La sua colpa: aver dichiarato che il sole non è un dio ma una massa di metallo rovente più grande del Peloponneso, e la luna un corpo terrestre che riflette luce presa in prestito. Il suo sistema filosofico pone il <em>Nous</em> (Mente) come principio ordinatore cosmico che ha messo in moto l'universo da una miscela originaria di tutte le cose — la prima chiara separazione tra un'intelligenza organizzatrice e la materia bruta. <strong>Socrate</strong>, ora trentottenne circa, è attivo nell'Agorà ma non ha pubblicato nulla; lo conosciamo solo attraverso testimonianze successive. <strong>Protagora</strong> di Abdera, in visita ad Atene, ha dichiarato che «l'uomo è la misura di tutte le cose» — l'affermazione più radicale di relativismo filosofico che il mondo antico produrrà."
-      },
-      "hist": {
-        "label": "Storia",
-        "content": "Nel 431 a.C. inizia la <strong>guerra del Peloponneso</strong> — il conflitto che Tucidide definirà «il più grande sconvolgimento nella storia dei Greci». Sparta e i suoi alleati invadono l'Attica; la strategia di Pericle prevede di abbandonare le campagne, ritirarsi dietro le Lunghe Mura che collegano Atene al Pireo, e fare affidamento sulla supremazia navale finanziata dal tesoro della <strong>Lega di Delo</strong> — trasferito da Delo ad Atene nel 454 a.C., trasformando un'alleanza difensiva in un impero. La <em>demokratia</em> ateniese è al suo massimo radicalismo: l'Assemblea di tutti i cittadini maschi vota su guerra e pace, fissa le aliquote dei tributi e finanzia il programma edilizio che ha rifatto l'Acropoli. Ma questa democrazia esclude le donne, gli schiavi (forse un terzo della popolazione) e gli stranieri residenti (<em>meteci</em>) — incluso lo stesso Anassagora."
-      },
-      "conn": {
-        "label": "Connessioni",
-        "content": "L'<strong>oro del Partenone viene dai tributi</strong>; i tributi vengono dagli alleati sottomessi; gli alleati sono tenuti dalla forza navale finanziata dalle miniere d'argento del Laurio, lavorate dagli schiavi. Potere imperiale, arte democratica e lavoro non libero formano un unico circuito. Fidia è accusato di appropriazione indebita di quell'oro intorno al 432 a.C. — un attacco politico a Pericle attraverso i suoi associati, la stessa tattica usata contro Anassagora. Il filosofo che disse che il sole era una roccia e lo scultore che fece risplendere Atena con tributi rubati minacciavano entrambi l'immagine che la città aveva di sé, da angolazioni diverse. Sulla scena, la <em>Medea</em> di Euripide regge uno specchio a quell'immagine: Atene la civile, patrona della ragione, messa di fronte a una donna «barbara» che ragiona meglio dei Greci intorno a lei. La tragedia stessa è un'istituzione democratica — finanziata pubblicamente, rappresentata davanti alla cittadinanza riunita, giudicata per sorteggio — rendendola insieme arte e rituale civico, inseparabile dalla politica che commissiona il Partenone e vota per la guerra nello stesso giorno.",
-        "funFact": "La <em>Medea</em> di Euripide, oggi la tragedia greca più rappresentata al mondo, arrivò ultima alla sua prima — terza su tre. Il vincitore fu Euforione, ricordato oggi per esattamente una cosa: aver battuto Euripide."
-      }
-    },
-    "id": "431bce-athens-golden-razors-edge"
-  },
-  {
     "year": "125",
     "id": "125-rome-dome-of-all-things",
     "title": "Roma — La cupola di tutte le cose",
