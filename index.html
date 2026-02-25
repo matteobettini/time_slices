@@ -1986,13 +1986,20 @@ function loadSlices(restoreYear) {
       timeline.innerHTML = '';
 
       // Determine the most recently added entry (by addedDate, fallback to last in array)
+      // When multiple entries share the same addedDate, pick the last one in
+      // the SLICES array (highest index = most recently appended).
       const freshestDate = SLICES.reduce((max, s) => {
         const d = s.addedDate || '';
         return d > max ? d : max;
       }, '');
-      const freshestYear = freshestDate
-        ? SLICES.filter(s => s.addedDate === freshestDate).pop()?.year
-        : SLICES[SLICES.length - 1]?.year;
+      let freshestYear;
+      if (freshestDate) {
+        let lastIdx = -1;
+        SLICES.forEach((s, i) => { if (s.addedDate === freshestDate) lastIdx = i; });
+        freshestYear = lastIdx >= 0 ? SLICES[lastIdx].year : SLICES[SLICES.length - 1]?.year;
+      } else {
+        freshestYear = SLICES[SLICES.length - 1]?.year;
+      }
 
       const items = [
         ...SLICES.map(s => ({ type: 'slice', year: parseInt(s.year), data: s })),
