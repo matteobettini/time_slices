@@ -792,6 +792,39 @@
   }
   .map-popup-link:hover { text-decoration: underline; }
 
+  .map-popup-audio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .map-popup-audio:hover { background: rgba(255,255,255,0.1); }
+  .map-popup-audio .mpa-icon {
+    flex-shrink: 0;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+  }
+  .map-popup-audio .mpa-label {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    flex: 1;
+  }
+  .map-popup-audio .mpa-duration {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    font-family: var(--mono);
+    opacity: 0.7;
+  }
+  .map-popup-audio.playing .mpa-icon { color: #f44; }
+  .map-popup-audio.playing { border-color: var(--accent); }
+
   /* Map time slider */
   .map-time-control {
     position: fixed;
@@ -2013,10 +2046,20 @@ function createMapMarker(slice) {
     closeButton: true,
     autoPanPaddingTopLeft: L.point(10, isMobile ? 10 : 80),
     autoPanPaddingBottomRight: L.point(10, isMobile ? 140 : 10),
-  }).setContent(`
+  });
+
+  const podcastHtml = slice.podcast ? `
+    <div class="map-popup-audio" data-audio-url="${slice.podcast.url}" data-year="${slice.year}">
+      <span class="mpa-icon">${SVG_PLAY}</span>
+      <span class="mpa-label">${t('listenPodcast')}</span>
+      <span class="mpa-duration">${formatTime(slice.podcast.duration || 0)}</span>
+    </div>` : '';
+
+  popup.setContent(`
     <div class="map-popup-year">${slice.year}</div>
     <div class="map-popup-title">${slice.title}</div>
     <div class="map-popup-teaser">${slice.teaser}</div>
+    ${podcastHtml}
     <div class="map-popup-threads">${threads}</div>
     <a class="map-popup-link" onclick="scrollToEntryByYear('${slice.year}')">${t('viewInTimeline')}</a>
   `);
@@ -2033,6 +2076,58 @@ function createMapMarker(slice) {
       if (lbl) lbl.style.opacity = '0';
       if (yr) yr.style.opacity = '0';
     }
+    // Wire up podcast button in popup
+    const popupEl = marker.getPopup().getElement();
+    if (popupEl) {
+      const audioBtn = popupEl.querySelector('.map-popup-audio');
+      if (audioBtn) {
+        audioBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const url = audioBtn.dataset.audioUrl;
+          const isPlaying = audioBtn.classList.contains('playing');
+
+          // Stop any active podcast (from timeline or other popup)
+          if (activePodcastAudio) {
+            activePodcastAudio.pause();
+            activePodcastAudio.src = '';
+            // Clean up timeline player if open
+            const oldPlayer = document.querySelector('.podcast-player');
+            if (oldPlayer) {
+              const oldBtn = oldPlayer.closest('.entry')?.querySelector('.podcast-btn');
+              if (oldBtn) oldBtn.innerHTML = SVG_HEADPHONES;
+              oldPlayer.remove();
+            }
+            // Clean up any other popup buttons
+            document.querySelectorAll('.map-popup-audio.playing').forEach(b => {
+              b.classList.remove('playing');
+              b.querySelector('.mpa-icon').innerHTML = SVG_PLAY;
+            });
+          }
+
+          if (isPlaying) {
+            activePodcastAudio = null;
+            return;
+          }
+
+          // Start new audio
+          const audio = new Audio(url);
+          activePodcastAudio = audio;
+          audioBtn.classList.add('playing');
+          audioBtn.querySelector('.mpa-icon').innerHTML = SVG_PAUSE;
+
+          audio.play().catch(() => {});
+
+          audio.addEventListener('ended', () => {
+            audioBtn.classList.remove('playing');
+            audioBtn.querySelector('.mpa-icon').innerHTML = SVG_PLAY;
+            activePodcastAudio = null;
+          });
+
+          // Store ref for cleanup
+          audioBtn._audio = audio;
+        });
+      }
+    }
   });
   marker.on('popupclose', () => {
     const el = marker.getElement();
@@ -2042,6 +2137,7 @@ function createMapMarker(slice) {
       if (lbl) lbl.style.opacity = '';
       if (yr) yr.style.opacity = '';
     }
+    // Note: audio keeps playing after popup close — user can stop via timeline or reopening
   });
 
   return marker;
