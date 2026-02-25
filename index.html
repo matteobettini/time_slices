@@ -3053,11 +3053,11 @@ function highlightAndScroll(entry) {
   // Reveal everything else so layout is stable
   document.querySelectorAll('.entry:not(.visible)').forEach(el => el.classList.add('visible'));
 
-  // Use native hash navigation — most reliable across all browsers/mobile
-  // Clear hash first so re-navigating to the same entry still works
+  // Scroll to entry using native hash navigation
+  // The element id is "entry-{slug}" — set hash to the full id so the browser finds it
   history.replaceState(null, '', window.location.pathname + window.location.search);
   requestAnimationFrame(() => {
-    location.hash = entry.id.replace('entry-', '');
+    location.hash = entry.id;
 
     // Warm glow highlight
     entry.style.transition = 'box-shadow 0.3s ease';
@@ -3065,8 +3065,9 @@ function highlightAndScroll(entry) {
     setTimeout(() => {
       entry.style.boxShadow = '';
       entry.style.transition = '';
-      // Clean up hash from URL bar
-      history.replaceState(null, '', window.location.pathname + window.location.search);
+      // Clean up: show pretty slug in URL bar (without entry- prefix)
+      const prettyHash = entry.id.replace('entry-', '');
+      history.replaceState(null, '', window.location.pathname + window.location.search + '#' + prettyHash);
     }, 1500);
   });
 }

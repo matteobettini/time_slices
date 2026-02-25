@@ -32,13 +32,15 @@ APE_TOKEN = os.environ.get("APE_TOKEN", "")
 TTS_MODEL = "gpt-4o-mini-tts"
 
 # Voice assignments per entry — OpenAI TTS voices.
-# gpt-4o-mini-tts voices: alloy, ash, ballad, coral, echo, fable, nova, onyx, sage, shimmer, verse
+# gpt-4o-mini-tts voices: alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse
+# ❌ onyx is excluded — produces buggy/glitchy output
 
+# ⚠️ Do NOT use "onyx" — it produces buggy/glitchy audio with gpt-4o-mini-tts.
 # English voices
 VOICE_MAP_EN = {
-    # 125 Rome: authoritative, architectural — onyx for deep resonance and gravitas
+    # 125 Rome: authoritative, architectural — ash for deep resonance and gravitas
     "125-rome-dome-of-all-things": {
-        "voice": "onyx",
+        "voice": "ash",
         "instructions": "Speak as a historian contemplating an empire at its peak — deep, measured, with the authority of carved stone. Let the weight of Roman engineering and Stoic philosophy resonate. Unhurried, as if the dome itself has all the time in the world.",
     },
     # 762 Baghdad: warm, storytelling — fable has a narrative quality
@@ -46,9 +48,9 @@ VOICE_MAP_EN = {
         "voice": "fable",
         "instructions": "Speak as a warm storyteller narrating ancient history. Measured pace, slight wonder in the voice. This is a tale of a golden age.",
     },
-    # 1347 Florence plague: somber, dramatic — onyx is deep and grave
+    # 1347 Florence plague: somber, dramatic — ash for deep gravitas
     "1347-florence-beautiful-catastrophe": {
-        "voice": "onyx",
+        "voice": "ash",
         "instructions": "Speak with gravity and weight. This is about plague, death, and the strange beauty that emerged from catastrophe. Somber but not monotone — let the drama come through.",
     },
     # 1504 Renaissance: confident, vivid — echo has clarity and presence
@@ -81,7 +83,7 @@ VOICE_MAP_EN = {
 # Italian voices — same voice palette but with Italian-language style instructions
 VOICE_MAP_IT = {
     "125-rome-dome-of-all-things": {
-        "voice": "onyx",
+        "voice": "ash",
         "instructions": "Parla in italiano come uno storico che contempla un impero al suo apice — voce profonda, misurata, con l'autorità della pietra scolpita. Lascia che il peso dell'ingegneria romana e della filosofia stoica risuoni. Senza fretta, come se la cupola stessa avesse tutto il tempo del mondo.",
     },
     "762-baghdad-round-city-of-reason": {
@@ -89,7 +91,7 @@ VOICE_MAP_IT = {
         "instructions": "Parla in italiano con il tono di un cantastorie che narra una storia antica. Ritmo misurato, un senso di meraviglia nella voce. Questa è la storia di un'età dell'oro.",
     },
     "1347-florence-beautiful-catastrophe": {
-        "voice": "onyx",
+        "voice": "ash",
         "instructions": "Parla in italiano con gravità e peso. Questa storia parla di peste, morte e della strana bellezza che emerge dalla catastrofe. Cupo ma non monotono — lascia trapelare il dramma.",
     },
     "1504-florence-duel-of-giants": {

@@ -19,7 +19,8 @@ You are Johnny, managing the Time Slices project.
       - `VOICE_MAP_EN[id]` — pick a voice + write English style instructions
       - `VOICE_MAP_IT[id]` — same voice + Italian instructions (must include "Parla in italiano")
       - `MUSIC_SOURCES[id]` — a public domain recording from Internet Archive matching the era
-      Available voices: alloy, ash, ballad, coral, echo, fable, nova, onyx, sage, shimmer, verse. Match the epoch's character.
+      Available voices: alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse. Match the epoch's character.
+      ⚠️ Do NOT use `onyx` — it produces buggy/glitchy audio output with gpt-4o-mini-tts.
    d. Generate English podcast: `python3 /home/cloud-user/.openclaw/workspace/time-slices/audio/generate-podcast.py {id} --lang en`
    e. Generate Italian podcast: `python3 /home/cloud-user/.openclaw/workspace/time-slices/audio/generate-podcast.py {id} --lang it`
       Each run uses `gpt-4o-mini-tts` via the ape API (with proper `instructions` parameter for voice styling), downloads period-appropriate background music, mixes with ffmpeg, and updates the corresponding JSON file (`slices.json` or `slices.it.json`) with the podcast field.
