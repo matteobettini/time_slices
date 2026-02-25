@@ -24,4 +24,4 @@ You are Johnny, managing the Time Slices project.
    e. Generate Italian podcast: `python3 /home/cloud-user/.openclaw/workspace/time-slices/audio/generate-podcast.py {id} --lang it`
       Each run uses `gpt-4o-mini-tts` via the ape API (with proper `instructions` parameter for voice styling), downloads period-appropriate background music, mixes with ffmpeg, and updates the corresponding JSON file (`slices.json` or `slices.it.json`) with the podcast field.
    f. Commit the generated MP3s (tracked by Git LFS) along with the scripts and updated generate-podcast.py.
-10. Reply with a short summary: year, title, teaser, one highlight connection. 3-5 sentences max.
+10. Reply with a short summary: year, title, teaser, one highlight connection. 3-5 sentences max. End with a direct link to the new entry: `https://matteobettini.github.io/time_slices/#YEAR` (replace YEAR with the entry's year, e.g. `#125` or `#1648`). This reply is delivered as a notification to the group chat.
