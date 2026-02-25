@@ -1355,11 +1355,10 @@ function renderSlice(slice, isFresh = false) {
       // Stop & remove podcast player when closing card
       if (activePodcastYear === el.dataset.year) {
         stopAllPodcasts();
-      } else {
-        // Remove orphaned player bar even if not the active podcast
-        const orphanPlayer = el.querySelector('.podcast-player');
-        if (orphanPlayer) orphanPlayer.remove();
       }
+      // Always remove player bar from collapsing card
+      const playerBar = el.querySelector('.podcast-player');
+      if (playerBar) playerBar.remove();
       details.style.maxHeight = details.scrollHeight + 'px';
       requestAnimationFrame(() => { details.style.maxHeight = '0'; });
       el.classList.remove('expanded');
@@ -1566,13 +1565,20 @@ function stopAllPodcasts() {
     activePodcastAudio.pause();
     activePodcastAudio.src = '';
   }
-  // Clean up timeline player
-  const oldPlayer = document.querySelector('.podcast-player');
-  if (oldPlayer) {
-    const oldBtn = oldPlayer.closest('.entry')?.querySelector('.podcast-btn');
-    if (oldBtn) oldBtn.innerHTML = SVG_HEADPHONES;
-    oldPlayer.remove();
-  }
+  // Reset all timeline player bars to idle (don't remove — card may still be expanded)
+  document.querySelectorAll('.podcast-player').forEach(player => {
+    const entry = player.closest('.entry');
+    const btn = entry?.querySelector('.podcast-btn');
+    if (btn) btn.innerHTML = SVG_HEADPHONES;
+    const playBtn = player.querySelector('.pp-play');
+    if (playBtn) playBtn.innerHTML = SVG_PLAY;
+    const progressFill = player.querySelector('.pp-progress-fill');
+    if (progressFill) progressFill.style.width = '0%';
+    const currentTimeEl = player.querySelector('.pp-current');
+    if (currentTimeEl) currentTimeEl.textContent = '0:00';
+    const audio = player.querySelector('audio');
+    if (audio) audio.src = '';
+  });
   // Clean up map popup buttons
   document.querySelectorAll('.map-popup-audio.playing').forEach(b => {
     b.classList.remove('playing');
@@ -1701,7 +1707,7 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
   if (existing) {
     const audio = existing.querySelector('audio');
     const playBtn = existing.querySelector('.pp-play');
-    if (audio && !audio.paused) {
+    if (audio && !audio.paused && audio.src) {
       // Playing → pause and keep player visible
       audio.pause();
       if (playBtn) playBtn.innerHTML = SVG_PLAY;
@@ -1709,8 +1715,8 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
       syncMapPopupAudio(year, false);
       activePodcastAudio = null;
       activePodcastYear = null;
-    } else if (audio && audio.src) {
-      // Paused → resume playback
+    } else if (audio && audio.src && audio.currentTime > 0) {
+      // Paused mid-track → resume playback
       audio.play().then(() => {
         if (playBtn) playBtn.innerHTML = SVG_PAUSE;
         if (btn) btn.innerHTML = SVG_STOP;
@@ -1718,6 +1724,19 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
         activePodcastYear = year;
         syncMapPopupAudio(year, true);
       }).catch(() => {});
+    } else {
+      // Idle/reset player bar → re-arm and play
+      stopAllPodcasts();
+      audio.src = audioUrl;
+      activePodcastAudio = audio;
+      activePodcastYear = year;
+      audio.play().then(() => {
+        if (playBtn) playBtn.innerHTML = SVG_PAUSE;
+        if (btn) btn.innerHTML = SVG_STOP;
+        syncMapPopupAudio(year, true);
+      }).catch(() => {
+        if (playBtn) playBtn.innerHTML = SVG_PLAY;
+      });
     }
     return;
   }
