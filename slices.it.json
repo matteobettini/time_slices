@@ -70,7 +70,7 @@
       "lon": 12.4769,
       "place": "Rome"
     },
-    "addedDate": "2026-02-25",
+    "addedDate": "2026-02-25T13:43:00Z",
     "podcast": {
       "url": "audio/it/125-rome-dome-of-all-things.mp3",
       "duration": 156
@@ -146,7 +146,7 @@
       "lon": 44.3661,
       "place": "Baghdad"
     },
-    "addedDate": "2026-02-24",
+    "addedDate": "2026-02-24T00:00:00Z",
     "id": "762-baghdad-round-city-of-reason",
     "podcast": {
       "url": "audio/it/762-baghdad-round-city-of-reason.mp3",
@@ -227,7 +227,7 @@
       "lon": 11.2558,
       "place": "Florence"
     },
-    "addedDate": "2026-02-24",
+    "addedDate": "2026-02-24T00:00:00Z",
     "id": "1347-florence-beautiful-catastrophe",
     "podcast": {
       "url": "audio/it/1347-florence-beautiful-catastrophe.mp3",
@@ -278,7 +278,7 @@
       "lon": 11.2558,
       "place": "Florence"
     },
-    "addedDate": "2026-02-24",
+    "addedDate": "2026-02-24T00:00:00Z",
     "id": "1504-florence-duel-of-giants",
     "podcast": {
       "url": "audio/it/1504-florence-duel-of-giants.mp3",
@@ -352,7 +352,7 @@
       "lon": 7.6261,
       "place": "Münster"
     },
-    "addedDate": "2026-02-24",
+    "addedDate": "2026-02-24T00:00:00Z",
     "id": "1648-munster-exhaustion-of-god",
     "podcast": {
       "url": "audio/it/1648-munster-exhaustion-of-god.mp3",
@@ -428,7 +428,7 @@
       "lon": 20.4522,
       "place": "Königsberg"
     },
-    "addedDate": "2026-02-24",
+    "addedDate": "2026-02-25T07:23:00Z",
     "id": "1784-europe-dare-to-know",
     "podcast": {
       "url": "audio/it/1784-europe-dare-to-know.mp3",
@@ -480,7 +480,7 @@
       "lon": 2.3522,
       "place": "Paris"
     },
-    "addedDate": "2026-02-24",
+    "addedDate": "2026-02-24T00:00:00Z",
     "id": "1889-paris-year-everything-changed",
     "podcast": {
       "url": "audio/it/1889-paris-year-everything-changed.mp3",
@@ -532,7 +532,7 @@
       "lon": 11.3235,
       "place": "Weimar"
     },
-    "addedDate": "2026-02-24",
+    "addedDate": "2026-02-24T00:00:00Z",
     "id": "1922-modernist-explosion",
     "podcast": {
       "url": "audio/it/1922-modernist-explosion.mp3",
