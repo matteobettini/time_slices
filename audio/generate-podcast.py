@@ -36,6 +36,12 @@ VOICE_MAP = {
         "rate": "-8%",
         "pitch": "-1Hz",
     },
+    # 8 CE Rome: imperial authority, measured gravitas — deep British narrator
+    "8-rome-empire-of-words": {
+        "voice": "en-GB-RyanNeural",
+        "rate": "-5%",
+        "pitch": "-1Hz",
+    },
     # 762 Baghdad: scholarly, warm — Indian English for a non-Western feel
     "762-baghdad-round-city-of-reason": {
         "voice": "en-IN-PrabhatNeural",
@@ -97,6 +103,11 @@ MUSIC_SOURCES = {
         "url": "https://archive.org/download/lp0049_epitaph_of_se/LP0049_Epitaph_of_Seikilos.mp3",
         "filename": "seikilos-epitaph.mp3",
         "description": "Seikilos Epitaph — Ancient Greek lyre reconstruction",
+    },
+    "8-rome-empire-of-words": {
+        "url": "https://archive.org/download/lp0049_epitaph_of_se/LP0049_Epitaph_of_Seikilos.mp3",
+        "filename": "seikilos-epitaph.mp3",
+        "description": "Seikilos Epitaph — Greco-Roman lyre reconstruction",
     },
     "762-baghdad-round-city-of-reason": {
         "url": "https://archive.org/download/gulezyan-aram-1976-exotic-music-of-the-oud-lyrichord-side-a-archive-01/Gulezyan%2C%20Aram%20%281976%29%20-%20Exotic%20Music%20of%20the%20Oud%20Lyrichord%2C%20side%20A%20%28archive%29-01.mp3",

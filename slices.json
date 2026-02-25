@@ -140,7 +140,11 @@
       "classical-revival",
       "pax-romana",
       "augustan-golden-age"
-    ]
+    ],
+    "podcast": {
+      "url": "audio/8-rome-empire-of-words.mp3",
+      "duration": 179
+    }
   },
   {
     "year": "762",
