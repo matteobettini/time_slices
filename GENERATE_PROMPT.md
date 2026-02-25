@@ -18,7 +18,7 @@ You are Johnny, managing the Time Slices project.
     3. **Voice & music setup:** Before running the generator, add entries for the new id in `audio/generate-podcast.py`:
        - `VOICE_MAP_EN[id]` — pick a voice + write English style instructions (epoch-appropriate tone, but conversational — like a good podcast host, not theatrical voice acting)
        - `VOICE_MAP_IT[id]` — same voice + Italian instructions (must include "Parla in italiano", same restrained tone)
-       - `MUSIC_SOURCES[id]` — a public domain recording from Internet Archive matching the era
+       - `MUSIC_SOURCES[id]` — pick from the `MUSIC_POOL` dict in generate-podcast.py. Use `{"pool_key": "<key>"}` to reference a track, with optional overrides like `{"pool_key": "<key>", "start_time": 5.0}`. The pool has 22+ tracks covering ancient, medieval, Middle Eastern, East Asian, Renaissance, Baroque, classical, Romantic, and Impressionist eras — pick the one that best matches the entry's time period and cultural context. Each pool entry has `tags` to help you choose. You can also add a completely new track (with full `url`, `filename`, `description`, `start_time`) if nothing in the pool fits, but prefer the pool.
        - Available voices: alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse. Match the epoch's character.
        - ⚠️ Do NOT use `onyx` — it produces buggy/glitchy audio output with gpt-4o-mini-tts.
     4. Generate English podcast: `python3 /home/cloud-user/.openclaw/workspace/time-slices/audio/generate-podcast.py {id} --lang en`

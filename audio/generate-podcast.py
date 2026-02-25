@@ -118,57 +118,210 @@ VOICE_MAP_IT = {
 
 VOICE_MAPS = {"en": VOICE_MAP_EN, "it": VOICE_MAP_IT}
 
-# Background music sources from Internet Archive (public domain)
-MUSIC_SOURCES = {
-    "125-rome-dome-of-all-things": {
-        "url": "https://archive.org/download/c-2345-6-respighi-ancient-airs-suite-2-iii/C2345-6%20Respighi%20Ancient%20Airs%20Suite%202%20(ii).mp3",
-        "filename": "respighi-ancient-airs.mp3",
-        "description": "Respighi Ancient Airs and Dances — Danza rustica (1930)",
-        "start_time": 1.5,   # skip opening silence
-    },
-    "762-baghdad-round-city-of-reason": {
-        "url": "https://archive.org/download/gulezyan-aram-1976-exotic-music-of-the-oud-lyrichord-side-a-archive-01/Gulezyan%2C%20Aram%20%281976%29%20-%20Exotic%20Music%20of%20the%20Oud%20Lyrichord%2C%20side%20A%20%28archive%29-01.mp3",
-        "filename": "oud-arabic.mp3",
-        "description": "Oud — Arabic traditional",
-        "start_time": 3.0,   # skip 2.4s opening silence, start where oud enters
-    },
-    "1347-florence-beautiful-catastrophe": {
+# ═══════════════════════════════════════════════════════════════════════════════
+# MUSIC POOL — Large catalog of public domain tracks from Internet Archive
+# organized by era/region. The cron agent picks from this pool when generating
+# new entries. Each track has a verified URL, suggested start_time, and tags.
+# ═══════════════════════════════════════════════════════════════════════════════
+MUSIC_POOL = {
+    # ── ANCIENT / MEDIEVAL (before 1400) ──────────────────────────────────
+    "gregorian-chant-resurrexi": {
         "url": "https://archive.org/download/lp_grgorian-chant-easter-mass-pieces-from_choeur-des-moines-de-labbaye-saintpierre-d/disc1/01.02.%20Intro%C3%AFt%20%3A%20Resurrexi.mp3",
         "filename": "gregorian-chant.mp3",
-        "description": "Gregorian chant — Introït: Resurrexi",
-        "start_time": 1.0,   # skip brief silence
+        "description": "Gregorian chant — Introït: Resurrexi (Abbey of Solesmes)",
+        "start_time": 1.0,
+        "tags": ["medieval", "sacred", "choral", "europe", "monastic"],
     },
-    "1504-florence-duel-of-giants": {
+    "gregorian-kergonan": {
+        "url": "https://archive.org/download/gregorianchantkergonan/01%20-%20Deus%20in%20adjutorium.mp3",
+        "filename": "gregorian-kergonan.mp3",
+        "description": "Gregorian chant — Deus in adjutorium (Kergonan Abbey)",
+        "start_time": 0,
+        "tags": ["medieval", "sacred", "choral", "europe", "monastic"],
+    },
+    "respighi-ancient-airs": {
+        "url": "https://archive.org/download/c-2345-6-respighi-ancient-airs-suite-2-iii/C2345-6%20Respighi%20Ancient%20Airs%20Suite%202%20(ii).mp3",
+        "filename": "respighi-ancient-airs.mp3",
+        "description": "Respighi — Ancient Airs and Dances Suite 2 (evokes Roman/ancient world)",
+        "start_time": 1.5,
+        "tags": ["ancient", "orchestral", "rome", "neoclassical", "contemplative"],
+    },
+
+    # ── MIDDLE EAST / ISLAMIC WORLD ───────────────────────────────────────
+    "oud-arabic-gulezyan": {
+        "url": "https://archive.org/download/gulezyan-aram-1976-exotic-music-of-the-oud-lyrichord-side-a-archive-01/Gulezyan%2C%20Aram%20%281976%29%20-%20Exotic%20Music%20of%20the%20Oud%20Lyrichord%2C%20side%20A%20%28archive%29-01.mp3",
+        "filename": "oud-arabic.mp3",
+        "description": "Aram Gulezyan — Exotic Music of the Oud (traditional Arabic)",
+        "start_time": 3.0,
+        "tags": ["middle-east", "arabic", "oud", "traditional", "meditative"],
+    },
+    "persian-dinner-music": {
+        "url": "https://archive.org/download/beautiful-slow-persian-iranian-dinner-music-192-kbps/Beautiful%20Slow%20Persian%20_%20Iranian%20Dinner%20Music%20-%20%20%D9%85%D9%88%D8%B3%DB%8C%D9%82%DB%8C%20%D8%B2%DB%8C%D8%A8%D8%A7%20%D9%88%20%D9%85%D9%84%D8%A7%DB%8C%D9%85%20%D8%A8%DB%8C%20%DA%A9%D9%84%D8%A7%D9%85%20%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C%20%28192%20kbps%29.mp3",
+        "filename": "persian-dinner-music.mp3",
+        "description": "Slow Persian/Iranian instrumental music — santoor, tar, setar",
+        "start_time": 5.0,
+        "tags": ["middle-east", "persian", "iran", "meditative", "instrumental"],
+    },
+    "persian-santoor": {
+        "url": "https://archive.org/download/Master-Of-Persian-Santoo/02-Bidad.mp3",
+        "filename": "persian-santoor.mp3",
+        "description": "Master of Persian Santoor — Bidad",
+        "start_time": 0,
+        "tags": ["middle-east", "persian", "iran", "santoor", "classical"],
+    },
+
+    # ── EAST ASIAN ────────────────────────────────────────────────────────
+    "shakuhachi-bell-ringing": {
+        "url": "https://archive.org/download/lp_a-bell-ringing-in-the-empty-sky-japanese-s_goro-yamaguchi/disc1/01.01.%20Shika%20No%20T%C3%B4ne.mp3",
+        "filename": "shakuhachi-bell-ringing.mp3",
+        "description": "Goro Yamaguchi — Shika no Tōne (Japanese shakuhachi flute)",
+        "start_time": 0,
+        "tags": ["japan", "east-asia", "shakuhachi", "meditative", "traditional"],
+    },
+    "gamelan-javanese": {
+        "url": "https://archive.org/download/SundaJavaneseDegungSulingGamelan/01%20-%20Raga%20Madenda.mp3",
+        "filename": "gamelan-javanese.mp3",
+        "description": "Javanese Degung Suling Gamelan — Raga Madenda",
+        "start_time": 0,
+        "tags": ["indonesia", "east-asia", "gamelan", "meditative", "traditional"],
+    },
+
+    # ── RENAISSANCE (1400-1600) ───────────────────────────────────────────
+    "renaissance-lute-fantasia": {
         "url": "https://archive.org/download/lp_italian-songs-16th-and-17th-centuries-spa_hugues-cunod-hermann-leeb_0/disc1/01.02.%20Lute%20Solo%3A%20Fantasia.mp3",
         "filename": "renaissance-lute.mp3",
-        "description": "Renaissance lute fantasia",
-        "start_time": 0,     # good from the start
+        "description": "Renaissance lute fantasia — 16th century Italian",
+        "start_time": 0,
+        "tags": ["renaissance", "lute", "italy", "instrumental", "intimate"],
     },
-    "1648-munster-exhaustion-of-god": {
+    "soler-harpsichord": {
+        "url": "https://archive.org/download/GilbertRowland-AntonioSoler-SonatasForHarpsichord/01-SonataInFMajor.mp3",
+        "filename": "soler-harpsichord.mp3",
+        "description": "Antonio Soler — Sonata in F Major (harpsichord)",
+        "start_time": 0,
+        "tags": ["renaissance", "baroque", "harpsichord", "spain", "lively"],
+    },
+
+    # ── BAROQUE (1600-1750) ───────────────────────────────────────────────
+    "bach-organ-canonic": {
         "url": "https://archive.org/download/canonic_variations_BWV_769a/01_Variation_I_%28Nel_canone_all%E2%80%99_ottava%29.mp3",
         "filename": "bach-organ.mp3",
-        "description": "Bach Canonic Variations — Baroque organ",
-        "start_time": 2.0,   # skip 1.9s opening silence
+        "description": "Bach — Canonic Variations BWV 769 (Baroque organ)",
+        "start_time": 2.0,
+        "tags": ["baroque", "organ", "germany", "sacred", "complex"],
     },
-    "1784-europe-dare-to-know": {
+    "bach-cello-suite-1": {
+        "url": "https://archive.org/download/BachCelloSuiteNo.1PreludeYoYoMa/Bach%20Cello%20Suite%20No.1%20-%20Prelude%20%28Yo-Yo%20Ma%29.mp3",
+        "filename": "bach-cello-suite-1.mp3",
+        "description": "Bach — Cello Suite No. 1 Prelude (Yo-Yo Ma)",
+        "start_time": 0,
+        "tags": ["baroque", "cello", "germany", "instrumental", "flowing"],
+    },
+    "vivaldi-four-seasons": {
+        "url": "https://archive.org/download/Vivaldi-TheFourSeasonscomplete/01VivaldiSpring1stMovement-Allegro.mp3",
+        "filename": "vivaldi-four-seasons-spring.mp3",
+        "description": "Vivaldi — Four Seasons: Spring, 1st Movement Allegro",
+        "start_time": 0,
+        "tags": ["baroque", "violin", "italy", "energetic", "orchestral"],
+    },
+
+    # ── CLASSICAL (1750-1820) ─────────────────────────────────────────────
+    "mozart-piano-k310": {
         "url": "https://archive.org/download/lp_piano-music-vol-6_arthur-balsam-wolfgang-amadeus-mozart/disc1/01.01.%20Sonata%20In%20A%20Minor%20K.310.mp3",
         "filename": "mozart-piano.mp3",
-        "description": "Mozart Piano Sonata K.310 — Classical",
-        "start_time": 0,     # opens strong
+        "description": "Mozart — Piano Sonata K.310 in A minor",
+        "start_time": 0,
+        "tags": ["classical", "piano", "austria", "dramatic", "enlightenment"],
     },
-    "1889-paris-year-everything-changed": {
+    "beethoven-moonlight": {
+        "url": "https://archive.org/download/LudwigVanBeethovenMoonlightSonataAdagioSostenutogetTune.net/Ludwig%20Van%20Beethoven%20-%20Moonlight%20Sonata%20-%20Adagio%20Sostenuto%5BgetTune.net%5D.mp3",
+        "filename": "beethoven-moonlight.mp3",
+        "description": "Beethoven — Moonlight Sonata, Adagio sostenuto",
+        "start_time": 0,
+        "tags": ["classical", "piano", "germany", "somber", "introspective"],
+    },
+
+    # ── ROMANTIC (1820-1900) ──────────────────────────────────────────────
+    "chopin-nocturne-op9-1": {
+        "url": "https://archive.org/download/FredericChopinNocturneOp.9No.1InBFlatMinor/Frederic%20Chopin%20-%20Nocturne%20Op.%209%2C%20no.%201%20in%20B%20flat%20minor.mp3",
+        "filename": "chopin-nocturne-op9-1.mp3",
+        "description": "Chopin — Nocturne Op. 9 No. 1 in B-flat minor",
+        "start_time": 0,
+        "tags": ["romantic", "piano", "poland", "nocturnal", "lyrical"],
+    },
+    "liszt-liebestraum": {
+        "url": "https://archive.org/download/Liebestraum-FranzLiszt/Liebestraum.mp3",
+        "filename": "liszt-liebestraum.mp3",
+        "description": "Liszt — Liebestraum (Dream of Love)",
+        "start_time": 0,
+        "tags": ["romantic", "piano", "hungary", "lyrical", "passionate"],
+    },
+    "schubert-serenade": {
+        "url": "https://archive.org/download/SchubertSerenade_441/SchubertSerenade.mp3",
+        "filename": "schubert-serenade.mp3",
+        "description": "Schubert — Serenade (Ständchen)",
+        "start_time": 0,
+        "tags": ["romantic", "piano", "austria", "lyrical", "gentle"],
+    },
+    "grieg-solveig": {
+        "url": "https://archive.org/download/EdvardGriegSolveigsSonginstrumental/Edvard%20Grieg%20%2C%20Solveig%27s%20Song%20%28instrumental%29.mp3",
+        "filename": "grieg-solveig.mp3",
+        "description": "Grieg — Solveig's Song (instrumental, from Peer Gynt)",
+        "start_time": 0,
+        "tags": ["romantic", "orchestral", "norway", "nordic", "melancholic"],
+    },
+
+    # ── IMPRESSIONIST / EARLY MODERN (1880-1930) ──────────────────────────
+    "debussy-clair-de-lune": {
         "url": "https://archive.org/download/DebussyClairDeLunevirgilFox/07-ClairDeLunefromSuiteBergamasque.mp3",
         "filename": "debussy-clair-de-lune.mp3",
-        "description": "Debussy Clair de lune — Impressionist",
-        "start_time": 2.5,   # skip 2.3s opening silence
+        "description": "Debussy — Clair de lune (Suite Bergamasque)",
+        "start_time": 2.5,
+        "tags": ["impressionist", "piano", "france", "dreamy", "nocturnal"],
     },
-    "1922-modernist-explosion": {
+    "satie-gnossiennes": {
         "url": "https://archive.org/download/ThreeGnossiennesErikSatie/gnossiennes.mp3",
         "filename": "satie-gnossiennes.mp3",
-        "description": "Satie Gnossiennes — mysterious, textural modernist piano",
+        "description": "Satie — Trois Gnossiennes (mysterious, minimalist piano)",
         "start_time": 0,
+        "tags": ["impressionist", "piano", "france", "mysterious", "minimalist"],
+    },
+
+    # ── SOUTH ASIAN ───────────────────────────────────────────────────────
+    "raga-desh": {
+        "url": "https://archive.org/download/AOC33B/AOC33B_04_Desh.mp3",
+        "filename": "raga-desh.mp3",
+        "description": "Raga Desh — Indian classical sitar",
+        "start_time": 0,
+        "tags": ["india", "south-asia", "sitar", "raga", "meditative"],
     },
 }
+
+# Background music sources from Internet Archive (public domain)
+# Maps entry IDs to their assigned track from MUSIC_POOL (or custom URLs)
+MUSIC_SOURCES = {
+    "125-rome-dome-of-all-things": {"pool_key": "respighi-ancient-airs"},
+    "762-baghdad-round-city-of-reason": {"pool_key": "oud-arabic-gulezyan"},
+    "1347-florence-beautiful-catastrophe": {"pool_key": "gregorian-chant-resurrexi"},
+    "1504-florence-duel-of-giants": {"pool_key": "renaissance-lute-fantasia"},
+    "1648-munster-exhaustion-of-god": {"pool_key": "bach-organ-canonic"},
+    "1784-europe-dare-to-know": {"pool_key": "mozart-piano-k310"},
+    "1889-paris-year-everything-changed": {"pool_key": "debussy-clair-de-lune"},
+    "1922-modernist-explosion": {"pool_key": "satie-gnossiennes"},
+}
+
+
+def _resolve_music_source(src):
+    """Resolve a MUSIC_SOURCES entry, dereferencing pool_key if present."""
+    if "pool_key" in src:
+        pool_entry = MUSIC_POOL[src["pool_key"]]
+        resolved = dict(pool_entry)
+        # Allow overrides from the MUSIC_SOURCES entry (e.g. custom start_time)
+        for k, v in src.items():
+            if k != "pool_key":
+                resolved[k] = v
+        return resolved
+    return src
 
 
 def download_music(entry_id=None):
@@ -177,6 +330,7 @@ def download_music(entry_id=None):
     sources = {entry_id: MUSIC_SOURCES[entry_id]} if entry_id else MUSIC_SOURCES
 
     for eid, src in sources.items():
+        src = _resolve_music_source(src)
         outpath = os.path.join(MUSIC_DIR, src["filename"])
         if os.path.exists(outpath) and os.path.getsize(outpath) > 10000:
             print(f"  ✓ {src['filename']} already exists")
@@ -474,6 +628,8 @@ def generate_podcast(entry_id, lang="en", remix=False):
 
     # Get music path
     music_src = MUSIC_SOURCES.get(entry_id)
+    if music_src:
+        music_src = _resolve_music_source(music_src)
     music_path = os.path.join(MUSIC_DIR, music_src["filename"]) if music_src else None
 
     # Mix — Italian outputs go to audio/it/
@@ -484,7 +640,7 @@ def generate_podcast(entry_id, lang="en", remix=False):
     else:
         output_path = os.path.join(OUTPUT_DIR, f"{entry_id}.mp3")
     if music_path and os.path.exists(music_path) and os.path.getsize(music_path) > 10000:
-        start_time = MUSIC_SOURCES.get(entry_id, {}).get("start_time", 0)
+        start_time = music_src.get("start_time", 0)
         mix_audio(narration_path, music_path, output_path, duration, start_time=start_time)
     else:
         subprocess.run(["cp", narration_path, output_path])
