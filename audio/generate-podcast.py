@@ -123,6 +123,8 @@ VOICE_MAPS = {"en": VOICE_MAP_EN, "it": VOICE_MAP_IT}
 # organized by era/region. The cron agent picks from this pool when generating
 # new entries. Each track has a verified URL, suggested start_time, and tags.
 # ═══════════════════════════════════════════════════════════════════════════════
+# Legacy pool for existing entries. New entries should use direct URLs in MUSIC_SOURCES
+# (url, filename, description, start_time) — no need to add to this pool.
 MUSIC_POOL = {
     # ── ANCIENT / MEDIEVAL (before 1400) ──────────────────────────────────
     "gregorian-chant-resurrexi": {
@@ -298,7 +300,8 @@ MUSIC_POOL = {
 }
 
 # Background music sources from Internet Archive (public domain)
-# Maps entry IDs to their assigned track from MUSIC_POOL (or custom URLs)
+# Maps entry IDs → music track. Can use {"pool_key": "<key>"} for legacy pool entries,
+# or direct {"url": "...", "filename": "...", "description": "...", "start_time": 0} for new ones.
 MUSIC_SOURCES = {
     "125-rome-dome-of-all-things": {"pool_key": "respighi-ancient-airs"},
     "762-baghdad-round-city-of-reason": {"pool_key": "oud-arabic-gulezyan"},
