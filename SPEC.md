@@ -114,6 +114,8 @@ Every entry in `slices.json` MUST have this structure:
 - Object with `url` (relative path to MP3) and `duration` (seconds)
 - Initially set to `"none"` — updated automatically by `audio/generate-podcast.py`
 - English audio in `audio/{id}.mp3`, Italian audio in `audio/it/{id}.mp3`
+- Narrations cached in `audio/narrations/` (EN) and `audio/narrations/it/` (IT)
+- `--remix` flag re-mixes with updated music settings without re-generating TTS
 
 #### sources (mandatory)
 - 3-5 URLs you actually consulted during research

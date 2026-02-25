@@ -18,6 +18,8 @@
 - Auto-scroll to first match on thread activation
 - Fun fact callout boxes with accent border on expand
 - Audio narration podcasts per entry (EN + IT) — gpt-4o-mini-tts + period music
+- Improved podcast music mixing — low-pass filter, compression, duck-on-voice, smart start offsets
+- `--remix` mode — remix music without regenerating TTS (cached narrations)
 - Multilingual support (EN/IT) with locale-aware content and audio
 - 🎲 Random entry button — picks a random visible entry, scrolls & highlights
 - ☕ Fresh entry badge — highlights most recently added entry, quick-jump button

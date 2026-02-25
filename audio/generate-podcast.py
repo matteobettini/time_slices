@@ -380,10 +380,18 @@ def mix_audio(narration_path, music_path, output_path, narration_duration, start
     print(f"  ✓ Final podcast: {size // 1024}KB, ~{total_duration:.0f}s")
 
 
-def generate_podcast(entry_id, lang="en"):
-    """Full pipeline: script → narration → mix → output."""
+NARRATIONS_DIR = os.path.join(SCRIPT_DIR, "narrations")
+
+
+def generate_podcast(entry_id, lang="en", remix=False):
+    """Full pipeline: script → narration → mix → output.
+    
+    If remix=True, skip TTS and reuse saved narration from audio/narrations/.
+    If no saved narration exists, extract voice from existing podcast MP3
+    (strips old 2s music intro).
+    """
     lang_label = f" [{lang.upper()}]" if lang != "en" else ""
-    print(f"\n🎙️  Generating podcast for: {entry_id}{lang_label}")
+    print(f"\n🎙️  Generating podcast for: {entry_id}{lang_label}" + (" [REMIX]" if remix else ""))
 
     # Find script file — Italian scripts in scripts/it/ subfolder
     if lang == "it":
@@ -410,10 +418,59 @@ def generate_podcast(entry_id, lang="en"):
     if entry_id in MUSIC_SOURCES:
         download_music(entry_id)
 
-    # Generate narration
-    narration_path, duration = generate_narration(entry_id, script_text, lang=lang)
-    if not narration_path:
-        return False
+    # Narration: generate or reuse
+    narration_subdir = os.path.join(NARRATIONS_DIR, "it") if lang == "it" else NARRATIONS_DIR
+    os.makedirs(narration_subdir, exist_ok=True)
+    saved_narration = os.path.join(narration_subdir, f"{entry_id}.mp3")
+
+    if remix and os.path.exists(saved_narration):
+        # Reuse saved narration
+        narration_path = saved_narration
+        result = subprocess.run(
+            ["ffprobe", "-v", "quiet", "-show_entries", "format=duration",
+             "-of", "csv=p=0", narration_path],
+            capture_output=True, text=True
+        )
+        duration = float(result.stdout.strip()) if result.stdout.strip() else 0
+        print(f"  ✓ Reusing saved narration: {os.path.getsize(narration_path) // 1024}KB, {duration:.1f}s")
+        cleanup_narration = False
+    elif remix:
+        # No saved narration — extract from existing podcast MP3
+        if lang == "it":
+            existing_mp3 = os.path.join(OUTPUT_DIR, "it", f"{entry_id}.mp3")
+        else:
+            existing_mp3 = os.path.join(OUTPUT_DIR, f"{entry_id}.mp3")
+        if os.path.exists(existing_mp3):
+            print(f"  🔧 Extracting voice from existing podcast (stripping old 2s intro)...")
+            # Old mix had 2s music intro; trim it to get narration-start-aligned audio
+            result = subprocess.run(
+                ["ffmpeg", "-y", "-i", existing_mp3, "-ss", "2",
+                 "-c:a", "libmp3lame", "-b:a", "128k", saved_narration],
+                capture_output=True, text=True
+            )
+            if result.returncode != 0:
+                print(f"  ✗ Extraction failed: {result.stderr[-300:]}")
+                return False
+            narration_path = saved_narration
+            result = subprocess.run(
+                ["ffprobe", "-v", "quiet", "-show_entries", "format=duration",
+                 "-of", "csv=p=0", narration_path],
+                capture_output=True, text=True
+            )
+            duration = float(result.stdout.strip()) if result.stdout.strip() else 0
+            print(f"  ✓ Extracted narration: {os.path.getsize(narration_path) // 1024}KB, {duration:.1f}s")
+            cleanup_narration = False
+        else:
+            print(f"  ✗ No existing podcast to extract from and --remix specified. Run without --remix first.")
+            return False
+    else:
+        # Normal TTS generation
+        narration_path, duration = generate_narration(entry_id, script_text, lang=lang)
+        if not narration_path:
+            return False
+        # Save narration for future remixes
+        subprocess.run(["cp", narration_path, saved_narration])
+        cleanup_narration = True
 
     # Get music path
     music_src = MUSIC_SOURCES.get(entry_id)
@@ -433,11 +490,12 @@ def generate_podcast(entry_id, lang="en"):
         subprocess.run(["cp", narration_path, output_path])
         print(f"  ⚠ No music available, narration-only")
 
-    # Clean up temp
-    try:
-        os.unlink(narration_path)
-    except OSError:
-        pass
+    # Clean up temp narration (but not saved narrations)
+    if cleanup_narration:
+        try:
+            os.unlink(narration_path)
+        except OSError:
+            pass
 
     # Get final duration
     result = subprocess.run(
@@ -480,9 +538,10 @@ def main():
     parser.add_argument("--all", action="store_true", help="Generate all entries")
     parser.add_argument("--lang", default="en", choices=["en", "it"], help="Language (en or it)")
     parser.add_argument("--download-music", action="store_true", help="Download music only")
+    parser.add_argument("--remix", action="store_true", help="Skip TTS, reuse saved narrations, remix music only")
     args = parser.parse_args()
 
-    if not APE_TOKEN:
+    if not APE_TOKEN and not args.remix and not args.download_music:
         print("✗ APE_TOKEN not set in environment. Export it first.")
         sys.exit(1)
 
@@ -502,7 +561,7 @@ def main():
         return
 
     for entry_id in entries:
-        duration = generate_podcast(entry_id, lang=lang)
+        duration = generate_podcast(entry_id, lang=lang, remix=args.remix)
         if duration:
             update_json(entry_id, duration, lang=lang)
 
