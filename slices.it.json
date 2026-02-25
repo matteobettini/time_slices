@@ -99,7 +99,11 @@
       "lon": 12.4769,
       "place": "Rome"
     },
-    "addedDate": "2026-02-25"
+    "addedDate": "2026-02-25",
+    "podcast": {
+      "url": "audio/it/125-rome-dome-of-all-things.mp3",
+      "duration": 156
+    }
   },
   {
     "year": "762",

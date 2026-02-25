@@ -201,8 +201,46 @@ def download_music(entry_id=None):
             print(f"  → Created silent placeholder")
 
 
+def _tts_chunk(text, voice, instructions, out_path, timeout=120, retries=2):
+    """Call the TTS API for a single chunk of text. Returns True on success."""
+    import time as _time
+    payload = json.dumps({
+        "model": TTS_MODEL,
+        "input": text,
+        "voice": voice,
+        "instructions": instructions or "",
+        "response_format": "mp3",
+    })
+    req_headers = {
+        "Authorization": f"Bearer {APE_TOKEN}",
+        "Content-Type": "application/json",
+    }
+    for attempt in range(1, retries + 1):
+        try:
+            req = urllib.request.Request(APE_API_URL, data=payload.encode("utf-8"), headers=req_headers)
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                with open(out_path, "wb") as f:
+                    f.write(resp.read())
+            return True
+        except Exception as e:
+            print(f"    ⚠ Attempt {attempt}/{retries} failed: {e}")
+            if attempt < retries:
+                _time.sleep(3 * attempt)  # backoff: 3s, 6s
+    return False
+
+
+# Threshold in chars: scripts longer than this are split into paragraph chunks
+_CHUNK_THRESHOLD = 1500
+
+
 def generate_narration(entry_id, script_text, lang="en"):
-    """Generate TTS narration via gpt-4o-mini-tts through the ape API."""
+    """Generate TTS narration via gpt-4o-mini-tts through the ape API.
+
+    For short scripts (≤ _CHUNK_THRESHOLD chars), sends a single request.
+    For longer scripts, splits by paragraph, generates each chunk, and
+    concatenates with ffmpeg. This avoids 504 gateway timeouts on the
+    upstream TTS provider.
+    """
     voice_map = VOICE_MAPS.get(lang, VOICE_MAP_EN)
     voice_config = voice_map.get(entry_id, {
         "voice": "alloy",
@@ -212,36 +250,59 @@ def generate_narration(entry_id, script_text, lang="en"):
     voice = voice_config["voice"]
     instructions = voice_config.get("instructions", "")
 
-    print(f"  🎤 Generating narration (voice: {voice}, model: {TTS_MODEL})...")
+    print(f"  🎤 Generating narration (voice: {voice}, model: {TTS_MODEL}, {len(script_text)} chars)...")
 
     narration_path = f"/tmp/{entry_id}-narration.mp3"
 
-    payload = json.dumps({
-        "model": TTS_MODEL,
-        "input": script_text,
-        "voice": voice,
-        "instructions": instructions or "",
-        "response_format": "mp3",
-    })
+    # --- Decide: single call or chunked ---
+    if len(script_text) <= _CHUNK_THRESHOLD:
+        # Short script — single TTS call
+        if not _tts_chunk(script_text, voice, instructions, narration_path, timeout=120, retries=2):
+            print(f"  ✗ TTS failed for {entry_id}")
+            return None, 0
+    else:
+        # Long script — split into paragraphs and generate each separately
+        import time as _time
+        paragraphs = [p.strip() for p in script_text.split("\n\n") if p.strip()]
+        print(f"  📄 Splitting into {len(paragraphs)} chunks for chunked TTS...")
+        part_paths = []
+        for i, para in enumerate(paragraphs):
+            part_path = f"/tmp/{entry_id}-part{i}.mp3"
+            print(f"    Chunk {i+1}/{len(paragraphs)} ({len(para)} chars)...")
+            if not _tts_chunk(para, voice, instructions, part_path, timeout=120, retries=2):
+                print(f"  ✗ TTS failed on chunk {i+1}")
+                return None, 0
+            part_paths.append(part_path)
+            if i < len(paragraphs) - 1:
+                _time.sleep(1)  # small delay between API calls
 
-    # Use urllib to call the API
-    req = urllib.request.Request(
-        APE_API_URL,
-        data=payload.encode("utf-8"),
-        headers={
-            "Authorization": f"Bearer {APE_TOKEN}",
-            "Content-Type": "application/json",
-        },
-    )
+        # Concatenate parts with ffmpeg
+        list_file = f"/tmp/{entry_id}-parts.txt"
+        with open(list_file, "w") as f:
+            for p in part_paths:
+                f.write(f"file '{p}'\n")
 
-    try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
-            with open(narration_path, "wb") as f:
-                f.write(resp.read())
-    except Exception as e:
-        print(f"  ✗ TTS API error: {e}")
-        return None, 0
+        result = subprocess.run(
+            ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", list_file,
+             "-c:a", "libmp3lame", "-b:a", "128k", narration_path],
+            capture_output=True, text=True,
+        )
+        if result.returncode != 0:
+            print(f"  ✗ ffmpeg concat failed: {result.stderr[-300:]}")
+            return None, 0
 
+        # Clean up temp parts
+        for p in part_paths:
+            try:
+                os.remove(p)
+            except OSError:
+                pass
+        try:
+            os.remove(list_file)
+        except OSError:
+            pass
+
+    # Measure output
     size = os.path.getsize(narration_path)
     result = subprocess.run(
         ["ffprobe", "-v", "quiet", "-show_entries", "format=duration",
