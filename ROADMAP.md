@@ -24,6 +24,7 @@
 - 🗺️ Map view — entries plotted on Leaflet map with lat/lon coordinates
 - Animated map — time slider scrubs through entries, lighting up geographically
 - Geographic coordinates on all entries (location field with lat/lon/place)
+- Daily digest — cron generates a new slice daily + notifies Telegram group
 
 ## 📋 Backlog
 
@@ -56,7 +57,7 @@
 - [ ] "Ask about this era" button — chat with Johnny about any entry's context
 - [ ] Entry suggestions — users propose time slices via form or Telegram
 - [ ] Quiz mode — "Which movement was X part of?" / "What connects A to B?"
-- [ ] Daily digest — Telegram message with today's new slice + an older highlight
+
 
 ### 📝 Content & Depth
 - [ ] Deep dive links — surface sources as "Want to go deeper?" + curated external readings
