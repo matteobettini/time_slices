@@ -184,21 +184,15 @@ def generate_narration(entry_id, script_text, lang="en"):
     voice = voice_config["voice"]
     instructions = voice_config.get("instructions", "")
 
-    # gpt-4o-mini-tts supports voice instructions via the input field
-    # Prepend instructions as a style directive
-    if instructions:
-        full_input = f"[Voice style: {instructions}]\n\n{script_text}"
-    else:
-        full_input = script_text
-
     print(f"  🎤 Generating narration (voice: {voice}, model: {TTS_MODEL})...")
 
     narration_path = f"/tmp/{entry_id}-narration.mp3"
 
     payload = json.dumps({
         "model": TTS_MODEL,
-        "input": full_input,
+        "input": script_text,
         "voice": voice,
+        "instructions": instructions or "",
         "response_format": "mp3",
     })
 
