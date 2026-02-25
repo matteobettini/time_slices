@@ -144,6 +144,12 @@
   }
   .entry.thread-highlighted { opacity: 1; }
 
+  /* Kill all entry transitions during thread switching to prevent layout drift */
+  .no-transition .entry,
+  .no-transition .entry.thread-hidden {
+    transition: none !important;
+  }
+
   /* Dot on timeline */
   .entry::before {
     content: '';
@@ -1332,16 +1338,22 @@ function getThreadNarrative(threadId, yearFrom, yearTo) {
 }
 
 function activateThread(threadId, anchorEntry) {
-  const wasSwitching = activeThread !== null; // true if switching from another thread
+  const wasSwitching = activeThread !== null;
+  const timeline = document.getElementById('timeline');
 
-  // If switching threads with an anchor entry, record its viewport position
-  // so we can stabilize scroll as layout shifts from collapsing/expanding entries
-  let anchorOffsetTop = null;
-  if (wasSwitching && anchorEntry) {
-    anchorOffsetTop = anchorEntry.getBoundingClientRect().top;
+  // When switching threads: disable CSS transitions so layout changes are instant.
+  // This avoids the shaky scroll drift caused by entries animating height over 400ms.
+  if (wasSwitching) {
+    timeline.classList.add('no-transition');
   }
 
-  // Reset all entries to clean state first (fixes stacking when switching threads)
+  // Record anchor position BEFORE any DOM changes
+  let anchorViewportTop = null;
+  if (wasSwitching && anchorEntry) {
+    anchorViewportTop = anchorEntry.getBoundingClientRect().top;
+  }
+
+  // --- Clean slate ---
   document.querySelectorAll('.entry').forEach(e => {
     e.classList.remove('thread-hidden', 'thread-highlighted');
     e.style.maxHeight = '';
@@ -1351,95 +1363,83 @@ function activateThread(threadId, anchorEntry) {
   clearThreadLines();
 
   activeThread = threadId;
-  mapActiveThread = threadId; // keep both views in sync
+  mapActiveThread = threadId;
   const entries = document.querySelectorAll('.entry');
   const matchingEntries = [];
 
-  // Dim the main timeline line
   document.querySelector('.timeline-line').classList.add('thread-active');
 
-  // Use rAF to ensure the browser has applied the reset above
-  // before measuring heights and collapsing non-matching entries
-  requestAnimationFrame(() => {
-    entries.forEach(entry => {
-      const threads = JSON.parse(entry.dataset.threads || '[]');
-      if (threads.includes(threadId)) {
-        entry.classList.add('thread-highlighted');
-        matchingEntries.push(entry);
-      } else {
-        // Store current height for smooth collapse
-        entry.style.maxHeight = entry.scrollHeight + 'px';
-        entry.classList.remove('thread-highlighted');
-        requestAnimationFrame(() => {
-          entry.classList.add('thread-hidden');
-          entry.style.maxHeight = '0';
-        });
-      }
-    });
+  // --- Apply new thread state synchronously ---
+  entries.forEach(entry => {
+    const threads = JSON.parse(entry.dataset.threads || '[]');
+    if (threads.includes(threadId)) {
+      entry.classList.add('thread-highlighted');
+      matchingEntries.push(entry);
+    } else {
+      entry.classList.add('thread-hidden');
+      entry.style.maxHeight = '0';
+    }
+  });
 
-    // Hide markers
-    document.querySelectorAll('.marker').forEach(m => m.classList.add('thread-hidden'));
+  // Hide markers
+  document.querySelectorAll('.marker').forEach(m => m.classList.add('thread-hidden'));
 
-    // Insert narrative connectors between matching entries
-    for (let i = 0; i < matchingEntries.length - 1; i++) {
-      const fromYear = matchingEntries[i].dataset.year;
-      const toYear = matchingEntries[i + 1].dataset.year;
-      const narrative = getThreadNarrative(threadId, fromYear, toYear);
+  // Insert narrative connectors
+  for (let i = 0; i < matchingEntries.length - 1; i++) {
+    const fromYear = matchingEntries[i].dataset.year;
+    const toYear = matchingEntries[i + 1].dataset.year;
+    const narrative = getThreadNarrative(threadId, fromYear, toYear);
 
-      const connector = document.createElement('div');
-      connector.className = 'thread-narrative';
+    const connector = document.createElement('div');
+    connector.className = 'thread-narrative';
 
-      if (narrative) {
-        connector.innerHTML = `<span class="narrative-arrow">↓</span>${narrative}`;
-      } else {
-        const gap = parseInt(toYear) - parseInt(fromYear);
-        connector.innerHTML = `<span class="narrative-arrow">↓</span><em>${gap} ${t('yearsLater')}</em>`;
-      }
-
-      // Insert after the current matching entry
-      matchingEntries[i].after(connector);
+    if (narrative) {
+      connector.innerHTML = `<span class="narrative-arrow">↓</span>${narrative}`;
+    } else {
+      const gap = parseInt(toYear) - parseInt(fromYear);
+      connector.innerHTML = `<span class="narrative-arrow">↓</span><em>${gap} ${t('yearsLater')}</em>`;
     }
 
-    // Draw SVG thread lines
-    drawThreadLines(matchingEntries);
+    matchingEntries[i].after(connector);
+  }
 
-    // Update all thread tags
-    document.querySelectorAll('.thread-tag').forEach(t => {
-      t.classList.toggle('active', t.dataset.thread === threadId);
-    });
+  // Draw SVG thread lines
+  drawThreadLines(matchingEntries);
 
-    // Show banner
-    const count = matchingEntries.length;
-    document.getElementById('threadName').textContent = formatThreadId(threadId);
-    document.getElementById('threadCount').textContent = `${count} ${count === 1 ? t('entry') : t('entries')}`;
-    document.getElementById('threadBanner').classList.add('visible');
+  // Update all thread tags
+  document.querySelectorAll('.thread-tag').forEach(t => {
+    t.classList.toggle('active', t.dataset.thread === threadId);
+  });
 
-    // Scroll behavior depends on whether we're activating fresh or switching threads
-    if (wasSwitching && anchorEntry && anchorOffsetTop !== null) {
-      // Switching threads: stabilize scroll so the anchor entry stays in place.
-      // Entries collapse via CSS transition (~400ms), so we need to keep correcting
-      // as the layout shifts. Use a scroll-stabilization loop.
-      const stabilize = () => {
-        const currentTop = anchorEntry.getBoundingClientRect().top;
-        const drift = currentTop - anchorOffsetTop;
-        if (Math.abs(drift) > 1) {
-          window.scrollBy(0, drift);
-        }
-      };
-      // Run stabilization over the transition duration
-      stabilize();
-      const stabilizeInterval = setInterval(stabilize, 16); // every frame
-      setTimeout(() => {
-        clearInterval(stabilizeInterval);
-        stabilize(); // one final correction
-      }, 500); // CSS transition is ~400ms, give a bit of margin
-    } else if (!wasSwitching && matchingEntries.length > 0) {
-      // First thread activation: scroll to first matching entry
-      setTimeout(() => {
-        highlightAndScroll(matchingEntries[0]);
-      }, 300);
+  // Show banner
+  const count = matchingEntries.length;
+  document.getElementById('threadName').textContent = formatThreadId(threadId);
+  document.getElementById('threadCount').textContent = `${count} ${count === 1 ? t('entry') : t('entries')}`;
+  document.getElementById('threadBanner').classList.add('visible');
+
+  // --- Scroll handling ---
+  if (wasSwitching && anchorEntry && anchorViewportTop !== null) {
+    // Correct scroll once — layout is already final (no transitions)
+    const newTop = anchorEntry.getBoundingClientRect().top;
+    const drift = newTop - anchorViewportTop;
+    if (Math.abs(drift) > 1) {
+      window.scrollBy(0, drift);
     }
-  }); // end rAF
+    // Re-enable transitions on next frame so future interactions still animate
+    requestAnimationFrame(() => {
+      timeline.classList.remove('no-transition');
+    });
+  } else if (wasSwitching) {
+    // Switching but no anchor (e.g. re-apply after language change)
+    requestAnimationFrame(() => {
+      timeline.classList.remove('no-transition');
+    });
+  } else if (matchingEntries.length > 0) {
+    // First thread activation: scroll to first matching entry
+    setTimeout(() => {
+      highlightAndScroll(matchingEntries[0]);
+    }, 300);
+  }
 }
 
 function clearThread() {
@@ -1448,6 +1448,7 @@ function clearThread() {
 
   // Restore timeline line
   document.querySelector('.timeline-line').classList.remove('thread-active');
+  document.getElementById('timeline').classList.remove('no-transition');
 
   document.querySelectorAll('.entry').forEach(e => {
     e.classList.remove('thread-hidden', 'thread-highlighted');
