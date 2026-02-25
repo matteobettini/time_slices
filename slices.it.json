@@ -70,7 +70,11 @@
       "place": "Baghdad"
     },
     "addedDate": "2026-02-24",
-    "id": "762-baghdad-round-city-of-reason"
+    "id": "762-baghdad-round-city-of-reason",
+    "podcast": {
+      "url": "audio/it/762-baghdad-round-city-of-reason.mp3",
+      "duration": 156
+    }
   },
   {
     "year": "1347",
@@ -147,7 +151,11 @@
       "place": "Florence"
     },
     "addedDate": "2026-02-24",
-    "id": "1347-florence-beautiful-catastrophe"
+    "id": "1347-florence-beautiful-catastrophe",
+    "podcast": {
+      "url": "audio/it/1347-florence-beautiful-catastrophe.mp3",
+      "duration": 151
+    }
   },
   {
     "year": "1504",
@@ -194,7 +202,11 @@
       "place": "Florence"
     },
     "addedDate": "2026-02-24",
-    "id": "1504-florence-duel-of-giants"
+    "id": "1504-florence-duel-of-giants",
+    "podcast": {
+      "url": "audio/it/1504-florence-duel-of-giants.mp3",
+      "duration": 156
+    }
   },
   {
     "year": "1648",
@@ -264,7 +276,11 @@
       "place": "Münster"
     },
     "addedDate": "2026-02-24",
-    "id": "1648-munster-exhaustion-of-god"
+    "id": "1648-munster-exhaustion-of-god",
+    "podcast": {
+      "url": "audio/it/1648-munster-exhaustion-of-god.mp3",
+      "duration": 174
+    }
   },
   {
     "year": "1784",
@@ -336,7 +352,11 @@
       "place": "Königsberg"
     },
     "addedDate": "2026-02-25",
-    "id": "1784-europe-dare-to-know"
+    "id": "1784-europe-dare-to-know",
+    "podcast": {
+      "url": "audio/it/1784-europe-dare-to-know.mp3",
+      "duration": 167
+    }
   },
   {
     "year": "1889",
@@ -384,7 +404,11 @@
       "place": "Paris"
     },
     "addedDate": "2026-02-24",
-    "id": "1889-paris-year-everything-changed"
+    "id": "1889-paris-year-everything-changed",
+    "podcast": {
+      "url": "audio/it/1889-paris-year-everything-changed.mp3",
+      "duration": 181
+    }
   },
   {
     "year": "1922",
@@ -432,6 +456,10 @@
       "place": "Weimar"
     },
     "addedDate": "2026-02-24",
-    "id": "1922-modernist-explosion"
+    "id": "1922-modernist-explosion",
+    "podcast": {
+      "url": "audio/it/1922-modernist-explosion.mp3",
+      "duration": 189
+    }
   }
 ]

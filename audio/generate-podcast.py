@@ -33,7 +33,9 @@ TTS_MODEL = "gpt-4o-mini-tts"
 
 # Voice assignments per entry — OpenAI TTS voices.
 # gpt-4o-mini-tts voices: alloy, ash, ballad, coral, echo, fable, nova, onyx, sage, shimmer, verse
-VOICE_MAP = {
+
+# English voices
+VOICE_MAP_EN = {
     # 762 Baghdad: warm, storytelling — fable has a narrative quality
     "762-baghdad-round-city-of-reason": {
         "voice": "fable",
@@ -70,6 +72,40 @@ VOICE_MAP = {
         "instructions": "Speak with urgency and modernist energy. This is 1922 — Ulysses, The Waste Land, jazz, Bauhaus, everything shattering and reassembling. Quick-paced, electric, a world remaking itself.",
     },
 }
+
+# Italian voices — same voice palette but with Italian-language style instructions
+VOICE_MAP_IT = {
+    "762-baghdad-round-city-of-reason": {
+        "voice": "fable",
+        "instructions": "Parla in italiano con il tono di un cantastorie che narra una storia antica. Ritmo misurato, un senso di meraviglia nella voce. Questa è la storia di un'età dell'oro.",
+    },
+    "1347-florence-beautiful-catastrophe": {
+        "voice": "onyx",
+        "instructions": "Parla in italiano con gravità e peso. Questa storia parla di peste, morte e della strana bellezza che emerge dalla catastrofe. Cupo ma non monotono — lascia trapelare il dramma.",
+    },
+    "1504-florence-duel-of-giants": {
+        "voice": "echo",
+        "instructions": "Parla in italiano con sicurezza ed energia vivida. Questa è la storia di Leonardo e Michelangelo in competizione — genio contro genio. Dai vita alla rivalità.",
+    },
+    "1648-munster-exhaustion-of-god": {
+        "voice": "ash",
+        "instructions": "Parla in italiano con stanchezza e saggezza duramente conquistata. Trent'anni di guerre di religione hanno esaurito l'Europa. Il tono è riflessivo, quasi elegiaco, ma con un filo di speranza.",
+    },
+    "1784-europe-dare-to-know": {
+        "voice": "sage",
+        "instructions": "Parla in italiano con chiarezza intellettuale e un tocco di entusiasmo rivoluzionario. Questo è l'Illuminismo — la ragione che rovescia la tradizione. Nitido, preciso, ma con passione sottostante.",
+    },
+    "1889-paris-year-everything-changed": {
+        "voice": "nova",
+        "instructions": "Parla in italiano con passione e meraviglia. Parigi nel 1889 — la Torre Eiffel che si innalza, il mondo in mostra, l'arte che esplode in nuove direzioni. Lascia trasparire l'emozione di un momento trasformativo.",
+    },
+    "1922-modernist-explosion": {
+        "voice": "coral",
+        "instructions": "Parla in italiano con urgenza ed energia modernista. Questo è il 1922 — Ulisse, La terra desolata, jazz, Bauhaus, tutto si frantuma e si ricompone. Ritmo rapido, elettrico, un mondo che si rifà da capo.",
+    },
+}
+
+VOICE_MAPS = {"en": VOICE_MAP_EN, "it": VOICE_MAP_IT}
 
 # Background music sources from Internet Archive (public domain)
 MUSIC_SOURCES = {
@@ -137,11 +173,12 @@ def download_music(entry_id=None):
             print(f"  → Created silent placeholder")
 
 
-def generate_narration(entry_id, script_text):
+def generate_narration(entry_id, script_text, lang="en"):
     """Generate TTS narration via gpt-4o-mini-tts through the ape API."""
-    voice_config = VOICE_MAP.get(entry_id, {
+    voice_map = VOICE_MAPS.get(lang, VOICE_MAP_EN)
+    voice_config = voice_map.get(entry_id, {
         "voice": "alloy",
-        "instructions": "Speak as a knowledgeable narrator telling a historical story.",
+        "instructions": "Speak as a knowledgeable narrator telling a historical story." if lang == "en" else "Parla come un narratore esperto che racconta una storia storica.",
     })
 
     voice = voice_config["voice"]
@@ -233,16 +270,23 @@ def mix_audio(narration_path, music_path, output_path, narration_duration):
     print(f"  ✓ Final podcast: {size // 1024}KB, ~{total_duration:.0f}s")
 
 
-def generate_podcast(entry_id):
+def generate_podcast(entry_id, lang="en"):
     """Full pipeline: script → narration → mix → output."""
-    print(f"\n🎙️  Generating podcast for: {entry_id}")
+    lang_label = f" [{lang.upper()}]" if lang != "en" else ""
+    print(f"\n🎙️  Generating podcast for: {entry_id}{lang_label}")
 
-    # Find script file
-    script_path = os.path.join(SCRIPTS_DIR, f"{entry_id}.txt")
+    # Find script file — Italian scripts in scripts/it/ subfolder
+    if lang == "it":
+        script_path = os.path.join(SCRIPTS_DIR, "it", f"{entry_id}.txt")
+    else:
+        script_path = os.path.join(SCRIPTS_DIR, f"{entry_id}.txt")
     if not os.path.exists(script_path):
         # Try slug-only (strip year prefix)
         slug = entry_id.split("-", 1)[1] if "-" in entry_id and entry_id.split("-")[0].lstrip("-").isdigit() else entry_id
-        script_path = os.path.join(SCRIPTS_DIR, f"{slug}.txt")
+        if lang == "it":
+            script_path = os.path.join(SCRIPTS_DIR, "it", f"{slug}.txt")
+        else:
+            script_path = os.path.join(SCRIPTS_DIR, f"{slug}.txt")
     if not os.path.exists(script_path):
         print(f"  ✗ No script found for {entry_id}")
         return False
@@ -257,7 +301,7 @@ def generate_podcast(entry_id):
         download_music(entry_id)
 
     # Generate narration
-    narration_path, duration = generate_narration(entry_id, script_text)
+    narration_path, duration = generate_narration(entry_id, script_text, lang=lang)
     if not narration_path:
         return False
 
@@ -265,8 +309,13 @@ def generate_podcast(entry_id):
     music_src = MUSIC_SOURCES.get(entry_id)
     music_path = os.path.join(MUSIC_DIR, music_src["filename"]) if music_src else None
 
-    # Mix
-    output_path = os.path.join(OUTPUT_DIR, f"{entry_id}.mp3")
+    # Mix — Italian outputs go to audio/it/
+    if lang == "it":
+        it_dir = os.path.join(OUTPUT_DIR, "it")
+        os.makedirs(it_dir, exist_ok=True)
+        output_path = os.path.join(it_dir, f"{entry_id}.mp3")
+    else:
+        output_path = os.path.join(OUTPUT_DIR, f"{entry_id}.mp3")
     if music_path and os.path.exists(music_path) and os.path.getsize(music_path) > 10000:
         mix_audio(narration_path, music_path, output_path, duration)
     else:
@@ -290,29 +339,35 @@ def generate_podcast(entry_id):
     return final_duration
 
 
-def update_json(entry_id, duration):
-    """Add podcast field to slices.json."""
-    json_path = os.path.join(PROJECT_DIR, "slices.json")
+def update_json(entry_id, duration, lang="en"):
+    """Add podcast field to slices.json or slices.it.json."""
+    if lang == "it":
+        json_path = os.path.join(PROJECT_DIR, "slices.it.json")
+        url_prefix = "audio/it/"
+    else:
+        json_path = os.path.join(PROJECT_DIR, "slices.json")
+        url_prefix = "audio/"
     with open(json_path) as f:
         data = json.load(f)
 
     for entry in data:
         if entry.get("id") == entry_id:
             entry["podcast"] = {
-                "url": f"audio/{entry_id}.mp3",
+                "url": f"{url_prefix}{entry_id}.mp3",
                 "duration": duration,
             }
             break
 
     with open(json_path, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
-    print(f"  📄 Updated slices.json with podcast field")
+    print(f"  📄 Updated {'slices.it.json' if lang == 'it' else 'slices.json'} with podcast field")
 
 
 def main():
     parser = argparse.ArgumentParser(description="Generate Time Slice podcasts")
     parser.add_argument("entry_id", nargs="?", help="Entry ID to generate")
     parser.add_argument("--all", action="store_true", help="Generate all entries")
+    parser.add_argument("--lang", default="en", choices=["en", "it"], help="Language (en or it)")
     parser.add_argument("--download-music", action="store_true", help="Download music only")
     args = parser.parse_args()
 
@@ -325,8 +380,10 @@ def main():
         download_music()
         return
 
+    lang = args.lang
+
     if args.all:
-        entries = list(VOICE_MAP.keys())
+        entries = list(VOICE_MAPS.get(lang, VOICE_MAP_EN).keys())
     elif args.entry_id:
         entries = [args.entry_id]
     else:
@@ -334,9 +391,9 @@ def main():
         return
 
     for entry_id in entries:
-        duration = generate_podcast(entry_id)
+        duration = generate_podcast(entry_id, lang=lang)
         if duration:
-            update_json(entry_id, duration)
+            update_json(entry_id, duration, lang=lang)
 
     print(f"\n✅ Done!")
 
