@@ -7,14 +7,13 @@ Usage:
     python3 generate-podcast.py --all
     python3 generate-podcast.py --download-music
 
-Uses edge-tts (free, no API key) for narration with different voices per epoch,
+Uses gpt-4o-mini-tts via the ape API (OpenAI-compatible) for narration,
 and period-appropriate background music from Internet Archive (public domain).
 
-Requires: edge-tts, ffmpeg
+Requires: ffmpeg, curl (or requests)
 """
 
 import argparse
-import asyncio
 import json
 import os
 import subprocess
@@ -27,62 +26,49 @@ SCRIPTS_DIR = os.path.join(SCRIPT_DIR, "scripts")
 MUSIC_DIR = os.path.join(SCRIPT_DIR, "music")
 OUTPUT_DIR = SCRIPT_DIR  # audio/{id}.mp3
 
-# Voice assignments per entry — chosen to match the epoch's character.
-# Using Microsoft Edge neural voices (free, no API key).
-VOICE_MAP = {
-    # 762 Baghdad: scholarly, warm — Indian English for a non-Western feel
-    "762-baghdad-round-city-of-reason": {
-        "voice": "en-IN-PrabhatNeural",
-        "rate": "-5%",
-        "pitch": "+0Hz",
-    },
-    # 1347 Florence plague: dark, dramatic — deep British authority
-    "1347-florence-beautiful-catastrophe": {
-        "voice": "en-GB-RyanNeural",
-        "rate": "-8%",
-        "pitch": "-2Hz",
-    },
-    # 1504 Renaissance: confident, vivid — rich American narrative
-    "1504-florence-duel-of-giants": {
-        "voice": "en-US-GuyNeural",
-        "rate": "-3%",
-        "pitch": "+0Hz",
-    },
-    # 1648 Westphalia: grave, weary — authoritative, measured
-    "1648-munster-exhaustion-of-god": {
-        "voice": "en-US-ChristopherNeural",
-        "rate": "-8%",
-        "pitch": "-2Hz",
-    },
-    # 1784 Enlightenment: crisp, rational — clear British female
-    "1784-europe-dare-to-know": {
-        "voice": "en-GB-SoniaNeural",
-        "rate": "-3%",
-        "pitch": "+0Hz",
-    },
-    # 1889 Paris: passionate, expressive — energetic female
-    "1889-paris-year-everything-changed": {
-        "voice": "en-US-AriaNeural",
-        "rate": "+0%",
-        "pitch": "+1Hz",
-    },
-    # 1922 Modernism: staccato, fragmented energy — fast, clipped
-    "1922-modernist-explosion": {
-        "voice": "en-US-AndrewNeural",
-        "rate": "+3%",
-        "pitch": "+0Hz",
-    },
-}
+# API configuration
+APE_API_URL = "https://api.wearables-ape.io/models/v1/audio/speech"
+APE_TOKEN = os.environ.get("APE_TOKEN", "")
+TTS_MODEL = "gpt-4o-mini-tts"
 
-# Mapping from old slug-only IDs to new year-slug IDs (for backward compat)
-SLUG_TO_ID = {
-    "baghdad-round-city-of-reason": "762-baghdad-round-city-of-reason",
-    "florence-beautiful-catastrophe": "1347-florence-beautiful-catastrophe",
-    "florence-duel-of-giants": "1504-florence-duel-of-giants",
-    "munster-exhaustion-of-god": "1648-munster-exhaustion-of-god",
-    "europe-dare-to-know": "1784-europe-dare-to-know",
-    "paris-year-everything-changed": "1889-paris-year-everything-changed",
-    "modernist-explosion": "1922-modernist-explosion",
+# Voice assignments per entry — OpenAI TTS voices.
+# gpt-4o-mini-tts voices: alloy, ash, ballad, coral, echo, fable, nova, onyx, sage, shimmer, verse
+VOICE_MAP = {
+    # 762 Baghdad: warm, storytelling — fable has a narrative quality
+    "762-baghdad-round-city-of-reason": {
+        "voice": "fable",
+        "instructions": "Speak as a warm storyteller narrating ancient history. Measured pace, slight wonder in the voice. This is a tale of a golden age.",
+    },
+    # 1347 Florence plague: somber, dramatic — onyx is deep and grave
+    "1347-florence-beautiful-catastrophe": {
+        "voice": "onyx",
+        "instructions": "Speak with gravity and weight. This is about plague, death, and the strange beauty that emerged from catastrophe. Somber but not monotone — let the drama come through.",
+    },
+    # 1504 Renaissance: confident, vivid — echo has clarity and presence
+    "1504-florence-duel-of-giants": {
+        "voice": "echo",
+        "instructions": "Speak with confidence and vivid energy. This is about Leonardo and Michelangelo in competition — genius against genius. Bring the rivalry to life.",
+    },
+    # 1648 Westphalia: weary, reflective — ash for gravitas
+    "1648-munster-exhaustion-of-god": {
+        "voice": "ash",
+        "instructions": "Speak with weariness and hard-won wisdom. Thirty years of religious war have exhausted Europe. The tone is reflective, almost elegiac, but with a thread of hope at the emergence of the modern state system.",
+    },
+    # 1784 Enlightenment: crisp, intellectual — sage for measured clarity
+    "1784-europe-dare-to-know": {
+        "voice": "sage",
+        "instructions": "Speak with intellectual clarity and a touch of revolutionary excitement. This is the Enlightenment — reason overthrowing tradition. Crisp, precise, but with underlying passion.",
+    },
+    # 1889 Paris: passionate, expressive — nova for warmth and energy
+    "1889-paris-year-everything-changed": {
+        "voice": "nova",
+        "instructions": "Speak with passion and wonder. Paris in 1889 — the Eiffel Tower rising, the world on display, art exploding in new directions. Let the excitement of a transformative moment come through.",
+    },
+    # 1922 Modernism: staccato, urgent — coral for dynamic energy
+    "1922-modernist-explosion": {
+        "voice": "coral",
+        "instructions": "Speak with urgency and modernist energy. This is 1922 — Ulysses, The Waste Land, jazz, Bauhaus, everything shattering and reassembling. Quick-paced, electric, a world remaking itself.",
+    },
 }
 
 # Background music sources from Internet Archive (public domain)
@@ -125,11 +111,6 @@ MUSIC_SOURCES = {
 }
 
 
-def resolve_id(entry_id):
-    """Resolve a slug-only ID to the full year-slug format."""
-    return SLUG_TO_ID.get(entry_id, entry_id)
-
-
 def download_music(entry_id=None):
     """Download background music from Internet Archive."""
     os.makedirs(MUSIC_DIR, exist_ok=True)
@@ -156,27 +137,51 @@ def download_music(entry_id=None):
             print(f"  → Created silent placeholder")
 
 
-async def generate_narration(entry_id, script_text):
-    """Generate TTS narration via edge-tts (free, no API key)."""
-    import edge_tts
-
+def generate_narration(entry_id, script_text):
+    """Generate TTS narration via gpt-4o-mini-tts through the ape API."""
     voice_config = VOICE_MAP.get(entry_id, {
-        "voice": "en-US-GuyNeural",
-        "rate": "-5%",
-        "pitch": "+0Hz",
+        "voice": "alloy",
+        "instructions": "Speak as a knowledgeable narrator telling a historical story.",
     })
 
-    print(f"  🎤 Generating narration (voice: {voice_config['voice']})...")
+    voice = voice_config["voice"]
+    instructions = voice_config.get("instructions", "")
 
-    communicate = edge_tts.Communicate(
-        text=script_text,
-        voice=voice_config["voice"],
-        rate=voice_config["rate"],
-        pitch=voice_config["pitch"],
-    )
+    # gpt-4o-mini-tts supports voice instructions via the input field
+    # Prepend instructions as a style directive
+    if instructions:
+        full_input = f"[Voice style: {instructions}]\n\n{script_text}"
+    else:
+        full_input = script_text
+
+    print(f"  🎤 Generating narration (voice: {voice}, model: {TTS_MODEL})...")
 
     narration_path = f"/tmp/{entry_id}-narration.mp3"
-    await communicate.save(narration_path)
+
+    payload = json.dumps({
+        "model": TTS_MODEL,
+        "input": full_input,
+        "voice": voice,
+        "response_format": "mp3",
+    })
+
+    # Use urllib to call the API
+    req = urllib.request.Request(
+        APE_API_URL,
+        data=payload.encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {APE_TOKEN}",
+            "Content-Type": "application/json",
+        },
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            with open(narration_path, "wb") as f:
+                f.write(resp.read())
+    except Exception as e:
+        print(f"  ✗ TTS API error: {e}")
+        return None, 0
 
     size = os.path.getsize(narration_path)
     result = subprocess.run(
@@ -230,13 +235,13 @@ def mix_audio(narration_path, music_path, output_path, narration_duration):
 
 def generate_podcast(entry_id):
     """Full pipeline: script → narration → mix → output."""
-    entry_id = resolve_id(entry_id)
     print(f"\n🎙️  Generating podcast for: {entry_id}")
 
-    # Try both old slug and new year-slug for script files
-    slug = entry_id.split("-", 1)[1] if "-" in entry_id and entry_id.split("-")[0].isdigit() else entry_id
+    # Find script file
     script_path = os.path.join(SCRIPTS_DIR, f"{entry_id}.txt")
     if not os.path.exists(script_path):
+        # Try slug-only (strip year prefix)
+        slug = entry_id.split("-", 1)[1] if "-" in entry_id and entry_id.split("-")[0].lstrip("-").isdigit() else entry_id
         script_path = os.path.join(SCRIPTS_DIR, f"{slug}.txt")
     if not os.path.exists(script_path):
         print(f"  ✗ No script found for {entry_id}")
@@ -252,7 +257,9 @@ def generate_podcast(entry_id):
         download_music(entry_id)
 
     # Generate narration
-    narration_path, duration = asyncio.run(generate_narration(entry_id, script_text))
+    narration_path, duration = generate_narration(entry_id, script_text)
+    if not narration_path:
+        return False
 
     # Get music path
     music_src = MUSIC_SOURCES.get(entry_id)
@@ -285,7 +292,6 @@ def generate_podcast(entry_id):
 
 def update_json(entry_id, duration):
     """Add podcast field to slices.json."""
-    entry_id = resolve_id(entry_id)
     json_path = os.path.join(PROJECT_DIR, "slices.json")
     with open(json_path) as f:
         data = json.load(f)
@@ -310,6 +316,10 @@ def main():
     parser.add_argument("--download-music", action="store_true", help="Download music only")
     args = parser.parse_args()
 
+    if not APE_TOKEN:
+        print("✗ APE_TOKEN not set in environment. Export it first.")
+        sys.exit(1)
+
     if args.download_music:
         print("📥 Downloading all background music...")
         download_music()
@@ -318,7 +328,7 @@ def main():
     if args.all:
         entries = list(VOICE_MAP.keys())
     elif args.entry_id:
-        entries = [resolve_id(args.entry_id)]
+        entries = [args.entry_id]
     else:
         parser.print_help()
         return
