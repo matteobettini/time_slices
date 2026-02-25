@@ -494,6 +494,8 @@ def mix_audio(narration_path, music_path, output_path, narration_duration, start
     # 4. Gentle compression to tame dynamics
     # 5. Volume envelope: 20% intro → duck to 10% when voice enters → 20% outro
     # 6. Fade in at start, fade out at end
+    # 7. amix with normalize=0 to prevent automatic halving of inputs
+    # 8. Final loudnorm pass to hit podcast-standard -16 LUFS
     filter_complex = (
         # Music processing
         f"[1:a]atrim=start={start_time},asetpts=PTS-STARTPTS,"
@@ -508,8 +510,10 @@ def mix_audio(narration_path, music_path, output_path, narration_duration, start
         f"[music];"
         # Voice: delay to start after music intro
         f"[0:a]adelay={voice_start_ms}|{voice_start_ms}[voice];"
-        # Mix
-        f"[music][voice]amix=inputs=2:duration=longest:dropout_transition=2[out]"
+        # Mix — normalize=0 prevents amix from halving input volumes
+        f"[music][voice]amix=inputs=2:duration=longest:dropout_transition=2:normalize=0[mixed];"
+        # Loudness normalization to podcast standard (-16 LUFS)
+        f"[mixed]loudnorm=I=-16:TP=-1.5:LRA=11[out]"
     )
 
     cmd = [
