@@ -236,7 +236,7 @@ MUSIC_POOL = {
         "tags": ["classical", "piano", "austria", "dramatic", "enlightenment"],
     },
     "beethoven-moonlight": {
-        "url": "https://archive.org/download/LudwigVanBeethovenMoonlightSonataAdagioSostenutogetTune.net/Ludwig%20Van%20Beethoven%20-%20Moonlight%20Sonata%20-%20Adagio%20Sostenuto%5BgetTune.net%5D.mp3",
+        "url": "https://archive.org/download/LudwigVanBeethovenMoonlightSonataAdagioSostenutogetTune.net/Ludwig_Van_Beethoven_-_Moonlight_Sonata_Adagio_Sostenuto_(get-tune.net).mp3",
         "filename": "beethoven-moonlight.mp3",
         "description": "Beethoven — Moonlight Sonata, Adagio sostenuto",
         "start_time": 0,
@@ -308,7 +308,7 @@ MUSIC_SOURCES = {
     "1347-florence-beautiful-catastrophe": {"pool_key": "gregorian-chant-resurrexi"},
     "1504-florence-duel-of-giants": {"pool_key": "renaissance-lute-fantasia"},
     "1648-munster-exhaustion-of-god": {"pool_key": "bach-organ-canonic"},
-    "1784-europe-dare-to-know": {"pool_key": "mozart-piano-k310"},
+    "1784-europe-dare-to-know": {"pool_key": "beethoven-moonlight"},
     "1889-paris-year-everything-changed": {"pool_key": "debussy-clair-de-lune"},
     "1922-modernist-explosion": {"pool_key": "satie-gnossiennes"},
 }
