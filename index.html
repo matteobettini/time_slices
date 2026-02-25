@@ -1331,6 +1331,15 @@ function getThreadNarrative(threadId, yearFrom, yearTo) {
 }
 
 function activateThread(threadId) {
+  // Reset all entries to clean state first (fixes stacking when switching threads)
+  document.querySelectorAll('.entry').forEach(e => {
+    e.classList.remove('thread-hidden', 'thread-highlighted');
+    e.style.maxHeight = '';
+  });
+  document.querySelectorAll('.marker').forEach(m => m.classList.remove('thread-hidden'));
+  document.querySelectorAll('.thread-narrative').forEach(n => n.remove());
+  clearThreadLines();
+
   activeThread = threadId;
   mapActiveThread = threadId; // keep both views in sync
   const entries = document.querySelectorAll('.entry');
@@ -1339,70 +1348,69 @@ function activateThread(threadId) {
   // Dim the main timeline line
   document.querySelector('.timeline-line').classList.add('thread-active');
 
-  // First: record max-height of non-matching entries before hiding
-  entries.forEach(entry => {
-    const threads = JSON.parse(entry.dataset.threads || '[]');
-    if (threads.includes(threadId)) {
-      entry.classList.remove('thread-hidden');
-      entry.classList.add('thread-highlighted');
-      matchingEntries.push(entry);
-    } else {
-      // Store current height for smooth collapse
-      entry.style.maxHeight = entry.scrollHeight + 'px';
-      entry.classList.remove('thread-highlighted');
-      requestAnimationFrame(() => {
-        entry.classList.add('thread-hidden');
-        entry.style.maxHeight = '0';
-      });
+  // Use rAF to ensure the browser has applied the reset above
+  // before measuring heights and collapsing non-matching entries
+  requestAnimationFrame(() => {
+    entries.forEach(entry => {
+      const threads = JSON.parse(entry.dataset.threads || '[]');
+      if (threads.includes(threadId)) {
+        entry.classList.add('thread-highlighted');
+        matchingEntries.push(entry);
+      } else {
+        // Store current height for smooth collapse
+        entry.style.maxHeight = entry.scrollHeight + 'px';
+        entry.classList.remove('thread-highlighted');
+        requestAnimationFrame(() => {
+          entry.classList.add('thread-hidden');
+          entry.style.maxHeight = '0';
+        });
+      }
+    });
+
+    // Hide markers
+    document.querySelectorAll('.marker').forEach(m => m.classList.add('thread-hidden'));
+
+    // Insert narrative connectors between matching entries
+    for (let i = 0; i < matchingEntries.length - 1; i++) {
+      const fromYear = matchingEntries[i].dataset.year;
+      const toYear = matchingEntries[i + 1].dataset.year;
+      const narrative = getThreadNarrative(threadId, fromYear, toYear);
+
+      const connector = document.createElement('div');
+      connector.className = 'thread-narrative';
+
+      if (narrative) {
+        connector.innerHTML = `<span class="narrative-arrow">↓</span>${narrative}`;
+      } else {
+        const gap = parseInt(toYear) - parseInt(fromYear);
+        connector.innerHTML = `<span class="narrative-arrow">↓</span><em>${gap} ${t('yearsLater')}</em>`;
+      }
+
+      // Insert after the current matching entry
+      matchingEntries[i].after(connector);
     }
-  });
 
-  // Hide markers
-  document.querySelectorAll('.marker').forEach(m => m.classList.add('thread-hidden'));
+    // Draw SVG thread lines
+    drawThreadLines(matchingEntries);
 
-  // Remove old narratives
-  document.querySelectorAll('.thread-narrative').forEach(n => n.remove());
+    // Update all thread tags
+    document.querySelectorAll('.thread-tag').forEach(t => {
+      t.classList.toggle('active', t.dataset.thread === threadId);
+    });
 
-  // Insert narrative connectors between matching entries
-  for (let i = 0; i < matchingEntries.length - 1; i++) {
-    const fromYear = matchingEntries[i].dataset.year;
-    const toYear = matchingEntries[i + 1].dataset.year;
-    const narrative = getThreadNarrative(threadId, fromYear, toYear);
+    // Show banner
+    const count = matchingEntries.length;
+    document.getElementById('threadName').textContent = formatThreadId(threadId);
+    document.getElementById('threadCount').textContent = `${count} ${count === 1 ? t('entry') : t('entries')}`;
+    document.getElementById('threadBanner').classList.add('visible');
 
-    const connector = document.createElement('div');
-    connector.className = 'thread-narrative';
-
-    if (narrative) {
-      connector.innerHTML = `<span class="narrative-arrow">↓</span>${narrative}`;
-    } else {
-      const gap = parseInt(toYear) - parseInt(fromYear);
-      connector.innerHTML = `<span class="narrative-arrow">↓</span><em>${gap} ${t('yearsLater')}</em>`;
+    // Scroll to first matching entry
+    if (matchingEntries.length > 0) {
+      setTimeout(() => {
+        highlightAndScroll(matchingEntries[0]);
+      }, 300);
     }
-
-    // Insert after the current matching entry
-    matchingEntries[i].after(connector);
-  }
-
-  // Draw SVG thread lines
-  drawThreadLines(matchingEntries);
-
-  // Update all thread tags
-  document.querySelectorAll('.thread-tag').forEach(t => {
-    t.classList.toggle('active', t.dataset.thread === threadId);
-  });
-
-  // Show banner
-  const count = matchingEntries.length;
-  document.getElementById('threadName').textContent = formatThreadId(threadId);
-  document.getElementById('threadCount').textContent = `${count} ${count === 1 ? t('entry') : t('entries')}`;
-  document.getElementById('threadBanner').classList.add('visible');
-
-  // Scroll to first matching entry
-  if (matchingEntries.length > 0) {
-    setTimeout(() => {
-      highlightAndScroll(matchingEntries[0]);
-    }, 300);
-  }
+  }); // end rAF
 }
 
 function clearThread() {
