@@ -19,21 +19,22 @@
 - Fun fact callout boxes with accent border on expand
 - Audio narration podcasts per entry (EN + IT) — gpt-4o-mini-tts + period music
 - Multilingual support (EN/IT) with locale-aware content and audio
+- 🎲 Random entry button — picks a random visible entry, scrolls & highlights
+- ☕ Fresh entry badge — highlights most recently added entry, quick-jump button
+- 🗺️ Map view — entries plotted on Leaflet map with lat/lon coordinates
+- Geographic coordinates on all entries (location field with lat/lon/place)
 
 ## 📋 Backlog
 
 ### 🔍 Search & Discovery
 - [ ] Full-text search across all entries
-- [ ] "Surprise Me" / Random button
 - [ ] Era quick-jump (Antiquity / Medieval / Renaissance / Enlightenment / Modern / Contemporary)
 
 ### 🧵 Threads & Connections
 - [ ] Thread index page — dedicated view listing all threads with their connected entries
 - [ ] "Related entries" section — when expanded, show links to other entries sharing threads
 
-### 🗺️ Map View
-- [ ] Geographic dimension — each entry gets lat/lon coordinates
-- [ ] Map view toggle — entries plotted on a world map
+### 🗺️ Map View (enhancements)
 - [ ] Animated map — scrub through time, entries light up geographically
 
 ### 🔎 Context & Discovery
@@ -67,4 +68,4 @@
 
 ---
 
-*Last updated: 2026-02-24*
+*Last updated: 2026-02-25*
