@@ -281,6 +281,13 @@ MUSIC_POOL = {
         "start_time": 12.0,
         "tags": ["impressionist", "piano", "france", "dreamy", "nocturnal"],
     },
+    "ravel-pavane": {
+        "url": "https://archive.org/download/PavanePourUneInfanteDefunte/Pavane%20pour%20une%20infante%20defunte.mp3",
+        "filename": "ravel-pavane.mp3",
+        "description": "Ravel — Pavane pour une infante défunte (elegant, wistful piano)",
+        "start_time": 5.0,
+        "tags": ["impressionist", "piano", "france", "belle-epoque", "elegant"],
+    },
     "satie-gnossiennes": {
         "url": "https://archive.org/download/ThreeGnossiennesErikSatie/gnossiennes.mp3",
         "filename": "satie-gnossiennes.mp3",
@@ -309,7 +316,7 @@ MUSIC_SOURCES = {
     "1504-florence-duel-of-giants": {"pool_key": "renaissance-lute-fantasia"},
     "1648-munster-exhaustion-of-god": {"pool_key": "bach-organ-canonic"},
     "1784-europe-dare-to-know": {"pool_key": "beethoven-moonlight"},
-    "1889-paris-year-everything-changed": {"pool_key": "debussy-clair-de-lune"},
+    "1889-paris-year-everything-changed": {"pool_key": "ravel-pavane"},
     "1922-modernist-explosion": {"pool_key": "satie-gnossiennes"},
 }
 
