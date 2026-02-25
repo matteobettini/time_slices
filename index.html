@@ -2048,6 +2048,7 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
     currentLang = lang;
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+    stopAllPodcasts();
     updateUILabels();
     loadSlices();
   });
@@ -3032,6 +3033,7 @@ document.querySelectorAll('[data-map="1"]').forEach(btn => {
     document.querySelectorAll('.lang-btn').forEach(b => {
       b.classList.toggle('active', b.dataset.lang === currentLang);
     });
+    stopAllPodcasts();
     updateUILabels();
     loadSlices();
     // Repopulate map after slices load
