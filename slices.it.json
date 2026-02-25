@@ -1,5 +1,107 @@
 [
   {
+    "year": "-431",
+    "title": "Atene — Il filo dorato del rasoio",
+    "teaser": "Il Partenone risplende d'argento imperiale. Sulla scena, Medea uccide i propri figli. Nell'agorà, un filosofo spiega che il sole è una roccia incandescente — e la democrazia che ha costruito tutto questo vota per la guerra che la distruggerà.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Il <strong>Partenone</strong> si erge compiuto sull'Acropoli — iniziato nel 447 e dedicato nel 438 a.C., il programma scultoreo ultimato intorno al 432. È il capolavoro supremo dello stile <strong>alto-classico</strong>, il momento in cui l'arte greca rompe definitivamente con la rigidità arcaica verso un naturalismo idealizzato. <strong>Fidia</strong>, nominato da Pericle a sovrintendere l'intero programma dell'Acropoli, ha creato l'<em>Atena Parthenos</em> al suo interno: un colosso crisoelefantino di tredici metri — carne d'avorio, drappeggio d'oro — che consuma circa 1.140 kg d'oro, equivalente al reddito annuale dei tributi della città. L'edificio stesso è un manifesto di raffinatezza matematica: nessuna linea retta è davvero retta. Le colonne si gonfiano con l'<em>entasi</em>, lo stilobate si curva delicatamente verso l'alto, le colonne angolari sono inspessite e inclinate verso l'interno — decine di correzioni ottiche progettate per far <em>apparire</em> l'edificio perfetto all'occhio umano. L'architettura come epistemologia: la verità deve essere corretta per essere percepita come vera."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Alle <strong>Dionisie cittadine</strong> del 431 a.C., <strong>Euripide</strong> presenta <em>Medea</em> — e si classifica terzo. Euforione (figlio di Eschilo) vince; Sofocle arriva secondo. Eppure <em>Medea</em> sopravvive come la tragedia greca più rappresentata del Novecento. L'opera è una deflagrazione dentro le convenzioni della <strong>tragedia attica</strong>: una donna straniera, tradita dal marito greco, uccide i loro figli a sangue freddo e fugge impunita su un carro divino. Euripide le concede il <em>logos</em> — l'argomentazione razionale — che la cultura ateniese riservava ai cittadini maschi, e lo trasforma in un'arma. Nel frattempo <strong>Sofocle</strong>, che ha servito come <em>stratego</em> al fianco di Pericle, è all'apice della sua potenza — <em>Antigone</em> (c. 441) e <em>Edipo re</em> (c. 429) incorniciano questo momento, mettendo in scena la collisione tra coscienza individuale e legge civica."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>Anassagora</strong> di Clazomene, maestro e amico di Pericle, è stato recentemente processato per <em>asebeia</em> (empietà) ed espulso da Atene — probabilmente intorno al 437–432 a.C. La sua colpa: aver dichiarato che il sole non è un dio ma una massa di metallo rovente più grande del Peloponneso, e la luna un corpo terrestre che riflette luce presa in prestito. Il suo sistema filosofico pone il <em>Nous</em> (Mente) come principio ordinatore cosmico che ha messo in moto l'universo da una miscela originaria di tutte le cose — la prima chiara separazione tra un'intelligenza organizzatrice e la materia bruta. <strong>Socrate</strong>, ora trentottenne circa, è attivo nell'Agorà ma non ha pubblicato nulla; lo conosciamo solo attraverso testimonianze successive. <strong>Protagora</strong> di Abdera, in visita ad Atene, ha dichiarato che «l'uomo è la misura di tutte le cose» — l'affermazione più radicale di relativismo filosofico che il mondo antico produrrà."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Nel 431 a.C. inizia la <strong>guerra del Peloponneso</strong> — il conflitto che Tucidide definirà «il più grande sconvolgimento nella storia dei Greci». Sparta e i suoi alleati invadono l'Attica; la strategia di Pericle prevede di abbandonare le campagne, ritirarsi dietro le Lunghe Mura che collegano Atene al Pireo, e fare affidamento sulla supremazia navale finanziata dal tesoro della <strong>Lega di Delo</strong> — trasferito da Delo ad Atene nel 454 a.C., trasformando un'alleanza difensiva in un impero. La <em>demokratia</em> ateniese è al suo massimo radicalismo: l'Assemblea di tutti i cittadini maschi vota su guerra e pace, fissa le aliquote dei tributi e finanzia il programma edilizio che ha rifatto l'Acropoli. Ma questa democrazia esclude le donne, gli schiavi (forse un terzo della popolazione) e gli stranieri residenti (<em>meteci</em>) — incluso lo stesso Anassagora."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "L'<strong>oro del Partenone viene dai tributi</strong>; i tributi vengono dagli alleati sottomessi; gli alleati sono tenuti dalla forza navale finanziata dalle miniere d'argento del Laurio, lavorate dagli schiavi. Potere imperiale, arte democratica e lavoro non libero formano un unico circuito. Fidia è accusato di appropriazione indebita di quell'oro intorno al 432 a.C. — un attacco politico a Pericle attraverso i suoi associati, la stessa tattica usata contro Anassagora. Il filosofo che disse che il sole era una roccia e lo scultore che fece risplendere Atena con tributi rubati minacciavano entrambi l'immagine che la città aveva di sé, da angolazioni diverse. Sulla scena, la <em>Medea</em> di Euripide regge uno specchio a quell'immagine: Atene la civile, patrona della ragione, messa di fronte a una donna «barbara» che ragiona meglio dei Greci intorno a lei. La tragedia stessa è un'istituzione democratica — finanziata pubblicamente, rappresentata davanti alla cittadinanza riunita, giudicata per sorteggio — rendendola insieme arte e rituale civico, inseparabile dalla politica che commissiona il Partenone e vota per la guerra nello stesso giorno.",
+        "funFact": "La <em>Medea</em> di Euripide, oggi la tragedia greca più rappresentata al mondo, arrivò ultima alla sua prima — terza su tre. Il vincitore fu Euforione, ricordato oggi per esattamente una cosa: aver battuto Euripide."
+      }
+    },
+    "id": "431bce-athens-golden-razors-edge"
+  },
+  {
+    "year": "125",
+    "id": "125-rome-dome-of-all-things",
+    "title": "Roma — La cupola di tutte le cose",
+    "teaser": "Un imperatore che progetta edifici, un ex schiavo che insegna filosofia, e biografi che inventano l'arte occidentale del racconto di una vita. L'Impero romano al suo apice costruisce un tempio aperto al cielo — e uno stoicismo che sopravviverà all'impero stesso.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Il <strong>Pantheon</strong>, ricostruito sotto Adriano tra il 118 e il 128 d.C. circa, è il capolavoro supremo dell'<strong>architettura imperiale romana</strong> — e forse l'edificio più influente della storia occidentale. La sua cupola in calcestruzzo non armato, 43,3 metri di diametro, rimarrà la più grande al mondo per oltre tredici secoli, fino a quella di Brunelleschi a Firenze (1436). L'oculo — un'apertura di 9 metri verso il cielo — è l'unica fonte di luce, trasformando l'interno in una meridiana dove il tempo atmosferico e il cosmo entrano nello spazio costruito. Secondo <strong>Cassio Dione</strong>, Adriano progettò personalmente l'edificio, rifiutando i piani dell'architetto di Traiano, Apollodoro di Damasco. Nella <strong>Villa Adriana</strong> a Tivoli (c. 118–134), l'imperatore creò una vasta antologia architettonica — ricostruendo edifici da tutto l'impero: il Canopo d'Egitto, la Stoà Pecile di Atene, la Valle di Tempe. È architettura come memoria imperiale, un'enciclopedia costruita delle culture che Roma aveva assorbito. Dopo la morte per annegamento nel Nilo del suo amato <strong>Antinoo</strong> nel 130 d.C., Adriano commissionò quello che divenne il tipo ritrattistico più riprodotto del mondo antico — più statue superstiti di Antinoo che di quasi qualsiasi altra figura dell'antichità."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "<strong>Plutarco</strong> (m. c. 119 d.C.) aveva appena completato le <em>Vite parallele</em> — quarantasei biografie che affiancavano uno statista greco a uno romano (Teseo con Romolo, Alessandro con Cesare), inventando il metodo della <strong>biografia comparata</strong> che avrebbe plasmato la scrittura biografica da Shakespeare a Napoleone. <strong>Svetonio</strong> (c. 69–122 d.C.), che servì come <em>ab epistulis</em> (segretario della corrispondenza) di Adriano fino al licenziamento intorno al 122, pubblicò le <em>Vite dei Cesari</em> con il loro scandaloso accesso agli archivi imperiali — la biografia come rivelazione del carattere privato dietro il potere pubblico. <strong>Giovenale</strong> (attivo c. 100–127) stava scrivendo le sue ultime <em>Satire</em>, perfezionando la tradizione della <strong>satira in versi romana</strong> — il genere che Roma considerava sua invenzione (<em>satura tota nostra est</em>, come affermava Quintiliano). La sua espressione <em>panem et circenses</em> sarebbe diventata la formula perenne della pacificazione politica. Era anche l'epoca della <strong>Seconda Sofistica</strong> — una rinascita letteraria greca sotto il dominio romano, favorita dal filellenismo di Adriano, in cui retori come Favorino tenevano elaborate orazioni come intrattenimento e prova intellettuale."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>Epitteto</strong> (c. 50–135 d.C.), ex schiavo reso storpio dal suo padrone, insegnava lo <strong>stoicismo tardivo</strong> nella sua scuola a Nicopoli, nel nord-ovest della Grecia. Il suo allievo <strong>Arriano</strong> — al tempo stesso console romano, comandante militare e storico — trascrisse i suoi insegnamenti orali come <em>Diatribe</em> e li distillò nell'<em>Enchiridion</em> (Manuale). La dottrina centrale: le uniche cose realmente sotto il nostro controllo sono i nostri giudizi e le nostre scelte; tutto ciò che è esterno — salute, ricchezza, reputazione, persino il corpo — appartiene alla fortuna. È filosofia come pratica e non come teoria, una disciplina della libertà interiore elaborata da un uomo che aveva conosciuto la schiavitù letterale. La catena di trasmissione è documentata con precisione: <strong>Marco Aurelio</strong>, scrivendo i suoi <em>Pensieri</em> cinquant'anni dopo, annovera Epitteto tra i suoi più grandi debiti intellettuali (Libro I) — gli insegnamenti stoici di uno schiavo liberato che raggiungono l'uomo più potente della terra attraverso la penna di Arriano."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "L'<strong>Impero romano</strong> sotto Adriano (r. 117–138 d.C.) si trovava al suo apice amministrativo e demografico — fra i 55 e i 70 milioni di persone su tre continenti, governati da una rete stradale di 80.000 chilometri e una burocrazia professionale. Adriano rovesciò la politica espansionista del predecessore Traiano, ritirandosi dalla Mesopotamia e consolidando le frontiere. Il <strong>Vallo di Adriano</strong> in Britannia (iniziato nel 122 d.C.) incarnava questo passaggio dalla conquista al consolidamento — non una muraglia-fortezza ma una frontiera controllata, che gestiva il movimento anziché bloccarlo. Era l'epoca dei <strong>Cinque Buoni Imperatori</strong> (da Nerva a Marco Aurelio), il periodo che Gibbon avrebbe poi definito «il periodo della storia del mondo in cui la condizione del genere umano fu più felice e prospera» — un giudizio che escludeva i milioni di schiavi dell'impero, ma coglieva la stabilità amministrativa della <em>Pax Romana</em> al suo apice."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "I legami documentati passano qui attraverso <strong>persone e istituzioni precise</strong>. Svetonio servì come segretario personale di Adriano fino al 122 circa, garantendo al biografo accesso diretto agli archivi imperiali che sfruttò per le <em>Vite dei Cesari</em> — lo storico era letteralmente dentro il potere che descriveva. Arriano, che trascrisse gli insegnamenti di Epitteto, non era un semplice amanuense ma un console romano e governatore provinciale — la stessa classe amministrativa imperiale che costruì il Pantheon consumava e trasmetteva la filosofia stoica. Adriano stesso era il nodo centrale: un imperatore che progettò personalmente il Pantheon (secondo Cassio Dione), promosse la cultura letteraria greca attraverso la Seconda Sofistica, e creò nella sua Villa di Tivoli una sintesi costruita delle civiltà assorbite dall'impero. Le <em>Vite parallele</em> di Plutarco, confrontando esemplari greci e romani, fornivano la cornice intellettuale per esattamente quella sintesi greco-romana che Adriano perseguiva in architettura e in politica. La perfezione matematica del Pantheon — altezza uguale al diametro, cupola che è un emisfero perfetto — non era ornamento casuale ma un'affermazione leggibile per una cultura intrisa di cosmologia stoica, dove l'universo era inteso come razionalmente ordinato.",
+        "funFact": "Adriano mantenne l'iscrizione originale che attribuiva il tempio ad Agrippa — «M·AGRIPPA·L·F·COS·TERTIVM·FECIT» — sulla facciata del Pantheon interamente ricostruito. Per secoli, gli studiosi credettero che l'edificio di Agrippa fosse sopravvissuto. Solo l'analisi moderna dei bolli laterizi ha provato che l'intera struttura è di Adriano. Un imperatore che nascose il proprio capolavoro dietro il nome di un altro."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Pantheon_(Roma)",
+        "title": "Pantheon (Roma) — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Adriano",
+        "title": "Adriano — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Epitteto",
+        "title": "Epitteto — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Plutarco",
+        "title": "Plutarco — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Seconda_sofistica",
+        "title": "Seconda sofistica — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Villa_Adriana",
+        "title": "Villa Adriana — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/125-pantheon-dome.jpg",
+      "caption": "Interno della cupola del Pantheon con il suo oculo, Roma",
+      "attribution": "Livioandronico2013, CC BY-SA 4.0, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "classical-revival",
+      "rationalism",
+      "stoicism",
+      "imperial-architecture",
+      "biography"
+    ],
+    "location": {
+      "lat": 41.8986,
+      "lon": 12.4769,
+      "place": "Rome"
+    },
+    "addedDate": "2026-02-25"
+  },
+  {
     "year": "762",
     "title": "Baghdad — La città rotonda della ragione",
     "teaser": "Un califfo costruisce un cerchio perfetto nel deserto. Al suo interno, la filosofia greca incontra la poesia araba e l'amministrazione persiana — si accende l'Età d'oro islamica.",

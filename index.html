@@ -1172,6 +1172,11 @@ const I18N = {
 };
 
 function t(key) { return I18N[currentLang][key] || I18N.en[key] || key; }
+function formatYear(y) {
+  const n = parseInt(y);
+  if (n < 0) return currentLang === 'it' ? `${Math.abs(n)} a.C.` : `${Math.abs(n)} BCE`;
+  return String(y);
+}
 const THREAD_LABELS = {
   en: {
     'translation-movement': 'Translation as Power',
@@ -1202,6 +1207,9 @@ const THREAD_LABELS = {
     'westphalian-sovereignty': 'Westphalian Sovereignty',
     'dutch-golden-age': 'Dutch Golden Age',
     'enlightenment': 'Enlightenment',
+    'stoicism': 'Stoicism',
+    'imperial-architecture': 'Imperial Architecture',
+    'biography': 'Biography',
   },
   it: {
     'translation-movement': 'Traduzione come potere',
@@ -1232,6 +1240,9 @@ const THREAD_LABELS = {
     'westphalian-sovereignty': 'Sovranità vestfaliana',
     'dutch-golden-age': 'Secolo d\'oro olandese',
     'enlightenment': 'Illuminismo',
+    'stoicism': 'Stoicismo',
+    'imperial-architecture': 'Architettura imperiale',
+    'biography': 'Biografia',
   }
 };
 
@@ -1323,7 +1334,7 @@ function renderSlice(slice, isFresh = false) {
       ${podcastBtnHtml}
       ${imageInlineHtml}
       <div class="card-body">
-        <div class="card-year">${slice.year}${mapLink}</div>
+        <div class="card-year">${formatYear(slice.year)}${mapLink}</div>
         <div class="card-title">${slice.title}</div>
         <div class="card-teaser">${slice.teaser}</div>
         <div class="card-threads">${threads}</div>
@@ -1401,7 +1412,7 @@ function renderSlice(slice, isFresh = false) {
 function renderMarker(marker) {
   const el = document.createElement('div');
   el.className = 'marker';
-  const yearStr = marker.year < 0 ? `${Math.abs(marker.year)} BC` : marker.year === 0 ? '0' : marker.year;
+  const yearStr = formatYear(marker.year);
   const labelText = typeof marker.label === 'object' ? (marker.label[currentLang] || marker.label.en) : marker.label;
   el.innerHTML = `
     <div class="marker-line"></div>
@@ -1423,6 +1434,11 @@ const THREAD_NARRATIVES = {
       '1889→1922': 'Nietzsche declared God dead in 1882. By 1922, the void he predicted had swallowed certainty itself — Eliot\'s <em>Waste Land</em> mapped the wreckage, while logical positivism tried to rebuild meaning from scratch.',
     },
     'rationalism': {
+      '-431→125': 'Anaxagoras argued that a rational principle (<em>Nous</em>) governed the cosmos rather than the caprice of gods. Five centuries later, the Stoics — working from this same Greek rationalist tradition, filtered through Aristotle and the early Stoa — taught that the universe was structured by <em>logos</em>, a rational order accessible to human reason. Epictetus, teaching in Nicopolis around 125 CE, inherited this lineage directly: Stoicism emerged from the Athenian philosophical milieu that Anaxagoras helped create, passed through Zeno of Citium (who studied at Plato\'s Academy) and Chrysippus. The Pantheon\'s mathematical perfection — its dome a geometrically exact hemisphere — is this rationalist conviction expressed in built form.',
+      '-431→762': 'Anaxagoras\'s <em>Nous</em> — a cosmic Mind that organises matter through reason — is one of the Greek ideas that Baghdad\'s translators preserved. The Mu\'tazila inherited a twelve-century-old argument: that rational inquiry, not tradition, reveals truth. The texts Hunayn ibn Ishaq translated into Arabic were produced in the intellectual culture Anaxagoras helped create. The link is real but indirect — mediated through Aristotle and the Neoplatonists, not through Anaxagoras directly.',
+      '-431→1648': 'Anaxagoras declared the sun a mass of hot metal and was tried for impiety; Descartes published his cosmology and prudently moved to the Netherlands. Twenty-one centuries apart, both insisted that reason could explain the natural world without recourse to gods — and both understood the danger. The Cartesian tradition inherited Greek natural philosophy through the Arabic-Latin translation chain that begins with the very texts Periclean Athens produced.',
+      '-431→1784': 'When Kant wrote <em>sapere aude</em> — dare to know — he was echoing, through many intermediaries, the stance Anaxagoras took when he explained the sun as matter rather than divinity. Kant studied the Aristotelian tradition directly, and Aristotle studied at Plato\'s Academy, founded one generation after Anaxagoras\'s Athenian period. The lineage is traceable through documented teacher-student chains, though Kant himself looked to Descartes and Leibniz, not to the Pre-Socratics.',
+      '125→762': 'The Stoic rationalism that Epictetus taught — the universe as an intelligible order governed by <em>logos</em> — was transmitted alongside Aristotelian and Neoplatonic texts through the late antique world. When the Abbasid translators in Baghdad rendered Greek philosophy into Arabic, the rational cosmology of the Stoics was part of the intellectual atmosphere they inherited, though they translated Aristotle and Plato more systematically. The Mu\'tazila\'s insistence on rational theology drew from the same deep well of Greek rationalism that Epictetus exemplified, mediated through the Syriac-speaking Christian scholars (Nestorians, Jacobites) who preserved Greek philosophical texts in the centuries between Rome\'s decline and Baghdad\'s rise.',
       '762→1648': 'The Mu\'tazila argued that reason could determine religious truth; eight centuries later, Descartes used reason to bypass religious truth entirely. Baghdad\'s translation movement preserved the Greek rationalism that Descartes inherited — the cogito\'s ancestors spoke Arabic.',
       '762→1784': 'The transmission chain is real but long: Baghdad\'s translators (Hunayn ibn Ishaq and others) rendered Aristotle and Plato into Arabic; these passed through al-Andalus to Latin Europe via translators like Gerard of Cremona in Toledo (12th c.). Kant studied Aristotelian logic and engaged directly with the rationalist tradition that Descartes and Leibniz had built on these recovered texts. But Kant never cited the Mu\'tazila — the parallel between their rational theology and his Enlightenment project is a historiographical observation, not a documented influence.',
       '1648→1784': 'Kant explicitly engaged with Descartes\' rationalism: the <em>Critique of Pure Reason</em> (1781) directly addresses and transforms the Cartesian project of grounding knowledge in reason alone. The link is documented and acknowledged. The political parallel — Westphalia\'s principle of state sovereignty removed confessional allegiance as grounds for war; Kant\'s essay demanded that individuals exercise reason without deference to authority — reflects a broader trajectory from religious to secular foundations of legitimacy, though the two events are not causally connected.',
@@ -1434,10 +1450,23 @@ const THREAD_NARRATIVES = {
       '1347→1922': 'The plague shattered medieval unity — Church authority, feudal order, demographic stability, all broken at once. Six centuries later, modernism made fragmentation into an art form, shattering narrative, painting, and language with the same democratic indifference.',
     },
     'classical-revival': {
+      '-431→125': 'Rome absorbed Greek art not as imitation but as imperial inheritance. The Parthenon expressed democratic Athens\'s civic ideals through mathematical proportion; Hadrian\'s Pantheon translated the same mathematical ambition — dome diameter equalling height, a perfect hemisphere — into the language of imperial universality. The transmission was direct: Roman architects studied Greek buildings firsthand, and Hadrian\'s Villa at Tivoli explicitly recreated Greek structures (the Stoa Poikile, the Vale of Tempe). Meanwhile, Plutarch\'s <em>Parallel Lives</em> provided the intellectual framework — Greek and Roman exemplars compared side by side, the classical tradition understood as a living inheritance rather than a lost age.',
+      '-431→1504': 'This is the origin. When Florentine humanists spoke of recovering classical antiquity, they meant — ultimately — the Periclean achievement: the synthesis of mathematical proportion, idealised human form, and civic purpose that Phidias embodied. The recovery was indirect, filtered through Roman copies and Byzantine manuscripts, but the Parthenon\'s sculptural programme set the standard that Michelangelo and Leonardo measured themselves against. Ghiberti\'s <em>Commentarii</em> explicitly traced artistic lineage back to Phidias.',
+      '-431→1784': 'Winckelmann\'s <em>Thoughts on the Imitation of Greek Works</em> (1755) — the founding text of Neoclassicism — argued that Greek art achieved \"noble simplicity and quiet grandeur\" because Greek society achieved freedom. He was describing, and idealising, Periclean Athens. David\'s generation absorbed this vision directly: the republican virtues they painted in classical dress were imagined as Athenian and Spartan virtues, read through Plutarch but aspiring to the visual language of the Parthenon.',
+      '125→1504': 'The Pantheon survived the fall of Rome because Pope Boniface IV consecrated it as a church in 609. Florentine architects studied it obsessively: Brunelleschi travelled to Rome to measure its dome before designing his own for the Florence Cathedral (1420–36), which finally surpassed its 43.3-metre span. The Roman concrete techniques had been lost, but the ambition — and the physical building — endured. Renaissance humanism revived not just Greek ideals but their Roman institutional expression: the libraries, the patronage networks, the monumental architecture that Hadrian exemplified.',
+      '125→1784': 'Neoclassicism drew more heavily on Rome than Greece — because so much more Roman architecture survived. The Pantheon was the most studied building in Europe by the 18th century; its portico became the template for institutions from the British Museum to the Panthéon in Paris. When Winckelmann idealised Greek art, he was largely looking at Roman copies. David\'s classical vocabulary was Roman classical vocabulary — togas, fasces, Republican virtue — mediated through what imperial Rome had preserved, built, and transmitted.',
       '1504→1784': 'David won the Prix de Rome in 1774 and spent five years in Italy studying Raphael, Michelangelo, and Roman antiquities firsthand. The lineage is direct and documented: Renaissance artists recovered classical forms; David inherited them through the Académie royale\'s curriculum, which made Rome pilgrimage mandatory. But where Renaissance Florence used antiquity as a language of idealised beauty, David\'s Neoclassicism — shaped by Winckelmann\'s writings on Greek art as moral exemplar — turned the same classical vocabulary toward republican virtue and political duty.',
     },
     'art-and-power': {
+      '-431→1504': 'Pericles diverted the Delian League treasury to fund the Parthenon; Lorenzo de\' Medici diverted bank profits to fund Florence\'s artistic programme. In both cases, economic dominance was transmuted into cultural authority, and the patrons\' political opponents attacked the expenditure as illegitimate. Phidias was charged with embezzlement; the Medici were exiled in 1494. The pattern — power expressed through beauty, challenged through accounting — repeats across two millennia.',
+      '-431→1784': 'The Parthenon was civic art funded by imperial tribute, legitimising Athenian democracy through aesthetic splendour. David\'s <em>Oath of the Horatii</em>, commissioned by the French Crown, was subverted by its creator into a republican manifesto. Both demonstrate art\'s capacity to serve and undermine power simultaneously — but where Athens\' democratic assembly voted the funds openly, David\'s patron unwittingly funded his own ideological opposition.',
       '1504→1784': 'The Medici commissioned art to project civic power and cultural prestige — Michelangelo\'s <em>David</em> was a public statement by the Florentine Republic. David\'s <em>Oath</em> was commissioned by the Crown (via d\'Angiviller) as moralising history painting, but the artist subverted the brief: audiences read it as a call to republican sacrifice against monarchy. The shift from Renaissance patron-as-author to Enlightenment artist-as-ideologue is visible in this single commission — the state paid for its own critique.',
+    },
+    'geometry-as-ideology': {
+      '-431→762': 'The Parthenon\'s optical refinements — entasis, stylobate curvature, column inclination — express a Greek conviction that mathematical order underlies reality, and that human craft can perfect what nature approximates. Thirteen centuries later, al-Mansur\'s Round City of Baghdad embodied the same conviction in urban form: a perfect circle with geometry dictating theology. Both are built environments that make philosophical claims about the cosmos through proportion, though the Islamic builders drew on Persian and Mesopotamian traditions as much as Greek ones.',
+    },
+    'cosmopolitanism': {
+      '-431→762': 'Periclean Athens drew thinkers from across the Greek world — Anaxagoras from Clazomenae in Ionia, Protagoras from Abdera in Thrace, Hippodamus from Miletus — and synthesised their ideas into something new. Al-Mansur\'s Baghdad replicated this pattern at larger scale: scholars from Syria, Persia, India, and Central Asia converged on a single city designed to attract and organise knowledge. Both cities understood that intellectual power requires cosmopolitan intake — and both enforced political hierarchies that contradicted their intellectual openness.',
     },
   },
   it: {
@@ -1450,6 +1479,11 @@ const THREAD_NARRATIVES = {
       '1889→1922': 'Nietzsche dichiarò morto Dio nel 1882. Entro il 1922, il vuoto che aveva predetto aveva inghiottito la certezza stessa — <em>La terra desolata</em> di Eliot ne mappava le macerie, mentre il positivismo logico tentava di ricostruire il significato da zero.',
     },
     'rationalism': {
+      '-431→125': 'Anassagora sosteneva che un principio razionale (<em>Nous</em>) governasse il cosmo piuttosto che il capriccio degli dei. Cinque secoli dopo, gli Stoici — partendo dalla stessa tradizione razionalista greca, filtrata attraverso Aristotele e la prima Stoa — insegnavano che l\'universo era strutturato dal <em>logos</em>, un ordine razionale accessibile alla ragione umana. Epitteto, che insegnava a Nicopoli intorno al 125 d.C., ereditava direttamente questa genealogia: lo stoicismo emerse dall\'ambiente filosofico ateniese che Anassagora contribuì a creare, passando attraverso Zenone di Cizio (che studiò all\'Accademia di Platone) e Crisippo. La perfezione matematica del Pantheon — la cupola come emisfero geometricamente esatto — è questa convinzione razionalista espressa in forma costruita.',
+      '-431→762': 'Il <em>Nous</em> di Anassagora — una Mente cosmica che organizza la materia attraverso la ragione — è una delle idee greche che i traduttori di Baghdad preservarono. I Mu\'tazila ereditarono un argomento vecchio di dodici secoli: che l\'indagine razionale, non la tradizione, rivela la verità. I testi che Hunayn ibn Ishaq tradusse in arabo furono prodotti nella cultura intellettuale che Anassagora contribuì a creare. Il legame è reale ma indiretto — mediato attraverso Aristotele e i neoplatonici, non attraverso Anassagora direttamente.',
+      '-431→1648': 'Anassagora dichiarò il sole una massa di metallo rovente e fu processato per empietà; Cartesio pubblicò la sua cosmologia e prudentemente si trasferì nei Paesi Bassi. Ventuno secoli di distanza, entrambi insistettero che la ragione potesse spiegare il mondo naturale senza ricorso agli dei — ed entrambi ne compresero il pericolo. La tradizione cartesiana ereditò la filosofia naturale greca attraverso la catena di traduzione arabo-latina che inizia con i testi stessi prodotti dall\'Atene di Pericle.',
+      '-431→1784': 'Quando Kant scrisse <em>sapere aude</em> — osa sapere — echeggiava, attraverso molti intermediari, la posizione che Anassagora assunse quando spiegò il sole come materia piuttosto che divinità. Kant studiò la tradizione aristotelica direttamente, e Aristotele studiò all\'Accademia di Platone, fondata una generazione dopo il periodo ateniese di Anassagora. La genealogia è tracciabile attraverso catene documentate maestro-allievo, sebbene Kant stesso guardasse a Cartesio e Leibniz, non ai Presocratici.',
+      '125→762': 'Il razionalismo stoico insegnato da Epitteto — l\'universo come ordine intelligibile governato dal <em>logos</em> — fu trasmesso insieme ai testi aristotelici e neoplatonici attraverso il mondo tardoantico. Quando i traduttori abbasidi a Baghdad resero la filosofia greca in arabo, la cosmologia razionale degli Stoici faceva parte dell\'atmosfera intellettuale che avevano ereditato, sebbene traducessero Aristotele e Platone più sistematicamente. L\'insistenza dei Mu\'tazila sulla teologia razionale attingeva allo stesso pozzo profondo del razionalismo greco che Epitteto esemplificava, mediato attraverso gli studiosi cristiani di lingua siriaca (Nestoriani, Giacobiti) che preservarono i testi filosofici greci nei secoli tra il declino di Roma e l\'ascesa di Baghdad.',
       '762→1648': 'I Mu\'tazila sostenevano che la ragione potesse determinare la verità religiosa; otto secoli dopo, Cartesio usò la ragione per aggirare del tutto la verità religiosa. Il movimento di traduzione di Baghdad preservò il razionalismo greco che Cartesio ereditò — gli antenati del cogito parlavano arabo.',
       '762→1784': 'La catena di trasmissione è reale ma lunga: i traduttori di Baghdad (Hunayn ibn Ishaq e altri) resero Aristotele e Platone in arabo; questi passarono attraverso al-Andalus all\'Europa latina tramite traduttori come Gerardo da Cremona a Toledo (XII sec.). Kant studiò la logica aristotelica e si confrontò direttamente con la tradizione razionalista che Cartesio e Leibniz avevano costruito su quei testi recuperati. Ma Kant non citò mai i Mu\'tazila — il parallelo tra la loro teologia razionale e il suo progetto illuminista è un\'osservazione storiografica, non un\'influenza documentata.',
       '1648→1784': 'Kant si confrontò esplicitamente con il razionalismo cartesiano: la <em>Critica della ragion pura</em> (1781) affronta e trasforma direttamente il progetto cartesiano di fondare la conoscenza nella sola ragione. Il legame è documentato e riconosciuto. Il parallelo politico — il principio di sovranità statale di Vestfalia rimosse l\'appartenenza confessionale come casus belli; il saggio di Kant esigeva che gli individui esercitassero la ragione senza deferenza all\'autorità — riflette una traiettoria più ampia dalle fondamenta religiose a quelle laiche della legittimità, anche se i due eventi non sono causalmente connessi.',
@@ -1461,10 +1495,23 @@ const THREAD_NARRATIVES = {
       '1347→1922': 'La peste frantumò l\'unità medievale — autorità della Chiesa, ordine feudale, stabilità demografica, tutto spezzato in una volta. Sei secoli dopo, il modernismo fece della frammentazione una forma d\'arte, frantumando narrazione, pittura e linguaggio con la stessa democratica indifferenza.',
     },
     'classical-revival': {
+      '-431→125': 'Roma assorbì l\'arte greca non come imitazione ma come eredità imperiale. Il Partenone esprimeva gli ideali civici dell\'Atene democratica attraverso la proporzione matematica; il Pantheon di Adriano tradusse la stessa ambizione matematica — diametro della cupola pari all\'altezza, un emisfero perfetto — nel linguaggio dell\'universalità imperiale. La trasmissione fu diretta: gli architetti romani studiavano gli edifici greci dal vero, e la Villa Adriana a Tivoli ricreava esplicitamente strutture greche (la Stoà Pecile, la Valle di Tempe). Intanto, le <em>Vite parallele</em> di Plutarco fornivano la cornice intellettuale — esemplari greci e romani a confronto, la tradizione classica intesa come eredità viva piuttosto che come epoca perduta.',
+      '-431→1504': 'Questa è l\'origine. Quando gli umanisti fiorentini parlavano di recuperare l\'antichità classica, intendevano — in ultima istanza — la conquista periclea: la sintesi di proporzione matematica, forma umana idealizzata e scopo civico che Fidia incarnava. Il recupero fu indiretto, filtrato attraverso copie romane e manoscritti bizantini, ma il programma scultoreo del Partenone fissò lo standard rispetto al quale Michelangelo e Leonardo si misuravano. I <em>Commentarii</em> di Ghiberti tracciavano esplicitamente la genealogia artistica fino a Fidia.',
+      '-431→1784': 'Le <em>Considerazioni sull\'imitazione delle opere greche</em> di Winckelmann (1755) — il testo fondante del Neoclassicismo — sostenevano che l\'arte greca raggiungesse una «nobile semplicità e quieta grandezza» perché la società greca aveva raggiunto la libertà. Descriveva, idealizzandola, l\'Atene di Pericle. La generazione di David assorbì questa visione direttamente: le virtù repubblicane che dipingevano in vesti classiche erano immaginate come virtù ateniesi e spartane, lette attraverso Plutarco ma aspirando al linguaggio visivo del Partenone.',
+      '125→1504': 'Il Pantheon sopravvisse alla caduta di Roma perché papa Bonifacio IV lo consacrò come chiesa nel 609. Gli architetti fiorentini lo studiarono ossessivamente: Brunelleschi si recò a Roma per misurarne la cupola prima di progettare la propria per la Cattedrale di Firenze (1420–36), che infine ne superò la luce di 43,3 metri. Le tecniche costruttive romane in calcestruzzo erano andate perdute, ma l\'ambizione — e l\'edificio fisico — resistettero. L\'umanesimo rinascimentale riprese non solo gli ideali greci ma la loro espressione istituzionale romana: le biblioteche, le reti di mecenatismo, l\'architettura monumentale che Adriano aveva esemplificato.',
+      '125→1784': 'Il Neoclassicismo attinse a Roma più che alla Grecia — perché molto più dell\'architettura romana era sopravvissuto. Il Pantheon era l\'edificio più studiato d\'Europa nel XVIII secolo; il suo portico divenne il modello per istituzioni dal British Museum al Panthéon di Parigi. Quando Winckelmann idealizzava l\'arte greca, guardava in gran parte copie romane. Il vocabolario classico di David era un vocabolario classico romano — toghe, fasci, virtù repubblicana — mediato da ciò che la Roma imperiale aveva preservato, costruito e trasmesso.',
       '1504→1784': 'David vinse il Prix de Rome nel 1774 e trascorse cinque anni in Italia studiando Raffaello, Michelangelo e le antichità romane dal vivo. La genealogia è diretta e documentata: gli artisti rinascimentali recuperarono le forme classiche; David le ereditò attraverso il curriculum dell\'Académie royale, che rendeva obbligatorio il pellegrinaggio a Roma. Ma dove la Firenze rinascimentale usava l\'antichità come linguaggio di bellezza idealizzata, il Neoclassicismo di David — plasmato dagli scritti di Winckelmann sull\'arte greca come exemplum morale — volse lo stesso vocabolario classico verso la virtù repubblicana e il dovere politico.',
     },
     'art-and-power': {
+      '-431→1504': 'Pericle dirottò il tesoro della Lega di Delo per finanziare il Partenone; Lorenzo de\' Medici dirottò i profitti bancari per finanziare il programma artistico di Firenze. In entrambi i casi, il dominio economico fu trasmutato in autorità culturale, e gli oppositori politici dei mecenati contestarono la spesa come illegittima. Fidia fu accusato di appropriazione indebita; i Medici furono esiliati nel 1494. Lo schema — potere espresso attraverso la bellezza, contestato attraverso la contabilità — si ripete lungo due millenni.',
+      '-431→1784': 'Il Partenone era arte civica finanziata da tributi imperiali, che legittimava la democrazia ateniese attraverso lo splendore estetico. Il <em>Giuramento degli Orazi</em> di David, commissionato dalla Corona francese, fu sovvertito dal suo creatore in un manifesto repubblicano. Entrambi dimostrano la capacità dell\'arte di servire e minare il potere simultaneamente — ma dove l\'assemblea democratica di Atene votò i fondi apertamente, il mecenate di David finanziò involontariamente la propria opposizione ideologica.',
       '1504→1784': 'I Medici commissionavano arte per proiettare potere civico e prestigio culturale — il <em>David</em> di Michelangelo era una dichiarazione pubblica della Repubblica fiorentina. Il <em>Giuramento</em> di David fu commissionato dalla Corona (tramite d\'Angiviller) come pittura storica moralizzante, ma l\'artista sovvertì l\'incarico: il pubblico lo lesse come un appello al sacrificio repubblicano contro la monarchia. Il passaggio dal mecenate-autore del Rinascimento all\'artista-ideologo dell\'Illuminismo è visibile in questa singola commissione — lo stato pagò la propria critica.',
+    },
+    'geometry-as-ideology': {
+      '-431→762': 'Le correzioni ottiche del Partenone — entasi, curvatura dello stilobate, inclinazione delle colonne — esprimono la convinzione greca che l\'ordine matematico sia il fondamento della realtà, e che l\'arte umana possa perfezionare ciò che la natura approssima. Tredici secoli dopo, la Città Rotonda di al-Mansur a Baghdad incarnava la stessa convinzione in forma urbana: un cerchio perfetto con la geometria che detta la teologia. Entrambi sono ambienti costruiti che avanzano pretese filosofiche sul cosmo attraverso la proporzione, sebbene i costruttori islamici attingessero a tradizioni persiane e mesopotamiche tanto quanto a quelle greche.',
+    },
+    'cosmopolitanism': {
+      '-431→762': 'L\'Atene di Pericle attraeva pensatori da tutto il mondo greco — Anassagora da Clazomene in Ionia, Protagora da Abdera in Tracia, Ippodamo da Mileto — e ne sintetizzava le idee in qualcosa di nuovo. La Baghdad di al-Mansur replicò questo schema su scala maggiore: studiosi da Siria, Persia, India e Asia centrale convergevano su una singola città progettata per attrarre e organizzare il sapere. Entrambe le città compresero che il potere intellettuale richiede un apporto cosmopolita — ed entrambe imposero gerarchie politiche che contraddicevano la loro apertura intellettuale.',
     },
   },
 };
@@ -2068,8 +2115,8 @@ function createMapMarker(slice) {
     html: `<div class="map-marker-wrap">
              <div class="map-marker" data-year="${slice.year}"></div>
              <div class="map-marker-ring"></div>
-             <div class="map-marker-label">${slice.year} · ${slice.location.place}</div>
-             <div class="map-marker-year">${slice.year}</div>
+             <div class="map-marker-label">${formatYear(slice.year)} · ${slice.location.place}</div>
+             <div class="map-marker-year">${formatYear(slice.year)}</div>
            </div>`,
     iconSize: [40, 40],
     iconAnchor: [20, 20],
@@ -2100,7 +2147,7 @@ function createMapMarker(slice) {
     </div>` : '';
 
   popup.setContent(`
-    <div class="map-popup-year">${slice.year}</div>
+    <div class="map-popup-year">${formatYear(slice.year)}</div>
     <div class="map-popup-title">${slice.title}</div>
     <div class="map-popup-teaser">${slice.teaser}</div>
     ${podcastHtml}

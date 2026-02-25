@@ -36,6 +36,16 @@ TTS_MODEL = "gpt-4o-mini-tts"
 
 # English voices
 VOICE_MAP_EN = {
+    # 431 BCE Athens: oratorical, classical, measured — sage for philosophical clarity
+    "431bce-athens-golden-razors-edge": {
+        "voice": "sage",
+        "instructions": "Speak as an orator addressing an Athenian assembly — measured, precise, with the gravity of someone describing the apex of a civilisation that is about to destroy itself. Classical poise with an undercurrent of tragic irony.",
+    },
+    # 125 Rome: authoritative, architectural — onyx for deep resonance and gravitas
+    "125-rome-dome-of-all-things": {
+        "voice": "onyx",
+        "instructions": "Speak as a historian contemplating an empire at its peak — deep, measured, with the authority of carved stone. Let the weight of Roman engineering and Stoic philosophy resonate. Unhurried, as if the dome itself has all the time in the world.",
+    },
     # 762 Baghdad: warm, storytelling — fable has a narrative quality
     "762-baghdad-round-city-of-reason": {
         "voice": "fable",
@@ -75,6 +85,14 @@ VOICE_MAP_EN = {
 
 # Italian voices — same voice palette but with Italian-language style instructions
 VOICE_MAP_IT = {
+    "431bce-athens-golden-razors-edge": {
+        "voice": "sage",
+        "instructions": "Parla in italiano come un oratore che si rivolge a un'assemblea ateniese — misurato, preciso, con la gravità di chi descrive l'apice di una civiltà che sta per distruggersi. Compostezza classica con una corrente sotterranea di ironia tragica.",
+    },
+    "125-rome-dome-of-all-things": {
+        "voice": "onyx",
+        "instructions": "Parla in italiano come uno storico che contempla un impero al suo apice — voce profonda, misurata, con l'autorità della pietra scolpita. Lascia che il peso dell'ingegneria romana e della filosofia stoica risuoni. Senza fretta, come se la cupola stessa avesse tutto il tempo del mondo.",
+    },
     "762-baghdad-round-city-of-reason": {
         "voice": "fable",
         "instructions": "Parla in italiano con il tono di un cantastorie che narra una storia antica. Ritmo misurato, un senso di meraviglia nella voce. Questa è la storia di un'età dell'oro.",
@@ -109,6 +127,16 @@ VOICE_MAPS = {"en": VOICE_MAP_EN, "it": VOICE_MAP_IT}
 
 # Background music sources from Internet Archive (public domain)
 MUSIC_SOURCES = {
+    "431bce-athens-golden-razors-edge": {
+        "url": "https://archive.org/download/Seikilos_epitaph_2026/01.mp3",
+        "filename": "greek-lyre-seikilos.mp3",
+        "description": "Greek lyre — Seikilos Epitaph reconstruction",
+    },
+    "125-rome-dome-of-all-things": {
+        "url": "https://archive.org/download/c-2345-6-respighi-ancient-airs-suite-2-iii/C2345-6%20Respighi%20Ancient%20Airs%20Suite%202%20(ii).mp3",
+        "filename": "respighi-ancient-airs.mp3",
+        "description": "Respighi Ancient Airs and Dances — Danza rustica (1930)",
+    },
     "762-baghdad-round-city-of-reason": {
         "url": "https://archive.org/download/gulezyan-aram-1976-exotic-music-of-the-oud-lyrichord-side-a-archive-01/Gulezyan%2C%20Aram%20%281976%29%20-%20Exotic%20Music%20of%20the%20Oud%20Lyrichord%2C%20side%20A%20%28archive%29-01.mp3",
         "filename": "oud-arabic.mp3",
