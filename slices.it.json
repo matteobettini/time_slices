@@ -69,7 +69,8 @@
       "lon": 44.3661,
       "place": "Baghdad"
     },
-    "addedDate": "2026-02-24"
+    "addedDate": "2026-02-24",
+    "id": "762-baghdad-round-city-of-reason"
   },
   {
     "year": "1347",
@@ -145,7 +146,8 @@
       "lon": 11.2558,
       "place": "Florence"
     },
-    "addedDate": "2026-02-24"
+    "addedDate": "2026-02-24",
+    "id": "1347-florence-beautiful-catastrophe"
   },
   {
     "year": "1504",
@@ -191,7 +193,8 @@
       "lon": 11.2558,
       "place": "Florence"
     },
-    "addedDate": "2026-02-24"
+    "addedDate": "2026-02-24",
+    "id": "1504-florence-duel-of-giants"
   },
   {
     "year": "1648",
@@ -260,7 +263,8 @@
       "lon": 7.6261,
       "place": "Münster"
     },
-    "addedDate": "2026-02-24"
+    "addedDate": "2026-02-24",
+    "id": "1648-munster-exhaustion-of-god"
   },
   {
     "year": "1784",
@@ -331,7 +335,8 @@
       "lon": 20.4522,
       "place": "Königsberg"
     },
-    "addedDate": "2026-02-25"
+    "addedDate": "2026-02-25",
+    "id": "1784-europe-dare-to-know"
   },
   {
     "year": "1889",
@@ -378,7 +383,8 @@
       "lon": 2.3522,
       "place": "Paris"
     },
-    "addedDate": "2026-02-24"
+    "addedDate": "2026-02-24",
+    "id": "1889-paris-year-everything-changed"
   },
   {
     "year": "1922",
@@ -425,6 +431,7 @@
       "lon": 11.3235,
       "place": "Weimar"
     },
-    "addedDate": "2026-02-24"
+    "addedDate": "2026-02-24",
+    "id": "1922-modernist-explosion"
   }
 ]

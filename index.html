@@ -215,6 +215,92 @@
     50% { box-shadow: 0 0 12px 4px rgba(124, 111, 247, 0.15); }
   }
 
+  /* 🎧 Podcast button */
+  .podcast-btn {
+    position: absolute;
+    top: 12px;
+    right: 56px; /* next to fresh-badge if present, or 12px if not */
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    background: rgba(124, 111, 247, 0.15);
+    border: 2px solid var(--accent);
+    z-index: 10;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    padding: 0;
+    line-height: 1;
+  }
+  .podcast-btn:hover {
+    background: rgba(124, 111, 247, 0.3);
+    transform: scale(1.1);
+  }
+  /* Shift right if no fresh-badge sibling */
+  .card:not(:has(.fresh-badge)) .podcast-btn {
+    right: 12px;
+  }
+
+  /* 🎧 Podcast player */
+  .podcast-player {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    margin: 10px 0;
+    background: rgba(124, 111, 247, 0.08);
+    border: 1px solid rgba(124, 111, 247, 0.2);
+    border-radius: 10px;
+    user-select: none;
+  }
+  .podcast-player audio { display: none; }
+  .pp-play {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    background: rgba(124, 111, 247, 0.15);
+    color: var(--text);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.2s;
+    padding: 0;
+  }
+  .pp-play:hover { background: rgba(124, 111, 247, 0.3); }
+  .pp-progress-wrap {
+    flex: 1;
+    min-width: 0;
+  }
+  .pp-progress-bar {
+    height: 6px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .pp-progress-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 3px;
+    width: 0%;
+    transition: width 0.1s linear;
+  }
+  .pp-time {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+    display: flex;
+    gap: 2px;
+  }
+
   /* 🎲 Random dice button */
   /* Floating action buttons below header */
   .quick-actions {
@@ -1011,6 +1097,7 @@
 <script>
 let SLICES = [];
 let activeThread = null;
+let activePodcastAudio = null; // Track the currently playing podcast
 let currentLang = (navigator.language || '').startsWith('it') ? 'it' : 'en';
 let _slicesReadyResolve;
 let slicesReady = new Promise(r => { _slicesReadyResolve = r; });
@@ -1030,6 +1117,7 @@ const I18N = {
     viewInTimeline: 'View in timeline →',
     freshEntry: "Today's fresh entry",
     randomSlice: 'Random slice',
+    listenPodcast: 'Listen to podcast',
   },
   it: {
     subtitle: 'Esplorazione interdisciplinare della storia',
@@ -1043,6 +1131,7 @@ const I18N = {
     viewInTimeline: 'Vedi nella cronologia →',
     freshEntry: 'Voce fresca di oggi',
     randomSlice: 'Voce casuale',
+    listenPodcast: 'Ascolta il podcast',
   }
 };
 
@@ -1188,11 +1277,13 @@ function renderSlice(slice, isFresh = false) {
   el.dataset.year = slice.year;
   el.dataset.threads = JSON.stringify(slice.threads || []);
   const freshBadgeHtml = isFresh ? '<div class="fresh-badge">☕</div>' : '';
+  const podcastBtnHtml = slice.podcast ? `<button class="podcast-btn" title="${t('listenPodcast')}" aria-label="${t('listenPodcast')}">🎧</button>` : '';
 
   el.innerHTML = `
     ${floatingImageHtml}
     <div class="card">
       ${freshBadgeHtml}
+      ${podcastBtnHtml}
       ${imageInlineHtml}
       <div class="card-body">
         <div class="card-year">${slice.year}${mapLink}</div>
@@ -1210,7 +1301,7 @@ function renderSlice(slice, isFresh = false) {
 
   // Expand/collapse
   el.addEventListener('click', (e) => {
-    if (e.target.closest('.thread-tag') || e.target.closest('.card-sources') || e.target.closest('.card-map-link')) return;
+    if (e.target.closest('.thread-tag') || e.target.closest('.card-sources') || e.target.closest('.card-map-link') || e.target.closest('.podcast-btn') || e.target.closest('.podcast-player')) return;
     const details = el.querySelector('.card-details');
     if (el.classList.contains('expanded')) {
       details.style.maxHeight = details.scrollHeight + 'px';
@@ -1253,6 +1344,15 @@ function renderSlice(slice, isFresh = false) {
     mapLinkEl.addEventListener('click', (e) => {
       e.stopPropagation();
       flyToEntry(mapLinkEl.dataset.year);
+    });
+  }
+
+  // Podcast player
+  const podcastBtn = el.querySelector('.podcast-btn');
+  if (podcastBtn && slice.podcast) {
+    podcastBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      togglePodcastPlayer(el, slice.podcast.url, slice.podcast.duration);
     });
   }
 
@@ -1336,6 +1436,126 @@ function getThreadNarrative(threadId, yearFrom, yearTo) {
   const narratives = langNarratives[threadId];
   return narratives && narratives[key] ? narratives[key] : null;
 }
+
+// --- Podcast Player ---
+
+function formatTime(seconds) {
+  const m = Math.floor(seconds / 60);
+  const s = Math.floor(seconds % 60);
+  return `${m}:${s.toString().padStart(2, '0')}`;
+}
+
+function togglePodcastPlayer(entryEl, audioUrl, duration) {
+  const existing = entryEl.querySelector('.podcast-player');
+  if (existing) {
+    // Toggle off — stop and remove
+    const audio = existing.querySelector('audio');
+    if (audio) { audio.pause(); audio.src = ''; }
+    existing.remove();
+    entryEl.querySelector('.podcast-btn').textContent = '🎧';
+    activePodcastAudio = null;
+    return;
+  }
+
+  // Stop any other playing podcast
+  if (activePodcastAudio) {
+    activePodcastAudio.pause();
+    activePodcastAudio.src = '';
+    const oldPlayer = document.querySelector('.podcast-player');
+    if (oldPlayer) {
+      oldPlayer.closest('.entry')?.querySelector('.podcast-btn')?.replaceChildren(document.createTextNode('🎧'));
+      oldPlayer.remove();
+    }
+  }
+
+  // Create player
+  const player = document.createElement('div');
+  player.className = 'podcast-player';
+  player.innerHTML = `
+    <audio preload="auto"></audio>
+    <button class="pp-play" aria-label="Play">▶</button>
+    <div class="pp-progress-wrap">
+      <div class="pp-progress-bar"><div class="pp-progress-fill"></div></div>
+      <div class="pp-time"><span class="pp-current">0:00</span> / <span class="pp-total">${formatTime(duration || 0)}</span></div>
+    </div>
+  `;
+
+  // Insert after the card-teaser, before card-threads
+  const cardBody = entryEl.querySelector('.card-body');
+  const teaser = entryEl.querySelector('.card-teaser');
+  if (teaser && teaser.nextSibling) {
+    cardBody.insertBefore(player, teaser.nextSibling);
+  } else {
+    cardBody.appendChild(player);
+  }
+
+  const audio = player.querySelector('audio');
+  const playBtn = player.querySelector('.pp-play');
+  const progressFill = player.querySelector('.pp-progress-fill');
+  const progressWrap = player.querySelector('.pp-progress-bar');
+  const currentTime = player.querySelector('.pp-current');
+  const totalTime = player.querySelector('.pp-total');
+
+  audio.src = audioUrl;
+  activePodcastAudio = audio;
+  entryEl.querySelector('.podcast-btn').textContent = '⏹';
+
+  // Auto-expand card if not expanded
+  if (!entryEl.classList.contains('expanded')) {
+    entryEl.classList.add('expanded');
+    const details = entryEl.querySelector('.card-details');
+    if (details) details.style.maxHeight = 'none';
+  }
+
+  playBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (audio.paused) {
+      audio.play();
+      playBtn.textContent = '⏸';
+    } else {
+      audio.pause();
+      playBtn.textContent = '▶';
+    }
+  });
+
+  audio.addEventListener('timeupdate', () => {
+    if (audio.duration) {
+      const pct = (audio.currentTime / audio.duration) * 100;
+      progressFill.style.width = pct + '%';
+      currentTime.textContent = formatTime(audio.currentTime);
+    }
+  });
+
+  audio.addEventListener('loadedmetadata', () => {
+    totalTime.textContent = formatTime(audio.duration);
+  });
+
+  audio.addEventListener('ended', () => {
+    playBtn.textContent = '▶';
+    progressFill.style.width = '0%';
+    currentTime.textContent = '0:00';
+  });
+
+  // Seek on click
+  progressWrap.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const rect = progressWrap.getBoundingClientRect();
+    const pct = (e.clientX - rect.left) / rect.width;
+    if (audio.duration) {
+      audio.currentTime = pct * audio.duration;
+    }
+  });
+
+  // Auto-play
+  audio.play().then(() => {
+    playBtn.textContent = '⏸';
+  }).catch(() => {
+    // Autoplay blocked — user must click play
+    playBtn.textContent = '▶';
+  });
+}
+
+// --- Thread Filtering ---
 
 function activateThread(threadId, anchorEntry) {
   const wasSwitching = activeThread !== null;
