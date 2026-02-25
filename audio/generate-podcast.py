@@ -193,7 +193,7 @@ MUSIC_POOL = {
         "url": "https://archive.org/download/lp_italian-songs-16th-and-17th-centuries-spa_hugues-cunod-hermann-leeb_0/disc1/01.02.%20Lute%20Solo%3A%20Fantasia.mp3",
         "filename": "renaissance-lute.mp3",
         "description": "Renaissance lute fantasia — 16th century Italian",
-        "start_time": 1.0,
+        "start_time": 14.0,
         "tags": ["renaissance", "lute", "italy", "instrumental", "intimate"],
     },
     "soler-harpsichord": {
