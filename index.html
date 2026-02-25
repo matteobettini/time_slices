@@ -216,25 +216,54 @@
   }
 
   /* 🎧 Podcast button */
-  /* 🎧 Podcast player — always visible inline */
+  .podcast-btn {
+    position: absolute;
+    top: 12px;
+    right: 56px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(124, 111, 247, 0.15);
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    z-index: 10;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    padding: 0;
+    line-height: 1;
+  }
+  .podcast-btn svg { display: block; }
+  .podcast-btn:hover {
+    background: rgba(124, 111, 247, 0.3);
+    transform: scale(1.1);
+  }
+  /* Shift right if no fresh-badge sibling */
+  .card:not(:has(.fresh-badge)) .podcast-btn {
+    right: 12px;
+  }
+
+  /* 🎧 Podcast player */
   .podcast-player {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 6px 10px;
-    margin: 8px 0 4px;
+    gap: 10px;
+    padding: 10px 14px;
+    margin: 10px 0;
     background: rgba(124, 111, 247, 0.08);
-    border: 1px solid rgba(124, 111, 247, 0.15);
-    border-radius: 8px;
+    border: 1px solid rgba(124, 111, 247, 0.2);
+    border-radius: 10px;
     user-select: none;
   }
   .podcast-player audio { display: none; }
   .pp-play {
-    width: 28px;
-    height: 28px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
-    border: 1.5px solid var(--accent);
-    background: rgba(124, 111, 247, 0.12);
+    border: 2px solid var(--accent);
+    background: rgba(124, 111, 247, 0.15);
     color: var(--accent);
     cursor: pointer;
     display: flex;
@@ -251,9 +280,9 @@
     min-width: 0;
   }
   .pp-progress-bar {
-    height: 6px;
+    height: 8px;
     background: rgba(255,255,255,0.1);
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -262,14 +291,14 @@
   .pp-progress-fill {
     height: 100%;
     background: var(--accent);
-    border-radius: 3px;
+    border-radius: 4px;
     width: 0%;
     transition: width 0.1s linear;
   }
   .pp-time {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     color: var(--text-muted);
-    margin-top: 3px;
+    margin-top: 4px;
     display: flex;
     gap: 2px;
   }
@@ -1296,26 +1325,18 @@ function renderSlice(slice, isFresh = false) {
   el.dataset.threads = JSON.stringify(slice.threads || []);
   const freshBadgeHtml = isFresh ? '<div class="fresh-badge">☕</div>' : '';
   const hasPodcast = slice.podcast && typeof slice.podcast === 'object' && slice.podcast.url;
-  const podcastPlayerHtml = hasPodcast ? `
-    <div class="podcast-player" data-url="${slice.podcast.url}" data-duration="${slice.podcast.duration || 0}">
-      <audio preload="none"></audio>
-      <button class="pp-play" aria-label="Play">${SVG_PLAY}</button>
-      <div class="pp-progress-wrap">
-        <div class="pp-progress-bar"><div class="pp-progress-fill"></div></div>
-        <div class="pp-time"><span class="pp-current">0:00</span> / <span class="pp-total">${formatTime(slice.podcast.duration || 0)}</span></div>
-      </div>
-    </div>` : '';
+  const podcastBtnHtml = hasPodcast ? `<button class="podcast-btn" title="${t('listenPodcast')}" aria-label="${t('listenPodcast')}"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 3a9 9 0 0 0-9 9v7c0 1.1.9 2 2 2h1c1.1 0 2-.9 2-2v-3c0-1.1-.9-2-2-2H5v-2a7 7 0 0 1 14 0v2h-1c-1.1 0-2 .9-2 2v3c0 1.1.9 2 2 2h1c1.1 0 2-.9 2-2v-7a9 9 0 0 0-9-9z"/></svg></button>` : '';
 
   el.innerHTML = `
     ${floatingImageHtml}
     <div class="card">
       ${freshBadgeHtml}
+      ${podcastBtnHtml}
       ${imageInlineHtml}
       <div class="card-body">
         <div class="card-year">${formatYear(slice.year)}${mapLink}</div>
         <div class="card-title">${slice.title}</div>
         <div class="card-teaser">${slice.teaser}</div>
-        ${podcastPlayerHtml}
         <div class="card-threads">${threads}</div>
         <div class="expand-hint">${t('expandHint')}</div>
         <div class="card-details">
@@ -1328,7 +1349,7 @@ function renderSlice(slice, isFresh = false) {
 
   // Expand/collapse
   el.addEventListener('click', (e) => {
-    if (e.target.closest('.thread-tag') || e.target.closest('.card-sources') || e.target.closest('.card-map-link') || e.target.closest('.podcast-player')) return;
+    if (e.target.closest('.thread-tag') || e.target.closest('.card-sources') || e.target.closest('.card-map-link') || e.target.closest('.podcast-btn') || e.target.closest('.podcast-player')) return;
     const details = el.querySelector('.card-details');
     if (el.classList.contains('expanded')) {
       // Stop podcast if playing in this card
@@ -1378,9 +1399,13 @@ function renderSlice(slice, isFresh = false) {
     });
   }
 
-  // Podcast player — wire up inline player (always in DOM)
-  if (hasPodcast) {
-    initInlinePodcastPlayer(el);
+  // Podcast player
+  const podcastBtn = el.querySelector('.podcast-btn');
+  if (podcastBtn && hasPodcast) {
+    podcastBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      togglePodcastPlayer(el, slice.podcast.url, slice.podcast.duration);
+    });
   }
 
   return el;
@@ -1508,8 +1533,10 @@ function formatTime(seconds) {
   return `${m}:${s.toString().padStart(2, '0')}`;
 }
 
-const SVG_PLAY = '<svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><polygon points="6,3 20,12 6,21"/></svg>';
-const SVG_PAUSE = '<svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>';
+const SVG_PLAY = '<svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><polygon points="6,3 20,12 6,21"/></svg>';
+const SVG_PAUSE = '<svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>';
+const SVG_HEADPHONES = '<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 3a9 9 0 0 0-9 9v7c0 1.1.9 2 2 2h1c1.1 0 2-.9 2-2v-3c0-1.1-.9-2-2-2H5v-2a7 7 0 0 1 14 0v2h-1c-1.1 0-2 .9-2 2v3c0 1.1.9 2 2 2h1c1.1 0 2-.9 2-2v-7a9 9 0 0 0-9-9z"/></svg>';
+const SVG_STOP = '<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>';
 
 // --- Podcast sync helpers ---
 function syncMapPopupAudio(year, isPlaying) {
@@ -1531,15 +1558,13 @@ function stopAllPodcasts() {
     activePodcastAudio.pause();
     activePodcastAudio.src = '';
   }
-  // Reset all inline players to initial state
-  document.querySelectorAll('.podcast-player').forEach(player => {
-    const playBtn = player.querySelector('.pp-play');
-    const progressFill = player.querySelector('.pp-progress-fill');
-    const currentTime = player.querySelector('.pp-current');
-    if (playBtn) playBtn.innerHTML = SVG_PLAY;
-    if (progressFill) progressFill.style.width = '0%';
-    if (currentTime) currentTime.textContent = '0:00';
-  });
+  // Clean up timeline player
+  const oldPlayer = document.querySelector('.podcast-player');
+  if (oldPlayer) {
+    const oldBtn = oldPlayer.closest('.entry')?.querySelector('.podcast-btn');
+    if (oldBtn) oldBtn.innerHTML = SVG_HEADPHONES;
+    oldPlayer.remove();
+  }
   // Clean up map popup buttons
   document.querySelectorAll('.map-popup-audio.playing').forEach(b => {
     b.classList.remove('playing');
@@ -1550,9 +1575,45 @@ function stopAllPodcasts() {
   activePodcastYear = null;
 }
 
-function initInlinePodcastPlayer(entryEl) {
-  const player = entryEl.querySelector('.podcast-player');
-  if (!player) return;
+function togglePodcastPlayer(entryEl, audioUrl, duration) {
+  const existing = entryEl.querySelector('.podcast-player');
+  const btn = entryEl.querySelector('.podcast-btn');
+  const year = entryEl.dataset.year;
+  if (existing) {
+    // Toggle off — stop and remove
+    const audio = existing.querySelector('audio');
+    if (audio) { audio.pause(); audio.src = ''; }
+    existing.remove();
+    if (btn) btn.innerHTML = SVG_HEADPHONES;
+    syncMapPopupAudio(year, false);
+    activePodcastAudio = null;
+    activePodcastYear = null;
+    return;
+  }
+
+  // Stop any other playing podcast
+  stopAllPodcasts();
+
+  // Create player
+  const player = document.createElement('div');
+  player.className = 'podcast-player';
+  player.innerHTML = `
+    <audio preload="auto"></audio>
+    <button class="pp-play" aria-label="Play">${SVG_PLAY}</button>
+    <div class="pp-progress-wrap">
+      <div class="pp-progress-bar"><div class="pp-progress-fill"></div></div>
+      <div class="pp-time"><span class="pp-current">0:00</span> / <span class="pp-total">${formatTime(duration || 0)}</span></div>
+    </div>
+  `;
+
+  // Insert after the card-teaser, before card-threads
+  const cardBody = entryEl.querySelector('.card-body');
+  const teaser = entryEl.querySelector('.card-teaser');
+  if (teaser && teaser.nextSibling) {
+    cardBody.insertBefore(player, teaser.nextSibling);
+  } else {
+    cardBody.appendChild(player);
+  }
 
   const audio = player.querySelector('audio');
   const playBtn = player.querySelector('.pp-play');
@@ -1560,33 +1621,32 @@ function initInlinePodcastPlayer(entryEl) {
   const progressWrap = player.querySelector('.pp-progress-bar');
   const currentTime = player.querySelector('.pp-current');
   const totalTime = player.querySelector('.pp-total');
-  const audioUrl = player.dataset.url;
-  const year = entryEl.dataset.year;
+
+  audio.src = audioUrl;
+  activePodcastAudio = audio;
+  activePodcastYear = year;
+  if (btn) btn.innerHTML = SVG_STOP;
+
+  // Auto-expand card if not expanded
+  if (!entryEl.classList.contains('expanded')) {
+    entryEl.classList.add('expanded');
+    const details = entryEl.querySelector('.card-details');
+    if (details) details.style.maxHeight = 'none';
+  }
+
+  // Sync map popup
+  syncMapPopupAudio(year, true);
 
   playBtn.addEventListener('click', (e) => {
     e.stopPropagation();
-    if (activePodcastAudio === audio && !audio.paused) {
-      // Pause current
+    if (audio.paused) {
+      audio.play();
+      playBtn.innerHTML = SVG_PAUSE;
+      syncMapPopupAudio(year, true);
+    } else {
       audio.pause();
       playBtn.innerHTML = SVG_PLAY;
       syncMapPopupAudio(year, false);
-    } else {
-      // Stop any other podcast first
-      if (activePodcastAudio && activePodcastAudio !== audio) {
-        stopAllPodcasts();
-      }
-      // Load src on first play (preload=none)
-      if (!audio.src || audio.src === '') {
-        audio.src = audioUrl;
-      }
-      activePodcastAudio = audio;
-      activePodcastYear = year;
-      audio.play().then(() => {
-        playBtn.innerHTML = SVG_PAUSE;
-        syncMapPopupAudio(year, true);
-      }).catch(() => {
-        playBtn.innerHTML = SVG_PLAY;
-      });
     }
   });
 
@@ -1630,6 +1690,15 @@ function initInlinePodcastPlayer(entryEl) {
     if (audio.duration) {
       audio.currentTime = pct * audio.duration;
     }
+  });
+
+  // Auto-play
+  audio.play().then(() => {
+    playBtn.innerHTML = SVG_PAUSE;
+  }).catch(() => {
+    // Autoplay blocked — user must click play
+    playBtn.innerHTML = SVG_PLAY;
+    syncMapPopupAudio(year, false);
   });
 }
 
@@ -2127,14 +2196,20 @@ function createMapMarker(slice) {
             const slice = SLICES.find(s => String(s.year) === String(year));
             if (slice && slice.podcast) {
               if (isPlaying) {
-                // Pause — click the inline player's play/pause button
+                // Pause existing — use the timeline player's pause
                 const ppPlay = entryEl.querySelector('.podcast-player .pp-play');
                 if (ppPlay) ppPlay.click();
-                else stopAllPodcasts();
+                else {
+                  // Fallback: stop directly
+                  stopAllPodcasts();
+                }
+              } else if (activePodcastYear === year && activePodcastAudio && activePodcastAudio.paused) {
+                // Resume existing — use the timeline player's play
+                const ppPlay = entryEl.querySelector('.podcast-player .pp-play');
+                if (ppPlay) ppPlay.click();
               } else {
-                // Play/resume — click the inline player's play/pause button
-                const ppPlay = entryEl.querySelector('.podcast-player .pp-play');
-                if (ppPlay) ppPlay.click();
+                // Start new — open timeline player (which handles cleanup)
+                togglePodcastPlayer(entryEl, slice.podcast.url, slice.podcast.duration);
               }
             }
           }
