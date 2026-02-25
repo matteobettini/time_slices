@@ -501,8 +501,11 @@ def mix_audio(narration_path, music_path, output_path, narration_duration, start
     # 8. Final loudnorm pass to hit podcast-standard -16 LUFS
     filter_complex = (
         # Music processing
+        # First normalize music to -20 LUFS so all tracks start at same loudness
+        # THEN apply our volume envelope — this prevents quiet tracks from disappearing
         f"[1:a]atrim=start={start_time},asetpts=PTS-STARTPTS,"
         f"aloop=loop=-1:size=2e+09,atrim=duration={total_duration},"
+        f"loudnorm=I=-20:TP=-2:LRA=7,"
         f"lowpass=f=4000:p=1,"
         f"acompressor=threshold=-25dB:ratio=3:attack=20:release=200,"
         f"volume=0.20,"

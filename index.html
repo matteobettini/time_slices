@@ -1699,14 +1699,26 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
   const btn = entryEl.querySelector('.podcast-btn');
   const year = entryEl.dataset.year;
   if (existing) {
-    // Toggle off — stop and remove
     const audio = existing.querySelector('audio');
-    if (audio) { audio.pause(); audio.src = ''; }
-    existing.remove();
-    if (btn) btn.innerHTML = SVG_HEADPHONES;
-    syncMapPopupAudio(year, false);
-    activePodcastAudio = null;
-    activePodcastYear = null;
+    const playBtn = existing.querySelector('.pp-play');
+    if (audio && !audio.paused) {
+      // Playing → pause and keep player visible
+      audio.pause();
+      if (playBtn) playBtn.innerHTML = SVG_PLAY;
+      if (btn) btn.innerHTML = SVG_HEADPHONES;
+      syncMapPopupAudio(year, false);
+      activePodcastAudio = null;
+      activePodcastYear = null;
+    } else if (audio && audio.src) {
+      // Paused → resume playback
+      audio.play().then(() => {
+        if (playBtn) playBtn.innerHTML = SVG_PAUSE;
+        if (btn) btn.innerHTML = SVG_STOP;
+        activePodcastAudio = audio;
+        activePodcastYear = year;
+        syncMapPopupAudio(year, true);
+      }).catch(() => {});
+    }
     return;
   }
 
