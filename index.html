@@ -1331,6 +1331,8 @@ function getThreadNarrative(threadId, yearFrom, yearTo) {
 }
 
 function activateThread(threadId) {
+  const wasSwitching = activeThread !== null; // true if switching from another thread
+
   // Reset all entries to clean state first (fixes stacking when switching threads)
   document.querySelectorAll('.entry').forEach(e => {
     e.classList.remove('thread-hidden', 'thread-highlighted');
@@ -1404,11 +1406,45 @@ function activateThread(threadId) {
     document.getElementById('threadCount').textContent = `${count} ${count === 1 ? t('entry') : t('entries')}`;
     document.getElementById('threadBanner').classList.add('visible');
 
-    // Scroll to first matching entry
+    // Scroll behavior depends on whether we're activating fresh or switching threads
     if (matchingEntries.length > 0) {
-      setTimeout(() => {
-        highlightAndScroll(matchingEntries[0]);
-      }, 300);
+      if (wasSwitching) {
+        // Switching threads: find the matching entry closest to current viewport center
+        // If one is already visible, don't scroll at all
+        const viewportCenter = window.scrollY + window.innerHeight / 2;
+        const viewportTop = window.scrollY;
+        const viewportBottom = window.scrollY + window.innerHeight;
+
+        const anyInView = matchingEntries.some(e => {
+          const rect = e.getBoundingClientRect();
+          const absTop = rect.top + window.scrollY;
+          const absBottom = rect.bottom + window.scrollY;
+          return absBottom > viewportTop && absTop < viewportBottom;
+        });
+
+        if (!anyInView) {
+          // No matching entry in view — scroll to the nearest one
+          let nearest = matchingEntries[0];
+          let nearestDist = Infinity;
+          matchingEntries.forEach(e => {
+            const rect = e.getBoundingClientRect();
+            const absCenter = rect.top + window.scrollY + rect.height / 2;
+            const dist = Math.abs(absCenter - viewportCenter);
+            if (dist < nearestDist) {
+              nearestDist = dist;
+              nearest = e;
+            }
+          });
+          setTimeout(() => {
+            highlightAndScroll(nearest);
+          }, 300);
+        }
+      } else {
+        // First thread activation: scroll to first matching entry
+        setTimeout(() => {
+          highlightAndScroll(matchingEntries[0]);
+        }, 300);
+      }
     }
   }); // end rAF
 }
