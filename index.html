@@ -1166,6 +1166,8 @@ const THREAD_LABELS = {
     'westphalian-sovereignty': 'Westphalian Sovereignty',
     'dutch-golden-age': 'Dutch Golden Age',
     'enlightenment': 'Enlightenment',
+    'pax-romana': 'Pax Romana',
+    'augustan-golden-age': 'Augustan Golden Age',
   },
   it: {
     'translation-movement': 'Traduzione come potere',
@@ -1196,6 +1198,8 @@ const THREAD_LABELS = {
     'westphalian-sovereignty': 'Sovranità vestfaliana',
     'dutch-golden-age': 'Secolo d\'oro olandese',
     'enlightenment': 'Illuminismo',
+    'pax-romana': 'Pax Romana',
+    'augustan-golden-age': 'Età aurea augustea',
   }
 };
 
@@ -1229,6 +1233,12 @@ const timeline = document.getElementById('timeline');
 function formatThreadId(id) {
   const labels = THREAD_LABELS[currentLang] || THREAD_LABELS.en;
   return labels[id] || id.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+}
+
+function formatSliceYear(y) {
+  const n = parseInt(y);
+  if (n < 0) return currentLang === 'it' ? `${Math.abs(n)} a.C.` : `${Math.abs(n)} BCE`;
+  return y;
 }
 
 function renderSlice(slice, isFresh = false) {
@@ -1286,7 +1296,7 @@ function renderSlice(slice, isFresh = false) {
       ${podcastBtnHtml}
       ${imageInlineHtml}
       <div class="card-body">
-        <div class="card-year">${slice.year}${mapLink}</div>
+        <div class="card-year">${formatSliceYear(slice.year)}${mapLink}</div>
         <div class="card-title">${slice.title}</div>
         <div class="card-teaser">${slice.teaser}</div>
         <div class="card-threads">${threads}</div>
@@ -1362,7 +1372,7 @@ function renderSlice(slice, isFresh = false) {
 function renderMarker(marker) {
   const el = document.createElement('div');
   el.className = 'marker';
-  const yearStr = marker.year < 0 ? `${Math.abs(marker.year)} BC` : marker.year === 0 ? '0' : marker.year;
+  const yearStr = marker.year < 0 ? (currentLang === 'it' ? `${Math.abs(marker.year)} a.C.` : `${Math.abs(marker.year)} BCE`) : marker.year === 0 ? '0' : marker.year;
   const labelText = typeof marker.label === 'object' ? (marker.label[currentLang] || marker.label.en) : marker.label;
   el.innerHTML = `
     <div class="marker-line"></div>
@@ -1384,6 +1394,9 @@ const THREAD_NARRATIVES = {
       '1889→1922': 'Nietzsche declared God dead in 1882. By 1922, the void he predicted had swallowed certainty itself — Eliot\'s <em>Waste Land</em> mapped the wreckage, while logical positivism tried to rebuild meaning from scratch.',
     },
     'rationalism': {
+      '-399→762': 'Socrates\' dialectical method was preserved through Plato\'s Academy; Aristotle\'s works — products of this tradition — were the very texts that Baghdad\'s translators rendered into Arabic. The chain is documented: Socrates taught Plato, Plato taught Aristotle, and the Arabic <em>falasifa</em> studied all three. When the Mu\'tazila argued that reason could determine religious truth, they were deploying tools forged in Athenian conversation.',
+      '-399→1648': 'Socrates insisted on following the argument wherever it leads; twenty centuries later, Descartes applied the same radical doubt to rebuild knowledge from scratch. But where Socrates claimed to know nothing, Descartes found one certainty — the cogito. The Socratic method survived the fall of Athens, the fall of Rome, and the Arabic translations to emerge in Cartesian form: same skeptical engine, different starting point.',
+      '-399→1784': 'Kant\'s <em>sapere aude</em> — dare to know — is the Socratic imperative stripped of irony. Socrates questioned Athenians in the agora, insisting they examine their own assumptions; Kant demanded that all humanity use reason without deference to authority. Both paid a price: Socrates with hemlock, Kant with the Prussian censor. The distance is twenty-two centuries; the method is recognisably the same.',
       '762→1648': 'The Mu\'tazila argued that reason could determine religious truth; eight centuries later, Descartes used reason to bypass religious truth entirely. Baghdad\'s translation movement preserved the Greek rationalism that Descartes inherited — the cogito\'s ancestors spoke Arabic.',
       '762→1784': 'The transmission chain is real but long: Baghdad\'s translators (Hunayn ibn Ishaq and others) rendered Aristotle and Plato into Arabic; these passed through al-Andalus to Latin Europe via translators like Gerard of Cremona in Toledo (12th c.). Kant studied Aristotelian logic and engaged directly with the rationalist tradition that Descartes and Leibniz had built on these recovered texts. But Kant never cited the Mu\'tazila — the parallel between their rational theology and his Enlightenment project is a historiographical observation, not a documented influence.',
       '1648→1784': 'Kant explicitly engaged with Descartes\' rationalism: the <em>Critique of Pure Reason</em> (1781) directly addresses and transforms the Cartesian project of grounding knowledge in reason alone. The link is documented and acknowledged. The political parallel — Westphalia\'s principle of state sovereignty removed confessional allegiance as grounds for war; Kant\'s essay demanded that individuals exercise reason without deference to authority — reflects a broader trajectory from religious to secular foundations of legitimacy, though the two events are not causally connected.',
@@ -1395,9 +1408,13 @@ const THREAD_NARRATIVES = {
       '1347→1922': 'The plague shattered medieval unity — Church authority, feudal order, demographic stability, all broken at once. Six centuries later, modernism made fragmentation into an art form, shattering narrative, painting, and language with the same democratic indifference.',
     },
     'classical-revival': {
+      '-399→1504': 'Renaissance Florence knew Socrates through Plato\'s dialogues, translated by Marsilio Ficino in the 1460s under Medici patronage. Ficino\'s Neoplatonism — which infused Michelangelo\'s circle — was an explicit attempt to recover what Athens had produced: the idea that beauty is philosophical truth made visible. The <em>David</em> stands as a classical body, but it inherits a tradition that begins with Socrates\' conversation with the sculptor Parrhasius about representing the soul in art.',
+      '-399→1784': 'Winckelmann, David\'s theoretical inspiration, argued that Greek art embodied "noble simplicity and quiet grandeur" — and Greek philosophy was inseparable from that vision. David would paint the Death of Socrates in 1787, three years after the <em>Oath of the Horatii</em>, turning the philosopher\'s calm acceptance of hemlock into the Enlightenment\'s founding image of intellectual martyrdom. The classical world David revived was not just Roman civic virtue — it was Athenian philosophical courage.',
       '1504→1784': 'David won the Prix de Rome in 1774 and spent five years in Italy studying Raphael, Michelangelo, and Roman antiquities firsthand. The lineage is direct and documented: Renaissance artists recovered classical forms; David inherited them through the Académie royale\'s curriculum, which made Rome pilgrimage mandatory. But where Renaissance Florence used antiquity as a language of idealised beauty, David\'s Neoclassicism — shaped by Winckelmann\'s writings on Greek art as moral exemplar — turned the same classical vocabulary toward republican virtue and political duty.',
     },
     'art-and-power': {
+      '-399→1504': 'Athenian democracy commissioned the Parthenon and its sculpture programme as civic identity made monumental; Florentine republicanism commissioned Michelangelo\'s <em>David</em> for the same purpose. Both city-states used art to embody the free citizen — but where Athens funded its programme with tribute from the Delian League (allied states\' money), Florence used Medici patronage and guild commissions. The mechanism of art-as-power shifted from imperial taxation to mercantile wealth, but the function remained: the polis made visible in stone.',
+      '-399→1784': 'David\'s <em>Death of Socrates</em> (1787) makes the connection explicit: he painted the Athenian philosopher\'s execution as a political statement about individual conscience against state power. The same democracy that built the Parthenon killed its greatest philosopher; David used that paradox to indict the France of his own time. It is the single painting that links this entire thread — Athens\' art-and-power paradox, refracted through Enlightenment Paris.',
       '1504→1784': 'The Medici commissioned art to project civic power and cultural prestige — Michelangelo\'s <em>David</em> was a public statement by the Florentine Republic. David\'s <em>Oath</em> was commissioned by the Crown (via d\'Angiviller) as moralising history painting, but the artist subverted the brief: audiences read it as a call to republican sacrifice against monarchy. The shift from Renaissance patron-as-author to Enlightenment artist-as-ideologue is visible in this single commission — the state paid for its own critique.',
     },
   },
@@ -1411,6 +1428,9 @@ const THREAD_NARRATIVES = {
       '1889→1922': 'Nietzsche dichiarò morto Dio nel 1882. Entro il 1922, il vuoto che aveva predetto aveva inghiottito la certezza stessa — <em>La terra desolata</em> di Eliot ne mappava le macerie, mentre il positivismo logico tentava di ricostruire il significato da zero.',
     },
     'rationalism': {
+      '-399→762': 'Il metodo dialettico di Socrate fu preservato attraverso l\'Accademia di Platone; le opere di Aristotele — prodotti di questa tradizione — furono i testi stessi che i traduttori di Baghdad resero in arabo. La catena è documentata: Socrate insegnò a Platone, Platone insegnò ad Aristotele, e i <em>falasifa</em> arabi studiarono tutti e tre. Quando i Mu\'tazila sostenevano che la ragione potesse determinare la verità religiosa, usavano strumenti forgiati nella conversazione ateniese.',
+      '-399→1648': 'Socrate insisteva nel seguire l\'argomento dovunque portasse; venti secoli dopo, Cartesio applicò lo stesso dubbio radicale per ricostruire la conoscenza da zero. Ma dove Socrate affermava di non sapere nulla, Cartesio trovò una certezza — il cogito. Il metodo socratico sopravvisse alla caduta di Atene, alla caduta di Roma e alle traduzioni arabe per riemergere in forma cartesiana: stesso motore scettico, diverso punto di partenza.',
+      '-399→1784': 'Il <em>sapere aude</em> di Kant è l\'imperativo socratico spogliato dell\'ironia. Socrate interrogava gli ateniesi nell\'agorà, insistendo che esaminassero i propri presupposti; Kant esigeva che l\'intera umanità usasse la ragione senza deferenza all\'autorità. Entrambi ne pagarono il prezzo: Socrate con la cicuta, Kant con il censore prussiano. La distanza è di ventidue secoli; il metodo è riconoscibilmente lo stesso.',
       '762→1648': 'I Mu\'tazila sostenevano che la ragione potesse determinare la verità religiosa; otto secoli dopo, Cartesio usò la ragione per aggirare del tutto la verità religiosa. Il movimento di traduzione di Baghdad preservò il razionalismo greco che Cartesio ereditò — gli antenati del cogito parlavano arabo.',
       '762→1784': 'La catena di trasmissione è reale ma lunga: i traduttori di Baghdad (Hunayn ibn Ishaq e altri) resero Aristotele e Platone in arabo; questi passarono attraverso al-Andalus all\'Europa latina tramite traduttori come Gerardo da Cremona a Toledo (XII sec.). Kant studiò la logica aristotelica e si confrontò direttamente con la tradizione razionalista che Cartesio e Leibniz avevano costruito su quei testi recuperati. Ma Kant non citò mai i Mu\'tazila — il parallelo tra la loro teologia razionale e il suo progetto illuminista è un\'osservazione storiografica, non un\'influenza documentata.',
       '1648→1784': 'Kant si confrontò esplicitamente con il razionalismo cartesiano: la <em>Critica della ragion pura</em> (1781) affronta e trasforma direttamente il progetto cartesiano di fondare la conoscenza nella sola ragione. Il legame è documentato e riconosciuto. Il parallelo politico — il principio di sovranità statale di Vestfalia rimosse l\'appartenenza confessionale come casus belli; il saggio di Kant esigeva che gli individui esercitassero la ragione senza deferenza all\'autorità — riflette una traiettoria più ampia dalle fondamenta religiose a quelle laiche della legittimità, anche se i due eventi non sono causalmente connessi.',
@@ -1422,9 +1442,13 @@ const THREAD_NARRATIVES = {
       '1347→1922': 'La peste frantumò l\'unità medievale — autorità della Chiesa, ordine feudale, stabilità demografica, tutto spezzato in una volta. Sei secoli dopo, il modernismo fece della frammentazione una forma d\'arte, frantumando narrazione, pittura e linguaggio con la stessa democratica indifferenza.',
     },
     'classical-revival': {
+      '-399→1504': 'La Firenze rinascimentale conobbe Socrate attraverso i dialoghi di Platone, tradotti da Marsilio Ficino negli anni 1460 sotto il patrocinio mediceo. Il neoplatonismo di Ficino — che permeò la cerchia di Michelangelo — era un tentativo esplicito di recuperare ciò che Atene aveva prodotto: l\'idea che la bellezza sia verità filosofica resa visibile. Il <em>David</em> si erge come corpo classico, ma eredita una tradizione che inizia con la conversazione di Socrate con il pittore Parrasio sulla rappresentazione dell\'anima nell\'arte.',
+      '-399→1784': 'Winckelmann, l\'ispirazione teorica di David, sosteneva che l\'arte greca incarnasse "nobile semplicità e quieta grandezza" — e la filosofia greca era inseparabile da quella visione. David dipingerà la Morte di Socrate nel 1787, tre anni dopo il <em>Giuramento degli Orazi</em>, trasformando la calma accettazione della cicuta da parte del filosofo nell\'immagine fondante del martirio intellettuale illuminista. Il mondo classico che David recuperava non era solo virtù civica romana — era coraggio filosofico ateniese.',
       '1504→1784': 'David vinse il Prix de Rome nel 1774 e trascorse cinque anni in Italia studiando Raffaello, Michelangelo e le antichità romane dal vivo. La genealogia è diretta e documentata: gli artisti rinascimentali recuperarono le forme classiche; David le ereditò attraverso il curriculum dell\'Académie royale, che rendeva obbligatorio il pellegrinaggio a Roma. Ma dove la Firenze rinascimentale usava l\'antichità come linguaggio di bellezza idealizzata, il Neoclassicismo di David — plasmato dagli scritti di Winckelmann sull\'arte greca come exemplum morale — volse lo stesso vocabolario classico verso la virtù repubblicana e il dovere politico.',
     },
     'art-and-power': {
+      '-399→1504': 'La democrazia ateniese commissionò il Partenone e il suo programma scultoreo come identità civica fatta monumento; il repubblicanesimo fiorentino commissionò il <em>David</em> di Michelangelo allo stesso scopo. Entrambe le città-stato usarono l\'arte per incarnare il cittadino libero — ma dove Atene finanziò il programma con il tributo della Lega di Delo (denaro degli stati alleati), Firenze usò il mecenatismo mediceo e le commissioni delle corporazioni. Il meccanismo dell\'arte come potere passò dalla tassazione imperiale alla ricchezza mercantile, ma la funzione rimase: la polis resa visibile nella pietra.',
+      '-399→1784': 'La <em>Morte di Socrate</em> di David (1787) rende esplicito il legame: il pittore raffigurò l\'esecuzione del filosofo ateniese come una dichiarazione politica sulla coscienza individuale contro il potere dello Stato. La stessa democrazia che costruì il Partenone uccise il suo più grande filosofo; David usò quel paradosso per mettere sotto accusa la Francia del suo tempo. È il singolo dipinto che collega l\'intero filo conduttore — il paradosso ateniese di arte e potere, rifratto attraverso la Parigi illuminista.',
       '1504→1784': 'I Medici commissionavano arte per proiettare potere civico e prestigio culturale — il <em>David</em> di Michelangelo era una dichiarazione pubblica della Repubblica fiorentina. Il <em>Giuramento</em> di David fu commissionato dalla Corona (tramite d\'Angiviller) come pittura storica moralizzante, ma l\'artista sovvertì l\'incarico: il pubblico lo lesse come un appello al sacrificio repubblicano contro la monarchia. Il passaggio dal mecenate-autore del Rinascimento all\'artista-ideologo dell\'Illuminismo è visibile in questa singola commissione — lo stato pagò la propria critica.',
     },
   },
@@ -1970,8 +1994,8 @@ function createMapMarker(slice) {
     html: `<div class="map-marker-wrap">
              <div class="map-marker" data-year="${slice.year}"></div>
              <div class="map-marker-ring"></div>
-             <div class="map-marker-label">${slice.year} · ${slice.location.place}</div>
-             <div class="map-marker-year">${slice.year}</div>
+             <div class="map-marker-label">${formatSliceYear(slice.year)} · ${slice.location.place}</div>
+             <div class="map-marker-year">${formatSliceYear(slice.year)}</div>
            </div>`,
     iconSize: [40, 40],
     iconAnchor: [20, 20],
@@ -1993,7 +2017,7 @@ function createMapMarker(slice) {
     autoPanPaddingTopLeft: L.point(10, isMobile ? 10 : 80),
     autoPanPaddingBottomRight: L.point(10, isMobile ? 140 : 10),
   }).setContent(`
-    <div class="map-popup-year">${slice.year}</div>
+    <div class="map-popup-year">${formatSliceYear(slice.year)}</div>
     <div class="map-popup-title">${slice.title}</div>
     <div class="map-popup-teaser">${slice.teaser}</div>
     <div class="map-popup-threads">${threads}</div>
@@ -2076,7 +2100,7 @@ const TIME_WINDOW = 120;   // total half-window (entry visible ±120 years from 
 const FADE_ZONE = 40;      // fade-in/out zone at edges
 
 function updateTimeFilter(maxYear) {
-  document.getElementById('timeYearDisplay').textContent = maxYear;
+  document.getElementById('timeYearDisplay').textContent = maxYear < 0 ? formatSliceYear(String(maxYear)) : maxYear;
 
   mapMarkers.forEach(marker => {
     const markerEl = marker.getElement();

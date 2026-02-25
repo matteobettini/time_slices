@@ -30,6 +30,12 @@ OUTPUT_DIR = SCRIPT_DIR  # audio/{id}.mp3
 # Voice assignments per entry — chosen to match the epoch's character.
 # Using Microsoft Edge neural voices (free, no API key).
 VOICE_MAP = {
+    # 399 BCE Athens: philosophical, measured, gravitas — warm male with depth
+    "-399-athens-hemlock-cup": {
+        "voice": "en-US-AndrewNeural",
+        "rate": "-8%",
+        "pitch": "-1Hz",
+    },
     # 762 Baghdad: scholarly, warm — Indian English for a non-Western feel
     "762-baghdad-round-city-of-reason": {
         "voice": "en-IN-PrabhatNeural",
@@ -87,6 +93,11 @@ SLUG_TO_ID = {
 
 # Background music sources from Internet Archive (public domain)
 MUSIC_SOURCES = {
+    "-399-athens-hemlock-cup": {
+        "url": "https://archive.org/download/lp0049_epitaph_of_se/LP0049_Epitaph_of_Seikilos.mp3",
+        "filename": "seikilos-epitaph.mp3",
+        "description": "Seikilos Epitaph — Ancient Greek lyre reconstruction",
+    },
     "762-baghdad-round-city-of-reason": {
         "url": "https://archive.org/download/gulezyan-aram-1976-exotic-music-of-the-oud-lyrichord-side-a-archive-01/Gulezyan%2C%20Aram%20%281976%29%20-%20Exotic%20Music%20of%20the%20Oud%20Lyrichord%2C%20side%20A%20%28archive%29-01.mp3",
         "filename": "oud-arabic.mp3",
