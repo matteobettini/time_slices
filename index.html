@@ -1743,16 +1743,16 @@ function activateThread(threadId, anchorEntry) {
   const wasSwitching = activeThread !== null;
   const timeline = document.getElementById('timeline');
 
-  // When switching threads: disable CSS transitions so layout changes are instant.
-  // This avoids the shaky scroll drift caused by entries animating height over 400ms.
-  if (wasSwitching) {
-    timeline.classList.add('no-transition');
-  }
-
   // Record anchor position BEFORE any DOM changes
   let anchorViewportTop = null;
-  if (wasSwitching && anchorEntry) {
+  if (anchorEntry) {
     anchorViewportTop = anchorEntry.getBoundingClientRect().top;
+  }
+
+  // When switching or fresh-activating: disable CSS transitions so layout changes are instant.
+  // This avoids the shaky scroll drift caused by entries animating height over 400ms.
+  if (wasSwitching || anchorEntry) {
+    timeline.classList.add('no-transition');
   }
 
   // --- Clean slate ---
@@ -1820,24 +1820,28 @@ function activateThread(threadId, anchorEntry) {
   document.getElementById('threadBanner').classList.add('visible');
 
   // --- Scroll handling ---
-  if (wasSwitching && anchorEntry && anchorViewportTop !== null) {
-    // Correct scroll once — layout is already final (no transitions)
+  if (anchorEntry && anchorViewportTop !== null) {
+    // Correct scroll so the clicked card stays put (works for both switch and fresh activation)
     const newTop = anchorEntry.getBoundingClientRect().top;
     const drift = newTop - anchorViewportTop;
     if (Math.abs(drift) > 1) {
       window.scrollBy(0, drift);
     }
-    // Re-enable transitions on next frame so future interactions still animate
     requestAnimationFrame(() => {
       timeline.classList.remove('no-transition');
     });
-  } else if (wasSwitching) {
-    // Switching but no anchor (e.g. re-apply after language change)
+  } else if (anchorEntry) {
+    // Have anchor but didn't capture position (fresh activation without wasSwitching)
+    // Disable transitions, snap to anchor
+    timeline.classList.add('no-transition');
     requestAnimationFrame(() => {
-      timeline.classList.remove('no-transition');
+      anchorEntry.scrollIntoView({ block: 'center' });
+      requestAnimationFrame(() => {
+        timeline.classList.remove('no-transition');
+      });
     });
   } else if (matchingEntries.length > 0) {
-    // First thread activation: scroll to first matching entry
+    // No anchor at all (e.g. programmatic activation) — scroll to first match
     setTimeout(() => {
       highlightAndScroll(matchingEntries[0]);
     }, 300);
