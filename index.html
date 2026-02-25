@@ -1235,7 +1235,8 @@ function renderSlice(slice, isFresh = false) {
       if (activeThread === thread) {
         clearThread();
       } else {
-        activateThread(thread);
+        // Pass the entry element as scroll anchor so we stay put when switching
+        activateThread(thread, el);
       }
     });
   });
@@ -1330,8 +1331,15 @@ function getThreadNarrative(threadId, yearFrom, yearTo) {
   return narratives && narratives[key] ? narratives[key] : null;
 }
 
-function activateThread(threadId) {
+function activateThread(threadId, anchorEntry) {
   const wasSwitching = activeThread !== null; // true if switching from another thread
+
+  // If switching threads with an anchor entry, record its viewport position
+  // so we can stabilize scroll as layout shifts from collapsing/expanding entries
+  let anchorOffsetTop = null;
+  if (wasSwitching && anchorEntry) {
+    anchorOffsetTop = anchorEntry.getBoundingClientRect().top;
+  }
 
   // Reset all entries to clean state first (fixes stacking when switching threads)
   document.querySelectorAll('.entry').forEach(e => {
@@ -1407,44 +1415,29 @@ function activateThread(threadId) {
     document.getElementById('threadBanner').classList.add('visible');
 
     // Scroll behavior depends on whether we're activating fresh or switching threads
-    if (matchingEntries.length > 0) {
-      if (wasSwitching) {
-        // Switching threads: find the matching entry closest to current viewport center
-        // If one is already visible, don't scroll at all
-        const viewportCenter = window.scrollY + window.innerHeight / 2;
-        const viewportTop = window.scrollY;
-        const viewportBottom = window.scrollY + window.innerHeight;
-
-        const anyInView = matchingEntries.some(e => {
-          const rect = e.getBoundingClientRect();
-          const absTop = rect.top + window.scrollY;
-          const absBottom = rect.bottom + window.scrollY;
-          return absBottom > viewportTop && absTop < viewportBottom;
-        });
-
-        if (!anyInView) {
-          // No matching entry in view — scroll to the nearest one
-          let nearest = matchingEntries[0];
-          let nearestDist = Infinity;
-          matchingEntries.forEach(e => {
-            const rect = e.getBoundingClientRect();
-            const absCenter = rect.top + window.scrollY + rect.height / 2;
-            const dist = Math.abs(absCenter - viewportCenter);
-            if (dist < nearestDist) {
-              nearestDist = dist;
-              nearest = e;
-            }
-          });
-          setTimeout(() => {
-            highlightAndScroll(nearest);
-          }, 300);
+    if (wasSwitching && anchorEntry && anchorOffsetTop !== null) {
+      // Switching threads: stabilize scroll so the anchor entry stays in place.
+      // Entries collapse via CSS transition (~400ms), so we need to keep correcting
+      // as the layout shifts. Use a scroll-stabilization loop.
+      const stabilize = () => {
+        const currentTop = anchorEntry.getBoundingClientRect().top;
+        const drift = currentTop - anchorOffsetTop;
+        if (Math.abs(drift) > 1) {
+          window.scrollBy(0, drift);
         }
-      } else {
-        // First thread activation: scroll to first matching entry
-        setTimeout(() => {
-          highlightAndScroll(matchingEntries[0]);
-        }, 300);
-      }
+      };
+      // Run stabilization over the transition duration
+      stabilize();
+      const stabilizeInterval = setInterval(stabilize, 16); // every frame
+      setTimeout(() => {
+        clearInterval(stabilizeInterval);
+        stabilize(); // one final correction
+      }, 500); // CSS transition is ~400ms, give a bit of margin
+    } else if (!wasSwitching && matchingEntries.length > 0) {
+      // First thread activation: scroll to first matching entry
+      setTimeout(() => {
+        highlightAndScroll(matchingEntries[0]);
+      }, 300);
     }
   }); // end rAF
 }
