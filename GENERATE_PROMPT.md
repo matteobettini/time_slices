@@ -12,4 +12,9 @@ You are Johnny, managing the Time Slices project.
 6. Add ONE new time slice following the spec (research, write, image, threads, deploy). **Location in the title:** Only include a city/place in the entry title if most dimensions genuinely converge on that location. If the dimensions are geographically scattered (e.g. art in Paris, philosophy in Germany, literature in London), don't force a city name into the title — use a thematic title instead. The `location` field for the map pin is always required regardless. **Always include `"addedDate": "YYYY-MM-DD"` (today's date) in the new entry** — this is used for the ☕ fresh badge in the UI.
 7. Add the same entry translated to Italian in slices.it.json — natural Italian, not machine translation.
 8. Update THREAD_LABELS (both en and it) in index.html if you add new thread tags.
-9. Reply with a short summary: year, title, teaser, one highlight connection. 3-5 sentences max.
+9. **Generate podcast.** After the entry is committed to both JSON files:
+   a. Write a ~350-400 word podcast script (storytelling style, weaving all 5 dimensions into a narrative arc — not a list). Save to `audio/scripts/{id}.txt` where `{id}` is the entry's `id` field (e.g. `1504-florence-duel-of-giants`).
+   b. Run: `python3 /home/cloud-user/.openclaw/workspace/time-slices/audio/generate-podcast.py {id}` — this generates the narration via edge-tts, downloads period-appropriate background music, mixes them with ffmpeg, and updates slices.json with the podcast field.
+   c. **Voice selection:** The script has default voice assignments per entry. For new entries, add an appropriate voice mapping in `audio/generate-podcast.py` VOICE_MAP before running it. Choose from Microsoft Edge voices — match the epoch's character (e.g. deep/grave for wars, expressive for revolutions, scholarly for intellectual periods). Also add a MUSIC_SOURCES entry with a public domain recording from Internet Archive that matches the era.
+   d. Commit the generated MP3 (tracked by Git LFS) along with the script.
+10. Reply with a short summary: year, title, teaser, one highlight connection. 3-5 sentences max.

@@ -34,6 +34,7 @@ Every entry in `slices.json` MUST have this structure:
 ```json
 {
   "year": "1504",
+  "id": "1504-florence-duel-of-giants",
   "title": "Florence — The Duel of Giants",
   "teaser": "Short evocative hook, 1-2 sentences.",
   "dimensions": {
@@ -56,6 +57,11 @@ Every entry in `slices.json` MUST have this structure:
 ```
 
 ### Field Details
+
+#### id (mandatory)
+- Format: `"{year}-{kebab-case-slug}"` e.g. `"1504-florence-duel-of-giants"`
+- Used for podcast file naming, future features, and deduplication
+- The slug should be derived from the title (lowercase, hyphens, no special chars)
 
 #### dimensions
 - All 5 dimensions are **mandatory**: art, lit, phil, hist, conn
