@@ -1320,7 +1320,7 @@ function renderSlice(slice, isFresh = false) {
 
   const el = document.createElement('div');
   el.className = 'entry';
-  el.id = `entry-${slice.year}`;
+  el.id = `entry-${slice.id}`;
   el.dataset.year = slice.year;
   el.dataset.threads = JSON.stringify(slice.threads || []);
   const freshBadgeHtml = isFresh ? '<div class="fresh-badge">☕</div>' : '';
@@ -1950,7 +1950,7 @@ function updateUILabels() {
 }
 
 // Load slices for current language and rebuild timeline
-function loadSlices(restoreYear) {
+function loadSlices(restoreId) {
   // Reset the ready promise so buttons wait for the new data
   slicesReady = new Promise(r => { _slicesReadyResolve = r; });
 
@@ -1963,8 +1963,8 @@ function loadSlices(restoreYear) {
   // Remember if we're at/near the top of the page
   const wasAtTop = window.scrollY < 80;
 
-  // If no explicit year to restore, find the entry currently in view
-  if (!restoreYear && !wasAtTop) {
+  // If no explicit id to restore, find the entry currently in view
+  if (!restoreId && !wasAtTop) {
     const viewportCenter = window.innerHeight / 2;
     const entries = document.querySelectorAll('.entry[data-year]');
     let closest = null, closestDist = Infinity;
@@ -1973,7 +1973,7 @@ function loadSlices(restoreYear) {
       const dist = Math.abs(rect.top + rect.height / 2 - viewportCenter);
       if (dist < closestDist) { closestDist = dist; closest = el; }
     });
-    if (closest) restoreYear = closest.dataset.year;
+    if (closest) restoreId = closest.id.replace('entry-', '');
   }
 
   // Clear active thread
@@ -1990,9 +1990,9 @@ function loadSlices(restoreYear) {
         const d = s.addedDate || '';
         return d > max ? d : max;
       }, '');
-      const freshestYear = freshestDate
-        ? SLICES.find(s => s.addedDate === freshestDate)?.year
-        : SLICES[SLICES.length - 1]?.year;
+      const freshestId = freshestDate
+        ? SLICES.find(s => s.addedDate === freshestDate)?.id
+        : SLICES[SLICES.length - 1]?.id;
 
       const items = [
         ...SLICES.map(s => ({ type: 'slice', year: parseInt(s.year), data: s })),
@@ -2002,7 +2002,7 @@ function loadSlices(restoreYear) {
 
       items.forEach((item) => {
         if (item.type === 'slice') {
-          timeline.appendChild(renderSlice(item.data, item.data.year === freshestYear));
+          timeline.appendChild(renderSlice(item.data, item.data.id === freshestId));
         } else {
           timeline.appendChild(renderMarker(item.data));
         }
@@ -2017,9 +2017,9 @@ function loadSlices(restoreYear) {
       // Restore scroll position
       if (wasAtTop) {
         window.scrollTo(0, 0);
-      } else if (restoreYear) {
+      } else if (restoreId) {
         requestAnimationFrame(() => {
-          const target = document.querySelector(`#entry-${restoreYear}`);
+          const target = document.querySelector(`#entry-${restoreId}`);
           if (target) highlightAndScroll(target);
         });
       }
@@ -2061,13 +2061,16 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
   updateUILabels();
   loadSlices();
 
-  // Handle incoming hash links (e.g. #1784 or #entry-1784)
+  // Handle incoming hash links (e.g. #1784-europe-dare-to-know or legacy #1784)
   slicesReady.then(() => {
     const hash = window.location.hash.replace('#', '');
     if (!hash) return;
-    // Support both #1784 and #entry-1784
-    const year = hash.replace('entry-', '');
-    const entry = document.getElementById(`entry-${year}`);
+    // Try full id first, then legacy year-only lookup
+    let entry = document.getElementById(`entry-${hash}`);
+    if (!entry) {
+      // Legacy: #1784 → find entry whose data-year matches
+      entry = document.querySelector(`.entry[data-year="${hash}"]`);
+    }
     if (entry) {
       setTimeout(() => highlightAndScroll(entry), 300);
     }
@@ -2152,7 +2155,7 @@ function createMapMarker(slice) {
     <div class="map-popup-teaser">${slice.teaser}</div>
     ${podcastHtml}
     <div class="map-popup-threads">${threads}</div>
-    <a class="map-popup-link" onclick="scrollToEntryByYear('${slice.year}')">${t('viewInTimeline')}</a>
+    <a class="map-popup-link" onclick="scrollToEntry('${slice.id}')">${t('viewInTimeline')}</a>
   `);
 
   marker.bindPopup(popup);
@@ -2973,10 +2976,10 @@ function showTimelineView() {
   }
 }
 
-function scrollToEntryByYear(year) {
+function scrollToEntry(id) {
   showTimelineView();
   setTimeout(() => {
-    const entry = document.getElementById(`entry-${year}`);
+    const entry = document.getElementById(`entry-${id}`);
     if (entry) {
       highlightAndScroll(entry);
     }
@@ -3052,7 +3055,7 @@ function highlightAndScroll(entry) {
   // Clear hash first so re-navigating to the same entry still works
   history.replaceState(null, '', window.location.pathname + window.location.search);
   requestAnimationFrame(() => {
-    location.hash = entry.id;
+    location.hash = entry.id.replace('entry-', '');
 
     // Warm glow highlight
     entry.style.transition = 'box-shadow 0.3s ease';

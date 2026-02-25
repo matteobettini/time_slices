@@ -182,6 +182,16 @@ const MARKERS = [
 
 ---
 
+## Deep Links
+
+Entries are addressable via URL hash using the entry's `id`:
+- `https://matteobettini.github.io/time_slices/#125-rome-dome-of-all-things`
+- Legacy year-only hashes (`#1784`) are still supported as a fallback
+
+DOM element IDs use the `entry-` prefix: `entry-125-rome-dome-of-all-things`.
+
+---
+
 ## Deploy Checklist
 
 After writing a new entry:
