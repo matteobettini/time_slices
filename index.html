@@ -741,6 +741,12 @@
     top: 56px;
     left: 0; right: 0;
     bottom: 72px;
+    transition: top 0.2s ease;
+  }
+  /* Expand map top when thread banner is visible */
+  .map-thread-banner.visible ~ #map,
+  #mapView:has(.map-thread-banner.visible) #map {
+    top: 100px;
   }
 
   /* Override Leaflet popups */
@@ -1025,8 +1031,10 @@
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
     padding: 14px 32px;
+  }
+  .map-header .header-top {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
   }
   .map-header h1 {
@@ -1036,29 +1044,42 @@
   }
   .map-header .subtitle { color: var(--text-dim); font-size: 0.85rem; margin-left: 12px; }
 
+  /* Map thread banner — inside map-header, matches timeline banner style */
   .map-thread-banner {
     display: none;
-    position: fixed;
-    top: 72px; left: 50%;
-    transform: translateX(-50%);
-    z-index: 1100; /* above Leaflet popups (z-index ~700) */
     align-items: center;
     gap: 10px;
-    padding: 8px 18px;
-    background: rgba(10,10,15,0.95);
-    backdrop-filter: blur(20px);
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: var(--surface2);
     border: 1px solid var(--accent);
     border-radius: 10px;
     font-size: 0.8rem;
     color: var(--text);
     animation: fadeIn 0.2s ease;
-    cursor: pointer; /* whole banner is clickable to dismiss */
   }
   .map-thread-banner.visible { display: flex; }
   .map-thread-banner .thread-name { font-weight: 600; color: var(--accent); }
+  .map-thread-banner .thread-count { color: var(--text-dim); }
+  .map-thread-banner .thread-play-all {
+    margin-left: auto;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background 0.15s ease, opacity 0.15s ease;
+  }
+  .map-thread-banner .thread-play-all:hover { background: #6358d4; }
+  .map-thread-banner .thread-play-all.playing { background: var(--accent); }
   .map-thread-banner .thread-close {
-    margin-left: auto; cursor: pointer;
-    color: var(--text-dim); font-size: 1.2rem;
+    margin-left: 12px;
+    cursor: pointer;
+    color: var(--text-dim);
+    font-size: 1.2rem;
     padding: 4px 8px;
     border-radius: 4px;
     transition: background 0.15s ease, color 0.15s ease;
@@ -1074,16 +1095,6 @@
     .map-marker-label { display: none; }
     .map-marker-year { display: block; }
     .map-header .subtitle { display: none; }
-    /* Move thread banner above time controls on mobile to avoid popup overlap */
-    .map-thread-banner {
-      top: auto;
-      bottom: 100px;
-      left: 16px;
-      right: 16px;
-      transform: none;
-      max-width: none;
-      font-size: 0.75rem;
-    }
   }
 </style>
 </head>
@@ -1122,19 +1133,23 @@
 <!-- Map View -->
 <div id="mapView">
   <div class="map-header">
-    <div style="display:flex;align-items:baseline;">
-      <h1>Time Slices</h1>
-      <span class="subtitle" id="mapSubtitle"></span>
+    <div class="header-top">
+      <div style="display:flex;align-items:baseline;">
+        <h1>Time Slices</h1>
+        <span class="subtitle" id="mapSubtitle"></span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <button class="view-toggle active" id="mapBackBtn"></button>
+        <button class="lang-btn" data-lang="en" data-map="1">EN</button>
+        <button class="lang-btn" data-lang="it" data-map="1">IT</button>
+      </div>
     </div>
-    <div style="display:flex;align-items:center;gap:8px;">
-      <button class="view-toggle active" id="mapBackBtn"></button>
-      <button class="lang-btn" data-lang="en" data-map="1">EN</button>
-      <button class="lang-btn" data-lang="it" data-map="1">IT</button>
+    <div class="map-thread-banner" id="mapThreadBanner">
+      <span><span id="mapThreadLabel"></span>: <span class="thread-name" id="mapThreadName"></span></span>
+      <span class="thread-count" id="mapThreadCount"></span>
+      <button class="thread-play-all" id="mapThreadPlayAll" title="Play all podcasts in thread"><svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" style="vertical-align:middle;margin-right:4px"><polygon points="6,3 20,12 6,21"/></svg>Play All</button>
+      <span class="thread-close" id="mapThreadClose">✕</span>
     </div>
-  </div>
-  <div class="map-thread-banner" id="mapThreadBanner">
-    <span><span id="mapThreadLabel"></span>: <span class="thread-name" id="mapThreadName"></span></span>
-    <span class="thread-close" id="mapThreadClose">✕</span>
   </div>
   <div id="map"></div>
 </div>
@@ -1979,9 +1994,12 @@ function clearThread() {
   activeThread = null;
   mapActiveThread = null; // keep both views in sync
 
-  // Stop thread play all if active
+  // Stop thread play all if active (both timeline and map)
   if (threadPlayActive) {
     stopThreadPlayAll();
+  }
+  if (mapThreadPlayActive) {
+    stopMapThreadPlayAll();
   }
 
   // Restore timeline line
@@ -1997,7 +2015,8 @@ function clearThread() {
   document.querySelectorAll('.thread-narrative').forEach(n => n.remove());
   clearThreadLines();
   document.getElementById('threadBanner').classList.remove('visible');
-  // Show global play button again
+  // Also hide map thread banner if visible
+  document.getElementById('mapThreadBanner').classList.remove('visible');
 }
 
 // SVG thread lines
@@ -2271,6 +2290,111 @@ function stopThreadPlayAll() {
   const btn = document.getElementById('threadPlayAll');
   btn.innerHTML = SVG_PLAY_BTN + ' Play All';
   btn.classList.remove('playing');
+}
+
+// Map Thread Play All
+let mapThreadPlayQueue = [];
+let mapThreadPlayIndex = -1;
+let mapThreadPlayActive = false;
+
+function startMapThreadPlayAll() {
+  const btn = document.getElementById('mapThreadPlayAll');
+  
+  if (mapThreadPlayActive) {
+    stopMapThreadPlayAll();
+    return;
+  }
+  
+  if (!mapActiveThread) return;
+  
+  // Build queue of slices in current thread that have podcasts
+  const threadSlices = SLICES
+    .filter(s => (s.threads || []).includes(mapActiveThread) && s.podcast && s.podcast.url)
+    .sort((a, b) => parseInt(a.year) - parseInt(b.year));
+  
+  if (threadSlices.length === 0) return;
+  
+  mapThreadPlayQueue = threadSlices;
+  
+  // Stop any currently playing podcast
+  stopAllPodcasts();
+  if (threadPlayActive) stopThreadPlayAll();
+  
+  mapThreadPlayActive = true;
+  mapThreadPlayIndex = 0;
+  btn.innerHTML = SVG_STOP_BTN + ' Stop';
+  btn.classList.add('playing');
+  
+  playMapThreadEntry(0);
+}
+
+function playMapThreadEntry(index) {
+  if (index >= mapThreadPlayQueue.length || !mapThreadPlayActive) {
+    stopMapThreadPlayAll();
+    return;
+  }
+  
+  const slice = mapThreadPlayQueue[index];
+  mapThreadPlayIndex = index;
+  
+  // Find and fly to the marker
+  const marker = mapMarkers.find(m => String(m._sliceYear) === String(slice.year));
+  if (marker && slice.location) {
+    map.flyTo([slice.location.lat, slice.location.lon], 5, { duration: 1.2 });
+    setTimeout(() => {
+      if (marker) marker.openPopup();
+    }, 1300);
+  }
+  
+  // Find the timeline entry and use its player (keeps audio unified)
+  const entryEl = document.querySelector(`.entry[data-year="${slice.year}"]`);
+  if (!entryEl) {
+    // Skip if no entry in DOM
+    if (mapThreadPlayActive) playMapThreadEntry(index + 1);
+    return;
+  }
+  
+  // Show player in timeline (even though we're in map view) and start playback
+  setTimeout(() => {
+    const player = showPodcastPlayer(entryEl, slice.podcast.url, slice.podcast.duration);
+    const audio = player.querySelector('audio');
+    const playBtn = player.querySelector('.pp-play');
+    const podcastBtn = entryEl.querySelector('.podcast-btn');
+    
+    // Set up ended listener for auto-advance
+    const onEnded = () => {
+      audio.removeEventListener('ended', onEnded);
+      if (mapThreadPlayActive) {
+        playMapThreadEntry(index + 1);
+      }
+    };
+    audio.addEventListener('ended', onEnded);
+    
+    // Start playback
+    audio.src = slice.podcast.url;
+    activePodcastAudio = audio;
+    activePodcastYear = entryEl.dataset.year;
+    audio.play().then(() => {
+      playBtn.innerHTML = SVG_PAUSE;
+      if (podcastBtn) podcastBtn.innerHTML = SVG_STOP;
+      syncMapPopupAudio(entryEl.dataset.year, true);
+    }).catch(() => {
+      // Skip to next on error
+      if (mapThreadPlayActive) playMapThreadEntry(index + 1);
+    });
+  }, 1500); // Wait for fly animation + popup
+}
+
+function stopMapThreadPlayAll() {
+  mapThreadPlayActive = false;
+  mapThreadPlayIndex = -1;
+  mapThreadPlayQueue = [];
+  stopAllPodcasts();
+  const btn = document.getElementById('mapThreadPlayAll');
+  if (btn) {
+    btn.innerHTML = SVG_PLAY_BTN + ' Play All';
+    btn.classList.remove('playing');
+  }
 }
 
 // Lazy image loading
@@ -2775,7 +2899,7 @@ function populateMap() {
   }
 
   // Fit bounds to show all markers (skip if thread active — thread will fit its own)
-  if (mapMarkers.length > 1 && !mapActiveThread) {
+  if (mapMarkers.length > 1 && !activeThread) {
     const group = L.featureGroup(mapMarkers);
     map.fitBounds(group.getBounds().pad(0.3), { maxZoom: 6 });
   }
@@ -2785,9 +2909,9 @@ function populateMap() {
     b.classList.toggle('active', b.dataset.lang === currentLang);
   });
 
-  // Re-apply thread if active
-  if (mapActiveThread) {
-    activateMapThread(mapActiveThread);
+  // Re-apply thread if active (use the unified activeThread state)
+  if (activeThread) {
+    activateMapThread(activeThread);
   }
 }
 
@@ -3236,8 +3360,12 @@ function activateMapThread(threadId) {
   // Close any open popup to avoid overlap with thread banner
   map.closePopup();
 
-  // Also activate in timeline
+  // Also activate in timeline (keeps state synced)
   activeThread = threadId;
+
+  // Count matching entries for banner
+  const threadSlices = SLICES.filter(s => (s.threads || []).includes(threadId));
+  const count = threadSlices.length;
 
   // Dim non-matching markers, ensure thread members are visible regardless of time window
   mapMarkers.forEach(marker => {
@@ -3264,10 +3392,14 @@ function activateMapThread(threadId) {
   // Draw arcs between all thread entries (ignore time window)
   drawMapArcsAll(threadId);
 
-  // Show banner
+  // Show banner with count
   document.getElementById('mapThreadName').textContent = formatThreadId(threadId);
   document.getElementById('mapThreadLabel').textContent = t('thread');
+  document.getElementById('mapThreadCount').textContent = `${count} ${count === 1 ? t('entry') : t('entries')}`;
   document.getElementById('mapThreadBanner').classList.add('visible');
+
+  // Invalidate map size after banner shows (header height changed)
+  setTimeout(() => map.invalidateSize(), 250);
 
   // Fit bounds to thread entries
   const threadMarkers = mapMarkers.filter(m => m._sliceThreads.includes(threadId));
@@ -3292,6 +3424,11 @@ function clearMapThread() {
   mapActiveThread = null;
   activeThread = null; // keep both views in sync
 
+  // Stop map play all if active
+  if (mapThreadPlayActive) {
+    stopMapThreadPlayAll();
+  }
+
   mapMarkers.forEach(marker => {
     const el = marker.getElement();
     if (!el) return;
@@ -3304,6 +3441,9 @@ function clearMapThread() {
 
   clearMapArcs();
   document.getElementById('mapThreadBanner').classList.remove('visible');
+
+  // Invalidate map size after banner hides (header height changed)
+  setTimeout(() => map.invalidateSize(), 250);
 
   // Restore full slider range
   if (SLICES.length > 0) {
@@ -3479,21 +3619,30 @@ function showMapView() {
   // Hide timeline's thread banner — header is z-100, above map z-50
   document.getElementById('threadBanner').classList.remove('visible');
 
+  // Stop timeline thread play all if active
+  if (threadPlayActive) stopThreadPlayAll();
+
   // Fix Leaflet rendering (needs invalidateSize after display:block)
   setTimeout(() => {
     map.invalidateSize();
     populateMap();
-    // populateMap handles mapActiveThread re-activation
+    // populateMap handles mapActiveThread re-activation via the synced activeThread
   }, 150);
 }
 
 function showTimelineView() {
   stopMapPlay();
+  // Stop map thread play all if active
+  if (mapThreadPlayActive) stopMapThreadPlayAll();
+  
   document.getElementById('mapView').classList.remove('active');
   document.getElementById('mapTimeControl').classList.remove('visible');
   document.getElementById('viewToggle').classList.remove('active');
   document.getElementById('viewToggle').textContent = t('viewMap');
   document.getElementById('quickActions').style.display = 'flex';
+
+  // Hide map's thread banner
+  document.getElementById('mapThreadBanner').classList.remove('visible');
 
   // Sync thread state: apply whatever thread is active (or clear)
   if (activeThread) {
@@ -3548,7 +3697,7 @@ document.getElementById('viewToggle').addEventListener('click', () => {
 
 document.getElementById('mapBackBtn').addEventListener('click', showTimelineView);
 document.getElementById('mapThreadClose').addEventListener('click', clearMapThread);
-document.getElementById('mapThreadBanner').addEventListener('click', clearMapThread);
+document.getElementById('mapThreadPlayAll').addEventListener('click', startMapThreadPlayAll);
 
 // Map lang switcher
 document.querySelectorAll('[data-map="1"]').forEach(btn => {
