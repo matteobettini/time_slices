@@ -1911,9 +1911,9 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
 // --- Thread Filtering ---
 
 function activateThread(threadId, anchorEntry) {
-  // Stop any active play all when switching threads
+  // Reset play all state when switching threads (but keep audio playing)
   if (threadPlayActive) {
-    stopThreadPlayAll();
+    resetThreadPlayAllState();
   }
 
   const wasSwitching = activeThread !== null;
@@ -2292,14 +2292,15 @@ function stopThreadPlayAll() {
   threadPlayQueue = [];
   stopAllPodcasts();
   // Update both timeline and map play all buttons
-  const btn = document.getElementById('threadPlayAll');
-  const mapBtn = document.getElementById('mapThreadPlayAll');
-  btn.innerHTML = SVG_PLAY_BTN + ' Play All';
-  btn.classList.remove('playing');
-  if (mapBtn) {
-    mapBtn.innerHTML = SVG_PLAY_BTN + ' Play All';
-    mapBtn.classList.remove('playing');
-  }
+  syncPlayAllButtons(false);
+}
+
+// Reset play all state without stopping audio (for thread switching)
+function resetThreadPlayAllState() {
+  threadPlayActive = false;
+  threadPlayIndex = -1;
+  threadPlayQueue = [];
+  syncPlayAllButtons(false);
 }
 
 // Sync both play all buttons when starting
@@ -3318,9 +3319,9 @@ document.getElementById('timePlayBtn').addEventListener('click', () => {
 
 // Thread arcs on map
 function activateMapThread(threadId) {
-  // Stop any active play all when switching threads
+  // Reset play all state when switching threads (but keep audio playing)
   if (threadPlayActive) {
-    stopThreadPlayAll();
+    resetThreadPlayAllState();
   }
 
   mapActiveThread = threadId;
