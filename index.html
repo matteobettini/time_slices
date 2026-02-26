@@ -2116,9 +2116,10 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
 }
 
 function togglePodcastPlayer(entryEl, audioUrl, duration) {
-  // Stop any play all if running
+  // Stop any play all if running - and just stop, don't start new playback
   if (threadPlayActive) {
     stopThreadPlayAll();
+    return;
   }
   
   const existing = entryEl.querySelector('.podcast-player');
