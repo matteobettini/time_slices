@@ -592,5 +592,82 @@
         "title": "La terra desolata — Wikipedia"
       }
     ]
+  },
+  {
+    "year": "1517",
+    "id": "1517-wittenberg-hammer-falls",
+    "title": "Wittenberg — Il martello batte",
+    "teaser": "Un monaco affigge delle tesi alla porta di una chiesa. A Roma, Raffaello dipinge la filosofia. A Londra, More immagina l'utopia. La sintesi rinascimentale tra fede e ragione sta per infrangersi — inizia la Riforma.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "L'<strong>Alto Rinascimento</strong> raggiunge il suo culmine a Roma. <strong>Raffaello</strong> ha appena terminato la <em>Stanza della Segnatura</em> (1509–1511) — la sua <em>Scuola di Atene</em> colloca Platone e Aristotele al centro di un tempio della filosofia, circondati da ogni grande pensatore da Pitagora ad Averroè. È il manifesto visivo della <strong>sintesi rinascimentale</strong>: la convinzione che sapienza pagana e verità cristiana formino un unico sistema armonioso. Ora Raffaello lavora alla <em>Stanza dell'Incendio</em> (1514–1517) per papa Leone X. A Firenze, <strong>Andrea del Sarto</strong> sviluppa la tecnica dello <em>sfumato</em> verso quello che diventerà il <strong>Manierismo</strong> — le prime crepe nella fiducia dell'Alto Rinascimento. A nord delle Alpi, <strong>Dürer</strong> è tornato dall'Italia a Norimberga, portando le forme rinascimentali nell'arte tedesca pur conservando l'intensità nordica."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "L'<em>Utopia</em> di <strong>Thomas More</strong> (1516) inventa un genere e una parola. Scritta in latino per l'élite umanistica europea, descrive un'isola senza proprietà privata, con tolleranza religiosa e giornate lavorative di sei ore — l'umanesimo rinascimentale spinto alle sue logiche conclusioni politiche. L'amico di More, <strong>Erasmo</strong>, lo studioso più celebre d'Europa, ha appena pubblicato il <em>Novum Instrumentum</em> (1516), un'edizione critica in greco del Nuovo Testamento che rivela errori di traduzione nella Vulgata — l'<strong>umanesimo cristiano</strong> che applica il metodo filologico alla Scrittura stessa. A Ferrara, l'<em>Orlando Furioso</em> di <strong>Ariosto</strong> (prima edizione 1516) trasforma il romanzo cavalleresco medievale in ironia rinascimentale — un'epopea di 38.000 versi che tratta gli ideali eroici con sofisticata autoconsapevolezza."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Il 31 ottobre 1517, <strong>Martin Lutero</strong> affigge le sue <em>Novantacinque Tesi</em> alla porta della Chiesa del Castello di Wittenberg — un normale invito accademico al dibattito. Il bersaglio sono le <strong>indulgenze</strong>: la pratica papale di vendere la remissione delle pene per i peccati. Ma le implicazioni sono più profonde: le tesi di Lutero attaccano il fondamento stesso dell'autorità papale sulla salvezza. In poche settimane, la stampa trasforma una disputa accademica locale in un incendio europeo. <strong>Erasmo</strong>, che condivide la critica di Lutero alla corruzione della Chiesa ma non il suo radicalismo teologico, vede il progetto umanista di riforma graduale travolto dalla rivoluzione. La sintesi <strong>umanistico-cristiana</strong> — la fede migliorata dal sapere, la Scrittura chiarita dalla filologia — sta per fratturarsi nei campi protestante e cattolico che si ammazzeranno per il secolo a venire."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Papa <strong>Leone X</strong> — Giovanni de' Medici, mecenate di Raffaello e incarnazione dello splendore papale rinascimentale — presiede una Chiesa la cui corruzione finanzia le arti. L'<strong>indulgenza</strong> che scatena la protesta di Lutero finanzia la costruzione della Basilica di San Pietro. L'<strong>Impero Ottomano</strong> sotto Selim I conquista l'Egitto (1517), assorbendo il Sultanato mamelucco e raddoppiando il proprio territorio. <strong>Carlo V</strong> sta per ereditare un impero che si estende dall'Austria alle Americhe. La <strong>stampa a caratteri mobili</strong>, ormai sessantenne, ha creato qualcosa di senza precedenti: una sfera pubblica europea dove le idee possono diffondersi più velocemente di quanto le autorità riescano a sopprimerle."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "I legami documentati ruotano intorno a <strong>Erasmo</strong>, che collega ogni dimensione. Corrispondeva con Thomas More (erano amici intimi; l'<em>Utopia</em> fu concepita durante la visita di Erasmo in Inghilterra nel 1515); il suo Nuovo Testamento greco fornì le munizioni testuali che Lutero avrebbe usato contro l'autorità papale; il suo <em>Elogio della Follia</em> (1511), scritto a casa di More, satireggiava gli stessi abusi ecclesiastici che Lutero attaccò. Leone X era mecenate sia di Raffaello sia del venditore di indulgenze Johann Tetzel. La <em>Scuola di Atene</em> e le <em>Novantacinque Tesi</em> condividono una premessa — che l'antica sapienza illumini la verità — ma traggono conclusioni opposte: Raffaello mostra filosofia e cristianesimo in armonia; Lutero insiste che solo la Scrittura (<em>sola scriptura</em>) giudica la tradizione. La stessa tecnologia di stampa che diffuse l'<em>Utopia</em> di More nelle reti umanistiche diffuse le tesi di Lutero in Germania in due settimane. Rinascimento e Riforma non sono opposti — la seconda è il primo spinto oltre il punto di rottura.",
+        "funFact": "Lutero potrebbe non aver mai inchiodato nulla alla porta — la storia del martello compare per la prima volta trent'anni dopo. Ciò che è documentato è che inviò le tesi all'arcivescovo Alberto. In ogni caso, fu la stampa a fare il vero lavoro: 300.000 copie circolavano entro tre anni."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/95_tesi",
+        "title": "95 tesi — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Utopia_(Tommaso_Moro)",
+        "title": "Utopia — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Stanze_di_Raffaello",
+        "title": "Stanze di Raffaello — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Erasmo_da_Rotterdam",
+        "title": "Erasmo da Rotterdam — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Orlando_furioso",
+        "title": "Orlando Furioso — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Riforma_protestante",
+        "title": "Riforma protestante — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1517-school-of-athens.jpg",
+      "caption": "La Scuola di Atene di Raffaello (1509–1511), Musei Vaticani",
+      "attribution": "Raffaello, Pubblico Dominio, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "christian-humanism",
+      "reformation",
+      "renaissance-humanism",
+      "printing-revolution",
+      "sola-scriptura"
+    ],
+    "location": {
+      "lat": 51.8667,
+      "lon": 12.65,
+      "place": "Wittenberg"
+    },
+    "addedDate": "2026-02-26T14:25:00Z",
+    "podcast": {
+      "url": "audio/it/1517-wittenberg-hammer-falls.mp3",
+      "duration": 165
+    }
   }
 ]

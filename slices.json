@@ -596,5 +596,82 @@
         "title": "The Waste Land — Wikipedia"
       }
     ]
+  },
+  {
+    "year": "1517",
+    "id": "1517-wittenberg-hammer-falls",
+    "title": "Wittenberg — The Hammer Falls",
+    "teaser": "A monk nails theses to a church door. In Rome, Raphael paints philosophy. In London, More imagines utopia. The Renaissance synthesis of faith and reason is about to shatter — the Reformation begins.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "The <strong>High Renaissance</strong> reaches its culmination in Rome. <strong>Raphael</strong> has just finished the <em>Stanza della Segnatura</em> (1509–1511) — his <em>School of Athens</em> places Plato and Aristotle at the centre of a temple of philosophy, surrounded by every great thinker from Pythagoras to Averroes. It is the visual manifesto of <strong>Renaissance synthesis</strong>: the belief that pagan wisdom and Christian truth form a single harmonious system. Now Raphael works on the <em>Stanza dell'Incendio</em> (1514–1517) for Pope Leo X. In Florence, <strong>Andrea del Sarto</strong> develops the <em>sfumato</em> technique toward what will become <strong>Mannerism</strong> — the first cracks in High Renaissance confidence. North of the Alps, <strong>Dürer</strong> has returned from Italy to Nuremberg, bringing Renaissance forms to German art while retaining Northern intensity."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Thomas More</strong>'s <em>Utopia</em> (1516) invents a genre and a word. Written in Latin for the European humanist elite, it describes an island society with no private property, religious tolerance, and six-hour workdays — Renaissance humanism pushed to its logical political conclusion. More's friend <strong>Erasmus</strong>, the most celebrated scholar in Europe, has just published his <em>Novum Instrumentum</em> (1516), a critical Greek edition of the New Testament that reveals translation errors in the Vulgate — <strong>Christian humanism</strong> applying philological method to Scripture itself. In Ferrara, <strong>Ariosto</strong>'s <em>Orlando Furioso</em> (first edition 1516) transforms medieval chivalric romance into Renaissance irony — a 38,000-line epic that treats heroic ideals with sophisticated self-awareness."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "On October 31, 1517, <strong>Martin Luther</strong> posts his <em>Ninety-five Theses</em> on the door of the Castle Church in Wittenberg — a standard academic invitation to debate. The target is <strong>indulgences</strong>: the papal practice of selling remission of punishment for sins. But the implications run deeper: Luther's theses attack the very foundation of papal authority over salvation. Within weeks, the printing press transforms a local academic dispute into a European conflagration. <strong>Erasmus</strong>, who shares Luther's critique of Church corruption but not his theological radicalism, watches the humanist project of gradual reform overtaken by revolution. The <strong>Christian humanist</strong> synthesis — faith improved by learning, Scripture clarified by scholarship — is about to fracture into Protestant and Catholic camps that will spend the next century killing each other."
+      },
+      "hist": {
+        "label": "History",
+        "content": "Pope <strong>Leo X</strong> — Giovanni de' Medici, patron of Raphael and embodiment of Renaissance papal splendour — presides over a Church whose corruption is funding the arts. The <strong>indulgence</strong> that triggers Luther's protest finances the construction of St Peter's Basilica. The <strong>Ottoman Empire</strong> under Selim I conquers Egypt (1517), absorbing the Mamluk Sultanate and doubling its territory. <strong>Charles V</strong> is about to inherit an empire spanning from Austria to the Americas. The <strong>printing press</strong>, now sixty years old, has created something unprecedented: a European public sphere where ideas can spread faster than authorities can suppress them."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The documented connections centre on <strong>Erasmus</strong>, who links every dimension. He corresponded with Thomas More (they were close friends; More's <em>Utopia</em> was conceived during Erasmus's 1515 visit to England); his Greek New Testament provided the textual ammunition Luther would use against papal authority; his <em>Praise of Folly</em> (1511), written in More's house, satirised the same Church abuses Luther attacked. Leo X patronised both Raphael and the indulgence-seller Johann Tetzel. The <em>School of Athens</em> and the <em>Ninety-five Theses</em> share a premise — that ancient wisdom illuminates truth — but draw opposite conclusions: Raphael shows philosophy and Christianity in harmony; Luther insists Scripture alone (<em>sola scriptura</em>) judges tradition. The same printing technology that spread More's <em>Utopia</em> across humanist networks spread Luther's theses across Germany in two weeks. Renaissance and Reformation are not opposites — the second is the first pushed past its breaking point.",
+        "funFact": "Luther may not have actually nailed anything to the door — the hammer story first appears 30 years later. What's documented is that he sent the theses to Archbishop Albrecht. Either way, the printing press did the real work: 300,000 copies were in circulation within three years."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ninety-five_Theses",
+        "title": "Ninety-five Theses — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Utopia_(book)",
+        "title": "Utopia (book) — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Raphael_Rooms",
+        "title": "Raphael Rooms — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Erasmus",
+        "title": "Erasmus — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Orlando_Furioso",
+        "title": "Orlando Furioso — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Reformation",
+        "title": "Reformation — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1517-school-of-athens.jpg",
+      "caption": "The School of Athens by Raphael (1509–1511), Vatican Museums",
+      "attribution": "Raphael, Public Domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "christian-humanism",
+      "reformation",
+      "renaissance-humanism",
+      "printing-revolution",
+      "sola-scriptura"
+    ],
+    "location": {
+      "lat": 51.8667,
+      "lon": 12.65,
+      "place": "Wittenberg"
+    },
+    "addedDate": "2026-02-26T14:25:00Z",
+    "podcast": {
+      "url": "audio/1517-wittenberg-hammer-falls.mp3",
+      "duration": 180
+    }
   }
 ]

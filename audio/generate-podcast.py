@@ -88,6 +88,11 @@ VOICE_MAP_EN = {
         "voice": "sage",
         "instructions": "Speak with intellectual curiosity and quiet wonder. This is the moment the telescope revealed new worlds — mountains on the Moon, moons around Jupiter. Precise but not dry, excited but not theatrical. Like a scientist who just saw something impossible.",
     },
+    # 1517 Wittenberg: dramatic, pivotal — ash for gravitas at a world-historical turning point
+    "1517-wittenberg-hammer-falls": {
+        "voice": "ash",
+        "instructions": "Speak with measured drama. This is the moment Western Christianity splits — a hammer blow that echoes for centuries. Authoritative but not bombastic. Let the weight of the moment speak for itself.",
+    },
 }
 
 # Italian voices — same voice palette but with Italian-language style instructions
@@ -131,6 +136,11 @@ VOICE_MAP_IT = {
     "1610-padua-the-star-messenger": {
         "voice": "sage",
         "instructions": "Parla in italiano con curiosità intellettuale e quieta meraviglia. Questo è il momento in cui il telescopio rivela nuovi mondi — monti sulla Luna, lune attorno a Giove. Preciso ma non arido, emozionato ma non teatrale. Come uno scienziato che ha appena visto qualcosa di impossibile.",
+    },
+    # 1517 Wittenberg: dramatic, pivotal
+    "1517-wittenberg-hammer-falls": {
+        "voice": "ash",
+        "instructions": "Parla in italiano con dramma contenuto. Questo è il momento in cui il cristianesimo occidentale si divide — un colpo di martello che riecheggia per secoli. Autorevole ma non pomposo. Lascia che il peso del momento parli da solo.",
     },
 }
 
@@ -344,6 +354,8 @@ MUSIC_SOURCES = {
     },
   # 1610 Padua: early Baroque/transition from Renaissance — harpsichord suits the new science emerging
   "1610-padua-the-star-messenger": {"pool_key": "soler-harpsichord"},
+  # 1517 Wittenberg: Renaissance lute — capturing the moment before the split, the last gasp of synthesis
+  "1517-wittenberg-hammer-falls": {"pool_key": "renaissance-lute-fantasia"},
 }
 
 
