@@ -2324,13 +2324,20 @@ function toggleThreadPlayAll() {
     return;
   }
   
-  // Build queue of entries in current thread that have podcasts
-  const threadEntries = document.querySelectorAll('.entry.thread-highlighted');
+  if (!activeThread) return;
+  
+  // Build queue from SLICES data (works regardless of which view we're in)
+  const threadSlices = SLICES
+    .filter(s => (s.threads || []).includes(activeThread) && s.podcast && s.podcast.url)
+    .sort((a, b) => parseInt(a.year) - parseInt(b.year));
+  
+  if (threadSlices.length === 0) return;
+  
+  // Map slices to entries (create entry references)
   threadPlayQueue = [];
-  threadEntries.forEach(el => {
-    const slug = el.id.replace('entry-', '');
-    const slice = SLICES.find(s => s.id === slug);
-    if (slice && slice.podcast && slice.podcast.url) {
+  threadSlices.forEach(slice => {
+    const el = document.querySelector(`#entry-${slice.id}`);
+    if (el) {
       threadPlayQueue.push({ el, slice });
     }
   });
