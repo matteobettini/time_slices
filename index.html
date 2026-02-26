@@ -3590,6 +3590,13 @@ document.getElementById('timePlayBtn').addEventListener('click', () => {
 
 // Thread arcs on map
 function activateMapThread(threadId) {
+  // Ensure map is initialized
+  if (!map) {
+    initMap();
+    setTimeout(() => activateMapThread(threadId), 200);
+    return;
+  }
+
   // Update play all button based on whether this is the playing thread
   syncPlayAllButtons(threadPlayActive && threadPlayForThread === threadId);
 
