@@ -52,9 +52,13 @@ Or save entry to a file first: `python3 add-entry.py --file new-entry.json`
     - Run: `python3 audio/generate-podcast.py {id} --lang it`
     - **VERIFY:** `ls -la audio/{id}.mp3 audio/it/{id}.mp3` — both must exist and be >100KB
 
-13. **Commit and push:** `git add -A && git commit -m "Add YEAR Place: Title" && git push`
+13. **Commit and push:** `git add -A && git commit -m "Add YEAR Place: Title" && git push` — verify the push succeeds before proceeding.
 
-14. **Reply** (only after step 12 verification passes): year, title, teaser, one highlight connection (3-5 sentences). End with direct link: `https://matteobettini.github.io/time_slices/#ID` — no backticks, must be clickable.
+14. **Send notification to Telegram group** (only after steps 12-13 complete):
+    - Use the `message` tool: `message(action="send", channel="telegram", target="-5081339890", message="...")`
+    - Message format: year, title, teaser, one highlight connection (3-5 sentences). End with direct link: `https://matteobettini.github.io/time_slices/#ID`
+    - No backticks around the URL — it must be clickable.
+    - After sending, reply with `NO_REPLY` (the notification IS the deliverable).
 
 ---
 
