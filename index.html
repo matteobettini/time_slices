@@ -1988,7 +1988,8 @@ function activateThread(threadId, anchorEntry) {
   document.getElementById('threadName').textContent = formatThreadId(threadId);
   document.getElementById('threadCount').textContent = `${count} ${count === 1 ? t('entry') : t('entries')}`;
   document.getElementById('threadBanner').classList.add('visible');
-  // Hide global play button when thread is active (thread has its own play all)
+  // Hide quick actions when thread is active
+  document.getElementById('quickActions').style.display = 'none';
 
   // --- Scroll handling ---
   if (anchorEntry && anchorViewportTop !== null) {
@@ -2043,6 +2044,8 @@ function clearThread() {
   document.getElementById('threadBanner').classList.remove('visible');
   // Also hide map thread banner if visible
   document.getElementById('mapThreadBanner').classList.remove('visible');
+  // Show quick actions again
+  document.getElementById('quickActions').style.display = 'flex';
 }
 
 // SVG thread lines
