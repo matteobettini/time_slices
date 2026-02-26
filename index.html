@@ -2080,7 +2080,7 @@ function updateUILabels() {
 }
 
 // Load slices for current language and rebuild timeline
-function loadSlices(restoreId, restoreThread) {
+function loadSlices(restoreId, restoreThread, restorePodcast) {
   // Reset the ready promise so buttons wait for the new data
   slicesReady = new Promise(r => { _slicesReadyResolve = r; });
 
@@ -2194,6 +2194,36 @@ function loadSlices(restoreId, restoreThread) {
           setTimeout(() => activateThread(restoreThread), 50);
         });
       }
+
+      // Restore playing podcast if requested
+      if (restorePodcast && restorePodcast.year) {
+        requestAnimationFrame(() => {
+          setTimeout(() => {
+            const el = document.querySelector(`.entry[data-year="${restorePodcast.year}"]`);
+            if (!el) return;
+            const slug = el.id.replace('entry-', '');
+            const slice = SLICES.find(s => s.id === slug);
+            if (!slice || !slice.podcast) return;
+            
+            // Create player if needed and start playback
+            const player = showPodcastPlayer(el, slice.podcast.url, slice.podcast.duration);
+            const audio = player.querySelector('audio');
+            const playBtn = player.querySelector('.pp-play');
+            const btn = el.querySelector('.podcast-btn');
+            
+            audio.src = slice.podcast.url;
+            audio.currentTime = restorePodcast.time || 0;
+            activePodcastAudio = audio;
+            activePodcastYear = restorePodcast.year;
+            
+            audio.play().then(() => {
+              playBtn.innerHTML = SVG_PAUSE;
+              if (btn) btn.innerHTML = SVG_STOP;
+              syncMapPopupAudio(restorePodcast.year, true);
+            }).catch(() => {});
+          }, 100);
+        });
+      }
     });
 }
 
@@ -2204,12 +2234,15 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
     if (lang === currentLang) return;
     // Capture state before switching
     const threadToRestore = activeThread;
+    const playingYear = activePodcastYear;
+    const playingTime = activePodcastAudio ? activePodcastAudio.currentTime : 0;
+    const wasPlaying = activePodcastAudio && !activePodcastAudio.paused;
     currentLang = lang;
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     stopAllPodcasts();
     updateUILabels();
-    loadSlices(null, threadToRestore);
+    loadSlices(null, threadToRestore, wasPlaying ? { year: playingYear, time: playingTime } : null);
   });
 });
 
