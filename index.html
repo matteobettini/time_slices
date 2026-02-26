@@ -3389,13 +3389,19 @@ function clearMapThread() {
   mapActiveThread = null;
   activeThread = null; // keep both views in sync
 
+  // Show all markers (remove dimmed state and time filtering)
   mapMarkers.forEach(marker => {
     const el = marker.getElement();
     if (!el) return;
     const dot = el.querySelector('.map-marker');
     const wrap = el.querySelector('.map-marker-wrap');
-    if (dot) dot.classList.remove('dimmed');
+    const label = el.querySelector('.map-marker-label');
+    if (dot) {
+      dot.classList.remove('dimmed', 'hidden-by-time');
+      dot.style.opacity = 1;
+    }
     if (wrap) wrap.style.pointerEvents = '';
+    if (label) label.style.opacity = 1;
     el.style.pointerEvents = '';
   });
 
@@ -3409,7 +3415,13 @@ function clearMapThread() {
     slider.min = Math.max(years[0] - 100, -3000);
     slider.max = new Date().getFullYear();
     slider.value = slider.max;
-    updateTimeFilter(parseInt(slider.max));
+    document.getElementById('timeYearDisplay').textContent = slider.max;
+  }
+
+  // Fit bounds to show all markers
+  if (mapMarkers.length > 1) {
+    const group = L.featureGroup(mapMarkers);
+    map.fitBounds(group.getBounds().pad(0.3), { maxZoom: 6 });
   }
 }
 
