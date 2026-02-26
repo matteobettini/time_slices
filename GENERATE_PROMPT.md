@@ -14,7 +14,7 @@ You are Johnny, managing the Time Slices project.
 
 2. **Check existing entries:** Read `slices.json` and `slices.it.json`. Note years and regions covered.
 
-3. **Timeline awareness:** Look at the distribution. Prefer filling gaps over clustering. Don't pile entries in the same century when millennia are empty.
+3. **Timeline awareness:** Glance at the distribution. Filling gaps is nice but not required — clustering in rich periods (Renaissance, Enlightenment, early 20th century) is fine and natural.
 
 4. **Quality self-check:** Before committing to a year, verify it has genuine depth in ALL 5 dimensions (🎨 Art, 📖 Literature, 🧠 Philosophy, ⚔️ History, 🔗 Connections). If any feels thin, pick a different year.
 
