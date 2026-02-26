@@ -1911,6 +1911,11 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
 // --- Thread Filtering ---
 
 function activateThread(threadId, anchorEntry) {
+  // Stop any active play all when switching threads
+  if (threadPlayActive) {
+    stopThreadPlayAll();
+  }
+
   const wasSwitching = activeThread !== null;
   const timeline = document.getElementById('timeline');
 
@@ -3313,6 +3318,11 @@ document.getElementById('timePlayBtn').addEventListener('click', () => {
 
 // Thread arcs on map
 function activateMapThread(threadId) {
+  // Stop any active play all when switching threads
+  if (threadPlayActive) {
+    stopThreadPlayAll();
+  }
+
   mapActiveThread = threadId;
 
   // Close any open popup to avoid overlap with thread banner
