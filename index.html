@@ -2245,8 +2245,10 @@ function playThreadEntry(index) {
   const { el, slice } = threadPlayQueue[index];
   threadPlayIndex = index;
   
-  // Scroll entry into view
-  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  // Only scroll on auto-advance (index > 0), not on initial play
+  if (index > 0) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
   
   // Expand if needed
   if (!el.classList.contains('expanded')) {
