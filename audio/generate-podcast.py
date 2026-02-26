@@ -344,7 +344,7 @@ MUSIC_SOURCES = {
     "1347-florence-beautiful-catastrophe": {"pool_key": "gregorian-chant-resurrexi"},
     "1504-florence-duel-of-giants": {"pool_key": "renaissance-lute-fantasia"},
     "1648-munster-exhaustion-of-god": {"pool_key": "bach-organ-canonic"},
-    "1784-europe-dare-to-know": {"pool_key": "beethoven-moonlight"},
+    "1784-europe-dare-to-know": {"pool_key": "mozart-piano-k310"},
     "1889-paris-year-everything-changed": {"pool_key": "ravel-pavane"},
     "1922-modernist-explosion": {"pool_key": "satie-gnossiennes"},
     "532-constantinople-the-last-great-building": {
