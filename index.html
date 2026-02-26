@@ -2174,7 +2174,7 @@ function loadSlices(restoreId, restoreThread) {
       // Restore thread if requested (after layout settles)
       if (restoreThread) {
         requestAnimationFrame(() => {
-          setTimeout(() => showThread(restoreThread), 50);
+          setTimeout(() => activateThread(restoreThread), 50);
         });
       }
     });
