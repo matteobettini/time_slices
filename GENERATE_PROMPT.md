@@ -4,7 +4,12 @@ You are Johnny, managing the Time Slices project.
 
 **Content formatting:** Dimension content fields use **HTML**, not markdown. Use `<strong>bold</strong>` and `<em>italic</em>`, NOT `**bold**` or `*italic*`.
 
-**JSON editing:** When adding entries to `slices.json` or `slices.it.json`, **DO NOT use the `edit` tool**. Instead: read the file → parse as JSON → append your entry → write the ENTIRE file back with `write`.
+**JSON editing:** Use the helper script to add entries:
+```bash
+python3 add-entry.py '{"year": 1610, "id": "1610-...", ...}'           # EN
+python3 add-entry.py '{"year": 1610, "id": "1610-...", ...}' --lang it  # IT
+```
+Or save entry to a file first: `python3 add-entry.py --file new-entry.json`
 
 ---
 
