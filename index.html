@@ -1759,7 +1759,8 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     const needsLoad = !audio.src || audio.src === window.location.href || audio.readyState === 0;
     if (needsLoad && audio.dataset.podcastUrl) {
       if (threadPlayActive) stopThreadPlayAll();
-      else stopAllPodcasts();
+      if (mapThreadPlayActive) stopMapThreadPlayAll();
+      stopAllPodcasts();
       audio.src = audio.dataset.podcastUrl;
       audio.load(); // Force load
       activePodcastAudio = audio;
@@ -1781,7 +1782,8 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     if (audio.paused) {
       // Claim active state on play (in case another podcast was active)
       if (threadPlayActive) stopThreadPlayAll();
-      else if (activePodcastYear !== year) stopAllPodcasts();
+      if (mapThreadPlayActive) stopMapThreadPlayAll();
+      if (activePodcastYear !== year) stopAllPodcasts();
       activePodcastAudio = audio;
       activePodcastYear = year;
       audio.play().catch(() => {});
@@ -1789,6 +1791,9 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
       if (btn) btn.innerHTML = SVG_STOP;
       syncMapPopupAudio(year, true);
     } else {
+      // Pausing — stop any play-all modes
+      if (threadPlayActive) stopThreadPlayAll();
+      if (mapThreadPlayActive) stopMapThreadPlayAll();
       audio.pause();
       playBtn.innerHTML = SVG_PLAY;
       if (btn) btn.innerHTML = SVG_HEADPHONES;
@@ -1847,6 +1852,9 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
   // Stop any play all if running
   if (threadPlayActive) {
     stopThreadPlayAll();
+  }
+  if (mapThreadPlayActive) {
+    stopMapThreadPlayAll();
   }
   
   const existing = entryEl.querySelector('.podcast-player');
