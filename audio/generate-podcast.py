@@ -261,7 +261,7 @@ MUSIC_POOL = {
         "url": "https://archive.org/download/lp_piano-music-vol-6_arthur-balsam-wolfgang-amadeus-mozart/disc1/01.01.%20Sonata%20In%20A%20Minor%20K.310.mp3",
         "filename": "mozart-piano.mp3",
         "description": "Mozart — Piano Sonata K.310 in A minor",
-        "start_time": 0,
+        "start_time": 45.0,
         "tags": ["classical", "piano", "austria", "dramatic", "enlightenment"],
     },
     "beethoven-moonlight": {
