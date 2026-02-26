@@ -42,7 +42,16 @@ Or save entry to a file first: `python3 add-entry.py --file new-entry.json`
 
 11. **Update THREAD_LABELS** in `index.html` if you add new thread tags (both en and it sections).
 
-12. **Generate podcasts (MANDATORY — do not skip):**
+12. **Add THREAD_NARRATIVES** in `index.html` for connections to existing entries:
+    - Find the `THREAD_NARRATIVES` object in `index.html` (both `en` and `it` sections)
+    - For each shared thread between your new entry and existing entries, add a narrative
+    - Format: `'YEAR_FROM→YEAR_TO': 'Your narrative here'` (use the arrow character →)
+    - **Keep it punchy:** 1-2 sentences max. State the *mechanism* of transmission or transformation, not just "X years later"
+    - Good: `'1347→1517': 'Ockham's nominalism cracked scholastic authority; Luther drove a printing press through the gap.'`
+    - Bad: `'1347→1517': 'Nearly two centuries later, the Reformation continued themes from the Black Death era.'`
+    - Focus on: who read whom, what text traveled where, which student taught which teacher, what technique was stolen
+
+13. **Generate podcasts (MANDATORY — do not skip):**
     - Write EN script (~350-400 words, storytelling style) → `audio/scripts/{id}.txt`
     - Write IT script (culturally adapted, not literal) → `audio/scripts/it/{id}.txt`
     - Add voice/music config to `audio/generate-podcast.py`:
@@ -52,9 +61,9 @@ Or save entry to a file first: `python3 add-entry.py --file new-entry.json`
     - Run: `python3 audio/generate-podcast.py {id} --lang it`
     - **VERIFY:** `ls -la audio/{id}.mp3 audio/it/{id}.mp3` — both must exist and be >100KB
 
-13. **Commit and push:** `git add -A && git commit -m "Add YEAR Place: Title" && git push` — verify the push succeeds before proceeding.
+14. **Commit and push:** `git add -A && git commit -m "Add YEAR Place: Title" && git push` — verify the push succeeds before proceeding.
 
-14. **Final reply** (only after steps 12-13 complete):
+15. **Final reply** (only after steps 13-14 complete):
     - Reply with: year, title, teaser, one highlight connection (3-5 sentences)
     - End with direct link: `https://matteobettini.github.io/time_slices/#ID`
     - No backticks around the URL — it must be clickable
