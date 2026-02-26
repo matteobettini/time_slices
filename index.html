@@ -2173,6 +2173,10 @@ function activateThread(threadId, anchorEntry) {
   // Update play all button based on whether this is the playing thread
   syncPlayAllButtons(threadPlayActive && threadPlayForThread === threadId);
 
+  // Hide both banners first to prevent stacking during thread switch
+  document.getElementById('threadBanner').classList.remove('visible');
+  document.getElementById('mapThreadBanner').classList.remove('visible');
+
   const wasSwitching = activeThread !== null;
   const timeline = document.getElementById('timeline');
 
@@ -3588,6 +3592,10 @@ document.getElementById('timePlayBtn').addEventListener('click', () => {
 function activateMapThread(threadId) {
   // Update play all button based on whether this is the playing thread
   syncPlayAllButtons(threadPlayActive && threadPlayForThread === threadId);
+
+  // Hide both banners first to prevent stacking during thread switch
+  document.getElementById('threadBanner').classList.remove('visible');
+  document.getElementById('mapThreadBanner').classList.remove('visible');
 
   mapActiveThread = threadId;
 
