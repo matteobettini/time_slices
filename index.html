@@ -2063,7 +2063,7 @@ function updateUILabels() {
 }
 
 // Load slices for current language and rebuild timeline
-function loadSlices(restoreId) {
+function loadSlices(restoreId, restoreThread) {
   // Reset the ready promise so buttons wait for the new data
   slicesReady = new Promise(r => { _slicesReadyResolve = r; });
 
@@ -2093,7 +2093,7 @@ function loadSlices(restoreId) {
     }
   }
 
-  // Clear active thread
+  // Clear active thread (will restore after if restoreThread is set)
   if (activeThread) clearThread();
 
   fetch(t('slicesFile'))
@@ -2170,6 +2170,13 @@ function loadSlices(restoreId) {
           }
         });
       }
+
+      // Restore thread if requested (after layout settles)
+      if (restoreThread) {
+        requestAnimationFrame(() => {
+          setTimeout(() => showThread(restoreThread), 50);
+        });
+      }
     });
 }
 
@@ -2178,12 +2185,14 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const lang = btn.dataset.lang;
     if (lang === currentLang) return;
+    // Capture state before switching
+    const threadToRestore = activeThread;
     currentLang = lang;
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     stopAllPodcasts();
     updateUILabels();
-    loadSlices();
+    loadSlices(null, threadToRestore);
   });
 });
 
