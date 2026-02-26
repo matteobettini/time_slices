@@ -54,11 +54,11 @@ Or save entry to a file first: `python3 add-entry.py --file new-entry.json`
 
 13. **Commit and push:** `git add -A && git commit -m "Add YEAR Place: Title" && git push` — verify the push succeeds before proceeding.
 
-14. **Send notification to Telegram group** (only after steps 12-13 complete):
-    - Use the `message` tool: `message(action="send", channel="telegram", target="-5081339890", message="...")`
-    - Message format: year, title, teaser, one highlight connection (3-5 sentences). End with direct link: `https://matteobettini.github.io/time_slices/#ID`
-    - No backticks around the URL — it must be clickable.
-    - After sending, reply with `NO_REPLY` (the notification IS the deliverable).
+14. **Final reply** (only after steps 12-13 complete):
+    - Reply with: year, title, teaser, one highlight connection (3-5 sentences)
+    - End with direct link: `https://matteobettini.github.io/time_slices/#ID`
+    - No backticks around the URL — it must be clickable
+    - This reply will be auto-delivered to Telegram by the cron system
 
 ---
 
