@@ -2394,27 +2394,30 @@ document.getElementById('globalPlayAll').addEventListener('click', () => {
     return;
   }
   
-  // Build queue of all visible entries with podcasts (sorted by year)
-  const allEntries = document.querySelectorAll('.entry:not(.thread-hidden)');
-  globalPlayQueue = [];
-  allEntries.forEach(el => {
-    const slug = el.id.replace('entry-', '');
-    const slice = SLICES.find(s => s.id === slug);
-    if (slice && slice.podcast && slice.podcast.url) {
-      globalPlayQueue.push({ el, slice, year: parseInt(slice.year) });
-    }
+  // Wait for slices to be loaded
+  slicesReady.then(() => {
+    // Build queue of all visible entries with podcasts (sorted by year)
+    const allEntries = document.querySelectorAll('.entry:not(.thread-hidden)');
+    globalPlayQueue = [];
+    allEntries.forEach(el => {
+      const slug = el.id.replace('entry-', '');
+      const slice = SLICES.find(s => s.id === slug);
+      if (slice && slice.podcast && slice.podcast.url) {
+        globalPlayQueue.push({ el, slice, year: parseInt(slice.year) });
+      }
+    });
+    
+    // Sort by year (oldest first)
+    globalPlayQueue.sort((a, b) => a.year - b.year);
+    
+    if (globalPlayQueue.length === 0) return;
+    
+    globalPlayActive = true;
+    globalPlayIndex = 0;
+    updateGlobalPlayButton();
+    
+    playGlobalEntry(0);
   });
-  
-  // Sort by year (oldest first)
-  globalPlayQueue.sort((a, b) => a.year - b.year);
-  
-  if (globalPlayQueue.length === 0) return;
-  
-  globalPlayActive = true;
-  globalPlayIndex = 0;
-  updateGlobalPlayButton();
-  
-  playGlobalEntry(0);
 });
 
 function playGlobalEntry(index) {
