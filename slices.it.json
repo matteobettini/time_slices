@@ -154,6 +154,84 @@
     }
   },
   {
+    "year": "1095",
+    "id": "1095-clermont-god-wills-it",
+    "title": "Clermont — Deus le volt",
+    "teaser": "Un papa in piedi in un campo francese lancia una guerra santa. Intanto, i monaci costruiscono chiese che traducono la teologia in pietra, un filosofo italiano dimostra l'esistenza di Dio con la pura ragione, e poeti compongono il primo poema epico europeo in lingua volgare. La Prima Crociata si accende — e con essa, una nuova idea di Cristianità latina.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "L'<strong>architettura romanica</strong> raggiunge la sua fase matura — il primo stile architettonico paneuropeo dall'Impero romano. I tratti distintivi: muri spessi, archi a tutto sesto, volte a botte, torri massicce. Chiese come <strong>Cluny III</strong> (iniziata nel 1088, la più grande della Cristianità fino a San Pietro) incarnano gli ideali della <strong>riforma cluniacense</strong> nella pietra: navate slanciate per elaborate liturgie, programmi scultorei che insegnano la salvezza agli illetterati. Il timpano di <strong>Moissac</strong> (c. 1115, ma la tradizione è già consolidata) raffigurerà presto Cristo in Maestà circondato dalle bestie apocalittiche — teologia scolpita sopra i portali, così che entrare in chiesa significa attraversare il giudizio. È architettura come propaganda: massiccia, fiduciosa, che insegna che la Chiesa è letteralmente la porta tra terra e cielo."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "La <strong><em>Chanson de Roland</em></strong> (Canzone di Rolando), il poema epico fondativo dell'Europa in lingua volgare, viene composta proprio in questi anni — gli studiosi la datano tra il 1040 e il 1115 circa. Trasforma il disastro storico di Roncisvalle (778) in mitologia di guerra santa: Rolando muore combattendo i Saraceni, non i Baschi, e la sua morte diventa martirio. Il grido di battaglia del poema — <em>\"Deus le volt!\"</em> — riecheggerà a Clermont. È la nascita della <strong>chanson de geste</strong>, la tradizione epica in antico francese che produrrà centinaia di poemi celebranti guerrieri cristiani contro l'Islam. Eseguita da giullari nelle corti e lungo le vie di pellegrinaggio, crea una letteratura popolare di ideologia crociata decenni prima e dopo il sermone di Urbano."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>Anselmo di Canterbury</strong> (1033–1109), il filosofo più importante tra Agostino e Tommaso d'Aquino, vive esattamente questo momento. Il suo <em>Proslogion</em> (1077–78) contiene l'<strong>argomento ontologico</strong> — l'affermazione che l'esistenza di Dio può essere dimostrata dal solo concetto di Dio, senza appello all'esperienza o alla Scrittura. Dio è «ciò di cui non si può pensare nulla di maggiore»; se tale essere esistesse solo nella mente e non nella realtà, si potrebbe pensare qualcosa di maggiore; dunque Dio esiste necessariamente. È la ragione che afferma il suo potere sul dominio della fede — la stessa fiducia che costruisce cattedrali romaniche e lancia crociate. Anselmo sviluppa anche la <strong>teoria della soddisfazione</strong>: la morte di Cristo paga un debito che l'umanità deve a Dio, una transazione feudale scritta in scala cosmica. Come Arcivescovo di Canterbury (dal 1093), si scontra ripetutamente con i re Guglielmo II ed Enrico I sulla <strong>investitura</strong> — chi controlla le nomine ecclesiastiche — il conflitto Chiesa-Stato che definisce l'epoca."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Nel novembre 1095, <strong>Papa Urbano II</strong> si rivolge a una folla al <strong>Concilio di Clermont</strong> e lancia la <strong>Prima Crociata</strong>. Il discorso stesso è perduto — abbiamo solo ricostruzioni successive — ma i suoi effetti sono documentati con precisione. L'imperatore bizantino <strong>Alessio I Comneno</strong> aveva chiesto mercenari; Urbano fornisce un movimento di massa. L'appello fonde pellegrinaggio e guerra: i partecipanti ricevono <strong>indulgenze</strong> (remissione dei peccati) e la promessa che morire per la causa significa salvezza. Nel 1096 i primi eserciti marciano verso est; i <strong>massacri della Renania</strong> sterminano le comunità ebraiche lungo il cammino. Gerusalemme cade nel luglio 1099. La Crociata crea una nuova entità politica — gli <strong>Stati crociati</strong> — e una nuova idea: la Cristianità latina come forza militare unificata, la Chiesa che dirige la violenza europea verso l'esterno."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "I legami sono istituzionali e ideologici. <strong>Urbano II</strong> era stato lui stesso priore di <strong>Cluny</strong> — lo stesso monastero riformatore le cui ambizioni architettoniche produssero Cluny III. La rete cluniacense, con oltre mille case affiliate entro il 1095, fornì l'infrastruttura attraverso cui l'appello di Urbano si diffuse. La <em>Chanson de Roland</em> veniva eseguita lungo le <strong>vie di pellegrinaggio</strong> per Santiago di Compostela — percorsi che i cluniacensi aiutarono a costruire e che prepararono gli europei ai viaggi a lunga distanza verso luoghi santi, creando il terreno culturale per il pellegrinaggio-come-crociata. La teoria della soddisfazione di Anselmo — Cristo che paga il debito dell'umanità — si traduce naturalmente nella teologia crociata: i peccatori possono pagare i propri debiti attraverso il servizio militare. La fiducia dello stile romanico, la fantasia di guerra santa del poeta di Rolando, la certezza razionale di Anselmo e la Chiesa militante di Urbano sono tutte espressioni dello stesso momento: la Cristianità latina al suo apice assertivo, convinta di poter conquistare sia la ragione che il territorio.",
+        "funFact": "Urbano II morì nel luglio 1099, appena due settimane dopo la caduta di Gerusalemme — ma prima che la notizia raggiungesse Roma. Non seppe mai che la sua crociata aveva avuto successo."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Concilio_di_Clermont",
+        "title": "Concilio di Clermont — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Prima_crociata",
+        "title": "Prima crociata — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Architettura_romanica",
+        "title": "Architettura romanica — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Chanson_de_Roland",
+        "title": "Chanson de Roland — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Anselmo_d%27Aosta",
+        "title": "Anselmo d'Aosta — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Ordine_cluniacense",
+        "title": "Ordine cluniacense — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Papa_Urbano_II",
+        "title": "Papa Urbano II — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1095-clermont-council.jpg",
+      "caption": "Papa Urbano II predica al Concilio di Clermont, da Les Passages d'outremer (c. 1474)",
+      "attribution": "Jean Colombe, Pubblico dominio, tramite Wikimedia Commons / BnF Gallica"
+    },
+    "threads": [
+      "crusades",
+      "romanesque",
+      "church-state-conflict",
+      "holy-war",
+      "rationalism",
+      "pilgrimage"
+    ],
+    "location": {
+      "lat": 45.7797,
+      "lon": 3.0863,
+      "place": "Clermont"
+    },
+    "addedDate": "2026-02-26T13:35:00Z"
+  },
+  {
     "year": "1347",
     "title": "Firenze — La bella catastrofe",
     "teaser": "Un terzo d'Europa muore. Dalle ceneri, Boccaccio scrive in volgare, i pittori scoprono il teschio sotto la pelle, e la filosofia impara a tagliare col rasoio.",

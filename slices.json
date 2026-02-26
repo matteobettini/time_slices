@@ -158,6 +158,84 @@
     }
   },
   {
+    "year": "1095",
+    "id": "1095-clermont-god-wills-it",
+    "title": "Clermont — God Wills It",
+    "teaser": "A pope stands in a French field and launches a holy war. Meanwhile, monks build churches that translate theology into stone, an Italian philosopher proves God's existence with pure reason, and poets compose Europe's first vernacular epic. The First Crusade ignites — and with it, a new idea of Latin Christendom.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>Romanesque architecture</strong> reaches its mature phase — the first pan-European architectural style since the Roman Empire. The hallmarks: thick walls, rounded arches, barrel vaults, massive towers. Churches like <strong>Cluny III</strong> (begun 1088, the largest church in Christendom until St Peter's) embody <strong>Cluniac reform</strong> ideals in stone: soaring naves for elaborate liturgy, sculptural programmes teaching salvation to the illiterate. The tympanum at <strong>Moissac</strong> (c. 1115, but the tradition is established now) will soon depict Christ in Majesty surrounded by the apocalyptic beasts — theology carved over doorways so that entering the church means passing through judgment. This is architecture as propaganda: massive, confident, teaching that the Church is literally the gateway between earth and heaven."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "The <strong><em>Chanson de Roland</em></strong> (Song of Roland), Europe's foundational epic in a vernacular language, is being composed in precisely these years — scholars date it between c. 1040 and 1115. It transforms the historical disaster at Roncevaux (778) into holy war mythology: Roland dies fighting Saracens, not Basques, and his death becomes martyrdom. The poem's battle cry — <em>\"Deus le volt!\"</em> — will echo at Clermont. This is the birth of <strong>chanson de geste</strong>, the Old French epic tradition that will produce hundreds of poems celebrating Christian warriors against Islam. Performed by jongleurs at courts and pilgrimage routes, it creates a popular literature of crusading ideology decades before and after Urban's sermon."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Anselm of Canterbury</strong> (1033–1109), the most important philosopher between Augustine and Aquinas, is living through exactly this moment. His <em>Proslogion</em> (1077–78) contains the <strong>ontological argument</strong> — the claim that God's existence can be proven from the concept of God alone, without appeal to experience or Scripture. God is \"that than which nothing greater can be conceived\"; if such a being existed only in the mind and not in reality, something greater could be conceived; therefore God necessarily exists. This is reason asserting its power over faith's domain — the same confidence that builds Romanesque cathedrals and launches crusades. Anselm also develops <strong>satisfaction theory</strong>: Christ's death pays a debt humanity owes God, a feudal transaction writ cosmic. As Archbishop of Canterbury (from 1093), he clashes repeatedly with kings William II and Henry I over <strong>investiture</strong> — who controls Church appointments — the defining Church-state conflict of the age."
+      },
+      "hist": {
+        "label": "History",
+        "content": "In November 1095, <strong>Pope Urban II</strong> addresses a crowd at the <strong>Council of Clermont</strong> and launches the <strong>First Crusade</strong>. The speech itself is lost — we have only later reconstructions — but its effects are documented precisely. Byzantine Emperor <strong>Alexios I Komnenos</strong> had requested mercenaries; Urban provides a mass movement. The call fuses pilgrimage with warfare: participants receive <strong>indulgences</strong> (remission of sins) and the promise that dying in the cause means salvation. By 1096, the first armies are marching east; the <strong>Rhineland massacres</strong> slaughter Jewish communities along the way. Jerusalem falls in July 1099. The Crusade creates a new political entity — the <strong>Crusader States</strong> — and a new idea: Latin Christendom as a unified military force, the Church directing European violence outward."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The links are institutional and ideological. <strong>Urban II</strong> was himself a former prior of <strong>Cluny</strong> — the same reforming monastery whose architectural ambitions produced Cluny III. The Cluniac network, with over a thousand affiliated houses by 1095, provided the infrastructure through which Urban's call spread. The <em>Chanson de Roland</em> was performed along <strong>pilgrimage routes</strong> to Santiago de Compostela — routes the Cluniacs helped build and which trained Europeans for long-distance travel to holy sites, preparing the cultural ground for pilgrimage-as-crusade. Anselm's satisfaction theory — Christ paying humanity's debt — translates naturally into crusade theology: sinners can pay their own debts through military service. The Romanesque style's confidence, the Roland poet's holy-war fantasy, Anselm's rational certainty, and Urban's militant Church are all expressions of the same moment: Latin Christendom at its most assertive, convinced it can conquer both reason and territory.",
+        "funFact": "Urban II died in July 1099, just two weeks after Jerusalem fell — but before news reached Rome. He never learned that his crusade had succeeded."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Council_of_Clermont",
+        "title": "Council of Clermont — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/First_Crusade",
+        "title": "First Crusade — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Romanesque_architecture",
+        "title": "Romanesque Architecture — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Song_of_Roland",
+        "title": "Song of Roland — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Anselm_of_Canterbury",
+        "title": "Anselm of Canterbury — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Cluniac_Reforms",
+        "title": "Cluniac Reforms — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Pope_Urban_II",
+        "title": "Pope Urban II — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1095-clermont-council.jpg",
+      "caption": "Pope Urban II preaching at the Council of Clermont, from Les Passages d'outremer (c. 1474)",
+      "attribution": "Jean Colombe, Public Domain, via Wikimedia Commons / BnF Gallica"
+    },
+    "threads": [
+      "crusades",
+      "romanesque",
+      "church-state-conflict",
+      "holy-war",
+      "rationalism",
+      "pilgrimage"
+    ],
+    "location": {
+      "lat": 45.7797,
+      "lon": 3.0863,
+      "place": "Clermont"
+    },
+    "addedDate": "2026-02-26T13:35:00Z"
+  },
+  {
     "year": "1347",
     "title": "Florence — The Beautiful Catastrophe",
     "teaser": "A third of Europe dies. From the ashes, Boccaccio writes in the vernacular, painters discover the skull beneath the skin, and philosophy learns to cut with a razor.",
