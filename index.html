@@ -1178,6 +1178,7 @@
 <div class="map-thread-banner" id="mapThreadBanner">
   <span><span id="mapThreadLabel"></span>: <span class="thread-name" id="mapThreadName"></span></span>
   <span class="thread-count" id="mapThreadCount"></span>
+  <button class="thread-play-all" id="mapThreadPlayAll" title="Play all podcasts in thread"><svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" style="vertical-align:middle;margin-right:4px"><polygon points="6,3 20,12 6,21"/></svg>Play All</button>
   <span class="thread-close" id="mapThreadClose">✕</span>
 </div>
 
@@ -2228,38 +2229,7 @@ let threadPlayQueue = [];
 let threadPlayIndex = -1;
 let threadPlayActive = false;
 
-document.getElementById('threadPlayAll').addEventListener('click', () => {
-  const btn = document.getElementById('threadPlayAll');
-  
-  if (threadPlayActive) {
-    // Stop playing
-    stopThreadPlayAll();
-    return;
-  }
-  
-  // Build queue of entries in current thread that have podcasts
-  const threadEntries = document.querySelectorAll('.entry.thread-highlighted');
-  threadPlayQueue = [];
-  threadEntries.forEach(el => {
-    const slug = el.id.replace('entry-', '');
-    const slice = SLICES.find(s => s.id === slug);
-    if (slice && slice.podcast && slice.podcast.url) {
-      threadPlayQueue.push({ el, slice });
-    }
-  });
-  
-  if (threadPlayQueue.length === 0) return;
-  
-  // Stop any currently playing podcast
-  stopAllPodcasts();
-  
-  threadPlayActive = true;
-  threadPlayIndex = 0;
-  btn.innerHTML = SVG_STOP_BTN + ' Stop';
-  btn.classList.add('playing');
-  
-  playThreadEntry(0);
-});
+document.getElementById('threadPlayAll').addEventListener('click', toggleThreadPlayAll);
 
 function playThreadEntry(index) {
   if (index >= threadPlayQueue.length || !threadPlayActive) {
@@ -2316,9 +2286,65 @@ function stopThreadPlayAll() {
   threadPlayIndex = -1;
   threadPlayQueue = [];
   stopAllPodcasts();
+  // Update both timeline and map play all buttons
   const btn = document.getElementById('threadPlayAll');
+  const mapBtn = document.getElementById('mapThreadPlayAll');
   btn.innerHTML = SVG_PLAY_BTN + ' Play All';
   btn.classList.remove('playing');
+  if (mapBtn) {
+    mapBtn.innerHTML = SVG_PLAY_BTN + ' Play All';
+    mapBtn.classList.remove('playing');
+  }
+}
+
+// Sync both play all buttons when starting
+function syncPlayAllButtons(playing) {
+  const btn = document.getElementById('threadPlayAll');
+  const mapBtn = document.getElementById('mapThreadPlayAll');
+  if (playing) {
+    btn.innerHTML = SVG_STOP_BTN + ' Stop';
+    btn.classList.add('playing');
+    if (mapBtn) {
+      mapBtn.innerHTML = SVG_STOP_BTN + ' Stop';
+      mapBtn.classList.add('playing');
+    }
+  } else {
+    btn.innerHTML = SVG_PLAY_BTN + ' Play All';
+    btn.classList.remove('playing');
+    if (mapBtn) {
+      mapBtn.innerHTML = SVG_PLAY_BTN + ' Play All';
+      mapBtn.classList.remove('playing');
+    }
+  }
+}
+
+function toggleThreadPlayAll() {
+  if (threadPlayActive) {
+    stopThreadPlayAll();
+    return;
+  }
+  
+  // Build queue of entries in current thread that have podcasts
+  const threadEntries = document.querySelectorAll('.entry.thread-highlighted');
+  threadPlayQueue = [];
+  threadEntries.forEach(el => {
+    const slug = el.id.replace('entry-', '');
+    const slice = SLICES.find(s => s.id === slug);
+    if (slice && slice.podcast && slice.podcast.url) {
+      threadPlayQueue.push({ el, slice });
+    }
+  });
+  
+  if (threadPlayQueue.length === 0) return;
+  
+  // Stop any currently playing podcast
+  stopAllPodcasts();
+  
+  threadPlayActive = true;
+  threadPlayIndex = 0;
+  syncPlayAllButtons(true);
+  
+  playThreadEntry(0);
 }
 
 
@@ -3606,6 +3632,7 @@ document.getElementById('viewToggle').addEventListener('click', () => {
 
 document.getElementById('mapBackBtn').addEventListener('click', showTimelineView);
 document.getElementById('mapThreadClose').addEventListener('click', clearMapThread);
+document.getElementById('mapThreadPlayAll').addEventListener('click', toggleThreadPlayAll);
 
 // Map lang switcher
 document.querySelectorAll('[data-map="1"]').forEach(btn => {
