@@ -2215,10 +2215,13 @@ function loadSlices(restoreId, restoreThread, restorePodcast) {
   let restoreOffset = 0;
   if (!restoreId && !wasAtTop) {
     const viewportCenter = window.innerHeight / 2;
-    const entries = document.querySelectorAll('.entry[data-year]');
+    // Only consider visible entries (not thread-hidden)
+    const entries = document.querySelectorAll('.entry[data-year]:not(.thread-hidden)');
     let closest = null, closestDist = Infinity;
     entries.forEach(el => {
       const rect = el.getBoundingClientRect();
+      // Skip entries not in viewport
+      if (rect.bottom < 0 || rect.top > window.innerHeight) return;
       const dist = Math.abs(rect.top + rect.height / 2 - viewportCenter);
       if (dist < closestDist) { closestDist = dist; closest = el; }
     });
