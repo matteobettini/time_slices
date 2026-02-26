@@ -3032,6 +3032,7 @@ function activateMapThread(threadId) {
     const el = marker.getElement();
     if (!el) return;
     const dot = el.querySelector('.map-marker');
+    const wrap = el.querySelector('.map-marker-wrap');
     const label = el.querySelector('.map-marker-label');
     if (!dot) return;
     if (marker._sliceThreads.includes(threadId)) {
@@ -3039,8 +3040,12 @@ function activateMapThread(threadId) {
       dot.classList.remove('hidden-by-time');
       dot.style.opacity = 1;
       if (label) label.style.opacity = 1;
+      if (wrap) wrap.style.pointerEvents = '';
+      el.style.pointerEvents = '';
     } else {
       dot.classList.add('dimmed');
+      if (wrap) wrap.style.pointerEvents = 'none';
+      el.style.pointerEvents = 'none';
     }
   });
 
@@ -3079,7 +3084,10 @@ function clearMapThread() {
     const el = marker.getElement();
     if (!el) return;
     const dot = el.querySelector('.map-marker');
+    const wrap = el.querySelector('.map-marker-wrap');
     if (dot) dot.classList.remove('dimmed');
+    if (wrap) wrap.style.pointerEvents = '';
+    el.style.pointerEvents = '';
   });
 
   clearMapArcs();
