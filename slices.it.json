@@ -77,6 +77,83 @@
     }
   },
   {
+    "year": "532",
+    "id": "532-constantinople-the-last-great-building",
+    "title": "Costantinopoli — L'ultima grande costruzione",
+    "teaser": "Una rivolta quasi rovescia un imperatore. Invece, costruisce la chiesa più grande del mondo — e cambia per sempre il corso dell'architettura.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Le <strong>rivolte Nika</strong> di gennaio 532 bruciano metà di Costantinopoli, distruggendo la vecchia chiesa di Santa Sofia ('Sapienza Santa'). Giustiniano coglie l'opportunità per costruire qualcosa di senza precedenti. Anthemius di Tralles e Isidoro di Mileto, matematici piuttosto che architetti tradizionali, progettano una basilica <strong>a pianta centrale</strong> con un'enorme cupola su pennacchi — 31 metri di diametro, 55 metri di altezza. Completata nel 537, è la <strong>rivoluzione architettonica bizantina</strong>: esterno piatto e senza elementi che nasconde un interno luminoso di marmo, mosaici dorati e luce dalle 40 finestre alla base della cupola. Questa è l'<strong>arte bizantina antica</strong> al suo apice — non il naturalismo classico ma la trascendenza spirituale attraverso la geometria. La cupola sembra fluttuare, sospesa dal cielo piuttosto che sorretta da mura terrene. L'edificio rimane la cattedrale più grande del mondo per quasi un millennio."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "<strong>Procopio di Cesarea</strong>, storico ufficiale di Giustiniano, sta lavorando alle <em>Guerre</em> e preparando la <em>Storia segreta</em> — quest'ultima un ritratto spietato e senza scontati della corte imperiale che circola privatamente tra i dissidenti. Le sue <em>Costruzioni</em> (anni 550) includeranno una famosa ecfrasi (orazione descrittiva) di Santa Sofia, tentando di catturare in parole un'esperienza che trascende la descrizione. Nel frattempo <strong>Romano il Melode</strong> (c. 520–560) sta sviluppando il <strong>kontakion</strong> — una nuova forma di inno bizantino, sermoni in versi drammatici cantati su melodie popolari. Il suo <em>Kontakion sulla Natività</em> inaugura una poesia liturgica che definirà il culto ortodosso medievale. Questa è letteratura al servizio del <strong>dramma liturgico</strong>, trasformando la narrazione biblicica in performance immersiva."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Gli scritti dello <strong>Pseudo-Dionigi l'Areopagita</strong> (c. inizio VI secolo) circolano e influenzano la teologia di corte. Il suo <strong>neoplatonismo mistico</strong> — Dio come unità assoluta al di là dell'essere, accessibile solo attraverso la negazione (teologia <em>apofatica</em>) — fornisce l'architettura filosofica per l'edificio di Giustiniano: il design stesso di Santa Sofia incarna l'ascesa dal materiale all'immateriale, dalla molteplicità all'unità divina. Nel frattempo il movimento delle <strong>filoponoi</strong> (amanti della fatica/sofferenza) — prime associazioni caritatevoli — sta acquisendo influenza; il loro stoicismo cristiano fonde la <strong>filosofia tardo-antica</strong> con la pratica monastica emergente. L'imperatore stesso è un re-filosofo: i suoi codici legali, il suo programma edilizio, i suoi concili, riflettono tutti la convinzione che la <strong>verità cristiana</strong> debba plasmare ogni istituzione."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Le <strong>rivolte Nika</strong> (gennaio 532) rovesciano quasi Giustiniano e Teodora. Le fazioni dell'Ippodromo (Blu e Verdi) si uniscono contro l'imperatore; 30.000 muoiono nella repressione. Giustiniano emerge con autorità assoluta e <strong>ricostruisce Costantinopoli</strong> come capitale cristiana — Santa Sofia come suo gioiello. Questo è l'apice dell'<strong>Impero bizantino antico</strong>: l'Italia è stata riconquistata agli Ostrogoti; il Nord Africa ai Vandali; l'espansione continua verso la Spagna. Il <strong>Corpus Juris Civilis</strong> di Giustiniano (iniziato nel 529) codifica il diritto romano, fondamento dei sistemi giuridici europei. Eppure la peste arriva nel 541, l'inizio del raffreddamento climatico, e l'impero farà fatica a mantenere i suoi successi. Il 532 è il momento di <strong>speranza massima</strong> prima della lunga contrazione."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "I fili si intrecciano attraverso <strong>teologia, potere e pietra<strong>. Procopio scrive ciò che l'imperatore costruisce — sia il panegirico ufficiale che la critica segreta. Anthemius e Isidoro applicano conoscenze matematiche dall'</strong>Alessandria neoplatonica</strong> (dove avevano studiato) a problemi architettonici. Le innovazioni liturgiche di Romano il Melode richiedono il prodigio acustico di Santa Sofia; l'edificio plasma il culto così come il culto ha plasmato il design. Il codice legale di Giustiniano e la sua cattedrale sono pilastri gemelli dell'<strong>impero cristiano</strong> — ragione e fede, diritto e bellezza. Le rivolte che hanno reso possibile l'edificio hanno anche rivelato la fragilità del potere: il coraggio di Teodora ('Per chi ha regnato, è intollerabile essere esiliato') salva il trono. Tutto questo — filosofia, poesia, rivolta, costruzione — fluisce attraverso <strong>un solo edificio</strong>, un solo anno, una sola città che sarebbe rimasta al centro del mondo ortodosso per nove secoli.",
+        "funFact": "La cupola originale di Santa Sofia crollò nel 558, appena 21 anni dopo il completamento. Isidoro il Giovane — nipote dell'architetto originale — la ricostruì 6 metri più alta. La seconda cupola resiste ancora oggi."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Santa_Sofia_(Costantinopoli)",
+        "title": "Santa Sofia (Costantinopoli) — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Rivolta_Nika",
+        "title": "Rivolta Nika — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Procopio_di_Cesarea",
+        "title": "Procopio di Cesarea — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Giustiniano_I",
+        "title": "Giustiniano I — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Anthemio_di_Tralle",
+        "title": "Anthemio di Tralle — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Romano_il_Melode",
+        "title": "Romano il Melode — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/532-hagia-sophia.jpg",
+      "caption": "Interno di Santa Sofia, Costantinopoli (Istanbul)",
+      "attribution": "Arild Vågen, CC BY-SA 3.0, via Wikimedia Commons"
+    },
+    "threads": [
+      "byzantine-empire",
+      "christian-architecture",
+      "classical-revival",
+      "neoplatonism",
+      "liturgical-drama"
+    ],
+    "location": {
+      "lat": 41.0086,
+      "lon": 28.9802,
+      "place": "Constantinople"
+    },
+    "addedDate": "2026-02-26T06:30:00Z",
+    "podcast": {
+      "url": "audio/it/532-constantinople-the-last-great-building.mp3",
+      "duration": 184
+    }
+  },
+  {
     "year": "762",
     "title": "Baghdad — La città rotonda della ragione",
     "teaser": "Un califfo costruisce un cerchio perfetto nel deserto. Al suo interno, la filosofia greca incontra la poesia araba e l'amministrazione persiana — si accende l'Età d'oro islamica.",

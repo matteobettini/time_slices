@@ -10,6 +10,17 @@ You are Johnny, managing the Time Slices project.
 8. **Thread narratives (the text between entries when filtering by thread) must be GROUNDED and BRIEF.** These connectors explain HOW one entry influenced or led to the next across centuries. They must describe documented transmission chains — real influence, real inheritance, real institutional continuity. Don't fabricate links where none exist. **Keep them concise: 2-3 sentences max.** State the key connection mechanism (who, what, how) without over-explaining. If no documented link exists, say so briefly or focus on the contrast. Avoid verbose paragraphs — these appear as interstitial text in the UI and should be punchy, not essays.
 9. **Thread connectivity.** Try to connect at least one thread tag to an existing entry when it makes sense — the timeline is richer as a web. But islands are fine too; not every entry needs to link back. Check existing thread tags in slices.json before inventing new ones to avoid duplicates.
 10. Add ONE new time slice following the spec (research, write, image, threads, deploy). **Location in the title:** Only include a city/place in the entry title if most dimensions genuinely converge on that location. If the dimensions are geographically scattered (e.g. art in Paris, philosophy in Germany, literature in London), don't force a city name into the title — use a thematic title instead. The `location` field for the map pin is always required regardless. **Always include `"addedDate"` as a full ISO-8601 UTC timestamp (e.g. `"2026-02-25T14:30:00Z"`) in the new entry** — this is used for the ☕ fresh badge in the UI. Use the current time, not just the date.
+
+
+**⚠️ CRITICAL — Content formatting:** Dimension content fields use **HTML**, not markdown. Use `<strong>bold</strong>` and `<em>italic</em>`, NOT `**bold**` or `*italic*`. Check any existing entry for the correct format.
+
+**⚠️ CRITICAL — JSON editing method:** When adding entries to `slices.json` or `slices.it.json`, **DO NOT use the `edit` tool** — it requires exact text matching and will fail on JSON. Instead:
+1. Read the entire JSON file with `read`
+2. Parse it as JSON (it's an array of objects)
+3. Append your new entry object to the array
+4. **Write the ENTIRE file back** using `write` — this replaces the file atomically and is reliable
+5. Repeat for the Italian version
+
 11. Add the same entry translated to Italian in slices.it.json — natural Italian, not machine translation.
 12. Update THREAD_LABELS (both en and it) in index.html if you add new thread tags.
 13. **Generate podcasts (EN + IT).** After the entry is committed to both JSON files:
