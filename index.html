@@ -1401,12 +1401,20 @@ function renderSlice(slice, isFresh = false) {
       details.style.maxHeight = details.scrollHeight + 'px';
       requestAnimationFrame(() => { details.style.maxHeight = '0'; });
       el.classList.remove('expanded');
+      // Redraw thread lines after collapse animation
+      if (activeThread) {
+        setTimeout(() => redrawThreadLines(), 450);
+      }
     } else {
       el.classList.add('expanded');
       details.style.maxHeight = details.scrollHeight + 'px';
       details.addEventListener('transitionend', function handler() {
         if (el.classList.contains('expanded')) {
           details.style.maxHeight = 'none';
+          // Redraw thread lines after expand animation
+          if (activeThread) {
+            redrawThreadLines();
+          }
         }
         details.removeEventListener('transitionend', handler);
       });
@@ -2078,6 +2086,81 @@ function drawThreadLines(matchingEntries) {
       });
     }
   }, 500); // wait for hide/show transitions to finish
+}
+
+function redrawThreadLines() {
+  if (!activeThread) return;
+  const matchingEntries = Array.from(document.querySelectorAll('.entry.thread-highlighted'));
+  if (matchingEntries.length < 2) return;
+  
+  clearThreadLines();
+  
+  const container = document.querySelector('.timeline-container');
+  const containerRect = container.getBoundingClientRect();
+  const scrollTop = container.scrollTop || 0;
+
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.classList.add('thread-lines-svg');
+  const fullHeight = container.scrollHeight;
+  svg.setAttribute('width', '100%');
+  svg.setAttribute('height', fullHeight + 'px');
+  svg.style.height = fullHeight + 'px';
+  container.appendChild(svg);
+
+  const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+  defs.innerHTML = `
+    <filter id="threadGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  `;
+  svg.appendChild(defs);
+
+  const timelineX = container.offsetWidth / 2;
+
+  for (let i = 0; i < matchingEntries.length - 1; i++) {
+    const fromEntry = matchingEntries[i];
+    const toEntry = matchingEntries[i + 1];
+
+    const fromRect = fromEntry.getBoundingClientRect();
+    const toRect = toEntry.getBoundingClientRect();
+
+    const fromY = fromRect.top - containerRect.top + scrollTop + 30;
+    const toY = toRect.top - containerRect.top + scrollTop + 30;
+
+    const containerCenterX = containerRect.left + containerRect.width / 2;
+    const fromCenterX = fromRect.left + fromRect.width / 2;
+    const toCenterX = toRect.left + toRect.width / 2;
+    
+    const fromOnLeft = fromCenterX < containerCenterX;
+    const toOnLeft = toCenterX < containerCenterX;
+    
+    let curveDirection;
+    if (fromOnLeft && toOnLeft) {
+      curveDirection = 1;
+    } else if (!fromOnLeft && !toOnLeft) {
+      curveDirection = -1;
+    } else {
+      curveDirection = (i % 2 === 0) ? 1 : -1;
+    }
+    
+    const verticalDist = Math.abs(toY - fromY);
+    const baseCurve = 80;
+    const curveOffset = baseCurve + Math.min(verticalDist * 0.1, 100);
+
+    const midY = (fromY + toY) / 2;
+    const controlX = timelineX + (curveOffset * curveDirection);
+
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('d', `M ${timelineX} ${fromY} Q ${controlX} ${midY} ${timelineX} ${toY}`);
+    path.setAttribute('fill', 'none');
+    path.setAttribute('stroke', 'rgba(124,111,247,0.4)');
+    path.setAttribute('stroke-width', '2.5');
+    path.setAttribute('stroke-linecap', 'round');
+    path.setAttribute('filter', 'url(#threadGlow)');
+
+    svg.appendChild(path);
+  }
 }
 
 function clearThreadLines() {
