@@ -1664,6 +1664,33 @@ function syncMapPopupAudio(year, isPlaying) {
   });
 }
 
+// Sync timeline card player UI with current audio state (call when switching views)
+function syncTimelinePlayerUI() {
+  if (!activePodcastAudio || !activePodcastYear) return;
+  
+  const entry = document.querySelector(`.entry[data-year="${activePodcastYear}"]`);
+  if (!entry) return;
+  
+  const player = entry.querySelector('.podcast-player');
+  const podcastBtn = entry.querySelector('.podcast-btn');
+  
+  if (activePodcastAudio.paused) {
+    // Audio is paused
+    if (player) {
+      const playBtn = player.querySelector('.pp-play');
+      if (playBtn) playBtn.innerHTML = SVG_PLAY;
+    }
+    if (podcastBtn) podcastBtn.innerHTML = SVG_HEADPHONES;
+  } else {
+    // Audio is playing
+    if (player) {
+      const playBtn = player.querySelector('.pp-play');
+      if (playBtn) playBtn.innerHTML = SVG_PAUSE;
+    }
+    if (podcastBtn) podcastBtn.innerHTML = SVG_STOP;
+  }
+}
+
 function stopAllPodcasts() {
   // Stop audio
   if (activePodcastAudio) {
@@ -3593,6 +3620,10 @@ function showMapView() {
     map.invalidateSize();
     populateMap();
     // populateMap handles mapActiveThread re-activation via the synced activeThread
+    // Sync map popup audio state if something is playing
+    if (activePodcastAudio && !activePodcastAudio.paused && activePodcastYear) {
+      syncMapPopupAudio(activePodcastYear, true);
+    }
   }, 150);
 }
 
@@ -3603,7 +3634,7 @@ function showTimelineView() {
   document.getElementById('mapTimeControl').classList.remove('visible');
   document.getElementById('viewToggle').classList.remove('active');
   document.getElementById('viewToggle').textContent = t('viewMap');
-  document.getElementById('quickActions').style.display = 'flex';
+  document.getElementById('quickActions').style.display = activeThread ? 'none' : 'flex';
 
   // Hide map's thread banner
   document.getElementById('mapThreadBanner').classList.remove('visible');
@@ -3615,6 +3646,9 @@ function showTimelineView() {
   } else {
     clearThread();
   }
+  
+  // Sync player UI with current audio state
+  syncTimelinePlayerUI();
 }
 
 function scrollToEntry(id) {
