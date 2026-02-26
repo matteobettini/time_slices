@@ -1705,7 +1705,8 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     // Lazy-load audio if this was an idle restored player
     const needsLoad = !audio.src || audio.src === window.location.href || audio.readyState === 0;
     if (needsLoad && audio.dataset.podcastUrl) {
-      stopAllPodcasts();
+      if (threadPlayActive) stopThreadPlayAll();
+      else stopAllPodcasts();
       audio.src = audio.dataset.podcastUrl;
       audio.load(); // Force load
       activePodcastAudio = audio;
@@ -1726,7 +1727,8 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     
     if (audio.paused) {
       // Claim active state on play (in case another podcast was active)
-      if (activePodcastYear !== year) stopAllPodcasts();
+      if (threadPlayActive) stopThreadPlayAll();
+      else if (activePodcastYear !== year) stopAllPodcasts();
       activePodcastAudio = audio;
       activePodcastYear = year;
       audio.play().catch(() => {});
@@ -2080,6 +2082,9 @@ document.getElementById('threadPlayAll').addEventListener('click', () => {
   });
   
   if (threadPlayQueue.length === 0) return;
+  
+  // Stop any currently playing podcast
+  stopAllPodcasts();
   
   threadPlayActive = true;
   threadPlayIndex = 0;
