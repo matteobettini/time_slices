@@ -3647,6 +3647,10 @@ function activateMapThread(threadId) {
   if (threadMarkers.length > 1) {
     const group = L.featureGroup(threadMarkers);
     map.fitBounds(group.getBounds().pad(0.4), { maxZoom: 6 });
+  } else if (threadMarkers.length === 1) {
+    // Single marker - fly to it
+    const marker = threadMarkers[0];
+    map.flyTo(marker.getLatLng(), 5, { duration: 1 });
   }
 
   // Narrow slider to thread year range
