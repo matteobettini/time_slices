@@ -1681,15 +1681,27 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
 
   playBtn.addEventListener('click', (e) => {
     e.stopPropagation();
+    
     // Lazy-load audio if this was an idle restored player
-    if (!audio.src || audio.src === window.location.href) {
-      if (audio.dataset.podcastUrl) {
-        stopAllPodcasts();
-        audio.src = audio.dataset.podcastUrl;
-        activePodcastAudio = audio;
-        activePodcastYear = year;
-      }
+    const needsLoad = !audio.src || audio.src === window.location.href || audio.src === '';
+    if (needsLoad && audio.dataset.podcastUrl) {
+      stopAllPodcasts();
+      audio.src = audio.dataset.podcastUrl;
+      activePodcastAudio = audio;
+      activePodcastYear = year;
+      // Wait for audio to be ready before playing
+      playBtn.innerHTML = SVG_PAUSE;
+      if (btn) btn.innerHTML = SVG_STOP;
+      syncMapPopupAudio(year, true);
+      audio.play().catch(() => {
+        // Reset UI if play fails
+        playBtn.innerHTML = SVG_PLAY;
+        if (btn) btn.innerHTML = SVG_HEADPHONES;
+        syncMapPopupAudio(year, false);
+      });
+      return;
     }
+    
     if (audio.paused) {
       // Claim active state on play (in case another podcast was active)
       if (activePodcastYear !== year) stopAllPodcasts();
