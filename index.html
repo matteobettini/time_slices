@@ -1681,18 +1681,22 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
 
   playBtn.addEventListener('click', (e) => {
     e.stopPropagation();
+    // Get fresh reference to podcast button (may have been rebuilt)
+    const btn = entryEl.querySelector('.podcast-btn');
     
     // Lazy-load audio if this was an idle restored player
-    const needsLoad = !audio.src || audio.src === window.location.href || audio.src === '';
+    const needsLoad = !audio.src || audio.src === window.location.href || audio.readyState === 0;
     if (needsLoad && audio.dataset.podcastUrl) {
       stopAllPodcasts();
       audio.src = audio.dataset.podcastUrl;
+      audio.load(); // Force load
       activePodcastAudio = audio;
       activePodcastYear = year;
-      // Wait for audio to be ready before playing
+      // Update UI immediately
       playBtn.innerHTML = SVG_PAUSE;
       if (btn) btn.innerHTML = SVG_STOP;
       syncMapPopupAudio(year, true);
+      // Play when ready
       audio.play().catch(() => {
         // Reset UI if play fails
         playBtn.innerHTML = SVG_PLAY;
@@ -1707,7 +1711,7 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
       if (activePodcastYear !== year) stopAllPodcasts();
       activePodcastAudio = audio;
       activePodcastYear = year;
-      audio.play();
+      audio.play().catch(() => {});
       playBtn.innerHTML = SVG_PAUSE;
       if (btn) btn.innerHTML = SVG_STOP;
       syncMapPopupAudio(year, true);
@@ -1732,6 +1736,7 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
   });
 
   audio.addEventListener('ended', () => {
+    const btn = entryEl.querySelector('.podcast-btn');
     playBtn.innerHTML = SVG_PLAY;
     if (btn) btn.innerHTML = SVG_HEADPHONES;
     progressFill.style.width = '0%';
