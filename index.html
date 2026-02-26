@@ -144,8 +144,10 @@
     cursor: pointer;
     transition: transform 0.2s ease, opacity 0.3s ease, max-height 0.4s ease, margin-bottom 0.4s ease;
     scroll-margin-top: 100px;
+    z-index: 1;
   }
-  .entry:hover { transform: translateY(-2px); }
+  .entry:hover { transform: translateY(-2px); z-index: 2; }
+  .entry.expanded { z-index: 3; }
   .entry:nth-child(odd) { margin-left: 5%; }
   .entry:nth-child(even) { margin-left: 50%; }
   .entry.thread-hidden {
@@ -619,7 +621,7 @@
   .thread-narrative {
     position: relative;
     width: 50%;
-    margin: 0 auto 32px;
+    margin: 32px auto;
     padding: 14px 20px;
     background: var(--bg);
     border: 1px solid rgba(124,111,247,0.25);
@@ -629,9 +631,10 @@
     color: var(--text-dim);
     text-align: center;
     animation: fadeIn 0.4s ease;
-    z-index: 5;
+    z-index: 50;
     /* Cover the timeline line behind */
     box-shadow: 0 0 0 12px var(--bg), 0 0 20px rgba(124,111,247,0.08);
+    clear: both;
   }
   .thread-narrative .narrative-arrow {
     color: var(--accent);
