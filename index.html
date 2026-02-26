@@ -72,6 +72,98 @@
   .lang-btn:hover { border-color: var(--text-dim); color: var(--text); }
   .lang-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 
+  /* Thread selector dropdown */
+  .thread-selector {
+    position: relative;
+    margin-right: 8px;
+  }
+  .thread-selector-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 3px 10px;
+    font-size: 0.85rem;
+    font-family: var(--font);
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+  .thread-selector-btn:hover { border-color: var(--text-dim); color: var(--text); }
+  .thread-selector-btn.active { border-color: var(--accent); color: var(--accent); }
+  .thread-selector-btn .thread-arrow {
+    font-size: 0.6rem;
+    transition: transform 0.2s ease;
+  }
+  .thread-selector.open .thread-arrow { transform: rotate(180deg); }
+  .thread-selector-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    min-width: 220px;
+    max-height: 400px;
+    overflow-y: auto;
+    background: rgba(10,10,15,0.98);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 6px 0;
+    z-index: 200;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  }
+  .thread-selector.open .thread-selector-dropdown { display: block; }
+  .thread-selector-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    color: var(--text);
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+  .thread-selector-item:hover { background: var(--surface2); }
+  .thread-selector-item.active { color: var(--accent); background: var(--surface); }
+  .thread-selector-item .thread-item-name { font-weight: 500; }
+  .thread-selector-item .thread-item-count {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    margin-left: 12px;
+  }
+  .thread-selector-clear {
+    display: flex;
+    align-items: center;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: background 0.15s ease;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 4px;
+  }
+  .thread-selector-clear:hover { background: var(--surface2); color: var(--text); }
+
+  @media (max-width: 768px) {
+    .thread-selector-btn {
+      padding: 3px 8px;
+      font-size: 0.75rem;
+    }
+    .thread-selector-btn .thread-label { display: none; }
+    .thread-selector-dropdown {
+      position: fixed;
+      top: 60px;
+      left: 16px;
+      right: 16px;
+      min-width: auto;
+      max-height: 60vh;
+    }
+  }
+
   /* Thread banner */
   /* Thread banner — floating island style for both views */
   .thread-banner {
@@ -1133,6 +1225,13 @@
       <span class="subtitle" id="subtitle">Cross-disciplinary history exploration</span>
     </div>
     <div class="header-right">
+      <div class="thread-selector" id="threadSelector">
+        <button class="thread-selector-btn" id="threadSelectorBtn">
+          <span class="thread-label">Threads</span>
+          <span class="thread-arrow">▼</span>
+        </button>
+        <div class="thread-selector-dropdown" id="threadSelectorDropdown"></div>
+      </div>
       <button class="view-toggle" id="viewToggle"></button>
       <button class="lang-btn active" data-lang="en">EN</button>
       <button class="lang-btn" data-lang="it">IT</button>
@@ -1166,6 +1265,13 @@
         <span class="subtitle" id="mapSubtitle"></span>
       </div>
       <div style="display:flex;align-items:center;gap:8px;">
+        <div class="thread-selector" id="mapThreadSelector">
+          <button class="thread-selector-btn" id="mapThreadSelectorBtn">
+            <span class="thread-label">Threads</span>
+            <span class="thread-arrow">▼</span>
+          </button>
+          <div class="thread-selector-dropdown" id="mapThreadSelectorDropdown"></div>
+        </div>
         <button class="view-toggle active" id="mapBackBtn"></button>
         <button class="lang-btn" data-lang="en" data-map="1">EN</button>
         <button class="lang-btn" data-lang="it" data-map="1">IT</button>
@@ -1359,6 +1465,140 @@ function formatThreadId(id) {
   const labels = THREAD_LABELS[currentLang] || THREAD_LABELS.en;
   return labels[id] || id.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
 }
+
+// Thread selector dropdown
+function getThreadsWithCounts() {
+  const threadCounts = {};
+  SLICES.forEach(slice => {
+    (slice.threads || []).forEach(t => {
+      threadCounts[t] = (threadCounts[t] || 0) + 1;
+    });
+  });
+  // Sort by count descending
+  return Object.entries(threadCounts)
+    .sort((a, b) => b[1] - a[1])
+    .map(([id, count]) => ({ id, count, label: formatThreadId(id) }));
+}
+
+function populateThreadSelector(dropdownId) {
+  const dropdown = document.getElementById(dropdownId);
+  if (!dropdown) return;
+  
+  const threads = getThreadsWithCounts();
+  const clearLabel = currentLang === 'it' ? 'Tutti gli eventi' : 'All events';
+  
+  dropdown.innerHTML = `
+    <div class="thread-selector-clear" data-action="clear">${clearLabel}</div>
+    ${threads.map(t => `
+      <div class="thread-selector-item${activeThread === t.id ? ' active' : ''}" data-thread="${t.id}">
+        <span class="thread-item-name">${t.label}</span>
+        <span class="thread-item-count">${t.count}</span>
+      </div>
+    `).join('')}
+  `;
+}
+
+function updateThreadSelectorButton(buttonId) {
+  const btn = document.getElementById(buttonId);
+  if (!btn) return;
+  const label = btn.querySelector('.thread-label');
+  if (!label) return;
+  
+  if (activeThread) {
+    label.textContent = formatThreadId(activeThread);
+    btn.classList.add('active');
+  } else {
+    label.textContent = currentLang === 'it' ? 'Thread' : 'Threads';
+    btn.classList.remove('active');
+  }
+}
+
+function syncAllThreadSelectors() {
+  // Update both dropdowns and buttons
+  populateThreadSelector('threadSelectorDropdown');
+  populateThreadSelector('mapThreadSelectorDropdown');
+  updateThreadSelectorButton('threadSelectorBtn');
+  updateThreadSelectorButton('mapThreadSelectorBtn');
+}
+
+function toggleThreadSelector(selectorId) {
+  const selector = document.getElementById(selectorId);
+  const otherSelectorId = selectorId === 'threadSelector' ? 'mapThreadSelector' : 'threadSelector';
+  const otherSelector = document.getElementById(otherSelectorId);
+  
+  // Close other selector if open
+  if (otherSelector) otherSelector.classList.remove('open');
+  
+  // Toggle this one
+  selector.classList.toggle('open');
+  
+  // Populate on open
+  if (selector.classList.contains('open')) {
+    const dropdownId = selectorId === 'threadSelector' ? 'threadSelectorDropdown' : 'mapThreadSelectorDropdown';
+    populateThreadSelector(dropdownId);
+  }
+}
+
+function closeAllThreadSelectors() {
+  document.getElementById('threadSelector')?.classList.remove('open');
+  document.getElementById('mapThreadSelector')?.classList.remove('open');
+}
+
+// Event listeners for thread selector
+document.getElementById('threadSelectorBtn').addEventListener('click', (e) => {
+  e.stopPropagation();
+  toggleThreadSelector('threadSelector');
+});
+
+document.getElementById('mapThreadSelectorBtn').addEventListener('click', (e) => {
+  e.stopPropagation();
+  toggleThreadSelector('mapThreadSelector');
+});
+
+document.getElementById('threadSelectorDropdown').addEventListener('click', (e) => {
+  const item = e.target.closest('.thread-selector-item');
+  const clearBtn = e.target.closest('.thread-selector-clear');
+  
+  if (clearBtn) {
+    clearThread();
+    closeAllThreadSelectors();
+    syncAllThreadSelectors();
+    return;
+  }
+  
+  if (item) {
+    const threadId = item.dataset.thread;
+    activateThread(threadId);
+    closeAllThreadSelectors();
+    syncAllThreadSelectors();
+  }
+});
+
+document.getElementById('mapThreadSelectorDropdown').addEventListener('click', (e) => {
+  const item = e.target.closest('.thread-selector-item');
+  const clearBtn = e.target.closest('.thread-selector-clear');
+  
+  if (clearBtn) {
+    clearMapThread();
+    closeAllThreadSelectors();
+    syncAllThreadSelectors();
+    return;
+  }
+  
+  if (item) {
+    const threadId = item.dataset.thread;
+    activateMapThread(threadId);
+    closeAllThreadSelectors();
+    syncAllThreadSelectors();
+  }
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.thread-selector')) {
+    closeAllThreadSelectors();
+  }
+});
 
 function renderSlice(slice, isFresh = false) {
   const dims = Object.entries(slice.dimensions).map(([key, dim]) => {
@@ -2021,6 +2261,8 @@ function activateThread(threadId, anchorEntry) {
   document.getElementById('threadBanner').classList.add('visible');
   // Hide quick actions when thread is active
   document.getElementById('quickActions').style.display = 'none';
+  // Sync thread selector dropdowns
+  syncAllThreadSelectors();
 
   // --- Scroll handling ---
   if (anchorEntry && anchorViewportTop !== null) {
@@ -2077,6 +2319,8 @@ function clearThread() {
   document.getElementById('mapThreadBanner').classList.remove('visible');
   // Show quick actions again
   document.getElementById('quickActions').style.display = 'flex';
+  // Sync thread selector dropdowns
+  syncAllThreadSelectors();
 }
 
 // SVG thread lines
@@ -2508,6 +2752,9 @@ function loadSlices(restoreId, restoreThread, restorePodcast) {
 
       // Signal that slices are ready for dice/coffee buttons
       _slicesReadyResolve();
+      
+      // Initialize thread selector dropdowns
+      syncAllThreadSelectors();
 
       // Restore expanded entries + their podcast player bars
       if (expandedYears.size > 0) {
@@ -3392,6 +3639,8 @@ function activateMapThread(threadId) {
   document.getElementById('mapThreadLabel').textContent = t('thread');
   document.getElementById('mapThreadCount').textContent = `${count} ${count === 1 ? t('entry') : t('entries')}`;
   document.getElementById('mapThreadBanner').classList.add('visible');
+  // Sync thread selector dropdowns
+  syncAllThreadSelectors();
 
   // Fit bounds to thread entries
   const threadMarkers = mapMarkers.filter(m => m._sliceThreads.includes(threadId));
@@ -3450,6 +3699,9 @@ function clearMapThread() {
     const group = L.featureGroup(mapMarkers);
     map.fitBounds(group.getBounds().pad(0.3), { maxZoom: 6 });
   }
+  
+  // Sync thread selector dropdowns
+  syncAllThreadSelectors();
 }
 
 function drawMapArcs(threadId, maxYear) {
