@@ -354,8 +354,6 @@
   .quick-btn:active { transform: scale(0.95); }
   .quick-btn.loading { opacity: 0.4; pointer-events: none; }
   .quick-btn.rolling { animation: diceRoll 0.5s ease-out; }
-  .quick-btn.playing { background: var(--accent); border-color: var(--accent); }
-  .quick-btn.playing:hover { background: #6358d4; box-shadow: 0 0 16px rgba(124, 111, 247, 0.4); }
   @keyframes diceRoll {
     0% { transform: rotate(0deg) scale(1); }
     25% { transform: rotate(90deg) scale(1.2); }
@@ -1112,7 +1110,6 @@
 </header>
 
 <div class="quick-actions" id="quickActions">
-  <button class="quick-btn" id="globalPlayAll" title="Play all podcasts"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><polygon points="6,3 20,12 6,21"/></svg></button>
   <button class="quick-btn" id="coffeeBtn">☕</button>
   <button class="quick-btn" id="diceBtn">🎲</button>
 </div>
@@ -1653,7 +1650,6 @@ function stopAllPodcasts() {
   activePodcastAudio = null;
   activePodcastYear = null;
   // Update global play button state
-  if (typeof updateGlobalPlayButton === 'function') updateGlobalPlayButton();
 }
 
 function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}) {
@@ -1722,7 +1718,6 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     const needsLoad = !audio.src || audio.src === window.location.href || audio.readyState === 0;
     if (needsLoad && audio.dataset.podcastUrl) {
       if (threadPlayActive) stopThreadPlayAll();
-      else if (globalPlayActive) stopGlobalPlayAll();
       else stopAllPodcasts();
       audio.src = audio.dataset.podcastUrl;
       audio.load(); // Force load
@@ -1732,14 +1727,12 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
       playBtn.innerHTML = SVG_PAUSE;
       if (btn) btn.innerHTML = SVG_STOP;
       syncMapPopupAudio(year, true);
-      updateGlobalPlayButton();
       // Play when ready
       audio.play().catch(() => {
         // Reset UI if play fails
         playBtn.innerHTML = SVG_PLAY;
         if (btn) btn.innerHTML = SVG_HEADPHONES;
         syncMapPopupAudio(year, false);
-        updateGlobalPlayButton();
       });
       return;
     }
@@ -1747,7 +1740,6 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     if (audio.paused) {
       // Claim active state on play (in case another podcast was active)
       if (threadPlayActive) stopThreadPlayAll();
-      else if (globalPlayActive) stopGlobalPlayAll();
       else if (activePodcastYear !== year) stopAllPodcasts();
       activePodcastAudio = audio;
       activePodcastYear = year;
@@ -1755,13 +1747,11 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
       playBtn.innerHTML = SVG_PAUSE;
       if (btn) btn.innerHTML = SVG_STOP;
       syncMapPopupAudio(year, true);
-      updateGlobalPlayButton();
     } else {
       audio.pause();
       playBtn.innerHTML = SVG_PLAY;
       if (btn) btn.innerHTML = SVG_HEADPHONES;
       syncMapPopupAudio(year, false);
-      updateGlobalPlayButton();
     }
   });
 
@@ -1785,7 +1775,6 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     currentTime.textContent = '0:00';
     syncMapPopupAudio(year, false);
     activePodcastYear = null;
-    updateGlobalPlayButton();
   });
 
   // Seek on click/touch
@@ -1817,8 +1806,6 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
   // Stop any play all if running
   if (threadPlayActive) {
     stopThreadPlayAll();
-  } else if (globalPlayActive) {
-    stopGlobalPlayAll();
   }
   
   const existing = entryEl.querySelector('.podcast-player');
@@ -1879,9 +1866,6 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
 // --- Thread Filtering ---
 
 function activateThread(threadId, anchorEntry) {
-  // Stop global play all if running (thread will have its own play all)
-  if (globalPlayActive) stopGlobalPlayAll();
-  
   const wasSwitching = activeThread !== null;
   const timeline = document.getElementById('timeline');
 
@@ -1961,7 +1945,6 @@ function activateThread(threadId, anchorEntry) {
   document.getElementById('threadCount').textContent = `${count} ${count === 1 ? t('entry') : t('entries')}`;
   document.getElementById('threadBanner').classList.add('visible');
   // Hide global play button when thread is active (thread has its own play all)
-  document.getElementById('globalPlayAll').style.display = 'none';
 
   // --- Scroll handling ---
   if (anchorEntry && anchorViewportTop !== null) {
@@ -2015,7 +1998,6 @@ function clearThread() {
   clearThreadLines();
   document.getElementById('threadBanner').classList.remove('visible');
   // Show global play button again
-  document.getElementById('globalPlayAll').style.display = '';
 }
 
 // SVG thread lines
@@ -2227,7 +2209,6 @@ document.getElementById('threadPlayAll').addEventListener('click', () => {
   threadPlayIndex = 0;
   btn.innerHTML = SVG_STOP_BTN + ' Stop';
   btn.classList.add('playing');
-  updateGlobalPlayButton();
   
   playThreadEntry(0);
 });
@@ -2290,133 +2271,6 @@ function stopThreadPlayAll() {
   const btn = document.getElementById('threadPlayAll');
   btn.innerHTML = SVG_PLAY_BTN + ' Play All';
   btn.classList.remove('playing');
-  updateGlobalPlayButton();
-}
-
-// Global Play All (when no thread is active)
-let globalPlayQueue = [];
-let globalPlayIndex = -1;
-let globalPlayActive = false;
-
-// Update global play button to reflect any playback state
-function updateGlobalPlayButton() {
-  const btn = document.getElementById('globalPlayAll');
-  if (!btn) return;
-  const isAnythingPlaying = activePodcastAudio && !activePodcastAudio.paused;
-  if (isAnythingPlaying || threadPlayActive || globalPlayActive) {
-    btn.innerHTML = SVG_STOP;
-    btn.classList.add('playing');
-  } else {
-    btn.innerHTML = SVG_PLAY;
-    btn.classList.remove('playing');
-  }
-}
-
-document.getElementById('globalPlayAll').addEventListener('click', () => {
-  const btn = document.getElementById('globalPlayAll');
-  
-  // If anything is playing, stop it
-  const isAnythingPlaying = activePodcastAudio && !activePodcastAudio.paused;
-  if (isAnythingPlaying || threadPlayActive || globalPlayActive) {
-    if (threadPlayActive) stopThreadPlayAll();
-    else if (globalPlayActive) stopGlobalPlayAll();
-    else stopAllPodcasts();
-    updateGlobalPlayButton();
-    return;
-  }
-  
-  // Nothing playing — start play all
-  // If thread is active, use thread play all instead
-  if (activeThread) {
-    document.getElementById('threadPlayAll').click();
-    return;
-  }
-  
-  // Wait for slices to be loaded
-  slicesReady.then(() => {
-    // Build queue of all visible entries with podcasts (sorted by year)
-    const allEntries = document.querySelectorAll('.entry:not(.thread-hidden)');
-    globalPlayQueue = [];
-    allEntries.forEach(el => {
-      const slug = el.id.replace('entry-', '');
-      const slice = SLICES.find(s => s.id === slug);
-      if (slice && slice.podcast && slice.podcast.url) {
-        globalPlayQueue.push({ el, slice, year: parseInt(slice.year) });
-      }
-    });
-    
-    // Sort by year (oldest first)
-    globalPlayQueue.sort((a, b) => a.year - b.year);
-    
-    if (globalPlayQueue.length === 0) return;
-    
-    globalPlayActive = true;
-    globalPlayIndex = 0;
-    updateGlobalPlayButton();
-    
-    playGlobalEntry(0);
-  });
-});
-
-function playGlobalEntry(index) {
-  if (index >= globalPlayQueue.length || !globalPlayActive) {
-    stopGlobalPlayAll();
-    return;
-  }
-  
-  const { el, slice } = globalPlayQueue[index];
-  globalPlayIndex = index;
-  
-  // Scroll entry into view
-  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  
-  // Expand if needed
-  if (!el.classList.contains('expanded')) {
-    el.classList.add('expanded');
-    const details = el.querySelector('.card-details');
-    if (details) details.style.maxHeight = 'none';
-    // Load floating image
-    const floatImg = el.querySelector('.floating-image img[data-src]');
-    if (floatImg && !floatImg.src) floatImg.src = floatImg.dataset.src;
-  }
-  
-  // Show player and start playback
-  setTimeout(() => {
-    const player = showPodcastPlayer(el, slice.podcast.url, slice.podcast.duration, { autoStop: false });
-    const audio = player.querySelector('audio');
-    const playBtn = player.querySelector('.pp-play');
-    const podcastBtn = el.querySelector('.podcast-btn');
-    
-    // Set up ended listener for auto-advance
-    const onEnded = () => {
-      audio.removeEventListener('ended', onEnded);
-      if (globalPlayActive) {
-        playGlobalEntry(index + 1);
-      }
-    };
-    audio.addEventListener('ended', onEnded);
-    
-    // Start playback
-    audio.src = slice.podcast.url;
-    activePodcastAudio = audio;
-    activePodcastYear = el.dataset.year;
-    audio.play().then(() => {
-      playBtn.innerHTML = SVG_PAUSE;
-      if (podcastBtn) podcastBtn.innerHTML = SVG_STOP;
-      syncMapPopupAudio(el.dataset.year, true);
-    }).catch(() => {
-      // Skip to next on error
-      if (globalPlayActive) playGlobalEntry(index + 1);
-    });
-  }, 300);
-}
-
-function stopGlobalPlayAll() {
-  globalPlayActive = false;
-  globalPlayIndex = -1;
-  globalPlayQueue = [];
-  stopAllPodcasts();
-  updateGlobalPlayButton();
 }
 
 // Lazy image loading
@@ -2638,38 +2492,6 @@ function loadSlices(restoreId, restoreThread, restorePodcast) {
               };
               audio.addEventListener('ended', onEnded);
             }
-            // If was in global play all mode, restore that state
-            else if (restorePodcast.wasGlobalPlayAll && !restoreThread) {
-              // Rebuild the queue
-              const allEntries = document.querySelectorAll('.entry:not(.thread-hidden)');
-              globalPlayQueue = [];
-              allEntries.forEach(entry => {
-                const entrySlug = entry.id.replace('entry-', '');
-                const entrySlice = SLICES.find(s => s.id === entrySlug);
-                if (entrySlice && entrySlice.podcast && entrySlice.podcast.url) {
-                  globalPlayQueue.push({ el: entry, slice: entrySlice, year: parseInt(entrySlice.year) });
-                }
-              });
-              globalPlayQueue.sort((a, b) => a.year - b.year);
-              
-              // Find current index in queue
-              globalPlayIndex = globalPlayQueue.findIndex(item => item.el.dataset.year === restorePodcast.year);
-              if (globalPlayIndex === -1) globalPlayIndex = restorePodcast.globalPlayIdx || 0;
-              
-              globalPlayActive = true;
-              const globalBtn = document.getElementById('globalPlayAll');
-              globalBtn.innerHTML = SVG_STOP;
-              globalBtn.classList.add('playing');
-              
-              // Set up ended listener for auto-advance
-              const onEnded = () => {
-                audio.removeEventListener('ended', onEnded);
-                if (globalPlayActive) {
-                  playGlobalEntry(globalPlayIndex + 1);
-                }
-              };
-              audio.addEventListener('ended', onEnded);
-            }
             
             audio.play().then(() => {
               playBtn.innerHTML = SVG_PAUSE;
@@ -2694,8 +2516,6 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
     const wasPlaying = activePodcastAudio && !activePodcastAudio.paused;
     const wasThreadPlayAll = threadPlayActive;
     const threadPlayIdx = threadPlayIndex;
-    const wasGlobalPlayAll = globalPlayActive;
-    const globalPlayIdx = globalPlayIndex;
     currentLang = lang;
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
@@ -2704,11 +2524,8 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
     threadPlayActive = false;
     threadPlayIndex = -1;
     threadPlayQueue = [];
-    globalPlayActive = false;
-    globalPlayIndex = -1;
-    globalPlayQueue = [];
     updateUILabels();
-    loadSlices(null, threadToRestore, wasPlaying ? { year: playingYear, time: playingTime, wasThreadPlayAll, threadPlayIdx, wasGlobalPlayAll, globalPlayIdx } : null);
+    loadSlices(null, threadToRestore, wasPlaying ? { year: playingYear, time: playingTime, wasThreadPlayAll, threadPlayIdx } : null);
   });
 });
 
