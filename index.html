@@ -92,7 +92,6 @@
     color: var(--accent);
   }
   .thread-banner .thread-close {
-    margin-left: auto;
     cursor: pointer;
     color: var(--text-dim);
     font-size: 1.2rem;
@@ -102,6 +101,21 @@
   }
   .thread-banner .thread-close:hover { color: var(--text); background: rgba(255,255,255,0.1); }
   .thread-banner .thread-count { color: var(--text-dim); }
+  .thread-banner .thread-play-all {
+    margin-left: auto;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background 0.15s ease, opacity 0.15s ease;
+  }
+  .thread-banner .thread-play-all:hover { background: #6358d4; }
+  .thread-banner .thread-play-all.playing { background: #e74c3c; }
+  .thread-banner .thread-close { margin-left: 12px; }
 
   /* Timeline container */
   .timeline-container {
@@ -1087,6 +1101,7 @@
   <div class="thread-banner" id="threadBanner">
     <span>🧵 Thread: <span class="thread-name" id="threadName"></span></span>
     <span class="thread-count" id="threadCount"></span>
+    <button class="thread-play-all" id="threadPlayAll" title="Play all podcasts in thread">▶ Play All</button>
     <span class="thread-close" id="threadClose">✕</span>
   </div>
 </header>
@@ -1941,6 +1956,11 @@ function clearThread() {
   activeThread = null;
   mapActiveThread = null; // keep both views in sync
 
+  // Stop thread play all if active
+  if (threadPlayActive) {
+    stopThreadPlayAll();
+  }
+
   // Restore timeline line
   document.querySelector('.timeline-line').classList.remove('thread-active');
   document.getElementById('timeline').classList.remove('no-transition');
@@ -2030,6 +2050,101 @@ function clearThreadLines() {
 }
 
 document.getElementById('threadClose').addEventListener('click', clearThread);
+
+// Thread Play All
+let threadPlayQueue = [];
+let threadPlayIndex = -1;
+let threadPlayActive = false;
+
+document.getElementById('threadPlayAll').addEventListener('click', () => {
+  const btn = document.getElementById('threadPlayAll');
+  
+  if (threadPlayActive) {
+    // Stop playing
+    stopThreadPlayAll();
+    return;
+  }
+  
+  // Build queue of entries in current thread that have podcasts
+  const threadEntries = document.querySelectorAll('.entry.thread-highlighted');
+  threadPlayQueue = [];
+  threadEntries.forEach(el => {
+    const slug = el.id.replace('entry-', '');
+    const slice = SLICES.find(s => s.id === slug);
+    if (slice && slice.podcast && slice.podcast.url) {
+      threadPlayQueue.push({ el, slice });
+    }
+  });
+  
+  if (threadPlayQueue.length === 0) return;
+  
+  threadPlayActive = true;
+  threadPlayIndex = 0;
+  btn.textContent = '⏹ Stop';
+  btn.classList.add('playing');
+  
+  playThreadEntry(0);
+});
+
+function playThreadEntry(index) {
+  if (index >= threadPlayQueue.length || !threadPlayActive) {
+    stopThreadPlayAll();
+    return;
+  }
+  
+  const { el, slice } = threadPlayQueue[index];
+  threadPlayIndex = index;
+  
+  // Scroll entry into view
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  
+  // Expand if needed
+  if (!el.classList.contains('expanded')) {
+    el.classList.add('expanded');
+    const details = el.querySelector('.card-details');
+    if (details) details.style.maxHeight = 'none';
+  }
+  
+  // Show player and start playback
+  setTimeout(() => {
+    const player = showPodcastPlayer(el, slice.podcast.url, slice.podcast.duration);
+    const audio = player.querySelector('audio');
+    const playBtn = player.querySelector('.pp-play');
+    const podcastBtn = el.querySelector('.podcast-btn');
+    
+    // Set up ended listener for auto-advance
+    const onEnded = () => {
+      audio.removeEventListener('ended', onEnded);
+      if (threadPlayActive) {
+        playThreadEntry(index + 1);
+      }
+    };
+    audio.addEventListener('ended', onEnded);
+    
+    // Start playback
+    audio.src = slice.podcast.url;
+    activePodcastAudio = audio;
+    activePodcastYear = el.dataset.year;
+    audio.play().then(() => {
+      playBtn.innerHTML = SVG_PAUSE;
+      if (podcastBtn) podcastBtn.innerHTML = SVG_STOP;
+      syncMapPopupAudio(el.dataset.year, true);
+    }).catch(() => {
+      // Skip to next on error
+      if (threadPlayActive) playThreadEntry(index + 1);
+    });
+  }, 300);
+}
+
+function stopThreadPlayAll() {
+  threadPlayActive = false;
+  threadPlayIndex = -1;
+  threadPlayQueue = [];
+  stopAllPodcasts();
+  const btn = document.getElementById('threadPlayAll');
+  btn.textContent = '▶ Play All';
+  btn.classList.remove('playing');
+}
 
 // Lazy image loading
 function lazyLoadImages() {
