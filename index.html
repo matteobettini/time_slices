@@ -1652,6 +1652,8 @@ function stopAllPodcasts() {
   });
   activePodcastAudio = null;
   activePodcastYear = null;
+  // Update global play button state
+  if (typeof updateGlobalPlayButton === 'function') updateGlobalPlayButton();
 }
 
 function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}) {
@@ -1730,12 +1732,14 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
       playBtn.innerHTML = SVG_PAUSE;
       if (btn) btn.innerHTML = SVG_STOP;
       syncMapPopupAudio(year, true);
+      updateGlobalPlayButton();
       // Play when ready
       audio.play().catch(() => {
         // Reset UI if play fails
         playBtn.innerHTML = SVG_PLAY;
         if (btn) btn.innerHTML = SVG_HEADPHONES;
         syncMapPopupAudio(year, false);
+        updateGlobalPlayButton();
       });
       return;
     }
@@ -1751,11 +1755,13 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
       playBtn.innerHTML = SVG_PAUSE;
       if (btn) btn.innerHTML = SVG_STOP;
       syncMapPopupAudio(year, true);
+      updateGlobalPlayButton();
     } else {
       audio.pause();
       playBtn.innerHTML = SVG_PLAY;
       if (btn) btn.innerHTML = SVG_HEADPHONES;
       syncMapPopupAudio(year, false);
+      updateGlobalPlayButton();
     }
   });
 
@@ -1779,6 +1785,7 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     currentTime.textContent = '0:00';
     syncMapPopupAudio(year, false);
     activePodcastYear = null;
+    updateGlobalPlayButton();
   });
 
   // Seek on click/touch
@@ -2220,6 +2227,7 @@ document.getElementById('threadPlayAll').addEventListener('click', () => {
   threadPlayIndex = 0;
   btn.innerHTML = SVG_STOP_BTN + ' Stop';
   btn.classList.add('playing');
+  updateGlobalPlayButton();
   
   playThreadEntry(0);
 });
@@ -2282,6 +2290,7 @@ function stopThreadPlayAll() {
   const btn = document.getElementById('threadPlayAll');
   btn.innerHTML = SVG_PLAY_BTN + ' Play All';
   btn.classList.remove('playing');
+  updateGlobalPlayButton();
 }
 
 // Global Play All (when no thread is active)
@@ -2289,14 +2298,34 @@ let globalPlayQueue = [];
 let globalPlayIndex = -1;
 let globalPlayActive = false;
 
+// Update global play button to reflect any playback state
+function updateGlobalPlayButton() {
+  const btn = document.getElementById('globalPlayAll');
+  if (!btn) return;
+  const isAnythingPlaying = activePodcastAudio && !activePodcastAudio.paused;
+  if (isAnythingPlaying || threadPlayActive || globalPlayActive) {
+    btn.innerHTML = SVG_STOP;
+    btn.classList.add('playing');
+  } else {
+    btn.innerHTML = SVG_PLAY;
+    btn.classList.remove('playing');
+  }
+}
+
 document.getElementById('globalPlayAll').addEventListener('click', () => {
   const btn = document.getElementById('globalPlayAll');
   
-  if (globalPlayActive) {
-    stopGlobalPlayAll();
+  // If anything is playing, stop it
+  const isAnythingPlaying = activePodcastAudio && !activePodcastAudio.paused;
+  if (isAnythingPlaying || threadPlayActive || globalPlayActive) {
+    if (threadPlayActive) stopThreadPlayAll();
+    else if (globalPlayActive) stopGlobalPlayAll();
+    else stopAllPodcasts();
+    updateGlobalPlayButton();
     return;
   }
   
+  // Nothing playing — start play all
   // If thread is active, use thread play all instead
   if (activeThread) {
     document.getElementById('threadPlayAll').click();
@@ -2319,14 +2348,9 @@ document.getElementById('globalPlayAll').addEventListener('click', () => {
   
   if (globalPlayQueue.length === 0) return;
   
-  // Stop any currently playing
-  if (threadPlayActive) stopThreadPlayAll();
-  else stopAllPodcasts();
-  
   globalPlayActive = true;
   globalPlayIndex = 0;
-  btn.innerHTML = SVG_STOP;
-  btn.classList.add('playing');
+  updateGlobalPlayButton();
   
   playGlobalEntry(0);
 });
@@ -2389,9 +2413,7 @@ function stopGlobalPlayAll() {
   globalPlayIndex = -1;
   globalPlayQueue = [];
   stopAllPodcasts();
-  const btn = document.getElementById('globalPlayAll');
-  btn.innerHTML = SVG_PLAY;
-  btn.classList.remove('playing');
+  updateGlobalPlayButton();
 }
 
 // Lazy image loading
