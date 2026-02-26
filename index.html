@@ -711,62 +711,6 @@
 
   @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-  /* Thread dropdown */
-  .thread-dropdown {
-    position: relative;
-    margin-right: 4px;
-  }
-  .thread-dropdown-btn {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 3px 10px;
-    font-size: 0.85rem;
-    font-family: var(--font);
-    color: var(--text-dim);
-    cursor: pointer;
-    transition: all 0.2s ease;
-    line-height: 1.4;
-  }
-  .thread-dropdown-btn:hover { border-color: var(--text-dim); color: var(--text); }
-  .thread-dropdown-btn.active { border-color: var(--accent); color: var(--accent); }
-  .thread-dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    margin-top: 6px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 8px 0;
-    min-width: 220px;
-    max-height: 400px;
-    overflow-y: auto;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-    z-index: 1000;
-  }
-  .thread-dropdown-menu.open { display: block; }
-  .thread-dropdown-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 14px;
-    font-size: 0.85rem;
-    color: var(--text-dim);
-    cursor: pointer;
-    transition: background 0.15s ease, color 0.15s ease;
-  }
-  .thread-dropdown-item:hover { background: rgba(124,111,247,0.1); color: var(--text); }
-  .thread-dropdown-item.active { background: rgba(124,111,247,0.15); color: var(--accent); }
-  .thread-dropdown-item .thread-count { 
-    font-size: 0.75rem; 
-    color: var(--text-dim); 
-    background: rgba(255,255,255,0.05);
-    padding: 2px 6px;
-    border-radius: 10px;
-  }
-
   /* View toggle */
   .view-toggle {
     background: var(--surface);
@@ -1154,17 +1098,13 @@
       <span class="subtitle" id="subtitle">Cross-disciplinary history exploration</span>
     </div>
     <div class="header-right">
-      <div class="thread-dropdown" id="threadDropdown">
-        <button class="thread-dropdown-btn" id="threadDropdownBtn">Threads</button>
-        <div class="thread-dropdown-menu" id="threadDropdownMenu"></div>
-      </div>
       <button class="view-toggle" id="viewToggle"></button>
       <button class="lang-btn active" data-lang="en">EN</button>
       <button class="lang-btn" data-lang="it">IT</button>
     </div>
   </div>
   <div class="thread-banner" id="threadBanner">
-    <span>🧵 Thread: <span class="thread-name" id="threadName"></span></span>
+    <span>Thread: <span class="thread-name" id="threadName"></span></span>
     <span class="thread-count" id="threadCount"></span>
     <button class="thread-play-all" id="threadPlayAll" title="Play all podcasts in thread"><svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" style="vertical-align:middle;margin-right:4px"><polygon points="6,3 20,12 6,21"/></svg>Play All</button>
     <span class="thread-close" id="threadClose">✕</span>
@@ -1196,7 +1136,7 @@
     </div>
   </div>
   <div class="map-thread-banner" id="mapThreadBanner">
-    <span>🧵 <span id="mapThreadLabel"></span>: <span class="thread-name" id="mapThreadName"></span></span>
+    <span><span id="mapThreadLabel"></span>: <span class="thread-name" id="mapThreadName"></span></span>
     <span class="thread-close" id="mapThreadClose">✕</span>
   </div>
   <div id="map"></div>
@@ -1968,7 +1908,6 @@ function activateThread(threadId, anchorEntry) {
 
   activeThread = threadId;
   mapActiveThread = threadId;
-  updateThreadDropdownState();
   const entries = document.querySelectorAll('.entry');
   const matchingEntries = [];
 
@@ -2056,7 +1995,6 @@ function activateThread(threadId, anchorEntry) {
 function clearThread() {
   activeThread = null;
   mapActiveThread = null; // keep both views in sync
-  updateThreadDropdownState();
 
   // Stop thread play all if active
   if (threadPlayActive) {
@@ -2512,7 +2450,7 @@ function updateUILabels() {
     btn.textContent = t(btn.dataset.dim);
   });
   document.querySelector('.thread-banner span:first-child').innerHTML =
-    `🧵 ${t('thread')}: <span class="thread-name" id="threadName"></span>`;
+    `${t('thread')}: <span class="thread-name" id="threadName"></span>`;
   document.documentElement.lang = currentLang;
 
   // Toggle button: update to current language
@@ -2742,93 +2680,6 @@ function loadSlices(restoreId, restoreThread, restorePodcast) {
         });
       }
     });
-}
-
-// Thread dropdown
-function populateThreadDropdown() {
-  const menu = document.getElementById('threadDropdownMenu');
-  if (!menu || !SLICES) return;
-  
-  // Count entries per thread
-  const threadCounts = {};
-  SLICES.forEach(slice => {
-    (slice.threads || []).forEach(t => {
-      threadCounts[t] = (threadCounts[t] || 0) + 1;
-    });
-  });
-  
-  // Sort threads: connected (2+) first by count, then orphans
-  const threads = Object.entries(threadCounts)
-    .sort((a, b) => {
-      if (a[1] >= 2 && b[1] < 2) return -1;
-      if (b[1] >= 2 && a[1] < 2) return 1;
-      return b[1] - a[1] || a[0].localeCompare(b[0]);
-    });
-  
-  menu.innerHTML = threads.map(([thread, count]) => {
-    const label = THREAD_LABELS[currentLang]?.[thread] || formatThreadId(thread);
-    return `<div class="thread-dropdown-item" data-thread="${thread}">
-      <span>${label}</span>
-      <span class="thread-count">${count}</span>
-    </div>`;
-  }).join('');
-  
-  // Add click handlers
-  menu.querySelectorAll('.thread-dropdown-item').forEach(item => {
-    item.addEventListener('click', () => {
-      const thread = item.dataset.thread;
-      closeThreadDropdown();
-      activateThread(thread);
-    });
-  });
-}
-
-function openThreadDropdown() {
-  const menu = document.getElementById('threadDropdownMenu');
-  const btn = document.getElementById('threadDropdownBtn');
-  populateThreadDropdown();
-  menu.classList.add('open');
-  btn.classList.add('active');
-}
-
-function closeThreadDropdown() {
-  const menu = document.getElementById('threadDropdownMenu');
-  const btn = document.getElementById('threadDropdownBtn');
-  menu.classList.remove('open');
-  btn.classList.remove('active');
-}
-
-function toggleThreadDropdown() {
-  const menu = document.getElementById('threadDropdownMenu');
-  if (menu.classList.contains('open')) {
-    closeThreadDropdown();
-  } else {
-    openThreadDropdown();
-  }
-}
-
-document.getElementById('threadDropdownBtn').addEventListener('click', (e) => {
-  e.stopPropagation();
-  toggleThreadDropdown();
-});
-
-// Close dropdown when clicking outside
-document.addEventListener('click', (e) => {
-  if (!e.target.closest('.thread-dropdown')) {
-    closeThreadDropdown();
-  }
-});
-
-// Update dropdown active state when thread changes
-function updateThreadDropdownState() {
-  const menu = document.getElementById('threadDropdownMenu');
-  menu.querySelectorAll('.thread-dropdown-item').forEach(item => {
-    if (item.dataset.thread === activeThread) {
-      item.classList.add('active');
-    } else {
-      item.classList.remove('active');
-    }
-  });
 }
 
 // Language switcher
