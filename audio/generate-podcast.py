@@ -83,6 +83,11 @@ VOICE_MAP_EN = {
         "voice": "fable",
         "instructions": "Speak as if standing inside a vast echoing space — reverent, measured, with quiet awe. This is about a building that was meant to make you feel the presence of God. Warm but not sentimental, precise but not clinical. Like a historian who genuinely loves what they're describing.",
     },
+    # 1610 Padua: curious, precise, awestruck — sage for intellectual clarity with wonder
+    "1610-padua-the-star-messenger": {
+        "voice": "sage",
+        "instructions": "Speak with intellectual curiosity and quiet wonder. This is the moment the telescope revealed new worlds — mountains on the Moon, moons around Jupiter. Precise but not dry, excited but not theatrical. Like a scientist who just saw something impossible.",
+    },
 }
 
 # Italian voices — same voice palette but with Italian-language style instructions
@@ -122,6 +127,10 @@ VOICE_MAP_IT = {
     "532-constantinople-the-last-great-building": {
         "voice": "fable",
         "instructions": "Parla in italiano con riverenza, come se ti trovassi dentro un vasto spazio che riecheggia. Misurato, con quieta meraviglia. Questo è un edificio concepito per farti sentire la presenza di Dio. Caldo ma non sentimentale, preciso ma non clinico.",
+    },
+    "1610-padua-the-star-messenger": {
+        "voice": "sage",
+        "instructions": "Parla in italiano con curiosità intellettuale e quieta meraviglia. Questo è il momento in cui il telescopio rivela nuovi mondi — monti sulla Luna, lune attorno a Giove. Preciso ma non arido, emozionato ma non teatrale. Come uno scienziato che ha appena visto qualcosa di impossibile.",
     },
 }
 
@@ -333,6 +342,8 @@ MUSIC_SOURCES = {
         "description": "Boris Christoff & Alexander Nevsky Cathedral Choir — The Great Glorification (Slavonic Orthodox Liturgy)",
         "start_time": 5
     },
+  # 1610 Padua: early Baroque/transition from Renaissance — harpsichord suits the new science emerging
+  "1610-padua-the-star-messenger": {"pool_key": "soler-harpsichord"},
 }
 
 
