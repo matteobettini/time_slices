@@ -11,6 +11,8 @@ python3 add-entry.py '{"year": 1610, "id": "1610-...", ...}' --lang it  # IT
 ```
 Or save entry to a file first: `python3 add-entry.py --file new-entry.json`
 
+**⚠️ DO NOT REPLY until podcasts exist.** The final reply (step 14) is BLOCKED until you have verified both MP3 files exist. If you reply before podcasts are generated, the task is incomplete and failed.
+
 ---
 
 ## Steps
@@ -40,7 +42,7 @@ Or save entry to a file first: `python3 add-entry.py --file new-entry.json`
 
 11. **Update THREAD_LABELS** in `index.html` if you add new thread tags (both en and it sections).
 
-12. **Generate podcasts:**
+12. **Generate podcasts (MANDATORY — do not skip):**
     - Write EN script (~350-400 words, storytelling style) → `audio/scripts/{id}.txt`
     - Write IT script (culturally adapted, not literal) → `audio/scripts/it/{id}.txt`
     - Add voice/music config to `audio/generate-podcast.py`:
@@ -48,11 +50,11 @@ Or save entry to a file first: `python3 add-entry.py --file new-entry.json`
       - `MUSIC_SOURCES[id]` — find period-appropriate track from Internet Archive
     - Run: `python3 audio/generate-podcast.py {id} --lang en`
     - Run: `python3 audio/generate-podcast.py {id} --lang it`
-    - Verify both MP3s exist
+    - **VERIFY:** `ls -la audio/{id}.mp3 audio/it/{id}.mp3` — both must exist and be >100KB
 
 13. **Commit and push:** `git add -A && git commit -m "Add YEAR Place: Title" && git push`
 
-14. **Reply** with: year, title, teaser, one highlight connection (3-5 sentences). End with direct link: `https://matteobettini.github.io/time_slices/#ID` — no backticks, must be clickable.
+14. **Reply** (only after step 12 verification passes): year, title, teaser, one highlight connection (3-5 sentences). End with direct link: `https://matteobettini.github.io/time_slices/#ID` — no backticks, must be clickable.
 
 ---
 
