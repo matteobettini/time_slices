@@ -2029,32 +2029,30 @@ function drawThreadLines(matchingEntries) {
       const fromY = fromRect.top - containerRect.top + scrollTop + 30;
       const toY = toRect.top - containerRect.top + scrollTop + 30;
 
-      // Determine which side the cards are on (odd = left, even = right in DOM order)
-      // Find the actual index in the timeline to determine card position
-      const fromIndex = Array.from(document.querySelectorAll('.entry')).indexOf(fromEntry);
-      const toIndex = Array.from(document.querySelectorAll('.entry')).indexOf(toEntry);
+      // Determine which side the cards are on based on actual visual position
+      const containerCenterX = containerRect.left + containerRect.width / 2;
+      const fromCenterX = fromRect.left + fromRect.width / 2;
+      const toCenterX = toRect.left + toRect.width / 2;
       
-      // Check if cards are on the left (odd index) or right (even index)
-      const fromOnLeft = fromIndex % 2 === 0;
-      const toOnLeft = toIndex % 2 === 0;
+      const fromOnLeft = fromCenterX < containerCenterX;
+      const toOnLeft = toCenterX < containerCenterX;
       
-      // Curve away from where most cards are
-      // If both on same side, curve to opposite side
-      // If on different sides, alternate based on segment index
+      // Curve away from where cards are
       let curveDirection;
       if (fromOnLeft && toOnLeft) {
         curveDirection = 1; // curve right (away from left cards)
       } else if (!fromOnLeft && !toOnLeft) {
         curveDirection = -1; // curve left (away from right cards)
       } else {
-        // Cards on different sides - alternate
+        // Cards on different sides - curve to the side with fewer/smaller cards
+        // For simplicity, just alternate
         curveDirection = (i % 2 === 0) ? 1 : -1;
       }
       
       // Calculate curve intensity based on vertical distance
       const verticalDist = Math.abs(toY - fromY);
-      const baseCurve = 60;
-      const curveOffset = baseCurve + Math.min(verticalDist * 0.08, 80);
+      const baseCurve = 80;
+      const curveOffset = baseCurve + Math.min(verticalDist * 0.1, 100);
 
       const midY = (fromY + toY) / 2;
       const controlX = timelineX + (curveOffset * curveDirection);
