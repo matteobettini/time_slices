@@ -2029,14 +2029,41 @@ function drawThreadLines(matchingEntries) {
       const fromY = fromRect.top - containerRect.top + scrollTop + 30;
       const toY = toRect.top - containerRect.top + scrollTop + 30;
 
+      // Determine which side the cards are on (odd = left, even = right in DOM order)
+      // Find the actual index in the timeline to determine card position
+      const fromIndex = Array.from(document.querySelectorAll('.entry')).indexOf(fromEntry);
+      const toIndex = Array.from(document.querySelectorAll('.entry')).indexOf(toEntry);
+      
+      // Check if cards are on the left (odd index) or right (even index)
+      const fromOnLeft = fromIndex % 2 === 0;
+      const toOnLeft = toIndex % 2 === 0;
+      
+      // Curve away from where most cards are
+      // If both on same side, curve to opposite side
+      // If on different sides, alternate based on segment index
+      let curveDirection;
+      if (fromOnLeft && toOnLeft) {
+        curveDirection = 1; // curve right (away from left cards)
+      } else if (!fromOnLeft && !toOnLeft) {
+        curveDirection = -1; // curve left (away from right cards)
+      } else {
+        // Cards on different sides - alternate
+        curveDirection = (i % 2 === 0) ? 1 : -1;
+      }
+      
+      // Calculate curve intensity based on vertical distance
+      const verticalDist = Math.abs(toY - fromY);
+      const baseCurve = 60;
+      const curveOffset = baseCurve + Math.min(verticalDist * 0.08, 80);
+
       const midY = (fromY + toY) / 2;
-      const curveOffset = 30;
+      const controlX = timelineX + (curveOffset * curveDirection);
 
       const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-      path.setAttribute('d', `M ${timelineX} ${fromY} Q ${timelineX + curveOffset} ${midY} ${timelineX} ${toY}`);
+      path.setAttribute('d', `M ${timelineX} ${fromY} Q ${controlX} ${midY} ${timelineX} ${toY}`);
       path.setAttribute('fill', 'none');
-      path.setAttribute('stroke', 'rgba(124,111,247,0.35)');
-      path.setAttribute('stroke-width', '3');
+      path.setAttribute('stroke', 'rgba(124,111,247,0.4)');
+      path.setAttribute('stroke-width', '2.5');
       path.setAttribute('stroke-linecap', 'round');
       path.setAttribute('filter', 'url(#threadGlow)');
 
