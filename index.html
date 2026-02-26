@@ -1556,18 +1556,27 @@ document.getElementById('mapThreadSelectorBtn').addEventListener('click', (e) =>
 document.getElementById('threadSelectorDropdown').addEventListener('click', (e) => {
   const item = e.target.closest('.thread-selector-item');
   const clearBtn = e.target.closest('.thread-selector-clear');
+  const isMapView = document.getElementById('mapView').classList.contains('active');
   
   if (clearBtn) {
-    clearThread();
     closeAllThreadSelectors();
+    if (isMapView) {
+      clearMapThread();
+    } else {
+      clearThread();
+    }
     syncAllThreadSelectors();
     return;
   }
   
   if (item) {
     const threadId = item.dataset.thread;
-    activateThread(threadId);
     closeAllThreadSelectors();
+    if (isMapView) {
+      activateMapThread(threadId);
+    } else {
+      activateThread(threadId);
+    }
     syncAllThreadSelectors();
   }
 });
