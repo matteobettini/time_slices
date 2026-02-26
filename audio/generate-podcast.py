@@ -27,8 +27,9 @@ MUSIC_DIR = os.path.join(SCRIPT_DIR, "music")
 OUTPUT_DIR = SCRIPT_DIR  # audio/{id}.mp3
 
 # API configuration
-APE_API_URL = "https://api.wearables-ape.io/models/v1/audio/speech"
-APE_TOKEN = os.environ.get("APE_TOKEN", "")
+# ⚠️ TIMESLICES_TTS_TOKEN is ONLY for Time Slices TTS generation. Do not use elsewhere.
+TTS_API_URL = "https://api.wearables-ape.io/models/v1/audio/speech"
+TTS_TOKEN = os.environ.get("TIMESLICES_TTS_TOKEN", "")
 TTS_MODEL = "gpt-4o-mini-tts"
 
 # Voice assignments per entry — OpenAI TTS voices.
@@ -410,12 +411,12 @@ def _tts_chunk(text, voice, instructions, out_path, timeout=120, retries=2):
         "response_format": "mp3",
     })
     req_headers = {
-        "Authorization": f"Bearer {APE_TOKEN}",
+        "Authorization": f"Bearer {TTS_TOKEN}",
         "Content-Type": "application/json",
     }
     for attempt in range(1, retries + 1):
         try:
-            req = urllib.request.Request(APE_API_URL, data=payload.encode("utf-8"), headers=req_headers)
+            req = urllib.request.Request(TTS_API_URL, data=payload.encode("utf-8"), headers=req_headers)
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 with open(out_path, "wb") as f:
                     f.write(resp.read())
@@ -752,8 +753,8 @@ def main():
     parser.add_argument("--remix", action="store_true", help="Skip TTS, reuse saved narrations, remix music only")
     args = parser.parse_args()
 
-    if not APE_TOKEN and not args.remix and not args.download_music:
-        print("✗ APE_TOKEN not set in environment. Export it first.")
+    if not TTS_TOKEN and not args.remix and not args.download_music:
+        print("✗ TIMESLICES_TTS_TOKEN not set in environment. Export it first.")
         sys.exit(1)
 
     if args.download_music:
