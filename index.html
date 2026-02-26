@@ -1415,9 +1415,9 @@ function renderSlice(slice, isFresh = false) {
       if (floatImg && !floatImg.src) {
         floatImg.src = floatImg.dataset.src;
       }
-      // Auto-show podcast player bar on expand
+      // Auto-show podcast player bar on expand (don't stop other audio)
       if (hasPodcast && !el.querySelector('.podcast-player')) {
-        showPodcastPlayer(el, slice.podcast.url, slice.podcast.duration);
+        showPodcastPlayer(el, slice.podcast.url, slice.podcast.duration, { autoStop: false });
       }
     }
   });
@@ -1791,6 +1791,11 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
 }
 
 function togglePodcastPlayer(entryEl, audioUrl, duration) {
+  // Stop thread play all if running
+  if (threadPlayActive) {
+    stopThreadPlayAll();
+  }
+  
   const existing = entryEl.querySelector('.podcast-player');
   const btn = entryEl.querySelector('.podcast-btn');
   const year = entryEl.dataset.year;
