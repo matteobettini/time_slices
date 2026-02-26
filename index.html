@@ -1056,7 +1056,7 @@
   .map-header .subtitle { color: var(--text-dim); font-size: 0.85rem; margin-left: 12px; }
 
   /* Map thread banner — inside map-header, matches timeline banner style */
-  /* Map thread banner — floating island style (matches timeline) */
+  /* Map thread banner — floating island style (matches timeline), only shows when map is active */
   .map-thread-banner {
     display: none;
     position: fixed;
@@ -1075,7 +1075,8 @@
     color: var(--text);
     animation: fadeIn 0.2s ease;
   }
-  .map-thread-banner.visible { display: flex; }
+  /* Only show when both .visible AND map view is active */
+  #mapView.active ~ .map-thread-banner.visible { display: flex; }
   .map-thread-banner .thread-name { font-weight: 600; color: var(--accent); }
   .map-thread-banner .thread-count { color: var(--text-dim); }
   .map-thread-banner .thread-play-all {
@@ -1171,13 +1172,14 @@
       </div>
     </div>
   </div>
-  <div class="map-thread-banner" id="mapThreadBanner">
-    <span><span id="mapThreadLabel"></span>: <span class="thread-name" id="mapThreadName"></span></span>
-    <span class="thread-count" id="mapThreadCount"></span>
-    <button class="thread-play-all" id="mapThreadPlayAll" title="Play all podcasts in thread"><svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" style="vertical-align:middle;margin-right:4px"><polygon points="6,3 20,12 6,21"/></svg>Play All</button>
-    <span class="thread-close" id="mapThreadClose">✕</span>
-  </div>
   <div id="map"></div>
+</div>
+
+<div class="map-thread-banner" id="mapThreadBanner">
+  <span><span id="mapThreadLabel"></span>: <span class="thread-name" id="mapThreadName"></span></span>
+  <span class="thread-count" id="mapThreadCount"></span>
+  <button class="thread-play-all" id="mapThreadPlayAll" title="Play all podcasts in thread"><svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" style="vertical-align:middle;margin-right:4px"><polygon points="6,3 20,12 6,21"/></svg>Play All</button>
+  <span class="thread-close" id="mapThreadClose">✕</span>
 </div>
 
 <div class="map-time-control" id="mapTimeControl">
