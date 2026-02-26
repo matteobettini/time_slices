@@ -1676,12 +1676,12 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
   const currentTime = player.querySelector('.pp-current');
   const totalTime = player.querySelector('.pp-total');
 
+  audio.dataset.podcastUrl = audioUrl; // Always store URL for recovery
   audio.src = audioUrl;
   if (!autoStop) {
     // Idle restoration — don't preload or claim active state
     audio.preload = 'none';
     audio.src = '';
-    audio.dataset.podcastUrl = audioUrl;
   } else {
     activePodcastAudio = audio;
     activePodcastYear = year;
@@ -2359,6 +2359,50 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
     updateUILabels();
     loadSlices(null, threadToRestore, wasPlaying ? { year: playingYear, time: playingTime } : null);
   });
+});
+
+// Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+  // Don't capture if user is typing in an input
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  
+  // Space to play/pause active podcast
+  if (e.code === 'Space' && activePodcastAudio) {
+    e.preventDefault();
+    if (activePodcastAudio.paused) {
+      activePodcastAudio.play().catch(() => {});
+      // Update UI
+      const entry = document.querySelector(`.entry[data-year="${activePodcastYear}"]`);
+      if (entry) {
+        const playBtn = entry.querySelector('.pp-play');
+        const podcastBtn = entry.querySelector('.podcast-btn');
+        if (playBtn) playBtn.innerHTML = SVG_PAUSE;
+        if (podcastBtn) podcastBtn.innerHTML = SVG_STOP;
+        syncMapPopupAudio(activePodcastYear, true);
+      }
+    } else {
+      activePodcastAudio.pause();
+      // Update UI
+      const entry = document.querySelector(`.entry[data-year="${activePodcastYear}"]`);
+      if (entry) {
+        const playBtn = entry.querySelector('.pp-play');
+        const podcastBtn = entry.querySelector('.podcast-btn');
+        if (playBtn) playBtn.innerHTML = SVG_PLAY;
+        if (podcastBtn) podcastBtn.innerHTML = SVG_HEADPHONES;
+        syncMapPopupAudio(activePodcastYear, false);
+      }
+    }
+  }
+  
+  // Left/Right arrows to seek
+  if (e.code === 'ArrowLeft' && activePodcastAudio && activePodcastAudio.duration) {
+    e.preventDefault();
+    activePodcastAudio.currentTime = Math.max(0, activePodcastAudio.currentTime - 10);
+  }
+  if (e.code === 'ArrowRight' && activePodcastAudio && activePodcastAudio.duration) {
+    e.preventDefault();
+    activePodcastAudio.currentTime = Math.min(activePodcastAudio.duration, activePodcastAudio.currentTime + 10);
+  }
 });
 
 // Init: set correct lang button active and load
