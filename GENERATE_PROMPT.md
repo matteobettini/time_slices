@@ -38,6 +38,7 @@ Or save entry to a file first: `python3 add-entry.py --file new-entry.json`
    - **A thread must be linkable** — it should be something that appears in multiple historical moments and transforms over time. If a thread can only apply to one entry ever, it's not a thread.
    - **Prioritize connecting to existing threads** over creating new ones. Check `slices.json` for existing tags first.
    - New threads are fine if they represent genuine currents that future entries can join (e.g., `baroque` awaits other 17th-18th century entries)
+   - **⚠️ AVOID DUPLICATE THREADS:** Before creating a new thread, check if a similar one exists. Don't create near-synonyms like `christian-humanism` when `renaissance-humanism` already exists, or `modernist-poetry` when `modernism` exists. Use the broader existing thread and let the entry content convey specifics.
 
 9. **Add ONE new entry** following the spec. Include:
    - City in title only if dimensions converge there; otherwise use thematic title
