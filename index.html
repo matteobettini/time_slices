@@ -2364,7 +2364,7 @@ function loadSlices(restoreId, restoreThread, restorePodcast) {
             if (!slice || !slice.podcast) return;
             
             // Create player if needed and start playback
-            const player = showPodcastPlayer(el, slice.podcast.url, slice.podcast.duration);
+            const player = showPodcastPlayer(el, slice.podcast.url, slice.podcast.duration, { autoStop: false });
             const audio = player.querySelector('audio');
             const playBtn = player.querySelector('.pp-play');
             const btn = el.querySelector('.podcast-btn');
@@ -2373,6 +2373,38 @@ function loadSlices(restoreId, restoreThread, restorePodcast) {
             audio.currentTime = restorePodcast.time || 0;
             activePodcastAudio = audio;
             activePodcastYear = restorePodcast.year;
+            
+            // If was in thread play all mode, restore that state
+            if (restorePodcast.wasThreadPlayAll && restoreThread) {
+              // Rebuild the queue
+              const threadEntries = document.querySelectorAll('.entry.thread-highlighted');
+              threadPlayQueue = [];
+              threadEntries.forEach(entry => {
+                const entrySlug = entry.id.replace('entry-', '');
+                const entrySlice = SLICES.find(s => s.id === entrySlug);
+                if (entrySlice && entrySlice.podcast && entrySlice.podcast.url) {
+                  threadPlayQueue.push({ el: entry, slice: entrySlice });
+                }
+              });
+              
+              // Find current index in queue
+              threadPlayIndex = threadPlayQueue.findIndex(item => item.el.dataset.year === restorePodcast.year);
+              if (threadPlayIndex === -1) threadPlayIndex = restorePodcast.threadPlayIdx || 0;
+              
+              threadPlayActive = true;
+              const threadBtn = document.getElementById('threadPlayAll');
+              threadBtn.textContent = '⏹ Stop';
+              threadBtn.classList.add('playing');
+              
+              // Set up ended listener for auto-advance
+              const onEnded = () => {
+                audio.removeEventListener('ended', onEnded);
+                if (threadPlayActive) {
+                  playThreadEntry(threadPlayIndex + 1);
+                }
+              };
+              audio.addEventListener('ended', onEnded);
+            }
             
             audio.play().then(() => {
               playBtn.innerHTML = SVG_PAUSE;
@@ -2395,12 +2427,18 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
     const playingYear = activePodcastYear;
     const playingTime = activePodcastAudio ? activePodcastAudio.currentTime : 0;
     const wasPlaying = activePodcastAudio && !activePodcastAudio.paused;
+    const wasThreadPlayAll = threadPlayActive;
+    const threadPlayIdx = threadPlayIndex;
     currentLang = lang;
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     stopAllPodcasts();
+    // Reset thread play state (will restore after)
+    threadPlayActive = false;
+    threadPlayIndex = -1;
+    threadPlayQueue = [];
     updateUILabels();
-    loadSlices(null, threadToRestore, wasPlaying ? { year: playingYear, time: playingTime } : null);
+    loadSlices(null, threadToRestore, wasPlaying ? { year: playingYear, time: playingTime, wasThreadPlayAll, threadPlayIdx } : null);
   });
 });
 
