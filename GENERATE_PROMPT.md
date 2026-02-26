@@ -31,7 +31,12 @@ Or save entry to a file first: `python3 add-entry.py --file new-entry.json`
 
 7. **Thread narratives must be BRIEF.** 2-3 sentences max. State the connection mechanism without essays.
 
-8. **Thread connectivity.** Try to connect at least one thread tag to an existing entry. Check existing tags before inventing new ones.
+8. **Thread connectivity and quality.** 
+   - Threads must be **historical, cultural, or thematic** — intellectual movements, artistic schools, philosophical currents, political transformations
+   - **Good threads:** `death-of-god`, `nominalism`, `classical-revival`, `reformation`, `vernacular-literature`, `existentialism`
+   - **Bad threads:** `biography`, `famous-people`, `wars`, `inventions` — these are generic categories, not threads that trace ideas through time
+   - Try to connect at least one thread tag to an existing entry. Check existing tags before inventing new ones.
+   - A thread should represent something that *transforms* as it moves through history, not just a label
 
 9. **Add ONE new entry** following the spec. Include:
    - City in title only if dimensions converge there; otherwise use thematic title
