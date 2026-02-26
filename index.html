@@ -73,13 +73,19 @@
   .lang-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 
   /* Thread banner */
+  /* Thread banner — floating island style for both views */
   .thread-banner {
     display: none;
+    position: fixed;
+    top: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 110;
     align-items: center;
     gap: 10px;
-    margin-top: 10px;
-    padding: 8px 14px;
-    background: var(--surface2);
+    padding: 8px 18px;
+    background: rgba(10,10,15,0.95);
+    backdrop-filter: blur(20px);
     border: 1px solid var(--accent);
     border-radius: 10px;
     font-size: 0.8rem;
@@ -116,6 +122,17 @@
   .thread-banner .thread-play-all:hover { background: #6358d4; }
   .thread-banner .thread-play-all.playing { background: var(--accent); }
   .thread-banner .thread-close { margin-left: 12px; }
+
+  @media (max-width: 768px) {
+    .thread-banner {
+      top: 68px;
+      left: 16px;
+      right: 16px;
+      transform: none;
+      font-size: 0.75rem;
+      padding: 8px 14px;
+    }
+  }
 
   /* Timeline container */
   .timeline-container {
@@ -741,12 +758,6 @@
     top: 56px;
     left: 0; right: 0;
     bottom: 72px;
-    transition: top 0.2s ease;
-  }
-  /* Expand map top when thread banner is visible */
-  .map-thread-banner.visible ~ #map,
-  #mapView:has(.map-thread-banner.visible) #map {
-    top: 100px;
   }
 
   /* Override Leaflet popups */
@@ -1045,13 +1056,19 @@
   .map-header .subtitle { color: var(--text-dim); font-size: 0.85rem; margin-left: 12px; }
 
   /* Map thread banner — inside map-header, matches timeline banner style */
+  /* Map thread banner — floating island style (matches timeline) */
   .map-thread-banner {
     display: none;
+    position: fixed;
+    top: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 110;
     align-items: center;
     gap: 10px;
-    margin-top: 10px;
-    padding: 8px 14px;
-    background: var(--surface2);
+    padding: 8px 18px;
+    background: rgba(10,10,15,0.95);
+    backdrop-filter: blur(20px);
     border: 1px solid var(--accent);
     border-radius: 10px;
     font-size: 0.8rem;
@@ -1087,6 +1104,14 @@
   .map-thread-banner .thread-close:hover { color: var(--text); background: rgba(255,255,255,0.1); }
 
   @media (max-width: 768px) {
+    .map-thread-banner {
+      top: 68px;
+      left: 16px;
+      right: 16px;
+      transform: none;
+      font-size: 0.75rem;
+      padding: 8px 14px;
+    }
     .map-time-control { padding: 12px 16px calc(16px + env(safe-area-inset-bottom, 0px)); }
     .time-year-display { font-size: 1.1rem; min-width: 55px; }
     .time-slider { touch-action: none; height: 6px; }
@@ -1112,13 +1137,14 @@
       <button class="lang-btn" data-lang="it">IT</button>
     </div>
   </div>
-  <div class="thread-banner" id="threadBanner">
-    <span>Thread: <span class="thread-name" id="threadName"></span></span>
-    <span class="thread-count" id="threadCount"></span>
-    <button class="thread-play-all" id="threadPlayAll" title="Play all podcasts in thread"><svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" style="vertical-align:middle;margin-right:4px"><polygon points="6,3 20,12 6,21"/></svg>Play All</button>
-    <span class="thread-close" id="threadClose">✕</span>
-  </div>
 </header>
+
+<div class="thread-banner" id="threadBanner">
+  <span>Thread: <span class="thread-name" id="threadName"></span></span>
+  <span class="thread-count" id="threadCount"></span>
+  <button class="thread-play-all" id="threadPlayAll" title="Play all podcasts in thread"><svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" style="vertical-align:middle;margin-right:4px"><polygon points="6,3 20,12 6,21"/></svg>Play All</button>
+  <span class="thread-close" id="threadClose">✕</span>
+</div>
 
 <div class="quick-actions" id="quickActions">
   <button class="quick-btn" id="coffeeBtn">☕</button>
@@ -1144,12 +1170,12 @@
         <button class="lang-btn" data-lang="it" data-map="1">IT</button>
       </div>
     </div>
-    <div class="map-thread-banner" id="mapThreadBanner">
-      <span><span id="mapThreadLabel"></span>: <span class="thread-name" id="mapThreadName"></span></span>
-      <span class="thread-count" id="mapThreadCount"></span>
-      <button class="thread-play-all" id="mapThreadPlayAll" title="Play all podcasts in thread"><svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" style="vertical-align:middle;margin-right:4px"><polygon points="6,3 20,12 6,21"/></svg>Play All</button>
-      <span class="thread-close" id="mapThreadClose">✕</span>
-    </div>
+  </div>
+  <div class="map-thread-banner" id="mapThreadBanner">
+    <span><span id="mapThreadLabel"></span>: <span class="thread-name" id="mapThreadName"></span></span>
+    <span class="thread-count" id="mapThreadCount"></span>
+    <button class="thread-play-all" id="mapThreadPlayAll" title="Play all podcasts in thread"><svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" style="vertical-align:middle;margin-right:4px"><polygon points="6,3 20,12 6,21"/></svg>Play All</button>
+    <span class="thread-close" id="mapThreadClose">✕</span>
   </div>
   <div id="map"></div>
 </div>
@@ -3398,9 +3424,6 @@ function activateMapThread(threadId) {
   document.getElementById('mapThreadCount').textContent = `${count} ${count === 1 ? t('entry') : t('entries')}`;
   document.getElementById('mapThreadBanner').classList.add('visible');
 
-  // Invalidate map size after banner shows (header height changed)
-  setTimeout(() => map.invalidateSize(), 250);
-
   // Fit bounds to thread entries
   const threadMarkers = mapMarkers.filter(m => m._sliceThreads.includes(threadId));
   if (threadMarkers.length > 1) {
@@ -3441,9 +3464,6 @@ function clearMapThread() {
 
   clearMapArcs();
   document.getElementById('mapThreadBanner').classList.remove('visible');
-
-  // Invalidate map size after banner hides (header height changed)
-  setTimeout(() => map.invalidateSize(), 250);
 
   // Restore full slider range
   if (SLICES.length > 0) {
