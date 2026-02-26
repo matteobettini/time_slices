@@ -117,5 +117,19 @@ You are Johnny, managing the Time Slices project.
     4. Generate English podcast: `python3 /home/cloud-user/.openclaw/workspace/time-slices/audio/generate-podcast.py {id} --lang en`
     5. Generate Italian podcast: `python3 /home/cloud-user/.openclaw/workspace/time-slices/audio/generate-podcast.py {id} --lang it`
        - Each run uses `gpt-4o-mini-tts` via the ape API (with proper `instructions` parameter for voice styling), downloads period-appropriate background music, mixes with ffmpeg, and updates the corresponding JSON file (`slices.json` or `slices.it.json`) with the podcast field.
-    6. Commit the generated MP3s along with the scripts and updated generate-podcast.py.
+    6. Verify BOTH MP3s exist: `ls audio/{id}.mp3 audio/it/{id}.mp3` — re-run generator if missing.
+7. Commit and push: `git add -A && git commit -m "Add YEAR Place: Title" && git push`
+
+**⚠️ COMPLETION CHECKLIST (mandatory):** Before finishing, verify:
+- [ ] slices.json + slices.it.json have entries with all 5 dimensions + podcast field
+- [ ] Image exists in images/ and is referenced correctly
+- [ ] Thread labels in index.html (if new threads)
+- [ ] Podcast scripts: audio/scripts/{id}.txt + audio/scripts/it/{id}.txt
+- [ ] Voice/music entries in generate-podcast.py (VOICE_MAP_EN, VOICE_MAP_IT, MUSIC_SOURCES)
+- [ ] BOTH MP3s exist: audio/{id}.mp3 AND audio/it/{id}.mp3
+- [ ] Git commit pushed to GitHub
+- [ ] Reply includes direct URL (no backticks)
+
+**DO NOT declare completion until ALL items are checked.**
+
 14. Reply with a short summary: year, title, teaser, one highlight connection. 3-5 sentences max. End with a direct link to the new entry: https://matteobettini.github.io/time_slices/#ID (replace ID with the entry's full id, e.g. #125-rome-dome-of-all-things or #1648-munster-exhaustion-of-god). Do NOT wrap the URL in backticks or code formatting — it must be a plain clickable link. This reply is delivered as a notification to the group chat.
