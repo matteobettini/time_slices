@@ -354,6 +354,8 @@
   .quick-btn:active { transform: scale(0.95); }
   .quick-btn.loading { opacity: 0.4; pointer-events: none; }
   .quick-btn.rolling { animation: diceRoll 0.5s ease-out; }
+  .quick-btn.playing { background: #e74c3c; border-color: #e74c3c; }
+  .quick-btn.playing:hover { background: #c0392b; box-shadow: 0 0 16px rgba(231, 76, 60, 0.4); }
   @keyframes diceRoll {
     0% { transform: rotate(0deg) scale(1); }
     25% { transform: rotate(90deg) scale(1.2); }
@@ -1110,6 +1112,7 @@
 </header>
 
 <div class="quick-actions" id="quickActions">
+  <button class="quick-btn" id="globalPlayAll" title="Play all podcasts">▶</button>
   <button class="quick-btn" id="coffeeBtn">☕</button>
   <button class="quick-btn" id="diceBtn">🎲</button>
 </div>
@@ -1714,6 +1717,7 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     const needsLoad = !audio.src || audio.src === window.location.href || audio.readyState === 0;
     if (needsLoad && audio.dataset.podcastUrl) {
       if (threadPlayActive) stopThreadPlayAll();
+      else if (globalPlayActive) stopGlobalPlayAll();
       else stopAllPodcasts();
       audio.src = audio.dataset.podcastUrl;
       audio.load(); // Force load
@@ -1736,6 +1740,7 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     if (audio.paused) {
       // Claim active state on play (in case another podcast was active)
       if (threadPlayActive) stopThreadPlayAll();
+      else if (globalPlayActive) stopGlobalPlayAll();
       else if (activePodcastYear !== year) stopAllPodcasts();
       activePodcastAudio = audio;
       activePodcastYear = year;
@@ -1799,9 +1804,11 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
 }
 
 function togglePodcastPlayer(entryEl, audioUrl, duration) {
-  // Stop thread play all if running
+  // Stop any play all if running
   if (threadPlayActive) {
     stopThreadPlayAll();
+  } else if (globalPlayActive) {
+    stopGlobalPlayAll();
   }
   
   const existing = entryEl.querySelector('.podcast-player');
@@ -1862,6 +1869,9 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
 // --- Thread Filtering ---
 
 function activateThread(threadId, anchorEntry) {
+  // Stop global play all if running (thread will have its own play all)
+  if (globalPlayActive) stopGlobalPlayAll();
+  
   const wasSwitching = activeThread !== null;
   const timeline = document.getElementById('timeline');
 
@@ -1940,6 +1950,8 @@ function activateThread(threadId, anchorEntry) {
   document.getElementById('threadName').textContent = formatThreadId(threadId);
   document.getElementById('threadCount').textContent = `${count} ${count === 1 ? t('entry') : t('entries')}`;
   document.getElementById('threadBanner').classList.add('visible');
+  // Hide global play button when thread is active (thread has its own play all)
+  document.getElementById('globalPlayAll').style.display = 'none';
 
   // --- Scroll handling ---
   if (anchorEntry && anchorViewportTop !== null) {
@@ -1992,6 +2004,8 @@ function clearThread() {
   document.querySelectorAll('.thread-narrative').forEach(n => n.remove());
   clearThreadLines();
   document.getElementById('threadBanner').classList.remove('visible');
+  // Show global play button again
+  document.getElementById('globalPlayAll').style.display = '';
 }
 
 // SVG thread lines
@@ -2267,6 +2281,116 @@ function stopThreadPlayAll() {
   btn.classList.remove('playing');
 }
 
+// Global Play All (when no thread is active)
+let globalPlayQueue = [];
+let globalPlayIndex = -1;
+let globalPlayActive = false;
+
+document.getElementById('globalPlayAll').addEventListener('click', () => {
+  const btn = document.getElementById('globalPlayAll');
+  
+  if (globalPlayActive) {
+    stopGlobalPlayAll();
+    return;
+  }
+  
+  // If thread is active, use thread play all instead
+  if (activeThread) {
+    document.getElementById('threadPlayAll').click();
+    return;
+  }
+  
+  // Build queue of all visible entries with podcasts (sorted by year)
+  const allEntries = document.querySelectorAll('.entry:not(.thread-hidden)');
+  globalPlayQueue = [];
+  allEntries.forEach(el => {
+    const slug = el.id.replace('entry-', '');
+    const slice = SLICES.find(s => s.id === slug);
+    if (slice && slice.podcast && slice.podcast.url) {
+      globalPlayQueue.push({ el, slice, year: parseInt(slice.year) });
+    }
+  });
+  
+  // Sort by year (oldest first)
+  globalPlayQueue.sort((a, b) => a.year - b.year);
+  
+  if (globalPlayQueue.length === 0) return;
+  
+  // Stop any currently playing
+  if (threadPlayActive) stopThreadPlayAll();
+  else stopAllPodcasts();
+  
+  globalPlayActive = true;
+  globalPlayIndex = 0;
+  btn.textContent = '⏹';
+  btn.classList.add('playing');
+  
+  playGlobalEntry(0);
+});
+
+function playGlobalEntry(index) {
+  if (index >= globalPlayQueue.length || !globalPlayActive) {
+    stopGlobalPlayAll();
+    return;
+  }
+  
+  const { el, slice } = globalPlayQueue[index];
+  globalPlayIndex = index;
+  
+  // Scroll entry into view
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  
+  // Expand if needed
+  if (!el.classList.contains('expanded')) {
+    el.classList.add('expanded');
+    const details = el.querySelector('.card-details');
+    if (details) details.style.maxHeight = 'none';
+    // Load floating image
+    const floatImg = el.querySelector('.floating-image img[data-src]');
+    if (floatImg && !floatImg.src) floatImg.src = floatImg.dataset.src;
+  }
+  
+  // Show player and start playback
+  setTimeout(() => {
+    const player = showPodcastPlayer(el, slice.podcast.url, slice.podcast.duration, { autoStop: false });
+    const audio = player.querySelector('audio');
+    const playBtn = player.querySelector('.pp-play');
+    const podcastBtn = el.querySelector('.podcast-btn');
+    
+    // Set up ended listener for auto-advance
+    const onEnded = () => {
+      audio.removeEventListener('ended', onEnded);
+      if (globalPlayActive) {
+        playGlobalEntry(index + 1);
+      }
+    };
+    audio.addEventListener('ended', onEnded);
+    
+    // Start playback
+    audio.src = slice.podcast.url;
+    activePodcastAudio = audio;
+    activePodcastYear = el.dataset.year;
+    audio.play().then(() => {
+      playBtn.innerHTML = SVG_PAUSE;
+      if (podcastBtn) podcastBtn.innerHTML = SVG_STOP;
+      syncMapPopupAudio(el.dataset.year, true);
+    }).catch(() => {
+      // Skip to next on error
+      if (globalPlayActive) playGlobalEntry(index + 1);
+    });
+  }, 300);
+}
+
+function stopGlobalPlayAll() {
+  globalPlayActive = false;
+  globalPlayIndex = -1;
+  globalPlayQueue = [];
+  stopAllPodcasts();
+  const btn = document.getElementById('globalPlayAll');
+  btn.textContent = '▶';
+  btn.classList.remove('playing');
+}
+
 // Lazy image loading
 function lazyLoadImages() {
   const observer = new IntersectionObserver((entries) => {
@@ -2486,6 +2610,38 @@ function loadSlices(restoreId, restoreThread, restorePodcast) {
               };
               audio.addEventListener('ended', onEnded);
             }
+            // If was in global play all mode, restore that state
+            else if (restorePodcast.wasGlobalPlayAll && !restoreThread) {
+              // Rebuild the queue
+              const allEntries = document.querySelectorAll('.entry:not(.thread-hidden)');
+              globalPlayQueue = [];
+              allEntries.forEach(entry => {
+                const entrySlug = entry.id.replace('entry-', '');
+                const entrySlice = SLICES.find(s => s.id === entrySlug);
+                if (entrySlice && entrySlice.podcast && entrySlice.podcast.url) {
+                  globalPlayQueue.push({ el: entry, slice: entrySlice, year: parseInt(entrySlice.year) });
+                }
+              });
+              globalPlayQueue.sort((a, b) => a.year - b.year);
+              
+              // Find current index in queue
+              globalPlayIndex = globalPlayQueue.findIndex(item => item.el.dataset.year === restorePodcast.year);
+              if (globalPlayIndex === -1) globalPlayIndex = restorePodcast.globalPlayIdx || 0;
+              
+              globalPlayActive = true;
+              const globalBtn = document.getElementById('globalPlayAll');
+              globalBtn.textContent = '⏹';
+              globalBtn.classList.add('playing');
+              
+              // Set up ended listener for auto-advance
+              const onEnded = () => {
+                audio.removeEventListener('ended', onEnded);
+                if (globalPlayActive) {
+                  playGlobalEntry(globalPlayIndex + 1);
+                }
+              };
+              audio.addEventListener('ended', onEnded);
+            }
             
             audio.play().then(() => {
               playBtn.innerHTML = SVG_PAUSE;
@@ -2510,16 +2666,21 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
     const wasPlaying = activePodcastAudio && !activePodcastAudio.paused;
     const wasThreadPlayAll = threadPlayActive;
     const threadPlayIdx = threadPlayIndex;
+    const wasGlobalPlayAll = globalPlayActive;
+    const globalPlayIdx = globalPlayIndex;
     currentLang = lang;
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     stopAllPodcasts();
-    // Reset thread play state (will restore after)
+    // Reset play all states (will restore after)
     threadPlayActive = false;
     threadPlayIndex = -1;
     threadPlayQueue = [];
+    globalPlayActive = false;
+    globalPlayIndex = -1;
+    globalPlayQueue = [];
     updateUILabels();
-    loadSlices(null, threadToRestore, wasPlaying ? { year: playingYear, time: playingTime, wasThreadPlayAll, threadPlayIdx } : null);
+    loadSlices(null, threadToRestore, wasPlaying ? { year: playingYear, time: playingTime, wasThreadPlayAll, threadPlayIdx, wasGlobalPlayAll, globalPlayIdx } : null);
   });
 });
 
