@@ -35,8 +35,9 @@ Or save entry to a file first: `python3 add-entry.py --file new-entry.json`
    - Threads must be **historical, cultural, or thematic** — intellectual movements, artistic schools, philosophical currents, political transformations
    - **Good threads:** `death-of-god`, `nominalism`, `classical-revival`, `reformation`, `vernacular-literature`, `existentialism`
    - **Bad threads:** `biography`, `famous-people`, `wars`, `inventions` — these are generic categories, not threads that trace ideas through time
-   - Try to connect at least one thread tag to an existing entry. Check existing tags before inventing new ones.
-   - A thread should represent something that *transforms* as it moves through history, not just a label
+   - **A thread must be linkable** — it should be something that appears in multiple historical moments and transforms over time. If a thread can only apply to one entry ever, it's not a thread.
+   - **Prioritize connecting to existing threads** over creating new ones. Check `slices.json` for existing tags first.
+   - New threads are fine if they represent genuine currents that future entries can join (e.g., `baroque` awaits other 17th-18th century entries)
 
 9. **Add ONE new entry** following the spec. Include:
    - City in title only if dimensions converge there; otherwise use thematic title

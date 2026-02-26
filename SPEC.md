@@ -94,11 +94,12 @@ Every entry in `slices.json` MUST have this structure:
 
 #### threads (mandatory)
 - Array of 3-6 kebab-case strings identifying intellectual/cultural threads
-- **Threads must be historical, cultural, or thematic** — intellectual movements, artistic schools, philosophical currents, political transformations that evolve through time
+- **Threads must be linkable across history** — they should appear in multiple entries and show how ideas transform over time
+- **Threads must be historical, cultural, or thematic** — intellectual movements, artistic schools, philosophical currents, political transformations
 - **Good threads:** `death-of-god`, `nominalism`, `classical-revival`, `reformation`, `vernacular-literature`, `existentialism`, `baroque`, `enlightenment`
-- **Bad threads:** `biography`, `famous-people`, `wars`, `inventions` — these are generic categories, not threads that trace transforming ideas
-- **REUSE existing thread tags** from other entries where they genuinely apply — this is how cross-entry connections become visible
-- Add 1-2 NEW thread tags specific to this entry's unique themes
+- **Bad threads:** `biography`, `famous-people`, `wars`, `inventions` — generic categories that don't trace transforming ideas
+- **REUSE existing thread tags** from other entries where they genuinely apply — prioritize connecting over creating
+- New threads are fine if they represent genuine historical currents that other entries can join
 - When adding NEW tags: also update `THREAD_LABELS` in `index.html` (see below)
 
 #### location (mandatory)
