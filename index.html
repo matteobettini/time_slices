@@ -1577,16 +1577,16 @@ document.getElementById('mapThreadSelectorDropdown').addEventListener('click', (
   const clearBtn = e.target.closest('.thread-selector-clear');
   
   if (clearBtn) {
-    clearMapThread();
     closeAllThreadSelectors();
+    clearMapThread();
     syncAllThreadSelectors();
     return;
   }
   
   if (item) {
     const threadId = item.dataset.thread;
-    activateMapThread(threadId);
     closeAllThreadSelectors();
+    activateMapThread(threadId);
     syncAllThreadSelectors();
   }
 });
@@ -3646,11 +3646,11 @@ function activateMapThread(threadId) {
   const threadMarkers = mapMarkers.filter(m => m._sliceThreads.includes(threadId));
   if (threadMarkers.length > 1) {
     const group = L.featureGroup(threadMarkers);
-    map.fitBounds(group.getBounds().pad(0.4), { maxZoom: 6 });
+    map.fitBounds(group.getBounds().pad(0.4), { maxZoom: 6, animate: true, duration: 0.5 });
   } else if (threadMarkers.length === 1) {
     // Single marker - fly to it
     const marker = threadMarkers[0];
-    map.flyTo(marker.getLatLng(), 5, { duration: 1 });
+    map.flyTo(marker.getLatLng(), 5, { duration: 0.5 });
   }
 
   // Narrow slider to thread year range
