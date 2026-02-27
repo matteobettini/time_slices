@@ -21,7 +21,7 @@
 
   const VISIBLE_WIDTH = 32;
   const TICK_LENGTH = 12;
-  const CURVE_DEPTH = 8; // Subtle curve
+  const CURVE_DEPTH = 8;
 
   function build() {
     if (!window.SLICES || !window.SLICES.length) return;
@@ -58,23 +58,25 @@
 
     let content = '';
 
-    // Draw curved background - subtle bulge
+    // Draw curved background
+    // Desktop: left edge, curve bulges right (towards center of screen)
+    // Mobile: right edge, curve bulges left (towards center of screen)
     if (isMobile) {
-      // Right side
+      // Right side - curve bulges left (control point at low X)
       content += `<path class="disc-bg" d="
-        M ${VISIBLE_WIDTH} 0 
-        Q ${VISIBLE_WIDTH - CURVE_DEPTH} ${h/2} ${VISIBLE_WIDTH} ${h}
-        L ${VISIBLE_WIDTH - CURVE_DEPTH - 5} ${h}
-        Q ${-5} ${h/2} ${VISIBLE_WIDTH - CURVE_DEPTH - 5} 0
+        M ${VISIBLE_WIDTH} 0
+        L ${VISIBLE_WIDTH} ${h}
+        L 0 ${h}
+        Q ${CURVE_DEPTH * 2} ${h/2} 0 0
         Z
       " />`;
     } else {
-      // Left side
+      // Left side - curve bulges right (control point at high X)
       content += `<path class="disc-bg" d="
-        M 0 0 
-        Q ${CURVE_DEPTH} ${h/2} 0 ${h}
-        L ${CURVE_DEPTH + 5} ${h}
-        Q ${VISIBLE_WIDTH + 5} ${h/2} ${CURVE_DEPTH + 5} 0
+        M 0 0
+        L 0 ${h}
+        L ${VISIBLE_WIDTH} ${h}
+        Q ${VISIBLE_WIDTH - CURVE_DEPTH * 2} ${h/2} ${VISIBLE_WIDTH} 0
         Z
       " />`;
     }
@@ -99,24 +101,25 @@
       const rect = e.el.getBoundingClientRect();
       const elY = rect.top + rect.height / 2;
       
-      // Skip if off screen
       if (elY < -50 || elY > h + 50) return;
       
-      // X position follows the curve
+      // X position follows the curve (parabolic)
       const t = (elY - centerY) / (h / 2); // -1 to 1
-      const curveOffset = CURVE_DEPTH * (1 - t * t); // Parabolic curve
+      const curveOffset = CURVE_DEPTH * (1 - t * t);
       
       let x1, x2, labelX, anchor;
       if (isMobile) {
-        x2 = VISIBLE_WIDTH - curveOffset;
-        x1 = x2 - TICK_LENGTH;
-        labelX = x1 - 3;
-        anchor = 'end';
-      } else {
+        // Ticks on left side of the strip (pointing left into screen)
         x1 = curveOffset;
         x2 = x1 + TICK_LENGTH;
         labelX = x2 + 3;
         anchor = 'start';
+      } else {
+        // Ticks on right side of the strip (pointing right into screen)
+        x2 = VISIBLE_WIDTH - curveOffset;
+        x1 = x2 - TICK_LENGTH;
+        labelX = x1 - 3;
+        anchor = 'end';
       }
       
       const isCurrent = e === currentEntry && currentDist < 150;
@@ -131,11 +134,7 @@
     });
 
     // Needle at center
-    if (isMobile) {
-      content += `<line class="disc-needle" x1="${VISIBLE_WIDTH - CURVE_DEPTH - TICK_LENGTH - 5}" y1="${centerY}" x2="${VISIBLE_WIDTH}" y2="${centerY}" />`;
-    } else {
-      content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${CURVE_DEPTH + TICK_LENGTH + 5}" y2="${centerY}" />`;
-    }
+    content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${VISIBLE_WIDTH}" y2="${centerY}" />`;
 
     // Update year display
     if (currentEntry && yearDisplay) {
