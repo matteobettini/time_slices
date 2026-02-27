@@ -1970,7 +1970,42 @@ function stopAllPodcasts() {
   });
   activePodcastAudio = null;
   activePodcastYear = null;
-  // Update global play button state
+  // Clear media session
+  if ('mediaSession' in navigator) {
+    navigator.mediaSession.metadata = null;
+    navigator.mediaSession.playbackState = 'none';
+  }
+}
+
+function updateMediaSession(year, title, imageUrl) {
+  // Update lock screen / notification media controls
+  if (!('mediaSession' in navigator)) return;
+  
+  const fullTitle = year + ' — ' + title;
+  const artwork = imageUrl ? [
+    { src: imageUrl, sizes: '512x512', type: 'image/jpeg' }
+  ] : [];
+  
+  navigator.mediaSession.metadata = new MediaMetadata({
+    title: fullTitle,
+    artist: 'Time Slices',
+    album: 'Historical Podcasts',
+    artwork: artwork
+  });
+  
+  // Set up action handlers
+  navigator.mediaSession.setActionHandler('play', () => {
+    if (activePodcastAudio) activePodcastAudio.play();
+  });
+  navigator.mediaSession.setActionHandler('pause', () => {
+    if (activePodcastAudio) activePodcastAudio.pause();
+  });
+  navigator.mediaSession.setActionHandler('seekbackward', () => {
+    if (activePodcastAudio) activePodcastAudio.currentTime = Math.max(0, activePodcastAudio.currentTime - 10);
+  });
+  navigator.mediaSession.setActionHandler('seekforward', () => {
+    if (activePodcastAudio) activePodcastAudio.currentTime = Math.min(activePodcastAudio.duration, activePodcastAudio.currentTime + 10);
+  });
 }
 
 function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}) {
@@ -2035,6 +2070,11 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     // Get fresh reference to podcast button (may have been rebuilt)
     const btn = entryEl.querySelector('.podcast-btn');
     
+    // Get entry info for media session
+    const title = entryEl.querySelector('.card-title')?.textContent || 'Time Slices';
+    const imageEl = entryEl.querySelector('.card-image');
+    const imageUrl = imageEl ? (imageEl.src || imageEl.dataset.src) : null;
+    
     // Lazy-load audio if this was an idle restored player
     const needsLoad = !audio.src || audio.src === window.location.href || audio.readyState === 0;
     if (needsLoad && audio.dataset.podcastUrl) {
@@ -2048,6 +2088,7 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
       playBtn.innerHTML = SVG_PAUSE;
       if (btn) btn.innerHTML = SVG_STOP;
       syncMapPopupAudio(year, true);
+      updateMediaSession(year, title, imageUrl);
       // Play when ready
       audio.play().catch(() => {
         // Reset UI if play fails
@@ -2068,6 +2109,7 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
       playBtn.innerHTML = SVG_PAUSE;
       if (btn) btn.innerHTML = SVG_STOP;
       syncMapPopupAudio(year, true);
+      updateMediaSession(year, title, imageUrl);
     } else {
       // Pausing — stop any play-all modes
       if (threadPlayActive) stopThreadPlayAll();
@@ -2135,6 +2177,12 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
   const existing = entryEl.querySelector('.podcast-player');
   const btn = entryEl.querySelector('.podcast-btn');
   const year = entryEl.dataset.year;
+  
+  // Get entry info for media session
+  const title = entryEl.querySelector('.card-title')?.textContent || 'Time Slices';
+  const imageEl = entryEl.querySelector('.card-image');
+  const imageUrl = imageEl ? (imageEl.src || imageEl.dataset.src) : null;
+  
   if (existing) {
     const audio = existing.querySelector('audio');
     const playBtn = existing.querySelector('.pp-play');
@@ -2154,6 +2202,7 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
         activePodcastAudio = audio;
         activePodcastYear = year;
         syncMapPopupAudio(year, true);
+        updateMediaSession(year, title, imageUrl);
       }).catch(() => {});
     } else {
       // Idle/reset player bar → re-arm and play
@@ -2165,6 +2214,7 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
         if (playBtn) playBtn.innerHTML = SVG_PAUSE;
         if (btn) btn.innerHTML = SVG_STOP;
         syncMapPopupAudio(year, true);
+        updateMediaSession(year, title, imageUrl);
       }).catch(() => {
         if (playBtn) playBtn.innerHTML = SVG_PLAY;
       });
@@ -2180,6 +2230,7 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
     playBtn.innerHTML = SVG_PAUSE;
     if (btn) btn.innerHTML = SVG_STOP;
     syncMapPopupAudio(year, true);
+    updateMediaSession(year, title, imageUrl);
   }).catch(() => {
     // Autoplay blocked — user must click play
     playBtn.innerHTML = SVG_PLAY;
@@ -2544,6 +2595,11 @@ function playThreadEntry(index) {
     if (details) details.style.maxHeight = 'none';
   }
   
+  // Get entry info for media session
+  const title = el.querySelector('.card-title')?.textContent || slice.title || 'Time Slices';
+  const imageEl = el.querySelector('.card-image');
+  const imageUrl = imageEl ? (imageEl.src || imageEl.dataset.src) : (slice.image?.url || null);
+  
   // Show player and start playback
   setTimeout(() => {
     const player = showPodcastPlayer(el, slice.podcast.url, slice.podcast.duration);
@@ -2568,6 +2624,7 @@ function playThreadEntry(index) {
       playBtn.innerHTML = SVG_PAUSE;
       if (podcastBtn) podcastBtn.innerHTML = SVG_STOP;
       syncMapPopupAudio(el.dataset.year, true);
+      updateMediaSession(el.dataset.year, title, imageUrl);
     }).catch(() => {
       // Skip to next on error
       if (threadPlayActive) playThreadEntry(index + 1);
