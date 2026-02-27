@@ -3,7 +3,6 @@
  * 
  * A large semicircular disc, mostly off-screen.
  * Only a thin arc is visible at the screen edge.
- * Ticks scroll around the arc as page scrolls.
  */
 
 (function() {
@@ -21,7 +20,8 @@
   let dragStartY = 0;
   let dragStartScroll = 0;
 
-  const VISIBLE_WIDTH = 30; // How much of disc edge is visible
+  const VISIBLE_WIDTH = 35;
+  const TICK_LENGTH = 12;
 
   function build() {
     if (!window.SLICES || !window.SLICES.length) return;
@@ -52,17 +52,12 @@
     const viewportHeight = window.innerHeight;
     const centerY = viewportHeight / 2;
     
-    // Disc radius - large enough that visible arc spans most of viewport
-    const DISC_RADIUS = viewportHeight * 0.9;
-    const TICK_LENGTH = 15;
+    // Large radius so the arc is subtle
+    const DISC_RADIUS = viewportHeight * 1.5;
     
-    // SVG dimensions
-    const svgWidth = VISIBLE_WIDTH + 20;
+    // SVG size
+    const svgWidth = VISIBLE_WIDTH + 10;
     const svgHeight = viewportHeight;
-    
-    // Disc center is off-screen
-    const cx = isMobile ? svgWidth + DISC_RADIUS - VISIBLE_WIDTH : -DISC_RADIUS + VISIBLE_WIDTH;
-    const cy = viewportHeight / 2;
     
     svg.setAttribute('width', svgWidth);
     svg.setAttribute('height', svgHeight);
@@ -70,40 +65,49 @@
 
     let content = '';
 
-    // Draw the visible arc of the disc
-    // Arc from top to bottom of viewport
-    const arcTop = cy - DISC_RADIUS * 0.95;
-    const arcBottom = cy + DISC_RADIUS * 0.95;
-    
-    // Calculate arc angles
-    const topAngle = Math.asin((arcTop - cy) / DISC_RADIUS);
-    const bottomAngle = Math.asin((arcBottom - cy) / DISC_RADIUS);
-    
-    if (isMobile) {
-      // Right side - arc curves left
-      const x1 = cx + DISC_RADIUS * Math.cos(topAngle);
-      const y1 = cy + DISC_RADIUS * Math.sin(topAngle);
-      const x2 = cx + DISC_RADIUS * Math.cos(bottomAngle);
-      const y2 = cy + DISC_RADIUS * Math.sin(bottomAngle);
-      content += `<path class="disc-bg" d="M ${cx} ${cy} L ${x1} ${y1} A ${DISC_RADIUS} ${DISC_RADIUS} 0 0 0 ${x2} ${y2} Z" />`;
-    } else {
-      // Left side - arc curves right
-      const x1 = cx + DISC_RADIUS * Math.cos(Math.PI - topAngle);
-      const y1 = cy - DISC_RADIUS * Math.sin(Math.PI - topAngle);
-      const x2 = cx + DISC_RADIUS * Math.cos(Math.PI - bottomAngle);
-      const y2 = cy - DISC_RADIUS * Math.sin(Math.PI - bottomAngle);
-      content += `<path class="disc-bg" d="M ${cx} ${cy} L ${x1} ${y1} A ${DISC_RADIUS} ${DISC_RADIUS} 0 0 1 ${x2} ${y2} Z" />`;
-    }
+    // Disc center position (off-screen)
+    // For left side: center is far to the left
+    // For right side: center is far to the right
+    const cx = isMobile ? (svgWidth + DISC_RADIUS - VISIBLE_WIDTH) : (-DISC_RADIUS + VISIBLE_WIDTH);
+    const cy = viewportHeight / 2;
 
-    let currentEntry = null;
-    let currentDist = Infinity;
+    // Draw arc using a path
+    // We want an arc that spans from top to bottom of viewport
+    const arcStartY = 0;
+    const arcEndY = viewportHeight;
+    
+    // Calculate X positions on the arc for top and bottom
+    const dyTop = arcStartY - cy;
+    const dyBottom = arcEndY - cy;
+    
+    // x = cx + sqrt(r^2 - dy^2) for right side of circle
+    // x = cx - sqrt(r^2 - dy^2) for left side of circle
+    const dxTop = Math.sqrt(Math.max(0, DISC_RADIUS * DISC_RADIUS - dyTop * dyTop));
+    const dxBottom = Math.sqrt(Math.max(0, DISC_RADIUS * DISC_RADIUS - dyBottom * dyBottom));
+    
+    let arcX1, arcX2;
+    if (isMobile) {
+      // Right edge - we want the left side of the circle
+      arcX1 = cx - dxTop;
+      arcX2 = cx - dxBottom;
+    } else {
+      // Left edge - we want the right side of the circle  
+      arcX1 = cx + dxTop;
+      arcX2 = cx + dxBottom;
+    }
+    
+    // Draw filled arc
+    const largeArc = 0; // We want the smaller arc
+    const sweep = isMobile ? 1 : 0;
+    content += `<path class="disc-bg" d="M ${cx},${cy} L ${arcX1},${arcStartY} A ${DISC_RADIUS},${DISC_RADIUS} 0 ${largeArc},${sweep} ${arcX2},${arcEndY} Z" />`;
 
     // Find current entry
+    let currentEntry = null;
+    let currentDist = Infinity;
     entries.forEach(e => {
       if (!e.el) return;
       const rect = e.el.getBoundingClientRect();
-      const elCenterY = rect.top + rect.height / 2;
-      const dist = Math.abs(elCenterY - centerY);
+      const dist = Math.abs(rect.top + rect.height / 2 - centerY);
       if (dist < currentDist) {
         currentDist = dist;
         currentEntry = e;
@@ -117,61 +121,47 @@
       const rect = e.el.getBoundingClientRect();
       const elCenterY = rect.top + rect.height / 2;
       
-      // Skip if way off screen
-      if (elCenterY < -200 || elCenterY > viewportHeight + 200) return;
+      // Skip if off screen
+      if (elCenterY < -100 || elCenterY > viewportHeight + 100) return;
       
-      // Map Y position to angle on the arc
-      const yOffset = elCenterY - cy;
-      const angle = Math.asin(Math.max(-0.99, Math.min(0.99, yOffset / DISC_RADIUS)));
+      // Calculate X position on the arc for this Y
+      const dy = elCenterY - cy;
+      const dx = Math.sqrt(Math.max(0, DISC_RADIUS * DISC_RADIUS - dy * dy));
       
-      // Tick coordinates
-      const innerR = DISC_RADIUS - TICK_LENGTH;
-      const outerR = DISC_RADIUS - 2;
-      
-      let x1, y1, x2, y2, labelX, labelY, textAngle;
-      
+      let tickX1, tickX2, labelX;
       if (isMobile) {
-        x1 = cx + innerR * Math.cos(angle);
-        y1 = cy + innerR * Math.sin(angle);
-        x2 = cx + outerR * Math.cos(angle);
-        y2 = cy + outerR * Math.sin(angle);
-        labelX = cx + (innerR - 15) * Math.cos(angle);
-        labelY = cy + (innerR - 15) * Math.sin(angle);
-        textAngle = (angle * 180 / Math.PI);
+        tickX1 = cx - dx + 2;
+        tickX2 = cx - dx + 2 + TICK_LENGTH;
+        labelX = tickX2 + 5;
       } else {
-        const drawAngle = Math.PI - angle;
-        x1 = cx + innerR * Math.cos(drawAngle);
-        y1 = cy - innerR * Math.sin(drawAngle);
-        x2 = cx + outerR * Math.cos(drawAngle);
-        y2 = cy - outerR * Math.sin(drawAngle);
-        labelX = cx + (innerR - 15) * Math.cos(drawAngle);
-        labelY = cy - (innerR - 15) * Math.sin(drawAngle);
-        textAngle = (-angle * 180 / Math.PI);
+        tickX2 = cx + dx - 2;
+        tickX1 = cx + dx - 2 - TICK_LENGTH;
+        labelX = tickX1 - 5;
       }
       
       const isCurrent = e === currentEntry && currentDist < 150;
       const tickClass = isCurrent ? 'disc-tick current' : 'disc-tick';
 
-      content += `<line class="${tickClass}" data-id="${e.slice.id}" data-year="${e.year}" x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" />`;
+      content += `<line class="${tickClass}" data-id="${e.slice.id}" data-year="${e.year}" x1="${tickX1}" y1="${elCenterY}" x2="${tickX2}" y2="${elCenterY}" />`;
 
       // Year label
       const yearText = typeof window.formatYear === 'function' ? window.formatYear(e.year) : e.year;
       const labelClass = isCurrent ? 'disc-label current' : 'disc-label';
-      content += `<text class="${labelClass}" x="${labelX}" y="${labelY}" text-anchor="middle" dominant-baseline="middle" transform="rotate(${textAngle}, ${labelX}, ${labelY})">${yearText}</text>`;
+      const anchor = isMobile ? 'start' : 'end';
+      content += `<text class="${labelClass}" x="${labelX}" y="${elCenterY + 4}" text-anchor="${anchor}">${yearText}</text>`;
     });
 
     // Needle at center
-    const needleY = cy;
+    const needleDx = Math.sqrt(DISC_RADIUS * DISC_RADIUS);
     if (isMobile) {
-      content += `<line class="disc-needle" x1="${svgWidth - VISIBLE_WIDTH - 5}" y1="${needleY}" x2="${svgWidth}" y2="${needleY}" />`;
+      content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${VISIBLE_WIDTH + 5}" y2="${centerY}" />`;
     } else {
-      content += `<line class="disc-needle" x1="0" y1="${needleY}" x2="${VISIBLE_WIDTH + 5}" y2="${needleY}" />`;
+      content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${VISIBLE_WIDTH + 5}" y2="${centerY}" />`;
     }
 
     // Update year display
     if (currentEntry && yearDisplay) {
-      const yearText = typeof window.formatYear === 'function' ? window.formatYear(currentEntry.year) : currentEntry.year;
-      yearDisplay.textContent = yearText;
+      yearDisplay.textContent = typeof window.formatYear === 'function' ? window.formatYear(currentEntry.year) : currentEntry.year;
     }
 
     svg.innerHTML = content;
@@ -213,8 +203,7 @@
       if (isDragging) return;
       const tick = e.target.closest('.disc-tick');
       if (tick) {
-        const id = tick.dataset.id;
-        const el = document.querySelector(`#entry-${id}`);
+        const el = document.querySelector(`#entry-${tick.dataset.id}`);
         if (el) {
           if (navigator.vibrate) navigator.vibrate(10);
           if (typeof window.highlightAndScroll === 'function') {
