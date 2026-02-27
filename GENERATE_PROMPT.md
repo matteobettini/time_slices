@@ -65,11 +65,18 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
    - `location` field (always required for map)
    - `addedDate` as full ISO-8601 UTC timestamp (e.g. `"2026-02-25T14:30:00Z"`)
 
-9. **Add Italian version** to `slices.it.json` — natural Italian, not machine translation.
+9. **Download and compress image:**
+   - Find a high-quality, representative image for the entry
+   - **ALWAYS compress before saving:** `convert input.jpg -resize '1200x>' -quality 85 images/{id}.jpg`
+   - Max width: 1200px, quality: 85, target size: <300KB
+   - Convert PNGs to JPG unless transparency needed
+   - Verify: `ls -lh images/{id}.jpg` — if >400KB, reduce quality to 80
 
-10. **Update THREAD_LABELS** in `index.html` if you add new thread tags (both en and it sections).
+10. **Add Italian version** to `slices.it.json` — natural Italian, not machine translation.
 
-11. **Add THREAD_NARRATIVES** in `index.html` for connections to existing entries:
+11. **Update THREAD_LABELS** in `index.html` if you add new thread tags (both en and it sections).
+
+12. **Add THREAD_NARRATIVES** in `index.html` for connections to existing entries:
     - Find the `THREAD_NARRATIVES` object (both `en` and `it` sections)
     - Format: `'YEAR_FROM→YEAR_TO': 'Your narrative here'` (use → character)
     - **Keep it punchy:** 1-2 sentences max. State the *mechanism* of transmission, not just "X years later"
@@ -78,21 +85,21 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 ---
 
-## PHASE 2: Podcasts (Steps 12-14) — MANDATORY
+## PHASE 2: Podcasts (Steps 13-15) — MANDATORY
 
 ⚠️ **DO NOT SKIP THIS PHASE. Previous runs have failed by stopping after Phase 1.**
 
-12. **Write podcast scripts:**
+13. **Write podcast scripts:**
     - EN script (~350-400 words, storytelling style) → `audio/scripts/{id}.txt`
     - IT script (culturally adapted, not literal) → `audio/scripts/it/{id}.txt`
 
-13. **Add config to `audio/generate-podcast.py`:**
+14. **Add config to `audio/generate-podcast.py`:**
     - Add entry to `VOICE_MAP_EN` dict with voice + style instructions
     - Add entry to `VOICE_MAP_IT` dict with voice + Italian instructions  
     - Add entry to `MUSIC_SOURCES` dict (use pool_key or direct URL from Internet Archive)
     - Voices: alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse. ⚠️ Do NOT use `onyx` (buggy).
 
-14. **Generate podcasts:**
+15. **Generate podcasts:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     python3 audio/generate-podcast.py {id} --lang en
@@ -107,11 +114,11 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 ---
 
-## PHASE 3: Publish (Steps 15-16) — MANDATORY
+## PHASE 3: Publish (Steps 16-17) — MANDATORY
 
 ⚠️ **DO NOT SKIP THIS PHASE. The entry is NOT LIVE until pushed.**
 
-15. **Commit and push:**
+16. **Commit and push:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     git add -A
@@ -121,7 +128,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     
     **VERIFY PUSH SUCCEEDED.** Look for `main -> main` in output. If you see `rejected` or `error`, fix it.
 
-16. **Final reply** (ONLY after steps 14-15 verified):
+17. **Final reply** (ONLY after steps 15-16 verified):
     - Year, title, teaser, one highlight connection (3-5 sentences)
     - Direct link: `https://matteobettini.github.io/time_slices/#ID`
     - No backticks around the URL — it must be clickable
