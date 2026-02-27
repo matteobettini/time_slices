@@ -4328,10 +4328,20 @@ document.getElementById('coffeeBtn').addEventListener('click', () => {
 </script>
 <script src="time-disc.js"></script>
 <script>
-  // Initialize time disc after script loads
-  if (typeof buildTimeDisc === 'function' && window.SLICES && window.SLICES.length) {
-    buildTimeDisc();
-  }
+  // Initialize time disc after script loads and DOM is ready
+  (function initTimeDisc() {
+    if (typeof buildTimeDisc === 'function') {
+      if (window.SLICES && window.SLICES.length) {
+        buildTimeDisc();
+      } else {
+        // Wait for slices to load
+        slicesReady.then(buildTimeDisc);
+      }
+    } else {
+      // Script hasn't executed yet, try again
+      setTimeout(initTimeDisc, 50);
+    }
+  })();
 </script>
 
 </body>
