@@ -2135,6 +2135,7 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
   const totalTime = player.querySelector('.pp-total');
 
   let pendingSeekPct = null; // Store desired position before audio loads
+  let isSeeking = false; // True while browser is processing a seek
 
   audio.dataset.podcastUrl = audioUrl; // Always store URL for recovery
   audio.src = audioUrl;
@@ -2225,7 +2226,13 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     }
   });
 
+  // Track seeking state to prevent UI flicker during seek operations
+  audio.addEventListener('seeking', () => { isSeeking = true; });
+  audio.addEventListener('seeked', () => { isSeeking = false; pendingSeekPct = null; });
+
   audio.addEventListener('timeupdate', () => {
+    // Don't update UI while seeking or waiting for pending seek
+    if (isSeeking || pendingSeekPct !== null) return;
     if (audio.duration) {
       const pct = (audio.currentTime / audio.duration) * 100;
       progressFill.style.width = pct + '%';
