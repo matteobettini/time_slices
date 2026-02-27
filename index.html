@@ -1345,8 +1345,8 @@
 </div>
 
 <script>
-let SLICES = [];
-let activeThread = null;
+var SLICES = []; // Use var so it's accessible as window.SLICES
+var activeThread = null; // Use var so it's accessible as window.activeThread
 let activePodcastAudio = null; // Track the currently playing podcast
 let activePodcastYear = null;  // Year of the currently playing podcast (for cross-component sync)
 let currentLang = (navigator.language || '').startsWith('it') ? 'it' : 'en';
