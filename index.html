@@ -1982,8 +1982,20 @@ function updateMediaSession(year, title, imageUrl) {
   if (!('mediaSession' in navigator)) return;
   
   const fullTitle = year + ' — ' + title;
-  const artwork = imageUrl ? [
-    { src: imageUrl, sizes: '512x512', type: 'image/jpeg' }
+  
+  // Convert relative image URL to absolute
+  let absoluteImageUrl = null;
+  if (imageUrl) {
+    if (imageUrl.startsWith('http')) {
+      absoluteImageUrl = imageUrl;
+    } else {
+      // Relative path — make absolute
+      absoluteImageUrl = new URL(imageUrl, window.location.href).href;
+    }
+  }
+  
+  const artwork = absoluteImageUrl ? [
+    { src: absoluteImageUrl, sizes: '512x512', type: 'image/jpeg' }
   ] : [];
   
   navigator.mediaSession.metadata = new MediaMetadata({
