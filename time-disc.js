@@ -1,7 +1,8 @@
 /**
  * Time Disc Navigator
  * 
- * A subtle curved edge with ticks that scroll with content.
+ * A semicircle that touches top and bottom of viewport.
+ * Only a thin arc visible at the screen edge.
  */
 
 (function() {
@@ -19,9 +20,8 @@
   let dragStartY = 0;
   let dragStartScroll = 0;
 
-  const VISIBLE_WIDTH = 32;
-  const TICK_LENGTH = 12;
-  const CURVE_DEPTH = 8;
+  const VISIBLE_WIDTH = 28;
+  const TICK_LENGTH = 10;
 
   function build() {
     if (!window.SLICES || !window.SLICES.length) return;
@@ -52,31 +52,57 @@
     const h = window.innerHeight;
     const centerY = h / 2;
     
+    // Circle radius: must touch top (y=0) and bottom (y=h) of viewport
+    // Circle center is at (cx, h/2), radius = h/2
+    // The visible edge is where x intersects our visible strip
+    const radius = h / 2;
+    
     svg.setAttribute('width', VISIBLE_WIDTH);
     svg.setAttribute('height', h);
     svg.setAttribute('viewBox', `0 0 ${VISIBLE_WIDTH} ${h}`);
 
     let content = '';
 
-    // Draw curved background
-    // Desktop: left edge, curve bulges right (towards center of screen)
-    // Mobile: right edge, curve bulges left (towards center of screen)
+    // Circle center X position (off-screen)
+    // For the edge to show VISIBLE_WIDTH pixels, center is at: 
+    // Desktop (left): cx = -(radius - VISIBLE_WIDTH)
+    // Mobile (right): cx = VISIBLE_WIDTH + (radius - VISIBLE_WIDTH) = radius
+    const cx = isMobile ? radius : -(radius - VISIBLE_WIDTH);
+    const cy = centerY;
+
+    // Draw arc from top to bottom
+    // Top point: (cx + sqrt(r² - (0-cy)²), 0) but we need the edge point
+    // At y=0: x = cx + sqrt(r² - r²) = cx (circle touches at center-x level)
+    // Actually at y=0, dy = -r, so x = cx (tangent point)
+    
+    // Calculate visible arc points
+    const topY = 0;
+    const bottomY = h;
+    
+    // At top (y=0): dy = 0 - cy = -radius, x = cx (tangent)
+    // At bottom (y=h): dy = h - cy = radius, x = cx (tangent)
+    // At center (y=h/2): dy = 0, x = cx + radius (rightmost) or cx - radius (leftmost)
+    
     if (isMobile) {
-      // Right side - curve bulges left (control point at low X)
+      // Right edge - draw left side of circle
+      // Arc from (cx, 0) around to (cx, h), bulging left
+      const leftX = cx - radius; // Leftmost point at center
       content += `<path class="disc-bg" d="
-        M ${VISIBLE_WIDTH} 0
-        L ${VISIBLE_WIDTH} ${h}
-        L 0 ${h}
-        Q ${CURVE_DEPTH * 2} ${h/2} 0 0
+        M ${cx} ${topY}
+        A ${radius} ${radius} 0 0 0 ${cx} ${bottomY}
+        L ${VISIBLE_WIDTH} ${bottomY}
+        L ${VISIBLE_WIDTH} ${topY}
         Z
       " />`;
     } else {
-      // Left side - curve bulges right (control point at high X)
+      // Left edge - draw right side of circle  
+      // Arc from (cx, 0) around to (cx, h), bulging right
+      const rightX = cx + radius; // Rightmost point at center
       content += `<path class="disc-bg" d="
-        M 0 0
-        L 0 ${h}
-        L ${VISIBLE_WIDTH} ${h}
-        Q ${VISIBLE_WIDTH - CURVE_DEPTH * 2} ${h/2} ${VISIBLE_WIDTH} 0
+        M ${cx} ${topY}
+        A ${radius} ${radius} 0 0 1 ${cx} ${bottomY}
+        L 0 ${bottomY}
+        L 0 ${topY}
         Z
       " />`;
     }
@@ -94,7 +120,7 @@
       }
     });
 
-    // Draw ticks
+    // Draw ticks along the arc
     entries.forEach(e => {
       if (!e.el) return;
       
@@ -103,21 +129,23 @@
       
       if (elY < -50 || elY > h + 50) return;
       
-      // X position follows the curve (parabolic)
-      const t = (elY - centerY) / (h / 2); // -1 to 1
-      const curveOffset = CURVE_DEPTH * (1 - t * t);
+      // Calculate X on the circle at this Y
+      const dy = elY - cy;
+      const dx = Math.sqrt(Math.max(0, radius * radius - dy * dy));
       
-      let x1, x2, labelX, anchor;
+      let arcX, x1, x2, labelX, anchor;
       if (isMobile) {
-        // Ticks on left side of the strip (pointing left into screen)
-        x1 = curveOffset;
-        x2 = x1 + TICK_LENGTH;
+        // Left side of circle
+        arcX = cx - dx;
+        x1 = arcX;
+        x2 = arcX + TICK_LENGTH;
         labelX = x2 + 3;
         anchor = 'start';
       } else {
-        // Ticks on right side of the strip (pointing right into screen)
-        x2 = VISIBLE_WIDTH - curveOffset;
-        x1 = x2 - TICK_LENGTH;
+        // Right side of circle
+        arcX = cx + dx;
+        x2 = arcX;
+        x1 = arcX - TICK_LENGTH;
         labelX = x1 - 3;
         anchor = 'end';
       }
@@ -133,7 +161,7 @@
       content += `<text class="${labelClass}" x="${labelX}" y="${elY + 3}" text-anchor="${anchor}">${yearText}</text>`;
     });
 
-    // Needle at center
+    // Needle at center (full width of visible area)
     content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${VISIBLE_WIDTH}" y2="${centerY}" />`;
 
     // Update year display

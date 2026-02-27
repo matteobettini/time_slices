@@ -7,16 +7,17 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: 32px;
+  width: 28px;
   z-index: 90;
   pointer-events: none;
-  opacity: 0.35;
-  transition: opacity 0.3s ease;
+  opacity: 0.3;
+  transition: opacity 0.3s ease, filter 0.3s ease;
 }
 
 .time-disc-container:hover,
 .time-disc-container.active {
   opacity: 1;
+  filter: drop-shadow(0 0 12px rgba(124, 111, 247, 0.4));
 }
 
 .time-disc-container.hidden {
@@ -47,6 +48,7 @@
 
 .time-disc svg {
   display: block;
+  overflow: visible;
 }
 
 /* Curved background */
@@ -59,7 +61,6 @@
 .time-disc-container:hover .disc-bg,
 .time-disc-container.active .disc-bg {
   stroke-width: 2;
-  filter: drop-shadow(0 0 8px rgba(124, 111, 247, 0.3));
 }
 
 /* Entry tick marks */
@@ -67,7 +68,7 @@
   stroke: var(--accent);
   stroke-width: 2;
   stroke-linecap: round;
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: pointer;
 }
 
@@ -87,7 +88,7 @@
 /* Year labels */
 .disc-label {
   font-family: var(--mono);
-  font-size: 0.55rem;
+  font-size: 0.5rem;
   fill: var(--text-dim);
   opacity: 0;
   pointer-events: none;
