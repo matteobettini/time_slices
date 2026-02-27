@@ -255,7 +255,7 @@ MUSIC_POOL = {
         "url": "https://archive.org/download/BachCelloSuiteNo.1PreludeYoYoMa/Bach%20Cello%20Suite%20No.1%20-%20Prelude%20%28Yo-Yo%20Ma%29.mp3",
         "filename": "bach-cello-suite-1.mp3",
         "description": "Bach — Cello Suite No. 1 Prelude (Yo-Yo Ma)",
-        "start_time": 0,
+        "start_time": 5,
         "tags": ["baroque", "cello", "germany", "instrumental", "flowing"],
     },
     "vivaldi-four-seasons": {
@@ -526,6 +526,50 @@ def generate_narration(entry_id, script_text, lang="en"):
     return narration_path, duration
 
 
+def validate_music_start(music_path, start_time):
+    """Check that music at start_time is not silent. Returns (ok, suggested_start)."""
+    # Check volume at the specified start time
+    result = subprocess.run(
+        ["ffmpeg", "-i", music_path, "-ss", str(start_time), "-t", "3",
+         "-af", "volumedetect", "-f", "null", "-"],
+        capture_output=True, text=True
+    )
+    
+    import re
+    match = re.search(r'mean_volume: ([-\d.]+) dB', result.stderr)
+    if not match:
+        return True, start_time  # Can't detect, assume ok
+    
+    mean_vol = float(match.group(1))
+    
+    # If very quiet (< -35dB), try to find a better start
+    if mean_vol < -35:
+        print(f"  ⚠️  Music at {start_time}s is quiet ({mean_vol:.1f}dB), searching for better start...")
+        
+        # Detect silence periods
+        result = subprocess.run(
+            ["ffmpeg", "-i", music_path, "-af", "silencedetect=noise=-30dB:d=0.3",
+             "-f", "null", "-"],
+            capture_output=True, text=True
+        )
+        
+        # Find first silence_end after start_time
+        for line in result.stderr.split('\n'):
+            if 'silence_end' in line:
+                match = re.search(r'silence_end: ([\d.]+)', line)
+                if match:
+                    end_time = float(match.group(1))
+                    if end_time > start_time:
+                        suggested = round(end_time * 2) / 2  # Round to 0.5s
+                        print(f"  💡 Suggested start_time: {suggested}s")
+                        return False, suggested
+        
+        # If no silence detected, just add 2 seconds
+        return False, start_time + 2
+    
+    return True, start_time
+
+
 def mix_audio(narration_path, music_path, output_path, narration_duration, start_time=0):
     """Mix narration with background music using ffmpeg.
     
@@ -709,6 +753,13 @@ def generate_podcast(entry_id, lang="en", remix=False):
         output_path = os.path.join(OUTPUT_DIR, f"{entry_id}.mp3")
     if music_path and os.path.exists(music_path) and os.path.getsize(music_path) > 10000:
         start_time = music_src.get("start_time", 0)
+        
+        # Validate music isn't silent at start_time
+        music_ok, suggested_start = validate_music_start(music_path, start_time)
+        if not music_ok:
+            print(f"  ⚠️  Using suggested start_time {suggested_start}s instead of {start_time}s")
+            start_time = suggested_start
+        
         mix_audio(narration_path, music_path, output_path, duration, start_time=start_time)
     else:
         subprocess.run(["cp", narration_path, output_path])

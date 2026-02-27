@@ -148,6 +148,12 @@ Search: `https://archive.org/advancedsearch.php?q=<query>+AND+mediatype:audio&ou
 Files: `https://archive.org/metadata/<identifier>/files`
 Download: `https://archive.org/download/<identifier>/<filename>`
 
+**⚠️ MUSIC START_TIME IS CRITICAL.** Many tracks have silence or noise at the beginning. When adding a new track to MUSIC_POOL or MUSIC_SOURCES:
+1. Download and listen to the first 10-15 seconds
+2. Set `start_time` to skip silence/weak opening (usually 2-10 seconds)
+3. The podcast intro is only 3.5s — the music must be *immediately* salient
+4. If unsure, use `ffmpeg -i track.mp3 -af "silencedetect=noise=-30dB:d=0.3" -f null -` to detect silence
+
 **Collections by era:**
 - Ancient/Medieval: `gregorian chant`, `medieval music`, `byzantine chant`
 - Middle East: `oud music`, `persian classical`, `arabic maqam`
