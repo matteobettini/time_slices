@@ -68,7 +68,15 @@ Or save entry to a file first: `python3 add-entry.py --file new-entry.json`
     - Run: `python3 audio/generate-podcast.py {id} --lang it`
     - **VERIFY:** `ls -la audio/{id}.mp3 audio/it/{id}.mp3` — both must exist and be >100KB
 
-14. **Commit and push:** `git add -A && git commit -m "Add YEAR Place: Title" && git push` — verify the push succeeds before proceeding.
+14. **Commit and push:**
+    ```bash
+    cd /home/cloud-user/.openclaw/workspace/time-slices
+    git add -A
+    git commit -m "Add YEAR Place: Title"
+    # Push using stored credentials (default creds are for wrong user):
+    git push "$(cat .git-push-url)" main
+    ```
+    **Verify the push succeeds before proceeding.** If push fails, the entry is not live.
 
 15. **Final reply** (only after steps 13-14 complete):
     - Reply with: year, title, teaser, one highlight connection (3-5 sentences)
