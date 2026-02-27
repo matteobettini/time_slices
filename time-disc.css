@@ -2,20 +2,18 @@
  * Time Disc Navigator Styles
  */
 
-/* Container */
 .time-disc-container {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  width: 50px;
+  width: 40px;
   z-index: 90;
   pointer-events: none;
-  overflow: hidden;
 }
+
 .time-disc-container.hidden {
-  opacity: 0;
-  pointer-events: none !important;
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -25,112 +23,120 @@
   }
 }
 
-/* The disc itself */
 .time-disc {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  transform-origin: center center;
-  transition: transform 0.05s linear;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   pointer-events: auto;
-  cursor: grab;
-}
-.time-disc:active,
-.time-disc.dragging {
-  cursor: grabbing;
-  transition: none;
+  cursor: ns-resize;
 }
 
 .time-disc svg {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
-/* Disc background - solid fill */
-.disc-bg {
+/* Background strip */
+.disc-strip-bg {
   fill: var(--surface);
-  stroke: var(--accent);
-  stroke-width: 2;
-  opacity: 0.9;
+  opacity: 0.8;
 }
-.time-disc-container:hover .disc-bg,
-.time-disc-container.active .disc-bg {
+
+.time-disc-container:hover .disc-strip-bg,
+.time-disc-container.active .disc-strip-bg {
   fill: var(--surface2);
-  stroke-width: 3;
+  opacity: 0.95;
 }
 
 /* Entry tick marks */
-.disc-entry-tick {
+.disc-tick {
   stroke: var(--accent);
-  stroke-width: 3;
+  stroke-width: 2;
   stroke-linecap: round;
-  opacity: 0.7;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.15s, stroke-width 0.15s;
 }
-.disc-entry-tick:hover {
-  opacity: 1;
-  stroke-width: 4;
+
+.disc-tick:hover {
+  opacity: 0.9;
+  stroke-width: 3;
 }
-.disc-entry-tick.at-needle {
+
+.disc-tick.current {
   stroke: #fff;
-  stroke-width: 5;
+  stroke-width: 4;
   opacity: 1;
   filter: drop-shadow(0 0 4px var(--accent));
 }
 
 /* Year labels */
-.disc-year-label {
+.disc-label {
   font-family: var(--mono);
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   fill: var(--text-dim);
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.15s;
 }
-.time-disc-container:hover .disc-year-label,
-.time-disc-container.active .disc-year-label {
-  opacity: 0.8;
+
+.time-disc-container:hover .disc-label,
+.time-disc-container.active .disc-label {
+  opacity: 0.7;
 }
-.disc-year-label.at-needle {
-  fill: #fff;
+
+.disc-label.current {
+  fill: var(--accent);
   font-weight: 700;
   opacity: 1 !important;
 }
 
-/* Fixed indicator needle */
+/* Center needle */
+.disc-needle {
+  stroke: var(--accent);
+  stroke-width: 3;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 6px var(--accent));
+}
+
+/* Year indicator */
 .time-disc-indicator {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 100%;
   transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  margin-left: 8px;
   pointer-events: none;
   z-index: 10;
+  opacity: 0;
+  transition: opacity 0.15s;
 }
-.time-disc-indicator::before {
-  content: '';
-  width: 30px;
-  height: 4px;
-  background: var(--accent);
-  border-radius: 2px;
-  box-shadow: 0 0 10px var(--accent);
+
+.time-disc-container:hover .time-disc-indicator,
+.time-disc-container.active .time-disc-indicator {
+  opacity: 1;
 }
+
 .time-disc-indicator-year {
   font-family: var(--mono);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 700;
   color: #fff;
   background: var(--accent);
-  padding: 3px 8px;
+  padding: 4px 10px;
   border-radius: 4px;
-  box-shadow: 0 0 10px rgba(124, 111, 247, 0.5);
-  min-width: 50px;
-  text-align: center;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
   .time-disc-indicator {
     left: auto;
-    right: 0;
-    flex-direction: row-reverse;
+    right: 100%;
+    margin-left: 0;
+    margin-right: 8px;
   }
 }

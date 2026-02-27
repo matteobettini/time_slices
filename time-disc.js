@@ -1,267 +1,220 @@
 /**
- * Time Disc Navigator
- * A rotatable disc widget for navigating Time Slices
+ * Time Disc Navigator - Complete Rewrite
+ * 
+ * Simple approach:
+ * - A vertical strip on the left edge (right on mobile)
+ * - Contains tick marks for each entry, positioned vertically by year
+ * - Dragging up/down scrolls the page
+ * - Current entry is highlighted
  */
 
 (function() {
   'use strict';
 
-  const timeDiscContainer = document.getElementById('timeDiscContainer');
-  const timeDisc = document.getElementById('timeDisc');
-  const timeDiscSvg = document.getElementById('timeDiscSvg');
-  const timeDiscYearEl = document.getElementById('timeDiscYear');
+  const container = document.getElementById('timeDiscContainer');
+  const disc = document.getElementById('timeDisc');
+  const svg = document.getElementById('timeDiscSvg');
+  const yearDisplay = document.getElementById('timeDiscYear');
 
-  if (!timeDiscContainer || !timeDisc || !timeDiscSvg) {
-    console.warn('Time Disc: required elements not found');
-    return;
-  }
+  if (!container || !disc || !svg) return;
 
-  let discEntries = [];
-  let discRotation = 0;
-  let discIsDragging = false;
-  let discDragStartY = 0;
-  let discDragStartRotation = 0;
-  let discLastNeedleEntry = null;
-  let discScrollSyncEnabled = true;
+  let entries = [];
+  let isDragging = false;
+  let dragStartY = 0;
+  let dragStartScroll = 0;
+  let scrollSyncEnabled = true;
 
-  // Geometry - smaller radius for tighter curve visibility
-  const DISC_RADIUS = 400;
-  const VISIBLE_WIDTH = 28;
-  const TICK_LENGTH = 14;
+  const STRIP_WIDTH = 40;
+  const TICK_WIDTH = 16;
+  const PADDING_TOP = 100;
+  const PADDING_BOTTOM = 100;
 
-  function getRotationFromScroll() {
-    const scrollTop = window.scrollY;
-    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    if (maxScroll <= 0) return 0;
-    return (scrollTop / maxScroll) * 180;
-  }
-
-  function getScrollFromRotation(rotation) {
-    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    return (Math.max(0, Math.min(180, rotation)) / 180) * maxScroll;
-  }
-
-  function buildTimeDisc() {
+  function build() {
     if (!window.SLICES || !window.SLICES.length) return;
-    
-    const entriesToShow = window.activeThread
+
+    const slices = window.activeThread
       ? window.SLICES.filter(s => (s.threads || []).includes(window.activeThread))
       : window.SLICES;
-    
-    if (!entriesToShow.length) {
-      discEntries = [];
-      timeDiscSvg.innerHTML = '';
+
+    if (!slices.length) {
+      entries = [];
+      svg.innerHTML = '';
       return;
     }
-    
-    const sorted = [...entriesToShow].sort((a, b) => parseInt(a.year) - parseInt(b.year));
+
+    const sorted = [...slices].sort((a, b) => parseInt(a.year) - parseInt(b.year));
     const minYear = parseInt(sorted[0].year);
     const maxYear = parseInt(sorted[sorted.length - 1].year);
     const yearSpan = maxYear - minYear || 1;
-    
+
+    const height = window.innerHeight;
     const isMobile = window.innerWidth <= 768;
-    const viewportHeight = window.innerHeight;
-    
-    // SVG dimensions
-    const svgSize = DISC_RADIUS * 2;
-    
-    // Center position - disc center is off-screen
-    // For left edge: center is at x = -DISC_RADIUS + VISIBLE_WIDTH
-    // For right edge: center is at x = svgSize + DISC_RADIUS - VISIBLE_WIDTH
-    const centerX = DISC_RADIUS;
-    const centerY = DISC_RADIUS;
-    
-    timeDiscSvg.setAttribute('width', svgSize);
-    timeDiscSvg.setAttribute('height', svgSize);
-    timeDiscSvg.setAttribute('viewBox', `0 0 ${svgSize} ${svgSize}`);
-    
-    // Position disc - offset so only edge shows
-    timeDisc.style.width = svgSize + 'px';
-    timeDisc.style.height = svgSize + 'px';
-    
-    if (isMobile) {
-      // Right side: shift right so only left edge of disc shows
-      timeDisc.style.left = 'auto';
-      timeDisc.style.right = (-DISC_RADIUS + VISIBLE_WIDTH) + 'px';
-    } else {
-      // Left side: shift left so only right edge of disc shows
-      timeDisc.style.left = (-DISC_RADIUS + VISIBLE_WIDTH) + 'px';
-      timeDisc.style.right = 'auto';
-    }
-    
-    // Build SVG
-    let svgContent = '';
-    
-    // Solid disc background
-    svgContent += `<circle class="disc-bg" cx="${centerX}" cy="${centerY}" r="${DISC_RADIUS}" />`;
-    
-    // Entry markers around the edge
-    discEntries = [];
-    
-    sorted.forEach((slice) => {
+
+    // Set SVG size
+    svg.setAttribute('width', STRIP_WIDTH);
+    svg.setAttribute('height', height);
+    svg.setAttribute('viewBox', `0 0 ${STRIP_WIDTH} ${height}`);
+
+    // Build content
+    let content = '';
+
+    // Background strip
+    content += `<rect class="disc-strip-bg" x="0" y="0" width="${STRIP_WIDTH}" height="${height}" />`;
+
+    // Entries
+    entries = [];
+    const usableHeight = height - PADDING_TOP - PADDING_BOTTOM;
+
+    sorted.forEach(slice => {
       const year = parseInt(slice.year);
       const t = (year - minYear) / yearSpan;
-      
-      // Angle: entries go from -90° (top) to +90° (bottom)
-      // For left-edge disc: right side is visible, so 0° points right
-      // For right-edge disc: left side is visible, so 180° points left
-      const baseAngle = isMobile ? (90 - t * 180) : (-90 + t * 180);
-      const angleRad = (baseAngle * Math.PI) / 180;
-      
-      // Tick at edge
-      const x1 = centerX + (DISC_RADIUS - TICK_LENGTH) * Math.cos(angleRad);
-      const y1 = centerY + (DISC_RADIUS - TICK_LENGTH) * Math.sin(angleRad);
-      const x2 = centerX + (DISC_RADIUS - 2) * Math.cos(angleRad);
-      const y2 = centerY + (DISC_RADIUS - 2) * Math.sin(angleRad);
-      
-      svgContent += `<line class="disc-entry-tick" data-year="${year}" data-id="${slice.id}" x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" />`;
-      
-      // Year label
-      const labelR = DISC_RADIUS - TICK_LENGTH - 18;
-      const labelX = centerX + labelR * Math.cos(angleRad);
-      const labelY = centerY + labelR * Math.sin(angleRad);
+      const y = PADDING_TOP + t * usableHeight;
+
+      // Tick mark
+      const x1 = isMobile ? 0 : STRIP_WIDTH - TICK_WIDTH;
+      const x2 = isMobile ? TICK_WIDTH : STRIP_WIDTH;
+
+      content += `<line class="disc-tick" data-id="${slice.id}" data-year="${year}" 
+        x1="${x1}" y1="${y}" x2="${x2}" y2="${y}" />`;
+
+      // Year label (shown on hover)
+      const labelX = isMobile ? TICK_WIDTH + 4 : STRIP_WIDTH - TICK_WIDTH - 4;
+      const anchor = isMobile ? 'start' : 'end';
+
       const yearText = typeof window.formatYear === 'function' ? window.formatYear(year) : year;
-      
-      // Rotate text to be readable
-      let textAngle = baseAngle;
-      if (!isMobile && (textAngle < -90 || textAngle > 90)) textAngle += 180;
-      if (isMobile && (textAngle < -90 || textAngle > 90)) textAngle += 180;
-      
-      svgContent += `<text class="disc-year-label" data-year="${year}" x="${labelX}" y="${labelY}" 
-        text-anchor="middle" dominant-baseline="middle" 
-        transform="rotate(${textAngle}, ${labelX}, ${labelY})">${yearText}</text>`;
-      
-      discEntries.push({
+      content += `<text class="disc-label" data-year="${year}" x="${labelX}" y="${y + 3}" 
+        text-anchor="${anchor}">${yearText}</text>`;
+
+      entries.push({
         year,
-        angle: baseAngle,
+        y,
         t,
         slice,
-        entryEl: document.querySelector(`#entry-${slice.id}`)
+        el: document.querySelector(`#entry-${slice.id}`)
       });
     });
-    
-    timeDiscSvg.innerHTML = svgContent;
-    
-    // Store refs
-    discEntries.forEach(entry => {
-      entry.tickEl = timeDiscSvg.querySelector(`.disc-entry-tick[data-year="${entry.year}"]`);
-      entry.labelEl = timeDiscSvg.querySelector(`.disc-year-label[data-year="${entry.year}"]`);
+
+    // Needle (center indicator line)
+    const needleY = height / 2;
+    const needleX1 = isMobile ? 0 : STRIP_WIDTH - TICK_WIDTH - 8;
+    const needleX2 = isMobile ? TICK_WIDTH + 8 : STRIP_WIDTH;
+    content += `<line class="disc-needle" x1="${needleX1}" y1="${needleY}" x2="${needleX2}" y2="${needleY}" />`;
+
+    svg.innerHTML = content;
+
+    // Store tick/label refs
+    entries.forEach(e => {
+      e.tickEl = svg.querySelector(`.disc-tick[data-year="${e.year}"]`);
+      e.labelEl = svg.querySelector(`.disc-label[data-year="${e.year}"]`);
     });
-    
-    // Initial state
-    discRotation = getRotationFromScroll();
-    applyRotation();
-    updateIndicator();
+
+    updateHighlight();
   }
 
-  function applyRotation() {
-    const isMobile = window.innerWidth <= 768;
-    // Rotate disc - negative for desktop (clockwise = scroll down), positive for mobile
-    const rotDir = isMobile ? 1 : -1;
-    timeDisc.style.transform = `rotate(${rotDir * discRotation}deg)`;
-  }
-
-  function updateIndicator() {
-    const isMobile = window.innerWidth <= 768;
-    
-    // Find entry at needle (needle is at 0° = horizontal right for desktop, horizontal left for mobile)
-    // After rotation, entry at needle has: entry.angle + rotation ≈ 0 (desktop) or entry.angle - rotation ≈ 0 (mobile)
+  function updateHighlight() {
+    // Find entry closest to viewport center
+    const viewportCenter = window.innerHeight / 2;
     let closest = null;
     let closestDist = Infinity;
-    
-    discEntries.forEach(entry => {
-      const visualAngle = isMobile 
-        ? entry.angle + discRotation 
-        : entry.angle + discRotation;
-      const dist = Math.abs(visualAngle);
-      
+
+    entries.forEach(e => {
+      if (!e.el) return;
+      if (e.el.classList.contains('thread-hidden')) return;
+
+      const rect = e.el.getBoundingClientRect();
+      const dist = Math.abs(rect.top + rect.height / 2 - viewportCenter);
+
       if (dist < closestDist) {
         closestDist = dist;
-        closest = entry;
+        closest = e;
       }
     });
-    
-    if (closest && timeDiscYearEl) {
-      const yearText = typeof window.formatYear === 'function' ? window.formatYear(closest.year) : closest.year;
-      timeDiscYearEl.textContent = yearText;
-    }
-    
-    discEntries.forEach(entry => {
-      const isAtNeedle = entry === closest;
-      if (entry.tickEl) entry.tickEl.classList.toggle('at-needle', isAtNeedle);
-      if (entry.labelEl) entry.labelEl.classList.toggle('at-needle', isAtNeedle);
+
+    // Update styling
+    entries.forEach(e => {
+      const isCurrent = e === closest;
+      if (e.tickEl) e.tickEl.classList.toggle('current', isCurrent);
+      if (e.labelEl) e.labelEl.classList.toggle('current', isCurrent);
     });
-    
-    if (discIsDragging && closest !== discLastNeedleEntry && navigator.vibrate) {
-      navigator.vibrate(10);
+
+    // Update year display
+    if (closest && yearDisplay) {
+      const yearText = typeof window.formatYear === 'function' ? window.formatYear(closest.year) : closest.year;
+      yearDisplay.textContent = yearText;
     }
-    discLastNeedleEntry = closest;
   }
 
-  function scrollToRotation(rotation) {
-    window.scrollTo({ top: getScrollFromRotation(rotation), behavior: 'auto' });
+  function scrollToY(clientY) {
+    // Map clientY to scroll position
+    const height = window.innerHeight;
+    const t = Math.max(0, Math.min(1, (clientY - PADDING_TOP) / (height - PADDING_TOP - PADDING_BOTTOM)));
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const targetScroll = t * maxScroll;
+
+    window.scrollTo({ top: targetScroll, behavior: 'auto' });
   }
 
-  function initDiscDrag() {
-    function onDragStart(e) {
-      discIsDragging = true;
-      discScrollSyncEnabled = false;
-      timeDiscContainer.classList.add('active');
-      timeDisc.classList.add('dragging');
-      
+  function initDrag() {
+    function onStart(e) {
+      isDragging = true;
+      scrollSyncEnabled = false;
+      container.classList.add('active');
+
       const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-      discDragStartY = clientY;
-      discDragStartRotation = discRotation;
-      
+      dragStartY = clientY;
+      dragStartScroll = window.scrollY;
+
       e.preventDefault();
     }
-    
-    function onDragMove(e) {
-      if (!discIsDragging) return;
+
+    function onMove(e) {
+      if (!isDragging) return;
       e.preventDefault();
-      
+
       const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-      const deltaY = clientY - discDragStartY;
-      
-      // Dragging down = more rotation = scroll down
-      // Sensitivity: 400px drag = full 180° rotation
-      const rotationDelta = (deltaY / 400) * 180;
-      discRotation = Math.max(0, Math.min(180, discDragStartRotation + rotationDelta));
-      
-      applyRotation();
-      updateIndicator();
-      scrollToRotation(discRotation);
+
+      // Direct positioning: finger position = scroll position
+      scrollToY(clientY);
+      updateHighlight();
+
+      // Haptic feedback when passing entries
+      const height = window.innerHeight;
+      entries.forEach(entry => {
+        const entryScreenY = entry.y;
+        if (Math.abs(clientY - entryScreenY) < 10) {
+          if (navigator.vibrate) navigator.vibrate(5);
+        }
+      });
     }
-    
-    function onDragEnd() {
-      if (!discIsDragging) return;
-      discIsDragging = false;
-      timeDiscContainer.classList.remove('active');
-      timeDisc.classList.remove('dragging');
-      
-      setTimeout(() => { discScrollSyncEnabled = true; }, 300);
+
+    function onEnd() {
+      if (!isDragging) return;
+      isDragging = false;
+      container.classList.remove('active');
+
+      setTimeout(() => { scrollSyncEnabled = true; }, 200);
     }
-    
-    timeDiscContainer.addEventListener('mousedown', onDragStart);
-    document.addEventListener('mousemove', onDragMove);
-    document.addEventListener('mouseup', onDragEnd);
-    
-    timeDiscContainer.addEventListener('touchstart', onDragStart, { passive: false });
-    document.addEventListener('touchmove', onDragMove, { passive: false });
-    document.addEventListener('touchend', onDragEnd);
-    
-    timeDiscSvg.addEventListener('click', (e) => {
-      if (discIsDragging) return;
-      const tick = e.target.closest('.disc-entry-tick');
-      if (tick) {
+
+    container.addEventListener('mousedown', onStart);
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('mouseup', onEnd);
+
+    container.addEventListener('touchstart', onStart, { passive: false });
+    document.addEventListener('touchmove', onMove, { passive: false });
+    document.addEventListener('touchend', onEnd);
+
+    // Click on tick to jump
+    svg.addEventListener('click', (e) => {
+      const tick = e.target.closest('.disc-tick');
+      if (tick && !isDragging) {
         const id = tick.dataset.id;
-        const entry = document.querySelector(`#entry-${id}`);
-        if (entry) {
+        const el = document.querySelector(`#entry-${id}`);
+        if (el) {
           if (navigator.vibrate) navigator.vibrate(10);
           if (typeof window.highlightAndScroll === 'function') {
-            window.highlightAndScroll(entry);
+            window.highlightAndScroll(el);
           } else {
-            entry.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
           }
         }
       }
@@ -271,37 +224,35 @@
   // Scroll sync
   let scrollTimer = null;
   window.addEventListener('scroll', () => {
-    if (!discScrollSyncEnabled || discIsDragging) return;
+    if (!scrollSyncEnabled || isDragging) return;
     if (scrollTimer) return;
-    
+
     scrollTimer = setTimeout(() => {
       scrollTimer = null;
-      if (!timeDiscContainer.classList.contains('hidden')) {
-        discRotation = getRotationFromScroll();
-        applyRotation();
-        updateIndicator();
+      if (!container.classList.contains('hidden')) {
+        updateHighlight();
       }
-    }, 16);
+    }, 50);
   }, { passive: true });
 
   // Resize
   let resizeTimer = null;
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(buildTimeDisc, 200);
+    resizeTimer = setTimeout(build, 200);
   });
 
   // Exports
-  window.buildTimeDisc = buildTimeDisc;
-  window.showTimeDisc = function() { timeDiscContainer.classList.remove('hidden'); };
-  window.hideTimeDisc = function() { timeDiscContainer.classList.add('hidden'); };
+  window.buildTimeDisc = build;
+  window.showTimeDisc = () => container.classList.remove('hidden');
+  window.hideTimeDisc = () => container.classList.add('hidden');
 
   // Init
   if (window.slicesReady) {
-    window.slicesReady.then(() => { buildTimeDisc(); initDiscDrag(); });
+    window.slicesReady.then(() => { build(); initDrag(); });
   } else {
     document.addEventListener('DOMContentLoaded', () => {
-      setTimeout(() => { buildTimeDisc(); initDiscDrag(); }, 500);
+      setTimeout(() => { build(); initDrag(); }, 500);
     });
   }
 
