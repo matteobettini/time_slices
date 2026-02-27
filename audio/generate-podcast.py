@@ -79,16 +79,6 @@ VOICE_MAP_EN = {
         "voice": "coral",
         "instructions": "Speak with energy and pace. 1922 — Ulysses, The Waste Land, jazz, Bauhaus, everything shattering and reassembling. Quick but not breathless.",
     },
-    # 532 Constantinople: reverent, echoing — fable for narrative warmth with gravitas
-    "532-constantinople-the-last-great-building": {
-        "voice": "fable",
-        "instructions": "Speak as if standing inside a vast echoing space — reverent, measured, with quiet awe. This is about a building that was meant to make you feel the presence of God. Warm but not sentimental, precise but not clinical. Like a historian who genuinely loves what they're describing.",
-    },
-    # 1610 Padua: curious, precise, awestruck — sage for intellectual clarity with wonder
-    "1610-padua-the-star-messenger": {
-        "voice": "sage",
-        "instructions": "Speak with intellectual curiosity and quiet wonder. This is the moment the telescope revealed new worlds — mountains on the Moon, moons around Jupiter. Precise but not dry, excited but not theatrical. Like a scientist who just saw something impossible.",
-    },
     # 1517 Wittenberg: dramatic, pivotal — ash for gravitas at a world-historical turning point
     "1517-wittenberg-hammer-falls": {
         "voice": "ash",
@@ -134,14 +124,6 @@ VOICE_MAP_IT = {
     "1922-modernist-explosion": {
         "voice": "coral",
         "instructions": "Parla in italiano con energia e ritmo. Il 1922 — Ulisse, La terra desolata, jazz, Bauhaus, tutto si frantuma e si ricompone. Veloce ma non affannato.",
-    },
-    "532-constantinople-the-last-great-building": {
-        "voice": "fable",
-        "instructions": "Parla in italiano con riverenza, come se ti trovassi dentro un vasto spazio che riecheggia. Misurato, con quieta meraviglia. Questo è un edificio concepito per farti sentire la presenza di Dio. Caldo ma non sentimentale, preciso ma non clinico.",
-    },
-    "1610-padua-the-star-messenger": {
-        "voice": "sage",
-        "instructions": "Parla in italiano con curiosità intellettuale e quieta meraviglia. Questo è il momento in cui il telescopio rivela nuovi mondi — monti sulla Luna, lune attorno a Giove. Preciso ma non arido, emozionato ma non teatrale. Come uno scienziato che ha appena visto qualcosa di impossibile.",
     },
     # 1517 Wittenberg: dramatic, pivotal
     "1517-wittenberg-hammer-falls": {
@@ -357,14 +339,6 @@ MUSIC_SOURCES = {
     "1784-europe-dare-to-know": {"pool_key": "mozart-piano-k310"},
     "1889-paris-year-everything-changed": {"pool_key": "ravel-pavane"},
     "1922-modernist-explosion": {"pool_key": "satie-gnossiennes"},
-    "532-constantinople-the-last-great-building": {
-        "url": "https://archive.org/download/music-from-the-slavonic-orthodox-liturgy/6%20VELIKO%20SLAVOSLOVIE%20(The%20Great%20Glorification).mp3",
-        "filename": "slavonic-great-glorification.mp3",
-        "description": "Boris Christoff & Alexander Nevsky Cathedral Choir — The Great Glorification (Slavonic Orthodox Liturgy)",
-        "start_time": 5
-    },
-  # 1610 Padua: early Baroque/transition from Renaissance — harpsichord suits the new science emerging
-  "1610-padua-the-star-messenger": {"pool_key": "soler-harpsichord"},
   # 1517 Wittenberg: Renaissance lute — capturing the moment before the split, the last gasp of synthesis
   "1517-wittenberg-hammer-falls": {"pool_key": "renaissance-lute-fantasia"},
   # 1687 London: Bach cello suite — the peak of Baroque, mathematical precision meets emotional depth
