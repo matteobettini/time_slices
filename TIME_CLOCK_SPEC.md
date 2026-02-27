@@ -1,84 +1,114 @@
 # Time Clock Navigator — Design Spec
 
 ## Core Concept
-A semicircle arc along the screen edge that acts like a clock face — entries are positioned as "hour lines" radiating from the clock's center. Drag or tap to rotate and navigate through time.
+A **rotatable disc** partially visible at the screen edge. The disc contains all entry markers — when you drag anywhere on the disc, it rotates, and the entries spin with it. The only fixed element is a **current position indicator** (like a needle) that stays in the middle of the visible arc, pointing at whatever entry is currently "selected."
+
+Think of it like a vinyl record or a combination lock — you rotate the disc to bring different entries to the needle.
 
 ## Visual Design
 
-### Shape & Position
-- **Desktop**: Left edge, semicircle curves into the screen (clock faces right)
-- **Mobile**: Right edge, semicircle curves into the screen (clock faces left)
-- Radius: ~40% of viewport height (responsive)
-- The "center" of the clock sits just off-screen at the edge
+### The Disc
+- **Shape**: Solid filled semicircle (not just an arc outline)
+- **Color**: `var(--surface)` or slightly darker, with subtle gradient
+- **Position**: Mostly off-screen, only ~60-80px of the edge visible
+  - **Desktop**: Left edge
+  - **Mobile**: Right edge
+- **Size**: Small footprint — disc radius large enough that the visible slice shows ~60-80px
+- The disc should feel **physical** — a solid surface you can grab and rotate
 
-### Entry Hour Lines
-- Each entry is a radial line emanating from the center, like hour markers on a clock
-- Lines positioned proportionally by year around the arc (earliest at top, latest at bottom)
-- Line style: `var(--accent)` purple (#7c6ff7), 2-3px width, subtle glow
-- Line length: ~20px default, extends to ~30px on hover/current
-- Year label sits at the outer end of each line (e.g., "762", "1347", "1922")
-- Labels use `var(--mono)` font, small size (~0.65rem)
+### Entry Markers (on the disc)
+- Hour lines radiating from center, positioned by year around the full semicircle
+- Lines are **part of the disc** — they rotate with it when dragged
+- Line style: `var(--accent)` purple, 2px width, subtle glow
+- Year labels at outer end of each line, small `var(--mono)` font
+- Labels rotate with the disc (they're painted on it)
 
-### Current Position Indicator
-- The "current" entry's line is longer, brighter, with stronger glow
-- Optional: a subtle arc segment or "hand" connecting center to current line
-- Smooth animation as scroll position changes
+### Current Position Indicator (fixed)
+- A **stationary needle/marker** at the vertical center of the visible arc
+- Points inward toward the disc center
+- Brighter, with strong glow — clearly indicates "this is where you are"
+- **Does not move** — the disc rotates behind it
+- When scrolling the page, the disc rotates so the current entry aligns with this needle
 
 ### States
-1. **Idle**: Dimmed (20-30% opacity), lines barely visible, no labels
-2. **Hover/Active**: Full opacity, all lines visible, year labels fade in
-3. **Dragging**: Current indicator follows finger/cursor, haptic feedback when passing each line
+1. **Idle**: Visible but subtle — low glow, ~50-60% opacity
+2. **Hover/Active**: Brighter, stronger glow, feels "grabbable"
+3. **Dragging**: Full brightness, disc rotates smoothly following finger/cursor
 
 ## Interaction
 
-### Drag to Navigate
-- Touch/click and drag along the arc
-- Position snaps to nearest entry line with haptic feedback (10ms vibration)
-- Smooth scroll animation to selected entry
+### Drag to Rotate
+- Touch/click **anywhere on the visible disc** and drag
+- The entire disc rotates — entries spin past the fixed needle
+- Haptic feedback (10ms vibration) when an entry passes the needle
+- Release to select — smooth scroll to whichever entry is at the needle
 
-### Tap Lines
-- Direct tap on a line or its label jumps to that entry
-- Subtle pulse animation on the line
+### Momentum (optional)
+- Flick gesture could give the disc momentum, letting it spin and gradually stop
+- Entries tick past the needle with haptic feedback as it slows
 
 ### Scroll Sync
-- As page scrolls, the current indicator moves to reflect position
-- Passive sync (doesn't interfere with normal scrolling)
+- As page scrolls, the disc rotates so the current entry stays at the needle
+- Passive — doesn't fight with scrolling, just keeps in sync
 
-## Styling (matching Time Slices aesthetic)
-- Arc outline: thin stroke in `var(--border)` or subtle gradient
-- Hour lines: `var(--accent)` (#7c6ff7) with glow
-- Current line: brighter, longer, animated glow pulse
-- Year labels: `var(--mono)`, `var(--text-dim)` color, fade in on hover
-- Background: optional subtle radial gradient from center
-- Transitions: 200-300ms ease for all state changes
+### Tap Entry
+- Tapping directly on a visible entry line/label rotates disc to bring it to needle, then scrolls
+
+## Styling
+
+- Disc fill: `var(--surface)` with radial gradient (darker at center)
+- Disc edge: subtle `var(--border)` stroke or shadow
+- Entry lines: `var(--accent)` with `drop-shadow` glow
+- Needle: Bright `var(--accent)`, animated glow pulse
+- On interaction: disc slightly enlarges (scale 1.05), glow intensifies
+- Transitions: 200ms ease for scale/glow, rotation can be faster
 
 ## Technical Approach
-- SVG container for the semicircle and all lines (scalable, easy arc math)
-- Each entry = one `<line>` element radiating from center
-- CSS for transitions, hover states, glow effects
-- JavaScript for:
-  - Building clock from SLICES data after load
-  - Calculating line angles from year values
-  - Scroll position tracking (IntersectionObserver or scroll events)
-  - Drag interaction (pointer events)
-  - Haptic feedback via `navigator.vibrate()`
-  - Rebuilding on language switch
+
+### Structure
+```
+<div class="time-disc-container">        <!-- Fixed position container -->
+  <div class="time-disc" rotate(Xdeg)>   <!-- Rotates via CSS transform -->
+    <svg>                                 <!-- Disc face + entry lines -->
+      <circle fill="..."/>               <!-- Solid disc background -->
+      <line for each entry/>             <!-- Entry markers -->
+      <text for each entry/>             <!-- Year labels -->
+    </svg>
+  </div>
+  <div class="time-needle"/>             <!-- Fixed indicator, doesn't rotate -->
+</div>
+```
+
+### Rotation Math
+- Total rotation range: 180° (semicircle)
+- Map year range to angle: `angle = ((year - minYear) / (maxYear - minYear)) * 180`
+- Current scroll position → calculate which entry → rotate disc so that entry is at 90° (middle)
+
+### Drag Handling
+- On drag start: record initial angle and pointer position
+- On drag move: calculate angle delta from pointer movement, apply to disc rotation
+- On drag end: find nearest entry to needle, snap rotation, trigger scroll
+
+## Mobile
+- **Must work on mobile** — touch drag is primary interaction
+- Right edge positioning on mobile (left edge on desktop)
+- Larger touch target — the whole visible disc surface is draggable
+- Touch events: `touchstart`, `touchmove`, `touchend` with `passive: false` for `touchmove`
 
 ## Thread Mode
-- When a thread is active, only show lines for entries in that thread
-- Arc spans only the thread's year range
+- Only show entries in active thread on the disc
+- Recalculate year range and positions
 - Rebuild on `activateThread()` / `clearThread()`
 
 ## Map Mode
-- Hide the clock entirely when map view is active
+- Hide the disc when map view is active
 
 ## Integration Points
-Look at existing code for:
-- `slicesReady` promise (wait for data before building clock)
-- `loadSlices()` - rebuild clock after language switch
-- `activateThread()` / `clearThread()` - rebuild for thread filtering
-- `showMapView()` / `showTimelineView()` - hide/show clock
-- `highlightAndScroll()` - use this when user taps a clock line
+- `slicesReady` — build disc after data loads
+- `loadSlices()` — rebuild on language switch
+- `activateThread()` / `clearThread()` — rebuild for thread filter
+- `showMapView()` / `showTimelineView()` — hide/show disc
+- `highlightAndScroll()` — use when entry is selected
 
 ## Files
-All code goes in index.html (CSS in the `<style>` block, JS at the end of the `<script>` block).
+All code in index.html (CSS in `<style>`, JS at end of `<script>`).
