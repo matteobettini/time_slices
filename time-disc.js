@@ -26,7 +26,10 @@
   const PADDING_BOTTOM = 120;
 
   function build() {
+    console.log('Time Disc build() called, SLICES:', window.SLICES?.length);
+    
     if (!window.SLICES || !window.SLICES.length) {
+      console.log('Time Disc: No slices yet');
       return;
     }
 
@@ -96,6 +99,7 @@
     content += `<line class="disc-needle" x1="0" y1="${needleY}" x2="${STRIP_WIDTH}" y2="${needleY}" />`;
 
     svg.innerHTML = content;
+    console.log('Time Disc: Built SVG with', entries.length, 'entries');
 
     // Store refs after DOM is updated
     entries.forEach(e => {
