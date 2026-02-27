@@ -2226,6 +2226,8 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
   });
 
   audio.addEventListener('timeupdate', () => {
+    // Skip UI updates while pending seek (prevents flash to 0)
+    if (pendingSeekPct !== null) return;
     if (audio.duration) {
       const pct = (audio.currentTime / audio.duration) * 100;
       progressFill.style.width = pct + '%';
