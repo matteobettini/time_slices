@@ -26,8 +26,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent
-SLICES_JSON = SCRIPT_DIR / "slices.json"
-SLICES_IT_JSON = SCRIPT_DIR / "slices.it.json"
+PROJECT_DIR = SCRIPT_DIR.parent  # scripts/ -> project root
+SLICES_JSON = PROJECT_DIR / "slices.json"
+SLICES_IT_JSON = PROJECT_DIR / "slices.it.json"
 GITHUB_RAW_URL = "https://raw.githubusercontent.com/matteobettini/time_slices/main/slices.json"
 
 
@@ -60,8 +61,8 @@ def check_local_files(entry_id: str) -> dict:
     issues = []
     
     # Check MP3s
-    en_mp3 = SCRIPT_DIR / "audio" / f"{entry_id}.mp3"
-    it_mp3 = SCRIPT_DIR / "audio" / "it" / f"{entry_id}.mp3"
+    en_mp3 = PROJECT_DIR / "audio" / f"{entry_id}.mp3"
+    it_mp3 = PROJECT_DIR / "audio" / "it" / f"{entry_id}.mp3"
     
     if en_mp3.exists() and en_mp3.stat().st_size >= 100000:
         status["en_mp3"] = True
@@ -78,8 +79,8 @@ def check_local_files(entry_id: str) -> dict:
         issues.append(f"Missing IT podcast: audio/it/{entry_id}.mp3")
     
     # Check scripts
-    en_script = SCRIPT_DIR / "audio" / "scripts" / f"{entry_id}.txt"
-    it_script = SCRIPT_DIR / "audio" / "scripts" / "it" / f"{entry_id}.txt"
+    en_script = PROJECT_DIR / "audio" / "scripts" / f"{entry_id}.txt"
+    it_script = PROJECT_DIR / "audio" / "scripts" / "it" / f"{entry_id}.txt"
     
     if en_script.exists():
         status["en_script"] = True
@@ -93,14 +94,14 @@ def check_local_files(entry_id: str) -> dict:
     
     # Check image
     year_prefix = entry_id.split('-')[0]
-    images = list((SCRIPT_DIR / "images").glob(f"{year_prefix}*"))
+    images = list((PROJECT_DIR / "images").glob(f"{year_prefix}*"))
     if images:
         status["image"] = True
     else:
         issues.append(f"Missing image for {entry_id}")
     
     # Check voice config in generate-podcast.py
-    gen_script = SCRIPT_DIR / "audio" / "generate-podcast.py"
+    gen_script = PROJECT_DIR / "audio" / "generate-podcast.py"
     if gen_script.exists():
         content = gen_script.read_text()
         if f'"{entry_id}"' in content:
@@ -139,7 +140,7 @@ def check_git_status() -> dict:
     
     result = subprocess.run(
         ["git", "status", "--porcelain"],
-        cwd=SCRIPT_DIR,
+        cwd=PROJECT_DIR,
         capture_output=True,
         text=True
     )

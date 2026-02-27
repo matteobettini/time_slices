@@ -18,8 +18,9 @@ from pathlib import Path
 from collections import Counter
 
 SCRIPT_DIR = Path(__file__).parent
-SLICES_JSON = SCRIPT_DIR / "slices.json"
-SLICES_IT_JSON = SCRIPT_DIR / "slices.it.json"
+PROJECT_DIR = SCRIPT_DIR.parent  # scripts/ -> project root
+SLICES_JSON = PROJECT_DIR / "slices.json"
+SLICES_IT_JSON = PROJECT_DIR / "slices.it.json"
 
 
 def main():
