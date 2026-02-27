@@ -288,8 +288,8 @@
   }
   .entry:hover { transform: translateY(-2px); z-index: 2; }
   .entry.expanded { z-index: 3; }
-  .entry:nth-child(odd) { margin-left: 5%; }
-  .entry:nth-child(even) { margin-left: 50%; }
+  .entry.entry-left { margin-left: 5%; }
+  .entry.entry-right { margin-left: 50%; }
   .entry.thread-hidden {
     max-height: 0;
     margin-bottom: 0;
@@ -322,8 +322,8 @@
     transform: scale(1.3);
     box-shadow: 0 0 16px var(--accent);
   }
-  .entry:nth-child(odd)::before { right: -32px; }
-  .entry:nth-child(even)::before { left: -32px; }
+  .entry.entry-left::before { right: -32px; }
+  .entry.entry-right::before { left: -32px; }
 
   /* Connector line */
   .entry::after {
@@ -333,8 +333,8 @@
     width: 24px; height: 2px;
     background: var(--border);
   }
-  .entry:nth-child(odd)::after { right: -24px; }
-  .entry:nth-child(even)::after { left: -24px; }
+  .entry.entry-left::after { right: -24px; }
+  .entry.entry-right::after { left: -24px; }
 
   /* Card */
   .card {
@@ -548,10 +548,10 @@
     animation: fadeIn 0.4s ease;
   }
   .entry.expanded .floating-image { display: block; }
-  /* Odd entries are on the left → image floats right */
-  .entry:nth-child(odd) .floating-image { left: calc(100% + 56px); }
-  /* Even entries are on the right → image floats left */
-  .entry:nth-child(even) .floating-image { right: calc(100% + 56px); }
+  /* Left entries → image floats right */
+  .entry.entry-left .floating-image { left: calc(100% + 56px); }
+  /* Right entries → image floats left */
+  .entry.entry-right .floating-image { right: calc(100% + 56px); }
 
   .floating-image img {
     width: 100%;
@@ -2423,6 +2423,9 @@ function activateThread(threadId, anchorEntry) {
   // Draw SVG thread lines
   drawThreadLines(matchingEntries);
 
+  // Update entry positions for filtered view
+  updateEntryPositions();
+
   // Update all thread tags
   document.querySelectorAll('.thread-tag').forEach(t => {
     t.classList.toggle('active', t.dataset.thread === threadId);
@@ -2488,6 +2491,7 @@ function clearThread() {
   document.querySelectorAll('.thread-tag').forEach(t => t.classList.remove('active'));
   document.querySelectorAll('.thread-narrative').forEach(n => n.remove());
   clearThreadLines();
+  updateEntryPositions();
   document.getElementById('threadBanner').classList.remove('visible');
   // Also hide map thread banner if visible
   document.getElementById('mapThreadBanner').classList.remove('visible');
@@ -2828,6 +2832,15 @@ function startThreadPlayAllInternal() {
 }
 
 
+// Update entry left/right positions based on visible entries
+function updateEntryPositions() {
+  const entries = document.querySelectorAll('#timeline .entry:not(.thread-hidden)');
+  entries.forEach((entry, i) => {
+    entry.classList.remove('entry-left', 'entry-right');
+    entry.classList.add(i % 2 === 0 ? 'entry-left' : 'entry-right');
+  });
+}
+
 // Lazy image loading
 function lazyLoadImages() {
   const observer = new IntersectionObserver((entries) => {
@@ -2943,6 +2956,7 @@ function loadSlices(restoreId, restoreThread, restorePodcast) {
       });
 
       lazyLoadImages();
+      updateEntryPositions();
       setupScrollReveal();
 
       // Signal that slices are ready for dice/coffee buttons
