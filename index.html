@@ -845,6 +845,92 @@
     .thread-lines-svg { display: none; }
   }
 
+  /* Time scrubber */
+  .time-scrubber {
+    position: fixed;
+    right: 8px;
+    top: 110px;
+    bottom: 80px;
+    z-index: 90;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+  }
+  .time-scrubber:hover,
+  .time-scrubber.scrolling,
+  .time-scrubber.dragging { opacity: 1; }
+  .time-scrubber.hidden { display: none; }
+  .scrubber-track {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+    border-radius: 1px;
+  }
+  .scrubber-dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateX(-50%);
+    left: 50%;
+    transition: transform 0.15s ease;
+  }
+  .scrubber-dot:hover { transform: translateX(-50%) scale(1.5); }
+  .scrubber-handle {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: var(--accent);
+    border-radius: 50%;
+    cursor: grab;
+    transform: translateX(-50%);
+    left: 50%;
+    box-shadow: 0 0 8px var(--accent), 0 0 16px rgba(124,111,247,0.4);
+    z-index: 2;
+  }
+  .scrubber-handle:active { cursor: grabbing; }
+  .scrubber-year-label {
+    position: absolute;
+    right: 28px;
+    background: var(--surface);
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    color: var(--text);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+  }
+  .time-scrubber.dragging .scrubber-year-label { opacity: 1; }
+
+  @media (max-width: 768px) {
+    .time-scrubber {
+      left: 8px;
+      right: auto;
+    }
+    .scrubber-year-label {
+      right: auto;
+      left: 28px;
+    }
+    .scrubber-dot {
+      width: 10px;
+      height: 10px;
+    }
+    .scrubber-handle {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
   /* Scroll animation */
   .entry { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
   .entry.visible { opacity: 1; transform: translateY(0); }
@@ -1284,6 +1370,12 @@
 <div class="quick-actions" id="quickActions">
   <button class="quick-btn" id="coffeeBtn">☕</button>
   <button class="quick-btn" id="diceBtn">🎲</button>
+</div>
+
+<div class="time-scrubber" id="timeScrubber">
+  <div class="scrubber-track"></div>
+  <div class="scrubber-handle" id="scrubberHandle"></div>
+  <div class="scrubber-year-label" id="scrubberYearLabel"></div>
 </div>
 
 <div class="timeline-container">
@@ -2468,6 +2560,9 @@ function activateThread(threadId, anchorEntry) {
       highlightAndScroll(matchingEntries[0]);
     }, 300);
   }
+
+  // Rebuild scrubber with filtered entries
+  buildScrubber();
 }
 
 function clearThread() {
@@ -2498,6 +2593,8 @@ function clearThread() {
   document.getElementById('quickActions').style.display = 'flex';
   // Sync thread selector dropdowns
   syncAllThreadSelectors();
+  // Rebuild scrubber with all entries
+  buildScrubber();
 }
 
 // SVG thread lines
@@ -2855,6 +2952,165 @@ function setupScrollReveal() {
   document.querySelectorAll('.entry').forEach(el => observer.observe(el));
 }
 
+// --- Time Scrubber ---
+let scrubberEntries = [];
+let scrubberIdle = null;
+let scrubberDragging = false;
+
+function buildScrubber() {
+  const scrubber = document.getElementById('timeScrubber');
+  const track = scrubber.querySelector('.scrubber-track');
+
+  // Clear existing dots
+  scrubber.querySelectorAll('.scrubber-dot').forEach(d => d.remove());
+  scrubberEntries = [];
+
+  // Get all visible entries
+  const entries = Array.from(document.querySelectorAll('.entry[data-year]:not(.thread-hidden)'));
+
+  // Hide scrubber if fewer than 2 entries
+  if (entries.length < 2) {
+    scrubber.classList.add('hidden');
+    return;
+  }
+  scrubber.classList.remove('hidden');
+
+  // Calculate year range
+  const years = entries.map(el => parseInt(el.dataset.year));
+  const minYear = Math.min(...years);
+  const maxYear = Math.max(...years);
+  const range = maxYear - minYear || 1;
+
+  // Create dots for each entry
+  entries.forEach(el => {
+    const year = parseInt(el.dataset.year);
+    const pct = ((year - minYear) / range) * 100;
+
+    const dot = document.createElement('div');
+    dot.className = 'scrubber-dot';
+    dot.style.top = pct + '%';
+    dot.dataset.year = year;
+
+    dot.addEventListener('click', () => {
+      navigator.vibrate?.(10);
+      highlightAndScroll(el);
+    });
+
+    scrubber.appendChild(dot);
+    scrubberEntries.push({ el, year, dot, pct });
+  });
+
+  updateScrubberHandle();
+}
+
+function updateScrubberHandle() {
+  if (scrubberEntries.length === 0) return;
+
+  const handle = document.getElementById('scrubberHandle');
+  const label = document.getElementById('scrubberYearLabel');
+  const viewportCenter = window.innerHeight / 2;
+
+  // Find entry closest to viewport center
+  let closest = scrubberEntries[0];
+  let closestDist = Infinity;
+
+  scrubberEntries.forEach(item => {
+    const rect = item.el.getBoundingClientRect();
+    const dist = Math.abs(rect.top + rect.height / 2 - viewportCenter);
+    if (dist < closestDist) {
+      closestDist = dist;
+      closest = item;
+    }
+  });
+
+  handle.style.top = closest.pct + '%';
+  label.style.top = closest.pct + '%';
+  label.textContent = formatYear(closest.year);
+}
+
+function initScrubberDrag() {
+  const scrubber = document.getElementById('timeScrubber');
+  const handle = document.getElementById('scrubberHandle');
+  const label = document.getElementById('scrubberYearLabel');
+
+  handle.addEventListener('pointerdown', (e) => {
+    e.preventDefault();
+    scrubberDragging = true;
+    scrubber.classList.add('dragging');
+    handle.setPointerCapture(e.pointerId);
+  });
+
+  handle.addEventListener('pointermove', (e) => {
+    if (!scrubberDragging) return;
+
+    const rect = scrubber.getBoundingClientRect();
+    const y = Math.max(0, Math.min(rect.height, e.clientY - rect.top));
+    const pct = (y / rect.height) * 100;
+
+    // Find nearest dot
+    let nearest = scrubberEntries[0];
+    let nearestDist = Infinity;
+
+    scrubberEntries.forEach(item => {
+      const dist = Math.abs(item.pct - pct);
+      if (dist < nearestDist) {
+        nearestDist = dist;
+        nearest = item;
+      }
+    });
+
+    handle.style.top = nearest.pct + '%';
+    label.style.top = nearest.pct + '%';
+    label.textContent = formatYear(nearest.year);
+  });
+
+  handle.addEventListener('pointerup', (e) => {
+    if (!scrubberDragging) return;
+    scrubberDragging = false;
+    scrubber.classList.remove('dragging');
+
+    const rect = scrubber.getBoundingClientRect();
+    const y = Math.max(0, Math.min(rect.height, e.clientY - rect.top));
+    const pct = (y / rect.height) * 100;
+
+    // Find nearest entry and scroll to it
+    let nearest = scrubberEntries[0];
+    let nearestDist = Infinity;
+
+    scrubberEntries.forEach(item => {
+      const dist = Math.abs(item.pct - pct);
+      if (dist < nearestDist) {
+        nearestDist = dist;
+        nearest = item;
+      }
+    });
+
+    navigator.vibrate?.(10);
+    highlightAndScroll(nearest.el);
+  });
+}
+
+function resetScrubberIdle() {
+  const scrubber = document.getElementById('timeScrubber');
+  scrubber.classList.add('scrolling');
+
+  if (scrubberIdle) clearTimeout(scrubberIdle);
+  scrubberIdle = setTimeout(() => {
+    scrubber.classList.remove('scrolling');
+  }, 1500);
+}
+
+// Scroll listener for scrubber
+let scrubberRAF = null;
+window.addEventListener('scroll', () => {
+  resetScrubberIdle();
+  if (scrubberRAF) return;
+  scrubberRAF = requestAnimationFrame(() => {
+    updateScrubberHandle();
+    scrubberRAF = null;
+  });
+}, { passive: true });
+
 // Update UI labels for current language
 function updateUILabels() {
   document.getElementById('subtitle').textContent = t('subtitle');
@@ -2947,6 +3203,7 @@ function loadSlices(restoreId, restoreThread, restorePodcast) {
 
       lazyLoadImages();
       setupScrollReveal();
+      buildScrubber();
 
       // Signal that slices are ready for dice/coffee buttons
       _slicesReadyResolve();
@@ -3141,6 +3398,7 @@ document.addEventListener('keydown', (e) => {
   });
   updateUILabels();
   loadSlices();
+  initScrubberDrag();
 
   // Handle incoming hash links (e.g. #1784-europe-dare-to-know or legacy #1784)
   slicesReady.then(() => {
@@ -4076,6 +4334,7 @@ function showMapView() {
   document.getElementById('viewToggle').classList.add('active');
   document.getElementById('viewToggle').textContent = t('viewTimeline');
   document.getElementById('quickActions').style.display = 'none';
+  document.getElementById('timeScrubber').classList.add('hidden');
 
   // Hide timeline's thread banner — header is z-100, above map z-50
   document.getElementById('threadBanner').classList.remove('visible');
@@ -4094,12 +4353,13 @@ function showMapView() {
 
 function showTimelineView() {
   stopMapPlay();
-  
+
   document.getElementById('mapView').classList.remove('active');
   document.getElementById('mapTimeControl').classList.remove('visible');
   document.getElementById('viewToggle').classList.remove('active');
   document.getElementById('viewToggle').textContent = t('viewMap');
   document.getElementById('quickActions').style.display = activeThread ? 'none' : 'flex';
+  document.getElementById('timeScrubber').classList.remove('hidden');
 
   // Hide map's thread banner
   document.getElementById('mapThreadBanner').classList.remove('visible');
@@ -4111,9 +4371,12 @@ function showTimelineView() {
   } else {
     clearThread();
   }
-  
+
   // Sync player UI with current audio state
   syncTimelinePlayerUI();
+
+  // Update scrubber handle position
+  updateScrubberHandle();
 }
 
 function scrollToEntry(id) {
