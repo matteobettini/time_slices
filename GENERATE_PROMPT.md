@@ -83,11 +83,21 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 ⚠️ **DO NOT SKIP THIS PHASE. Previous runs have failed by stopping after Phase 1.**
 
 12. **Write podcast scripts:**
-    - EN script (~350-400 words, storytelling style) → `audio/scripts/{id}.txt`
+    - EN script (~350-400 words) → `audio/scripts/{id}.txt`
     - IT script (culturally adapted, not literal) → `audio/scripts/it/{id}.txt`
+    
+    **Script style — documentary narrator, NOT dramatic:**
+    - Informative and engaging, like a BBC/NPR documentary
+    - Avoid dramatic openings ("The year is X, and everything is about to change...")
+    - Start with context or an interesting fact, then build
+    - Cover the key content from all 5 dimensions
+    - Include the fun fact naturally
+    - End with significance, not drama
+    - Tone: curious, knowledgeable, conversational — not theatrical
 
 13. **Add config to `audio/generate-podcast.py`:**
     - Add entry to `VOICE_MAP_EN` dict with voice + style instructions
+    - **Voice instructions should be calm and measured** — "Clear, warm, conversational. Like a knowledgeable guide." NOT "Dramatic, sweeping, theatrical."
     - Add entry to `VOICE_MAP_IT` dict with voice + Italian instructions  
     - Add entry to `MUSIC_SOURCES` dict (use pool_key or direct URL from Internet Archive)
     - Voices: alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse. ⚠️ Do NOT use `onyx` (buggy).

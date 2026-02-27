@@ -97,7 +97,7 @@ VOICE_MAP_EN = {
     # 1687 London: precise, authoritative — sage for intellectual clarity at the dawn of modern science
     "1687-london-gravity-of-reason": {
         "voice": "sage",
-        "instructions": "Speak with crisp intellectual precision. This is Newton's moment — the universe becoming an equation. Authoritative but with a thread of wonder. Like a historian who still marvels at what Newton achieved.",
+        "instructions": "Clear, warm, and conversational. Like a knowledgeable documentary narrator explaining something fascinating. Measured pace, not theatrical.",
     },
 }
 
@@ -151,7 +151,7 @@ VOICE_MAP_IT = {
     # 1687 London: precise, authoritative
     "1687-london-gravity-of-reason": {
         "voice": "sage",
-        "instructions": "Parla in italiano con precisione intellettuale nitida. Questo è il momento di Newton — l'universo che diventa un'equazione. Autorevole ma con un filo di meraviglia. Come uno storico che ancora si stupisce di ciò che Newton realizzò.",
+        "instructions": "Parla in italiano in modo chiaro, caldo e conversazionale. Come un narratore di documentari che spiega qualcosa di affascinante. Ritmo misurato, non teatrale.",
     },
 }
 

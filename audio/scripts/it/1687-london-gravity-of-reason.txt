@@ -1,17 +1,13 @@
-L'anno è il 1687, e l'universo sta per diventare una macchina.
+Nel 1687, Isaac Newton pubblicò i Principia Mathematica — un libro che avrebbe cambiato radicalmente la comprensione umana del mondo fisico.
 
-A luglio, dalle tipografie di Londra emerge un libro che ridefinirà la comprensione umana della realtà. I Principia Mathematica di Isaac Newton dimostrano che un'unica legge matematica — l'inverso del quadrato dell'attrazione gravitazionale — governa il moto di pianeti, lune, comete, maree e mele che cadono. Il cosmo non è più un mistero. È un'equazione.
+Newton dimostrò che un singolo principio matematico, la legge dell'inverso del quadrato dell'attrazione gravitazionale, poteva spiegare il movimento di tutto, dalle mele che cadono ai pianeti in orbita. La stessa forza che attira gli oggetti verso la Terra mantiene anche la Luna nella sua traiettoria e governa i percorsi delle comete. Per la prima volta, si dimostrava che il cosmo funzionava secondo leggi matematiche scopribili.
 
-Ma Newton quasi non pubblicò affatto. La Royal Society era in bancarotta — aveva speso i fondi per un libro sui pesci sontuosamente illustrato che nessuno comprò. Così Edmond Halley, l'astronomo che avrebbe poi predetto il ritorno della sua famosa cometa, pagò di tasca propria. I pesci quasi ritardarono la Rivoluzione scientifica.
+Il libro quasi non venne pubblicato. La Royal Society, che normalmente avrebbe finanziato tali pubblicazioni, aveva esaurito il suo budget per un volume riccamente illustrato sui pesci che vendette pochissimo. Così Edmond Halley — l'astronomo che avrebbe poi calcolato l'orbita della sua famosa cometa — pagò di tasca propria la pubblicazione dei Principia.
 
-I Principia non caddero da un cielo sereno. Tre anni prima, Halley visitò Newton a Cambridge e pose una domanda su cui i matematici gareggiavano: quale curva descriverebbe un pianeta sottoposto a una legge dell'inverso del quadrato? Newton rispose immediatamente — un'ellisse. L'aveva già risolto. Halley, stupefatto, lo spinse a pubblicare.
+Newton non lavorava in isolamento. Oltre Manica, John Locke stava redigendo il suo Saggio sull'intelletto umano mentre era in esilio ad Amsterdam, sviluppando la filosofia empirista che avrebbe completato la fisica di Newton. Nel frattempo, Gottfried Wilhelm Leibniz aveva inventato indipendentemente il calcolo e stava costruendo il proprio sistema metafisico.
 
-Oltre la Manica, lo stesso fermento intellettuale ribolliva. John Locke, in esilio ad Amsterdam per sfuggire alla persecuzione degli Stuart, stava redigendo il suo Saggio sull'intelletto umano — il fondamento empirista che abbinava alla fisica di Newton una teoria della mente. Tutta la conoscenza, sosteneva Locke, deriva dall'esperienza sensoriale. Nessuna idea innata. Nessuna rivelazione divina necessaria.
+Il contesto più ampio del 1687 era altrettanto significativo. Luigi XIV aveva recentemente revocato l'Editto di Nantes, mandando in esilio centinaia di migliaia di protestanti francesi in tutta Europa, portando con sé competenze e idee. Ad Atene, le forze veneziane che assediavano la città sotto controllo ottomano spararono una cannonata che colpì il Partenone, distruggendo gran parte di un edificio sopravvissuto per oltre duemila anni.
 
-E nello stesso anno, in tutta Europa, il vecchio ordine si stava sgretolando. Luigi XIV aveva revocato l'Editto di Nantes, spingendo centinaia di migliaia di protestanti francesi in esilio — portando competenze, capitali e idee in Inghilterra, Olanda e Prussia. Ad Atene, una palla di cannone veneziana colpì il Partenone, che gli Ottomani usavano come deposito di polvere da sparo. L'esplosione distrusse gran parte di un edificio rimasto in piedi per ventuno secoli.
+Anche le arti riflettevano le tensioni dell'epoca. Il compositore Lully, che aveva dominato la musica francese per decenni, morì di cancrena dopo essersi accidentalmente colpito il piede con la bacchetta da direttore durante un'esecuzione.
 
-Il compositore barocco Lully morì per una ferita assurda — si era colpito il piede con la propria bacchetta da direttore durante un'esecuzione. L'epoca dello spettacolo stava uccidendo i propri artisti.
-
-Qualcosa stava finendo. Qualcos'altro stava cominciando. Le leggi di Newton riducevano i cieli a meccanica. La Gloriosa Rivoluzione, a soli diciotto mesi di distanza, avrebbe ridotto i re a figure costituzionali. Il mondo stava scattando al suo posto — ordinato, prevedibile, governato da leggi che gli esseri umani potevano scoprire.
-
-La gravità della ragione aveva iniziato ad attrarre tutto nella sua orbita.
+Entro diciotto mesi, la Gloriosa Rivoluzione avrebbe trasformato il governo inglese. L'ordine intellettuale e politico dell'Europa si stava rimodellando — e le leggi di Newton diedero a questa trasformazione una nuova fondazione: un universo governato non dal capriccio divino, ma da principi che la ragione umana poteva scoprire e descrivere.
