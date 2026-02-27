@@ -2,17 +2,17 @@
  * Time Disc Navigator Styles
  */
 
-/* Container */
+/* Container - fixed strip on the edge */
 .time-disc-container {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  width: 24px;
+  width: 32px;
   z-index: 90;
   pointer-events: none;
   transition: opacity 0.3s ease;
-  overflow: visible;
+  overflow: hidden;
 }
 .time-disc-container.hidden {
   opacity: 0;
@@ -27,29 +27,20 @@
   }
 }
 
-/* Disc element */
+/* The rotating disc */
 .time-disc {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 50%;
   transform-origin: center center;
-  transition: transform 0.08s linear;
+  transition: transform 0.1s ease-out;
   pointer-events: auto;
   cursor: grab;
 }
-.time-disc:active {
-  cursor: grabbing;
-}
+.time-disc:active,
 .time-disc.dragging {
+  cursor: grabbing;
   transition: none;
-}
-
-/* Mobile positioning */
-@media (max-width: 768px) {
-  .time-disc {
-    left: auto;
-    right: 0;
-  }
 }
 
 .time-disc svg {
@@ -57,90 +48,109 @@
   overflow: visible;
 }
 
-/* Disc background */
+/* Solid disc background */
 .disc-bg {
   fill: var(--surface);
   stroke: var(--border);
-  stroke-width: 1;
+  stroke-width: 2;
 }
 .time-disc-container:hover .disc-bg,
 .time-disc-container.active .disc-bg {
   fill: var(--surface2);
+  stroke: var(--accent);
+  stroke-width: 2;
 }
 
-/* Entry tick marks */
+/* Entry tick marks on the disc edge */
 .disc-entry-tick {
   stroke: var(--accent);
   stroke-width: 2;
   stroke-linecap: round;
-  opacity: 0.7;
-  filter: drop-shadow(0 0 3px rgba(124, 111, 247, 0.5));
+  opacity: 0.6;
+  filter: drop-shadow(0 0 2px rgba(124, 111, 247, 0.4));
+  pointer-events: auto;
+  cursor: pointer;
+}
+.disc-entry-tick:hover {
+  opacity: 1;
+  stroke-width: 3;
 }
 .disc-entry-tick.at-needle {
-  stroke-width: 3;
+  stroke-width: 4;
   opacity: 1;
-  filter: drop-shadow(0 0 6px rgba(124, 111, 247, 0.8));
+  stroke: #fff;
+  filter: drop-shadow(0 0 6px rgba(124, 111, 247, 0.9));
 }
 
-/* Year labels */
+/* Year labels on the disc */
 .disc-year-label {
   font-family: var(--mono);
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   fill: var(--text-dim);
   opacity: 0;
-  transition: opacity 0.15s ease;
   pointer-events: none;
+  transition: opacity 0.15s ease;
 }
 .time-disc-container:hover .disc-year-label,
 .time-disc-container.active .disc-year-label {
-  opacity: 1;
+  opacity: 0.7;
 }
 .disc-year-label.at-needle {
   fill: var(--accent);
-  font-weight: 600;
-  opacity: 1;
+  font-weight: 700;
+  opacity: 1 !important;
+  font-size: 0.65rem;
 }
 
-/* Current year indicator (fixed) */
+/* Current year indicator (fixed, doesn't rotate) */
 .time-disc-indicator {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 4px;
   transform: translateY(-50%);
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   pointer-events: none;
   z-index: 10;
 }
 .time-disc-indicator::before {
   content: '';
-  width: 28px;
+  width: 20px;
   height: 3px;
-  background: linear-gradient(90deg, transparent, var(--accent));
+  background: var(--accent);
   border-radius: 2px;
+  box-shadow: 0 0 8px rgba(124, 111, 247, 0.8);
 }
 .time-disc-indicator-year {
   font-family: var(--mono);
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 600;
   color: var(--accent);
   background: var(--bg);
-  padding: 2px 6px;
+  padding: 2px 5px;
   border-radius: 4px;
   border: 1px solid var(--accent);
   box-shadow: 0 0 8px rgba(124, 111, 247, 0.4);
-  min-width: 45px;
+  min-width: 40px;
   text-align: center;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
   .time-disc-indicator {
     left: auto;
-    right: 0;
+    right: 4px;
     flex-direction: row-reverse;
   }
-  .time-disc-indicator::before {
-    background: linear-gradient(270deg, transparent, var(--accent));
-  }
+}
+
+/* Hover state - make disc more prominent */
+.time-disc-container:hover,
+.time-disc-container.active {
+  width: 40px;
+}
+.time-disc-container:hover .time-disc-indicator-year,
+.time-disc-container.active .time-disc-indicator-year {
+  box-shadow: 0 0 12px rgba(124, 111, 247, 0.7);
 }
