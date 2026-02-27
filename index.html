@@ -2136,7 +2136,7 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     
     // Get entry info for media session
     const title = entryEl.querySelector('.card-title')?.textContent || 'Time Slices';
-    const imageEl = entryEl.querySelector('.card-image');
+    const imageEl = entryEl.querySelector('.card-image-inline');
     const imageUrl = imageEl ? (imageEl.src || imageEl.dataset.src) : null;
     
     // Lazy-load audio if this was an idle restored player
@@ -2264,7 +2264,7 @@ function togglePodcastPlayer(entryEl, audioUrl, duration) {
   
   // Get entry info for media session
   const title = entryEl.querySelector('.card-title')?.textContent || 'Time Slices';
-  const imageEl = entryEl.querySelector('.card-image');
+  const imageEl = entryEl.querySelector('.card-image-inline');
   const imageUrl = imageEl ? (imageEl.src || imageEl.dataset.src) : null;
   
   if (existing) {
@@ -2681,7 +2681,7 @@ function playThreadEntry(index) {
   
   // Get entry info for media session
   const title = el.querySelector('.card-title')?.textContent || slice.title || 'Time Slices';
-  const imageEl = el.querySelector('.card-image');
+  const imageEl = el.querySelector('.card-image-inline');
   const imageUrl = imageEl ? (imageEl.src || imageEl.dataset.src) : (slice.image?.url || null);
   
   // Show player and start playback
