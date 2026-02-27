@@ -3,6 +3,7 @@
  * 
  * A scrollbar-like strip where entry ticks move with the page scroll.
  * The needle in the center is fixed - ticks scroll past it.
+ * Drag the bar to scroll the page.
  */
 
 (function() {
@@ -20,7 +21,8 @@
 
   let entries = [];
   let isDragging = false;
-  let scrollSyncEnabled = true;
+  let dragStartY = 0;
+  let dragStartScroll = 0;
 
   const STRIP_WIDTH = 40;
   const TICK_WIDTH = 20;
@@ -45,7 +47,6 @@
 
     const sorted = [...slices].sort((a, b) => parseInt(a.year) - parseInt(b.year));
     const height = window.innerHeight;
-    const isMobile = window.innerWidth <= 768;
 
     // SVG is viewport height
     svg.setAttribute('width', STRIP_WIDTH);
@@ -57,9 +58,7 @@
     entries = sorted.map(slice => ({
       year: parseInt(slice.year),
       slice,
-      el: document.querySelector(`#entry-${slice.id}`),
-      tickEl: null,
-      labelEl: null
+      el: document.querySelector(`#entry-${slice.id}`)
     }));
 
     // Initial render
@@ -78,6 +77,9 @@
     // Background strip
     content += `<rect class="disc-bg" x="0" y="0" width="${STRIP_WIDTH}" height="${height}" />`;
 
+    let currentEntry = null;
+    let currentDist = Infinity;
+
     // Calculate tick positions based on actual DOM element positions
     entries.forEach(e => {
       if (!e.el) return;
@@ -85,18 +87,24 @@
       const rect = e.el.getBoundingClientRect();
       const elCenterY = rect.top + rect.height / 2;
       
-      // Map element position to a Y position on the strip
-      // Element at viewport center = tick at strip center
+      // Tick Y = element's viewport position
       const tickY = elCenterY;
       
-      // Only draw if in viewport (with some margin)
-      if (tickY < -50 || tickY > height + 50) return;
+      // Track which is closest to center
+      const dist = Math.abs(tickY - centerY);
+      if (dist < currentDist) {
+        currentDist = dist;
+        currentEntry = e;
+      }
+      
+      // Only draw if in viewport (with margin)
+      if (tickY < -100 || tickY > height + 100) return;
       
       // Tick mark
       const x1 = isMobile ? 0 : STRIP_WIDTH - TICK_WIDTH;
       const x2 = isMobile ? TICK_WIDTH : STRIP_WIDTH;
       
-      const isCurrent = Math.abs(tickY - centerY) < 50;
+      const isCurrent = e === currentEntry && dist < 100;
       const tickClass = isCurrent ? 'disc-tick current' : 'disc-tick';
 
       content += `<line class="${tickClass}" data-id="${e.slice.id}" data-year="${e.year}" x1="${x1}" y1="${tickY}" x2="${x2}" y2="${tickY}" />`;
@@ -108,12 +116,13 @@
       const labelClass = isCurrent ? 'disc-label current' : 'disc-label';
       
       content += `<text class="${labelClass}" data-year="${e.year}" x="${labelX}" y="${tickY + 4}" text-anchor="${anchor}">${yearText}</text>`;
-      
-      // Update year display for current
-      if (isCurrent && yearDisplay) {
-        yearDisplay.textContent = yearText;
-      }
     });
+
+    // Update year display
+    if (currentEntry && yearDisplay) {
+      const yearText = typeof window.formatYear === 'function' ? window.formatYear(currentEntry.year) : currentEntry.year;
+      yearDisplay.textContent = yearText;
+    }
 
     // Center needle (fixed indicator)
     content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${STRIP_WIDTH}" y2="${centerY}" />`;
@@ -121,54 +130,40 @@
     svg.innerHTML = content;
   }
 
-  function scrollToY(clientY) {
-    // Find entry closest to this Y position on screen
-    let closest = null;
-    let closestDist = Infinity;
-
-    entries.forEach(e => {
-      if (!e.el) return;
-      const rect = e.el.getBoundingClientRect();
-      const elY = rect.top + rect.height / 2;
-      const dist = Math.abs(elY - clientY);
-      
-      if (dist < closestDist) {
-        closestDist = dist;
-        closest = e;
-      }
-    });
-
-    if (closest && closest.el) {
-      // Scroll to put this entry at viewport center
-      const rect = closest.el.getBoundingClientRect();
-      const elCenter = rect.top + rect.height / 2;
-      const viewportCenter = window.innerHeight / 2;
-      const scrollDelta = elCenter - viewportCenter;
-      
-      window.scrollBy({ top: scrollDelta, behavior: 'auto' });
-    }
-  }
-
   function initDrag() {
     function onStart(e) {
       isDragging = true;
-      scrollSyncEnabled = false;
       container.classList.add('active');
+      
+      const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+      dragStartY = clientY;
+      dragStartScroll = window.scrollY;
+      
       e.preventDefault();
     }
 
     function onMove(e) {
       if (!isDragging) return;
       e.preventDefault();
+      
       const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-      scrollToY(clientY);
+      const deltaY = dragStartY - clientY; // Inverted: drag up = scroll down
+      
+      // Scale the drag - multiply for faster scrolling
+      const scrollAmount = deltaY * 3;
+      
+      window.scrollTo({
+        top: dragStartScroll + scrollAmount,
+        behavior: 'auto'
+      });
+      
+      render();
     }
 
     function onEnd() {
       if (!isDragging) return;
       isDragging = false;
       container.classList.remove('active');
-      setTimeout(() => { scrollSyncEnabled = true; }, 200);
     }
 
     container.addEventListener('mousedown', onStart);
@@ -179,9 +174,11 @@
     document.addEventListener('touchmove', onMove, { passive: false });
     document.addEventListener('touchend', onEnd);
 
+    // Click on tick to jump to entry
     svg.addEventListener('click', (e) => {
+      if (isDragging) return;
       const tick = e.target.closest('.disc-tick');
-      if (tick && !isDragging) {
+      if (tick) {
         const id = tick.dataset.id;
         const el = document.querySelector(`#entry-${id}`);
         if (el) {
@@ -196,7 +193,7 @@
     });
   }
 
-  // Re-render on scroll (ticks move with content)
+  // Re-render on scroll
   let scrollTimer = null;
   window.addEventListener('scroll', () => {
     if (scrollTimer) return;
