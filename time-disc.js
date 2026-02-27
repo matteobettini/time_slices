@@ -20,8 +20,8 @@
   let dragStartY = 0;
   let dragStartScroll = 0;
 
-  const VISIBLE_WIDTH = 20;
-  const TICK_LENGTH = 8;
+  const VISIBLE_WIDTH = 28;
+  const TICK_LENGTH = 10;
 
   function build() {
     if (!window.SLICES || !window.SLICES.length) return;
@@ -52,10 +52,9 @@
     const h = window.innerHeight;
     const centerY = h / 2;
     
-    // Circle that touches top and bottom of viewport
-    // but we only show a thin slice of it
-    // Radius = h/2 means circle exactly fits viewport height
-    // We want the arc to only protrude VISIBLE_WIDTH into the screen at most
+    // Circle radius: must touch top (y=0) and bottom (y=h) of viewport
+    // Circle center is at (cx, h/2), radius = h/2
+    // The visible edge is where x intersects our visible strip
     const radius = h / 2;
     
     svg.setAttribute('width', VISIBLE_WIDTH);
@@ -86,24 +85,25 @@
     
     if (isMobile) {
       // Right edge - arc bulges left (toward screen center)
-      // We draw from the edge inward, clipping at VISIBLE_WIDTH
+      // Center is to the right, off-screen
+      const arcCx = VISIBLE_WIDTH + radius - VISIBLE_WIDTH; // = radius
       content += `<path class="disc-bg" d="
-        M ${VISIBLE_WIDTH} 0
-        L ${VISIBLE_WIDTH} ${h}
-        L 0 ${h}
-        Q ${VISIBLE_WIDTH * 2} ${h/2} 0 0
+        M ${VISIBLE_WIDTH} ${topY}
+        A ${radius} ${radius} 0 0 0 ${VISIBLE_WIDTH} ${bottomY}
+        L 0 ${bottomY}
+        L 0 ${topY}
         Z
       " />`;
     } else {
       // Left edge - arc bulges right (toward screen center)
+      // Center is to the left, off-screen
       content += `<path class="disc-bg" d="
-        M 0 0
-        L 0 ${h}
-        L ${VISIBLE_WIDTH} ${h}
-        Q ${-VISIBLE_WIDTH} ${h/2} ${VISIBLE_WIDTH} 0
+        M 0 ${topY}
+        A ${radius} ${radius} 0 0 1 0 ${bottomY}
+        L ${VISIBLE_WIDTH} ${bottomY}
+        L ${VISIBLE_WIDTH} ${topY}
         Z
       " />`;
-    }
     }
 
     // Find current entry
@@ -128,24 +128,25 @@
       
       if (elY < -50 || elY > h + 50) return;
       
-      // Calculate curve position at this Y using quadratic bezier formula
-      // The curve goes from edge at top/bottom to max bulge at center
-      const t = Math.abs(elY - centerY) / (h / 2); // 0 at center, 1 at edges
-      const curveX = VISIBLE_WIDTH * (1 - t * t) * 0.6; // Max bulge at center
+      // Calculate X on the circle at this Y
+      const dy = elY - cy;
+      const dx = Math.sqrt(Math.max(0, radius * radius - dy * dy));
       
-      let x1, x2, labelX, anchor;
+      let arcX, x1, x2, labelX, anchor;
       if (isMobile) {
-        // Arc on right, bulges left
-        x1 = curveX;
-        x2 = x1 + TICK_LENGTH;
-        labelX = x2 + 3;
-        anchor = 'start';
-      } else {
-        // Arc on left, bulges right
-        x2 = VISIBLE_WIDTH - curveX;
-        x1 = x2 - TICK_LENGTH;
+        // Arc bulges left, so arc edge is at VISIBLE_WIDTH - dx from right edge
+        arcX = VISIBLE_WIDTH - (radius - dx);
+        x1 = Math.max(0, arcX - TICK_LENGTH);
+        x2 = arcX;
         labelX = x1 - 3;
         anchor = 'end';
+      } else {
+        // Arc bulges right, so arc edge is at dx from left edge
+        arcX = radius - dx;
+        x1 = arcX;
+        x2 = Math.min(VISIBLE_WIDTH, arcX + TICK_LENGTH);
+        labelX = x2 + 3;
+        anchor = 'start';
       }
       
       const isCurrent = e === currentEntry && currentDist < 150;
