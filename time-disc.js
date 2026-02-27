@@ -1,8 +1,7 @@
 /**
  * Time Disc Navigator
  * 
- * A large semicircular disc, mostly off-screen.
- * Only a thin arc is visible at the screen edge.
+ * A curved edge with ticks that scroll with content.
  */
 
 (function() {
@@ -20,8 +19,8 @@
   let dragStartY = 0;
   let dragStartScroll = 0;
 
-  const VISIBLE_WIDTH = 35;
-  const TICK_LENGTH = 12;
+  const VISIBLE_WIDTH = 40;
+  const TICK_LENGTH = 15;
 
   function build() {
     if (!window.SLICES || !window.SLICES.length) return;
@@ -49,57 +48,39 @@
 
   function render() {
     const isMobile = window.innerWidth <= 768;
-    const viewportHeight = window.innerHeight;
-    const centerY = viewportHeight / 2;
+    const h = window.innerHeight;
+    const centerY = h / 2;
     
-    // Large radius so the arc is subtle
-    const DISC_RADIUS = viewportHeight * 1.5;
+    // Simple curved background using quadratic bezier
+    // Creates a subtle curve bulging outward
+    const curveDepth = 20; // How much the curve bulges
     
-    // SVG size
-    const svgWidth = VISIBLE_WIDTH + 10;
-    const svgHeight = viewportHeight;
-    
-    svg.setAttribute('width', svgWidth);
-    svg.setAttribute('height', svgHeight);
-    svg.setAttribute('viewBox', `0 0 ${svgWidth} ${svgHeight}`);
+    svg.setAttribute('width', VISIBLE_WIDTH);
+    svg.setAttribute('height', h);
+    svg.setAttribute('viewBox', `0 0 ${VISIBLE_WIDTH} ${h}`);
 
     let content = '';
 
-    // Disc center position (off-screen)
-    // For left side: center is far to the left
-    // For right side: center is far to the right
-    const cx = isMobile ? (svgWidth + DISC_RADIUS - VISIBLE_WIDTH) : (-DISC_RADIUS + VISIBLE_WIDTH);
-    const cy = viewportHeight / 2;
-
-    // Draw arc using a path
-    // We want an arc that spans from top to bottom of viewport
-    const arcStartY = 0;
-    const arcEndY = viewportHeight;
-    
-    // Calculate X positions on the arc for top and bottom
-    const dyTop = arcStartY - cy;
-    const dyBottom = arcEndY - cy;
-    
-    // x = cx + sqrt(r^2 - dy^2) for right side of circle
-    // x = cx - sqrt(r^2 - dy^2) for left side of circle
-    const dxTop = Math.sqrt(Math.max(0, DISC_RADIUS * DISC_RADIUS - dyTop * dyTop));
-    const dxBottom = Math.sqrt(Math.max(0, DISC_RADIUS * DISC_RADIUS - dyBottom * dyBottom));
-    
-    let arcX1, arcX2;
+    // Draw curved background
     if (isMobile) {
-      // Right edge - we want the left side of the circle
-      arcX1 = cx - dxTop;
-      arcX2 = cx - dxBottom;
+      // Right side - curve bulges left
+      content += `<path class="disc-bg" d="
+        M ${VISIBLE_WIDTH} 0 
+        L ${VISIBLE_WIDTH} ${h}
+        L ${VISIBLE_WIDTH - curveDepth} ${h}
+        Q 0 ${h/2} ${VISIBLE_WIDTH - curveDepth} 0
+        Z
+      " />`;
     } else {
-      // Left edge - we want the right side of the circle  
-      arcX1 = cx + dxTop;
-      arcX2 = cx + dxBottom;
+      // Left side - curve bulges right
+      content += `<path class="disc-bg" d="
+        M 0 0 
+        L 0 ${h}
+        L ${curveDepth} ${h}
+        Q ${VISIBLE_WIDTH} ${h/2} ${curveDepth} 0
+        Z
+      " />`;
     }
-    
-    // Draw filled arc
-    const largeArc = 0; // We want the smaller arc
-    const sweep = isMobile ? 1 : 0;
-    content += `<path class="disc-bg" d="M ${cx},${cy} L ${arcX1},${arcStartY} A ${DISC_RADIUS},${DISC_RADIUS} 0 ${largeArc},${sweep} ${arcX2},${arcEndY} Z" />`;
 
     // Find current entry
     let currentEntry = null;
@@ -114,49 +95,50 @@
       }
     });
 
-    // Draw ticks
+    // Draw ticks along the curve
     entries.forEach(e => {
       if (!e.el) return;
       
       const rect = e.el.getBoundingClientRect();
-      const elCenterY = rect.top + rect.height / 2;
+      const elY = rect.top + rect.height / 2;
       
       // Skip if off screen
-      if (elCenterY < -100 || elCenterY > viewportHeight + 100) return;
+      if (elY < -50 || elY > h + 50) return;
       
-      // Calculate X position on the arc for this Y
-      const dy = elCenterY - cy;
-      const dx = Math.sqrt(Math.max(0, DISC_RADIUS * DISC_RADIUS - dy * dy));
+      // Calculate x position on the curve at this y
+      // Quadratic curve: x = curveDepth at top/bottom, x = VISIBLE_WIDTH at center
+      const t = Math.abs(elY - centerY) / (h / 2); // 0 at center, 1 at edges
+      const curveX = curveDepth + (1 - t * t) * (VISIBLE_WIDTH - curveDepth - curveDepth);
       
-      let tickX1, tickX2, labelX;
+      let x1, x2, labelX, anchor;
       if (isMobile) {
-        tickX1 = cx - dx + 2;
-        tickX2 = cx - dx + 2 + TICK_LENGTH;
-        labelX = tickX2 + 5;
+        x2 = VISIBLE_WIDTH - curveDepth + curveX * 0.5;
+        x1 = x2 - TICK_LENGTH;
+        labelX = x1 - 4;
+        anchor = 'end';
       } else {
-        tickX2 = cx + dx - 2;
-        tickX1 = cx + dx - 2 - TICK_LENGTH;
-        labelX = tickX1 - 5;
+        x1 = curveDepth - curveX * 0.3;
+        x2 = x1 + TICK_LENGTH;
+        labelX = x2 + 4;
+        anchor = 'start';
       }
       
       const isCurrent = e === currentEntry && currentDist < 150;
       const tickClass = isCurrent ? 'disc-tick current' : 'disc-tick';
 
-      content += `<line class="${tickClass}" data-id="${e.slice.id}" data-year="${e.year}" x1="${tickX1}" y1="${elCenterY}" x2="${tickX2}" y2="${elCenterY}" />`;
+      content += `<line class="${tickClass}" data-id="${e.slice.id}" data-year="${e.year}" x1="${x1}" y1="${elY}" x2="${x2}" y2="${elY}" />`;
 
-      // Year label
+      // Year label  
       const yearText = typeof window.formatYear === 'function' ? window.formatYear(e.year) : e.year;
       const labelClass = isCurrent ? 'disc-label current' : 'disc-label';
-      const anchor = isMobile ? 'start' : 'end';
-      content += `<text class="${labelClass}" x="${labelX}" y="${elCenterY + 4}" text-anchor="${anchor}">${yearText}</text>`;
+      content += `<text class="${labelClass}" x="${labelX}" y="${elY + 4}" text-anchor="${anchor}">${yearText}</text>`;
     });
 
     // Needle at center
-    const needleDx = Math.sqrt(DISC_RADIUS * DISC_RADIUS);
     if (isMobile) {
-      content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${VISIBLE_WIDTH + 5}" y2="${centerY}" />`;
+      content += `<line class="disc-needle" x1="${VISIBLE_WIDTH - 30}" y1="${centerY}" x2="${VISIBLE_WIDTH}" y2="${centerY}" />`;
     } else {
-      content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${VISIBLE_WIDTH + 5}" y2="${centerY}" />`;
+      content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="30" y2="${centerY}" />`;
     }
 
     // Update year display
