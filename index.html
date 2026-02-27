@@ -1994,8 +1994,15 @@ function updateMediaSession(year, title, imageUrl) {
     }
   }
   
+  // Provide multiple artwork sizes as recommended by the spec
+  // The browser will pick the most appropriate size
   const artwork = absoluteImageUrl ? [
-    { src: absoluteImageUrl, sizes: '512x512', type: 'image/jpeg' }
+    { src: absoluteImageUrl, sizes: '96x96', type: 'image/jpeg' },
+    { src: absoluteImageUrl, sizes: '128x128', type: 'image/jpeg' },
+    { src: absoluteImageUrl, sizes: '192x192', type: 'image/jpeg' },
+    { src: absoluteImageUrl, sizes: '256x256', type: 'image/jpeg' },
+    { src: absoluteImageUrl, sizes: '384x384', type: 'image/jpeg' },
+    { src: absoluteImageUrl, sizes: '512x512', type: 'image/jpeg' },
   ] : [];
   
   navigator.mediaSession.metadata = new MediaMetadata({
@@ -2005,19 +2012,64 @@ function updateMediaSession(year, title, imageUrl) {
     artwork: artwork
   });
   
+  // Set playback state
+  navigator.mediaSession.playbackState = 'playing';
+  
   // Set up action handlers
-  navigator.mediaSession.setActionHandler('play', () => {
-    if (activePodcastAudio) activePodcastAudio.play();
-  });
-  navigator.mediaSession.setActionHandler('pause', () => {
-    if (activePodcastAudio) activePodcastAudio.pause();
-  });
-  navigator.mediaSession.setActionHandler('seekbackward', () => {
-    if (activePodcastAudio) activePodcastAudio.currentTime = Math.max(0, activePodcastAudio.currentTime - 10);
-  });
-  navigator.mediaSession.setActionHandler('seekforward', () => {
-    if (activePodcastAudio) activePodcastAudio.currentTime = Math.min(activePodcastAudio.duration, activePodcastAudio.currentTime + 10);
-  });
+  try {
+    navigator.mediaSession.setActionHandler('play', () => {
+      if (activePodcastAudio) {
+        activePodcastAudio.play();
+        navigator.mediaSession.playbackState = 'playing';
+      }
+    });
+    navigator.mediaSession.setActionHandler('pause', () => {
+      if (activePodcastAudio) {
+        activePodcastAudio.pause();
+        navigator.mediaSession.playbackState = 'paused';
+      }
+    });
+    navigator.mediaSession.setActionHandler('seekbackward', (details) => {
+      if (activePodcastAudio) {
+        const skipTime = details.seekOffset || 10;
+        activePodcastAudio.currentTime = Math.max(0, activePodcastAudio.currentTime - skipTime);
+        updateMediaPositionState();
+      }
+    });
+    navigator.mediaSession.setActionHandler('seekforward', (details) => {
+      if (activePodcastAudio) {
+        const skipTime = details.seekOffset || 10;
+        activePodcastAudio.currentTime = Math.min(activePodcastAudio.duration, activePodcastAudio.currentTime + skipTime);
+        updateMediaPositionState();
+      }
+    });
+    navigator.mediaSession.setActionHandler('seekto', (details) => {
+      if (activePodcastAudio && details.seekTime !== undefined) {
+        activePodcastAudio.currentTime = details.seekTime;
+        updateMediaPositionState();
+      }
+    });
+  } catch (e) {
+    // Some handlers may not be supported
+  }
+  
+  // Update position state
+  updateMediaPositionState();
+}
+
+function updateMediaPositionState() {
+  if (!('mediaSession' in navigator) || !activePodcastAudio) return;
+  if (!activePodcastAudio.duration || isNaN(activePodcastAudio.duration)) return;
+  
+  try {
+    navigator.mediaSession.setPositionState({
+      duration: activePodcastAudio.duration,
+      playbackRate: activePodcastAudio.playbackRate || 1,
+      position: activePodcastAudio.currentTime || 0,
+    });
+  } catch (e) {
+    // Position state not supported or invalid values
+  }
 }
 
 function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}) {
@@ -2137,11 +2189,31 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
       const pct = (audio.currentTime / audio.duration) * 100;
       progressFill.style.width = pct + '%';
       currentTime.textContent = formatTime(audio.currentTime);
+      // Update media session position (throttled - every ~1s is fine)
+      if (audio === activePodcastAudio) {
+        updateMediaPositionState();
+      }
     }
   });
 
   audio.addEventListener('loadedmetadata', () => {
     totalTime.textContent = formatTime(audio.duration);
+    // Update position state now that we know duration
+    if (audio === activePodcastAudio) {
+      updateMediaPositionState();
+    }
+  });
+
+  audio.addEventListener('play', () => {
+    if ('mediaSession' in navigator) {
+      navigator.mediaSession.playbackState = 'playing';
+    }
+  });
+
+  audio.addEventListener('pause', () => {
+    if ('mediaSession' in navigator) {
+      navigator.mediaSession.playbackState = 'paused';
+    }
   });
 
   audio.addEventListener('ended', () => {
