@@ -2131,8 +2131,10 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
   const playBtn = player.querySelector('.pp-play');
   const progressFill = player.querySelector('.pp-progress-fill');
   const progressWrap = player.querySelector('.pp-progress-bar');
-  const currentTime = player.querySelector('.pp-current');
+  const currentTimeEl = player.querySelector('.pp-current');
   const totalTime = player.querySelector('.pp-total');
+
+  let pendingSeekPct = null; // Store desired position before audio loads
 
   audio.dataset.podcastUrl = audioUrl; // Always store URL for recovery
   audio.src = audioUrl;
@@ -2176,17 +2178,33 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
       if (btn) btn.innerHTML = SVG_STOP;
       syncMapPopupAudio(year, true);
       updateMediaSession(year, title, imageUrl);
-      // Play when ready
-      audio.play().catch(() => {
-        // Reset UI if play fails
-        playBtn.innerHTML = SVG_PLAY;
-        if (btn) btn.innerHTML = SVG_HEADPHONES;
-        syncMapPopupAudio(year, false);
-      });
+      // Apply pending seek when metadata loads, then play
+      const playWhenReady = () => {
+        if (pendingSeekPct !== null && audio.duration) {
+          audio.currentTime = pendingSeekPct * audio.duration;
+          pendingSeekPct = null;
+        }
+        audio.play().catch(() => {
+          playBtn.innerHTML = SVG_PLAY;
+          if (btn) btn.innerHTML = SVG_HEADPHONES;
+          syncMapPopupAudio(year, false);
+        });
+        audio.removeEventListener('loadedmetadata', playWhenReady);
+      };
+      if (audio.readyState >= 1) {
+        playWhenReady();
+      } else {
+        audio.addEventListener('loadedmetadata', playWhenReady);
+      }
       return;
     }
     
     if (audio.paused) {
+      // Apply pending seek if any
+      if (pendingSeekPct !== null && audio.duration) {
+        audio.currentTime = pendingSeekPct * audio.duration;
+        pendingSeekPct = null;
+      }
       // Claim active state on play (in case another podcast was active)
       if (threadPlayActive) stopThreadPlayAll();
       if (activePodcastYear !== year) stopAllPodcasts();
@@ -2211,7 +2229,7 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     if (audio.duration) {
       const pct = (audio.currentTime / audio.duration) * 100;
       progressFill.style.width = pct + '%';
-      currentTime.textContent = formatTime(audio.currentTime);
+      currentTimeEl.textContent = formatTime(audio.currentTime);
       // Update media session position (throttled - every ~1s is fine)
       if (audio === activePodcastAudio) {
         updateMediaPositionState();
@@ -2244,7 +2262,7 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     playBtn.innerHTML = SVG_PLAY;
     if (btn) btn.innerHTML = SVG_HEADPHONES;
     progressFill.style.width = '0%';
-    currentTime.textContent = '0:00';
+    currentTimeEl.textContent = '0:00';
     syncMapPopupAudio(year, false);
     activePodcastYear = null;
   });
@@ -2255,8 +2273,17 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     const rect = progressWrap.getBoundingClientRect();
     const clientX = e.touches ? e.touches[0].clientX : e.clientX;
     const pct = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
-    if (audio.duration) {
+    
+    // Update visual immediately
+    progressFill.style.width = (pct * 100) + '%';
+    currentTimeEl.textContent = formatTime(pct * (audio.duration || duration));
+    
+    if (audio.readyState >= 1 && audio.duration) {
+      // Audio loaded — seek directly
       audio.currentTime = pct * audio.duration;
+    } else {
+      // Audio not loaded — store for when play is pressed
+      pendingSeekPct = pct;
     }
   };
   progressWrap.addEventListener('click', seekHandler);
@@ -2266,8 +2293,15 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     const rect = progressWrap.getBoundingClientRect();
     const touch = e.changedTouches[0];
     const pct = Math.max(0, Math.min(1, (touch.clientX - rect.left) / rect.width));
-    if (audio.duration) {
+    
+    // Update visual immediately
+    progressFill.style.width = (pct * 100) + '%';
+    currentTimeEl.textContent = formatTime(pct * (audio.duration || duration));
+    
+    if (audio.readyState >= 1 && audio.duration) {
       audio.currentTime = pct * audio.duration;
+    } else {
+      pendingSeekPct = pct;
     }
   });
 
