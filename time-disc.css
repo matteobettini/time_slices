@@ -35,40 +35,39 @@
 
 .time-disc svg {
   display: block;
-  width: 100%;
-  height: 100%;
 }
 
 /* Background strip */
-.disc-strip-bg {
+.disc-bg {
   fill: var(--surface);
-  opacity: 0.8;
+  fill-opacity: 0.9;
+  stroke: var(--border);
+  stroke-width: 1;
 }
 
-.time-disc-container:hover .disc-strip-bg,
-.time-disc-container.active .disc-strip-bg {
+.time-disc-container:hover .disc-bg,
+.time-disc-container.active .disc-bg {
   fill: var(--surface2);
-  opacity: 0.95;
+  fill-opacity: 1;
 }
 
 /* Entry tick marks */
 .disc-tick {
   stroke: var(--accent);
-  stroke-width: 2;
+  stroke-width: 3;
   stroke-linecap: round;
-  opacity: 0.5;
+  opacity: 0.6;
   cursor: pointer;
-  transition: opacity 0.15s, stroke-width 0.15s;
 }
 
 .disc-tick:hover {
-  opacity: 0.9;
-  stroke-width: 3;
+  opacity: 1;
+  stroke-width: 4;
 }
 
 .disc-tick.current {
   stroke: #fff;
-  stroke-width: 4;
+  stroke-width: 5;
   opacity: 1;
   filter: drop-shadow(0 0 4px var(--accent));
 }
@@ -76,16 +75,15 @@
 /* Year labels */
 .disc-label {
   font-family: var(--mono);
-  font-size: 0.55rem;
+  font-size: 0.6rem;
   fill: var(--text-dim);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.15s;
 }
 
 .time-disc-container:hover .disc-label,
 .time-disc-container.active .disc-label {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .disc-label.current {
@@ -97,12 +95,18 @@
 /* Center needle */
 .disc-needle {
   stroke: var(--accent);
-  stroke-width: 3;
-  stroke-linecap: round;
-  filter: drop-shadow(0 0 6px var(--accent));
+  stroke-width: 2;
+  opacity: 0.5;
 }
 
-/* Year indicator */
+.time-disc-container:hover .disc-needle,
+.time-disc-container.active .disc-needle {
+  stroke-width: 3;
+  opacity: 1;
+  filter: drop-shadow(0 0 4px var(--accent));
+}
+
+/* Year indicator - always visible */
 .time-disc-indicator {
   position: absolute;
   top: 50%;
@@ -111,13 +115,6 @@
   margin-left: 8px;
   pointer-events: none;
   z-index: 10;
-  opacity: 0;
-  transition: opacity 0.15s;
-}
-
-.time-disc-container:hover .time-disc-indicator,
-.time-disc-container.active .time-disc-indicator {
-  opacity: 1;
 }
 
 .time-disc-indicator-year {
