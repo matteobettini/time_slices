@@ -84,25 +84,24 @@
     // At center (y=h/2): dy = 0, x = cx + radius (rightmost) or cx - radius (leftmost)
     
     if (isMobile) {
-      // Right edge - draw left side of circle
-      // Arc from (cx, 0) around to (cx, h), bulging left
-      const leftX = cx - radius; // Leftmost point at center
+      // Right edge - arc bulges left (toward screen center)
+      // Center is to the right, off-screen
+      const arcCx = VISIBLE_WIDTH + radius - VISIBLE_WIDTH; // = radius
       content += `<path class="disc-bg" d="
-        M ${cx} ${topY}
-        A ${radius} ${radius} 0 0 0 ${cx} ${bottomY}
-        L ${VISIBLE_WIDTH} ${bottomY}
-        L ${VISIBLE_WIDTH} ${topY}
+        M ${VISIBLE_WIDTH} ${topY}
+        A ${radius} ${radius} 0 0 0 ${VISIBLE_WIDTH} ${bottomY}
+        L 0 ${bottomY}
+        L 0 ${topY}
         Z
       " />`;
     } else {
-      // Left edge - draw right side of circle  
-      // Arc from (cx, 0) around to (cx, h), bulging right
-      const rightX = cx + radius; // Rightmost point at center
+      // Left edge - arc bulges right (toward screen center)
+      // Center is to the left, off-screen
       content += `<path class="disc-bg" d="
-        M ${cx} ${topY}
-        A ${radius} ${radius} 0 0 1 ${cx} ${bottomY}
-        L 0 ${bottomY}
-        L 0 ${topY}
+        M 0 ${topY}
+        A ${radius} ${radius} 0 0 1 0 ${bottomY}
+        L ${VISIBLE_WIDTH} ${bottomY}
+        L ${VISIBLE_WIDTH} ${topY}
         Z
       " />`;
     }
@@ -135,19 +134,19 @@
       
       let arcX, x1, x2, labelX, anchor;
       if (isMobile) {
-        // Left side of circle
-        arcX = cx - dx;
-        x1 = arcX;
-        x2 = arcX + TICK_LENGTH;
-        labelX = x2 + 3;
-        anchor = 'start';
-      } else {
-        // Right side of circle
-        arcX = cx + dx;
+        // Arc bulges left, so arc edge is at VISIBLE_WIDTH - dx from right edge
+        arcX = VISIBLE_WIDTH - (radius - dx);
+        x1 = Math.max(0, arcX - TICK_LENGTH);
         x2 = arcX;
-        x1 = arcX - TICK_LENGTH;
         labelX = x1 - 3;
         anchor = 'end';
+      } else {
+        // Arc bulges right, so arc edge is at dx from left edge
+        arcX = radius - dx;
+        x1 = arcX;
+        x2 = Math.min(VISIBLE_WIDTH, arcX + TICK_LENGTH);
+        labelX = x2 + 3;
+        anchor = 'start';
       }
       
       const isCurrent = e === currentEntry && currentDist < 150;
