@@ -52,10 +52,9 @@
     const h = window.innerHeight;
     const centerY = h / 2;
     
-    // Circle radius: must touch top (y=0) and bottom (y=h) of viewport
-    // Circle center is at (cx, h/2), radius = h/2
-    // The visible edge is where x intersects our visible strip
-    const radius = h / 2;
+    // Circle radius: slightly larger than h/2 so arc extends beyond viewport
+    // This makes it taller while keeping same width
+    const radius = h * 0.55;
     
     svg.setAttribute('width', VISIBLE_WIDTH);
     svg.setAttribute('height', h);
@@ -194,6 +193,36 @@
       if (!isDragging) return;
       isDragging = false;
       container.classList.remove('active');
+      
+      // Snap to closest entry
+      snapToClosestEntry();
+    }
+    
+    function snapToClosestEntry() {
+      const centerY = window.innerHeight / 2;
+      let closest = null;
+      let closestDist = Infinity;
+      
+      entries.forEach(e => {
+        if (!e.el) return;
+        const rect = e.el.getBoundingClientRect();
+        const dist = Math.abs(rect.top + rect.height / 2 - centerY);
+        if (dist < closestDist) {
+          closestDist = dist;
+          closest = e;
+        }
+      });
+      
+      if (closest && closest.el) {
+        const rect = closest.el.getBoundingClientRect();
+        const elCenter = rect.top + rect.height / 2;
+        const scrollDelta = elCenter - centerY;
+        
+        window.scrollBy({ top: scrollDelta, behavior: 'smooth' });
+        
+        // Haptic feedback
+        if (navigator.vibrate) navigator.vibrate(10);
+      }
     }
 
     container.addEventListener('mousedown', onStart);
