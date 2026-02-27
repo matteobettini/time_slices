@@ -65,12 +65,12 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
    - `location` field (always required for map)
    - `addedDate` as full ISO-8601 UTC timestamp (e.g. `"2026-02-25T14:30:00Z"`)
 
-9. **Download and compress image:**
-   - Find a high-quality, representative image for the entry
-   - **ALWAYS compress before saving:** `convert input.jpg -resize '1200x>' -quality 85 images/{id}.jpg`
-   - Max width: 1200px, quality: 85, target size: <300KB
-   - Convert PNGs to JPG unless transparency needed
-   - Verify: `ls -lh images/{id}.jpg` — if >400KB, reduce quality to 80
+9. **Download and prepare image:**
+   ```bash
+   ./scripts/prep-image.sh <url_or_path> {entry-id} "Alt text description"
+   ```
+   This downloads, compresses (max 1200px, quality 85), and outputs the image JSON with dimensions.
+   Copy the output JSON into your entry — dimensions are included automatically.
 
 10. **Add Italian version** to `slices.it.json` — natural Italian, not machine translation.
 
