@@ -1,7 +1,7 @@
 /**
  * Time Disc Navigator
  * 
- * A curved edge with ticks that scroll with content.
+ * A subtle curved edge with ticks that scroll with content.
  */
 
 (function() {
@@ -19,8 +19,9 @@
   let dragStartY = 0;
   let dragStartScroll = 0;
 
-  const VISIBLE_WIDTH = 40;
-  const TICK_LENGTH = 15;
+  const VISIBLE_WIDTH = 32;
+  const TICK_LENGTH = 12;
+  const CURVE_DEPTH = 8; // Subtle curve
 
   function build() {
     if (!window.SLICES || !window.SLICES.length) return;
@@ -51,33 +52,29 @@
     const h = window.innerHeight;
     const centerY = h / 2;
     
-    // Simple curved background using quadratic bezier
-    // Creates a subtle curve bulging outward
-    const curveDepth = 20; // How much the curve bulges
-    
     svg.setAttribute('width', VISIBLE_WIDTH);
     svg.setAttribute('height', h);
     svg.setAttribute('viewBox', `0 0 ${VISIBLE_WIDTH} ${h}`);
 
     let content = '';
 
-    // Draw curved background
+    // Draw curved background - subtle bulge
     if (isMobile) {
-      // Right side - curve bulges left
+      // Right side
       content += `<path class="disc-bg" d="
         M ${VISIBLE_WIDTH} 0 
-        L ${VISIBLE_WIDTH} ${h}
-        L ${VISIBLE_WIDTH - curveDepth} ${h}
-        Q 0 ${h/2} ${VISIBLE_WIDTH - curveDepth} 0
+        Q ${VISIBLE_WIDTH - CURVE_DEPTH} ${h/2} ${VISIBLE_WIDTH} ${h}
+        L ${VISIBLE_WIDTH - CURVE_DEPTH - 5} ${h}
+        Q ${-5} ${h/2} ${VISIBLE_WIDTH - CURVE_DEPTH - 5} 0
         Z
       " />`;
     } else {
-      // Left side - curve bulges right
+      // Left side
       content += `<path class="disc-bg" d="
         M 0 0 
-        L 0 ${h}
-        L ${curveDepth} ${h}
-        Q ${VISIBLE_WIDTH} ${h/2} ${curveDepth} 0
+        Q ${CURVE_DEPTH} ${h/2} 0 ${h}
+        L ${CURVE_DEPTH + 5} ${h}
+        Q ${VISIBLE_WIDTH + 5} ${h/2} ${CURVE_DEPTH + 5} 0
         Z
       " />`;
     }
@@ -95,7 +92,7 @@
       }
     });
 
-    // Draw ticks along the curve
+    // Draw ticks
     entries.forEach(e => {
       if (!e.el) return;
       
@@ -105,21 +102,20 @@
       // Skip if off screen
       if (elY < -50 || elY > h + 50) return;
       
-      // Calculate x position on the curve at this y
-      // Quadratic curve: x = curveDepth at top/bottom, x = VISIBLE_WIDTH at center
-      const t = Math.abs(elY - centerY) / (h / 2); // 0 at center, 1 at edges
-      const curveX = curveDepth + (1 - t * t) * (VISIBLE_WIDTH - curveDepth - curveDepth);
+      // X position follows the curve
+      const t = (elY - centerY) / (h / 2); // -1 to 1
+      const curveOffset = CURVE_DEPTH * (1 - t * t); // Parabolic curve
       
       let x1, x2, labelX, anchor;
       if (isMobile) {
-        x2 = VISIBLE_WIDTH - curveDepth + curveX * 0.5;
+        x2 = VISIBLE_WIDTH - curveOffset;
         x1 = x2 - TICK_LENGTH;
-        labelX = x1 - 4;
+        labelX = x1 - 3;
         anchor = 'end';
       } else {
-        x1 = curveDepth - curveX * 0.3;
+        x1 = curveOffset;
         x2 = x1 + TICK_LENGTH;
-        labelX = x2 + 4;
+        labelX = x2 + 3;
         anchor = 'start';
       }
       
@@ -131,14 +127,14 @@
       // Year label  
       const yearText = typeof window.formatYear === 'function' ? window.formatYear(e.year) : e.year;
       const labelClass = isCurrent ? 'disc-label current' : 'disc-label';
-      content += `<text class="${labelClass}" x="${labelX}" y="${elY + 4}" text-anchor="${anchor}">${yearText}</text>`;
+      content += `<text class="${labelClass}" x="${labelX}" y="${elY + 3}" text-anchor="${anchor}">${yearText}</text>`;
     });
 
     // Needle at center
     if (isMobile) {
-      content += `<line class="disc-needle" x1="${VISIBLE_WIDTH - 30}" y1="${centerY}" x2="${VISIBLE_WIDTH}" y2="${centerY}" />`;
+      content += `<line class="disc-needle" x1="${VISIBLE_WIDTH - CURVE_DEPTH - TICK_LENGTH - 5}" y1="${centerY}" x2="${VISIBLE_WIDTH}" y2="${centerY}" />`;
     } else {
-      content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="30" y2="${centerY}" />`;
+      content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${CURVE_DEPTH + TICK_LENGTH + 5}" y2="${centerY}" />`;
     }
 
     // Update year display
