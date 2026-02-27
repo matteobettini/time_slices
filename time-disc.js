@@ -26,10 +26,7 @@
   const PADDING_BOTTOM = 120;
 
   function build() {
-    console.log('Time Disc: Building...', window.SLICES?.length || 0, 'slices');
-    
     if (!window.SLICES || !window.SLICES.length) {
-      console.warn('Time Disc: No SLICES data');
       return;
     }
 
@@ -52,9 +49,10 @@
     const isMobile = window.innerWidth <= 768;
     const usableHeight = height - PADDING_TOP - PADDING_BOTTOM;
 
-    // Set SVG dimensions
+    // Set SVG dimensions explicitly
     svg.setAttribute('width', STRIP_WIDTH);
     svg.setAttribute('height', height);
+    svg.setAttribute('viewBox', `0 0 ${STRIP_WIDTH} ${height}`);
     svg.style.width = STRIP_WIDTH + 'px';
     svg.style.height = height + 'px';
 
@@ -89,7 +87,7 @@
         y,
         t,
         slice,
-        el: document.querySelector(`#entry-${slice.id}`)
+        el: null // Will be set after DOM query
       });
     });
 
@@ -98,10 +96,10 @@
     content += `<line class="disc-needle" x1="0" y1="${needleY}" x2="${STRIP_WIDTH}" y2="${needleY}" />`;
 
     svg.innerHTML = content;
-    console.log('Time Disc: Built', entries.length, 'entries');
 
-    // Store refs
+    // Store refs after DOM is updated
     entries.forEach(e => {
+      e.el = document.querySelector(`#entry-${e.slice.id}`);
       e.tickEl = svg.querySelector(`.disc-tick[data-year="${e.year}"]`);
       e.labelEl = svg.querySelector(`.disc-label[data-year="${e.year}"]`);
     });
@@ -209,29 +207,17 @@
     resizeTimer = setTimeout(build, 200);
   });
 
-  // Exports
+  // Export build function globally
   window.buildTimeDisc = build;
   window.showTimeDisc = () => container.classList.remove('hidden');
   window.hideTimeDisc = () => container.classList.add('hidden');
 
-  // Init - wait for slicesReady or use a fallback
-  function init() {
-    build();
-    initDrag();
-  }
+  // Initialize drag handlers immediately
+  initDrag();
 
-  if (window.slicesReady && typeof window.slicesReady.then === 'function') {
-    window.slicesReady.then(init);
-  } else {
-    // Fallback: poll for SLICES
-    const checkSlices = setInterval(() => {
-      if (window.SLICES && window.SLICES.length) {
-        clearInterval(checkSlices);
-        init();
-      }
-    }, 100);
-    // Give up after 10s
-    setTimeout(() => clearInterval(checkSlices), 10000);
+  // Try to build now if SLICES already exists
+  if (window.SLICES && window.SLICES.length) {
+    build();
   }
 
 })();

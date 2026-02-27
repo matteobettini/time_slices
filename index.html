@@ -4327,6 +4327,12 @@ document.getElementById('coffeeBtn').addEventListener('click', () => {
 });
 </script>
 <script src="time-disc.js"></script>
+<script>
+  // Initialize time disc after script loads
+  if (typeof buildTimeDisc === 'function' && window.SLICES && window.SLICES.length) {
+    buildTimeDisc();
+  }
+</script>
 
 </body>
 </html>
