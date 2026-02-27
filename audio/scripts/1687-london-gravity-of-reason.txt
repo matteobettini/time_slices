@@ -1,13 +1,17 @@
-In 1687, Isaac Newton published the Principia Mathematica — a book that would fundamentally change how humans understand the physical world.
+The year is 1687, and the universe is about to become a machine.
 
-Newton demonstrated that a single mathematical principle, the inverse-square law of gravitational attraction, could explain the motion of everything from falling apples to orbiting planets. The same force that pulls objects to Earth also keeps the Moon in its path and governs the trajectories of comets. For the first time, the cosmos was shown to operate by discoverable, mathematical laws.
+In July, a book emerges from London's printing presses that will reshape human understanding of reality itself. Isaac Newton's Principia Mathematica proves that a single mathematical law — the inverse square of gravitational attraction — governs the motion of planets, moons, comets, tides, and falling apples. The cosmos is no longer a mystery. It's an equation.
 
-The book almost didn't happen. The Royal Society, which would normally fund such publications, had exhausted its budget on an elaborately illustrated volume about fish that sold poorly. So Edmond Halley — the astronomer who would later calculate the orbit of his famous comet — paid for the Principia's publication himself.
+But Newton almost didn't publish at all. The Royal Society was broke — they'd spent their funds on an extravagantly illustrated fish book that nobody bought. So Edmond Halley, the astronomer who would later predict the return of his famous comet, paid from his own pocket. Fish nearly delayed the Scientific Revolution.
 
-Newton wasn't working in isolation. Across the Channel, John Locke was drafting his Essay Concerning Human Understanding while in exile in Amsterdam, developing the empiricist philosophy that would complement Newton's physics. Meanwhile, Gottfried Wilhelm Leibniz had independently invented calculus and was building his own metaphysical system.
+The Principia didn't fall from a clear sky. Three years earlier, Halley visited Newton in Cambridge and posed a question that mathematicians had been racing to solve: what curve would a planet describe under an inverse-square law? Newton answered immediately — an ellipse. He'd already worked it out. Halley, stunned, pushed him to publish.
 
-The broader context of 1687 was equally significant. Louis XIV had recently revoked the Edict of Nantes, sending hundreds of thousands of French Protestants into exile across Europe, carrying skills and ideas with them. In Athens, Venetian forces besieging the Ottoman-held city fired a cannonball that struck the Parthenon, destroying much of a building that had survived over two thousand years.
+Across the Channel, the same intellectual ferment was brewing. John Locke, in exile in Amsterdam fleeing Stuart persecution, was drafting his Essay Concerning Human Understanding — the empiricist foundation that matched Newton's physics with a theory of mind. All knowledge, Locke argued, comes from sensory experience. No innate ideas. No divine revelation needed.
 
-Even the arts reflected the era's tensions. The composer Lully, who had dominated French music for decades, died from gangrene after accidentally striking his foot with his conducting staff during a performance.
+And in the same year, across Europe, the old order was cracking open. Louis XIV had revoked the Edict of Nantes, driving hundreds of thousands of French Protestants into exile — carrying skills, capital, and ideas into England, Holland, and Prussia. In Athens, a Venetian cannonball struck the Parthenon, which the Ottomans were using as a gunpowder magazine. The explosion destroyed much of a building that had stood for twenty-one centuries.
 
-Within eighteen months, the Glorious Revolution would transform English governance. The intellectual and political order of Europe was being reshaped — and Newton's laws gave that transformation a new foundation: a universe governed not by divine whim, but by principles that human reason could discover and describe.
+The Baroque composer Lully died from an absurd wound — he'd struck his own foot with his conducting staff during a performance. The age of spectacle was killing its own artists.
+
+Something was ending. Something else was beginning. Newton's laws reduced the heavens to mechanics. The Glorious Revolution, just eighteen months away, would reduce kings to constitutional figureheads. The world was clicking into place — ordered, predictable, governed by laws that humans could discover.
+
+The gravity of reason had begun to pull everything into its orbit.
