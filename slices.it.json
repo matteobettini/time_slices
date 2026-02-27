@@ -55,6 +55,8 @@
     ],
     "image": {
       "url": "images/125-pantheon-dome.jpg",
+      "width": 960,
+      "height": 731,
       "caption": "Interno della cupola del Pantheon con il suo oculo, Roma",
       "attribution": "Livioandronico2013, CC BY-SA 4.0, tramite Wikimedia Commons"
     },
@@ -130,6 +132,8 @@
     ],
     "image": {
       "url": "images/762-round-city.jpg",
+      "width": 640,
+      "height": 640,
       "caption": "Pianta della Città Rotonda di Baghdad di al-Mansur",
       "attribution": "Umar Farrukh, tramite Wikimedia Commons"
     },
@@ -211,6 +215,8 @@
     ],
     "image": {
       "url": "images/1347-triumph-of-death.jpg",
+      "width": 960,
+      "height": 801,
       "caption": "Trionfo della Morte (c. 1446), affresco, Palazzo Abatellis, Palermo",
       "attribution": "Pubblico dominio, tramite Wikimedia Commons"
     },
@@ -262,6 +268,8 @@
     },
     "image": {
       "url": "images/1504-david.jpg",
+      "width": 600,
+      "height": 900,
       "caption": "Il David di Michelangelo (1501–1504), Galleria dell'Accademia, Firenze",
       "attribution": "Fir0002, CC BY-SA 3.0, tramite Wikimedia Commons"
     },
@@ -352,6 +360,8 @@
     ],
     "image": {
       "url": "images/1648-night-watch.jpg",
+      "width": 960,
+      "height": 781,
       "caption": "Rembrandt van Rijn, Ronda di notte (1642), Rijksmuseum, Amsterdam",
       "attribution": "Pubblico dominio, tramite Wikimedia Commons"
     },
@@ -430,6 +440,8 @@
     ],
     "image": {
       "url": "images/1784-oath-horatii.jpg",
+      "width": 960,
+      "height": 749,
       "caption": "Il giuramento degli Orazi — Jacques-Louis David, 1784",
       "attribution": "Jacques-Louis David, via Wikimedia Commons / Google Art Project"
     },
@@ -480,6 +492,8 @@
     },
     "image": {
       "url": "images/1889-starry-night.jpg",
+      "width": 800,
+      "height": 633,
       "caption": "Vincent van Gogh, Notte stellata (1889), MoMA, New York",
       "attribution": "Google Art Project, Pubblico dominio, tramite Wikimedia Commons"
     },
@@ -550,6 +564,8 @@
     },
     "image": {
       "url": "images/1922-bauhaus.jpg",
+      "width": 409,
+      "height": 530,
       "caption": "Joost Schmidt, manifesto per la mostra del Bauhaus (1923)",
       "attribution": "Pubblico dominio, tramite Wikimedia Commons"
     },
@@ -647,6 +663,8 @@
     ],
     "image": {
       "url": "images/1517-school-of-athens.jpg",
+      "width": 1200,
+      "height": 931,
       "caption": "La Scuola di Atene di Raffaello (1509–1511), Musei Vaticani",
       "attribution": "Raffaello, Pubblico Dominio, tramite Wikimedia Commons"
     },
@@ -723,6 +741,8 @@
     ],
     "image": {
       "url": "images/1687-principia.jpg",
+      "width": 1200,
+      "height": 1663,
       "caption": "Frontespizio dei Principia Mathematica di Newton, prima edizione (1687)",
       "attribution": "Pubblico dominio, tramite Wikimedia Commons"
     },

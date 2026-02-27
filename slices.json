@@ -55,6 +55,8 @@
     ],
     "image": {
       "url": "images/125-pantheon-dome.jpg",
+      "width": 960,
+      "height": 731,
       "caption": "Interior of the Pantheon dome with its oculus, Rome",
       "attribution": "Livioandronico2013, CC BY-SA 4.0, via Wikimedia Commons"
     },
@@ -134,6 +136,8 @@
     ],
     "image": {
       "url": "images/762-round-city.jpg",
+      "width": 640,
+      "height": 640,
       "caption": "Plan of al-Mansur's Round City of Baghdad",
       "attribution": "Umar Farrukh, via Wikimedia Commons"
     },
@@ -215,6 +219,8 @@
     ],
     "image": {
       "url": "images/1347-triumph-of-death.jpg",
+      "width": 960,
+      "height": 801,
       "caption": "Triumph of Death (c. 1446), fresco, Palazzo Abatellis, Palermo",
       "attribution": "Public Domain, via Wikimedia Commons"
     },
@@ -266,6 +272,8 @@
     },
     "image": {
       "url": "images/1504-david.jpg",
+      "width": 600,
+      "height": 900,
       "caption": "Michelangelo's David (1501–1504), Galleria dell'Accademia, Florence",
       "attribution": "Fir0002, CC BY-SA 3.0, via Wikimedia Commons"
     },
@@ -356,6 +364,8 @@
     ],
     "image": {
       "url": "images/1648-night-watch.jpg",
+      "width": 960,
+      "height": 781,
       "caption": "Rembrandt van Rijn, The Night Watch (1642), Rijksmuseum, Amsterdam",
       "attribution": "Public Domain, via Wikimedia Commons"
     },
@@ -434,6 +444,8 @@
     ],
     "image": {
       "url": "images/1784-oath-horatii.jpg",
+      "width": 960,
+      "height": 749,
       "caption": "The Oath of the Horatii — Jacques-Louis David, 1784",
       "attribution": "Jacques-Louis David, via Wikimedia Commons / Google Art Project"
     },
@@ -484,6 +496,8 @@
     },
     "image": {
       "url": "images/1889-starry-night.jpg",
+      "width": 800,
+      "height": 633,
       "caption": "Vincent van Gogh, The Starry Night (1889), MoMA, New York",
       "attribution": "Google Art Project, Public Domain, via Wikimedia Commons"
     },
@@ -554,6 +568,8 @@
     },
     "image": {
       "url": "images/1922-bauhaus.jpg",
+      "width": 409,
+      "height": 530,
       "caption": "Joost Schmidt, Bauhaus Exhibition poster (1923)",
       "attribution": "Public Domain, via Wikimedia Commons"
     },
@@ -651,6 +667,8 @@
     ],
     "image": {
       "url": "images/1517-school-of-athens.jpg",
+      "width": 1200,
+      "height": 931,
       "caption": "The School of Athens by Raphael (1509–1511), Vatican Museums",
       "attribution": "Raphael, Public Domain, via Wikimedia Commons"
     },
@@ -727,6 +745,8 @@
     ],
     "image": {
       "url": "images/1687-principia.jpg",
+      "width": 1200,
+      "height": 1663,
       "caption": "Title page of Newton's Principia Mathematica, first edition (1687)",
       "attribution": "Public Domain, via Wikimedia Commons"
     },
