@@ -2255,8 +2255,11 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     const rect = progressWrap.getBoundingClientRect();
     const clientX = e.touches ? e.touches[0].clientX : e.clientX;
     const pct = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
-    if (audio.duration) {
-      audio.currentTime = pct * audio.duration;
+    const dur = audio.duration || duration;
+    if (dur) {
+      audio.currentTime = pct * dur;
+      progressFill.style.width = (pct * 100) + '%';
+      currentTimeEl.textContent = formatTime(pct * dur);
     }
   };
   progressWrap.addEventListener('click', seekHandler);
@@ -2266,8 +2269,11 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
     const rect = progressWrap.getBoundingClientRect();
     const touch = e.changedTouches[0];
     const pct = Math.max(0, Math.min(1, (touch.clientX - rect.left) / rect.width));
-    if (audio.duration) {
-      audio.currentTime = pct * audio.duration;
+    const dur = audio.duration || duration;
+    if (dur) {
+      audio.currentTime = pct * dur;
+      progressFill.style.width = (pct * 100) + '%';
+      currentTimeEl.textContent = formatTime(pct * dur);
     }
   });
 
