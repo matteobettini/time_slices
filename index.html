@@ -247,6 +247,23 @@
     position: relative;
   }
 
+  .source-link {
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 20px;
+  }
+  .source-link a {
+    color: var(--muted);
+    font-size: 0.8rem;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+  }
+  .source-link a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
   /* Central line */
   .timeline-line {
     position: absolute;
@@ -1272,6 +1289,9 @@
 <div class="timeline-container">
   <div class="timeline-line"></div>
   <div id="timeline"></div>
+  <div class="source-link">
+    <a href="https://github.com/matteobettini/time_slices" target="_blank" rel="noopener">View source</a>
+  </div>
 </div>
 
 <!-- Map View -->
