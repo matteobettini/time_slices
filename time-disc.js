@@ -52,8 +52,9 @@
     const h = window.innerHeight;
     const centerY = h / 2;
     
-    // Circle radius: smaller for subtle curve
-    const radius = h * 0.45;
+    // Large radius so only a small arc is visible at the edge
+    // The arc should only intrude ~30px into the screen at most
+    const radius = h * 2;
     
     svg.setAttribute('width', VISIBLE_WIDTH);
     svg.setAttribute('height', h);
@@ -62,46 +63,48 @@
     let content = '';
 
     // Circle center X position (off-screen)
-    // For the edge to show VISIBLE_WIDTH pixels, center is at: 
-    // Desktop (left): cx = -(radius - VISIBLE_WIDTH)
-    // Mobile (right): cx = VISIBLE_WIDTH + (radius - VISIBLE_WIDTH) = radius
-    const cx = isMobile ? radius : -(radius - VISIBLE_WIDTH);
+    const cx = isMobile ? radius : -radius + VISIBLE_WIDTH;
     const cy = centerY;
 
-    // Draw arc from top to bottom
-    // Top point: (cx + sqrt(r² - (0-cy)²), 0) but we need the edge point
-    // At y=0: x = cx + sqrt(r² - r²) = cx (circle touches at center-x level)
-    // Actually at y=0, dy = -r, so x = cx (tangent point)
-    
-    // Calculate visible arc points
+    // Calculate where the circle intersects top and bottom of viewport
     const topY = 0;
     const bottomY = h;
     
-    // At top (y=0): dy = 0 - cy = -radius, x = cx (tangent)
-    // At bottom (y=h): dy = h - cy = radius, x = cx (tangent)
-    // At center (y=h/2): dy = 0, x = cx + radius (rightmost) or cx - radius (leftmost)
+    // At y=0 and y=h, calculate x position on circle
+    // x = cx + sqrt(r² - (y-cy)²) for right side
+    // x = cx - sqrt(r² - (y-cy)²) for left side
+    const dyTop = topY - cy;
+    const dyBottom = bottomY - cy;
+    const dxTop = Math.sqrt(Math.max(0, radius * radius - dyTop * dyTop));
+    const dxBottom = Math.sqrt(Math.max(0, radius * radius - dyBottom * dyBottom));
     
     if (isMobile) {
-      // Right edge - arc bulges left (toward screen center)
-      // Center is to the right, off-screen
-      const arcCx = VISIBLE_WIDTH + radius - VISIBLE_WIDTH; // = radius
+      // Right edge - we see left side of circle
+      const topX = cx - dxTop;
+      const bottomX = cx - dxBottom;
+      const midX = cx - radius; // Leftmost point at center
+      
       content += `<path class="disc-bg" d="
         M ${VISIBLE_WIDTH} ${topY}
-        A ${radius} ${radius} 0 0 0 ${VISIBLE_WIDTH} ${bottomY}
-        L 0 ${bottomY}
-        L 0 ${topY}
+        L ${topX} ${topY}
+        Q ${midX} ${cy} ${bottomX} ${bottomY}
+        L ${VISIBLE_WIDTH} ${bottomY}
         Z
       " />`;
     } else {
-      // Left edge - arc bulges right (toward screen center)
-      // Center is to the left, off-screen
+      // Left edge - we see right side of circle
+      const topX = cx + dxTop;
+      const bottomX = cx + dxBottom;
+      const midX = cx + radius; // Rightmost point at center
+      
       content += `<path class="disc-bg" d="
         M 0 ${topY}
-        A ${radius} ${radius} 0 0 1 0 ${bottomY}
-        L ${VISIBLE_WIDTH} ${bottomY}
-        L ${VISIBLE_WIDTH} ${topY}
+        L ${topX} ${topY}
+        Q ${midX} ${cy} ${bottomX} ${bottomY}
+        L 0 ${bottomY}
         Z
       " />`;
+    }
     }
 
     // Find current entry
