@@ -94,6 +94,11 @@ VOICE_MAP_EN = {
         "voice": "ash",
         "instructions": "Speak with measured drama. This is the moment Western Christianity splits — a hammer blow that echoes for centuries. Authoritative but not bombastic. Let the weight of the moment speak for itself.",
     },
+    # 1687 London: precise, authoritative — sage for intellectual clarity at the dawn of modern science
+    "1687-london-gravity-of-reason": {
+        "voice": "sage",
+        "instructions": "Speak with crisp intellectual precision. This is Newton's moment — the universe becoming an equation. Authoritative but with a thread of wonder. Like a historian who still marvels at what Newton achieved.",
+    },
 }
 
 # Italian voices — same voice palette but with Italian-language style instructions
@@ -142,6 +147,11 @@ VOICE_MAP_IT = {
     "1517-wittenberg-hammer-falls": {
         "voice": "ash",
         "instructions": "Parla in italiano con dramma contenuto. Questo è il momento in cui il cristianesimo occidentale si divide — un colpo di martello che riecheggia per secoli. Autorevole ma non pomposo. Lascia che il peso del momento parli da solo.",
+    },
+    # 1687 London: precise, authoritative
+    "1687-london-gravity-of-reason": {
+        "voice": "sage",
+        "instructions": "Parla in italiano con precisione intellettuale nitida. Questo è il momento di Newton — l'universo che diventa un'equazione. Autorevole ma con un filo di meraviglia. Come uno storico che ancora si stupisce di ciò che Newton realizzò.",
     },
 }
 
@@ -357,6 +367,8 @@ MUSIC_SOURCES = {
   "1610-padua-the-star-messenger": {"pool_key": "soler-harpsichord"},
   # 1517 Wittenberg: Renaissance lute — capturing the moment before the split, the last gasp of synthesis
   "1517-wittenberg-hammer-falls": {"pool_key": "renaissance-lute-fantasia"},
+  # 1687 London: Bach cello suite — the peak of Baroque, mathematical precision meets emotional depth
+  "1687-london-gravity-of-reason": {"pool_key": "bach-cello-suite-1"},
 }
 
 
