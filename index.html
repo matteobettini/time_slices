@@ -115,6 +115,20 @@
     padding: 6px 0;
     z-index: 200;
     box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    /* Scroll indicator styling */
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) transparent;
+  }
+  .thread-selector-dropdown::-webkit-scrollbar {
+    width: 6px;
+  }
+  .thread-selector-dropdown::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .thread-selector-dropdown::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 3px;
+    opacity: 0.5;
   }
   .thread-selector.open .thread-selector-dropdown { display: block; }
   .thread-selector-item {
@@ -412,6 +426,10 @@
     position: relative;
     overflow: hidden;
     touch-action: none;
+    /* Larger touch target on mobile via padding */
+    padding: 8px 0;
+    margin: -8px 0;
+    background-clip: content-box;
   }
   .pp-progress-fill {
     height: 100%;
@@ -422,7 +440,7 @@
   }
   .pp-time {
     font-size: 0.7rem;
-    color: var(--text-muted);
+    color: var(--text-dim);
     margin-top: 4px;
     display: flex;
     gap: 2px;
@@ -2760,6 +2778,21 @@ function toggleThreadPlayAll() {
   
   if (!activeThread) return;
   
+  // If in map view, switch to timeline first (Play All needs timeline entries visible)
+  const isMapView = document.getElementById('mapView').classList.contains('active');
+  if (isMapView) {
+    showTimelineView();
+    // Wait for view transition then start playback
+    setTimeout(() => startThreadPlayAllInternal(), 300);
+    return;
+  }
+  
+  startThreadPlayAllInternal();
+}
+
+function startThreadPlayAllInternal() {
+  if (!activeThread) return;
+  
   // Build queue from SLICES data (works regardless of which view we're in)
   const threadSlices = SLICES
     .filter(s => (s.threads || []).includes(activeThread) && s.podcast && s.podcast.url)
@@ -4126,16 +4159,35 @@ document.querySelectorAll('[data-map="1"]').forEach(btn => {
   btn.addEventListener('click', () => {
     const lang = btn.dataset.lang;
     if (lang === currentLang) return;
+    // Capture state before switching (mirror timeline lang switcher logic)
+    const threadToRestore = mapActiveThread || activeThread;
+    const playingYear = activePodcastYear;
+    const playingTime = activePodcastAudio ? activePodcastAudio.currentTime : 0;
+    const wasPlaying = activePodcastAudio && !activePodcastAudio.paused;
+    const wasThreadPlayAll = threadPlayActive;
+    const threadPlayIdx = threadPlayIndex;
     currentLang = lang;
     // Update both header lang buttons
     document.querySelectorAll('.lang-btn').forEach(b => {
       b.classList.toggle('active', b.dataset.lang === currentLang);
     });
     stopAllPodcasts();
+    // Reset play all states (will restore after)
+    threadPlayActive = false;
+    threadPlayIndex = -1;
+    threadPlayQueue = [];
     updateUILabels();
-    loadSlices();
-    // Repopulate map after slices load
-    setTimeout(populateMap, 500);
+    loadSlices(null, threadToRestore, wasPlaying ? { year: playingYear, time: playingTime, wasThreadPlayAll, threadPlayIdx } : null);
+    // Repopulate map after slices load (with thread restored)
+    slicesReady.then(() => {
+      setTimeout(() => {
+        populateMap();
+        // Re-activate map thread if needed
+        if (threadToRestore) {
+          activateMapThread(threadToRestore);
+        }
+      }, 100);
+    });
   });
 });
 
