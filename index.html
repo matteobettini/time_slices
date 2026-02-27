@@ -1246,6 +1246,150 @@
     .map-marker-year { display: block; }
     .map-header .subtitle { display: none; }
   }
+
+  /* ═══ Time Disc Navigator ═══ */
+  .time-disc-container {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 90;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  .time-disc-container.hidden {
+    opacity: 0;
+    pointer-events: none !important;
+  }
+  
+  /* Mobile: right edge */
+  @media (max-width: 768px) {
+    .time-disc-container {
+      left: auto;
+      right: 0;
+    }
+    .time-disc-container .time-disc {
+      transform-origin: right center;
+    }
+    .time-disc-container .time-needle {
+      right: 60px;
+      left: auto;
+    }
+  }
+  
+  .time-disc {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-left: -240px; /* Only 60px visible */
+    transform-origin: center center;
+    transition: transform 0.15s ease-out;
+    pointer-events: auto;
+    cursor: grab;
+  }
+  .time-disc:active {
+    cursor: grabbing;
+  }
+  .time-disc.dragging {
+    transition: none;
+  }
+  
+  /* Mobile positioning */
+  @media (max-width: 768px) {
+    .time-disc {
+      margin-left: 0;
+      margin-right: -240px;
+    }
+  }
+  
+  .time-disc svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+  
+  /* Disc background */
+  .disc-bg {
+    fill: url(#discGradient);
+    stroke: var(--border);
+    stroke-width: 1;
+    transition: filter 0.2s ease;
+  }
+  .time-disc-container:hover .disc-bg,
+  .time-disc-container.active .disc-bg {
+    filter: drop-shadow(0 0 12px rgba(124, 111, 247, 0.3));
+  }
+  
+  /* Entry lines on disc */
+  .disc-entry-line {
+    stroke: var(--accent);
+    stroke-width: 2;
+    stroke-linecap: round;
+    opacity: 0.6;
+    filter: drop-shadow(0 0 2px rgba(124, 111, 247, 0.4));
+    transition: opacity 0.2s ease;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  .time-disc-container:hover .disc-entry-line,
+  .time-disc-container.active .disc-entry-line {
+    opacity: 0.9;
+  }
+  .disc-entry-line:hover {
+    opacity: 1;
+    stroke-width: 3;
+  }
+  
+  /* Year labels on disc */
+  .disc-entry-label {
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    fill: var(--text-dim);
+    opacity: 0.5;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+  .time-disc-container:hover .disc-entry-label,
+  .time-disc-container.active .disc-entry-label {
+    opacity: 0.9;
+  }
+  
+  /* Fixed needle indicator */
+  .time-needle {
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(124, 111, 247, 0.8), 0 0 16px rgba(124, 111, 247, 0.4);
+    pointer-events: none;
+    z-index: 10;
+  }
+  .time-needle::after {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 8px solid var(--accent);
+    filter: drop-shadow(0 0 4px rgba(124, 111, 247, 0.8));
+  }
+  
+  /* Scale up on interaction */
+  .time-disc-container:hover .time-disc,
+  .time-disc-container.active .time-disc {
+    transform: scale(1.05);
+  }
+  .time-disc-container.active .time-needle {
+    box-shadow: 0 0 12px rgba(124, 111, 247, 1), 0 0 24px rgba(124, 111, 247, 0.6);
+  }
 </style>
 </head>
 <body>
@@ -1281,6 +1425,23 @@
 <div class="quick-actions" id="quickActions">
   <button class="quick-btn" id="coffeeBtn">☕</button>
   <button class="quick-btn" id="diceBtn">🎲</button>
+</div>
+
+<!-- Time Disc Navigator -->
+<div class="time-disc-container" id="timeDiscContainer">
+  <div class="time-disc" id="timeDisc">
+    <svg id="timeDiscSvg" viewBox="0 0 300 300">
+      <defs>
+        <radialGradient id="discGradient" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" style="stop-color:#0a0a0f"/>
+          <stop offset="100%" style="stop-color:#14141f"/>
+        </radialGradient>
+      </defs>
+      <circle class="disc-bg" cx="150" cy="150" r="145"/>
+      <!-- Entry lines and labels will be added by JS -->
+    </svg>
+  </div>
+  <div class="time-needle"></div>
 </div>
 
 <div class="timeline-container">
@@ -2502,6 +2663,9 @@ function activateThread(threadId, anchorEntry) {
       highlightAndScroll(matchingEntries[0]);
     }, 300);
   }
+  
+  // Rebuild time disc for thread filter
+  if (typeof buildTimeDisc === 'function') buildTimeDisc();
 }
 
 function clearThread() {
@@ -2533,6 +2697,9 @@ function clearThread() {
   document.getElementById('quickActions').style.display = 'flex';
   // Sync thread selector dropdowns
   syncAllThreadSelectors();
+  
+  // Rebuild time disc for all entries
+  if (typeof buildTimeDisc === 'function') buildTimeDisc();
 }
 
 // SVG thread lines
@@ -2998,6 +3165,9 @@ function loadSlices(restoreId, restoreThread, restorePodcast) {
       
       // Initialize thread selector dropdowns
       syncAllThreadSelectors();
+      
+      // Rebuild time disc with new data
+      if (typeof buildTimeDisc === 'function') buildTimeDisc();
 
       // Restore expanded entries + their podcast player bars
       if (expandedYears.size > 0) {
@@ -4124,6 +4294,9 @@ function showMapView() {
 
   // Hide timeline's thread banner — header is z-100, above map z-50
   document.getElementById('threadBanner').classList.remove('visible');
+  
+  // Hide time disc in map view
+  if (typeof hideTimeDisc === 'function') hideTimeDisc();
 
   // Fix Leaflet rendering (needs invalidateSize after display:block)
   setTimeout(() => {
@@ -4148,6 +4321,9 @@ function showTimelineView() {
 
   // Hide map's thread banner
   document.getElementById('mapThreadBanner').classList.remove('visible');
+  
+  // Show time disc when returning to timeline
+  if (typeof showTimeDisc === 'function') showTimeDisc();
 
   // Sync thread state: apply whatever thread is active (or clear)
   if (activeThread) {
@@ -4243,6 +4419,292 @@ document.querySelectorAll('[data-map="1"]').forEach(btn => {
     });
   });
 });
+
+// ═══════════════════════════════════════════════════════════════════════════
+// Time Disc Navigator
+// ═══════════════════════════════════════════════════════════════════════════
+
+const timeDiscContainer = document.getElementById('timeDiscContainer');
+const timeDisc = document.getElementById('timeDisc');
+const timeDiscSvg = document.getElementById('timeDiscSvg');
+
+let discEntries = []; // { year, angle, slice, lineEl, labelEl }
+let discRotation = 0; // Current rotation in degrees
+let discIsDragging = false;
+let discDragStartAngle = 0;
+let discDragStartRotation = 0;
+let discLastNeedleEntry = null;
+let discScrollSyncEnabled = true;
+
+const DISC_CENTER = 150; // SVG center
+const DISC_RADIUS = 145;
+const DISC_LINE_INNER = 100; // Line start distance from center
+const DISC_LINE_OUTER = 140; // Line end distance from center
+const DISC_LABEL_RADIUS = 85; // Label distance from center
+
+function buildTimeDisc() {
+  if (!SLICES.length) return;
+  
+  // Get entries to show (filtered by thread if active)
+  const entriesToShow = activeThread
+    ? SLICES.filter(s => (s.threads || []).includes(activeThread))
+    : SLICES;
+  
+  if (!entriesToShow.length) {
+    discEntries = [];
+    return;
+  }
+  
+  // Sort by year
+  const sorted = [...entriesToShow].sort((a, b) => parseInt(a.year) - parseInt(b.year));
+  const minYear = parseInt(sorted[0].year);
+  const maxYear = parseInt(sorted[sorted.length - 1].year);
+  const yearSpan = maxYear - minYear || 1;
+  
+  // Clear existing entries (keep disc background)
+  timeDiscSvg.querySelectorAll('.disc-entry-line, .disc-entry-label').forEach(el => el.remove());
+  
+  // Build entries
+  discEntries = [];
+  sorted.forEach((slice, i) => {
+    const year = parseInt(slice.year);
+    // Map year to angle: 0° at top, 180° at bottom (for the semicircle)
+    // We use full 360° on the disc but only ~180° is visible
+    const t = (year - minYear) / yearSpan;
+    const angle = -90 + (t * 180); // -90° to 90° (right side of disc is visible)
+    
+    const angleRad = (angle * Math.PI) / 180;
+    
+    // Line coordinates
+    const x1 = DISC_CENTER + DISC_LINE_INNER * Math.cos(angleRad);
+    const y1 = DISC_CENTER + DISC_LINE_INNER * Math.sin(angleRad);
+    const x2 = DISC_CENTER + DISC_LINE_OUTER * Math.cos(angleRad);
+    const y2 = DISC_CENTER + DISC_LINE_OUTER * Math.sin(angleRad);
+    
+    // Create line
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('class', 'disc-entry-line');
+    line.setAttribute('x1', x1);
+    line.setAttribute('y1', y1);
+    line.setAttribute('x2', x2);
+    line.setAttribute('y2', y2);
+    line.dataset.year = year;
+    line.dataset.id = slice.id;
+    timeDiscSvg.appendChild(line);
+    
+    // Create label
+    const labelX = DISC_CENTER + DISC_LABEL_RADIUS * Math.cos(angleRad);
+    const labelY = DISC_CENTER + DISC_LABEL_RADIUS * Math.sin(angleRad);
+    
+    const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    label.setAttribute('class', 'disc-entry-label');
+    label.setAttribute('x', labelX);
+    label.setAttribute('y', labelY);
+    label.setAttribute('text-anchor', 'middle');
+    label.setAttribute('dominant-baseline', 'middle');
+    // Rotate label to be readable (perpendicular to radius)
+    label.setAttribute('transform', `rotate(${angle}, ${labelX}, ${labelY})`);
+    label.textContent = formatYear(year);
+    timeDiscSvg.appendChild(label);
+    
+    discEntries.push({
+      year,
+      angle, // Angle on the disc (before rotation)
+      slice,
+      lineEl: line,
+      labelEl: label
+    });
+    
+    // Click handler for line
+    line.addEventListener('click', (e) => {
+      e.stopPropagation();
+      selectDiscEntry(slice);
+    });
+  });
+  
+  // Set initial rotation based on current scroll position
+  updateDiscFromScroll();
+}
+
+function selectDiscEntry(slice) {
+  // Haptic feedback
+  if (navigator.vibrate) navigator.vibrate(10);
+  
+  // Scroll to entry
+  const entry = document.querySelector(`#entry-${slice.id}`);
+  if (entry) {
+    highlightAndScroll(entry);
+  }
+}
+
+function getEntryAtNeedle() {
+  // The needle is at the right edge (0° after rotation)
+  // Find which entry is closest to 0° in current rotated position
+  const needleAngle = 0; // Right side of disc
+  
+  let closest = null;
+  let closestDist = Infinity;
+  
+  discEntries.forEach(entry => {
+    // Entry's current visual angle = original angle + rotation
+    const visualAngle = entry.angle + discRotation;
+    // Normalize to -180 to 180
+    const normalized = ((visualAngle + 180) % 360) - 180;
+    const dist = Math.abs(normalized - needleAngle);
+    
+    if (dist < closestDist) {
+      closestDist = dist;
+      closest = entry;
+    }
+  });
+  
+  return closest;
+}
+
+function setDiscRotation(deg, animate = true) {
+  discRotation = deg;
+  timeDisc.style.transition = animate ? 'transform 0.15s ease-out' : 'none';
+  timeDisc.style.transform = `rotate(${deg}deg)`;
+  
+  // Check if a new entry passed the needle
+  const atNeedle = getEntryAtNeedle();
+  if (atNeedle && atNeedle !== discLastNeedleEntry) {
+    discLastNeedleEntry = atNeedle;
+    if (discIsDragging && navigator.vibrate) {
+      navigator.vibrate(10);
+    }
+  }
+}
+
+function rotateDiscToEntry(entry, animate = true) {
+  if (!entry) return;
+  // Rotate so entry.angle + rotation = 0 (at needle)
+  const targetRotation = -entry.angle;
+  setDiscRotation(targetRotation, animate);
+}
+
+function updateDiscFromScroll() {
+  if (!discScrollSyncEnabled || !discEntries.length) return;
+  
+  // Find which entry is currently in view
+  const viewportCenter = window.innerHeight / 2;
+  let closestEntry = null;
+  let closestDist = Infinity;
+  
+  discEntries.forEach(entry => {
+    const el = document.querySelector(`#entry-${entry.slice.id}`);
+    if (!el) return;
+    if (el.classList.contains('thread-hidden')) return;
+    
+    const rect = el.getBoundingClientRect();
+    if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+    
+    const dist = Math.abs(rect.top + rect.height / 2 - viewportCenter);
+    if (dist < closestDist) {
+      closestDist = dist;
+      closestEntry = entry;
+    }
+  });
+  
+  if (closestEntry) {
+    rotateDiscToEntry(closestEntry, true);
+  }
+}
+
+// Drag handling
+function initDiscDrag() {
+  function getAngleFromEvent(e) {
+    const rect = timeDisc.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+    return Math.atan2(clientY - centerY, clientX - centerX) * (180 / Math.PI);
+  }
+  
+  function onDragStart(e) {
+    discIsDragging = true;
+    discScrollSyncEnabled = false;
+    timeDiscContainer.classList.add('active');
+    timeDisc.classList.add('dragging');
+    discDragStartAngle = getAngleFromEvent(e);
+    discDragStartRotation = discRotation;
+  }
+  
+  function onDragMove(e) {
+    if (!discIsDragging) return;
+    e.preventDefault();
+    
+    const currentAngle = getAngleFromEvent(e);
+    const delta = currentAngle - discDragStartAngle;
+    setDiscRotation(discDragStartRotation + delta, false);
+  }
+  
+  function onDragEnd(e) {
+    if (!discIsDragging) return;
+    discIsDragging = false;
+    timeDiscContainer.classList.remove('active');
+    timeDisc.classList.remove('dragging');
+    
+    // Snap to nearest entry and scroll
+    const atNeedle = getEntryAtNeedle();
+    if (atNeedle) {
+      rotateDiscToEntry(atNeedle, true);
+      selectDiscEntry(atNeedle.slice);
+    }
+    
+    // Re-enable scroll sync after a delay
+    setTimeout(() => {
+      discScrollSyncEnabled = true;
+    }, 500);
+  }
+  
+  // Mouse events
+  timeDisc.addEventListener('mousedown', onDragStart);
+  document.addEventListener('mousemove', onDragMove);
+  document.addEventListener('mouseup', onDragEnd);
+  
+  // Touch events
+  timeDisc.addEventListener('touchstart', onDragStart, { passive: true });
+  document.addEventListener('touchmove', onDragMove, { passive: false });
+  document.addEventListener('touchend', onDragEnd);
+}
+
+// Scroll listener (throttled)
+let discScrollTimer = null;
+window.addEventListener('scroll', () => {
+  if (discScrollTimer) return;
+  discScrollTimer = setTimeout(() => {
+    discScrollTimer = null;
+    if (!timeDiscContainer.classList.contains('hidden')) {
+      updateDiscFromScroll();
+    }
+  }, 100);
+}, { passive: true });
+
+// Show/hide
+function showTimeDisc() {
+  timeDiscContainer.classList.remove('hidden');
+}
+
+function hideTimeDisc() {
+  timeDiscContainer.classList.add('hidden');
+}
+
+// Initialize after slices load
+slicesReady.then(() => {
+  buildTimeDisc();
+  initDiscDrag();
+});
+
+// Rebuild on resize (debounced)
+let discResizeTimer = null;
+window.addEventListener('resize', () => {
+  clearTimeout(discResizeTimer);
+  discResizeTimer = setTimeout(buildTimeDisc, 200);
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
 
 // ── Shared helper: make an entry visible, scroll to it, highlight it ──
 function highlightAndScroll(entry) {
