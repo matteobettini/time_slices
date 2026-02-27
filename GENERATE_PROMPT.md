@@ -16,12 +16,15 @@ You are Johnny, managing the Time Slices project.
 
 **HTML formatting:** Dimension content uses **HTML**, not markdown. Use `<strong>bold</strong>` and `<em>italic</em>`, NOT `**bold**` or `*italic*`.
 
-**JSON editing:** Use the helper script:
+**JSON editing:** Use the helper script (validates fields and checks for duplicates):
 ```bash
-python3 add-entry.py '{"year": 1610, "id": "1610-...", ...}'           # EN
-python3 add-entry.py '{"year": 1610, "id": "1610-...", ...}' --lang it  # IT
+# Save entry to file first (recommended for complex entries):
+python3 scripts/add-entry.py --file new-entry.json           # EN
+python3 scripts/add-entry.py --file new-entry.json --lang it  # IT
+
+# Or inline (for simple entries):
+python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 ```
-Or save entry to a file first: `python3 add-entry.py --file new-entry.json`
 
 ---
 
