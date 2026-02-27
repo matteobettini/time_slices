@@ -1246,114 +1246,6 @@
     .map-marker-year { display: block; }
     .map-header .subtitle { display: none; }
   }
-
-  /* ═══ Time Clock Navigator ═══ */
-  .time-clock {
-    position: fixed;
-    z-index: 90;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-  }
-  /* Desktop: left edge */
-  .time-clock {
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  /* Mobile: right edge */
-  @media (max-width: 768px) {
-    .time-clock {
-      left: auto;
-      right: 0;
-    }
-  }
-  /* Hide in map view */
-  .time-clock.hidden { opacity: 0; pointer-events: none !important; }
-
-  .time-clock svg {
-    display: block;
-    overflow: visible;
-  }
-
-  /* Clock arc outline */
-  .clock-arc {
-    fill: none;
-    stroke: var(--border);
-    stroke-width: 1;
-    opacity: 0.3;
-    transition: opacity 0.25s ease;
-  }
-  .time-clock:hover .clock-arc,
-  .time-clock.active .clock-arc {
-    opacity: 0.6;
-  }
-
-  /* Hour lines (entry markers) */
-  .clock-line {
-    stroke: var(--accent);
-    stroke-width: 2;
-    stroke-linecap: round;
-    opacity: 0.2;
-    transition: opacity 0.25s ease, stroke-width 0.2s ease;
-    pointer-events: auto;
-    cursor: pointer;
-    filter: drop-shadow(0 0 2px rgba(124, 111, 247, 0.3));
-  }
-  .time-clock:hover .clock-line,
-  .time-clock.active .clock-line {
-    opacity: 0.7;
-  }
-  .clock-line:hover {
-    opacity: 1 !important;
-    stroke-width: 3;
-    filter: drop-shadow(0 0 6px rgba(124, 111, 247, 0.6));
-  }
-  .clock-line.current {
-    opacity: 1;
-    stroke-width: 3;
-    filter: drop-shadow(0 0 8px rgba(124, 111, 247, 0.8));
-  }
-
-  /* Year labels */
-  .clock-label {
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    fill: var(--text-dim);
-    opacity: 0;
-    transition: opacity 0.25s ease;
-    pointer-events: none;
-    user-select: none;
-  }
-  .time-clock:hover .clock-label,
-  .time-clock.active .clock-label {
-    opacity: 0.8;
-  }
-  .clock-label.current {
-    opacity: 1;
-    fill: var(--accent);
-    font-weight: 600;
-  }
-
-  /* Dragging state */
-  .time-clock.dragging {
-    pointer-events: auto;
-  }
-  .time-clock.dragging .clock-line {
-    opacity: 0.5;
-  }
-  .time-clock.dragging .clock-line.current {
-    opacity: 1;
-  }
-
-  /* Pulse animation for tapped line */
-  @keyframes clockLinePulse {
-    0% { stroke-width: 3; filter: drop-shadow(0 0 8px rgba(124, 111, 247, 0.8)); }
-    50% { stroke-width: 5; filter: drop-shadow(0 0 16px rgba(124, 111, 247, 1)); }
-    100% { stroke-width: 3; filter: drop-shadow(0 0 8px rgba(124, 111, 247, 0.8)); }
-  }
-  .clock-line.pulse {
-    animation: clockLinePulse 0.3s ease;
-  }
 </style>
 </head>
 <body>
@@ -1389,11 +1281,6 @@
 <div class="quick-actions" id="quickActions">
   <button class="quick-btn" id="coffeeBtn">☕</button>
   <button class="quick-btn" id="diceBtn">🎲</button>
-</div>
-
-<!-- Time Clock Navigator -->
-<div class="time-clock" id="timeClock">
-  <svg id="timeClockSvg"></svg>
 </div>
 
 <div class="timeline-container">
@@ -2617,9 +2504,6 @@ function activateThread(threadId, anchorEntry) {
       highlightAndScroll(matchingEntries[0]);
     }, 300);
   }
-  
-  // Rebuild time clock for thread filter
-  if (typeof buildTimeClock === 'function') buildTimeClock();
 }
 
 function clearThread() {
@@ -2651,9 +2535,6 @@ function clearThread() {
   document.getElementById('quickActions').style.display = 'flex';
   // Sync thread selector dropdowns
   syncAllThreadSelectors();
-  
-  // Rebuild time clock for all entries
-  if (typeof buildTimeClock === 'function') buildTimeClock();
 }
 
 // SVG thread lines
@@ -3119,9 +3000,6 @@ function loadSlices(restoreId, restoreThread, restorePodcast) {
       
       // Initialize thread selector dropdowns
       syncAllThreadSelectors();
-      
-      // Rebuild time clock with new data
-      if (typeof buildTimeClock === 'function') buildTimeClock();
 
       // Restore expanded entries + their podcast player bars
       if (expandedYears.size > 0) {
@@ -4248,9 +4126,6 @@ function showMapView() {
 
   // Hide timeline's thread banner — header is z-100, above map z-50
   document.getElementById('threadBanner').classList.remove('visible');
-  
-  // Hide time clock in map view
-  if (typeof hideTimeClock === 'function') hideTimeClock();
 
   // Fix Leaflet rendering (needs invalidateSize after display:block)
   setTimeout(() => {
@@ -4275,9 +4150,6 @@ function showTimelineView() {
 
   // Hide map's thread banner
   document.getElementById('mapThreadBanner').classList.remove('visible');
-  
-  // Show time clock when returning to timeline
-  if (typeof showTimeClock === 'function') showTimeClock();
 
   // Sync thread state: apply whatever thread is active (or clear)
   if (activeThread) {
@@ -4373,327 +4245,6 @@ document.querySelectorAll('[data-map="1"]').forEach(btn => {
     });
   });
 });
-
-// ═══════════════════════════════════════════════════════════════════════════
-// Time Clock Navigator
-// ═══════════════════════════════════════════════════════════════════════════
-
-const timeClock = document.getElementById('timeClock');
-const timeClockSvg = document.getElementById('timeClockSvg');
-let clockEntries = []; // { year, angle, lineEl, labelEl, entryEl }
-let clockCurrentYear = null;
-let clockIsDragging = false;
-
-// Configuration
-const CLOCK_RADIUS = Math.min(window.innerHeight * 0.38, 300);
-const CLOCK_LINE_LENGTH = 22;
-const CLOCK_LINE_LENGTH_CURRENT = 32;
-const CLOCK_ARC_START = -Math.PI / 2; // top
-const CLOCK_ARC_END = Math.PI / 2;    // bottom
-
-function buildTimeClock() {
-  if (!SLICES.length) return;
-  
-  // Get entries to show (filtered by thread if active)
-  const entriesToShow = activeThread
-    ? SLICES.filter(s => (s.threads || []).includes(activeThread))
-    : SLICES;
-  
-  if (!entriesToShow.length) {
-    timeClockSvg.innerHTML = '';
-    clockEntries = [];
-    return;
-  }
-  
-  // Sort by year
-  const sorted = [...entriesToShow].sort((a, b) => parseInt(a.year) - parseInt(b.year));
-  const minYear = parseInt(sorted[0].year);
-  const maxYear = parseInt(sorted[sorted.length - 1].year);
-  const yearSpan = maxYear - minYear || 1;
-  
-  // Calculate SVG dimensions
-  // Desktop: semicircle on left (center off-screen to left)
-  // Mobile: semicircle on right (center off-screen to right)
-  const isMobile = window.innerWidth <= 768;
-  const svgWidth = CLOCK_RADIUS + 60; // room for labels
-  const svgHeight = CLOCK_RADIUS * 2 + 40;
-  
-  // Center of the clock (off-screen at edge)
-  const cx = isMobile ? svgWidth : 0;
-  const cy = svgHeight / 2;
-  
-  timeClockSvg.setAttribute('width', svgWidth);
-  timeClockSvg.setAttribute('height', svgHeight);
-  timeClockSvg.style.width = svgWidth + 'px';
-  timeClockSvg.style.height = svgHeight + 'px';
-  
-  // Build SVG content
-  let svgContent = '';
-  
-  // Arc outline
-  const arcStartX = cx + CLOCK_RADIUS * Math.cos(CLOCK_ARC_START);
-  const arcStartY = cy + CLOCK_RADIUS * Math.sin(CLOCK_ARC_START);
-  const arcEndX = cx + CLOCK_RADIUS * Math.cos(CLOCK_ARC_END);
-  const arcEndY = cy + CLOCK_RADIUS * Math.sin(CLOCK_ARC_END);
-  const arcPath = isMobile
-    ? `M ${arcStartX} ${arcStartY} A ${CLOCK_RADIUS} ${CLOCK_RADIUS} 0 0 0 ${arcEndX} ${arcEndY}`
-    : `M ${arcStartX} ${arcStartY} A ${CLOCK_RADIUS} ${CLOCK_RADIUS} 0 0 1 ${arcEndX} ${arcEndY}`;
-  svgContent += `<path class="clock-arc" d="${arcPath}" />`;
-  
-  // Create lines and labels for each entry
-  clockEntries = [];
-  sorted.forEach((slice, i) => {
-    const year = parseInt(slice.year);
-    // Map year to angle (top to bottom of semicircle)
-    const t = (year - minYear) / yearSpan;
-    const angle = isMobile
-      ? CLOCK_ARC_START + (1 - t) * (CLOCK_ARC_END - CLOCK_ARC_START) // reversed for right side
-      : CLOCK_ARC_START + t * (CLOCK_ARC_END - CLOCK_ARC_START);
-    
-    // Line from radius to radius + lineLength
-    const innerR = CLOCK_RADIUS - CLOCK_LINE_LENGTH / 2;
-    const outerR = CLOCK_RADIUS + CLOCK_LINE_LENGTH / 2;
-    const x1 = cx + innerR * Math.cos(angle);
-    const y1 = cy + innerR * Math.sin(angle);
-    const x2 = cx + outerR * Math.cos(angle);
-    const y2 = cy + outerR * Math.sin(angle);
-    
-    // Label position (just outside the line)
-    const labelR = CLOCK_RADIUS + CLOCK_LINE_LENGTH / 2 + 8;
-    const labelX = cx + labelR * Math.cos(angle);
-    const labelY = cy + labelR * Math.sin(angle);
-    const textAnchor = isMobile ? 'end' : 'start';
-    
-    svgContent += `<line class="clock-line" data-year="${year}" data-id="${slice.id}" 
-      x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" />`;
-    svgContent += `<text class="clock-label" data-year="${year}" 
-      x="${labelX}" y="${labelY}" text-anchor="${textAnchor}" dominant-baseline="middle">${formatYear(year)}</text>`;
-    
-    clockEntries.push({ year, angle, slice });
-  });
-  
-  timeClockSvg.innerHTML = svgContent;
-  
-  // Store references to elements
-  clockEntries.forEach(entry => {
-    entry.lineEl = timeClockSvg.querySelector(`.clock-line[data-year="${entry.year}"]`);
-    entry.labelEl = timeClockSvg.querySelector(`.clock-label[data-year="${entry.year}"]`);
-    entry.entryEl = document.querySelector(`#entry-${entry.slice.id}`);
-  });
-  
-  // Add click handlers to lines
-  timeClockSvg.querySelectorAll('.clock-line').forEach(line => {
-    line.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const id = line.dataset.id;
-      const entry = document.querySelector(`#entry-${id}`);
-      if (entry) {
-        // Pulse animation
-        line.classList.add('pulse');
-        setTimeout(() => line.classList.remove('pulse'), 300);
-        // Haptic feedback
-        if (navigator.vibrate) navigator.vibrate(10);
-        // Scroll to entry
-        highlightAndScroll(entry);
-      }
-    });
-  });
-  
-  // Update current position
-  updateClockPosition();
-}
-
-function updateClockPosition() {
-  if (!clockEntries.length) return;
-  
-  // Find which entry is currently in view
-  const viewportCenter = window.innerHeight / 2;
-  let closestEntry = null;
-  let closestDist = Infinity;
-  
-  clockEntries.forEach(entry => {
-    if (!entry.entryEl) return;
-    // Skip hidden entries (thread filter)
-    if (entry.entryEl.classList.contains('thread-hidden')) return;
-    
-    const rect = entry.entryEl.getBoundingClientRect();
-    // Check if entry is in viewport
-    if (rect.bottom < 0 || rect.top > window.innerHeight) return;
-    
-    const dist = Math.abs(rect.top + rect.height / 2 - viewportCenter);
-    if (dist < closestDist) {
-      closestDist = dist;
-      closestEntry = entry;
-    }
-  });
-  
-  // Update visual state
-  const newCurrentYear = closestEntry ? closestEntry.year : null;
-  if (newCurrentYear !== clockCurrentYear) {
-    clockCurrentYear = newCurrentYear;
-    
-    // Update line/label classes
-    clockEntries.forEach(entry => {
-      const isCurrent = entry.year === clockCurrentYear;
-      if (entry.lineEl) entry.lineEl.classList.toggle('current', isCurrent);
-      if (entry.labelEl) entry.labelEl.classList.toggle('current', isCurrent);
-      
-      // Update line length for current
-      if (entry.lineEl && isCurrent) {
-        const isMobile = window.innerWidth <= 768;
-        const cx = isMobile ? (CLOCK_RADIUS + 60) : 0;
-        const cy = (CLOCK_RADIUS * 2 + 40) / 2;
-        const innerR = CLOCK_RADIUS - CLOCK_LINE_LENGTH_CURRENT / 2;
-        const outerR = CLOCK_RADIUS + CLOCK_LINE_LENGTH_CURRENT / 2;
-        entry.lineEl.setAttribute('x1', cx + innerR * Math.cos(entry.angle));
-        entry.lineEl.setAttribute('y1', cy + innerR * Math.sin(entry.angle));
-        entry.lineEl.setAttribute('x2', cx + outerR * Math.cos(entry.angle));
-        entry.lineEl.setAttribute('y2', cy + outerR * Math.sin(entry.angle));
-      } else if (entry.lineEl) {
-        const isMobile = window.innerWidth <= 768;
-        const cx = isMobile ? (CLOCK_RADIUS + 60) : 0;
-        const cy = (CLOCK_RADIUS * 2 + 40) / 2;
-        const innerR = CLOCK_RADIUS - CLOCK_LINE_LENGTH / 2;
-        const outerR = CLOCK_RADIUS + CLOCK_LINE_LENGTH / 2;
-        entry.lineEl.setAttribute('x1', cx + innerR * Math.cos(entry.angle));
-        entry.lineEl.setAttribute('y1', cy + innerR * Math.sin(entry.angle));
-        entry.lineEl.setAttribute('x2', cx + outerR * Math.cos(entry.angle));
-        entry.lineEl.setAttribute('y2', cy + outerR * Math.sin(entry.angle));
-      }
-    });
-  }
-}
-
-// Drag interaction
-function initClockDrag() {
-  let lastHapticYear = null;
-  
-  function getAngleFromPoint(clientX, clientY) {
-    const rect = timeClockSvg.getBoundingClientRect();
-    const isMobile = window.innerWidth <= 768;
-    const cx = isMobile ? rect.right : rect.left;
-    const cy = rect.top + rect.height / 2;
-    return Math.atan2(clientY - cy, clientX - cx);
-  }
-  
-  function findClosestEntry(angle) {
-    let closest = null;
-    let closestDist = Infinity;
-    clockEntries.forEach(entry => {
-      const dist = Math.abs(angle - entry.angle);
-      if (dist < closestDist) {
-        closestDist = dist;
-        closest = entry;
-      }
-    });
-    return closest;
-  }
-  
-  function handleDragMove(clientX, clientY) {
-    const angle = getAngleFromPoint(clientX, clientY);
-    const closest = findClosestEntry(angle);
-    
-    if (closest && closest.year !== lastHapticYear) {
-      lastHapticYear = closest.year;
-      // Haptic feedback
-      if (navigator.vibrate) navigator.vibrate(10);
-      // Update visual
-      clockEntries.forEach(entry => {
-        if (entry.lineEl) entry.lineEl.classList.toggle('current', entry.year === closest.year);
-        if (entry.labelEl) entry.labelEl.classList.toggle('current', entry.year === closest.year);
-      });
-    }
-  }
-  
-  function handleDragEnd(clientX, clientY) {
-    clockIsDragging = false;
-    timeClock.classList.remove('dragging', 'active');
-    
-    const angle = getAngleFromPoint(clientX, clientY);
-    const closest = findClosestEntry(angle);
-    
-    if (closest && closest.entryEl) {
-      highlightAndScroll(closest.entryEl);
-    }
-    
-    lastHapticYear = null;
-  }
-  
-  // Mouse events
-  timeClock.addEventListener('mousedown', (e) => {
-    clockIsDragging = true;
-    timeClock.classList.add('dragging', 'active');
-    handleDragMove(e.clientX, e.clientY);
-  });
-  
-  document.addEventListener('mousemove', (e) => {
-    if (!clockIsDragging) return;
-    handleDragMove(e.clientX, e.clientY);
-  });
-  
-  document.addEventListener('mouseup', (e) => {
-    if (!clockIsDragging) return;
-    handleDragEnd(e.clientX, e.clientY);
-  });
-  
-  // Touch events
-  timeClock.addEventListener('touchstart', (e) => {
-    clockIsDragging = true;
-    timeClock.classList.add('dragging', 'active');
-    const touch = e.touches[0];
-    handleDragMove(touch.clientX, touch.clientY);
-  }, { passive: true });
-  
-  document.addEventListener('touchmove', (e) => {
-    if (!clockIsDragging) return;
-    const touch = e.touches[0];
-    handleDragMove(touch.clientX, touch.clientY);
-  }, { passive: true });
-  
-  document.addEventListener('touchend', (e) => {
-    if (!clockIsDragging) return;
-    const touch = e.changedTouches[0];
-    handleDragEnd(touch.clientX, touch.clientY);
-  });
-}
-
-// Show/hide clock based on view
-function showTimeClock() {
-  timeClock.classList.remove('hidden');
-}
-
-function hideTimeClock() {
-  timeClock.classList.add('hidden');
-}
-
-// Scroll listener for position updates (throttled)
-let clockScrollTimer = null;
-window.addEventListener('scroll', () => {
-  if (clockScrollTimer) return;
-  clockScrollTimer = setTimeout(() => {
-    clockScrollTimer = null;
-    if (!timeClock.classList.contains('hidden')) {
-      updateClockPosition();
-    }
-  }, 50);
-}, { passive: true });
-
-// Rebuild on resize (debounced)
-let clockResizeTimer = null;
-window.addEventListener('resize', () => {
-  clearTimeout(clockResizeTimer);
-  clockResizeTimer = setTimeout(() => {
-    buildTimeClock();
-  }, 200);
-});
-
-// Initialize after slices load
-slicesReady.then(() => {
-  buildTimeClock();
-  initClockDrag();
-});
-
-// ═══════════════════════════════════════════════════════════════════════════
 
 // ── Shared helper: make an entry visible, scroll to it, highlight it ──
 function highlightAndScroll(entry) {
