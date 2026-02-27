@@ -487,10 +487,30 @@ def generate_narration(entry_id, script_text, lang="en"):
             if i < len(paragraphs) - 1:
                 _time.sleep(1)  # small delay between API calls
 
-        # Concatenate parts with ffmpeg
+        # Concatenate parts with ffmpeg, adding small gaps and normalizing volume
         list_file = f"/tmp/{entry_id}-parts.txt"
+        
+        # First, normalize each part to the same loudness and add silence padding
+        normalized_paths = []
+        silence_gap = 0.4  # seconds of silence between paragraphs
+        
+        for i, p in enumerate(part_paths):
+            norm_path = f"/tmp/{entry_id}-part{i}-norm.mp3"
+            # Normalize to -16 LUFS (podcast standard) and add silence at end
+            result = subprocess.run(
+                ["ffmpeg", "-y", "-i", p,
+                 "-af", f"loudnorm=I=-16:TP=-1.5:LRA=11,apad=pad_dur={silence_gap}",
+                 "-c:a", "libmp3lame", "-b:a", "128k", norm_path],
+                capture_output=True, text=True,
+            )
+            if result.returncode == 0:
+                normalized_paths.append(norm_path)
+            else:
+                # Fallback to original if normalization fails
+                normalized_paths.append(p)
+        
         with open(list_file, "w") as f:
-            for p in part_paths:
+            for p in normalized_paths:
                 f.write(f"file '{p}'\n")
 
         result = subprocess.run(
@@ -503,7 +523,7 @@ def generate_narration(entry_id, script_text, lang="en"):
             return None, 0
 
         # Clean up temp parts
-        for p in part_paths:
+        for p in part_paths + normalized_paths:
             try:
                 os.remove(p)
             except OSError:
