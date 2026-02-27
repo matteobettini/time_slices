@@ -52,9 +52,8 @@
     const h = window.innerHeight;
     const centerY = h / 2;
     
-    // Circle radius: slightly larger than h/2 so arc extends beyond viewport
-    // This makes it taller while keeping same width
-    const radius = h * 0.55;
+    // Circle radius: smaller for subtle curve
+    const radius = h * 0.45;
     
     svg.setAttribute('width', VISIBLE_WIDTH);
     svg.setAttribute('height', h);
@@ -127,25 +126,18 @@
       
       if (elY < -50 || elY > h + 50) return;
       
-      // Calculate X on the circle at this Y
-      const dy = elY - cy;
-      const dx = Math.sqrt(Math.max(0, radius * radius - dy * dy));
-      
-      let arcX, x1, x2, labelX, anchor;
+      // Simple tick positioning - fixed X, follows Y of entry
+      let x1, x2, labelX, anchor;
       if (isMobile) {
-        // Arc bulges left, so arc edge is at VISIBLE_WIDTH - dx from right edge
-        arcX = VISIBLE_WIDTH - (radius - dx);
-        x1 = Math.max(0, arcX - TICK_LENGTH);
-        x2 = arcX;
-        labelX = x1 - 3;
-        anchor = 'end';
-      } else {
-        // Arc bulges right, so arc edge is at dx from left edge
-        arcX = radius - dx;
-        x1 = arcX;
-        x2 = Math.min(VISIBLE_WIDTH, arcX + TICK_LENGTH);
-        labelX = x2 + 3;
+        x1 = 2;
+        x2 = x1 + TICK_LENGTH;
+        labelX = x2 + 4;
         anchor = 'start';
+      } else {
+        x2 = VISIBLE_WIDTH - 2;
+        x1 = x2 - TICK_LENGTH;
+        labelX = x1 - 4;
+        anchor = 'end';
       }
       
       const isCurrent = e === currentEntry && currentDist < 150;
