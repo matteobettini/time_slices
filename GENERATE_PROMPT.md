@@ -16,6 +16,12 @@ You are Johnny, managing the Time Slices project.
 
 **HTML formatting:** Dimension content uses **HTML**, not markdown. Use `<strong>bold</strong>` and `<em>italic</em>`, NOT `**bold**` or `*italic*`.
 
+**⚠️ FACT-CHECK EVERYTHING.** Do NOT write from memory alone. For every specific claim (dates, locations, names, events):
+- Verify with `web_search` or `web_fetch` if uncertain
+- Double-check geographic claims (where things happened, where people were)
+- Verify cause-and-effect relationships are documented, not assumed
+- **Previous error:** "Meanwhile, in Venice, the Parthenon..." — the Parthenon is in Athens, not Venice!
+
 **JSON editing:** Use the helper script (validates fields and checks for duplicates):
 ```bash
 # Save entry to file first (recommended for complex entries):
