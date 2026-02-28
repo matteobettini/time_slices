@@ -98,6 +98,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     - Add entry to `VOICE_MAP_IT` dict with voice + Italian instructions  
     - Add entry to `MUSIC_SOURCES` dict (use pool_key or direct URL from Internet Archive)
     - Voices: alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse. ⚠️ Do NOT use `onyx` (buggy).
+    - ⚠️ **Music verification:** If you see `FAILED` or `silent/corrupt` during podcast generation, the music URL is broken — pick a different track from MUSIC_POOL.
 
 15. **Generate podcasts:**
     ```bash

@@ -371,6 +371,19 @@ def _resolve_music_source(src):
     return src
 
 
+def _verify_music_has_audio(filepath):
+    """Check that a music file actually contains audio (not silence). Returns True if OK."""
+    result = subprocess.run(
+        ["ffmpeg", "-i", filepath, "-t", "30", "-af", "volumedetect", "-f", "null", "-"],
+        capture_output=True, text=True
+    )
+    import re
+    match = re.search(r'mean_volume: ([-\d.]+) dB', result.stderr)
+    if match and float(match.group(1)) < -50:
+        return False  # Essentially silent
+    return True
+
+
 def download_music(entry_id=None):
     """Download background music from Internet Archive."""
     os.makedirs(MUSIC_DIR, exist_ok=True)
@@ -380,22 +393,28 @@ def download_music(entry_id=None):
         src = _resolve_music_source(src)
         outpath = os.path.join(MUSIC_DIR, src["filename"])
         if os.path.exists(outpath) and os.path.getsize(outpath) > 10000:
-            print(f"  ✓ {src['filename']} already exists")
-            continue
+            # Verify existing file has actual audio
+            if _verify_music_has_audio(outpath):
+                print(f"  ✓ {src['filename']} already exists")
+                continue
+            else:
+                print(f"  ⚠️  {src['filename']} exists but is silent, re-downloading...")
+                os.remove(outpath)
         print(f"  ↓ Downloading {src['description']}...")
         try:
             req = urllib.request.Request(src["url"], headers={"User-Agent": "Mozilla/5.0"})
             with urllib.request.urlopen(req, timeout=30) as resp:
                 with open(outpath, "wb") as f:
                     f.write(resp.read())
+            # Verify download has actual audio
+            if not _verify_music_has_audio(outpath):
+                os.remove(outpath)
+                raise ValueError("Downloaded file is silent/corrupt")
             print(f"  ✓ {src['filename']} ({os.path.getsize(outpath) // 1024}KB)")
         except Exception as e:
-            print(f"  ✗ Failed to download {src['filename']}: {e}")
-            subprocess.run([
-                "ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
-                "-t", "180", "-c:a", "libmp3lame", "-q:a", "9", outpath
-            ], capture_output=True)
-            print(f"  → Created silent placeholder")
+            print(f"  ✗ FAILED: {src['filename']}: {e}")
+            print(f"  🚨 Music download failed — pick a different track from MUSIC_POOL!")
+            # Don't create silent placeholder — let it fail loudly
 
 
 def _tts_chunk(text, voice, instructions, out_path, timeout=120, retries=2):
