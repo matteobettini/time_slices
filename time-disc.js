@@ -1,8 +1,9 @@
 /**
  * Time Disc Navigator
  * 
- * Fixed needle in center. Ticks move smoothly past it as you scroll.
- * Ticks spaced by year. Dragging maps year to entry.
+ * Fixed needle in center. Ticks move naturally like a wheel.
+ * No CSS transitions - genuine movement only.
+ * Bar and timeline stay in sync with non-linear mapping.
  */
 
 (function() {
@@ -81,10 +82,9 @@
     content += `<rect class="disc-glow" x="0" y="0" width="${BAR_WIDTH}" height="${h}" fill="url(#glowFade)" />`;
     content += `<rect class="disc-bg" x="0" y="0" width="${BAR_WIDTH + 20}" height="${h}" fill="url(#barFadeH)" />`;
 
-    // Ticks group - will be translated
-    content += `<g id="ticksGroup" style="transition: transform 0.15s ease-out;">`;
+    // Ticks group - no transition, direct transform
+    content += `<g id="ticksGroup">`;
     
-    // Draw ticks at their year-based positions (relative to track)
     entries.forEach(e => {
       const yearRatio = (e.year - minYear) / yearSpan;
       const tickY = yearRatio * trackHeight;
@@ -101,7 +101,7 @@
     
     content += `</g>`;
 
-    // Fixed needle at center - only right part (after year label)
+    // Fixed needle at center
     const needleStart = TICK_LENGTH + 35;
     content += `<line class="disc-needle" x1="${needleStart}" y1="${centerY}" x2="${BAR_WIDTH}" y2="${centerY}" />`;
 
@@ -109,20 +109,42 @@
     ticksGroup = svg.getElementById('ticksGroup');
   }
 
-  function findCurrentEntry() {
+  // Get interpolated position between entries based on viewport
+  function getCurrentPosition() {
     const centerY = window.innerHeight / 2;
-    let closest = null;
-    let closestDist = Infinity;
-    entries.forEach(e => {
-      if (!e.el) return;
+    
+    // Find the two entries we're between
+    let before = null;
+    let after = null;
+    
+    for (let i = 0; i < entries.length; i++) {
+      const e = entries[i];
+      if (!e.el) continue;
       const rect = e.el.getBoundingClientRect();
-      const dist = Math.abs(rect.top + rect.height / 2 - centerY);
-      if (dist < closestDist) {
-        closestDist = dist;
-        closest = e;
+      const elCenter = rect.top + rect.height / 2;
+      
+      if (elCenter <= centerY) {
+        before = { entry: e, y: elCenter };
       }
-    });
-    return closest;
+      if (elCenter > centerY && !after) {
+        after = { entry: e, y: elCenter };
+        break;
+      }
+    }
+    
+    // Edge cases
+    if (!before && after) return { year: after.entry.year, entry: after.entry };
+    if (before && !after) return { year: before.entry.year, entry: before.entry };
+    if (!before && !after) return entries.length ? { year: entries[0].year, entry: entries[0] } : null;
+    
+    // Interpolate between the two
+    const t = (centerY - before.y) / (after.y - before.y);
+    const year = before.entry.year + t * (after.entry.year - before.entry.year);
+    
+    // Find closest entry for highlighting
+    const closestEntry = t < 0.5 ? before.entry : after.entry;
+    
+    return { year, entry: closestEntry };
   }
 
   function updatePosition() {
@@ -135,30 +157,31 @@
     const yearSpan = maxYear - minYear || 1;
     const trackHeight = h * TRACK_SCALE;
 
-    const currentEntry = findCurrentEntry();
-    if (!currentEntry) return;
+    const pos = getCurrentPosition();
+    if (!pos) return;
 
-    const currentYearRatio = (currentEntry.year - minYear) / yearSpan;
+    const currentYearRatio = (pos.year - minYear) / yearSpan;
     const currentTickY = currentYearRatio * trackHeight;
     
-    // Translate group so current tick is at center
+    // Direct transform - no transition
     const translateY = centerY - currentTickY;
-    ticksGroup.style.transform = `translateY(${translateY}px)`;
+    ticksGroup.setAttribute('transform', `translate(0, ${translateY})`);
 
     // Update current styling
     const ticks = ticksGroup.querySelectorAll('.disc-tick');
     const labels = ticksGroup.querySelectorAll('.disc-label');
     
     ticks.forEach((tick, i) => {
-      tick.classList.toggle('current', entries[i] === currentEntry);
+      tick.classList.toggle('current', entries[i] === pos.entry);
     });
     labels.forEach((label, i) => {
-      label.classList.toggle('current', entries[i] === currentEntry);
+      label.classList.toggle('current', entries[i] === pos.entry);
     });
 
     // Update year display
     if (yearDisplay) {
-      yearDisplay.textContent = typeof window.formatYear === 'function' ? window.formatYear(currentEntry.year) : currentEntry.year;
+      const displayYear = Math.round(pos.year);
+      yearDisplay.textContent = typeof window.formatYear === 'function' ? window.formatYear(displayYear) : displayYear;
     }
   }
 
@@ -169,8 +192,6 @@
       isDragging = true;
       container.classList.add('active');
       lastClientY = e.touches ? e.touches[0].clientY : e.clientY;
-      // Disable transition during drag for immediate response
-      if (ticksGroup) ticksGroup.style.transition = 'none';
       e.preventDefault();
     }
 
@@ -186,11 +207,11 @@
       const trackHeight = h * TRACK_SCALE;
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
       
+      // Scale factor: bar movement to page scroll
       const scaleFactor = maxScroll / trackHeight;
       const scrollDelta = deltaY * scaleFactor;
       
       window.scrollBy({ top: scrollDelta, behavior: 'auto' });
-      updatePosition();
     }
 
     function onEnd() {
@@ -198,13 +219,10 @@
       isDragging = false;
       container.classList.remove('active');
       
-      // Re-enable transition
-      if (ticksGroup) ticksGroup.style.transition = 'transform 0.15s ease-out';
-      
       // Snap to closest entry
-      const current = findCurrentEntry();
-      if (current && current.el) {
-        const rect = current.el.getBoundingClientRect();
+      const pos = getCurrentPosition();
+      if (pos && pos.entry && pos.entry.el) {
+        const rect = pos.entry.el.getBoundingClientRect();
         const centerY = window.innerHeight / 2;
         const scrollDelta = rect.top + rect.height / 2 - centerY;
         window.scrollBy({ top: scrollDelta, behavior: 'smooth' });
