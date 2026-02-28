@@ -1,8 +1,8 @@
 /**
  * Time Disc Navigator
  * 
- * A semicircle that touches top and bottom of viewport.
- * Only a thin arc visible at the screen edge.
+ * A simple bar with ticks spaced by time distance.
+ * Drag to scroll through entries.
  */
 
 (function() {
@@ -20,7 +20,7 @@
   let dragStartY = 0;
   let dragStartScroll = 0;
 
-  const VISIBLE_WIDTH = 28;
+  const BAR_WIDTH = 24;
   const TICK_LENGTH = 10;
 
   function build() {
@@ -52,62 +52,21 @@
     const h = window.innerHeight;
     const centerY = h / 2;
     
-    // Radius that gives a nice visible arc
-    const radius = h * 1.2;
-    
-    svg.setAttribute('width', VISIBLE_WIDTH);
+    svg.setAttribute('width', BAR_WIDTH);
     svg.setAttribute('height', h);
-    svg.setAttribute('viewBox', `0 0 ${VISIBLE_WIDTH} ${h}`);
+    svg.setAttribute('viewBox', `0 0 ${BAR_WIDTH} ${h}`);
 
     let content = '';
 
-    // Circle center X position (off-screen)
-    // Shift a bit more off-screen to reduce visible arc width
-    const cx = isMobile ? radius + 20 : -radius + VISIBLE_WIDTH - 20;
-    const cy = centerY;
+    // Simple bar background
+    content += `<rect class="disc-bg" x="0" y="0" width="${BAR_WIDTH}" height="${h}" rx="4" />`;
 
-    // Calculate where the circle intersects top and bottom of viewport
-    const topY = 0;
-    const bottomY = h;
-    
-    // At y=0 and y=h, calculate x position on circle
-    // x = cx + sqrt(r² - (y-cy)²) for right side
-    // x = cx - sqrt(r² - (y-cy)²) for left side
-    const dyTop = topY - cy;
-    const dyBottom = bottomY - cy;
-    const dxTop = Math.sqrt(Math.max(0, radius * radius - dyTop * dyTop));
-    const dxBottom = Math.sqrt(Math.max(0, radius * radius - dyBottom * dyBottom));
-    
-    if (isMobile) {
-      // Right edge - we see left side of circle
-      const topX = cx - dxTop;
-      const bottomX = cx - dxBottom;
-      const midX = cx - radius; // Leftmost point at center
-      
-      content += `<path class="disc-bg" d="
-        M ${VISIBLE_WIDTH} ${topY}
-        L ${topX} ${topY}
-        Q ${midX} ${cy} ${bottomX} ${bottomY}
-        L ${VISIBLE_WIDTH} ${bottomY}
-        Z
-      " />`;
-    } else {
-      // Left edge - we see right side of circle
-      const topX = cx + dxTop;
-      const bottomX = cx + dxBottom;
-      const midX = cx + radius; // Rightmost point at center
-      
-      content += `<path class="disc-bg" d="
-        M 0 ${topY}
-        L ${topX} ${topY}
-        Q ${midX} ${cy} ${bottomX} ${bottomY}
-        L 0 ${bottomY}
-        Z
-      " />`;
-    }
-    }
+    // Find min/max years for proportional spacing
+    const minYear = entries.length > 0 ? entries[0].year : 0;
+    const maxYear = entries.length > 0 ? entries[entries.length - 1].year : 1;
+    const yearSpan = maxYear - minYear || 1;
 
-    // Find current entry
+    // Find current entry (closest to center)
     let currentEntry = null;
     let currentDist = Infinity;
     entries.forEach(e => {
@@ -120,16 +79,17 @@
       }
     });
 
-    // Draw ticks along the arc
+    // Draw ticks - Y position proportional to year (compressed to fit better)
+    const padding = 60;
+    const usableHeight = h - padding * 2;
+    
     entries.forEach(e => {
       if (!e.el) return;
       
-      const rect = e.el.getBoundingClientRect();
-      const elY = rect.top + rect.height / 2;
+      // Calculate Y based on year proportion (not DOM position)
+      const yearT = (e.year - minYear) / yearSpan;
+      const tickY = padding + yearT * usableHeight;
       
-      if (elY < -50 || elY > h + 50) return;
-      
-      // Simple tick positioning - fixed X, follows Y of entry
       let x1, x2, labelX, anchor;
       if (isMobile) {
         x1 = 2;
@@ -137,25 +97,25 @@
         labelX = x2 + 4;
         anchor = 'start';
       } else {
-        x2 = VISIBLE_WIDTH - 2;
+        x2 = BAR_WIDTH - 2;
         x1 = x2 - TICK_LENGTH;
         labelX = x1 - 4;
         anchor = 'end';
       }
       
-      const isCurrent = e === currentEntry && currentDist < 150;
+      const isCurrent = e === currentEntry;
       const tickClass = isCurrent ? 'disc-tick current' : 'disc-tick';
 
-      content += `<line class="${tickClass}" data-id="${e.slice.id}" data-year="${e.year}" x1="${x1}" y1="${elY}" x2="${x2}" y2="${elY}" />`;
+      content += `<line class="${tickClass}" data-id="${e.slice.id}" data-year="${e.year}" x1="${x1}" y1="${tickY}" x2="${x2}" y2="${tickY}" />`;
 
       // Year label  
       const yearText = typeof window.formatYear === 'function' ? window.formatYear(e.year) : e.year;
       const labelClass = isCurrent ? 'disc-label current' : 'disc-label';
-      content += `<text class="${labelClass}" x="${labelX}" y="${elY + 3}" text-anchor="${anchor}">${yearText}</text>`;
+      content += `<text class="${labelClass}" x="${labelX}" y="${tickY + 3}" text-anchor="${anchor}">${yearText}</text>`;
     });
 
-    // Needle at center (full width of visible area)
-    content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${VISIBLE_WIDTH}" y2="${centerY}" />`;
+    // Needle at center
+    content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${BAR_WIDTH}" y2="${centerY}" />`;
 
     // Update year display
     if (currentEntry && yearDisplay) {
@@ -180,7 +140,8 @@
       e.preventDefault();
       const clientY = e.touches ? e.touches[0].clientY : e.clientY;
       const deltaY = dragStartY - clientY;
-      window.scrollTo({ top: dragStartScroll + deltaY * 3, behavior: 'auto' });
+      // Higher multiplier for faster scrolling
+      window.scrollTo({ top: dragStartScroll + deltaY * 5, behavior: 'auto' });
       render();
     }
 
@@ -215,7 +176,6 @@
         
         window.scrollBy({ top: scrollDelta, behavior: 'smooth' });
         
-        // Haptic feedback
         if (navigator.vibrate) navigator.vibrate(10);
       }
     }

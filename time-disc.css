@@ -7,7 +7,7 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: 28px;
+  width: 24px;
   z-index: 90;
   pointer-events: none;
   opacity: 0.3;
@@ -17,7 +17,7 @@
 .time-disc-container:hover,
 .time-disc-container.active {
   opacity: 1;
-  filter: drop-shadow(0 0 12px rgba(124, 111, 247, 0.4));
+  filter: drop-shadow(0 0 8px rgba(124, 111, 247, 0.4));
 }
 
 .time-disc-container.hidden {
@@ -48,10 +48,9 @@
 
 .time-disc svg {
   display: block;
-  overflow: visible;
 }
 
-/* Curved background */
+/* Bar background */
 .disc-bg {
   fill: var(--surface2);
   stroke: var(--accent);
@@ -75,12 +74,11 @@
 .time-disc-container:hover .disc-tick,
 .time-disc-container.active .disc-tick {
   opacity: 1;
-  stroke-width: 3;
 }
 
 .disc-tick.current {
   stroke: #fff;
-  stroke-width: 4;
+  stroke-width: 3;
   opacity: 1;
   filter: drop-shadow(0 0 4px var(--accent));
 }
