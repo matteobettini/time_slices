@@ -159,7 +159,7 @@
   top: 50%;
   left: 100%;
   transform: translateY(-50%);
-  margin-left: 6px;
+  margin-left: -10px;
   margin-top: -1px;
   pointer-events: none;
   z-index: 10;
@@ -167,7 +167,7 @@
   transition: opacity 0.2s ease;
 }
 
-.time-disc-container:hover .time-disc-indicator,
+/* Only show on active (not hover) */
 .time-disc-container.active .time-disc-indicator {
   opacity: 1;
 }
