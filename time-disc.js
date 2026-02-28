@@ -1,6 +1,6 @@
 /**
  * Time Disc Navigator
- * 
+ *
  * Fixed needle in center. Ticks move naturally like a wheel.
  * No CSS transitions - genuine movement only.
  * Bar and timeline stay in sync with non-linear mapping.
@@ -38,7 +38,7 @@
     }
 
     const sorted = [...slices].sort((a, b) => parseInt(a.year) - parseInt(b.year));
-    
+
     entries = sorted.map((slice, index) => ({
       year: parseInt(slice.year),
       slice,
@@ -53,7 +53,7 @@
   function buildSVG() {
     const h = window.innerHeight;
     const centerY = h / 2;
-    
+
     svg.setAttribute('width', BAR_WIDTH);
     svg.setAttribute('height', h);
     svg.setAttribute('viewBox', `0 0 ${BAR_WIDTH} ${h}`);
@@ -98,19 +98,21 @@
 
     // Ticks group - no transition, direct transform
     content += `<g id="ticksGroup">`;
-    
+
     // Background ticks: 100 years (small), 500 years (medium with label), 1000 years (big with label)
-    // Extend range by 500 years on each side
-    const roundedMin = Math.floor((minYear - 500) / 100) * 100;
-    const roundedMax = Math.ceil((maxYear + 500) / 100) * 100;
-    
+    // Range is entry dates ±500 years, rounded inward to 100
+    const extendedMin = minYear - 500;
+    const extendedMax = maxYear + 500;
+    const roundedMin = Math.ceil(extendedMin / 100) * 100;
+    const roundedMax = Math.floor(extendedMax / 100) * 100;
+
     for (let year = roundedMin; year <= roundedMax; year += 100) {
       const yearRatio = (year - minYear) / yearSpan;
       const tickY = yearRatio * trackHeight;
-      
+
       const is1k = year % 1000 === 0;
       const is500 = year % 500 === 0;
-      
+
       let tickLen, tickClass;
       if (is1k) {
         tickLen = TICK_LENGTH;
@@ -122,9 +124,9 @@
         tickLen = TICK_LENGTH * 0.5;
         tickClass = 'disc-bg-tick minor';
       }
-      
+
       content += `<line class="${tickClass}" x1="0" y1="${tickY}" x2="${tickLen}" y2="${tickY}" />`;
-      
+
       // Labels for 500 and 1000 year ticks (and year 0)
       if (is1k || is500 || year === 0) {
         const labelX = (TICK_LENGTH + TICK_LENGTH + 35) / 2;
@@ -133,12 +135,12 @@
         content += `<text class="${labelClass}" x="${labelX}" y="${tickY}" text-anchor="middle" dy="0.35em">${bgLabelText}</text>`;
       }
     }
-    
+
     // Entry ticks (on top of background ticks)
     entries.forEach(e => {
       const yearRatio = (e.year - minYear) / yearSpan;
       const tickY = yearRatio * trackHeight;
-      
+
       const x1 = 0;
       const x2 = TICK_LENGTH;
       const labelX = (x2 + TICK_LENGTH + 35) / 2; // Center between tick end and needle start
@@ -148,7 +150,7 @@
       const yearText = typeof window.formatYear === 'function' ? window.formatYear(e.year) : e.year;
       content += `<text class="disc-label" x="${labelX}" y="${tickY}" text-anchor="middle" dy="0.35em">${yearText}</text>`;
     });
-    
+
     content += `</g>`;
 
     // Fixed needle at center - clipped to bar width
@@ -164,17 +166,17 @@
   // Get interpolated position between entries based on viewport
   function getCurrentPosition() {
     const centerY = window.innerHeight / 2;
-    
+
     // Find the two entries we're between
     let before = null;
     let after = null;
-    
+
     for (let i = 0; i < entries.length; i++) {
       const e = entries[i];
       if (!e.el) continue;
       const rect = e.el.getBoundingClientRect();
       const elCenter = rect.top + rect.height / 2;
-      
+
       if (elCenter <= centerY) {
         before = { entry: e, y: elCenter };
       }
@@ -183,19 +185,19 @@
         break;
       }
     }
-    
+
     // Edge cases
     if (!before && after) return { year: after.entry.year, entry: after.entry };
     if (before && !after) return { year: before.entry.year, entry: before.entry };
     if (!before && !after) return entries.length ? { year: entries[0].year, entry: entries[0] } : null;
-    
+
     // Interpolate between the two
     const t = (centerY - before.y) / (after.y - before.y);
     const year = before.entry.year + t * (after.entry.year - before.entry.year);
-    
+
     // Find closest entry for highlighting
     const closestEntry = t < 0.5 ? before.entry : after.entry;
-    
+
     return { year, entry: closestEntry };
   }
 
@@ -222,7 +224,7 @@
 
     const currentYearRatio = (pos.year - minYear) / yearSpan;
     const currentTickY = currentYearRatio * trackHeight;
-    
+
     // Direct transform - no transition
     const translateY = centerY - currentTickY;
     ticksGroup.setAttribute('transform', `translate(0, ${translateY})`);
@@ -230,7 +232,7 @@
     // Update current styling
     const ticks = ticksGroup.querySelectorAll('.disc-tick');
     const labels = ticksGroup.querySelectorAll('.disc-label');
-    
+
     ticks.forEach((tick, i) => {
       tick.classList.toggle('current', entries[i] === pos.entry);
     });
@@ -247,7 +249,7 @@
 
   function initDrag() {
     let lastClientY = 0;
-    
+
     function onStart(e) {
       isDragging = true;
       container.classList.add('active');
@@ -258,19 +260,19 @@
     function onMove(e) {
       if (!isDragging) return;
       e.preventDefault();
-      
+
       const clientY = e.touches ? e.touches[0].clientY : e.clientY;
       const deltaY = lastClientY - clientY;
       lastClientY = clientY;
-      
+
       const h = window.innerHeight;
       const trackHeight = h * TRACK_SCALE;
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-      
+
       // Scale factor: bar movement to page scroll
       const scaleFactor = maxScroll / trackHeight;
       const scrollDelta = deltaY * scaleFactor;
-      
+
       window.scrollBy({ top: scrollDelta, behavior: 'auto' });
     }
 
@@ -278,7 +280,7 @@
       if (!isDragging) return;
       isDragging = false;
       container.classList.remove('active');
-      
+
       // Snap to closest entry
       const pos = getCurrentPosition();
       if (pos && pos.entry && pos.entry.el) {
