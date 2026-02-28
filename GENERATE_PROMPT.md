@@ -93,14 +93,28 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     - EN script (~350-400 words, storytelling style) → `audio/scripts/{id}.txt`
     - IT script (culturally adapted, not literal) → `audio/scripts/it/{id}.txt`
 
-14. **Add config to `audio/generate-podcast.py`:**
+14. **Find background music using `find-music.py`:**
+    ```bash
+    cd /home/cloud-user/.openclaw/workspace/time-slices
+    # Search by era + mood (required for each new entry — don't reuse existing tracks!)
+    python3 scripts/find-music.py --era medieval --mood sacred
+    python3 scripts/find-music.py --era baroque --instrument harpsichord
+    python3 scripts/find-music.py --region middle-east --mood contemplative
+    python3 scripts/find-music.py --query "debussy piano"
+    ```
+    Options: `--era` (ancient/medieval/renaissance/baroque/classical/romantic/early-modern/modern), 
+    `--region` (europe/italy/france/germany/spain/england/middle-east/byzantine/india/china/japan),
+    `--mood` (contemplative/dramatic/melancholic/triumphant/sacred/courtly/pastoral/dark),
+    `--instrument` (piano/organ/harpsichord/lute/guitar/strings/orchestra/choir/oud)
+    
+    Copy the output config block into `MUSIC_SOURCES` in `audio/generate-podcast.py`.
+
+15. **Add voice config to `audio/generate-podcast.py`:**
     - Add entry to `VOICE_MAP_EN` dict with voice + style instructions
     - Add entry to `VOICE_MAP_IT` dict with voice + Italian instructions  
-    - Add entry to `MUSIC_SOURCES` dict (use pool_key or direct URL from Internet Archive)
     - Voices: alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse. ⚠️ Do NOT use `onyx` (buggy).
-    - ⚠️ **Music verification:** If you see `FAILED` or `silent/corrupt` during podcast generation, the music URL is broken — pick a different track from MUSIC_POOL.
 
-15. **Generate podcasts:**
+16. **Generate podcasts:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     python3 audio/generate-podcast.py {id} --lang en
@@ -111,15 +125,15 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     ```bash
     ls -la audio/{id}.mp3 audio/it/{id}.mp3
     ```
-    Both files must exist and be >100KB. If not, debug and retry.
+    Both files must exist and be >100KB. If generation fails with `FAILED` or `silent/corrupt`, run `find-music.py` again with different terms.
 
 ---
 
-## PHASE 3: Publish (Steps 16-17) — MANDATORY
+## PHASE 3: Publish (Steps 17-18) — MANDATORY
 
 ⚠️ **DO NOT SKIP THIS PHASE. The entry is NOT LIVE until pushed.**
 
-16. **Commit and push:**
+17. **Commit and push:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     git add -A
@@ -129,7 +143,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     
     **VERIFY PUSH SUCCEEDED.** Look for `main -> main` in output. If you see `rejected` or `error`, fix it.
 
-17. **Final reply** (ONLY after steps 15-16 verified):
+18. **Final reply** (ONLY after steps 16-17 verified):
     - Year, title, teaser, one highlight connection (3-5 sentences)
     - Direct link: `https://matteobettini.github.io/time_slices/#ID`
     - No backticks around the URL — it must be clickable
