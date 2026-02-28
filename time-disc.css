@@ -7,7 +7,7 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: 24px;
+  width: 28px;
   z-index: 90;
   pointer-events: none;
   opacity: 0.3;
@@ -22,13 +22,6 @@
 
 .time-disc-container.hidden {
   display: none;
-}
-
-@media (max-width: 768px) {
-  .time-disc-container {
-    left: auto;
-    right: 0;
-  }
 }
 
 .time-disc {
@@ -86,7 +79,7 @@
 /* Year labels */
 .disc-label {
   font-family: var(--mono);
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   fill: var(--text-dim);
   opacity: 0;
   pointer-events: none;
@@ -100,6 +93,7 @@
 .disc-label.current {
   fill: #fff;
   font-weight: 700;
+  font-size: 0.7rem;
   opacity: 1 !important;
 }
 
@@ -139,13 +133,4 @@
   border-radius: 4px;
   white-space: nowrap;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-@media (max-width: 768px) {
-  .time-disc-indicator {
-    left: auto;
-    right: 100%;
-    margin-left: 0;
-    margin-right: 6px;
-  }
 }

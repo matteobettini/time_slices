@@ -20,8 +20,8 @@
   let dragStartY = 0;
   let dragStartScroll = 0;
 
-  const BAR_WIDTH = 24;
-  const TICK_LENGTH = 10;
+  const BAR_WIDTH = 28;
+  const TICK_LENGTH = 12;
 
   function build() {
     if (!window.SLICES || !window.SLICES.length) return;
@@ -100,18 +100,12 @@
       // Skip if off screen
       if (tickY < -20 || tickY > h + 20) return;
       
+      // Always on left side, labels on right
       let x1, x2, labelX, anchor;
-      if (isMobile) {
-        x1 = 2;
-        x2 = x1 + TICK_LENGTH;
-        labelX = x2 + 4;
-        anchor = 'start';
-      } else {
-        x2 = BAR_WIDTH - 2;
-        x1 = x2 - TICK_LENGTH;
-        labelX = x1 - 4;
-        anchor = 'end';
-      }
+      x2 = BAR_WIDTH - 2;
+      x1 = x2 - TICK_LENGTH;
+      labelX = x2 + 6;
+      anchor = 'start';
       
       const isCurrent = e === currentEntry;
       const tickClass = isCurrent ? 'disc-tick current' : 'disc-tick';
