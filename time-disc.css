@@ -105,13 +105,18 @@
   filter: drop-shadow(0 0 6px var(--accent));
 }
 
-/* Background ticks (every 500/1000 years) */
+/* Background ticks (every 100/500/1000 years) */
 .disc-bg-tick {
   stroke: #444;
   stroke-linecap: round;
 }
 
 .disc-bg-tick.minor {
+  stroke-width: 1;
+  opacity: 0.25;
+}
+
+.disc-bg-tick.medium {
   stroke-width: 1.5;
   opacity: 0.4;
 }
@@ -121,16 +126,16 @@
   opacity: 0.6;
 }
 
-/* Background tick labels */
+/* Background tick labels (500/1000 years) */
 .disc-bg-label {
   font-family: var(--mono);
   fill: #555;
   pointer-events: none;
 }
 
-.disc-bg-label.minor {
-  font-size: 0.6rem;
-  opacity: 0.5;
+.disc-bg-label.medium {
+  font-size: 0.5rem;
+  opacity: 0.6;
 }
 
 .disc-bg-label.major {
