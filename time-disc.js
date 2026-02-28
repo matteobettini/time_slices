@@ -1,8 +1,8 @@
 /**
  * Time Disc Navigator
  * 
- * A simple bar with ticks spaced by time distance.
- * Drag to scroll through entries.
+ * Simple bar with ticks that follow actual DOM positions.
+ * Drag to scroll, snaps to entries.
  */
 
 (function() {
@@ -48,7 +48,6 @@
   }
 
   function render() {
-    const isMobile = window.innerWidth <= 768;
     const h = window.innerHeight;
     const centerY = h / 2;
     
@@ -58,54 +57,40 @@
 
     let content = '';
 
-    // Simple bar background
+    // Bar background
     content += `<rect class="disc-bg" x="0" y="0" width="${BAR_WIDTH}" height="${h}" rx="4" />`;
 
-    // Find min/max years for proportional spacing
-    const minYear = entries.length > 0 ? entries[0].year : 0;
-    const maxYear = entries.length > 0 ? entries[entries.length - 1].year : 1;
-    const yearSpan = maxYear - minYear || 1;
-
-    // Calculate current scroll position as a percentage
-    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollT = maxScroll > 0 ? window.scrollY / maxScroll : 0;
-
-    // Ticks are positioned by year, but the whole "track" scrolls
-    // The track is longer than the viewport - we show a window into it
-    const trackHeight = h * 0.6; // Compressed track (60% of viewport)
-    const padding = 30;
-    
-    // Offset based on scroll - ticks move up as we scroll down
-    const trackOffset = (h - trackHeight) / 2 - scrollT * (trackHeight - padding * 2);
-
-    // Find current entry - the one whose tick is closest to the needle (center)
+    // Find current entry - the one closest to viewport center
     let currentEntry = null;
     let currentDist = Infinity;
     
     entries.forEach(e => {
-      const yearT = (e.year - minYear) / yearSpan;
-      const tickY = trackOffset + padding + yearT * (trackHeight - padding * 2);
-      const dist = Math.abs(tickY - centerY);
+      if (!e.el) return;
+      const rect = e.el.getBoundingClientRect();
+      const elCenter = rect.top + rect.height / 2;
+      const dist = Math.abs(elCenter - centerY);
       if (dist < currentDist) {
         currentDist = dist;
         currentEntry = e;
       }
     });
-    
+
+    // Draw ticks - positioned based on actual entry DOM position
     entries.forEach(e => {
-      // Calculate Y based on year proportion
-      const yearT = (e.year - minYear) / yearSpan;
-      const tickY = trackOffset + padding + yearT * (trackHeight - padding * 2);
+      if (!e.el) return;
       
-      // Skip if off screen
-      if (tickY < -20 || tickY > h + 20) return;
+      const rect = e.el.getBoundingClientRect();
+      const elCenter = rect.top + rect.height / 2;
       
-      // Always on left side, labels on right
-      let x1, x2, labelX, anchor;
-      x2 = BAR_WIDTH - 2;
-      x1 = x2 - TICK_LENGTH;
-      labelX = x2 + 6;
-      anchor = 'start';
+      // Skip if way off screen
+      if (elCenter < -100 || elCenter > h + 100) return;
+      
+      // Tick Y = entry's position on screen
+      const tickY = elCenter;
+      
+      const x2 = BAR_WIDTH - 2;
+      const x1 = x2 - TICK_LENGTH;
+      const labelX = x2 + 6;
       
       const isCurrent = e === currentEntry;
       const tickClass = isCurrent ? 'disc-tick current' : 'disc-tick';
@@ -115,18 +100,45 @@
       // Year label  
       const yearText = typeof window.formatYear === 'function' ? window.formatYear(e.year) : e.year;
       const labelClass = isCurrent ? 'disc-label current' : 'disc-label';
-      content += `<text class="${labelClass}" x="${labelX}" y="${tickY + 3}" text-anchor="${anchor}">${yearText}</text>`;
+      content += `<text class="${labelClass}" x="${labelX}" y="${tickY + 4}" text-anchor="start">${yearText}</text>`;
     });
 
     // Needle at center (fixed)
     content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${BAR_WIDTH}" y2="${centerY}" />`;
 
-    // Update year display
+    // Update year display with current entry
     if (currentEntry && yearDisplay) {
       yearDisplay.textContent = typeof window.formatYear === 'function' ? window.formatYear(currentEntry.year) : currentEntry.year;
     }
 
     svg.innerHTML = content;
+  }
+
+  function snapToClosestEntry() {
+    const centerY = window.innerHeight / 2;
+    let closest = null;
+    let closestDist = Infinity;
+    
+    entries.forEach(e => {
+      if (!e.el) return;
+      const rect = e.el.getBoundingClientRect();
+      const elCenter = rect.top + rect.height / 2;
+      const dist = Math.abs(elCenter - centerY);
+      if (dist < closestDist) {
+        closestDist = dist;
+        closest = e;
+      }
+    });
+    
+    if (closest && closest.el) {
+      const rect = closest.el.getBoundingClientRect();
+      const elCenter = rect.top + rect.height / 2;
+      const scrollDelta = elCenter - centerY;
+      
+      window.scrollBy({ top: scrollDelta, behavior: 'smooth' });
+      
+      if (navigator.vibrate) navigator.vibrate(10);
+    }
   }
 
   function initDrag() {
@@ -144,7 +156,6 @@
       e.preventDefault();
       const clientY = e.touches ? e.touches[0].clientY : e.clientY;
       const deltaY = dragStartY - clientY;
-      // Higher multiplier for faster scrolling
       window.scrollTo({ top: dragStartScroll + deltaY * 5, behavior: 'auto' });
       render();
     }
@@ -153,49 +164,7 @@
       if (!isDragging) return;
       isDragging = false;
       container.classList.remove('active');
-      
-      // Snap to closest entry
       snapToClosestEntry();
-    }
-    
-    function snapToClosestEntry() {
-      if (!entries.length) return;
-      
-      const h = window.innerHeight;
-      const centerY = h / 2;
-      const minYear = entries[0].year;
-      const maxYear = entries[entries.length - 1].year;
-      const yearSpan = maxYear - minYear || 1;
-      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollT = maxScroll > 0 ? window.scrollY / maxScroll : 0;
-      const trackHeight = h * 0.6;
-      const padding = 30;
-      const trackOffset = (h - trackHeight) / 2 - scrollT * (trackHeight - padding * 2);
-      
-      // Find entry whose tick is closest to needle
-      let closest = null;
-      let closestDist = Infinity;
-      
-      entries.forEach(e => {
-        const yearT = (e.year - minYear) / yearSpan;
-        const tickY = trackOffset + padding + yearT * (trackHeight - padding * 2);
-        const dist = Math.abs(tickY - centerY);
-        if (dist < closestDist) {
-          closestDist = dist;
-          closest = e;
-        }
-      });
-      
-      if (closest && closest.el) {
-        // Scroll to center this entry
-        const rect = closest.el.getBoundingClientRect();
-        const elCenter = rect.top + rect.height / 2;
-        const scrollDelta = elCenter - centerY;
-        
-        window.scrollBy({ top: scrollDelta, behavior: 'smooth' });
-        
-        if (navigator.vibrate) navigator.vibrate(10);
-      }
     }
 
     container.addEventListener('mousedown', onStart);
