@@ -88,8 +88,9 @@
     content += `<g id="ticksGroup">`;
     
     // Background ticks: 100 years (small), 500 years (medium with label), 1000 years (big with label)
-    const roundedMin = Math.floor(minYear / 100) * 100;
-    const roundedMax = Math.ceil(maxYear / 100) * 100;
+    // Extend range by 500 years on each side
+    const roundedMin = Math.floor((minYear - 500) / 100) * 100;
+    const roundedMax = Math.ceil((maxYear + 500) / 100) * 100;
     
     for (let year = roundedMin; year <= roundedMax; year += 100) {
       const yearRatio = (year - minYear) / yearSpan;
