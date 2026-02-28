@@ -82,10 +82,10 @@
         <stop offset="100%" style="stop-color:#888888;stop-opacity:0"/>
       </linearGradient>
       <linearGradient id="vertFade" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" style="stop-opacity:0"/>
-        <stop offset="15%" style="stop-opacity:1"/>
-        <stop offset="85%" style="stop-opacity:1"/>
-        <stop offset="100%" style="stop-opacity:0"/>
+        <stop offset="0%" style="stop-color:white;stop-opacity:0"/>
+        <stop offset="15%" style="stop-color:white;stop-opacity:1"/>
+        <stop offset="85%" style="stop-color:white;stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:white;stop-opacity:0"/>
       </linearGradient>
       <mask id="vertMask">
         <rect x="0" y="0" width="${BAR_WIDTH + 50}" height="${h}" fill="url(#vertFade)" />
