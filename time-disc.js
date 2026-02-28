@@ -119,7 +119,7 @@
         tickLen = TICK_LENGTH * 0.7;
         tickClass = 'disc-bg-tick medium';
       } else {
-        tickLen = TICK_LENGTH * 0.4;
+        tickLen = TICK_LENGTH * 0.5;
         tickClass = 'disc-bg-tick minor';
       }
       
