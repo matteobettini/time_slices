@@ -277,6 +277,7 @@
         const centerY = window.innerHeight / 2;
         const scrollDelta = rect.top + rect.height / 2 - centerY;
         window.scrollBy({ top: scrollDelta, behavior: 'smooth' });
+        if (navigator.vibrate) navigator.vibrate(10);
       }
     }
 
