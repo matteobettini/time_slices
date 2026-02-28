@@ -26,9 +26,8 @@ SCRIPTS_DIR = os.path.join(SCRIPT_DIR, "scripts")
 MUSIC_DIR = os.path.join(SCRIPT_DIR, "music")
 OUTPUT_DIR = SCRIPT_DIR  # audio/{id}.mp3
 
-# API configuration
-# ⚠️ TIMESLICES_TTS_TOKEN is ONLY for Time Slices TTS generation. Do not use elsewhere.
-TTS_API_URL = "https://api.wearables-ape.io/models/v1/audio/speech"
+# API configuration — set via environment variables
+TTS_API_URL = os.environ.get("TIMESLICES_TTS_URL", "")
 TTS_TOKEN = os.environ.get("TIMESLICES_TTS_TOKEN", "")
 TTS_MODEL = "gpt-4o-mini-tts"
 
@@ -530,8 +529,8 @@ def main():
     parser.add_argument("--style", help="Style instructions for the voice")
     args = parser.parse_args()
 
-    if not TTS_TOKEN and not args.remix:
-        print("✗ TIMESLICES_TTS_TOKEN not set in environment. Export it first.")
+    if (not TTS_TOKEN or not TTS_API_URL) and not args.remix:
+        print("✗ TIMESLICES_TTS_TOKEN and TIMESLICES_TTS_URL must be set in environment. Export them first.")
         sys.exit(1)
 
     lang = args.lang

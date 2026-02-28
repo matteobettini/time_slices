@@ -110,8 +110,10 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     **Save the URL and start_time from the output** — you'll pass them to generate-podcast.py.
 
 15. **Choose a voice and style for the entry:**
-    - Pick a voice that fits the era/mood: alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse
-    - ⚠️ Do NOT use `onyx` (buggy)
+    ```bash
+    python3 scripts/get-voices.py  # See available voices
+    ```
+    - Pick a voice that fits the era/mood
     - Write style instructions (e.g., "Speak with measured drama and scholarly weight...")
     - For Italian, adapt the style to Italian (e.g., "Parla con dramma misurato...")
 
@@ -119,12 +121,12 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     # EN podcast
-    python3 audio/generate-podcast.py {id} --lang en \
+    python3 scripts/generate-podcast.py {id} --lang en \
       --music-url "URL_FROM_STEP_14" --music-start SECONDS \
       --voice VOICE --style "English style instructions here"
     
     # IT podcast  
-    python3 audio/generate-podcast.py {id} --lang it \
+    python3 scripts/generate-podcast.py {id} --lang it \
       --music-url "URL_FROM_STEP_14" --music-start SECONDS \
       --voice VOICE --style "Italian style instructions here"
     ```
