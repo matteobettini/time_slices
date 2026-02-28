@@ -41,7 +41,7 @@
 
 .time-disc svg {
   display: block;
-  overflow: visible;
+  overflow: hidden;
 }
 
 /* Background layers */
