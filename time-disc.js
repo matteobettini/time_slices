@@ -66,33 +66,46 @@
     </defs>`;
     content += `<rect class="disc-bg" x="0" y="0" width="${BAR_WIDTH + 30}" height="${h}" fill="url(#barFade)" />`;
 
-    // Find current entry - the one closest to viewport center
+    // Find min/max years for proportional spacing
+    const minYear = entries.length > 0 ? entries[0].year : 0;
+    const maxYear = entries.length > 0 ? entries[entries.length - 1].year : 1;
+    const yearSpan = maxYear - minYear || 1;
+
+    // Calculate scroll position as ratio
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollRatio = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+
+    // The "track" of all ticks is compressed to show more at once
+    // trackScale < 1 means ticks are closer together (more visible)
+    const trackScale = 0.4; // Show ~40% of timeline height = more ticks visible
+    const trackHeight = h * trackScale;
+    
+    // Track offset moves as we scroll - maps scroll to track position
+    const trackOffset = centerY - (scrollRatio * trackHeight);
+
+    // Find current entry - closest tick to center needle
     let currentEntry = null;
     let currentDist = Infinity;
     
     entries.forEach(e => {
-      if (!e.el) return;
-      const rect = e.el.getBoundingClientRect();
-      const elCenter = rect.top + rect.height / 2;
-      const dist = Math.abs(elCenter - centerY);
+      const yearRatio = (e.year - minYear) / yearSpan;
+      const tickY = trackOffset + (yearRatio * trackHeight);
+      const dist = Math.abs(tickY - centerY);
       if (dist < currentDist) {
         currentDist = dist;
         currentEntry = e;
       }
     });
 
-    // Draw ticks - positioned based on actual entry DOM position
+    // Draw ticks - positioned by year scale
     entries.forEach(e => {
       if (!e.el) return;
       
-      const rect = e.el.getBoundingClientRect();
-      const elCenter = rect.top + rect.height / 2;
+      const yearRatio = (e.year - minYear) / yearSpan;
+      const tickY = trackOffset + (yearRatio * trackHeight);
       
-      // Skip if way off screen
-      if (elCenter < -100 || elCenter > h + 100) return;
-      
-      // Tick Y = entry's position on screen
-      const tickY = elCenter;
+      // Skip if off screen
+      if (tickY < -30 || tickY > h + 30) return;
       
       // Ticks at left edge, labels to the right
       const x1 = 0;
@@ -122,15 +135,27 @@
   }
 
   function snapToClosestEntry() {
-    const centerY = window.innerHeight / 2;
+    if (!entries.length) return;
+    
+    const h = window.innerHeight;
+    const centerY = h / 2;
+    const minYear = entries[0].year;
+    const maxYear = entries[entries.length - 1].year;
+    const yearSpan = maxYear - minYear || 1;
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollRatio = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+    const trackScale = 0.4;
+    const trackHeight = h * trackScale;
+    const trackOffset = centerY - (scrollRatio * trackHeight);
+    
+    // Find entry whose tick is closest to needle
     let closest = null;
     let closestDist = Infinity;
     
     entries.forEach(e => {
-      if (!e.el) return;
-      const rect = e.el.getBoundingClientRect();
-      const elCenter = rect.top + rect.height / 2;
-      const dist = Math.abs(elCenter - centerY);
+      const yearRatio = (e.year - minYear) / yearSpan;
+      const tickY = trackOffset + (yearRatio * trackHeight);
+      const dist = Math.abs(tickY - centerY);
       if (dist < closestDist) {
         closestDist = dist;
         closest = e;
@@ -138,6 +163,7 @@
     });
     
     if (closest && closest.el) {
+      // Scroll to center this entry in viewport
       const rect = closest.el.getBoundingClientRect();
       const elCenter = rect.top + rect.height / 2;
       const scrollDelta = elCenter - centerY;
