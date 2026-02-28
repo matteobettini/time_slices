@@ -1428,6 +1428,9 @@ const THREAD_LABELS = {
     'reformation': 'Reformation',
     'printing-revolution': 'Printing Revolution',
     'sola-scriptura': 'Sola Scriptura',
+    'scholasticism': 'Scholasticism',
+    'gothic-architecture': 'Gothic Architecture',
+    '12th-century-renaissance': '12th Century Renaissance',
   },
   it: {
     'translation-movement': 'Traduzione come potere',
@@ -1464,6 +1467,9 @@ const THREAD_LABELS = {
     'reformation': 'Riforma protestante',
     'printing-revolution': 'Rivoluzione della stampa',
     'sola-scriptura': 'Sola Scriptura',
+    'scholasticism': 'Scolastica',
+    'gothic-architecture': 'Architettura gotica',
+    '12th-century-renaissance': 'Rinascimento del XII secolo',
   }
 };
 
@@ -1858,6 +1864,21 @@ const THREAD_NARRATIVES = {
     'renaissance-humanism': {
       '1504→1517': 'Erasmus was the hinge. His 1516 Greek New Testament gave Luther the weapon (<em>metanoeite</em> means "repent," not "do penance") and his <em>Praise of Folly</em> mocked the same Church abuses Luther attacked. Renaissance scholarship made the Reformation possible — then recoiled from what it unleashed.',
     },
+    'scholasticism': {
+      '762→1141': 'Baghdad\'s translators recovered Aristotle; Abelard\'s <em>Sic et Non</em> put him to work. The dialectical method that Bernard condemned at Sens was built on Arabic-Latin translations flowing through Toledo. When Abelard asked "by doubting we come to inquiry," he was applying tools forged in the House of Wisdom.',
+      '1141→1347': 'Abelard was condemned; his method conquered. Within a century, Scholasticism dominated European universities. Ockham, writing just before the plague, used that same dialectical razor to slice away metaphysical certainties — nominalism was Abelard\'s victory pushed to its logical conclusion.',
+      '1141→1517': 'The Scholastic method Abelard pioneered became university orthodoxy — and then the target. Luther trained in Scholastic disputation at Erfurt, then turned the tools against the institution that taught them. The dialectical doubt Bernard feared at Sens reached its endpoint in Wittenberg.',
+    },
+    'nominalism': {
+      '1141→1347': 'Abelard\'s condemnation didn\'t stop his students. The dialectical method he championed evolved into the Scholastic tradition that Ockham would turn against universal essences. The nominalism that shadowed the Black Death was Abelard\'s intellectual grandchild — doubt codified into a school.',
+    },
+    'rationalism': {
+      '762→1141': 'The Mu\'tazila insisted reason could judge religious truth; Abelard applied dialectics to the Trinity. Both were condemned by defenders of faith unconstrained by logic. The texts that fueled Abelard\'s method — Aristotle\'s Organon especially — reached Paris through Arabic translations. Bernard\'s horror was eight centuries of rationalist tradition knocking at theology\'s door.',
+      '1141→1648': 'Abelard\'s dialectical method, condemned at Sens, became Scholasticism\'s backbone. Descartes trained in Scholastic logic before using it to rebuild certainty from doubt. The <em>cogito</em> is the heir to <em>Sic et Non</em> — systematic doubt as the path to truth.',
+    },
+    'gothic-architecture': {
+      '1141→1347': 'Suger\'s choir at Saint-Denis (consecrated 1144) launched Gothic architecture. By 1347, the style had transformed Europe\'s skyline — Chartres, Notre-Dame, Florence\'s Duomo. The plague halted construction across the continent; when building resumed, the Renaissance would turn toward classical revival instead.',
+    },
   },
   it: {
     'death-of-god': {
@@ -1910,6 +1931,21 @@ const THREAD_NARRATIVES = {
     },
     'renaissance-humanism': {
       '1504→1517': 'Erasmo fu la cerniera. Il suo Nuovo Testamento greco del 1516 diede a Lutero l\'arma (<em>metanoeite</em> significa "pentiti," non "fai penitenza") e il suo <em>Elogio della follia</em> derideva gli stessi abusi ecclesiastici che Lutero attaccò. L\'erudizione rinascimentale rese possibile la Riforma — poi indietreggiò di fronte a ciò che aveva scatenato.',
+    },
+    'scholasticism': {
+      '762→1141': 'I traduttori di Baghdad recuperarono Aristotele; il <em>Sic et Non</em> di Abelardo lo mise al lavoro. Il metodo dialettico che Bernardo condannò a Sens era costruito sulle traduzioni arabo-latine che affluivano attraverso Toledo. Quando Abelardo chiese "dubitando arriviamo all\'indagine," applicava strumenti forgiati nella Casa della Saggezza.',
+      '1141→1347': 'Abelardo fu condannato; il suo metodo conquistò. Nel giro di un secolo, la Scolastica dominava le università europee. Ockham, scrivendo poco prima della peste, usò quello stesso rasoio dialettico per recidere le certezze metafisiche — il nominalismo fu la vittoria di Abelardo portata alla sua conclusione logica.',
+      '1141→1517': 'Il metodo scolastico che Abelardo inaugurò divenne ortodossia universitaria — e poi il bersaglio. Lutero si formò nella disputa scolastica a Erfurt, poi rivolse gli strumenti contro l\'istituzione che glieli aveva insegnati. Il dubbio dialettico che Bernardo temeva a Sens raggiunse il suo punto finale a Wittenberg.',
+    },
+    'nominalism': {
+      '1141→1347': 'La condanna di Abelardo non fermò i suoi studenti. Il metodo dialettico che aveva promosso si evolse nella tradizione scolastica che Ockham avrebbe rivolto contro le essenze universali. Il nominalismo che accompagnò la Peste Nera era il nipote intellettuale di Abelardo — il dubbio codificato in una scuola.',
+    },
+    'rationalism': {
+      '762→1141': 'I Mu\'tazila insistevano che la ragione potesse giudicare la verità religiosa; Abelardo applicò la dialettica alla Trinità. Entrambi furono condannati da difensori di una fede non vincolata dalla logica. I testi che alimentarono il metodo di Abelardo — specialmente l\'<em>Organon</em> di Aristotele — raggiunsero Parigi attraverso traduzioni arabe. L\'orrore di Bernardo era otto secoli di tradizione razionalista che bussavano alla porta della teologia.',
+      '1141→1648': 'Il metodo dialettico di Abelardo, condannato a Sens, divenne la spina dorsale della Scolastica. Cartesio si formò nella logica scolastica prima di usarla per ricostruire la certezza dal dubbio. Il <em>cogito</em> è l\'erede del <em>Sic et Non</em> — il dubbio sistematico come via verso la verità.',
+    },
+    'gothic-architecture': {
+      '1141→1347': 'Il coro di Suger a Saint-Denis (consacrato nel 1144) lanciò l\'architettura gotica. Nel 1347, lo stile aveva trasformato lo skyline d\'Europa — Chartres, Notre-Dame, il Duomo di Firenze. La peste fermò la costruzione in tutto il continente; quando la ripresa riprese, il Rinascimento si sarebbe rivolto alla rinascita classica.',
     },
   },
 };

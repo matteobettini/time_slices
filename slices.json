@@ -767,5 +767,82 @@
       "url": "audio/1687-london-gravity-of-reason.mp3",
       "duration": 203
     }
+  },
+  {
+    "year": "1141",
+    "id": "1141-sens-duel-of-reason-and-faith",
+    "title": "Sens — The Duel of Reason and Faith",
+    "teaser": "At the Council of Sens, Bernard of Clairvaux prosecutes Peter Abelard for heresy — dialectics versus mysticism, logic versus devotion. Meanwhile, Abbot Suger raises walls of light at Saint-Denis, Gothic architecture is being born, and Gratian codifies canon law. The 12th-century Renaissance transforms how Europe thinks.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "At the <strong>Abbey of Saint-Denis</strong> near Paris, Abbot <strong>Suger</strong> (1081–1151) is transforming architecture. Between 1140 and 1144, he rebuilds the abbey choir using an unprecedented combination of <strong>pointed arches</strong>, <strong>ribbed vaults</strong>, and <strong>flying buttresses</strong> — structural innovations that distribute weight so efficiently that walls can become windows. \"The dull mind rises to truth through material things,\" Suger writes, drawing on Pseudo-Dionysian theology: God is light, and architecture should be luminous. No one yet calls this style <strong>Gothic</strong> (that name comes later, as an insult), but what begins at Saint-Denis in these years will reshape the skyline of Europe — Chartres, Notre-Dame, Cologne — a forest of stone and glass reaching toward heaven."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Geoffrey of Monmouth</strong> (c. 1095–c. 1155) completed his <em>Historia Regum Britanniae</em> around 1136, and by 1141 it circulates widely, transforming European imagination. He claims to translate an ancient British source; in truth, he invents a mythology — <strong>King Arthur</strong>, Merlin, Excalibur, the passing to Avalon. His Arthur is not history but something more powerful: a shared dream that will be retold for a millennium. Courts will model themselves on Camelot; knights will seek Holy Grails. The 12th century discovers that <strong>humans are storytelling animals</strong>, and that myths carry truths history cannot. Simultaneously, <strong>Héloïse</strong> (c. 1101–1164) composes her letters and the <em>Problemata</em> — philosophical questions that challenged Abelard and influenced his ethics. Her correspondence becomes foundational to the <strong>epistolary tradition</strong>."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "At the <strong>Council of Sens</strong> in June 1141, <strong>Bernard of Clairvaux</strong> (1090–1153), the most powerful mystic in Christendom, prosecutes <strong>Peter Abelard</strong> (1079–1142) for heresy. Abelard's method — applying <strong>dialectical reasoning</strong> to theology, \"by doubting we come to inquiry, by inquiry we perceive the truth\" — horrifies Bernard: <em>he treats the Trinity as a syllogism!</em> Abelard walks out without defending himself, appeals to Rome, but Bernard's letters arrive first. The Pope condemns Abelard to perpetual silence. Yet Abelard's <em>Sic et Non</em> method — juxtaposing contradictory authorities to provoke resolution — will become the foundation of <strong>Scholasticism</strong>. The duel at Sens is between two ways of knowing: <strong>reason examining faith</strong> versus <strong>faith transcending reason</strong>."
+      },
+      "hist": {
+        "label": "History",
+        "content": "In <strong>Bologna</strong>, the monk <strong>Gratian</strong> compiles the <em>Decretum</em> (c. 1140) — systematically reconciling centuries of contradictory church laws through the same dialectical method Abelard applied to theology. His work founds <strong>canon law as a science</strong>, governing marriage, property, crime, and clergy across Christendom for eight centuries. Meanwhile, students at Bologna study recovered <strong>Roman law</strong>; in Paris, cathedral schools transform into the <em>universitas</em> — corporations of scholars with legal rights. The <strong>12th-century Renaissance</strong> is institutional as much as intellectual: knowledge is becoming systematic, professional, transmissible. Arabic translations of <strong>Aristotle</strong> flood into Paris through Toledo, bringing Greek logic recovered via Islamic scholarship."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The tensions at Sens ripple through every domain. <strong>Bernard of Clairvaux</strong> was friends with <strong>Abbot Suger</strong> despite their theological differences — both advised King Louis VII, both shaped the Crusade ideology. <strong>Peter the Venerable</strong>, Abbot of Cluny, sheltered the condemned Abelard in his final months and brokered a reconciliation with Bernard. Gratian's <em>Decretum</em> uses the same <em>sic et non</em> method Abelard developed — contradictory sources dialectically resolved. Geoffrey of Monmouth's Arthur myths emerged from the same <strong>cathedral school culture</strong> in Oxford where dialectics was taught. The 12th-century Renaissance was a single conversation conducted in stone, law, logic, and legend — all grappling with what reason could know and what required faith.",
+        "funFact": "When Abelard died in 1142, Peter the Venerable sent his body to Héloïse. She buried him at the Paraclete; twenty-two years later, she was laid beside him. Their shared tomb remains in Paris's Père Lachaise Cemetery today."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Council_of_Sens",
+        "title": "Council of Sens — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Suger",
+        "title": "Abbot Suger — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Decretum_Gratiani",
+        "title": "Decretum Gratiani — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Peter_Abelard",
+        "title": "Peter Abelard — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Renaissance_of_the_12th_century",
+        "title": "Renaissance of the 12th century — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1141-sens-duel-of-reason-and-faith.jpg",
+      "alt": "Peter Abelard and Héloïse, illumination from the Roman de la Rose manuscript, 14th century",
+      "width": 324,
+      "height": 431,
+      "caption": "Abelard and Héloïse, from the Roman de la Rose",
+      "attribution": "Illumination from Roman de la Rose manuscript, 14th century, Musée Condé"
+    },
+    "threads": [
+      "scholasticism",
+      "nominalism",
+      "rationalism",
+      "gothic-architecture",
+      "vernacular-literature",
+      "12th-century-renaissance"
+    ],
+    "location": {
+      "lat": 48.1977,
+      "lon": 3.2837,
+      "place": "Sens"
+    },
+    "addedDate": "2026-02-28T06:00:00Z",
+    "podcast": {
+      "url": "audio/1141-sens-duel-of-reason-and-faith.mp3",
+      "duration": 214
+    }
   }
 ]

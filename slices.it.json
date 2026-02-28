@@ -763,5 +763,82 @@
       "url": "audio/it/1687-london-gravity-of-reason.mp3",
       "duration": 203
     }
+  },
+  {
+    "year": "1141",
+    "id": "1141-sens-duel-of-reason-and-faith",
+    "title": "Sens — Il Duello tra Ragione e Fede",
+    "teaser": "Al Concilio di Sens, Bernardo di Chiaravalle processa Pietro Abelardo per eresia — dialettica contro misticismo, logica contro devozione. Intanto, l'abate Suger innalza pareti di luce a Saint-Denis, nasce l'architettura gotica, e Graziano codifica il diritto canonico. Il Rinascimento del XII secolo trasforma il modo in cui l'Europa pensa.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "All'<strong>Abbazia di Saint-Denis</strong> presso Parigi, l'abate <strong>Suger</strong> (1081–1151) sta trasformando l'architettura. Tra il 1140 e il 1144 ricostruisce il coro dell'abbazia usando una combinazione senza precedenti di <strong>archi a sesto acuto</strong>, <strong>volte a crociera costolonate</strong> e <strong>archi rampanti</strong> — innovazioni strutturali che distribuiscono il peso così efficacemente che le pareti possono diventare finestre. «La mente ottusa s'innalza alla verità attraverso le cose materiali», scrive Suger, attingendo alla teologia dello Pseudo-Dionigi: Dio è luce, e l'architettura deve essere luminosa. Nessuno chiama ancora questo stile <strong>gotico</strong> (quel nome verrà dopo, come insulto), ma ciò che inizia a Saint-Denis in questi anni ridisegnerà lo skyline d'Europa — Chartres, Notre-Dame, Colonia — una foresta di pietra e vetro protesa verso il cielo."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "<strong>Goffredo di Monmouth</strong> (c. 1095–c. 1155) completò la sua <em>Historia Regum Britanniae</em> intorno al 1136, e nel 1141 circola ampiamente, trasformando l'immaginazione europea. Afferma di tradurre un'antica fonte britannica; in realtà inventa una mitologia — <strong>Re Artù</strong>, Merlino, Excalibur, il passaggio ad Avalon. Il suo Artù non è storia ma qualcosa di più potente: un sogno condiviso che sarà raccontato per un millennio. Le corti si modelleranno su Camelot; i cavalieri cercheranno il Sacro Graal. Il XII secolo scopre che <strong>gli esseri umani sono animali narrativi</strong>, e che i miti portano verità che la storia non può. Contemporaneamente, <strong>Eloisa</strong> (c. 1101–1164) compone le sue lettere e i <em>Problemata</em> — questioni filosofiche che sfidarono Abelardo e influenzarono la sua etica. La sua corrispondenza diventa fondativa per la <strong>tradizione epistolare</strong>."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Al <strong>Concilio di Sens</strong> nel giugno 1141, <strong>Bernardo di Chiaravalle</strong> (1090–1153), il mistico più potente della cristianità, processa <strong>Pietro Abelardo</strong> (1079–1142) per eresia. Il metodo di Abelardo — applicare il <strong>ragionamento dialettico</strong> alla teologia, «dubitando arriviamo all'indagine, con l'indagine percepiamo la verità» — inorridisce Bernardo: <em>tratta la Trinità come un sillogismo!</em> Abelardo esce senza difendersi, fa appello a Roma, ma le lettere di Bernardo arrivano prima. Il Papa condanna Abelardo al silenzio perpetuo. Eppure il metodo <em>Sic et Non</em> di Abelardo — giustapporre autorità contraddittorie per provocare la risoluzione — diventerà il fondamento della <strong>Scolastica</strong>. Il duello di Sens è tra due modi di conoscere: la <strong>ragione che esamina la fede</strong> contro la <strong>fede che trascende la ragione</strong>."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "A <strong>Bologna</strong>, il monaco <strong>Graziano</strong> compila il <em>Decretum</em> (c. 1140) — riconciliando sistematicamente secoli di leggi ecclesiastiche contraddittorie attraverso lo stesso metodo dialettico che Abelardo applicò alla teologia. La sua opera fonda il <strong>diritto canonico come scienza</strong>, governando matrimonio, proprietà, crimine e clero in tutta la cristianità per otto secoli. Intanto, gli studenti a Bologna studiano il <strong>diritto romano</strong> recuperato; a Parigi, le scuole cattedrali si trasformano nell'<em>universitas</em> — corporazioni di studiosi con diritti legali. Il <strong>Rinascimento del XII secolo</strong> è istituzionale quanto intellettuale: la conoscenza diventa sistematica, professionale, trasmissibile. Traduzioni arabe di <strong>Aristotele</strong> inondano Parigi attraverso Toledo, portando la logica greca recuperata attraverso la cultura islamica."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Le tensioni di Sens si propagano in ogni ambito. <strong>Bernardo di Chiaravalle</strong> era amico dell'<strong>abate Suger</strong> nonostante le loro differenze teologiche — entrambi consigliavano re Luigi VII, entrambi plasmavano l'ideologia crociata. <strong>Pietro il Venerabile</strong>, abate di Cluny, accolse Abelardo condannato nei suoi ultimi mesi e mediò una riconciliazione con Bernardo. Il <em>Decretum</em> di Graziano usa lo stesso metodo <em>sic et non</em> sviluppato da Abelardo — fonti contraddittorie risolte dialetticamente. I miti arturiani di Goffredo di Monmouth emersero dalla stessa <strong>cultura delle scuole cattedrali</strong> di Oxford dove si insegnava la dialettica. Il Rinascimento del XII secolo fu una singola conversazione condotta in pietra, diritto, logica e leggenda — tutti alle prese con ciò che la ragione poteva conoscere e ciò che richiedeva fede.",
+        "funFact": "Quando Abelardo morì nel 1142, Pietro il Venerabile inviò il suo corpo a Eloisa. Lei lo seppellì al Paracleto; ventidue anni dopo, fu deposta accanto a lui. La loro tomba condivisa si trova ancora oggi nel cimitero di Père Lachaise a Parigi."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Concilio_di_Sens",
+        "title": "Concilio di Sens — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Sugerio_di_Saint-Denis",
+        "title": "Sugerio di Saint-Denis — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Decretum_Gratiani",
+        "title": "Decretum Gratiani — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Pietro_Abelardo",
+        "title": "Pietro Abelardo — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Rinascimento_del_XII_secolo",
+        "title": "Rinascimento del XII secolo — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1141-sens-duel-of-reason-and-faith.jpg",
+      "alt": "Pietro Abelardo ed Eloisa, miniatura dal manoscritto del Roman de la Rose, XIV secolo",
+      "width": 324,
+      "height": 431,
+      "caption": "Abelardo ed Eloisa, dal Roman de la Rose",
+      "attribution": "Miniatura dal Roman de la Rose, XIV secolo, Musée Condé"
+    },
+    "threads": [
+      "scholasticism",
+      "nominalism",
+      "rationalism",
+      "gothic-architecture",
+      "vernacular-literature",
+      "12th-century-renaissance"
+    ],
+    "location": {
+      "lat": 48.1977,
+      "lon": 3.2837,
+      "place": "Sens"
+    },
+    "addedDate": "2026-02-28T06:00:00Z",
+    "podcast": {
+      "url": "audio/it/1141-sens-duel-of-reason-and-faith.mp3",
+      "duration": 205
+    }
   }
 ]

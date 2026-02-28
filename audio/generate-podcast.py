@@ -89,6 +89,11 @@ VOICE_MAP_EN = {
         "voice": "sage",
         "instructions": "Speak with crisp intellectual precision. This is Newton's moment — the universe becoming an equation. Authoritative but with a thread of wonder. Like a historian who still marvels at what Newton achieved.",
     },
+    # 1141 Sens: dramatic, scholarly — ash for gravitas at a turning point between faith and reason
+    "1141-sens-duel-of-reason-and-faith": {
+        "voice": "ash",
+        "instructions": "Speak with measured drama and scholarly weight. This is the medieval confrontation between faith and reason — Bernard versus Abelard. Deep and contemplative, with understated tension. Let the intellectual stakes speak for themselves.",
+    },
 }
 
 # Italian voices — same voice palette but with Italian-language style instructions
@@ -134,6 +139,11 @@ VOICE_MAP_IT = {
     "1687-london-gravity-of-reason": {
         "voice": "sage",
         "instructions": "Parla in italiano con precisione intellettuale nitida. Questo è il momento di Newton — l'universo che diventa un'equazione. Autorevole ma con un filo di meraviglia. Come uno storico che ancora si stupisce di ciò che Newton realizzò.",
+    },
+    # 1141 Sens: dramatic, scholarly
+    "1141-sens-duel-of-reason-and-faith": {
+        "voice": "ash",
+        "instructions": "Parla in italiano con dramma misurato e peso intellettuale. Questo è lo scontro medievale tra fede e ragione — Bernardo contro Abelardo. Profondo e contemplativo, con tensione sottile. Lascia che la posta in gioco intellettuale parli da sola.",
     },
 }
 
@@ -339,10 +349,12 @@ MUSIC_SOURCES = {
     "1784-europe-dare-to-know": {"pool_key": "mozart-piano-k310"},
     "1889-paris-year-everything-changed": {"pool_key": "ravel-pavane"},
     "1922-modernist-explosion": {"pool_key": "satie-gnossiennes"},
-  # 1517 Wittenberg: Renaissance lute — capturing the moment before the split, the last gasp of synthesis
-  "1517-wittenberg-hammer-falls": {"pool_key": "renaissance-lute-fantasia"},
-  # 1687 London: Bach cello suite — the peak of Baroque, mathematical precision meets emotional depth
-  "1687-london-gravity-of-reason": {"pool_key": "bach-cello-suite-1"},
+    # 1517 Wittenberg: Renaissance lute — capturing the moment before the split, the last gasp of synthesis
+    "1517-wittenberg-hammer-falls": {"pool_key": "renaissance-lute-fantasia"},
+    # 1687 London: Bach cello suite — the peak of Baroque, mathematical precision meets emotional depth
+    "1687-london-gravity-of-reason": {"pool_key": "bach-cello-suite-1"},
+    # 1141 Sens: Gregorian chant — medieval monasticism, the Church that Abelard challenged
+    "1141-sens-duel-of-reason-and-faith": {"pool_key": "gregorian-kergonan"},
 }
 
 
