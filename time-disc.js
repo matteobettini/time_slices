@@ -20,8 +20,8 @@
   let isDragging = false;
   let ticksGroup = null;
 
-  const BAR_WIDTH = 60;
-  const TICK_LENGTH = 14;
+  const BAR_WIDTH = 80;
+  const TICK_LENGTH = 18;
   const TRACK_SCALE = 0.5;
 
   function build() {
