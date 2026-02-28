@@ -112,8 +112,8 @@
 }
 
 .disc-bg-tick.minor {
-  stroke-width: 1.5;
-  opacity: 0.4;
+  stroke-width: 1;
+  opacity: 0.3;
 }
 
 .disc-bg-tick.major {
@@ -121,21 +121,12 @@
   opacity: 0.6;
 }
 
-/* Background tick labels */
+/* Background tick labels (1k years) */
 .disc-bg-label {
   font-family: var(--mono);
+  font-size: 0.6rem;
   fill: #555;
   pointer-events: none;
-}
-
-.disc-bg-label.minor {
-  font-size: 0.6rem;
-  opacity: 0.5;
-}
-
-.disc-bg-label.major {
-  font-size: 0.6rem;
-  opacity: 0.8;
 }
 
 /* Year indicator popup */
