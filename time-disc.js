@@ -151,9 +151,10 @@
     
     content += `</g>`;
 
-    // Fixed needle at center
+    // Fixed needle at center - clipped to bar width
     const needleStart = TICK_LENGTH + 35;
-    content += `<line class="disc-needle" x1="${needleStart}" y1="${centerY}" x2="${BAR_WIDTH}" y2="${centerY}" />`;
+    content += `<clipPath id="needleClip"><rect x="0" y="0" width="${BAR_WIDTH}" height="${h}" /></clipPath>`;
+    content += `<line class="disc-needle" x1="${needleStart}" y1="${centerY}" x2="${BAR_WIDTH}" y2="${centerY}" clip-path="url(#needleClip)" />`;
 
     svg.innerHTML = content;
     ticksGroup = svg.getElementById('ticksGroup');
