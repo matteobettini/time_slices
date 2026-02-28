@@ -58,16 +58,21 @@
   pointer-events: none;
 }
 
-/* Glow layer - faint grey, intensifies on hover/active */
+/* Glow layer - faint grey, intensifies on active */
 .disc-glow {
   pointer-events: none;
   opacity: 0.3;
   transition: opacity 0.3s ease;
 }
 
-.time-disc-container:hover .disc-glow,
 .time-disc-container.active .disc-glow {
   opacity: 0.8;
+}
+
+@media (hover: hover) {
+  .time-disc-container:hover .disc-glow {
+    opacity: 0.8;
+  }
 }
 
 /* Entry tick marks */
@@ -79,9 +84,14 @@
   cursor: pointer;
 }
 
-.time-disc-container:hover .disc-tick,
 .time-disc-container.active .disc-tick {
   opacity: 1;
+}
+
+@media (hover: hover) {
+  .time-disc-container:hover .disc-tick {
+    opacity: 1;
+  }
 }
 
 .disc-tick.current {
