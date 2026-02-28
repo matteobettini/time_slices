@@ -66,6 +66,10 @@
     const maxYear = entries.length > 0 ? entries[entries.length - 1].year : 1;
     const yearSpan = maxYear - minYear || 1;
 
+    // Calculate current scroll position as a percentage
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollT = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+
     // Find current entry (closest to center)
     let currentEntry = null;
     let currentDist = Infinity;
@@ -79,16 +83,21 @@
       }
     });
 
-    // Draw ticks - Y position proportional to year (compressed to fit better)
-    const padding = 60;
-    const usableHeight = h - padding * 2;
+    // Ticks are positioned by year, but the whole "track" scrolls
+    // The track is longer than the viewport - we show a window into it
+    const trackHeight = h * 0.6; // Compressed track (60% of viewport)
+    const padding = 30;
+    
+    // Offset based on scroll - ticks move up as we scroll down
+    const trackOffset = (h - trackHeight) / 2 - scrollT * (trackHeight - padding * 2);
     
     entries.forEach(e => {
-      if (!e.el) return;
-      
-      // Calculate Y based on year proportion (not DOM position)
+      // Calculate Y based on year proportion
       const yearT = (e.year - minYear) / yearSpan;
-      const tickY = padding + yearT * usableHeight;
+      const tickY = trackOffset + padding + yearT * (trackHeight - padding * 2);
+      
+      // Skip if off screen
+      if (tickY < -20 || tickY > h + 20) return;
       
       let x1, x2, labelX, anchor;
       if (isMobile) {
@@ -114,7 +123,7 @@
       content += `<text class="${labelClass}" x="${labelX}" y="${tickY + 3}" text-anchor="${anchor}">${yearText}</text>`;
     });
 
-    // Needle at center
+    // Needle at center (fixed)
     content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${BAR_WIDTH}" y2="${centerY}" />`;
 
     // Update year display
