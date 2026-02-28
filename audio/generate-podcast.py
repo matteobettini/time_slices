@@ -32,122 +32,13 @@ TTS_API_URL = "https://api.wearables-ape.io/models/v1/audio/speech"
 TTS_TOKEN = os.environ.get("TIMESLICES_TTS_TOKEN", "")
 TTS_MODEL = "gpt-4o-mini-tts"
 
-# Voice assignments per entry — OpenAI TTS voices.
-# gpt-4o-mini-tts voices: alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse
-# ❌ onyx is excluded — produces buggy/glitchy output
+# Available OpenAI TTS voices: alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse
+# ❌ Do NOT use "onyx" — produces buggy/glitchy output
 
-# ⚠️ Do NOT use "onyx" — it produces buggy/glitchy audio with gpt-4o-mini-tts.
-# English voices
-VOICE_MAP_EN = {
-    # 125 Rome: authoritative, architectural — ash for deep resonance and gravitas
-    "125-rome-dome-of-all-things": {
-        "voice": "ash",
-        "instructions": "Speak as a historian contemplating an empire at its peak — deep, measured, with quiet authority. Unhurried, as if the dome itself has all the time in the world. Keep it conversational, not theatrical.",
-    },
-    # 762 Baghdad: warm, storytelling — fable has a narrative quality
-    "762-baghdad-round-city-of-reason": {
-        "voice": "fable",
-        "instructions": "Speak as a warm storyteller narrating ancient history. Measured pace, a hint of wonder. Conversational, not performative.",
-    },
-    # 1347 Florence plague: somber, dramatic — ash for deep gravitas
-    "1347-florence-beautiful-catastrophe": {
-        "voice": "ash",
-        "instructions": "Speak with gravity. This is about plague, death, and the strange beauty that emerged from catastrophe. Somber but not monotone — understated drama, not theatrical.",
-    },
-    # 1504 Renaissance: confident, vivid — echo has clarity and presence
-    "1504-florence-duel-of-giants": {
-        "voice": "echo",
-        "instructions": "Speak with confidence. Leonardo and Michelangelo in competition — genius against genius. Vivid but grounded, like a good podcast host telling a great story.",
-    },
-    # 1648 Westphalia: weary, reflective — ash for gravitas
-    "1648-munster-exhaustion-of-god": {
-        "voice": "ash",
-        "instructions": "Speak with weariness and hard-won wisdom. Thirty years of war have exhausted Europe. Reflective, with a thread of hope — but keep the emotion restrained.",
-    },
-    # 1784 Enlightenment: crisp, intellectual — sage for measured clarity
-    "1784-europe-dare-to-know": {
-        "voice": "sage",
-        "instructions": "Speak with intellectual clarity and a touch of excitement. The Enlightenment — reason overthrowing tradition. Crisp and precise, conversational not declamatory.",
-    },
-    # 1889 Paris: passionate, expressive — nova for warmth and energy
-    "1889-paris-year-everything-changed": {
-        "voice": "nova",
-        "instructions": "Speak with warmth and wonder. Paris in 1889 — the Tower rising, art exploding. Let the excitement come through naturally, not forced.",
-    },
-    # 1922 Modernism: staccato, urgent — coral for dynamic energy
-    "1922-modernist-explosion": {
-        "voice": "coral",
-        "instructions": "Speak with energy and pace. 1922 — Ulysses, The Waste Land, jazz, Bauhaus, everything shattering and reassembling. Quick but not breathless.",
-    },
-    # 1517 Wittenberg: dramatic, pivotal — ash for gravitas at a world-historical turning point
-    "1517-wittenberg-hammer-falls": {
-        "voice": "ash",
-        "instructions": "Speak with measured drama. This is the moment Western Christianity splits — a hammer blow that echoes for centuries. Authoritative but not bombastic. Let the weight of the moment speak for itself.",
-    },
-    # 1687 London: precise, authoritative — sage for intellectual clarity at the dawn of modern science
-    "1687-london-gravity-of-reason": {
-        "voice": "sage",
-        "instructions": "Speak with crisp intellectual precision. This is Newton's moment — the universe becoming an equation. Authoritative but with a thread of wonder. Like a historian who still marvels at what Newton achieved.",
-    },
-    # 1141 Sens: dramatic, scholarly — ash for gravitas at a turning point between faith and reason
-    "1141-sens-duel-of-reason-and-faith": {
-        "voice": "ash",
-        "instructions": "Speak with measured drama and scholarly weight. This is the medieval confrontation between faith and reason — Bernard versus Abelard. Deep and contemplative, with understated tension. Let the intellectual stakes speak for themselves.",
-    },
-}
-
-# Italian voices — same voice palette but with Italian-language style instructions
-VOICE_MAP_IT = {
-    "125-rome-dome-of-all-things": {
-        "voice": "ash",
-        "instructions": "Parla in italiano come uno storico che contempla un impero al suo apice — voce profonda, misurata, con quieta autorità. Senza fretta. Tono conversazionale, non teatrale.",
-    },
-    "762-baghdad-round-city-of-reason": {
-        "voice": "fable",
-        "instructions": "Parla in italiano con il tono di un cantastorie. Ritmo misurato, un accenno di meraviglia. Conversazionale, non declamatorio.",
-    },
-    "1347-florence-beautiful-catastrophe": {
-        "voice": "ash",
-        "instructions": "Parla in italiano con gravità. Peste, morte, e la strana bellezza che emerge dalla catastrofe. Cupo ma non monotono — dramma contenuto, non teatrale.",
-    },
-    "1504-florence-duel-of-giants": {
-        "voice": "echo",
-        "instructions": "Parla in italiano con sicurezza. Leonardo e Michelangelo in competizione — genio contro genio. Vivido ma con i piedi per terra, come un buon conduttore di podcast.",
-    },
-    "1648-munster-exhaustion-of-god": {
-        "voice": "ash",
-        "instructions": "Parla in italiano con stanchezza e saggezza conquistata. Trent'anni di guerra hanno esaurito l'Europa. Riflessivo, con un filo di speranza — ma emozione contenuta.",
-    },
-    "1784-europe-dare-to-know": {
-        "voice": "sage",
-        "instructions": "Parla in italiano con chiarezza intellettuale e un tocco di entusiasmo. L'Illuminismo — la ragione che rovescia la tradizione. Nitido, preciso, conversazionale.",
-    },
-    "1889-paris-year-everything-changed": {
-        "voice": "nova",
-        "instructions": "Parla in italiano con calore e meraviglia. Parigi nel 1889 — la Torre che si innalza, l'arte che esplode. Lascia che l'emozione emerga naturalmente, senza forzare.",
-    },
-    "1922-modernist-explosion": {
-        "voice": "coral",
-        "instructions": "Parla in italiano con energia e ritmo. Il 1922 — Ulisse, La terra desolata, jazz, Bauhaus, tutto si frantuma e si ricompone. Veloce ma non affannato.",
-    },
-    # 1517 Wittenberg: dramatic, pivotal
-    "1517-wittenberg-hammer-falls": {
-        "voice": "ash",
-        "instructions": "Parla in italiano con dramma contenuto. Questo è il momento in cui il cristianesimo occidentale si divide — un colpo di martello che riecheggia per secoli. Autorevole ma non pomposo. Lascia che il peso del momento parli da solo.",
-    },
-    # 1687 London: precise, authoritative
-    "1687-london-gravity-of-reason": {
-        "voice": "sage",
-        "instructions": "Parla in italiano con precisione intellettuale nitida. Questo è il momento di Newton — l'universo che diventa un'equazione. Autorevole ma con un filo di meraviglia. Come uno storico che ancora si stupisce di ciò che Newton realizzò.",
-    },
-    # 1141 Sens: dramatic, scholarly
-    "1141-sens-duel-of-reason-and-faith": {
-        "voice": "ash",
-        "instructions": "Parla in italiano con dramma misurato e peso intellettuale. Questo è lo scontro medievale tra fede e ragione — Bernardo contro Abelardo. Profondo e contemplativo, con tensione sottile. Lascia che la posta in gioco intellettuale parli da sola.",
-    },
-}
-
-VOICE_MAPS = {"en": VOICE_MAP_EN, "it": VOICE_MAP_IT}
+# Default voice/style if not provided via CLI
+DEFAULT_VOICE = "ash"
+DEFAULT_STYLE_EN = "Speak as a knowledgeable narrator telling a historical story. Measured, engaging, conversational."
+DEFAULT_STYLE_IT = "Parla come un narratore esperto che racconta una storia storica. Misurato, coinvolgente, conversazionale."
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # MUSIC — Downloaded on-demand via CLI args (--music-url)
@@ -237,22 +128,22 @@ def _tts_chunk(text, voice, instructions, out_path, timeout=120, retries=2):
 _CHUNK_THRESHOLD = 1500
 
 
-def generate_narration(entry_id, script_text, lang="en"):
+def generate_narration(entry_id, script_text, lang="en", voice=None, style=None):
     """Generate TTS narration via gpt-4o-mini-tts through the ape API.
 
     For short scripts (≤ _CHUNK_THRESHOLD chars), sends a single request.
     For longer scripts, splits by paragraph, generates each chunk, and
     concatenates with ffmpeg. This avoids 504 gateway timeouts on the
     upstream TTS provider.
+    
+    Args:
+        voice: OpenAI TTS voice name (alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse)
+        style: Style instructions for the voice
     """
-    voice_map = VOICE_MAPS.get(lang, VOICE_MAP_EN)
-    voice_config = voice_map.get(entry_id, {
-        "voice": "alloy",
-        "instructions": "Speak as a knowledgeable narrator telling a historical story." if lang == "en" else "Parla come un narratore esperto che racconta una storia storica.",
-    })
-
-    voice = voice_config["voice"]
-    instructions = voice_config.get("instructions", "")
+    # Use provided voice/style or defaults
+    voice = voice or DEFAULT_VOICE
+    if style is None:
+        style = DEFAULT_STYLE_EN if lang == "en" else DEFAULT_STYLE_IT
 
     print(f"  🎤 Generating narration (voice: {voice}, model: {TTS_MODEL}, {len(script_text)} chars)...")
 
@@ -261,7 +152,7 @@ def generate_narration(entry_id, script_text, lang="en"):
     # --- Decide: single call or chunked ---
     if len(script_text) <= _CHUNK_THRESHOLD:
         # Short script — single TTS call
-        if not _tts_chunk(script_text, voice, instructions, narration_path, timeout=120, retries=2):
+        if not _tts_chunk(script_text, voice, style, narration_path, timeout=120, retries=2):
             print(f"  ✗ TTS failed for {entry_id}")
             return None, 0
     else:
@@ -462,7 +353,7 @@ def mix_audio(narration_path, music_path, output_path, narration_duration, start
 NARRATIONS_DIR = os.path.join(SCRIPT_DIR, "narrations")
 
 
-def generate_podcast(entry_id, lang="en", remix=False, music_url=None, music_start=0):
+def generate_podcast(entry_id, lang="en", remix=False, music_url=None, music_start=0, voice=None, style=None):
     """Full pipeline: script → narration → mix → output.
     
     Args:
@@ -471,6 +362,8 @@ def generate_podcast(entry_id, lang="en", remix=False, music_url=None, music_sta
         remix: If True, skip TTS and reuse saved narration
         music_url: URL to download background music from (optional)
         music_start: Start time in seconds for music track
+        voice: OpenAI TTS voice (alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse)
+        style: Style instructions for the voice
     
     If remix=True, skip TTS and reuse saved narration from audio/narrations/.
     If no saved narration exists, extract voice from existing podcast MP3
@@ -556,7 +449,7 @@ def generate_podcast(entry_id, lang="en", remix=False, music_url=None, music_sta
             return False
     else:
         # Normal TTS generation
-        narration_path, duration = generate_narration(entry_id, script_text, lang=lang)
+        narration_path, duration = generate_narration(entry_id, script_text, lang=lang, voice=voice, style=style)
         if not narration_path:
             return False
         # Save narration for future remixes
@@ -633,7 +526,8 @@ def main():
     parser.add_argument("--remix", action="store_true", help="Skip TTS, reuse saved narrations, remix music only")
     parser.add_argument("--music-url", help="URL to download background music from")
     parser.add_argument("--music-start", type=float, default=0, help="Start time in seconds for music track")
-    parser.add_argument("--all", action="store_true", help="Generate all entries (uses no music)")
+    parser.add_argument("--voice", default="ash", help="TTS voice (alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse)")
+    parser.add_argument("--style", help="Style instructions for the voice")
     args = parser.parse_args()
 
     if not TTS_TOKEN and not args.remix:
@@ -642,19 +536,15 @@ def main():
 
     lang = args.lang
 
-    if args.all:
-        entries = list(VOICE_MAPS.get(lang, VOICE_MAP_EN).keys())
-        for entry_id in entries:
-            duration = generate_podcast(entry_id, lang=lang, remix=args.remix)
-            if duration:
-                update_json(entry_id, duration, lang=lang)
-    elif args.entry_id:
+    if args.entry_id:
         duration = generate_podcast(
             args.entry_id, 
             lang=lang, 
             remix=args.remix,
             music_url=args.music_url,
-            music_start=args.music_start
+            music_start=args.music_start,
+            voice=args.voice,
+            style=args.style
         )
         if duration:
             update_json(args.entry_id, duration, lang=lang)

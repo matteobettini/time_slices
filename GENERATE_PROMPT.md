@@ -109,17 +109,24 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     
     **Save the URL and start_time from the output** — you'll pass them to generate-podcast.py.
 
-15. **Add voice config to `audio/generate-podcast.py`:**
-    - Add entry to `VOICE_MAP_EN` dict with voice + style instructions
-    - Add entry to `VOICE_MAP_IT` dict with voice + Italian instructions  
-    - Voices: alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse. ⚠️ Do NOT use `onyx` (buggy).
+15. **Choose a voice and style for the entry:**
+    - Pick a voice that fits the era/mood: alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse
+    - ⚠️ Do NOT use `onyx` (buggy)
+    - Write style instructions (e.g., "Speak with measured drama and scholarly weight...")
+    - For Italian, adapt the style to Italian (e.g., "Parla con dramma misurato...")
 
-16. **Generate podcasts with music URL:**
+16. **Generate podcasts with voice and music:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
-    # Pass music URL and start time directly — no hardcoded config needed
-    python3 audio/generate-podcast.py {id} --lang en --music-url "URL_FROM_STEP_14" --music-start SECONDS
-    python3 audio/generate-podcast.py {id} --lang it --music-url "URL_FROM_STEP_14" --music-start SECONDS
+    # EN podcast
+    python3 audio/generate-podcast.py {id} --lang en \
+      --music-url "URL_FROM_STEP_14" --music-start SECONDS \
+      --voice VOICE --style "English style instructions here"
+    
+    # IT podcast  
+    python3 audio/generate-podcast.py {id} --lang it \
+      --music-url "URL_FROM_STEP_14" --music-start SECONDS \
+      --voice VOICE --style "Italian style instructions here"
     ```
     
     **VERIFY BOTH EXIST:**
