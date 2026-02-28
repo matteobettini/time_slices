@@ -150,226 +150,17 @@ VOICE_MAP_IT = {
 VOICE_MAPS = {"en": VOICE_MAP_EN, "it": VOICE_MAP_IT}
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# MUSIC POOL — Large catalog of public domain tracks from Internet Archive
-# organized by era/region. The cron agent picks from this pool when generating
-# new entries. Each track has a verified URL, suggested start_time, and tags.
+# MUSIC — Downloaded on-demand via CLI args (--music-url)
+# Use scripts/find-music.py to discover tracks from Internet Archive
 # ═══════════════════════════════════════════════════════════════════════════════
-# Legacy pool for existing entries. New entries should use direct URLs in MUSIC_SOURCES
-# (url, filename, description, start_time) — no need to add to this pool.
-MUSIC_POOL = {
-    # ── ANCIENT / MEDIEVAL (before 1400) ──────────────────────────────────
-    "gregorian-chant-resurrexi": {
-        "url": "https://archive.org/download/lp_grgorian-chant-easter-mass-pieces-from_choeur-des-moines-de-labbaye-saintpierre-d/disc1/01.02.%20Intro%C3%AFt%20%3A%20Resurrexi.mp3",
-        "filename": "gregorian-chant.mp3",
-        "description": "Gregorian chant — Introït: Resurrexi (Abbey of Solesmes)",
-        "start_time": 10.0,
-        "tags": ["medieval", "sacred", "choral", "europe", "monastic"],
-    },
-    "gregorian-kergonan": {
-        "url": "https://archive.org/download/gregorianchantkergonan/01%20-%20Deus%20in%20adjutorium.mp3",
-        "filename": "gregorian-kergonan.mp3",
-        "description": "Gregorian chant — Deus in adjutorium (Kergonan Abbey)",
-        "start_time": 0,
-        "tags": ["medieval", "sacred", "choral", "europe", "monastic"],
-    },
-    "respighi-ancient-airs": {
-        "url": "https://archive.org/download/c-2345-6-respighi-ancient-airs-suite-2-iii/C2345-6%20Respighi%20Ancient%20Airs%20Suite%202%20(ii).mp3",
-        "filename": "respighi-ancient-airs.mp3",
-        "description": "Respighi — Ancient Airs and Dances Suite 2 (evokes Roman/ancient world)",
-        "start_time": 1.5,
-        "tags": ["ancient", "orchestral", "rome", "neoclassical", "contemplative"],
-    },
 
-    # ── MIDDLE EAST / ISLAMIC WORLD ───────────────────────────────────────
-    "oud-arabic-gulezyan": {
-        "url": "https://archive.org/download/gulezyan-aram-1976-exotic-music-of-the-oud-lyrichord-side-a-archive-01/Gulezyan%2C%20Aram%20%281976%29%20-%20Exotic%20Music%20of%20the%20Oud%20Lyrichord%2C%20side%20A%20%28archive%29-01.mp3",
-        "filename": "oud-arabic.mp3",
-        "description": "Aram Gulezyan — Exotic Music of the Oud (traditional Arabic)",
-        "start_time": 3.0,
-        "tags": ["middle-east", "arabic", "oud", "traditional", "meditative"],
-    },
-    "persian-dinner-music": {
-        "url": "https://archive.org/download/beautiful-slow-persian-iranian-dinner-music-192-kbps/Beautiful%20Slow%20Persian%20_%20Iranian%20Dinner%20Music%20-%20%20%D9%85%D9%88%D8%B3%DB%8C%D9%82%DB%8C%20%D8%B2%DB%8C%D8%A8%D8%A7%20%D9%88%20%D9%85%D9%84%D8%A7%DB%8C%D9%85%20%D8%A8%DB%8C%20%DA%A9%D9%84%D8%A7%D9%85%20%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C%20%28192%20kbps%29.mp3",
-        "filename": "persian-dinner-music.mp3",
-        "description": "Slow Persian/Iranian instrumental music — santoor, tar, setar",
-        "start_time": 5.0,
-        "tags": ["middle-east", "persian", "iran", "meditative", "instrumental"],
-    },
-    "persian-santoor": {
-        "url": "https://archive.org/download/Master-Of-Persian-Santoo/02-Bidad.mp3",
-        "filename": "persian-santoor.mp3",
-        "description": "Master of Persian Santoor — Bidad",
-        "start_time": 0,
-        "tags": ["middle-east", "persian", "iran", "santoor", "classical"],
-    },
+# Legacy mappings for existing entries (used when --music-url not provided)
+# Format: entry_id -> (url, filename, start_time)
 
-    # ── EAST ASIAN ────────────────────────────────────────────────────────
-    "shakuhachi-bell-ringing": {
-        "url": "https://archive.org/download/lp_a-bell-ringing-in-the-empty-sky-japanese-s_goro-yamaguchi/disc1/01.01.%20Shika%20No%20T%C3%B4ne.mp3",
-        "filename": "shakuhachi-bell-ringing.mp3",
-        "description": "Goro Yamaguchi — Shika no Tōne (Japanese shakuhachi flute)",
-        "start_time": 0,
-        "tags": ["japan", "east-asia", "shakuhachi", "meditative", "traditional"],
-    },
-    "gamelan-javanese": {
-        "url": "https://archive.org/download/SundaJavaneseDegungSulingGamelan/01%20-%20Raga%20Madenda.mp3",
-        "filename": "gamelan-javanese.mp3",
-        "description": "Javanese Degung Suling Gamelan — Raga Madenda",
-        "start_time": 0,
-        "tags": ["indonesia", "east-asia", "gamelan", "meditative", "traditional"],
-    },
-
-    # ── RENAISSANCE (1400-1600) ───────────────────────────────────────────
-    "renaissance-lute-fantasia": {
-        "url": "https://archive.org/download/lp_italian-songs-16th-and-17th-centuries-spa_hugues-cunod-hermann-leeb_0/disc1/01.02.%20Lute%20Solo%3A%20Fantasia.mp3",
-        "filename": "renaissance-lute.mp3",
-        "description": "Renaissance lute fantasia — 16th century Italian",
-        "start_time": 14.0,
-        "tags": ["renaissance", "lute", "italy", "instrumental", "intimate"],
-    },
-    "soler-harpsichord": {
-        "url": "https://archive.org/download/GilbertRowland-AntonioSoler-SonatasForHarpsichord/01-SonataInFMajor.mp3",
-        "filename": "soler-harpsichord.mp3",
-        "description": "Antonio Soler — Sonata in F Major (harpsichord)",
-        "start_time": 0,
-        "tags": ["renaissance", "baroque", "harpsichord", "spain", "lively"],
-    },
-
-    # ── BAROQUE (1600-1750) ───────────────────────────────────────────────
-    "bach-organ-canonic": {
-        "url": "https://archive.org/download/canonic_variations_BWV_769a/01_Variation_I_%28Nel_canone_all%E2%80%99_ottava%29.mp3",
-        "filename": "bach-organ.mp3",
-        "description": "Bach — Canonic Variations BWV 769 (Baroque organ)",
-        "start_time": 3.5,
-        "tags": ["baroque", "organ", "germany", "sacred", "complex"],
-    },
-    "bach-cello-suite-1": {
-        "url": "https://archive.org/download/BachCelloSuiteNo.1PreludeYoYoMa/Bach%20Cello%20Suite%20No.1%20-%20Prelude%20%28Yo-Yo%20Ma%29.mp3",
-        "filename": "bach-cello-suite-1.mp3",
-        "description": "Bach — Cello Suite No. 1 Prelude (Yo-Yo Ma)",
-        "start_time": 5,
-        "tags": ["baroque", "cello", "germany", "instrumental", "flowing"],
-    },
-    "vivaldi-four-seasons": {
-        "url": "https://archive.org/download/Vivaldi-TheFourSeasonscomplete/01VivaldiSpring1stMovement-Allegro.mp3",
-        "filename": "vivaldi-four-seasons-spring.mp3",
-        "description": "Vivaldi — Four Seasons: Spring, 1st Movement Allegro",
-        "start_time": 0,
-        "tags": ["baroque", "violin", "italy", "energetic", "orchestral"],
-    },
-
-    # ── CLASSICAL (1750-1820) ─────────────────────────────────────────────
-    "mozart-piano-k310": {
-        "url": "https://archive.org/download/lp_piano-music-vol-6_arthur-balsam-wolfgang-amadeus-mozart/disc1/01.01.%20Sonata%20In%20A%20Minor%20K.310.mp3",
-        "filename": "mozart-piano.mp3",
-        "description": "Mozart — Piano Sonata K.310 in A minor",
-        "start_time": 45.0,
-        "tags": ["classical", "piano", "austria", "dramatic", "enlightenment"],
-    },
-    "beethoven-moonlight": {
-        "url": "https://archive.org/download/LudwigVanBeethovenMoonlightSonataAdagioSostenutogetTune.net/Ludwig_Van_Beethoven_-_Moonlight_Sonata_Adagio_Sostenuto_(get-tune.net).mp3",
-        "filename": "beethoven-moonlight.mp3",
-        "description": "Beethoven — Moonlight Sonata, Adagio sostenuto",
-        "start_time": 0,
-        "tags": ["classical", "piano", "germany", "somber", "introspective"],
-    },
-
-    # ── ROMANTIC (1820-1900) ──────────────────────────────────────────────
-    "chopin-nocturne-op9-1": {
-        "url": "https://archive.org/download/FredericChopinNocturneOp.9No.1InBFlatMinor/Frederic%20Chopin%20-%20Nocturne%20Op.%209%2C%20no.%201%20in%20B%20flat%20minor.mp3",
-        "filename": "chopin-nocturne-op9-1.mp3",
-        "description": "Chopin — Nocturne Op. 9 No. 1 in B-flat minor",
-        "start_time": 0,
-        "tags": ["romantic", "piano", "poland", "nocturnal", "lyrical"],
-    },
-    "liszt-liebestraum": {
-        "url": "https://archive.org/download/Liebestraum-FranzLiszt/Liebestraum.mp3",
-        "filename": "liszt-liebestraum.mp3",
-        "description": "Liszt — Liebestraum (Dream of Love)",
-        "start_time": 0,
-        "tags": ["romantic", "piano", "hungary", "lyrical", "passionate"],
-    },
-    "schubert-serenade": {
-        "url": "https://archive.org/download/SchubertSerenade_441/SchubertSerenade.mp3",
-        "filename": "schubert-serenade.mp3",
-        "description": "Schubert — Serenade (Ständchen)",
-        "start_time": 0,
-        "tags": ["romantic", "piano", "austria", "lyrical", "gentle"],
-    },
-    "grieg-solveig": {
-        "url": "https://archive.org/download/EdvardGriegSolveigsSonginstrumental/Edvard%20Grieg%20%2C%20Solveig%27s%20Song%20%28instrumental%29.mp3",
-        "filename": "grieg-solveig.mp3",
-        "description": "Grieg — Solveig's Song (instrumental, from Peer Gynt)",
-        "start_time": 0,
-        "tags": ["romantic", "orchestral", "norway", "nordic", "melancholic"],
-    },
-
-    # ── IMPRESSIONIST / EARLY MODERN (1880-1930) ──────────────────────────
-    "debussy-clair-de-lune": {
-        "url": "https://archive.org/download/DebussyClairDeLunevirgilFox/07-ClairDeLunefromSuiteBergamasque.mp3",
-        "filename": "debussy-clair-de-lune.mp3",
-        "description": "Debussy — Clair de lune (Suite Bergamasque)",
-        "start_time": 12.0,
-        "tags": ["impressionist", "piano", "france", "dreamy", "nocturnal"],
-    },
-    "ravel-pavane": {
-        "url": "https://archive.org/download/PavanePourUneInfanteDefunte/Pavane%20pour%20une%20infante%20defunte.mp3",
-        "filename": "ravel-pavane.mp3",
-        "description": "Ravel — Pavane pour une infante défunte (elegant, wistful piano)",
-        "start_time": 5.0,
-        "tags": ["impressionist", "piano", "france", "belle-epoque", "elegant"],
-    },
-    "satie-gnossiennes": {
-        "url": "https://archive.org/download/ThreeGnossiennesErikSatie/gnossiennes.mp3",
-        "filename": "satie-gnossiennes.mp3",
-        "description": "Satie — Trois Gnossiennes (mysterious, minimalist piano)",
-        "start_time": 0,
-        "tags": ["impressionist", "piano", "france", "mysterious", "minimalist"],
-    },
-
-    # ── SOUTH ASIAN ───────────────────────────────────────────────────────
-    "raga-desh": {
-        "url": "https://archive.org/download/AOC33B/AOC33B_04_Desh.mp3",
-        "filename": "raga-desh.mp3",
-        "description": "Raga Desh — Indian classical sitar",
-        "start_time": 0,
-        "tags": ["india", "south-asia", "sitar", "raga", "meditative"],
-    },
-}
-
-# Background music sources from Internet Archive (public domain)
-# Maps entry IDs → music track. Can use {"pool_key": "<key>"} for legacy pool entries,
-# or direct {"url": "...", "filename": "...", "description": "...", "start_time": 0} for new ones.
-MUSIC_SOURCES = {
-    "125-rome-dome-of-all-things": {"pool_key": "respighi-ancient-airs"},
-    "762-baghdad-round-city-of-reason": {"pool_key": "oud-arabic-gulezyan"},
-    "1347-florence-beautiful-catastrophe": {"pool_key": "gregorian-chant-resurrexi"},
-    "1504-florence-duel-of-giants": {"pool_key": "renaissance-lute-fantasia"},
-    "1648-munster-exhaustion-of-god": {"pool_key": "bach-organ-canonic"},
-    "1784-europe-dare-to-know": {"pool_key": "mozart-piano-k310"},
-    "1889-paris-year-everything-changed": {"pool_key": "ravel-pavane"},
-    "1922-modernist-explosion": {"pool_key": "satie-gnossiennes"},
-    # 1517 Wittenberg: Renaissance lute — capturing the moment before the split, the last gasp of synthesis
-    "1517-wittenberg-hammer-falls": {"pool_key": "renaissance-lute-fantasia"},
-    # 1687 London: Bach cello suite — the peak of Baroque, mathematical precision meets emotional depth
-    "1687-london-gravity-of-reason": {"pool_key": "bach-cello-suite-1"},
-    # 1141 Sens: Gregorian chant — medieval monasticism, the Church that Abelard challenged
-    "1141-sens-duel-of-reason-and-faith": {"pool_key": "gregorian-chant-resurrexi"},
-}
-
-
-def _resolve_music_source(src):
-    """Resolve a MUSIC_SOURCES entry, dereferencing pool_key if present."""
-    if "pool_key" in src:
-        pool_entry = MUSIC_POOL[src["pool_key"]]
-        resolved = dict(pool_entry)
-        # Allow overrides from the MUSIC_SOURCES entry (e.g. custom start_time)
-        for k, v in src.items():
-            if k != "pool_key":
-                resolved[k] = v
-        return resolved
-    return src
-
+# ═══════════════════════════════════════════════════════════════════════════════
+# MUSIC — Pass via CLI: --music-url <url> --music-start <seconds>
+# Use scripts/find-music.py to discover tracks from Internet Archive
+# ═══════════════════════════════════════════════════════════════════════════════
 
 def _verify_music_has_audio(filepath):
     """Check that a music file actually contains audio (not silence). Returns True if OK."""
@@ -384,37 +175,34 @@ def _verify_music_has_audio(filepath):
     return True
 
 
-def download_music(entry_id=None):
-    """Download background music from Internet Archive."""
+def download_music_track(url, filename):
+    """Download a single music track from URL. Returns path or None on failure."""
     os.makedirs(MUSIC_DIR, exist_ok=True)
-    sources = {entry_id: MUSIC_SOURCES[entry_id]} if entry_id else MUSIC_SOURCES
-
-    for eid, src in sources.items():
-        src = _resolve_music_source(src)
-        outpath = os.path.join(MUSIC_DIR, src["filename"])
-        if os.path.exists(outpath) and os.path.getsize(outpath) > 10000:
-            # Verify existing file has actual audio
-            if _verify_music_has_audio(outpath):
-                print(f"  ✓ {src['filename']} already exists")
-                continue
-            else:
-                print(f"  ⚠️  {src['filename']} exists but is silent, re-downloading...")
-                os.remove(outpath)
-        print(f"  ↓ Downloading {src['description']}...")
-        try:
-            req = urllib.request.Request(src["url"], headers={"User-Agent": "Mozilla/5.0"})
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                with open(outpath, "wb") as f:
-                    f.write(resp.read())
-            # Verify download has actual audio
-            if not _verify_music_has_audio(outpath):
-                os.remove(outpath)
-                raise ValueError("Downloaded file is silent/corrupt")
-            print(f"  ✓ {src['filename']} ({os.path.getsize(outpath) // 1024}KB)")
-        except Exception as e:
-            print(f"  ✗ FAILED: {src['filename']}: {e}")
-            print(f"  🚨 Music download failed — pick a different track from MUSIC_POOL!")
-            # Don't create silent placeholder — let it fail loudly
+    outpath = os.path.join(MUSIC_DIR, filename)
+    
+    if os.path.exists(outpath) and os.path.getsize(outpath) > 10000:
+        if _verify_music_has_audio(outpath):
+            print(f"  ✓ {filename} already exists")
+            return outpath
+        else:
+            print(f"  ⚠️  {filename} exists but is silent, re-downloading...")
+            os.remove(outpath)
+    
+    print(f"  ↓ Downloading music: {filename}...")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            with open(outpath, "wb") as f:
+                f.write(resp.read())
+        if not _verify_music_has_audio(outpath):
+            os.remove(outpath)
+            raise ValueError("Downloaded file is silent/corrupt")
+        print(f"  ✓ {filename} ({os.path.getsize(outpath) // 1024}KB)")
+        return outpath
+    except Exception as e:
+        print(f"  ✗ FAILED: {filename}: {e}")
+        print(f"  🚨 Music download failed — use find-music.py to get a different track!")
+        return None
 
 
 def _tts_chunk(text, voice, instructions, out_path, timeout=120, retries=2):
@@ -601,7 +389,7 @@ def mix_audio(narration_path, music_path, output_path, narration_duration, start
     Improvements over basic mix:
     - Music starts from a curated timestamp (skip silence/weak openings)
     - Low-pass filter at 4kHz to avoid competing with voice frequencies
-    - Sidechain-style ducking: music at 20% during intro, ducks to 10% when voice enters
+    - Sidechain-style ducking: music at 35% during intro/outro, ducks to 20% during narration
     - Longer 3.5s music intro to establish mood before narration
     - Gentle compression to even out music dynamics
     """
@@ -622,7 +410,7 @@ def mix_audio(narration_path, music_path, output_path, narration_duration, start
     # 2. Loop if needed, trim to total duration
     # 3. Low-pass at 4kHz to clear voice frequency space
     # 4. Gentle compression to tame dynamics
-    # 5. Volume envelope: 20% intro → duck to 10% when voice enters → 20% outro
+    # 5. Volume envelope: 35% intro → duck to 20% when voice enters → 35% outro
     # 6. Fade in at start, fade out at end
     # 7. amix with normalize=0 to prevent automatic halving of inputs
     # 8. Final loudnorm pass to hit podcast-standard -16 LUFS
@@ -635,10 +423,10 @@ def mix_audio(narration_path, music_path, output_path, narration_duration, start
         f"loudnorm=I=-20:TP=-2:LRA=7,"
         f"lowpass=f=4000:p=1,"
         f"acompressor=threshold=-25dB:ratio=3:attack=20:release=200,"
-        f"volume=0.20,"
+        f"volume=0.35,"
         f"afade=t=in:st=0:d=2.5,"
-        # Duck music when voice is present: fade down at voice entry, fade up at voice exit
-        f"volume=enable='between(t,{intro_duration},{voice_end_time})':volume=0.5,"
+        # Duck music when voice is present: fade down to ~57% of base (0.20/0.35) during narration
+        f"volume=enable='between(t,{intro_duration},{voice_end_time})':volume=0.57,"
         f"afade=t=out:st={total_duration - 2.5}:d=2.5"
         f"[music];"
         # Voice: delay to start after music intro
@@ -674,8 +462,15 @@ def mix_audio(narration_path, music_path, output_path, narration_duration, start
 NARRATIONS_DIR = os.path.join(SCRIPT_DIR, "narrations")
 
 
-def generate_podcast(entry_id, lang="en", remix=False):
+def generate_podcast(entry_id, lang="en", remix=False, music_url=None, music_start=0):
     """Full pipeline: script → narration → mix → output.
+    
+    Args:
+        entry_id: The slice entry ID
+        lang: "en" or "it"  
+        remix: If True, skip TTS and reuse saved narration
+        music_url: URL to download background music from (optional)
+        music_start: Start time in seconds for music track
     
     If remix=True, skip TTS and reuse saved narration from audio/narrations/.
     If no saved narration exists, extract voice from existing podcast MP3
@@ -705,9 +500,14 @@ def generate_podcast(entry_id, lang="en", remix=False):
 
     print(f"  📝 Script: {len(script_text)} characters")
 
-    # Download music if needed
-    if entry_id in MUSIC_SOURCES:
-        download_music(entry_id)
+    # Download music if URL provided
+    music_path = None
+    if music_url:
+        # Generate filename from URL
+        import hashlib
+        url_hash = hashlib.md5(music_url.encode()).hexdigest()[:8]
+        music_filename = f"track-{url_hash}.mp3"
+        music_path = download_music_track(music_url, music_filename)
 
     # Narration: generate or reuse
     narration_subdir = os.path.join(NARRATIONS_DIR, "it") if lang == "it" else NARRATIONS_DIR
@@ -763,12 +563,6 @@ def generate_podcast(entry_id, lang="en", remix=False):
         subprocess.run(["cp", narration_path, saved_narration])
         cleanup_narration = True
 
-    # Get music path
-    music_src = MUSIC_SOURCES.get(entry_id)
-    if music_src:
-        music_src = _resolve_music_source(music_src)
-    music_path = os.path.join(MUSIC_DIR, music_src["filename"]) if music_src else None
-
     # Mix — Italian outputs go to audio/it/
     if lang == "it":
         it_dir = os.path.join(OUTPUT_DIR, "it")
@@ -777,7 +571,7 @@ def generate_podcast(entry_id, lang="en", remix=False):
     else:
         output_path = os.path.join(OUTPUT_DIR, f"{entry_id}.mp3")
     if music_path and os.path.exists(music_path) and os.path.getsize(music_path) > 10000:
-        start_time = music_src.get("start_time", 0)
+        start_time = music_start
         
         # Validate music isn't silent at start_time
         music_ok, suggested_start = validate_music_start(music_path, start_time)
@@ -835,35 +629,38 @@ def update_json(entry_id, duration, lang="en"):
 def main():
     parser = argparse.ArgumentParser(description="Generate Time Slice podcasts")
     parser.add_argument("entry_id", nargs="?", help="Entry ID to generate")
-    parser.add_argument("--all", action="store_true", help="Generate all entries")
     parser.add_argument("--lang", default="en", choices=["en", "it"], help="Language (en or it)")
-    parser.add_argument("--download-music", action="store_true", help="Download music only")
     parser.add_argument("--remix", action="store_true", help="Skip TTS, reuse saved narrations, remix music only")
+    parser.add_argument("--music-url", help="URL to download background music from")
+    parser.add_argument("--music-start", type=float, default=0, help="Start time in seconds for music track")
+    parser.add_argument("--all", action="store_true", help="Generate all entries (uses no music)")
     args = parser.parse_args()
 
-    if not TTS_TOKEN and not args.remix and not args.download_music:
+    if not TTS_TOKEN and not args.remix:
         print("✗ TIMESLICES_TTS_TOKEN not set in environment. Export it first.")
         sys.exit(1)
-
-    if args.download_music:
-        print("📥 Downloading all background music...")
-        download_music()
-        return
 
     lang = args.lang
 
     if args.all:
         entries = list(VOICE_MAPS.get(lang, VOICE_MAP_EN).keys())
+        for entry_id in entries:
+            duration = generate_podcast(entry_id, lang=lang, remix=args.remix)
+            if duration:
+                update_json(entry_id, duration, lang=lang)
     elif args.entry_id:
-        entries = [args.entry_id]
+        duration = generate_podcast(
+            args.entry_id, 
+            lang=lang, 
+            remix=args.remix,
+            music_url=args.music_url,
+            music_start=args.music_start
+        )
+        if duration:
+            update_json(args.entry_id, duration, lang=lang)
     else:
         parser.print_help()
         return
-
-    for entry_id in entries:
-        duration = generate_podcast(entry_id, lang=lang, remix=args.remix)
-        if duration:
-            update_json(entry_id, duration, lang=lang)
 
     print(f"\n✅ Done!")
 

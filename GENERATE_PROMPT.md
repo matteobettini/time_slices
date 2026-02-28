@@ -96,7 +96,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 14. **Find background music using `find-music.py`:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
-    # Search by era + mood (required for each new entry — don't reuse existing tracks!)
+    # Search by era + mood — pick terms that match the entry's period and tone
     python3 scripts/find-music.py --era medieval --mood sacred
     python3 scripts/find-music.py --era baroque --instrument harpsichord
     python3 scripts/find-music.py --region middle-east --mood contemplative
@@ -107,18 +107,19 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     `--mood` (contemplative/dramatic/melancholic/triumphant/sacred/courtly/pastoral/dark),
     `--instrument` (piano/organ/harpsichord/lute/guitar/strings/orchestra/choir/oud)
     
-    Copy the output config block into `MUSIC_SOURCES` in `audio/generate-podcast.py`.
+    **Save the URL and start_time from the output** — you'll pass them to generate-podcast.py.
 
 15. **Add voice config to `audio/generate-podcast.py`:**
     - Add entry to `VOICE_MAP_EN` dict with voice + style instructions
     - Add entry to `VOICE_MAP_IT` dict with voice + Italian instructions  
     - Voices: alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse. ⚠️ Do NOT use `onyx` (buggy).
 
-16. **Generate podcasts:**
+16. **Generate podcasts with music URL:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
-    python3 audio/generate-podcast.py {id} --lang en
-    python3 audio/generate-podcast.py {id} --lang it
+    # Pass music URL and start time directly — no hardcoded config needed
+    python3 audio/generate-podcast.py {id} --lang en --music-url "URL_FROM_STEP_14" --music-start SECONDS
+    python3 audio/generate-podcast.py {id} --lang it --music-url "URL_FROM_STEP_14" --music-start SECONDS
     ```
     
     **VERIFY BOTH EXIST:**
