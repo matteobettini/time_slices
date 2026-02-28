@@ -70,13 +70,14 @@
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
     const scrollT = maxScroll > 0 ? window.scrollY / maxScroll : 0;
 
-    // Find current entry (closest to center)
+    // Find current entry - the one whose tick is closest to the needle (center)
     let currentEntry = null;
     let currentDist = Infinity;
+    
     entries.forEach(e => {
-      if (!e.el) return;
-      const rect = e.el.getBoundingClientRect();
-      const dist = Math.abs(rect.top + rect.height / 2 - centerY);
+      const yearT = (e.year - minYear) / yearSpan;
+      const tickY = trackOffset + padding + yearT * (trackHeight - padding * 2);
+      const dist = Math.abs(tickY - centerY);
       if (dist < currentDist) {
         currentDist = dist;
         currentEntry = e;
@@ -164,14 +165,27 @@
     }
     
     function snapToClosestEntry() {
-      const centerY = window.innerHeight / 2;
+      if (!entries.length) return;
+      
+      const h = window.innerHeight;
+      const centerY = h / 2;
+      const minYear = entries[0].year;
+      const maxYear = entries[entries.length - 1].year;
+      const yearSpan = maxYear - minYear || 1;
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollT = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+      const trackHeight = h * 0.6;
+      const padding = 30;
+      const trackOffset = (h - trackHeight) / 2 - scrollT * (trackHeight - padding * 2);
+      
+      // Find entry whose tick is closest to needle
       let closest = null;
       let closestDist = Infinity;
       
       entries.forEach(e => {
-        if (!e.el) return;
-        const rect = e.el.getBoundingClientRect();
-        const dist = Math.abs(rect.top + rect.height / 2 - centerY);
+        const yearT = (e.year - minYear) / yearSpan;
+        const tickY = trackOffset + padding + yearT * (trackHeight - padding * 2);
+        const dist = Math.abs(tickY - centerY);
         if (dist < closestDist) {
           closestDist = dist;
           closest = e;
@@ -179,6 +193,7 @@
       });
       
       if (closest && closest.el) {
+        // Scroll to center this entry
         const rect = closest.el.getBoundingClientRect();
         const elCenter = rect.top + rect.height / 2;
         const scrollDelta = elCenter - centerY;
