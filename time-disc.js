@@ -67,34 +67,15 @@
 
     let content = '';
 
-    // Background - soft glow that extends beyond container, fades naturally
+    // Background - soft glow using radial gradient (no box edges)
     content += `<defs>
-      <linearGradient id="barFadeH" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:0.4"/>
-        <stop offset="30%" style="stop-color:#1a1a1a;stop-opacity:0.15"/>
-        <stop offset="60%" style="stop-color:#1a1a1a;stop-opacity:0.05"/>
-        <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:0"/>
-      </linearGradient>
-      <linearGradient id="glowFadeH" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:#666666;stop-opacity:0.1"/>
-        <stop offset="20%" style="stop-color:#666666;stop-opacity:0.05"/>
-        <stop offset="50%" style="stop-color:#666666;stop-opacity:0.02"/>
+      <radialGradient id="glowRadial" cx="0%" cy="50%" rx="80%" ry="50%">
+        <stop offset="0%" style="stop-color:#666666;stop-opacity:0.15"/>
+        <stop offset="50%" style="stop-color:#666666;stop-opacity:0.05"/>
         <stop offset="100%" style="stop-color:#666666;stop-opacity:0"/>
-      </linearGradient>
-      <linearGradient id="vertFade" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" style="stop-color:white;stop-opacity:0"/>
-        <stop offset="10%" style="stop-color:white;stop-opacity:1"/>
-        <stop offset="90%" style="stop-color:white;stop-opacity:1"/>
-        <stop offset="100%" style="stop-color:white;stop-opacity:0"/>
-      </linearGradient>
-      <mask id="vertMask">
-        <rect x="-50" y="0" width="${BAR_WIDTH + 200}" height="${h}" fill="url(#vertFade)" />
-      </mask>
+      </radialGradient>
     </defs>`;
-    content += `<g mask="url(#vertMask)">`;
-    content += `<rect class="disc-glow" x="0" y="0" width="${BAR_WIDTH + 150}" height="${h}" fill="url(#glowFadeH)" />`;
-    content += `<rect class="disc-bg" x="0" y="0" width="${BAR_WIDTH + 120}" height="${h}" fill="url(#barFadeH)" />`;
-    content += `</g>`;
+    content += `<ellipse class="disc-glow" cx="0" cy="${h/2}" rx="${BAR_WIDTH + 100}" ry="${h * 0.45}" fill="url(#glowRadial)" />`;
 
     // Ticks group - no transition, direct transform
     content += `<g id="ticksGroup">`;

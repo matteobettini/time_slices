@@ -12,7 +12,6 @@
   pointer-events: none;
   opacity: 0.4;
   transition: opacity 0.3s ease;
-  overflow: hidden;
 }
 
 .time-disc-container:hover,
