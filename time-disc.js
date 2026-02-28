@@ -110,11 +110,11 @@
       
       content += `<line class="${tickClass}" x1="0" y1="${tickY}" x2="${tickLen}" y2="${tickY}" />`;
       
-      // Labels for 500 and 1000 year ticks
-      if (is1k || is500) {
+      // Labels for 500 and 1000 year ticks (and year 0)
+      if (is1k || is500 || year === 0) {
         const labelX = (TICK_LENGTH + TICK_LENGTH + 35) / 2;
         const bgLabelText = typeof window.formatYear === 'function' ? window.formatYear(year) : year;
-        const labelClass = is1k ? 'disc-bg-label major' : 'disc-bg-label medium';
+        const labelClass = (is1k || year === 0) ? 'disc-bg-label major' : 'disc-bg-label medium';
         content += `<text class="${labelClass}" x="${labelX}" y="${tickY}" text-anchor="middle" dy="0.35em">${bgLabelText}</text>`;
       }
     }
