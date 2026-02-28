@@ -14,13 +14,6 @@
   transition: opacity 0.3s ease;
 }
 
-/* Move right on mobile */
-@media (max-width: 600px) {
-  .time-disc-container {
-    left: 10px;
-  }
-}
-
 .time-disc-container:hover,
 .time-disc-container.active {
   opacity: 1;
