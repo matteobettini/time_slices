@@ -110,7 +110,7 @@
   filter: drop-shadow(0 0 6px var(--accent));
 }
 
-/* Background ticks (every 500/1000/10000 years) */
+/* Background ticks (every 500/1000 years) */
 .disc-bg-tick {
   stroke: #444;
   stroke-linecap: round;
@@ -121,17 +121,12 @@
   opacity: 0.3;
 }
 
-.disc-bg-tick.medium {
+.disc-bg-tick.major {
   stroke-width: 1.5;
   opacity: 0.5;
 }
 
-.disc-bg-tick.major {
-  stroke-width: 2;
-  opacity: 0.7;
-}
-
-/* Background tick labels (10k years) */
+/* Background tick labels (1k years) */
 .disc-bg-label {
   font-family: var(--mono);
   font-size: 0.45rem;
