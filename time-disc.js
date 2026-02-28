@@ -102,7 +102,7 @@
     content += `</g>`;
 
     // Fixed needle at center - only right part (after year label)
-    const needleStart = TICK_LENGTH + 45;
+    const needleStart = TICK_LENGTH + 35;
     content += `<line class="disc-needle" x1="${needleStart}" y1="${centerY}" x2="${BAR_WIDTH}" y2="${centerY}" />`;
 
     svg.innerHTML = content;
