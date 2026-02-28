@@ -18,7 +18,6 @@
   let entries = [];
   let isDragging = false;
   let dragStartY = 0;
-  let dragStartScroll = 0;
 
   const BAR_WIDTH = 60;
   const TICK_LENGTH = 14;
@@ -196,16 +195,63 @@
       container.classList.add('active');
       const clientY = e.touches ? e.touches[0].clientY : e.clientY;
       dragStartY = clientY;
-      dragStartScroll = window.scrollY;
       e.preventDefault();
     }
 
     function onMove(e) {
       if (!isDragging) return;
       e.preventDefault();
+      
+      if (!entries.length) return;
+      
       const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-      const deltaY = dragStartY - clientY;
-      window.scrollTo({ top: dragStartScroll + deltaY * 5, behavior: 'auto' });
+      const h = window.innerHeight;
+      const centerY = h / 2;
+      
+      // Find which entry's tick would be at the drag position
+      const minYear = entries[0].year;
+      const maxYear = entries[entries.length - 1].year;
+      const yearSpan = maxYear - minYear || 1;
+      const trackScale = 0.4;
+      const trackHeight = h * trackScale;
+      
+      // Dragging moves the track - find which entry is now at needle
+      // Current track offset based on current scroll
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollRatio = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+      const currentTrackOffset = centerY - (scrollRatio * trackHeight);
+      
+      // How much did we drag?
+      const dragDelta = dragStartY - clientY;
+      
+      // New track offset if we moved by dragDelta
+      const newTrackOffset = currentTrackOffset + dragDelta;
+      
+      // Find entry whose tick would be at centerY with this new offset
+      let targetEntry = null;
+      let closestDist = Infinity;
+      
+      entries.forEach(e => {
+        const yearRatio = (e.year - minYear) / yearSpan;
+        const tickY = newTrackOffset + (yearRatio * trackHeight);
+        const dist = Math.abs(tickY - centerY);
+        if (dist < closestDist) {
+          closestDist = dist;
+          targetEntry = e;
+        }
+      });
+      
+      // Scroll to center that entry
+      if (targetEntry && targetEntry.el) {
+        const rect = targetEntry.el.getBoundingClientRect();
+        const elCenter = rect.top + rect.height / 2;
+        const scrollDelta = elCenter - centerY;
+        window.scrollBy({ top: scrollDelta, behavior: 'auto' });
+      }
+      
+      // Update drag start for continuous dragging
+      dragStartY = clientY;
+      
       render();
     }
 
