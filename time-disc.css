@@ -167,9 +167,15 @@
   transition: opacity 0.2s ease;
 }
 
-/* Only show on active (not hover) */
+/* Only show on active (not hover), but allow hover on desktop */
 .time-disc-container.active .time-disc-indicator {
   opacity: 1;
+}
+
+@media (hover: hover) {
+  .time-disc-container:hover .time-disc-indicator {
+    opacity: 1;
+  }
 }
 
 .time-disc-indicator-year {
