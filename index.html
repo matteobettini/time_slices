@@ -825,10 +825,10 @@
 
   /* Responsive */
   @media (max-width: 768px) {
-    .timeline-line { left: 24px; }
-    .entry { width: calc(100% - 60px); margin-left: 50px !important; }
-    .entry::before { left: -33px !important; right: auto !important; }
-    .entry::after { left: -24px !important; right: auto !important; }
+    .timeline-line { left: auto; right: 24px; }
+    .entry { width: calc(100% - 60px); margin-left: 0 !important; margin-right: 50px !important; }
+    .entry::before { right: -33px !important; left: auto !important; }
+    .entry::after { right: -24px !important; left: auto !important; }
     header { padding: 10px 16px; }
     .header-top { margin-bottom: 8px; }
     .timeline-container { padding: 40px 16px 80px; margin-top: 120px; }
