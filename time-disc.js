@@ -1,8 +1,8 @@
 /**
  * Time Disc Navigator
  * 
- * Bar with ticks spaced by year.
- * Dragging scrolls to entries based on year position.
+ * Fixed needle in center. Ticks move past it as you scroll.
+ * Ticks spaced by year. Dragging maps year to entry.
  */
 
 (function() {
@@ -20,7 +20,7 @@
 
   const BAR_WIDTH = 60;
   const TICK_LENGTH = 14;
-  const PADDING = 60; // Padding at top/bottom of bar
+  const TRACK_SCALE = 0.5; // Ticks span 50% of viewport height
 
   function build() {
     if (!window.SLICES || !window.SLICES.length) return;
@@ -37,52 +37,17 @@
 
     const sorted = [...slices].sort((a, b) => parseInt(a.year) - parseInt(b.year));
     
-    entries = sorted.map(slice => ({
+    entries = sorted.map((slice, index) => ({
       year: parseInt(slice.year),
       slice,
+      index,
       el: document.querySelector(`#entry-${slice.id}`)
     }));
 
     render();
   }
 
-  // Convert year to Y position on bar
-  function yearToBarY(year, h) {
-    if (!entries.length) return h / 2;
-    const minYear = entries[0].year;
-    const maxYear = entries[entries.length - 1].year;
-    const yearSpan = maxYear - minYear || 1;
-    const usableHeight = h - PADDING * 2;
-    const ratio = (year - minYear) / yearSpan;
-    return PADDING + ratio * usableHeight;
-  }
-
-  // Convert Y position on bar to year
-  function barYToYear(y, h) {
-    if (!entries.length) return 0;
-    const minYear = entries[0].year;
-    const maxYear = entries[entries.length - 1].year;
-    const yearSpan = maxYear - minYear || 1;
-    const usableHeight = h - PADDING * 2;
-    const ratio = Math.max(0, Math.min(1, (y - PADDING) / usableHeight));
-    return minYear + ratio * yearSpan;
-  }
-
-  // Find entry closest to a year
-  function findEntryByYear(targetYear) {
-    let closest = null;
-    let closestDist = Infinity;
-    entries.forEach(e => {
-      const dist = Math.abs(e.year - targetYear);
-      if (dist < closestDist) {
-        closestDist = dist;
-        closest = e;
-      }
-    });
-    return closest;
-  }
-
-  // Find entry closest to viewport center
+  // Find which entry is currently at viewport center
   function findCurrentEntry() {
     const centerY = window.innerHeight / 2;
     let closest = null;
@@ -99,6 +64,12 @@
     return closest;
   }
 
+  // Get scroll progress (0 to 1)
+  function getScrollProgress() {
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    return maxScroll > 0 ? window.scrollY / maxScroll : 0;
+  }
+
   function render() {
     const h = window.innerHeight;
     const centerY = h / 2;
@@ -107,9 +78,15 @@
     svg.setAttribute('height', h);
     svg.setAttribute('viewBox', `0 0 ${BAR_WIDTH} ${h}`);
 
+    if (!entries.length) return;
+
+    const minYear = entries[0].year;
+    const maxYear = entries[entries.length - 1].year;
+    const yearSpan = maxYear - minYear || 1;
+
     let content = '';
 
-    // Background with grey glow
+    // Background
     content += `<defs>
       <linearGradient id="barFadeH" x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:0.8"/>
@@ -124,15 +101,22 @@
     content += `<rect class="disc-glow" x="0" y="0" width="${BAR_WIDTH}" height="${h}" fill="url(#glowFade)" />`;
     content += `<rect class="disc-bg" x="0" y="0" width="${BAR_WIDTH + 20}" height="${h}" fill="url(#barFadeH)" />`;
 
-    // Find current entry (in viewport)
+    // Current entry at viewport center
     const currentEntry = findCurrentEntry();
+    const currentYearRatio = currentEntry ? (currentEntry.year - minYear) / yearSpan : 0;
 
-    // Draw ticks - fixed positions based on year
+    // Track height and offset
+    // Ticks are positioned by year, track moves so current entry's tick is at center
+    const trackHeight = h * TRACK_SCALE;
+    const trackOffset = centerY - (currentYearRatio * trackHeight);
+
+    // Draw ticks
     entries.forEach(e => {
-      const tickY = yearToBarY(e.year, h);
+      const yearRatio = (e.year - minYear) / yearSpan;
+      const tickY = trackOffset + yearRatio * trackHeight;
       
       // Skip if off screen
-      if (tickY < -20 || tickY > h + 20) return;
+      if (tickY < -30 || tickY > h + 30) return;
       
       const x1 = 0;
       const x2 = TICK_LENGTH;
@@ -141,24 +125,55 @@
       const isCurrent = e === currentEntry;
       const tickClass = isCurrent ? 'disc-tick current' : 'disc-tick';
 
-      content += `<line class="${tickClass}" data-id="${e.slice.id}" data-year="${e.year}" x1="${x1}" y1="${tickY}" x2="${x2}" y2="${tickY}" />`;
+      content += `<line class="${tickClass}" data-id="${e.slice.id}" data-year="${e.year}" data-index="${e.index}" x1="${x1}" y1="${tickY}" x2="${x2}" y2="${tickY}" />`;
 
       const yearText = typeof window.formatYear === 'function' ? window.formatYear(e.year) : e.year;
       const labelClass = isCurrent ? 'disc-label current' : 'disc-label';
       content += `<text class="${labelClass}" x="${labelX}" y="${tickY + 4}" text-anchor="start">${yearText}</text>`;
     });
 
-    // Needle - positioned at current entry's year position (not fixed at center)
-    if (currentEntry) {
-      const needleY = yearToBarY(currentEntry.year, h);
-      content += `<line class="disc-needle" x1="0" y1="${needleY}" x2="${BAR_WIDTH}" y2="${needleY}" />`;
-      
-      if (yearDisplay) {
-        yearDisplay.textContent = typeof window.formatYear === 'function' ? window.formatYear(currentEntry.year) : currentEntry.year;
-      }
+    // Fixed needle at center
+    content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${BAR_WIDTH}" y2="${centerY}" />`;
+
+    // Update year display
+    if (currentEntry && yearDisplay) {
+      yearDisplay.textContent = typeof window.formatYear === 'function' ? window.formatYear(currentEntry.year) : currentEntry.year;
     }
 
     svg.innerHTML = content;
+  }
+
+  // Find entry by Y position on bar (accounting for current track position)
+  function findEntryAtBarY(clientY) {
+    if (!entries.length) return null;
+    
+    const h = window.innerHeight;
+    const centerY = h / 2;
+    const minYear = entries[0].year;
+    const maxYear = entries[entries.length - 1].year;
+    const yearSpan = maxYear - minYear || 1;
+    
+    const currentEntry = findCurrentEntry();
+    const currentYearRatio = currentEntry ? (currentEntry.year - minYear) / yearSpan : 0;
+    const trackHeight = h * TRACK_SCALE;
+    const trackOffset = centerY - (currentYearRatio * trackHeight);
+    
+    // Convert clientY to year
+    const yearRatio = (clientY - trackOffset) / trackHeight;
+    const targetYear = minYear + yearRatio * yearSpan;
+    
+    // Find closest entry to this year
+    let closest = null;
+    let closestDist = Infinity;
+    entries.forEach(e => {
+      const dist = Math.abs(e.year - targetYear);
+      if (dist < closestDist) {
+        closestDist = dist;
+        closest = e;
+      }
+    });
+    
+    return closest;
   }
 
   function scrollToEntry(entry) {
@@ -166,8 +181,7 @@
     const rect = entry.el.getBoundingClientRect();
     const centerY = window.innerHeight / 2;
     const scrollDelta = rect.top + rect.height / 2 - centerY;
-    window.scrollBy({ top: scrollDelta, behavior: 'smooth' });
-    if (navigator.vibrate) navigator.vibrate(10);
+    window.scrollBy({ top: scrollDelta, behavior: 'auto' });
   }
 
   function initDrag() {
@@ -175,12 +189,6 @@
       isDragging = true;
       container.classList.add('active');
       e.preventDefault();
-      
-      // Immediately scroll to entry at click position
-      const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-      const year = barYToYear(clientY, window.innerHeight);
-      const entry = findEntryByYear(year);
-      if (entry) scrollToEntry(entry);
     }
 
     function onMove(e) {
@@ -188,15 +196,10 @@
       e.preventDefault();
       
       const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-      const year = barYToYear(clientY, window.innerHeight);
-      const entry = findEntryByYear(year);
+      const entry = findEntryAtBarY(clientY);
       
-      if (entry && entry.el) {
-        // Scroll to center entry instantly
-        const rect = entry.el.getBoundingClientRect();
-        const centerY = window.innerHeight / 2;
-        const scrollDelta = rect.top + rect.height / 2 - centerY;
-        window.scrollBy({ top: scrollDelta, behavior: 'auto' });
+      if (entry) {
+        scrollToEntry(entry);
         render();
       }
     }
@@ -205,6 +208,15 @@
       if (!isDragging) return;
       isDragging = false;
       container.classList.remove('active');
+      
+      // Snap to closest entry
+      const current = findCurrentEntry();
+      if (current) {
+        const rect = current.el.getBoundingClientRect();
+        const centerY = window.innerHeight / 2;
+        const scrollDelta = rect.top + rect.height / 2 - centerY;
+        window.scrollBy({ top: scrollDelta, behavior: 'smooth' });
+      }
     }
 
     container.addEventListener('mousedown', onStart);
@@ -230,7 +242,6 @@
     });
   }
 
-  // Update on scroll
   let scrollTimer = null;
   window.addEventListener('scroll', () => {
     if (scrollTimer) return;
@@ -240,7 +251,6 @@
     });
   }, { passive: true });
 
-  // Rebuild on resize
   let resizeTimer = null;
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
