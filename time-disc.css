@@ -12,13 +12,7 @@
   pointer-events: none;
   opacity: 0.4;
   transition: opacity 0.3s ease;
-}
-
-/* On mobile, make container narrower so needle doesn't overlap cards */
-@media (max-width: 768px) {
-  .time-disc-container {
-    width: 50px;
-  }
+  overflow: hidden;
 }
 
 .time-disc-container:hover,
