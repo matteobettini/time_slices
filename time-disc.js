@@ -164,7 +164,28 @@
   function getCurrentPosition() {
     const centerY = window.innerHeight / 2;
     
-    // Find the two entries we're between
+    // First check if any entry is very close to center (snap threshold)
+    const SNAP_THRESHOLD = 5; // pixels
+    let snappedEntry = null;
+    let minDist = Infinity;
+    
+    for (const e of entries) {
+      if (!e.el) continue;
+      const rect = e.el.getBoundingClientRect();
+      const elCenter = rect.top + rect.height / 2;
+      const dist = Math.abs(elCenter - centerY);
+      if (dist < minDist) {
+        minDist = dist;
+        snappedEntry = e;
+      }
+    }
+    
+    // If closest entry is within threshold, snap to it exactly
+    if (snappedEntry && minDist < SNAP_THRESHOLD) {
+      return { year: snappedEntry.year, entry: snappedEntry };
+    }
+    
+    // Otherwise interpolate between entries
     let before = null;
     let after = null;
     
