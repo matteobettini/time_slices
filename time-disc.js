@@ -67,20 +67,22 @@
 
     let content = '';
 
-    // Background
+    // Background - softer radial glow instead of box
     content += `<defs>
       <linearGradient id="barFadeH" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:0.8"/>
-        <stop offset="50%" style="stop-color:#1a1a1a;stop-opacity:0.4"/>
+        <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:0.6"/>
+        <stop offset="30%" style="stop-color:#1a1a1a;stop-opacity:0.3"/>
+        <stop offset="70%" style="stop-color:#1a1a1a;stop-opacity:0.1"/>
         <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:0"/>
       </linearGradient>
-      <linearGradient id="glowFade" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:#888888;stop-opacity:0.2"/>
+      <radialGradient id="glowRadial" cx="0%" cy="50%" r="100%" fx="0%" fy="50%">
+        <stop offset="0%" style="stop-color:#888888;stop-opacity:0.15"/>
+        <stop offset="40%" style="stop-color:#888888;stop-opacity:0.05"/>
         <stop offset="100%" style="stop-color:#888888;stop-opacity:0"/>
-      </linearGradient>
+      </radialGradient>
     </defs>`;
-    content += `<rect class="disc-glow" x="0" y="0" width="${BAR_WIDTH}" height="${h}" fill="url(#glowFade)" />`;
-    content += `<rect class="disc-bg" x="0" y="0" width="${BAR_WIDTH + 20}" height="${h}" fill="url(#barFadeH)" />`;
+    content += `<rect class="disc-glow" x="-20" y="0" width="${BAR_WIDTH + 40}" height="${h}" fill="url(#glowRadial)" />`;
+    content += `<rect class="disc-bg" x="0" y="0" width="${BAR_WIDTH + 30}" height="${h}" fill="url(#barFadeH)" />`;
 
     // Ticks group - no transition, direct transform
     content += `<g id="ticksGroup">`;
