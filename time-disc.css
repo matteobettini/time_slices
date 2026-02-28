@@ -90,16 +90,11 @@
   pointer-events: none;
 }
 
-.time-disc-container:hover .disc-label,
-.time-disc-container.active .disc-label {
-  opacity: 0.8;
-}
-
 .disc-label.current {
   fill: #fff;
   font-weight: 700;
   font-size: 0.7rem;
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 /* Center needle */
