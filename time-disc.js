@@ -67,33 +67,33 @@
 
     let content = '';
 
-    // Background - soft glow that fades horizontally and vertically
+    // Background - soft glow that extends beyond container, fades naturally
     content += `<defs>
       <linearGradient id="barFadeH" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:0.5"/>
-        <stop offset="20%" style="stop-color:#1a1a1a;stop-opacity:0.3"/>
-        <stop offset="50%" style="stop-color:#1a1a1a;stop-opacity:0.1"/>
+        <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:0.4"/>
+        <stop offset="30%" style="stop-color:#1a1a1a;stop-opacity:0.15"/>
+        <stop offset="60%" style="stop-color:#1a1a1a;stop-opacity:0.05"/>
         <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:0"/>
       </linearGradient>
       <linearGradient id="glowFadeH" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:#888888;stop-opacity:0.12"/>
-        <stop offset="30%" style="stop-color:#888888;stop-opacity:0.06"/>
-        <stop offset="60%" style="stop-color:#888888;stop-opacity:0.02"/>
-        <stop offset="100%" style="stop-color:#888888;stop-opacity:0"/>
+        <stop offset="0%" style="stop-color:#666666;stop-opacity:0.1"/>
+        <stop offset="20%" style="stop-color:#666666;stop-opacity:0.05"/>
+        <stop offset="50%" style="stop-color:#666666;stop-opacity:0.02"/>
+        <stop offset="100%" style="stop-color:#666666;stop-opacity:0"/>
       </linearGradient>
       <linearGradient id="vertFade" x1="0%" y1="0%" x2="0%" y2="100%">
         <stop offset="0%" style="stop-color:white;stop-opacity:0"/>
-        <stop offset="15%" style="stop-color:white;stop-opacity:1"/>
-        <stop offset="85%" style="stop-color:white;stop-opacity:1"/>
+        <stop offset="10%" style="stop-color:white;stop-opacity:1"/>
+        <stop offset="90%" style="stop-color:white;stop-opacity:1"/>
         <stop offset="100%" style="stop-color:white;stop-opacity:0"/>
       </linearGradient>
       <mask id="vertMask">
-        <rect x="0" y="0" width="${BAR_WIDTH + 50}" height="${h}" fill="url(#vertFade)" />
+        <rect x="-50" y="0" width="${BAR_WIDTH + 200}" height="${h}" fill="url(#vertFade)" />
       </mask>
     </defs>`;
     content += `<g mask="url(#vertMask)">`;
-    content += `<rect class="disc-glow" x="0" y="0" width="${BAR_WIDTH + 40}" height="${h}" fill="url(#glowFadeH)" />`;
-    content += `<rect class="disc-bg" x="0" y="0" width="${BAR_WIDTH + 30}" height="${h}" fill="url(#barFadeH)" />`;
+    content += `<rect class="disc-glow" x="0" y="0" width="${BAR_WIDTH + 150}" height="${h}" fill="url(#glowFadeH)" />`;
+    content += `<rect class="disc-bg" x="0" y="0" width="${BAR_WIDTH + 120}" height="${h}" fill="url(#barFadeH)" />`;
     content += `</g>`;
 
     // Ticks group - no transition, direct transform
