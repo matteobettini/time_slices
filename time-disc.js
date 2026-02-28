@@ -96,7 +96,7 @@
       content += `<line class="disc-tick" data-id="${e.slice.id}" data-year="${e.year}" data-index="${e.index}" x1="${x1}" y1="${tickY}" x2="${x2}" y2="${tickY}" />`;
 
       const yearText = typeof window.formatYear === 'function' ? window.formatYear(e.year) : e.year;
-      content += `<text class="disc-label" x="${labelX}" y="${tickY + 4}" text-anchor="start">${yearText}</text>`;
+      content += `<text class="disc-label" x="${labelX}" y="${tickY}" text-anchor="start" dominant-baseline="middle">${yearText}</text>`;
     });
     
     content += `</g>`;
