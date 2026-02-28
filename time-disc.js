@@ -91,12 +91,12 @@
       
       const x1 = 0;
       const x2 = TICK_LENGTH;
-      const labelX = x2 + 4;
+      const labelX = (x2 + TICK_LENGTH + 35) / 2; // Center between tick end and needle start
 
       content += `<line class="disc-tick" data-id="${e.slice.id}" data-year="${e.year}" data-index="${e.index}" x1="${x1}" y1="${tickY}" x2="${x2}" y2="${tickY}" />`;
 
       const yearText = typeof window.formatYear === 'function' ? window.formatYear(e.year) : e.year;
-      content += `<text class="disc-label" x="${labelX}" y="${tickY}" text-anchor="start" dy="0.35em">${yearText}</text>`;
+      content += `<text class="disc-label" x="${labelX}" y="${tickY}" text-anchor="middle" dy="0.35em">${yearText}</text>`;
     });
     
     content += `</g>`;
