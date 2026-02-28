@@ -354,7 +354,7 @@ MUSIC_SOURCES = {
     # 1687 London: Bach cello suite — the peak of Baroque, mathematical precision meets emotional depth
     "1687-london-gravity-of-reason": {"pool_key": "bach-cello-suite-1"},
     # 1141 Sens: Gregorian chant — medieval monasticism, the Church that Abelard challenged
-    "1141-sens-duel-of-reason-and-faith": {"pool_key": "gregorian-kergonan"},
+    "1141-sens-duel-of-reason-and-faith": {"pool_key": "gregorian-chant-resurrexi"},
 }
 
 
