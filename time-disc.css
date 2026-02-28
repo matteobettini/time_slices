@@ -43,9 +43,21 @@
   overflow: visible;
 }
 
-/* Background - no stroke, just fill */
-.disc-bg {
+/* Background layers */
+.disc-bg, .disc-bg-edge {
   pointer-events: none;
+}
+
+/* Glow layer - intensifies on hover/active */
+.disc-glow {
+  pointer-events: none;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.time-disc-container:hover .disc-glow,
+.time-disc-container.active .disc-glow {
+  opacity: 1;
 }
 
 /* Entry tick marks */

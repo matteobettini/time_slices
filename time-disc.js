@@ -57,14 +57,30 @@
 
     let content = '';
 
-    // Fading background gradient (no box)
+    // Fading background with glow - fades left to right and at top/bottom edges
     content += `<defs>
-      <linearGradient id="barFade" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:var(--bg);stop-opacity:0.9"/>
-        <stop offset="100%" style="stop-color:var(--bg);stop-opacity:0"/>
+      <linearGradient id="barFadeH" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#0a0a0f;stop-opacity:0.95"/>
+        <stop offset="60%" style="stop-color:#0a0a0f;stop-opacity:0.5"/>
+        <stop offset="100%" style="stop-color:#0a0a0f;stop-opacity:0"/>
+      </linearGradient>
+      <linearGradient id="barFadeV" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#0a0a0f;stop-opacity:1"/>
+        <stop offset="15%" style="stop-color:#0a0a0f;stop-opacity:0"/>
+        <stop offset="85%" style="stop-color:#0a0a0f;stop-opacity:0"/>
+        <stop offset="100%" style="stop-color:#0a0a0f;stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="glowFade" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:var(--accent);stop-opacity:0.15"/>
+        <stop offset="100%" style="stop-color:var(--accent);stop-opacity:0"/>
       </linearGradient>
     </defs>`;
-    content += `<rect class="disc-bg" x="0" y="0" width="${BAR_WIDTH + 30}" height="${h}" fill="url(#barFade)" />`;
+    // Glow layer (behind everything)
+    content += `<rect class="disc-glow" x="0" y="0" width="${BAR_WIDTH + 20}" height="${h}" fill="url(#glowFade)" />`;
+    // Main background fade
+    content += `<rect class="disc-bg" x="0" y="0" width="${BAR_WIDTH + 30}" height="${h}" fill="url(#barFadeH)" />`;
+    // Top/bottom fade
+    content += `<rect class="disc-bg-edge" x="0" y="0" width="${BAR_WIDTH + 30}" height="${h}" fill="url(#barFadeV)" />`;
 
     // Find min/max years for proportional spacing
     const minYear = entries.length > 0 ? entries[0].year : 0;
