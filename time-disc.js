@@ -132,8 +132,11 @@
       content += `<text class="${labelClass}" x="${labelX}" y="${tickY + 4}" text-anchor="start">${yearText}</text>`;
     });
 
-    // Fixed needle at center
-    content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${BAR_WIDTH}" y2="${centerY}" />`;
+    // Fixed needle at center - with gap for year label
+    const needleGapStart = TICK_LENGTH + 2;
+    const needleGapEnd = TICK_LENGTH + 45; // Gap for year text
+    content += `<line class="disc-needle" x1="0" y1="${centerY}" x2="${needleGapStart}" y2="${centerY}" />`;
+    content += `<line class="disc-needle" x1="${needleGapEnd}" y1="${centerY}" x2="${BAR_WIDTH}" y2="${centerY}" />`;
 
     // Update year display
     if (currentEntry && yearDisplay) {
