@@ -70,6 +70,14 @@
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
     const scrollT = maxScroll > 0 ? window.scrollY / maxScroll : 0;
 
+    // Ticks are positioned by year, but the whole "track" scrolls
+    // The track is longer than the viewport - we show a window into it
+    const trackHeight = h * 0.6; // Compressed track (60% of viewport)
+    const padding = 30;
+    
+    // Offset based on scroll - ticks move up as we scroll down
+    const trackOffset = (h - trackHeight) / 2 - scrollT * (trackHeight - padding * 2);
+
     // Find current entry - the one whose tick is closest to the needle (center)
     let currentEntry = null;
     let currentDist = Infinity;
@@ -83,14 +91,6 @@
         currentEntry = e;
       }
     });
-
-    // Ticks are positioned by year, but the whole "track" scrolls
-    // The track is longer than the viewport - we show a window into it
-    const trackHeight = h * 0.6; // Compressed track (60% of viewport)
-    const padding = 30;
-    
-    // Offset based on scroll - ticks move up as we scroll down
-    const trackOffset = (h - trackHeight) / 2 - scrollT * (trackHeight - padding * 2);
     
     entries.forEach(e => {
       // Calculate Y based on year proportion
