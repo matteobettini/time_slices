@@ -85,7 +85,7 @@
     // Ticks group - no transition, direct transform
     content += `<g id="ticksGroup">`;
     
-    // Background ticks: every 500 years (small tick only), 1000 (big tick with label)
+    // Background ticks: every 500 years (smaller with labels), 1000 (same as entry ticks with labels)
     const roundedMin = Math.floor(minYear / 500) * 500;
     const roundedMax = Math.ceil(maxYear / 500) * 500;
     
@@ -95,23 +95,23 @@
       
       const is1k = year % 1000 === 0;
       
-      let tickLen, tickClass;
+      let tickLen, tickClass, labelClass;
       if (is1k) {
         tickLen = TICK_LENGTH;
         tickClass = 'disc-bg-tick major';
+        labelClass = 'disc-bg-label major';
       } else {
-        tickLen = TICK_LENGTH * 0.5;
+        tickLen = TICK_LENGTH * 0.6;
         tickClass = 'disc-bg-tick minor';
+        labelClass = 'disc-bg-label minor';
       }
+      
+      const labelX = (TICK_LENGTH + TICK_LENGTH + 35) / 2; // Same as entry labels
       
       content += `<line class="${tickClass}" x1="0" y1="${tickY}" x2="${tickLen}" y2="${tickY}" />`;
       
-      // Labels only for 1k ticks
-      if (is1k) {
-        const labelX = (TICK_LENGTH + TICK_LENGTH + 35) / 2;
-        const bgLabelText = typeof window.formatYear === 'function' ? window.formatYear(year) : year;
-        content += `<text class="disc-bg-label" x="${labelX}" y="${tickY}" text-anchor="middle" dy="0.35em">${bgLabelText}</text>`;
-      }
+      const bgLabelText = typeof window.formatYear === 'function' ? window.formatYear(year) : year;
+      content += `<text class="${labelClass}" x="${labelX}" y="${tickY}" text-anchor="middle" dy="0.35em">${bgLabelText}</text>`;
     }
     
     // Entry ticks (on top of background ticks)
