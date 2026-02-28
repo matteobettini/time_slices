@@ -279,6 +279,7 @@
     container.addEventListener('touchstart', onStart, { passive: false });
     document.addEventListener('touchmove', onMove, { passive: false });
     document.addEventListener('touchend', onEnd);
+    document.addEventListener('touchcancel', onEnd);
 
     svg.addEventListener('click', (e) => {
       const tick = e.target.closest('.disc-tick');

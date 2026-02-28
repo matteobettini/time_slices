@@ -19,6 +19,16 @@
   opacity: 1;
 }
 
+/* On touch devices, don't use hover - only active */
+@media (hover: none) {
+  .time-disc-container:hover {
+    opacity: 0.4;
+  }
+  .time-disc-container.active {
+    opacity: 1;
+  }
+}
+
 .time-disc-container.hidden {
   display: none;
 }
