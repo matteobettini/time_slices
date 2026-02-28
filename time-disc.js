@@ -53,8 +53,7 @@
     const centerY = h / 2;
     
     // Large radius so only a small arc is visible at the edge
-    // The arc should only intrude ~30px into the screen at most
-    const radius = h * 2;
+    const radius = h * 0.8;
     
     svg.setAttribute('width', VISIBLE_WIDTH);
     svg.setAttribute('height', h);
@@ -62,8 +61,8 @@
 
     let content = '';
 
-    // Circle center X position (off-screen)
-    const cx = isMobile ? radius : -radius + VISIBLE_WIDTH;
+    // Circle center X position (off-screen, shifted further out)
+    const cx = isMobile ? radius + VISIBLE_WIDTH : -radius;
     const cy = centerY;
 
     // Calculate where the circle intersects top and bottom of viewport
