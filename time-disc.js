@@ -182,7 +182,7 @@
     
     // If closest entry is within threshold, snap to it exactly
     if (snappedEntry && minDist < SNAP_THRESHOLD) {
-      return { year: snappedEntry.year, entry: snappedEntry };
+      return { year: snappedEntry.year, entry: snappedEntry, snapped: true };
     }
     
     // Otherwise interpolate between entries
@@ -205,9 +205,9 @@
     }
     
     // Edge cases
-    if (!before && after) return { year: after.entry.year, entry: after.entry };
-    if (before && !after) return { year: before.entry.year, entry: before.entry };
-    if (!before && !after) return entries.length ? { year: entries[0].year, entry: entries[0] } : null;
+    if (!before && after) return { year: after.entry.year, entry: after.entry, snapped: false };
+    if (before && !after) return { year: before.entry.year, entry: before.entry, snapped: false };
+    if (!before && !after) return entries.length ? { year: entries[0].year, entry: entries[0], snapped: false } : null;
     
     // Interpolate between the two
     const t = (centerY - before.y) / (after.y - before.y);
@@ -216,8 +216,10 @@
     // Find closest entry for highlighting
     const closestEntry = t < 0.5 ? before.entry : after.entry;
     
-    return { year, entry: closestEntry };
+    return { year, entry: closestEntry, snapped: false };
   }
+
+  let lastSnappedEntry = null;
 
   function updatePosition() {
     if (!ticksGroup || !entries.length) return;
@@ -231,6 +233,14 @@
 
     const pos = getCurrentPosition();
     if (!pos) return;
+
+    // Vibrate when snapping to a new entry
+    if (pos.snapped && pos.entry !== lastSnappedEntry) {
+      if (navigator.vibrate) navigator.vibrate(10);
+      lastSnappedEntry = pos.entry;
+    } else if (!pos.snapped) {
+      lastSnappedEntry = null;
+    }
 
     const currentYearRatio = (pos.year - minYear) / yearSpan;
     const currentTickY = currentYearRatio * trackHeight;
