@@ -20,8 +20,10 @@
   let isDragging = false;
   let ticksGroup = null;
 
-  const BAR_WIDTH = 80;
-  const TICK_LENGTH = 18;
+  // Smaller on mobile
+  const isMobile = window.innerWidth <= 768;
+  const BAR_WIDTH = isMobile ? 50 : 80;
+  const TICK_LENGTH = isMobile ? 12 : 18;
   const TRACK_SCALE = 0.5;
 
   function build() {
