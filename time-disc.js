@@ -53,7 +53,6 @@
   function buildSVG() {
     const h = window.innerHeight;
     const centerY = h / 2;
-    const isMobile = window.innerWidth <= 600;
     
     svg.setAttribute('width', BAR_WIDTH);
     svg.setAttribute('height', h);
@@ -68,32 +67,18 @@
 
     let content = '';
 
-    // Background - flip gradient direction on mobile
-    if (isMobile) {
-      content += `<defs>
-        <linearGradient id="barFadeH" x1="100%" y1="0%" x2="0%" y2="0%">
-          <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:0.8"/>
-          <stop offset="50%" style="stop-color:#1a1a1a;stop-opacity:0.4"/>
-          <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:0"/>
-        </linearGradient>
-        <linearGradient id="glowFade" x1="100%" y1="0%" x2="0%" y2="0%">
-          <stop offset="0%" style="stop-color:#888888;stop-opacity:0.2"/>
-          <stop offset="100%" style="stop-color:#888888;stop-opacity:0"/>
-        </linearGradient>
-      </defs>`;
-    } else {
-      content += `<defs>
-        <linearGradient id="barFadeH" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:0.8"/>
-          <stop offset="50%" style="stop-color:#1a1a1a;stop-opacity:0.4"/>
-          <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:0"/>
-        </linearGradient>
-        <linearGradient id="glowFade" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style="stop-color:#888888;stop-opacity:0.2"/>
-          <stop offset="100%" style="stop-color:#888888;stop-opacity:0"/>
-        </linearGradient>
-      </defs>`;
-    }
+    // Background
+    content += `<defs>
+      <linearGradient id="barFadeH" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:0.8"/>
+        <stop offset="50%" style="stop-color:#1a1a1a;stop-opacity:0.4"/>
+        <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:0"/>
+      </linearGradient>
+      <linearGradient id="glowFade" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#888888;stop-opacity:0.2"/>
+        <stop offset="100%" style="stop-color:#888888;stop-opacity:0"/>
+      </linearGradient>
+    </defs>`;
     content += `<rect class="disc-glow" x="0" y="0" width="${BAR_WIDTH}" height="${h}" fill="url(#glowFade)" />`;
     content += `<rect class="disc-bg" x="0" y="0" width="${BAR_WIDTH + 20}" height="${h}" fill="url(#barFadeH)" />`;
 
@@ -123,15 +108,11 @@
         tickClass = 'disc-bg-tick minor';
       }
       
-      // Flip X positions on mobile
-      const x1 = isMobile ? BAR_WIDTH : 0;
-      const x2 = isMobile ? BAR_WIDTH - tickLen : tickLen;
-      
-      content += `<line class="${tickClass}" x1="${x1}" y1="${tickY}" x2="${x2}" y2="${tickY}" />`;
+      content += `<line class="${tickClass}" x1="0" y1="${tickY}" x2="${tickLen}" y2="${tickY}" />`;
       
       // Labels for 500 and 1000 year ticks
       if (is1k || is500) {
-        const labelX = isMobile ? BAR_WIDTH - (TICK_LENGTH + TICK_LENGTH + 35) / 2 : (TICK_LENGTH + TICK_LENGTH + 35) / 2;
+        const labelX = (TICK_LENGTH + TICK_LENGTH + 35) / 2;
         const bgLabelText = typeof window.formatYear === 'function' ? window.formatYear(year) : year;
         const labelClass = is1k ? 'disc-bg-label major' : 'disc-bg-label medium';
         content += `<text class="${labelClass}" x="${labelX}" y="${tickY}" text-anchor="middle" dy="0.35em">${bgLabelText}</text>`;
@@ -143,9 +124,9 @@
       const yearRatio = (e.year - minYear) / yearSpan;
       const tickY = yearRatio * trackHeight;
       
-      const x1 = isMobile ? BAR_WIDTH : 0;
-      const x2 = isMobile ? BAR_WIDTH - TICK_LENGTH : TICK_LENGTH;
-      const labelX = isMobile ? BAR_WIDTH - (TICK_LENGTH + TICK_LENGTH + 35) / 2 : (TICK_LENGTH + TICK_LENGTH + 35) / 2;
+      const x1 = 0;
+      const x2 = TICK_LENGTH;
+      const labelX = (x2 + TICK_LENGTH + 35) / 2; // Center between tick end and needle start
 
       content += `<line class="disc-tick" data-id="${e.slice.id}" data-year="${e.year}" data-index="${e.index}" x1="${x1}" y1="${tickY}" x2="${x2}" y2="${tickY}" />`;
 
@@ -156,9 +137,8 @@
     content += `</g>`;
 
     // Fixed needle at center
-    const needleStart = isMobile ? 0 : TICK_LENGTH + 35;
-    const needleEnd = isMobile ? BAR_WIDTH - TICK_LENGTH - 35 : BAR_WIDTH;
-    content += `<line class="disc-needle" x1="${needleStart}" y1="${centerY}" x2="${needleEnd}" y2="${centerY}" />`;
+    const needleStart = TICK_LENGTH + 35;
+    content += `<line class="disc-needle" x1="${needleStart}" y1="${centerY}" x2="${BAR_WIDTH}" y2="${centerY}" />`;
 
     svg.innerHTML = content;
     ticksGroup = svg.getElementById('ticksGroup');

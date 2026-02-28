@@ -14,11 +14,10 @@
   transition: opacity 0.3s ease;
 }
 
-/* Move to right side on mobile */
+/* Move right on mobile */
 @media (max-width: 600px) {
   .time-disc-container {
-    left: auto;
-    right: 0;
+    left: 10px;
   }
 }
 
