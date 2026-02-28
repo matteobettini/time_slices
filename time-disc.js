@@ -20,8 +20,8 @@
   let dragStartY = 0;
   let dragStartScroll = 0;
 
-  const BAR_WIDTH = 28;
-  const TICK_LENGTH = 12;
+  const BAR_WIDTH = 60;
+  const TICK_LENGTH = 14;
 
   function build() {
     if (!window.SLICES || !window.SLICES.length) return;
@@ -57,8 +57,14 @@
 
     let content = '';
 
-    // Bar background
-    content += `<rect class="disc-bg" x="0" y="0" width="${BAR_WIDTH}" height="${h}" rx="4" />`;
+    // Fading background gradient (no box)
+    content += `<defs>
+      <linearGradient id="barFade" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:var(--bg);stop-opacity:0.9"/>
+        <stop offset="100%" style="stop-color:var(--bg);stop-opacity:0"/>
+      </linearGradient>
+    </defs>`;
+    content += `<rect class="disc-bg" x="0" y="0" width="${BAR_WIDTH + 30}" height="${h}" fill="url(#barFade)" />`;
 
     // Find current entry - the one closest to viewport center
     let currentEntry = null;
@@ -88,9 +94,10 @@
       // Tick Y = entry's position on screen
       const tickY = elCenter;
       
-      const x2 = BAR_WIDTH - 2;
-      const x1 = x2 - TICK_LENGTH;
-      const labelX = x2 + 6;
+      // Ticks at left edge, labels to the right
+      const x1 = 0;
+      const x2 = TICK_LENGTH;
+      const labelX = x2 + 4;
       
       const isCurrent = e === currentEntry;
       const tickClass = isCurrent ? 'disc-tick current' : 'disc-tick';

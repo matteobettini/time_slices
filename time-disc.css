@@ -7,17 +7,16 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: 28px;
+  width: 60px;
   z-index: 90;
   pointer-events: none;
-  opacity: 0.3;
-  transition: opacity 0.3s ease, filter 0.3s ease;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
 }
 
 .time-disc-container:hover,
 .time-disc-container.active {
   opacity: 1;
-  filter: drop-shadow(0 0 8px rgba(124, 111, 247, 0.4));
 }
 
 .time-disc-container.hidden {
@@ -41,18 +40,12 @@
 
 .time-disc svg {
   display: block;
+  overflow: visible;
 }
 
-/* Bar background */
+/* Background - no stroke, just fill */
 .disc-bg {
-  fill: var(--surface2);
-  stroke: var(--accent);
-  stroke-width: 1;
-}
-
-.time-disc-container:hover .disc-bg,
-.time-disc-container.active .disc-bg {
-  stroke-width: 2;
+  pointer-events: none;
 }
 
 /* Entry tick marks */
@@ -60,7 +53,7 @@
   stroke: var(--accent);
   stroke-width: 2;
   stroke-linecap: round;
-  opacity: 0.5;
+  opacity: 0.6;
   cursor: pointer;
 }
 
@@ -87,7 +80,7 @@
 
 .time-disc-container:hover .disc-label,
 .time-disc-container.active .disc-label {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .disc-label.current {
