@@ -67,15 +67,15 @@
 
     let content = '';
 
-    // Background - soft glow using radial gradient (no box edges)
+    // Background - soft glow using radial gradient centered on left edge
     content += `<defs>
-      <radialGradient id="glowRadial" cx="0%" cy="50%" rx="80%" ry="50%">
-        <stop offset="0%" style="stop-color:#666666;stop-opacity:0.15"/>
-        <stop offset="50%" style="stop-color:#666666;stop-opacity:0.05"/>
-        <stop offset="100%" style="stop-color:#666666;stop-opacity:0"/>
+      <radialGradient id="glowRadial" cx="0" cy="0.5" r="1" fx="0" fy="0.5">
+        <stop offset="0%" stop-color="#888" stop-opacity="0.25"/>
+        <stop offset="40%" stop-color="#888" stop-opacity="0.1"/>
+        <stop offset="100%" stop-color="#888" stop-opacity="0"/>
       </radialGradient>
     </defs>`;
-    content += `<ellipse class="disc-glow" cx="0" cy="${h/2}" rx="${BAR_WIDTH + 100}" ry="${h * 0.45}" fill="url(#glowRadial)" />`;
+    content += `<ellipse class="disc-glow" cx="0" cy="${h/2}" rx="${BAR_WIDTH * 2}" ry="${h * 0.4}" fill="url(#glowRadial)" />`;
 
     // Ticks group - no transition, direct transform
     content += `<g id="ticksGroup">`;
