@@ -185,9 +185,12 @@
   }
 
   function initDrag() {
+    let lastClientY = 0;
+    
     function onStart(e) {
       isDragging = true;
       container.classList.add('active');
+      lastClientY = e.touches ? e.touches[0].clientY : e.clientY;
       e.preventDefault();
     }
 
@@ -196,12 +199,22 @@
       e.preventDefault();
       
       const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-      const entry = findEntryAtBarY(clientY);
+      const deltaY = lastClientY - clientY;
+      lastClientY = clientY;
       
-      if (entry) {
-        scrollToEntry(entry);
-        render();
-      }
+      // Convert delta in bar space to scroll delta
+      // The bar track represents the full timeline compressed
+      // So a small move on bar = larger scroll on page
+      const h = window.innerHeight;
+      const trackHeight = h * TRACK_SCALE;
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      
+      // Scale factor: how much page scroll per pixel of bar drag
+      const scaleFactor = maxScroll / trackHeight;
+      const scrollDelta = deltaY * scaleFactor;
+      
+      window.scrollBy({ top: scrollDelta, behavior: 'auto' });
+      render();
     }
 
     function onEnd() {
@@ -211,7 +224,7 @@
       
       // Snap to closest entry
       const current = findCurrentEntry();
-      if (current) {
+      if (current && current.el) {
         const rect = current.el.getBoundingClientRect();
         const centerY = window.innerHeight / 2;
         const scrollDelta = rect.top + rect.height / 2 - centerY;
