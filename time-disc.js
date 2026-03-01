@@ -265,26 +265,12 @@
       isDragging = false;
       container.classList.remove('active');
 
-      // Snap to closest entry
+      // Snap to closest entry — always align top to HEADER_OFFSET
       const pos = getCurrentPosition();
       if (pos && pos.entry && pos.entry.el) {
         const el = pos.entry.el;
         const rect = el.getBoundingClientRect();
-        const headerOffset = 100; // matches scroll-margin-top in CSS
-        
-        // For expanded (tall) entries, scroll to top with header offset
-        // For collapsed entries, center them
-        const isExpanded = el.classList.contains('expanded') || rect.height > window.innerHeight * 0.5;
-        
-        let scrollDelta;
-        if (isExpanded) {
-          // Scroll so top of entry is at headerOffset from viewport top
-          scrollDelta = rect.top - headerOffset;
-        } else {
-          // Center collapsed entries
-          const centerY = window.innerHeight / 2;
-          scrollDelta = rect.top + rect.height / 2 - centerY;
-        }
+        const scrollDelta = rect.top - HEADER_OFFSET;
         
         window.scrollBy({ top: scrollDelta, behavior: 'smooth' });
         if (navigator.vibrate) navigator.vibrate(10);
