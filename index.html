@@ -2309,12 +2309,20 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
   });
 
   audio.addEventListener('play', () => {
+    playBtn.innerHTML = SVG_PAUSE;
+    const btn = entryEl.querySelector('.podcast-btn');
+    if (btn) btn.innerHTML = SVG_PLAYING;
+    syncMapPopupAudio(year, true);
     if ('mediaSession' in navigator) {
       navigator.mediaSession.playbackState = 'playing';
     }
   });
 
   audio.addEventListener('pause', () => {
+    playBtn.innerHTML = SVG_PLAY;
+    const btn = entryEl.querySelector('.podcast-btn');
+    if (btn) btn.innerHTML = SVG_HEADPHONES;
+    syncMapPopupAudio(year, false);
     if ('mediaSession' in navigator) {
       navigator.mediaSession.playbackState = 'paused';
     }
