@@ -109,13 +109,11 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     
     **Save the URL and start_time from the output** — you'll pass them to generate-podcast.py.
 
-15. **Choose a voice and style for the entry:**
+15. **Choose a voice for the entry:**
     ```bash
     python3 scripts/get-voices.py  # See available voices
     ```
-    - Pick a voice that fits the era/mood
-    - Write style instructions (e.g., "Speak with measured drama and scholarly weight...")
-    - For Italian, adapt the style to Italian (e.g., "Parla con dramma misurato...")
+    Pick a voice that fits the era/mood. Edge TTS does NOT support style instructions — personality is determined by voice choice alone.
 
 16. **Generate podcasts with voice and music:**
     ```bash
@@ -123,12 +121,12 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     # EN podcast
     python3 scripts/generate-podcast.py {id} --lang en \
       --music-url "URL_FROM_STEP_14" --music-start SECONDS \
-      --voice VOICE --style "English style instructions here"
+      --voice VOICE
     
     # IT podcast  
     python3 scripts/generate-podcast.py {id} --lang it \
       --music-url "URL_FROM_STEP_14" --music-start SECONDS \
-      --voice VOICE --style "Italian style instructions here"
+      --voice VOICE
     ```
     
     **VERIFY BOTH EXIST:**
