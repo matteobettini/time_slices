@@ -59,10 +59,16 @@
     svg.setAttribute('height', h);
     svg.setAttribute('viewBox', `0 0 ${BAR_WIDTH} ${h}`);
 
-    if (!entries.length) return;
+    // Filter to visible entries only (for thread support)
+    const visibleEntries = entries.filter(e => e.el && !e.el.classList.contains('thread-hidden'));
+    
+    if (!visibleEntries.length) {
+      svg.innerHTML = '';
+      return;
+    }
 
-    const minYear = entries[0].year;
-    const maxYear = entries[entries.length - 1].year;
+    const minYear = visibleEntries[0].year;
+    const maxYear = visibleEntries[visibleEntries.length - 1].year;
     const yearSpan = maxYear - minYear || 1;
     const trackHeight = h * TRACK_SCALE;
 
@@ -119,8 +125,8 @@
       }
     }
 
-    // Entry ticks (on top of background ticks)
-    entries.forEach(e => {
+    // Entry ticks (on top of background ticks) — only visible entries
+    visibleEntries.forEach(e => {
       const yearRatio = (e.year - minYear) / yearSpan;
       const tickY = yearRatio * trackHeight;
 
@@ -173,10 +179,19 @@
       }
     }
 
-    // Edge cases
-    if (!before && after) return { year: after.entry.year, entry: after.entry };
+    // Edge cases — handle smoothly to avoid jumps
+    if (!before && after) {
+      // Near top of page, first entry is below refY
+      // Interpolate from page top (0) to first entry
+      const t = Math.max(0, Math.min(1, refY / after.y));
+      return { year: after.entry.year, entry: after.entry };
+    }
     if (before && !after) return { year: before.entry.year, entry: before.entry };
-    if (!before && !after) return entries.length ? { year: entries[0].year, entry: entries[0] } : null;
+    if (!before && !after) {
+      // No visible entries — find first non-hidden entry
+      const firstVisible = entries.find(e => e.el && !e.el.classList.contains('thread-hidden'));
+      return firstVisible ? { year: firstVisible.year, entry: firstVisible } : null;
+    }
 
     // Interpolate between the two (clamp t to 0-1 to avoid overshoot)
     const t = Math.max(0, Math.min(1, (refY - before.y) / (after.y - before.y)));
@@ -195,8 +210,13 @@
 
     const h = window.innerHeight;
     const centerY = h / 2;
-    const minYear = entries[0].year;
-    const maxYear = entries[entries.length - 1].year;
+    
+    // Get visible entries only for year range calculation
+    const visibleEntries = entries.filter(e => e.el && !e.el.classList.contains('thread-hidden'));
+    if (visibleEntries.length === 0) return;
+    
+    const minYear = visibleEntries[0].year;
+    const maxYear = visibleEntries[visibleEntries.length - 1].year;
     const yearSpan = maxYear - minYear || 1;
     const trackHeight = h * TRACK_SCALE;
 
@@ -216,15 +236,18 @@
     const translateY = centerY - currentTickY;
     ticksGroup.setAttribute('transform', `translate(0, ${translateY})`);
 
-    // Update current styling
+    // Update current styling — use data-id to match since ticks are only visible entries
     const ticks = ticksGroup.querySelectorAll('.disc-tick');
     const labels = ticksGroup.querySelectorAll('.disc-label');
+    const currentId = pos.entry?.slice?.id;
 
-    ticks.forEach((tick, i) => {
-      tick.classList.toggle('current', entries[i] === pos.entry);
+    ticks.forEach((tick) => {
+      tick.classList.toggle('current', tick.dataset.id === currentId);
     });
     labels.forEach((label, i) => {
-      label.classList.toggle('current', entries[i] === pos.entry);
+      // Labels don't have data-id, so use index matching with ticks
+      const tick = ticks[i];
+      label.classList.toggle('current', tick && tick.dataset.id === currentId);
     });
 
     // Update year display
