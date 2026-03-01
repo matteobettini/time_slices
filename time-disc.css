@@ -53,6 +53,16 @@
   overflow: visible;
 }
 
+/* Smooth transform for passive scrolling */
+.time-disc svg g#ticksGroup {
+  transition: transform 0.08s ease-out;
+}
+
+/* Disable transition during active drag for responsiveness */
+.time-disc-container.active .time-disc svg g#ticksGroup {
+  transition: none;
+}
+
 /* Background layers */
 .disc-bg, .disc-bg-edge {
   pointer-events: none;
