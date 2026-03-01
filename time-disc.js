@@ -150,40 +150,41 @@
   function getCurrentPosition() {
     const targetY = HEADER_OFFSET; // We consider an entry "current" when its top is at headerOffset
 
-    // Find the two entries we're between
-    let before = null;
-    let after = null;
+    // Find the entry whose top is at or just past the target line
+    let current = null;
+    let next = null;
 
     for (let i = 0; i < entries.length; i++) {
       const e = entries[i];
       if (!e.el) continue;
       const rect = e.el.getBoundingClientRect();
-      
-      // Use top of entry as the reference point
       const elTop = rect.top;
 
       if (elTop <= targetY) {
-        before = { entry: e, y: elTop };
-      }
-      if (elTop > targetY && !after) {
-        after = { entry: e, y: elTop };
+        current = { entry: e, y: elTop };
+      } else if (!next) {
+        next = { entry: e, y: elTop };
         break;
       }
     }
 
     // Edge cases
-    if (!before && after) return { year: after.entry.year, entry: after.entry };
-    if (before && !after) return { year: before.entry.year, entry: before.entry };
-    if (!before && !after) return entries.length ? { year: entries[0].year, entry: entries[0] } : null;
+    if (!current && next) return { year: next.entry.year, entry: next.entry };
+    if (current && !next) return { year: current.entry.year, entry: current.entry };
+    if (!current && !next) return entries.length ? { year: entries[0].year, entry: entries[0] } : null;
 
-    // Interpolate between the two
-    const t = (targetY - before.y) / (after.y - before.y);
-    const year = before.entry.year + t * (after.entry.year - before.entry.year);
+    // Current entry's top is at or above targetY — it's the active one
+    // Only interpolate within the current entry's "zone" (from its top to next entry's top)
+    // This keeps the tick locked to current entry while scrolling through it
+    
+    // How far through the current entry are we? (0 = top at target, 1 = next entry's top at target)
+    const zoneHeight = next.y - current.y;
+    const progress = (targetY - current.y) / zoneHeight;
+    
+    // Interpolate year only slightly to show smooth movement, but stay close to current
+    const year = current.entry.year + progress * (next.entry.year - current.entry.year);
 
-    // Find closest entry for highlighting
-    const closestEntry = t < 0.5 ? before.entry : after.entry;
-
-    return { year, entry: closestEntry };
+    return { year, entry: current.entry };
   }
 
   let lastCurrentEntry = null;
