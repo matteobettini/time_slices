@@ -25,6 +25,38 @@ VOICES:
     Use --voice to force a specific voice.
 
 Requires: ffmpeg, ~/bin/edge-tts (for Edge fallback)
+
+═══════════════════════════════════════════════════════════════════════════════
+MUSIC — Pass via CLI: --music-url <url> --music-start <seconds>
+Use scripts/find-music.py to discover tracks from Internet Archive
+
+Finding music on Internet Archive:
+  Search: https://archive.org/advancedsearch.php?q=<query>+AND+mediatype:audio&output=json
+  Files:  https://archive.org/metadata/<identifier>/files
+  Download: https://archive.org/download/<identifier>/<filename>
+
+Collections by era:
+  - Ancient/Medieval: gregorian chant, medieval music, byzantine chant
+  - Middle East: oud music, persian classical, arabic maqam
+  - Renaissance: renaissance lute, madrigal, harpsichord
+  - Baroque: bach, vivaldi, handel
+  - Classical: mozart, beethoven, haydn
+  - Romantic: chopin, liszt, brahms
+  - Impressionist: debussy, ravel, satie
+
+Tips:
+  - Instrumental works best
+  - Slower pieces mix better with narration
+  - Set start_time to skip silence (many tracks have 2-10s of silence at start)
+  - Use find-music.py for easy discovery
+
+⚠️  MUSIC START_TIME IS CRITICAL
+Many tracks have silence or noise at the beginning. The podcast intro is only
+3.5s — the music must be immediately salient. When using a new track:
+  1. Download and listen to the first 10-15 seconds
+  2. Set --music-start to skip silence/weak opening (usually 2-10 seconds)
+  3. If unsure: ffmpeg -i track.mp3 -af "silencedetect=noise=-30dB:d=0.3" -f null -
+═══════════════════════════════════════════════════════════════════════════════
 """
 
 import argparse
@@ -103,7 +135,15 @@ EDGE_VOICES_IT = [
 # ═══════════════════════════════════════════════════════════════════════════════
 
 def get_elevenlabs_key():
-    """Get ElevenLabs API key from environment."""
+    """Get ElevenLabs API key from file or environment."""
+    # Try file first (works in cron/exec where env vars aren't inherited)
+    key_file = os.path.expanduser("~/.elevenlabs_key")
+    if os.path.exists(key_file):
+        with open(key_file) as f:
+            key = f.read().strip()
+            if key:
+                return key
+    # Fall back to environment variable
     return os.environ.get("ELEVENLABS_API_KEY")
 
 
