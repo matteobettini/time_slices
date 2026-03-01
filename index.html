@@ -3183,6 +3183,10 @@ function loadSlices(restoreId, restoreThread, restorePodcast) {
               playBtn.innerHTML = SVG_PAUSE;
               if (btn) btn.innerHTML = SVG_STOP;
               syncMapPopupAudio(restorePodcast.year, true);
+              // Update media session with image for lock screen
+              const title = slice.title || '';
+              const imageUrl = slice.image ? slice.image.url : null;
+              updateMediaSession(restorePodcast.year, title, imageUrl);
             }).catch(() => {});
           }, 100);
         });
