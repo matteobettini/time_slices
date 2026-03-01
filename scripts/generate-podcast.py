@@ -126,6 +126,8 @@ EDGE_VOICES_EN = [
 EDGE_VOICES_IT = [
     ("it-IT-DiegoNeural", "Italian male, natural"),
     ("it-IT-IsabellaNeural", "Italian female, natural"),
+    ("it-IT-ElsaNeural", "Italian female, warm"),
+    ("it-IT-GiuseppeMultilingualNeural", "Italian male, multilingual"),
 ]
 
 # ═══════════════════════════════════════════════════════════════════════════════
