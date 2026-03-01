@@ -1,6 +1,6 @@
 # Time Slices — Project Spec
 
-**Last updated:** 2026-02-25
+**Last updated:** 2026-03-01
 
 This is the single source of truth for the Time Slices cron job.
 Read this file FIRST before doing anything.
@@ -27,6 +27,22 @@ When adding a new entry, **always** add it to BOTH files. Italian translations s
 
 ---
 
+## Helper Scripts
+
+All scripts are in `scripts/` directory:
+
+| Script | Purpose |
+|--------|---------|
+| `add-entry.py` | Add entry to slices.json/slices.it.json with validation |
+| `prep-image.sh` | Download, compress, and format image JSON |
+| `find-music.py` | Search Internet Archive for period-appropriate music |
+| `generate-podcast.py` | Generate podcast MP3 with TTS + background music |
+| `get-voices.py` | List available Edge TTS voices |
+| `summarize-entries.py` | Get overview of entries + examples for style reference |
+| `verify-completion.py` | Check if entry is complete (MP3s, pushed, etc.) |
+
+---
+
 ## Entry Schema
 
 Every entry in `slices.json` MUST have this structure:
@@ -48,7 +64,9 @@ Every entry in `slices.json` MUST have this structure:
     { "url": "https://...", "title": "Source Name" }
   ],
   "image": {
-    "url": "WIKIMEDIA_THUMB_URL",
+    "url": "images/1504-david.jpg",
+    "width": 800,
+    "height": 600,
     "caption": "Description of the image",
     "attribution": "Author, License, via Wikimedia Commons"
   },
@@ -82,15 +100,14 @@ Every entry in `slices.json` MUST have this structure:
 
 #### image (mandatory)
 - Must be PUBLIC DOMAIN or CC-licensed from Wikimedia Commons
-- **Download the image locally** into `images/` directory: `images/YEAR-short-name.jpg`
-- Use curl to download: `curl -sL -A "Mozilla/5.0 TimeSlices/1.0" -o "images/YEAR-name.jpg" "WIKIMEDIA_URL"`
-- Find thumbnail URLs via the Wikipedia API (iiurlwidth=800):
-  `https://en.wikipedia.org/w/api.php?action=query&titles=File:FILENAME&prop=imageinfo&iiprop=url&iiurlwidth=800&format=json`
+- **Use the prep-image.sh helper:**
+  ```bash
+  ./scripts/prep-image.sh <url_or_path> <entry-id> "Alt text description"
+  ```
+- This downloads, compresses (max 1200px, quality 85), and outputs image JSON with dimensions
+- Copy the output JSON into your entry — `width` and `height` are included automatically
 - Set `"url"` to the **local relative path**: `"images/1504-david.jpg"` (NOT the Wikimedia URL)
-- Verify the download is a real image (`file images/...`) — Wikimedia sometimes returns 429 error pages
-- If a URL is rate-limited, try a different image from the same Wikipedia article
 - Pick something visually compelling: a painting, building, map, manuscript, photograph
-- The image appears at the top of the card — it's the first thing people see
 
 #### threads (mandatory)
 - Array of 3-6 kebab-case strings identifying intellectual/cultural threads
@@ -115,7 +132,7 @@ Every entry in `slices.json` MUST have this structure:
 
 #### podcast (set by generate-podcast.py)
 - Object with `url` (relative path to MP3) and `duration` (seconds)
-- Initially set to `"none"` — updated automatically by `audio/generate-podcast.py`
+- Set automatically by `scripts/generate-podcast.py`
 - English audio in `audio/{id}.mp3`, Italian audio in `audio/it/{id}.mp3`
 - Narrations cached in `audio/narrations/` (EN) and `audio/narrations/it/` (IT)
 - `--remix` flag re-mixes with updated music settings without re-generating TTS
@@ -175,6 +192,22 @@ const THREAD_LABELS = {
 
 If a thread tag has no label, it auto-formats from kebab-case, but an explicit label is better.
 
+### THREAD_NARRATIVES object
+Add narratives explaining how threads connect entries across time:
+```javascript
+const THREAD_NARRATIVES = {
+  en: {
+    '1347→1517': 'Ockham's nominalism cracked scholastic authority; Luther drove a printing press through the gap.',
+    // ...
+  },
+  it: {
+    '1347→1517': 'Il nominalismo di Ockham incrinò l'autorità scolastica; Lutero vi fece irrompere la stampa.',
+    // ...
+  }
+};
+```
+Format: `'YEAR_FROM→YEAR_TO': 'Narrative'` (use → character). Keep punchy: 1-2 sentences max.
+
 ### MARKERS array
 Reference markers are small date labels on the timeline (e.g., "1453 — Fall of Constantinople"). If your new slice falls in a time period with no nearby markers, consider adding one. Find it in the `<script>` section:
 
@@ -197,19 +230,48 @@ DOM element IDs use the `entry-` prefix: `entry-125-rome-dome-of-all-things`.
 
 ---
 
+## Podcast Generation
+
+1. **Write scripts:**
+   - EN: `audio/scripts/{id}.txt` (~350-400 words, storytelling style)
+   - IT: `audio/scripts/it/{id}.txt` (culturally adapted, not literal)
+
+2. **Find music:**
+   ```bash
+   python3 scripts/find-music.py --era baroque --mood contemplative
+   ```
+
+3. **Generate podcasts:**
+   ```bash
+   python3 scripts/generate-podcast.py {id} --lang en \
+     --music-url "URL" --music-start SECONDS --voice en-GB-RyanNeural
+   
+   python3 scripts/generate-podcast.py {id} --lang it \
+     --music-url "URL" --music-start SECONDS --voice it-IT-DiegoNeural
+   ```
+
+4. **Verify:**
+   ```bash
+   ls -la audio/{id}.mp3 audio/it/{id}.mp3  # Both must exist and be >100KB
+   ```
+
+---
+
 ## Deploy Checklist
 
 After writing a new entry:
 
-1. ✅ Read `slices.json`, append new entry, write back
-2. ✅ **Also** add the Italian translation to `slices.it.json` — same structure, all text translated naturally (not machine-translated), using Italian Wikipedia links for sources where available
+1. ✅ Read `slices.json`, append new entry, write back (or use `scripts/add-entry.py`)
+2. ✅ **Also** add the Italian translation to `slices.it.json` — same structure, all text translated naturally
 3. ✅ Ensure `location` (lat/lon/place) and `addedDate` (ISO timestamp) are set
 4. ✅ Validate both files are proper JSON (parse them!)
-4. ✅ Check for new thread tags → update `THREAD_LABELS` (both `en` and `it` sections) in `index.html`
-5. ✅ If you add thread narratives → update both `en` and `it` sections in `THREAD_NARRATIVES`
-6. ✅ Check if a new MARKER would help → update `MARKERS` in `index.html`
-7. ✅ `git add -A && git commit -m "Add slice: YEAR — TITLE" && git push origin main`
-8. ✅ Reply with summary: year, title, teaser, one highlight connection (3-5 sentences max)
+5. ✅ Check for new thread tags → update `THREAD_LABELS` (both `en` and `it` sections) in `index.html`
+6. ✅ If you add thread narratives → update both `en` and `it` sections in `THREAD_NARRATIVES`
+7. ✅ Check if a new MARKER would help → update `MARKERS` in `index.html`
+8. ✅ Generate podcasts (EN + IT) using `scripts/generate-podcast.py`
+9. ✅ `git add -A && git commit -m "Add YEAR Place: Title" && git push "$(cat .git-push-url)" main`
+10. ✅ Verify with `python3 scripts/verify-completion.py`
+11. ✅ Reply with summary: year, title, teaser, one highlight connection (3-5 sentences max)
 
 **DO NOT** deploy, tunnel, or expose anything. Only commit and push to git.
 
