@@ -842,7 +842,8 @@
     "addedDate": "2026-02-28T06:00:00Z",
     "podcast": {
       "url": "audio/1141-sens-duel-of-reason-and-faith.mp3",
-      "duration": 221
+      "duration": 181,
+      "voice": "en-GB-RyanNeural"
     }
   }
 ]

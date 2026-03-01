@@ -281,7 +281,7 @@ def validate_music_start(music_path, start_time):
     return True, start_time
 
 
-def mix_audio(narration_path, music_path, output_path, narration_duration, start_time=0):
+def mix_audio(narration_path, music_path, output_path, narration_duration, start_time=0, voice=None, entry_id=None):
     """Mix narration with background music using ffmpeg.
     
     Improvements over basic mix:
@@ -290,6 +290,7 @@ def mix_audio(narration_path, music_path, output_path, narration_duration, start
     - Sidechain-style ducking: music at 35% during intro/outro, ducks to 20% during narration
     - Longer 3.5s music intro to establish mood before narration
     - Gentle compression to even out music dynamics
+    - Embeds voice used in MP3 metadata (comment field)
     """
     print(f"  🎵 Mixing with background music (start={start_time}s)...")
 
@@ -335,6 +336,13 @@ def mix_audio(narration_path, music_path, output_path, narration_duration, start
         f"[mixed]loudnorm=I=-16:TP=-1.5:LRA=11[out]"
     )
 
+    # Build metadata args
+    metadata_args = []
+    if voice:
+        metadata_args.extend(["-metadata", f"comment=voice:{voice}"])
+    if entry_id:
+        metadata_args.extend(["-metadata", f"title={entry_id}"])
+
     cmd = [
         "ffmpeg", "-y",
         "-i", narration_path,
@@ -342,6 +350,7 @@ def mix_audio(narration_path, music_path, output_path, narration_duration, start
         "-filter_complex", filter_complex,
         "-map", "[out]",
         "-c:a", "libmp3lame", "-b:a", "128k",
+        *metadata_args,
         "-t", str(total_duration),
         output_path,
     ]
@@ -478,9 +487,16 @@ def generate_podcast(entry_id, lang="en", remix=False, music_url=None, music_sta
             print(f"  ⚠️  Using suggested start_time {suggested_start}s instead of {start_time}s")
             start_time = suggested_start
         
-        mix_audio(narration_path, music_path, output_path, duration, start_time=start_time)
+        mix_audio(narration_path, music_path, output_path, duration, start_time=start_time, voice=voice, entry_id=entry_id)
     else:
-        subprocess.run(["cp", narration_path, output_path])
+        # Even for narration-only, embed metadata
+        subprocess.run([
+            "ffmpeg", "-y", "-i", narration_path,
+            "-c:a", "libmp3lame", "-b:a", "128k",
+            "-metadata", f"comment=voice:{voice or 'unknown'}",
+            "-metadata", f"title={entry_id}",
+            output_path
+        ], capture_output=True)
         print(f"  ⚠ No music available, narration-only")
 
     # Clean up temp narration (but not saved narrations)
@@ -498,10 +514,11 @@ def generate_podcast(entry_id, lang="en", remix=False, music_url=None, music_sta
     )
     final_duration = int(float(result.stdout.strip())) if result.stdout.strip() else 0
 
-    return final_duration
+    # Return duration and the voice that was used
+    return final_duration, voice
 
 
-def update_json(entry_id, duration, lang="en"):
+def update_json(entry_id, duration, lang="en", voice=None):
     """Add podcast field to slices.json or slices.it.json."""
     if lang == "it":
         json_path = os.path.join(PROJECT_DIR, "slices.it.json")
@@ -518,6 +535,8 @@ def update_json(entry_id, duration, lang="en"):
                 "url": f"{url_prefix}{entry_id}.mp3",
                 "duration": duration,
             }
+            if voice:
+                entry["podcast"]["voice"] = voice
             break
 
     with open(json_path, "w") as f:
@@ -543,7 +562,7 @@ def main():
     lang = args.lang
 
     if args.entry_id:
-        duration = generate_podcast(
+        result = generate_podcast(
             args.entry_id, 
             lang=lang, 
             remix=args.remix,
@@ -551,8 +570,9 @@ def main():
             music_start=args.music_start,
             voice=args.voice
         )
-        if duration:
-            update_json(args.entry_id, duration, lang=lang)
+        if result:
+            duration, voice_used = result
+            update_json(args.entry_id, duration, lang=lang, voice=voice_used)
     else:
         parser.print_help()
         return
