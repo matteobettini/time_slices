@@ -23,6 +23,7 @@
   const BAR_WIDTH = 80;
   const TICK_LENGTH = 18;
   const TRACK_SCALE = 0.5;
+  const HEADER_OFFSET = 100; // Where entry tops snap to
 
   function build() {
     if (!window.SLICES || !window.SLICES.length) return;
@@ -146,10 +147,11 @@
   }
 
   // Get interpolated position between entries based on viewport
+  // Reference point is HEADER_OFFSET (where entry tops snap to)
   function getCurrentPosition() {
-    const centerY = window.innerHeight / 2;
+    const refY = HEADER_OFFSET;
 
-    // Find the two entries we're between (using tops, not centers)
+    // Find the two entries we're between (using tops)
     let before = null;
     let after = null;
 
@@ -159,10 +161,10 @@
       const rect = e.el.getBoundingClientRect();
       const elTop = rect.top;
 
-      if (elTop <= centerY) {
+      if (elTop <= refY) {
         before = { entry: e, y: elTop };
       }
-      if (elTop > centerY && !after) {
+      if (elTop > refY && !after) {
         after = { entry: e, y: elTop };
         break;
       }
@@ -174,7 +176,7 @@
     if (!before && !after) return entries.length ? { year: entries[0].year, entry: entries[0] } : null;
 
     // Interpolate between the two
-    const t = (centerY - before.y) / (after.y - before.y);
+    const t = (refY - before.y) / (after.y - before.y);
     const year = before.entry.year + t * (after.entry.year - before.entry.year);
 
     // Find closest entry for highlighting
