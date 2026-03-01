@@ -152,6 +152,48 @@ def check_pushed(entry_id: str) -> dict:
     return {"ok": len(issues) == 0, "issues": issues}
 
 
+def check_thread_narratives(entry_id: str) -> dict:
+    """Check if all consecutive thread pairs have narratives in index.html."""
+    issues = []
+    
+    # Load all entries to build thread->years map
+    with open(SLICES_JSON) as f:
+        entries = json.load(f)
+    
+    thread_years = {}
+    for e in entries:
+        for t in e.get('threads', []):
+            if t not in thread_years:
+                thread_years[t] = []
+            thread_years[t].append(int(e['year']))
+    
+    # Sort years for each thread
+    for t in thread_years:
+        thread_years[t] = sorted(thread_years[t])
+    
+    # Read index.html to check for narratives
+    index_path = PROJECT_DIR / "index.html"
+    if not index_path.exists():
+        return {"ok": True, "issues": [], "missing": []}
+    
+    content = index_path.read_text()
+    
+    # Check consecutive pairs for threads with 2+ entries
+    missing = []
+    for t, years in thread_years.items():
+        if len(years) < 2:
+            continue
+        for i in range(len(years) - 1):
+            key = f"{years[i]}→{years[i+1]}"
+            if key not in content:
+                missing.append(f"{t}: {key}")
+    
+    if missing:
+        issues.append(f"Missing thread narratives: {', '.join(missing)}")
+    
+    return {"ok": len(issues) == 0, "issues": issues, "missing": missing}
+
+
 def generate_resume_prompt(entry_id: str, entry_year: str, entry_title: str, 
                            file_status: dict, issues: list) -> str:
     """Generate a detailed prompt for resuming incomplete work."""
@@ -251,6 +293,10 @@ def main():
         # Check pushed
         pushed = check_pushed(entry_id)
         all_issues.extend(pushed["issues"])
+        
+        # Check thread narratives
+        narratives = check_thread_narratives(entry_id)
+        all_issues.extend(narratives["issues"])
         
         # Determine resume action (high-level)
         if all_issues:
