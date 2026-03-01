@@ -23,7 +23,6 @@
   const BAR_WIDTH = 80;
   const TICK_LENGTH = 18;
   const TRACK_SCALE = 0.5;
-  const HEADER_OFFSET = 100; // Where we consider an entry "current" (matches CSS scroll-margin-top)
 
   function build() {
     if (!window.SLICES || !window.SLICES.length) return;
@@ -53,7 +52,7 @@
 
   function buildSVG() {
     const h = window.innerHeight;
-    const needleY = HEADER_OFFSET; // Needle at the "current" position
+    const centerY = h / 2;
 
     svg.setAttribute('width', BAR_WIDTH);
     svg.setAttribute('height', h);
@@ -140,7 +139,7 @@
     const needleStart = TICK_LENGTH + 35;
     const needleEnd = BAR_WIDTH - 15;
     content += `<clipPath id="needleClip"><rect x="0" y="0" width="${BAR_WIDTH}" height="${h}" /></clipPath>`;
-    content += `<line class="disc-needle" x1="${needleStart}" y1="${needleY}" x2="${needleEnd}" y2="${needleY}" clip-path="url(#needleClip)" />`;
+    content += `<line class="disc-needle" x1="${needleStart}" y1="${centerY}" x2="${needleEnd}" y2="${centerY}" clip-path="url(#needleClip)" />`;
 
     svg.innerHTML = content;
     ticksGroup = svg.getElementById('ticksGroup');
@@ -148,11 +147,11 @@
 
   // Get interpolated position between entries based on viewport
   function getCurrentPosition() {
-    const targetY = HEADER_OFFSET; // We consider an entry "current" when its top is at headerOffset
+    const centerY = window.innerHeight / 2;
 
-    // Find the entry whose top is at or just past the target line
-    let current = null;
-    let next = null;
+    // Find the two entries we're between (using tops, not centers)
+    let before = null;
+    let after = null;
 
     for (let i = 0; i < entries.length; i++) {
       const e = entries[i];
@@ -160,31 +159,28 @@
       const rect = e.el.getBoundingClientRect();
       const elTop = rect.top;
 
-      if (elTop <= targetY) {
-        current = { entry: e, y: elTop };
-      } else if (!next) {
-        next = { entry: e, y: elTop };
+      if (elTop <= centerY) {
+        before = { entry: e, y: elTop };
+      }
+      if (elTop > centerY && !after) {
+        after = { entry: e, y: elTop };
         break;
       }
     }
 
     // Edge cases
-    if (!current && next) return { year: next.entry.year, entry: next.entry };
-    if (current && !next) return { year: current.entry.year, entry: current.entry };
-    if (!current && !next) return entries.length ? { year: entries[0].year, entry: entries[0] } : null;
+    if (!before && after) return { year: after.entry.year, entry: after.entry };
+    if (before && !after) return { year: before.entry.year, entry: before.entry };
+    if (!before && !after) return entries.length ? { year: entries[0].year, entry: entries[0] } : null;
 
-    // Current entry's top is at or above targetY — it's the active one
-    // Only interpolate within the current entry's "zone" (from its top to next entry's top)
-    // This keeps the tick locked to current entry while scrolling through it
-    
-    // How far through the current entry are we? (0 = top at target, 1 = next entry's top at target)
-    const zoneHeight = next.y - current.y;
-    const progress = (targetY - current.y) / zoneHeight;
-    
-    // Interpolate year only slightly to show smooth movement, but stay close to current
-    const year = current.entry.year + progress * (next.entry.year - current.entry.year);
+    // Interpolate between the two
+    const t = (centerY - before.y) / (after.y - before.y);
+    const year = before.entry.year + t * (after.entry.year - before.entry.year);
 
-    return { year, entry: current.entry };
+    // Find closest entry for highlighting
+    const closestEntry = t < 0.5 ? before.entry : after.entry;
+
+    return { year, entry: closestEntry };
   }
 
   let lastCurrentEntry = null;
@@ -193,7 +189,7 @@
     if (!ticksGroup || !entries.length) return;
 
     const h = window.innerHeight;
-    const needleY = HEADER_OFFSET;
+    const centerY = h / 2;
     const minYear = entries[0].year;
     const maxYear = entries[entries.length - 1].year;
     const yearSpan = maxYear - minYear || 1;
@@ -212,7 +208,7 @@
     const currentTickY = currentYearRatio * trackHeight;
 
     // Direct transform - no transition
-    const translateY = needleY - currentTickY;
+    const translateY = centerY - currentTickY;
     ticksGroup.setAttribute('transform', `translate(0, ${translateY})`);
 
     // Update current styling
@@ -267,12 +263,27 @@
       isDragging = false;
       container.classList.remove('active');
 
-      // Snap to closest entry — scroll so its top is at HEADER_OFFSET
+      // Snap to closest entry
       const pos = getCurrentPosition();
       if (pos && pos.entry && pos.entry.el) {
         const el = pos.entry.el;
         const rect = el.getBoundingClientRect();
-        const scrollDelta = rect.top - HEADER_OFFSET;
+        const headerOffset = 100; // matches scroll-margin-top in CSS
+        
+        // For expanded (tall) entries, scroll to top with header offset
+        // For collapsed entries, center them
+        const isExpanded = el.classList.contains('expanded') || rect.height > window.innerHeight * 0.5;
+        
+        let scrollDelta;
+        if (isExpanded) {
+          // Scroll so top of entry is at headerOffset from viewport top
+          scrollDelta = rect.top - headerOffset;
+        } else {
+          // Center collapsed entries
+          const centerY = window.innerHeight / 2;
+          scrollDelta = rect.top + rect.height / 2 - centerY;
+        }
+        
         window.scrollBy({ top: scrollDelta, behavior: 'smooth' });
         if (navigator.vibrate) navigator.vibrate(10);
       }
