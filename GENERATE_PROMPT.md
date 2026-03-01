@@ -110,25 +110,25 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     
     **Save the URL and start_time from the output** — you'll pass them to generate-podcast.py.
 
-15. **Choose a voice for the entry:**
-    ```bash
-    python3 scripts/get-voices.py  # See available voices
-    ```
-    Pick a voice that fits the era/mood. Edge TTS does NOT support style instructions — personality is determined by voice choice alone.
-
-16. **Generate podcasts with voice and music:**
+15. **Generate podcasts:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
-    # EN podcast
+    
+    # Check credits and voices (optional)
+    python3 scripts/generate-podcast.py --credits
+    python3 scripts/generate-podcast.py --voices
+    
+    # EN podcast (auto-selects ElevenLabs if credits available, else Edge TTS)
     python3 scripts/generate-podcast.py {id} --lang en \
-      --music-url "URL_FROM_STEP_14" --music-start SECONDS \
-      --voice VOICE
+      --music-url "URL_FROM_STEP_14" --music-start SECONDS
     
     # IT podcast  
     python3 scripts/generate-podcast.py {id} --lang it \
-      --music-url "URL_FROM_STEP_14" --music-start SECONDS \
-      --voice VOICE
+      --music-url "URL_FROM_STEP_14" --music-start SECONDS
     ```
+    
+    Voices are randomly selected from curated pools for variety. To force a specific voice, add `--voice <name>`.
+    To force a provider, add `--provider elevenlabs` or `--provider edge`.
     
     **VERIFY BOTH EXIST:**
     ```bash
@@ -138,11 +138,11 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 ---
 
-## PHASE 3: Publish (Steps 17-18) — MANDATORY
+## PHASE 3: Publish (Steps 16-17) — MANDATORY
 
 ⚠️ **DO NOT SKIP THIS PHASE. The entry is NOT LIVE until pushed.**
 
-17. **Commit and push:**
+16. **Commit and push:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     git add -A
@@ -152,7 +152,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     
     **VERIFY PUSH SUCCEEDED.** Look for `main -> main` in output. If you see `rejected` or `error`, fix it.
 
-18. **Final reply** (ONLY after steps 16-17 verified):
+17. **Final reply** (ONLY after steps 15-16 verified):
     - Year, title, teaser, one highlight connection (3-5 sentences)
     - Direct link: `https://matteobettini.github.io/time_slices/#ID`
     - No backticks around the URL — it must be clickable

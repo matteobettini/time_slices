@@ -36,8 +36,7 @@ All scripts are in `scripts/` directory:
 | `add-entry.py` | Add entry to slices.json/slices.it.json with validation |
 | `prep-image.sh` | Download, compress, and format image JSON |
 | `find-music.py` | Search Internet Archive for period-appropriate music |
-| `generate-podcast.py` | Generate podcast MP3 with TTS + background music |
-| `get-voices.py` | List available Edge TTS voices |
+| `generate-podcast.py` | Generate podcast MP3 with TTS + background music (supports ElevenLabs + Edge TTS) |
 | `summarize-entries.py` | Get overview of entries + examples for style reference |
 | `verify-completion.py` | Check if entry is complete (MP3s, pushed, etc.) |
 
@@ -232,6 +231,12 @@ DOM element IDs use the `entry-` prefix: `entry-125-rome-dome-of-all-things`.
 
 ## Podcast Generation
 
+The script auto-selects TTS provider:
+- **ElevenLabs** (preferred): Higher quality voices, uses `eleven_flash_v2_5` (EN) or `eleven_multilingual_v2` (IT)
+- **Edge TTS** (fallback): Free Microsoft neural voices
+
+Provider is selected automatically based on ELEVENLABS_API_KEY availability and remaining credits.
+
 1. **Write scripts:**
    - EN: `audio/scripts/{id}.txt` (~350-400 words, storytelling style)
    - IT: `audio/scripts/it/{id}.txt` (culturally adapted, not literal)
@@ -241,19 +246,35 @@ DOM element IDs use the `entry-` prefix: `entry-125-rome-dome-of-all-things`.
    python3 scripts/find-music.py --era baroque --mood contemplative
    ```
 
-3. **Generate podcasts:**
+3. **Check credits (optional):**
    ```bash
-   python3 scripts/generate-podcast.py {id} --lang en \
-     --music-url "URL" --music-start SECONDS --voice en-GB-RyanNeural
-   
-   python3 scripts/generate-podcast.py {id} --lang it \
-     --music-url "URL" --music-start SECONDS --voice it-IT-DiegoNeural
+   python3 scripts/generate-podcast.py --credits
+   python3 scripts/generate-podcast.py --voices
    ```
 
-4. **Verify:**
+4. **Generate podcasts:**
+   ```bash
+   # Auto-selects provider based on credits
+   python3 scripts/generate-podcast.py {id} --lang en \
+     --music-url "URL" --music-start SECONDS
+   
+   python3 scripts/generate-podcast.py {id} --lang it \
+     --music-url "URL" --music-start SECONDS
+   
+   # Force a specific provider
+   python3 scripts/generate-podcast.py {id} --lang en --provider elevenlabs
+   python3 scripts/generate-podcast.py {id} --lang en --provider edge
+   
+   # Force a specific voice
+   python3 scripts/generate-podcast.py {id} --lang en --voice en-GB-RyanNeural
+   ```
+
+5. **Verify:**
    ```bash
    ls -la audio/{id}.mp3 audio/it/{id}.mp3  # Both must exist and be >100KB
    ```
+
+**Note:** Voices are randomly selected from curated pools for variety. The ELEVENLABS_API_KEY must be set in the environment (not committed to git).
 
 ---
 
