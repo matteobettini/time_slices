@@ -152,12 +152,15 @@
     const refY = HEADER_OFFSET;
 
     // Find the two entries we're between (using tops)
+    // Only consider visible entries (not thread-hidden)
     let before = null;
     let after = null;
 
     for (let i = 0; i < entries.length; i++) {
       const e = entries[i];
       if (!e.el) continue;
+      // Skip hidden entries (thread filter)
+      if (e.el.classList.contains('thread-hidden')) continue;
       const rect = e.el.getBoundingClientRect();
       const elTop = rect.top;
 
