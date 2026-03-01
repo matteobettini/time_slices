@@ -55,8 +55,6 @@ def check_local_files(entry_id: str) -> dict:
         "en_script": False,
         "it_script": False,
         "image": False,
-        "voice_config": False,
-        "music_config": False,
     }
     issues = []
     
@@ -99,28 +97,6 @@ def check_local_files(entry_id: str) -> dict:
         status["image"] = True
     else:
         issues.append(f"Missing image for {entry_id}")
-    
-    # Check voice/music config — only needed if MP3s don't exist
-    # (CLI args --voice and --music-url bypass the need for config entries)
-    if not status["en_mp3"] or not status["it_mp3"]:
-        gen_script = PROJECT_DIR / "scripts" / "generate-podcast.py"
-        if gen_script.exists():
-            content = gen_script.read_text()
-            if f'"{entry_id}"' in content:
-                # Check both voice maps
-                if "VOICE_MAP_EN" in content and "VOICE_MAP_IT" in content:
-                    status["voice_config"] = True
-                if "MUSIC_SOURCES" in content:
-                    status["music_config"] = True
-        
-        if not status["voice_config"]:
-            issues.append(f"Missing voice config in generate-podcast.py for {entry_id}")
-        if not status["music_config"]:
-            issues.append(f"Missing music config in generate-podcast.py for {entry_id}")
-    else:
-        # MP3s exist, so config doesn't matter
-        status["voice_config"] = True
-        status["music_config"] = True
     
     return {"status": status, "issues": issues}
 
@@ -188,39 +164,32 @@ def generate_resume_prompt(entry_id: str, entry_year: str, entry_title: str,
         ""
     ]
     
-    # Determine what phase we're in
     fs = file_status
     
+    # Scripts
     if not fs.get("en_script") or not fs.get("it_script"):
-        lines.append("### Phase 2: Write Podcast Scripts")
+        lines.append("### Write Podcast Scripts")
         if not fs.get("en_script"):
             lines.append(f"- [ ] Write EN script → `audio/scripts/{entry_id}.txt` (~350-400 words)")
         if not fs.get("it_script"):
             lines.append(f"- [ ] Write IT script → `audio/scripts/it/{entry_id}.txt`")
         lines.append("")
     
-    if not fs.get("voice_config") or not fs.get("music_config"):
-        lines.append("### Phase 2: Add Config to generate-podcast.py")
-        if not fs.get("voice_config"):
-            lines.append(f"- [ ] Add `VOICE_MAP_EN['{entry_id}']` with voice + instructions")
-            lines.append(f"- [ ] Add `VOICE_MAP_IT['{entry_id}']` with voice + Italian instructions")
-        if not fs.get("music_config"):
-            lines.append(f"- [ ] Add `MUSIC_SOURCES['{entry_id}']` with pool_key or URL")
-        lines.append("")
-    
+    # Podcasts — use CLI args, no config files needed
     if not fs.get("en_mp3") or not fs.get("it_mp3"):
-        lines.append("### Phase 2: Generate Podcasts")
+        lines.append("### Generate Podcasts")
+        lines.append("Use `scripts/find-music.py` to find appropriate background music, then generate:")
         lines.append("```bash")
         lines.append("cd /home/cloud-user/.openclaw/workspace/time-slices")
         if not fs.get("en_mp3"):
-            lines.append(f"python3 audio/generate-podcast.py {entry_id} --lang en")
+            lines.append(f'python3 scripts/generate-podcast.py {entry_id} --lang en --voice en-GB-RyanNeural --music-url "<URL>" --music-start <SECONDS>')
         if not fs.get("it_mp3"):
-            lines.append(f"python3 audio/generate-podcast.py {entry_id} --lang it")
+            lines.append(f'python3 scripts/generate-podcast.py {entry_id} --lang it --voice it-IT-DiegoNeural --music-url "<URL>" --music-start <SECONDS>')
         lines.append("```")
         lines.append("")
     
     # Always need to commit and push if there are issues
-    lines.append("### Phase 3: Commit and Push")
+    lines.append("### Commit and Push")
     lines.append("```bash")
     lines.append("cd /home/cloud-user/.openclaw/workspace/time-slices")
     lines.append("git add -A")
@@ -231,7 +200,7 @@ def generate_resume_prompt(entry_id: str, entry_year: str, entry_title: str,
     
     lines.append("### Verify Completion")
     lines.append("```bash")
-    lines.append("python3 verify-completion.py")
+    lines.append("python3 scripts/verify-completion.py")
     lines.append("```")
     lines.append("")
     lines.append("Only reply when verifier shows ✅ COMPLETE.")
@@ -287,8 +256,6 @@ def main():
         if all_issues:
             if any("script" in i.lower() for i in all_issues):
                 resume_action = "Write scripts, generate podcasts, commit and push"
-            elif any("voice" in i.lower() or "music" in i.lower() for i in all_issues):
-                resume_action = "Add config, generate podcasts, commit and push"
             elif any("podcast" in i.lower() or "mp3" in i.lower() for i in all_issues):
                 resume_action = "Generate podcasts, commit and push"
             elif any("uncommitted" in i.lower() for i in all_issues):
