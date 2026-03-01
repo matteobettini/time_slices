@@ -840,5 +840,76 @@
       "url": "audio/it/1141-sens-duel-of-reason-and-faith.mp3",
       "duration": 205
     }
+  },
+  {
+    "year": "410",
+    "id": "410-rome-city-of-god",
+    "title": "Roma — La Città di Dio",
+    "teaser": "Roma cade. Agostino sorge. Dalla catastrofe nasce la prima filosofia della storia.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "L'<strong>arte tardoantica cristiana</strong> sta trasformando il linguaggio visivo dell'Impero. Sorgono chiese con elaborati <strong>programmi musivi</strong> — Santa Pudenziana a Roma (c. 400) mostra Cristo in trono tra gli apostoli in uno stile che fonde l'immaginario imperiale romano con il significato cristiano. Il poeta <strong>Prudenzio</strong> scrive il <em>Dittochaeon</em>, una serie di quartine concepite come didascalie per gli affreschi delle chiese. Nel frattempo, la sua <em>Psychomachia</em> (c. 405) — la prima <strong>allegoria personificata</strong> completa della letteratura occidentale — ispirerà innumerevoli miniature medievali di Virtù e Vizi in battaglia."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "<strong>Girolamo</strong>, a Betlemme, ha quasi completato la <em>Vulgata</em> — la sua traduzione latina della Bibbia dall'ebraico e dal greco che dominerà il cristianesimo occidentale per oltre un millennio. Quando la notizia della caduta di Roma lo raggiunge, scrive: <em>\"La città che aveva conquistato il mondo intero fu essa stessa conquistata.\"</em> <strong>Prudenzio</strong> rappresenta l'apice della <strong>poesia cristiana latina</strong>, fondendo forme classiche con contenuti cristiani. I suoi inni sono ancora in uso liturgico oggi. <strong>Claudiano</strong>, l'ultimo grande poeta pagano, era morto da poco (c. 404), segnando la fine letteraria della tradizione classica."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>Agostino d'Ippona</strong> inizia il <em>De civitate Dei</em> (<em>La Città di Dio</em>) in diretta risposta al sacco. I pagani incolpano il cristianesimo di aver abbandonato gli antichi dèi; Agostino risponde con la prima sistematica <strong>filosofia cristiana della storia</strong>. Distingue la <em>civitas Dei</em> (città celeste) dalla <em>civitas terrena</em> (città terrena), sostenendo che la caduta di Roma conta poco di fronte all'eternità. Questo inaugura la <strong>teologia agostiniana</strong> — le sue dottrine del peccato originale, della grazia divina e della predestinazione plasmeranno il pensiero occidentale per quindici secoli. Il <strong>neoplatonismo</strong>, filtrato attraverso Porfirio e Plotino, fornisce il suo quadro filosofico."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il <strong>24 agosto 410</strong>, <strong>Alarico I</strong> e i Visigoti saccheggiano Roma — la prima volta che la città cade in mano a un nemico straniero in <strong>800 anni</strong>. Sebbene Roma non sia più la capitale amministrativa (trasferita a Ravenna nel 402), l'impatto psicologico è immenso. L'<strong>Impero Romano d'Occidente</strong> sopravviverà altri 66 anni, ma il mito di <em>Roma aeterna</em> è infranto. I profughi inondano il Nord Africa, portando racconti di orrore alla congregazione di Agostino a Ippona. Il <strong>Periodo delle Migrazioni</strong> accelera — entro pochi decenni, Vandali, Burgundi e Franchi si spartiranno le province occidentali."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "La <em>Città di Dio</em> di Agostino è la risposta filosofica a ciò che Girolamo e Prudenzio stanno vivendo emotivamente e artisticamente. La Vulgata di Girolamo dà all'Occidente latino una base scritturale unificata proprio mentre l'unità politica crolla — la Bibbia diventa il nuovo testo vincolante di un mondo frammentato. La tecnica allegorica di Prudenzio nella <em>Psychomachia</em> si fonderà con il quadro delle due città di Agostino per creare l'ossessione della letteratura medievale per il combattimento morale. Il sacco pone una domanda che definirà i prossimi mille anni: <strong>se la Roma terrena può cadere, dove risiede la vera permanenza?</strong>",
+        "funFact": "I Visigoti saccheggiarono Roma per soli tre giorni. Alarico, cristiano ariano, ordinò alle sue truppe di risparmiare le chiese e chi vi si rifugiava — una misericordia che Agostino annotò attentamente nella sua difesa del cristianesimo."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Sacco_di_Roma_(410)",
+        "title": "Sacco di Roma (410) - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/La_citt%C3%A0_di_Dio",
+        "title": "La città di Dio - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Girolamo_(santo)",
+        "title": "Girolamo (santo) - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Prudenzio",
+        "title": "Prudenzio - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Agostino_d%27Ippona",
+        "title": "Agostino d'Ippona - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/410-rome-city-of-god.jpg",
+      "width": 674,
+      "height": 1200,
+      "caption": "Il sacco di Roma nel 410 da parte dei Visigoti",
+      "attribution": "Joseph-Noël Sylvestre, 1890, Pubblico dominio, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "death-of-god",
+      "classical-revival",
+      "stoicism",
+      "rationalism"
+    ],
+    "location": {
+      "lat": 41.9028,
+      "lon": 12.4964,
+      "place": "Roma"
+    },
+    "addedDate": "2026-03-01T08:00:00Z",
+    "podcast": "none"
   }
 ]

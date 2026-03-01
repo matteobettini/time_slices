@@ -844,5 +844,76 @@
       "url": "audio/1141-sens-duel-of-reason-and-faith.mp3",
       "duration": 221
     }
+  },
+  {
+    "year": "410",
+    "id": "410-rome-city-of-god",
+    "title": "Rome — The City of God",
+    "teaser": "Rome falls. Augustine rises. The first philosophy of history is born from catastrophe.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>Late Antique Christian art</strong> is transforming the visual language of the Empire. Churches rise with elaborate <strong>mosaic programs</strong> — Santa Pudenziana in Rome (c. 400) shows Christ enthroned among apostles in a style that fuses Roman imperial imagery with Christian meaning. The poet <strong>Prudentius</strong> writes <em>Dittochaeon</em>, a series of quatrains designed as captions for church murals, bridging visual and literary culture. Meanwhile, his <em>Psychomachia</em> (c. 405) — the first full-scale <strong>personification allegory</strong> in Western literature — will inspire countless medieval manuscript illuminations of battling Virtues and Vices."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Jerome</strong>, working in Bethlehem, has nearly completed the <em>Vulgate</em> — his Latin translation of the Bible from Hebrew and Greek that will dominate Western Christianity for over a millennium. When news of Rome's fall reaches him, he writes: <em>\"The city which had taken the whole world was itself taken.\"</em> <strong>Prudentius</strong> represents the apex of <strong>Christian Latin poetry</strong>, fusing classical forms with Christian content. His hymns remain in liturgical use today. <strong>Claudian</strong>, the last great pagan poet, had died just recently (c. 404), marking the literary end of classical tradition."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Augustine of Hippo</strong> begins <em>De civitate Dei</em> (<em>The City of God</em>) in direct response to the sack. Pagans blame Christianity for abandoning the old gods; Augustine responds with the first systematic <strong>Christian philosophy of history</strong>. He distinguishes the <em>civitas Dei</em> (heavenly city) from the <em>civitas terrena</em> (earthly city), arguing that Rome's fall matters little against eternity. This inaugurates <strong>Augustinian theology</strong> — his doctrines of original sin, divine grace, and predestination will shape Western thought for fifteen centuries. <strong>Neoplatonism</strong>, filtered through Porphyry and Plotinus, provides his philosophical framework."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>24 August 410</strong>, <strong>Alaric I</strong> and the Visigoths sack Rome — the first time the city has fallen to a foreign enemy in <strong>800 years</strong>. Though Rome had ceased to be the administrative capital (moved to Ravenna in 402), the psychological impact is immense. The <strong>Western Roman Empire</strong> will survive another 66 years, but the myth of <em>Roma aeterna</em> is shattered. Refugees flood North Africa, bringing tales of horror to Augustine's congregation in Hippo. The <strong>Migration Period</strong> accelerates — within decades, Vandals, Burgundians, and Franks will carve up the Western provinces."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "Augustine's <em>City of God</em> is the philosophical response to what Jerome and Prudentius are living through emotionally and artistically. Jerome's Vulgate gives the Latin West a unified scriptural foundation just as political unity collapses — the Bible becomes the new binding text of a fragmented world. Prudentius's allegorical technique in the <em>Psychomachia</em> will merge with Augustine's two-cities framework to create medieval literature's obsession with moral combat. The sack forces a question that will define the next thousand years: <strong>if earthly Rome can fall, where does true permanence lie?</strong>",
+        "funFact": "The Visigoths sacked Rome for only three days. Alaric, an Arian Christian, ordered his troops to spare churches and those who took refuge in them — a mercy Augustine carefully noted in his defense of Christianity."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(410)",
+        "title": "Sack of Rome (410) - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_City_of_God",
+        "title": "The City of God - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Jerome",
+        "title": "Jerome - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Prudentius",
+        "title": "Prudentius - Wikipedia"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/augustine/",
+        "title": "Saint Augustine - Stanford Encyclopedia of Philosophy"
+      }
+    ],
+    "image": {
+      "url": "images/410-rome-city-of-god.jpg",
+      "width": 674,
+      "height": 1200,
+      "caption": "The Sack of Rome in 410 by the Visigoths",
+      "attribution": "Joseph-Noël Sylvestre, 1890, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "death-of-god",
+      "classical-revival",
+      "stoicism",
+      "rationalism"
+    ],
+    "location": {
+      "lat": 41.9028,
+      "lon": 12.4964,
+      "place": "Rome"
+    },
+    "addedDate": "2026-03-01T08:00:00Z",
+    "podcast": "none"
   }
 ]
