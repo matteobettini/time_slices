@@ -3123,10 +3123,14 @@ function loadSlices(restoreId, restoreThread, restorePodcast) {
       if (restoreThread) {
         requestAnimationFrame(() => {
           setTimeout(() => {
-            // Use the playing podcast entry as anchor to prevent scroll jump
-            const anchorEl = restorePodcast && restorePodcast.year 
-              ? document.querySelector(`.entry[data-year="${restorePodcast.year}"]`)
-              : null;
+            // Use the currently viewed entry as anchor to prevent scroll jump
+            // Prefer playing podcast entry, fall back to restoreId (entry in view)
+            let anchorEl = null;
+            if (restorePodcast && restorePodcast.year) {
+              anchorEl = document.querySelector(`.entry[data-year="${restorePodcast.year}"]`);
+            } else if (restoreId) {
+              anchorEl = document.querySelector(`#entry-${restoreId}`);
+            }
             activateThread(restoreThread, anchorEl);
           }, 50);
         });
