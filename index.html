@@ -3121,17 +3121,15 @@ function loadSlices(restoreId, restoreThread, restorePodcast) {
 
       // Restore thread if requested (after layout settles)
       if (restoreThread) {
+        // Capture scroll position before activating thread
+        const scrollY = window.scrollY;
         requestAnimationFrame(() => {
           setTimeout(() => {
-            // Use the currently viewed entry as anchor to prevent scroll jump
-            // Prefer playing podcast entry, fall back to restoreId (entry in view)
-            let anchorEl = null;
-            if (restorePodcast && restorePodcast.year) {
-              anchorEl = document.querySelector(`.entry[data-year="${restorePodcast.year}"]`);
-            } else if (restoreId) {
-              anchorEl = document.querySelector(`#entry-${restoreId}`);
-            }
-            activateThread(restoreThread, anchorEl);
+            // Activate thread without scrolling (pass dummy anchor to skip auto-scroll)
+            const firstMatch = document.querySelector(`.entry[data-threads*='"${restoreThread}"']`);
+            activateThread(restoreThread, firstMatch);
+            // Force restore exact scroll position
+            window.scrollTo(0, scrollY);
           }, 50);
         });
       }
