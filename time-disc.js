@@ -23,6 +23,7 @@
   const BAR_WIDTH = 80;
   const TICK_LENGTH = 18;
   const TRACK_SCALE = 0.5;
+  const HEADER_OFFSET = 100; // Where we consider an entry "current" (matches CSS scroll-margin-top)
 
   function build() {
     if (!window.SLICES || !window.SLICES.length) return;
@@ -52,7 +53,7 @@
 
   function buildSVG() {
     const h = window.innerHeight;
-    const centerY = h / 2;
+    const needleY = HEADER_OFFSET; // Needle at the "current" position
 
     svg.setAttribute('width', BAR_WIDTH);
     svg.setAttribute('height', h);
@@ -139,7 +140,7 @@
     const needleStart = TICK_LENGTH + 35;
     const needleEnd = BAR_WIDTH - 15;
     content += `<clipPath id="needleClip"><rect x="0" y="0" width="${BAR_WIDTH}" height="${h}" /></clipPath>`;
-    content += `<line class="disc-needle" x1="${needleStart}" y1="${centerY}" x2="${needleEnd}" y2="${centerY}" clip-path="url(#needleClip)" />`;
+    content += `<line class="disc-needle" x1="${needleStart}" y1="${needleY}" x2="${needleEnd}" y2="${needleY}" clip-path="url(#needleClip)" />`;
 
     svg.innerHTML = content;
     ticksGroup = svg.getElementById('ticksGroup');
@@ -147,7 +148,7 @@
 
   // Get interpolated position between entries based on viewport
   function getCurrentPosition() {
-    const centerY = window.innerHeight / 2;
+    const targetY = HEADER_OFFSET; // We consider an entry "current" when its top is at headerOffset
 
     // Find the two entries we're between
     let before = null;
@@ -157,13 +158,15 @@
       const e = entries[i];
       if (!e.el) continue;
       const rect = e.el.getBoundingClientRect();
-      const elCenter = rect.top + rect.height / 2;
+      
+      // Use top of entry as the reference point
+      const elTop = rect.top;
 
-      if (elCenter <= centerY) {
-        before = { entry: e, y: elCenter };
+      if (elTop <= targetY) {
+        before = { entry: e, y: elTop };
       }
-      if (elCenter > centerY && !after) {
-        after = { entry: e, y: elCenter };
+      if (elTop > targetY && !after) {
+        after = { entry: e, y: elTop };
         break;
       }
     }
@@ -174,7 +177,7 @@
     if (!before && !after) return entries.length ? { year: entries[0].year, entry: entries[0] } : null;
 
     // Interpolate between the two
-    const t = (centerY - before.y) / (after.y - before.y);
+    const t = (targetY - before.y) / (after.y - before.y);
     const year = before.entry.year + t * (after.entry.year - before.entry.year);
 
     // Find closest entry for highlighting
@@ -189,7 +192,7 @@
     if (!ticksGroup || !entries.length) return;
 
     const h = window.innerHeight;
-    const centerY = h / 2;
+    const needleY = HEADER_OFFSET;
     const minYear = entries[0].year;
     const maxYear = entries[entries.length - 1].year;
     const yearSpan = maxYear - minYear || 1;
@@ -208,7 +211,7 @@
     const currentTickY = currentYearRatio * trackHeight;
 
     // Direct transform - no transition
-    const translateY = centerY - currentTickY;
+    const translateY = needleY - currentTickY;
     ticksGroup.setAttribute('transform', `translate(0, ${translateY})`);
 
     // Update current styling
@@ -263,27 +266,12 @@
       isDragging = false;
       container.classList.remove('active');
 
-      // Snap to closest entry
+      // Snap to closest entry — scroll so its top is at HEADER_OFFSET
       const pos = getCurrentPosition();
       if (pos && pos.entry && pos.entry.el) {
         const el = pos.entry.el;
         const rect = el.getBoundingClientRect();
-        const headerOffset = 100; // matches scroll-margin-top in CSS
-        
-        // For expanded (tall) entries, scroll to top with header offset
-        // For collapsed entries, center them
-        const isExpanded = el.classList.contains('expanded') || rect.height > window.innerHeight * 0.5;
-        
-        let scrollDelta;
-        if (isExpanded) {
-          // Scroll so top of entry is at headerOffset from viewport top
-          scrollDelta = rect.top - headerOffset;
-        } else {
-          // Center collapsed entries
-          const centerY = window.innerHeight / 2;
-          scrollDelta = rect.top + rect.height / 2 - centerY;
-        }
-        
+        const scrollDelta = rect.top - HEADER_OFFSET;
         window.scrollBy({ top: scrollDelta, behavior: 'smooth' });
         if (navigator.vibrate) navigator.vibrate(10);
       }
