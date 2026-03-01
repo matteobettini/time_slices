@@ -21,6 +21,7 @@ SCRIPT_DIR = Path(__file__).parent
 PROJECT_DIR = SCRIPT_DIR.parent  # scripts/ -> project root
 SLICES_JSON = PROJECT_DIR / "slices.json"
 SLICES_IT_JSON = PROJECT_DIR / "slices.it.json"
+SCRIPTS_DIR = PROJECT_DIR / "audio" / "scripts"
 
 
 def main():
@@ -146,6 +147,32 @@ def main():
             print()
         
         print("---")
+        print()
+    
+    # Podcast script examples
+    print(f"## Podcast Script Examples")
+    print()
+    print("Podcast scripts should be ~350-400 words, storytelling style, evocative but historically accurate.")
+    print()
+    
+    # Find entries that have scripts
+    entries_with_scripts = []
+    for entry in entries:
+        script_path = SCRIPTS_DIR / f"{entry['id']}.txt"
+        if script_path.exists():
+            entries_with_scripts.append(entry)
+    
+    # Pick 2 random script examples
+    script_examples = random.sample(entries_with_scripts, min(2, len(entries_with_scripts))) if entries_with_scripts else []
+    
+    for entry in script_examples:
+        script_path = SCRIPTS_DIR / f"{entry['id']}.txt"
+        print(f"### Script: {entry['year']} — {entry['title']}")
+        print(f"File: `audio/scripts/{entry['id']}.txt`")
+        print()
+        print("```")
+        print(script_path.read_text().strip())
+        print("```")
         print()
 
 
