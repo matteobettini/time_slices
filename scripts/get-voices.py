@@ -20,15 +20,11 @@ VOICES = [
     {"name": "en-GB-ThomasNeural", "gender": "Male", "locale": "en-GB", "notes": "Friendly, Positive"},
     # US English
     {"name": "en-US-AnaNeural", "gender": "Female", "locale": "en-US", "notes": "Cartoon, Cute"},
-    {"name": "en-US-AndrewMultilingualNeural", "gender": "Male", "locale": "en-US", "notes": "Warm, Confident, Authentic"},
     {"name": "en-US-AndrewNeural", "gender": "Male", "locale": "en-US", "notes": "Warm, Confident, Authentic"},
     {"name": "en-US-AriaNeural", "gender": "Female", "locale": "en-US", "notes": "Positive, Confident"},
-    {"name": "en-US-AvaMultilingualNeural", "gender": "Female", "locale": "en-US", "notes": "Expressive, Caring, Pleasant"},
     {"name": "en-US-AvaNeural", "gender": "Female", "locale": "en-US", "notes": "Expressive, Caring, Pleasant"},
-    {"name": "en-US-BrianMultilingualNeural", "gender": "Male", "locale": "en-US", "notes": "Approachable, Casual, Sincere"},
     {"name": "en-US-BrianNeural", "gender": "Male", "locale": "en-US", "notes": "Approachable, Casual, Sincere"},
     {"name": "en-US-ChristopherNeural", "gender": "Male", "locale": "en-US", "notes": "Reliable, Authority"},
-    {"name": "en-US-EmmaMultilingualNeural", "gender": "Female", "locale": "en-US", "notes": "Cheerful, Clear"},
     {"name": "en-US-EmmaNeural", "gender": "Female", "locale": "en-US", "notes": "Cheerful, Clear"},
     {"name": "en-US-EricNeural", "gender": "Male", "locale": "en-US", "notes": "Rational"},
     {"name": "en-US-GuyNeural", "gender": "Male", "locale": "en-US", "notes": "Passion"},
@@ -39,7 +35,6 @@ VOICES = [
     # Italian
     {"name": "it-IT-DiegoNeural", "gender": "Male", "locale": "it-IT", "notes": "Friendly, Positive"},
     {"name": "it-IT-ElsaNeural", "gender": "Female", "locale": "it-IT", "notes": "Friendly, Positive"},
-    {"name": "it-IT-GiuseppeMultilingualNeural", "gender": "Male", "locale": "it-IT", "notes": "Friendly, Positive"},
     {"name": "it-IT-IsabellaNeural", "gender": "Female", "locale": "it-IT", "notes": "Friendly, Positive"},
 ]
 
