@@ -74,10 +74,20 @@ INSTRUMENT_TERMS = {
 }
 
 
+# Collections/identifiers to reject (78rpm records have surface noise)
+REJECT_PATTERNS = [
+    r'78_',           # 78rpm record identifiers start with "78_"
+    r'78rpm',
+    r'georgeblood',   # George Blood's 78rpm transfers
+    r'gbia\d+',       # Great 78 Project identifiers
+]
+
+
 def search_archive(query, max_results=20):
     """Search Internet Archive for audio files."""
     # Build search query - focus on audio, public domain, classical/traditional
-    search_terms = f'({query}) AND mediatype:audio AND NOT collection:podcasts'
+    # Exclude 78rpm collections (surface noise)
+    search_terms = f'({query}) AND mediatype:audio AND NOT collection:podcasts AND NOT collection:78rpm AND NOT collection:georgeblood'
     
     params = {
         'q': search_terms,
@@ -271,8 +281,13 @@ def main():
     for item in items:
         if len(results) >= args.limit:
             break
-            
+        
         identifier = item['identifier']
+        
+        # Skip 78rpm records (noisy surface crackle)
+        if any(re.search(pat, identifier, re.IGNORECASE) for pat in REJECT_PATTERNS):
+            continue
+            
         files = get_item_files(identifier)
         
         for f in files[:3]:  # Check up to 3 files per item
