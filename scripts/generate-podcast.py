@@ -240,13 +240,17 @@ def edge_tts(text, voice, output_path, retries=2):
 # PROVIDER SELECTION
 # ═══════════════════════════════════════════════════════════════════════════════
 
-def select_provider(script_length, force_provider=None):
+def select_provider(script_length, lang="en", force_provider=None):
     """Select TTS provider based on availability and credits.
     
     Returns: ("elevenlabs" | "edge", reason_string)
     """
     if force_provider:
         return force_provider, "forced via --provider"
+    
+    # Italian always uses Edge TTS (better quality for Italian)
+    if lang == "it":
+        return "edge", "Italian uses Edge TTS"
     
     # Check ElevenLabs availability
     api_key = get_elevenlabs_key()
@@ -564,7 +568,7 @@ def generate_podcast(entry_id, lang="en", remix=False, music_url=None, music_sta
     print(f"  📝 Script: {len(script_text)} characters")
 
     # Select provider
-    selected_provider, reason = select_provider(len(script_text), provider)
+    selected_provider, reason = select_provider(len(script_text), lang, provider)
     print(f"  🔊 TTS provider: {selected_provider} ({reason})")
 
     # Download music if URL provided
