@@ -910,6 +910,9 @@
       "place": "Roma"
     },
     "addedDate": "2026-03-01T08:00:00Z",
-    "podcast": "none"
+    "podcast": {
+      "url": "audio/it/410-rome-city-of-god.mp3",
+      "duration": 174
+    }
   }
 ]
