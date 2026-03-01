@@ -182,8 +182,6 @@
     // Edge cases — handle smoothly to avoid jumps
     if (!before && after) {
       // Near top of page, first entry is below refY
-      // Interpolate from page top (0) to first entry
-      const t = Math.max(0, Math.min(1, refY / after.y));
       return { year: after.entry.year, entry: after.entry };
     }
     if (before && !after) return { year: before.entry.year, entry: before.entry };
@@ -193,12 +191,13 @@
       return firstVisible ? { year: firstVisible.year, entry: firstVisible } : null;
     }
 
-    // Interpolate between the two (clamp t to 0-1 to avoid overshoot)
-    const t = Math.max(0, Math.min(1, (refY - before.y) / (after.y - before.y)));
-    const year = before.entry.year + t * (after.entry.year - before.entry.year);
+    // Smooth interpolation: use pixel distance, not year distance
+    // This ensures constant disc movement regardless of year gaps
+    const pixelT = Math.max(0, Math.min(1, (refY - before.y) / (after.y - before.y)));
+    const year = before.entry.year + pixelT * (after.entry.year - before.entry.year);
 
-    // Find closest entry for highlighting
-    const closestEntry = t < 0.5 ? before.entry : after.entry;
+    // Find closest entry for highlighting (at 50% threshold)
+    const closestEntry = pixelT < 0.5 ? before.entry : after.entry;
 
     return { year, entry: closestEntry };
   }
@@ -229,7 +228,15 @@
       lastCurrentEntry = pos.entry;
     }
 
-    const currentYearRatio = (pos.year - minYear) / yearSpan;
+    // Use scroll-based positioning for smoothness
+    // Calculate position based on where we are in the document
+    const scrollY = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - h;
+    const scrollRatio = docHeight > 0 ? scrollY / docHeight : 0;
+    
+    // Map scroll ratio to year range
+    const scrollYear = minYear + scrollRatio * yearSpan;
+    const currentYearRatio = (scrollYear - minYear) / yearSpan;
     const currentTickY = currentYearRatio * trackHeight;
 
     // Direct transform - no transition
