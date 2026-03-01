@@ -5,7 +5,7 @@
 - 5 dimensions: Art, Literature, Philosophy, History, Connections
 - Movement contextualisation in all dimensions
 - Reference markers for orientation
-- Daily cron adds a new slice (9 AM Paris)
+- Daily cron adds a new slice (7 AM Paris)
 - Mobile responsive layout
 - Dark aesthetic, scroll animations
 - Hero images per entry (Wikimedia Commons, locally hosted)
@@ -17,7 +17,7 @@
 - SVG thread lines with animated glow
 - Auto-scroll to first match on thread activation
 - Fun fact callout boxes with accent border on expand
-- Audio narration podcasts per entry (EN + IT) — gpt-4o-mini-tts + period music
+- Audio narration podcasts per entry (EN + IT) — Edge TTS + period music
 - Improved podcast music mixing — low-pass filter, compression, duck-on-voice, smart start offsets
 - `--remix` mode — remix music without regenerating TTS (cached narrations)
 - Multilingual support (EN/IT) with locale-aware content and audio
@@ -27,6 +27,11 @@
 - Animated map — time slider scrubs through entries, lighting up geographically
 - Geographic coordinates on all entries (location field with lat/lon/place)
 - Daily digest — cron generates a new slice daily + notifies Telegram group
+- Time disc navigator — fixed sidebar for quick timeline scrubbing
+- Media key support — play/pause icons sync with keyboard/headphone controls
+- Helper scripts — add-entry.py, prep-image.sh, find-music.py, generate-podcast.py, verify-completion.py
+- SearXNG integration for fact-checking during generation
+- 78rpm music filtering — avoids noisy vinyl transfers from Internet Archive
 
 ## 📋 Backlog
 
@@ -60,7 +65,6 @@
 - [ ] Entry suggestions — users propose time slices via form or Telegram
 - [ ] Quiz mode — "Which movement was X part of?" / "What connects A to B?"
 
-
 ### 📝 Content & Depth
 - [ ] Deep dive links — surface sources as "Want to go deeper?" + curated external readings
 - [ ] Primary source quotes — embed actual quotes from the era in each dimension
@@ -69,4 +73,4 @@
 
 ---
 
-*Last updated: 2026-02-25*
+*Last updated: 2026-03-01*
