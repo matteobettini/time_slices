@@ -518,7 +518,7 @@ def generate_podcast(entry_id, lang="en", remix=False, music_url=None, music_sta
     return final_duration, voice
 
 
-def update_json(entry_id, duration, lang="en", voice=None):
+def update_json(entry_id, duration, lang="en"):
     """Add podcast field to slices.json or slices.it.json."""
     if lang == "it":
         json_path = os.path.join(PROJECT_DIR, "slices.it.json")
@@ -535,8 +535,6 @@ def update_json(entry_id, duration, lang="en", voice=None):
                 "url": f"{url_prefix}{entry_id}.mp3",
                 "duration": duration,
             }
-            if voice:
-                entry["podcast"]["voice"] = voice
             break
 
     with open(json_path, "w") as f:
@@ -572,7 +570,7 @@ def main():
         )
         if result:
             duration, voice_used = result
-            update_json(args.entry_id, duration, lang=lang, voice=voice_used)
+            update_json(args.entry_id, duration, lang=lang)
     else:
         parser.print_help()
         return
