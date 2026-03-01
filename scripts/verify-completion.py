@@ -171,12 +171,30 @@ def check_thread_narratives(entry_id: str) -> dict:
     for t in thread_years:
         thread_years[t] = sorted(thread_years[t])
     
-    # Read index.html to check for narratives
+    # Read index.html to check for narratives and duplicates
     index_path = PROJECT_DIR / "index.html"
     if not index_path.exists():
         return {"ok": True, "issues": [], "missing": []}
     
     content = index_path.read_text()
+    
+    # Check for duplicate thread keys in THREAD_NARRATIVES
+    import re
+    # Find all thread keys in the narratives object
+    thread_key_pattern = r"'([a-z-]+)':\s*\{"
+    matches = re.findall(thread_key_pattern, content)
+    
+    # Count occurrences (each thread should appear exactly twice: once in en, once in it)
+    from collections import Counter
+    thread_counts = Counter(matches)
+    for thread, count in thread_counts.items():
+        # Filter to only threads that are in THREAD_NARRATIVES (not THREAD_LABELS)
+        # A thread in narratives will have year→year patterns inside
+        if count > 2:
+            # Verify it's actually in narratives by checking for arrow pattern nearby
+            pattern = rf"'{thread}':\s*\{{[^}}]*'\d+→\d+'"
+            if re.search(pattern, content):
+                issues.append(f"Duplicate thread '{thread}' in THREAD_NARRATIVES ({count} occurrences, expected 2)")
     
     # Check consecutive pairs for threads with 2+ entries
     missing = []
