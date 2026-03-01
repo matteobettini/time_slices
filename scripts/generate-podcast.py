@@ -85,31 +85,17 @@ ELEVENLABS_VOICES_IT = [
     ("XrExE9yKIg1WjnnlVkGX", "Matilda", "warm female (multilingual)"),
 ]
 
-# Edge TTS voices (voice_name, description)
+# Edge TTS voices (voice_name, description) — curated from community feedback
 EDGE_VOICES_EN = [
-    ("en-GB-RyanNeural", "British male, natural flow"),
-    ("en-US-AvaNeural", "American female, expressive"),
-    ("en-US-AndrewNeural", "American male, warm"),
-    ("en-US-SteffanNeural", "American male, clear"),
-    ("en-GB-SoniaNeural", "British female, professional"),
-    ("en-US-JennyNeural", "American female, friendly"),
-    ("en-US-GuyNeural", "American male, casual"),
-    ("en-AU-WilliamNeural", "Australian male, warm"),
-    ("en-GB-ThomasNeural", "British male, authoritative"),
-    ("en-US-AriaNeural", "American female, professional"),
+    ("en-GB-RyanNeural", "British male, least robotic, natural flow"),
+    ("en-US-AvaNeural", "American female, expressive, caring"),
+    ("en-US-AndrewNeural", "American male, warm, confident"),
+    ("en-US-SteffanNeural", "American male, rational, clear"),
 ]
 
 EDGE_VOICES_IT = [
     ("it-IT-DiegoNeural", "Italian male, natural"),
     ("it-IT-IsabellaNeural", "Italian female, natural"),
-    ("it-IT-ElsaNeural", "Italian female, warm"),
-    ("it-IT-GiuseppeNeural", "Italian male, expressive"),
-    ("it-IT-BenignoNeural", "Italian male, calm"),
-    ("it-IT-CalimeroNeural", "Italian male, friendly"),
-    ("it-IT-CataldoNeural", "Italian male, mature"),
-    ("it-IT-FabiolaNeural", "Italian female, bright"),
-    ("it-IT-FiammaNeural", "Italian female, energetic"),
-    ("it-IT-ImeldaNeural", "Italian female, professional"),
 ]
 
 # ═══════════════════════════════════════════════════════════════════════════════
