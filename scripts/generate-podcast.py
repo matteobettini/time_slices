@@ -3,14 +3,14 @@
 Generate a podcast MP3 for a Time Slice entry.
 
 Usage:
-    python3 generate-podcast.py <entry-id>
-    python3 generate-podcast.py --all
-    python3 generate-podcast.py --download-music
+    python3 generate-podcast.py <entry-id> --lang en --voice en-GB-RyanNeural
+    python3 generate-podcast.py <entry-id> --lang it --voice it-IT-DiegoNeural
+    python3 generate-podcast.py <entry-id> --remix  # Reuse saved narration, remix music only
 
-Uses gpt-4o-mini-tts via the ape API (OpenAI-compatible) for narration,
+Uses Edge TTS (Microsoft's free neural TTS) for narration via ~/bin/edge-tts wrapper,
 and period-appropriate background music from Internet Archive (public domain).
 
-Requires: ffmpeg, curl (or requests)
+Requires: ffmpeg, ~/bin/edge-tts (node-edge-tts wrapper)
 """
 
 import argparse
@@ -22,35 +22,17 @@ import urllib.request
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
-SCRIPTS_DIR = os.path.join(SCRIPT_DIR, "scripts")
+AUDIO_DIR = os.path.join(PROJECT_DIR, "audio")
+SCRIPTS_DIR = os.path.join(AUDIO_DIR, "scripts")
 MUSIC_DIR = os.path.join(SCRIPT_DIR, "music")
-OUTPUT_DIR = SCRIPT_DIR  # audio/{id}.mp3
 
-# API configuration — set via environment variables
-TTS_API_URL = os.environ.get("TIMESLICES_TTS_URL", "")
-TTS_TOKEN = os.environ.get("TIMESLICES_TTS_TOKEN", "")
-TTS_MODEL = "gpt-4o-mini-tts"
+# Edge TTS wrapper script
+EDGE_TTS_BIN = os.path.expanduser("~/bin/edge-tts")
 
-# Available OpenAI TTS voices: alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse
-# ❌ Do NOT use "onyx" — produces buggy/glitchy output
+# Default voices for each language
+DEFAULT_VOICE_EN = "en-GB-RyanNeural"  # British voice suits historical narration
+DEFAULT_VOICE_IT = "it-IT-DiegoNeural"
 
-# Default voice/style if not provided via CLI
-DEFAULT_VOICE = "ash"
-DEFAULT_STYLE_EN = "Speak as a knowledgeable narrator telling a historical story. Measured, engaging, conversational."
-DEFAULT_STYLE_IT = "Parla come un narratore esperto che racconta una storia storica. Misurato, coinvolgente, conversazionale."
-
-# ═══════════════════════════════════════════════════════════════════════════════
-# MUSIC — Downloaded on-demand via CLI args (--music-url)
-# Use scripts/find-music.py to discover tracks from Internet Archive
-# ═══════════════════════════════════════════════════════════════════════════════
-
-# Legacy mappings for existing entries (used when --music-url not provided)
-# Format: entry_id -> (url, filename, start_time)
-
-# ═══════════════════════════════════════════════════════════════════════════════
-# MUSIC — Pass via CLI: --music-url <url> --music-start <seconds>
-# Use scripts/find-music.py to discover tracks from Internet Archive
-# ═══════════════════════════════════════════════════════════════════════════════
 
 def _verify_music_has_audio(filepath):
     """Check that a music file actually contains audio (not silence). Returns True if OK."""
@@ -95,63 +77,57 @@ def download_music_track(url, filename):
         return None
 
 
-def _tts_chunk(text, voice, instructions, out_path, timeout=120, retries=2):
-    """Call the TTS API for a single chunk of text. Returns True on success."""
+def _tts_edge(text, voice, out_path, retries=2):
+    """Call Edge TTS via the wrapper script. Returns True on success."""
     import time as _time
-    payload = json.dumps({
-        "model": TTS_MODEL,
-        "input": text,
-        "voice": voice,
-        "instructions": instructions or "",
-        "response_format": "mp3",
-    })
-    req_headers = {
-        "Authorization": f"Bearer {TTS_TOKEN}",
-        "Content-Type": "application/json",
-    }
+    
     for attempt in range(1, retries + 1):
         try:
-            req = urllib.request.Request(TTS_API_URL, data=payload.encode("utf-8"), headers=req_headers)
-            with urllib.request.urlopen(req, timeout=timeout) as resp:
-                with open(out_path, "wb") as f:
-                    f.write(resp.read())
-            return True
+            result = subprocess.run(
+                [EDGE_TTS_BIN, text, voice, out_path],
+                capture_output=True, text=True, timeout=120
+            )
+            if result.returncode == 0 and os.path.exists(out_path) and os.path.getsize(out_path) > 1000:
+                return True
+            else:
+                print(f"    ⚠ Attempt {attempt}/{retries} failed: {result.stderr}")
+        except subprocess.TimeoutExpired:
+            print(f"    ⚠ Attempt {attempt}/{retries} timed out")
         except Exception as e:
             print(f"    ⚠ Attempt {attempt}/{retries} failed: {e}")
-            if attempt < retries:
-                _time.sleep(3 * attempt)  # backoff: 3s, 6s
+        
+        if attempt < retries:
+            _time.sleep(2 * attempt)  # backoff: 2s, 4s
+    
     return False
 
 
 # Threshold in chars: scripts longer than this are split into paragraph chunks
-_CHUNK_THRESHOLD = 1500
+_CHUNK_THRESHOLD = 2000
 
 
-def generate_narration(entry_id, script_text, lang="en", voice=None, style=None):
-    """Generate TTS narration via gpt-4o-mini-tts through the ape API.
+def generate_narration(entry_id, script_text, lang="en", voice=None):
+    """Generate TTS narration via Edge TTS.
 
     For short scripts (≤ _CHUNK_THRESHOLD chars), sends a single request.
     For longer scripts, splits by paragraph, generates each chunk, and
-    concatenates with ffmpeg. This avoids 504 gateway timeouts on the
-    upstream TTS provider.
+    concatenates with ffmpeg.
     
     Args:
-        voice: OpenAI TTS voice name (alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse)
-        style: Style instructions for the voice
+        voice: Edge TTS voice name (e.g., en-GB-RyanNeural, it-IT-DiegoNeural)
     """
-    # Use provided voice/style or defaults
-    voice = voice or DEFAULT_VOICE
-    if style is None:
-        style = DEFAULT_STYLE_EN if lang == "en" else DEFAULT_STYLE_IT
+    # Use provided voice or defaults
+    if voice is None:
+        voice = DEFAULT_VOICE_EN if lang == "en" else DEFAULT_VOICE_IT
 
-    print(f"  🎤 Generating narration (voice: {voice}, model: {TTS_MODEL}, {len(script_text)} chars)...")
+    print(f"  🎤 Generating narration (voice: {voice}, {len(script_text)} chars)...")
 
     narration_path = f"/tmp/{entry_id}-narration.mp3"
 
     # --- Decide: single call or chunked ---
     if len(script_text) <= _CHUNK_THRESHOLD:
         # Short script — single TTS call
-        if not _tts_chunk(script_text, voice, style, narration_path, timeout=120, retries=2):
+        if not _tts_edge(script_text, voice, narration_path, retries=2):
             print(f"  ✗ TTS failed for {entry_id}")
             return None, 0
     else:
@@ -163,12 +139,12 @@ def generate_narration(entry_id, script_text, lang="en", voice=None, style=None)
         for i, para in enumerate(paragraphs):
             part_path = f"/tmp/{entry_id}-part{i}.mp3"
             print(f"    Chunk {i+1}/{len(paragraphs)} ({len(para)} chars)...")
-            if not _tts_chunk(para, voice, instructions, part_path, timeout=120, retries=2):
+            if not _tts_edge(para, voice, part_path, retries=2):
                 print(f"  ✗ TTS failed on chunk {i+1}")
                 return None, 0
             part_paths.append(part_path)
             if i < len(paragraphs) - 1:
-                _time.sleep(1)  # small delay between API calls
+                _time.sleep(0.5)  # small delay between calls
 
         # Concatenate parts with ffmpeg, adding small gaps and normalizing volume
         list_file = f"/tmp/{entry_id}-parts.txt"
@@ -349,10 +325,10 @@ def mix_audio(narration_path, music_path, output_path, narration_duration, start
     print(f"  ✓ Final podcast: {size // 1024}KB, ~{total_duration:.0f}s")
 
 
-NARRATIONS_DIR = os.path.join(SCRIPT_DIR, "narrations")
+NARRATIONS_DIR = os.path.join(AUDIO_DIR, "narrations")
 
 
-def generate_podcast(entry_id, lang="en", remix=False, music_url=None, music_start=0, voice=None, style=None):
+def generate_podcast(entry_id, lang="en", remix=False, music_url=None, music_start=0, voice=None):
     """Full pipeline: script → narration → mix → output.
     
     Args:
@@ -361,12 +337,11 @@ def generate_podcast(entry_id, lang="en", remix=False, music_url=None, music_sta
         remix: If True, skip TTS and reuse saved narration
         music_url: URL to download background music from (optional)
         music_start: Start time in seconds for music track
-        voice: OpenAI TTS voice (alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse)
-        style: Style instructions for the voice
+        voice: Edge TTS voice (e.g., en-GB-RyanNeural, it-IT-DiegoNeural)
     
     If remix=True, skip TTS and reuse saved narration from audio/narrations/.
     If no saved narration exists, extract voice from existing podcast MP3
-    (strips old 2s music intro).
+    (strips old 3.5s music intro).
     """
     lang_label = f" [{lang.upper()}]" if lang != "en" else ""
     print(f"\n🎙️  Generating podcast for: {entry_id}{lang_label}" + (" [REMIX]" if remix else ""))
@@ -420,14 +395,14 @@ def generate_podcast(entry_id, lang="en", remix=False, music_url=None, music_sta
     elif remix:
         # No saved narration — extract from existing podcast MP3
         if lang == "it":
-            existing_mp3 = os.path.join(OUTPUT_DIR, "it", f"{entry_id}.mp3")
+            existing_mp3 = os.path.join(AUDIO_DIR, "it", f"{entry_id}.mp3")
         else:
-            existing_mp3 = os.path.join(OUTPUT_DIR, f"{entry_id}.mp3")
+            existing_mp3 = os.path.join(AUDIO_DIR, f"{entry_id}.mp3")
         if os.path.exists(existing_mp3):
-            print(f"  🔧 Extracting voice from existing podcast (stripping old 2s intro)...")
-            # Old mix had 2s music intro; trim it to get narration-start-aligned audio
+            print(f"  🔧 Extracting voice from existing podcast (stripping old 3.5s intro)...")
+            # Current mix has 3.5s music intro; trim it to get narration-start-aligned audio
             result = subprocess.run(
-                ["ffmpeg", "-y", "-i", existing_mp3, "-ss", "2",
+                ["ffmpeg", "-y", "-i", existing_mp3, "-ss", "3.5",
                  "-c:a", "libmp3lame", "-b:a", "128k", saved_narration],
                 capture_output=True, text=True
             )
@@ -448,7 +423,7 @@ def generate_podcast(entry_id, lang="en", remix=False, music_url=None, music_sta
             return False
     else:
         # Normal TTS generation
-        narration_path, duration = generate_narration(entry_id, script_text, lang=lang, voice=voice, style=style)
+        narration_path, duration = generate_narration(entry_id, script_text, lang=lang, voice=voice)
         if not narration_path:
             return False
         # Save narration for future remixes
@@ -457,11 +432,11 @@ def generate_podcast(entry_id, lang="en", remix=False, music_url=None, music_sta
 
     # Mix — Italian outputs go to audio/it/
     if lang == "it":
-        it_dir = os.path.join(OUTPUT_DIR, "it")
+        it_dir = os.path.join(AUDIO_DIR, "it")
         os.makedirs(it_dir, exist_ok=True)
         output_path = os.path.join(it_dir, f"{entry_id}.mp3")
     else:
-        output_path = os.path.join(OUTPUT_DIR, f"{entry_id}.mp3")
+        output_path = os.path.join(AUDIO_DIR, f"{entry_id}.mp3")
     if music_path and os.path.exists(music_path) and os.path.getsize(music_path) > 10000:
         start_time = music_start
         
@@ -525,12 +500,12 @@ def main():
     parser.add_argument("--remix", action="store_true", help="Skip TTS, reuse saved narrations, remix music only")
     parser.add_argument("--music-url", help="URL to download background music from")
     parser.add_argument("--music-start", type=float, default=0, help="Start time in seconds for music track")
-    parser.add_argument("--voice", default="ash", help="TTS voice (alloy, ash, ballad, coral, echo, fable, nova, sage, shimmer, verse)")
-    parser.add_argument("--style", help="Style instructions for the voice")
+    parser.add_argument("--voice", help="Edge TTS voice (e.g., en-GB-RyanNeural, it-IT-DiegoNeural)")
     args = parser.parse_args()
 
-    if (not TTS_TOKEN or not TTS_API_URL) and not args.remix:
-        print("✗ TIMESLICES_TTS_TOKEN and TIMESLICES_TTS_URL must be set in environment. Export them first.")
+    # Check edge-tts is available
+    if not os.path.exists(EDGE_TTS_BIN) and not args.remix:
+        print(f"✗ Edge TTS wrapper not found at {EDGE_TTS_BIN}")
         sys.exit(1)
 
     lang = args.lang
@@ -542,8 +517,7 @@ def main():
             remix=args.remix,
             music_url=args.music_url,
             music_start=args.music_start,
-            voice=args.voice,
-            style=args.style
+            voice=args.voice
         )
         if duration:
             update_json(args.entry_id, duration, lang=lang)
