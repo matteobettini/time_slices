@@ -2331,6 +2331,8 @@ function showPodcastPlayer(entryEl, audioUrl, duration, { autoStop = true } = {}
   });
 
   audio.addEventListener('ended', () => {
+    // Don't reset UI if thread play all is active (it will handle advancement)
+    if (threadPlayActive) return;
     const btn = entryEl.querySelector('.podcast-btn');
     playBtn.innerHTML = SVG_PLAY;
     if (btn) btn.innerHTML = SVG_HEADPHONES;
