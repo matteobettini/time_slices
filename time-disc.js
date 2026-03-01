@@ -266,9 +266,24 @@
       // Snap to closest entry
       const pos = getCurrentPosition();
       if (pos && pos.entry && pos.entry.el) {
-        const rect = pos.entry.el.getBoundingClientRect();
-        const centerY = window.innerHeight / 2;
-        const scrollDelta = rect.top + rect.height / 2 - centerY;
+        const el = pos.entry.el;
+        const rect = el.getBoundingClientRect();
+        const headerOffset = 100; // matches scroll-margin-top in CSS
+        
+        // For expanded (tall) entries, scroll to top with header offset
+        // For collapsed entries, center them
+        const isExpanded = el.classList.contains('expanded') || rect.height > window.innerHeight * 0.5;
+        
+        let scrollDelta;
+        if (isExpanded) {
+          // Scroll so top of entry is at headerOffset from viewport top
+          scrollDelta = rect.top - headerOffset;
+        } else {
+          // Center collapsed entries
+          const centerY = window.innerHeight / 2;
+          scrollDelta = rect.top + rect.height / 2 - centerY;
+        }
+        
         window.scrollBy({ top: scrollDelta, behavior: 'smooth' });
         if (navigator.vibrate) navigator.vibrate(10);
       }
