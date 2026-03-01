@@ -2824,9 +2824,15 @@ function playThreadEntry(index) {
   const imageEl = el.querySelector('.card-image-inline');
   const imageUrl = imageEl ? (imageEl.src || imageEl.dataset.src) : (slice.image?.url || null);
   
+  // Stop previous podcast manually (don't let showPodcastPlayer do it, as it clears all audio)
+  if (activePodcastAudio) {
+    activePodcastAudio.pause();
+    activePodcastAudio.src = '';
+  }
+  
   // Show player and start playback
   setTimeout(() => {
-    const player = showPodcastPlayer(el, slice.podcast.url, slice.podcast.duration);
+    const player = showPodcastPlayer(el, slice.podcast.url, slice.podcast.duration, { autoStop: false });
     const audio = player.querySelector('audio');
     const playBtn = player.querySelector('.pp-play');
     const podcastBtn = el.querySelector('.podcast-btn');

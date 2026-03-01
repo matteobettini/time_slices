@@ -175,8 +175,8 @@
     if (before && !after) return { year: before.entry.year, entry: before.entry };
     if (!before && !after) return entries.length ? { year: entries[0].year, entry: entries[0] } : null;
 
-    // Interpolate between the two
-    const t = (refY - before.y) / (after.y - before.y);
+    // Interpolate between the two (clamp t to 0-1 to avoid overshoot)
+    const t = Math.max(0, Math.min(1, (refY - before.y) / (after.y - before.y)));
     const year = before.entry.year + t * (after.entry.year - before.entry.year);
 
     // Find closest entry for highlighting
