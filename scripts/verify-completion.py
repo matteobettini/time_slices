@@ -135,17 +135,51 @@ def check_git_status() -> dict:
 
 
 def check_pushed(entry_id: str) -> dict:
-    """Check if entry exists on GitHub (i.e., was pushed)."""
+    """Check if entry exists on GitHub (i.e., was pushed).
+    
+    Uses GitHub API to check commit status rather than raw CDN (which has 5-min cache).
+    Falls back to checking raw CDN if API check shows commit is current.
+    """
     issues = []
     
     try:
-        req = urllib.request.Request(GITHUB_RAW_URL, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            remote_entries = json.loads(resp.read().decode())
+        # First, check if local HEAD matches remote HEAD via GitHub API (no CDN cache)
+        local_head = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=PROJECT_DIR,
+            capture_output=True,
+            text=True
+        ).stdout.strip()
         
-        remote_ids = {e.get("id") for e in remote_entries}
-        if entry_id not in remote_ids:
-            issues.append(f"Entry not on GitHub - push failed or pending")
+        api_url = "https://api.github.com/repos/matteobettini/time_slices/commits?per_page=1"
+        req = urllib.request.Request(api_url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            commits = json.loads(resp.read().decode())
+        
+        if commits and commits[0].get("sha") == local_head:
+            # Commit is pushed successfully - the entry is on GitHub
+            # (CDN may still be stale but the push succeeded)
+            return {"ok": True, "issues": []}
+        
+        # If commits don't match, check if we're ahead (local changes not pushed)
+        result = subprocess.run(
+            ["git", "status", "--branch", "--porcelain"],
+            cwd=PROJECT_DIR,
+            capture_output=True,
+            text=True
+        )
+        if "ahead" in result.stdout:
+            issues.append(f"Entry not on GitHub - local commits not pushed")
+        else:
+            # We're not ahead but commits don't match - maybe diverged?
+            # Fall back to checking raw CDN
+            req = urllib.request.Request(GITHUB_RAW_URL, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                remote_entries = json.loads(resp.read().decode())
+            
+            remote_ids = {e.get("id") for e in remote_entries}
+            if entry_id not in remote_ids:
+                issues.append(f"Entry not on GitHub - push failed or pending")
     except Exception as e:
         issues.append(f"Could not verify GitHub: {e}")
     
