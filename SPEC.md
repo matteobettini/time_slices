@@ -20,10 +20,10 @@ An interactive cross-disciplinary timeline exploring how art, literature, philos
 The site supports English and Italian. Content files:
 - `slices.json` — English entries (primary)
 - `slices.it.json` — Italian entries (must be kept in sync)
-- Thread labels in `index.html` — both `en` and `it` objects in `THREAD_LABELS`
-- Thread narratives in `index.html` — both `en` and `it` objects in `THREAD_NARRATIVES`
+- `thread-labels.json` — human-readable labels for thread tags (en + it)
+- `thread-narratives.json` — connection narratives between entries (en + it)
 
-When adding a new entry, **always** add it to BOTH files. Italian translations should feel natural — not literal machine translation. Use Italian Wikipedia for sources where possible.
+When adding a new entry, **always** add it to BOTH slices files. Italian translations should feel natural — not literal machine translation. Use Italian Wikipedia for sources where possible.
 
 ---
 
@@ -34,11 +34,12 @@ All scripts are in `scripts/` directory:
 | Script | Purpose |
 |--------|---------|
 | `add-entry.py` | Add entry to slices.json/slices.it.json with validation |
+| `add-narrative.py` | Add thread narratives to thread-narratives.json |
 | `prep-image.sh` | Download, compress, and format image JSON |
 | `find-music.py` | Search Internet Archive for period-appropriate music |
 | `generate-podcast.py` | Generate podcast MP3 with TTS + background music (supports ElevenLabs + Edge TTS) |
 | `summarize-entries.py` | Get overview of entries + examples for style reference |
-| `verify-completion.py` | Check if entry is complete (MP3s, pushed, etc.) |
+| `verify-completion.py` | Check if entry is complete (MP3s, pushed, narratives, etc.) |
 
 ---
 
@@ -171,41 +172,37 @@ Every dimension MUST contextualise within the broader cultural/intellectual MOVE
 
 ---
 
+## Thread Data (Decoupled from index.html)
+
+Thread labels and narratives are stored in separate JSON files for easier editing:
+
+### thread-labels.json
+Human-readable labels for thread tags. Add new tags here:
+```json
+{
+  "en": {
+    "renaissance-humanism": "Renaissance Humanism"
+  },
+  "it": {
+    "renaissance-humanism": "Umanesimo rinascimentale"
+  }
+}
+```
+
+### thread-narratives.json
+Connection narratives between entries. Use the helper script:
+```bash
+# Check what's missing
+python3 scripts/add-narrative.py --missing
+
+# Add a narrative  
+python3 scripts/add-narrative.py <thread> <year_from> <year_to> "<en_text>" "<it_text>"
+```
+Keep narratives punchy: 1-2 sentences max. Focus on mechanisms of transmission.
+
+---
+
 ## index.html: Things You May Need to Update
-
-### THREAD_LABELS object
-When you add a NEW thread tag, you MUST add a human-readable label to the `THREAD_LABELS` object in `index.html` — in BOTH the `en` and `it` sub-objects. Find it in the `<script>` section:
-
-```javascript
-const THREAD_LABELS = {
-  en: {
-    'renaissance-humanism': 'Renaissance Humanism',
-    // ...
-  },
-  it: {
-    'renaissance-humanism': 'Umanesimo rinascimentale',
-    // ...
-  }
-};
-```
-
-If a thread tag has no label, it auto-formats from kebab-case, but an explicit label is better.
-
-### THREAD_NARRATIVES object
-Add narratives explaining how threads connect entries across time:
-```javascript
-const THREAD_NARRATIVES = {
-  en: {
-    '1347→1517': 'Ockham's nominalism cracked scholastic authority; Luther drove a printing press through the gap.',
-    // ...
-  },
-  it: {
-    '1347→1517': 'Il nominalismo di Ockham incrinò l'autorità scolastica; Lutero vi fece irrompere la stampa.',
-    // ...
-  }
-};
-```
-Format: `'YEAR_FROM→YEAR_TO': 'Narrative'` (use → character). Keep punchy: 1-2 sentences max.
 
 ### MARKERS array
 Reference markers are small date labels on the timeline (e.g., "1453 — Fall of Constantinople"). If your new slice falls in a time period with no nearby markers, consider adding one. Find it in the `<script>` section:
@@ -290,8 +287,8 @@ After writing a new entry:
 2. ✅ **Also** add the Italian translation to `slices.it.json` — same structure, all text translated naturally
 3. ✅ Ensure `location` (lat/lon/place) and `addedDate` (ISO timestamp) are set
 4. ✅ Validate both files are proper JSON (parse them!)
-5. ✅ Check for new thread tags → update `THREAD_LABELS` (both `en` and `it` sections) in `index.html`
-6. ✅ If you add thread narratives → update both `en` and `it` sections in `THREAD_NARRATIVES`
+5. ✅ Check for new thread tags → update `thread-labels.json` (both `en` and `it` keys)
+6. ✅ Add thread narratives → `python3 scripts/add-narrative.py --missing` then add any missing
 7. ✅ Check if a new MARKER would help → update `MARKERS` in `index.html`
 8. ✅ Generate podcasts (EN + IT) using `scripts/generate-podcast.py`
 9. ✅ `git add -A && git commit -m "Add YEAR Place: Title" && git push "$(cat .git-push-url)" main`

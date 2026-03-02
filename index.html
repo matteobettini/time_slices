@@ -1392,86 +1392,22 @@ function formatYear(y) {
   if (n < 0) return currentLang === 'it' ? `${Math.abs(n)} a.C.` : `${Math.abs(n)} BCE`;
   return String(y);
 }
-const THREAD_LABELS = {
-  en: {
-    'translation-movement': 'Translation as Power',
-    'rationalism': 'Rationalism',
-    'islamic-golden-age': 'Islamic Golden Age',
-    'cosmopolitanism': 'Cosmopolitanism',
-    'geometry-as-ideology': 'Geometry as Ideology',
-    'renaissance-humanism': 'Renaissance Humanism',
-    'neoplatonism': 'Neoplatonism',
-    'classical-revival': 'Classical Revival',
-    'art-and-power': 'Art & Power',
-    'post-impressionism': 'Post-Impressionism',
-    'crisis-of-positivism': 'Crisis of Positivism',
-    'modernity': 'Modernity',
-    'death-of-god': 'Death of God',
-    'expressionism': 'Expressionism',
-    'symbolism': 'Symbolism',
-    'modernism': 'Modernism',
-    'fragmentation': 'Fragmentation',
-    'logical-positivism': 'Logical Positivism',
-    'existentialism': 'Existentialism',
-    'totalitarianism': 'Totalitarianism',
-    'memento-mori': 'Memento Mori',
-    'nominalism': 'Nominalism',
-    'vernacular-literature': 'Vernacular Literature',
-    'baroque': 'Baroque',
-    'westphalian-sovereignty': 'Westphalian Sovereignty',
-    'dutch-golden-age': 'Dutch Golden Age',
-    'enlightenment': 'Enlightenment',
-    'stoicism': 'Stoicism',
-    'imperial-architecture': 'Imperial Architecture',
-    'scientific-revolution': 'Scientific Revolution',
-    'empiricism': 'Empiricism',
-    'reformation': 'Reformation',
-    'printing-revolution': 'Printing Revolution',
-    'sola-scriptura': 'Sola Scriptura',
-    'scholasticism': 'Scholasticism',
-    'gothic-architecture': 'Gothic Architecture',
-    '12th-century-renaissance': '12th Century Renaissance',
-  },
-  it: {
-    'translation-movement': 'Traduzione come potere',
-    'rationalism': 'Razionalismo',
-    'islamic-golden-age': 'Età d\'oro islamica',
-    'cosmopolitanism': 'Cosmopolitismo',
-    'geometry-as-ideology': 'Geometria come ideologia',
-    'renaissance-humanism': 'Umanesimo rinascimentale',
-    'neoplatonism': 'Neoplatonismo',
-    'classical-revival': 'Rinascita classica',
-    'art-and-power': 'Arte e potere',
-    'post-impressionism': 'Post-impressionismo',
-    'crisis-of-positivism': 'Crisi del positivismo',
-    'modernity': 'Modernità',
-    'death-of-god': 'Morte di Dio',
-    'expressionism': 'Espressionismo',
-    'symbolism': 'Simbolismo',
-    'modernism': 'Modernismo',
-    'fragmentation': 'Frammentazione',
-    'logical-positivism': 'Positivismo logico',
-    'existentialism': 'Esistenzialismo',
-    'totalitarianism': 'Totalitarismo',
-    'memento-mori': 'Memento Mori',
-    'nominalism': 'Nominalismo',
-    'vernacular-literature': 'Letteratura in volgare',
-    'baroque': 'Barocco',
-    'westphalian-sovereignty': 'Sovranità vestfaliana',
-    'dutch-golden-age': 'Secolo d\'oro olandese',
-    'enlightenment': 'Illuminismo',
-    'stoicism': 'Stoicismo',
-    'imperial-architecture': 'Architettura imperiale',
-    'scientific-revolution': 'Rivoluzione scientifica',
-    'empiricism': 'Empirismo',
-    'reformation': 'Riforma protestante',
-    'printing-revolution': 'Rivoluzione della stampa',
-    'sola-scriptura': 'Sola Scriptura',
-    'scholasticism': 'Scolastica',
-    'gothic-architecture': 'Architettura gotica',
-    '12th-century-renaissance': 'Rinascimento del XII secolo',
+let THREAD_LABELS = { en: {}, it: {} };
+let THREAD_NARRATIVES = { en: {}, it: {} };
+
+// Load thread data from JSON files
+async function loadThreadData() {
+  try {
+    const [labelsRes, narrativesRes] = await Promise.all([
+      fetch('thread-labels.json'),
+      fetch('thread-narratives.json')
+    ]);
+    THREAD_LABELS = await labelsRes.json();
+    THREAD_NARRATIVES = await narrativesRes.json();
+  } catch (e) {
+    console.error('Failed to load thread data:', e);
   }
-};
+}
 
 const MARKERS = [
   { year: -3000, label: { en: "First writing (Sumer)", it: "Prima scrittura (Sumeri)" } },
@@ -1811,190 +1747,6 @@ function renderMarker(marker) {
 
 // Thread logic
 // Narrative connectors between thread entries
-const THREAD_NARRATIVES = {
-  en: {
-    'death-of-god': {
-      '410→1347': 'Augustine confronted Rome\'s fall by relocating permanence from earth to heaven — the City of God endures when the earthly city burns. Nine centuries later, Ockham pushed this further: if earthly things lack divine guarantee, why trust universals at all? The Black Death made Augustine\'s question visceral again.',
-      '410→1648': 'Augustine\'s <em>City of God</em> argued that earthly politics cannot guarantee salvation — Westphalia\'s diplomats institutionalised this insight, making religion a matter of sovereign discretion rather than divine command. The twelve-century arc: from theological response to political settlement.',
-      '1347→1648': 'The plague made God\'s order illegible; three centuries later, the wars of religion made it lethal. Westphalia\'s solution was radical: stop asking which God is right and let sovereignty decide. Ockham\'s nominalism planted the seed; Descartes\' cogito grew from the same doubt.',
-      '1347→1889': 'The Black Death made God\'s order illegible five centuries before Nietzsche declared Him dead. Ockham\'s razor stripped away metaphysical certainties; by 1889, Nietzsche finished the job — and collapsed under the weight of it.',
-      '1347→1922': 'From plague to wasteland: the crisis of divine authority that began when prayers couldn\'t stop the Black Death reaches its modernist conclusion in Eliot\'s fragments and Wittgenstein\'s silence about what cannot be said.',
-      '1648→1889': 'Westphalia removed God from international politics; Nietzsche removed Him from philosophy. Between them, two and a half centuries of Enlightenment slowly replaced divine authority with human reason — until reason itself began to crack.',
-      '1648→1922': 'The Peace of Westphalia made religion a private matter of state; by 1922, God had become a private matter of the individual — or nobody\'s matter at all. Eliot\'s wasteland is what Westphalia\'s secular order looks like after the trenches.',
-      '1889→1922': 'Nietzsche declared God dead in 1882. By 1922, the void he predicted had swallowed certainty itself — Eliot\'s <em>Waste Land</em> mapped the wreckage, while logical positivism tried to rebuild meaning from scratch.',
-      '410→1274': 'Augustine salvaged classical rationalism by relocating meaning to the City of God — the earthly city could burn, but divine order remained legible. Eight centuries later, Aquinas and Bonaventure built the great synthesis: Aristotelian logic married to Christian revelation, Gothic cathedrals embodying reason made stone. When both giants died at Lyon in 1274, they left behind the confidence that faith and reason could be reconciled.',
-      '1274→1648': 'Aquinas died believing reason and faith formed a seamless whole. Within decades, nominalism began unpicking that confidence; by 1648, Descartes had to rebuild certainty from scratch. The <em>cogito</em> emerges from the ruins of Scholastic synthesis — doubt as method because the old harmonies no longer held.',
-      '1274→1889': 'Aquinas and Bonaventure died believing reason could illuminate faith. Six centuries later, Nietzsche declared God dead and collapsed under the weight of that insight. The arc from Lyon\'s confident synthesis to Turin\'s madman traces Western philosophy losing its theological ground.',
-    },
-    'rationalism': {
-      '-431→125': 'Anaxagoras argued that a rational principle (<em>Nous</em>) governed the cosmos rather than the caprice of gods. Five centuries later, the Stoics — working from this same Greek rationalist tradition, filtered through Aristotle and the early Stoa — taught that the universe was structured by <em>logos</em>, a rational order accessible to human reason. Epictetus, teaching in Nicopolis around 125 CE, inherited this lineage directly: Stoicism emerged from the Athenian philosophical milieu that Anaxagoras helped create, passed through Zeno of Citium (who studied at Plato\'s Academy) and Chrysippus. The Pantheon\'s mathematical perfection — its dome a geometrically exact hemisphere — is this rationalist conviction expressed in built form.',
-      '-431→762': 'Anaxagoras\'s <em>Nous</em> — a cosmic Mind that organises matter through reason — is one of the Greek ideas that Baghdad\'s translators preserved. The Mu\'tazila inherited a twelve-century-old argument: that rational inquiry, not tradition, reveals truth. The texts Hunayn ibn Ishaq translated into Arabic were produced in the intellectual culture Anaxagoras helped create. The link is real but indirect — mediated through Aristotle and the Neoplatonists, not through Anaxagoras directly.',
-      '-431→1648': 'Anaxagoras declared the sun a mass of hot metal and was tried for impiety; Descartes published his cosmology and prudently moved to the Netherlands. Twenty-one centuries apart, both insisted that reason could explain the natural world without recourse to gods — and both understood the danger. The Cartesian tradition inherited Greek natural philosophy through the Arabic-Latin translation chain that begins with the very texts Periclean Athens produced.',
-      '-431→1784': 'When Kant wrote <em>sapere aude</em> — dare to know — he was echoing, through many intermediaries, the stance Anaxagoras took when he explained the sun as matter rather than divinity. Kant studied the Aristotelian tradition directly, and Aristotle studied at Plato\'s Academy, founded one generation after Anaxagoras\'s Athenian period. The lineage is traceable through documented teacher-student chains, though Kant himself looked to Descartes and Leibniz, not to the Pre-Socratics.',
-      '125→410': 'The Stoic rationalism Epictetus taught in Rome\'s provinces — <em>logos</em> as the governing principle of a comprehensible universe — found its Christian translator in Augustine. Through Cicero and the Latin Neoplatonists, Augustine absorbed the conviction that reason could penetrate divine order. When Rome fell, he salvaged this rationalist inheritance by relocating it: the cosmos remains intelligible, but its meaning lies in the City of God, not the city of man.',
-      '125→762': 'The Stoic rationalism that Epictetus taught — the universe as an intelligible order governed by <em>logos</em> — was transmitted alongside Aristotelian and Neoplatonic texts through the late antique world. When the Abbasid translators in Baghdad rendered Greek philosophy into Arabic, the rational cosmology of the Stoics was part of the intellectual atmosphere they inherited, though they translated Aristotle and Plato more systematically. The Mu\'tazila\'s insistence on rational theology drew from the same deep well of Greek rationalism that Epictetus exemplified, mediated through the Syriac-speaking Christian scholars (Nestorians, Jacobites) who preserved Greek philosophical texts in the centuries between Rome\'s decline and Baghdad\'s rise.',
-      '410→762': 'Augustine\'s synthesis of Neoplatonism and Christianity preserved rational cosmology within a theological framework — the <em>logos</em> of the Stoics became the divine Word. Three and a half centuries later, the Mu\'tazila in Baghdad performed a parallel operation on Islam: reason as the tool for understanding revelation. Both drew from the same Greek philosophical inheritance, though Augustine filtered it through Latin Neoplatonism while Baghdad\'s scholars recovered it fresh from Syriac intermediaries.',
-      '762→1141': 'The Mu\'tazila insisted reason could judge religious truth; Abelard applied dialectics to the Trinity. Both were condemned by defenders of faith unconstrained by logic. The texts that fueled Abelard\'s method — Aristotle\'s Organon especially — reached Paris through Arabic translations. Bernard\'s horror was eight centuries of rationalist tradition knocking at theology\'s door.',
-      '1141→1648': 'Abelard\'s dialectical method, condemned at Sens, became Scholasticism\'s backbone. Descartes trained in Scholastic logic before using it to rebuild certainty from doubt. The <em>cogito</em> is the heir to <em>Sic et Non</em> — systematic doubt as the path to truth.',
-      '1141→1274': 'Abelard\'s dialectical method, condemned at Sens, became Scholasticism\'s foundation. By 1274, Aquinas and Bonaventure had built competing systems on that base — Aristotelian synthesis versus Augustinian illumination. Bernard lost the battle but won the war: reason was yoked to faith, not set against it.',
-      '1274→1648': 'When Aquinas and Bonaventure died in 1274, they left behind the most confident synthesis of faith and reason Western philosophy had achieved. Descartes inherited that Scholastic training — and used its tools to rebuild certainty after nominalism and the wars of religion had shattered the synthesis. The <em>Summa</em>\'s method survives in the <em>Meditations</em>.',
-      '762→1648': 'The Mu\'tazila argued that reason could determine religious truth; eight centuries later, Descartes used reason to bypass religious truth entirely. Baghdad\'s translation movement preserved the Greek rationalism that Descartes inherited — the cogito\'s ancestors spoke Arabic.',
-      '762→1784': 'The transmission chain is real but long: Baghdad\'s translators (Hunayn ibn Ishaq and others) rendered Aristotle and Plato into Arabic; these passed through al-Andalus to Latin Europe via translators like Gerard of Cremona in Toledo (12th c.). Kant studied Aristotelian logic and engaged directly with the rationalist tradition that Descartes and Leibniz had built on these recovered texts. But Kant never cited the Mu\'tazila — the parallel between their rational theology and his Enlightenment project is a historiographical observation, not a documented influence.',
-      '1648→1784': 'Kant explicitly engaged with Descartes\' rationalism: the <em>Critique of Pure Reason</em> (1781) directly addresses and transforms the Cartesian project of grounding knowledge in reason alone. The link is documented and acknowledged. The political parallel — Westphalia\'s principle of state sovereignty removed confessional allegiance as grounds for war; Kant\'s essay demanded that individuals exercise reason without deference to authority — reflects a broader trajectory from religious to secular foundations of legitimacy, though the two events are not causally connected.',
-      '1648→1687': 'Descartes\' <em>cogito</em> rebuilt certainty from doubt; Newton\'s <em>Principia</em> rebuilt the cosmos from mathematics. Locke — who met Newton in 1689 — combined both projects: empiricism as the theory of mind that matched Newton\'s physics. The Royal Society, where Newton published, was founded in the same decade Westphalia was signed.',
-      '1687→1784': 'Newton\'s <em>Principia</em> proved the cosmos was mathematically legible; Kant\'s "dare to know" demanded humans use that proof. The Enlightenment is Newtonian confidence applied to society: if gravity obeys laws, why not politics? Kant studied Newtonian physics directly through Christian Wolff\'s systematisation.',
-    },
-    'modernity': {
-      '1648→1889': 'Westphalia invented the modern state; the Eiffel Tower celebrated what the modern state could build. Between them: the Enlightenment, the Industrial Revolution, the nation-state. The 1889 World\'s Fair was Westphalian sovereignty made festive — competing nations showing off in iron and glass.',
-      '1648→1687': 'Westphalia resolved religious conflict through sovereignty; Newton resolved cosmological conflict through mathematics. Both substituted divine authority with systems humans could operate. The modern world\'s dual foundations — the nation-state and mathematical physics — were laid within four decades.',
-      '1687→1889': 'Newton\'s <em>Principia</em> gave modernity its confidence that nature obeyed discoverable laws. Two centuries later, the Eiffel Tower was that confidence made iron — engineering as proof that humans could master the world Newton had made legible.',
-      '1687→1922': 'The Newtonian universe was a clockwork mechanism; by 1922, Einstein had bent its space and the quantum physicists were dissolving its certainties. Modernism\'s fragmentation — Eliot\'s broken myths, Wittgenstein\'s silent limits — is partly the cultural echo of physics losing Newton\'s elegant simplicity.',
-    },
-    'stoicism': {
-      '125→410': 'Epictetus taught that the wise person focuses only on what lies within their control — the inner citadel remains free even when empires burn. Augustine absorbed this Stoic insight through Cicero and transformed it: the Christian soul is the inner citadel, and Rome\'s fall cannot threaten what was never truly ours. The <em>City of God</em> is Stoic detachment theologised.',
-    },
-    'fragmentation': {
-      '1347→1922': 'The plague shattered medieval unity — Church authority, feudal order, demographic stability, all broken at once. Six centuries later, modernism made fragmentation into an art form, shattering narrative, painting, and language with the same democratic indifference.',
-    },
-    'classical-revival': {
-      '-431→125': 'Rome absorbed Greek art not as imitation but as imperial inheritance. The Parthenon expressed democratic Athens\'s civic ideals through mathematical proportion; Hadrian\'s Pantheon translated the same mathematical ambition — dome diameter equalling height, a perfect hemisphere — into the language of imperial universality. The transmission was direct: Roman architects studied Greek buildings firsthand, and Hadrian\'s Villa at Tivoli explicitly recreated Greek structures (the Stoa Poikile, the Vale of Tempe). Meanwhile, Plutarch\'s <em>Parallel Lives</em> provided the intellectual framework — Greek and Roman exemplars compared side by side, the classical tradition understood as a living inheritance rather than a lost age.',
-      '-431→1504': 'This is the origin. When Florentine humanists spoke of recovering classical antiquity, they meant — ultimately — the Periclean achievement: the synthesis of mathematical proportion, idealised human form, and civic purpose that Phidias embodied. The recovery was indirect, filtered through Roman copies and Byzantine manuscripts, but the Parthenon\'s sculptural programme set the standard that Michelangelo and Leonardo measured themselves against. Ghiberti\'s <em>Commentarii</em> explicitly traced artistic lineage back to Phidias.',
-      '-431→1784': 'Winckelmann\'s <em>Thoughts on the Imitation of Greek Works</em> (1755) — the founding text of Neoclassicism — argued that Greek art achieved \"noble simplicity and quiet grandeur\" because Greek society achieved freedom. He was describing, and idealising, Periclean Athens. David\'s generation absorbed this vision directly: the republican virtues they painted in classical dress were imagined as Athenian and Spartan virtues, read through Plutarch but aspiring to the visual language of the Parthenon.',
-      '125→410': 'The Pantheon\'s concrete dome was still the largest in the world when Alaric sacked Rome three centuries later. But by 410, classical form was being absorbed into Christian content: Prudentius wrote hymns in Horatian meters, church mosaics borrowed imperial iconography, and Augustine read Cicero and Plotinus as preparation for Scripture. Late Antiquity didn\'t reject classicism — it baptised it.',
-      '125→1504': 'The Pantheon survived the fall of Rome because Pope Boniface IV consecrated it as a church in 609. Florentine architects studied it obsessively: Brunelleschi travelled to Rome to measure its dome before designing his own for the Florence Cathedral (1420–36), which finally surpassed its 43.3-metre span. The Roman concrete techniques had been lost, but the ambition — and the physical building — endured. Renaissance humanism revived not just Greek ideals but their Roman institutional expression: the libraries, the patronage networks, the monumental architecture that Hadrian exemplified.',
-      '410→1504': 'Augustine preserved classical learning within a Christian framework; without this transmission, the Renaissance would have had nothing to revive. Jerome\'s Vulgate standardised Scripture in Ciceronian Latin; Prudentius\'s Christian poetry maintained classical prosody. When Florentine humanists sought antiquity, they found it filtered through the Church Fathers who had saved what Rome\'s fall would otherwise have destroyed.',
-      '125→1784': 'Neoclassicism drew more heavily on Rome than Greece — because so much more Roman architecture survived. The Pantheon was the most studied building in Europe by the 18th century; its portico became the template for institutions from the British Museum to the Panthéon in Paris. When Winckelmann idealised Greek art, he was largely looking at Roman copies. David\'s classical vocabulary was Roman classical vocabulary — togas, fasces, Republican virtue — mediated through what imperial Rome had preserved, built, and transmitted.',
-      '1504→1784': 'David won the Prix de Rome in 1774 and spent five years in Italy studying Raphael, Michelangelo, and Roman antiquities firsthand. The lineage is direct and documented: Renaissance artists recovered classical forms; David inherited them through the Académie royale\'s curriculum, which made Rome pilgrimage mandatory. But where Renaissance Florence used antiquity as a language of idealised beauty, David\'s Neoclassicism — shaped by Winckelmann\'s writings on Greek art as moral exemplar — turned the same classical vocabulary toward republican virtue and political duty.',
-    },
-    'art-and-power': {
-      '-431→1504': 'Pericles diverted the Delian League treasury to fund the Parthenon; Lorenzo de\' Medici diverted bank profits to fund Florence\'s artistic programme. In both cases, economic dominance was transmuted into cultural authority, and the patrons\' political opponents attacked the expenditure as illegitimate. Phidias was charged with embezzlement; the Medici were exiled in 1494. The pattern — power expressed through beauty, challenged through accounting — repeats across two millennia.',
-      '-431→1784': 'The Parthenon was civic art funded by imperial tribute, legitimising Athenian democracy through aesthetic splendour. David\'s <em>Oath of the Horatii</em>, commissioned by the French Crown, was subverted by its creator into a republican manifesto. Both demonstrate art\'s capacity to serve and undermine power simultaneously — but where Athens\' democratic assembly voted the funds openly, David\'s patron unwittingly funded his own ideological opposition.',
-      '1504→1784': 'The Medici commissioned art to project civic power and cultural prestige — Michelangelo\'s <em>David</em> was a public statement by the Florentine Republic. David\'s <em>Oath</em> was commissioned by the Crown (via d\'Angiviller) as moralising history painting, but the artist subverted the brief: audiences read it as a call to republican sacrifice against monarchy. The shift from Renaissance patron-as-author to Enlightenment artist-as-ideologue is visible in this single commission — the state paid for its own critique.',
-    },
-    'geometry-as-ideology': {
-      '-431→762': 'The Parthenon\'s optical refinements — entasis, stylobate curvature, column inclination — express a Greek conviction that mathematical order underlies reality, and that human craft can perfect what nature approximates. Thirteen centuries later, al-Mansur\'s Round City of Baghdad embodied the same conviction in urban form: a perfect circle with geometry dictating theology. Both are built environments that make philosophical claims about the cosmos through proportion, though the Islamic builders drew on Persian and Mesopotamian traditions as much as Greek ones.',
-    },
-    'cosmopolitanism': {
-      '-431→762': 'Periclean Athens drew thinkers from across the Greek world — Anaxagoras from Clazomenae in Ionia, Protagoras from Abdera in Thrace, Hippodamus from Miletus — and synthesised their ideas into something new. Al-Mansur\'s Baghdad replicated this pattern at larger scale: scholars from Syria, Persia, India, and Central Asia converged on a single city designed to attract and organise knowledge. Both cities understood that intellectual power requires cosmopolitan intake — and both enforced political hierarchies that contradicted their intellectual openness.',
-    },
-    'renaissance-humanism': {
-      '1504→1517': 'Erasmus was the hinge. His 1516 Greek New Testament gave Luther the weapon (<em>metanoeite</em> means "repent," not "do penance") and his <em>Praise of Folly</em> mocked the same Church abuses Luther attacked. Renaissance scholarship made the Reformation possible — then recoiled from what it unleashed.',
-    },
-    'scholasticism': {
-      '762→1141': 'Baghdad\'s translators recovered Aristotle; Abelard\'s <em>Sic et Non</em> put him to work. The dialectical method that Bernard condemned at Sens was built on Arabic-Latin translations flowing through Toledo. When Abelard asked "by doubting we come to inquiry," he was applying tools forged in the House of Wisdom.',
-      '1141→1274': 'Abelard\'s method, condemned at Sens, became the skeleton of Scholasticism. By 1274, Thomas Aquinas and Bonaventure had built the two great systems — Dominican Aristotelianism and Franciscan Augustinianism — on that foundation. When both died within weeks of each other, the age of synthesis died with them.',
-      '1141→1347': 'Abelard was condemned; his method conquered. Within a century, Scholasticism dominated European universities. Ockham, writing just before the plague, used that same dialectical razor to slice away metaphysical certainties — nominalism was Abelard\'s victory pushed to its logical conclusion.',
-      '1141→1517': 'The Scholastic method Abelard pioneered became university orthodoxy — and then the target. Luther trained in Scholastic disputation at Erfurt, then turned the tools against the institution that taught them. The dialectical doubt Bernard feared at Sens reached its endpoint in Wittenberg.',
-      '1274→1347': 'The year Aquinas and Bonaventure died, Scholasticism lost its greatest synthesizers. Within decades, nominalism emerged to dismantle what they\'d built. Ockham\'s razor cut away the metaphysical confidence the <em>Summa</em> embodied — then the Black Death made such confidence seem naive.',
-      '1274→1517': 'Aquinas\'s <em>Summa Theologica</em> remained unfinished at his death in 1274 — the greatest attempt to reconcile faith and reason left incomplete. Two centuries later, Luther rejected the entire project: not supplementing Scholasticism but abandoning it for <em>sola scriptura</em>.',
-    },
-    'nominalism': {
-      '1141→1347': 'Abelard\'s condemnation didn\'t stop his students. The dialectical method he championed evolved into the Scholastic tradition that Ockham would turn against universal essences. The nominalism that shadowed the Black Death was Abelard\'s intellectual grandchild — doubt codified into a school.',
-    },
-    'gothic-architecture': {
-      '1141→1274': 'Suger\'s choir at Saint-Denis (1144) launched the Gothic revolution. By 1274, the style had evolved into the Rayonnant — walls dissolved into tracery, stone transformed into light. The cathedrals rising at Reims and Chartres embodied the same confidence that Aquinas brought to philosophy: reason could illuminate faith.',
-      '1141→1347': 'Suger\'s choir at Saint-Denis (consecrated 1144) launched Gothic architecture. By 1347, the style had transformed Europe\'s skyline — Chartres, Notre-Dame, Florence\'s Duomo. The plague halted construction across the continent; when building resumed, the Renaissance would turn toward classical revival instead.',
-      '1274→1347': 'Rayonnant Gothic\'s dematerialization of stone into light expressed the same 13th-century ambition as Scholastic philosophy: making the invisible visible, proving faith through structure. The Black Death halted construction across Europe — and when building resumed, the confidence that created those soaring windows had fractured.',
-    },
-    'enlightenment': {
-      '1687→1784': 'Newton\'s <em>Principia</em> proved the universe obeyed mathematical laws; Kant\'s "dare to know" demanded humans apply that confidence to themselves. The Enlightenment is Newton generalised — if gravity submits to reason, why not morality, politics, religion? Kant studied Newtonian physics directly and built his critical philosophy on its foundations.',
-    },
-    'vernacular-literature': {
-      '1141→1347': 'Abelard and Héloïse exchanged letters in Latin, but their story spread in the vernacular. Two centuries later, Boccaccio wrote the <em>Decameron</em> in Tuscan Italian — plague survivors telling tales in the language of the street, not the cloister. The shift from Latin to vernacular was also a shift in audience: from clergy to merchants, from eternal truths to mortal pleasures.',
-    },
-  },
-  it: {
-    'death-of-god': {
-      '410→1347': 'Agostino affrontò la caduta di Roma trasferendo la permanenza dalla terra al cielo — la Città di Dio perdura quando la città terrena brucia. Nove secoli dopo, Ockham spinse oltre: se le cose terrene non hanno garanzia divina, perché fidarsi degli universali? La Peste Nera rese nuovamente viscerale la domanda di Agostino.',
-      '410→1648': 'La <em>Città di Dio</em> di Agostino sosteneva che la politica terrena non può garantire la salvezza — i diplomatici di Vestfalia istituzionalizzarono questa intuizione, rendendo la religione una questione di discrezione sovrana piuttosto che di comando divino. L\'arco di dodici secoli: dalla risposta teologica al regolamento politico.',
-      '1347→1648': 'La peste rese illeggibile l\'ordine di Dio; tre secoli dopo, le guerre di religione lo resero letale. La soluzione di Vestfalia fu radicale: smettere di chiedersi quale Dio avesse ragione e lasciare decidere alla sovranità. Il nominalismo di Ockham piantò il seme; il cogito di Cartesio crebbe dallo stesso dubbio.',
-      '1347→1889': 'La Peste Nera rese illeggibile l\'ordine divino cinque secoli prima che Nietzsche ne dichiarasse la morte. Il rasoio di Ockham aveva già spogliato le certezze metafisiche; nel 1889, Nietzsche completò l\'opera — e crollò sotto il suo peso.',
-      '1347→1922': 'Dalla peste alla terra desolata: la crisi dell\'autorità divina, iniziata quando le preghiere non fermarono la Morte Nera, raggiunge la sua conclusione modernista nei frammenti di Eliot e nel silenzio di Wittgenstein su ciò che non si può dire.',
-      '1648→1889': 'Vestfalia rimosse Dio dalla politica internazionale; Nietzsche lo rimosse dalla filosofia. Fra i due, due secoli e mezzo di Illuminismo sostituirono lentamente l\'autorità divina con la ragione umana — finché la ragione stessa cominciò a incrinarsi.',
-      '1648→1922': 'La Pace di Vestfalia fece della religione un affare privato degli Stati; nel 1922, Dio era diventato un affare privato dell\'individuo — o di nessuno. La terra desolata di Eliot è l\'aspetto dell\'ordine secolare vestfaliano dopo le trincee.',
-      '1889→1922': 'Nietzsche dichiarò morto Dio nel 1882. Entro il 1922, il vuoto che aveva predetto aveva inghiottito la certezza stessa — <em>La terra desolata</em> di Eliot ne mappava le macerie, mentre il positivismo logico tentava di ricostruire il significato da zero.',
-      '410→1274': 'Agostino salvò il razionalismo classico trasferendo il significato nella Città di Dio — la città terrena poteva bruciare, ma l\'ordine divino restava leggibile. Otto secoli dopo, Tommaso e Bonaventura costruirono la grande sintesi: la logica aristotelica sposata alla rivelazione cristiana, le cattedrali gotiche che incarnavano la ragione fatta pietra. Quando entrambi i giganti morirono a Lione nel 1274, lasciarono la fiducia che fede e ragione potessero riconciliarsi.',
-      '1274→1648': 'Tommaso morì credendo che ragione e fede formassero un tutto senza cuciture. Nel giro di decenni, il nominalismo cominciò a disfare quella fiducia; nel 1648, Cartesio doveva ricostruire la certezza da zero. Il <em>cogito</em> emerge dalle rovine della sintesi scolastica — il dubbio come metodo perché le vecchie armonie non reggevano più.',
-      '1274→1889': 'Tommaso e Bonaventura morirono credendo che la ragione potesse illuminare la fede. Sei secoli dopo, Nietzsche dichiarò morto Dio e crollò sotto il peso di quell\'intuizione. L\'arco da Lione a Torino traccia la filosofia occidentale che perde il suo fondamento teologico.',
-    },
-    'rationalism': {
-      '-431→125': 'Anassagora sosteneva che un principio razionale (<em>Nous</em>) governasse il cosmo piuttosto che il capriccio degli dei. Cinque secoli dopo, gli Stoici — partendo dalla stessa tradizione razionalista greca, filtrata attraverso Aristotele e la prima Stoa — insegnavano che l\'universo era strutturato dal <em>logos</em>, un ordine razionale accessibile alla ragione umana. Epitteto, che insegnava a Nicopoli intorno al 125 d.C., ereditava direttamente questa genealogia: lo stoicismo emerse dall\'ambiente filosofico ateniese che Anassagora contribuì a creare, passando attraverso Zenone di Cizio (che studiò all\'Accademia di Platone) e Crisippo. La perfezione matematica del Pantheon — la cupola come emisfero geometricamente esatto — è questa convinzione razionalista espressa in forma costruita.',
-      '-431→762': 'Il <em>Nous</em> di Anassagora — una Mente cosmica che organizza la materia attraverso la ragione — è una delle idee greche che i traduttori di Baghdad preservarono. I Mu\'tazila ereditarono un argomento vecchio di dodici secoli: che l\'indagine razionale, non la tradizione, rivela la verità. I testi che Hunayn ibn Ishaq tradusse in arabo furono prodotti nella cultura intellettuale che Anassagora contribuì a creare. Il legame è reale ma indiretto — mediato attraverso Aristotele e i neoplatonici, non attraverso Anassagora direttamente.',
-      '-431→1648': 'Anassagora dichiarò il sole una massa di metallo rovente e fu processato per empietà; Cartesio pubblicò la sua cosmologia e prudentemente si trasferì nei Paesi Bassi. Ventuno secoli di distanza, entrambi insistettero che la ragione potesse spiegare il mondo naturale senza ricorso agli dei — ed entrambi ne compresero il pericolo. La tradizione cartesiana ereditò la filosofia naturale greca attraverso la catena di traduzione arabo-latina che inizia con i testi stessi prodotti dall\'Atene di Pericle.',
-      '-431→1784': 'Quando Kant scrisse <em>sapere aude</em> — osa sapere — echeggiava, attraverso molti intermediari, la posizione che Anassagora assunse quando spiegò il sole come materia piuttosto che divinità. Kant studiò la tradizione aristotelica direttamente, e Aristotele studiò all\'Accademia di Platone, fondata una generazione dopo il periodo ateniese di Anassagora. La genealogia è tracciabile attraverso catene documentate maestro-allievo, sebbene Kant stesso guardasse a Cartesio e Leibniz, non ai Presocratici.',
-      '125→410': 'Il razionalismo stoico che Epitteto insegnava nelle province romane — il <em>logos</em> come principio regolatore di un universo comprensibile — trovò il suo traduttore cristiano in Agostino. Attraverso Cicerone e i neoplatonici latini, Agostino assorbì la convinzione che la ragione potesse penetrare l\'ordine divino. Quando Roma cadde, salvò quest\'eredità razionalista ricollocandola: il cosmo rimane intelligibile, ma il suo significato risiede nella Città di Dio, non nella città degli uomini.',
-      '125→762': 'Il razionalismo stoico insegnato da Epitteto — l\'universo come ordine intelligibile governato dal <em>logos</em> — fu trasmesso insieme ai testi aristotelici e neoplatonici attraverso il mondo tardoantico. Quando i traduttori abbasidi a Baghdad resero la filosofia greca in arabo, la cosmologia razionale degli Stoici faceva parte dell\'atmosfera intellettuale che avevano ereditato, sebbene traducessero Aristotele e Platone più sistematicamente. L\'insistenza dei Mu\'tazila sulla teologia razionale attingeva allo stesso pozzo profondo del razionalismo greco che Epitteto esemplificava, mediato attraverso gli studiosi cristiani di lingua siriaca (Nestoriani, Giacobiti) che preservarono i testi filosofici greci nei secoli tra il declino di Roma e l\'ascesa di Baghdad.',
-      '410→762': 'La sintesi agostiniana di neoplatonismo e cristianesimo preservò la cosmologia razionale entro un quadro teologico — il <em>logos</em> degli Stoici divenne il Verbo divino. Tre secoli e mezzo dopo, i Mu\'tazila a Baghdad compirono un\'operazione parallela sull\'Islam: la ragione come strumento per comprendere la rivelazione. Entrambi attingevano alla stessa eredità filosofica greca, sebbene Agostino la filtrasse attraverso il neoplatonismo latino mentre gli studiosi di Baghdad la recuperassero fresca dagli intermediari siriaci.',
-      '762→1141': 'I Mu\'tazila insistevano che la ragione potesse giudicare la verità religiosa; Abelardo applicò la dialettica alla Trinità. Entrambi furono condannati da difensori di una fede non vincolata dalla logica. I testi che alimentarono il metodo di Abelardo — specialmente l\'<em>Organon</em> di Aristotele — raggiunsero Parigi attraverso traduzioni arabe. L\'orrore di Bernardo era otto secoli di tradizione razionalista che bussavano alla porta della teologia.',
-      '1141→1648': 'Il metodo dialettico di Abelardo, condannato a Sens, divenne la spina dorsale della Scolastica. Cartesio si formò nella logica scolastica prima di usarla per ricostruire la certezza dal dubbio. Il <em>cogito</em> è l\'erede del <em>Sic et Non</em> — il dubbio sistematico come via verso la verità.',
-      '1141→1274': 'Il metodo dialettico di Abelardo, condannato a Sens, divenne il fondamento della Scolastica. Nel 1274, Tommaso e Bonaventura avevano costruito sistemi rivali su quella base — sintesi aristotelica contro illuminazione agostiniana. Bernardo perse la battaglia ma vinse la guerra: la ragione fu aggiogata alla fede, non contrapposta.',
-      '1274→1648': 'Quando Tommaso e Bonaventura morirono nel 1274, lasciarono la sintesi più fiduciosa di fede e ragione che la filosofia occidentale avesse mai raggiunto. Cartesio ereditò quella formazione scolastica — e ne usò gli strumenti per ricostruire la certezza dopo che il nominalismo e le guerre di religione avevano frantumato la sintesi. Il metodo della <em>Summa</em> sopravvive nelle <em>Meditazioni</em>.',
-      '762→1648': 'I Mu\'tazila sostenevano che la ragione potesse determinare la verità religiosa; otto secoli dopo, Cartesio usò la ragione per aggirare del tutto la verità religiosa. Il movimento di traduzione di Baghdad preservò il razionalismo greco che Cartesio ereditò — gli antenati del cogito parlavano arabo.',
-      '762→1784': 'La catena di trasmissione è reale ma lunga: i traduttori di Baghdad (Hunayn ibn Ishaq e altri) resero Aristotele e Platone in arabo; questi passarono attraverso al-Andalus all\'Europa latina tramite traduttori come Gerardo da Cremona a Toledo (XII sec.). Kant studiò la logica aristotelica e si confrontò direttamente con la tradizione razionalista che Cartesio e Leibniz avevano costruito su quei testi recuperati. Ma Kant non citò mai i Mu\'tazila — il parallelo tra la loro teologia razionale e il suo progetto illuminista è un\'osservazione storiografica, non un\'influenza documentata.',
-      '1648→1784': 'Kant si confrontò esplicitamente con il razionalismo cartesiano: la <em>Critica della ragion pura</em> (1781) affronta e trasforma direttamente il progetto cartesiano di fondare la conoscenza nella sola ragione. Il legame è documentato e riconosciuto. Il parallelo politico — il principio di sovranità statale di Vestfalia rimosse l\'appartenenza confessionale come casus belli; il saggio di Kant esigeva che gli individui esercitassero la ragione senza deferenza all\'autorità — riflette una traiettoria più ampia dalle fondamenta religiose a quelle laiche della legittimità, anche se i due eventi non sono causalmente connessi.',
-      '1648→1687': 'Il <em>cogito</em> di Cartesio ricostruì la certezza dal dubbio; i <em>Principia</em> di Newton ricostruirono il cosmo dalla matematica. Locke — che incontrò Newton nel 1689 — combinò entrambi i progetti: l\'empirismo come teoria della mente che si abbinava alla fisica di Newton. La Royal Society, dove Newton pubblicò, fu fondata nello stesso decennio in cui fu firmata Vestfalia.',
-      '1687→1784': 'I <em>Principia</em> di Newton dimostrarono che il cosmo era matematicamente leggibile; il «sapere aude» di Kant esigeva che gli umani usassero quella prova. L\'Illuminismo è la fiducia newtoniana applicata alla società: se la gravità obbedisce a leggi, perché non la politica? Kant studiò la fisica newtoniana direttamente attraverso la sistematizzazione di Christian Wolff.',
-    },
-    'modernity': {
-      '1648→1889': 'Vestfalia inventò lo Stato moderno; la Tour Eiffel celebrò ciò che lo Stato moderno sapeva costruire. Fra i due: l\'Illuminismo, la Rivoluzione industriale, lo Stato-nazione. L\'Esposizione Universale del 1889 fu la sovranità vestfaliana in festa — nazioni in competizione che si mettevano in mostra in ferro e vetro.',
-      '1648→1687': 'Vestfalia risolse il conflitto religioso attraverso la sovranità; Newton risolse il conflitto cosmologico attraverso la matematica. Entrambi sostituirono l\'autorità divina con sistemi che gli umani potevano gestire. Le doppie fondamenta del mondo moderno — lo Stato-nazione e la fisica matematica — furono gettate nel giro di quattro decenni.',
-      '1687→1889': 'I <em>Principia</em> di Newton diedero alla modernità la fiducia che la natura obbedisse a leggi scopribili. Due secoli dopo, la Tour Eiffel era quella fiducia resa ferro — l\'ingegneria come prova che gli umani potevano dominare il mondo che Newton aveva reso leggibile.',
-      '1687→1922': 'L\'universo newtoniano era un meccanismo a orologeria; nel 1922, Einstein ne aveva curvato lo spazio e i fisici quantistici ne stavano dissolvendo le certezze. La frammentazione modernista — i miti spezzati di Eliot, i limiti silenziosi di Wittgenstein — è in parte l\'eco culturale della fisica che perdeva l\'elegante semplicità di Newton.',
-    },
-    'stoicism': {
-      '125→410': 'Epitteto insegnava che il saggio si concentra solo su ciò che è in suo controllo — la cittadella interiore rimane libera anche quando gli imperi bruciano. Agostino assorbì questa intuizione stoica attraverso Cicerone e la trasformò: l\'anima cristiana è la cittadella interiore, e la caduta di Roma non può minacciare ciò che non è mai stato veramente nostro. La <em>Città di Dio</em> è il distacco stoico teologizzato.',
-    },
-    'fragmentation': {
-      '1347→1922': 'La peste frantumò l\'unità medievale — autorità della Chiesa, ordine feudale, stabilità demografica, tutto spezzato in una volta. Sei secoli dopo, il modernismo fece della frammentazione una forma d\'arte, frantumando narrazione, pittura e linguaggio con la stessa democratica indifferenza.',
-    },
-    'classical-revival': {
-      '-431→125': 'Roma assorbì l\'arte greca non come imitazione ma come eredità imperiale. Il Partenone esprimeva gli ideali civici dell\'Atene democratica attraverso la proporzione matematica; il Pantheon di Adriano tradusse la stessa ambizione matematica — diametro della cupola pari all\'altezza, un emisfero perfetto — nel linguaggio dell\'universalità imperiale. La trasmissione fu diretta: gli architetti romani studiavano gli edifici greci dal vero, e la Villa Adriana a Tivoli ricreava esplicitamente strutture greche (la Stoà Pecile, la Valle di Tempe). Intanto, le <em>Vite parallele</em> di Plutarco fornivano la cornice intellettuale — esemplari greci e romani a confronto, la tradizione classica intesa come eredità viva piuttosto che come epoca perduta.',
-      '-431→1504': 'Questa è l\'origine. Quando gli umanisti fiorentini parlavano di recuperare l\'antichità classica, intendevano — in ultima istanza — la conquista periclea: la sintesi di proporzione matematica, forma umana idealizzata e scopo civico che Fidia incarnava. Il recupero fu indiretto, filtrato attraverso copie romane e manoscritti bizantini, ma il programma scultoreo del Partenone fissò lo standard rispetto al quale Michelangelo e Leonardo si misuravano. I <em>Commentarii</em> di Ghiberti tracciavano esplicitamente la genealogia artistica fino a Fidia.',
-      '-431→1784': 'Le <em>Considerazioni sull\'imitazione delle opere greche</em> di Winckelmann (1755) — il testo fondante del Neoclassicismo — sostenevano che l\'arte greca raggiungesse una «nobile semplicità e quieta grandezza» perché la società greca aveva raggiunto la libertà. Descriveva, idealizzandola, l\'Atene di Pericle. La generazione di David assorbì questa visione direttamente: le virtù repubblicane che dipingevano in vesti classiche erano immaginate come virtù ateniesi e spartane, lette attraverso Plutarco ma aspirando al linguaggio visivo del Partenone.',
-      '125→410': 'La cupola in calcestruzzo del Pantheon era ancora la più grande del mondo quando Alarico saccheggiò Roma tre secoli dopo. Ma nel 410, la forma classica veniva assorbita nel contenuto cristiano: Prudenzio scriveva inni in metri oraziani, i mosaici delle chiese prendevano in prestito l\'iconografia imperiale, e Agostino leggeva Cicerone e Plotino come preparazione alle Scritture. La Tarda Antichità non rifiutò il classicismo — lo battezzò.',
-      '125→1504': 'Il Pantheon sopravvisse alla caduta di Roma perché papa Bonifacio IV lo consacrò come chiesa nel 609. Gli architetti fiorentini lo studiarono ossessivamente: Brunelleschi si recò a Roma per misurarne la cupola prima di progettare la propria per la Cattedrale di Firenze (1420–36), che infine ne superò la luce di 43,3 metri. Le tecniche costruttive romane in calcestruzzo erano andate perdute, ma l\'ambizione — e l\'edificio fisico — resistettero. L\'umanesimo rinascimentale riprese non solo gli ideali greci ma la loro espressione istituzionale romana: le biblioteche, le reti di mecenatismo, l\'architettura monumentale che Adriano aveva esemplificato.',
-      '410→1504': 'Agostino preservò il sapere classico in una cornice cristiana; senza questa trasmissione, il Rinascimento non avrebbe avuto nulla da far rinascere. La Vulgata di Girolamo standardizzò le Scritture in latino ciceroniano; la poesia cristiana di Prudenzio mantenne la prosodia classica. Quando gli umanisti fiorentini cercarono l\'antichità, la trovarono filtrata attraverso i Padri della Chiesa che avevano salvato ciò che altrimenti la caduta di Roma avrebbe distrutto.',
-      '125→1784': 'Il Neoclassicismo attinse a Roma più che alla Grecia — perché molto più dell\'architettura romana era sopravvissuto. Il Pantheon era l\'edificio più studiato d\'Europa nel XVIII secolo; il suo portico divenne il modello per istituzioni dal British Museum al Panthéon di Parigi. Quando Winckelmann idealizzava l\'arte greca, guardava in gran parte copie romane. Il vocabolario classico di David era un vocabolario classico romano — toghe, fasci, virtù repubblicana — mediato da ciò che la Roma imperiale aveva preservato, costruito e trasmesso.',
-      '1504→1784': 'David vinse il Prix de Rome nel 1774 e trascorse cinque anni in Italia studiando Raffaello, Michelangelo e le antichità romane dal vivo. La genealogia è diretta e documentata: gli artisti rinascimentali recuperarono le forme classiche; David le ereditò attraverso il curriculum dell\'Académie royale, che rendeva obbligatorio il pellegrinaggio a Roma. Ma dove la Firenze rinascimentale usava l\'antichità come linguaggio di bellezza idealizzata, il Neoclassicismo di David — plasmato dagli scritti di Winckelmann sull\'arte greca come exemplum morale — volse lo stesso vocabolario classico verso la virtù repubblicana e il dovere politico.',
-    },
-    'art-and-power': {
-      '-431→1504': 'Pericle dirottò il tesoro della Lega di Delo per finanziare il Partenone; Lorenzo de\' Medici dirottò i profitti bancari per finanziare il programma artistico di Firenze. In entrambi i casi, il dominio economico fu trasmutato in autorità culturale, e gli oppositori politici dei mecenati contestarono la spesa come illegittima. Fidia fu accusato di appropriazione indebita; i Medici furono esiliati nel 1494. Lo schema — potere espresso attraverso la bellezza, contestato attraverso la contabilità — si ripete lungo due millenni.',
-      '-431→1784': 'Il Partenone era arte civica finanziata da tributi imperiali, che legittimava la democrazia ateniese attraverso lo splendore estetico. Il <em>Giuramento degli Orazi</em> di David, commissionato dalla Corona francese, fu sovvertito dal suo creatore in un manifesto repubblicano. Entrambi dimostrano la capacità dell\'arte di servire e minare il potere simultaneamente — ma dove l\'assemblea democratica di Atene votò i fondi apertamente, il mecenate di David finanziò involontariamente la propria opposizione ideologica.',
-      '1504→1784': 'I Medici commissionavano arte per proiettare potere civico e prestigio culturale — il <em>David</em> di Michelangelo era una dichiarazione pubblica della Repubblica fiorentina. Il <em>Giuramento</em> di David fu commissionato dalla Corona (tramite d\'Angiviller) come pittura storica moralizzante, ma l\'artista sovvertì l\'incarico: il pubblico lo lesse come un appello al sacrificio repubblicano contro la monarchia. Il passaggio dal mecenate-autore del Rinascimento all\'artista-ideologo dell\'Illuminismo è visibile in questa singola commissione — lo stato pagò la propria critica.',
-    },
-    'geometry-as-ideology': {
-      '-431→762': 'Le correzioni ottiche del Partenone — entasi, curvatura dello stilobate, inclinazione delle colonne — esprimono la convinzione greca che l\'ordine matematico sia il fondamento della realtà, e che l\'arte umana possa perfezionare ciò che la natura approssima. Tredici secoli dopo, la Città Rotonda di al-Mansur a Baghdad incarnava la stessa convinzione in forma urbana: un cerchio perfetto con la geometria che detta la teologia. Entrambi sono ambienti costruiti che avanzano pretese filosofiche sul cosmo attraverso la proporzione, sebbene i costruttori islamici attingessero a tradizioni persiane e mesopotamiche tanto quanto a quelle greche.',
-    },
-    'cosmopolitanism': {
-      '-431→762': 'L\'Atene di Pericle attraeva pensatori da tutto il mondo greco — Anassagora da Clazomene in Ionia, Protagora da Abdera in Tracia, Ippodamo da Mileto — e ne sintetizzava le idee in qualcosa di nuovo. La Baghdad di al-Mansur replicò questo schema su scala maggiore: studiosi da Siria, Persia, India e Asia centrale convergevano su una singola città progettata per attrarre e organizzare il sapere. Entrambe le città compresero che il potere intellettuale richiede un apporto cosmopolita — ed entrambe imposero gerarchie politiche che contraddicevano la loro apertura intellettuale.',
-    },
-    'renaissance-humanism': {
-      '1504→1517': 'Erasmo fu la cerniera. Il suo Nuovo Testamento greco del 1516 diede a Lutero l\'arma (<em>metanoeite</em> significa "pentiti," non "fai penitenza") e il suo <em>Elogio della follia</em> derideva gli stessi abusi ecclesiastici che Lutero attaccò. L\'erudizione rinascimentale rese possibile la Riforma — poi indietreggiò di fronte a ciò che aveva scatenato.',
-    },
-    'scholasticism': {
-      '762→1141': 'I traduttori di Baghdad recuperarono Aristotele; il <em>Sic et Non</em> di Abelardo lo mise al lavoro. Il metodo dialettico che Bernardo condannò a Sens era costruito sulle traduzioni arabo-latine che affluivano attraverso Toledo. Quando Abelardo chiese "dubitando arriviamo all\'indagine," applicava strumenti forgiati nella Casa della Saggezza.',
-      '1141→1274': 'Il metodo di Abelardo, condannato a Sens, divenne lo scheletro della Scolastica. Nel 1274, Tommaso d\'Aquino e Bonaventura avevano costruito i due grandi sistemi — l\'aristotelismo domenicano e l\'agostinismo francescano — su quella fondazione. Quando entrambi morirono a poche settimane l\'uno dall\'altro, l\'età della sintesi morì con loro.',
-      '1141→1347': 'Abelardo fu condannato; il suo metodo conquistò. Nel giro di un secolo, la Scolastica dominava le università europee. Ockham, scrivendo poco prima della peste, usò quello stesso rasoio dialettico per recidere le certezze metafisiche — il nominalismo fu la vittoria di Abelardo portata alla sua conclusione logica.',
-      '1141→1517': 'Il metodo scolastico che Abelardo inaugurò divenne ortodossia universitaria — e poi il bersaglio. Lutero si formò nella disputa scolastica a Erfurt, poi rivolse gli strumenti contro l\'istituzione che glieli aveva insegnati. Il dubbio dialettico che Bernardo temeva a Sens raggiunse il suo punto finale a Wittenberg.',
-      '1274→1347': 'L\'anno in cui morirono Tommaso d\'Aquino e Bonaventura, la Scolastica perse i suoi più grandi sintetizzatori. Nel giro di pochi decenni, il nominalismo emerse per smantellare ciò che avevano costruito. Il rasoio di Ockham recise la fiducia metafisica che la <em>Summa</em> incarnava — poi la Peste Nera rese tale fiducia ingenua.',
-      '1274→1517': 'La <em>Summa Theologica</em> di Tommaso d\'Aquino rimase incompiuta alla sua morte nel 1274 — il più grande tentativo di conciliare fede e ragione rimasto incompleto. Due secoli dopo, Lutero rifiutò l\'intero progetto: non integrando la Scolastica ma abbandonandola per la <em>sola scriptura</em>.',
-    },
-    'nominalism': {
-      '1141→1347': 'La condanna di Abelardo non fermò i suoi studenti. Il metodo dialettico che aveva promosso si evolse nella tradizione scolastica che Ockham avrebbe rivolto contro le essenze universali. Il nominalismo che accompagnò la Peste Nera era il nipote intellettuale di Abelardo — il dubbio codificato in una scuola.',
-    },
-    'gothic-architecture': {
-      '1141→1274': 'Il coro di Suger a Saint-Denis (1144) lanciò la rivoluzione gotica. Nel 1274, lo stile si era evoluto nel rayonnant — le pareti dissolte in trafori, la pietra trasformata in luce. Le cattedrali che sorgevano a Reims e Chartres incarnavano la stessa fiducia che Tommaso portò alla filosofia: la ragione poteva illuminare la fede.',
-      '1141→1347': 'Il coro di Suger a Saint-Denis (consacrato nel 1144) lanciò l\'architettura gotica. Nel 1347, lo stile aveva trasformato lo skyline d\'Europa — Chartres, Notre-Dame, il Duomo di Firenze. La peste fermò la costruzione in tutto il continente; quando la ripresa riprese, il Rinascimento si sarebbe rivolto alla rinascita classica.',
-      '1274→1347': 'La smaterializzazione della pietra in luce del gotico rayonnant esprimeva la stessa ambizione del XIII secolo della filosofia scolastica: rendere visibile l\'invisibile, dimostrare la fede attraverso la struttura. La Peste Nera fermò la costruzione in tutta Europa — e quando i cantieri ripresero, la fiducia che aveva creato quelle vetrate svettanti si era frantumata.',
-    },
-    'enlightenment': {
-      '1687→1784': 'I <em>Principia</em> di Newton dimostrarono che l\'universo obbediva a leggi matematiche; il «sapere aude» di Kant esigeva che gli umani applicassero quella fiducia a se stessi. L\'Illuminismo è Newton generalizzato — se la gravità si sottomette alla ragione, perché non la morale, la politica, la religione? Kant studiò la fisica newtoniana direttamente e costruì la sua filosofia critica sulle sue fondamenta.',
-    },
-    'vernacular-literature': {
-      '1141→1347': 'Abelardo ed Eloisa si scambiarono lettere in latino, ma la loro storia si diffuse in volgare. Due secoli dopo, Boccaccio scrisse il <em>Decameron</em> in toscano — sopravvissuti alla peste che raccontano storie nella lingua della strada, non del chiostro. Il passaggio dal latino al volgare fu anche un passaggio di pubblico: dal clero ai mercanti, dalle verità eterne ai piaceri mortali.',
-    },
-  },
-};
 
 function getThreadNarrative(threadId, yearFrom, yearTo) {
   const key = `${yearFrom}→${yearTo}`;
@@ -3312,7 +3064,10 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Init: set correct lang button active and load
-(function init() {
+(async function init() {
+  // Load thread data first (labels and narratives from JSON)
+  await loadThreadData();
+  
   document.querySelectorAll('.lang-btn').forEach(b => {
     b.classList.toggle('active', b.dataset.lang === currentLang);
   });

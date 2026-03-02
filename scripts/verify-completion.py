@@ -187,7 +187,7 @@ def check_pushed(entry_id: str) -> dict:
 
 
 def check_thread_narratives(entry_id: str) -> dict:
-    """Check if all consecutive thread pairs have narratives in index.html."""
+    """Check if all consecutive thread pairs have narratives in thread-narratives.json."""
     issues = []
     
     # Load all entries to build thread->years map
@@ -205,30 +205,15 @@ def check_thread_narratives(entry_id: str) -> dict:
     for t in thread_years:
         thread_years[t] = sorted(thread_years[t])
     
-    # Read index.html to check for narratives and duplicates
-    index_path = PROJECT_DIR / "index.html"
-    if not index_path.exists():
+    # Load thread narratives from JSON
+    narratives_path = PROJECT_DIR / "thread-narratives.json"
+    if not narratives_path.exists():
         return {"ok": True, "issues": [], "missing": []}
     
-    content = index_path.read_text()
+    with open(narratives_path) as f:
+        narratives = json.load(f)
     
-    # Check for duplicate thread keys in THREAD_NARRATIVES
-    import re
-    # Find all thread keys in the narratives object
-    thread_key_pattern = r"'([a-z-]+)':\s*\{"
-    matches = re.findall(thread_key_pattern, content)
-    
-    # Count occurrences (each thread should appear exactly twice: once in en, once in it)
-    from collections import Counter
-    thread_counts = Counter(matches)
-    for thread, count in thread_counts.items():
-        # Filter to only threads that are in THREAD_NARRATIVES (not THREAD_LABELS)
-        # A thread in narratives will have year→year patterns inside
-        if count > 2:
-            # Verify it's actually in narratives by checking for arrow pattern nearby
-            pattern = rf"'{thread}':\s*\{{[^}}]*'\d+→\d+'"
-            if re.search(pattern, content):
-                issues.append(f"Duplicate thread '{thread}' in THREAD_NARRATIVES ({count} occurrences, expected 2)")
+    en_narratives = narratives.get('en', {})
     
     # Check consecutive pairs for threads with 2+ entries
     missing = []
@@ -237,7 +222,7 @@ def check_thread_narratives(entry_id: str) -> dict:
             continue
         for i in range(len(years) - 1):
             key = f"{years[i]}→{years[i+1]}"
-            if key not in content:
+            if key not in en_narratives.get(t, {}):
                 missing.append(f"{t}: {key}")
     
     if missing:

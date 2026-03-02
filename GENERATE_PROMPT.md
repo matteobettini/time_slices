@@ -75,11 +75,16 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 10. **Add Italian version** to `slices.it.json` — natural Italian, not machine translation.
 
-11. **Update THREAD_LABELS** in `index.html` if you add new thread tags (both en and it sections).
+11. **Update THREAD_LABELS** in `thread-labels.json` if you add new thread tags (both `en` and `it` keys).
 
-12. **Add THREAD_NARRATIVES** in `index.html` for connections to existing entries:
-    - Find the `THREAD_NARRATIVES` object (both `en` and `it` sections)
-    - Format: `'YEAR_FROM→YEAR_TO': 'Your narrative here'` (use → character)
+12. **Add THREAD_NARRATIVES** using the helper script:
+    ```bash
+    # Check what's missing
+    python3 scripts/add-narrative.py --missing
+    
+    # Add a narrative
+    python3 scripts/add-narrative.py <thread> <year_from> <year_to> "<en_text>" "<it_text>"
+    ```
     - **Keep it punchy:** 1-2 sentences max. State the *mechanism* of transmission, not just "X years later"
     - Good: `'1347→1517': 'Ockham's nominalism cracked scholastic authority; Luther drove a printing press through the gap.'`
     - Focus on: who read whom, what text traveled where, which student taught which teacher
