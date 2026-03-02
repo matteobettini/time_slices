@@ -248,7 +248,7 @@ Provider is selected automatically based on ELEVENLABS_API_KEY availability and 
    python3 scripts/find-music.py --era baroque --mood contemplative
    ```
    
-   **⚠️ NO CHANTING!** Gregorian chant, plainchant, recited prayers compete with narration. Singing (opera, madrigals) is fine.
+   **⚠️ MUSIC ONLY!** No spoken word, dialogue, narration, or lectures. Any actual music is fine (instrumental, vocal, chant, opera).
 
 3. **Check credits (optional):**
    ```bash
