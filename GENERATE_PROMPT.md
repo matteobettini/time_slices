@@ -114,11 +114,10 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     `--mood` (contemplative/dramatic/melancholic/triumphant/sacred/courtly/pastoral/dark),
     `--instrument` (piano/organ/harpsichord/lute/guitar/strings/orchestra/choir/oud)
     
-    **⚠️ INSTRUMENTAL ONLY — NO VOCALS!** 
-    - ❌ Avoid: Gregorian chant, Kyrie, Gloria, Mass settings, choral works, opera, songs
-    - ❌ Avoid: Any track with "choir", "chant", "mass", "requiem", "hymn" in the title
-    - ✅ Use: Sonatas, concertos, preludes, fugues, suites — purely instrumental pieces
-    - When in doubt, prefer baroque strings (Vivaldi, Locatelli, Telemann) or keyboard works
+    **⚠️ MUSIC ONLY — NO SPOKEN/CHANTED VOCALS!** 
+    - ❌ Avoid: Gregorian chant, plainchant, recited prayers, spoken word, audiobooks
+    - ✅ OK: Opera arias, madrigals, art songs, choral symphonies — singing is fine, chanting is not
+    - ✅ Safe bet: Instrumental works (sonatas, concertos, preludes) always work well
     
     **Save the URL and start_time from the output** — you'll pass them to generate-podcast.py.
 

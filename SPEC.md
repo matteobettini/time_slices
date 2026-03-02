@@ -248,7 +248,7 @@ Provider is selected automatically based on ELEVENLABS_API_KEY availability and 
    python3 scripts/find-music.py --era baroque --mood contemplative
    ```
    
-   **⚠️ INSTRUMENTAL ONLY — NO VOCALS!** Avoid chant, choral, Mass settings, hymns. Use sonatas, concertos, preludes — purely instrumental pieces.
+   **⚠️ NO SPOKEN/CHANTED VOCALS!** Avoid plainchant, Gregorian chant, recited prayers. Singing (opera, madrigals) is fine; chanting is not.
 
 3. **Check credits (optional):**
    ```bash
