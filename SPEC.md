@@ -240,6 +240,8 @@ Provider is selected automatically based on ELEVENLABS_API_KEY availability and 
 1. **Write scripts:**
    - EN: `audio/scripts/{id}.txt` (~350-400 words, storytelling style)
    - IT: `audio/scripts/it/{id}.txt` (culturally adapted, not literal)
+   
+   **⚠️ SPELL OUT ALL NUMBERS!** ElevenLabs mangles numerals. Write "twelve seventy-four" not "1274", "thirteenth century" not "13th century".
 
 2. **Find music:**
    ```bash

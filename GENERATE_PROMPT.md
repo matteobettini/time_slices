@@ -93,6 +93,12 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 13. **Write podcast scripts:**
     - EN script (~350-400 words, storytelling style) → `audio/scripts/{id}.txt`
     - IT script (culturally adapted, not literal) → `audio/scripts/it/{id}.txt`
+    
+    **⚠️ SPELL OUT ALL NUMBERS!** ElevenLabs TTS mangles numerals.
+    - ❌ "1274" → ✅ "twelve seventy-four"
+    - ❌ "13th century" → ✅ "thirteenth century"  
+    - ❌ "1,000 years" → ✅ "a thousand years"
+    - ❌ "3 months" → ✅ "three months"
 
 14. **Find background music using `find-music.py`:**
     ```bash
