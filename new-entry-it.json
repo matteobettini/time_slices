@@ -1,0 +1,51 @@
+{
+  "year": "1274",
+  "id": "1274-lyon-death-of-the-giants",
+  "title": "Lione — La morte dei giganti",
+  "teaser": "Due titani della filosofia muoiono a poche settimane l'uno dall'altro. Al Concilio di Lione, la cristianità tenta un'ultima riunificazione. L'età delle cattedrali raggiunge il suo apice — proprio mentre le certezze che incarnava iniziano a sgretolarsi.",
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "Il <strong>gotico rayonnant</strong> ha raggiunto il suo apice — le pareti dissolte in trafori, la pietra trasformata in luce. Il nome dello stile deriva dai raggi dei suoi rosoni, e da nessuna parte questo è più spettacolare che nelle cattedrali che sorgono in tutta la Francia: Reims (in gran parte completata entro il 1275), la Sainte-Chapelle (consacrata nel 1248) dove le pareti praticamente scompaiono in vetrate colorate. In Italia, <strong>Cimabue</strong> sta iniziando la rivoluzione sottile che porterà a Giotto: la sua <em>Maestà</em> per il Louvre (c. 1270) conserva l'oro bizantino e la scala gerarchica, ma il volto della Vergine mostra una nuova profondità psicologica, un nuovo peso sotto i panneggi."
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "<strong>Jean de Meun</strong> sta componendo la sua massiccia continuazione del <em>Roman de la Rose</em> (c. 1270–1280), trasformando l'allegoria cortese di Guillaume de Lorris in una satira enciclopedica. Dove Guillaume scrisse 4.000 versi di raffinata poesia d'amore, Jean ne aggiunge 18.000 di digressioni filosofiche, critica sociale e controversie erudite. Il poema diventerà l'opera francese più influente del tardo Medioevo, plasmando Chaucer, Dante e due secoli di dibattiti. A Firenze, un bambino di nove anni chiamato <strong>Dante Alighieri</strong> ha appena vissuto il suo primo incontro con Beatrice Portinari — un evento che mitizzerà nelle fondamenta della <em>Vita Nuova</em>."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "La <strong>scolastica</strong> perde i suoi due più grandi maestri in un solo anno. Il 7 marzo, <strong>Tommaso d'Aquino</strong> muore all'Abbazia di Fossanova, lasciando incompiuta la <em>Summa Theologica</em> — la sua sintesi di Aristotele e cristianesimo, il progetto filosofico più ambizioso dell'Occidente medievale. Il 15 luglio, <strong>Bonaventura</strong> muore al Concilio di Lione, avendo rappresentato l'alternativa francescana: l'illuminazione agostiniana contro il razionalismo tomista, l'<em>Itinerarium mentis in Deum</em> contro la <em>Summa</em>. I due approcci — l'aristotelismo domenicano e l'agostinismo francescano — avevano definito la filosofia del XIII secolo. Ora entrambe le vie perdono i loro fondatori."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "Il <strong>Secondo Concilio di Lione</strong> si riunisce in maggio, convocato da Papa Gregorio X per tre scopi: riunire le Chiese d'Oriente e d'Occidente, lanciare una nuova Crociata, riformare la Chiesa. L'imperatore bizantino <strong>Michele VIII Paleologo</strong> ha bisogno dell'aiuto militare occidentale contro Carlo d'Angiò; offre la supremazia papale in cambio. Il 6 luglio, i delegati greci accettano formalmente il <em>Filioque</em> e il primato papale. È un trionfo vuoto — il clero bizantino rifiuta l'unione, e nel giro di pochi anni essa crolla. Il Concilio stabilisce anche il sistema del conclave papale ancora in uso oggi. Nel frattempo, <strong>Marco Polo</strong> raggiunge la corte di Kublai Khan in Cina, iniziando i suoi diciassette anni al servizio dell'imperatore mongolo."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "Le morti di Tommaso d'Aquino e Bonaventura al Concilio di Lione — Bonaventura <em>al</em> concilio, Tommaso in viaggio verso di esso — cristallizzano un momento in cui la sintesi medievale sembrava possibile e stava già fallendo. Lo stesso concilio che tentò di sanare lo scisma d'Oriente attraverso l'argomentazione teologica vide morire i due maestri di quell'argomentazione. La smaterializzazione della pietra in luce dell'architettura rayonnant rispecchia la fiducia della filosofia scolastica che la ragione potesse illuminare la fede — entrambe esprimono la stessa ambizione del XIII secolo di rendere visibile l'invisibile. Nel giro di pochi decenni, il nominalismo frantumerà questa fiducia, e la Peste Nera svuoterà le cattedrali.",
+      "funFact": "Tommaso d'Aquino smise di scrivere la <em>Summa</em> tre mesi prima della morte, dichiarando: 'Tutto ciò che ho scritto mi sembra paglia rispetto a quello che mi è stato ora rivelato.' Non spiegò mai cosa avesse visto."
+    }
+  },
+  "sources": [
+    {"url": "https://plato.stanford.edu/entries/aquinas/", "title": "Stanford Encyclopedia of Philosophy — Thomas Aquinas"},
+    {"url": "https://plato.stanford.edu/entries/bonaventure/", "title": "Stanford Encyclopedia of Philosophy — Bonaventure"},
+    {"url": "https://www.britannica.com/event/Council-of-Lyon-Second-1274", "title": "Britannica — Second Council of Lyon"},
+    {"url": "https://www.britannica.com/topic/Roman-de-la-rose", "title": "Britannica — Roman de la Rose"},
+    {"url": "https://www.britannica.com/art/Rayonnant-style", "title": "Britannica — Rayonnant Gothic"}
+  ],
+  "image": {
+    "url": "images/1274-lyon-death-of-the-giants.jpg",
+    "alt": "Il Trionfo di San Tommaso d'Aquino su Averroè di Benozzo Gozzoli, che mostra Tommaso in trono tra Aristotele e Platone",
+    "width": 727,
+    "height": 800,
+    "caption": "Il Trionfo di San Tommaso d'Aquino di Benozzo Gozzoli (c. 1470) — Tommaso in trono tra Aristotele e Platone, con Averroè sconfitto sotto, rappresentando la sintesi scolastica di fede e filosofia antica",
+    "attribution": "Benozzo Gozzoli, Pubblico dominio, via Wikimedia Commons"
+  },
+  "threads": ["scholasticism", "gothic-architecture", "rationalism", "death-of-god", "vernacular-literature"],
+  "location": {
+    "lat": 45.7640,
+    "lon": 4.8357,
+    "place": "Lione"
+  },
+  "addedDate": "2026-03-02T06:00:00Z"
+}
