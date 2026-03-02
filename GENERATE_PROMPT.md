@@ -98,15 +98,21 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     # Search by era + mood — pick terms that match the entry's period and tone
-    python3 scripts/find-music.py --era medieval --mood sacred
     python3 scripts/find-music.py --era baroque --instrument harpsichord
-    python3 scripts/find-music.py --region middle-east --mood contemplative
+    python3 scripts/find-music.py --era baroque --instrument strings
+    python3 scripts/find-music.py --region middle-east --instrument oud
     python3 scripts/find-music.py --query "debussy piano"
     ```
     Options: `--era` (ancient/medieval/renaissance/baroque/classical/romantic/early-modern/modern), 
     `--region` (europe/italy/france/germany/spain/england/middle-east/byzantine/india/china/japan),
     `--mood` (contemplative/dramatic/melancholic/triumphant/sacred/courtly/pastoral/dark),
     `--instrument` (piano/organ/harpsichord/lute/guitar/strings/orchestra/choir/oud)
+    
+    **⚠️ INSTRUMENTAL ONLY — NO VOCALS!** 
+    - ❌ Avoid: Gregorian chant, Kyrie, Gloria, Mass settings, choral works, opera, songs
+    - ❌ Avoid: Any track with "choir", "chant", "mass", "requiem", "hymn" in the title
+    - ✅ Use: Sonatas, concertos, preludes, fugues, suites — purely instrumental pieces
+    - When in doubt, prefer baroque strings (Vivaldi, Locatelli, Telemann) or keyboard works
     
     **Save the URL and start_time from the output** — you'll pass them to generate-podcast.py.
 

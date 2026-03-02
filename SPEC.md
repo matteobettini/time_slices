@@ -245,6 +245,8 @@ Provider is selected automatically based on ELEVENLABS_API_KEY availability and 
    ```bash
    python3 scripts/find-music.py --era baroque --mood contemplative
    ```
+   
+   **⚠️ INSTRUMENTAL ONLY — NO VOCALS!** Avoid chant, choral, Mass settings, hymns. Use sonatas, concertos, preludes — purely instrumental pieces.
 
 3. **Check credits (optional):**
    ```bash
