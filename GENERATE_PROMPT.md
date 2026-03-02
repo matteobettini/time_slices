@@ -94,7 +94,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     - EN script (~350-400 words, storytelling style) → `audio/scripts/{id}.txt`
     - IT script (culturally adapted, not literal) → `audio/scripts/it/{id}.txt`
     
-    **⚠️ SPELL OUT ALL NUMBERS!** ElevenLabs TTS mangles numerals.
+    **⚠️ SPELL OUT ALL NUMBERS!** TTS engines mangle numerals.
     - ❌ "1274" → ✅ "twelve seventy-four"
     - ❌ "13th century" → ✅ "thirteenth century"  
     - ❌ "1,000 years" → ✅ "a thousand years"
@@ -114,9 +114,10 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     `--mood` (contemplative/dramatic/melancholic/triumphant/sacred/courtly/pastoral/dark),
     `--instrument` (piano/organ/harpsichord/lute/guitar/strings/orchestra/choir/oud)
     
-    **⚠️ MUSIC ONLY — NO SPOKEN/CHANTED VOCALS!** 
-    - ❌ Avoid: Gregorian chant, plainchant, recited prayers, spoken word, audiobooks
-    - ✅ OK: Opera arias, madrigals, art songs, choral symphonies — singing is fine, chanting is not
+    **⚠️ MUSIC ONLY — NO CHANTING!** 
+    - ❌ Avoid: Gregorian chant, plainchant, recited prayers, spoken word — these compete with narration
+    - ✅ OK: Opera, madrigals, art songs, choral works with *singing* — melodic vocals are fine
+    - ✅ Safe: Instrumental works (sonatas, concertos, preludes) always work
     - ✅ Safe bet: Instrumental works (sonatas, concertos, preludes) always work well
     
     **Save the URL and start_time from the output** — you'll pass them to generate-podcast.py.
