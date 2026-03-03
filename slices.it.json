@@ -990,5 +990,72 @@
       "url": "audio/it/1274-lyon-death-of-the-giants.mp3",
       "duration": 151
     }
+  },
+  {
+    "year": "1755",
+    "id": "1755-lisbon-when-optimism-died",
+    "title": "Lisbona — Quando morì l'ottimismo",
+    "teaser": "Nel giorno di Ognissanti, un terremoto distrugge una delle città più ricche d'Europa — e fa crollare la fede illuminista in un cosmo benevolo. Voltaire scrive con furore, Rousseau incolpa l'umanità, Kant inventa la sismologia, e il Marchese di Pombal costruisce la prima città antisismica.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Il terremoto cancellò l'eredità <strong>manuelina</strong> di Lisbona — lo stile ornato del XVI secolo che celebrava le scoperte marittime del Portogallo. Il Palazzo Reale di Ribeira scomparve con dipinti di Tiziano, Rubens e Correggio. Dalle macerie emerse qualcosa di rivoluzionario: l'<strong>architettura pombalina</strong>, il primo stile consapevolmente antisismico. Gli ingegneri Manuel da Maia ed Eugénio dos Santos progettarono il quartiere della Baixa su una griglia razionale con la <em>gaiola pombalina</em>, una gabbia lignea flessibile all'interno delle pareti per assorbire le onde sismiche. Era architettura come scienza applicata — la ragione illuminista che rispondeva alla crisi illuminista."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "La risposta immediata di Voltaire fu il <em>Poème sur le désastre de Lisbonne</em> (1756), 180 versi di angoscia pura che attaccavano il \"tutto ciò che è, è giusto\" di Alexander Pope. Tre anni dopo arrivò <strong><em>Candide</em></strong> (1759), l'assalto letterario più devastante all'ottimismo filosofico — il dottor Pangloss che insiste in mezzo alla catastrofe che questo è \"il migliore dei mondi possibili\" divenne satira immortale. Il capitolo su Lisbona confronta Candide direttamente con l'orrore del terremoto. Come osservò poi Theodor Adorno, il disastro \"bastò a curare Voltaire dalla teodicea di Leibniz.\""
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Il terremoto innescò la <strong>morte della teodicea</strong> — il progetto di giustificare la bontà di Dio di fronte al male. L'ottimismo di Leibniz, secondo cui abitiamo il migliore dei mondi possibili, crollò sotto quarantamila cadaveri. La <em>Lettera a Voltaire</em> di Rousseau (1756) ribaltò il dibattito: la colpa non era della Provvidenza ma degli uomini che costruivano edifici di sette piani su terreno instabile. Fu la nascita della <strong>sociologia del disastro</strong>. Intanto, a Königsberg, un giovane <strong>Immanuel Kant</strong> pubblicò tre saggi scientifici sui terremoti, rifiutando la punizione divina e proponendo cause naturali — un passo precoce verso la sua successiva separazione tra scienza e teologia."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Alle 9:40 del mattino del 1° novembre 1755 — il giorno di Ognissanti, con ogni chiesa gremita — un terremoto di magnitudo 8,5–9,0 colpì il fondale atlantico. Tre scosse abbatterono gli edifici; i sopravvissuti fuggirono verso il lungomare e videro il mare ritirarsi. Quaranta minuti dopo, il primo di tre <strong>tsunami</strong> invase la terraferma. Poi gli incendi, alimentati dalle candele cadute e dalle devozioni di Ognissanti, arsero per giorni. Il <strong>Marchese di Pombal</strong>, primo ministro del re, rispose con efficienza spietata: \"Seppellire i morti e curare i vivi.\" La sua ricostruzione sistematica fece di Lisbona un laboratorio di governance illuminista."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Ciò che rende il 1755 cruciale è la <strong>collisione tra evento e idea</strong>. Leibniz era morto nel 1716, ma il suo ottimismo — filtrato attraverso Pope e Christian Wolff — dominava il pensiero europeo. Il terremoto non uccise solo persone; uccise una metafisica. La satira di Voltaire attingeva direttamente alla <em>Teodicea</em> di Leibniz; il metodo scientifico di Kant avrebbe poi separato la fisica dalla fede nella <em>Critica della ragion pura</em>. La ricostruzione pombalina, con le sue griglie standardizzate e i moduli prefabbricati, era il razionalismo illuminista tradotto in pietra — la prova che gli uomini potevano imporre l'ordine al caos, anche se Dio non lo avrebbe fatto.",
+        "funFact": "Pombal inviò questionari a ogni parrocchia del Portogallo chiedendo informazioni sugli effetti del terremoto — orario, durata, scosse successive, danni agli edifici. Questa raccolta sistematica di dati rese il 1755 il primo terremoto studiato scientificamente, e il questionario divenne un documento fondativo della sismologia moderna."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Terremoto_di_Lisbona_del_1755",
+        "title": "Wikipedia: Terremoto di Lisbona del 1755"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Candido",
+        "title": "Wikipedia: Candido (Voltaire)"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Marchesato_di_Pombal",
+        "title": "Wikipedia: Marchesato di Pombal"
+      }
+    ],
+    "image": {
+      "url": "images/1755-lisbon-when-optimism-died.jpg",
+      "alt": "Incisione contemporanea su rame che raffigura Lisbona durante il Grande Terremoto del 1755, mostrando la città in fiamme con tsunami che devastano il porto",
+      "width": 998,
+      "height": 593,
+      "caption": "Incisione contemporanea su rame che raffigura Lisbona durante il Grande Terremoto del 1755",
+      "attribution": "Artista sconosciuto, 1755, Pubblico Dominio tramite Museu da Cidade, Lisbona"
+    },
+    "threads": [
+      "death-of-god",
+      "enlightenment",
+      "rationalism",
+      "modernity"
+    ],
+    "location": {
+      "lat": 38.7223,
+      "lon": -9.1393,
+      "place": "Lisbona"
+    },
+    "addedDate": "2026-03-03T06:00:00Z",
+    "podcast": {
+      "url": "audio/it/1755-lisbon-when-optimism-died.mp3",
+      "duration": 177
+    }
   }
 ]

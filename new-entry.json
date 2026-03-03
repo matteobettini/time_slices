@@ -1,0 +1,50 @@
+{
+  "year": "1755",
+  "id": "1755-lisbon-when-optimism-died",
+  "title": "Lisbon — When Optimism Died",
+  "teaser": "On All Saints' Day, an earthquake destroys one of Europe's wealthiest cities — and shatters the Enlightenment's faith in a benevolent cosmos. Voltaire writes in fury, Rousseau blames humanity, Kant invents seismology, and the Marquis of Pombal builds the first earthquake-proof city.",
+  "dimensions": {
+    "art": {
+      "label": "Art",
+      "content": "The earthquake obliterated Lisbon's <strong>Manueline heritage</strong> — the ornate 16th-century style celebrating Portugal's maritime discoveries. The Royal Ribeira Palace vanished with paintings by Titian, Rubens, and Correggio. From the ruins emerged something revolutionary: <strong>Pombaline architecture</strong>, the first consciously earthquake-resistant style. Engineers Manuel da Maia and Eugénio dos Santos designed the Baixa district on a rational grid with the <em>gaiola pombalina</em>, a flexible wooden cage within the walls that would absorb seismic shock. This was architecture as applied science — Enlightenment reason responding to Enlightenment crisis."
+    },
+    "lit": {
+      "label": "Literature",
+      "content": "Voltaire's immediate response was his <em>Poème sur le désastre de Lisbonne</em> (1756), 180 lines of raw anguish attacking Alexander Pope's \"whatever is, is right.\" Three years later came <strong><em>Candide</em></strong> (1759), literature's most devastating assault on philosophical optimism — Dr. Pangloss insisting amid catastrophe that this is \"the best of all possible worlds\" became immortal satire. The Lisbon chapter confronts Candide directly with the earthquake's horror. As Theodor Adorno later observed, the disaster \"sufficed to cure Voltaire of the theodicy of Leibniz.\""
+    },
+    "phil": {
+      "label": "Philosophy",
+      "content": "The earthquake triggered the <strong>death of theodicy</strong> — the project of justifying God's goodness in the face of evil. Leibniz's optimism, that we inhabit the best possible world, collapsed under forty thousand corpses. Rousseau's <em>Letter to Voltaire</em> (1756) pivoted the debate: the fault lay not with Providence but with humans who built seven-storey buildings on unstable ground. This was the birth of <strong>disaster sociology</strong>. Meanwhile, in Königsberg, a young <strong>Immanuel Kant</strong> published three scientific essays on earthquakes, rejecting divine punishment and proposing natural causes — an early step toward his later separation of science from theology."
+    },
+    "hist": {
+      "label": "History",
+      "content": "At 9:40 AM on November 1st, 1755 — All Saints' Day, with every church packed — a magnitude 8.5–9.0 earthquake struck the Atlantic seabed. Three shocks brought down buildings; the survivors fled to the waterfront and watched the sea retreat. Forty minutes later, the first of three <strong>tsunamis</strong> swept inland. Then fires, fed by fallen candles and All Saints' Day devotions, burned for days. The <strong>Marquis of Pombal</strong>, the king's chief minister, responded with ruthless efficiency: \"Bury the dead and heal the living.\" His systematic reconstruction made Lisbon a laboratory of Enlightenment governance."
+    },
+    "conn": {
+      "label": "Connections",
+      "content": "What makes 1755 pivotal is the <strong>collision between event and idea</strong>. Leibniz had died in 1716, but his optimism — filtered through Pope and Christian Wolff — dominated European thought. The earthquake didn't just kill people; it killed a metaphysics. Voltaire's satire drew directly on Leibniz's <em>Theodicy</em>; Kant's scientific method would eventually separate physics from faith in his <em>Critique of Pure Reason</em>. The Pombaline reconstruction, with its standardized grids and prefabricated modules, was Enlightenment rationalism in stone — proof that humans could impose order on chaos, even if God would not.",
+      "funFact": "Pombal sent questionnaires to every parish in Portugal asking about the earthquake's effects — timing, duration, aftershocks, building damage. This systematic data collection made 1755 the first earthquake studied scientifically, and the questionnaire became a founding document of modern seismology."
+    }
+  },
+  "sources": [
+    { "url": "https://en.wikipedia.org/wiki/1755_Lisbon_earthquake", "title": "Wikipedia: 1755 Lisbon earthquake" },
+    { "url": "https://en.wikipedia.org/wiki/Po%C3%A8me_sur_le_d%C3%A9sastre_de_Lisbonne", "title": "Wikipedia: Poème sur le désastre de Lisbonne" },
+    { "url": "https://plato.stanford.edu/entries/leibniz-evil/", "title": "Stanford Encyclopedia of Philosophy: Leibniz on the Problem of Evil" },
+    { "url": "https://en.wikipedia.org/wiki/Pombaline_style", "title": "Wikipedia: Pombaline style" }
+  ],
+  "image": {
+    "url": "images/1755-lisbon-when-optimism-died.jpg",
+    "alt": "Contemporary copper engraving depicting Lisbon during the Great Earthquake of 1755, showing the city in flames with tsunamis devastating the harbor",
+    "width": 998,
+    "height": 593,
+    "caption": "Contemporary copper engraving depicting Lisbon during the Great Earthquake of 1755",
+    "attribution": "Unknown artist, 1755, Public Domain via Museu da Cidade, Lisbon"
+  },
+  "threads": ["death-of-god", "enlightenment", "rationalism", "modernity"],
+  "location": {
+    "lat": 38.7223,
+    "lon": -9.1393,
+    "place": "Lisbon"
+  },
+  "addedDate": "2026-03-03T06:00:00Z"
+}
