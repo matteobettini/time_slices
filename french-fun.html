@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇫🇷 French Fun - Learn French the Fun Way!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --french-blue: #0055A4;
+            --french-red: #EF4135;
+            --french-white: #FFFFFF;
+            --gold: #FFD700;
+            --dark-blue: #003366;
+            --light-bg: #F5F5F5;
+            --success: #4CAF50;
+            --error: #F44336;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #E8F4FD 0%, #FDF2F2 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Eiffel Tower Background */
+        .eiffel-bg {
+            position: fixed;
+            bottom: 0;
+            right: 20px;
+            width: 150px;
+            height: 300px;
+            opacity: 0.1;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .eiffel-bg svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(90deg, var(--french-blue) 0%, var(--french-blue) 33%, var(--french-white) 33%, var(--french-white) 66%, var(--french-red) 66%, var(--french-red) 100%);
+            padding: 4px;
+        }
+
+        .header-content {
+            background: var(--dark-blue);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: bounce 2s infinite;
+        }
+
+        .header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: bold;
+            color: var(--dark-blue);
+        }
+
+        .stat-icon {
+            font-size: 1.5rem;
+        }
+
+        .streak-fire {
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Menu Screen */
+        .menu-screen {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .game-modes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .game-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border: 3px solid transparent;
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            border-color: var(--french-blue);
+        }
+
+        .game-card-icon {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+
+        .game-card h3 {
+            color: var(--dark-blue);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .game-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Game Screen */
+        .game-screen {
+            display: none;
+            padding: 20px;
+        }
+
+        .game-screen.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .game-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .back-btn {
+            background: var(--french-blue);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: var(--dark-blue);
+            transform: scale(1.05);
+        }
+
+        .progress-bar {
+            flex: 1;
+            max-width: 300px;
+            height: 20px;
+            background: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--french-blue), var(--french-red));
+            transition: width 0.5s ease;
+            border-radius: 10px;
+        }
+
+        .score-display {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--dark-blue);
+        }
+
+        /* Word Match Game */
+        .match-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .match-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            min-width: 150px;
+        }
+
+        .match-column h4 {
+            text-align: center;
+            color: var(--dark-blue);
+            margin-bottom: 10px;
+        }
+
+        .match-item {
+            background: white;
+            padding: 18px 25px;
+            border-radius: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            font-size: 1.1rem;
+            border: 3px solid transparent;
+            user-select: none;
+        }
+
+        .match-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .match-item.selected {
+            border-color: var(--french-blue);
+            background: #E3F2FD;
+        }
+
+        .match-item.correct {
+            background: #C8E6C9;
+            border-color: var(--success);
+            animation: correctPop 0.5s ease;
+        }
+
+        .match-item.wrong {
+            background: #FFCDD2;
+            border-color: var(--error);
+            animation: shake 0.5s ease;
+        }
+
+        .match-item.matched {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        @keyframes correctPop {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        .pronunciation {
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        /* Fill in Blank Game */
+        .fill-blank-container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .fill-sentence {
+            font-size: 1.8rem;
+            color: var(--dark-blue);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .blank {
+            display: inline-block;
+            min-width: 120px;
+            border-bottom: 3px dashed var(--french-blue);
+            margin: 0 10px;
+            padding: 5px 15px;
+            font-weight: bold;
+            color: var(--french-red);
+        }
+
+        .fill-hint {
+            color: #888;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .fill-options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .fill-option {
+            background: linear-gradient(135deg, var(--french-blue), var(--dark-blue));
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .fill-option:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 20px rgba(0,85,164,0.4);
+        }
+
+        .fill-option.correct {
+            background: var(--success);
+        }
+
+        .fill-option.wrong {
+            background: var(--error);
+        }
+
+        /* Listening Game */
+        .listen-container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .listen-prompt {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .listen-btn {
+            background: linear-gradient(135deg, var(--french-red), #C62828);
+            color: white;
+            border: none;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 3rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(239,65,53,0.4);
+            margin: 20px 0;
+        }
+
+        .listen-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(239,65,53,0.5);
+        }
+
+        .listen-btn:active {
+            transform: scale(0.95);
+        }
+
+        .listen-btn.playing {
+            animation: speakPulse 1s infinite;
+        }
+
+        @keyframes speakPulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(239,65,53,0.7); }
+            50% { box-shadow: 0 0 0 20px rgba(239,65,53,0); }
+        }
+
+        .listen-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .listen-option {
+            background: white;
+            border: 3px solid var(--french-blue);
+            color: var(--dark-blue);
+            padding: 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .listen-option:hover {
+            background: var(--french-blue);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .listen-option.correct {
+            background: var(--success);
+            border-color: var(--success);
+            color: white;
+        }
+
+        .listen-option.wrong {
+            background: var(--error);
+            border-color: var(--error);
+            color: white;
+        }
+
+        /* Feedback Toast */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20px 40px;
+            border-radius: 50px;
+            color: white;
+            font-size: 1.3rem;
+            font-weight: bold;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .toast.show {
+            opacity: 1;
+            animation: toastBounce 0.5s ease;
+        }
+
+        .toast.success {
+            background: linear-gradient(135deg, var(--success), #2E7D32);
+        }
+
+        .toast.error {
+            background: linear-gradient(135deg, var(--error), #C62828);
+        }
+
+        @keyframes toastBounce {
+            0%, 100% { transform: translateX(-50%) scale(1); }
+            50% { transform: translateX(-50%) scale(1.1); }
+        }
+
+        /* Level Complete Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-overlay.show {
+            display: flex;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal {
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+            animation: modalPop 0.5s ease;
+        }
+
+        @keyframes modalPop {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .modal-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+
+        .modal h2 {
+            color: var(--dark-blue);
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .modal p {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .modal-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .modal-stat {
+            text-align: center;
+        }
+
+        .modal-stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--french-blue);
+        }
+
+        .modal-stat-label {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .modal-btn {
+            background: linear-gradient(135deg, var(--french-blue), var(--dark-blue));
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+        }
+
+        .modal-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0,85,164,0.4);
+        }
+
+        .modal-btn.secondary {
+            background: #ddd;
+            color: #333;
+        }
+
+        /* Stars Animation */
+        .stars {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .star {
+            font-size: 3rem;
+            opacity: 0;
+            animation: starPop 0.5s ease forwards;
+        }
+
+        .star:nth-child(2) { animation-delay: 0.2s; }
+        .star:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes starPop {
+            0% { transform: scale(0) rotate(-180deg); opacity: 0; }
+            100% { transform: scale(1) rotate(0deg); opacity: 1; }
+        }
+
+        .star.empty {
+            filter: grayscale(100%);
+            opacity: 0.3;
+        }
+
+        /* Confetti */
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            top: -10px;
+            animation: confettiFall 3s linear forwards;
+        }
+
+        @keyframes confettiFall {
+            to {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .stats-bar {
+                gap: 15px;
+            }
+
+            .game-card {
+                padding: 20px;
+            }
+
+            .game-card-icon {
+                font-size: 3rem;
+            }
+
+            .match-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .fill-sentence {
+                font-size: 1.4rem;
+            }
+
+            .listen-options {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        /* Next Button */
+        .next-btn {
+            display: none;
+            margin: 30px auto;
+            background: linear-gradient(135deg, var(--gold), #FFA000);
+            color: #333;
+            border: none;
+            padding: 15px 50px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .next-btn.show {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .next-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(255,215,0,0.5);
+        }
+
+        /* Category Selector */
+        .category-selector {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .category-btn {
+            background: white;
+            border: 2px solid var(--french-blue);
+            color: var(--french-blue);
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .category-btn:hover, .category-btn.active {
+            background: var(--french-blue);
+            color: white;
+        }
+
+        /* Daily Challenge */
+        .daily-challenge-card {
+            background: linear-gradient(135deg, var(--gold) 0%, #FFA000 100%);
+            border: 3px solid #E65100;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .daily-challenge-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) rotate(45deg); }
+        }
+
+        .daily-challenge-card:hover {
+            border-color: var(--french-red);
+        }
+
+        .daily-challenge-card h3 {
+            color: #333;
+        }
+
+        .daily-challenge-card p {
+            color: #555;
+        }
+
+        .daily-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--success);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            animation: badgePulse 2s infinite;
+        }
+
+        @keyframes badgePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .bonus-xp {
+            background: var(--french-red);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        /* Challenge Timer */
+        .challenge-timer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .timer-display {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--french-red);
+            background: white;
+            padding: 10px 25px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            min-width: 120px;
+            text-align: center;
+        }
+
+        .timer-display.warning {
+            color: #FF5722;
+            animation: timerPulse 0.5s infinite;
+        }
+
+        .timer-display.critical {
+            color: var(--error);
+            animation: timerPulse 0.3s infinite;
+        }
+
+        @keyframes timerPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .timer-label {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Daily Challenge Container */
+        .daily-container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .daily-question {
+            font-size: 1.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 10px;
+        }
+
+        .daily-french-word {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: var(--french-blue);
+            margin-bottom: 5px;
+        }
+
+        .daily-pronunciation {
+            font-size: 1rem;
+            color: #888;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .daily-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .daily-option {
+            background: white;
+            border: 3px solid var(--french-blue);
+            color: var(--dark-blue);
+            padding: 15px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+        }
+
+        .daily-option:hover {
+            background: var(--french-blue);
+            color: white;
+            transform: scale(1.02);
+        }
+
+        .daily-option.correct {
+            background: var(--success);
+            border-color: var(--success);
+            color: white;
+        }
+
+        .daily-option.wrong {
+            background: var(--error);
+            border-color: var(--error);
+            color: white;
+        }
+
+        .daily-score-display {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+        }
+
+        .daily-score-display .xp-multiplier {
+            color: var(--gold);
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Eiffel Tower Background -->
+    <div class="eiffel-bg">
+        <svg viewBox="0 0 100 200" fill="currentColor" style="color: var(--dark-blue);">
+            <path d="M50 0 L55 30 L60 30 L70 180 L75 200 L65 200 L62 190 L38 190 L35 200 L25 200 L30 180 L40 30 L45 30 Z M45 40 L42 100 L58 100 L55 40 Z M40 110 L35 170 L65 170 L60 110 Z"/>
+        </svg>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <h1>🇫🇷 French Fun!</h1>
+            <p>Learn French the fun way • Apprendre le français en s'amusant!</p>
+        </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="stat">
+            <span class="stat-icon streak-fire">🔥</span>
+            <span id="streak">0</span> day streak
+        </div>
+        <div class="stat">
+            <span class="stat-icon">⭐</span>
+            <span id="total-xp">0</span> XP
+        </div>
+        <div class="stat">
+            <span class="stat-icon">📚</span>
+            <span id="words-learned">0</span> words
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Menu Screen -->
+        <div class="menu-screen" id="menu-screen">
+            <h2 style="color: var(--dark-blue); font-size: 1.8rem; margin-bottom: 10px;">Choose Your Adventure!</h2>
+            <p style="color: #666;">Pick a game mode and start learning</p>
+
+            <div class="category-selector">
+                <button class="category-btn active" data-category="all">All Words</button>
+                <button class="category-btn" data-category="greetings">Greetings</button>
+                <button class="category-btn" data-category="numbers">Numbers</button>
+                <button class="category-btn" data-category="common">Common Words</button>
+            </div>
+
+            <div class="game-modes">
+                <div class="game-card daily-challenge-card" onclick="startDailyChallenge()" id="daily-challenge-card">
+                    <div id="daily-completed-badge" class="daily-badge" style="display: none;">Completed!</div>
+                    <div class="game-card-icon">📅</div>
+                    <h3>Daily Challenge</h3>
+                    <p>60-second rapid-fire mixed questions!</p>
+                    <span class="bonus-xp">2x XP BONUS</span>
+                </div>
+                <div class="game-card" onclick="startGame('match')">
+                    <div class="game-card-icon">🔗</div>
+                    <h3>Word Match</h3>
+                    <p>Match French words with their English translations!</p>
+                </div>
+                <div class="game-card" onclick="startGame('fill')">
+                    <div class="game-card-icon">✏️</div>
+                    <h3>Fill the Blank</h3>
+                    <p>Complete sentences with the correct French word!</p>
+                </div>
+                <div class="game-card" onclick="startGame('listen')">
+                    <div class="game-card-icon">🎧</div>
+                    <h3>Listening</h3>
+                    <p>Listen and identify the spoken French word!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Word Match Game -->
+        <div class="game-screen" id="match-game">
+            <div class="game-header">
+                <button class="back-btn" onclick="showMenu()">← Back</button>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="match-progress" style="width: 0%"></div>
+                </div>
+                <div class="score-display">Score: <span id="match-score">0</span></div>
+            </div>
+            <div class="match-container" id="match-container"></div>
+            <button class="next-btn" id="match-next" onclick="nextMatchRound()">Next Round →</button>
+        </div>
+
+        <!-- Fill in Blank Game -->
+        <div class="game-screen" id="fill-game">
+            <div class="game-header">
+                <button class="back-btn" onclick="showMenu()">← Back</button>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="fill-progress" style="width: 0%"></div>
+                </div>
+                <div class="score-display">Score: <span id="fill-score">0</span></div>
+            </div>
+            <div class="fill-blank-container" id="fill-container"></div>
+            <button class="next-btn" id="fill-next" onclick="nextFillRound()">Next Question →</button>
+        </div>
+
+        <!-- Listening Game -->
+        <div class="game-screen" id="listen-game">
+            <div class="game-header">
+                <button class="back-btn" onclick="showMenu()">← Back</button>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="listen-progress" style="width: 0%"></div>
+                </div>
+                <div class="score-display">Score: <span id="listen-score">0</span></div>
+            </div>
+            <div class="listen-container" id="listen-container"></div>
+            <button class="next-btn" id="listen-next" onclick="nextListenRound()">Next Word →</button>
+        </div>
+
+        <!-- Daily Challenge Game -->
+        <div class="game-screen" id="daily-game">
+            <div class="game-header">
+                <button class="back-btn" onclick="endDailyChallenge()">← End</button>
+                <div class="challenge-timer">
+                    <span class="timer-label">⏱️ Time:</span>
+                    <div class="timer-display" id="daily-timer">60</div>
+                </div>
+                <div class="score-display">Score: <span id="daily-score">0</span> <span class="xp-multiplier">(2x XP)</span></div>
+            </div>
+            <div class="daily-container" id="daily-container"></div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Level Complete Modal -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <div class="stars" id="modal-stars"></div>
+            <div class="modal-icon" id="modal-icon">🎉</div>
+            <h2 id="modal-title">Level Complete!</h2>
+            <p id="modal-message">Fantastique! You're making great progress!</p>
+            <div class="modal-stats">
+                <div class="modal-stat">
+                    <div class="modal-stat-value" id="modal-score">0</div>
+                    <div class="modal-stat-label">Points Earned</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value" id="modal-accuracy">0%</div>
+                    <div class="modal-stat-label">Accuracy</div>
+                </div>
+            </div>
+            <button class="modal-btn" onclick="playAgain()">Play Again 🔄</button>
+            <button class="modal-btn secondary" onclick="showMenu()">Menu 🏠</button>
+        </div>
+    </div>
+
+    <script>
+        // ==================== VOCABULARY DATA ====================
+        const vocabulary = {
+            greetings: [
+                { french: "Bonjour", english: "Hello/Good day", pronunciation: "bon-ZHOOR" },
+                { french: "Bonsoir", english: "Good evening", pronunciation: "bon-SWAHR" },
+                { french: "Salut", english: "Hi/Bye (informal)", pronunciation: "sah-LU" },
+                { french: "Au revoir", english: "Goodbye", pronunciation: "oh ruh-VWAHR" },
+                { french: "Merci", english: "Thank you", pronunciation: "mair-SEE" },
+                { french: "S'il vous plaît", english: "Please", pronunciation: "seel voo PLEH" },
+                { french: "Excusez-moi", english: "Excuse me", pronunciation: "ex-koo-zay MWAH" },
+                { french: "Oui", english: "Yes", pronunciation: "WEE" },
+                { french: "Non", english: "No", pronunciation: "NOH" },
+                { french: "Comment ça va?", english: "How are you?", pronunciation: "koh-mohn sah VAH" },
+                { french: "Ça va bien", english: "I'm fine", pronunciation: "sah vah BYEH" },
+                { french: "Bonne nuit", english: "Good night", pronunciation: "bun NWEE" }
+            ],
+            numbers: [
+                { french: "Un", english: "One", pronunciation: "UH" },
+                { french: "Deux", english: "Two", pronunciation: "DUH" },
+                { french: "Trois", english: "Three", pronunciation: "TWAH" },
+                { french: "Quatre", english: "Four", pronunciation: "KAH-truh" },
+                { french: "Cinq", english: "Five", pronunciation: "SANK" },
+                { french: "Six", english: "Six", pronunciation: "SEES" },
+                { french: "Sept", english: "Seven", pronunciation: "SET" },
+                { french: "Huit", english: "Eight", pronunciation: "WEET" },
+                { french: "Neuf", english: "Nine", pronunciation: "NUF" },
+                { french: "Dix", english: "Ten", pronunciation: "DEES" },
+                { french: "Onze", english: "Eleven", pronunciation: "ONZE" },
+                { french: "Douze", english: "Twelve", pronunciation: "DOOZ" },
+                { french: "Treize", english: "Thirteen", pronunciation: "TREZ" },
+                { french: "Quatorze", english: "Fourteen", pronunciation: "kah-TORZ" },
+                { french: "Quinze", english: "Fifteen", pronunciation: "KANZ" },
+                { french: "Seize", english: "Sixteen", pronunciation: "SEZ" },
+                { french: "Dix-sept", english: "Seventeen", pronunciation: "dee-SET" },
+                { french: "Dix-huit", english: "Eighteen", pronunciation: "deez-WEET" },
+                { french: "Dix-neuf", english: "Nineteen", pronunciation: "deez-NUF" },
+                { french: "Vingt", english: "Twenty", pronunciation: "VAN" }
+            ],
+            common: [
+                { french: "Le chat", english: "The cat", pronunciation: "luh SHAH" },
+                { french: "Le chien", english: "The dog", pronunciation: "luh SHYEH" },
+                { french: "L'eau", english: "Water", pronunciation: "LOH" },
+                { french: "Le pain", english: "Bread", pronunciation: "luh PAN" },
+                { french: "Le fromage", english: "Cheese", pronunciation: "luh froh-MAHZH" },
+                { french: "La maison", english: "The house", pronunciation: "lah may-ZON" },
+                { french: "La voiture", english: "The car", pronunciation: "lah vwah-TOOR" },
+                { french: "Le livre", english: "The book", pronunciation: "luh LEE-vruh" },
+                { french: "L'ami", english: "The friend", pronunciation: "lah-MEE" },
+                { french: "La famille", english: "The family", pronunciation: "lah fah-MEE-yuh" },
+                { french: "Je t'aime", english: "I love you", pronunciation: "zhuh TEM" },
+                { french: "C'est bon", english: "It's good", pronunciation: "say BON" },
+                { french: "Je suis", english: "I am", pronunciation: "zhuh SWEE" },
+                { french: "Manger", english: "To eat", pronunciation: "mahn-ZHAY" },
+                { french: "Boire", english: "To drink", pronunciation: "BWAHR" }
+            ]
+        };
+
+        // Fill in the blank sentences
+        const fillSentences = [
+            { sentence: "___ is how you say 'hello' in French", answer: "Bonjour", options: ["Bonjour", "Au revoir", "Merci", "Salut"] },
+            { sentence: "To say 'thank you', you say ___", answer: "Merci", options: ["Merci", "S'il vous plaît", "Oui", "Non"] },
+            { sentence: "The number 5 in French is ___", answer: "Cinq", options: ["Cinq", "Quatre", "Six", "Sept"] },
+            { sentence: "___ means 'goodbye' in French", answer: "Au revoir", options: ["Au revoir", "Bonjour", "Salut", "Bonsoir"] },
+            { sentence: "To count to 10, you end with ___", answer: "Dix", options: ["Dix", "Neuf", "Onze", "Huit"] },
+            { sentence: "'The cat' in French is ___", answer: "Le chat", options: ["Le chat", "Le chien", "La maison", "Le livre"] },
+            { sentence: "___ means 'yes' in French", answer: "Oui", options: ["Oui", "Non", "Merci", "Salut"] },
+            { sentence: "The number 15 is ___", answer: "Quinze", options: ["Quinze", "Quatorze", "Seize", "Treize"] },
+            { sentence: "'Good evening' in French is ___", answer: "Bonsoir", options: ["Bonsoir", "Bonjour", "Bonne nuit", "Salut"] },
+            { sentence: "___ means 'I love you'", answer: "Je t'aime", options: ["Je t'aime", "Je suis", "C'est bon", "Merci"] },
+            { sentence: "'Water' in French is ___", answer: "L'eau", options: ["L'eau", "Le pain", "Le fromage", "Le vin"] },
+            { sentence: "The number 20 is ___", answer: "Vingt", options: ["Vingt", "Dix-neuf", "Dix-huit", "Douze"] }
+        ];
+
+        // ==================== GAME STATE ====================
+        let gameState = {
+            currentGame: null,
+            score: 0,
+            round: 0,
+            totalRounds: 5,
+            correct: 0,
+            wrong: 0,
+            selectedCategory: 'all',
+            matchSelected: null,
+            matchedPairs: 0,
+            currentWords: []
+        };
+
+        // ==================== PROGRESS & STORAGE ====================
+        let progress = {
+            totalXP: 0,
+            wordsLearned: new Set(),
+            streak: 0,
+            lastPlayed: null,
+            wordStats: {} // For spaced repetition
+        };
+
+        function loadProgress() {
+            const saved = localStorage.getItem('frenchFunProgress');
+            if (saved) {
+                const parsed = JSON.parse(saved);
+                progress.totalXP = parsed.totalXP || 0;
+                progress.wordsLearned = new Set(parsed.wordsLearned || []);
+                progress.streak = parsed.streak || 0;
+                progress.lastPlayed = parsed.lastPlayed;
+                progress.wordStats = parsed.wordStats || {};
+            }
+            checkStreak();
+            updateStatsDisplay();
+        }
+
+        function saveProgress() {
+            const toSave = {
+                totalXP: progress.totalXP,
+                wordsLearned: Array.from(progress.wordsLearned),
+                streak: progress.streak,
+                lastPlayed: progress.lastPlayed,
+                wordStats: progress.wordStats
+            };
+            localStorage.setItem('frenchFunProgress', JSON.stringify(toSave));
+        }
+
+        function checkStreak() {
+            const today = new Date().toDateString();
+            const yesterday = new Date(Date.now() - 86400000).toDateString();
+
+            if (progress.lastPlayed === today) {
+                // Already played today
+            } else if (progress.lastPlayed === yesterday) {
+                progress.streak++;
+                progress.lastPlayed = today;
+            } else if (progress.lastPlayed !== today) {
+                progress.streak = 1;
+                progress.lastPlayed = today;
+            }
+            saveProgress();
+        }
+
+        function updateStatsDisplay() {
+            document.getElementById('streak').textContent = progress.streak;
+            document.getElementById('total-xp').textContent = progress.totalXP;
+            document.getElementById('words-learned').textContent = progress.wordsLearned.size;
+        }
+
+        function addXP(amount) {
+            progress.totalXP += amount;
+            updateStatsDisplay();
+            saveProgress();
+        }
+
+        function learnWord(word) {
+            progress.wordsLearned.add(word);
+            updateStatsDisplay();
+            saveProgress();
+        }
+
+        // Spaced repetition
+        function updateWordStats(word, correct) {
+            if (!progress.wordStats[word]) {
+                progress.wordStats[word] = { correct: 0, wrong: 0, lastSeen: null, interval: 1 };
+            }
+            const stats = progress.wordStats[word];
+            stats.lastSeen = Date.now();
+            if (correct) {
+                stats.correct++;
+                stats.interval = Math.min(stats.interval * 2, 30); // Max 30 days
+            } else {
+                stats.wrong++;
+                stats.interval = 1; // Reset on wrong
+            }
+            saveProgress();
+        }
+
+        function getWordsForReview(category) {
+            let words = getWordsByCategory(category);
+            const now = Date.now();
+
+            // Sort by spaced repetition priority
+            words.sort((a, b) => {
+                const statsA = progress.wordStats[a.french] || { lastSeen: 0, interval: 1 };
+                const statsB = progress.wordStats[b.french] || { lastSeen: 0, interval: 1 };
+
+                const priorityA = statsA.lastSeen ? (now - statsA.lastSeen) / (statsA.interval * 86400000) : 999;
+                const priorityB = statsB.lastSeen ? (now - statsB.lastSeen) / (statsB.interval * 86400000) : 999;
+
+                return priorityB - priorityA; // Higher priority first
+            });
+
+            return words;
+        }
+
+        // ==================== UTILITY FUNCTIONS ====================
+        function getWordsByCategory(category) {
+            if (category === 'all') {
+                return [...vocabulary.greetings, ...vocabulary.numbers, ...vocabulary.common];
+            }
+            return vocabulary[category] || [];
+        }
+
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        function showToast(message, type) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.className = `toast ${type} show`;
+            setTimeout(() => toast.classList.remove('show'), 2000);
+        }
+
+        function playSound(type) {
+            // Using Web Audio API for simple sounds
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+
+            if (type === 'correct') {
+                oscillator.frequency.setValueAtTime(523.25, audioContext.currentTime); // C5
+                oscillator.frequency.setValueAtTime(659.25, audioContext.currentTime + 0.1); // E5
+                oscillator.frequency.setValueAtTime(783.99, audioContext.currentTime + 0.2); // G5
+            } else {
+                oscillator.frequency.setValueAtTime(200, audioContext.currentTime);
+            }
+
+            gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+
+            oscillator.start(audioContext.currentTime);
+            oscillator.stop(audioContext.currentTime + 0.3);
+        }
+
+        function createConfetti() {
+            const colors = ['#0055A4', '#EF4135', '#FFD700', '#4CAF50', '#FF69B4'];
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                confetti.style.animationDelay = Math.random() * 0.5 + 's';
+                document.body.appendChild(confetti);
+                setTimeout(() => confetti.remove(), 3500);
+            }
+        }
+
+        // ==================== NAVIGATION ====================
+        function showMenu() {
+            document.getElementById('menu-screen').style.display = 'block';
+            document.querySelectorAll('.game-screen').forEach(screen => screen.classList.remove('active'));
+            document.getElementById('modal').classList.remove('show');
+        }
+
+        function startGame(type) {
+            gameState.currentGame = type;
+            gameState.score = 0;
+            gameState.round = 0;
+            gameState.correct = 0;
+            gameState.wrong = 0;
+
+            document.getElementById('menu-screen').style.display = 'none';
+            document.getElementById(`${type}-game`).classList.add('active');
+
+            if (type === 'match') initMatchGame();
+            else if (type === 'fill') initFillGame();
+            else if (type === 'listen') initListenGame();
+        }
+
+        function playAgain() {
+            document.getElementById('modal').classList.remove('show');
+            startGame(gameState.currentGame);
+        }
+
+        // ==================== WORD MATCH GAME ====================
+        function initMatchGame() {
+            gameState.round = 0;
+            gameState.matchedPairs = 0;
+            document.getElementById('match-score').textContent = '0';
+            document.getElementById('match-progress').style.width = '0%';
+            document.getElementById('match-next').classList.remove('show');
+            loadMatchRound();
+        }
+
+        function loadMatchRound() {
+            const words = getWordsForReview(gameState.selectedCategory);
+            gameState.currentWords = shuffleArray(words).slice(0, 4);
+            gameState.matchedPairs = 0;
+            gameState.matchSelected = null;
+
+            const container = document.getElementById('match-container');
+            const frenchWords = shuffleArray([...gameState.currentWords]);
+            const englishWords = shuffleArray([...gameState.currentWords]);
+
+            container.innerHTML = `
+                <div class="match-column">
+                    <h4>🇫🇷 French</h4>
+                    ${frenchWords.map(w => `
+                        <div class="match-item french" data-word="${w.french}" data-pair="${w.english}" onclick="selectMatch(this, 'french')">
+                            ${w.french}
+                            <div class="pronunciation">${w.pronunciation}</div>
+                        </div>
+                    `).join('')}
+                </div>
+                <div class="match-column">
+                    <h4>🇬🇧 English</h4>
+                    ${englishWords.map(w => `
+                        <div class="match-item english" data-word="${w.english}" data-pair="${w.french}" onclick="selectMatch(this, 'english')">
+                            ${w.english}
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function selectMatch(element, type) {
+            if (element.classList.contains('matched')) return;
+
+            // Remove previous selection of same type
+            document.querySelectorAll(`.match-item.${type}.selected`).forEach(el => el.classList.remove('selected'));
+            element.classList.add('selected');
+
+            // Check if we have both selected
+            const frenchSelected = document.querySelector('.match-item.french.selected');
+            const englishSelected = document.querySelector('.match-item.english.selected');
+
+            if (frenchSelected && englishSelected) {
+                const frenchWord = frenchSelected.dataset.word;
+                const englishWord = englishSelected.dataset.word;
+                const isCorrect = frenchSelected.dataset.pair === englishWord;
+
+                setTimeout(() => {
+                    if (isCorrect) {
+                        frenchSelected.classList.add('correct', 'matched');
+                        englishSelected.classList.add('correct', 'matched');
+                        frenchSelected.classList.remove('selected');
+                        englishSelected.classList.remove('selected');
+
+                        gameState.score += 25;
+                        gameState.correct++;
+                        gameState.matchedPairs++;
+
+                        playSound('correct');
+                        showToast('Correct! +25 XP 🎉', 'success');
+                        learnWord(frenchWord);
+                        updateWordStats(frenchWord, true);
+
+                        document.getElementById('match-score').textContent = gameState.score;
+
+                        if (gameState.matchedPairs === 4) {
+                            gameState.round++;
+                            const progressPercent = (gameState.round / gameState.totalRounds) * 100;
+                            document.getElementById('match-progress').style.width = progressPercent + '%';
+
+                            if (gameState.round >= gameState.totalRounds) {
+                                endGame();
+                            } else {
+                                document.getElementById('match-next').classList.add('show');
+                            }
+                        }
+                    } else {
+                        frenchSelected.classList.add('wrong');
+                        englishSelected.classList.add('wrong');
+                        gameState.wrong++;
+
+                        playSound('wrong');
+                        showToast('Try again! 💪', 'error');
+                        updateWordStats(frenchWord, false);
+
+                        setTimeout(() => {
+                            frenchSelected.classList.remove('selected', 'wrong');
+                            englishSelected.classList.remove('selected', 'wrong');
+                        }, 500);
+                    }
+                }, 300);
+            }
+        }
+
+        function nextMatchRound() {
+            document.getElementById('match-next').classList.remove('show');
+            loadMatchRound();
+        }
+
+        // ==================== FILL IN THE BLANK GAME ====================
+        function initFillGame() {
+            gameState.round = 0;
+            document.getElementById('fill-score').textContent = '0';
+            document.getElementById('fill-progress').style.width = '0%';
+            document.getElementById('fill-next').classList.remove('show');
+            loadFillRound();
+        }
+
+        function loadFillRound() {
+            const questions = shuffleArray(fillSentences);
+            const question = questions[gameState.round % questions.length];
+
+            const container = document.getElementById('fill-container');
+            const shuffledOptions = shuffleArray(question.options);
+
+            container.innerHTML = `
+                <div class="fill-sentence">${question.sentence.replace('___', '<span class="blank">?</span>')}</div>
+                <div class="fill-hint">Choose the correct French word:</div>
+                <div class="fill-options">
+                    ${shuffledOptions.map(opt => `
+                        <button class="fill-option" onclick="checkFillAnswer(this, '${opt}', '${question.answer}')">${opt}</button>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function checkFillAnswer(element, selected, correct) {
+            const buttons = document.querySelectorAll('.fill-option');
+            buttons.forEach(btn => btn.disabled = true);
+
+            if (selected === correct) {
+                element.classList.add('correct');
+                gameState.score += 30;
+                gameState.correct++;
+
+                playSound('correct');
+                showToast('Parfait! +30 XP 🌟', 'success');
+                learnWord(correct);
+                updateWordStats(correct, true);
+
+                document.querySelector('.blank').textContent = correct;
+            } else {
+                element.classList.add('wrong');
+                buttons.forEach(btn => {
+                    if (btn.textContent === correct) btn.classList.add('correct');
+                });
+                gameState.wrong++;
+
+                playSound('wrong');
+                showToast(`The answer was: ${correct}`, 'error');
+                updateWordStats(selected, false);
+
+                document.querySelector('.blank').textContent = correct;
+            }
+
+            document.getElementById('fill-score').textContent = gameState.score;
+            gameState.round++;
+
+            const progressPercent = (gameState.round / gameState.totalRounds) * 100;
+            document.getElementById('fill-progress').style.width = progressPercent + '%';
+
+            if (gameState.round >= gameState.totalRounds) {
+                setTimeout(endGame, 1500);
+            } else {
+                document.getElementById('fill-next').classList.add('show');
+            }
+        }
+
+        function nextFillRound() {
+            document.getElementById('fill-next').classList.remove('show');
+            loadFillRound();
+        }
+
+        // ==================== LISTENING GAME ====================
+        function initListenGame() {
+            gameState.round = 0;
+            document.getElementById('listen-score').textContent = '0';
+            document.getElementById('listen-progress').style.width = '0%';
+            document.getElementById('listen-next').classList.remove('show');
+            loadListenRound();
+        }
+
+        function loadListenRound() {
+            const words = getWordsForReview(gameState.selectedCategory);
+            const correctWord = shuffleArray(words)[0];
+            const otherWords = shuffleArray(words.filter(w => w.french !== correctWord.french)).slice(0, 3);
+            const options = shuffleArray([correctWord, ...otherWords]);
+
+            gameState.currentWords = [correctWord];
+
+            const container = document.getElementById('listen-container');
+            container.innerHTML = `
+                <div class="listen-prompt">Listen to the French word and select the correct translation:</div>
+                <button class="listen-btn" onclick="speakWord('${correctWord.french}')" id="speak-btn">🔊</button>
+                <p style="color: #888; margin-bottom: 20px;">Click to hear the word</p>
+                <div class="listen-options">
+                    ${options.map(opt => `
+                        <button class="listen-option" onclick="checkListenAnswer(this, '${opt.english}', '${correctWord.english}', '${correctWord.french}')">${opt.english}</button>
+                    `).join('')}
+                </div>
+            `;
+
+            // Auto-play on load
+            setTimeout(() => speakWord(correctWord.french), 500);
+        }
+
+        function speakWord(word) {
+            if ('speechSynthesis' in window) {
+                const btn = document.getElementById('speak-btn');
+                btn.classList.add('playing');
+
+                const utterance = new SpeechSynthesisUtterance(word);
+                utterance.lang = 'fr-FR';
+                utterance.rate = 0.8;
+
+                utterance.onend = () => btn.classList.remove('playing');
+                utterance.onerror = () => btn.classList.remove('playing');
+
+                speechSynthesis.cancel(); // Stop any current speech
+                speechSynthesis.speak(utterance);
+            } else {
+                showToast('Speech not supported in this browser', 'error');
+            }
+        }
+
+        function checkListenAnswer(element, selected, correct, frenchWord) {
+            const buttons = document.querySelectorAll('.listen-option');
+            buttons.forEach(btn => btn.disabled = true);
+
+            if (selected === correct) {
+                element.classList.add('correct');
+                gameState.score += 35;
+                gameState.correct++;
+
+                playSound('correct');
+                showToast('Excellent! +35 XP 👂', 'success');
+                learnWord(frenchWord);
+                updateWordStats(frenchWord, true);
+            } else {
+                element.classList.add('wrong');
+                buttons.forEach(btn => {
+                    if (btn.textContent === correct) btn.classList.add('correct');
+                });
+                gameState.wrong++;
+
+                playSound('wrong');
+                showToast(`It was: ${frenchWord} = ${correct}`, 'error');
+                updateWordStats(frenchWord, false);
+            }
+
+            document.getElementById('listen-score').textContent = gameState.score;
+            gameState.round++;
+
+            const progressPercent = (gameState.round / gameState.totalRounds) * 100;
+            document.getElementById('listen-progress').style.width = progressPercent + '%';
+
+            if (gameState.round >= gameState.totalRounds) {
+                setTimeout(endGame, 1500);
+            } else {
+                document.getElementById('listen-next').classList.add('show');
+            }
+        }
+
+        function nextListenRound() {
+            document.getElementById('listen-next').classList.remove('show');
+            loadListenRound();
+        }
+
+        // ==================== DAILY CHALLENGE ====================
+        let dailyState = {
+            timer: 60,
+            intervalId: null,
+            score: 0,
+            questionsAnswered: 0,
+            correct: 0,
+            isActive: false
+        };
+
+        function getDailyKey() {
+            const today = new Date();
+            return `dailyChallenge_${today.getFullYear()}_${today.getMonth()}_${today.getDate()}`;
+        }
+
+        function isDailyChallengeCompleted() {
+            return localStorage.getItem(getDailyKey()) === 'completed';
+        }
+
+        function markDailyChallengeCompleted() {
+            localStorage.setItem(getDailyKey(), 'completed');
+            updateDailyBadge();
+        }
+
+        function updateDailyBadge() {
+            const badge = document.getElementById('daily-completed-badge');
+            if (isDailyChallengeCompleted()) {
+                badge.style.display = 'block';
+            } else {
+                badge.style.display = 'none';
+            }
+        }
+
+        function startDailyChallenge() {
+            if (isDailyChallengeCompleted()) {
+                showToast('Daily Challenge already completed! Come back tomorrow! 🌟', 'success');
+                return;
+            }
+
+            dailyState = {
+                timer: 60,
+                intervalId: null,
+                score: 0,
+                questionsAnswered: 0,
+                correct: 0,
+                isActive: true
+            };
+
+            gameState.currentGame = 'daily';
+            document.getElementById('menu-screen').style.display = 'none';
+            document.getElementById('daily-game').classList.add('active');
+            document.getElementById('daily-score').textContent = '0';
+            document.getElementById('daily-timer').textContent = '60';
+            document.getElementById('daily-timer').className = 'timer-display';
+
+            loadDailyQuestion();
+            startDailyTimer();
+        }
+
+        function startDailyTimer() {
+            dailyState.intervalId = setInterval(() => {
+                dailyState.timer--;
+                const timerEl = document.getElementById('daily-timer');
+                timerEl.textContent = dailyState.timer;
+
+                // Visual warnings
+                if (dailyState.timer <= 10) {
+                    timerEl.className = 'timer-display critical';
+                } else if (dailyState.timer <= 20) {
+                    timerEl.className = 'timer-display warning';
+                }
+
+                if (dailyState.timer <= 0) {
+                    endDailyChallenge();
+                }
+            }, 1000);
+        }
+
+        function loadDailyQuestion() {
+            if (!dailyState.isActive) return;
+
+            // Get random question type and word
+            const allWords = [...vocabulary.greetings, ...vocabulary.numbers, ...vocabulary.common];
+            const correctWord = shuffleArray(allWords)[0];
+            const otherWords = shuffleArray(allWords.filter(w => w.french !== correctWord.french)).slice(0, 3);
+            const options = shuffleArray([correctWord, ...otherWords]);
+
+            // Random question type
+            const questionTypes = ['translate', 'identify'];
+            const questionType = questionTypes[Math.floor(Math.random() * questionTypes.length)];
+
+            const container = document.getElementById('daily-container');
+
+            if (questionType === 'translate') {
+                container.innerHTML = `
+                    <div class="daily-question">What is the English translation?</div>
+                    <div class="daily-french-word">${correctWord.french}</div>
+                    <div class="daily-pronunciation">${correctWord.pronunciation}</div>
+                    <div class="daily-options">
+                        ${options.map(opt => `
+                            <button class="daily-option" onclick="checkDailyAnswer(this, '${opt.english}', '${correctWord.english}', '${correctWord.french}')">${opt.english}</button>
+                        `).join('')}
+                    </div>
+                `;
+            } else {
+                container.innerHTML = `
+                    <div class="daily-question">What is the French word for:</div>
+                    <div class="daily-french-word">${correctWord.english}</div>
+                    <div class="daily-options">
+                        ${options.map(opt => `
+                            <button class="daily-option" onclick="checkDailyAnswer(this, '${opt.french}', '${correctWord.french}', '${correctWord.french}')">${opt.french}</button>
+                        `).join('')}
+                    </div>
+                `;
+            }
+        }
+
+        function checkDailyAnswer(element, selected, correct, frenchWord) {
+            if (!dailyState.isActive) return;
+
+            const buttons = document.querySelectorAll('.daily-option');
+            buttons.forEach(btn => btn.disabled = true);
+
+            dailyState.questionsAnswered++;
+
+            if (selected === correct) {
+                element.classList.add('correct');
+                dailyState.score += 20;
+                dailyState.correct++;
+
+                playSound('correct');
+                learnWord(frenchWord);
+                updateWordStats(frenchWord, true);
+            } else {
+                element.classList.add('wrong');
+                buttons.forEach(btn => {
+                    if (btn.textContent === correct) btn.classList.add('correct');
+                });
+
+                playSound('wrong');
+                updateWordStats(frenchWord, false);
+            }
+
+            document.getElementById('daily-score').textContent = dailyState.score;
+
+            // Quick transition to next question
+            setTimeout(() => {
+                if (dailyState.isActive) {
+                    loadDailyQuestion();
+                }
+            }, 600);
+        }
+
+        function endDailyChallenge() {
+            if (dailyState.intervalId) {
+                clearInterval(dailyState.intervalId);
+                dailyState.intervalId = null;
+            }
+
+            dailyState.isActive = false;
+
+            // Calculate final score with 2x multiplier
+            const finalScore = dailyState.score * 2;
+            const accuracy = dailyState.questionsAnswered > 0
+                ? Math.round((dailyState.correct / dailyState.questionsAnswered) * 100)
+                : 0;
+
+            // Mark as completed if timer ran out (challenge was done)
+            if (dailyState.timer <= 0) {
+                markDailyChallengeCompleted();
+            }
+
+            // Award XP with bonus
+            addXP(finalScore);
+
+            // Calculate stars
+            const stars = accuracy >= 90 ? 3 : accuracy >= 70 ? 2 : accuracy >= 50 ? 1 : 0;
+
+            // Update modal
+            const starsContainer = document.getElementById('modal-stars');
+            starsContainer.innerHTML = [1, 2, 3].map(i =>
+                `<span class="star ${i <= stars ? '' : 'empty'}">⭐</span>`
+            ).join('');
+
+            document.getElementById('modal-score').textContent = finalScore + ' (2x bonus!)';
+            document.getElementById('modal-accuracy').textContent = accuracy + '%';
+
+            if (dailyState.timer <= 0) {
+                document.getElementById('modal-icon').textContent = '📅';
+                document.getElementById('modal-title').textContent = 'Daily Challenge Complete!';
+                document.getElementById('modal-message').textContent = `You answered ${dailyState.questionsAnswered} questions! Come back tomorrow for more!`;
+                createConfetti();
+            } else {
+                document.getElementById('modal-icon').textContent = '⏸️';
+                document.getElementById('modal-title').textContent = 'Challenge Ended Early';
+                document.getElementById('modal-message').textContent = `You answered ${dailyState.questionsAnswered} questions. Complete the full 60 seconds to mark it done!`;
+            }
+
+            document.querySelectorAll('.game-screen').forEach(screen => screen.classList.remove('active'));
+            document.getElementById('modal').classList.add('show');
+        }
+
+        // ==================== END GAME ====================
+        function endGame() {
+            const totalAttempts = gameState.correct + gameState.wrong;
+            const accuracy = totalAttempts > 0 ? Math.round((gameState.correct / totalAttempts) * 100) : 0;
+            const stars = accuracy >= 90 ? 3 : accuracy >= 70 ? 2 : accuracy >= 50 ? 1 : 0;
+
+            addXP(gameState.score);
+
+            // Update modal
+            const starsContainer = document.getElementById('modal-stars');
+            starsContainer.innerHTML = [1, 2, 3].map(i =>
+                `<span class="star ${i <= stars ? '' : 'empty'}">⭐</span>`
+            ).join('');
+
+            document.getElementById('modal-score').textContent = gameState.score;
+            document.getElementById('modal-accuracy').textContent = accuracy + '%';
+
+            if (accuracy >= 90) {
+                document.getElementById('modal-icon').textContent = '🏆';
+                document.getElementById('modal-title').textContent = 'Magnifique!';
+                document.getElementById('modal-message').textContent = 'You\'re a French superstar! Keep up the amazing work!';
+                createConfetti();
+            } else if (accuracy >= 70) {
+                document.getElementById('modal-icon').textContent = '🎉';
+                document.getElementById('modal-title').textContent = 'Très bien!';
+                document.getElementById('modal-message').textContent = 'Great job! You\'re making excellent progress!';
+                createConfetti();
+            } else if (accuracy >= 50) {
+                document.getElementById('modal-icon').textContent = '👍';
+                document.getElementById('modal-title').textContent = 'Pas mal!';
+                document.getElementById('modal-message').textContent = 'Good effort! Practice makes perfect!';
+            } else {
+                document.getElementById('modal-icon').textContent = '💪';
+                document.getElementById('modal-title').textContent = 'Keep trying!';
+                document.getElementById('modal-message').textContent = 'Don\'t give up! Every attempt helps you learn!';
+            }
+
+            document.getElementById('modal').classList.add('show');
+        }
+
+        // ==================== CATEGORY SELECTION ====================
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                gameState.selectedCategory = btn.dataset.category;
+            });
+        });
+
+        // ==================== INITIALIZATION ====================
+        loadProgress();
+        updateDailyBadge();
+    </script>
+</body>
+</html>
