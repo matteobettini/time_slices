@@ -97,7 +97,6 @@ ELEVENLABS_VOICES_EN = [
     ("ErXwobaYiN019PkySvjV", "Antoni", "young male, American, versatile"),
     ("VR6AewLTigWG4xSOukaG", "Arnold", "crisp middle-aged male, American"),
     ("onwK4e9ZLuTAKqWW03F9", "Daniel", "deep middle-aged male, British"),
-    ("ThT5KcBeYPX3keUQqHPh", "Dorothy", "pleasant young female, British"),
     ("XrExE9yKIg1WjnnlVkGX", "Matilda", "warm young female, American"),
 ]
 
@@ -111,7 +110,6 @@ ELEVENLABS_VOICES_IT = [
     ("ErXwobaYiN019PkySvjV", "Antoni", "young male (multilingual)"),
     ("VR6AewLTigWG4xSOukaG", "Arnold", "crisp male (multilingual)"),
     ("onwK4e9ZLuTAKqWW03F9", "Daniel", "deep male (multilingual)"),
-    ("ThT5KcBeYPX3keUQqHPh", "Dorothy", "pleasant female (multilingual)"),
     ("XrExE9yKIg1WjnnlVkGX", "Matilda", "warm female (multilingual)"),
 ]
 
