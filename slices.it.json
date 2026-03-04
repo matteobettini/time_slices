@@ -1057,5 +1057,77 @@
       "url": "audio/it/1755-lisbon-when-optimism-died.mp3",
       "duration": 177
     }
+  },
+  {
+    "year": "1819",
+    "id": "1819-germany-will-and-fog",
+    "title": "Germania — La Volontà e la Nebbia",
+    "teaser": "Schopenhauer svela la cieca Volontà dietro le apparenze. Friedrich dipinge una figura che contempla l'abisso. Metternich schiaccia i movimenti studenteschi. Goethe tende la mano verso la Persia. Il Romanticismo tedesco affronta ciò che sta oltre la ragione.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Il <strong>Romanticismo tedesco</strong> raggiunge il suo apice visivo nei paesaggi sublimi di <strong>Caspar David Friedrich</strong>. Il suo <em>Viandante sul mare di nebbia</em> (1818) diventa l'icona del movimento: una figura solitaria, di spalle allo spettatore (<em>Rückenfigur</em>), contempla un vuoto avvolto dalla foschia. A differenza della fiduciosa cartografia illuminista della natura, Friedrich dipinge la natura come mistero travolgente — il <strong>sublime</strong> di Burke e Kant, un terrore che sconfina nell'estasi. La figura umana appare minuscola, meditativa, posta ai confini del conoscibile. A Dresda, la cerchia di Friedrich include <strong>Philipp Otto Runge</strong>, le cui teorie mistiche sul colore e il ciclo incompiuto <em>Le ore del giorno</em> cercano di sintetizzare pittura, poesia e musica in un'opera totale — un sogno che il <strong>Gesamtkunstwerk wagneriano</strong> erediterà."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "<strong>E.T.A. Hoffmann</strong> pubblica i primi volumi de <em>I confratelli di Serapione</em> (1819–21), incorniciati da un circolo letterario fittizio che dibatte sulla natura della verità artistica. I suoi racconti sfumano i confini tra realtà e soprannaturale — automi che potrebbero essere umani, umani che potrebbero essere pazzi, sogni che potrebbero essere profezie. Il <strong>principio serapiontico</strong> da lui articolato insiste che l'immaginazione deve sentirsi reale dall'interno, non semplicemente sembrarlo dall'esterno. Intanto <strong>Goethe</strong> pubblica il <em>Divano occidentale-orientale</em> (1819), un dialogo con il poeta persiano trecentesco Hafez che trascende i confini eurocentrici. A settant'anni, Goethe immagina un Oriente né coloniale né esotico ma intellettualmente pari — uno scambio poetico attraverso secoli e civiltà che anticipa il concetto di <strong>Weltliteratur</strong>."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<em>Il mondo come volontà e rappresentazione</em> di <strong>Arthur Schopenhauer</strong> esce con data dicembre 1818 ma circola nel 1819. Partendo dalla distinzione <strong>kantiana</strong> tra fenomeni e cose in sé, Schopenhauer compie una mossa radicale: la realtà noumenica dietro i fenomeni è la <strong>Volontà</strong> — un cieco, insaziabile, irrazionale impulso vitale. A differenza dell'ottimismo dialettico di <strong>Hegel</strong> (l'Assoluto che si realizza attraverso la storia), Schopenhauer vede l'esistenza come fondamentalmente tragica: la Volontà genera solo sofferenza e desiderio. La via d'uscita passa attraverso la contemplazione estetica e la negazione ascetica. Questo <strong>pessimismo metafisico</strong> influenzerà profondamente <strong>Wagner</strong>, <strong>Nietzsche</strong>, <strong>Freud</strong> e il dialogo buddista-cristiano in Occidente."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Nel marzo 1819 lo studente di teologia <strong>Karl Ludwig Sand</strong> assassina il drammaturgo <strong>August von Kotzebue</strong> a Mannheim — un omicidio politico che scuote la <strong>Confederazione Germanica</strong>. Sand, membro del movimento studentesco liberale-nazionalista delle <strong>Burschenschaften</strong>, riteneva Kotzebue un traditore al servizio degli interessi russi. <strong>Metternich</strong> coglie l'occasione: in settembre i <strong>Decreti di Carlsbad</strong> mettono al bando le Burschenschaften, impongono una rigida censura e sottopongono le università alla sorveglianza statale. La breve speranza di riforme liberali post-napoleoniche viene schiacciata. La Germania entra in un periodo repressivo — il <em>Vormärz</em> — che durerà fino alle rivoluzioni del 1848. <strong>Heinrich Heine</strong> e <strong>Ludwig Börne</strong> trascorreranno decenni in esilio, scrivendo contro questa censura."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "La convergenza è filosoficamente precisa. La <strong>Volontà</strong> di Schopenhauer — cieca, irrazionale, sottostante a tutte le apparenze — è esattamente ciò che Friedrich dipinge: l'abisso avvolto dalla nebbia in cui il Viandante guarda non è vuoto ma <em>inconoscibile</em>. Sia l'artista che il filosofo ereditano i limiti kantiani della ragione ma ne traggono conclusioni opposte rispetto agli Idealisti: non fiducia nell'autorealizzazione dello Spirito, ma vertigine davanti a un cosmo indifferente al significato umano. I racconti di Hoffmann mettono in scena questa confusione di confini nella narrativa: i suoi personaggi non sanno mai con certezza se sono sani o sognanti, se il soprannaturale è reale o proiettato — la stessa angoscia epistemologica. I Decreti di Carlsbad rendono esplicito il parallelo politico: le promesse illuministe di progresso e libertà vengono schiacciate dalla <em>Realpolitik</em>. Il Romanticismo tedesco non è ingenuo escapismo — è un profondo confronto con i limiti.",
+        "funFact": "Schopenhauer tenne lezioni all'Università di Berlino nel 1820, programmando deliberatamente il suo corso allo stesso orario delle famose lezioni di Hegel. Non venne quasi nessuno. L'aula di Hegel era gremita. Schopenhauer non lo perdonò mai — né perdonò gli studenti."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Il_mondo_come_volont%C3%A0_e_rappresentazione",
+        "title": "Wikipedia — Il mondo come volontà e rappresentazione"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Viandante_sul_mare_di_nebbia",
+        "title": "Wikipedia — Viandante sul mare di nebbia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Decreti_di_Carlsbad",
+        "title": "Wikipedia — Decreti di Carlsbad"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Divano_occidentale-orientale",
+        "title": "Wikipedia — Divano occidentale-orientale"
+      }
+    ],
+    "image": {
+      "url": "images/1819-germany-will-and-fog.jpg",
+      "alt": "Caspar David Friedrich, Viandante sul mare di nebbia, 1818 - una figura solitaria contempla un paesaggio montano avvolto dalla nebbia",
+      "width": 1200,
+      "height": 1537,
+      "caption": "Caspar David Friedrich, Viandante sul mare di nebbia (1818)",
+      "attribution": "Caspar David Friedrich, Pubblico dominio, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "german-romanticism",
+      "death-of-god",
+      "rationalism",
+      "modernity",
+      "metaphysical-pessimism"
+    ],
+    "location": {
+      "lat": 51.0504,
+      "lon": 13.7373,
+      "place": "Dresda"
+    },
+    "addedDate": "2026-03-04T06:00:00Z",
+    "podcast": {
+      "url": "audio/it/1819-germany-will-and-fog.mp3",
+      "duration": 170
+    }
   }
 ]

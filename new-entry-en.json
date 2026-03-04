@@ -1,0 +1,50 @@
+{
+  "year": "1819",
+  "id": "1819-germany-will-and-fog",
+  "title": "Germany — The Will and the Fog",
+  "teaser": "Schopenhauer reveals the blind Will beneath appearances. Friedrich paints a figure gazing into the abyss. Metternich crushes the student movements. Goethe reaches toward Persia. German Romanticism confronts what lies beyond reason.",
+  "dimensions": {
+    "art": {
+      "label": "Art",
+      "content": "<strong>German Romanticism</strong> reaches its visual apex in <strong>Caspar David Friedrich</strong>'s paintings of sublime landscapes. His <em>Wanderer Above the Sea of Fog</em> (1818) becomes the movement's icon: a solitary figure, back to the viewer (<em>Rückenfigur</em>), gazing into a vast, mist-shrouded void. Unlike the Enlightenment's confident mapping of nature, Friedrich paints nature as overwhelming mystery — the <strong>sublime</strong> as defined by Burke and Kant, a terror that borders on ecstasy. The human figure is dwarfed, contemplative, positioned at the edge of the knowable. In Dresden, Friedrich's circle includes <strong>Philipp Otto Runge</strong>, whose mystical colour theories and unfinished cycle <em>The Times of Day</em> seek to synthesise painting, poetry, and music into a total artwork — a dream the later <strong>Wagnerian Gesamtkunstwerk</strong> will inherit."
+    },
+    "lit": {
+      "label": "Literature",
+      "content": "<strong>E.T.A. Hoffmann</strong> publishes the first volumes of <em>Die Serapionsbrüder</em> (The Serapion Brethren, 1819–21), framed by a fictional literary circle that debates the nature of artistic truth. His tales blur the boundaries between reality and the supernatural — automata that might be human, humans that might be mad, dreams that might be prophecy. The <strong>Serapiontic Principle</strong> he articulates insists that imagination must feel real from within, not merely seem real from without. Meanwhile, <strong>Goethe</strong> publishes <em>West-östlicher Divan</em> (1819), a dialogue with the 14th-century Persian poet Hafez that transcends Eurocentric boundaries. At seventy, Goethe imagines an East neither colonial nor exotic but intellectually equal — a poetic exchange across centuries and civilisations that anticipates <strong>world literature</strong> as a concept."
+    },
+    "phil": {
+      "label": "Philosophy",
+      "content": "<strong>Arthur Schopenhauer</strong>'s <em>Die Welt als Wille und Vorstellung</em> (The World as Will and Representation) appears with a December 1818 date but circulates in 1819. Starting from <strong>Kant</strong>'s distinction between appearances and things-in-themselves, Schopenhauer makes a radical move: the noumenal reality behind phenomena is <strong>Will</strong> — a blind, insatiable, irrational striving. Unlike <strong>Hegel</strong>'s dialectical optimism (the Absolute realising itself through history), Schopenhauer sees existence as fundamentally tragic: the Will generates only suffering and desire. Escape comes through aesthetic contemplation and ascetic denial. This <strong>metaphysical pessimism</strong> will profoundly influence <strong>Wagner</strong>, <strong>Nietzsche</strong>, <strong>Freud</strong>, and Buddhist-Christian dialogue in the West."
+    },
+    "hist": {
+      "label": "History",
+      "content": "In March 1819, theology student <strong>Karl Ludwig Sand</strong> assassinates the playwright <strong>August von Kotzebue</strong> in Mannheim — a political murder that shakes the <strong>German Confederation</strong>. Sand, a member of the liberal-nationalist <strong>Burschenschaft</strong> student movement, believed Kotzebue was a traitor working for Russian interests. <strong>Metternich</strong> seizes the moment: in September, the <strong>Carlsbad Decrees</strong> ban the Burschenschaften, impose strict censorship, and place universities under state surveillance. The brief hope of post-Napoleonic liberal reform is crushed. Germany enters a repressive period — the <em>Vormärz</em> — that will last until the revolutions of 1848. <strong>Heinrich Heine</strong> and <strong>Ludwig Börne</strong> will spend decades in exile, writing against this censorship."
+    },
+    "conn": {
+      "label": "Connections",
+      "content": "The convergence is philosophically precise. Schopenhauer's <strong>Will</strong> — blind, irrational, underlying all appearances — is exactly what Friedrich paints: the fog-shrouded abyss into which the Wanderer gazes is not empty but <em>unknowable</em>. Both artist and philosopher inherit Kant's limits on reason but draw opposite conclusions from the Idealists: not confidence in Spirit's self-realisation, but vertigo before a cosmos indifferent to human meaning. Hoffmann's tales enact this boundary-confusion in narrative: his characters never quite know if they're sane or dreaming, if the supernatural is real or projected — the same epistemological anxiety. The Carlsbad Decrees make the political parallel: reason's Enlightenment promises of progress and freedom are being crushed by <em>Realpolitik</em>. German Romanticism isn't naive escapism — it's a profound encounter with limits.",
+      "funFact": "Schopenhauer lectured at the University of Berlin in 1820, deliberately scheduling his course at the same time as Hegel's famous lectures. Almost no one came. Hegel's auditorium was packed. Schopenhauer never forgave him — or the students."
+    }
+  },
+  "sources": [
+    { "url": "https://en.wikipedia.org/wiki/The_World_as_Will_and_Representation", "title": "Wikipedia — The World as Will and Representation" },
+    { "url": "https://en.wikipedia.org/wiki/Wanderer_above_the_Sea_of_Fog", "title": "Wikipedia — Wanderer Above the Sea of Fog" },
+    { "url": "https://en.wikipedia.org/wiki/Carlsbad_Decrees", "title": "Wikipedia — Carlsbad Decrees" },
+    { "url": "https://en.wikipedia.org/wiki/West%E2%80%93%C3%B6stlicher_Divan", "title": "Wikipedia — West-östlicher Divan" }
+  ],
+  "image": {
+    "url": "images/1819-germany-will-and-fog.jpg",
+    "alt": "Caspar David Friedrich, Wanderer Above the Sea of Fog, 1818 - a lone figure gazes over a misty mountain landscape",
+    "width": 1200,
+    "height": 1537,
+    "caption": "Caspar David Friedrich, Wanderer Above the Sea of Fog (1818)",
+    "attribution": "Caspar David Friedrich, Public domain, via Wikimedia Commons"
+  },
+  "threads": ["german-romanticism", "death-of-god", "rationalism", "modernity", "metaphysical-pessimism"],
+  "location": {
+    "lat": 51.0504,
+    "lon": 13.7373,
+    "place": "Dresden"
+  },
+  "addedDate": "2026-03-04T06:00:00Z"
+}

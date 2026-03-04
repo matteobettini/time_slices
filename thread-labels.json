@@ -36,7 +36,9 @@
     "sola-scriptura": "Sola Scriptura",
     "scholasticism": "Scholasticism",
     "gothic-architecture": "Gothic Architecture",
-    "12th-century-renaissance": "12th Century Renaissance"
+    "12th-century-renaissance": "12th Century Renaissance",
+    "german-romanticism": "German Romanticism",
+    "metaphysical-pessimism": "Metaphysical Pessimism"
   },
   "it": {
     "translation-movement": "Traduzione come potere",
@@ -75,6 +77,8 @@
     "sola-scriptura": "Sola Scriptura",
     "scholasticism": "Scolastica",
     "gothic-architecture": "Architettura gotica",
-    "12th-century-renaissance": "Rinascimento del XII secolo"
+    "12th-century-renaissance": "Rinascimento del XII secolo",
+    "german-romanticism": "Romanticismo tedesco",
+    "metaphysical-pessimism": "Pessimismo metafisico"
   }
 }

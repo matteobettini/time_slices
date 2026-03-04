@@ -14,7 +14,9 @@
       "1274→1889": "Aquinas and Bonaventure died believing reason could illuminate faith. Six centuries later, Nietzsche declared God dead and collapsed under the weight of that insight. The arc from Lyon's confident synthesis to Turin's madman traces Western philosophy losing its theological ground.",
       "1274→1347": "Aquinas and Bonaventure died confident that faith and reason formed a seamless whole. Within seventy years, the Black Death would empty the cathedrals they helped inspire, and nominalism would dissolve the metaphysical certainties their systems required. The plague didn't kill God — but it made the confident synthesis of 1274 seem naive.",
       "1648→1755": "Westphalia's exhausted peace had bracketed God; Lisbon's earthquake shattered the bracket — theodicy died under the rubble.",
-      "1755→1889": "What Lisbon's earthquake began, Nietzsche's madman completed — God's corpse, first glimpsed in the rubble, was finally declared."
+      "1755→1889": "What Lisbon's earthquake began, Nietzsche's madman completed — God's corpse, first glimpsed in the rubble, was finally declared.",
+      "1755→1819": "Voltaire's Lisbon critique cracked theodicy; Schopenhauer drove a metaphysical stake through optimism itself.",
+      "1819→1889": "Schopenhauer's blind Will haunted Wagner's operas; Nietzsche inherited the diagnosis and prescribed Dionysus."
     },
     "rationalism": {
       "-431→125": "Anaxagoras argued that a rational principle (<em>Nous</em>) governed the cosmos rather than the caprice of gods. Five centuries later, the Stoics — working from this same Greek rationalist tradition, filtered through Aristotle and the early Stoa — taught that the universe was structured by <em>logos</em>, a rational order accessible to human reason. Epictetus, teaching in Nicopolis around 125 CE, inherited this lineage directly: Stoicism emerged from the Athenian philosophical milieu that Anaxagoras helped create, passed through Zeno of Citium (who studied at Plato's Academy) and Chrysippus. The Pantheon's mathematical perfection — its dome a geometrically exact hemisphere — is this rationalist conviction expressed in built form.",
@@ -34,7 +36,8 @@
       "1648→1687": "Descartes' <em>cogito</em> rebuilt certainty from doubt; Newton's <em>Principia</em> rebuilt the cosmos from mathematics. Locke — who met Newton in 1689 — combined both projects: empiricism as the theory of mind that matched Newton's physics. The Royal Society, where Newton published, was founded in the same decade Westphalia was signed.",
       "1687→1784": "Newton's <em>Principia</em> proved the cosmos was mathematically legible; Kant's \"dare to know\" demanded humans use that proof. The Enlightenment is Newtonian confidence applied to society: if gravity obeys laws, why not politics? Kant studied Newtonian physics directly through Christian Wolff's systematisation.",
       "1687→1755": "Newton's Principia made the cosmos a clockwork; Lisbon forced the question — does the clock care about the clockmaker's creatures?",
-      "1755→1784": "Kant's earthquake essays applied reason to disaster; his Critiques made reason examine itself — rationalism, chastened, became critical."
+      "1755→1784": "Kant's earthquake essays applied reason to disaster; his Critiques made reason examine itself — rationalism, chastened, became critical.",
+      "1784→1819": "Kant's critical limits became Schopenhauer's wall; reason hit the blind Will and recoiled."
     },
     "modernity": {
       "1648→1889": "Westphalia invented the modern state; the Eiffel Tower celebrated what the modern state could build. Between them: the Enlightenment, the Industrial Revolution, the nation-state. The 1889 World's Fair was Westphalian sovereignty made festive — competing nations showing off in iron and glass.",
@@ -42,7 +45,9 @@
       "1687→1889": "Newton's <em>Principia</em> gave modernity its confidence that nature obeyed discoverable laws. Two centuries later, the Eiffel Tower was that confidence made iron — engineering as proof that humans could master the world Newton had made legible.",
       "1687→1922": "The Newtonian universe was a clockwork mechanism; by 1922, Einstein had bent its space and the quantum physicists were dissolving its certainties. Modernism's fragmentation — Eliot's broken myths, Wittgenstein's silent limits — is partly the cultural echo of physics losing Newton's elegant simplicity.",
       "1687→1755": "Newton proved nature obeys mathematics; Lisbon proved nature does not obey morality — modernity's disenchantment deepened.",
-      "1755→1889": "Lisbon's Pombaline grid imposed human reason on chaos; by Paris 1889, that confidence had become the Eiffel Tower — and was already cracking."
+      "1755→1889": "Lisbon's Pombaline grid imposed human reason on chaos; by Paris 1889, that confidence had become the Eiffel Tower — and was already cracking.",
+      "1755→1819": "Lisbon shattered providential history; the Romantics rebuilt meaning through art and Will.",
+      "1819→1889": "Schopenhauer's aesthetic escape; Bergson's durée; the Eiffel Tower's iron assertion — modernity accelerates."
     },
     "stoicism": {
       "125→410": "Epictetus taught that the wise person focuses only on what lies within their control — the inner citadel remains free even when empires burn. Augustine absorbed this Stoic insight through Cicero and transformed it: the Christian soul is the inner citadel, and Rome's fall cannot threaten what was never truly ours. The <em>City of God</em> is Stoic detachment theologised."
@@ -116,7 +121,9 @@
       "1274→1889": "Tommaso e Bonaventura morirono credendo che la ragione potesse illuminare la fede. Sei secoli dopo, Nietzsche dichiarò morto Dio e crollò sotto il peso di quell'intuizione. L'arco da Lione a Torino traccia la filosofia occidentale che perde il suo fondamento teologico.",
       "1274→1347": "Tommaso e Bonaventura morirono convinti che fede e ragione formassero un tutto coerente. Entro settant'anni, la Peste Nera avrebbe svuotato le cattedrali che avevano contribuito a ispirare, e il nominalismo avrebbe dissolto le certezze metafisiche che i loro sistemi richiedevano. La peste non uccise Dio — ma rese ingenua la fiduciosa sintesi del 1274.",
       "1648→1755": "La pace esausta di Vestfalia aveva messo Dio tra parentesi; il terremoto di Lisbona frantumò la parentesi — la teodicea morì sotto le macerie.",
-      "1755→1889": "Ciò che il terremoto di Lisbona aveva iniziato, il folle di Nietzsche lo completò — il cadavere di Dio, intravisto per la prima volta tra le macerie, fu finalmente dichiarato."
+      "1755→1889": "Ciò che il terremoto di Lisbona aveva iniziato, il folle di Nietzsche lo completò — il cadavere di Dio, intravisto per la prima volta tra le macerie, fu finalmente dichiarato.",
+      "1755→1819": "La critica di Voltaire al terremoto di Lisbona incrinò la teodicea; Schopenhauer conficcò un paletto metafisico nell'ottimismo stesso.",
+      "1819→1889": "La cieca Volontà di Schopenhauer perseguitò le opere di Wagner; Nietzsche ereditò la diagnosi e prescrisse Dioniso."
     },
     "rationalism": {
       "-431→125": "Anassagora sosteneva che un principio razionale (<em>Nous</em>) governasse il cosmo piuttosto che il capriccio degli dei. Cinque secoli dopo, gli Stoici — partendo dalla stessa tradizione razionalista greca, filtrata attraverso Aristotele e la prima Stoa — insegnavano che l'universo era strutturato dal <em>logos</em>, un ordine razionale accessibile alla ragione umana. Epitteto, che insegnava a Nicopoli intorno al 125 d.C., ereditava direttamente questa genealogia: lo stoicismo emerse dall'ambiente filosofico ateniese che Anassagora contribuì a creare, passando attraverso Zenone di Cizio (che studiò all'Accademia di Platone) e Crisippo. La perfezione matematica del Pantheon — la cupola come emisfero geometricamente esatto — è questa convinzione razionalista espressa in forma costruita.",
@@ -136,7 +143,8 @@
       "1648→1687": "Il <em>cogito</em> di Cartesio ricostruì la certezza dal dubbio; i <em>Principia</em> di Newton ricostruirono il cosmo dalla matematica. Locke — che incontrò Newton nel 1689 — combinò entrambi i progetti: l'empirismo come teoria della mente che si abbinava alla fisica di Newton. La Royal Society, dove Newton pubblicò, fu fondata nello stesso decennio in cui fu firmata Vestfalia.",
       "1687→1784": "I <em>Principia</em> di Newton dimostrarono che il cosmo era matematicamente leggibile; il «sapere aude» di Kant esigeva che gli umani usassero quella prova. L'Illuminismo è la fiducia newtoniana applicata alla società: se la gravità obbedisce a leggi, perché non la politica? Kant studiò la fisica newtoniana direttamente attraverso la sistematizzazione di Christian Wolff.",
       "1687→1755": "I Principia di Newton trasformarono il cosmo in un orologio; Lisbona pose la domanda — l'orologio si cura delle creature dell'orologiaio?",
-      "1755→1784": "I saggi di Kant sul terremoto applicarono la ragione al disastro; le sue Critiche fecero esaminare la ragione a se stessa — il razionalismo, disciplinato, divenne critico."
+      "1755→1784": "I saggi di Kant sul terremoto applicarono la ragione al disastro; le sue Critiche fecero esaminare la ragione a se stessa — il razionalismo, disciplinato, divenne critico.",
+      "1784→1819": "I limiti critici kantiani divennero il muro di Schopenhauer; la ragione colpì la cieca Volontà e indietreggiò."
     },
     "modernity": {
       "1648→1889": "Vestfalia inventò lo Stato moderno; la Tour Eiffel celebrò ciò che lo Stato moderno sapeva costruire. Fra i due: l'Illuminismo, la Rivoluzione industriale, lo Stato-nazione. L'Esposizione Universale del 1889 fu la sovranità vestfaliana in festa — nazioni in competizione che si mettevano in mostra in ferro e vetro.",
@@ -144,7 +152,9 @@
       "1687→1889": "I <em>Principia</em> di Newton diedero alla modernità la fiducia che la natura obbedisse a leggi scopribili. Due secoli dopo, la Tour Eiffel era quella fiducia resa ferro — l'ingegneria come prova che gli umani potevano dominare il mondo che Newton aveva reso leggibile.",
       "1687→1922": "L'universo newtoniano era un meccanismo a orologeria; nel 1922, Einstein ne aveva curvato lo spazio e i fisici quantistici ne stavano dissolvendo le certezze. La frammentazione modernista — i miti spezzati di Eliot, i limiti silenziosi di Wittgenstein — è in parte l'eco culturale della fisica che perdeva l'elegante semplicità di Newton.",
       "1687→1755": "Newton dimostrò che la natura obbedisce alla matematica; Lisbona dimostrò che la natura non obbedisce alla morale — il disincanto della modernità si approfondì.",
-      "1755→1889": "La griglia pombalina di Lisbona impose la ragione umana al caos; per Parigi 1889, quella fiducia era diventata la Torre Eiffel — e stava già cedendo."
+      "1755→1889": "La griglia pombalina di Lisbona impose la ragione umana al caos; per Parigi 1889, quella fiducia era diventata la Torre Eiffel — e stava già cedendo.",
+      "1755→1819": "Lisbona frantumò la storia provvidenziale; i Romantici ricostruirono il senso attraverso l'arte e la Volontà.",
+      "1819→1889": "La fuga estetica di Schopenhauer; la durée di Bergson; l'affermazione di ferro della Torre Eiffel — la modernità accelera."
     },
     "stoicism": {
       "125→410": "Epitteto insegnava che il saggio si concentra solo su ciò che è in suo controllo — la cittadella interiore rimane libera anche quando gli imperi bruciano. Agostino assorbì questa intuizione stoica attraverso Cicerone e la trasformò: l'anima cristiana è la cittadella interiore, e la caduta di Roma non può minacciare ciò che non è mai stato veramente nostro. La <em>Città di Dio</em> è il distacco stoico teologizzato."
