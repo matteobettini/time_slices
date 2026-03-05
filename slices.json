@@ -504,7 +504,6 @@
     "threads": [
       "post-impressionism",
       "crisis-of-positivism",
-      "modernity",
       "death-of-god",
       "expressionism",
       "symbolism"
@@ -828,7 +827,6 @@
     },
     "threads": [
       "scholasticism",
-      "nominalism",
       "rationalism",
       "gothic-architecture",
       "vernacular-literature",
@@ -905,8 +903,7 @@
     "threads": [
       "death-of-god",
       "classical-revival",
-      "stoicism",
-      "rationalism"
+      "stoicism"
     ],
     "location": {
       "lat": 41.9028,
@@ -981,7 +978,6 @@
       "scholasticism",
       "gothic-architecture",
       "rationalism",
-      "death-of-god",
       "vernacular-literature"
     ],
     "location": {
@@ -1052,8 +1048,7 @@
     "threads": [
       "death-of-god",
       "enlightenment",
-      "rationalism",
-      "modernity"
+      "rationalism"
     ],
     "location": {
       "lat": 38.7223,
@@ -1123,7 +1118,6 @@
     "threads": [
       "german-romanticism",
       "death-of-god",
-      "rationalism",
       "modernity",
       "metaphysical-pessimism"
     ],
@@ -1198,7 +1192,6 @@
     },
     "threads": [
       "rationalism",
-      "modernity",
       "death-of-god",
       "fragmentation"
     ],

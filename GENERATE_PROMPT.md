@@ -60,6 +60,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
    - **Bad threads:** `biography`, `famous-people`, `wars`, `inventions` — generic categories, not traceable ideas
    - **Prioritize connecting to existing threads** over creating new ones. Check the summary output first.
    - **⚠️ AVOID DUPLICATE THREADS:** Don't create near-synonyms like `christian-humanism` when `renaissance-humanism` exists.
+   - **⚠️ BE RUTHLESS WITH ASSIGNMENT:** Only assign a thread if the entry's *central thesis* engages it directly — not because it "kind of relates." Ask: would someone exploring this thread be surprised not to find this entry? If the connection is incidental, don't assign it. Aim for 2-4 threads per entry.
 
 8. **Add ONE new entry** following the spec. Include:
    - City in title only if dimensions converge there; otherwise use thematic title
