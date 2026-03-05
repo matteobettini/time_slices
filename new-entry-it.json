@@ -1,0 +1,51 @@
+{
+  "year": "1848",
+  "id": "1848-europe-springtime-of-peoples",
+  "title": "Europa — La Primavera dei Popoli",
+  "teaser": "La rivoluzione dilaga in Europa. Marx pubblica il Manifesto del Partito Comunista. I Preraffaelliti si ribellano alla Royal Academy. Emily Brontë muore di tisi. Metternich fugge da Vienna. Il vecchio ordine si sgretola — e l'arte si volge verso il reale.",
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "A Londra, sette giovani artisti fondano la <strong>Confraternita dei Preraffaelliti</strong> — Hunt, Millais e Dante Gabriel Rossetti tra loro — rifiutando le convenzioni accademiche ereditate da Raffaello in favore della sincerità medievale, del colore luminoso e della fedeltà alla natura. A Parigi, l'abolizione rivoluzionaria della giuria del Salon permette a <strong>Gustave Courbet</strong> di esporre sette dipinti, lanciando la sua carriera. Quell'inverno dipinge <em>Après-dîner à Ornans</em> — una scena rurale ordinaria resa su scala monumentale. Sta nascendo il <strong>Realismo</strong>: arte che rifiuta l'idealizzazione, che mostra operai e funerali invece di dèi ed eroi. Gli eccessi emotivi del Romanticismo cedono il passo all'osservazione senza veli del presente."
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "<em>Mary Barton</em> di <strong>Elizabeth Gaskell</strong> appare — il primo grande <strong>romanzo industriale</strong>, che ritrae la sofferenza degli operai di Manchester con precisione documentaria. <strong>Emily Brontë</strong>, il cui <em>Cime tempestose</em> era apparso l'anno prima, muore di tisi il 19 dicembre a trent'anni, rifiutando cure mediche fino alle ultime ore. A Parigi, Alexandre Dumas figlio pubblica <em>La signora delle camelie</em>, la tragedia della cortigiana che diventerà <em>La Traviata</em> di Verdi. La letteratura si volge alla vita contemporanea — città industriali, consunzione, demi-monde — con una nuova coscienza sociale."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "Il 21 febbraio, tre giorni prima della rivoluzione parigina, <strong>Karl Marx</strong> e <strong>Friedrich Engels</strong> pubblicano a Londra il <em>Manifesto del Partito Comunista</em>. <em>\"La storia di ogni società esistita fino a questo momento è storia di lotte di classi.\"</em> Commissionato dalla Lega dei Comunisti, il pamphlet sintetizza il <strong>materialismo storico</strong>: l'idea che le relazioni economiche determinino la coscienza, che il capitalismo crei i propri becchini nel proletariato. L'impatto immediato è minimo — ma il testo fornisce al 1848 rivoluzionario il suo scheletro teorico. Nel frattempo, la precedente critica materialista della religione di <strong>Ludwig Feuerbach</strong> (gli umani proiettano la divinità da se stessi) continua a plasmare i <strong>Giovani Hegeliani</strong> che stanno reimmaginando la filosofia come analisi sociale."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "La <strong>Primavera dei Popoli</strong> esplode in tutta Europa. A Parigi, la <strong>rivoluzione di febbraio</strong> (22-24 febbraio) abbatte re <strong>Luigi Filippo</strong>, che abdica e fugge in Inghilterra; viene proclamata la <strong>Seconda Repubblica</strong>. A Vienna, studenti e operai costringono alle dimissioni il <strong>principe Metternich</strong> il 13 marzo — l'architetto della reazione post-napoleonica, al potere dal 1809, fugge a Londra. Le rivoluzioni travolgono gli stati tedeschi, la penisola italiana, l'Ungheria, la Boemia. Le richieste: costituzioni, autodeterminazione nazionale, fine dei privilegi feudali. Entro la fine dell'anno, la maggior parte viene repressa — ma la servitù della gleba è abolita in Austria, e l'idea che i popoli possano rifondare i loro stati non morirà."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "Le connessioni passano attraverso <strong>il malcontento dell'industrializzazione</strong>. <em>Mary Barton</em> della Gaskell ritrae lo stesso proletariato di Manchester che Marx teorizza — lei scrisse dall'osservazione diretta delle rivolte cartiste del 1842. I Preraffaelliti, rifiutando l'accademismo dell'era industriale, cercarono autenticità nell'artigianato medievale; la loro rivolta contro l'autorità estetica era parallela alle rivolte politiche contro l'autorità aristocratica. Il Realismo di Courbet e il Manifesto condividono una premessa: il mondo deve essere visto com'è realmente — lotta di classe, non mitologia — prima di poter essere cambiato. L'ondata rivoluzionaria e la rivoluzione estetica rispondevano alle stesse fabbriche, alla stessa povertà, alla stessa sensazione che le consolazioni del Romanticismo fossero diventate menzogne.",
+      "funFact": "Il Manifesto del Partito Comunista fu pubblicato a Londra il 21 febbraio 1848 — tre giorni prima della rivoluzione parigina che sembrava profetizzare. Marx ed Engels lo avevano terminato in gennaio. La tempistica era una coincidenza, ma creò il mito che la teoria avesse preceduto la pratica."
+    }
+  },
+  "sources": [
+    { "url": "https://it.wikipedia.org/wiki/Primavera_dei_popoli", "title": "Primavera dei popoli - Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Manifesto_del_Partito_Comunista", "title": "Manifesto del Partito Comunista - Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Preraffaelliti", "title": "Preraffaelliti - Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Gustave_Courbet", "title": "Gustave Courbet - Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Mary_Barton", "title": "Mary Barton - Wikipedia" }
+  ],
+  "image": {
+    "url": "images/1848-europe-springtime-of-peoples.jpg",
+    "alt": "Dagherrotipo della barricata in Rue Saint-Maur-Popincourt, Parigi, 25 giugno 1848",
+    "width": 1200,
+    "height": 924,
+    "caption": "La barricata di Rue Saint-Maur-Popincourt prima dell'attacco, 25 giugno 1848",
+    "attribution": "Charles-François Thibault, dagherrotipo, pubblico dominio, via Wikimedia Commons"
+  },
+  "threads": ["rationalism", "modernity", "death-of-god", "fragmentation"],
+  "location": {
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "place": "Parigi"
+  },
+  "addedDate": "2026-03-05T06:00:00Z"
+}

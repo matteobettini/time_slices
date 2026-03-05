@@ -1137,5 +1137,80 @@
       "url": "audio/1819-germany-will-and-fog.mp3",
       "duration": 179
     }
+  },
+  {
+    "year": "1848",
+    "id": "1848-europe-springtime-of-peoples",
+    "title": "Europe — The Springtime of Peoples",
+    "teaser": "Revolution sweeps Europe. Marx publishes the Communist Manifesto. The Pre-Raphaelites rebel against the Royal Academy. Emily Brontë dies of consumption. Metternich flees Vienna. The old order cracks — and art turns toward the real.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "In London, seven young artists found the <strong>Pre-Raphaelite Brotherhood</strong> — Hunt, Millais, and Dante Gabriel Rossetti among them — rejecting the academic conventions descended from Raphael in favor of medieval sincerity, luminous color, and truth to nature. In Paris, the revolutionary abolition of the Salon jury allows <strong>Gustave Courbet</strong> to exhibit seven paintings, launching his career. He paints <em>After Dinner at Ornans</em> that winter — an ordinary rural scene rendered on a monumental scale. <strong>Realism</strong> is being born: art that refuses to idealize, that shows workers and funerals instead of gods and heroes. Romanticism's emotional excesses are yielding to unflinching observation of the present."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Elizabeth Gaskell</strong>'s <em>Mary Barton</em> appears — the first great <strong>industrial novel</strong>, depicting Manchester workers' suffering with documentary precision. <strong>Emily Brontë</strong>, whose <em>Wuthering Heights</em> had appeared the year before, dies of tuberculosis on December 19th at age thirty, refusing medical help until her final hours. In Paris, Alexandre Dumas fils publishes <em>La Dame aux Camélias</em>, the courtesan tragedy that will become Verdi's <em>La Traviata</em>. Literature is turning to contemporary life — mill towns, consumption, the demimonde — with a new social conscience."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "On February 21st, three days before the Paris revolution, <strong>Karl Marx</strong> and <strong>Friedrich Engels</strong> publish the <em>Communist Manifesto</em> in London. <em>\"The history of all hitherto existing society is the history of class struggles.\"</em> Commissioned by the Communist League, the pamphlet synthesizes <strong>historical materialism</strong>: the idea that economic relations determine consciousness, that capitalism creates its own gravediggers in the proletariat. The immediate impact is minimal — but the text provides revolutionary 1848 with its theoretical skeleton. Meanwhile, <strong>Ludwig Feuerbach</strong>'s earlier materialist critique of religion (humans project divinity from themselves) continues shaping the <strong>Young Hegelians</strong> who are reimagining philosophy as social analysis."
+      },
+      "hist": {
+        "label": "History",
+        "content": "The <strong>Springtime of Peoples</strong> erupts across Europe. In Paris, the <strong>February Revolution</strong> (February 22–24) topples King <strong>Louis Philippe</strong>, who abdicates and flees to England; the <strong>Second Republic</strong> is proclaimed. In Vienna, students and workers force the resignation of <strong>Prince Metternich</strong> on March 13th — the architect of post-Napoleonic reaction, in power since 1809, escapes to London. Revolutions sweep the German states, the Italian peninsula, Hungary, Bohemia. The demands: constitutions, national self-determination, the end of feudal privileges. By year's end, most are crushed — but serfdom is abolished in Austria, and the idea that peoples can remake their states will not die."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The connections run through <strong>industrialization's discontents</strong>. Gaskell's <em>Mary Barton</em> depicts the same Manchester proletariat Marx theorizes — she wrote from direct observation of the 1842 Chartist uprisings. The Pre-Raphaelites, rejecting industrial-age academicism, sought authenticity in medieval craft; their revolt against aesthetic authority paralleled the political revolts against aristocratic authority. Courbet's Realism and the Manifesto share a premise: the world must be seen as it actually is — class struggle, not mythology — before it can be changed. The revolutionary wave and the aesthetic revolution responded to the same factories, the same poverty, the same sense that Romanticism's consolations had become lies.",
+        "funFact": "The Communist Manifesto was published in London on February 21st, 1848 — three days before the Paris revolution it seemed to prophesy. Marx and Engels had finished writing it in January. The timing was coincidence, but it created the myth that theory had preceded practice."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Revolutions_of_1848",
+        "title": "Revolutions of 1848 - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Communist_Manifesto",
+        "title": "The Communist Manifesto - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Pre-Raphaelite_Brotherhood",
+        "title": "Pre-Raphaelite Brotherhood - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Gustave_Courbet",
+        "title": "Gustave Courbet - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Mary_Barton",
+        "title": "Mary Barton - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1848-europe-springtime-of-peoples.jpg",
+      "alt": "Daguerreotype of the barricade on Rue Saint-Maur-Popincourt, Paris, June 25, 1848",
+      "width": 1200,
+      "height": 924,
+      "caption": "The barricade on Rue Saint-Maur-Popincourt before the attack, June 25, 1848",
+      "attribution": "Charles-François Thibault, daguerreotype, public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "rationalism",
+      "modernity",
+      "death-of-god",
+      "fragmentation"
+    ],
+    "location": {
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "place": "Paris"
+    },
+    "addedDate": "2026-03-05T06:00:00Z",
+    "podcast": {
+      "url": "audio/1848-europe-springtime-of-peoples.mp3",
+      "duration": 197
+    }
   }
 ]

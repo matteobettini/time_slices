@@ -16,7 +16,9 @@
       "1648→1755": "Westphalia's exhausted peace had bracketed God; Lisbon's earthquake shattered the bracket — theodicy died under the rubble.",
       "1755→1889": "What Lisbon's earthquake began, Nietzsche's madman completed — God's corpse, first glimpsed in the rubble, was finally declared.",
       "1755→1819": "Voltaire's Lisbon critique cracked theodicy; Schopenhauer drove a metaphysical stake through optimism itself.",
-      "1819→1889": "Schopenhauer's blind Will haunted Wagner's operas; Nietzsche inherited the diagnosis and prescribed Dionysus."
+      "1819→1889": "Schopenhauer's blind Will haunted Wagner's operas; Nietzsche inherited the diagnosis and prescribed Dionysus.",
+      "1819→1848": "Schopenhauer's blind will becomes Marx's material forces — both reject divine purpose, but Marx adds the possibility of human-made redemption through revolution.",
+      "1848→1889": "Marx's critique of religion as opiate of the people sets the stage for Nietzsche's announcement: God is dead, and we have killed him — but what will replace the void?"
     },
     "rationalism": {
       "-431→125": "Anaxagoras argued that a rational principle (<em>Nous</em>) governed the cosmos rather than the caprice of gods. Five centuries later, the Stoics — working from this same Greek rationalist tradition, filtered through Aristotle and the early Stoa — taught that the universe was structured by <em>logos</em>, a rational order accessible to human reason. Epictetus, teaching in Nicopolis around 125 CE, inherited this lineage directly: Stoicism emerged from the Athenian philosophical milieu that Anaxagoras helped create, passed through Zeno of Citium (who studied at Plato's Academy) and Chrysippus. The Pantheon's mathematical perfection — its dome a geometrically exact hemisphere — is this rationalist conviction expressed in built form.",
@@ -37,7 +39,8 @@
       "1687→1784": "Newton's <em>Principia</em> proved the cosmos was mathematically legible; Kant's \"dare to know\" demanded humans use that proof. The Enlightenment is Newtonian confidence applied to society: if gravity obeys laws, why not politics? Kant studied Newtonian physics directly through Christian Wolff's systematisation.",
       "1687→1755": "Newton's Principia made the cosmos a clockwork; Lisbon forced the question — does the clock care about the clockmaker's creatures?",
       "1755→1784": "Kant's earthquake essays applied reason to disaster; his Critiques made reason examine itself — rationalism, chastened, became critical.",
-      "1784→1819": "Kant's critical limits became Schopenhauer's wall; reason hit the blind Will and recoiled."
+      "1784→1819": "Kant's critical limits became Schopenhauer's wall; reason hit the blind Will and recoiled.",
+      "1819→1848": "Schopenhauer's irrational Will challenged Enlightenment reason; Marx redirects rationalism toward material analysis — reason not as contemplation but as revolutionary tool."
     },
     "modernity": {
       "1648→1889": "Westphalia invented the modern state; the Eiffel Tower celebrated what the modern state could build. Between them: the Enlightenment, the Industrial Revolution, the nation-state. The 1889 World's Fair was Westphalian sovereignty made festive — competing nations showing off in iron and glass.",
@@ -47,13 +50,17 @@
       "1687→1755": "Newton proved nature obeys mathematics; Lisbon proved nature does not obey morality — modernity's disenchantment deepened.",
       "1755→1889": "Lisbon's Pombaline grid imposed human reason on chaos; by Paris 1889, that confidence had become the Eiffel Tower — and was already cracking.",
       "1755→1819": "Lisbon shattered providential history; the Romantics rebuilt meaning through art and Will.",
-      "1819→1889": "Schopenhauer's aesthetic escape; Bergson's durée; the Eiffel Tower's iron assertion — modernity accelerates."
+      "1819→1889": "Schopenhauer's aesthetic escape; Bergson's durée; the Eiffel Tower's iron assertion — modernity accelerates.",
+      "1819→1848": "Schopenhauer's pessimism reveals the dark side of progress; forty years later, the revolutions and the Manifesto make modernity a political project — not just diagnosis but action.",
+      "1848→1889": "The failed 1848 revolutions don't stop modernization — they accelerate it. Realpolitik, industrial capitalism, and Realism in art proceed without revolutionary romance."
     },
     "stoicism": {
       "125→410": "Epictetus taught that the wise person focuses only on what lies within their control — the inner citadel remains free even when empires burn. Augustine absorbed this Stoic insight through Cicero and transformed it: the Christian soul is the inner citadel, and Rome's fall cannot threaten what was never truly ours. The <em>City of God</em> is Stoic detachment theologised."
     },
     "fragmentation": {
-      "1347→1922": "The plague shattered medieval unity — Church authority, feudal order, demographic stability, all broken at once. Six centuries later, modernism made fragmentation into an art form, shattering narrative, painting, and language with the same democratic indifference."
+      "1347→1922": "The plague shattered medieval unity — Church authority, feudal order, demographic stability, all broken at once. Six centuries later, modernism made fragmentation into an art form, shattering narrative, painting, and language with the same democratic indifference.",
+      "1347→1848": "Five centuries of accumulated crises — plague, Reformation, wars of religion, industrialization — shatter the remaining unity. In 1848, Christendom finally cracks along class lines.",
+      "1848→1922": "The failed revolutions fragment further: nationalism, socialism, and liberalism become competing salvations. By 1922, the pieces no longer fit any whole."
     },
     "classical-revival": {
       "-431→125": "Rome absorbed Greek art not as imitation but as imperial inheritance. The Parthenon expressed democratic Athens's civic ideals through mathematical proportion; Hadrian's Pantheon translated the same mathematical ambition — dome diameter equalling height, a perfect hemisphere — into the language of imperial universality. The transmission was direct: Roman architects studied Greek buildings firsthand, and Hadrian's Villa at Tivoli explicitly recreated Greek structures (the Stoa Poikile, the Vale of Tempe). Meanwhile, Plutarch's <em>Parallel Lives</em> provided the intellectual framework — Greek and Roman exemplars compared side by side, the classical tradition understood as a living inheritance rather than a lost age.",
@@ -123,7 +130,9 @@
       "1648→1755": "La pace esausta di Vestfalia aveva messo Dio tra parentesi; il terremoto di Lisbona frantumò la parentesi — la teodicea morì sotto le macerie.",
       "1755→1889": "Ciò che il terremoto di Lisbona aveva iniziato, il folle di Nietzsche lo completò — il cadavere di Dio, intravisto per la prima volta tra le macerie, fu finalmente dichiarato.",
       "1755→1819": "La critica di Voltaire al terremoto di Lisbona incrinò la teodicea; Schopenhauer conficcò un paletto metafisico nell'ottimismo stesso.",
-      "1819→1889": "La cieca Volontà di Schopenhauer perseguitò le opere di Wagner; Nietzsche ereditò la diagnosi e prescrisse Dioniso."
+      "1819→1889": "La cieca Volontà di Schopenhauer perseguitò le opere di Wagner; Nietzsche ereditò la diagnosi e prescrisse Dioniso.",
+      "1819→1848": "La cieca volontà di Schopenhauer diventa le forze materiali di Marx — entrambi rifiutano il proposito divino, ma Marx aggiunge la possibilità di redenzione umana attraverso la rivoluzione.",
+      "1848→1889": "La critica di Marx alla religione come oppio dei popoli prepara il terreno per l'annuncio di Nietzsche: Dio è morto, e noi lo abbiamo ucciso — ma cosa riempirà il vuoto?"
     },
     "rationalism": {
       "-431→125": "Anassagora sosteneva che un principio razionale (<em>Nous</em>) governasse il cosmo piuttosto che il capriccio degli dei. Cinque secoli dopo, gli Stoici — partendo dalla stessa tradizione razionalista greca, filtrata attraverso Aristotele e la prima Stoa — insegnavano che l'universo era strutturato dal <em>logos</em>, un ordine razionale accessibile alla ragione umana. Epitteto, che insegnava a Nicopoli intorno al 125 d.C., ereditava direttamente questa genealogia: lo stoicismo emerse dall'ambiente filosofico ateniese che Anassagora contribuì a creare, passando attraverso Zenone di Cizio (che studiò all'Accademia di Platone) e Crisippo. La perfezione matematica del Pantheon — la cupola come emisfero geometricamente esatto — è questa convinzione razionalista espressa in forma costruita.",
@@ -144,7 +153,8 @@
       "1687→1784": "I <em>Principia</em> di Newton dimostrarono che il cosmo era matematicamente leggibile; il «sapere aude» di Kant esigeva che gli umani usassero quella prova. L'Illuminismo è la fiducia newtoniana applicata alla società: se la gravità obbedisce a leggi, perché non la politica? Kant studiò la fisica newtoniana direttamente attraverso la sistematizzazione di Christian Wolff.",
       "1687→1755": "I Principia di Newton trasformarono il cosmo in un orologio; Lisbona pose la domanda — l'orologio si cura delle creature dell'orologiaio?",
       "1755→1784": "I saggi di Kant sul terremoto applicarono la ragione al disastro; le sue Critiche fecero esaminare la ragione a se stessa — il razionalismo, disciplinato, divenne critico.",
-      "1784→1819": "I limiti critici kantiani divennero il muro di Schopenhauer; la ragione colpì la cieca Volontà e indietreggiò."
+      "1784→1819": "I limiti critici kantiani divennero il muro di Schopenhauer; la ragione colpì la cieca Volontà e indietreggiò.",
+      "1819→1848": "L'irrazionale Volontà di Schopenhauer sfidò la ragione illuministica; Marx reindirizza il razionalismo verso l'analisi materiale — la ragione non come contemplazione ma come strumento rivoluzionario."
     },
     "modernity": {
       "1648→1889": "Vestfalia inventò lo Stato moderno; la Tour Eiffel celebrò ciò che lo Stato moderno sapeva costruire. Fra i due: l'Illuminismo, la Rivoluzione industriale, lo Stato-nazione. L'Esposizione Universale del 1889 fu la sovranità vestfaliana in festa — nazioni in competizione che si mettevano in mostra in ferro e vetro.",
@@ -154,13 +164,17 @@
       "1687→1755": "Newton dimostrò che la natura obbedisce alla matematica; Lisbona dimostrò che la natura non obbedisce alla morale — il disincanto della modernità si approfondì.",
       "1755→1889": "La griglia pombalina di Lisbona impose la ragione umana al caos; per Parigi 1889, quella fiducia era diventata la Torre Eiffel — e stava già cedendo.",
       "1755→1819": "Lisbona frantumò la storia provvidenziale; i Romantici ricostruirono il senso attraverso l'arte e la Volontà.",
-      "1819→1889": "La fuga estetica di Schopenhauer; la durée di Bergson; l'affermazione di ferro della Torre Eiffel — la modernità accelera."
+      "1819→1889": "La fuga estetica di Schopenhauer; la durée di Bergson; l'affermazione di ferro della Torre Eiffel — la modernità accelera.",
+      "1819→1848": "Il pessimismo di Schopenhauer rivela il lato oscuro del progresso; quarant'anni dopo, le rivoluzioni e il Manifesto fanno della modernità un progetto politico — non solo diagnosi ma azione.",
+      "1848→1889": "Le rivoluzioni fallite del 1848 non fermano la modernizzazione — la accelerano. Realpolitik, capitalismo industriale e Realismo nell'arte procedono senza romanticismo rivoluzionario."
     },
     "stoicism": {
       "125→410": "Epitteto insegnava che il saggio si concentra solo su ciò che è in suo controllo — la cittadella interiore rimane libera anche quando gli imperi bruciano. Agostino assorbì questa intuizione stoica attraverso Cicerone e la trasformò: l'anima cristiana è la cittadella interiore, e la caduta di Roma non può minacciare ciò che non è mai stato veramente nostro. La <em>Città di Dio</em> è il distacco stoico teologizzato."
     },
     "fragmentation": {
-      "1347→1922": "La peste frantumò l'unità medievale — autorità della Chiesa, ordine feudale, stabilità demografica, tutto spezzato in una volta. Sei secoli dopo, il modernismo fece della frammentazione una forma d'arte, frantumando narrazione, pittura e linguaggio con la stessa democratica indifferenza."
+      "1347→1922": "La peste frantumò l'unità medievale — autorità della Chiesa, ordine feudale, stabilità demografica, tutto spezzato in una volta. Sei secoli dopo, il modernismo fece della frammentazione una forma d'arte, frantumando narrazione, pittura e linguaggio con la stessa democratica indifferenza.",
+      "1347→1848": "Cinque secoli di crisi accumulate — peste, Riforma, guerre di religione, industrializzazione — frantumano la restante unità. Nel 1848, la Cristianità si spacca definitivamente lungo linee di classe.",
+      "1848→1922": "Le rivoluzioni fallite frammentano ulteriormente: nazionalismo, socialismo e liberalismo diventano salvezze in competizione. Nel 1922, i pezzi non formano più alcun insieme."
     },
     "classical-revival": {
       "-431→125": "Roma assorbì l'arte greca non come imitazione ma come eredità imperiale. Il Partenone esprimeva gli ideali civici dell'Atene democratica attraverso la proporzione matematica; il Pantheon di Adriano tradusse la stessa ambizione matematica — diametro della cupola pari all'altezza, un emisfero perfetto — nel linguaggio dell'universalità imperiale. La trasmissione fu diretta: gli architetti romani studiavano gli edifici greci dal vero, e la Villa Adriana a Tivoli ricreava esplicitamente strutture greche (la Stoà Pecile, la Valle di Tempe). Intanto, le <em>Vite parallele</em> di Plutarco fornivano la cornice intellettuale — esemplari greci e romani a confronto, la tradizione classica intesa come eredità viva piuttosto che come epoca perduta.",
