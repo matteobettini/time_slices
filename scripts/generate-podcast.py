@@ -497,7 +497,10 @@ def mix_audio(narration_path, music_path, output_path, narration_duration, start
         f"volume=enable='between(t,{intro_duration},{voice_end_time})':volume=0.57,"
         f"afade=t=out:st={total_duration - 2.5}:d=2.5"
         f"[music];"
-        f"[0:a]adelay={voice_start_ms}|{voice_start_ms}[voice];"
+        # Process voice: normalize loudness, then compress to even out quiet/loud passages
+        f"[0:a]loudnorm=I=-14:TP=-1.5:LRA=7,"
+        f"acompressor=threshold=-20dB:ratio=4:attack=5:release=50:makeup=2,"
+        f"adelay={voice_start_ms}|{voice_start_ms}[voice];"
         f"[music][voice]amix=inputs=2:duration=longest:dropout_transition=2:normalize=0[mixed];"
         f"[mixed]loudnorm=I=-16:TP=-1.5:LRA=11[out]"
     )
