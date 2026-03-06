@@ -14,7 +14,9 @@
       "1755→1819": "Voltaire's Lisbon critique cracked theodicy; Schopenhauer drove a metaphysical stake through optimism itself.",
       "1819→1889": "Schopenhauer's blind Will haunted Wagner's operas; Nietzsche inherited the diagnosis and prescribed Dionysus.",
       "1819→1848": "Schopenhauer's blind will becomes Marx's material forces — both reject divine purpose, but Marx adds the possibility of human-made redemption through revolution.",
-      "1848→1889": "Marx's critique of religion as opiate of the people sets the stage for Nietzsche's announcement: God is dead, and we have killed him — but what will replace the void?"
+      "1848→1889": "Marx's critique of religion as opiate of the people sets the stage for Nietzsche's announcement: God is dead, and we have killed him — but what will replace the void?",
+      "1347→1600": "The Black Death shattered confidence in providence; two centuries later, Bruno's infinite cosmos made the heavens indifferent, not merely punishing.",
+      "1600→1648": "Bruno burned for cosmic heresy; the Thirty Years' War would make Christians burn each other for lesser doctrinal differences, exhausting religious certainty."
     },
     "rationalism": {
       "-431→125": "Anaxagoras argued that a rational principle (<em>Nous</em>) governed the cosmos rather than the caprice of gods. Five centuries later, the Stoics — working from this same Greek rationalist tradition, filtered through Aristotle and the early Stoa — taught that the universe was structured by <em>logos</em>, a rational order accessible to human reason. Epictetus, teaching in Nicopolis around 125 CE, inherited this lineage directly: Stoicism emerged from the Athenian philosophical milieu that Anaxagoras helped create, passed through Zeno of Citium (who studied at Plato's Academy) and Chrysippus. The Pantheon's mathematical perfection — its dome a geometrically exact hemisphere — is this rationalist conviction expressed in built form.",
@@ -32,11 +34,16 @@
       "1648→1687": "Descartes' <em>cogito</em> rebuilt certainty from doubt; Newton's <em>Principia</em> rebuilt the cosmos from mathematics. Locke — who met Newton in 1689 — combined both projects: empiricism as the theory of mind that matched Newton's physics. The Royal Society, where Newton published, was founded in the same decade Westphalia was signed.",
       "1687→1784": "Newton's <em>Principia</em> proved the cosmos was mathematically legible; Kant's \"dare to know\" demanded humans use that proof. The Enlightenment is Newtonian confidence applied to society: if gravity obeys laws, why not politics? Kant studied Newtonian physics directly through Christian Wolff's systematisation.",
       "1687→1755": "Newton's Principia made the cosmos a clockwork; Lisbon forced the question — does the clock care about the clockmaker's creatures?",
-      "1755→1784": "Kant's earthquake essays applied reason to disaster; his Critiques made reason examine itself — rationalism, chastened, became critical."
+      "1755→1784": "Kant's earthquake essays applied reason to disaster; his Critiques made reason examine itself — rationalism, chastened, became critical.",
+      "1274→1600": "Aquinas and Bonaventure's scholastic syntheses gave reason a divine mandate; Bruno inverted the logic — reason demanded an infinite God, which demanded an infinite cosmos.",
+      "1600→1648": "Bruno's pantheistic cosmos and Gilbert's magnetic Earth: reason could now explain forces without invoking angels. Descartes would systematise this during the war.",
+      "1784→1848": "Kant declared reason sovereign but bounded; by 1848, the masses used those same rational arguments to demand sovereignty for themselves."
     },
     "modernity": {
       "1648→1687": "Westphalia resolved religious conflict through sovereignty; Newton resolved cosmological conflict through mathematics. Both substituted divine authority with systems humans could operate. The modern world's dual foundations — the nation-state and mathematical physics — were laid within four decades.",
-      "1687→1922": "The Newtonian universe was a clockwork mechanism; by 1922, Einstein had bent its space and the quantum physicists were dissolving its certainties. Modernism's fragmentation — Eliot's broken myths, Wittgenstein's silent limits — is partly the cultural echo of physics losing Newton's elegant simplicity."
+      "1687→1922": "The Newtonian universe was a clockwork mechanism; by 1922, Einstein had bent its space and the quantum physicists were dissolving its certainties. Modernism's fragmentation — Eliot's broken myths, Wittgenstein's silent limits — is partly the cultural echo of physics losing Newton's elegant simplicity.",
+      "1600→1648": "Gilbert's experimental method and the East India Company's charter: science and capital begin their joint conquest of the world, accelerating through the peace.",
+      "1687→1819": "Newton's laws made the cosmos a clockwork; Schopenhauer asked who wound it, finding only blind Will — mechanism without purpose."
     },
     "stoicism": {
       "125→410": "Epictetus taught that the wise person focuses only on what lies within their control — the inner citadel remains free even when empires burn. Augustine absorbed this Stoic insight through Cicero and transformed it: the Christian soul is the inner citadel, and Rome's fall cannot threaten what was never truly ours. The <em>City of God</em> is Stoic detachment theologised."
@@ -93,6 +100,9 @@
       "1141→1347": "Abelard and Héloïse exchanged letters in Latin, but their story spread in the vernacular. Two centuries later, Boccaccio wrote the <em>Decameron</em> in Tuscan Italian — plague survivors telling tales in the language of the street, not the cloister. The shift from Latin to vernacular was also a shift in audience: from clergy to merchants, from eternal truths to mortal pleasures.",
       "1141→1274": "Abelard and Héloïse wrote in Latin, but their legend spread in the vernacular. By 1274, Dante was nine years old in Florence, about to see Beatrice — the encounter that would produce the <em>Vita Nuova</em> and eventually the <em>Commedia</em>, the work that made Italian a literary language. The troubadour tradition was already a century old, courtly love poetry circulating in Occitan and Old French.",
       "1274→1347": "Dante saw Beatrice the year Aquinas died; by 1347, when the plague arrived, the <em>Decameron</em> would be written in response. The trajectory is clear: from Latin scholasticism to Italian storytelling, from divine synthesis to human survival. Boccaccio's Tuscan prose descends directly from Dante's experiments."
+    },
+    "baroque": {
+      "1600→1648": "Caravaggio's tenebrism spreads through Europe via his imitators; by Westphalia, the Baroque has become the visual language of Catholic and Protestant power alike."
     }
   },
   "it": {
@@ -110,7 +120,9 @@
       "1755→1819": "La critica di Voltaire al terremoto di Lisbona incrinò la teodicea; Schopenhauer conficcò un paletto metafisico nell'ottimismo stesso.",
       "1819→1889": "La cieca Volontà di Schopenhauer perseguitò le opere di Wagner; Nietzsche ereditò la diagnosi e prescrisse Dioniso.",
       "1819→1848": "La cieca volontà di Schopenhauer diventa le forze materiali di Marx — entrambi rifiutano il proposito divino, ma Marx aggiunge la possibilità di redenzione umana attraverso la rivoluzione.",
-      "1848→1889": "La critica di Marx alla religione come oppio dei popoli prepara il terreno per l'annuncio di Nietzsche: Dio è morto, e noi lo abbiamo ucciso — ma cosa riempirà il vuoto?"
+      "1848→1889": "La critica di Marx alla religione come oppio dei popoli prepara il terreno per l'annuncio di Nietzsche: Dio è morto, e noi lo abbiamo ucciso — ma cosa riempirà il vuoto?",
+      "1347→1600": "La Peste Nera frantumò la fiducia nella provvidenza; due secoli dopo, il cosmo infinito di Bruno rese i cieli indifferenti, non solo punitivi.",
+      "1600→1648": "Bruno bruciò per eresia cosmica; la Guerra dei Trent'anni avrebbe fatto bruciare cristiani tra loro per differenze dottrinali minori, esaurendo la certezza religiosa."
     },
     "rationalism": {
       "-431→125": "Anassagora sosteneva che un principio razionale (<em>Nous</em>) governasse il cosmo piuttosto che il capriccio degli dei. Cinque secoli dopo, gli Stoici — partendo dalla stessa tradizione razionalista greca, filtrata attraverso Aristotele e la prima Stoa — insegnavano che l'universo era strutturato dal <em>logos</em>, un ordine razionale accessibile alla ragione umana. Epitteto, che insegnava a Nicopoli intorno al 125 d.C., ereditava direttamente questa genealogia: lo stoicismo emerse dall'ambiente filosofico ateniese che Anassagora contribuì a creare, passando attraverso Zenone di Cizio (che studiò all'Accademia di Platone) e Crisippo. La perfezione matematica del Pantheon — la cupola come emisfero geometricamente esatto — è questa convinzione razionalista espressa in forma costruita.",
@@ -128,11 +140,16 @@
       "1648→1687": "Il <em>cogito</em> di Cartesio ricostruì la certezza dal dubbio; i <em>Principia</em> di Newton ricostruirono il cosmo dalla matematica. Locke — che incontrò Newton nel 1689 — combinò entrambi i progetti: l'empirismo come teoria della mente che si abbinava alla fisica di Newton. La Royal Society, dove Newton pubblicò, fu fondata nello stesso decennio in cui fu firmata Vestfalia.",
       "1687→1784": "I <em>Principia</em> di Newton dimostrarono che il cosmo era matematicamente leggibile; il «sapere aude» di Kant esigeva che gli umani usassero quella prova. L'Illuminismo è la fiducia newtoniana applicata alla società: se la gravità obbedisce a leggi, perché non la politica? Kant studiò la fisica newtoniana direttamente attraverso la sistematizzazione di Christian Wolff.",
       "1687→1755": "I Principia di Newton trasformarono il cosmo in un orologio; Lisbona pose la domanda — l'orologio si cura delle creature dell'orologiaio?",
-      "1755→1784": "I saggi di Kant sul terremoto applicarono la ragione al disastro; le sue Critiche fecero esaminare la ragione a se stessa — il razionalismo, disciplinato, divenne critico."
+      "1755→1784": "I saggi di Kant sul terremoto applicarono la ragione al disastro; le sue Critiche fecero esaminare la ragione a se stessa — il razionalismo, disciplinato, divenne critico.",
+      "1274→1600": "Le sintesi scolastiche di Tommaso e Bonaventura diedero alla ragione un mandato divino; Bruno invertì la logica — la ragione esigeva un Dio infinito, che esigeva un cosmo infinito.",
+      "1600→1648": "Il cosmo panteistico di Bruno e la Terra magnetica di Gilbert: la ragione poteva ora spiegare le forze senza invocare angeli. Cartesio avrebbe sistematizzato questo durante la guerra.",
+      "1784→1848": "Kant dichiarò la ragione sovrana ma limitata; nel 1848, le masse usarono quegli stessi argomenti razionali per reclamare la sovranità per sé."
     },
     "modernity": {
       "1648→1687": "Vestfalia risolse il conflitto religioso attraverso la sovranità; Newton risolse il conflitto cosmologico attraverso la matematica. Entrambi sostituirono l'autorità divina con sistemi che gli umani potevano gestire. Le doppie fondamenta del mondo moderno — lo Stato-nazione e la fisica matematica — furono gettate nel giro di quattro decenni.",
-      "1687→1922": "L'universo newtoniano era un meccanismo a orologeria; nel 1922, Einstein ne aveva curvato lo spazio e i fisici quantistici ne stavano dissolvendo le certezze. La frammentazione modernista — i miti spezzati di Eliot, i limiti silenziosi di Wittgenstein — è in parte l'eco culturale della fisica che perdeva l'elegante semplicità di Newton."
+      "1687→1922": "L'universo newtoniano era un meccanismo a orologeria; nel 1922, Einstein ne aveva curvato lo spazio e i fisici quantistici ne stavano dissolvendo le certezze. La frammentazione modernista — i miti spezzati di Eliot, i limiti silenziosi di Wittgenstein — è in parte l'eco culturale della fisica che perdeva l'elegante semplicità di Newton.",
+      "1600→1648": "Il metodo sperimentale di Gilbert e lo statuto della Compagnia delle Indie: scienza e capitale iniziano la loro conquista congiunta del mondo, accelerando attraverso la pace.",
+      "1687→1819": "Le leggi di Newton resero il cosmo un orologio; Schopenhauer chiese chi lo avesse caricato, trovando solo la cieca Volontà — meccanismo senza scopo."
     },
     "stoicism": {
       "125→410": "Epitteto insegnava che il saggio si concentra solo su ciò che è in suo controllo — la cittadella interiore rimane libera anche quando gli imperi bruciano. Agostino assorbì questa intuizione stoica attraverso Cicerone e la trasformò: l'anima cristiana è la cittadella interiore, e la caduta di Roma non può minacciare ciò che non è mai stato veramente nostro. La <em>Città di Dio</em> è il distacco stoico teologizzato."
@@ -189,6 +206,9 @@
       "1141→1347": "Abelardo ed Eloisa si scambiarono lettere in latino, ma la loro storia si diffuse in volgare. Due secoli dopo, Boccaccio scrisse il <em>Decameron</em> in toscano — sopravvissuti alla peste che raccontano storie nella lingua della strada, non del chiostro. Il passaggio dal latino al volgare fu anche un passaggio di pubblico: dal clero ai mercanti, dalle verità eterne ai piaceri mortali.",
       "1141→1274": "Abelardo ed Eloisa scrissero in latino, ma la loro leggenda si diffuse in volgare. Nel 1274, Dante aveva nove anni a Firenze, prossimo a vedere Beatrice — l'incontro che avrebbe prodotto la <em>Vita Nuova</em> e infine la <em>Commedia</em>, l'opera che fece dell'italiano una lingua letteraria. La tradizione trobadorica aveva già un secolo, con la poesia dell'amor cortese che circolava in occitano e francese antico.",
       "1274→1347": "Dante vide Beatrice l'anno della morte di Tommaso; nel 1347, quando arrivò la peste, il <em>Decameron</em> sarebbe stato scritto in risposta. La traiettoria è chiara: dalla scolastica latina alla narrativa italiana, dalla sintesi divina alla sopravvivenza umana. La prosa toscana di Boccaccio discende direttamente dagli esperimenti di Dante."
+    },
+    "baroque": {
+      "1600→1648": "Il tenebrismo di Caravaggio si diffonde in Europa attraverso i suoi imitatori; a Westfalia, il Barocco è diventato il linguaggio visivo del potere cattolico e protestante."
     }
   }
 }

@@ -1,51 +1,51 @@
 {
-  "year": "1848",
-  "id": "1848-europe-springtime-of-peoples",
-  "title": "Europe — The Springtime of Peoples",
-  "teaser": "Revolution sweeps Europe. Marx publishes the Communist Manifesto. The Pre-Raphaelites rebel against the Royal Academy. Emily Brontë dies of consumption. Metternich flees Vienna. The old order cracks — and art turns toward the real.",
+  "year": "1600",
+  "id": "1600-rome-fire-and-shadow",
+  "title": "Rome — Fire and Shadow",
+  "teaser": "Giordano Bruno burns at the stake for imagining infinite worlds. Caravaggio paints saints in shadow. Shakespeare's Hamlet asks the oldest question. The century turns — and with it, the universe expands beyond all limits.",
   "dimensions": {
     "art": {
       "label": "Art",
-      "content": "In London, seven young artists found the <strong>Pre-Raphaelite Brotherhood</strong> — Hunt, Millais, and Dante Gabriel Rossetti among them — rejecting the academic conventions descended from Raphael in favor of medieval sincerity, luminous color, and truth to nature. In Paris, the revolutionary abolition of the Salon jury allows <strong>Gustave Courbet</strong> to exhibit seven paintings, launching his career. He paints <em>After Dinner at Ornans</em> that winter — an ordinary rural scene rendered on a monumental scale. <strong>Realism</strong> is being born: art that refuses to idealize, that shows workers and funerals instead of gods and heroes. Romanticism's emotional excesses are yielding to unflinching observation of the present."
+      "content": "<strong>Caravaggio</strong> has just completed his Contarelli Chapel commission — <em>The Calling of Saint Matthew</em> and <em>The Martyrdom of Saint Matthew</em> (1599–1600) — and is revolutionising European painting. His <strong>tenebrism</strong>, the dramatic contrast of light against deep darkness, becomes the visual language of the <strong>Counter-Reformation</strong>. Where Renaissance masters sought ideal beauty, Caravaggio uses Roman street people as models: the dirty feet of pilgrims, the weathered hands of labourers. The Church wants art that moves the faithful emotionally — and Caravaggio delivers visceral immediacy. Meanwhile in Florence, the <strong>Mannerist</strong> style is fading; Caravaggio's naturalism points toward the full flowering of <strong>Baroque</strong>."
     },
     "lit": {
       "label": "Literature",
-      "content": "<strong>Elizabeth Gaskell</strong>'s <em>Mary Barton</em> appears — the first great <strong>industrial novel</strong>, depicting Manchester workers' suffering with documentary precision. <strong>Emily Brontë</strong>, whose <em>Wuthering Heights</em> had appeared the year before, dies of tuberculosis on December 19th at age thirty, refusing medical help until her final hours. In Paris, Alexandre Dumas fils publishes <em>La Dame aux Camélias</em>, the courtesan tragedy that will become Verdi's <em>La Traviata</em>. Literature is turning to contemporary life — mill towns, consumption, the demimonde — with a new social conscience."
+      "content": "In London, <strong>William Shakespeare</strong> is composing <em>Hamlet</em> (c. 1599–1601), the tragedy that will define Western literature's engagement with interiority and doubt. \"To be or not to be\" is not merely a question about suicide — it is the first sustained philosophical soliloquy in English drama, anticipating existentialist thought by three centuries. Shakespeare's company, the Lord Chamberlain's Men, performs at the newly built <strong>Globe Theatre</strong>. The <strong>English Renaissance</strong> is at its zenith, fusing classical learning with vernacular power. In Spain, Cervantes is beginning work on <em>Don Quixote</em>. The novel as a form is being invented in real time."
     },
     "phil": {
       "label": "Philosophy",
-      "content": "On February 21st, three days before the Paris revolution, <strong>Karl Marx</strong> and <strong>Friedrich Engels</strong> publish the <em>Communist Manifesto</em> in London. <em>\"The history of all hitherto existing society is the history of class struggles.\"</em> Commissioned by the Communist League, the pamphlet synthesizes <strong>historical materialism</strong>: the idea that economic relations determine consciousness, that capitalism creates its own gravediggers in the proletariat. The immediate impact is minimal — but the text provides revolutionary 1848 with its theoretical skeleton. Meanwhile, <strong>Ludwig Feuerbach</strong>'s earlier materialist critique of religion (humans project divinity from themselves) continues shaping the <strong>Young Hegelians</strong> who are reimagining philosophy as social analysis."
+      "content": "On 17 February 1600, <strong>Giordano Bruno</strong> is burned alive in Rome's Campo de' Fiori. His crime: refusing to recant beliefs the Inquisition deemed heretical — including the <strong>plurality of worlds</strong>, an infinite universe with no centre, and a pantheistic divinity pervading all matter. Bruno had extended <strong>Copernican heliocentrism</strong> into something far more radical: if the universe is infinite, Earth cannot be special; if God is infinite, the cosmos must be infinite too. His execution marks the violent collision between the <strong>Hermetic-Neoplatonic</strong> tradition and Counter-Reformation orthodoxy. Bruno's ideas will resurface in Spinoza's pantheism and anticipate modern cosmology."
     },
     "hist": {
       "label": "History",
-      "content": "The <strong>Springtime of Peoples</strong> erupts across Europe. In Paris, the <strong>February Revolution</strong> (February 22–24) topples King <strong>Louis Philippe</strong>, who abdicates and flees to England; the <strong>Second Republic</strong> is proclaimed. In Vienna, students and workers force the resignation of <strong>Prince Metternich</strong> on March 13th — the architect of post-Napoleonic reaction, in power since 1809, escapes to London. Revolutions sweep the German states, the Italian peninsula, Hungary, Bohemia. The demands: constitutions, national self-determination, the end of feudal privileges. By year's end, most are crushed — but serfdom is abolished in Austria, and the idea that peoples can remake their states will not die."
+      "content": "Europe stands between religious wars. France, under <strong>Henry IV</strong>, is implementing the <strong>Edict of Nantes</strong> (1598), granting Huguenots unprecedented religious tolerance — a fragile peace that will last until Louis XIV revokes it in 1685. On 31 December 1600, Queen <strong>Elizabeth I</strong> grants the charter for the <strong>East India Company</strong>, beginning England's commercial expansion into Asia. In London, <strong>William Gilbert</strong> publishes <em>De Magnete</em>, demonstrating through careful experiment that the Earth itself is a giant magnet — a landmark of the emerging <strong>scientific method</strong>. The century turns: the Reformation's battles are half-fought; the Scientific Revolution is just beginning."
     },
     "conn": {
       "label": "Connections",
-      "content": "The connections run through <strong>industrialization's discontents</strong>. Gaskell's <em>Mary Barton</em> depicts the same Manchester proletariat Marx theorizes — she wrote from direct observation of the 1842 Chartist uprisings. The Pre-Raphaelites, rejecting industrial-age academicism, sought authenticity in medieval craft; their revolt against aesthetic authority paralleled the political revolts against aristocratic authority. Courbet's Realism and the Manifesto share a premise: the world must be seen as it actually is — class struggle, not mythology — before it can be changed. The revolutionary wave and the aesthetic revolution responded to the same factories, the same poverty, the same sense that Romanticism's consolations had become lies.",
-      "funFact": "The Communist Manifesto was published in London on February 21st, 1848 — three days before the Paris revolution it seemed to prophesy. Marx and Engels had finished writing it in January. The timing was coincidence, but it created the myth that theory had preceded practice."
+      "content": "Bruno, Caravaggio, and Shakespeare never met, but they share a moment of rupture. Bruno's infinite cosmos shatters the medieval chain of being — suddenly humanity is not at the centre of a divine plan. Shakespeare's Hamlet grapples with the same vertigo: a universe where \"there are more things in heaven and earth than are dreamt of in your philosophy.\" Caravaggio's darkness literalises this epistemological crisis — his figures emerge from shadow into uncertain light, revelation always partial. Gilbert's <em>De Magnete</em> demonstrates that even the Earth is subject to invisible forces. The old certainties are dissolving; what remains is inquiry, doubt, and the terrible freedom of an open cosmos.",
+      "funFact": "Bruno was gagged before his execution to prevent him from speaking — the Inquisition feared his final words more than his writings."
     }
   },
   "sources": [
-    { "url": "https://en.wikipedia.org/wiki/Revolutions_of_1848", "title": "Revolutions of 1848 - Wikipedia" },
-    { "url": "https://en.wikipedia.org/wiki/The_Communist_Manifesto", "title": "The Communist Manifesto - Wikipedia" },
-    { "url": "https://en.wikipedia.org/wiki/Pre-Raphaelite_Brotherhood", "title": "Pre-Raphaelite Brotherhood - Wikipedia" },
-    { "url": "https://en.wikipedia.org/wiki/Gustave_Courbet", "title": "Gustave Courbet - Wikipedia" },
-    { "url": "https://en.wikipedia.org/wiki/Mary_Barton", "title": "Mary Barton - Wikipedia" }
+    { "url": "https://en.wikipedia.org/wiki/Giordano_Bruno", "title": "Wikipedia: Giordano Bruno" },
+    { "url": "https://en.wikipedia.org/wiki/Caravaggio", "title": "Wikipedia: Caravaggio" },
+    { "url": "https://en.wikipedia.org/wiki/Hamlet", "title": "Wikipedia: Hamlet" },
+    { "url": "https://en.wikipedia.org/wiki/De_Magnete", "title": "Wikipedia: De Magnete" },
+    { "url": "https://www.britannica.com/event/Edict-of-Nantes", "title": "Britannica: Edict of Nantes" }
   ],
-  "image": {
-    "url": "images/1848-europe-springtime-of-peoples.jpg",
-    "alt": "Daguerreotype of the barricade on Rue Saint-Maur-Popincourt, Paris, June 25, 1848",
-    "width": 1200,
-    "height": 924,
-    "caption": "The barricade on Rue Saint-Maur-Popincourt before the attack, June 25, 1848",
-    "attribution": "Charles-François Thibault, daguerreotype, public domain, via Wikimedia Commons"
-  },
-  "threads": ["rationalism", "modernity", "death-of-god", "fragmentation"],
+  "threads": ["death-of-god", "rationalism", "baroque", "modernity"],
   "location": {
-    "lat": 48.8566,
-    "lon": 2.3522,
-    "place": "Paris"
+    "lat": 41.8956,
+    "lon": 12.4722,
+    "place": "Rome"
   },
-  "addedDate": "2026-03-05T06:00:00Z"
+  "addedDate": "2026-03-06T06:00:00Z",
+  "image": {
+    "url": "images/1600-rome-fire-and-shadow.jpg",
+    "alt": "Bronze statue of Giordano Bruno by Ettore Ferrari in Campo de' Fiori, Rome, erected on the site of his execution",
+    "width": 1200,
+    "height": 2186,
+    "caption": "Bronze statue of Giordano Bruno by Ettore Ferrari (1889) in Campo de' Fiori, Rome — erected on the exact spot of his execution",
+    "attribution": "Photo by Jastrow, Public Domain, via Wikimedia Commons"
+  }
 }

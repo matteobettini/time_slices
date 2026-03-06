@@ -1197,5 +1197,80 @@
       "url": "audio/it/1848-europe-springtime-of-peoples.mp3",
       "duration": 224
     }
+  },
+  {
+    "year": "1600",
+    "id": "1600-rome-fire-and-shadow",
+    "title": "Roma — Fuoco e ombra",
+    "teaser": "Giordano Bruno brucia sul rogo per aver immaginato mondi infiniti. Caravaggio dipinge i santi nell'ombra. L'Amleto di Shakespeare pone la domanda più antica. Il secolo si volta — e con esso l'universo si espande oltre ogni limite.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "<strong>Caravaggio</strong> ha appena completato la commissione per la Cappella Contarelli — <em>La vocazione di San Matteo</em> e <em>Il martirio di San Matteo</em> (1599–1600) — e sta rivoluzionando la pittura europea. Il suo <strong>tenebrismo</strong>, il drammatico contrasto tra luce e profonda oscurità, diventa il linguaggio visivo della <strong>Controriforma</strong>. Dove i maestri rinascimentali cercavano la bellezza ideale, Caravaggio usa come modelli la gente delle strade romane: i piedi sporchi dei pellegrini, le mani callose dei lavoratori. La Chiesa vuole un'arte che commuova i fedeli — e Caravaggio offre immediatezza viscerale. Intanto a Firenze lo stile <strong>manierista</strong> sta tramontando; il naturalismo di Caravaggio preannuncia il pieno fiorire del <strong>Barocco</strong>."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "A Londra, <strong>William Shakespeare</strong> sta componendo l'<em>Amleto</em> (c. 1599–1601), la tragedia che definirà il rapporto della letteratura occidentale con l'interiorità e il dubbio. \"Essere o non essere\" non è semplicemente una domanda sul suicidio — è il primo soliloquio filosofico sostenuto nel teatro inglese, che anticipa il pensiero esistenzialista di tre secoli. La compagnia di Shakespeare, i Lord Chamberlain's Men, recita nel <strong>Globe Theatre</strong> appena costruito. Il <strong>Rinascimento inglese</strong> è al suo apice, fondendo cultura classica e potenza vernacolare. In Spagna, Cervantes sta iniziando a lavorare al <em>Don Chisciotte</em>. Il romanzo come forma letteraria si sta inventando in tempo reale."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Il 17 febbraio 1600, <strong>Giordano Bruno</strong> viene arso vivo a Campo de' Fiori a Roma. La sua colpa: essersi rifiutato di abiurare credenze che l'Inquisizione riteneva eretiche — tra cui la <strong>pluralità dei mondi</strong>, un universo infinito senza centro, e una divinità panteistica che pervade tutta la materia. Bruno aveva esteso l'<strong>eliocentrismo copernicano</strong> in qualcosa di ben più radicale: se l'universo è infinito, la Terra non può essere speciale; se Dio è infinito, anche il cosmo deve esserlo. La sua esecuzione segna la violenta collisione tra la tradizione <strong>ermetico-neoplatonica</strong> e l'ortodossia controriformista. Le idee di Bruno riaffioreranno nel panteismo di Spinoza e anticiperanno la cosmologia moderna."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "L'Europa si trova tra le guerre di religione. La Francia, sotto <strong>Enrico IV</strong>, sta attuando l'<strong>Editto di Nantes</strong> (1598), concedendo agli ugonotti una tolleranza religiosa senza precedenti — una pace fragile che durerà fino alla revoca di Luigi XIV nel 1685. Il 31 dicembre 1600, la regina <strong>Elisabetta I</strong> concede lo statuto alla <strong>Compagnia delle Indie Orientali</strong>, avviando l'espansione commerciale inglese in Asia. A Londra, <strong>William Gilbert</strong> pubblica il <em>De Magnete</em>, dimostrando attraverso esperimenti accurati che la Terra stessa è un gigantesco magnete — una pietra miliare del nascente <strong>metodo scientifico</strong>. Il secolo volge: le battaglie della Riforma sono a metà; la Rivoluzione Scientifica sta appena iniziando."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Bruno, Caravaggio e Shakespeare non si incontrarono mai, ma condividono un momento di rottura. Il cosmo infinito di Bruno frantuma la catena medievale dell'essere — improvvisamente l'umanità non è più al centro di un piano divino. L'Amleto di Shakespeare lotta con la stessa vertigine: un universo dove \"ci sono più cose in cielo e in terra di quante ne sogni la tua filosofia\". L'oscurità di Caravaggio rende letterale questa crisi epistemologica — le sue figure emergono dall'ombra verso una luce incerta, la rivelazione sempre parziale. Il <em>De Magnete</em> di Gilbert dimostra che persino la Terra è soggetta a forze invisibili. Le vecchie certezze si dissolvono; ciò che resta è indagine, dubbio e la terribile libertà di un cosmo aperto.",
+        "funFact": "Bruno fu imbavagliato prima dell'esecuzione per impedirgli di parlare — l'Inquisizione temeva le sue ultime parole più dei suoi scritti."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Giordano_Bruno",
+        "title": "Wikipedia: Giordano Bruno"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Caravaggio",
+        "title": "Wikipedia: Caravaggio"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Amleto",
+        "title": "Wikipedia: Amleto"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/De_Magnete",
+        "title": "Wikipedia: De Magnete"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Editto_di_Nantes",
+        "title": "Wikipedia: Editto di Nantes"
+      }
+    ],
+    "threads": [
+      "death-of-god",
+      "rationalism",
+      "baroque",
+      "modernity"
+    ],
+    "location": {
+      "lat": 41.8956,
+      "lon": 12.4722,
+      "place": "Roma"
+    },
+    "addedDate": "2026-03-06T06:00:00Z",
+    "image": {
+      "url": "images/1600-rome-fire-and-shadow.jpg",
+      "alt": "Statua in bronzo di Giordano Bruno di Ettore Ferrari in Campo de' Fiori, Roma, eretta sul luogo della sua esecuzione",
+      "width": 1200,
+      "height": 2186,
+      "caption": "Statua in bronzo di Giordano Bruno di Ettore Ferrari (1889) a Campo de' Fiori, Roma — eretta sul punto esatto della sua esecuzione",
+      "attribution": "Foto di Jastrow, Pubblico Dominio, via Wikimedia Commons"
+    },
+    "podcast": {
+      "url": "audio/it/1600-rome-fire-and-shadow.mp3",
+      "duration": 159
+    }
   }
 ]
