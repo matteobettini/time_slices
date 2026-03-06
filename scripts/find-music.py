@@ -74,20 +74,22 @@ INSTRUMENT_TERMS = {
 }
 
 
-# Collections/identifiers to reject (78rpm records have surface noise)
+# Collections/identifiers to reject (78rpm/vinyl records have surface noise)
 REJECT_PATTERNS = [
     r'78_',           # 78rpm record identifiers start with "78_"
     r'78rpm',
     r'georgeblood',   # George Blood's 78rpm transfers
     r'gbia\d+',       # Great 78 Project identifiers
+    r'^lp_',          # LP record transfers (vinyl surface noise)
+    r'vinyl',         # Any vinyl collection
 ]
 
 
 def search_archive(query, max_results=20):
     """Search Internet Archive for audio files."""
     # Build search query - focus on audio, public domain, classical/traditional
-    # Exclude 78rpm collections (surface noise)
-    search_terms = f'({query}) AND mediatype:audio AND NOT collection:podcasts AND NOT collection:78rpm AND NOT collection:georgeblood'
+    # Exclude 78rpm/vinyl collections (surface noise from physical media transfers)
+    search_terms = f'({query}) AND mediatype:audio AND NOT collection:podcasts AND NOT collection:78rpm AND NOT collection:georgeblood AND NOT collection:vinyl* AND NOT identifier:lp_*'
     
     params = {
         'q': search_terms,
@@ -133,6 +135,34 @@ def get_item_files(identifier):
     except Exception as e:
         print(f"Metadata error for {identifier}: {e}", file=sys.stderr)
         return []
+
+
+def is_vinyl_or_78rpm(identifier):
+    """Check if an item is from vinyl/78rpm collections (noisy physical media transfers)."""
+    # Quick check by identifier pattern first
+    if any(re.search(pat, identifier, re.IGNORECASE) for pat in REJECT_PATTERNS):
+        return True
+    
+    # Check collection metadata
+    try:
+        url = f'https://archive.org/metadata/{identifier}'
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read().decode())
+            metadata = data.get('metadata', {})
+            collections = metadata.get('collection', [])
+            if isinstance(collections, str):
+                collections = [collections]
+            
+            # Check for vinyl/78rpm collections
+            vinyl_patterns = ['vinyl', '78rpm', 'lp_', 'georgeblood', 'album_recordings']
+            for coll in collections:
+                if any(pat in coll.lower() for pat in vinyl_patterns):
+                    return True
+    except Exception:
+        pass
+    
+    return False
 
 
 def verify_audio(url, min_duration=60):
@@ -284,8 +314,9 @@ def main():
         
         identifier = item['identifier']
         
-        # Skip 78rpm records (noisy surface crackle)
-        if any(re.search(pat, identifier, re.IGNORECASE) for pat in REJECT_PATTERNS):
+        # Skip vinyl/78rpm records (noisy surface crackle from physical media)
+        if is_vinyl_or_78rpm(identifier):
+            print(f"  ⏭️  Skipping {identifier[:40]}... (vinyl/78rpm)", file=sys.stderr)
             continue
             
         files = get_item_files(identifier)
