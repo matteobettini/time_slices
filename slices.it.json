@@ -1272,5 +1272,75 @@
       "url": "audio/it/1600-rome-fire-and-shadow.mp3",
       "duration": 159
     }
+  },
+  {
+    "year": "800",
+    "id": "800-aachen-birth-of-new-rome",
+    "title": "Aquisgrana — La nascita di una nuova Roma",
+    "teaser": "Carlo Magno si inginocchia a Roma per ricevere una corona imperiale, poi costruisce una nuova capitale per rivaleggiare con Costantinopoli. L'Occidente recupera il sapere classico dall'orlo dell'oblio.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "La <strong>Rinascita carolingia</strong> fa rivivere deliberatamente le tradizioni artistiche classiche romane e bizantine. Ad Aquisgrana, la <strong>Cappella Palatina</strong> (consacrata nell'805) si erge come il suo coronamento — un capolavoro ottagonale progettato da Oddone di Metz, modellato su San Vitale a Ravenna e ornato con colonne saccheggiate da Roma stessa. Nel frattempo, gli scriptoria di corte sviluppano l'<strong>illustrazione carolingia</strong>: l'Evangeliario di Godescalco (781-783) fonde stili insulari, bizantini e tardoantichi, con pagine tinte di porpora e letterate in oro. Si sta forgiando un linguaggio visivo dell'impero — abbastanza classico per rivendicare l'eredità romana, abbastanza cristiano per santificarla."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Il latino stava quasi morendo. Ora viene salvato. <strong>Alcuino di York</strong>, reclutato dall'Inghilterra, guida le riforme educative di Carlo Magno, standardizzando la grammatica e creando la <strong>minuscola carolina</strong> — la scrittura chiara e leggibile che diventa la base della tipografia occidentale moderna. I monasteri copiano testi antichi con rinnovata urgenza; molte opere classiche sopravvivono oggi solo perché gli scribi carolingi le hanno conservate. <strong>Eginardo</strong>, educato in questo sistema, scriverà più tardi la <em>Vita Karoli Magni</em>, imitando consapevolmente Svetonio — la prima biografia medievale di un re europeo, e prova che il sapere classico è stato trasmesso con successo."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Alcuino sistematizza le <strong>sette arti liberali</strong> — il trivio (grammatica, retorica, dialettica) e il quadrivio (aritmetica, geometria, musica, astronomia) — come curriculum dell'educazione cristiana. I suoi manuali di logica fanno rivivere Boezio, applicando il ragionamento dialettico alle questioni teologiche. Questa è <strong>proto-scolastica</strong>: la convinzione che fede e ragione possano essere riconciliate attraverso un metodo rigoroso. Una generazione dopo, <strong>Giovanni Scoto Eriugena</strong> spingerà oltre, traducendo testi neoplatonici greci e costruendo il sistema filosofico più originale tra Boezio e Anselmo — ma è il quadro educativo di Alcuino a rendere possibile quella fioritura."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il <strong>giorno di Natale dell'800</strong>, Papa Leone III incorona Carlo Magno <em>Imperator Romanorum</em> nella Basilica di San Pietro. L'atto è rivoluzionario: l'Impero Romano d'Occidente, morto dal 476, rinasce simbolicamente. Carlo Magno afferma di essere sorpreso, ma l'incoronazione legittima il suo controllo sulla maggior parte dell'Europa occidentale vincolando l'autorità imperiale alla sanzione papale. A Costantinopoli, l'<strong>Imperatrice Irene</strong> governa l'Impero Bizantino — i negoziati per un matrimonio tra i due sovrani sollevano brevemente la possibilità di riunire Oriente e Occidente. Non accadrà mai. Invece, due pretendenti rivali all'eredità di Roma plasmeranno la politica europea per secoli."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "L'architettura della Cappella Palatina <em>è</em> filosofia politica fatta pietra: copiando forme bizantine, Carlo Magno afferma la parità con Costantinopoli. Le riforme educative di Alcuino assicurano che i classici — preservati attraverso la catena di trasmissione da Roma ai monasteri alle scuole di corte — raggiungeranno gli studiosi del XII secolo che costruiranno la scolastica. La minuscola carolina perfezionata dai suoi scribi evolverà nei caratteri tipografici della rivoluzione della stampa sette secoli dopo. E l'incoronazione stessa crea il modello che perseguiterà la politica europea fino al 1806: il Sacro Romano Impero, sempre in bilico tra autorità papale e imperiale, sempre a rivendicare una Roma che non diventa mai del tutto.",
+        "funFact": "Carlo Magno non sapeva scrivere. Nonostante promuovesse l'alfabetizzazione, imparò a leggere solo da adulto e si dice tenesse tavolette sotto il cuscino per esercitarsi con le lettere — ma non padroneggiò mai questa abilità. Poteva firmare documenti con un solo tratto che completava un monogramma preparato dagli scribi."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Rinascita_carolingia",
+        "title": "Rinascita carolingia — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Cappella_Palatina_(Aquisgrana)",
+        "title": "Cappella Palatina di Aquisgrana — Wikipedia"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/scottus-eriugena/",
+        "title": "Giovanni Scoto Eriugena — Stanford Encyclopedia of Philosophy"
+      },
+      {
+        "url": "https://www.britannica.com/topic/Carolingian-Renaissance",
+        "title": "Carolingian Renaissance — Britannica"
+      }
+    ],
+    "image": {
+      "url": "images/800-aachen-birth-of-new-rome.jpg",
+      "alt": "Interno della Cappella Palatina di Aquisgrana, che mostra il design ottagonale ispirato all'architettura bizantina",
+      "width": 1136,
+      "height": 852,
+      "caption": "La Cappella Palatina di Aquisgrana — la dichiarazione architettonica di rinascita imperiale di Carlo Magno",
+      "attribution": "Tobias Helfrich, CC BY-SA 3.0, via Wikimedia Commons"
+    },
+    "threads": [
+      "classical-revival",
+      "rationalism",
+      "carolingian-renaissance"
+    ],
+    "location": {
+      "lat": 50.7747,
+      "lon": 6.0844,
+      "place": "Aquisgrana"
+    },
+    "addedDate": "2026-03-07T06:00:00Z",
+    "podcast": {
+      "url": "audio/it/800-aachen-birth-of-new-rome.mp3",
+      "duration": 204
+    }
   }
 ]

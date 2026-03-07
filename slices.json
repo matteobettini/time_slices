@@ -1280,5 +1280,75 @@
       "url": "audio/1600-rome-fire-and-shadow.mp3",
       "duration": 128
     }
+  },
+  {
+    "year": "800",
+    "id": "800-aachen-birth-of-new-rome",
+    "title": "Aachen — The Birth of a New Rome",
+    "teaser": "Charlemagne kneels in Rome to receive an imperial crown, then builds a new capital to rival Constantinople. The West reclaims classical learning from the brink of oblivion.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "The <strong>Carolingian Renaissance</strong> deliberately revives classical Roman and Byzantine artistic traditions. In Aachen, the <strong>Palatine Chapel</strong> (consecrated 805) rises as its crowning achievement — an octagonal masterpiece designed by Odo of Metz, modeled on San Vitale in Ravenna and ornamented with columns plundered from Rome itself. Meanwhile, court scriptoria develop <strong>Carolingian illumination</strong>: the Godescalc Evangelistary (781-783) fuses Insular, Byzantine, and late antique styles, its pages purple-dyed and lettered in gold. A visual language of empire is being forged — classical enough to claim Roman inheritance, Christian enough to sanctify it."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "Latin nearly died. Now it is being saved. <strong>Alcuin of York</strong>, recruited from England, leads Charlemagne's educational reforms, standardizing grammar and creating <strong>Carolingian minuscule</strong> — the clear, legible script that becomes the foundation of modern Western typography. Monasteries copy ancient texts with new urgency; many classical works survive today only because Carolingian scribes preserved them. <strong>Einhard</strong>, educated in this system, will later write the <em>Vita Karoli Magni</em>, consciously imitating Suetonius — the first medieval biography of a European king, and proof that classical learning has been successfully transmitted."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "Alcuin systematizes the <strong>seven liberal arts</strong> — the trivium (grammar, rhetoric, dialectic) and quadrivium (arithmetic, geometry, music, astronomy) — as the curriculum of Christian education. His manuals on logic revive Boethius, applying dialectical reasoning to theological questions. This is <strong>proto-scholasticism</strong>: the conviction that faith and reason can be reconciled through rigorous method. A generation later, <strong>John Scotus Eriugena</strong> will push further, translating Greek Neoplatonic texts and constructing the most original philosophical system between Boethius and Anselm — but Alcuin's educational framework makes that flowering possible."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>Christmas Day 800</strong>, Pope Leo III crowns Charlemagne <em>Imperator Romanorum</em> in St. Peter's Basilica. The act is revolutionary: the Western Roman Empire, dead since 476, is symbolically reborn. Charlemagne reportedly claims surprise, but the coronation legitimizes his control over most of Western Europe while binding imperial authority to papal sanction. In Constantinople, <strong>Empress Irene</strong> rules the Byzantine Empire — negotiations for marriage between the two rulers briefly raise the possibility of reuniting East and West. It never happens. Instead, two rival claimants to Rome's legacy will shape European politics for centuries."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The Palatine Chapel's architecture <em>is</em> political philosophy made stone: by copying Byzantine forms, Charlemagne asserts parity with Constantinople. Alcuin's educational reforms ensure that the classics — preserved through the transmission chain from Rome to monasteries to court schools — will reach the twelfth-century scholars who build scholasticism. The Carolingian minuscule script his scribes perfect will evolve into the typefaces of the printing revolution seven centuries later. And the coronation itself creates the template that will haunt European politics until 1806: the Holy Roman Empire, always caught between papal and imperial authority, always claiming a Rome it never quite becomes.",
+        "funFact": "Charlemagne couldn't write. Despite championing literacy, he learned to read only as an adult and reportedly kept tablets under his pillow to practice letters — but never mastered the skill. He could sign documents with a single stroke completing a monogram prepared by scribes."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Carolingian_Renaissance",
+        "title": "Carolingian Renaissance — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Palatine_Chapel,_Aachen",
+        "title": "Palatine Chapel, Aachen — Wikipedia"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/scottus-eriugena/",
+        "title": "John Scotus Eriugena — Stanford Encyclopedia of Philosophy"
+      },
+      {
+        "url": "https://www.britannica.com/topic/Carolingian-Renaissance",
+        "title": "Carolingian Renaissance — Britannica"
+      }
+    ],
+    "image": {
+      "url": "images/800-aachen-birth-of-new-rome.jpg",
+      "alt": "Interior of the Palatine Chapel in Aachen, showing the octagonal design inspired by Byzantine architecture",
+      "width": 1136,
+      "height": 852,
+      "caption": "The Palatine Chapel in Aachen — Charlemagne's architectural statement of imperial revival",
+      "attribution": "Tobias Helfrich, CC BY-SA 3.0, via Wikimedia Commons"
+    },
+    "threads": [
+      "classical-revival",
+      "rationalism",
+      "carolingian-renaissance"
+    ],
+    "location": {
+      "lat": 50.7747,
+      "lon": 6.0844,
+      "place": "Aachen"
+    },
+    "addedDate": "2026-03-07T06:00:00Z",
+    "podcast": {
+      "url": "audio/800-aachen-birth-of-new-rome.mp3",
+      "duration": 170
+    }
   }
 ]
