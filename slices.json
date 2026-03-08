@@ -1350,5 +1350,80 @@
       "url": "audio/800-aachen-birth-of-new-rome.mp3",
       "duration": 170
     }
+  },
+  {
+    "year": "529",
+    "id": "529-hinge-of-ages",
+    "title": "The Hinge of Ages",
+    "teaser": "The Academy closes in Athens. Monte Cassino opens in Italy. Justinian codifies Roman law. In a single year, antiquity ends and the medieval world begins.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>Byzantine art</strong> is crystallizing into its mature form under Justinian's patronage. The Basilica of San Vitale in Ravenna, begun around 527, rises as the supreme expression of <strong>hieratic style</strong>: frontal figures, golden backgrounds, flattened space that denies earthly perspective in favor of heavenly stillness. The famous mosaic of Justinian, completed 547, will show the emperor haloed like a saint — art serving imperial theology. This is not decline from classical naturalism but <em>deliberate transformation</em>: the body matters less than the soul, earthly space less than divine presence. Byzantine artists inherit Roman technique but reject its worldview."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "Three years earlier, <strong>Boethius</strong> composed <em>The Consolation of Philosophy</em> in a prison cell awaiting execution — the last great work of Latin classical philosophy, a dialogue between a condemned man and Lady Philosophy herself. In Constantinople, <strong>Romanos the Melodist</strong> pioneers the <em>kontakion</em>, a new form of liturgical poetry that will dominate Byzantine worship: dramatic, musical, theological. Latin literature is dying; Greek Christian literature is being born. Boethius translates Aristotle; Romanos transforms the Psalms. The torch passes not through imitation but through metamorphosis."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "Justinian's decree orders the <strong>Neoplatonic Academy</strong> in Athens closed — ending a tradition that stretched back nine centuries to Plato himself. The last scholarch, <strong>Damascius</strong>, flees with six colleagues to Persia, seeking the philosopher-king Chosroes I. They return disillusioned within three years, protected by treaty but homeless in spirit. <strong>Neoplatonism</strong> doesn't die — it migrates into Christian theology, into Islamic <em>falsafa</em>, into the medieval synthesis. But philosophy as an independent pagan institution ends here. The love of wisdom must now wear a cross."
+      },
+      "hist": {
+        "label": "History",
+        "content": "Justinian publishes the first <strong>Codex Justinianus</strong>, beginning the <em>Corpus Juris Civilis</em> — the systematic codification of Roman law that will shape European jurisprudence for a millennium. Simultaneously, <strong>Benedict of Nursia</strong> founds <strong>Monte Cassino</strong> and composes his <em>Rule</em>: <em>ora et labora</em>, prayer and work, a balanced rhythm for monastic life. The Rule will spread across Europe, creating the institutional network that preserves learning through the coming darkness. One empire legislates; another empire — of monasteries — begins its silent construction."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year 529 is where antiquity <em>pivots</em> into the medieval. Justinian closes the Academy not from ignorance but from <strong>theological confidence</strong>: Christianity needs no rival wisdom. Benedict opens Monte Cassino not as a retreat but as a <strong>new form of civilization</strong>: communities that copy manuscripts, cultivate land, and outlast kingdoms. The Codex preserves Roman law in amber; the Rule creates living institutions to carry it forward. What looks like ending is actually <strong>translation</strong> — pagan philosophy into Christian theology, imperial administration into monastic discipline, classical learning into scriptoria. The monks who will save Aristotle are being trained by Benedict's heirs.",
+        "funFact": "The seven philosophers who fled to Persia included Simplicius, whose commentaries on Aristotle became crucial to the later Islamic and Latin reception of Greek philosophy — the Academy's last act was to seed its own eventual resurrection."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Platonic_Academy",
+        "title": "Platonic Academy - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Benedict_of_Nursia",
+        "title": "Benedict of Nursia - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Corpus_Juris_Civilis",
+        "title": "Corpus Juris Civilis - Wikipedia"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/boethius/",
+        "title": "Boethius - Stanford Encyclopedia of Philosophy"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Basilica_of_San_Vitale",
+        "title": "Basilica of San Vitale - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/529-hinge-of-ages.jpg",
+      "alt": "Ivory diptych panel announcing the consulship of Justinian, carved 521 AD",
+      "width": 500,
+      "height": 625,
+      "caption": "Ivory diptych announcing Justinian's consulship, 521 AD — the future emperor depicted as patron of the games, already wielding the scepter",
+      "attribution": "The Metropolitan Museum of Art, Public Domain"
+    },
+    "threads": [
+      "neoplatonism",
+      "classical-revival",
+      "rationalism",
+      "late-antiquity"
+    ],
+    "location": {
+      "lat": 37.9755,
+      "lon": 23.7092,
+      "place": "Athens"
+    },
+    "addedDate": "2026-03-08T06:00:00Z",
+    "podcast": {
+      "url": "audio/529-hinge-of-ages.mp3",
+      "duration": 170
+    }
   }
 ]

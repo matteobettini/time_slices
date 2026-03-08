@@ -1342,5 +1342,80 @@
       "url": "audio/it/800-aachen-birth-of-new-rome.mp3",
       "duration": 204
     }
+  },
+  {
+    "year": "529",
+    "id": "529-hinge-of-ages",
+    "title": "Il Cardine delle Ere",
+    "teaser": "L'Accademia chiude ad Atene. Monte Cassino apre in Italia. Giustiniano codifica il diritto romano. In un solo anno, l'antichità finisce e nasce il mondo medievale.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "L'<strong>arte bizantina</strong> si cristallizza nella sua forma matura sotto il mecenatismo di Giustiniano. La Basilica di San Vitale a Ravenna, iniziata intorno al 527, si erge come suprema espressione dello <strong>stile ieratico</strong>: figure frontali, sfondi dorati, spazi appiattiti che negano la prospettiva terrena in favore di una quiete celeste. Il celebre mosaico di Giustiniano, completato nel 547, mostrerà l'imperatore aureolato come un santo — l'arte al servizio della teologia imperiale. Non è declino dal naturalismo classico ma <em>trasformazione deliberata</em>: il corpo conta meno dell'anima, lo spazio terreno meno della presenza divina. Gli artisti bizantini ereditano la tecnica romana ma ne rifiutano la visione del mondo."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Tre anni prima, <strong>Boezio</strong> ha composto <em>La consolazione della filosofia</em> in una cella in attesa dell'esecuzione — l'ultima grande opera della filosofia latina classica, un dialogo tra un condannato e la Filosofia stessa personificata. A Costantinopoli, <strong>Romano il Melode</strong> crea il <em>kontakion</em>, una nuova forma di poesia liturgica che dominerà il culto bizantino: drammatica, musicale, teologica. La letteratura latina muore; la letteratura cristiana greca nasce. Boezio traduce Aristotele; Romano trasforma i Salmi. La fiaccola passa non attraverso l'imitazione ma attraverso la metamorfosi."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Il decreto di Giustiniano ordina la chiusura dell'<strong>Accademia neoplatonica</strong> di Atene — ponendo fine a una tradizione che risaliva a nove secoli prima, a Platone stesso. L'ultimo scolarca, <strong>Damascio</strong>, fugge con sei colleghi in Persia, cercando il re filosofo Cosroe I. Ritornano disillusi entro tre anni, protetti da un trattato ma spiritualmente senza patria. Il <strong>neoplatonismo</strong> non muore — migra nella teologia cristiana, nella <em>falsafa</em> islamica, nella sintesi medievale. Ma la filosofia come istituzione pagana indipendente finisce qui. L'amore per la sapienza deve ora portare una croce."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Giustiniano pubblica il primo <strong>Codex Justinianus</strong>, iniziando il <em>Corpus Juris Civilis</em> — la codificazione sistematica del diritto romano che plasmerà la giurisprudenza europea per un millennio. Contemporaneamente, <strong>Benedetto da Norcia</strong> fonda <strong>Monte Cassino</strong> e compone la sua <em>Regola</em>: <em>ora et labora</em>, preghiera e lavoro, un ritmo equilibrato per la vita monastica. La Regola si diffonderà in tutta Europa, creando la rete istituzionale che preserverà il sapere attraverso le tenebre a venire. Un impero legifera; un altro impero — di monasteri — inizia la sua silenziosa costruzione."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "L'anno 529 è dove l'antichità <em>ruota</em> verso il medievale. Giustiniano chiude l'Accademia non per ignoranza ma per <strong>fiducia teologica</strong>: il cristianesimo non ha bisogno di una sapienza rivale. Benedetto apre Monte Cassino non come rifugio ma come <strong>nuova forma di civiltà</strong>: comunità che copiano manoscritti, coltivano la terra e sopravvivono ai regni. Il Codice preserva il diritto romano nell'ambra; la Regola crea istituzioni viventi per portarlo avanti. Ciò che sembra una fine è in realtà <strong>traduzione</strong> — la filosofia pagana nella teologia cristiana, l'amministrazione imperiale nella disciplina monastica, il sapere classico negli scriptoria. I monaci che salveranno Aristotele vengono formati dagli eredi di Benedetto.",
+        "funFact": "I sette filosofi fuggiti in Persia includevano Simplicio, i cui commentari su Aristotele divennero cruciali per la successiva ricezione islamica e latina della filosofia greca — l'ultimo atto dell'Accademia fu seminare la propria resurrezione."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Accademia_platonica",
+        "title": "Accademia platonica - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Benedetto_da_Norcia",
+        "title": "Benedetto da Norcia - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Corpus_iuris_civilis",
+        "title": "Corpus iuris civilis - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Boezio",
+        "title": "Boezio - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Basilica_di_San_Vitale",
+        "title": "Basilica di San Vitale - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/529-hinge-of-ages.jpg",
+      "alt": "Pannello in avorio di dittico che annuncia il consolato di Giustiniano, scolpito nel 521 d.C.",
+      "width": 500,
+      "height": 625,
+      "caption": "Dittico in avorio che annuncia il consolato di Giustiniano, 521 d.C. — il futuro imperatore raffigurato come patrono dei giochi, già con lo scettro in mano",
+      "attribution": "The Metropolitan Museum of Art, Pubblico dominio"
+    },
+    "threads": [
+      "neoplatonism",
+      "classical-revival",
+      "rationalism",
+      "late-antiquity"
+    ],
+    "location": {
+      "lat": 37.9755,
+      "lon": 23.7092,
+      "place": "Atene"
+    },
+    "addedDate": "2026-03-08T06:00:00Z",
+    "podcast": {
+      "url": "audio/it/529-hinge-of-ages.mp3",
+      "duration": 166
+    }
   }
 ]

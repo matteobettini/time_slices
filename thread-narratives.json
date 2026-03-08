@@ -39,7 +39,9 @@
       "1600→1648": "Bruno's pantheistic cosmos and Gilbert's magnetic Earth: reason could now explain forces without invoking angels. Descartes would systematise this during the war.",
       "1784→1848": "Kant declared reason sovereign but bounded; by 1848, the masses used those same rational arguments to demand sovereignty for themselves.",
       "762→800": "Baghdad's translators preserved Aristotle's logic; Alcuin revived Boethius's commentaries on it. Greek reason entered the Latin West via two parallel streams — Arabic and Carolingian.",
-      "800→1141": "Alcuin's schools trained the cathedral masters who trained Abelard. The trivium's dialectic became scholasticism's sword — the tool Abelard wielded against Bernard at Sens."
+      "800→1141": "Alcuin's schools trained the cathedral masters who trained Abelard. The trivium's dialectic became scholasticism's sword — the tool Abelard wielded against Bernard at Sens.",
+      "125→529": "Hadrian's Pantheon married Greek geometry to Roman engineering; this synthesis survived in Byzantine architecture and Justinian's legal codification.",
+      "529→762": "Greek logical texts traveled east with exiled philosophers; Baghdad's scholars translated them, sparking the Islamic Golden Age of rational inquiry."
     },
     "modernity": {
       "1648→1687": "Westphalia resolved religious conflict through sovereignty; Newton resolved cosmological conflict through mathematics. Both substituted divine authority with systems humans could operate. The modern world's dual foundations — the nation-state and mathematical physics — were laid within four decades.",
@@ -65,7 +67,9 @@
       "125→1784": "Neoclassicism drew more heavily on Rome than Greece — because so much more Roman architecture survived. The Pantheon was the most studied building in Europe by the 18th century; its portico became the template for institutions from the British Museum to the Panthéon in Paris. When Winckelmann idealised Greek art, he was largely looking at Roman copies. David's classical vocabulary was Roman classical vocabulary — togas, fasces, Republican virtue — mediated through what imperial Rome had preserved, built, and transmitted.",
       "1504→1784": "David won the Prix de Rome in 1774 and spent five years in Italy studying Raphael, Michelangelo, and Roman antiquities firsthand. The lineage is direct and documented: Renaissance artists recovered classical forms; David inherited them through the Académie royale's curriculum, which made Rome pilgrimage mandatory. But where Renaissance Florence used antiquity as a language of idealised beauty, David's Neoclassicism — shaped by Winckelmann's writings on Greek art as moral exemplar — turned the same classical vocabulary toward republican virtue and political duty.",
       "410→800": "Augustine preserved Roman rhetoric for Christian purposes; Alcuin's scribes preserved the texts themselves, rescuing classical learning from the monasteries where it had hibernated for four centuries.",
-      "800→1504": "The manuscripts Carolingian scribes copied reached Italian humanists who surpassed their models. Charlemagne's architects quoted San Vitale; Leonardo and Michelangelo would quote Rome directly."
+      "800→1504": "The manuscripts Carolingian scribes copied reached Italian humanists who surpassed their models. Charlemagne's architects quoted San Vitale; Leonardo and Michelangelo would quote Rome directly.",
+      "410→529": "Augustine's Christian Platonism survived Rome's fall; when Justinian shuttered Athens, Neoplatonism migrated into Byzantine theology and monastic learning.",
+      "529→800": "Benedict's monasteries became arks of classical texts; Charlemagne's court scholars, trained in this tradition, revived Latin learning as Christian humanism."
     },
     "art-and-power": {
       "-431→1504": "Pericles diverted the Delian League treasury to fund the Parthenon; Lorenzo de' Medici diverted bank profits to fund Florence's artistic programme. In both cases, economic dominance was transmuted into cultural authority, and the patrons' political opponents attacked the expenditure as illegitimate. Phidias was charged with embezzlement; the Medici were exiled in 1494. The pattern — power expressed through beauty, challenged through accounting — repeats across two millennia.",
@@ -107,6 +111,9 @@
     },
     "baroque": {
       "1600→1648": "Caravaggio's tenebrism spreads through Europe via his imitators; by Westphalia, the Baroque has become the visual language of Catholic and Protestant power alike."
+    },
+    "neoplatonism": {
+      "529→1504": "The fleeing philosophers seeded Islamic falsafa; Arabic translations returned to Latin through Toledo and Palermo, igniting Renaissance Florentine Platonism."
     }
   },
   "it": {
@@ -149,7 +156,9 @@
       "1600→1648": "Il cosmo panteistico di Bruno e la Terra magnetica di Gilbert: la ragione poteva ora spiegare le forze senza invocare angeli. Cartesio avrebbe sistematizzato questo durante la guerra.",
       "1784→1848": "Kant dichiarò la ragione sovrana ma limitata; nel 1848, le masse usarono quegli stessi argomenti razionali per reclamare la sovranità per sé.",
       "762→800": "I traduttori di Baghdad preservarono la logica di Aristotele; Alcuino fece rivivere i commentari di Boezio. La ragione greca entrò nell'Occidente latino attraverso due correnti parallele — araba e carolingia.",
-      "800→1141": "Le scuole di Alcuino formarono i maestri delle cattedrali che formarono Abelardo. La dialettica del trivio divenne la spada della scolastica — lo strumento che Abelardo brandì contro Bernardo a Sens."
+      "800→1141": "Le scuole di Alcuino formarono i maestri delle cattedrali che formarono Abelardo. La dialettica del trivio divenne la spada della scolastica — lo strumento che Abelardo brandì contro Bernardo a Sens.",
+      "125→529": "Il Pantheon di Adriano sposò la geometria greca all'ingegneria romana; questa sintesi sopravvisse nell'architettura bizantina e nella codificazione giuridica di Giustiniano.",
+      "529→762": "I testi logici greci viaggiarono a est con i filosofi esiliati; gli studiosi di Baghdad li tradussero, accendendo l'Età d'Oro islamica dell'indagine razionale."
     },
     "modernity": {
       "1648→1687": "Vestfalia risolse il conflitto religioso attraverso la sovranità; Newton risolse il conflitto cosmologico attraverso la matematica. Entrambi sostituirono l'autorità divina con sistemi che gli umani potevano gestire. Le doppie fondamenta del mondo moderno — lo Stato-nazione e la fisica matematica — furono gettate nel giro di quattro decenni.",
@@ -175,7 +184,9 @@
       "125→1784": "Il Neoclassicismo attinse a Roma più che alla Grecia — perché molto più dell'architettura romana era sopravvissuto. Il Pantheon era l'edificio più studiato d'Europa nel XVIII secolo; il suo portico divenne il modello per istituzioni dal British Museum al Panthéon di Parigi. Quando Winckelmann idealizzava l'arte greca, guardava in gran parte copie romane. Il vocabolario classico di David era un vocabolario classico romano — toghe, fasci, virtù repubblicana — mediato da ciò che la Roma imperiale aveva preservato, costruito e trasmesso.",
       "1504→1784": "David vinse il Prix de Rome nel 1774 e trascorse cinque anni in Italia studiando Raffaello, Michelangelo e le antichità romane dal vivo. La genealogia è diretta e documentata: gli artisti rinascimentali recuperarono le forme classiche; David le ereditò attraverso il curriculum dell'Académie royale, che rendeva obbligatorio il pellegrinaggio a Roma. Ma dove la Firenze rinascimentale usava l'antichità come linguaggio di bellezza idealizzata, il Neoclassicismo di David — plasmato dagli scritti di Winckelmann sull'arte greca come exemplum morale — volse lo stesso vocabolario classico verso la virtù repubblicana e il dovere politico.",
       "410→800": "Agostino preservò la retorica romana per fini cristiani; gli scribi di Alcuino preservarono i testi stessi, salvando il sapere classico dai monasteri dove aveva ibernato per quattro secoli.",
-      "800→1504": "I manoscritti copiati dagli scribi carolingi raggiunsero gli umanisti italiani che superarono i loro modelli. Gli architetti di Carlo Magno citavano San Vitale; Leonardo e Michelangelo avrebbero citato Roma direttamente."
+      "800→1504": "I manoscritti copiati dagli scribi carolingi raggiunsero gli umanisti italiani che superarono i loro modelli. Gli architetti di Carlo Magno citavano San Vitale; Leonardo e Michelangelo avrebbero citato Roma direttamente.",
+      "410→529": "Il platonismo cristiano di Agostino sopravvisse alla caduta di Roma; quando Giustiniano chiuse Atene, il neoplatonismo migrò nella teologia bizantina e nel sapere monastico.",
+      "529→800": "I monasteri di Benedetto divennero arche di testi classici; gli studiosi della corte di Carlo Magno, formati in questa tradizione, rianimarono il sapere latino come umanesimo cristiano."
     },
     "art-and-power": {
       "-431→1504": "Pericle dirottò il tesoro della Lega di Delo per finanziare il Partenone; Lorenzo de' Medici dirottò i profitti bancari per finanziare il programma artistico di Firenze. In entrambi i casi, il dominio economico fu trasmutato in autorità culturale, e gli oppositori politici dei mecenati contestarono la spesa come illegittima. Fidia fu accusato di appropriazione indebita; i Medici furono esiliati nel 1494. Lo schema — potere espresso attraverso la bellezza, contestato attraverso la contabilità — si ripete lungo due millenni.",
@@ -217,6 +228,9 @@
     },
     "baroque": {
       "1600→1648": "Il tenebrismo di Caravaggio si diffonde in Europa attraverso i suoi imitatori; a Westfalia, il Barocco è diventato il linguaggio visivo del potere cattolico e protestante."
+    },
+    "neoplatonism": {
+      "529→1504": "I filosofi in fuga seminarono la falsafa islamica; le traduzioni arabe tornarono in latino attraverso Toledo e Palermo, accendendo il platonismo fiorentino del Rinascimento."
     }
   }
 }
