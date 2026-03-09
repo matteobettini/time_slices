@@ -1,51 +1,35 @@
 {
-  "year": "1600",
-  "id": "1600-rome-fire-and-shadow",
-  "title": "Rome — Fire and Shadow",
-  "teaser": "Giordano Bruno burns at the stake for imagining infinite worlds. Caravaggio paints saints in shadow. Shakespeare's Hamlet asks the oldest question. The century turns — and with it, the universe expands beyond all limits.",
+  "year": "1968",
+  "id": "1968-year-world-caught-fire",
+  "title": "The Year the World Caught Fire",
+  "teaser": "Prague Spring. Paris barricades. Prague tanks. MLK and RFK assassinated. Tet Offensive. The old order fractures everywhere at once.",
   "dimensions": {
-    "art": {
-      "label": "Art",
-      "content": "<strong>Caravaggio</strong> has just completed his Contarelli Chapel commission — <em>The Calling of Saint Matthew</em> and <em>The Martyrdom of Saint Matthew</em> (1599–1600) — and is revolutionising European painting. His <strong>tenebrism</strong>, the dramatic contrast of light against deep darkness, becomes the visual language of the <strong>Counter-Reformation</strong>. Where Renaissance masters sought ideal beauty, Caravaggio uses Roman street people as models: the dirty feet of pilgrims, the weathered hands of labourers. The Church wants art that moves the faithful emotionally — and Caravaggio delivers visceral immediacy. Meanwhile in Florence, the <strong>Mannerist</strong> style is fading; Caravaggio's naturalism points toward the full flowering of <strong>Baroque</strong>."
-    },
-    "lit": {
-      "label": "Literature",
-      "content": "In London, <strong>William Shakespeare</strong> is composing <em>Hamlet</em> (c. 1599–1601), the tragedy that will define Western literature's engagement with interiority and doubt. \"To be or not to be\" is not merely a question about suicide — it is the first sustained philosophical soliloquy in English drama, anticipating existentialist thought by three centuries. Shakespeare's company, the Lord Chamberlain's Men, performs at the newly built <strong>Globe Theatre</strong>. The <strong>English Renaissance</strong> is at its zenith, fusing classical learning with vernacular power. In Spain, Cervantes is beginning work on <em>Don Quixote</em>. The novel as a form is being invented in real time."
-    },
-    "phil": {
-      "label": "Philosophy",
-      "content": "On 17 February 1600, <strong>Giordano Bruno</strong> is burned alive in Rome's Campo de' Fiori. His crime: refusing to recant beliefs the Inquisition deemed heretical — including the <strong>plurality of worlds</strong>, an infinite universe with no centre, and a pantheistic divinity pervading all matter. Bruno had extended <strong>Copernican heliocentrism</strong> into something far more radical: if the universe is infinite, Earth cannot be special; if God is infinite, the cosmos must be infinite too. His execution marks the violent collision between the <strong>Hermetic-Neoplatonic</strong> tradition and Counter-Reformation orthodoxy. Bruno's ideas will resurface in Spinoza's pantheism and anticipate modern cosmology."
-    },
-    "hist": {
-      "label": "History",
-      "content": "Europe stands between religious wars. France, under <strong>Henry IV</strong>, is implementing the <strong>Edict of Nantes</strong> (1598), granting Huguenots unprecedented religious tolerance — a fragile peace that will last until Louis XIV revokes it in 1685. On 31 December 1600, Queen <strong>Elizabeth I</strong> grants the charter for the <strong>East India Company</strong>, beginning England's commercial expansion into Asia. In London, <strong>William Gilbert</strong> publishes <em>De Magnete</em>, demonstrating through careful experiment that the Earth itself is a giant magnet — a landmark of the emerging <strong>scientific method</strong>. The century turns: the Reformation's battles are half-fought; the Scientific Revolution is just beginning."
-    },
-    "conn": {
-      "label": "Connections",
-      "content": "Bruno, Caravaggio, and Shakespeare never met, but they share a moment of rupture. Bruno's infinite cosmos shatters the medieval chain of being — suddenly humanity is not at the centre of a divine plan. Shakespeare's Hamlet grapples with the same vertigo: a universe where \"there are more things in heaven and earth than are dreamt of in your philosophy.\" Caravaggio's darkness literalises this epistemological crisis — his figures emerge from shadow into uncertain light, revelation always partial. Gilbert's <em>De Magnete</em> demonstrates that even the Earth is subject to invisible forces. The old certainties are dissolving; what remains is inquiry, doubt, and the terrible freedom of an open cosmos.",
-      "funFact": "Bruno was gagged before his execution to prevent him from speaking — the Inquisition feared his final words more than his writings."
-    }
+    "art":  { "label": "Art",         "content": "Art ruptures in every direction. <strong>Conceptual Art</strong> crystallises with the formation of the <strong>Art & Language</strong> group and Lawrence Weiner's declaration that the idea alone is the work — execution optional. <strong>Land Art</strong> debuts with the \"Earthworks\" exhibition at Dwan Gallery, where Robert Smithson and Michael Heizer drag art out of galleries into desert landscapes. In June, <strong>Valerie Solanas</strong> shoots Andy Warhol; the Pope of Pop survives but withdraws from filmmaking. Meanwhile, <strong>2001: A Space Odyssey</strong> premieres in April — Kubrick's monolith stands as enigmatic monument to an unknowable future. Art abandons objects for concepts, galleries for earth, screen for mind." },
+    "lit":  { "label": "Literature",  "content": "<strong>New Journalism</strong> captures the decade's acid-soaked energy: Tom Wolfe's <em>The Electric Kool-Aid Acid Test</em> follows Ken Kesey and the Merry Pranksters into psychedelic consciousness. Norman Mailer's <em>The Armies of the Night</em> makes the author both participant and chronicler of the Pentagon march. Philip K. Dick's <em>Do Androids Dream of Electric Sheep?</em> asks what humanity means in a mechanised world. From the USSR, <strong>Solzhenitsyn's</strong> <em>In the First Circle</em> smuggles out witness to the Gulag. And <strong>García Márquez's</strong> <em>One Hundred Years of Solitude</em>, published the year before in Spanish, spreads like wildfire — <strong>magical realism</strong> offers escape and reflection alike." },
+    "phil": { "label": "Philosophy",  "content": "Ideas arm the barricades. <strong>Marcuse's</strong> <em>One-Dimensional Man</em> (1964) becomes the bible of the <strong>New Left</strong>, diagnosing how consumer capitalism absorbs all opposition. <strong>Guy Debord's</strong> <em>Society of the Spectacle</em> (1967) provides the theoretical framework — modern life has become representation of life, image consuming reality. Slogans appear on Paris walls: \"<em>Sous les pavés, la plage!</em>\" — under the cobblestones, the beach. Meanwhile, <strong>Derrida</strong> delivers his lecture on <em>différance</em> in January, <strong>deconstruction</strong> quietly dismantling the certainties that the streets are loudly rejecting. <strong>Post-structuralism</strong> and street revolution share a target: inherited structures that pretend to be nature." },
+    "hist": { "label": "History",     "content": "The year shatters the postwar consensus. In January, the <strong>Tet Offensive</strong> stuns America — victory in Vietnam, long promised, suddenly vanishes. In April, <strong>Martin Luther King Jr.</strong> is assassinated in Memphis; Robert Kennedy, announcing the news in Indianapolis, quotes Aeschylus on wisdom through suffering. Two months later, Kennedy himself is shot. In Prague, <strong>Dubček's</strong> \"socialism with a human face\" flowers in spring and dies in August under <strong>Soviet tanks</strong>. In Paris, students occupy the Sorbonne in May; ten million workers join them; de Gaulle nearly falls. In Chicago, police riot at the Democratic convention. In Mexico City, students are massacred days before the Olympics. Everywhere, youth confronts power — and power fights back." },
+    "conn": { "label": "Connections", "content": "What connects student barricades in Paris to tanks in Prague to assassinations in America? The same rupture: <strong>the postwar settlement cracking open</strong>. Debord's spectacle critique explains why television brought Tet's carnage into living rooms and broke the war consensus. Marcuse's \"Great Refusal\" gives vocabulary to Paris students and Berkeley activists alike. Derrida's deconstruction and the Situationists' détournement share a method — taking apart received structures to reveal what they conceal. Even <em>2001</em>'s enigmatic monolith mirrors the moment: something is coming that cannot be named, only experienced. The old authorities — state, party, church, academy — lose their spell simultaneously across cultures. Not coincidence: connection through circuits of books, films, radio, and the first global generation raised on television." }
   },
   "sources": [
-    { "url": "https://en.wikipedia.org/wiki/Giordano_Bruno", "title": "Wikipedia: Giordano Bruno" },
-    { "url": "https://en.wikipedia.org/wiki/Caravaggio", "title": "Wikipedia: Caravaggio" },
-    { "url": "https://en.wikipedia.org/wiki/Hamlet", "title": "Wikipedia: Hamlet" },
-    { "url": "https://en.wikipedia.org/wiki/De_Magnete", "title": "Wikipedia: De Magnete" },
-    { "url": "https://www.britannica.com/event/Edict-of-Nantes", "title": "Britannica: Edict of Nantes" }
+    { "url": "https://en.wikipedia.org/wiki/May_68", "title": "May 68 - Wikipedia" },
+    { "url": "https://plato.stanford.edu/entries/marcuse/", "title": "Herbert Marcuse - Stanford Encyclopedia of Philosophy" },
+    { "url": "https://en.wikipedia.org/wiki/Prague_Spring", "title": "Prague Spring - Wikipedia" },
+    { "url": "https://www.theartstory.org/movement/conceptual-art/", "title": "Conceptual Art Movement - The Art Story" },
+    { "url": "https://kinginstitute.stanford.edu/assassination-martin-luther-king-jr", "title": "Assassination of MLK - King Institute" }
   ],
-  "threads": ["death-of-god", "rationalism", "baroque", "modernity"],
-  "location": {
-    "lat": 41.8956,
-    "lon": 12.4722,
-    "place": "Rome"
-  },
-  "addedDate": "2026-03-06T06:00:00Z",
   "image": {
-    "url": "images/1600-rome-fire-and-shadow.jpg",
-    "alt": "Bronze statue of Giordano Bruno by Ettore Ferrari in Campo de' Fiori, Rome, erected on the site of his execution",
+    "url": "images/1968-year-world-caught-fire.jpg",
+    "alt": "Mai 68 début d'une lutte prolongée - Atelier Populaire protest poster from Paris 1968",
     "width": 1200,
-    "height": 2186,
-    "caption": "Bronze statue of Giordano Bruno by Ettore Ferrari (1889) in Campo de' Fiori, Rome — erected on the exact spot of his execution",
-    "attribution": "Photo by Jastrow, Public Domain, via Wikimedia Commons"
-  }
+    "height": 1821,
+    "caption": "\"Mai 68 début d'une lutte prolongée\" — Atelier Populaire poster from the Paris uprising",
+    "attribution": "Atelier Populaire, Public Domain, via Bibliothèque nationale de France"
+  },
+  "threads": ["death-of-god", "modernity", "fragmentation", "rationalism"],
+  "location": {
+    "lat": 48.8499,
+    "lon": 2.3469,
+    "place": "Paris"
+  },
+  "addedDate": "2026-03-09T06:00:00Z"
 }
