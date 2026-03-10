@@ -43,7 +43,9 @@
       "800→1141": "Alcuin's schools trained the cathedral masters who trained Abelard. The trivium's dialectic became scholasticism's sword — the tool Abelard wielded against Bernard at Sens.",
       "125→529": "Hadrian's Pantheon married Greek geometry to Roman engineering; this synthesis survived in Byzantine architecture and Justinian's legal codification.",
       "529→762": "Greek logical texts traveled east with exiled philosophers; Baghdad's scholars translated them, sparking the Islamic Golden Age of rational inquiry.",
-      "1848→1968": "From Marx's scientific socialism to Marcuse's Frankfurt School critique: reason promised liberation but delivered administered society. Post-structuralism deconstructs rationalism from within while students attack it from without."
+      "1848→1968": "From Marx's scientific socialism to Marcuse's Frankfurt School critique: reason promised liberation but delivered administered society. Post-structuralism deconstructs rationalism from within while students attack it from without.",
+      "1274→1543": "Aquinas harmonized faith and reason; Copernicus weaponized reason to move the Earth.",
+      "1543→1600": "The eye opens in Basel; by century's end, Bruno burns for following where it looked."
     },
     "modernity": {
       "1648→1687": "Westphalia resolved religious conflict through sovereignty; Newton resolved cosmological conflict through mathematics. Both substituted divine authority with systems humans could operate. The modern world's dual foundations — the nation-state and mathematical physics — were laid within four decades.",
@@ -87,7 +89,8 @@
       "-431→762": "Periclean Athens drew thinkers from across the Greek world — Anaxagoras from Clazomenae in Ionia, Protagoras from Abdera in Thrace, Hippodamus from Miletus — and synthesised their ideas into something new. Al-Mansur's Baghdad replicated this pattern at larger scale: scholars from Syria, Persia, India, and Central Asia converged on a single city designed to attract and organise knowledge. Both cities understood that intellectual power requires cosmopolitan intake — and both enforced political hierarchies that contradicted their intellectual openness."
     },
     "renaissance-humanism": {
-      "1504→1517": "Erasmus was the hinge. His 1516 Greek New Testament gave Luther the weapon (<em>metanoeite</em> means \"repent,\" not \"do penance\") and his <em>Praise of Folly</em> mocked the same Church abuses Luther attacked. Renaissance scholarship made the Reformation possible — then recoiled from what it unleashed."
+      "1504→1517": "Erasmus was the hinge. His 1516 Greek New Testament gave Luther the weapon (<em>metanoeite</em> means \"repent,\" not \"do penance\") and his <em>Praise of Folly</em> mocked the same Church abuses Luther attacked. Renaissance scholarship made the Reformation possible — then recoiled from what it unleashed.",
+      "1517→1543": "Luther appeals to scripture over tradition; Vesalius applies the same principle to flesh."
     },
     "scholasticism": {
       "762→1141": "Baghdad's translators recovered Aristotle; Abelard's <em>Sic et Non</em> put him to work. The dialectical method that Bernard condemned at Sens was built on Arabic-Latin translations flowing through Toledo. When Abelard asked \"by doubting we come to inquiry,\" he was applying tools forged in the House of Wisdom.",
@@ -118,6 +121,12 @@
     },
     "neoplatonism": {
       "529→1504": "The fleeing philosophers seeded Islamic falsafa; Arabic translations returned to Latin through Toledo and Palermo, igniting Renaissance Florentine Platonism."
+    },
+    "scientific-revolution": {
+      "1543→1687": "Vesalius teaches anatomy through observation; Newton formalizes the method into mathematical law."
+    },
+    "empiricism": {
+      "1543→1687": "Vesalius cuts to verify; by Newton's time, experimentation and measurement have become philosophy's arbiter."
     }
   },
   "it": {
@@ -164,7 +173,9 @@
       "800→1141": "Le scuole di Alcuino formarono i maestri delle cattedrali che formarono Abelardo. La dialettica del trivio divenne la spada della scolastica — lo strumento che Abelardo brandì contro Bernardo a Sens.",
       "125→529": "Il Pantheon di Adriano sposò la geometria greca all'ingegneria romana; questa sintesi sopravvisse nell'architettura bizantina e nella codificazione giuridica di Giustiniano.",
       "529→762": "I testi logici greci viaggiarono a est con i filosofi esiliati; gli studiosi di Baghdad li tradussero, accendendo l'Età d'Oro islamica dell'indagine razionale.",
-      "1848→1968": "Dal socialismo scientifico di Marx alla critica della Scuola di Francoforte di Marcuse: la ragione prometteva liberazione ma ha prodotto società amministrata. Il post-strutturalismo decostruisce il razionalismo dall'interno mentre gli studenti lo attaccano dall'esterno."
+      "1848→1968": "Dal socialismo scientifico di Marx alla critica della Scuola di Francoforte di Marcuse: la ragione prometteva liberazione ma ha prodotto società amministrata. Il post-strutturalismo decostruisce il razionalismo dall'interno mentre gli studenti lo attaccano dall'esterno.",
+      "1274→1543": "Tommaso armonizzò fede e ragione; Copernico usò la ragione come arma per spostare la Terra.",
+      "1543→1600": "L'occhio si apre a Basilea; a fine secolo, Bruno brucia per aver seguito dove aveva guardato."
     },
     "modernity": {
       "1648→1687": "Vestfalia risolse il conflitto religioso attraverso la sovranità; Newton risolse il conflitto cosmologico attraverso la matematica. Entrambi sostituirono l'autorità divina con sistemi che gli umani potevano gestire. Le doppie fondamenta del mondo moderno — lo Stato-nazione e la fisica matematica — furono gettate nel giro di quattro decenni.",
@@ -208,7 +219,8 @@
       "-431→762": "L'Atene di Pericle attraeva pensatori da tutto il mondo greco — Anassagora da Clazomene in Ionia, Protagora da Abdera in Tracia, Ippodamo da Mileto — e ne sintetizzava le idee in qualcosa di nuovo. La Baghdad di al-Mansur replicò questo schema su scala maggiore: studiosi da Siria, Persia, India e Asia centrale convergevano su una singola città progettata per attrarre e organizzare il sapere. Entrambe le città compresero che il potere intellettuale richiede un apporto cosmopolita — ed entrambe imposero gerarchie politiche che contraddicevano la loro apertura intellettuale."
     },
     "renaissance-humanism": {
-      "1504→1517": "Erasmo fu la cerniera. Il suo Nuovo Testamento greco del 1516 diede a Lutero l'arma (<em>metanoeite</em> significa \"pentiti,\" non \"fai penitenza\") e il suo <em>Elogio della follia</em> derideva gli stessi abusi ecclesiastici che Lutero attaccò. L'erudizione rinascimentale rese possibile la Riforma — poi indietreggiò di fronte a ciò che aveva scatenato."
+      "1504→1517": "Erasmo fu la cerniera. Il suo Nuovo Testamento greco del 1516 diede a Lutero l'arma (<em>metanoeite</em> significa \"pentiti,\" non \"fai penitenza\") e il suo <em>Elogio della follia</em> derideva gli stessi abusi ecclesiastici che Lutero attaccò. L'erudizione rinascimentale rese possibile la Riforma — poi indietreggiò di fronte a ciò che aveva scatenato.",
+      "1517→1543": "Lutero si appella alla Scrittura oltre la tradizione; Vesalio applica lo stesso principio alla carne."
     },
     "scholasticism": {
       "762→1141": "I traduttori di Baghdad recuperarono Aristotele; il <em>Sic et Non</em> di Abelardo lo mise al lavoro. Il metodo dialettico che Bernardo condannò a Sens era costruito sulle traduzioni arabo-latine che affluivano attraverso Toledo. Quando Abelardo chiese \"dubitando arriviamo all'indagine,\" applicava strumenti forgiati nella Casa della Saggezza.",
@@ -239,6 +251,12 @@
     },
     "neoplatonism": {
       "529→1504": "I filosofi in fuga seminarono la falsafa islamica; le traduzioni arabe tornarono in latino attraverso Toledo e Palermo, accendendo il platonismo fiorentino del Rinascimento."
+    },
+    "scientific-revolution": {
+      "1543→1687": "Vesalio insegna l'anatomia attraverso l'osservazione; Newton formalizza il metodo in legge matematica."
+    },
+    "empiricism": {
+      "1543→1687": "Vesalio seziona per verificare; ai tempi di Newton, sperimentazione e misurazione sono diventate l'arbitro della filosofia."
     }
   }
 }
