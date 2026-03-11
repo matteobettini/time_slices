@@ -45,7 +45,9 @@
       "529→762": "Greek logical texts traveled east with exiled philosophers; Baghdad's scholars translated them, sparking the Islamic Golden Age of rational inquiry.",
       "1848→1968": "From Marx's scientific socialism to Marcuse's Frankfurt School critique: reason promised liberation but delivered administered society. Post-structuralism deconstructs rationalism from within while students attack it from without.",
       "1274→1543": "Aquinas harmonized faith and reason; Copernicus weaponized reason to move the Earth.",
-      "1543→1600": "The eye opens in Basel; by century's end, Bruno burns for following where it looked."
+      "1543→1600": "The eye opens in Basel; by century's end, Bruno burns for following where it looked.",
+      "800→1000": "Alcuin revived the trivium; Gerbert added the quadrivium. Logic returned to Europe through monastery schools that would eventually challenge faith's monopoly.",
+      "1000→1141": "Gerbert's students carried dialectic into the cathedral schools; Abelard, trained in that tradition, would make it a weapon that Sens could not ignore."
     },
     "modernity": {
       "1648→1687": "Westphalia resolved religious conflict through sovereignty; Newton resolved cosmological conflict through mathematics. Both substituted divine authority with systems humans could operate. The modern world's dual foundations — the nation-state and mathematical physics — were laid within four decades.",
@@ -75,7 +77,9 @@
       "410→800": "Augustine preserved Roman rhetoric for Christian purposes; Alcuin's scribes preserved the texts themselves, rescuing classical learning from the monasteries where it had hibernated for four centuries.",
       "800→1504": "The manuscripts Carolingian scribes copied reached Italian humanists who surpassed their models. Charlemagne's architects quoted San Vitale; Leonardo and Michelangelo would quote Rome directly.",
       "410→529": "Augustine's Christian Platonism survived Rome's fall; when Justinian shuttered Athens, Neoplatonism migrated into Byzantine theology and monastic learning.",
-      "529→800": "Benedict's monasteries became arks of classical texts; Charlemagne's court scholars, trained in this tradition, revived Latin learning as Christian humanism."
+      "529→800": "Benedict's monasteries became arks of classical texts; Charlemagne's court scholars, trained in this tradition, revived Latin learning as Christian humanism.",
+      "800→1000": "Charlemagne's scribes preserved Virgil and Cicero; two centuries later, Gerbert actually read them, teaching classical rhetoric when Europe had forgotten how.",
+      "1000→1504": "Gerbert's curriculum seeded the cathedral schools that would recover Aristotle; five centuries of patient copying bore fruit when Renaissance artists claimed ancient Rome as ancestor."
     },
     "art-and-power": {
       "-431→1504": "Pericles diverted the Delian League treasury to fund the Parthenon; Lorenzo de' Medici diverted bank profits to fund Florence's artistic programme. In both cases, economic dominance was transmuted into cultural authority, and the patrons' political opponents attacked the expenditure as illegitimate. Phidias was charged with embezzlement; the Medici were exiled in 1494. The pattern — power expressed through beauty, challenged through accounting — repeats across two millennia.",
@@ -127,6 +131,9 @@
     },
     "empiricism": {
       "1543→1687": "Vesalius cuts to verify; by Newton's time, experimentation and measurement have become philosophy's arbiter."
+    },
+    "carolingian-renaissance": {
+      "800→1000": "Alcuin's school at Aachen trained the teachers who trained Gerbert; the Carolingian curriculum survived in monastery libraries that the Ottonian renaissance would unlock."
     }
   },
   "it": {
@@ -175,7 +182,9 @@
       "529→762": "I testi logici greci viaggiarono a est con i filosofi esiliati; gli studiosi di Baghdad li tradussero, accendendo l'Età d'Oro islamica dell'indagine razionale.",
       "1848→1968": "Dal socialismo scientifico di Marx alla critica della Scuola di Francoforte di Marcuse: la ragione prometteva liberazione ma ha prodotto società amministrata. Il post-strutturalismo decostruisce il razionalismo dall'interno mentre gli studenti lo attaccano dall'esterno.",
       "1274→1543": "Tommaso armonizzò fede e ragione; Copernico usò la ragione come arma per spostare la Terra.",
-      "1543→1600": "L'occhio si apre a Basilea; a fine secolo, Bruno brucia per aver seguito dove aveva guardato."
+      "1543→1600": "L'occhio si apre a Basilea; a fine secolo, Bruno brucia per aver seguito dove aveva guardato.",
+      "800→1000": "Alcuino risuscitò il trivio; Gerberto aggiunse il quadrivio. La logica tornò in Europa attraverso scuole monastiche che avrebbero finalmente sfidato il monopolio della fede.",
+      "1000→1141": "Gli studenti di Gerberto portarono la dialettica nelle scuole cattedrali; Abelardo, formato in quella tradizione, ne fece un'arma che Sens non poté ignorare."
     },
     "modernity": {
       "1648→1687": "Vestfalia risolse il conflitto religioso attraverso la sovranità; Newton risolse il conflitto cosmologico attraverso la matematica. Entrambi sostituirono l'autorità divina con sistemi che gli umani potevano gestire. Le doppie fondamenta del mondo moderno — lo Stato-nazione e la fisica matematica — furono gettate nel giro di quattro decenni.",
@@ -205,7 +214,9 @@
       "410→800": "Agostino preservò la retorica romana per fini cristiani; gli scribi di Alcuino preservarono i testi stessi, salvando il sapere classico dai monasteri dove aveva ibernato per quattro secoli.",
       "800→1504": "I manoscritti copiati dagli scribi carolingi raggiunsero gli umanisti italiani che superarono i loro modelli. Gli architetti di Carlo Magno citavano San Vitale; Leonardo e Michelangelo avrebbero citato Roma direttamente.",
       "410→529": "Il platonismo cristiano di Agostino sopravvisse alla caduta di Roma; quando Giustiniano chiuse Atene, il neoplatonismo migrò nella teologia bizantina e nel sapere monastico.",
-      "529→800": "I monasteri di Benedetto divennero arche di testi classici; gli studiosi della corte di Carlo Magno, formati in questa tradizione, rianimarono il sapere latino come umanesimo cristiano."
+      "529→800": "I monasteri di Benedetto divennero arche di testi classici; gli studiosi della corte di Carlo Magno, formati in questa tradizione, rianimarono il sapere latino come umanesimo cristiano.",
+      "800→1000": "Gli scribi di Carlo Magno conservarono Virgilio e Cicerone; due secoli dopo, Gerberto li lesse davvero, insegnando retorica classica quando l'Europa aveva dimenticato come si facesse.",
+      "1000→1504": "Il curriculum di Gerberto seminò le scuole cattedrali che avrebbero recuperato Aristotele; cinque secoli di paziente copiatura diedero frutto quando gli artisti rinascimentali rivendicarono l'antica Roma come antenata."
     },
     "art-and-power": {
       "-431→1504": "Pericle dirottò il tesoro della Lega di Delo per finanziare il Partenone; Lorenzo de' Medici dirottò i profitti bancari per finanziare il programma artistico di Firenze. In entrambi i casi, il dominio economico fu trasmutato in autorità culturale, e gli oppositori politici dei mecenati contestarono la spesa come illegittima. Fidia fu accusato di appropriazione indebita; i Medici furono esiliati nel 1494. Lo schema — potere espresso attraverso la bellezza, contestato attraverso la contabilità — si ripete lungo due millenni.",
@@ -257,6 +268,9 @@
     },
     "empiricism": {
       "1543→1687": "Vesalio seziona per verificare; ai tempi di Newton, sperimentazione e misurazione sono diventate l'arbitro della filosofia."
+    },
+    "carolingian-renaissance": {
+      "800→1000": "La scuola di Alcuino ad Aquisgrana formò i maestri che formarono Gerberto; il curriculum carolingio sopravvisse nelle biblioteche monastiche che il rinascimento ottoniano avrebbe dischiuso."
     }
   }
 }

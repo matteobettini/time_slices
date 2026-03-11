@@ -1570,5 +1570,79 @@
       "url": "audio/1543-year-the-eye-opened.mp3",
       "duration": 166
     }
+  },
+  {
+    "year": "1000",
+    "id": "1000-rome-white-mantle",
+    "title": "Rome — The White Mantle",
+    "teaser": "The millennium turns. Otto III dreams of a renewed Roman Empire from his palace on the Aventine. His former tutor rules as pope. Hungary receives its crown, Poland its archbishopric. And across Europe, the world puts on 'a white mantle of churches.'",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>Ottonian illumination</strong> reaches its apex. At the monastery of <strong>Reichenau</strong> on Lake Constance, monks of the <strong>Liuthar Group</strong> produce the <em>Gospels of Otto III</em> — perhaps the most magnificent manuscript of the medieval West. Its double-page spreads show the emperor enthroned, receiving homage from personifications of <strong>Roma, Gallia, Germania, and Sclavinia</strong>. The style fuses <strong>Byzantine</strong> hieratic grandeur with <strong>Carolingian</strong> heritage: flattened figures, burnished gold backgrounds, brilliant mineral pigments. These books are theology made visible — Christ not as suffering man but as <em>Pantocrator</em>, lord of cosmos and time. UNESCO would later designate the Reichenau manuscripts as Memory of the World heritage."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "The monk <strong>Raoul Glaber</strong>, writing a generation later, captures the mood: around the millennium, 'the whole world shook off the dust of ages and clothed itself in a <strong>white mantle of churches</strong>.' His <em>Five Books of Histories</em> becomes our window into millennial mentality — not mass panic, but fevered expectation. <strong>Gerbert of Aurillac</strong>, now <strong>Pope Sylvester II</strong>, leaves over 200 letters in elegant Latin, reading Virgil, Cicero, and Boethius when other churchmen barely read at all. His philosophical tract <em>De rationali et de ratione uti</em> revives classical logic. Literacy remains monastic, but the monasteries are stirring."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Gerbert</strong> represents a pre-Renaissance of rational method. Having studied in Muslim Spain at <strong>Vic and Ripoll</strong>, he reintroduces the <strong>abacus</strong> and <strong>Hindu-Arabic numerals</strong> to Latin Christendom, revolutionising calculation. He builds astronomical instruments — armillary spheres, celestial globes — that let students visualise Ptolemaic cosmology. His curriculum resurrects the <strong>seven liberal arts</strong>: the <em>trivium</em> (grammar, logic, rhetoric) preparing minds for the <em>quadrivium</em> (arithmetic, geometry, astronomy, music). Logic, dormant since Boethius, returns to European schools. Contemporaries whispered he'd learned sorcery from the Arabs; they could not believe mere study produced such knowledge."
+      },
+      "hist": {
+        "label": "History",
+        "content": "<strong>Otto III</strong>, not yet twenty, rules from a palace on Rome's Aventine Hill, dreaming of <em>Renovatio Imperii Romanorum</em> — renewal of the Roman Empire. His pope is his former tutor, symbolically named <strong>Sylvester</strong> after Constantine's bishop. In March 1000, Otto journeys to <strong>Gniezno</strong> in Poland, praying at the tomb of martyred <strong>St. Adalbert</strong>; there he grants Poland an independent archbishopric, freeing it from German ecclesiastical control. At Christmas, <strong>Stephen I</strong> receives a crown from Sylvester, founding Christian <strong>Hungary</strong>. The <strong>Peace of God</strong> councils spread across France, bishops and abbots constraining feudal violence through oaths sworn on relics. Christendom is consolidating — and expanding."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The threads converge in <strong>Gerbert's dual role</strong> as pope and scholar. His curriculum at Reims and Bobbio trained a generation who would build the institutional Church. Otto III's vision required a learned pope who could articulate <strong>translatio imperii</strong> — the transfer of Roman authority. The illuminated gospels served this ideology: they showed emperor and evangelist occupying parallel heavens, sacred and secular power reflecting one another. When Otto gave <strong>Bolesław</strong> a replica of the Holy Lance at Gniezno, he was enacting manuscript theology in political ritual. The 'white mantle of churches' — Romanesque basilicas replacing Carolingian wood — would house the new learning that Gerbert helped revive.",
+        "funFact": "Gerbert's mastery of the abacus and astronomical instruments so astounded his contemporaries that after his death, legend claimed he'd made a pact with the devil and built a bronze head that answered questions about the future. The 'Scientist Pope' became a sorcerer in medieval folklore — proof that competence in mathematics looked like magic."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pope_Sylvester_II",
+        "title": "Pope Sylvester II - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Gospels_of_Otto_III",
+        "title": "Gospels of Otto III - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Congress_of_Gniezno",
+        "title": "Congress of Gniezno - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Peace_and_Truce_of_God",
+        "title": "Peace and Truce of God - Wikipedia"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Otto-III",
+        "title": "Otto III - Britannica"
+      }
+    ],
+    "image": {
+      "url": "images/1000-rome-white-mantle.jpg",
+      "alt": "Illumination from the Gospels of Otto III showing Christ in Gethsemane, produced at Reichenau Abbey c. 1000",
+      "width": 700,
+      "height": 1031,
+      "caption": "Christ in Gethsemane, from the Gospels of Otto III (c. 1000), Reichenau School",
+      "attribution": "Workshop of Liuthar, Reichenau Abbey, Public Domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "carolingian-renaissance",
+      "rationalism",
+      "classical-revival"
+    ],
+    "location": {
+      "lat": 41.8833,
+      "lon": 12.4833,
+      "place": "Rome"
+    },
+    "addedDate": "2026-03-11T06:00:00Z",
+    "podcast": {
+      "url": "audio/1000-rome-white-mantle.mp3",
+      "duration": 140
+    }
   }
 ]
