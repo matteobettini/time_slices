@@ -90,7 +90,6 @@ MIN_ELEVENLABS_CREDITS = 500
 # ElevenLabs voices (voice_id, name, description)
 # Using premade voices that work with eleven_flash_v2_5
 ELEVENLABS_VOICES_EN = [
-    ("21m00Tcm4TlvDq8ikWAM", "Rachel", "calm, young female, American"),
     ("TxGEqnHWrfWFTfGW9XjX", "Josh", "deep, young male, American"),
     ("EXAVITQu4vr4xnSDxMaL", "Sarah", "soft, young female, American"),
     ("Xb7hH8MSUJpSbSDYk0k2", "Alice", "confident female, British"),
@@ -103,7 +102,6 @@ ELEVENLABS_VOICES_EN = [
 ELEVENLABS_VOICES_IT = [
     # ElevenLabs multilingual voices work for Italian with eleven_multilingual_v2
     # But flash model is English-optimized; for IT we use multilingual model
-    ("21m00Tcm4TlvDq8ikWAM", "Rachel", "calm female (multilingual)"),
     ("TxGEqnHWrfWFTfGW9XjX", "Josh", "deep male (multilingual)"),
     ("EXAVITQu4vr4xnSDxMaL", "Sarah", "soft female (multilingual)"),
     ("Xb7hH8MSUJpSbSDYk0k2", "Alice", "confident female (multilingual)"),
@@ -331,40 +329,46 @@ def download_music_track(url, filename):
 
 
 def validate_music_start(music_path, start_time):
-    """Check that music at start_time is not silent. Returns (ok, suggested_start)."""
+    """Check that music at start_time is not silent. Returns (ok, suggested_start).
+    
+    Checks the FIRST SECOND specifically — fade-ins that average OK over 3s
+    can still have inaudible intros. Threshold: -25dB in first second.
+    """
+    import re
+    
+    # Check volume at the very start (first 1 second only)
     result = subprocess.run(
-        ["ffmpeg", "-i", music_path, "-ss", str(start_time), "-t", "3",
+        ["ffmpeg", "-i", music_path, "-ss", str(start_time), "-t", "1",
          "-af", "volumedetect", "-f", "null", "-"],
         capture_output=True, text=True
     )
     
-    import re
     match = re.search(r'mean_volume: ([-\d.]+) dB', result.stderr)
     if not match:
         return True, start_time
     
     mean_vol = float(match.group(1))
     
-    if mean_vol < -35:
-        print(f"  ⚠️  Music at {start_time}s is quiet ({mean_vol:.1f}dB), searching for better start...")
+    # -25dB threshold for first second: must be immediately audible
+    if mean_vol < -25:
+        print(f"  ⚠️  Music at {start_time}s starts too quiet ({mean_vol:.1f}dB), scanning for louder section...")
         
-        result = subprocess.run(
-            ["ffmpeg", "-i", music_path, "-af", "silencedetect=noise=-30dB:d=0.3",
-             "-f", "null", "-"],
-            capture_output=True, text=True
-        )
+        # Scan first 60s in 2s chunks to find where music actually starts
+        for t in range(0, 60, 2):
+            result = subprocess.run(
+                ["ffmpeg", "-i", music_path, "-ss", str(t), "-t", "1",
+                 "-af", "volumedetect", "-f", "null", "-"],
+                capture_output=True, text=True
+            )
+            match = re.search(r'mean_volume: ([-\d.]+) dB', result.stderr)
+            if match and float(match.group(1)) >= -25:
+                suggested = max(t, 0)
+                print(f"  💡 Found audible music at {suggested}s ({match.group(1)}dB)")
+                return False, suggested
         
-        for line in result.stderr.split('\n'):
-            if 'silence_end' in line:
-                match = re.search(r'silence_end: ([\d.]+)', line)
-                if match:
-                    end_time = float(match.group(1))
-                    if end_time > start_time:
-                        suggested = round(end_time * 2) / 2
-                        print(f"  💡 Suggested start_time: {suggested}s")
-                        return False, suggested
-        
-        return False, start_time + 2
+        # Fallback: just skip ahead
+        print(f"  ⚠️  Couldn't find loud section, adding 5s offset")
+        return False, start_time + 5
     
     return True, start_time
 
