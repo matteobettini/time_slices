@@ -1642,7 +1642,13 @@
     "addedDate": "2026-03-11T06:00:00Z",
     "podcast": {
       "url": "audio/1000-rome-white-mantle.mp3",
-      "duration": 140
+      "duration": 158
+    },
+    "music": {
+      "title": "O Magne Pater",
+      "composer": "Hildegard von Bingen (performed by Sarband)",
+      "source": "Internet Archive",
+      "url": "https://archive.org/details/SarbandSacredWomen"
     }
   }
 ]
