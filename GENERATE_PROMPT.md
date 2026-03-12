@@ -54,7 +54,13 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 6. **Connections must be GROUNDED.** The 🔗 Connections dimension must describe real, documented cross-dimensional influence — not poetic parallels. If you can't cite it, don't claim it.
 
-7. **Thread connectivity and quality:**
+7. **Fun Facts are MANDATORY.** Each dimension MUST include a `funFact` field — a surprising, lesser-known detail that makes readers go "wait, really?" 
+   - One sentence, punchy and memorable
+   - Must be factually accurate (verify!)
+   - Should add depth, not just restate the main content
+   - Examples: "The fresco was legendarily completed by an angel", "He wrote it in three weeks while Christendom panicked", "The first dated print was an indulgence letter, not the Bible"
+
+8. **Thread connectivity and quality:**
    - Threads must be **historical, cultural, or thematic** — intellectual movements, artistic schools, philosophical currents
    - **Good threads:** `death-of-god`, `nominalism`, `classical-revival`, `reformation`, `vernacular-literature`, `existentialism`
    - **Bad threads:** `biography`, `famous-people`, `wars`, `inventions` — generic categories, not traceable ideas
@@ -62,23 +68,23 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
    - **⚠️ AVOID DUPLICATE THREADS:** Don't create near-synonyms like `christian-humanism` when `renaissance-humanism` exists.
    - **⚠️ BE RUTHLESS WITH ASSIGNMENT:** Only assign a thread if the entry's *central thesis* engages it directly — not because it "kind of relates." Ask: would someone exploring this thread be surprised not to find this entry? If the connection is incidental, don't assign it. Aim for 2-4 threads per entry.
 
-8. **Add ONE new entry** following the spec. Include:
+9. **Add ONE new entry** following the spec. Include:
    - City in title only if dimensions converge there; otherwise use thematic title
    - `location` field (always required for map)
    - `addedDate` as full ISO-8601 UTC timestamp (e.g. `"2026-02-25T14:30:00Z"`)
 
-9. **Download and prepare image:**
+10. **Download and prepare image:**
    ```bash
    ./scripts/prep-image.sh <url_or_path> {entry-id} "Alt text description"
    ```
    This downloads, compresses (max 1200px, quality 85), and outputs the image JSON with dimensions.
    Copy the output JSON into your entry — dimensions are included automatically.
 
-10. **Add Italian version** to `slices.it.json` — natural Italian, not machine translation.
+11. **Add Italian version** to `slices.it.json` — natural Italian, not machine translation.
 
-11. **Update THREAD_LABELS** in `thread-labels.json` if you add new thread tags (both `en` and `it` keys).
+12. **Update THREAD_LABELS** in `thread-labels.json` if you add new thread tags (both `en` and `it` keys).
 
-12. **Add THREAD_NARRATIVES** using the helper script:
+13. **Add THREAD_NARRATIVES** using the helper script:
     ```bash
     # Check what's missing
     python3 scripts/add-narrative.py --missing
@@ -92,11 +98,11 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 ---
 
-## PHASE 2: Podcasts (Steps 13-15) — MANDATORY
+## PHASE 2: Podcasts (Steps 14-16) — MANDATORY
 
 ⚠️ **DO NOT SKIP THIS PHASE. Previous runs have failed by stopping after Phase 1.**
 
-13. **Write podcast scripts:**
+14. **Write podcast scripts:**
     - EN script (~350-400 words, storytelling style) → `audio/scripts/{id}.txt`
     - IT script (culturally adapted, not literal) → `audio/scripts/it/{id}.txt`
     
@@ -106,7 +112,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     - ❌ "1,000 years" → ✅ "a thousand years"
     - ❌ "3 months" → ✅ "three months"
 
-14. **Find background music using `find-music.py`:**
+15. **Find background music using `find-music.py`:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     # Search by era + mood — pick terms that match the entry's period and tone
@@ -127,7 +133,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     
     **Save the URL and start_time from the output** — you'll pass them to generate-podcast.py.
 
-15. **Generate podcasts:**
+16. **Generate podcasts:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     
@@ -137,11 +143,11 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     
     # EN podcast (auto-selects ElevenLabs if credits available, else Edge TTS)
     python3 scripts/generate-podcast.py {id} --lang en \
-      --music-url "URL_FROM_STEP_14" --music-start SECONDS
+      --music-url "URL_FROM_STEP_15" --music-start SECONDS
     
     # IT podcast  
     python3 scripts/generate-podcast.py {id} --lang it \
-      --music-url "URL_FROM_STEP_14" --music-start SECONDS
+      --music-url "URL_FROM_STEP_15" --music-start SECONDS
     ```
     
     Voices are randomly selected from curated pools for variety. To force a specific voice, add `--voice <name>`.
@@ -155,11 +161,11 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 ---
 
-## PHASE 3: Publish (Steps 16-17) — MANDATORY
+## PHASE 3: Publish (Steps 17-18) — MANDATORY
 
 ⚠️ **DO NOT SKIP THIS PHASE. The entry is NOT LIVE until pushed.**
 
-16. **Commit and push:**
+17. **Commit and push:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     git add -A
@@ -169,7 +175,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     
     **VERIFY PUSH SUCCEEDED.** Look for `main -> main` in output. If you see `rejected` or `error`, fix it.
 
-17. **Final reply** (ONLY after steps 15-16 verified):
+18. **Final reply** (ONLY after steps 16-17 verified):
     - Year, title, teaser, one highlight connection (3-5 sentences)
     - Direct link: `https://matteobettini.github.io/time_slices/#ID`
     - No backticks around the URL — it must be clickable
