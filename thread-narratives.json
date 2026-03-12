@@ -17,7 +17,9 @@
       "1848→1889": "Marx's critique of religion as opiate of the people sets the stage for Nietzsche's announcement: God is dead, and we have killed him — but what will replace the void?",
       "1347→1600": "The Black Death shattered confidence in providence; two centuries later, Bruno's infinite cosmos made the heavens indifferent, not merely punishing.",
       "1600→1648": "Bruno burned for cosmic heresy; the Thirty Years' War would make Christians burn each other for lesser doctrinal differences, exhausting religious certainty.",
-      "1922→1968": "Nietzsche's declaration becomes lived reality: Modernism's fragmentation of meaning reaches the streets. By 1968, Debord and Marcuse translate the death-of-God into political critique — authority itself is the corpse."
+      "1922→1968": "Nietzsche's declaration becomes lived reality: Modernism's fragmentation of meaning reaches the streets. By 1968, Debord and Marcuse translate the death-of-God into political critique — authority itself is the corpse.",
+      "1347→1453": "A century after plague devastated Christendom's certainties, its eastern capital falls — and a philosopher dreams of reconciling all faiths through reason alone.",
+      "1453→1600": "From Cusano's vision of religious harmony to Bruno's infinite cosmos — 150 years of expanding what God might mean, until Rome burns the questioner."
     },
     "rationalism": {
       "-431→125": "Anaxagoras argued that a rational principle (<em>Nous</em>) governed the cosmos rather than the caprice of gods. Five centuries later, the Stoics — working from this same Greek rationalist tradition, filtered through Aristotle and the early Stoa — taught that the universe was structured by <em>logos</em>, a rational order accessible to human reason. Epictetus, teaching in Nicopolis around 125 CE, inherited this lineage directly: Stoicism emerged from the Athenian philosophical milieu that Anaxagoras helped create, passed through Zeno of Citium (who studied at Plato's Academy) and Chrysippus. The Pantheon's mathematical perfection — its dome a geometrically exact hemisphere — is this rationalist conviction expressed in built form.",
@@ -47,7 +49,9 @@
       "1274→1543": "Aquinas harmonized faith and reason; Copernicus weaponized reason to move the Earth.",
       "1543→1600": "The eye opens in Basel; by century's end, Bruno burns for following where it looked.",
       "800→1000": "Alcuin revived the trivium; Gerbert added the quadrivium. Logic returned to Europe through monastery schools that would eventually challenge faith's monopoly.",
-      "1000→1141": "Gerbert's students carried dialectic into the cathedral schools; Abelard, trained in that tradition, would make it a weapon that Sens could not ignore."
+      "1000→1141": "Gerbert's students carried dialectic into the cathedral schools; Abelard, trained in that tradition, would make it a weapon that Sens could not ignore.",
+      "1274→1453": "From the death of Aquinas to the dispersal of Greek philosophy — two centuries where scholasticism hardens while its sources await rediscovery.",
+      "1453→1543": "Neoplatonism arrives with the refugees; ninety years later, Copernicus demonstrates what rational method can do to received cosmology."
     },
     "modernity": {
       "1648→1687": "Westphalia resolved religious conflict through sovereignty; Newton resolved cosmological conflict through mathematics. Both substituted divine authority with systems humans could operate. The modern world's dual foundations — the nation-state and mathematical physics — were laid within four decades.",
@@ -79,7 +83,9 @@
       "410→529": "Augustine's Christian Platonism survived Rome's fall; when Justinian shuttered Athens, Neoplatonism migrated into Byzantine theology and monastic learning.",
       "529→800": "Benedict's monasteries became arks of classical texts; Charlemagne's court scholars, trained in this tradition, revived Latin learning as Christian humanism.",
       "800→1000": "Charlemagne's scribes preserved Virgil and Cicero; two centuries later, Gerbert actually read them, teaching classical rhetoric when Europe had forgotten how.",
-      "1000→1504": "Gerbert's curriculum seeded the cathedral schools that would recover Aristotle; five centuries of patient copying bore fruit when Renaissance artists claimed ancient Rome as ancestor."
+      "1000→1504": "Gerbert's curriculum seeded the cathedral schools that would recover Aristotle; five centuries of patient copying bore fruit when Renaissance artists claimed ancient Rome as ancestor.",
+      "1000→1453": "Four centuries of rediscovering antiquity through Charlemagne's heirs, Roman law, and Arabic translations — then Constantinople's fall floods the West with the Greek originals.",
+      "1453→1504": "Byzantine scholars scatter Plato's dialogues across Italy; within fifty years, Florentine artists are painting philosophy."
     },
     "art-and-power": {
       "-431→1504": "Pericles diverted the Delian League treasury to fund the Parthenon; Lorenzo de' Medici diverted bank profits to fund Florence's artistic programme. In both cases, economic dominance was transmuted into cultural authority, and the patrons' political opponents attacked the expenditure as illegitimate. Phidias was charged with embezzlement; the Medici were exiled in 1494. The pattern — power expressed through beauty, challenged through accounting — repeats across two millennia.",
@@ -94,7 +100,8 @@
     },
     "renaissance-humanism": {
       "1504→1517": "Erasmus was the hinge. His 1516 Greek New Testament gave Luther the weapon (<em>metanoeite</em> means \"repent,\" not \"do penance\") and his <em>Praise of Folly</em> mocked the same Church abuses Luther attacked. Renaissance scholarship made the Reformation possible — then recoiled from what it unleashed.",
-      "1517→1543": "Luther appeals to scripture over tradition; Vesalius applies the same principle to flesh."
+      "1517→1543": "Luther appeals to scripture over tradition; Vesalius applies the same principle to flesh.",
+      "1453→1504": "Greek manuscripts flood Italian libraries; within a generation, Lorenzo de' Medici's circle transforms philosophy into lived culture."
     },
     "scholasticism": {
       "762→1141": "Baghdad's translators recovered Aristotle; Abelard's <em>Sic et Non</em> put him to work. The dialectical method that Bernard condemned at Sens was built on Arabic-Latin translations flowing through Toledo. When Abelard asked \"by doubting we come to inquiry,\" he was applying tools forged in the House of Wisdom.",
@@ -154,7 +161,9 @@
       "1848→1889": "La critica di Marx alla religione come oppio dei popoli prepara il terreno per l'annuncio di Nietzsche: Dio è morto, e noi lo abbiamo ucciso — ma cosa riempirà il vuoto?",
       "1347→1600": "La Peste Nera frantumò la fiducia nella provvidenza; due secoli dopo, il cosmo infinito di Bruno rese i cieli indifferenti, non solo punitivi.",
       "1600→1648": "Bruno bruciò per eresia cosmica; la Guerra dei Trent'anni avrebbe fatto bruciare cristiani tra loro per differenze dottrinali minori, esaurendo la certezza religiosa.",
-      "1922→1968": "La dichiarazione di Nietzsche diventa realtà vissuta: la frammentazione modernista del significato raggiunge le strade. Nel 1968, Debord e Marcuse traducono la morte di Dio in critica politica — l'autorità stessa è il cadavere."
+      "1922→1968": "La dichiarazione di Nietzsche diventa realtà vissuta: la frammentazione modernista del significato raggiunge le strade. Nel 1968, Debord e Marcuse traducono la morte di Dio in critica politica — l'autorità stessa è il cadavere.",
+      "1347→1453": "Un secolo dopo che la peste devastò le certezze della Cristianità, la sua capitale orientale cade — e un filosofo sogna di riconciliare tutte le fedi con la sola ragione.",
+      "1453→1600": "Dalla visione di Cusano sull'armonia religiosa al cosmo infinito di Bruno — 150 anni di espansione del significato di Dio, finché Roma brucia chi pone domande."
     },
     "rationalism": {
       "-431→125": "Anassagora sosteneva che un principio razionale (<em>Nous</em>) governasse il cosmo piuttosto che il capriccio degli dei. Cinque secoli dopo, gli Stoici — partendo dalla stessa tradizione razionalista greca, filtrata attraverso Aristotele e la prima Stoa — insegnavano che l'universo era strutturato dal <em>logos</em>, un ordine razionale accessibile alla ragione umana. Epitteto, che insegnava a Nicopoli intorno al 125 d.C., ereditava direttamente questa genealogia: lo stoicismo emerse dall'ambiente filosofico ateniese che Anassagora contribuì a creare, passando attraverso Zenone di Cizio (che studiò all'Accademia di Platone) e Crisippo. La perfezione matematica del Pantheon — la cupola come emisfero geometricamente esatto — è questa convinzione razionalista espressa in forma costruita.",
@@ -184,7 +193,9 @@
       "1274→1543": "Tommaso armonizzò fede e ragione; Copernico usò la ragione come arma per spostare la Terra.",
       "1543→1600": "L'occhio si apre a Basilea; a fine secolo, Bruno brucia per aver seguito dove aveva guardato.",
       "800→1000": "Alcuino risuscitò il trivio; Gerberto aggiunse il quadrivio. La logica tornò in Europa attraverso scuole monastiche che avrebbero finalmente sfidato il monopolio della fede.",
-      "1000→1141": "Gli studenti di Gerberto portarono la dialettica nelle scuole cattedrali; Abelardo, formato in quella tradizione, ne fece un'arma che Sens non poté ignorare."
+      "1000→1141": "Gli studenti di Gerberto portarono la dialettica nelle scuole cattedrali; Abelardo, formato in quella tradizione, ne fece un'arma che Sens non poté ignorare.",
+      "1274→1453": "Dalla morte di Tommaso alla dispersione della filosofia greca — due secoli in cui la Scolastica si irrigidisce mentre le sue fonti attendono di essere riscoperte.",
+      "1453→1543": "Il Neoplatonismo arriva con i rifugiati; novant'anni dopo, Copernico dimostra cosa può fare il metodo razionale alla cosmologia ereditata."
     },
     "modernity": {
       "1648→1687": "Vestfalia risolse il conflitto religioso attraverso la sovranità; Newton risolse il conflitto cosmologico attraverso la matematica. Entrambi sostituirono l'autorità divina con sistemi che gli umani potevano gestire. Le doppie fondamenta del mondo moderno — lo Stato-nazione e la fisica matematica — furono gettate nel giro di quattro decenni.",
@@ -216,7 +227,9 @@
       "410→529": "Il platonismo cristiano di Agostino sopravvisse alla caduta di Roma; quando Giustiniano chiuse Atene, il neoplatonismo migrò nella teologia bizantina e nel sapere monastico.",
       "529→800": "I monasteri di Benedetto divennero arche di testi classici; gli studiosi della corte di Carlo Magno, formati in questa tradizione, rianimarono il sapere latino come umanesimo cristiano.",
       "800→1000": "Gli scribi di Carlo Magno conservarono Virgilio e Cicerone; due secoli dopo, Gerberto li lesse davvero, insegnando retorica classica quando l'Europa aveva dimenticato come si facesse.",
-      "1000→1504": "Il curriculum di Gerberto seminò le scuole cattedrali che avrebbero recuperato Aristotele; cinque secoli di paziente copiatura diedero frutto quando gli artisti rinascimentali rivendicarono l'antica Roma come antenata."
+      "1000→1504": "Il curriculum di Gerberto seminò le scuole cattedrali che avrebbero recuperato Aristotele; cinque secoli di paziente copiatura diedero frutto quando gli artisti rinascimentali rivendicarono l'antica Roma come antenata.",
+      "1000→1453": "Quattro secoli di riscoperta dell'antichità attraverso gli eredi di Carlo Magno, il diritto romano e le traduzioni arabe — poi la caduta di Costantinopoli inonda l'Occidente con gli originali greci.",
+      "1453→1504": "Gli studiosi bizantini disperdono i dialoghi di Platone per l'Italia; entro cinquant'anni, gli artisti fiorentini dipingono filosofia."
     },
     "art-and-power": {
       "-431→1504": "Pericle dirottò il tesoro della Lega di Delo per finanziare il Partenone; Lorenzo de' Medici dirottò i profitti bancari per finanziare il programma artistico di Firenze. In entrambi i casi, il dominio economico fu trasmutato in autorità culturale, e gli oppositori politici dei mecenati contestarono la spesa come illegittima. Fidia fu accusato di appropriazione indebita; i Medici furono esiliati nel 1494. Lo schema — potere espresso attraverso la bellezza, contestato attraverso la contabilità — si ripete lungo due millenni.",
@@ -231,7 +244,8 @@
     },
     "renaissance-humanism": {
       "1504→1517": "Erasmo fu la cerniera. Il suo Nuovo Testamento greco del 1516 diede a Lutero l'arma (<em>metanoeite</em> significa \"pentiti,\" non \"fai penitenza\") e il suo <em>Elogio della follia</em> derideva gli stessi abusi ecclesiastici che Lutero attaccò. L'erudizione rinascimentale rese possibile la Riforma — poi indietreggiò di fronte a ciò che aveva scatenato.",
-      "1517→1543": "Lutero si appella alla Scrittura oltre la tradizione; Vesalio applica lo stesso principio alla carne."
+      "1517→1543": "Lutero si appella alla Scrittura oltre la tradizione; Vesalio applica lo stesso principio alla carne.",
+      "1453→1504": "I manoscritti greci inondano le biblioteche italiane; nel giro di una generazione, la cerchia di Lorenzo de' Medici trasforma la filosofia in cultura vissuta."
     },
     "scholasticism": {
       "762→1141": "I traduttori di Baghdad recuperarono Aristotele; il <em>Sic et Non</em> di Abelardo lo mise al lavoro. Il metodo dialettico che Bernardo condannò a Sens era costruito sulle traduzioni arabo-latine che affluivano attraverso Toledo. Quando Abelardo chiese \"dubitando arriviamo all'indagine,\" applicava strumenti forgiati nella Casa della Saggezza.",

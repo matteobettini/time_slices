@@ -1,0 +1,49 @@
+{
+  "year": "1453",
+  "id": "1453-constantinople-end-of-an-empire",
+  "title": "Constantinople — The End of an Empire",
+  "teaser": "Two empires die. Two rise. An ancient faith dreams of reconciliation while gunpowder rewrites the rules of war. In Mainz, a printing press begins to transform how humanity thinks.",
+  "dimensions": {
+    "art": {
+      "label": "Art",
+      "content": "As Constantinople falls, <strong>Late Byzantine art</strong> reaches its tragic culmination. The revered <em>Hodegetria</em> icon — believed painted by Saint Luke himself — is reportedly cut into four pieces during the sack. Yet Byzantine artistic traditions do not die: they scatter. Greek artists flee to Venetian Crete, founding the <strong>Cretan School</strong> that will produce El Greco a century later. Meanwhile, in Italy, <strong>Fra Angelico</strong> completes his silver chest paintings for Florence's Santissima Annunziata before returning to Rome. In the North, <strong>Rogier van der Weyden</strong>'s workshop continues producing altarpieces that fuse Flemish realism with theological depth — a parallel revolution in rendering the sacred visible."
+    },
+    "lit": {
+      "label": "Literature",
+      "content": "The fall generates immediate literary response. <strong>Manuel Doukas Chrysaphes</strong>, choralist to the last two emperors, composes a haunting <em>threnos</em> (lament) using Psalm 79: 'O God, the nations have invaded your inheritance.' Over a hundred Greek laments will follow, personifying Constantinople as a violated woman — vernacular poetry born from catastrophe. The <strong>Byzantine scholars</strong> fleeing West carry manuscripts that will fuel Italian humanism: Plato's dialogues, Aristotle's complete works, histories and rhetorics long unavailable in Latin Europe. Cardinal Bessarion, who escaped with his library, will bequeath 500 Greek manuscripts to Venice — the nucleus of the Biblioteca Marciana."
+    },
+    "phil": {
+      "label": "Philosophy",
+      "content": "<strong>Nicholas of Cusa</strong> responds to the catastrophe with <em>De Pace Fidei</em> (On the Peace of Faith), a visionary dialogue proposing 'una religio in rituum varietate' — one religion in a variety of rites. Seventeen wise men representing all faiths gather in a heavenly council, seeking common ground through reason rather than crusade. It is the first sustained Western philosophical argument for religious tolerance, written in the immediate shadow of Christian defeat. Meanwhile, the Greek scholars arriving in Italy bring <strong>Neoplatonism</strong> directly from its source. The seeds planted now will bloom in Ficino's Florentine Academy, challenging scholastic Aristotelianism and reshaping Renaissance thought."
+    },
+    "hist": {
+      "label": "History",
+      "content": "On May 29, after 53 days of siege, <strong>Mehmed II</strong>'s Ottoman forces breach the Theodosian walls — defenses that had held for a thousand years — using massive bombards that herald a new age of gunpowder warfare. <strong>Constantine XI</strong>, last Roman Emperor, dies fighting in the breach. The city that Constantine the Great consecrated in 330 CE passes to Islam. Weeks later, on July 17, the <strong>Battle of Castillon</strong> ends the Hundred Years' War — the first major European battle won by field artillery. And in January, in Rome, the humanist <strong>Stefano Porcari</strong> was executed for plotting to overthrow Pope Nicholas V and restore the Roman Republic. Three empires reshaped in a single year."
+    },
+    "conn": {
+      "label": "Connections",
+      "content": "The threads converge in gunpowder and manuscripts. Mehmed's cannons demolish walls that had defined siegecraft for millennia, while Jean Bureau's artillery at Castillon shows that mounted knights are obsolete. Meanwhile, in Mainz, <strong>Gutenberg</strong>'s printing press — producing Bibles by 1455 — will do to knowledge what cannons did to castles. The Byzantine scholars fleeing to Italy carry texts that will fuel both Renaissance humanism and the Reformation's return to Greek sources. Nicholas of Cusa's dream of religious dialogue through reason arrives precisely when such dialogue has become geopolitically urgent. Constantinople's fall doesn't end Byzantine civilization — it disperses it, seeding Europe with Greek learning at the exact moment when printing can amplify it."
+    }
+  },
+  "sources": [
+    {"url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople", "title": "Fall of Constantinople - Wikipedia"},
+    {"url": "https://en.wikipedia.org/wiki/Battle_of_Castillon", "title": "Battle of Castillon - Wikipedia"},
+    {"url": "https://en.wikipedia.org/wiki/Nicholas_of_Cusa", "title": "Nicholas of Cusa - Wikipedia"},
+    {"url": "https://en.wikipedia.org/wiki/Greek_scholars_in_the_Renaissance", "title": "Greek scholars in the Renaissance - Wikipedia"}
+  ],
+  "image": {
+    "url": "images/1453-constantinople-end-of-an-empire.jpg",
+    "alt": "Mehmed II entering Constantinople, painting by Benjamin-Constant (1876)",
+    "width": 880,
+    "height": 1200,
+    "caption": "Mehmed II enters Constantinople",
+    "attribution": "Jean-Joseph Benjamin-Constant, Public domain, via Wikimedia Commons"
+  },
+  "threads": ["rationalism", "death-of-god", "classical-revival", "renaissance-humanism"],
+  "location": {
+    "lat": 41.0082,
+    "lon": 28.9784,
+    "place": "Constantinople"
+  },
+  "addedDate": "2026-03-12T06:00:00Z"
+}
