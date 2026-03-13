@@ -1,0 +1,54 @@
+{
+  "year": "1509",
+  "id": "1509-folly-and-philosophy",
+  "title": "Folly and Philosophy",
+  "teaser": "As Raphael paints ancient wisdom on Vatican walls, Erasmus laughs at the folly of scholastics in London. The Renaissance discovers that wisdom wears a jester's cap.",
+  "dimensions": {
+    "art": {
+      "label": "Art",
+      "content": "<strong>Raphael</strong> begins the <em>Stanza della Segnatura</em> frescoes in the Vatican — including <em>The School of Athens</em>, perhaps the most famous visual statement of <strong>High Renaissance humanism</strong>. Ancient philosophers gather in an idealized classical architecture: Plato points upward (toward Forms), Aristotle gestures forward (toward the world). But Raphael's genius lies in the portraits hidden within: <strong>Leonardo</strong> as Plato, <strong>Bramante</strong> as Euclid, <strong>Michelangelo</strong> as the brooding Heraclitus. The painting declares that modern artists are the equals of ancient thinkers — that the Renaissance has achieved its goal of <em>renovatio</em>, the rebirth of classical wisdom.",
+      "funFact": "Raphael added Michelangelo as Heraclitus after sneaking into the Sistine Chapel to see the ceiling — a tribute to his rival painted onto the fresco mid-completion."
+    },
+    "lit": {
+      "label": "Literature",
+      "content": "In London, <strong>Erasmus</strong> stays at the house of <strong>Thomas More</strong> and writes <em>Moriae Encomium</em> (<em>The Praise of Folly</em>) in about a week — a satirical masterpiece whose Greek title puns on More's name. Speaking through the voice of Folly herself, Erasmus skewers scholastic philosophers, corrupt clergy, and pompous theologians. The work exemplifies <strong>Northern Renaissance humanism</strong>: learned, witty, deeply Christian, yet mercilessly critical of institutional Christianity. Unlike Italian humanists who revered antiquity, Erasmus uses classical form to mock the present. Published in 1511, it becomes the best-selling book of the century after the Bible.",
+      "funFact": "Erasmus claimed he wrote the entire Praise of Folly while recovering from a kidney stone at More's house — pain and laughter combined."
+    },
+    "phil": {
+      "label": "Philosophy",
+      "content": "<strong>Christian humanism</strong> reaches its zenith. <strong>John Colet</strong>, Dean of St. Paul's, founds <strong>St. Paul's School</strong> — the first English school to teach Greek, designed to produce Christian gentlemen through classical learning rather than scholastic disputation. The curriculum reflects <strong>ad fontes</strong> (\"to the sources\"): bypassing medieval commentaries to read Scripture and the Church Fathers directly. Erasmus, Colet, and More form the core of the London humanist circle, united by the belief that learning purifies faith. They are reformers, but not yet Protestants — eight years before Luther's hammer falls, they still hope the Church can be healed by education.",
+      "funFact": "Colet's school statutes specified that the high master must be 'a man whole in body, of an honest and virtuous reputation' — and married, to avoid scandal."
+    },
+    "hist": {
+      "label": "History",
+      "content": "<strong>Henry VIII</strong> ascends to the English throne on April 22nd — young, athletic, learned, the image of a <strong>Renaissance prince</strong>. In Rome, <strong>Pope Julius II</strong> leads the <strong>League of Cambrai</strong> against Venice; on May 14th, the <strong>Battle of Agnadello</strong> shatters Venetian power in a single afternoon. Machiavelli later observes that Venice lost in one day what it had taken eight hundred years to build. Julius II — the \"Warrior Pope\" — is simultaneously commissioning Raphael's frescoes and prosecuting wars across Italy. The tension defines the moment: patronage and violence, art and ambition, humanism and <em>realpolitik</em>.",
+      "funFact": "Julius II personally led troops in battle, wore armor, and grew a beard as a sign of mourning when he lost Bologna — the only Renaissance pope to do so."
+    },
+    "conn": {
+      "label": "Connections",
+      "content": "The year crystallizes a paradox at humanism's heart. In Rome, Raphael paints philosophy as harmony — Plato and Aristotle walking side by side, ancient wisdom recovered. In London, Erasmus writes philosophy as <em>folly</em> — scholars who argue about angels on pinheads while the world burns. Both are humanists; both attack scholasticism; yet one offers synthesis, the other satire. <strong>Julius II</strong> connects them: patron of <em>The School of Athens</em>, yet the corrupt warrior-pope that <em>Praise of Folly</em> mocks. The Northern and Southern Renaissance meet in this tension — Italy rebuilding antiquity, the North laughing at the ruins. Within a decade, Luther will shatter the synthesis entirely."
+    }
+  },
+  "sources": [
+    { "url": "https://en.wikipedia.org/wiki/The_School_of_Athens", "title": "The School of Athens — Wikipedia" },
+    { "url": "https://en.wikipedia.org/wiki/In_Praise_of_Folly", "title": "In Praise of Folly — Wikipedia" },
+    { "url": "https://www.britannica.com/biography/John-Colet", "title": "John Colet — Britannica" },
+    { "url": "https://en.wikipedia.org/wiki/Battle_of_Agnadello", "title": "Battle of Agnadello — Wikipedia" },
+    { "url": "https://plato.stanford.edu/entries/erasmus/", "title": "Erasmus — Stanford Encyclopedia of Philosophy" }
+  ],
+  "image": {
+    "url": "images/1509-folly-and-philosophy.jpg",
+    "alt": "The School of Athens by Raphael, showing ancient philosophers with Plato and Aristotle at center",
+    "width": 1200,
+    "height": 931,
+    "caption": "The School of Athens (1509-1511) by Raphael, Stanza della Segnatura, Vatican",
+    "attribution": "Raphael, Public domain, via Wikimedia Commons"
+  },
+  "threads": ["renaissance-humanism", "classical-revival", "rationalism", "printing-revolution"],
+  "location": {
+    "lat": 41.9029,
+    "lon": 12.4534,
+    "place": "Rome"
+  },
+  "addedDate": "2026-03-13T06:00:00Z"
+}

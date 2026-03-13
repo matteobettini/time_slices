@@ -1,0 +1,54 @@
+{
+  "year": "1509",
+  "id": "1509-folly-and-philosophy",
+  "title": "Follia e filosofia",
+  "teaser": "Mentre Raffaello dipinge la sapienza antica sulle pareti vaticane, Erasmo ride della follia degli scolastici a Londra. Il Rinascimento scopre che la saggezza porta il cappello del giullare.",
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "<strong>Raffaello</strong> inizia gli affreschi della <em>Stanza della Segnatura</em> in Vaticano — tra cui la <em>Scuola di Atene</em>, forse la più celebre dichiarazione visiva dell'<strong>umanesimo alto-rinascimentale</strong>. I filosofi antichi si riuniscono in un'architettura classica idealizzata: Platone indica verso l'alto (le Idee), Aristotele gesticola in avanti (il mondo). Ma il genio di Raffaello sta nei ritratti nascosti: <strong>Leonardo</strong> come Platone, <strong>Bramante</strong> come Euclide, <strong>Michelangelo</strong> come il malinconico Eraclito. Il dipinto proclama che gli artisti moderni sono pari ai pensatori antichi — che il Rinascimento ha raggiunto la <em>renovatio</em>, la rinascita della sapienza classica.",
+      "funFact": "Raffaello aggiunse Michelangelo come Eraclito dopo essersi introdotto di nascosto nella Cappella Sistina per vedere la volta — un tributo al rivale dipinto a metà dell'opera."
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "A Londra, <strong>Erasmo</strong> soggiorna a casa di <strong>Thomas More</strong> e scrive l'<em>Elogio della follia</em> in circa una settimana — un capolavoro satirico il cui titolo greco (<em>Moriae Encomium</em>) gioca sul nome di More. Parlando attraverso la voce di Follia in persona, Erasmo deride i filosofi scolastici, il clero corrotto e i teologi pomposi. L'opera esemplifica l'<strong>umanesimo nordico</strong>: dotto, arguto, profondamente cristiano, eppure spietato nella critica al cristianesimo istituzionale. A differenza degli umanisti italiani che veneravano l'antichità, Erasmo usa la forma classica per deridere il presente. Pubblicato nel 1511, diventa il bestseller del secolo dopo la Bibbia.",
+      "funFact": "Erasmo affermò di aver scritto l'intero Elogio della follia mentre si riprendeva da un calcolo renale a casa di More — dolore e riso combinati."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "L'<strong>umanesimo cristiano</strong> raggiunge il suo apice. <strong>John Colet</strong>, decano di St. Paul's, fonda la <strong>St. Paul's School</strong> — la prima scuola inglese a insegnare il greco, progettata per formare gentiluomini cristiani attraverso l'apprendimento classico piuttosto che la disputa scolastica. Il curriculum riflette l'<strong>ad fontes</strong> (\"alle fonti\"): aggirare i commentari medievali per leggere direttamente le Scritture e i Padri della Chiesa. Erasmo, Colet e More formano il nucleo del circolo umanista londinese, uniti dalla convinzione che il sapere purifichi la fede. Sono riformatori, ma non ancora protestanti — otto anni prima del martello di Lutero, sperano ancora che la Chiesa possa essere sanata dall'educazione.",
+      "funFact": "Lo statuto della scuola di Colet specificava che il preside dovesse essere 'un uomo sano nel corpo, di reputazione onesta e virtuosa' — e sposato, per evitare scandali."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "<strong>Enrico VIII</strong> sale al trono inglese il 22 aprile — giovane, atletico, colto, l'immagine del <strong>principe rinascimentale</strong>. A Roma, <strong>Papa Giulio II</strong> guida la <strong>Lega di Cambrai</strong> contro Venezia; il 14 maggio, la <strong>Battaglia di Agnadello</strong> frantuma la potenza veneziana in un solo pomeriggio. Machiavelli osserverà poi che Venezia perse in un giorno ciò che aveva impiegato ottocento anni a costruire. Giulio II — il \"Papa guerriero\" — sta contemporaneamente commissionando gli affreschi di Raffaello e conducendo guerre in tutta Italia. La tensione definisce il momento: mecenatismo e violenza, arte e ambizione, umanesimo e <em>realpolitik</em>.",
+      "funFact": "Giulio II guidò personalmente le truppe in battaglia, indossava l'armatura e si fece crescere la barba in segno di lutto quando perse Bologna — l'unico papa rinascimentale a farlo."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "L'anno cristallizza un paradosso nel cuore dell'umanesimo. A Roma, Raffaello dipinge la filosofia come armonia — Platone e Aristotele che camminano fianco a fianco, la sapienza antica recuperata. A Londra, Erasmo scrive la filosofia come <em>follia</em> — studiosi che discutono di angeli sulla punta di uno spillo mentre il mondo brucia. Entrambi sono umanisti; entrambi attaccano la scolastica; eppure uno offre sintesi, l'altro satira. <strong>Giulio II</strong> li connette: mecenate della <em>Scuola di Atene</em>, ma anche il corrotto papa-guerriero che l'<em>Elogio della follia</em> deride. Il Rinascimento nordico e meridionale si incontrano in questa tensione — l'Italia che ricostruisce l'antichità, il Nord che ride delle rovine. Entro un decennio, Lutero frantumerà completamente la sintesi."
+    }
+  },
+  "sources": [
+    { "url": "https://it.wikipedia.org/wiki/Scuola_di_Atene", "title": "Scuola di Atene — Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Elogio_della_follia", "title": "Elogio della follia — Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/John_Colet", "title": "John Colet — Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Battaglia_di_Agnadello", "title": "Battaglia di Agnadello — Wikipedia" },
+    { "url": "https://plato.stanford.edu/entries/erasmus/", "title": "Erasmus — Stanford Encyclopedia of Philosophy" }
+  ],
+  "image": {
+    "url": "images/1509-folly-and-philosophy.jpg",
+    "alt": "La Scuola di Atene di Raffaello, con Platone e Aristotele al centro",
+    "width": 1200,
+    "height": 931,
+    "caption": "La Scuola di Atene (1509-1511) di Raffaello, Stanza della Segnatura, Vaticano",
+    "attribution": "Raffaello, Pubblico dominio, via Wikimedia Commons"
+  },
+  "threads": ["renaissance-humanism", "classical-revival", "rationalism", "printing-revolution"],
+  "location": {
+    "lat": 41.9029,
+    "lon": 12.4534,
+    "place": "Roma"
+  },
+  "addedDate": "2026-03-13T06:00:00Z"
+}
