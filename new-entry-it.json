@@ -1,54 +1,54 @@
 {
-  "year": "1509",
-  "id": "1509-folly-and-philosophy",
-  "title": "Follia e filosofia",
-  "teaser": "Mentre Raffaello dipinge la sapienza antica sulle pareti vaticane, Erasmo ride della follia degli scolastici a Londra. Il Rinascimento scopre che la saggezza porta il cappello del giullare.",
+  "year": "1215",
+  "id": "1215-year-of-foundations",
+  "title": "L'Anno delle Fondazioni",
+  "teaser": "In un solo anno, il mondo medievale plasma il suo futuro: baroni costringono un re a firmare la Magna Carta a Runnymede, papa Innocenzo III convoca il più grande concilio della Chiesa medievale, e le cattedrali gotiche si innalzano verso il cielo in pietra e vetro.",
   "dimensions": {
     "art": {
       "label": "Arte",
-      "content": "<strong>Raffaello</strong> inizia gli affreschi della <em>Stanza della Segnatura</em> in Vaticano — tra cui la <em>Scuola di Atene</em>, forse la più celebre dichiarazione visiva dell'<strong>umanesimo alto-rinascimentale</strong>. I filosofi antichi si riuniscono in un'architettura classica idealizzata: Platone indica verso l'alto (le Idee), Aristotele gesticola in avanti (il mondo). Ma il genio di Raffaello sta nei ritratti nascosti: <strong>Leonardo</strong> come Platone, <strong>Bramante</strong> come Euclide, <strong>Michelangelo</strong> come il malinconico Eraclito. Il dipinto proclama che gli artisti moderni sono pari ai pensatori antichi — che il Rinascimento ha raggiunto la <em>renovatio</em>, la rinascita della sapienza classica.",
-      "funFact": "Raffaello aggiunse Michelangelo come Eraclito dopo essersi introdotto di nascosto nella Cappella Sistina per vedere la volta — un tributo al rivale dipinto a metà dell'opera."
+      "content": "L'<strong>architettura gotica</strong> entra nel suo periodo alto. A <strong>Chartres</strong>, gli artigiani installano le grandi vetrate, incluse aggiunte alla luminosa <em>Vergine Blu</em> — la Vergine Maria in trono avvolta in un cobalto radioso ottenuto con un composto sodico più durevole dei rossi contemporanei. Il portale sud è quasi completo, con il <strong>timpano del Giudizio Universale</strong> (c. 1205–1215) che mostra Cristo Giudice affiancato da Maria e Giovanni, i dannati separati dai salvati. Gli archi rampanti rendono tutto possibile: trasportando la spinta verso l'esterno, liberano le pareti per immense vetrate, trasformando la pietra in cornici per la luce.",
+      "funFact": "Il blu di Chartres era così superiore tecnicamente che i vetrai medievali non riuscirono mai a replicarlo completamente — le analisi moderne mostrano che la formula del cobalto andò perduta e le vetrate successive usarono sostituti inferiori."
     },
     "lit": {
       "label": "Letteratura",
-      "content": "A Londra, <strong>Erasmo</strong> soggiorna a casa di <strong>Thomas More</strong> e scrive l'<em>Elogio della follia</em> in circa una settimana — un capolavoro satirico il cui titolo greco (<em>Moriae Encomium</em>) gioca sul nome di More. Parlando attraverso la voce di Follia in persona, Erasmo deride i filosofi scolastici, il clero corrotto e i teologi pomposi. L'opera esemplifica l'<strong>umanesimo nordico</strong>: dotto, arguto, profondamente cristiano, eppure spietato nella critica al cristianesimo istituzionale. A differenza degli umanisti italiani che veneravano l'antichità, Erasmo usa la forma classica per deridere il presente. Pubblicato nel 1511, diventa il bestseller del secolo dopo la Bibbia.",
-      "funFact": "Erasmo affermò di aver scritto l'intero Elogio della follia mentre si riprendeva da un calcolo renale a casa di More — dolore e riso combinati."
+      "content": "Il periodo classico della letteratura <strong>medio-alto tedesca</strong> raggiunge il suo apice. <strong>Wolfram von Eschenbach</strong> ha da poco completato il <em>Parzival</em> (c. 1200–1210), quasi 25.000 versi che seguono il cavaliere del Graal da ingenuo sciocco a re spirituale. <strong>Gottfried von Strassburg</strong> lascia il <em>Tristano</em> incompiuto alla sua morte (c. 1210), con la sua esplorazione psicologica dell'amore adulterino senza pari nel romanzo medievale. Entrambe le opere esemplificano la svolta vernacolare della <strong>letteratura cortese</strong>: il tedesco sostituisce il latino come lingua della cultura aristocratica.",
+      "funFact": "Il Tristano di Gottfried era così controverso per il suo trattamento compassionevole dell'adulterio che rimase incompiuto, generando due diverse continuazioni di altri poeti che cercarono di imporre un finale più morale."
     },
     "phil": {
       "label": "Filosofia",
-      "content": "L'<strong>umanesimo cristiano</strong> raggiunge il suo apice. <strong>John Colet</strong>, decano di St. Paul's, fonda la <strong>St. Paul's School</strong> — la prima scuola inglese a insegnare il greco, progettata per formare gentiluomini cristiani attraverso l'apprendimento classico piuttosto che la disputa scolastica. Il curriculum riflette l'<strong>ad fontes</strong> (\"alle fonti\"): aggirare i commentari medievali per leggere direttamente le Scritture e i Padri della Chiesa. Erasmo, Colet e More formano il nucleo del circolo umanista londinese, uniti dalla convinzione che il sapere purifichi la fede. Sono riformatori, ma non ancora protestanti — otto anni prima del martello di Lutero, sperano ancora che la Chiesa possa essere sanata dall'educazione.",
-      "funFact": "Lo statuto della scuola di Colet specificava che il preside dovesse essere 'un uomo sano nel corpo, di reputazione onesta e virtuosa' — e sposato, per evitare scandali."
+      "content": "Il Quarto Concilio Lateranense definisce formalmente la <strong>transustanziazione</strong> — la dottrina per cui pane e vino diventano corpo e sangue di Cristo mantenendo i loro <em>accidenti</em> (aspetto, sapore, consistenza). Questa terminologia attinge direttamente alla metafisica <strong>aristotelica</strong> di sostanza e accidenti, eppure la filosofia naturale di Aristotele resta ufficialmente bandita a Parigi. Gli statuti universitari del 1215 permettono la logica aristotelica ma proibiscono la <em>Fisica</em> e la <em>Metafisica</em>. L'ironia è squisita: la Chiesa definisce dottrine usando categorie aristoteliche mentre vieta lo studio di Aristotele.",
+      "funFact": "Il bando parigino su Aristotele fu ignorato entro una generazione — nel 1255, tutte le opere di Aristotele erano letture obbligatorie, e Tommaso d'Aquino costruì l'intero suo sistema teologico su fondamenta aristoteliche."
     },
     "hist": {
       "label": "Storia",
-      "content": "<strong>Enrico VIII</strong> sale al trono inglese il 22 aprile — giovane, atletico, colto, l'immagine del <strong>principe rinascimentale</strong>. A Roma, <strong>Papa Giulio II</strong> guida la <strong>Lega di Cambrai</strong> contro Venezia; il 14 maggio, la <strong>Battaglia di Agnadello</strong> frantuma la potenza veneziana in un solo pomeriggio. Machiavelli osserverà poi che Venezia perse in un giorno ciò che aveva impiegato ottocento anni a costruire. Giulio II — il \"Papa guerriero\" — sta contemporaneamente commissionando gli affreschi di Raffaello e conducendo guerre in tutta Italia. La tensione definisce il momento: mecenatismo e violenza, arte e ambizione, umanesimo e <em>realpolitik</em>.",
-      "funFact": "Giulio II guidò personalmente le truppe in battaglia, indossava l'armatura e si fece crescere la barba in segno di lutto quando perse Bologna — l'unico papa rinascimentale a farlo."
+      "content": "Il 15 giugno, a <strong>Runnymede</strong>, baroni ribelli costringono <strong>re Giovanni</strong> a sigillare la <strong>Magna Carta</strong> — 63 clausole che limitano il potere reale e garantiscono diritti baronali. Papa <strong>Innocenzo III</strong> la annulla entro poche settimane, scatenando una guerra civile, ma versioni successive diventano fondamentali per la tradizione costituzionale inglese. A novembre, Innocenzo convoca il <strong>Quarto Concilio Lateranense</strong> a Roma — oltre 400 vescovi, 800 abati, inviati da ogni regno cristiano. I suoi 71 decreti riformano la vita medievale: confessione annuale obbligatoria, ebrei e musulmani costretti a indossare abiti distintivi.",
+      "funFact": "La folla al Quarto Concilio Lateranense era così enorme che lo stesso papa ebbe difficoltà a entrare nella Basilica di San Pietro per la Messa anniversaria — le fonti medievali descrivono vescovi schiacciati nella calca."
     },
     "conn": {
       "label": "Connessioni",
-      "content": "L'anno cristallizza un paradosso nel cuore dell'umanesimo. A Roma, Raffaello dipinge la filosofia come armonia — Platone e Aristotele che camminano fianco a fianco, la sapienza antica recuperata. A Londra, Erasmo scrive la filosofia come <em>follia</em> — studiosi che discutono di angeli sulla punta di uno spillo mentre il mondo brucia. Entrambi sono umanisti; entrambi attaccano la scolastica; eppure uno offre sintesi, l'altro satira. <strong>Giulio II</strong> li connette: mecenate della <em>Scuola di Atene</em>, ma anche il corrotto papa-guerriero che l'<em>Elogio della follia</em> deride. Il Rinascimento nordico e meridionale si incontrano in questa tensione — l'Italia che ricostruisce l'antichità, il Nord che ride delle rovine. Entro un decennio, Lutero frantumerà completamente la sintesi."
+      "content": "L'anno rivela la Cristianità medievale al suo paradossale apice. Innocenzo III, il papa più potente della storia, articola la teoria del <strong>sole e della luna</strong> — il potere secolare deriva dallo spirituale come la luna riflette il sole. Eppure a Runnymede, i baroni affermano che anche i re sono vincolati dalla legge, piantando semi che limiteranno anche le pretese papali. Gli <strong>ordini mendicanti</strong> emergono da questo stesso momento: Francesco d'Assisi e Domenico de Guzman partecipano entrambi al Concilio cercando approvazione per le loro nuove fondazioni. Le cattedrali che sorgono in tutta la Francia incarnano questa sintesi: ragione e fede, struttura e luce, filosofia e pietra."
     }
   },
   "sources": [
-    { "url": "https://it.wikipedia.org/wiki/Scuola_di_Atene", "title": "Scuola di Atene — Wikipedia" },
-    { "url": "https://it.wikipedia.org/wiki/Elogio_della_follia", "title": "Elogio della follia — Wikipedia" },
-    { "url": "https://it.wikipedia.org/wiki/John_Colet", "title": "John Colet — Wikipedia" },
-    { "url": "https://it.wikipedia.org/wiki/Battaglia_di_Agnadello", "title": "Battaglia di Agnadello — Wikipedia" },
-    { "url": "https://plato.stanford.edu/entries/erasmus/", "title": "Erasmus — Stanford Encyclopedia of Philosophy" }
+    { "url": "https://it.wikipedia.org/wiki/Concilio_Lateranense_IV", "title": "Concilio Lateranense IV - Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Magna_Carta", "title": "Magna Carta - Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Cattedrale_di_Chartres", "title": "Cattedrale di Chartres - Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Parzival", "title": "Parzival - Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Transustanziazione", "title": "Transustanziazione - Wikipedia" }
   ],
   "image": {
-    "url": "images/1509-folly-and-philosophy.jpg",
-    "alt": "La Scuola di Atene di Raffaello, con Platone e Aristotele al centro",
+    "url": "images/1215-year-of-foundations.jpg",
+    "alt": "La Vergine Blu (Notre-Dame de la Belle-Verrière), vetrata del XII secolo nella Cattedrale di Chartres raffigurante la Vergine Maria in trono con il Bambino Gesù",
     "width": 1200,
-    "height": 931,
-    "caption": "La Scuola di Atene (1509-1511) di Raffaello, Stanza della Segnatura, Vaticano",
-    "attribution": "Raffaello, Pubblico dominio, via Wikimedia Commons"
+    "height": 1807,
+    "caption": "La Vergine Blu (Notre-Dame de la Belle-Verrière), Cattedrale di Chartres, c. 1180 con aggiunte del XIII secolo",
+    "attribution": "Foto di Hans Bernhard (Schnobby), CC BY-SA 3.0, via Wikimedia Commons"
   },
-  "threads": ["renaissance-humanism", "classical-revival", "rationalism", "printing-revolution"],
+  "threads": ["gothic-architecture", "scholasticism", "rationalism", "vernacular-literature"],
   "location": {
-    "lat": 41.9029,
-    "lon": 12.4534,
-    "place": "Roma"
+    "lat": 48.4478,
+    "lon": 1.4878,
+    "place": "Chartres"
   },
-  "addedDate": "2026-03-13T06:00:00Z"
+  "addedDate": "2026-03-14T06:00:00Z"
 }

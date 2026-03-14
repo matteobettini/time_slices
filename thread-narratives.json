@@ -53,7 +53,9 @@
       "1274→1453": "From the death of Aquinas to the dispersal of Greek philosophy — two centuries where scholasticism hardens while its sources await rediscovery.",
       "1453→1543": "Neoplatonism arrives with the refugees; ninety years later, Copernicus demonstrates what rational method can do to received cosmology.",
       "1453→1509": "Greek scholars flee Constantinople with manuscripts; fifty-six years later, Raphael paints their philosophy as the foundation of all learning.",
-      "1509→1543": "Raphael's School of Athens celebrates ancient knowledge recovered; thirty-four years later, Copernicus and Vesalius prove the ancients were wrong about the cosmos and the body."
+      "1509→1543": "Raphael's School of Athens celebrates ancient knowledge recovered; thirty-four years later, Copernicus and Vesalius prove the ancients were wrong about the cosmos and the body.",
+      "1141→1215": "Abelard's defeat at Sens only slowed the dialecticians; by Lateran IV, Aristotelian terminology defines dogma itself.",
+      "1215→1274": "The Paris ban on Aristotle collapses; Aquinas synthesizes faith and reason in the Summa, only to die before completing it."
     },
     "modernity": {
       "1648→1687": "Westphalia resolved religious conflict through sovereignty; Newton resolved cosmological conflict through mathematics. Both substituted divine authority with systems humans could operate. The modern world's dual foundations — the nation-state and mathematical physics — were laid within four decades.",
@@ -115,13 +117,17 @@
       "1141→1347": "Abelard was condemned; his method conquered. Within a century, Scholasticism dominated European universities. Ockham, writing just before the plague, used that same dialectical razor to slice away metaphysical certainties — nominalism was Abelard's victory pushed to its logical conclusion.",
       "1141→1517": "The Scholastic method Abelard pioneered became university orthodoxy — and then the target. Luther trained in Scholastic disputation at Erfurt, then turned the tools against the institution that taught them. The dialectical doubt Bernard feared at Sens reached its endpoint in Wittenberg.",
       "1274→1347": "The year Aquinas and Bonaventure died, Scholasticism lost its greatest synthesizers. Within decades, nominalism emerged to dismantle what they'd built. Ockham's razor cut away the metaphysical confidence the <em>Summa</em> embodied — then the Black Death made such confidence seem naive.",
-      "1274→1517": "Aquinas's <em>Summa Theologica</em> remained unfinished at his death in 1274 — the greatest attempt to reconcile faith and reason left incomplete. Two centuries later, Luther rejected the entire project: not supplementing Scholasticism but abandoning it for <em>sola scriptura</em>."
+      "1274→1517": "Aquinas's <em>Summa Theologica</em> remained unfinished at his death in 1274 — the greatest attempt to reconcile faith and reason left incomplete. Two centuries later, Luther rejected the entire project: not supplementing Scholasticism but abandoning it for <em>sola scriptura</em>.",
+      "1141→1215": "Bernard defeats Abelard, but the method survives: universities institutionalize the disputation.",
+      "1215→1274": "Dominicans become the Church's intellectual arm; Albertus Magnus recovers Aristotle; Aquinas crowns the scholastic synthesis."
     },
     "nominalism": {},
     "gothic-architecture": {
       "1141→1274": "Suger's choir at Saint-Denis (1144) launched the Gothic revolution. By 1274, the style had evolved into the Rayonnant — walls dissolved into tracery, stone transformed into light. The cathedrals rising at Reims and Chartres embodied the same confidence that Aquinas brought to philosophy: reason could illuminate faith.",
       "1141→1347": "Suger's choir at Saint-Denis (consecrated 1144) launched Gothic architecture. By 1347, the style had transformed Europe's skyline — Chartres, Notre-Dame, Florence's Duomo. The plague halted construction across the continent; when building resumed, the Renaissance would turn toward classical revival instead.",
-      "1274→1347": "Rayonnant Gothic's dematerialization of stone into light expressed the same 13th-century ambition as Scholastic philosophy: making the invisible visible, proving faith through structure. The Black Death halted construction across Europe — and when building resumed, the confidence that created those soaring windows had fractured."
+      "1274→1347": "Rayonnant Gothic's dematerialization of stone into light expressed the same 13th-century ambition as Scholastic philosophy: making the invisible visible, proving faith through structure. The Black Death halted construction across Europe — and when building resumed, the confidence that created those soaring windows had fractured.",
+      "1141→1215": "From Sens to Chartres: ribbed vaults and flying buttresses evolve into the classic Gothic formula—walls dissolve into light.",
+      "1215→1274": "Chartres perfects the formula; Notre-Dame rises; Rayonnant style pushes windows to impossible heights."
     },
     "enlightenment": {
       "1687→1784": "Newton's <em>Principia</em> proved the universe obeyed mathematical laws; Kant's \"dare to know\" demanded humans apply that confidence to themselves. The Enlightenment is Newton generalised — if gravity submits to reason, why not morality, politics, religion? Kant studied Newtonian physics directly and built his critical philosophy on its foundations.",
@@ -131,7 +137,9 @@
     "vernacular-literature": {
       "1141→1347": "Abelard and Héloïse exchanged letters in Latin, but their story spread in the vernacular. Two centuries later, Boccaccio wrote the <em>Decameron</em> in Tuscan Italian — plague survivors telling tales in the language of the street, not the cloister. The shift from Latin to vernacular was also a shift in audience: from clergy to merchants, from eternal truths to mortal pleasures.",
       "1141→1274": "Abelard and Héloïse wrote in Latin, but their legend spread in the vernacular. By 1274, Dante was nine years old in Florence, about to see Beatrice — the encounter that would produce the <em>Vita Nuova</em> and eventually the <em>Commedia</em>, the work that made Italian a literary language. The troubadour tradition was already a century old, courtly love poetry circulating in Occitan and Old French.",
-      "1274→1347": "Dante saw Beatrice the year Aquinas died; by 1347, when the plague arrived, the <em>Decameron</em> would be written in response. The trajectory is clear: from Latin scholasticism to Italian storytelling, from divine synthesis to human survival. Boccaccio's Tuscan prose descends directly from Dante's experiments."
+      "1274→1347": "Dante saw Beatrice the year Aquinas died; by 1347, when the plague arrived, the <em>Decameron</em> would be written in response. The trajectory is clear: from Latin scholasticism to Italian storytelling, from divine synthesis to human survival. Boccaccio's Tuscan prose descends directly from Dante's experiments.",
+      "1141→1215": "The Song of Roland gives way to courtly romance; Chrétien de Troyes invents Arthurian fiction; German poets achieve classical maturity.",
+      "1215→1274": "Courtly ideals cross the Alps; Dante begins dreaming of Beatrice; the Roman de la Rose debates love's nature for generations."
     },
     "baroque": {
       "1600→1648": "Caravaggio's tenebrism spreads through Europe via his imitators; by Westphalia, the Baroque has become the visual language of Catholic and Protestant power alike."
@@ -206,7 +214,9 @@
       "1274→1453": "Dalla morte di Tommaso alla dispersione della filosofia greca — due secoli in cui la Scolastica si irrigidisce mentre le sue fonti attendono di essere riscoperte.",
       "1453→1543": "Il Neoplatonismo arriva con i rifugiati; novant'anni dopo, Copernico dimostra cosa può fare il metodo razionale alla cosmologia ereditata.",
       "1453→1509": "Gli studiosi greci fuggono da Costantinopoli con i manoscritti; cinquantasei anni dopo, Raffaello dipinge la loro filosofia come fondamento di tutto il sapere.",
-      "1509→1543": "La Scuola di Atene di Raffaello celebra la conoscenza antica recuperata; trentaquattro anni dopo, Copernico e Vesalio dimostrano che gli antichi sbagliavano sul cosmo e sul corpo."
+      "1509→1543": "La Scuola di Atene di Raffaello celebra la conoscenza antica recuperata; trentaquattro anni dopo, Copernico e Vesalio dimostrano che gli antichi sbagliavano sul cosmo e sul corpo.",
+      "1141→1215": "La sconfitta di Abelardo a Sens rallentò solo i dialettici; al Laterano IV, la terminologia aristotelica definisce il dogma stesso.",
+      "1215→1274": "Il bando parigino su Aristotele crolla; Tommaso d'Aquino sintetizza fede e ragione nella Summa, per morire prima di completarla."
     },
     "modernity": {
       "1648→1687": "Vestfalia risolse il conflitto religioso attraverso la sovranità; Newton risolse il conflitto cosmologico attraverso la matematica. Entrambi sostituirono l'autorità divina con sistemi che gli umani potevano gestire. Le doppie fondamenta del mondo moderno — lo Stato-nazione e la fisica matematica — furono gettate nel giro di quattro decenni.",
@@ -268,13 +278,17 @@
       "1141→1347": "Abelardo fu condannato; il suo metodo conquistò. Nel giro di un secolo, la Scolastica dominava le università europee. Ockham, scrivendo poco prima della peste, usò quello stesso rasoio dialettico per recidere le certezze metafisiche — il nominalismo fu la vittoria di Abelardo portata alla sua conclusione logica.",
       "1141→1517": "Il metodo scolastico che Abelardo inaugurò divenne ortodossia universitaria — e poi il bersaglio. Lutero si formò nella disputa scolastica a Erfurt, poi rivolse gli strumenti contro l'istituzione che glieli aveva insegnati. Il dubbio dialettico che Bernardo temeva a Sens raggiunse il suo punto finale a Wittenberg.",
       "1274→1347": "L'anno in cui morirono Tommaso d'Aquino e Bonaventura, la Scolastica perse i suoi più grandi sintetizzatori. Nel giro di pochi decenni, il nominalismo emerse per smantellare ciò che avevano costruito. Il rasoio di Ockham recise la fiducia metafisica che la <em>Summa</em> incarnava — poi la Peste Nera rese tale fiducia ingenua.",
-      "1274→1517": "La <em>Summa Theologica</em> di Tommaso d'Aquino rimase incompiuta alla sua morte nel 1274 — il più grande tentativo di conciliare fede e ragione rimasto incompleto. Due secoli dopo, Lutero rifiutò l'intero progetto: non integrando la Scolastica ma abbandonandola per la <em>sola scriptura</em>."
+      "1274→1517": "La <em>Summa Theologica</em> di Tommaso d'Aquino rimase incompiuta alla sua morte nel 1274 — il più grande tentativo di conciliare fede e ragione rimasto incompleto. Due secoli dopo, Lutero rifiutò l'intero progetto: non integrando la Scolastica ma abbandonandola per la <em>sola scriptura</em>.",
+      "1141→1215": "Bernardo sconfigge Abelardo, ma il metodo sopravvive: le università istituzionalizzano la disputatio.",
+      "1215→1274": "I domenicani diventano il braccio intellettuale della Chiesa; Alberto Magno recupera Aristotele; Tommaso corona la sintesi scolastica."
     },
     "nominalism": {},
     "gothic-architecture": {
       "1141→1274": "Il coro di Suger a Saint-Denis (1144) lanciò la rivoluzione gotica. Nel 1274, lo stile si era evoluto nel rayonnant — le pareti dissolte in trafori, la pietra trasformata in luce. Le cattedrali che sorgevano a Reims e Chartres incarnavano la stessa fiducia che Tommaso portò alla filosofia: la ragione poteva illuminare la fede.",
       "1141→1347": "Il coro di Suger a Saint-Denis (consacrato nel 1144) lanciò l'architettura gotica. Nel 1347, lo stile aveva trasformato lo skyline d'Europa — Chartres, Notre-Dame, il Duomo di Firenze. La peste fermò la costruzione in tutto il continente; quando la ripresa riprese, il Rinascimento si sarebbe rivolto alla rinascita classica.",
-      "1274→1347": "La smaterializzazione della pietra in luce del gotico rayonnant esprimeva la stessa ambizione del XIII secolo della filosofia scolastica: rendere visibile l'invisibile, dimostrare la fede attraverso la struttura. La Peste Nera fermò la costruzione in tutta Europa — e quando i cantieri ripresero, la fiducia che aveva creato quelle vetrate svettanti si era frantumata."
+      "1274→1347": "La smaterializzazione della pietra in luce del gotico rayonnant esprimeva la stessa ambizione del XIII secolo della filosofia scolastica: rendere visibile l'invisibile, dimostrare la fede attraverso la struttura. La Peste Nera fermò la costruzione in tutta Europa — e quando i cantieri ripresero, la fiducia che aveva creato quelle vetrate svettanti si era frantumata.",
+      "1141→1215": "Da Sens a Chartres: le volte a crociera e gli archi rampanti si evolvono nella formula gotica classica—i muri si dissolvono in luce.",
+      "1215→1274": "Chartres perfeziona la formula; Notre-Dame si innalza; lo stile Rayonnant spinge le vetrate a altezze impossibili."
     },
     "enlightenment": {
       "1687→1784": "I <em>Principia</em> di Newton dimostrarono che l'universo obbediva a leggi matematiche; il «sapere aude» di Kant esigeva che gli umani applicassero quella fiducia a se stessi. L'Illuminismo è Newton generalizzato — se la gravità si sottomette alla ragione, perché non la morale, la politica, la religione? Kant studiò la fisica newtoniana direttamente e costruì la sua filosofia critica sulle sue fondamenta.",
@@ -284,7 +298,9 @@
     "vernacular-literature": {
       "1141→1347": "Abelardo ed Eloisa si scambiarono lettere in latino, ma la loro storia si diffuse in volgare. Due secoli dopo, Boccaccio scrisse il <em>Decameron</em> in toscano — sopravvissuti alla peste che raccontano storie nella lingua della strada, non del chiostro. Il passaggio dal latino al volgare fu anche un passaggio di pubblico: dal clero ai mercanti, dalle verità eterne ai piaceri mortali.",
       "1141→1274": "Abelardo ed Eloisa scrissero in latino, ma la loro leggenda si diffuse in volgare. Nel 1274, Dante aveva nove anni a Firenze, prossimo a vedere Beatrice — l'incontro che avrebbe prodotto la <em>Vita Nuova</em> e infine la <em>Commedia</em>, l'opera che fece dell'italiano una lingua letteraria. La tradizione trobadorica aveva già un secolo, con la poesia dell'amor cortese che circolava in occitano e francese antico.",
-      "1274→1347": "Dante vide Beatrice l'anno della morte di Tommaso; nel 1347, quando arrivò la peste, il <em>Decameron</em> sarebbe stato scritto in risposta. La traiettoria è chiara: dalla scolastica latina alla narrativa italiana, dalla sintesi divina alla sopravvivenza umana. La prosa toscana di Boccaccio discende direttamente dagli esperimenti di Dante."
+      "1274→1347": "Dante vide Beatrice l'anno della morte di Tommaso; nel 1347, quando arrivò la peste, il <em>Decameron</em> sarebbe stato scritto in risposta. La traiettoria è chiara: dalla scolastica latina alla narrativa italiana, dalla sintesi divina alla sopravvivenza umana. La prosa toscana di Boccaccio discende direttamente dagli esperimenti di Dante.",
+      "1141→1215": "La Chanson de Roland cede il passo al romanzo cortese; Chrétien de Troyes inventa la narrativa arturiana; i poeti tedeschi raggiungono la maturità classica.",
+      "1215→1274": "Gli ideali cortesi attraversano le Alpi; Dante inizia a sognare Beatrice; il Roman de la Rose dibatte la natura dell'amore per generazioni."
     },
     "baroque": {
       "1600→1648": "Il tenebrismo di Caravaggio si diffonde in Europa attraverso i suoi imitatori; a Westfalia, il Barocco è diventato il linguaggio visivo del potere cattolico e protestante."
