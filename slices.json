@@ -1881,5 +1881,77 @@
       "url": "audio/1215-year-of-foundations.mp3",
       "duration": 166
     }
+  },
+  {
+    "year": "1300",
+    "id": "1300-jubilee-threshold",
+    "title": "The Jubilee Threshold",
+    "teaser": "Rome declares the first Jubilee and two hundred thousand pilgrims flood its gates. In Florence, a poet named Dante holds political office while Giotto paints the Pope's triumph. Scholasticism reaches its breaking point.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "In Rome, <strong>Giotto di Bondone</strong> paints Pope Boniface VIII proclaiming the Jubilee from the loggia of Saint John Lateran — a fresco celebrating papal supremacy at its zenith. The fragment that survives shows the Pope in full regalia, blessing the arriving crowds. But the real revolution happens in technique: Giotto's naturalism, his figures that occupy believable space, is already transforming medieval painting. In Florence, his teacher <strong>Cimabue</strong> has completed the Santa Trinita Maestà (c. 1290), still rooted in Byzantine gold grounds yet hinting at depth. Within five years, Giotto will begin the Scrovegni Chapel frescoes in Padua, making the break complete. <strong>Proto-Renaissance</strong> emerges not from rejection of the sacred but from wanting to paint it more convincingly.",
+        "funFact": "Giotto was supposedly discovered as a shepherd boy sketching sheep on rocks. Cimabue, passing by, was so impressed he took the child as an apprentice. The story may be legend — but Giotto did surpass his master."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Dante Alighieri</strong> serves as one of six Priors of Florence from June to August 1300 — the highest political office in the republic. He has not yet written the <em>Divine Comedy</em>, but he will set its action in this very year: <em>\"Nel mezzo del cammin di nostra vita\"</em> places the pilgrim's descent through Hell in Holy Week 1300. The choice is no accident — the Jubilee year, when Rome promises complete remission of sins, becomes the frame for Dante's own spiritual journey. Meanwhile, <strong>Giovanni Villani</strong>, a Florentine banker visiting Rome for the Jubilee, is so struck by the city's ancient grandeur that he resolves to write a chronicle of Florence. The <em>Nuova Cronica</em>, begun later, becomes the most important history of medieval Florence.",
+        "funFact": "Dante's term as Prior sealed his doom. His decisions — including exiling turbulent faction leaders — made him enemies. Two years later, he was condemned to exile himself. He never returned to Florence."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>John Duns Scotus</strong>, the Franciscan friar known as the 'Subtle Doctor', is lecturing on Peter Lombard's <em>Sentences</em> at Oxford around 1300, developing what will become his masterwork, the <em>Ordinatio</em>. His doctrine of the <strong>univocity of being</strong> — that 'being' means the same thing whether predicated of God or creatures — challenges Aquinas's analogical approach and opens philosophy to new questions about individuation and will. <strong>High Scholasticism</strong> is reaching its technical peak, but also its point of exhaustion. The subtle distinctions that make Scotus famous will soon give way to Ockham's razor, cutting through the accumulated conceptual machinery. The century's end marks both the triumph and the crisis of medieval systematic thought.",
+        "funFact": "Scotus died at forty-two and was reportedly buried alive — his coffin was later found with scratch marks inside. The story is likely apocryphal, but it gave him a lasting aura of mystery."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On February 22, 1300, <strong>Pope Boniface VIII</strong> issues the bull <em>Antiquorum habet fida relatio</em>, establishing the first Christian Jubilee Year. Pilgrims who visit Saint Peter's and Saint Paul Outside the Walls in Rome receive plenary indulgence — complete forgiveness of temporal punishment for sins. <strong>Two hundred thousand people</strong> flood the city throughout the year. Boniface, dressed in imperial regalia, reportedly declares: <em>\"I am Caesar, I am Emperor!\"</em> Yet his triumph is hollow. Within three years, agents of King Philip IV of France will assault him at Anagni; within four, he will be dead. Florence, meanwhile, is at the height of its commercial power — population near 100,000, the gold florin dominant across Europe, the Bardi and Peruzzi banks financing kings. The city that produces Dante and Giotto is also the banking capital of the medieval world."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The connections here are <em>intensely personal</em>. Giotto paints for Boniface VIII; Dante will place that same pope in Hell, headfirst in a flaming pit among the simonists (<em>Inferno</em> XIX). Villani attends the Jubilee and conceives his chronicle in direct response to Rome's grandeur. Scotus will be expelled from Paris in 1303 for supporting Boniface against Philip IV — philosophical allegiances have political consequences. And the Florentine banking families whose wealth enables Giotto's commissions will, forty-five years later, collapse after lending too much to Edward III of England. The year 1300 is a hinge: medieval structures — papal supremacy, scholastic synthesis, guild capitalism — reach their maximum articulation just before they begin to crack."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jubilee_in_the_Catholic_Church",
+        "title": "Wikipedia: Jubilee in the Catholic Church"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/duns-scotus/",
+        "title": "Stanford Encyclopedia of Philosophy: Duns Scotus"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Dante_Alighieri",
+        "title": "Wikipedia: Dante Alighieri"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Giotto-di-Bondone",
+        "title": "Britannica: Giotto di Bondone"
+      }
+    ],
+    "image": {
+      "url": "images/1300-jubilee-threshold.jpg",
+      "width": 387,
+      "height": 466,
+      "caption": "Giotto di Bondone, Pope Boniface VIII proclaiming the Jubilee of 1300, fresco fragment from the Archbasilica of St. John Lateran, Rome",
+      "attribution": "Giotto, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "scholasticism",
+      "vernacular-literature",
+      "art-and-power",
+      "death-of-god"
+    ],
+    "location": {
+      "lat": 41.9029,
+      "lon": 12.4534,
+      "place": "Rome"
+    },
+    "addedDate": "2026-03-15T06:00:00Z",
+    "podcast": {
+      "url": "audio/1300-jubilee-threshold.mp3",
+      "duration": 197
+    }
   }
 ]

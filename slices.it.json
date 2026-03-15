@@ -1873,5 +1873,77 @@
       "url": "audio/it/1215-year-of-foundations.mp3",
       "duration": 195
     }
+  },
+  {
+    "year": "1300",
+    "id": "1300-jubilee-threshold",
+    "title": "La soglia del Giubileo",
+    "teaser": "Roma proclama il primo Giubileo e duecentomila pellegrini ne invadono le porte. A Firenze, un poeta di nome Dante ricopre cariche politiche mentre Giotto dipinge il trionfo del Papa. La Scolastica raggiunge il suo punto di rottura.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "A Roma, <strong>Giotto di Bondone</strong> dipinge Papa Bonifacio VIII che proclama il Giubileo dalla loggia di San Giovanni in Laterano — un affresco che celebra la supremazia papale al suo apice. Il frammento sopravvissuto mostra il Pontefice in paramenti solenni, benedicente le folle in arrivo. Ma la vera rivoluzione sta nella tecnica: il naturalismo di Giotto, le sue figure che occupano spazi credibili, sta già trasformando la pittura medievale. A Firenze, il suo maestro <strong>Cimabue</strong> ha completato la Maestà di Santa Trinita (1290 ca.), ancora radicata nei fondi oro bizantini ma già allusiva alla profondità. Entro cinque anni, Giotto inizierà gli affreschi della Cappella degli Scrovegni a Padova, rendendo completa la frattura. Il <strong>Proto-Rinascimento</strong> non nasce dal rifiuto del sacro, ma dal desiderio di dipingerlo in modo più convincente.",
+        "funFact": "Giotto sarebbe stato scoperto pastorello mentre disegnava pecore sulle pietre. Cimabue, di passaggio, rimase così colpito da prenderlo come apprendista. La storia potrebbe essere leggendaria — ma Giotto superò davvero il maestro."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "<strong>Dante Alighieri</strong> serve come uno dei sei Priori di Firenze da giugno ad agosto 1300 — la più alta carica politica della repubblica. Non ha ancora scritto la <em>Commedia</em>, ma ne ambienterà l'azione proprio in quest'anno: <em>\"Nel mezzo del cammin di nostra vita\"</em> colloca la discesa del pellegrino attraverso l'Inferno nella Settimana Santa del 1300. La scelta non è casuale — l'anno giubilare, quando Roma promette la completa remissione dei peccati, diventa la cornice del viaggio spirituale dantesco. Intanto, <strong>Giovanni Villani</strong>, banchiere fiorentino in visita a Roma per il Giubileo, è talmente colpito dalla grandiosità antica della città che decide di scrivere una cronaca di Firenze. La <em>Nuova Cronica</em>, iniziata più tardi, diventerà la più importante storia della Firenze medievale.",
+        "funFact": "Il priorato di Dante ne segnò la rovina. Le sue decisioni — incluso l'esilio di turbolenti capifazione — gli crearono nemici. Due anni dopo, fu lui a essere condannato all'esilio. Non tornò mai a Firenze."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>Giovanni Duns Scoto</strong>, il frate francescano noto come il 'Dottore Sottile', tiene lezioni sulle <em>Sentenze</em> di Pietro Lombardo a Oxford intorno al 1300, sviluppando quella che diventerà la sua opera capitale, l'<em>Ordinatio</em>. La sua dottrina dell'<strong>univocità dell'essere</strong> — secondo cui 'essere' significa la stessa cosa sia predicato di Dio che delle creature — sfida l'approccio analogico di Tommaso d'Aquino e apre la filosofia a nuove domande sull'individuazione e la volontà. L'<strong>Alta Scolastica</strong> raggiunge il suo apice tecnico, ma anche il suo punto di esaurimento. Le distinzioni sottili che rendono famoso Scoto cederanno presto il passo al rasoio di Ockham, che taglierà via l'apparato concettuale accumulato. La fine del secolo segna insieme il trionfo e la crisi del pensiero sistematico medievale.",
+        "funFact": "Scoto morì a quarantadue anni e, secondo la leggenda, fu sepolto vivo — la sua bara fu poi trovata con segni di graffi all'interno. La storia è probabilmente apocrifa, ma gli conferì un'aura duratura di mistero."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il 22 febbraio 1300, <strong>Papa Bonifacio VIII</strong> emana la bolla <em>Antiquorum habet fida relatio</em>, istituendo il primo Giubileo cristiano. I pellegrini che visitano San Pietro e San Paolo fuori le Mura a Roma ricevono l'indulgenza plenaria — il perdono completo della pena temporale per i peccati. <strong>Duecentomila persone</strong> invadono la città nel corso dell'anno. Bonifacio, vestito con le insegne imperiali, avrebbe dichiarato: <em>\"Io sono Cesare, io sono l'Imperatore!\"</em> Eppure il suo trionfo è effimero. Entro tre anni, gli agenti del re Filippo IV di Francia lo assaliranno ad Anagni; entro quattro, sarà morto. Firenze, intanto, è all'apice della sua potenza commerciale — popolazione vicina ai 100.000 abitanti, il fiorino d'oro dominante in tutta Europa, le banche dei Bardi e dei Peruzzi che finanziano i re. La città che produce Dante e Giotto è anche la capitale bancaria del mondo medievale."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Le connessioni qui sono <em>intensamente personali</em>. Giotto dipinge per Bonifacio VIII; Dante collocherà quello stesso papa all'Inferno, capovolto in una fossa fiammeggiante tra i simoniaci (<em>Inferno</em> XIX). Villani partecipa al Giubileo e concepisce la sua cronaca in diretta risposta alla grandiosità di Roma. Scoto sarà espulso da Parigi nel 1303 per aver sostenuto Bonifacio contro Filippo IV — le alleanze filosofiche hanno conseguenze politiche. E le famiglie di banchieri fiorentini la cui ricchezza rende possibili le commissioni di Giotto, quarantacinque anni dopo, falliranno per aver prestato troppo a Edoardo III d'Inghilterra. Il 1300 è un cardine: le strutture medievali — supremazia papale, sintesi scolastica, capitalismo delle corporazioni — raggiungono la loro massima articolazione proprio prima di iniziare a sgretolarsi."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Giubileo_universale_della_Chiesa_cattolica",
+        "title": "Wikipedia: Giubileo nella Chiesa cattolica"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/duns-scotus/",
+        "title": "Stanford Encyclopedia of Philosophy: Duns Scotus"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Dante_Alighieri",
+        "title": "Wikipedia: Dante Alighieri"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Giotto-di-Bondone",
+        "title": "Britannica: Giotto di Bondone"
+      }
+    ],
+    "image": {
+      "url": "images/1300-jubilee-threshold.jpg",
+      "width": 387,
+      "height": 466,
+      "caption": "Giotto di Bondone, Papa Bonifacio VIII proclama il Giubileo del 1300, frammento di affresco dall'Arcibasilica di San Giovanni in Laterano, Roma",
+      "attribution": "Giotto, Pubblico dominio, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "scholasticism",
+      "vernacular-literature",
+      "art-and-power",
+      "death-of-god"
+    ],
+    "location": {
+      "lat": 41.9029,
+      "lon": 12.4534,
+      "place": "Roma"
+    },
+    "addedDate": "2026-03-15T06:00:00Z",
+    "podcast": {
+      "url": "audio/it/1300-jubilee-threshold.mp3",
+      "duration": 189
+    }
   }
 ]
