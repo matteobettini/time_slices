@@ -665,11 +665,11 @@
       }
     ],
     "image": {
-      "url": "images/1517-school-of-athens.jpg",
+      "url": "images/1517-wittenberg-hammer-falls.jpg",
+      "caption": "Luther hammers his 95 Theses to the door of the Wittenberg Castle Church, 1517",
       "width": 1200,
-      "height": 931,
-      "caption": "The School of Athens by Raphael (1509–1511), Vatican Museums",
-      "attribution": "Raphael, Public Domain, via Wikimedia Commons"
+      "height": 675,
+      "attribution": "Ferdinand Pauwels, 1872, Public domain, via Wikimedia Commons"
     },
     "threads": [
       "reformation",

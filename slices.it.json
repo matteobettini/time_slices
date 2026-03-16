@@ -661,11 +661,11 @@
       }
     ],
     "image": {
-      "url": "images/1517-school-of-athens.jpg",
+      "url": "images/1517-wittenberg-hammer-falls.jpg",
+      "caption": "Lutero affigge le sue 95 tesi alla porta della Chiesa del Castello di Wittenberg, 1517",
       "width": 1200,
-      "height": 931,
-      "caption": "La Scuola di Atene di Raffaello (1509–1511), Musei Vaticani",
-      "attribution": "Raffaello, Pubblico Dominio, tramite Wikimedia Commons"
+      "height": 675,
+      "attribution": "Ferdinand Pauwels, 1872, Pubblico dominio, via Wikimedia Commons"
     },
     "threads": [
       "reformation",
