@@ -1953,5 +1953,78 @@
       "url": "audio/1300-jubilee-threshold.mp3",
       "duration": 197
     }
+  },
+  {
+    "year": "1321",
+    "id": "1321-ravenna-exile-ends",
+    "title": "Ravenna — The Exile's End",
+    "teaser": "In September, Dante Alighieri dies in Ravenna, having completed the greatest poem ever written in a language that barely existed as literature when he began. The Divine Comedy transforms Tuscan vernacular into the tongue of a nation — but the poet never sees Florence again.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "While Dante dies in Ravenna, in Florence <strong>Giotto di Bondone</strong> is painting the frescoes of the <strong>Bardi Chapel</strong> in Santa Croce — depicting the life of St. Francis with a naturalism that shatters Byzantine conventions. The same artist painted Dante's portrait in the Bargello Chapel, possibly from life. Giotto's revolution — volume, emotion, spatial depth — parallels Dante's literary breakthrough: both are turning from the hieratic to the human. The <strong>Proto-Renaissance</strong> is emerging in parallel channels: poetry that sounds like speech, painting that looks like seeing. Giotto's Francis grieves, doubts, bleeds. The art no longer points to heaven; it shows us earth as if heaven watches.",
+        "funFact": "Dante mentions Giotto in Purgatorio XI, noting how the painter's fame has eclipsed his teacher Cimabue's — one of the earliest instances of an artist being named in vernacular literature."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "The <strong>Divine Comedy</strong> is complete — 14,233 lines of <em>terza rima</em> describing Dante's journey through Hell, Purgatory, and Paradise. It is the first major work of European literature written in vernacular rather than Latin, and its language — the <strong>Tuscan dialect</strong> — will become modern Italian. In <em>De Vulgari Eloquentia</em>, written in exile around 1304, Dante had argued that vernacular could achieve the dignity of Latin; the <em>Commedia</em> is the proof. The interlocking three-line rhyme scheme (ABA BCB CDC) drives the poem forward like nothing before it, each canto a self-contained universe within the larger cosmos. What Dante creates is simultaneously encyclopedic theology and raw autobiography — the summit of <strong>medieval vernacular literature</strong>.",
+        "funFact": "Florence repeatedly tried to recover Dante's bones after his death; Franciscan monks in Ravenna hid them for centuries, even bricking them into a wall during the Renaissance."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "The <em>Commedia</em> is often called 'the Summa in verse' — a poetic synthesis of <strong>Thomistic scholasticism</strong>. Dante places Thomas Aquinas in the Heaven of the Sun and structures Hell according to Aristotelian-Thomistic ethics: sins of incontinence, violence, and fraud arranged by increasing perversion of reason. Yet the poem is also a critique: the temporal Church appears corrupt, popes languish in Hell, and Dante's guide through Paradise is not a theologian but <strong>Beatrice</strong>, symbol of divine love apprehended through beauty. The <em>Commedia</em> simultaneously represents the apex of scholastic synthesis and its transcendence — reason illuminated by love, philosophy completed by poetry.",
+        "funFact": "Dante reserves the lowest circle of Hell — frozen in ice — for traitors, placing Brutus, Cassius, and Judas Iscariot in Satan's three mouths. Political betrayal equals theological betrayal."
+      },
+      "hist": {
+        "label": "History",
+        "content": "Dante dies on <strong>September 14, 1321</strong>, returning from a diplomatic mission to Venice on behalf of his patron Guido II da Polenta. He has been in exile for nineteen years, condemned by the <strong>Black Guelphs</strong> who seized Florence in 1302 with papal backing. Across Europe, old orders are cracking: in Constantinople, the <strong>Byzantine civil war</strong> between two Andronikoi has begun; in France, lepers and Jews face massacres after well-poisoning accusations; in England, the barons revolt against Edward II. The Guelph-Ghibelline divide that defines Italian politics reflects a deeper fracture — the medieval synthesis of Church and Empire is dissolving into competing sovereignties.",
+        "funFact": "Dante's death sentence in Florence was finally revoked in 2008 — 706 years after his exile — by the city council, who declared it 'based on false charges.'"
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The threads converge in Dante's <strong>exile itself</strong>. The same factional politics that drove him from Florence created the conditions for his masterpiece: the <em>Commedia</em> is shot through with bitter denunciations of Florentine corruption and yearning for a unified Italy under imperial justice. Giotto, still working in Florence, inhabits the world Dante was expelled from; both are transforming their arts by turning toward observed reality. The philosophical framework — Aquinas's synthesis of Aristotle and Christian theology — provides Dante's architecture, but the poem exists because politics shattered his life. The Franciscan order that sheltered Dante in Ravenna would, three years later, see <strong>William of Ockham</strong> summoned to Avignon for heresy — the nominalist philosophy that would crack scholasticism's foundations. Dante's poem arrives at the summit just as the descent begins."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://plato.stanford.edu/entries/dante/",
+        "title": "Stanford Encyclopedia of Philosophy: Dante Alighieri"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Dante-Alighieri",
+        "title": "Britannica: Dante Alighieri"
+      },
+      {
+        "url": "https://www.britannica.com/topic/The-Divine-Comedy",
+        "title": "Britannica: The Divine Comedy"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/De_vulgari_eloquentia",
+        "title": "Wikipedia: De Vulgari Eloquentia"
+      }
+    ],
+    "image": {
+      "url": "images/1321-ravenna-exile-ends.jpg",
+      "alt": "Portrait of Dante Alighieri, attributed to Giotto or his school, from the Bargello Chapel, Florence",
+      "width": 360,
+      "height": 550,
+      "attribution": "Attributed to Giotto di Bondone (workshop), c. 1321, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "vernacular-literature",
+      "scholasticism",
+      "death-of-god",
+      "fragmentation"
+    ],
+    "location": {
+      "lat": 44.4184,
+      "lon": 12.2035,
+      "place": "Ravenna"
+    },
+    "addedDate": "2026-03-16T06:00:00Z",
+    "podcast": {
+      "url": "audio/1321-ravenna-exile-ends.mp3",
+      "duration": 201
+    }
   }
 ]

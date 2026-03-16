@@ -21,7 +21,9 @@
       "1347→1453": "A century after plague devastated Christendom's certainties, its eastern capital falls — and a philosopher dreams of reconciling all faiths through reason alone.",
       "1453→1600": "From Cusano's vision of religious harmony to Bruno's infinite cosmos — 150 years of expanding what God might mean, until Rome burns the questioner.",
       "410→1300": "Augustine watched Rome fall and invented Christian philosophy of history. Boniface VIII declared himself Caesar-Pope and Christendom's unity cracked at its apex.",
-      "1300→1347": "Boniface's hubris ended at Anagni; the Black Death ended medieval certainty. God had promised order through Pope and Emperor — plague killed both premises."
+      "1300→1347": "Boniface's hubris ended at Anagni; the Black Death ended medieval certainty. God had promised order through Pope and Emperor — plague killed both premises.",
+      "1300→1321": "Dante's exile from Florence coincides with Boniface VIII's overreach; the poet who witnessed the Jubilee now damns popes in verse.",
+      "1321→1347": "Dante's placement of popes in Hell anticipates the coming catastrophe; within a generation, the Black Death will shake faith in divine providence."
     },
     "rationalism": {
       "-431→125": "Anaxagoras argued that a rational principle (<em>Nous</em>) governed the cosmos rather than the caprice of gods. Five centuries later, the Stoics — working from this same Greek rationalist tradition, filtered through Aristotle and the early Stoa — taught that the universe was structured by <em>logos</em>, a rational order accessible to human reason. Epictetus, teaching in Nicopolis around 125 CE, inherited this lineage directly: Stoicism emerged from the Athenian philosophical milieu that Anaxagoras helped create, passed through Zeno of Citium (who studied at Plato's Academy) and Chrysippus. The Pantheon's mathematical perfection — its dome a geometrically exact hemisphere — is this rationalist conviction expressed in built form.",
@@ -73,7 +75,8 @@
       "1347→1922": "The plague shattered medieval unity — Church authority, feudal order, demographic stability, all broken at once. Six centuries later, modernism made fragmentation into an art form, shattering narrative, painting, and language with the same democratic indifference.",
       "1347→1848": "Five centuries of accumulated crises — plague, Reformation, wars of religion, industrialization — shatter the remaining unity. In 1848, Christendom finally cracks along class lines.",
       "1848→1922": "The failed revolutions fragment further: nationalism, socialism, and liberalism become competing salvations. By 1922, the pieces no longer fit any whole.",
-      "1922→1968": "Modernism's literary and artistic fragmentation becomes political fragmentation. The stream of consciousness shatters into slogans on walls; the twelve-tone row dissolves into noise and silence both."
+      "1922→1968": "Modernism's literary and artistic fragmentation becomes political fragmentation. The stream of consciousness shatters into slogans on walls; the twelve-tone row dissolves into noise and silence both.",
+      "1321→1347": "The factional politics that exiled Dante fracture Italian city-states into warring camps; the plague arrives to shatter what remains."
     },
     "classical-revival": {
       "-431→125": "Rome absorbed Greek art not as imitation but as imperial inheritance. The Parthenon expressed democratic Athens's civic ideals through mathematical proportion; Hadrian's Pantheon translated the same mathematical ambition — dome diameter equalling height, a perfect hemisphere — into the language of imperial universality. The transmission was direct: Roman architects studied Greek buildings firsthand, and Hadrian's Villa at Tivoli explicitly recreated Greek structures (the Stoa Poikile, the Vale of Tempe). Meanwhile, Plutarch's <em>Parallel Lives</em> provided the intellectual framework — Greek and Roman exemplars compared side by side, the classical tradition understood as a living inheritance rather than a lost age.",
@@ -123,7 +126,8 @@
       "1274→1517": "Aquinas's <em>Summa Theologica</em> remained unfinished at his death in 1274 — the greatest attempt to reconcile faith and reason left incomplete. Two centuries later, Luther rejected the entire project: not supplementing Scholasticism but abandoning it for <em>sola scriptura</em>.",
       "1141→1215": "Bernard defeats Abelard, but the method survives: universities institutionalize the disputation.",
       "1215→1274": "Dominicans become the Church's intellectual arm; Albertus Magnus recovers Aristotle; Aquinas crowns the scholastic synthesis.",
-      "1274→1300": "Aquinas's synthesis of faith and reason was barely cold when Scotus began dismantling it. The Subtle Doctor's univocity of being opened cracks that Ockham would widen into a chasm."
+      "1274→1300": "Aquinas's synthesis of faith and reason was barely cold when Scotus began dismantling it. The Subtle Doctor's univocity of being opened cracks that Ockham would widen into a chasm.",
+      "1300→1321": "Dante absorbs Aquinas's synthesis whole; the Commedia is scholasticism's crowning literary achievement, written as its philosophical dominance begins to wane."
     },
     "nominalism": {},
     "gothic-architecture": {
@@ -145,7 +149,9 @@
       "1141→1215": "The Song of Roland gives way to courtly romance; Chrétien de Troyes invents Arthurian fiction; German poets achieve classical maturity.",
       "1215→1274": "Courtly ideals cross the Alps; Dante begins dreaming of Beatrice; the Roman de la Rose debates love's nature for generations.",
       "1274→1300": "The vernacular had proved it could hold theology with Aquinas's death. Now Dante would prove it could hold a cosmos — setting his journey in the Jubilee Year when Latin still claimed monopoly on the sacred.",
-      "1300→1347": "Dante set his Comedy in the Jubilee Year; Boccaccio set his Decameron in the plague year. The vernacular graduated from pilgrimage to plague, from salvation to survival."
+      "1300→1347": "Dante set his Comedy in the Jubilee Year; Boccaccio set his Decameron in the plague year. The vernacular graduated from pilgrimage to plague, from salvation to survival.",
+      "1300→1321": "The pilgrims of Dante's Jubilee speak dialects, not Latin; his Comedy will give them a literature in the language they actually use.",
+      "1321→1347": "Dante's vindication of Tuscan opens the floodgates; Petrarch and Boccaccio will build directly on his foundation as plague transforms their world."
     },
     "baroque": {
       "1600→1648": "Caravaggio's tenebrism spreads through Europe via his imitators; by Westphalia, the Baroque has become the visual language of Catholic and Protestant power alike."
@@ -188,7 +194,9 @@
       "1347→1453": "Un secolo dopo che la peste devastò le certezze della Cristianità, la sua capitale orientale cade — e un filosofo sogna di riconciliare tutte le fedi con la sola ragione.",
       "1453→1600": "Dalla visione di Cusano sull'armonia religiosa al cosmo infinito di Bruno — 150 anni di espansione del significato di Dio, finché Roma brucia chi pone domande.",
       "410→1300": "Agostino vide cadere Roma e inventò la filosofia cristiana della storia. Bonifacio VIII si dichiarò Papa-Cesare e l'unità della cristianità si incrinò al suo apice.",
-      "1300→1347": "L'hybris di Bonifacio finì ad Anagni; la Morte Nera pose fine alle certezze medievali. Dio aveva promesso ordine tramite Papa e Imperatore — la peste uccise entrambe le premesse."
+      "1300→1347": "L'hybris di Bonifacio finì ad Anagni; la Morte Nera pose fine alle certezze medievali. Dio aveva promesso ordine tramite Papa e Imperatore — la peste uccise entrambe le premesse.",
+      "1300→1321": "L'esilio di Dante da Firenze coincide con l'arroganza di Bonifacio VIII; il poeta che assistette al Giubileo ora danna i papi in versi.",
+      "1321→1347": "La collocazione dantesca dei papi all'Inferno anticipa la catastrofe imminente; entro una generazione la Peste Nera scuoterà la fede nella provvidenza divina."
     },
     "rationalism": {
       "-431→125": "Anassagora sosteneva che un principio razionale (<em>Nous</em>) governasse il cosmo piuttosto che il capriccio degli dei. Cinque secoli dopo, gli Stoici — partendo dalla stessa tradizione razionalista greca, filtrata attraverso Aristotele e la prima Stoa — insegnavano che l'universo era strutturato dal <em>logos</em>, un ordine razionale accessibile alla ragione umana. Epitteto, che insegnava a Nicopoli intorno al 125 d.C., ereditava direttamente questa genealogia: lo stoicismo emerse dall'ambiente filosofico ateniese che Anassagora contribuì a creare, passando attraverso Zenone di Cizio (che studiò all'Accademia di Platone) e Crisippo. La perfezione matematica del Pantheon — la cupola come emisfero geometricamente esatto — è questa convinzione razionalista espressa in forma costruita.",
@@ -240,7 +248,8 @@
       "1347→1922": "La peste frantumò l'unità medievale — autorità della Chiesa, ordine feudale, stabilità demografica, tutto spezzato in una volta. Sei secoli dopo, il modernismo fece della frammentazione una forma d'arte, frantumando narrazione, pittura e linguaggio con la stessa democratica indifferenza.",
       "1347→1848": "Cinque secoli di crisi accumulate — peste, Riforma, guerre di religione, industrializzazione — frantumano la restante unità. Nel 1848, la Cristianità si spacca definitivamente lungo linee di classe.",
       "1848→1922": "Le rivoluzioni fallite frammentano ulteriormente: nazionalismo, socialismo e liberalismo diventano salvezze in competizione. Nel 1922, i pezzi non formano più alcun insieme.",
-      "1922→1968": "La frammentazione letteraria e artistica del Modernismo diventa frammentazione politica. Il flusso di coscienza si frantuma in slogan sui muri; la serie dodecafonica si dissolve sia in rumore che in silenzio."
+      "1922→1968": "La frammentazione letteraria e artistica del Modernismo diventa frammentazione politica. Il flusso di coscienza si frantuma in slogan sui muri; la serie dodecafonica si dissolve sia in rumore che in silenzio.",
+      "1321→1347": "La politica fazionaria che esiliò Dante frammenta le città-stato italiane in fazioni in guerra; la peste arriva a frantumare ciò che resta."
     },
     "classical-revival": {
       "-431→125": "Roma assorbì l'arte greca non come imitazione ma come eredità imperiale. Il Partenone esprimeva gli ideali civici dell'Atene democratica attraverso la proporzione matematica; il Pantheon di Adriano tradusse la stessa ambizione matematica — diametro della cupola pari all'altezza, un emisfero perfetto — nel linguaggio dell'universalità imperiale. La trasmissione fu diretta: gli architetti romani studiavano gli edifici greci dal vero, e la Villa Adriana a Tivoli ricreava esplicitamente strutture greche (la Stoà Pecile, la Valle di Tempe). Intanto, le <em>Vite parallele</em> di Plutarco fornivano la cornice intellettuale — esemplari greci e romani a confronto, la tradizione classica intesa come eredità viva piuttosto che come epoca perduta.",
@@ -290,7 +299,8 @@
       "1274→1517": "La <em>Summa Theologica</em> di Tommaso d'Aquino rimase incompiuta alla sua morte nel 1274 — il più grande tentativo di conciliare fede e ragione rimasto incompleto. Due secoli dopo, Lutero rifiutò l'intero progetto: non integrando la Scolastica ma abbandonandola per la <em>sola scriptura</em>.",
       "1141→1215": "Bernardo sconfigge Abelardo, ma il metodo sopravvive: le università istituzionalizzano la disputatio.",
       "1215→1274": "I domenicani diventano il braccio intellettuale della Chiesa; Alberto Magno recupera Aristotele; Tommaso corona la sintesi scolastica.",
-      "1274→1300": "La sintesi tomista di fede e ragione era appena fredda quando Scoto iniziò a smontarla. L'univocità dell'essere del Dottore Sottile aprì crepe che Ockham avrebbe allargato in voragini."
+      "1274→1300": "La sintesi tomista di fede e ragione era appena fredda quando Scoto iniziò a smontarla. L'univocità dell'essere del Dottore Sottile aprì crepe che Ockham avrebbe allargato in voragini.",
+      "1300→1321": "Dante assorbe interamente la sintesi di Tommaso; la Commedia è il coronamento letterario della scolastica, scritta mentre il suo dominio filosofico inizia a declinare."
     },
     "nominalism": {},
     "gothic-architecture": {
@@ -312,7 +322,9 @@
       "1141→1215": "La Chanson de Roland cede il passo al romanzo cortese; Chrétien de Troyes inventa la narrativa arturiana; i poeti tedeschi raggiungono la maturità classica.",
       "1215→1274": "Gli ideali cortesi attraversano le Alpi; Dante inizia a sognare Beatrice; il Roman de la Rose dibatte la natura dell'amore per generazioni.",
       "1274→1300": "Il volgare aveva dimostrato di poter reggere la teologia con la morte di Tommaso. Ora Dante avrebbe dimostrato che poteva contenere un cosmo — ambientando il suo viaggio nell'anno del Giubileo, quando il latino rivendicava ancora il monopolio sul sacro.",
-      "1300→1347": "Dante ambientò la Commedia nell'anno del Giubileo; Boccaccio ambientò il Decameron nell'anno della peste. Il volgare si diplomò dal pellegrinaggio alla pestilenza, dalla salvezza alla sopravvivenza."
+      "1300→1347": "Dante ambientò la Commedia nell'anno del Giubileo; Boccaccio ambientò il Decameron nell'anno della peste. Il volgare si diplomò dal pellegrinaggio alla pestilenza, dalla salvezza alla sopravvivenza.",
+      "1300→1321": "I pellegrini del Giubileo di Dante parlano dialetti, non latino; la sua Commedia darà loro una letteratura nella lingua che realmente usano.",
+      "1321→1347": "La rivendicazione dantesca del toscano apre le porte; Petrarca e Boccaccio costruiranno direttamente sulle sue fondamenta mentre la peste trasforma il loro mondo."
     },
     "baroque": {
       "1600→1648": "Il tenebrismo di Caravaggio si diffonde in Europa attraverso i suoi imitatori; a Westfalia, il Barocco è diventato il linguaggio visivo del potere cattolico e protestante."

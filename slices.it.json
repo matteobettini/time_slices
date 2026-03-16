@@ -1945,5 +1945,78 @@
       "url": "audio/it/1300-jubilee-threshold.mp3",
       "duration": 189
     }
+  },
+  {
+    "year": "1321",
+    "id": "1321-ravenna-exile-ends",
+    "title": "Ravenna — La fine dell'esilio",
+    "teaser": "A settembre Dante Alighieri muore a Ravenna, avendo completato il più grande poema mai scritto in una lingua che a malapena esisteva come letteratura quando iniziò. La Divina Commedia trasforma il volgare toscano nella lingua di una nazione — ma il poeta non rivedrà mai Firenze.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Mentre Dante muore a Ravenna, a Firenze <strong>Giotto di Bondone</strong> sta dipingendo gli affreschi della <strong>Cappella Bardi</strong> in Santa Croce — raffigurando la vita di San Francesco con un naturalismo che infrange le convenzioni bizantine. Lo stesso artista dipinse il ritratto di Dante nella Cappella del Bargello, forse dal vivo. La rivoluzione di Giotto — volume, emozione, profondità spaziale — procede parallela alla svolta letteraria di Dante: entrambi si allontanano dal ieratico verso l'umano. Il <strong>Proto-Rinascimento</strong> emerge in canali paralleli: poesia che suona come discorso parlato, pittura che appare come visione diretta. Il Francesco di Giotto si addolora, dubita, sanguina. L'arte non punta più al cielo; ci mostra la terra come se il cielo osservasse.",
+        "funFact": "Dante menziona Giotto nel Purgatorio XI, notando come la fama del pittore abbia eclissato quella del suo maestro Cimabue — uno dei primi casi in cui un artista viene nominato nella letteratura volgare."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "La <strong>Divina Commedia</strong> è completa — 14.233 versi in <em>terza rima</em> che descrivono il viaggio di Dante attraverso l'Inferno, il Purgatorio e il Paradiso. È la prima grande opera della letteratura europea scritta in volgare anziché in latino, e la sua lingua — il <strong>dialetto toscano</strong> — diventerà l'italiano moderno. Nel <em>De Vulgari Eloquentia</em>, scritto in esilio intorno al 1304, Dante aveva sostenuto che il volgare poteva raggiungere la dignità del latino; la <em>Commedia</em> ne è la prova. Lo schema rimico a tre versi concatenati (ABA BCB CDC) spinge il poema in avanti come mai prima, ogni canto un universo autonomo dentro il cosmo più grande. Ciò che Dante crea è simultaneamente teologia enciclopedica e cruda autobiografia — il vertice della <strong>letteratura medievale in volgare</strong>.",
+        "funFact": "Firenze cercò ripetutamente di recuperare le spoglie di Dante dopo la sua morte; i frati francescani di Ravenna le nascosero per secoli, arrivando a murarle durante il Rinascimento."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "La <em>Commedia</em> è spesso chiamata 'la Summa in versi' — una sintesi poetica della <strong>scolastica tomistica</strong>. Dante colloca Tommaso d'Aquino nel Cielo del Sole e struttura l'Inferno secondo l'etica aristotelico-tomistica: peccati d'incontinenza, violenza e frode disposti per crescente perversione della ragione. Eppure il poema è anche una critica: la Chiesa temporale appare corrotta, i papi languono all'Inferno, e la guida di Dante attraverso il Paradiso non è un teologo ma <strong>Beatrice</strong>, simbolo dell'amore divino colto attraverso la bellezza. La <em>Commedia</em> rappresenta simultaneamente l'apice della sintesi scolastica e il suo superamento — la ragione illuminata dall'amore, la filosofia completata dalla poesia.",
+        "funFact": "Dante riserva il cerchio più basso dell'Inferno — ghiacciato nel ghiaccio — ai traditori, collocando Bruto, Cassio e Giuda Iscariota nelle tre bocche di Satana. Il tradimento politico equivale al tradimento teologico."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Dante muore il <strong>14 settembre 1321</strong>, di ritorno da una missione diplomatica a Venezia per conto del suo protettore Guido II da Polenta. È in esilio da diciannove anni, condannato dai <strong>Guelfi Neri</strong> che presero Firenze nel 1302 con l'appoggio papale. In tutta Europa, i vecchi ordini si stanno sgretolando: a Costantinopoli è iniziata la <strong>guerra civile bizantina</strong> tra i due Andronico; in Francia lebbrosi ed ebrei subiscono massacri dopo accuse di avvelenamento dei pozzi; in Inghilterra i baroni si ribellano a Edoardo II. La divisione Guelfi-Ghibellini che definisce la politica italiana riflette una frattura più profonda — la sintesi medievale di Chiesa e Impero si sta dissolvendo in sovranità concorrenti.",
+        "funFact": "La condanna a morte di Dante a Firenze fu finalmente revocata nel 2008 — 706 anni dopo il suo esilio — dal consiglio comunale, che la dichiarò 'basata su accuse false'."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "I fili convergono nell'<strong>esilio stesso di Dante</strong>. Le stesse politiche di fazione che lo cacciarono da Firenze crearono le condizioni per il suo capolavoro: la <em>Commedia</em> è attraversata da amare denunce della corruzione fiorentina e dal desiderio di un'Italia unita sotto la giustizia imperiale. Giotto, ancora al lavoro a Firenze, abita il mondo da cui Dante fu espulso; entrambi stanno trasformando le loro arti volgendosi alla realtà osservata. L'impalcatura filosofica — la sintesi di Aristotele e teologia cristiana operata da Tommaso — fornisce l'architettura di Dante, ma il poema esiste perché la politica ha frantumato la sua vita. L'ordine francescano che accolse Dante a Ravenna vedrà, tre anni dopo, <strong>Guglielmo di Ockham</strong> convocato ad Avignone per eresia — la filosofia nominalista che avrebbe incrinato le fondamenta della scolastica. Il poema di Dante arriva alla vetta proprio mentre inizia la discesa."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://plato.stanford.edu/entries/dante/",
+        "title": "Stanford Encyclopedia of Philosophy: Dante Alighieri"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Dante-Alighieri",
+        "title": "Britannica: Dante Alighieri"
+      },
+      {
+        "url": "https://www.britannica.com/topic/The-Divine-Comedy",
+        "title": "Britannica: The Divine Comedy"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/De_vulgari_eloquentia",
+        "title": "Wikipedia: De Vulgari Eloquentia"
+      }
+    ],
+    "image": {
+      "url": "images/1321-ravenna-exile-ends.jpg",
+      "alt": "Ritratto di Dante Alighieri, attribuito a Giotto o alla sua scuola, dalla Cappella del Bargello, Firenze",
+      "width": 360,
+      "height": 550,
+      "attribution": "Attribuito a Giotto di Bondone (bottega), c. 1321, Pubblico dominio, via Wikimedia Commons"
+    },
+    "threads": [
+      "vernacular-literature",
+      "scholasticism",
+      "death-of-god",
+      "fragmentation"
+    ],
+    "location": {
+      "lat": 44.4184,
+      "lon": 12.2035,
+      "place": "Ravenna"
+    },
+    "addedDate": "2026-03-16T06:00:00Z",
+    "podcast": {
+      "url": "audio/it/1321-ravenna-exile-ends.mp3",
+      "duration": 186
+    }
   }
 ]
