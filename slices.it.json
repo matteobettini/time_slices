@@ -1668,8 +1668,7 @@
       },
       "conn": {
         "label": "Connessioni",
-        "content": "I fili si intrecciano nella polvere da sparo e nei manoscritti. I cannoni di Maometto demoliscono mura che avevano definito l'arte dell'assedio per millenni, mentre l'artiglieria di Jean Bureau a Castillon dimostra che i cavalieri corazzati sono obsoleti. Intanto, a Magonza, la pressa da stampa di <strong>Gutenberg</strong> — che produrrà Bibbie entro il 1455 — farà alla conoscenza ciò che i cannoni hanno fatto ai castelli. Gli studiosi bizantini in fuga verso l'Italia portano testi che alimenteranno sia l'umanesimo rinascimentale sia il ritorno della Riforma alle fonti greche. Il sogno di Cusano di un dialogo religioso attraverso la ragione arriva precisamente quando tale dialogo è diventato geopoliticamente urgente. La caduta di Costantinopoli non pone fine alla civiltà bizantina — la disperde, seminando l'Europa di cultura greca nel momento esatto in cui la stampa può amplificarla.",
-        "funFact": "La prima stampa datata di Gutenberg non è la Bibbia — è una lettera d'indulgenza del 1454. Lo strumento di raccolta fondi della Chiesa precedette le sue Scritture."
+        "content": "I fili si intrecciano nella polvere da sparo e nei manoscritti. I cannoni di Maometto demoliscono mura che avevano definito l'arte dell'assedio per millenni, mentre l'artiglieria di Jean Bureau a Castillon dimostra che i cavalieri corazzati sono obsoleti. Intanto, a Magonza, la pressa da stampa di <strong>Gutenberg</strong> — che produrrà Bibbie entro il 1455 — farà alla conoscenza ciò che i cannoni hanno fatto ai castelli. Gli studiosi bizantini in fuga verso l'Italia portano testi che alimenteranno sia l'umanesimo rinascimentale sia il ritorno della Riforma alle fonti greche. Il sogno di Cusano di un dialogo religioso attraverso la ragione arriva precisamente quando tale dialogo è diventato geopoliticamente urgente. La caduta di Costantinopoli non pone fine alla civiltà bizantina — la disperde, seminando l'Europa di cultura greca nel momento esatto in cui la stampa può amplificarla."
       }
     },
     "sources": [
@@ -1736,8 +1735,7 @@
       },
       "hist": {
         "label": "Storia",
-        "content": "<strong>Enrico VIII</strong> sale al trono inglese il 22 aprile — giovane, atletico, colto, l'immagine del <strong>principe rinascimentale</strong>. A Roma, <strong>Papa Giulio II</strong> guida la <strong>Lega di Cambrai</strong> contro Venezia; il 14 maggio, la <strong>Battaglia di Agnadello</strong> frantuma la potenza veneziana in un solo pomeriggio. Machiavelli osserverà poi che Venezia perse in un giorno ciò che aveva impiegato ottocento anni a costruire. Giulio II — il \"Papa guerriero\" — sta contemporaneamente commissionando gli affreschi di Raffaello e conducendo guerre in tutta Italia. La tensione definisce il momento: mecenatismo e violenza, arte e ambizione, umanesimo e <em>realpolitik</em>.",
-        "funFact": "Giulio II guidò personalmente le truppe in battaglia, indossava l'armatura e si fece crescere la barba in segno di lutto quando perse Bologna — l'unico papa rinascimentale a farlo."
+        "content": "<strong>Enrico VIII</strong> sale al trono inglese il 22 aprile — giovane, atletico, colto, l'immagine del <strong>principe rinascimentale</strong>. A Roma, <strong>Papa Giulio II</strong> guida la <strong>Lega di Cambrai</strong> contro Venezia; il 14 maggio, la <strong>Battaglia di Agnadello</strong> frantuma la potenza veneziana in un solo pomeriggio. Machiavelli osserverà poi che Venezia perse in un giorno ciò che aveva impiegato ottocento anni a costruire. Giulio II — il \"Papa guerriero\" — sta contemporaneamente commissionando gli affreschi di Raffaello e conducendo guerre in tutta Italia. La tensione definisce il momento: mecenatismo e violenza, arte e ambizione, umanesimo e <em>realpolitik</em>."
       },
       "conn": {
         "label": "Connessioni",
@@ -1812,8 +1810,7 @@
       },
       "hist": {
         "label": "Storia",
-        "content": "Il 15 giugno, a <strong>Runnymede</strong>, baroni ribelli costringono <strong>re Giovanni</strong> a sigillare la <strong>Magna Carta</strong> — 63 clausole che limitano il potere reale e garantiscono diritti baronali. Papa <strong>Innocenzo III</strong> la annulla entro poche settimane, scatenando una guerra civile, ma versioni successive diventano fondamentali per la tradizione costituzionale inglese. A novembre, Innocenzo convoca il <strong>Quarto Concilio Lateranense</strong> a Roma — oltre 400 vescovi, 800 abati, inviati da ogni regno cristiano. I suoi 71 decreti riformano la vita medievale: confessione annuale obbligatoria, ebrei e musulmani costretti a indossare abiti distintivi.",
-        "funFact": "La folla al Quarto Concilio Lateranense era così enorme che lo stesso papa ebbe difficoltà a entrare nella Basilica di San Pietro per la Messa anniversaria — le fonti medievali descrivono vescovi schiacciati nella calca."
+        "content": "Il 15 giugno, a <strong>Runnymede</strong>, baroni ribelli costringono <strong>re Giovanni</strong> a sigillare la <strong>Magna Carta</strong> — 63 clausole che limitano il potere reale e garantiscono diritti baronali. Papa <strong>Innocenzo III</strong> la annulla entro poche settimane, scatenando una guerra civile, ma versioni successive diventano fondamentali per la tradizione costituzionale inglese. A novembre, Innocenzo convoca il <strong>Quarto Concilio Lateranense</strong> a Roma — oltre 400 vescovi, 800 abati, inviati da ogni regno cristiano. I suoi 71 decreti riformano la vita medievale: confessione annuale obbligatoria, ebrei e musulmani costretti a indossare abiti distintivi."
       },
       "conn": {
         "label": "Connessioni",
@@ -1884,8 +1881,7 @@
       },
       "phil": {
         "label": "Filosofia",
-        "content": "<strong>Giovanni Duns Scoto</strong>, il frate francescano noto come il 'Dottore Sottile', tiene lezioni sulle <em>Sentenze</em> di Pietro Lombardo a Oxford intorno al 1300, sviluppando quella che diventerà la sua opera capitale, l'<em>Ordinatio</em>. La sua dottrina dell'<strong>univocità dell'essere</strong> — secondo cui 'essere' significa la stessa cosa sia predicato di Dio che delle creature — sfida l'approccio analogico di Tommaso d'Aquino e apre la filosofia a nuove domande sull'individuazione e la volontà. L'<strong>Alta Scolastica</strong> raggiunge il suo apice tecnico, ma anche il suo punto di esaurimento. Le distinzioni sottili che rendono famoso Scoto cederanno presto il passo al rasoio di Ockham, che taglierà via l'apparato concettuale accumulato. La fine del secolo segna insieme il trionfo e la crisi del pensiero sistematico medievale.",
-        "funFact": "Scoto morì a quarantadue anni e, secondo la leggenda, fu sepolto vivo — la sua bara fu poi trovata con segni di graffi all'interno. La storia è probabilmente apocrifa, ma gli conferì un'aura duratura di mistero."
+        "content": "<strong>Giovanni Duns Scoto</strong>, il frate francescano noto come il 'Dottore Sottile', tiene lezioni sulle <em>Sentenze</em> di Pietro Lombardo a Oxford intorno al 1300, sviluppando quella che diventerà la sua opera capitale, l'<em>Ordinatio</em>. La sua dottrina dell'<strong>univocità dell'essere</strong> — secondo cui 'essere' significa la stessa cosa sia predicato di Dio che delle creature — sfida l'approccio analogico di Tommaso d'Aquino e apre la filosofia a nuove domande sull'individuazione e la volontà. L'<strong>Alta Scolastica</strong> raggiunge il suo apice tecnico, ma anche il suo punto di esaurimento. Le distinzioni sottili che rendono famoso Scoto cederanno presto il passo al rasoio di Ockham, che taglierà via l'apparato concettuale accumulato. La fine del secolo segna insieme il trionfo e la crisi del pensiero sistematico medievale."
       },
       "hist": {
         "label": "Storia",
@@ -1959,8 +1955,7 @@
       },
       "hist": {
         "label": "Storia",
-        "content": "Dante muore il <strong>14 settembre 1321</strong>, di ritorno da una missione diplomatica a Venezia per conto del suo protettore Guido II da Polenta. È in esilio da diciannove anni, condannato dai <strong>Guelfi Neri</strong> che presero Firenze nel 1302 con l'appoggio papale. In tutta Europa, i vecchi ordini si stanno sgretolando: a Costantinopoli è iniziata la <strong>guerra civile bizantina</strong> tra i due Andronico; in Francia lebbrosi ed ebrei subiscono massacri dopo accuse di avvelenamento dei pozzi; in Inghilterra i baroni si ribellano a Edoardo II. La divisione Guelfi-Ghibellini che definisce la politica italiana riflette una frattura più profonda — la sintesi medievale di Chiesa e Impero si sta dissolvendo in sovranità concorrenti.",
-        "funFact": "La condanna a morte di Dante a Firenze fu finalmente revocata nel 2008 — 706 anni dopo il suo esilio — dal consiglio comunale, che la dichiarò 'basata su accuse false'."
+        "content": "Dante muore il <strong>14 settembre 1321</strong>, di ritorno da una missione diplomatica a Venezia per conto del suo protettore Guido II da Polenta. È in esilio da diciannove anni, condannato dai <strong>Guelfi Neri</strong> che presero Firenze nel 1302 con l'appoggio papale. In tutta Europa, i vecchi ordini si stanno sgretolando: a Costantinopoli è iniziata la <strong>guerra civile bizantina</strong> tra i due Andronico; in Francia lebbrosi ed ebrei subiscono massacri dopo accuse di avvelenamento dei pozzi; in Inghilterra i baroni si ribellano a Edoardo II. La divisione Guelfi-Ghibellini che definisce la politica italiana riflette una frattura più profonda — la sintesi medievale di Chiesa e Impero si sta dissolvendo in sovranità concorrenti."
       },
       "conn": {
         "label": "Connessioni",
