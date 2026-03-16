@@ -35,7 +35,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 ---
 
-## PHASE 1: Research & Content (Steps 1-11)
+## PHASE 1: Research & Content (Steps 1-14)
 
 1. **Read the spec:** `/home/cloud-user/.openclaw/workspace/time-slices/SPEC.md` — follow it exactly.
 
@@ -50,17 +50,29 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 4. **Quality self-check:** Before committing to a year, verify it has genuine depth in ALL 5 dimensions (🎨 Art, 📖 Literature, 🧠 Philosophy, ⚔️ History, 🔗 Connections). If any feels thin, pick a different year.
 
-5. **Movement labels are MANDATORY.** Each dimension MUST name its cultural/intellectual movement. Don't just describe works — place them in their movement and explain why it emerged THEN.
+5. **Check nearby entries for overlap:** Once you've picked a year, run:
+    ```bash
+    python3 scripts/nearby-entries.py <YEAR>
+    ```
+    This shows the 2-3 closest entries with full content. **Read them carefully** to avoid:
+    - Repeating the same figures (e.g., don't feature Erasmus if a nearby entry already does)
+    - Covering the same events or works
+    - Using the same themes/threads as dominant focus
+    - Overlapping teasers or angles
+    
+    If your planned entry overlaps significantly, either pick a different year or find a distinct angle.
 
-6. **Connections must be GROUNDED.** The 🔗 Connections dimension must describe real, documented cross-dimensional influence — not poetic parallels. If you can't cite it, don't claim it.
+6. **Movement labels are MANDATORY.** Each dimension MUST name its cultural/intellectual movement. Don't just describe works — place them in their movement and explain why it emerged THEN.
 
-7. **One Fun Fact per entry, in the Connections dimension.** Add a single `funFact` field to the `conn` dimension — pick the most surprising detail across the whole entry.
+7. **Connections must be GROUNDED.** The 🔗 Connections dimension must describe real, documented cross-dimensional influence — not poetic parallels. If you can't cite it, don't claim it.
+
+8. **One Fun Fact per entry, in the Connections dimension.** Add a single `funFact` field to the `conn` dimension — pick the most surprising detail across the whole entry.
    - One sentence, punchy and memorable
    - Must be factually accurate (verify!)
    - Should add depth, not just restate the main content
    - Example: "The fresco was legendarily completed by an angel"
 
-8. **Thread connectivity and quality:**
+9. **Thread connectivity and quality:**
    - Threads must be **historical, cultural, or thematic** — intellectual movements, artistic schools, philosophical currents
    - **Good threads:** `death-of-god`, `nominalism`, `classical-revival`, `reformation`, `vernacular-literature`, `existentialism`
    - **Bad threads:** `biography`, `famous-people`, `wars`, `inventions` — generic categories, not traceable ideas
@@ -68,23 +80,23 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
    - **⚠️ AVOID DUPLICATE THREADS:** Don't create near-synonyms like `christian-humanism` when `renaissance-humanism` exists.
    - **⚠️ BE RUTHLESS WITH ASSIGNMENT:** Only assign a thread if the entry's *central thesis* engages it directly — not because it "kind of relates." Ask: would someone exploring this thread be surprised not to find this entry? If the connection is incidental, don't assign it. Aim for 2-4 threads per entry.
 
-9. **Add ONE new entry** following the spec. Include:
+10. **Add ONE new entry** following the spec. Include:
    - City in title only if dimensions converge there; otherwise use thematic title
    - `location` field (always required for map)
    - `addedDate` as full ISO-8601 UTC timestamp (e.g. `"2026-02-25T14:30:00Z"`)
 
-10. **Download and prepare image:**
+11. **Download and prepare image:**
    ```bash
    ./scripts/prep-image.sh <url_or_path> {entry-id} "Image caption/description"
    ```
    This downloads, compresses (max 1200px, quality 85), and outputs the image JSON with dimensions.
    Copy the output JSON into your entry — the `caption` field is used for both alt text and visible caption.
 
-11. **Add Italian version** to `slices.it.json` — natural Italian, not machine translation.
+12. **Add Italian version** to `slices.it.json` — natural Italian, not machine translation.
 
-12. **Update THREAD_LABELS** in `thread-labels.json` if you add new thread tags (both `en` and `it` keys).
+13. **Update THREAD_LABELS** in `thread-labels.json` if you add new thread tags (both `en` and `it` keys).
 
-13. **Add THREAD_NARRATIVES** using the helper script:
+14. **Add THREAD_NARRATIVES** using the helper script:
     ```bash
     # Check what's missing
     python3 scripts/add-narrative.py --missing
@@ -98,11 +110,11 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 ---
 
-## PHASE 2: Podcasts (Steps 14-16) — MANDATORY
+## PHASE 2: Podcasts (Steps 15-17) — MANDATORY
 
 ⚠️ **DO NOT SKIP THIS PHASE. Previous runs have failed by stopping after Phase 1.**
 
-14. **Write podcast scripts:**
+15. **Write podcast scripts:**
     - EN script (~350-400 words, storytelling style) → `audio/scripts/{id}.txt`
     - IT script (culturally adapted, not literal) → `audio/scripts/it/{id}.txt`
     
@@ -112,7 +124,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     - ❌ "1,000 years" → ✅ "a thousand years"
     - ❌ "3 months" → ✅ "three months"
 
-15. **Find background music using `find-music.py`:**
+16. **Find background music using `find-music.py`:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     # Search by era + mood — pick terms that match the entry's period and tone
@@ -133,7 +145,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     
     **Save the URL and start_time from the output** — you'll pass them to generate-podcast.py.
 
-16. **Generate podcasts:**
+17. **Generate podcasts:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     
@@ -143,11 +155,11 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     
     # EN podcast (auto-selects ElevenLabs if credits available, else Edge TTS)
     python3 scripts/generate-podcast.py {id} --lang en \
-      --music-url "URL_FROM_STEP_15" --music-start SECONDS
+      --music-url "URL_FROM_STEP_16" --music-start SECONDS
     
     # IT podcast  
     python3 scripts/generate-podcast.py {id} --lang it \
-      --music-url "URL_FROM_STEP_15" --music-start SECONDS
+      --music-url "URL_FROM_STEP_16" --music-start SECONDS
     ```
     
     Voices are randomly selected from curated pools for variety. To force a specific voice, add `--voice <name>`.
@@ -161,11 +173,11 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 ---
 
-## PHASE 3: Publish (Steps 17-18) — MANDATORY
+## PHASE 3: Publish (Steps 18-19) — MANDATORY
 
 ⚠️ **DO NOT SKIP THIS PHASE. The entry is NOT LIVE until pushed.**
 
-17. **Commit and push:**
+18. **Commit and push:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     git add -A
@@ -175,7 +187,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     
     **VERIFY PUSH SUCCEEDED.** Look for `main -> main` in output. If you see `rejected` or `error`, fix it.
 
-18. **Final reply** (ONLY after steps 16-17 verified):
+19. **Final reply** (ONLY after steps 17-18 verified):
     - Year, title, teaser, one highlight connection (3-5 sentences)
     - Direct link: `https://matteobettini.github.io/time_slices/#ID`
     - No backticks around the URL — it must be clickable
