@@ -1997,10 +1997,10 @@
     ],
     "image": {
       "url": "images/1321-ravenna-exile-ends.jpg",
-      "alt": "Ritratto di Dante Alighieri, attribuito a Giotto o alla sua scuola, dalla Cappella del Bargello, Firenze",
       "width": 360,
       "height": 550,
-      "attribution": "Attribuito a Giotto di Bondone (bottega), c. 1321, Pubblico dominio, via Wikimedia Commons"
+      "attribution": "Attribuito a Giotto di Bondone (bottega), c. 1321, Pubblico dominio, via Wikimedia Commons",
+      "caption": "Ritratto di Dante Alighieri, attribuito a Giotto o alla sua scuola, dalla Cappella del Bargello, Firenze"
     },
     "threads": [
       "vernacular-literature",

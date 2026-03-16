@@ -65,9 +65,9 @@ echo "📋 Image JSON:"
 echo "  \"image\": {"
 echo "    \"url\": \"images/$ENTRY_ID.jpg\","
 if [ -n "$ALT_TEXT" ]; then
-    echo "    \"alt\": \"$ALT_TEXT\","
+    echo "    \"caption\": \"$ALT_TEXT\","
 else
-    echo "    \"alt\": \"<describe the image>\","
+    echo "    \"caption\": \"<describe the image>\","
 fi
 echo "    \"width\": $WIDTH,"
 echo "    \"height\": $HEIGHT"

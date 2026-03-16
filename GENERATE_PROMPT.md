@@ -75,10 +75,10 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 10. **Download and prepare image:**
    ```bash
-   ./scripts/prep-image.sh <url_or_path> {entry-id} "Alt text description"
+   ./scripts/prep-image.sh <url_or_path> {entry-id} "Image caption/description"
    ```
    This downloads, compresses (max 1200px, quality 85), and outputs the image JSON with dimensions.
-   Copy the output JSON into your entry — dimensions are included automatically.
+   Copy the output JSON into your entry — the `caption` field is used for both alt text and visible caption.
 
 11. **Add Italian version** to `slices.it.json` — natural Italian, not machine translation.
 

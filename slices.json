@@ -2005,10 +2005,10 @@
     ],
     "image": {
       "url": "images/1321-ravenna-exile-ends.jpg",
-      "alt": "Portrait of Dante Alighieri, attributed to Giotto or his school, from the Bargello Chapel, Florence",
       "width": 360,
       "height": 550,
-      "attribution": "Attributed to Giotto di Bondone (workshop), c. 1321, Public domain, via Wikimedia Commons"
+      "attribution": "Attributed to Giotto di Bondone (workshop), c. 1321, Public domain, via Wikimedia Commons",
+      "caption": "Portrait of Dante Alighieri, attributed to Giotto or his school, from the Bargello Chapel, Florence"
     },
     "threads": [
       "vernacular-literature",
