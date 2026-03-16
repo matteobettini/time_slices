@@ -54,11 +54,12 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 6. **Connections must be GROUNDED.** The 🔗 Connections dimension must describe real, documented cross-dimensional influence — not poetic parallels. If you can't cite it, don't claim it.
 
-7. **Fun Facts are MANDATORY.** Each dimension MUST include a `funFact` field — a surprising, lesser-known detail that makes readers go "wait, really?" 
+7. **Fun Facts (1-2 per entry, not per dimension).** Add a `funFact` field to at most 1-2 dimensions — typically `conn`, sometimes one other dimension if it has something truly surprising.
    - One sentence, punchy and memorable
    - Must be factually accurate (verify!)
    - Should add depth, not just restate the main content
-   - Examples: "The fresco was legendarily completed by an angel", "He wrote it in three weeks while Christendom panicked", "The first dated print was an indulgence letter, not the Bible"
+   - Example: "The fresco was legendarily completed by an angel"
+   - **Do NOT put a funFact in every dimension** — pick the best 1-2 across the whole entry
 
 8. **Thread connectivity and quality:**
    - Threads must be **historical, cultural, or thematic** — intellectual movements, artistic schools, philosophical currents
