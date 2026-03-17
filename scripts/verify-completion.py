@@ -90,13 +90,26 @@ def check_local_files(entry_id: str) -> dict:
     else:
         issues.append(f"Missing IT script: audio/scripts/it/{entry_id}.txt")
     
-    # Check image
-    year_prefix = entry_id.split('-')[0]
-    images = list((PROJECT_DIR / "images").glob(f"{year_prefix}*"))
-    if images:
-        status["image"] = True
+    # Check image URL matches actual file
+    with open(SLICES_JSON) as f:
+        entries = json.load(f)
+    
+    entry = next((e for e in entries if e.get("id") == entry_id), None)
+    if entry and entry.get("image", {}).get("url"):
+        image_url = entry["image"]["url"]
+        image_path = PROJECT_DIR / image_url
+        if image_path.exists():
+            status["image"] = True
+        else:
+            # Check if there's a misnamed file
+            year_prefix = entry_id.split('-')[0]
+            actual_images = list((PROJECT_DIR / "images").glob(f"{year_prefix}*.jpg"))
+            if actual_images:
+                issues.append(f"Image filename mismatch: JSON references '{image_url}' but file is '{actual_images[0].name}' — rename to match")
+            else:
+                issues.append(f"Missing image: {image_url}")
     else:
-        issues.append(f"Missing image for {entry_id}")
+        issues.append(f"No image URL in entry for {entry_id}")
     
     return {"status": status, "issues": issues}
 
