@@ -23,7 +23,9 @@
       "410→1300": "Augustine watched Rome fall and invented Christian philosophy of history. Boniface VIII declared himself Caesar-Pope and Christendom's unity cracked at its apex.",
       "1300→1347": "Boniface's hubris ended at Anagni; the Black Death ended medieval certainty. God had promised order through Pope and Emperor — plague killed both premises.",
       "1300→1321": "Dante's exile from Florence coincides with Boniface VIII's overreach; the poet who witnessed the Jubilee now damns popes in verse.",
-      "1321→1347": "Dante's placement of popes in Hell anticipates the coming catastrophe; within a generation, the Black Death will shake faith in divine providence."
+      "1321→1347": "Dante's placement of popes in Hell anticipates the coming catastrophe; within a generation, the Black Death will shake faith in divine providence.",
+      "1347→1401": "The Black Death had killed one pope in Avignon; the Schism now split the survivors between two. Divine order fractured into political choice.",
+      "1401→1453": "Councils deposed popes; Gerson's conciliarism made authority negotiable. When Constantinople fell, Nicholas of Cusa proposed one religion in many rites—divine truth through pluralism, not decree."
     },
     "rationalism": {
       "-431→125": "Anaxagoras argued that a rational principle (<em>Nous</em>) governed the cosmos rather than the caprice of gods. Five centuries later, the Stoics — working from this same Greek rationalist tradition, filtered through Aristotle and the early Stoa — taught that the universe was structured by <em>logos</em>, a rational order accessible to human reason. Epictetus, teaching in Nicopolis around 125 CE, inherited this lineage directly: Stoicism emerged from the Athenian philosophical milieu that Anaxagoras helped create, passed through Zeno of Citium (who studied at Plato's Academy) and Chrysippus. The Pantheon's mathematical perfection — its dome a geometrically exact hemisphere — is this rationalist conviction expressed in built form.",
@@ -96,7 +98,9 @@
       "1000→1453": "Four centuries of rediscovering antiquity through Charlemagne's heirs, Roman law, and Arabic translations — then Constantinople's fall floods the West with the Greek originals.",
       "1453→1504": "Byzantine scholars scatter Plato's dialogues across Italy; within fifty years, Florentine artists are painting philosophy.",
       "1504→1509": "Five years from Michelangelo's David to Raphael's School of Athens — the High Renaissance declares antiquity reborn in papal Rome.",
-      "1509→1784": "From Raphael's visual synthesis to Kant's philosophical one — antiquity as model gives way to antiquity as material for critique."
+      "1509→1784": "From Raphael's visual synthesis to Kant's philosophical one — antiquity as model gives way to antiquity as material for critique.",
+      "1000→1401": "Four centuries of manuscript copying preserved Roman forms; the Florentine competition demanded they live again, tested in bronze.",
+      "1401→1453": "Brunelleschi studied Roman ruins; Ghiberti's Gates opened onto antiquity. The Byzantine scholars fleeing Constantinople brought the Greek texts to match."
     },
     "art-and-power": {
       "-431→1504": "Pericles diverted the Delian League treasury to fund the Parthenon; Lorenzo de' Medici diverted bank profits to fund Florence's artistic programme. In both cases, economic dominance was transmuted into cultural authority, and the patrons' political opponents attacked the expenditure as illegitimate. Phidias was charged with embezzlement; the Medici were exiled in 1494. The pattern — power expressed through beauty, challenged through accounting — repeats across two millennia.",
@@ -115,7 +119,8 @@
       "1517→1543": "Luther appeals to scripture over tradition; Vesalius applies the same principle to flesh.",
       "1453→1504": "Greek manuscripts flood Italian libraries; within a generation, Lorenzo de' Medici's circle transforms philosophy into lived culture.",
       "1504→1509": "Florence's civic humanism meets Rome's papal patronage; Leonardo, Michelangelo, and Raphael converge on Julius II's court.",
-      "1509→1517": "Erasmus's satire of clerical folly prepares the ground; eight years later, Luther's Reformation will make laughing at the Church into burning it down."
+      "1509→1517": "Erasmus's satire of clerical folly prepares the ground; eight years later, Luther's Reformation will make laughing at the Church into burning it down.",
+      "1401→1453": "Salutati's civic humanism armed Florence with Latin rhetoric; his disciples Bruni and Poggio carried it into the next generation. By 1453, humanism was statecraft."
     },
     "scholasticism": {
       "762→1141": "Baghdad's translators recovered Aristotle; Abelard's <em>Sic et Non</em> put him to work. The dialectical method that Bernard condemned at Sens was built on Arabic-Latin translations flowing through Toledo. When Abelard asked \"by doubting we come to inquiry,\" he was applying tools forged in the House of Wisdom.",
@@ -151,7 +156,8 @@
       "1274→1300": "The vernacular had proved it could hold theology with Aquinas's death. Now Dante would prove it could hold a cosmos — setting his journey in the Jubilee Year when Latin still claimed monopoly on the sacred.",
       "1300→1347": "Dante set his Comedy in the Jubilee Year; Boccaccio set his Decameron in the plague year. The vernacular graduated from pilgrimage to plague, from salvation to survival.",
       "1300→1321": "The pilgrims of Dante's Jubilee speak dialects, not Latin; his Comedy will give them a literature in the language they actually use.",
-      "1321→1347": "Dante's vindication of Tuscan opens the floodgates; Petrarch and Boccaccio will build directly on his foundation as plague transforms their world."
+      "1321→1347": "Dante's vindication of Tuscan opens the floodgates; Petrarch and Boccaccio will build directly on his foundation as plague transforms their world.",
+      "1347→1401": "Boccaccio wrote the Decameron in Italian while the plague raged; Chaucer's English pilgrims followed. The vernacular proved it could carry anything—satire, tragedy, philosophy—without Latin's blessing."
     },
     "baroque": {
       "1600→1648": "Caravaggio's tenebrism spreads through Europe via his imitators; by Westphalia, the Baroque has become the visual language of Catholic and Protestant power alike."
@@ -196,7 +202,9 @@
       "410→1300": "Agostino vide cadere Roma e inventò la filosofia cristiana della storia. Bonifacio VIII si dichiarò Papa-Cesare e l'unità della cristianità si incrinò al suo apice.",
       "1300→1347": "L'hybris di Bonifacio finì ad Anagni; la Morte Nera pose fine alle certezze medievali. Dio aveva promesso ordine tramite Papa e Imperatore — la peste uccise entrambe le premesse.",
       "1300→1321": "L'esilio di Dante da Firenze coincide con l'arroganza di Bonifacio VIII; il poeta che assistette al Giubileo ora danna i papi in versi.",
-      "1321→1347": "La collocazione dantesca dei papi all'Inferno anticipa la catastrofe imminente; entro una generazione la Peste Nera scuoterà la fede nella provvidenza divina."
+      "1321→1347": "La collocazione dantesca dei papi all'Inferno anticipa la catastrofe imminente; entro una generazione la Peste Nera scuoterà la fede nella provvidenza divina.",
+      "1347→1401": "La Peste Nera aveva ucciso un papa ad Avignone; lo Scisma ora divideva i sopravvissuti tra due. L'ordine divino si frantumò in scelta politica.",
+      "1401→1453": "I concili deposero papi; il conciliarismo di Gerson rese l'autorità negoziabile. Quando cadde Costantinopoli, Nicola Cusano propose una religione in molti riti—verità divina attraverso il pluralismo, non il decreto."
     },
     "rationalism": {
       "-431→125": "Anassagora sosteneva che un principio razionale (<em>Nous</em>) governasse il cosmo piuttosto che il capriccio degli dei. Cinque secoli dopo, gli Stoici — partendo dalla stessa tradizione razionalista greca, filtrata attraverso Aristotele e la prima Stoa — insegnavano che l'universo era strutturato dal <em>logos</em>, un ordine razionale accessibile alla ragione umana. Epitteto, che insegnava a Nicopoli intorno al 125 d.C., ereditava direttamente questa genealogia: lo stoicismo emerse dall'ambiente filosofico ateniese che Anassagora contribuì a creare, passando attraverso Zenone di Cizio (che studiò all'Accademia di Platone) e Crisippo. La perfezione matematica del Pantheon — la cupola come emisfero geometricamente esatto — è questa convinzione razionalista espressa in forma costruita.",
@@ -269,7 +277,9 @@
       "1000→1453": "Quattro secoli di riscoperta dell'antichità attraverso gli eredi di Carlo Magno, il diritto romano e le traduzioni arabe — poi la caduta di Costantinopoli inonda l'Occidente con gli originali greci.",
       "1453→1504": "Gli studiosi bizantini disperdono i dialoghi di Platone per l'Italia; entro cinquant'anni, gli artisti fiorentini dipingono filosofia.",
       "1504→1509": "Cinque anni dal David di Michelangelo alla Scuola di Atene di Raffaello — l'Alto Rinascimento proclama l'antichità rinata nella Roma papale.",
-      "1509→1784": "Dalla sintesi visiva di Raffaello a quella filosofica di Kant — l'antichità come modello cede il passo all'antichità come materiale per la critica."
+      "1509→1784": "Dalla sintesi visiva di Raffaello a quella filosofica di Kant — l'antichità come modello cede il passo all'antichità come materiale per la critica.",
+      "1000→1401": "Quattro secoli di copiatura di manoscritti preservarono le forme romane; il concorso fiorentino pretese che rivivessero, messe alla prova nel bronzo.",
+      "1401→1453": "Brunelleschi studiò le rovine romane; le Porte di Ghiberti si aprirono sull'antichità. Gli eruditi bizantini in fuga da Costantinopoli portarono i testi greci a completare il quadro."
     },
     "art-and-power": {
       "-431→1504": "Pericle dirottò il tesoro della Lega di Delo per finanziare il Partenone; Lorenzo de' Medici dirottò i profitti bancari per finanziare il programma artistico di Firenze. In entrambi i casi, il dominio economico fu trasmutato in autorità culturale, e gli oppositori politici dei mecenati contestarono la spesa come illegittima. Fidia fu accusato di appropriazione indebita; i Medici furono esiliati nel 1494. Lo schema — potere espresso attraverso la bellezza, contestato attraverso la contabilità — si ripete lungo due millenni.",
@@ -288,7 +298,8 @@
       "1517→1543": "Lutero si appella alla Scrittura oltre la tradizione; Vesalio applica lo stesso principio alla carne.",
       "1453→1504": "I manoscritti greci inondano le biblioteche italiane; nel giro di una generazione, la cerchia di Lorenzo de' Medici trasforma la filosofia in cultura vissuta.",
       "1504→1509": "L'umanesimo civico fiorentino incontra il mecenatismo papale romano; Leonardo, Michelangelo e Raffaello convergono alla corte di Giulio II.",
-      "1509→1517": "La satira erasmiana della follia clericale prepara il terreno; otto anni dopo, la Riforma di Lutero trasformerà il riso sulla Chiesa nel suo incendio."
+      "1509→1517": "La satira erasmiana della follia clericale prepara il terreno; otto anni dopo, la Riforma di Lutero trasformerà il riso sulla Chiesa nel suo incendio.",
+      "1401→1453": "L'umanesimo civico di Salutati armò Firenze di retorica latina; i suoi discepoli Bruni e Poggio lo portarono alla generazione successiva. Nel 1453, l'umanesimo era arte di governo."
     },
     "scholasticism": {
       "762→1141": "I traduttori di Baghdad recuperarono Aristotele; il <em>Sic et Non</em> di Abelardo lo mise al lavoro. Il metodo dialettico che Bernardo condannò a Sens era costruito sulle traduzioni arabo-latine che affluivano attraverso Toledo. Quando Abelardo chiese \"dubitando arriviamo all'indagine,\" applicava strumenti forgiati nella Casa della Saggezza.",
@@ -324,7 +335,8 @@
       "1274→1300": "Il volgare aveva dimostrato di poter reggere la teologia con la morte di Tommaso. Ora Dante avrebbe dimostrato che poteva contenere un cosmo — ambientando il suo viaggio nell'anno del Giubileo, quando il latino rivendicava ancora il monopolio sul sacro.",
       "1300→1347": "Dante ambientò la Commedia nell'anno del Giubileo; Boccaccio ambientò il Decameron nell'anno della peste. Il volgare si diplomò dal pellegrinaggio alla pestilenza, dalla salvezza alla sopravvivenza.",
       "1300→1321": "I pellegrini del Giubileo di Dante parlano dialetti, non latino; la sua Commedia darà loro una letteratura nella lingua che realmente usano.",
-      "1321→1347": "La rivendicazione dantesca del toscano apre le porte; Petrarca e Boccaccio costruiranno direttamente sulle sue fondamenta mentre la peste trasforma il loro mondo."
+      "1321→1347": "La rivendicazione dantesca del toscano apre le porte; Petrarca e Boccaccio costruiranno direttamente sulle sue fondamenta mentre la peste trasforma il loro mondo.",
+      "1347→1401": "Boccaccio scrisse il Decameron in italiano mentre la peste infuriava; i pellegrini inglesi di Chaucer seguirono. Il volgare dimostrò di poter portare tutto—satira, tragedia, filosofia—senza la benedizione del latino."
     },
     "baroque": {
       "1600→1648": "Il tenebrismo di Caravaggio si diffonde in Europa attraverso i suoi imitatori; a Westfalia, il Barocco è diventato il linguaggio visivo del potere cattolico e protestante."

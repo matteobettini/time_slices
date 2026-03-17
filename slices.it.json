@@ -2004,5 +2004,79 @@
       "url": "audio/it/1321-ravenna-exile-ends.mp3",
       "duration": 186
     }
+  },
+  {
+    "year": "1401",
+    "id": "1401-florence-competition-that-began-renaissance",
+    "title": "Firenze — La Competizione che Inaugurò il Rinascimento",
+    "teaser": "Due giovani orafi gareggiano per le porte bronzee del Battistero fiorentino. Il perdente inventa una nuova architettura. A Parigi, i pellegrini di Chaucer tacciono per sempre. Ad Avignone e Roma, papi rivali si scomunicano a vicenda. Il mondo medievale si spacca.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Nel 1401, l'Arte di Calimala — la corporazione dei mercanti di lana fiorentini — bandisce un concorso per le nuove porte bronzee del Battistero di San Giovanni. Sette scultori presentano formelle di prova raffiguranti il <strong>Sacrificio di Isacco</strong>. I finalisti: <strong>Lorenzo Ghiberti</strong>, ventitré anni, elegante e tecnicamente impeccabile, e <strong>Filippo Brunelleschi</strong>, ventiquattro anni, drammatico e classicheggiante. I giudici proclamano un pareggio. Ghiberti rivendica la vittoria; Brunelleschi rifiuta di collaborare e si ritira. Questa rivalità definisce il <strong>primo Rinascimento</strong>: Ghiberti impiegherà ventun anni per le porte, poi creerà la <em>Porta del Paradiso</em>. Brunelleschi, respinto, abbandona del tutto la scultura e si volge all'architettura — dove coronerà Firenze con una cupola che sfida ogni precedente. Intanto, il <strong>Gotico Internazionale</strong> domina ancora le corti europee: i fratelli Limbourg miniano manoscritti per il Duca di Berry, tutto oro e raffinatezza cortese. Firenze sta scegliendo qualcosa di diverso: competizione, rinascita classica, genio individuale."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Il 25 ottobre 1400, <strong>Geoffrey Chaucer</strong> muore a Londra, lasciando incompiuti i <em>Racconti di Canterbury</em>. Ventiquattro dei centotventi racconti previsti — i pellegrini congelati a metà del viaggio, la loro gara di narrazioni sospesa per l'eternità. Eppure quei frammenti rivoluzionano la letteratura inglese: il <strong>volgare</strong> elevato ad arte, il personaggio che emerge dal tipo, l'ironia che tempera la pietà. A Parigi, <strong>Christine de Pizan</strong> — vedova, scrittrice di professione, la prima donna in Europa a guadagnarsi da vivere con la penna — sta componendo opere che difendono le donne dalla misoginia del <em>Roman de la Rose</em>. Il suo <em>Libro della Città delle Dame</em> (1405) costruirà una città allegorica dalle storie di donne virtuose. Due volgari, due nazioni, due trasformazioni di chi può scrivere e cosa la scrittura può fare."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "A Parigi, <strong>Jean Gerson</strong>, Cancelliere dell'Università dal 1395, affronta una domanda impossibile: se ci sono due papi, chi ha l'autorità di giudicare tra loro? La sua risposta trasforma la filosofia politica. Il <strong>conciliarismo</strong> sostiene che un concilio generale della Chiesa detenga un'autorità superiore persino a quella del papa — che la legittimità fluisca dal corpo riunito, non dal singolo capo. Gerson tempera il <strong>nominalismo</strong> di Guglielmo di Ockham con la teologia mistica, sostenendo che l'esperienza e la preghiera fondano la conoscenza più saldamente della speculazione logica. A Firenze, <strong>Coluccio Salutati</strong>, cancelliere umanista, conduce una diversa guerra filosofica: le sue lettere latine in difesa della Repubblica fiorentina sono così devastanti che il duca di Milano dice che fanno più danni di mille cavalieri. Nasce l'<strong>umanesimo civico</strong> — la vita attiva riconciliata con la virtù filosofica."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Lo <strong>Scisma d'Occidente</strong> lacera la Cristianità da ventitré anni: <strong>Bonifacio IX</strong> regna a Roma, <strong>Benedetto XIII</strong> ad Avignone, ciascuno scomunica i seguaci dell'altro. I regni d'Europa scelgono da che parte stare per politica, non per teologia. In Galles, <strong>Owain Glyndŵr</strong> si proclama Principe del Galles e lancia una ribellione che brucerà per quindici anni. Ma la vera tempesta si addensa a Oriente: <strong>Timur</strong> (Tamerlano), il conquistatore turco-mongolo, saccheggia Damasco nel 1401, massacra la popolazione di Baghdad, costruisce torri di teste mozzate. Esige artigiani come tributo, svuotando le città dei loro maestri per glorificare la sua capitale Samarcanda. Il Rinascimento timuride fiorisce su montagne di teschi."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "I fili convergono in un'unica domanda: <strong>chi decide?</strong> A Firenze, una giuria di trentaquattro membri sceglie tra artisti rivali — la competizione sostituisce il mecenatismo come motore dell'innovazione. A Parigi, Gerson sostiene che i concili, non i papi, possono legittimare l'autorità — il consenso sostituisce il diritto divino. L'<em>umanesimo civico</em> di Salutati insiste che la virtù richiede partecipazione alla vita pubblica, non ritiro da essa. Persino i pellegrini di Chaucer votano sul racconto migliore. Le vecchie certezze medievali — un Papa, un Imperatore, una Verità — si frantumano nel pluralismo. Le porte del battistero fiorentino non raffigurano solo il sacrificio di Isacco; inaugurano un nuovo patto: che il genio deve essere <em>messo alla prova</em>, l'autorità deve essere <em>conquistata</em>, e il futuro appartiene a chi sa convincere i giudici.",
+        "funFact": "Entrambe le formelle di Brunelleschi e Ghiberti sono conservate al Museo del Bargello di Firenze — il primo test A/B della storia dell'arte, preservato da sei secoli."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Porte_Nord_del_Battistero_di_Firenze",
+        "title": "Porte Nord del Battistero di Firenze - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Jean_Gerson",
+        "title": "Jean Gerson - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Geoffrey_Chaucer",
+        "title": "Geoffrey Chaucer - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Coluccio_Salutati",
+        "title": "Coluccio Salutati - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Tamerlano",
+        "title": "Tamerlano - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1401-florence-competition.jpg",
+      "width": 1101,
+      "height": 1200,
+      "caption": "Formella di Lorenzo Ghiberti raffigurante il Sacrificio di Isacco (1401), concorso per il Battistero di Firenze",
+      "attribution": "Pubblico dominio, Museo del Bargello, Firenze"
+    },
+    "threads": [
+      "renaissance-humanism",
+      "vernacular-literature",
+      "death-of-god",
+      "classical-revival"
+    ],
+    "location": {
+      "lat": 43.7731,
+      "lon": 11.255,
+      "place": "Firenze"
+    },
+    "addedDate": "2026-03-17T06:00:00Z",
+    "podcast": {
+      "url": "audio/it/1401-florence-competition-that-began-renaissance.mp3",
+      "duration": 206
+    }
   }
 ]
