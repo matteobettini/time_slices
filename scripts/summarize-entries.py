@@ -7,6 +7,7 @@ Usage:
 
 Outputs:
 - All years and IDs covered
+- Thread saturation warnings (IMPORTANT!)
 - All threads used (with frequency)
 - Geographic distribution
 - N example entries (full content) for reference
@@ -22,6 +23,9 @@ PROJECT_DIR = SCRIPT_DIR.parent  # scripts/ -> project root
 SLICES_JSON = PROJECT_DIR / "slices.json"
 SLICES_IT_JSON = PROJECT_DIR / "slices.it.json"
 SCRIPTS_DIR = PROJECT_DIR / "audio" / "scripts"
+
+# Thread saturation threshold - warn if thread appears in more than this % of entries
+SATURATION_THRESHOLD = 0.30
 
 
 def main():
@@ -92,6 +96,33 @@ def main():
     else:
         print("No major gaps (>100 years)")
     print()
+    
+    # Thread Saturation Warning (CRITICAL)
+    total_entries = len(entries)
+    saturated = []
+    warning_zone = []
+    for thread, count in threads_counter.most_common():
+        ratio = count / total_entries
+        if ratio > SATURATION_THRESHOLD:
+            saturated.append((thread, count, ratio))
+        elif ratio > SATURATION_THRESHOLD * 0.7:
+            warning_zone.append((thread, count, ratio))
+    
+    if saturated:
+        print("## ⚠️ SATURATED THREADS — DO NOT USE CASUALLY")
+        print()
+        print("These threads appear in too many entries. **Do NOT add them to your entry unless it is SPECIFICALLY ABOUT this theme.**")
+        print()
+        for thread, count, ratio in saturated:
+            print(f"- 🔴 `{thread}`: {count}/{total_entries} entries ({ratio*100:.0f}%)")
+        print()
+    
+    if warning_zone:
+        print("## 🟡 Warning Zone (approaching saturation)")
+        print()
+        for thread, count, ratio in warning_zone:
+            print(f"- `{thread}`: {count}/{total_entries} entries ({ratio*100:.0f}%)")
+        print()
     
     # Threads
     print("## Threads Used")

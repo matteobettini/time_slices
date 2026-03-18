@@ -199,6 +199,47 @@ def check_pushed(entry_id: str) -> dict:
     return {"ok": len(issues) == 0, "issues": issues}
 
 
+def check_thread_saturation(entry_id: str, threshold: float = 0.30) -> dict:
+    """Check if the entry's threads add to already-saturated threads.
+    
+    Warns (but doesn't block) if entry uses threads that are above the saturation threshold.
+    This is a quality signal, not a hard gate — sometimes an entry genuinely IS about rationalism.
+    """
+    warnings = []
+    
+    with open(SLICES_JSON) as f:
+        entries = json.load(f)
+    
+    # Find the entry
+    entry = next((e for e in entries if e.get("id") == entry_id), None)
+    if not entry:
+        return {"ok": True, "warnings": []}
+    
+    entry_threads = set(entry.get("threads", []))
+    total_entries = len(entries)
+    
+    # Count thread usage across all entries
+    from collections import Counter
+    threads_counter = Counter()
+    for e in entries:
+        for t in e.get("threads", []):
+            threads_counter[t] += 1
+    
+    # Check if entry uses saturated threads
+    saturated_used = []
+    for thread in entry_threads:
+        count = threads_counter[thread]
+        ratio = count / total_entries
+        if ratio > threshold:
+            saturated_used.append(f"`{thread}` ({count}/{total_entries} = {ratio*100:.0f}%)")
+    
+    if saturated_used:
+        warnings.append(f"Entry uses saturated thread(s): {', '.join(saturated_used)}")
+        warnings.append("  → Ensure these threads are CENTRAL to the entry, not incidental")
+    
+    return {"ok": True, "warnings": warnings}  # Warnings don't block completion
+
+
 def check_thread_narratives(entry_id: str) -> dict:
     """Check if all consecutive thread pairs have narratives in thread-narratives.json."""
     issues = []
@@ -348,6 +389,10 @@ def main():
         narratives = check_thread_narratives(entry_id)
         all_issues.extend(narratives["issues"])
         
+        # Check thread saturation (warnings only, doesn't block)
+        saturation = check_thread_saturation(entry_id)
+        saturation_warnings = saturation.get("warnings", [])
+        
         # Determine resume action (high-level)
         if all_issues:
             if any("script" in i.lower() for i in all_issues):
@@ -376,6 +421,7 @@ def main():
             "target_date": target_date,
             "file_status": file_status,
             "issues": all_issues,
+            "warnings": saturation_warnings,
             "resume_action": resume_action,
             "resume_prompt": resume_prompt
         }
@@ -386,6 +432,11 @@ def main():
         if result["complete"]:
             print(f"✅ COMPLETE: {result.get('entry_year')} — {result.get('entry_title')}")
             print(f"   Entry ID: {result['entry_id']}")
+            # Show warnings even on complete
+            if result.get("warnings"):
+                print(f"\n   ⚠️  Warnings:")
+                for warning in result["warnings"]:
+                    print(f"   {warning}")
         else:
             print(f"❌ INCOMPLETE")
             if result.get("entry_id"):

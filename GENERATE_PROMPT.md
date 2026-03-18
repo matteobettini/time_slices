@@ -35,7 +35,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 ---
 
-## PHASE 1: Research & Content (Steps 1-14)
+## PHASE 1: Research & Content (Steps 1-15)
 
 1. **Read the spec:** `/home/cloud-user/.openclaw/workspace/time-slices/SPEC.md` — follow it exactly.
 
@@ -74,29 +74,47 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 9. **Thread connectivity and quality:**
    - Threads must be **historical, cultural, or thematic** — intellectual movements, artistic schools, philosophical currents
-   - **Good threads:** `death-of-god`, `nominalism`, `classical-revival`, `reformation`, `vernacular-literature`, `existentialism`
+   - **Good threads:** `nominalism`, `reformation`, `existentialism`, `baroque`, `empiricism`
    - **Bad threads:** `biography`, `famous-people`, `wars`, `inventions` — generic categories, not traceable ideas
    - **Prioritize connecting to existing threads** over creating new ones. Check the summary output first.
-   - **⚠️ AVOID DUPLICATE THREADS:** Don't create near-synonyms like `christian-humanism` when `renaissance-humanism` exists.
+   - **⚠️ AVOID DUPLICATE THREADS:** Don't create near-synonyms when a similar thread already exists.
    - **⚠️ BE RUTHLESS WITH ASSIGNMENT:** Only assign a thread if the entry's *central thesis* engages it directly — not because it "kind of relates." Ask: would someone exploring this thread be surprised not to find this entry? If the connection is incidental, don't assign it. Aim for 2-4 threads per entry.
 
-10. **Add ONE new entry** following the spec. Include:
+10. **⚠️ THREAD SATURATION — CRITICAL:**
+    
+    The summary output (step 2) shows **saturated threads** marked with 🔴. These threads already appear in too many entries and must be avoided unless your entry is *specifically, centrally about* that theme.
+    
+    **Before assigning ANY thread that appears in >30% of entries:**
+    - Ask: "Is this entry fundamentally ABOUT this theme, or does it just touch on it?"
+    - Ask: "If I removed this thread, would the entry feel incomplete?"
+    - If the answer to either is "no," do NOT assign the thread.
+    
+    **The goal:** Each thread should trace a specific intellectual/cultural current through history. If a thread appears in 60% of entries, it's no longer tracing anything — it's just noise.
+    
+    **Run the saturation check after choosing threads:**
+    ```bash
+    python3 scripts/check-thread-saturation.py
+    ```
+    
+    The verifier will warn (not block) if you use saturated threads. Warnings require justification — be ready to explain why this entry genuinely belongs in that thread.
+
+11. **Add ONE new entry** following the spec. Include:
    - City in title only if dimensions converge there; otherwise use thematic title
    - `location` field (always required for map)
    - `addedDate` as full ISO-8601 UTC timestamp (e.g. `"2026-02-25T14:30:00Z"`)
 
-11. **Download and prepare image:**
+12. **Download and prepare image:**
    ```bash
    ./scripts/prep-image.sh <url_or_path> {entry-id} "Image caption/description"
    ```
    This downloads, compresses (max 1200px, quality 85), and outputs the image JSON with dimensions.
    Copy the output JSON into your entry — the `caption` field is used for both alt text and visible caption.
 
-12. **Add Italian version** to `slices.it.json` — natural Italian, not machine translation.
+13. **Add Italian version** to `slices.it.json` — natural Italian, not machine translation.
 
-13. **Update THREAD_LABELS** in `thread-labels.json` if you add new thread tags (both `en` and `it` keys).
+14. **Update THREAD_LABELS** in `thread-labels.json` if you add new thread tags (both `en` and `it` keys).
 
-14. **Add THREAD_NARRATIVES** using the helper script:
+15. **Add THREAD_NARRATIVES** using the helper script:
     ```bash
     # Check what's missing
     python3 scripts/add-narrative.py --missing
@@ -110,11 +128,11 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 ---
 
-## PHASE 2: Podcasts (Steps 15-17) — MANDATORY
+## PHASE 2: Podcasts (Steps 16-18) — MANDATORY
 
 ⚠️ **DO NOT SKIP THIS PHASE. Previous runs have failed by stopping after Phase 1.**
 
-15. **Write podcast scripts:**
+16. **Write podcast scripts:**
     - EN script (~350-400 words, storytelling style) → `audio/scripts/{id}.txt`
     - IT script (culturally adapted, not literal) → `audio/scripts/it/{id}.txt`
     
@@ -124,7 +142,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     - ❌ "1,000 years" → ✅ "a thousand years"
     - ❌ "3 months" → ✅ "three months"
 
-16. **Find background music using `find-music.py`:**
+17. **Find background music using `find-music.py`:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     # Search by era + mood — pick terms that match the entry's period and tone
@@ -145,7 +163,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     
     **Save the URL and start_time from the output** — you'll pass them to generate-podcast.py.
 
-17. **Generate podcasts:**
+18. **Generate podcasts:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     
@@ -173,11 +191,11 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
 
 ---
 
-## PHASE 3: Publish (Steps 18-19) — MANDATORY
+## PHASE 3: Publish (Steps 19-20) — MANDATORY
 
 ⚠️ **DO NOT SKIP THIS PHASE. The entry is NOT LIVE until pushed.**
 
-18. **Commit and push:**
+19. **Commit and push:**
     ```bash
     cd /home/cloud-user/.openclaw/workspace/time-slices
     git add -A
@@ -187,7 +205,7 @@ python3 scripts/add-entry.py '{"year": "1610", "id": "1610-...", ...}'
     
     **VERIFY PUSH SUCCEEDED.** Look for `main -> main` in output. If you see `rejected` or `error`, fix it.
 
-19. **Final reply** (ONLY after steps 17-18 verified):
+20. **Final reply** (ONLY after steps 18-19 verified):
     - Year, title, teaser, one highlight connection (3-5 sentences)
     - Direct link: `https://matteobettini.github.io/time_slices/#ID`
     - No backticks around the URL — it must be clickable
