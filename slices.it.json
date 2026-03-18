@@ -61,10 +61,10 @@
       "attribution": "Livioandronico2013, CC BY-SA 4.0, tramite Wikimedia Commons"
     },
     "threads": [
-      "classical-revival",
-      "rationalism",
       "stoicism",
-      "imperial-architecture"
+      "imperial-architecture",
+      "greco-roman-synthesis",
+      "mathematical-cosmos"
     ],
     "location": {
       "lat": 41.8986,
@@ -139,10 +139,10 @@
     },
     "threads": [
       "translation-movement",
-      "rationalism",
       "islamic-golden-age",
+      "mathematical-cosmos",
       "cosmopolitanism",
-      "geometry-as-ideology"
+      "dialectical-method"
     ],
     "location": {
       "lat": 33.3152,
@@ -224,8 +224,8 @@
       "memento-mori",
       "nominalism",
       "vernacular-literature",
-      "fragmentation",
-      "death-of-god"
+      "theodicy-crisis",
+      "plague-culture"
     ],
     "location": {
       "lat": 43.7696,
@@ -276,8 +276,8 @@
     "threads": [
       "renaissance-humanism",
       "neoplatonism",
-      "classical-revival",
-      "art-and-power"
+      "art-and-power",
+      "artistic-competition"
     ],
     "location": {
       "lat": 43.7696,
@@ -366,12 +366,11 @@
       "attribution": "Pubblico dominio, tramite Wikimedia Commons"
     },
     "threads": [
-      "rationalism",
-      "death-of-god",
-      "modernity",
-      "baroque",
       "westphalian-sovereignty",
-      "dutch-golden-age"
+      "baroque",
+      "dutch-golden-age",
+      "cartesian-doubt",
+      "secularization"
     ],
     "location": {
       "lat": 51.9607,
@@ -446,10 +445,10 @@
       "attribution": "Jacques-Louis David, via Wikimedia Commons / Google Art Project"
     },
     "threads": [
-      "rationalism",
-      "classical-revival",
-      "art-and-power",
-      "enlightenment"
+      "enlightenment",
+      "critical-philosophy",
+      "neoclassicism",
+      "art-and-power"
     ],
     "location": {
       "lat": 54.7104,
@@ -500,9 +499,9 @@
     "threads": [
       "post-impressionism",
       "crisis-of-positivism",
-      "death-of-god",
-      "expressionism",
-      "symbolism"
+      "nietzschean-nihilism",
+      "symbolism",
+      "fin-de-siecle"
     ],
     "location": {
       "lat": 48.8566,
@@ -573,8 +572,7 @@
       "fragmentation",
       "logical-positivism",
       "existentialism",
-      "totalitarianism",
-      "death-of-god"
+      "stream-of-consciousness"
     ],
     "location": {
       "lat": 50.9795,
@@ -746,11 +744,10 @@
       "attribution": "Pubblico dominio, tramite Wikimedia Commons"
     },
     "threads": [
-      "rationalism",
       "scientific-revolution",
-      "modernity",
       "empiricism",
-      "enlightenment"
+      "enlightenment",
+      "mathematical-cosmos"
     ],
     "location": {
       "lat": 51.5074,
@@ -823,9 +820,8 @@
     },
     "threads": [
       "scholasticism",
-      "rationalism",
+      "dialectical-method",
       "gothic-architecture",
-      "vernacular-literature",
       "12th-century-renaissance"
     ],
     "location": {
@@ -897,9 +893,10 @@
       "attribution": "Joseph-Noël Sylvestre, 1890, Pubblico dominio, tramite Wikimedia Commons"
     },
     "threads": [
-      "death-of-god",
-      "classical-revival",
-      "stoicism"
+      "theodicy-crisis",
+      "augustinian-christianity",
+      "translatio-studii",
+      "eschatological-anxiety"
     ],
     "location": {
       "lat": 41.9028,
@@ -973,7 +970,7 @@
     "threads": [
       "scholasticism",
       "gothic-architecture",
-      "rationalism",
+      "aristotelian-synthesis",
       "vernacular-literature"
     ],
     "location": {
@@ -1038,9 +1035,9 @@
       "attribution": "Artista sconosciuto, 1755, Pubblico Dominio tramite Museu da Cidade, Lisbona"
     },
     "threads": [
-      "death-of-god",
       "enlightenment",
-      "rationalism"
+      "theodicy-crisis",
+      "critical-philosophy"
     ],
     "location": {
       "lat": 38.7223,
@@ -1109,9 +1106,9 @@
     },
     "threads": [
       "german-romanticism",
-      "death-of-god",
-      "modernity",
-      "metaphysical-pessimism"
+      "metaphysical-pessimism",
+      "sublime-aesthetic",
+      "will-philosophy"
     ],
     "location": {
       "lat": 51.0504,
@@ -1183,9 +1180,10 @@
       "attribution": "Charles-François Thibault, dagherrotipo, pubblico dominio, via Wikimedia Commons"
     },
     "threads": [
-      "rationalism",
-      "death-of-god",
-      "fragmentation"
+      "revolutionary-nationalism",
+      "historical-materialism",
+      "fragmentation",
+      "romantic-nationalism"
     ],
     "location": {
       "lat": 48.8566,
@@ -1249,10 +1247,10 @@
       }
     ],
     "threads": [
-      "death-of-god",
-      "rationalism",
       "baroque",
-      "modernity"
+      "counter-reformation",
+      "martyrdom-of-reason",
+      "tenebrism"
     ],
     "location": {
       "lat": 41.8956,
@@ -1328,9 +1326,10 @@
       "attribution": "Tobias Helfrich, CC BY-SA 3.0, via Wikimedia Commons"
     },
     "threads": [
-      "classical-revival",
-      "rationalism",
-      "carolingian-renaissance"
+      "carolingian-renaissance",
+      "translatio-studii",
+      "monastic-preservation",
+      "imperial-ideology"
     ],
     "location": {
       "lat": 50.7747,
@@ -1403,9 +1402,9 @@
     },
     "threads": [
       "neoplatonism",
-      "classical-revival",
-      "rationalism",
-      "late-antiquity"
+      "late-antiquity",
+      "translatio-studii",
+      "monastic-preservation"
     ],
     "location": {
       "lat": 37.9755,
@@ -1477,10 +1476,10 @@
       "attribution": "Atelier Populaire, Pubblico Dominio, via Bibliothèque nationale de France"
     },
     "threads": [
-      "death-of-god",
-      "modernity",
       "fragmentation",
-      "rationalism"
+      "post-structuralism",
+      "revolutionary-utopianism",
+      "critique-of-modernity"
     ],
     "location": {
       "lat": 48.8499,
@@ -1549,9 +1548,9 @@
     },
     "threads": [
       "scientific-revolution",
-      "rationalism",
       "empiricism",
-      "renaissance-humanism"
+      "mathematical-cosmos",
+      "anatomical-revolution"
     ],
     "location": {
       "lat": 47.5596,
@@ -1624,8 +1623,9 @@
     },
     "threads": [
       "carolingian-renaissance",
-      "rationalism",
-      "classical-revival"
+      "eschatological-anxiety",
+      "monastic-preservation",
+      "romanesque-architecture"
     ],
     "location": {
       "lat": 41.8833,
@@ -1699,10 +1699,10 @@
       "attribution": "Jean-Joseph Benjamin-Constant, Pubblico dominio, tramite Wikimedia Commons"
     },
     "threads": [
-      "rationalism",
-      "death-of-god",
-      "classical-revival",
-      "renaissance-humanism"
+      "renaissance-humanism",
+      "translatio-studii",
+      "byzantine-transmission",
+      "eschatological-anxiety"
     ],
     "location": {
       "lat": 41.0082,
@@ -1775,9 +1775,9 @@
     },
     "threads": [
       "renaissance-humanism",
-      "classical-revival",
-      "rationalism",
-      "printing-revolution"
+      "printing-revolution",
+      "antiquarian-recovery",
+      "christian-humanism"
     ],
     "location": {
       "lat": 41.9029,
@@ -1851,8 +1851,8 @@
     "threads": [
       "gothic-architecture",
       "scholasticism",
-      "rationalism",
-      "vernacular-literature"
+      "vernacular-literature",
+      "institutional-formation"
     ],
     "location": {
       "lat": 48.4478,
@@ -1919,10 +1919,10 @@
       "attribution": "Giotto, Pubblico dominio, tramite Wikimedia Commons"
     },
     "threads": [
-      "scholasticism",
       "vernacular-literature",
       "art-and-power",
-      "death-of-god"
+      "proto-renaissance",
+      "papal-supremacy"
     ],
     "location": {
       "lat": 41.9029,
@@ -1991,8 +1991,8 @@
     "threads": [
       "vernacular-literature",
       "scholasticism",
-      "death-of-god",
-      "fragmentation"
+      "proto-renaissance",
+      "political-exile"
     ],
     "location": {
       "lat": 44.4184,
@@ -2064,9 +2064,9 @@
     },
     "threads": [
       "renaissance-humanism",
-      "vernacular-literature",
-      "death-of-god",
-      "classical-revival"
+      "antiquarian-recovery",
+      "civic-humanism",
+      "artistic-competition"
     ],
     "location": {
       "lat": 43.7731,
@@ -2138,9 +2138,9 @@
     },
     "threads": [
       "stoicism",
-      "rationalism",
-      "death-of-god",
-      "classical-revival"
+      "theodicy-crisis",
+      "imperial-decline",
+      "philosophical-autobiography"
     ],
     "location": {
       "lat": 41.9009,

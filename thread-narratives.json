@@ -1,374 +1,190 @@
 {
   "en": {
-    "death-of-god": {
-      "410→1347": "Augustine confronted Rome's fall by relocating permanence from earth to heaven — the City of God endures when the earthly city burns. Nine centuries later, Ockham pushed this further: if earthly things lack divine guarantee, why trust universals at all? The Black Death made Augustine's question visceral again.",
-      "410→1648": "Augustine's <em>City of God</em> argued that earthly politics cannot guarantee salvation — Westphalia's diplomats institutionalised this insight, making religion a matter of sovereign discretion rather than divine command. The twelve-century arc: from theological response to political settlement.",
-      "1347→1648": "The plague made God's order illegible; three centuries later, the wars of religion made it lethal. Westphalia's solution was radical: stop asking which God is right and let sovereignty decide. Ockham's nominalism planted the seed; Descartes' cogito grew from the same doubt.",
-      "1347→1889": "The Black Death made God's order illegible five centuries before Nietzsche declared Him dead. Ockham's razor stripped away metaphysical certainties; by 1889, Nietzsche finished the job — and collapsed under the weight of it.",
-      "1347→1922": "From plague to wasteland: the crisis of divine authority that began when prayers couldn't stop the Black Death reaches its modernist conclusion in Eliot's fragments and Wittgenstein's silence about what cannot be said.",
-      "1648→1889": "Westphalia removed God from international politics; Nietzsche removed Him from philosophy. Between them, two and a half centuries of Enlightenment slowly replaced divine authority with human reason — until reason itself began to crack.",
-      "1648→1922": "The Peace of Westphalia made religion a private matter of state; by 1922, God had become a private matter of the individual — or nobody's matter at all. Eliot's wasteland is what Westphalia's secular order looks like after the trenches.",
-      "1889→1922": "Nietzsche declared God dead in 1882. By 1922, the void he predicted had swallowed certainty itself — Eliot's <em>Waste Land</em> mapped the wreckage, while logical positivism tried to rebuild meaning from scratch.",
-      "1648→1755": "Westphalia's exhausted peace had bracketed God; Lisbon's earthquake shattered the bracket — theodicy died under the rubble.",
-      "1755→1889": "What Lisbon's earthquake began, Nietzsche's madman completed — God's corpse, first glimpsed in the rubble, was finally declared.",
-      "1755→1819": "Voltaire's Lisbon critique cracked theodicy; Schopenhauer drove a metaphysical stake through optimism itself.",
-      "1819→1889": "Schopenhauer's blind Will haunted Wagner's operas; Nietzsche inherited the diagnosis and prescribed Dionysus.",
-      "1819→1848": "Schopenhauer's blind will becomes Marx's material forces — both reject divine purpose, but Marx adds the possibility of human-made redemption through revolution.",
-      "1848→1889": "Marx's critique of religion as opiate of the people sets the stage for Nietzsche's announcement: God is dead, and we have killed him — but what will replace the void?",
-      "1347→1600": "The Black Death shattered confidence in providence; two centuries later, Bruno's infinite cosmos made the heavens indifferent, not merely punishing.",
-      "1600→1648": "Bruno burned for cosmic heresy; the Thirty Years' War would make Christians burn each other for lesser doctrinal differences, exhausting religious certainty.",
-      "1922→1968": "Nietzsche's declaration becomes lived reality: Modernism's fragmentation of meaning reaches the streets. By 1968, Debord and Marcuse translate the death-of-God into political critique — authority itself is the corpse.",
-      "1347→1453": "A century after plague devastated Christendom's certainties, its eastern capital falls — and a philosopher dreams of reconciling all faiths through reason alone.",
-      "1453→1600": "From Cusano's vision of religious harmony to Bruno's infinite cosmos — 150 years of expanding what God might mean, until Rome burns the questioner.",
-      "410→1300": "Augustine watched Rome fall and invented Christian philosophy of history. Boniface VIII declared himself Caesar-Pope and Christendom's unity cracked at its apex.",
-      "1300→1347": "Boniface's hubris ended at Anagni; the Black Death ended medieval certainty. God had promised order through Pope and Emperor — plague killed both premises.",
-      "1300→1321": "Dante's exile from Florence coincides with Boniface VIII's overreach; the poet who witnessed the Jubilee now damns popes in verse.",
-      "1321→1347": "Dante's placement of popes in Hell anticipates the coming catastrophe; within a generation, the Black Death will shake faith in divine providence.",
-      "1347→1401": "The Black Death had killed one pope in Avignon; the Schism now split the survivors between two. Divine order fractured into political choice.",
-      "1401→1453": "Councils deposed popes; Gerson's conciliarism made authority negotiable. When Constantinople fell, Nicholas of Cusa proposed one religion in many rites—divine truth through pluralism, not decree.",
-      "180→410": "The Antonine Plague shook confidence in the old gods; two centuries later, Alaric's sack completed the theological crisis Augustine would answer."
-    },
-    "rationalism": {
-      "-431→125": "Anaxagoras argued that a rational principle (<em>Nous</em>) governed the cosmos rather than the caprice of gods. Five centuries later, the Stoics — working from this same Greek rationalist tradition, filtered through Aristotle and the early Stoa — taught that the universe was structured by <em>logos</em>, a rational order accessible to human reason. Epictetus, teaching in Nicopolis around 125 CE, inherited this lineage directly: Stoicism emerged from the Athenian philosophical milieu that Anaxagoras helped create, passed through Zeno of Citium (who studied at Plato's Academy) and Chrysippus. The Pantheon's mathematical perfection — its dome a geometrically exact hemisphere — is this rationalist conviction expressed in built form.",
-      "-431→762": "Anaxagoras's <em>Nous</em> — a cosmic Mind that organises matter through reason — is one of the Greek ideas that Baghdad's translators preserved. The Mu'tazila inherited a twelve-century-old argument: that rational inquiry, not tradition, reveals truth. The texts Hunayn ibn Ishaq translated into Arabic were produced in the intellectual culture Anaxagoras helped create. The link is real but indirect — mediated through Aristotle and the Neoplatonists, not through Anaxagoras directly.",
-      "-431→1648": "Anaxagoras declared the sun a mass of hot metal and was tried for impiety; Descartes published his cosmology and prudently moved to the Netherlands. Twenty-one centuries apart, both insisted that reason could explain the natural world without recourse to gods — and both understood the danger. The Cartesian tradition inherited Greek natural philosophy through the Arabic-Latin translation chain that begins with the very texts Periclean Athens produced.",
-      "-431→1784": "When Kant wrote <em>sapere aude</em> — dare to know — he was echoing, through many intermediaries, the stance Anaxagoras took when he explained the sun as matter rather than divinity. Kant studied the Aristotelian tradition directly, and Aristotle studied at Plato's Academy, founded one generation after Anaxagoras's Athenian period. The lineage is traceable through documented teacher-student chains, though Kant himself looked to Descartes and Leibniz, not to the Pre-Socratics.",
-      "125→762": "The Stoic rationalism that Epictetus taught — the universe as an intelligible order governed by <em>logos</em> — was transmitted alongside Aristotelian and Neoplatonic texts through the late antique world. When the Abbasid translators in Baghdad rendered Greek philosophy into Arabic, the rational cosmology of the Stoics was part of the intellectual atmosphere they inherited, though they translated Aristotle and Plato more systematically. The Mu'tazila's insistence on rational theology drew from the same deep well of Greek rationalism that Epictetus exemplified, mediated through the Syriac-speaking Christian scholars (Nestorians, Jacobites) who preserved Greek philosophical texts in the centuries between Rome's decline and Baghdad's rise.",
-      "762→1141": "The Mu'tazila insisted reason could judge religious truth; Abelard applied dialectics to the Trinity. Both were condemned by defenders of faith unconstrained by logic. The texts that fueled Abelard's method — Aristotle's Organon especially — reached Paris through Arabic translations. Bernard's horror was eight centuries of rationalist tradition knocking at theology's door.",
-      "1141→1648": "Abelard's dialectical method, condemned at Sens, became Scholasticism's backbone. Descartes trained in Scholastic logic before using it to rebuild certainty from doubt. The <em>cogito</em> is the heir to <em>Sic et Non</em> — systematic doubt as the path to truth.",
-      "1141→1274": "Abelard's dialectical method, condemned at Sens, became Scholasticism's foundation. By 1274, Aquinas and Bonaventure had built competing systems on that base — Aristotelian synthesis versus Augustinian illumination. Bernard lost the battle but won the war: reason was yoked to faith, not set against it.",
-      "1274→1648": "When Aquinas and Bonaventure died in 1274, they left behind the most confident synthesis of faith and reason Western philosophy had achieved. Descartes inherited that Scholastic training — and used its tools to rebuild certainty after nominalism and the wars of religion had shattered the synthesis. The <em>Summa</em>'s method survives in the <em>Meditations</em>.",
-      "762→1648": "The Mu'tazila argued that reason could determine religious truth; eight centuries later, Descartes used reason to bypass religious truth entirely. Baghdad's translation movement preserved the Greek rationalism that Descartes inherited — the cogito's ancestors spoke Arabic.",
-      "762→1784": "The transmission chain is real but long: Baghdad's translators (Hunayn ibn Ishaq and others) rendered Aristotle and Plato into Arabic; these passed through al-Andalus to Latin Europe via translators like Gerard of Cremona in Toledo (12th c.). Kant studied Aristotelian logic and engaged directly with the rationalist tradition that Descartes and Leibniz had built on these recovered texts. But Kant never cited the Mu'tazila — the parallel between their rational theology and his Enlightenment project is a historiographical observation, not a documented influence.",
-      "1648→1784": "Kant explicitly engaged with Descartes' rationalism: the <em>Critique of Pure Reason</em> (1781) directly addresses and transforms the Cartesian project of grounding knowledge in reason alone. The link is documented and acknowledged. The political parallel — Westphalia's principle of state sovereignty removed confessional allegiance as grounds for war; Kant's essay demanded that individuals exercise reason without deference to authority — reflects a broader trajectory from religious to secular foundations of legitimacy, though the two events are not causally connected.",
-      "1648→1687": "Descartes' <em>cogito</em> rebuilt certainty from doubt; Newton's <em>Principia</em> rebuilt the cosmos from mathematics. Locke — who met Newton in 1689 — combined both projects: empiricism as the theory of mind that matched Newton's physics. The Royal Society, where Newton published, was founded in the same decade Westphalia was signed.",
-      "1687→1784": "Newton's <em>Principia</em> proved the cosmos was mathematically legible; Kant's \"dare to know\" demanded humans use that proof. The Enlightenment is Newtonian confidence applied to society: if gravity obeys laws, why not politics? Kant studied Newtonian physics directly through Christian Wolff's systematisation.",
-      "1687→1755": "Newton's Principia made the cosmos a clockwork; Lisbon forced the question — does the clock care about the clockmaker's creatures?",
-      "1755→1784": "Kant's earthquake essays applied reason to disaster; his Critiques made reason examine itself — rationalism, chastened, became critical.",
-      "1274→1600": "Aquinas and Bonaventure's scholastic syntheses gave reason a divine mandate; Bruno inverted the logic — reason demanded an infinite God, which demanded an infinite cosmos.",
-      "1600→1648": "Bruno's pantheistic cosmos and Gilbert's magnetic Earth: reason could now explain forces without invoking angels. Descartes would systematise this during the war.",
-      "1784→1848": "Kant declared reason sovereign but bounded; by 1848, the masses used those same rational arguments to demand sovereignty for themselves.",
-      "762→800": "Baghdad's translators preserved Aristotle's logic; Alcuin revived Boethius's commentaries on it. Greek reason entered the Latin West via two parallel streams — Arabic and Carolingian.",
-      "800→1141": "Alcuin's schools trained the cathedral masters who trained Abelard. The trivium's dialectic became scholasticism's sword — the tool Abelard wielded against Bernard at Sens.",
-      "125→529": "Hadrian's Pantheon married Greek geometry to Roman engineering; this synthesis survived in Byzantine architecture and Justinian's legal codification.",
-      "529→762": "Greek logical texts traveled east with exiled philosophers; Baghdad's scholars translated them, sparking the Islamic Golden Age of rational inquiry.",
-      "1848→1968": "From Marx's scientific socialism to Marcuse's Frankfurt School critique: reason promised liberation but delivered administered society. Post-structuralism deconstructs rationalism from within while students attack it from without.",
-      "1274→1543": "Aquinas harmonized faith and reason; Copernicus weaponized reason to move the Earth.",
-      "1543→1600": "The eye opens in Basel; by century's end, Bruno burns for following where it looked.",
-      "800→1000": "Alcuin revived the trivium; Gerbert added the quadrivium. Logic returned to Europe through monastery schools that would eventually challenge faith's monopoly.",
-      "1000→1141": "Gerbert's students carried dialectic into the cathedral schools; Abelard, trained in that tradition, would make it a weapon that Sens could not ignore.",
-      "1274→1453": "From the death of Aquinas to the dispersal of Greek philosophy — two centuries where scholasticism hardens while its sources await rediscovery.",
-      "1453→1543": "Neoplatonism arrives with the refugees; ninety years later, Copernicus demonstrates what rational method can do to received cosmology.",
-      "1453→1509": "Greek scholars flee Constantinople with manuscripts; fifty-six years later, Raphael paints their philosophy as the foundation of all learning.",
-      "1509→1543": "Raphael's School of Athens celebrates ancient knowledge recovered; thirty-four years later, Copernicus and Vesalius prove the ancients were wrong about the cosmos and the body.",
-      "1141→1215": "Abelard's defeat at Sens only slowed the dialecticians; by Lateran IV, Aristotelian terminology defines dogma itself.",
-      "1215→1274": "The Paris ban on Aristotle collapses; Aquinas synthesizes faith and reason in the Summa, only to die before completing it.",
-      "125→180": "Galen systematised medicine with philosophical rigour learned from Second Sophistic culture; Marcus Aurelius applied Stoic logic to imperial governance.",
-      "180→529": "Galen's medical texts and Stoic logic travelled to Byzantine schools; Justinian codified Roman law while closing the Academy."
-    },
-    "modernity": {
-      "1648→1687": "Westphalia resolved religious conflict through sovereignty; Newton resolved cosmological conflict through mathematics. Both substituted divine authority with systems humans could operate. The modern world's dual foundations — the nation-state and mathematical physics — were laid within four decades.",
-      "1687→1922": "The Newtonian universe was a clockwork mechanism; by 1922, Einstein had bent its space and the quantum physicists were dissolving its certainties. Modernism's fragmentation — Eliot's broken myths, Wittgenstein's silent limits — is partly the cultural echo of physics losing Newton's elegant simplicity.",
-      "1600→1648": "Gilbert's experimental method and the East India Company's charter: science and capital begin their joint conquest of the world, accelerating through the peace.",
-      "1687→1819": "Newton's laws made the cosmos a clockwork; Schopenhauer asked who wound it, finding only blind Will — mechanism without purpose.",
-      "1819→1968": "Schopenhauer's pessimism about progress finds its children. A century and a half later, the young inherit a world their parents called progress and see spectacle, alienation, war without end. Modernity turns on itself."
-    },
     "stoicism": {
-      "125→410": "Epictetus taught that the wise person focuses only on what lies within their control — the inner citadel remains free even when empires burn. Augustine absorbed this Stoic insight through Cicero and transformed it: the Christian soul is the inner citadel, and Rome's fall cannot threaten what was never truly ours. The <em>City of God</em> is Stoic detachment theologised.",
-      "125→180": "Epictetus taught from experience of slavery; Marcus Aurelius wrote from the weight of empire. The freedman's Handbook travelled to the emperor's tent.",
-      "180→410": "Marcus Aurelius's Meditations survived in Greek manuscripts; Augustine read the Stoics but rejected their self-sufficiency for grace."
+      "125→180": "Epictetus taught at Nicopolis; his student Arrian compiled the <em>Discourses</em>. Marcus Aurelius read them in Greek and wrote his own meditations in the same tradition — the emperor-philosopher completing what the slave-philosopher began."
     },
-    "fragmentation": {
-      "1347→1922": "The plague shattered medieval unity — Church authority, feudal order, demographic stability, all broken at once. Six centuries later, modernism made fragmentation into an art form, shattering narrative, painting, and language with the same democratic indifference.",
-      "1347→1848": "Five centuries of accumulated crises — plague, Reformation, wars of religion, industrialization — shatter the remaining unity. In 1848, Christendom finally cracks along class lines.",
-      "1848→1922": "The failed revolutions fragment further: nationalism, socialism, and liberalism become competing salvations. By 1922, the pieces no longer fit any whole.",
-      "1922→1968": "Modernism's literary and artistic fragmentation becomes political fragmentation. The stream of consciousness shatters into slogans on walls; the twelve-tone row dissolves into noise and silence both.",
-      "1321→1347": "The factional politics that exiled Dante fracture Italian city-states into warring camps; the plague arrives to shatter what remains."
+    "theodicy-crisis": {
+      "180→410": "The Antonine Plague killed millions under Marcus Aurelius; two centuries later, Augustine asked why God permitted Rome's sack. Both moments forced the question: if the cosmos is rational, why does suffering strike the virtuous?",
+      "410→1347": "Augustine's <em>City of God</em> answered one theodicy crisis; the Black Death posed another. Boccaccio's plague-frame for the <em>Decameron</em> echoes Augustine's device — storytelling as refuge from catastrophe.",
+      "1347→1755": "The Black Death killed a third of Europe; the Lisbon earthquake killed in minutes. Voltaire's <em>Candide</em> mocked Leibnizian optimism the way Boccaccio's brigata fled Florentine piety — theodicy cracking under the weight of facts."
     },
-    "classical-revival": {
-      "-431→125": "Rome absorbed Greek art not as imitation but as imperial inheritance. The Parthenon expressed democratic Athens's civic ideals through mathematical proportion; Hadrian's Pantheon translated the same mathematical ambition — dome diameter equalling height, a perfect hemisphere — into the language of imperial universality. The transmission was direct: Roman architects studied Greek buildings firsthand, and Hadrian's Villa at Tivoli explicitly recreated Greek structures (the Stoa Poikile, the Vale of Tempe). Meanwhile, Plutarch's <em>Parallel Lives</em> provided the intellectual framework — Greek and Roman exemplars compared side by side, the classical tradition understood as a living inheritance rather than a lost age.",
-      "-431→1504": "This is the origin. When Florentine humanists spoke of recovering classical antiquity, they meant — ultimately — the Periclean achievement: the synthesis of mathematical proportion, idealised human form, and civic purpose that Phidias embodied. The recovery was indirect, filtered through Roman copies and Byzantine manuscripts, but the Parthenon's sculptural programme set the standard that Michelangelo and Leonardo measured themselves against. Ghiberti's <em>Commentarii</em> explicitly traced artistic lineage back to Phidias.",
-      "-431→1784": "Winckelmann's <em>Thoughts on the Imitation of Greek Works</em> (1755) — the founding text of Neoclassicism — argued that Greek art achieved \"noble simplicity and quiet grandeur\" because Greek society achieved freedom. He was describing, and idealising, Periclean Athens. David's generation absorbed this vision directly: the republican virtues they painted in classical dress were imagined as Athenian and Spartan virtues, read through Plutarch but aspiring to the visual language of the Parthenon.",
-      "125→410": "The Pantheon's concrete dome was still the largest in the world when Alaric sacked Rome three centuries later. But by 410, classical form was being absorbed into Christian content: Prudentius wrote hymns in Horatian meters, church mosaics borrowed imperial iconography, and Augustine read Cicero and Plotinus as preparation for Scripture. Late Antiquity didn't reject classicism — it baptised it.",
-      "125→1504": "The Pantheon survived the fall of Rome because Pope Boniface IV consecrated it as a church in 609. Florentine architects studied it obsessively: Brunelleschi travelled to Rome to measure its dome before designing his own for the Florence Cathedral (1420–36), which finally surpassed its 43.3-metre span. The Roman concrete techniques had been lost, but the ambition — and the physical building — endured. Renaissance humanism revived not just Greek ideals but their Roman institutional expression: the libraries, the patronage networks, the monumental architecture that Hadrian exemplified.",
-      "410→1504": "Augustine preserved classical learning within a Christian framework; without this transmission, the Renaissance would have had nothing to revive. Jerome's Vulgate standardised Scripture in Ciceronian Latin; Prudentius's Christian poetry maintained classical prosody. When Florentine humanists sought antiquity, they found it filtered through the Church Fathers who had saved what Rome's fall would otherwise have destroyed.",
-      "125→1784": "Neoclassicism drew more heavily on Rome than Greece — because so much more Roman architecture survived. The Pantheon was the most studied building in Europe by the 18th century; its portico became the template for institutions from the British Museum to the Panthéon in Paris. When Winckelmann idealised Greek art, he was largely looking at Roman copies. David's classical vocabulary was Roman classical vocabulary — togas, fasces, Republican virtue — mediated through what imperial Rome had preserved, built, and transmitted.",
-      "1504→1784": "David won the Prix de Rome in 1774 and spent five years in Italy studying Raphael, Michelangelo, and Roman antiquities firsthand. The lineage is direct and documented: Renaissance artists recovered classical forms; David inherited them through the Académie royale's curriculum, which made Rome pilgrimage mandatory. But where Renaissance Florence used antiquity as a language of idealised beauty, David's Neoclassicism — shaped by Winckelmann's writings on Greek art as moral exemplar — turned the same classical vocabulary toward republican virtue and political duty.",
-      "410→800": "Augustine preserved Roman rhetoric for Christian purposes; Alcuin's scribes preserved the texts themselves, rescuing classical learning from the monasteries where it had hibernated for four centuries.",
-      "800→1504": "The manuscripts Carolingian scribes copied reached Italian humanists who surpassed their models. Charlemagne's architects quoted San Vitale; Leonardo and Michelangelo would quote Rome directly.",
-      "410→529": "Augustine's Christian Platonism survived Rome's fall; when Justinian shuttered Athens, Neoplatonism migrated into Byzantine theology and monastic learning.",
-      "529→800": "Benedict's monasteries became arks of classical texts; Charlemagne's court scholars, trained in this tradition, revived Latin learning as Christian humanism.",
-      "800→1000": "Charlemagne's scribes preserved Virgil and Cicero; two centuries later, Gerbert actually read them, teaching classical rhetoric when Europe had forgotten how.",
-      "1000→1504": "Gerbert's curriculum seeded the cathedral schools that would recover Aristotle; five centuries of patient copying bore fruit when Renaissance artists claimed ancient Rome as ancestor.",
-      "1000→1453": "Four centuries of rediscovering antiquity through Charlemagne's heirs, Roman law, and Arabic translations — then Constantinople's fall floods the West with the Greek originals.",
-      "1453→1504": "Byzantine scholars scatter Plato's dialogues across Italy; within fifty years, Florentine artists are painting philosophy.",
-      "1504→1509": "Five years from Michelangelo's David to Raphael's School of Athens — the High Renaissance declares antiquity reborn in papal Rome.",
-      "1509→1784": "From Raphael's visual synthesis to Kant's philosophical one — antiquity as model gives way to antiquity as material for critique.",
-      "1000→1401": "Four centuries of manuscript copying preserved Roman forms; the Florentine competition demanded they live again, tested in bronze.",
-      "1401→1453": "Brunelleschi studied Roman ruins; Ghiberti's Gates opened onto antiquity. The Byzantine scholars fleeing Constantinople brought the Greek texts to match.",
-      "125→180": "Hadrian's architectural anthology became the vocabulary of late Antonine monumental art; the Column of Marcus Aurelius transformed Trajanic precedent.",
-      "180→410": "The Antonine style's emotional intensity foreshadowed Late Antique expressionism; classical forms persisted but meaning shifted from civic to spiritual."
+    "translatio-studii": {
+      "410→529": "As Rome fell, Greek texts traveled east with Christian scholars. By 529, Justinian closed the Academy, pushing Neoplatonic philosophers toward Persia — the first leg of the journey that would bring Aristotle to Baghdad.",
+      "529→800": "Exiled Academy scholars carried texts to Persia; Syriac Christians translated them. When Alcuin revived learning at Charlemagne's court, he worked from Boethius's Latin translations — the Western branch of the same transmission.",
+      "800→1453": "Alcuin preserved what Latin texts survived; when Constantinople fell, Byzantine scholars brought the Greek originals West. Bessarion's library donation completed the circuit — Greek learning returning to Italy six centuries after it left for Baghdad."
     },
-    "art-and-power": {
-      "-431→1504": "Pericles diverted the Delian League treasury to fund the Parthenon; Lorenzo de' Medici diverted bank profits to fund Florence's artistic programme. In both cases, economic dominance was transmuted into cultural authority, and the patrons' political opponents attacked the expenditure as illegitimate. Phidias was charged with embezzlement; the Medici were exiled in 1494. The pattern — power expressed through beauty, challenged through accounting — repeats across two millennia.",
-      "-431→1784": "The Parthenon was civic art funded by imperial tribute, legitimising Athenian democracy through aesthetic splendour. David's <em>Oath of the Horatii</em>, commissioned by the French Crown, was subverted by its creator into a republican manifesto. Both demonstrate art's capacity to serve and undermine power simultaneously — but where Athens' democratic assembly voted the funds openly, David's patron unwittingly funded his own ideological opposition.",
-      "1504→1784": "The Medici commissioned art to project civic power and cultural prestige — Michelangelo's <em>David</em> was a public statement by the Florentine Republic. David's <em>Oath</em> was commissioned by the Crown (via d'Angiviller) as moralising history painting, but the artist subverted the brief: audiences read it as a call to republican sacrifice against monarchy. The shift from Renaissance patron-as-author to Enlightenment artist-as-ideologue is visible in this single commission — the state paid for its own critique.",
-      "1300→1504": "Giotto painted Boniface VIII proclaiming his triumph; two centuries later, Leonardo and Michelangelo competed for Florence's Palazzo della Signoria. The patrons changed — banking republics replaced papal courts — but art remained power's mirror."
+    "eschatological-anxiety": {
+      "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
+      "1000→1453": "The millennium passed; Constantinople's fall in 1453 reopened eschatological wounds. Greek scholars fleeing West carried not just manuscripts but the trauma of a Christian empire's end — history's judgment made visible."
     },
-    "geometry-as-ideology": {
-      "-431→762": "The Parthenon's optical refinements — entasis, stylobate curvature, column inclination — express a Greek conviction that mathematical order underlies reality, and that human craft can perfect what nature approximates. Thirteen centuries later, al-Mansur's Round City of Baghdad embodied the same conviction in urban form: a perfect circle with geometry dictating theology. Both are built environments that make philosophical claims about the cosmos through proportion, though the Islamic builders drew on Persian and Mesopotamian traditions as much as Greek ones."
+    "monastic-preservation": {
+      "529→800": "Benedict's Rule established the rhythm of manuscript copying; Cassiodorus made it systematic. By Charlemagne's time, monasteries were the infrastructure of textual survival.",
+      "800→1000": "Carolingian scriptoria standardized minuscule script; Cluniac reforms spread the practice. The 'white mantle of churches' was built by the same hands that copied the texts inside them."
     },
-    "cosmopolitanism": {
-      "-431→762": "Periclean Athens drew thinkers from across the Greek world — Anaxagoras from Clazomenae in Ionia, Protagoras from Abdera in Thrace, Hippodamus from Miletus — and synthesised their ideas into something new. Al-Mansur's Baghdad replicated this pattern at larger scale: scholars from Syria, Persia, India, and Central Asia converged on a single city designed to attract and organise knowledge. Both cities understood that intellectual power requires cosmopolitan intake — and both enforced political hierarchies that contradicted their intellectual openness."
+    "dialectical-method": {
+      "762→1141": "The Mu'tazila debated theology with Greek logical tools; those same tools reached Paris through Arabic-Latin translation. Abelard's <em>Sic et Non</em> is dialectical method applied to Christian doctrine — the Baghdad conversation continued in French."
     },
-    "renaissance-humanism": {
-      "1504→1517": "Erasmus was the hinge. His 1516 Greek New Testament gave Luther the weapon (<em>metanoeite</em> means \"repent,\" not \"do penance\") and his <em>Praise of Folly</em> mocked the same Church abuses Luther attacked. Renaissance scholarship made the Reformation possible — then recoiled from what it unleashed.",
-      "1517→1543": "Luther appeals to scripture over tradition; Vesalius applies the same principle to flesh.",
-      "1453→1504": "Greek manuscripts flood Italian libraries; within a generation, Lorenzo de' Medici's circle transforms philosophy into lived culture.",
-      "1504→1509": "Florence's civic humanism meets Rome's papal patronage; Leonardo, Michelangelo, and Raphael converge on Julius II's court.",
-      "1509→1517": "Erasmus's satire of clerical folly prepares the ground; eight years later, Luther's Reformation will make laughing at the Church into burning it down.",
-      "1401→1453": "Salutati's civic humanism armed Florence with Latin rhetoric; his disciples Bruni and Poggio carried it into the next generation. By 1453, humanism was statecraft."
+    "mathematical-cosmos": {
+      "125→762": "The Pantheon's dome expressed geometric perfection in concrete; al-Mansur's Round City expressed it in urban planning. Both built the conviction that the cosmos was mathematically ordered.",
+      "762→1543": "Baghdad's astronomers refined Ptolemaic mathematics; Copernicus used those refinements to overturn Ptolemy. The heliocentric model emerged from the Islamic astronomical tradition that corrected the Greeks.",
+      "1543→1687": "Copernicus mathematized the heavens; Newton mathematized motion itself. The <em>Principia</em>'s universal gravitation completed what <em>De Revolutionibus</em> began — nature as equation."
     },
     "scholasticism": {
-      "762→1141": "Baghdad's translators recovered Aristotle; Abelard's <em>Sic et Non</em> put him to work. The dialectical method that Bernard condemned at Sens was built on Arabic-Latin translations flowing through Toledo. When Abelard asked \"by doubting we come to inquiry,\" he was applying tools forged in the House of Wisdom.",
-      "1141→1274": "Abelard's method, condemned at Sens, became the skeleton of Scholasticism. By 1274, Thomas Aquinas and Bonaventure had built the two great systems — Dominican Aristotelianism and Franciscan Augustinianism — on that foundation. When both died within weeks of each other, the age of synthesis died with them.",
-      "1141→1347": "Abelard was condemned; his method conquered. Within a century, Scholasticism dominated European universities. Ockham, writing just before the plague, used that same dialectical razor to slice away metaphysical certainties — nominalism was Abelard's victory pushed to its logical conclusion.",
-      "1141→1517": "The Scholastic method Abelard pioneered became university orthodoxy — and then the target. Luther trained in Scholastic disputation at Erfurt, then turned the tools against the institution that taught them. The dialectical doubt Bernard feared at Sens reached its endpoint in Wittenberg.",
-      "1274→1347": "The year Aquinas and Bonaventure died, Scholasticism lost its greatest synthesizers. Within decades, nominalism emerged to dismantle what they'd built. Ockham's razor cut away the metaphysical confidence the <em>Summa</em> embodied — then the Black Death made such confidence seem naive.",
-      "1274→1517": "Aquinas's <em>Summa Theologica</em> remained unfinished at his death in 1274 — the greatest attempt to reconcile faith and reason left incomplete. Two centuries later, Luther rejected the entire project: not supplementing Scholasticism but abandoning it for <em>sola scriptura</em>.",
-      "1141→1215": "Bernard defeats Abelard, but the method survives: universities institutionalize the disputation.",
-      "1215→1274": "Dominicans become the Church's intellectual arm; Albertus Magnus recovers Aristotle; Aquinas crowns the scholastic synthesis.",
-      "1274→1300": "Aquinas's synthesis of faith and reason was barely cold when Scotus began dismantling it. The Subtle Doctor's univocity of being opened cracks that Ockham would widen into a chasm.",
-      "1300→1321": "Dante absorbs Aquinas's synthesis whole; the Commedia is scholasticism's crowning literary achievement, written as its philosophical dominance begins to wane."
+      "1141→1215": "Abelard's dialectical method survived his condemnation; by Lateran IV, Aristotelian categories defined dogma. The scholastic synthesis began at Sens's defeat.",
+      "1215→1274": "The Paris Aristotle ban collapsed under its own weight; Aquinas built the <em>Summa</em> on the recovered texts. Scholasticism's golden age was also its last.",
+      "1274→1321": "Aquinas died with the <em>Summa</em> unfinished; Dante completed the project in verse. The <em>Commedia</em> is scholastic architecture made poetry."
     },
-    "nominalism": {},
     "gothic-architecture": {
-      "1141→1274": "Suger's choir at Saint-Denis (1144) launched the Gothic revolution. By 1274, the style had evolved into the Rayonnant — walls dissolved into tracery, stone transformed into light. The cathedrals rising at Reims and Chartres embodied the same confidence that Aquinas brought to philosophy: reason could illuminate faith.",
-      "1141→1347": "Suger's choir at Saint-Denis (consecrated 1144) launched Gothic architecture. By 1347, the style had transformed Europe's skyline — Chartres, Notre-Dame, Florence's Duomo. The plague halted construction across the continent; when building resumed, the Renaissance would turn toward classical revival instead.",
-      "1274→1347": "Rayonnant Gothic's dematerialization of stone into light expressed the same 13th-century ambition as Scholastic philosophy: making the invisible visible, proving faith through structure. The Black Death halted construction across Europe — and when building resumed, the confidence that created those soaring windows had fractured.",
-      "1141→1215": "From Sens to Chartres: ribbed vaults and flying buttresses evolve into the classic Gothic formula—walls dissolve into light.",
-      "1215→1274": "Chartres perfects the formula; Notre-Dame rises; Rayonnant style pushes windows to impossible heights."
-    },
-    "enlightenment": {
-      "1687→1784": "Newton's <em>Principia</em> proved the universe obeyed mathematical laws; Kant's \"dare to know\" demanded humans apply that confidence to themselves. The Enlightenment is Newton generalised — if gravity submits to reason, why not morality, politics, religion? Kant studied Newtonian physics directly and built his critical philosophy on its foundations.",
-      "1687→1755": "Newton's cosmos ran by mathematical law; Lisbon asked whether that law left room for justice.",
-      "1755→1784": "Lisbon's destruction shattered optimism; Kant's 'Dare to Know' rebuilt reason on humbler foundations — human limits, not cosmic guarantees."
+      "1141→1215": "Suger's Saint-Denis invented Gothic luminosity; by 1215, Chartres perfected it. The style spread as fast as scholastic method — both claimed to make the invisible visible.",
+      "1215→1274": "Chartres' windows taught theology in glass; the same geometric logic structured the <em>Summa</em>. Gothic and scholasticism were twin expressions of the same confidence."
     },
     "vernacular-literature": {
-      "1141→1347": "Abelard and Héloïse exchanged letters in Latin, but their story spread in the vernacular. Two centuries later, Boccaccio wrote the <em>Decameron</em> in Tuscan Italian — plague survivors telling tales in the language of the street, not the cloister. The shift from Latin to vernacular was also a shift in audience: from clergy to merchants, from eternal truths to mortal pleasures.",
-      "1141→1274": "Abelard and Héloïse wrote in Latin, but their legend spread in the vernacular. By 1274, Dante was nine years old in Florence, about to see Beatrice — the encounter that would produce the <em>Vita Nuova</em> and eventually the <em>Commedia</em>, the work that made Italian a literary language. The troubadour tradition was already a century old, courtly love poetry circulating in Occitan and Old French.",
-      "1274→1347": "Dante saw Beatrice the year Aquinas died; by 1347, when the plague arrived, the <em>Decameron</em> would be written in response. The trajectory is clear: from Latin scholasticism to Italian storytelling, from divine synthesis to human survival. Boccaccio's Tuscan prose descends directly from Dante's experiments.",
-      "1141→1215": "The Song of Roland gives way to courtly romance; Chrétien de Troyes invents Arthurian fiction; German poets achieve classical maturity.",
-      "1215→1274": "Courtly ideals cross the Alps; Dante begins dreaming of Beatrice; the Roman de la Rose debates love's nature for generations.",
-      "1274→1300": "The vernacular had proved it could hold theology with Aquinas's death. Now Dante would prove it could hold a cosmos — setting his journey in the Jubilee Year when Latin still claimed monopoly on the sacred.",
-      "1300→1347": "Dante set his Comedy in the Jubilee Year; Boccaccio set his Decameron in the plague year. The vernacular graduated from pilgrimage to plague, from salvation to survival.",
-      "1300→1321": "The pilgrims of Dante's Jubilee speak dialects, not Latin; his Comedy will give them a literature in the language they actually use.",
-      "1321→1347": "Dante's vindication of Tuscan opens the floodgates; Petrarch and Boccaccio will build directly on his foundation as plague transforms their world.",
-      "1347→1401": "Boccaccio wrote the Decameron in Italian while the plague raged; Chaucer's English pilgrims followed. The vernacular proved it could carry anything—satire, tragedy, philosophy—without Latin's blessing."
+      "1215→1274": "The Fourth Lateran Council required confession in the vernacular; poets followed. Aquinas wrote in Latin, but the <em>Roman de la Rose</em> began the year before he died.",
+      "1274→1300": "As scholasticism peaked, vernacular poetry matured. Dante's <em>Vita Nuova</em> appeared in the 1290s — the language Aquinas ignored becoming literature.",
+      "1300→1321": "Giotto painted what Dante wrote: the human face of divine comedy. Both used vernacular means — Tuscan dialect, naturalistic bodies — to tell sacred stories.",
+      "1321→1347": "Dante proved Tuscan could bear the weight of theology; Boccaccio proved it could carry ribaldry and grief. The <em>Decameron</em>'s plague frame is the <em>Commedia</em>'s structure inverted."
     },
-    "baroque": {
-      "1600→1648": "Caravaggio's tenebrism spreads through Europe via his imitators; by Westphalia, the Baroque has become the visual language of Catholic and Protestant power alike."
+    "renaissance-humanism": {
+      "1401→1453": "Florentine humanists collected manuscripts before 1453; the Greek exodus accelerated what Salutati and Bruni began. Humanism was ready for what Constantinople's scholars brought.",
+      "1453→1504": "Ficino translated Plato from the manuscripts refugees carried; his Neoplatonism shaped Michelangelo's vision. The <em>David</em> embodies ideas that arrived with Bessarion's library.",
+      "1504→1509": "Leonardo and Michelangelo competed in Florence; Raphael synthesized their innovations in Rome. The <em>School of Athens</em> is humanism's self-portrait.",
+      "1509→1517": "Erasmus mocked scholasticism while Luther exploded it. Both were humanists; both used the printing press; they diverged on what scripture demanded."
+    },
+    "art-and-power": {
+      "1300→1504": "Giotto worked for Franciscans and Bardi bankers; Michelangelo worked for Medici and popes. Two centuries transformed patronage from devotional to dynastic.",
+      "1504→1784": "Michelangelo's <em>David</em> was civic propaganda; David's <em>Oath of the Horatii</em> was revolutionary propaganda. Both deployed classical forms for political ends."
+    },
+    "proto-renaissance": {
+      "1300→1321": "Giotto's Bardi Chapel frescoes depicted grief with unprecedented naturalism; Dante's <em>Inferno</em> depicted sinners with unprecedented individuality. Both broke Byzantine conventions through observed humanity."
     },
     "neoplatonism": {
-      "529→1504": "The fleeing philosophers seeded Islamic falsafa; Arabic translations returned to Latin through Toledo and Palermo, igniting Renaissance Florentine Platonism."
-    },
-    "scientific-revolution": {
-      "1543→1687": "Vesalius teaches anatomy through observation; Newton formalizes the method into mathematical law."
-    },
-    "empiricism": {
-      "1543→1687": "Vesalius cuts to verify; by Newton's time, experimentation and measurement have become philosophy's arbiter."
-    },
-    "carolingian-renaissance": {
-      "800→1000": "Alcuin's school at Aachen trained the teachers who trained Gerbert; the Carolingian curriculum survived in monastery libraries that the Ottonian renaissance would unlock."
+      "529→1504": "When Justinian closed the Academy, Neoplatonism went underground; when Ficino opened his, it resurfaced transformed. A millennium separates the last pagan Neoplatonists from Michelangelo's Neoplatonic bodies."
     },
     "printing-revolution": {
-      "1509→1517": "Erasmus's Folly spreads through print, mocking clerical corruption; eight years later, Luther's theses use the same technology to shatter the Church."
+      "1509→1517": "Erasmus's <em>Praise of Folly</em> circulated in printed editions; Luther's theses spread faster than any medieval protest. The press made both possible — satire and schism alike."
+    },
+    "baroque": {
+      "1600→1648": "Caravaggio's tenebrism dramatized Counter-Reformation piety; Rembrandt's used the same technique for Protestant inwardness. Baroque style survived the confessional divide."
+    },
+    "empiricism": {
+      "1543→1687": "Vesalius trusted dissection over Galen; Newton trusted mathematics over tradition. Both empiricisms — anatomical and physical — insisted that observation trumped authority."
+    },
+    "scientific-revolution": {
+      "1543→1687": "Copernicus repositioned the Earth; Newton explained why it stayed in orbit. The revolution Copernicus began, Newton completed."
+    },
+    "enlightenment": {
+      "1687→1755": "Newton's <em>Principia</em> proved the cosmos was lawful; the Lisbon earthquake asked whether it was just. Enlightenment optimism crested and cracked within seventy years.",
+      "1755→1784": "Lisbon shattered Leibnizian optimism; Kant rebuilt reason on critical foundations. 'Dare to know' was an answer to 'why did God permit this.'"
+    },
+    "critical-philosophy": {
+      "1755→1784": "The earthquake forced Kant to reconsider natural theology; three decades later, his Critiques limited what reason could claim. Theodicy's failure birthed epistemology's caution."
+    },
+    "antiquarian-recovery": {
+      "1401→1509": "Brunelleschi studied Roman ruins for engineering secrets; Raphael painted the recovered philosophy. A century of deliberate archaeology fed Renaissance imagination."
+    },
+    "artistic-competition": {
+      "1401→1504": "Brunelleschi and Ghiberti competed for the Baptistery doors; Leonardo and Michelangelo competed for the Palazzo Vecchio wall. Florentine patronage made rivalry productive."
+    },
+    "carolingian-renaissance": {
+      "800→1000": "Alcuin standardized script and curriculum; Gerbert added mathematics. The Carolingian project survived the Carolingians."
+    },
+    "fragmentation": {
+      "1848→1922": "The revolutions of 1848 fractured empires and ideologies; by 1922, Eliot's <em>Waste Land</em> made fragments a literary form. Political breakup became aesthetic principle.",
+      "1922→1968": "Modernist fragmentation was formal experiment; 1968's fragmentation was political program. The same broken forms served art and revolution."
     }
   },
   "it": {
-    "death-of-god": {
-      "410→1347": "Agostino affrontò la caduta di Roma trasferendo la permanenza dalla terra al cielo — la Città di Dio perdura quando la città terrena brucia. Nove secoli dopo, Ockham spinse oltre: se le cose terrene non hanno garanzia divina, perché fidarsi degli universali? La Peste Nera rese nuovamente viscerale la domanda di Agostino.",
-      "410→1648": "La <em>Città di Dio</em> di Agostino sosteneva che la politica terrena non può garantire la salvezza — i diplomatici di Vestfalia istituzionalizzarono questa intuizione, rendendo la religione una questione di discrezione sovrana piuttosto che di comando divino. L'arco di dodici secoli: dalla risposta teologica al regolamento politico.",
-      "1347→1648": "La peste rese illeggibile l'ordine di Dio; tre secoli dopo, le guerre di religione lo resero letale. La soluzione di Vestfalia fu radicale: smettere di chiedersi quale Dio avesse ragione e lasciare decidere alla sovranità. Il nominalismo di Ockham piantò il seme; il cogito di Cartesio crebbe dallo stesso dubbio.",
-      "1347→1889": "La Peste Nera rese illeggibile l'ordine divino cinque secoli prima che Nietzsche ne dichiarasse la morte. Il rasoio di Ockham aveva già spogliato le certezze metafisiche; nel 1889, Nietzsche completò l'opera — e crollò sotto il suo peso.",
-      "1347→1922": "Dalla peste alla terra desolata: la crisi dell'autorità divina, iniziata quando le preghiere non fermarono la Morte Nera, raggiunge la sua conclusione modernista nei frammenti di Eliot e nel silenzio di Wittgenstein su ciò che non si può dire.",
-      "1648→1889": "Vestfalia rimosse Dio dalla politica internazionale; Nietzsche lo rimosse dalla filosofia. Fra i due, due secoli e mezzo di Illuminismo sostituirono lentamente l'autorità divina con la ragione umana — finché la ragione stessa cominciò a incrinarsi.",
-      "1648→1922": "La Pace di Vestfalia fece della religione un affare privato degli Stati; nel 1922, Dio era diventato un affare privato dell'individuo — o di nessuno. La terra desolata di Eliot è l'aspetto dell'ordine secolare vestfaliano dopo le trincee.",
-      "1889→1922": "Nietzsche dichiarò morto Dio nel 1882. Entro il 1922, il vuoto che aveva predetto aveva inghiottito la certezza stessa — <em>La terra desolata</em> di Eliot ne mappava le macerie, mentre il positivismo logico tentava di ricostruire il significato da zero.",
-      "1648→1755": "La pace esausta di Vestfalia aveva messo Dio tra parentesi; il terremoto di Lisbona frantumò la parentesi — la teodicea morì sotto le macerie.",
-      "1755→1889": "Ciò che il terremoto di Lisbona aveva iniziato, il folle di Nietzsche lo completò — il cadavere di Dio, intravisto per la prima volta tra le macerie, fu finalmente dichiarato.",
-      "1755→1819": "La critica di Voltaire al terremoto di Lisbona incrinò la teodicea; Schopenhauer conficcò un paletto metafisico nell'ottimismo stesso.",
-      "1819→1889": "La cieca Volontà di Schopenhauer perseguitò le opere di Wagner; Nietzsche ereditò la diagnosi e prescrisse Dioniso.",
-      "1819→1848": "La cieca volontà di Schopenhauer diventa le forze materiali di Marx — entrambi rifiutano il proposito divino, ma Marx aggiunge la possibilità di redenzione umana attraverso la rivoluzione.",
-      "1848→1889": "La critica di Marx alla religione come oppio dei popoli prepara il terreno per l'annuncio di Nietzsche: Dio è morto, e noi lo abbiamo ucciso — ma cosa riempirà il vuoto?",
-      "1347→1600": "La Peste Nera frantumò la fiducia nella provvidenza; due secoli dopo, il cosmo infinito di Bruno rese i cieli indifferenti, non solo punitivi.",
-      "1600→1648": "Bruno bruciò per eresia cosmica; la Guerra dei Trent'anni avrebbe fatto bruciare cristiani tra loro per differenze dottrinali minori, esaurendo la certezza religiosa.",
-      "1922→1968": "La dichiarazione di Nietzsche diventa realtà vissuta: la frammentazione modernista del significato raggiunge le strade. Nel 1968, Debord e Marcuse traducono la morte di Dio in critica politica — l'autorità stessa è il cadavere.",
-      "1347→1453": "Un secolo dopo che la peste devastò le certezze della Cristianità, la sua capitale orientale cade — e un filosofo sogna di riconciliare tutte le fedi con la sola ragione.",
-      "1453→1600": "Dalla visione di Cusano sull'armonia religiosa al cosmo infinito di Bruno — 150 anni di espansione del significato di Dio, finché Roma brucia chi pone domande.",
-      "410→1300": "Agostino vide cadere Roma e inventò la filosofia cristiana della storia. Bonifacio VIII si dichiarò Papa-Cesare e l'unità della cristianità si incrinò al suo apice.",
-      "1300→1347": "L'hybris di Bonifacio finì ad Anagni; la Morte Nera pose fine alle certezze medievali. Dio aveva promesso ordine tramite Papa e Imperatore — la peste uccise entrambe le premesse.",
-      "1300→1321": "L'esilio di Dante da Firenze coincide con l'arroganza di Bonifacio VIII; il poeta che assistette al Giubileo ora danna i papi in versi.",
-      "1321→1347": "La collocazione dantesca dei papi all'Inferno anticipa la catastrofe imminente; entro una generazione la Peste Nera scuoterà la fede nella provvidenza divina.",
-      "1347→1401": "La Peste Nera aveva ucciso un papa ad Avignone; lo Scisma ora divideva i sopravvissuti tra due. L'ordine divino si frantumò in scelta politica.",
-      "1401→1453": "I concili deposero papi; il conciliarismo di Gerson rese l'autorità negoziabile. Quando cadde Costantinopoli, Nicola Cusano propose una religione in molti riti—verità divina attraverso il pluralismo, non il decreto.",
-      "180→410": "La peste antonina scosse la fiducia negli antichi dèi; due secoli dopo, il sacco di Alarico completò la crisi teologica a cui Agostino avrebbe risposto."
-    },
-    "rationalism": {
-      "-431→125": "Anassagora sosteneva che un principio razionale (<em>Nous</em>) governasse il cosmo piuttosto che il capriccio degli dei. Cinque secoli dopo, gli Stoici — partendo dalla stessa tradizione razionalista greca, filtrata attraverso Aristotele e la prima Stoa — insegnavano che l'universo era strutturato dal <em>logos</em>, un ordine razionale accessibile alla ragione umana. Epitteto, che insegnava a Nicopoli intorno al 125 d.C., ereditava direttamente questa genealogia: lo stoicismo emerse dall'ambiente filosofico ateniese che Anassagora contribuì a creare, passando attraverso Zenone di Cizio (che studiò all'Accademia di Platone) e Crisippo. La perfezione matematica del Pantheon — la cupola come emisfero geometricamente esatto — è questa convinzione razionalista espressa in forma costruita.",
-      "-431→762": "Il <em>Nous</em> di Anassagora — una Mente cosmica che organizza la materia attraverso la ragione — è una delle idee greche che i traduttori di Baghdad preservarono. I Mu'tazila ereditarono un argomento vecchio di dodici secoli: che l'indagine razionale, non la tradizione, rivela la verità. I testi che Hunayn ibn Ishaq tradusse in arabo furono prodotti nella cultura intellettuale che Anassagora contribuì a creare. Il legame è reale ma indiretto — mediato attraverso Aristotele e i neoplatonici, non attraverso Anassagora direttamente.",
-      "-431→1648": "Anassagora dichiarò il sole una massa di metallo rovente e fu processato per empietà; Cartesio pubblicò la sua cosmologia e prudentemente si trasferì nei Paesi Bassi. Ventuno secoli di distanza, entrambi insistettero che la ragione potesse spiegare il mondo naturale senza ricorso agli dei — ed entrambi ne compresero il pericolo. La tradizione cartesiana ereditò la filosofia naturale greca attraverso la catena di traduzione arabo-latina che inizia con i testi stessi prodotti dall'Atene di Pericle.",
-      "-431→1784": "Quando Kant scrisse <em>sapere aude</em> — osa sapere — echeggiava, attraverso molti intermediari, la posizione che Anassagora assunse quando spiegò il sole come materia piuttosto che divinità. Kant studiò la tradizione aristotelica direttamente, e Aristotele studiò all'Accademia di Platone, fondata una generazione dopo il periodo ateniese di Anassagora. La genealogia è tracciabile attraverso catene documentate maestro-allievo, sebbene Kant stesso guardasse a Cartesio e Leibniz, non ai Presocratici.",
-      "125→762": "Il razionalismo stoico insegnato da Epitteto — l'universo come ordine intelligibile governato dal <em>logos</em> — fu trasmesso insieme ai testi aristotelici e neoplatonici attraverso il mondo tardoantico. Quando i traduttori abbasidi a Baghdad resero la filosofia greca in arabo, la cosmologia razionale degli Stoici faceva parte dell'atmosfera intellettuale che avevano ereditato, sebbene traducessero Aristotele e Platone più sistematicamente. L'insistenza dei Mu'tazila sulla teologia razionale attingeva allo stesso pozzo profondo del razionalismo greco che Epitteto esemplificava, mediato attraverso gli studiosi cristiani di lingua siriaca (Nestoriani, Giacobiti) che preservarono i testi filosofici greci nei secoli tra il declino di Roma e l'ascesa di Baghdad.",
-      "762→1141": "I Mu'tazila insistevano che la ragione potesse giudicare la verità religiosa; Abelardo applicò la dialettica alla Trinità. Entrambi furono condannati da difensori di una fede non vincolata dalla logica. I testi che alimentarono il metodo di Abelardo — specialmente l'<em>Organon</em> di Aristotele — raggiunsero Parigi attraverso traduzioni arabe. L'orrore di Bernardo era otto secoli di tradizione razionalista che bussavano alla porta della teologia.",
-      "1141→1648": "Il metodo dialettico di Abelardo, condannato a Sens, divenne la spina dorsale della Scolastica. Cartesio si formò nella logica scolastica prima di usarla per ricostruire la certezza dal dubbio. Il <em>cogito</em> è l'erede del <em>Sic et Non</em> — il dubbio sistematico come via verso la verità.",
-      "1141→1274": "Il metodo dialettico di Abelardo, condannato a Sens, divenne il fondamento della Scolastica. Nel 1274, Tommaso e Bonaventura avevano costruito sistemi rivali su quella base — sintesi aristotelica contro illuminazione agostiniana. Bernardo perse la battaglia ma vinse la guerra: la ragione fu aggiogata alla fede, non contrapposta.",
-      "1274→1648": "Quando Tommaso e Bonaventura morirono nel 1274, lasciarono la sintesi più fiduciosa di fede e ragione che la filosofia occidentale avesse mai raggiunto. Cartesio ereditò quella formazione scolastica — e ne usò gli strumenti per ricostruire la certezza dopo che il nominalismo e le guerre di religione avevano frantumato la sintesi. Il metodo della <em>Summa</em> sopravvive nelle <em>Meditazioni</em>.",
-      "762→1648": "I Mu'tazila sostenevano che la ragione potesse determinare la verità religiosa; otto secoli dopo, Cartesio usò la ragione per aggirare del tutto la verità religiosa. Il movimento di traduzione di Baghdad preservò il razionalismo greco che Cartesio ereditò — gli antenati del cogito parlavano arabo.",
-      "762→1784": "La catena di trasmissione è reale ma lunga: i traduttori di Baghdad (Hunayn ibn Ishaq e altri) resero Aristotele e Platone in arabo; questi passarono attraverso al-Andalus all'Europa latina tramite traduttori come Gerardo da Cremona a Toledo (XII sec.). Kant studiò la logica aristotelica e si confrontò direttamente con la tradizione razionalista che Cartesio e Leibniz avevano costruito su quei testi recuperati. Ma Kant non citò mai i Mu'tazila — il parallelo tra la loro teologia razionale e il suo progetto illuminista è un'osservazione storiografica, non un'influenza documentata.",
-      "1648→1784": "Kant si confrontò esplicitamente con il razionalismo cartesiano: la <em>Critica della ragion pura</em> (1781) affronta e trasforma direttamente il progetto cartesiano di fondare la conoscenza nella sola ragione. Il legame è documentato e riconosciuto. Il parallelo politico — il principio di sovranità statale di Vestfalia rimosse l'appartenenza confessionale come casus belli; il saggio di Kant esigeva che gli individui esercitassero la ragione senza deferenza all'autorità — riflette una traiettoria più ampia dalle fondamenta religiose a quelle laiche della legittimità, anche se i due eventi non sono causalmente connessi.",
-      "1648→1687": "Il <em>cogito</em> di Cartesio ricostruì la certezza dal dubbio; i <em>Principia</em> di Newton ricostruirono il cosmo dalla matematica. Locke — che incontrò Newton nel 1689 — combinò entrambi i progetti: l'empirismo come teoria della mente che si abbinava alla fisica di Newton. La Royal Society, dove Newton pubblicò, fu fondata nello stesso decennio in cui fu firmata Vestfalia.",
-      "1687→1784": "I <em>Principia</em> di Newton dimostrarono che il cosmo era matematicamente leggibile; il «sapere aude» di Kant esigeva che gli umani usassero quella prova. L'Illuminismo è la fiducia newtoniana applicata alla società: se la gravità obbedisce a leggi, perché non la politica? Kant studiò la fisica newtoniana direttamente attraverso la sistematizzazione di Christian Wolff.",
-      "1687→1755": "I Principia di Newton trasformarono il cosmo in un orologio; Lisbona pose la domanda — l'orologio si cura delle creature dell'orologiaio?",
-      "1755→1784": "I saggi di Kant sul terremoto applicarono la ragione al disastro; le sue Critiche fecero esaminare la ragione a se stessa — il razionalismo, disciplinato, divenne critico.",
-      "1274→1600": "Le sintesi scolastiche di Tommaso e Bonaventura diedero alla ragione un mandato divino; Bruno invertì la logica — la ragione esigeva un Dio infinito, che esigeva un cosmo infinito.",
-      "1600→1648": "Il cosmo panteistico di Bruno e la Terra magnetica di Gilbert: la ragione poteva ora spiegare le forze senza invocare angeli. Cartesio avrebbe sistematizzato questo durante la guerra.",
-      "1784→1848": "Kant dichiarò la ragione sovrana ma limitata; nel 1848, le masse usarono quegli stessi argomenti razionali per reclamare la sovranità per sé.",
-      "762→800": "I traduttori di Baghdad preservarono la logica di Aristotele; Alcuino fece rivivere i commentari di Boezio. La ragione greca entrò nell'Occidente latino attraverso due correnti parallele — araba e carolingia.",
-      "800→1141": "Le scuole di Alcuino formarono i maestri delle cattedrali che formarono Abelardo. La dialettica del trivio divenne la spada della scolastica — lo strumento che Abelardo brandì contro Bernardo a Sens.",
-      "125→529": "Il Pantheon di Adriano sposò la geometria greca all'ingegneria romana; questa sintesi sopravvisse nell'architettura bizantina e nella codificazione giuridica di Giustiniano.",
-      "529→762": "I testi logici greci viaggiarono a est con i filosofi esiliati; gli studiosi di Baghdad li tradussero, accendendo l'Età d'Oro islamica dell'indagine razionale.",
-      "1848→1968": "Dal socialismo scientifico di Marx alla critica della Scuola di Francoforte di Marcuse: la ragione prometteva liberazione ma ha prodotto società amministrata. Il post-strutturalismo decostruisce il razionalismo dall'interno mentre gli studenti lo attaccano dall'esterno.",
-      "1274→1543": "Tommaso armonizzò fede e ragione; Copernico usò la ragione come arma per spostare la Terra.",
-      "1543→1600": "L'occhio si apre a Basilea; a fine secolo, Bruno brucia per aver seguito dove aveva guardato.",
-      "800→1000": "Alcuino risuscitò il trivio; Gerberto aggiunse il quadrivio. La logica tornò in Europa attraverso scuole monastiche che avrebbero finalmente sfidato il monopolio della fede.",
-      "1000→1141": "Gli studenti di Gerberto portarono la dialettica nelle scuole cattedrali; Abelardo, formato in quella tradizione, ne fece un'arma che Sens non poté ignorare.",
-      "1274→1453": "Dalla morte di Tommaso alla dispersione della filosofia greca — due secoli in cui la Scolastica si irrigidisce mentre le sue fonti attendono di essere riscoperte.",
-      "1453→1543": "Il Neoplatonismo arriva con i rifugiati; novant'anni dopo, Copernico dimostra cosa può fare il metodo razionale alla cosmologia ereditata.",
-      "1453→1509": "Gli studiosi greci fuggono da Costantinopoli con i manoscritti; cinquantasei anni dopo, Raffaello dipinge la loro filosofia come fondamento di tutto il sapere.",
-      "1509→1543": "La Scuola di Atene di Raffaello celebra la conoscenza antica recuperata; trentaquattro anni dopo, Copernico e Vesalio dimostrano che gli antichi sbagliavano sul cosmo e sul corpo.",
-      "1141→1215": "La sconfitta di Abelardo a Sens rallentò solo i dialettici; al Laterano IV, la terminologia aristotelica definisce il dogma stesso.",
-      "1215→1274": "Il bando parigino su Aristotele crolla; Tommaso d'Aquino sintetizza fede e ragione nella Summa, per morire prima di completarla.",
-      "125→180": "Galeno sistematizzò la medicina con rigore filosofico appreso dalla cultura della Seconda Sofistica; Marco Aurelio applicò la logica stoica alla governance imperiale.",
-      "180→529": "I testi medici di Galeno e la logica stoica viaggiarono alle scuole bizantine; Giustiniano codificò il diritto romano mentre chiudeva l'Accademia."
-    },
-    "modernity": {
-      "1648→1687": "Vestfalia risolse il conflitto religioso attraverso la sovranità; Newton risolse il conflitto cosmologico attraverso la matematica. Entrambi sostituirono l'autorità divina con sistemi che gli umani potevano gestire. Le doppie fondamenta del mondo moderno — lo Stato-nazione e la fisica matematica — furono gettate nel giro di quattro decenni.",
-      "1687→1922": "L'universo newtoniano era un meccanismo a orologeria; nel 1922, Einstein ne aveva curvato lo spazio e i fisici quantistici ne stavano dissolvendo le certezze. La frammentazione modernista — i miti spezzati di Eliot, i limiti silenziosi di Wittgenstein — è in parte l'eco culturale della fisica che perdeva l'elegante semplicità di Newton.",
-      "1600→1648": "Il metodo sperimentale di Gilbert e lo statuto della Compagnia delle Indie: scienza e capitale iniziano la loro conquista congiunta del mondo, accelerando attraverso la pace.",
-      "1687→1819": "Le leggi di Newton resero il cosmo un orologio; Schopenhauer chiese chi lo avesse caricato, trovando solo la cieca Volontà — meccanismo senza scopo.",
-      "1819→1968": "Il pessimismo di Schopenhauer sul progresso trova i suoi figli. Un secolo e mezzo dopo, i giovani ereditano un mondo che i loro genitori chiamavano progresso e vedono spettacolo, alienazione, guerra senza fine. La modernità si rivolta contro se stessa."
-    },
     "stoicism": {
-      "125→410": "Epitteto insegnava che il saggio si concentra solo su ciò che è in suo controllo — la cittadella interiore rimane libera anche quando gli imperi bruciano. Agostino assorbì questa intuizione stoica attraverso Cicerone e la trasformò: l'anima cristiana è la cittadella interiore, e la caduta di Roma non può minacciare ciò che non è mai stato veramente nostro. La <em>Città di Dio</em> è il distacco stoico teologizzato.",
-      "125→180": "Epitteto insegnò dall'esperienza della schiavitù; Marco Aurelio scrisse dal peso dell'impero. Il Manuale del liberto viaggiò fino alla tenda dell'imperatore.",
-      "180→410": "I Colloqui di Marco Aurelio sopravvissero nei manoscritti greci; Agostino lesse gli stoici ma rifiutò la loro autosufficienza in favore della grazia."
+      "125→180": "Epitteto insegnava a Nicopoli; il suo allievo Arriano compilò i <em>Discorsi</em>. Marco Aurelio li lesse in greco e scrisse le proprie meditazioni nella stessa tradizione — l'imperatore-filosofo completando ciò che il filosofo-schiavo aveva iniziato."
     },
-    "fragmentation": {
-      "1347→1922": "La peste frantumò l'unità medievale — autorità della Chiesa, ordine feudale, stabilità demografica, tutto spezzato in una volta. Sei secoli dopo, il modernismo fece della frammentazione una forma d'arte, frantumando narrazione, pittura e linguaggio con la stessa democratica indifferenza.",
-      "1347→1848": "Cinque secoli di crisi accumulate — peste, Riforma, guerre di religione, industrializzazione — frantumano la restante unità. Nel 1848, la Cristianità si spacca definitivamente lungo linee di classe.",
-      "1848→1922": "Le rivoluzioni fallite frammentano ulteriormente: nazionalismo, socialismo e liberalismo diventano salvezze in competizione. Nel 1922, i pezzi non formano più alcun insieme.",
-      "1922→1968": "La frammentazione letteraria e artistica del Modernismo diventa frammentazione politica. Il flusso di coscienza si frantuma in slogan sui muri; la serie dodecafonica si dissolve sia in rumore che in silenzio.",
-      "1321→1347": "La politica fazionaria che esiliò Dante frammenta le città-stato italiane in fazioni in guerra; la peste arriva a frantumare ciò che resta."
+    "theodicy-crisis": {
+      "180→410": "La peste antonina uccise milioni sotto Marco Aurelio; due secoli dopo, Agostino chiese perché Dio avesse permesso il sacco di Roma. Entrambi i momenti imposero la domanda: se il cosmo è razionale, perché la sofferenza colpisce i virtuosi?",
+      "410→1347": "La <em>Città di Dio</em> di Agostino rispose a una crisi di teodicea; la Peste Nera ne pose un'altra. La cornice della peste nel <em>Decameron</em> di Boccaccio riecheggia il dispositivo agostiniano — il racconto come rifugio dalla catastrofe.",
+      "1347→1755": "La Peste Nera uccise un terzo dell'Europa; il terremoto di Lisbona uccise in pochi minuti. Il <em>Candido</em> di Voltaire derise l'ottimismo leibniziano come la brigata di Boccaccio era fuggita dalla pietà fiorentina — la teodicea che cede sotto il peso dei fatti."
     },
-    "classical-revival": {
-      "-431→125": "Roma assorbì l'arte greca non come imitazione ma come eredità imperiale. Il Partenone esprimeva gli ideali civici dell'Atene democratica attraverso la proporzione matematica; il Pantheon di Adriano tradusse la stessa ambizione matematica — diametro della cupola pari all'altezza, un emisfero perfetto — nel linguaggio dell'universalità imperiale. La trasmissione fu diretta: gli architetti romani studiavano gli edifici greci dal vero, e la Villa Adriana a Tivoli ricreava esplicitamente strutture greche (la Stoà Pecile, la Valle di Tempe). Intanto, le <em>Vite parallele</em> di Plutarco fornivano la cornice intellettuale — esemplari greci e romani a confronto, la tradizione classica intesa come eredità viva piuttosto che come epoca perduta.",
-      "-431→1504": "Questa è l'origine. Quando gli umanisti fiorentini parlavano di recuperare l'antichità classica, intendevano — in ultima istanza — la conquista periclea: la sintesi di proporzione matematica, forma umana idealizzata e scopo civico che Fidia incarnava. Il recupero fu indiretto, filtrato attraverso copie romane e manoscritti bizantini, ma il programma scultoreo del Partenone fissò lo standard rispetto al quale Michelangelo e Leonardo si misuravano. I <em>Commentarii</em> di Ghiberti tracciavano esplicitamente la genealogia artistica fino a Fidia.",
-      "-431→1784": "Le <em>Considerazioni sull'imitazione delle opere greche</em> di Winckelmann (1755) — il testo fondante del Neoclassicismo — sostenevano che l'arte greca raggiungesse una «nobile semplicità e quieta grandezza» perché la società greca aveva raggiunto la libertà. Descriveva, idealizzandola, l'Atene di Pericle. La generazione di David assorbì questa visione direttamente: le virtù repubblicane che dipingevano in vesti classiche erano immaginate come virtù ateniesi e spartane, lette attraverso Plutarco ma aspirando al linguaggio visivo del Partenone.",
-      "125→410": "La cupola in calcestruzzo del Pantheon era ancora la più grande del mondo quando Alarico saccheggiò Roma tre secoli dopo. Ma nel 410, la forma classica veniva assorbita nel contenuto cristiano: Prudenzio scriveva inni in metri oraziani, i mosaici delle chiese prendevano in prestito l'iconografia imperiale, e Agostino leggeva Cicerone e Plotino come preparazione alle Scritture. La Tarda Antichità non rifiutò il classicismo — lo battezzò.",
-      "125→1504": "Il Pantheon sopravvisse alla caduta di Roma perché papa Bonifacio IV lo consacrò come chiesa nel 609. Gli architetti fiorentini lo studiarono ossessivamente: Brunelleschi si recò a Roma per misurarne la cupola prima di progettare la propria per la Cattedrale di Firenze (1420–36), che infine ne superò la luce di 43,3 metri. Le tecniche costruttive romane in calcestruzzo erano andate perdute, ma l'ambizione — e l'edificio fisico — resistettero. L'umanesimo rinascimentale riprese non solo gli ideali greci ma la loro espressione istituzionale romana: le biblioteche, le reti di mecenatismo, l'architettura monumentale che Adriano aveva esemplificato.",
-      "410→1504": "Agostino preservò il sapere classico in una cornice cristiana; senza questa trasmissione, il Rinascimento non avrebbe avuto nulla da far rinascere. La Vulgata di Girolamo standardizzò le Scritture in latino ciceroniano; la poesia cristiana di Prudenzio mantenne la prosodia classica. Quando gli umanisti fiorentini cercarono l'antichità, la trovarono filtrata attraverso i Padri della Chiesa che avevano salvato ciò che altrimenti la caduta di Roma avrebbe distrutto.",
-      "125→1784": "Il Neoclassicismo attinse a Roma più che alla Grecia — perché molto più dell'architettura romana era sopravvissuto. Il Pantheon era l'edificio più studiato d'Europa nel XVIII secolo; il suo portico divenne il modello per istituzioni dal British Museum al Panthéon di Parigi. Quando Winckelmann idealizzava l'arte greca, guardava in gran parte copie romane. Il vocabolario classico di David era un vocabolario classico romano — toghe, fasci, virtù repubblicana — mediato da ciò che la Roma imperiale aveva preservato, costruito e trasmesso.",
-      "1504→1784": "David vinse il Prix de Rome nel 1774 e trascorse cinque anni in Italia studiando Raffaello, Michelangelo e le antichità romane dal vivo. La genealogia è diretta e documentata: gli artisti rinascimentali recuperarono le forme classiche; David le ereditò attraverso il curriculum dell'Académie royale, che rendeva obbligatorio il pellegrinaggio a Roma. Ma dove la Firenze rinascimentale usava l'antichità come linguaggio di bellezza idealizzata, il Neoclassicismo di David — plasmato dagli scritti di Winckelmann sull'arte greca come exemplum morale — volse lo stesso vocabolario classico verso la virtù repubblicana e il dovere politico.",
-      "410→800": "Agostino preservò la retorica romana per fini cristiani; gli scribi di Alcuino preservarono i testi stessi, salvando il sapere classico dai monasteri dove aveva ibernato per quattro secoli.",
-      "800→1504": "I manoscritti copiati dagli scribi carolingi raggiunsero gli umanisti italiani che superarono i loro modelli. Gli architetti di Carlo Magno citavano San Vitale; Leonardo e Michelangelo avrebbero citato Roma direttamente.",
-      "410→529": "Il platonismo cristiano di Agostino sopravvisse alla caduta di Roma; quando Giustiniano chiuse Atene, il neoplatonismo migrò nella teologia bizantina e nel sapere monastico.",
-      "529→800": "I monasteri di Benedetto divennero arche di testi classici; gli studiosi della corte di Carlo Magno, formati in questa tradizione, rianimarono il sapere latino come umanesimo cristiano.",
-      "800→1000": "Gli scribi di Carlo Magno conservarono Virgilio e Cicerone; due secoli dopo, Gerberto li lesse davvero, insegnando retorica classica quando l'Europa aveva dimenticato come si facesse.",
-      "1000→1504": "Il curriculum di Gerberto seminò le scuole cattedrali che avrebbero recuperato Aristotele; cinque secoli di paziente copiatura diedero frutto quando gli artisti rinascimentali rivendicarono l'antica Roma come antenata.",
-      "1000→1453": "Quattro secoli di riscoperta dell'antichità attraverso gli eredi di Carlo Magno, il diritto romano e le traduzioni arabe — poi la caduta di Costantinopoli inonda l'Occidente con gli originali greci.",
-      "1453→1504": "Gli studiosi bizantini disperdono i dialoghi di Platone per l'Italia; entro cinquant'anni, gli artisti fiorentini dipingono filosofia.",
-      "1504→1509": "Cinque anni dal David di Michelangelo alla Scuola di Atene di Raffaello — l'Alto Rinascimento proclama l'antichità rinata nella Roma papale.",
-      "1509→1784": "Dalla sintesi visiva di Raffaello a quella filosofica di Kant — l'antichità come modello cede il passo all'antichità come materiale per la critica.",
-      "1000→1401": "Quattro secoli di copiatura di manoscritti preservarono le forme romane; il concorso fiorentino pretese che rivivessero, messe alla prova nel bronzo.",
-      "1401→1453": "Brunelleschi studiò le rovine romane; le Porte di Ghiberti si aprirono sull'antichità. Gli eruditi bizantini in fuga da Costantinopoli portarono i testi greci a completare il quadro.",
-      "125→180": "L'antologia architettonica di Adriano divenne il vocabolario dell'arte monumentale tardo-antonina; la Colonna di Marco Aurelio trasformò il precedente traianeo.",
-      "180→410": "L'intensità emotiva dello stile antonino prefigurò l'espressionismo tardoantico; le forme classiche persistettero ma il significato si spostò dal civico allo spirituale."
+    "translatio-studii": {
+      "410→529": "Mentre Roma cadeva, i testi greci viaggiarono verso est con gli studiosi cristiani. Nel 529, Giustiniano chiuse l'Accademia, spingendo i filosofi neoplatonici verso la Persia — la prima tappa del viaggio che avrebbe portato Aristotele a Baghdad.",
+      "529→800": "Gli studiosi esiliati dall'Accademia portarono testi in Persia; i cristiani siriaci li tradussero. Quando Alcuino rianimò il sapere alla corte di Carlo Magno, lavorò dalle traduzioni latine di Boezio — il ramo occidentale della stessa trasmissione.",
+      "800→1453": "Alcuino preservò i testi latini sopravvissuti; quando Costantinopoli cadde, gli studiosi bizantini portarono gli originali greci in Occidente. La donazione della biblioteca di Bessarione completò il circuito — il sapere greco che tornava in Italia sei secoli dopo essere partito per Baghdad."
     },
-    "art-and-power": {
-      "-431→1504": "Pericle dirottò il tesoro della Lega di Delo per finanziare il Partenone; Lorenzo de' Medici dirottò i profitti bancari per finanziare il programma artistico di Firenze. In entrambi i casi, il dominio economico fu trasmutato in autorità culturale, e gli oppositori politici dei mecenati contestarono la spesa come illegittima. Fidia fu accusato di appropriazione indebita; i Medici furono esiliati nel 1494. Lo schema — potere espresso attraverso la bellezza, contestato attraverso la contabilità — si ripete lungo due millenni.",
-      "-431→1784": "Il Partenone era arte civica finanziata da tributi imperiali, che legittimava la democrazia ateniese attraverso lo splendore estetico. Il <em>Giuramento degli Orazi</em> di David, commissionato dalla Corona francese, fu sovvertito dal suo creatore in un manifesto repubblicano. Entrambi dimostrano la capacità dell'arte di servire e minare il potere simultaneamente — ma dove l'assemblea democratica di Atene votò i fondi apertamente, il mecenate di David finanziò involontariamente la propria opposizione ideologica.",
-      "1504→1784": "I Medici commissionavano arte per proiettare potere civico e prestigio culturale — il <em>David</em> di Michelangelo era una dichiarazione pubblica della Repubblica fiorentina. Il <em>Giuramento</em> di David fu commissionato dalla Corona (tramite d'Angiviller) come pittura storica moralizzante, ma l'artista sovvertì l'incarico: il pubblico lo lesse come un appello al sacrificio repubblicano contro la monarchia. Il passaggio dal mecenate-autore del Rinascimento all'artista-ideologo dell'Illuminismo è visibile in questa singola commissione — lo stato pagò la propria critica.",
-      "1300→1504": "Giotto dipinse Bonifacio VIII che proclamava il suo trionfo; due secoli dopo, Leonardo e Michelangelo gareggiavano per il Palazzo della Signoria di Firenze. I committenti cambiarono — le repubbliche bancarie sostituirono le corti papali — ma l'arte rimase specchio del potere."
+    "eschatological-anxiety": {
+      "410→1000": "La caduta di Roma sembrò apocalittica ai contemporanei di Agostino; l'avvicinarsi dell'anno Mille rianimò quelle paure. Il 'bianco manto di chiese' fu in parte ringraziamento per un millennio che non finì nel fuoco.",
+      "1000→1453": "Il millennio passò; la caduta di Costantinopoli nel 1453 riaprì ferite escatologiche. Gli studiosi greci in fuga verso Occidente portavano non solo manoscritti ma il trauma della fine di un impero cristiano."
     },
-    "geometry-as-ideology": {
-      "-431→762": "Le correzioni ottiche del Partenone — entasi, curvatura dello stilobate, inclinazione delle colonne — esprimono la convinzione greca che l'ordine matematico sia il fondamento della realtà, e che l'arte umana possa perfezionare ciò che la natura approssima. Tredici secoli dopo, la Città Rotonda di al-Mansur a Baghdad incarnava la stessa convinzione in forma urbana: un cerchio perfetto con la geometria che detta la teologia. Entrambi sono ambienti costruiti che avanzano pretese filosofiche sul cosmo attraverso la proporzione, sebbene i costruttori islamici attingessero a tradizioni persiane e mesopotamiche tanto quanto a quelle greche."
+    "monastic-preservation": {
+      "529→800": "La Regola di Benedetto stabilì il ritmo della copiatura dei manoscritti; Cassiodoro la rese sistematica. Ai tempi di Carlo Magno, i monasteri erano l'infrastruttura della sopravvivenza testuale.",
+      "800→1000": "Gli scriptoria carolingi standardizzarono la minuscola; le riforme cluniacensi diffusero la pratica. Il 'bianco manto di chiese' fu costruito dalle stesse mani che copiavano i testi al loro interno."
     },
-    "cosmopolitanism": {
-      "-431→762": "L'Atene di Pericle attraeva pensatori da tutto il mondo greco — Anassagora da Clazomene in Ionia, Protagora da Abdera in Tracia, Ippodamo da Mileto — e ne sintetizzava le idee in qualcosa di nuovo. La Baghdad di al-Mansur replicò questo schema su scala maggiore: studiosi da Siria, Persia, India e Asia centrale convergevano su una singola città progettata per attrarre e organizzare il sapere. Entrambe le città compresero che il potere intellettuale richiede un apporto cosmopolita — ed entrambe imposero gerarchie politiche che contraddicevano la loro apertura intellettuale."
+    "dialectical-method": {
+      "762→1141": "I Mu'tazila dibattevano teologia con strumenti logici greci; quegli stessi strumenti raggiunsero Parigi attraverso la traduzione arabo-latina. Il <em>Sic et Non</em> di Abelardo è il metodo dialettico applicato alla dottrina cristiana."
     },
-    "renaissance-humanism": {
-      "1504→1517": "Erasmo fu la cerniera. Il suo Nuovo Testamento greco del 1516 diede a Lutero l'arma (<em>metanoeite</em> significa \"pentiti,\" non \"fai penitenza\") e il suo <em>Elogio della follia</em> derideva gli stessi abusi ecclesiastici che Lutero attaccò. L'erudizione rinascimentale rese possibile la Riforma — poi indietreggiò di fronte a ciò che aveva scatenato.",
-      "1517→1543": "Lutero si appella alla Scrittura oltre la tradizione; Vesalio applica lo stesso principio alla carne.",
-      "1453→1504": "I manoscritti greci inondano le biblioteche italiane; nel giro di una generazione, la cerchia di Lorenzo de' Medici trasforma la filosofia in cultura vissuta.",
-      "1504→1509": "L'umanesimo civico fiorentino incontra il mecenatismo papale romano; Leonardo, Michelangelo e Raffaello convergono alla corte di Giulio II.",
-      "1509→1517": "La satira erasmiana della follia clericale prepara il terreno; otto anni dopo, la Riforma di Lutero trasformerà il riso sulla Chiesa nel suo incendio.",
-      "1401→1453": "L'umanesimo civico di Salutati armò Firenze di retorica latina; i suoi discepoli Bruni e Poggio lo portarono alla generazione successiva. Nel 1453, l'umanesimo era arte di governo."
+    "mathematical-cosmos": {
+      "125→762": "La cupola del Pantheon esprimeva la perfezione geometrica in cemento; la Città Rotonda di al-Mansur la esprimeva nella pianificazione urbana. Entrambi costruirono la convinzione che il cosmo fosse matematicamente ordinato.",
+      "762→1543": "Gli astronomi di Baghdad perfezionarono la matematica tolemaica; Copernico usò quei perfezionamenti per rovesciare Tolomeo. Il modello eliocentrico emerse dalla tradizione astronomica islamica.",
+      "1543→1687": "Copernico matematizzò i cieli; Newton matematizzò il moto stesso. La gravitazione universale dei <em>Principia</em> completò ciò che il <em>De Revolutionibus</em> aveva iniziato."
     },
     "scholasticism": {
-      "762→1141": "I traduttori di Baghdad recuperarono Aristotele; il <em>Sic et Non</em> di Abelardo lo mise al lavoro. Il metodo dialettico che Bernardo condannò a Sens era costruito sulle traduzioni arabo-latine che affluivano attraverso Toledo. Quando Abelardo chiese \"dubitando arriviamo all'indagine,\" applicava strumenti forgiati nella Casa della Saggezza.",
-      "1141→1274": "Il metodo di Abelardo, condannato a Sens, divenne lo scheletro della Scolastica. Nel 1274, Tommaso d'Aquino e Bonaventura avevano costruito i due grandi sistemi — l'aristotelismo domenicano e l'agostinismo francescano — su quella fondazione. Quando entrambi morirono a poche settimane l'uno dall'altro, l'età della sintesi morì con loro.",
-      "1141→1347": "Abelardo fu condannato; il suo metodo conquistò. Nel giro di un secolo, la Scolastica dominava le università europee. Ockham, scrivendo poco prima della peste, usò quello stesso rasoio dialettico per recidere le certezze metafisiche — il nominalismo fu la vittoria di Abelardo portata alla sua conclusione logica.",
-      "1141→1517": "Il metodo scolastico che Abelardo inaugurò divenne ortodossia universitaria — e poi il bersaglio. Lutero si formò nella disputa scolastica a Erfurt, poi rivolse gli strumenti contro l'istituzione che glieli aveva insegnati. Il dubbio dialettico che Bernardo temeva a Sens raggiunse il suo punto finale a Wittenberg.",
-      "1274→1347": "L'anno in cui morirono Tommaso d'Aquino e Bonaventura, la Scolastica perse i suoi più grandi sintetizzatori. Nel giro di pochi decenni, il nominalismo emerse per smantellare ciò che avevano costruito. Il rasoio di Ockham recise la fiducia metafisica che la <em>Summa</em> incarnava — poi la Peste Nera rese tale fiducia ingenua.",
-      "1274→1517": "La <em>Summa Theologica</em> di Tommaso d'Aquino rimase incompiuta alla sua morte nel 1274 — il più grande tentativo di conciliare fede e ragione rimasto incompleto. Due secoli dopo, Lutero rifiutò l'intero progetto: non integrando la Scolastica ma abbandonandola per la <em>sola scriptura</em>.",
-      "1141→1215": "Bernardo sconfigge Abelardo, ma il metodo sopravvive: le università istituzionalizzano la disputatio.",
-      "1215→1274": "I domenicani diventano il braccio intellettuale della Chiesa; Alberto Magno recupera Aristotele; Tommaso corona la sintesi scolastica.",
-      "1274→1300": "La sintesi tomista di fede e ragione era appena fredda quando Scoto iniziò a smontarla. L'univocità dell'essere del Dottore Sottile aprì crepe che Ockham avrebbe allargato in voragini.",
-      "1300→1321": "Dante assorbe interamente la sintesi di Tommaso; la Commedia è il coronamento letterario della scolastica, scritta mentre il suo dominio filosofico inizia a declinare."
+      "1141→1215": "Il metodo dialettico di Abelardo sopravvisse alla sua condanna; al Laterano IV, le categorie aristoteliche definivano il dogma. La sintesi scolastica iniziò dalla sconfitta di Sens.",
+      "1215→1274": "Il divieto parigino di Aristotele crollò sotto il proprio peso; Tommaso costruì la <em>Summa</em> sui testi recuperati. L'età d'oro della scolastica fu anche l'ultima.",
+      "1274→1321": "Tommaso morì con la <em>Summa</em> incompiuta; Dante completò il progetto in versi. La <em>Commedia</em> è architettura scolastica fatta poesia."
     },
-    "nominalism": {},
     "gothic-architecture": {
-      "1141→1274": "Il coro di Suger a Saint-Denis (1144) lanciò la rivoluzione gotica. Nel 1274, lo stile si era evoluto nel rayonnant — le pareti dissolte in trafori, la pietra trasformata in luce. Le cattedrali che sorgevano a Reims e Chartres incarnavano la stessa fiducia che Tommaso portò alla filosofia: la ragione poteva illuminare la fede.",
-      "1141→1347": "Il coro di Suger a Saint-Denis (consacrato nel 1144) lanciò l'architettura gotica. Nel 1347, lo stile aveva trasformato lo skyline d'Europa — Chartres, Notre-Dame, il Duomo di Firenze. La peste fermò la costruzione in tutto il continente; quando la ripresa riprese, il Rinascimento si sarebbe rivolto alla rinascita classica.",
-      "1274→1347": "La smaterializzazione della pietra in luce del gotico rayonnant esprimeva la stessa ambizione del XIII secolo della filosofia scolastica: rendere visibile l'invisibile, dimostrare la fede attraverso la struttura. La Peste Nera fermò la costruzione in tutta Europa — e quando i cantieri ripresero, la fiducia che aveva creato quelle vetrate svettanti si era frantumata.",
-      "1141→1215": "Da Sens a Chartres: le volte a crociera e gli archi rampanti si evolvono nella formula gotica classica—i muri si dissolvono in luce.",
-      "1215→1274": "Chartres perfeziona la formula; Notre-Dame si innalza; lo stile Rayonnant spinge le vetrate a altezze impossibili."
-    },
-    "enlightenment": {
-      "1687→1784": "I <em>Principia</em> di Newton dimostrarono che l'universo obbediva a leggi matematiche; il «sapere aude» di Kant esigeva che gli umani applicassero quella fiducia a se stessi. L'Illuminismo è Newton generalizzato — se la gravità si sottomette alla ragione, perché non la morale, la politica, la religione? Kant studiò la fisica newtoniana direttamente e costruì la sua filosofia critica sulle sue fondamenta.",
-      "1687→1755": "Il cosmo di Newton funzionava secondo leggi matematiche; Lisbona si chiese se quelle leggi lasciassero spazio alla giustizia.",
-      "1755→1784": "La distruzione di Lisbona frantumò l'ottimismo; il 'Sapere aude' di Kant ricostruì la ragione su fondamenta più umili — i limiti umani, non le garanzie cosmiche."
+      "1141→1215": "Saint-Denis di Suger inventò la luminosità gotica; nel 1215, Chartres la perfezionò. Lo stile si diffuse veloce come il metodo scolastico.",
+      "1215→1274": "Le vetrate di Chartres insegnavano teologia in vetro; la stessa logica geometrica strutturava la <em>Summa</em>. Gotico e scolastica erano espressioni gemelle della stessa fiducia."
     },
     "vernacular-literature": {
-      "1141→1347": "Abelardo ed Eloisa si scambiarono lettere in latino, ma la loro storia si diffuse in volgare. Due secoli dopo, Boccaccio scrisse il <em>Decameron</em> in toscano — sopravvissuti alla peste che raccontano storie nella lingua della strada, non del chiostro. Il passaggio dal latino al volgare fu anche un passaggio di pubblico: dal clero ai mercanti, dalle verità eterne ai piaceri mortali.",
-      "1141→1274": "Abelardo ed Eloisa scrissero in latino, ma la loro leggenda si diffuse in volgare. Nel 1274, Dante aveva nove anni a Firenze, prossimo a vedere Beatrice — l'incontro che avrebbe prodotto la <em>Vita Nuova</em> e infine la <em>Commedia</em>, l'opera che fece dell'italiano una lingua letteraria. La tradizione trobadorica aveva già un secolo, con la poesia dell'amor cortese che circolava in occitano e francese antico.",
-      "1274→1347": "Dante vide Beatrice l'anno della morte di Tommaso; nel 1347, quando arrivò la peste, il <em>Decameron</em> sarebbe stato scritto in risposta. La traiettoria è chiara: dalla scolastica latina alla narrativa italiana, dalla sintesi divina alla sopravvivenza umana. La prosa toscana di Boccaccio discende direttamente dagli esperimenti di Dante.",
-      "1141→1215": "La Chanson de Roland cede il passo al romanzo cortese; Chrétien de Troyes inventa la narrativa arturiana; i poeti tedeschi raggiungono la maturità classica.",
-      "1215→1274": "Gli ideali cortesi attraversano le Alpi; Dante inizia a sognare Beatrice; il Roman de la Rose dibatte la natura dell'amore per generazioni.",
-      "1274→1300": "Il volgare aveva dimostrato di poter reggere la teologia con la morte di Tommaso. Ora Dante avrebbe dimostrato che poteva contenere un cosmo — ambientando il suo viaggio nell'anno del Giubileo, quando il latino rivendicava ancora il monopolio sul sacro.",
-      "1300→1347": "Dante ambientò la Commedia nell'anno del Giubileo; Boccaccio ambientò il Decameron nell'anno della peste. Il volgare si diplomò dal pellegrinaggio alla pestilenza, dalla salvezza alla sopravvivenza.",
-      "1300→1321": "I pellegrini del Giubileo di Dante parlano dialetti, non latino; la sua Commedia darà loro una letteratura nella lingua che realmente usano.",
-      "1321→1347": "La rivendicazione dantesca del toscano apre le porte; Petrarca e Boccaccio costruiranno direttamente sulle sue fondamenta mentre la peste trasforma il loro mondo.",
-      "1347→1401": "Boccaccio scrisse il Decameron in italiano mentre la peste infuriava; i pellegrini inglesi di Chaucer seguirono. Il volgare dimostrò di poter portare tutto—satira, tragedia, filosofia—senza la benedizione del latino."
+      "1215→1274": "Il Quarto Concilio Lateranense richiese la confessione in volgare; i poeti seguirono. Tommaso scriveva in latino, ma il <em>Roman de la Rose</em> iniziò l'anno prima della sua morte.",
+      "1274→1300": "Mentre la scolastica raggiungeva l'apice, la poesia volgare maturava. La <em>Vita Nuova</em> di Dante apparve negli anni 1290.",
+      "1300→1321": "Giotto dipinse ciò che Dante scrisse: il volto umano della divina commedia. Entrambi usarono mezzi volgari per raccontare storie sacre.",
+      "1321→1347": "Dante dimostrò che il toscano poteva sostenere il peso della teologia; Boccaccio dimostrò che poteva portare licenziosità e dolore."
     },
-    "baroque": {
-      "1600→1648": "Il tenebrismo di Caravaggio si diffonde in Europa attraverso i suoi imitatori; a Westfalia, il Barocco è diventato il linguaggio visivo del potere cattolico e protestante."
+    "renaissance-humanism": {
+      "1401→1453": "Gli umanisti fiorentini raccoglievano manoscritti prima del 1453; l'esodo greco accelerò ciò che Salutati e Bruni avevano iniziato.",
+      "1453→1504": "Ficino tradusse Platone dai manoscritti portati dai rifugiati; il suo neoplatonismo plasmò la visione di Michelangelo.",
+      "1504→1509": "Leonardo e Michelangelo gareggiarono a Firenze; Raffaello sintetizzò le loro innovazioni a Roma. La <em>Scuola di Atene</em> è l'autoritratto dell'umanesimo.",
+      "1509→1517": "Erasmo derise la scolastica mentre Lutero la fece esplodere. Entrambi erano umanisti; entrambi usarono la stampa; divergevano su ciò che la Scrittura richiedeva."
+    },
+    "art-and-power": {
+      "1300→1504": "Giotto lavorò per francescani e banchieri Bardi; Michelangelo lavorò per Medici e papi. Due secoli trasformarono il mecenatismo da devozionale a dinastico.",
+      "1504→1784": "Il <em>David</em> di Michelangelo era propaganda civica; il <em>Giuramento degli Orazi</em> di David era propaganda rivoluzionaria."
+    },
+    "proto-renaissance": {
+      "1300→1321": "Gli affreschi della Cappella Bardi di Giotto raffiguravano il dolore con naturalismo senza precedenti; l'<em>Inferno</em> di Dante raffigurava peccatori con individualità senza precedenti."
     },
     "neoplatonism": {
-      "529→1504": "I filosofi in fuga seminarono la falsafa islamica; le traduzioni arabe tornarono in latino attraverso Toledo e Palermo, accendendo il platonismo fiorentino del Rinascimento."
-    },
-    "scientific-revolution": {
-      "1543→1687": "Vesalio insegna l'anatomia attraverso l'osservazione; Newton formalizza il metodo in legge matematica."
-    },
-    "empiricism": {
-      "1543→1687": "Vesalio seziona per verificare; ai tempi di Newton, sperimentazione e misurazione sono diventate l'arbitro della filosofia."
-    },
-    "carolingian-renaissance": {
-      "800→1000": "La scuola di Alcuino ad Aquisgrana formò i maestri che formarono Gerberto; il curriculum carolingio sopravvisse nelle biblioteche monastiche che il rinascimento ottoniano avrebbe dischiuso."
+      "529→1504": "Quando Giustiniano chiuse l'Accademia, il neoplatonismo andò sottoterra; quando Ficino aprì la sua, riemerse trasformato."
     },
     "printing-revolution": {
-      "1509→1517": "L'Elogio di Erasmo si diffonde attraverso la stampa, deridendo la corruzione clericale; otto anni dopo, le tesi di Lutero usano la stessa tecnologia per frantumare la Chiesa."
+      "1509→1517": "L'<em>Elogio della Follia</em> di Erasmo circolò in edizioni stampate; le tesi di Lutero si diffusero più velocemente di qualsiasi protesta medievale."
+    },
+    "baroque": {
+      "1600→1648": "Il tenebrismo di Caravaggio drammatizzava la pietà controriformista; quello di Rembrandt usava la stessa tecnica per l'interiorità protestante."
+    },
+    "empiricism": {
+      "1543→1687": "Vesalio si fidava della dissezione più che di Galeno; Newton si fidava della matematica più che della tradizione."
+    },
+    "scientific-revolution": {
+      "1543→1687": "Copernico riposizionò la Terra; Newton spiegò perché restava in orbita."
+    },
+    "enlightenment": {
+      "1687→1755": "I <em>Principia</em> di Newton dimostrarono che il cosmo era regolato da leggi; il terremoto di Lisbona chiese se fosse giusto.",
+      "1755→1784": "Lisbona frantumò l'ottimismo leibniziano; Kant ricostruì la ragione su fondamenta critiche."
+    },
+    "critical-philosophy": {
+      "1755→1784": "Il terremoto costrinse Kant a riconsiderare la teologia naturale; tre decenni dopo, le sue Critiche limitarono ciò che la ragione poteva pretendere."
+    },
+    "antiquarian-recovery": {
+      "1401→1509": "Brunelleschi studiò le rovine romane per segreti ingegneristici; Raffaello dipinse la filosofia recuperata."
+    },
+    "artistic-competition": {
+      "1401→1504": "Brunelleschi e Ghiberti gareggiarono per le porte del Battistero; Leonardo e Michelangelo gareggiarono per la parete di Palazzo Vecchio."
+    },
+    "carolingian-renaissance": {
+      "800→1000": "Alcuino standardizzò scrittura e curriculum; Gerberto aggiunse la matematica. Il progetto carolingio sopravvisse ai Carolingi."
+    },
+    "fragmentation": {
+      "1848→1922": "Le rivoluzioni del 1848 frantumarono imperi e ideologie; nel 1922, la <em>Terra desolata</em> di Eliot fece dei frammenti una forma letteraria.",
+      "1922→1968": "La frammentazione modernista era esperimento formale; quella del 1968 era programma politico."
     }
   }
 }
