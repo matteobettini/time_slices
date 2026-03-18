@@ -270,15 +270,25 @@ def select_voice(provider, lang, force_voice=None):
     
     Returns: (voice_id_or_name, display_name)
     """
-    if force_voice:
-        return force_voice, force_voice
-    
     if provider == "elevenlabs":
         pool = ELEVENLABS_VOICES_EN if lang == "en" else ELEVENLABS_VOICES_IT
+        
+        if force_voice:
+            # Look up voice ID by name (case-insensitive)
+            for voice_id, name, _ in pool:
+                if name.lower() == force_voice.lower():
+                    return voice_id, name
+            # If not found, assume it's a voice ID
+            return force_voice, force_voice
+        
         voice_id, name, _ = random.choice(pool)
         return voice_id, name
     else:
         pool = EDGE_VOICES_EN if lang == "en" else EDGE_VOICES_IT
+        
+        if force_voice:
+            return force_voice, force_voice
+            
         voice_name, _ = random.choice(pool)
         return voice_name, voice_name
 
@@ -501,9 +511,18 @@ def mix_audio(narration_path, music_path, output_path, narration_duration, start
         f"volume=enable='between(t,{intro_duration},{voice_end_time})':volume=0.57,"
         f"afade=t=out:st={total_duration - 2.5}:d=2.5"
         f"[music];"
-        # Process voice: normalize loudness, then compress to even out quiet/loud passages
+        # Process voice: 
+        # 1. loudnorm for overall level targeting -14 LUFS
+        # 2. dynaudnorm evens out sentence-to-sentence volume differences (critical for ElevenLabs)
+        #    - framelen=150 (150ms window) catches phrase-level variations
+        #    - gausssize=7 smooths transitions
+        #    - maxgain=8 prevents over-amplification of silence
+        # 3. acompressor catches remaining peaks
+        # 4. alimiter as final safety net
         f"[0:a]loudnorm=I=-14:TP=-1.5:LRA=7,"
+        f"dynaudnorm=framelen=150:gausssize=7:maxgain=8:targetrms=0.3,"
         f"acompressor=threshold=-20dB:ratio=4:attack=5:release=50:makeup=2,"
+        f"alimiter=limit=0.95:level=1,"
         f"adelay={voice_start_ms}|{voice_start_ms}[voice];"
         f"[music][voice]amix=inputs=2:duration=longest:dropout_transition=2:normalize=0[mixed];"
         f"[mixed]loudnorm=I=-16:TP=-1.5:LRA=11[out]"
