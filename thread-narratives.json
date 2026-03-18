@@ -25,7 +25,8 @@
       "1300→1321": "Dante's exile from Florence coincides with Boniface VIII's overreach; the poet who witnessed the Jubilee now damns popes in verse.",
       "1321→1347": "Dante's placement of popes in Hell anticipates the coming catastrophe; within a generation, the Black Death will shake faith in divine providence.",
       "1347→1401": "The Black Death had killed one pope in Avignon; the Schism now split the survivors between two. Divine order fractured into political choice.",
-      "1401→1453": "Councils deposed popes; Gerson's conciliarism made authority negotiable. When Constantinople fell, Nicholas of Cusa proposed one religion in many rites—divine truth through pluralism, not decree."
+      "1401→1453": "Councils deposed popes; Gerson's conciliarism made authority negotiable. When Constantinople fell, Nicholas of Cusa proposed one religion in many rites—divine truth through pluralism, not decree.",
+      "180→410": "The Antonine Plague shook confidence in the old gods; two centuries later, Alaric's sack completed the theological crisis Augustine would answer."
     },
     "rationalism": {
       "-431→125": "Anaxagoras argued that a rational principle (<em>Nous</em>) governed the cosmos rather than the caprice of gods. Five centuries later, the Stoics — working from this same Greek rationalist tradition, filtered through Aristotle and the early Stoa — taught that the universe was structured by <em>logos</em>, a rational order accessible to human reason. Epictetus, teaching in Nicopolis around 125 CE, inherited this lineage directly: Stoicism emerged from the Athenian philosophical milieu that Anaxagoras helped create, passed through Zeno of Citium (who studied at Plato's Academy) and Chrysippus. The Pantheon's mathematical perfection — its dome a geometrically exact hemisphere — is this rationalist conviction expressed in built form.",
@@ -61,7 +62,9 @@
       "1453→1509": "Greek scholars flee Constantinople with manuscripts; fifty-six years later, Raphael paints their philosophy as the foundation of all learning.",
       "1509→1543": "Raphael's School of Athens celebrates ancient knowledge recovered; thirty-four years later, Copernicus and Vesalius prove the ancients were wrong about the cosmos and the body.",
       "1141→1215": "Abelard's defeat at Sens only slowed the dialecticians; by Lateran IV, Aristotelian terminology defines dogma itself.",
-      "1215→1274": "The Paris ban on Aristotle collapses; Aquinas synthesizes faith and reason in the Summa, only to die before completing it."
+      "1215→1274": "The Paris ban on Aristotle collapses; Aquinas synthesizes faith and reason in the Summa, only to die before completing it.",
+      "125→180": "Galen systematised medicine with philosophical rigour learned from Second Sophistic culture; Marcus Aurelius applied Stoic logic to imperial governance.",
+      "180→529": "Galen's medical texts and Stoic logic travelled to Byzantine schools; Justinian codified Roman law while closing the Academy."
     },
     "modernity": {
       "1648→1687": "Westphalia resolved religious conflict through sovereignty; Newton resolved cosmological conflict through mathematics. Both substituted divine authority with systems humans could operate. The modern world's dual foundations — the nation-state and mathematical physics — were laid within four decades.",
@@ -71,7 +74,9 @@
       "1819→1968": "Schopenhauer's pessimism about progress finds its children. A century and a half later, the young inherit a world their parents called progress and see spectacle, alienation, war without end. Modernity turns on itself."
     },
     "stoicism": {
-      "125→410": "Epictetus taught that the wise person focuses only on what lies within their control — the inner citadel remains free even when empires burn. Augustine absorbed this Stoic insight through Cicero and transformed it: the Christian soul is the inner citadel, and Rome's fall cannot threaten what was never truly ours. The <em>City of God</em> is Stoic detachment theologised."
+      "125→410": "Epictetus taught that the wise person focuses only on what lies within their control — the inner citadel remains free even when empires burn. Augustine absorbed this Stoic insight through Cicero and transformed it: the Christian soul is the inner citadel, and Rome's fall cannot threaten what was never truly ours. The <em>City of God</em> is Stoic detachment theologised.",
+      "125→180": "Epictetus taught from experience of slavery; Marcus Aurelius wrote from the weight of empire. The freedman's Handbook travelled to the emperor's tent.",
+      "180→410": "Marcus Aurelius's Meditations survived in Greek manuscripts; Augustine read the Stoics but rejected their self-sufficiency for grace."
     },
     "fragmentation": {
       "1347→1922": "The plague shattered medieval unity — Church authority, feudal order, demographic stability, all broken at once. Six centuries later, modernism made fragmentation into an art form, shattering narrative, painting, and language with the same democratic indifference.",
@@ -100,7 +105,9 @@
       "1504→1509": "Five years from Michelangelo's David to Raphael's School of Athens — the High Renaissance declares antiquity reborn in papal Rome.",
       "1509→1784": "From Raphael's visual synthesis to Kant's philosophical one — antiquity as model gives way to antiquity as material for critique.",
       "1000→1401": "Four centuries of manuscript copying preserved Roman forms; the Florentine competition demanded they live again, tested in bronze.",
-      "1401→1453": "Brunelleschi studied Roman ruins; Ghiberti's Gates opened onto antiquity. The Byzantine scholars fleeing Constantinople brought the Greek texts to match."
+      "1401→1453": "Brunelleschi studied Roman ruins; Ghiberti's Gates opened onto antiquity. The Byzantine scholars fleeing Constantinople brought the Greek texts to match.",
+      "125→180": "Hadrian's architectural anthology became the vocabulary of late Antonine monumental art; the Column of Marcus Aurelius transformed Trajanic precedent.",
+      "180→410": "The Antonine style's emotional intensity foreshadowed Late Antique expressionism; classical forms persisted but meaning shifted from civic to spiritual."
     },
     "art-and-power": {
       "-431→1504": "Pericles diverted the Delian League treasury to fund the Parthenon; Lorenzo de' Medici diverted bank profits to fund Florence's artistic programme. In both cases, economic dominance was transmuted into cultural authority, and the patrons' political opponents attacked the expenditure as illegitimate. Phidias was charged with embezzlement; the Medici were exiled in 1494. The pattern — power expressed through beauty, challenged through accounting — repeats across two millennia.",
@@ -204,7 +211,8 @@
       "1300→1321": "L'esilio di Dante da Firenze coincide con l'arroganza di Bonifacio VIII; il poeta che assistette al Giubileo ora danna i papi in versi.",
       "1321→1347": "La collocazione dantesca dei papi all'Inferno anticipa la catastrofe imminente; entro una generazione la Peste Nera scuoterà la fede nella provvidenza divina.",
       "1347→1401": "La Peste Nera aveva ucciso un papa ad Avignone; lo Scisma ora divideva i sopravvissuti tra due. L'ordine divino si frantumò in scelta politica.",
-      "1401→1453": "I concili deposero papi; il conciliarismo di Gerson rese l'autorità negoziabile. Quando cadde Costantinopoli, Nicola Cusano propose una religione in molti riti—verità divina attraverso il pluralismo, non il decreto."
+      "1401→1453": "I concili deposero papi; il conciliarismo di Gerson rese l'autorità negoziabile. Quando cadde Costantinopoli, Nicola Cusano propose una religione in molti riti—verità divina attraverso il pluralismo, non il decreto.",
+      "180→410": "La peste antonina scosse la fiducia negli antichi dèi; due secoli dopo, il sacco di Alarico completò la crisi teologica a cui Agostino avrebbe risposto."
     },
     "rationalism": {
       "-431→125": "Anassagora sosteneva che un principio razionale (<em>Nous</em>) governasse il cosmo piuttosto che il capriccio degli dei. Cinque secoli dopo, gli Stoici — partendo dalla stessa tradizione razionalista greca, filtrata attraverso Aristotele e la prima Stoa — insegnavano che l'universo era strutturato dal <em>logos</em>, un ordine razionale accessibile alla ragione umana. Epitteto, che insegnava a Nicopoli intorno al 125 d.C., ereditava direttamente questa genealogia: lo stoicismo emerse dall'ambiente filosofico ateniese che Anassagora contribuì a creare, passando attraverso Zenone di Cizio (che studiò all'Accademia di Platone) e Crisippo. La perfezione matematica del Pantheon — la cupola come emisfero geometricamente esatto — è questa convinzione razionalista espressa in forma costruita.",
@@ -240,7 +248,9 @@
       "1453→1509": "Gli studiosi greci fuggono da Costantinopoli con i manoscritti; cinquantasei anni dopo, Raffaello dipinge la loro filosofia come fondamento di tutto il sapere.",
       "1509→1543": "La Scuola di Atene di Raffaello celebra la conoscenza antica recuperata; trentaquattro anni dopo, Copernico e Vesalio dimostrano che gli antichi sbagliavano sul cosmo e sul corpo.",
       "1141→1215": "La sconfitta di Abelardo a Sens rallentò solo i dialettici; al Laterano IV, la terminologia aristotelica definisce il dogma stesso.",
-      "1215→1274": "Il bando parigino su Aristotele crolla; Tommaso d'Aquino sintetizza fede e ragione nella Summa, per morire prima di completarla."
+      "1215→1274": "Il bando parigino su Aristotele crolla; Tommaso d'Aquino sintetizza fede e ragione nella Summa, per morire prima di completarla.",
+      "125→180": "Galeno sistematizzò la medicina con rigore filosofico appreso dalla cultura della Seconda Sofistica; Marco Aurelio applicò la logica stoica alla governance imperiale.",
+      "180→529": "I testi medici di Galeno e la logica stoica viaggiarono alle scuole bizantine; Giustiniano codificò il diritto romano mentre chiudeva l'Accademia."
     },
     "modernity": {
       "1648→1687": "Vestfalia risolse il conflitto religioso attraverso la sovranità; Newton risolse il conflitto cosmologico attraverso la matematica. Entrambi sostituirono l'autorità divina con sistemi che gli umani potevano gestire. Le doppie fondamenta del mondo moderno — lo Stato-nazione e la fisica matematica — furono gettate nel giro di quattro decenni.",
@@ -250,7 +260,9 @@
       "1819→1968": "Il pessimismo di Schopenhauer sul progresso trova i suoi figli. Un secolo e mezzo dopo, i giovani ereditano un mondo che i loro genitori chiamavano progresso e vedono spettacolo, alienazione, guerra senza fine. La modernità si rivolta contro se stessa."
     },
     "stoicism": {
-      "125→410": "Epitteto insegnava che il saggio si concentra solo su ciò che è in suo controllo — la cittadella interiore rimane libera anche quando gli imperi bruciano. Agostino assorbì questa intuizione stoica attraverso Cicerone e la trasformò: l'anima cristiana è la cittadella interiore, e la caduta di Roma non può minacciare ciò che non è mai stato veramente nostro. La <em>Città di Dio</em> è il distacco stoico teologizzato."
+      "125→410": "Epitteto insegnava che il saggio si concentra solo su ciò che è in suo controllo — la cittadella interiore rimane libera anche quando gli imperi bruciano. Agostino assorbì questa intuizione stoica attraverso Cicerone e la trasformò: l'anima cristiana è la cittadella interiore, e la caduta di Roma non può minacciare ciò che non è mai stato veramente nostro. La <em>Città di Dio</em> è il distacco stoico teologizzato.",
+      "125→180": "Epitteto insegnò dall'esperienza della schiavitù; Marco Aurelio scrisse dal peso dell'impero. Il Manuale del liberto viaggiò fino alla tenda dell'imperatore.",
+      "180→410": "I Colloqui di Marco Aurelio sopravvissero nei manoscritti greci; Agostino lesse gli stoici ma rifiutò la loro autosufficienza in favore della grazia."
     },
     "fragmentation": {
       "1347→1922": "La peste frantumò l'unità medievale — autorità della Chiesa, ordine feudale, stabilità demografica, tutto spezzato in una volta. Sei secoli dopo, il modernismo fece della frammentazione una forma d'arte, frantumando narrazione, pittura e linguaggio con la stessa democratica indifferenza.",
@@ -279,7 +291,9 @@
       "1504→1509": "Cinque anni dal David di Michelangelo alla Scuola di Atene di Raffaello — l'Alto Rinascimento proclama l'antichità rinata nella Roma papale.",
       "1509→1784": "Dalla sintesi visiva di Raffaello a quella filosofica di Kant — l'antichità come modello cede il passo all'antichità come materiale per la critica.",
       "1000→1401": "Quattro secoli di copiatura di manoscritti preservarono le forme romane; il concorso fiorentino pretese che rivivessero, messe alla prova nel bronzo.",
-      "1401→1453": "Brunelleschi studiò le rovine romane; le Porte di Ghiberti si aprirono sull'antichità. Gli eruditi bizantini in fuga da Costantinopoli portarono i testi greci a completare il quadro."
+      "1401→1453": "Brunelleschi studiò le rovine romane; le Porte di Ghiberti si aprirono sull'antichità. Gli eruditi bizantini in fuga da Costantinopoli portarono i testi greci a completare il quadro.",
+      "125→180": "L'antologia architettonica di Adriano divenne il vocabolario dell'arte monumentale tardo-antonina; la Colonna di Marco Aurelio trasformò il precedente traianeo.",
+      "180→410": "L'intensità emotiva dello stile antonino prefigurò l'espressionismo tardoantico; le forme classiche persistettero ma il significato si spostò dal civico allo spirituale."
     },
     "art-and-power": {
       "-431→1504": "Pericle dirottò il tesoro della Lega di Delo per finanziare il Partenone; Lorenzo de' Medici dirottò i profitti bancari per finanziare il programma artistico di Firenze. In entrambi i casi, il dominio economico fu trasmutato in autorità culturale, e gli oppositori politici dei mecenati contestarono la spesa come illegittima. Fidia fu accusato di appropriazione indebita; i Medici furono esiliati nel 1494. Lo schema — potere espresso attraverso la bellezza, contestato attraverso la contabilità — si ripete lungo due millenni.",

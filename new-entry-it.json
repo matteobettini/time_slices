@@ -1,0 +1,50 @@
+{
+  "year": "180",
+  "id": "180-rome-last-of-the-stoics",
+  "title": "Roma — L'ultimo degli stoici",
+  "teaser": "L'imperatore filosofo muore sulla frontiera. Il suo diario privato diventa il testo più grande dello stoicismo, mentre una pestilenza riscrive il futuro dell'impero. Suo figlio pone fine all'età dell'oro in dodici mesi.",
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "La <strong>Colonna di Marco Aurelio</strong>, iniziata intorno al 176 d.C. e completata dopo la sua morte, si erge a Roma come un racconto a spirale alto 30 metri delle guerre marcomanniche. Il pannello più straordinario raffigura il <strong>Miracolo della pioggia</strong>: Giove Pluvio, un dio barbuto con le braccia protese, invia torrenti per salvare le truppe romane assetate mentre i fulmini distruggono i nemici. Lo stile dell'intaglio segna un distacco dalla Colonna Traiana — le figure sono più tozze, le emozioni più visibili, il nemico ritratto con brutale intensità. È l'<strong>arte antonina</strong> che si muove verso l'espressionismo: meno interessata alle proporzioni classiche che alla forza psicologica. Nel frattempo, i <strong>sarcofagi con scene di battaglia</strong> si moltiplicano tra l'élite, i loro caotici rilievi di combattimento sostituiscono le serene scene mitologiche delle generazioni precedenti."
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "<strong>Apuleio</strong> ha recentemente completato <em>Le metamorfosi</em> (anni 170 circa) — l'unico romanzo latino sopravvissuto integro dall'antichità. Il suo narratore, trasformato in asino, inciampa in un mondo picaresco di streghe, briganti e adulteri prima della redenzione attraverso la dea Iside. È letteratura come metamorfosi, sacro e profano inseparabilmente mescolati. Nell'oriente greco, <strong>Luciano di Samosata</strong> scrive dialoghi satirici che scherniscono filosofia, religione e soprannaturale — la sua <em>Storia vera</em>, con viaggi sulla luna e guerre tra popoli celesti, è forse la prima fantascienza della storia. Entrambi gli scrittori condividono un'ironia disincantata: la brillantezza retorica della <strong>Seconda Sofistica</strong> rivolta all'intrattenimento e alla sovversione piuttosto che alla fede sincera."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "<strong>Marco Aurelio</strong> compone gli ultimi libri dei suoi <em>Colloqui con se stesso</em> in un accampamento militare sulla frontiera del Danubio — appunti privati scritti in greco, mai destinati alla pubblicazione. Il Libro X si apre: <em>\"Quanto è insignificante ogni cosa — sabbia nell'universo, un attimo nell'eternità.\"</em> È lo <strong>stoicismo tardivo</strong> alla massima intensità: l'uomo più potente del mondo che si ricorda che il potere è illusione, che solo i suoi giudizi gli appartengono, che la morte è solo trasformazione. <strong>Galeno</strong>, medico personale dell'imperatore, pratica una medicina fondata sul rigore filosofico, sintetizzando la tradizione ippocratica con concetti stoici e platonici. La filosofia non è più un dibattito scolastico ma una disciplina per sopravvivere all'impero, alla peste e alla mortalità."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "Il <strong>17 marzo 180 d.C.</strong>, Marco Aurelio muore a Vindobona (o Sirmio) — probabilmente a causa della <strong>peste antonina</strong> che ha ucciso forse cinque milioni di persone nell'impero dal 165. L'ultimo dei <strong>Cinque buoni imperatori</strong> trasmette il potere non a un successore capace adottato ma al figlio biologico, <strong>Commodo</strong>. Nel giro di pochi mesi, Commodo abbandona le guerre di frontiera che suo padre aveva condotto per un decennio, torna precipitosamente a Roma e inizia un regno di esibizionismo gladiatorio, epurazioni paranoiche e megalomania che terminerà con il suo assassinio nel 192. La <strong>Pax Romana</strong> finisce di fatto qui: la peste ha già decimato le legioni e il tesoro; l'incompetenza di Commodo accelera il declino."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "La peste attraversa tutto. Marco Aurelio compone le sue meditazioni più urgenti mentre i soldati muoiono di malattia intorno a lui — lo stoicismo diventa non teoria astratta ma tecnica di sopravvivenza per la morte di massa. Galeno fugge da Roma durante la prima ondata della peste (166), ritorna per ordine dell'imperatore e documenta i sintomi con distacco filosofico. Il pannello del Miracolo della pioggia sulla Colonna mostra l'intervento divino che salva le truppe — ma i cristiani in seguito sostennero che la preghiera fosse cristiana, non pagana: i sistemi di credenze competono per spiegare la catastrofe. <em>Le metamorfosi</em> di Apuleio terminano con la salvezza religiosa attraverso i misteri isiaci, parte di una più ampia ricerca spirituale intensificata dalla peste. Arte, letteratura, filosofia e politica si piegano tutte sotto lo stesso peso: <strong>come trovare significato quando l'impero si ammala</strong>.",
+      "funFact": "Marco Aurelio non diede mai un titolo ai suoi pensieri — la tradizione manoscritta greca li chiama 'A se stesso' (Ta eis heauton). Li scrisse come terapia privata, non per i lettori. È il diario più influente della storia."
+    }
+  },
+  "sources": [
+    {"url": "https://it.wikipedia.org/wiki/Marco_Aurelio", "title": "Marco Aurelio – Wikipedia"},
+    {"url": "https://it.wikipedia.org/wiki/Colloqui_con_se_stesso", "title": "Colloqui con se stesso – Wikipedia"},
+    {"url": "https://it.wikipedia.org/wiki/Peste_antonina", "title": "Peste antonina – Wikipedia"},
+    {"url": "https://it.wikipedia.org/wiki/Colonna_di_Marco_Aurelio", "title": "Colonna di Marco Aurelio – Wikipedia"},
+    {"url": "https://plato.stanford.edu/entries/galen/", "title": "Galeno – Stanford Encyclopedia of Philosophy"}
+  ],
+  "image": {
+    "url": "images/180-rome-last-of-the-stoics.jpg",
+    "caption": "Il Miracolo della pioggia sulla Colonna di Marco Aurelio, che mostra Giove Pluvio che salva le truppe romane con una tempesta improvvisa durante le guerre marcomanniche",
+    "width": 1200,
+    "height": 800,
+    "attribution": "Foto di Barosaurus Lentus, CC BY 3.0, via Wikimedia Commons"
+  },
+  "threads": ["stoicism", "rationalism", "death-of-god", "classical-revival"],
+  "location": {
+    "lat": 41.9009,
+    "lon": 12.4802,
+    "place": "Roma"
+  },
+  "addedDate": "2026-03-18T06:00:00Z"
+}

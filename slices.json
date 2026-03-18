@@ -2086,5 +2086,79 @@
       "url": "audio/1401-florence-competition-that-began-renaissance.mp3",
       "duration": 227
     }
+  },
+  {
+    "year": "180",
+    "id": "180-rome-last-of-the-stoics",
+    "title": "Rome — The Last of the Stoics",
+    "teaser": "The philosopher-emperor dies on the frontier. His private journal becomes Stoicism's greatest text, while a plague rewrites the empire's future. His son ends the golden age in twelve months.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "The <strong>Column of Marcus Aurelius</strong>, begun around 176 CE and completed after his death, rises in Rome as a 30-metre spiral narrative of the Marcomannic Wars. Its most extraordinary panel depicts the <strong>Rain Miracle</strong>: Jupiter Pluvius, a bearded rain god with arms outstretched, sends torrents to save parched Roman troops while lightning destroys their enemies. The carving style marks a shift from Trajan's Column — figures are stockier, emotions more visible, the enemy portrayed with brutal intensity. This is <strong>Antonine art</strong> moving toward expressionism: less interested in classical proportion than in psychological force. Meanwhile, <strong>battle sarcophagi</strong> proliferate among the elite, their chaotic reliefs of combat replacing the serene mythological scenes of earlier generations. Death is no longer idealised but dramatised."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Apuleius</strong> has recently completed <em>The Golden Ass</em> (c. 170s) — the only Latin novel to survive intact from antiquity. Its narrator, transformed into a donkey, stumbles through a picaresque world of witches, bandits, and adulterers before redemption through the goddess Isis. It's literature as metamorphosis, sacred and profane inseparably mixed. In the Greek east, <strong>Lucian of Samosata</strong> writes satirical dialogues mocking philosophy, religion, and the supernatural — his <em>True History</em>, featuring voyages to the moon and wars between celestial peoples, is arguably history's first science fiction. Both writers share a world-weary irony: the <strong>Second Sophistic's</strong> rhetorical brilliance turned toward entertainment and subversion rather than earnest belief."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Marcus Aurelius</strong> composes the final books of his <em>Meditations</em> in a military camp on the Danube frontier — private notes to himself, written in Greek, never meant for publication. Book X opens: <em>\"How worthless is everything — sand in the universe, a moment in eternity.\"</em> This is <strong>late Stoicism</strong> at maximum intensity: the world's most powerful man reminding himself that power is illusion, that only his judgments are his own, that death is merely transformation. <strong>Galen</strong>, the emperor's personal physician, practises medicine grounded in philosophical rigour, synthesising Hippocratic tradition with Stoic and Platonic concepts. Philosophy is no longer a school debate but a discipline for surviving empire, plague, and mortality."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>17 March 180 CE</strong>, Marcus Aurelius dies at Vindobona (or Sirmium) — probably from the <strong>Antonine Plague</strong> that has killed perhaps five million across the empire since 165. The last of the <strong>Five Good Emperors</strong> passes power not to an adopted capable successor but to his biological son, <strong>Commodus</strong>. Within months, Commodus abandons the frontier wars his father prosecuted for a decade, rushes back to Rome, and begins a reign of gladiatorial exhibitionism, paranoid purges, and megalomania that will end in his assassination in 192. The <strong>Pax Romana</strong> effectively ends here: the plague has already depleted the legions and the treasury; Commodus's incompetence accelerates the decline."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The plague threads through everything. Marcus Aurelius composes his most urgent meditations while soldiers die of disease around him — Stoicism becomes not abstract theory but survival technique for mass death. Galen flees Rome during the plague's first wave (166), returns at the emperor's command, and documents symptoms with philosophical detachment. The Rain Miracle panel on the Column shows divine intervention rescuing troops — but Christians later claimed the prayer was Christian, not pagan: belief systems compete to explain catastrophe. Apuleius's <em>Golden Ass</em> ends with religious salvation through Isis mysteries, part of a broader spiritual searching the plague intensified. Art, literature, philosophy, and politics all bend under the same weight: <strong>how to find meaning when the empire sickens</strong>.",
+        "funFact": "Marcus Aurelius never titled his Meditations — the Greek manuscript tradition calls it 'To Himself' (Ta eis heauton). He wrote it as private therapy, not for readers. It's history's most influential diary."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Marcus_Aurelius",
+        "title": "Marcus Aurelius – Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Meditations",
+        "title": "Meditations – Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Antonine_Plague",
+        "title": "Antonine Plague – Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Column_of_Marcus_Aurelius",
+        "title": "Column of Marcus Aurelius – Wikipedia"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/galen/",
+        "title": "Galen – Stanford Encyclopedia of Philosophy"
+      }
+    ],
+    "image": {
+      "url": "images/180-rome-last-of-the-stoics.jpg",
+      "caption": "The Rain Miracle on the Column of Marcus Aurelius, showing Jupiter Pluvius rescuing Roman troops with a sudden storm during the Marcomannic Wars",
+      "width": 1200,
+      "height": 800,
+      "attribution": "Photo by Barosaurus Lentus, CC BY 3.0, via Wikimedia Commons"
+    },
+    "threads": [
+      "stoicism",
+      "rationalism",
+      "death-of-god",
+      "classical-revival"
+    ],
+    "location": {
+      "lat": 41.9009,
+      "lon": 12.4802,
+      "place": "Rome"
+    },
+    "addedDate": "2026-03-18T06:00:00Z",
+    "podcast": {
+      "url": "audio/180-rome-last-of-the-stoics.mp3",
+      "duration": 182
+    }
   }
 ]
