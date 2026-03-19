@@ -70,7 +70,8 @@
       "1543→1687": "Vesalius trusted dissection over Galen; Newton trusted mathematics over tradition. Both empiricisms — anatomical and physical — insisted that observation trumped authority."
     },
     "scientific-revolution": {
-      "1543→1687": "Copernicus repositioned the Earth; Newton explained why it stayed in orbit. The revolution Copernicus began, Newton completed."
+      "1543→1687": "Copernicus repositioned the Earth; Newton explained why it stayed in orbit. The revolution Copernicus began, Newton completed.",
+      "1687→1905": "Newton's absolute cosmos reigned for two centuries; Einstein shattered it in four papers from a Swiss patent office."
     },
     "enlightenment": {
       "1687→1755": "Newton's <em>Principia</em> proved the cosmos was lawful; the Lisbon earthquake asked whether it was just. Enlightenment optimism crested and cracked within seventy years.",
@@ -91,6 +92,9 @@
     "fragmentation": {
       "1848→1922": "The revolutions of 1848 fractured empires and ideologies; by 1922, Eliot's <em>Waste Land</em> made fragments a literary form. Political breakup became aesthetic principle.",
       "1922→1968": "Modernist fragmentation was formal experiment; 1968's fragmentation was political program. The same broken forms served art and revolution."
+    },
+    "crisis-of-positivism": {
+      "1889→1905": "Nietzsche's collapse and Bergson's durée left objectivity in ruins; Einstein proved even physics was built on relative sand."
     }
   },
   "it": {
@@ -164,7 +168,8 @@
       "1543→1687": "Vesalio si fidava della dissezione più che di Galeno; Newton si fidava della matematica più che della tradizione."
     },
     "scientific-revolution": {
-      "1543→1687": "Copernico riposizionò la Terra; Newton spiegò perché restava in orbita."
+      "1543→1687": "Copernico riposizionò la Terra; Newton spiegò perché restava in orbita.",
+      "1687→1905": "Il cosmo assoluto di Newton regnò per due secoli; Einstein lo frantumò in quattro articoli da un ufficio brevetti svizzero."
     },
     "enlightenment": {
       "1687→1755": "I <em>Principia</em> di Newton dimostrarono che il cosmo era regolato da leggi; il terremoto di Lisbona chiese se fosse giusto.",
@@ -185,6 +190,9 @@
     "fragmentation": {
       "1848→1922": "Le rivoluzioni del 1848 frantumarono imperi e ideologie; nel 1922, la <em>Terra desolata</em> di Eliot fece dei frammenti una forma letteraria.",
       "1922→1968": "La frammentazione modernista era esperimento formale; quella del 1968 era programma politico."
+    },
+    "crisis-of-positivism": {
+      "1889→1905": "Il crollo di Nietzsche e la durée di Bergson lasciarono l'oggettività in rovine; Einstein dimostrò che persino la fisica era costruita su sabbia relativa."
     }
   }
 }

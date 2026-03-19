@@ -2160,5 +2160,79 @@
       "url": "audio/180-rome-last-of-the-stoics.mp3",
       "duration": 185
     }
+  },
+  {
+    "year": "1905",
+    "id": "1905-wild-beasts-miracle-year",
+    "title": "The Wild Beasts and the Miracle Year",
+    "teaser": "In Paris, painters called 'wild beasts' unleash color from reality. In Dresden, students found a bridge to the future. In Bern, a patent clerk rewrites the universe. In St. Petersburg, a massacre ignites revolution. The old certainties shatter simultaneously.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "At the Salon d'Automne in October, <strong>Henri Matisse</strong> exhibits <em>Woman with a Hat</em> — a portrait of his wife in blotches of green, pink, and yellow that scandalize Paris. Critic Louis Vauxcelles, seeing a classical sculpture surrounded by these violent canvases, quips: <em>'Donatello among the wild beasts'</em> — and <strong>Fauvism</strong> is born. Matisse, <strong>André Derain</strong>, and <strong>Maurice de Vlaminck</strong> share a conviction: color need not describe reality; it expresses emotion. Meanwhile in Dresden on June 7th, four architecture students — <strong>Ernst Ludwig Kirchner</strong>, Erich Heckel, Karl Schmidt-Rottluff, and Fritz Bleyl — found <strong>Die Brücke</strong> (The Bridge), aiming to connect 'all the revolutionary and fermenting elements.' The first <strong>avant-garde</strong> movements of the twentieth century emerge within months of each other, declaring war on artistic convention."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "In April, <strong>Rainer Maria Rilke</strong> publishes <em>Das Stunden-Buch</em> (The Book of Hours), three years of mystical poetry written between 1899 and 1903 — a neo-Romantic encounter with God that operates through subjective experience rather than doctrine. <strong>Heinrich Mann</strong> publishes <em>Professor Unrat</em>, a scathing indictment of Wilhelmine authoritarianism through the downfall of a tyrannical schoolmaster (later filmed as <em>The Blue Angel</em>). In Russia, <strong>Maxim Gorky</strong> — already the voice of the dispossessed — is arrested for his role in the January uprising. The literary establishment is dividing: Mann's social critique and Gorky's proletarian realism push toward <strong>Naturalism</strong>'s political edge, while Rilke retreats into the interior world that will flower into <strong>Modernist</strong> subjectivity."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "In Göttingen, <strong>Edmund Husserl</strong> — whose <em>Logical Investigations</em> (1900–01) launched <strong>phenomenology</strong> — is refining the method of <em>epoché</em>: bracketing assumptions about external reality to focus on consciousness itself. His students begin forming a dedicated circle. Across the Atlantic, <strong>William James</strong> lectures on <strong>pragmatism</strong> at Wellesley — truth as what works in practice, reality as partly constructed through experience. Both challenge the <strong>crisis of positivism</strong>: the sense that scientific objectivity cannot capture what matters most. The nineteenth century trusted that physics explained the world; 1905 will prove physics didn't even understand space and time."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On January 22nd (January 9th Old Style), a peaceful procession of workers led by Father Georgy Gapon marches to the Winter Palace in St. Petersburg, petitioning <strong>Tsar Nicholas II</strong> for reforms. Imperial guards open fire, killing hundreds — <strong>Bloody Sunday</strong> ignites the <strong>Russian Revolution of 1905</strong>. Strikes paralyze the empire; workers' councils (<strong>soviets</strong>) form spontaneously. By October, a general strike forces the Tsar to issue the <strong>October Manifesto</strong>, promising civil liberties and an elected Duma. Meanwhile in Bern, a twenty-six-year-old patent clerk named <strong>Albert Einstein</strong> publishes four papers in <em>Annalen der Physik</em> — on the photoelectric effect (June), Brownian motion (July), <strong>special relativity</strong> (September), and mass-energy equivalence (<em>E=mc²</em>). An <em>annus mirabilis</em> that remakes physics."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The convergence is the <strong>dissolution of stable reference points</strong>. Einstein abolishes absolute space and time; the Fauves abolish color's obligation to describe; Husserl brackets the external world to investigate pure consciousness; the Russian workers discover that the Tsar won't protect them. None of these figures influenced each other directly in 1905 — Einstein worked in isolation, Kirchner knew nothing of Matisse, Husserl and James developed parallel critiques. What connects them is the historical condition: the <strong>crisis of positivism</strong> had undermined confident materialism; the old certainties of church, monarch, and Newtonian physics were all cracking under their own contradictions. The twentieth century begins not in 1900 but here, when artists, scientists, and revolutionaries simultaneously conclude that reality is not what it seemed.",
+        "funFact": "Gertrude and Leo Stein bought Matisse's <em>Woman with a Hat</em> directly from the Salon scandal for 500 francs — about four months of a Parisian worker's wages. Their apartment became the first salon of Modernism."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Fauvism",
+        "title": "Fauvism – Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Annus_mirabilis_papers",
+        "title": "Einstein's Annus Mirabilis Papers – Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Russian_Revolution_of_1905",
+        "title": "Russian Revolution of 1905 – Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Die_Br%C3%BCcke",
+        "title": "Die Brücke – Wikipedia"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/phenomenology/",
+        "title": "Phenomenology – Stanford Encyclopedia of Philosophy"
+      }
+    ],
+    "image": {
+      "url": "images/1905-wild-beasts-miracle-year.jpg",
+      "caption": "André Derain, The Turning Road, L'Estaque (1906, exhibited at 1905 Salon d'Automne). Fauvism's explosive liberation of color from descriptive duty",
+      "width": 1054,
+      "height": 694,
+      "attribution": "André Derain, Public domain, via Museum of Fine Arts Houston"
+    },
+    "threads": [
+      "fauvism",
+      "crisis-of-positivism",
+      "expressionism",
+      "scientific-revolution"
+    ],
+    "location": {
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "place": "Paris"
+    },
+    "addedDate": "2026-03-19T06:00:00Z",
+    "podcast": {
+      "url": "audio/1905-wild-beasts-miracle-year.mp3",
+      "duration": 249
+    }
   }
 ]

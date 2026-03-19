@@ -2152,5 +2152,79 @@
       "url": "audio/it/180-rome-last-of-the-stoics.mp3",
       "duration": 205
     }
+  },
+  {
+    "year": "1905",
+    "id": "1905-wild-beasts-miracle-year",
+    "title": "Le belve e l'anno dei miracoli",
+    "teaser": "A Parigi, pittori chiamati 'belve' liberano il colore dalla realtà. A Dresda, studenti fondano un ponte verso il futuro. A Berna, un impiegato dell'ufficio brevetti riscrive l'universo. A San Pietroburgo, un massacro accende la rivoluzione. Le vecchie certezze si frantumano simultaneamente.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Al Salon d'Automne di ottobre, <strong>Henri Matisse</strong> espone <em>Donna con cappello</em> — un ritratto della moglie in chiazze di verde, rosa e giallo che scandalizza Parigi. Il critico Louis Vauxcelles, vedendo una scultura classica circondata da queste tele violente, commenta: <em>'Donatello tra le belve'</em> — e nasce il <strong>Fauvismo</strong>. Matisse, <strong>André Derain</strong> e <strong>Maurice de Vlaminck</strong> condividono una convinzione: il colore non deve descrivere la realtà, deve esprimere emozioni. Nel frattempo a Dresda, il 7 giugno, quattro studenti di architettura — <strong>Ernst Ludwig Kirchner</strong>, Erich Heckel, Karl Schmidt-Rottluff e Fritz Bleyl — fondano <strong>Die Brücke</strong> (Il Ponte), mirando a collegare 'tutti gli elementi rivoluzionari e in fermento.' I primi movimenti d'<strong>avanguardia</strong> del Novecento emergono a pochi mesi di distanza, dichiarando guerra alle convenzioni artistiche."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "In aprile, <strong>Rainer Maria Rilke</strong> pubblica <em>Das Stunden-Buch</em> (Il libro delle ore), tre anni di poesia mistica scritta tra il 1899 e il 1903 — un incontro neo-romantico con Dio che opera attraverso l'esperienza soggettiva anziché la dottrina. <strong>Heinrich Mann</strong> pubblica <em>Professor Unrat</em>, una feroce requisitoria contro l'autoritarismo guglielmino attraverso la rovina di un tirannico maestro di scuola (poi filmato come <em>L'angelo azzurro</em>). In Russia, <strong>Maksim Gor'kij</strong> — già voce dei diseredati — viene arrestato per il suo ruolo nella rivolta di gennaio. L'establishment letterario si divide: la critica sociale di Mann e il realismo proletario di Gor'kij spingono verso il margine politico del <strong>Naturalismo</strong>, mentre Rilke si ritira nel mondo interiore che fiorirà nella soggettività <strong>modernista</strong>."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "A Gottinga, <strong>Edmund Husserl</strong> — le cui <em>Ricerche logiche</em> (1900–01) avevano lanciato la <strong>fenomenologia</strong> — sta perfezionando il metodo dell'<em>epoché</em>: sospendere le assunzioni sulla realtà esterna per concentrarsi sulla coscienza stessa. I suoi studenti iniziano a formare un circolo dedicato. Dall'altra parte dell'Atlantico, <strong>William James</strong> tiene lezioni sul <strong>pragmatismo</strong> a Wellesley — la verità come ciò che funziona in pratica, la realtà come parzialmente costruita attraverso l'esperienza. Entrambi sfidano la <strong>crisi del positivismo</strong>: la sensazione che l'oggettività scientifica non possa cogliere ciò che conta di più. L'Ottocento confidava che la fisica spiegasse il mondo; il 1905 dimostrerà che la fisica non capiva nemmeno lo spazio e il tempo."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il 22 gennaio (9 gennaio secondo il calendario giuliano), una processione pacifica di operai guidata da padre Georgij Gapon marcia verso il Palazzo d'Inverno a San Pietroburgo, presentando una petizione allo <strong>zar Nicola II</strong> per ottenere riforme. Le guardie imperiali aprono il fuoco, uccidendo centinaia di persone — la <strong>Domenica di sangue</strong> accende la <strong>Rivoluzione russa del 1905</strong>. Gli scioperi paralizzano l'impero; i consigli operai (<strong>soviet</strong>) si formano spontaneamente. A ottobre, uno sciopero generale costringe lo zar a emanare il <strong>Manifesto d'Ottobre</strong>, promettendo libertà civili e una Duma eletta. Nel frattempo a Berna, un impiegato dell'ufficio brevetti di ventisei anni chiamato <strong>Albert Einstein</strong> pubblica quattro articoli sugli <em>Annalen der Physik</em> — sull'effetto fotoelettrico (giugno), sul moto browniano (luglio), sulla <strong>relatività ristretta</strong> (settembre) e sull'equivalenza massa-energia (<em>E=mc²</em>). Un <em>annus mirabilis</em> che rifonda la fisica."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "La convergenza è la <strong>dissoluzione dei punti di riferimento stabili</strong>. Einstein abolisce lo spazio e il tempo assoluti; i Fauves aboliscono l'obbligo del colore di descrivere; Husserl mette tra parentesi il mondo esterno per indagare la coscienza pura; gli operai russi scoprono che lo zar non li proteggerà. Nessuno di questi protagonisti si influenzò direttamente nel 1905 — Einstein lavorava in isolamento, Kirchner non sapeva nulla di Matisse, Husserl e James svilupparono critiche parallele. Ciò che li collega è la condizione storica: la <strong>crisi del positivismo</strong> aveva minato il materialismo fiducioso; le vecchie certezze della chiesa, del monarca e della fisica newtoniana si stavano tutte sgretolando sotto le proprie contraddizioni. Il Novecento non inizia nel 1900, ma qui, quando artisti, scienziati e rivoluzionari concludono simultaneamente che la realtà non è ciò che sembrava.",
+        "funFact": "Gertrude e Leo Stein acquistarono <em>Donna con cappello</em> di Matisse direttamente dallo scandalo del Salon per 500 franchi — circa quattro mesi di salario di un operaio parigino. Il loro appartamento divenne il primo salotto del Modernismo."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Fauvismo",
+        "title": "Fauvismo – Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Annus_mirabilis",
+        "title": "Annus mirabilis di Einstein – Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Rivoluzione_russa_del_1905",
+        "title": "Rivoluzione russa del 1905 – Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Die_Br%C3%BCcke",
+        "title": "Die Brücke – Wikipedia"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/phenomenology/",
+        "title": "Phenomenology – Stanford Encyclopedia of Philosophy"
+      }
+    ],
+    "image": {
+      "url": "images/1905-wild-beasts-miracle-year.jpg",
+      "caption": "André Derain, La strada che gira, L'Estaque (1906, esposto al Salon d'Automne 1905). L'esplosiva liberazione del colore dal dovere descrittivo",
+      "width": 1054,
+      "height": 694,
+      "attribution": "André Derain, Pubblico dominio, via Museum of Fine Arts Houston"
+    },
+    "threads": [
+      "fauvism",
+      "crisis-of-positivism",
+      "expressionism",
+      "scientific-revolution"
+    ],
+    "location": {
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "place": "Parigi"
+    },
+    "addedDate": "2026-03-19T06:00:00Z",
+    "podcast": {
+      "url": "audio/it/1905-wild-beasts-miracle-year.mp3",
+      "duration": 283
+    }
   }
 ]
