@@ -11,7 +11,9 @@
     "translatio-studii": {
       "410→529": "As Rome fell, Greek texts traveled east with Christian scholars. By 529, Justinian closed the Academy, pushing Neoplatonic philosophers toward Persia — the first leg of the journey that would bring Aristotle to Baghdad.",
       "529→800": "Exiled Academy scholars carried texts to Persia; Syriac Christians translated them. When Alcuin revived learning at Charlemagne's court, he worked from Boethius's Latin translations — the Western branch of the same transmission.",
-      "800→1453": "Alcuin preserved what Latin texts survived; when Constantinople fell, Byzantine scholars brought the Greek originals West. Bessarion's library donation completed the circuit — Greek learning returning to Italy six centuries after it left for Baghdad."
+      "800→1453": "Alcuin preserved what Latin texts survived; when Constantinople fell, Byzantine scholars brought the Greek originals West. Bessarion's library donation completed the circuit — Greek learning returning to Italy six centuries after it left for Baghdad.",
+      "800→1066": "Charlemagne's Carolingian renaissance preserved classical learning in monasteries across the Frankish Empire; the Norman conquest transplants this Continental scholarly network to England, creating the institutional framework for Oxford and Cambridge.",
+      "1066→1453": "The Norman-English connection to Continental learning prepares England to receive the Byzantine scholars fleeing Constantinople. Greek manuscripts travel through the same ecclesiastical networks Lanfranc established."
     },
     "eschatological-anxiety": {
       "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
@@ -32,7 +34,8 @@
     "scholasticism": {
       "1141→1215": "Abelard's dialectical method survived his condemnation; by Lateran IV, Aristotelian categories defined dogma. The scholastic synthesis began at Sens's defeat.",
       "1215→1274": "The Paris Aristotle ban collapsed under its own weight; Aquinas built the <em>Summa</em> on the recovered texts. Scholasticism's golden age was also its last.",
-      "1274→1321": "Aquinas died with the <em>Summa</em> unfinished; Dante completed the project in verse. The <em>Commedia</em> is scholastic architecture made poetry."
+      "1274→1321": "Aquinas died with the <em>Summa</em> unfinished; Dante completed the project in verse. The <em>Commedia</em> is scholastic architecture made poetry.",
+      "1066→1141": "Lanfranc brings dialectical method from Bec Abbey to Canterbury; Anselm develops the ontological argument. The seeds planted by the Norman conquest flower in Abelard's systematic doubt at Sens — 'by doubting we come to inquiry.'"
     },
     "gothic-architecture": {
       "1141→1215": "Suger's Saint-Denis invented Gothic luminosity; by 1215, Chartres perfected it. The style spread as fast as scholastic method — both claimed to make the invisible visible.",
@@ -42,7 +45,8 @@
       "1215→1274": "The Fourth Lateran Council required confession in the vernacular; poets followed. Aquinas wrote in Latin, but the <em>Roman de la Rose</em> began the year before he died.",
       "1274→1300": "As scholasticism peaked, vernacular poetry matured. Dante's <em>Vita Nuova</em> appeared in the 1290s — the language Aquinas ignored becoming literature.",
       "1300→1321": "Giotto painted what Dante wrote: the human face of divine comedy. Both used vernacular means — Tuscan dialect, naturalistic bodies — to tell sacred stories.",
-      "1321→1347": "Dante proved Tuscan could bear the weight of theology; Boccaccio proved it could carry ribaldry and grief. The <em>Decameron</em>'s plague frame is the <em>Commedia</em>'s structure inverted."
+      "1321→1347": "Dante proved Tuscan could bear the weight of theology; Boccaccio proved it could carry ribaldry and grief. The <em>Decameron</em>'s plague frame is the <em>Commedia</em>'s structure inverted.",
+      "1066→1215": "The Norman conquest nearly extinguishes Old English literature, but the merging of French and English will create the rich hybrid of Middle English. The same courts that consume Norman French romance begin commissioning works in the new vernacular."
     },
     "renaissance-humanism": {
       "1401→1453": "Florentine humanists collected manuscripts before 1453; the Greek exodus accelerated what Salutati and Bruni began. Humanism was ready for what Constantinople's scholars brought.",
@@ -95,6 +99,9 @@
     },
     "crisis-of-positivism": {
       "1889→1905": "Nietzsche's collapse and Bergson's durée left objectivity in ruins; Einstein proved even physics was built on relative sand."
+    },
+    "romanesque-architecture": {
+      "1000→1066": "From Otto III's renovatio to William's conquest: the same architectural language of rounded arches and massive stone walls that symbolized imperial renewal in Germany becomes the visual vocabulary of Norman domination in England."
     }
   },
   "it": {
@@ -109,7 +116,9 @@
     "translatio-studii": {
       "410→529": "Mentre Roma cadeva, i testi greci viaggiarono verso est con gli studiosi cristiani. Nel 529, Giustiniano chiuse l'Accademia, spingendo i filosofi neoplatonici verso la Persia — la prima tappa del viaggio che avrebbe portato Aristotele a Baghdad.",
       "529→800": "Gli studiosi esiliati dall'Accademia portarono testi in Persia; i cristiani siriaci li tradussero. Quando Alcuino rianimò il sapere alla corte di Carlo Magno, lavorò dalle traduzioni latine di Boezio — il ramo occidentale della stessa trasmissione.",
-      "800→1453": "Alcuino preservò i testi latini sopravvissuti; quando Costantinopoli cadde, gli studiosi bizantini portarono gli originali greci in Occidente. La donazione della biblioteca di Bessarione completò il circuito — il sapere greco che tornava in Italia sei secoli dopo essere partito per Baghdad."
+      "800→1453": "Alcuino preservò i testi latini sopravvissuti; quando Costantinopoli cadde, gli studiosi bizantini portarono gli originali greci in Occidente. La donazione della biblioteca di Bessarione completò il circuito — il sapere greco che tornava in Italia sei secoli dopo essere partito per Baghdad.",
+      "800→1066": "Il rinascimento carolingio di Carlo Magno preservò il sapere classico nei monasteri dell'Impero Franco; la conquista normanna trapianta questa rete di studio continentale in Inghilterra, creando le basi istituzionali per Oxford e Cambridge.",
+      "1066→1453": "Il collegamento normanno-inglese al sapere continentale prepara l'Inghilterra ad accogliere gli studiosi bizantini in fuga da Costantinopoli. I manoscritti greci viaggiano attraverso le stesse reti ecclesiastiche stabilite da Lanfranco."
     },
     "eschatological-anxiety": {
       "410→1000": "La caduta di Roma sembrò apocalittica ai contemporanei di Agostino; l'avvicinarsi dell'anno Mille rianimò quelle paure. Il 'bianco manto di chiese' fu in parte ringraziamento per un millennio che non finì nel fuoco.",
@@ -130,7 +139,8 @@
     "scholasticism": {
       "1141→1215": "Il metodo dialettico di Abelardo sopravvisse alla sua condanna; al Laterano IV, le categorie aristoteliche definivano il dogma. La sintesi scolastica iniziò dalla sconfitta di Sens.",
       "1215→1274": "Il divieto parigino di Aristotele crollò sotto il proprio peso; Tommaso costruì la <em>Summa</em> sui testi recuperati. L'età d'oro della scolastica fu anche l'ultima.",
-      "1274→1321": "Tommaso morì con la <em>Summa</em> incompiuta; Dante completò il progetto in versi. La <em>Commedia</em> è architettura scolastica fatta poesia."
+      "1274→1321": "Tommaso morì con la <em>Summa</em> incompiuta; Dante completò il progetto in versi. La <em>Commedia</em> è architettura scolastica fatta poesia.",
+      "1066→1141": "Lanfranco porta il metodo dialettico dall'Abbazia di Bec a Canterbury; Anselmo sviluppa l'argomento ontologico. I semi piantati dalla conquista normanna fioriscono nel dubbio sistematico di Abelardo a Sens — 'dubitando giungiamo all'indagine.'"
     },
     "gothic-architecture": {
       "1141→1215": "Saint-Denis di Suger inventò la luminosità gotica; nel 1215, Chartres la perfezionò. Lo stile si diffuse veloce come il metodo scolastico.",
@@ -140,7 +150,8 @@
       "1215→1274": "Il Quarto Concilio Lateranense richiese la confessione in volgare; i poeti seguirono. Tommaso scriveva in latino, ma il <em>Roman de la Rose</em> iniziò l'anno prima della sua morte.",
       "1274→1300": "Mentre la scolastica raggiungeva l'apice, la poesia volgare maturava. La <em>Vita Nuova</em> di Dante apparve negli anni 1290.",
       "1300→1321": "Giotto dipinse ciò che Dante scrisse: il volto umano della divina commedia. Entrambi usarono mezzi volgari per raccontare storie sacre.",
-      "1321→1347": "Dante dimostrò che il toscano poteva sostenere il peso della teologia; Boccaccio dimostrò che poteva portare licenziosità e dolore."
+      "1321→1347": "Dante dimostrò che il toscano poteva sostenere il peso della teologia; Boccaccio dimostrò che poteva portare licenziosità e dolore.",
+      "1066→1215": "La conquista normanna quasi estingue la letteratura in inglese antico, ma la fusione di francese e inglese creerà il ricco ibrido dell'inglese medio. Le stesse corti che consumano romanzi in francese normanno iniziano a commissionare opere nel nuovo volgare."
     },
     "renaissance-humanism": {
       "1401→1453": "Gli umanisti fiorentini raccoglievano manoscritti prima del 1453; l'esodo greco accelerò ciò che Salutati e Bruni avevano iniziato.",
@@ -193,6 +204,9 @@
     },
     "crisis-of-positivism": {
       "1889→1905": "Il crollo di Nietzsche e la durée di Bergson lasciarono l'oggettività in rovine; Einstein dimostrò che persino la fisica era costruita su sabbia relativa."
+    },
+    "romanesque-architecture": {
+      "1000→1066": "Dalla renovatio di Ottone III alla conquista di Guglielmo: lo stesso linguaggio architettonico di archi a tutto sesto e massicce mura di pietra che simboleggiava il rinnovamento imperiale in Germania diventa il vocabolario visivo del dominio normanno in Inghilterra."
     }
   }
 }

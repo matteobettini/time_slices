@@ -1,0 +1,50 @@
+{
+  "year": "1066",
+  "id": "1066-hastings-conquest-of-england",
+  "title": "Hastings — La conquista dell'Inghilterra",
+  "teaser": "Una freccia, un giuramento e un esercito attraverso la Manica. In un solo giorno d'autunno, l'Inghilterra cambia padrone, la sua lingua si frattura e la pietra normanna inizia a sostituire il legno anglosassone. La conquista più documentata del mondo medievale ridefinisce come una nazione parla, costruisce, prega e ricorda.",
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "L'<strong>Arazzo di Bayeux</strong> — in realtà un ricamo, 70 metri di lino e lana — crea l'opera narrativa più straordinaria del mondo medievale. Probabilmente commissionato dal <strong>vescovo Odone di Bayeux</strong>, fratellastro di Guglielmo, entro un decennio dalla conquista, trasforma la propaganda politica in epica visiva. Ricamatrici anglosassoni, probabilmente a Canterbury, usano <strong>punto catenella</strong> e <strong>punto erba</strong> per rappresentare 58 scene con tituli latini: navi che attraversano il mare, giuramenti, cariche di cavalleria, la morte di Aroldo. I suoi bordi brulicano di bestie fantastiche e marginalia osceni. I Normanni importano l'<strong>architettura romanica</strong>: massicce mura di pietra, archi a tutto sesto, decorazioni a zig-zag — un vocabolario visivo di conquista. In pochi decenni, la <strong>Torre Bianca</strong> sorge su Londra, una fortezza-palazzo che annuncia che il nuovo ordine costruisce in pietra, non in legno."
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "La conquista frattura la letteratura inglese. L'<strong>inglese antico</strong>, la lingua del <em>Beowulf</em> e della tradizione allitterativa, inizia la sua lenta eclissi. La <strong>Cronaca anglosassone</strong>, compilata dal regno di Alfredo, continua a Peterborough ma lotta sempre più con una lingua che si trasforma. Il francese diventa la lingua della corte, della legge e della cultura; il latino domina la Chiesa. Eppure l'antica poesia sopravvive in manoscritti di poco precedenti l'invasione — il codice del <em>Beowulf</em> fu copiato intorno al 1000, preservando tremila versi allitterativi su mostri e sale dell'idromele. In due secoli, le due correnti confluiranno nell'<strong>inglese medio</strong>, creando la ricchezza linguistica — <em>beef</em> dal francese, <em>cow</em> dall'inglese — che ancora definisce la lingua."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "La conquista importa il <strong>metodo scolastico continentale</strong> in Inghilterra. <strong>Lanfranco di Pavia</strong>, formatosi nella grande scuola dell'<strong>Abbazia di Bec</strong> in Normandia, diventa Arcivescovo di Canterbury nel 1070. Dialettico che aveva dibattuto con <strong>Berengario di Tours</strong> sull'Eucaristia, Lanfranco porta la disputa logica rigorosa alla teologia inglese. Il suo successore <strong>Anselmo</strong> — anch'egli da Bec — svilupperà l'<strong>argomento ontologico</strong> per l'esistenza di Dio: ciò di cui non si può pensare nulla di maggiore. Questo rappresenta un nuovo modo di pensare: <em>fides quaerens intellectum</em>, la fede che cerca comprensione attraverso la ragione. La conquista trapianterà così i semi della <strong>scolastica</strong> che fiorirà a Oxford e Cambridge."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "Tre pretendenti, tre eserciti, un trono. Dopo la morte senza eredi di <strong>Edoardo il Confessore</strong> nel gennaio 1066, <strong>Aroldo Godwinson</strong> viene incoronato dal Witan. Ma <strong>Guglielmo di Normandia</strong> sostiene che Edoardo gli aveva promesso la corona — e che Aroldo aveva giurato di sostenerlo. Papa <strong>Alessandro II</strong> concede a Guglielmo uno stendardo papale, trasformando l'invasione in causa santa. Aroldo sconfigge <strong>Harald Hardrada</strong> a Stamford Bridge il 25 settembre, poi marcia forzatamente verso sud. Il 14 ottobre, la cavalleria e gli arcieri normanni affrontano il muro di scudi anglosassone a <strong>Senlac Hill</strong>. Al calar della notte, Aroldo è morto — una freccia nell'occhio, dice la tradizione — e l'Inghilterra appartiene ai Normanni. Il <strong>Domesday Book</strong> del 1086 documenterà questa totale spoliazione: praticamente ogni signore anglosassone sostituito."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "L'Arazzo di Bayeux incarna la strana dualità della conquista: <strong>propaganda normanna ricamata da mani anglosassoni</strong>. Le ricamatrici che crearono questa giustificazione di Guglielmo erano i conquistati, non i conquistatori — la loro arte impiegata per giustificare la propria sottomissione. Le riforme ecclesiastiche di Lanfranco e la mole romanica della Torre Bianca condividono un'estetica dell'<strong>ordine imposto</strong>: archi a tutto sesto, argomentazione sistematica, controllo gerarchico che sostituisce le strutture più flessibili dell'Inghilterra anglosassone. La frattura linguistica che inizia nel 1066 — francese per il potere, inglese per l'aratro — produrrà infine una lingua unica nel suo essere doppia, dove <em>commence</em> e <em>begin</em>, <em>royal</em> e <em>kingly</em> coesistono. La conquista rende l'Inghilterra parte di un impero marittimo normanno che si estende dalla Scozia alla Sicilia, integrandola nelle reti intellettuali continentali che culmineranno nel Rinascimento del XII secolo.",
+      "funFact": "L'Arazzo di Bayeux include quella che potrebbe essere la prima raffigurazione della Cometa di Halley, apparsa nell'aprile 1066 — i Normanni la interpretarono come un presagio della rovina di Aroldo."
+    }
+  },
+  "sources": [
+    { "url": "https://www.britannica.com/topic/Bayeux-Tapestry", "title": "Bayeux Tapestry | History, Story, & Facts" },
+    { "url": "https://www.britannica.com/biography/Lanfranc", "title": "Lanfranc | Archbishop of Canterbury" },
+    { "url": "https://en.wikipedia.org/wiki/Norman_Conquest", "title": "Norman Conquest - Wikipedia" },
+    { "url": "https://plato.stanford.edu/entries/anselm/", "title": "Saint Anselm | Stanford Encyclopedia of Philosophy" },
+    { "url": "https://www.nationalarchives.gov.uk/education/resources/domesday-book/", "title": "Domesday Book | The National Archives" }
+  ],
+  "image": {
+    "url": "images/1066-hastings-conquest-of-england.jpg",
+    "caption": "La morte di Re Aroldo dall'Arazzo di Bayeux, che mostra la famosa scena spesso interpretata come Aroldo colpito da una freccia",
+    "width": 1200,
+    "height": 1045,
+    "attribution": "Arazzo di Bayeux, c. 1070, Pubblico Dominio, via Wikimedia Commons"
+  },
+  "threads": ["translatio-studii", "vernacular-literature", "romanesque-architecture", "scholasticism"],
+  "location": {
+    "lat": 50.9143,
+    "lon": 0.4877,
+    "place": "Hastings"
+  },
+  "addedDate": "2026-03-20T06:00:00Z"
+}
