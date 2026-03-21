@@ -62,7 +62,8 @@
       "1300→1321": "Giotto's Bardi Chapel frescoes depicted grief with unprecedented naturalism; Dante's <em>Inferno</em> depicted sinners with unprecedented individuality. Both broke Byzantine conventions through observed humanity."
     },
     "neoplatonism": {
-      "529→1504": "When Justinian closed the Academy, Neoplatonism went underground; when Ficino opened his, it resurfaced transformed. A millennium separates the last pagan Neoplatonists from Michelangelo's Neoplatonic bodies."
+      "529→1504": "When Justinian closed the Academy, Neoplatonism went underground; when Ficino opened his, it resurfaced transformed. A millennium separates the last pagan Neoplatonists from Michelangelo's Neoplatonic bodies.",
+      "250→529": "Plotinus's school in Rome becomes the last great pagan philosophical system; when Justinian closes the Academy in Athens, Neoplatonism has already been baptized — Augustine read Plotinus before he read Paul."
     },
     "printing-revolution": {
       "1509→1517": "Erasmus's <em>Praise of Folly</em> circulated in printed editions; Luther's theses spread faster than any medieval protest. The press made both possible — satire and schism alike."
@@ -102,6 +103,12 @@
     },
     "romanesque-architecture": {
       "1000→1066": "From Otto III's renovatio to William's conquest: the same architectural language of rounded arches and massive stone walls that symbolized imperial renewal in Germany becomes the visual vocabulary of Norman domination in England."
+    },
+    "imperial-decline": {
+      "180→250": "From Marcus Aurelius's philosophical acceptance of mortality to Decius's desperate religious coercion — the empire's inner life darkens as external pressures mount."
+    },
+    "martyrdom-of-reason": {
+      "250→1600": "From Decian pyres to Giordano Bruno's stake: three and a half centuries separate early Christian martyrs from the philosopher who died for an infinite cosmos, yet both faced empires that demanded intellectual submission."
     }
   },
   "it": {
@@ -167,7 +174,8 @@
       "1300→1321": "Gli affreschi della Cappella Bardi di Giotto raffiguravano il dolore con naturalismo senza precedenti; l'<em>Inferno</em> di Dante raffigurava peccatori con individualità senza precedenti."
     },
     "neoplatonism": {
-      "529→1504": "Quando Giustiniano chiuse l'Accademia, il neoplatonismo andò sottoterra; quando Ficino aprì la sua, riemerse trasformato."
+      "529→1504": "Quando Giustiniano chiuse l'Accademia, il neoplatonismo andò sottoterra; quando Ficino aprì la sua, riemerse trasformato.",
+      "250→529": "La scuola di Plotino a Roma diventa l'ultimo grande sistema filosofico pagano; quando Giustiniano chiude l'Accademia ad Atene, il Neoplatonismo è già stato battezzato — Agostino lesse Plotino prima di leggere Paolo."
     },
     "printing-revolution": {
       "1509→1517": "L'<em>Elogio della Follia</em> di Erasmo circolò in edizioni stampate; le tesi di Lutero si diffusero più velocemente di qualsiasi protesta medievale."
@@ -207,6 +215,12 @@
     },
     "romanesque-architecture": {
       "1000→1066": "Dalla renovatio di Ottone III alla conquista di Guglielmo: lo stesso linguaggio architettonico di archi a tutto sesto e massicce mura di pietra che simboleggiava il rinnovamento imperiale in Germania diventa il vocabolario visivo del dominio normanno in Inghilterra."
+    },
+    "imperial-decline": {
+      "180→250": "Dall'accettazione filosofica della mortalità di Marco Aurelio alla coercizione religiosa disperata di Decio — la vita interiore dell'impero si oscura mentre le pressioni esterne crescono."
+    },
+    "martyrdom-of-reason": {
+      "250→1600": "Dai roghi deciani al rogo di Giordano Bruno: tre secoli e mezzo separano i primi martiri cristiani dal filosofo morto per un cosmo infinito, eppure entrambi affrontarono imperi che esigevano sottomissione intellettuale."
     }
   }
 }
