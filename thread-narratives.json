@@ -29,7 +29,9 @@
     "mathematical-cosmos": {
       "125→762": "The Pantheon's dome expressed geometric perfection in concrete; al-Mansur's Round City expressed it in urban planning. Both built the conviction that the cosmos was mathematically ordered.",
       "762→1543": "Baghdad's astronomers refined Ptolemaic mathematics; Copernicus used those refinements to overturn Ptolemy. The heliocentric model emerged from the Islamic astronomical tradition that corrected the Greeks.",
-      "1543→1687": "Copernicus mathematized the heavens; Newton mathematized motion itself. The <em>Principia</em>'s universal gravitation completed what <em>De Revolutionibus</em> began — nature as equation."
+      "1543→1687": "Copernicus mathematized the heavens; Newton mathematized motion itself. The <em>Principia</em>'s universal gravitation completed what <em>De Revolutionibus</em> began — nature as equation.",
+      "1543→1610": "Copernicus reasoned that the Earth might move; Galileo saw Jupiter's moons and proved that it must.",
+      "1610→1687": "Kepler read Galileo and derived elliptical orbits; Newton read both and unified celestial and terrestrial physics in one equation."
     },
     "scholasticism": {
       "1141→1215": "Abelard's dialectical method survived his condemnation; by Lateran IV, Aristotelian categories defined dogma. The scholastic synthesis began at Sens's defeat.",
@@ -69,14 +71,20 @@
       "1509→1517": "Erasmus's <em>Praise of Folly</em> circulated in printed editions; Luther's theses spread faster than any medieval protest. The press made both possible — satire and schism alike."
     },
     "baroque": {
-      "1600→1648": "Caravaggio's tenebrism dramatized Counter-Reformation piety; Rembrandt's used the same technique for Protestant inwardness. Baroque style survived the confessional divide."
+      "1600→1648": "Caravaggio's tenebrism dramatized Counter-Reformation piety; Rembrandt's used the same technique for Protestant inwardness. Baroque style survived the confessional divide.",
+      "1600→1610": "Caravaggio's disciples scatter across Europe, carrying tenebrism from Rome's taverns to the world's salons.",
+      "1610→1648": "From Caravaggio's dramatic light, Rembrandt forges a Protestant chiaroscuro — shadow as moral inquiry, not theatrical effect."
     },
     "empiricism": {
-      "1543→1687": "Vesalius trusted dissection over Galen; Newton trusted mathematics over tradition. Both empiricisms — anatomical and physical — insisted that observation trumped authority."
+      "1543→1687": "Vesalius trusted dissection over Galen; Newton trusted mathematics over tradition. Both empiricisms — anatomical and physical — insisted that observation trumped authority.",
+      "1543→1610": "Vesalius taught physicians to cut; Galileo taught them to look through lenses — same epistemology, new instrument.",
+      "1610→1687": "Galileo's observations demanded mathematical precision; Newton provided it, fusing seeing and calculating into a single method."
     },
     "scientific-revolution": {
       "1543→1687": "Copernicus repositioned the Earth; Newton explained why it stayed in orbit. The revolution Copernicus began, Newton completed.",
-      "1687→1905": "Newton's absolute cosmos reigned for two centuries; Einstein shattered it in four papers from a Swiss patent office."
+      "1687→1905": "Newton's absolute cosmos reigned for two centuries; Einstein shattered it in four papers from a Swiss patent office.",
+      "1543→1610": "From anatomical tables to telescopes: Vesalius showed that authorities could be wrong about bodies; Galileo proved they were wrong about heavens.",
+      "1610→1687": "Galileo proved the heavens were physical; Newton proved they obeyed the same laws as falling apples — the revolution complete."
     },
     "enlightenment": {
       "1687→1755": "Newton's <em>Principia</em> proved the cosmos was lawful; the Lisbon earthquake asked whether it was just. Enlightenment optimism crested and cracked within seventy years.",
@@ -141,7 +149,9 @@
     "mathematical-cosmos": {
       "125→762": "La cupola del Pantheon esprimeva la perfezione geometrica in cemento; la Città Rotonda di al-Mansur la esprimeva nella pianificazione urbana. Entrambi costruirono la convinzione che il cosmo fosse matematicamente ordinato.",
       "762→1543": "Gli astronomi di Baghdad perfezionarono la matematica tolemaica; Copernico usò quei perfezionamenti per rovesciare Tolomeo. Il modello eliocentrico emerse dalla tradizione astronomica islamica.",
-      "1543→1687": "Copernico matematizzò i cieli; Newton matematizzò il moto stesso. La gravitazione universale dei <em>Principia</em> completò ciò che il <em>De Revolutionibus</em> aveva iniziato."
+      "1543→1687": "Copernico matematizzò i cieli; Newton matematizzò il moto stesso. La gravitazione universale dei <em>Principia</em> completò ciò che il <em>De Revolutionibus</em> aveva iniziato.",
+      "1543→1610": "Copernico ragionò che la Terra potesse muoversi; Galileo vide le lune di Giove e dimostrò che doveva.",
+      "1610→1687": "Keplero lesse Galileo e derivò le orbite ellittiche; Newton lesse entrambi e unificò fisica celeste e terrestre in una sola equazione."
     },
     "scholasticism": {
       "1141→1215": "Il metodo dialettico di Abelardo sopravvisse alla sua condanna; al Laterano IV, le categorie aristoteliche definivano il dogma. La sintesi scolastica iniziò dalla sconfitta di Sens.",
@@ -181,14 +191,20 @@
       "1509→1517": "L'<em>Elogio della Follia</em> di Erasmo circolò in edizioni stampate; le tesi di Lutero si diffusero più velocemente di qualsiasi protesta medievale."
     },
     "baroque": {
-      "1600→1648": "Il tenebrismo di Caravaggio drammatizzava la pietà controriformista; quello di Rembrandt usava la stessa tecnica per l'interiorità protestante."
+      "1600→1648": "Il tenebrismo di Caravaggio drammatizzava la pietà controriformista; quello di Rembrandt usava la stessa tecnica per l'interiorità protestante.",
+      "1600→1610": "I discepoli di Caravaggio si disperdono per l'Europa, portando il tenebrismo dalle taverne romane ai salotti del mondo.",
+      "1610→1648": "Dalla luce drammatica di Caravaggio, Rembrandt forgia un chiaroscuro protestante — l'ombra come indagine morale, non effetto teatrale."
     },
     "empiricism": {
-      "1543→1687": "Vesalio si fidava della dissezione più che di Galeno; Newton si fidava della matematica più che della tradizione."
+      "1543→1687": "Vesalio si fidava della dissezione più che di Galeno; Newton si fidava della matematica più che della tradizione.",
+      "1543→1610": "Vesalio insegnò ai medici a sezionare; Galileo insegnò loro a guardare attraverso lenti — stessa epistemologia, nuovo strumento.",
+      "1610→1687": "Le osservazioni di Galileo richiedevano precisione matematica; Newton la fornì, fondendo osservazione e calcolo in un unico metodo."
     },
     "scientific-revolution": {
       "1543→1687": "Copernico riposizionò la Terra; Newton spiegò perché restava in orbita.",
-      "1687→1905": "Il cosmo assoluto di Newton regnò per due secoli; Einstein lo frantumò in quattro articoli da un ufficio brevetti svizzero."
+      "1687→1905": "Il cosmo assoluto di Newton regnò per due secoli; Einstein lo frantumò in quattro articoli da un ufficio brevetti svizzero.",
+      "1543→1610": "Dai tavoli anatomici ai cannocchiali: Vesalio mostrò che le autorità potevano sbagliare sui corpi; Galileo dimostrò che sbagliavano sui cieli.",
+      "1610→1687": "Galileo dimostrò che i cieli erano fisici; Newton dimostrò che obbedivano alle stesse leggi delle mele che cadono — la rivoluzione compiuta."
     },
     "enlightenment": {
       "1687→1755": "I <em>Principia</em> di Newton dimostrarono che il cosmo era regolato da leggi; il terremoto di Lisbona chiese se fosse giusto.",

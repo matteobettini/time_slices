@@ -2372,5 +2372,79 @@
       "url": "audio/it/250-rome-soul-and-the-storm.mp3",
       "duration": 175
     }
+  },
+  {
+    "year": "1610",
+    "id": "1610-eye-on-heaven",
+    "title": "L'Occhio sul Cielo",
+    "teaser": "Galileo pubblica la prova che i cieli sono imperfetti. Caravaggio muore in esilio, ancora dipingendo nell'oscurità. Un fanatico cattolico pugnala il re che aveva reso possibile la pace. Le antiche certezze crollano — ma attraverso il cannocchiale ne emergono di nuove.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "A luglio, <strong>Caravaggio</strong> muore su una spiaggia a Porto Ercole, a trentotto anni, fuggitivo da quattro. Le sue ultime opere — <em>Davide con la testa di Golia</em>, <em>Il Martirio di Sant'Orsola</em> — trasudano disperazione: dipinge il proprio volto sulla testa mozzata di Golia, una supplica per la grazia papale che arrivò troppo tardi. Intanto a Roma, il suo amico <strong>Ludovico Cardi detto il Cigoli</strong> inizia l'affresco dell'<em>Assunzione della Vergine</em> in Santa Maria Maggiore. Sotto i piedi di Maria, dove la tradizione esigeva una sfera celeste perfetta, Cigoli dipinge una <strong>luna craterizzata e montuosa</strong> — esattamente come Galileo l'aveva descritta. La scienza entra nella basilica papale attraverso l'arte. Il naturalismo <strong>barocco</strong> si estende ora ai cieli stessi."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "A Londra, <strong>John Donne</strong> pubblica lo <em>Pseudo-Martyr</em>, sostenendo che i cattolici inglesi possono giurare fedeltà alla corona senza tradire la fede — una teologia pragmatica per un'epoca violenta. Privatamente sta componendo i suoi <strong>Holy Sonnets</strong>: 'Morte, non essere orgogliosa'. La <strong>poesia metafisica</strong> lotta con la mortalità attraverso concetti elaborati come strumenti scientifici. <strong>Shakespeare</strong> sta scrivendo <em>La Tempesta</em>, la sua favola insulare di magia abbandonata; <strong>Ben Jonson</strong> mette in scena <em>L'Alchimista</em>, beffandosi di chi cerca trasformazioni che i cannocchiali, non i crogioli, realizzeranno davvero."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "A marzo, <strong>Galileo</strong> pubblica il <em>Sidereus Nuncius</em> (Il Messaggero Celeste) a Venezia — sessanta pagine che rifanno la cosmologia. La Luna ha montagne; la Via Lattea si dissolve in innumerevoli stelle; <strong>Giove ha dei satelliti</strong>. Quest'ultima scoperta è devastante: se un altro pianeta ha lune, la Terra perde il suo status unico di centro cosmico del moto orbitale. Il <strong>cosmo aristotelico</strong> — sfere perfette e immutabili — si incrina. <strong>Keplero</strong> risponde immediatamente con entusiasmo. L'osservazione ha prevalso su duemila anni di autorità. Questo è l'<strong>empirismo</strong> come rivoluzione, non come metodo — vedere con i propri occhi ciò che gli antichi non poterono mai vedere."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il 14 maggio, <strong>François Ravaillac</strong> pugnala <strong>Enrico IV</strong> di Francia nella sua carrozza in una strada parigina. Il re che aveva posto fine alle Guerre di Religione, che aveva emanato l'<strong>Editto di Nantes</strong> garantendo tolleranza ai protestanti, muore all'istante. Ravaillac, fanatico cattolico convinto che Enrico avrebbe fatto guerra al Papa, viene giustiziato con lo squartamento. La Francia passa al novenne <strong>Luigi XIII</strong> sotto la reggenza di Maria de' Medici. La fragile pace religiosa reggerà per un'altra generazione — poi si infrangerà. In Virginia, i coloni inglesi a Jamestown stanno morendo di fame durante lo 'Starving Time'; solo sessanta su cinquecento sopravvivono all'inverno."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "La luna del Cigoli è il cardine segreto dell'anno. Galileo dimostra che i cieli sono fisici, strutturati, <em>reali</em> — e in pochi mesi quella conoscenza appare in una cappella papale. Lo stesso sguardo empirico che guarda attraverso le lenti plasma il chiaroscuro di Caravaggio: i suoi santi emergono dall'oscurità in una luce che cade come evidenza, specifica e innegabile. Donne scriverà della 'nuova filosofia' che 'mette tutto in dubbio'. L'assassino di Enrico IV agisce su certezze medievali — verità assolute per cui vale la pena uccidere — proprio mentre quelle certezze vengono dissolte dall'osservazione. La <strong>rivoluzione scientifica</strong> non è ancora un programma; è un occhio, appena aperto, che non riesce a distogliere lo sguardo.",
+        "funFact": "Caravaggio usò il proprio volto per la testa mozzata di Golia nel suo ultimo Davide — dipingendo di fatto la propria esecuzione come supplica di clemenza al Cardinal Borghese, l'uomo che avrebbe potuto ottenere la sua grazia."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Sidereus_Nuncius",
+        "title": "Sidereus Nuncius — Wikipedia"
+      },
+      {
+        "url": "https://www.treccani.it/enciclopedia/galileo-galilei/",
+        "title": "Galileo Galilei — Treccani"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Assassinio_di_Enrico_IV_di_Francia",
+        "title": "Assassinio di Enrico IV — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Caravaggio#Gli_anni_dell'esilio_(1606-1610)",
+        "title": "Caravaggio: L'esilio — Wikipedia"
+      },
+      {
+        "url": "https://www.finestresullarte.info/en/works-and-artists/cigoli-and-his-immaculate-conception-with-galileo-s-moon-in-the-basilica-of-santa-maria-maggiore",
+        "title": "Cigoli e la luna di Galileo — Finestre sull'Arte"
+      }
+    ],
+    "image": {
+      "url": "images/1610-starry-messenger.jpg",
+      "caption": "Frontespizio del Sidereus Nuncius di Galileo (Il Messaggero Celeste), Venezia 1610 — il libro che infranse il cosmo aristotelico",
+      "width": 741,
+      "height": 1175,
+      "attribution": "Galileo Galilei, 1610, Pubblico dominio, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "scientific-revolution",
+      "baroque",
+      "empiricism",
+      "mathematical-cosmos"
+    ],
+    "location": {
+      "lat": 45.4408,
+      "lon": 12.3155,
+      "place": "Venezia"
+    },
+    "addedDate": "2026-03-22T06:03:21Z",
+    "podcast": {
+      "url": "audio/it/1610-eye-on-heaven.mp3",
+      "duration": 328
+    }
   }
 ]

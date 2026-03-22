@@ -2380,5 +2380,79 @@
       "url": "audio/250-rome-soul-and-the-storm.mp3",
       "duration": 174
     }
+  },
+  {
+    "year": "1610",
+    "id": "1610-eye-on-heaven",
+    "title": "The Eye on Heaven",
+    "teaser": "Galileo publishes proof that the heavens are imperfect. Caravaggio dies in exile, still painting in darkness. A Catholic fanatic stabs the king who made peace possible. The old certainties are collapsing — but through the telescope, new ones emerge.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "In July, <strong>Caravaggio</strong> dies on a beach at Porto Ercole, age thirty-eight, a fugitive for four years. His final works — <em>David with the Head of Goliath</em>, <em>The Martyrdom of Saint Ursula</em> — radiate desperation: he paints his own face on Goliath's severed head, a plea for the papal pardon that arrived too late. Meanwhile in Rome, his friend <strong>Lodovico Cigoli</strong> begins the <em>Assumption of the Virgin</em> fresco in Santa Maria Maggiore. Beneath Mary's feet, where tradition demanded a smooth celestial sphere, Cigoli paints a <strong>cratered, mountainous moon</strong> — exactly as Galileo described it. Science enters the papal basilica through art. <strong>Baroque</strong> naturalism now extends to the heavens themselves."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "In London, <strong>John Donne</strong> publishes <em>Pseudo-Martyr</em>, arguing that English Catholics can swear allegiance to the crown without betraying their faith — a pragmatic theology for a violent age. Privately, he is composing his <strong>Holy Sonnets</strong>: 'Death, be not proud,' 'Batter my heart, three-person'd God.' <strong>Metaphysical poetry</strong> wrestles with mortality through conceits as elaborate as scientific instruments. <strong>Shakespeare</strong> is writing <em>The Tempest</em>, his island fable of magic surrendered; <strong>Ben Jonson</strong> stages <em>The Alchemist</em>, mocking those who seek transformations that telescopes, not crucibles, will actually deliver."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "In March, <strong>Galileo</strong> publishes <em>Sidereus Nuncius</em> (The Starry Messenger) in Venice — sixty pages that remake cosmology. The Moon has mountains; the Milky Way dissolves into countless stars; <strong>Jupiter has moons</strong>. That last discovery is devastating: if another planet has satellites, Earth loses its unique status as the cosmic centre of orbital motion. The <strong>Aristotelian cosmos</strong> — perfect, unchanging spheres — cracks open. <strong>Kepler</strong> responds immediately with enthusiastic support. Observation has trumped two thousand years of authority. This is <strong>empiricism</strong> as revolution, not method — seeing for oneself what the ancients never could."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On 14 May, <strong>François Ravaillac</strong> stabs <strong>Henry IV</strong> of France in his carriage on a Paris street. The king who ended the Wars of Religion, who issued the <strong>Edict of Nantes</strong> granting Protestants tolerance, dies instantly. Ravaillac, a Catholic fanatic convinced Henry would make war on the Pope, is executed by quartering. France passes to nine-year-old <strong>Louis XIII</strong> under the regency of Marie de' Medici. The fragile religious peace will hold for another generation — then shatter. In Virginia, English colonists at Jamestown are starving through the 'Starving Time'; only sixty of five hundred survive the winter."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "Cigoli's moon is the year's secret hinge. Galileo proves the heavens are physical, textured, <em>real</em> — and within months, that knowledge appears in a papal chapel. The same empirical gaze that looks through lenses shapes Caravaggio's chiaroscuro: his saints emerge from darkness into light that falls like evidence, specific and undeniable. Donne will write of 'the new philosophy' that 'calls all in doubt.' Henry IV's assassin acts on medieval certainty — absolute truth worth killing for — just as that certainty is being dissolved by observation. The <strong>scientific revolution</strong> is not yet a programme; it is an eye, newly opened, that cannot look away.",
+        "funFact": "Caravaggio used his own face for Goliath's severed head in his final David — effectively painting his own execution as a plea for mercy to Cardinal Borghese, the man who could secure his pardon."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sidereus_Nuncius",
+        "title": "Sidereus Nuncius — Wikipedia"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Galileo-Galilei/Telescopic-discoveries",
+        "title": "Galileo's Telescopic Discoveries — Britannica"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Assassination_of_Henry_IV",
+        "title": "Assassination of Henry IV — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Exile_of_Caravaggio",
+        "title": "Exile of Caravaggio — Wikipedia"
+      },
+      {
+        "url": "https://www.lindahall.org/about/news/scientist-of-the-day/lodovico-cigoli/",
+        "title": "Lodovico Cigoli — Linda Hall Library"
+      }
+    ],
+    "image": {
+      "url": "images/1610-starry-messenger.jpg",
+      "caption": "Title page of Galileo's Sidereus Nuncius (The Starry Messenger), Venice 1610 — the book that shattered the Aristotelian cosmos",
+      "width": 741,
+      "height": 1175,
+      "attribution": "Galileo Galilei, 1610, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "scientific-revolution",
+      "baroque",
+      "empiricism",
+      "mathematical-cosmos"
+    ],
+    "location": {
+      "lat": 45.4408,
+      "lon": 12.3155,
+      "place": "Venice"
+    },
+    "addedDate": "2026-03-22T06:03:21Z",
+    "podcast": {
+      "url": "audio/1610-eye-on-heaven.mp3",
+      "duration": 299
+    }
   }
 ]
