@@ -1,0 +1,50 @@
+{
+  "year": "590",
+  "id": "590-rome-servant-of-the-servants",
+  "title": "Roma — Il Servo dei Servi",
+  "teaser": "La peste devasta Roma. Il Papa muore. Un monaco riluttante diventa l'ultimo romano e il primo vescovo medievale — e ridefinisce il significato del potere.",
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "L'<strong>arte tardoantica</strong> si trasforma sotto la doppia pressione dell'influenza bizantina da Ravenna e delle tradizioni romane locali in lotta per sopravvivere. Le chiese commissionano <strong>mosaici narrativi</strong> per istruire i fedeli analfabeti — i Santi Cosma e Damiano (consacrata nel 530) mostrano Cristo tra gli apostoli nello stile ieratico, ma le botteghe romane semplificano sempre più mentre gli artigiani muoiono o fuggono. Gregorio non commissiona monumenti grandiosi — la sua estetica è l'<strong>utilità pastorale</strong>: immagini che insegnano, musica che prega. L'austerità visiva della Roma di Gregorio riflette una città ripiegata su se stessa, dove l'arte serve alla sopravvivenza piuttosto che al trionfo."
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "La produzione letteraria di Gregorio definirà la lettura medievale. I suoi <em>Moralia in Job</em> (completati nel 595), iniziati a Costantinopoli, diventano il commento allegorico di riferimento — trentacinque libri che interpretano la sofferenza di Giobbe come passione di Cristo e cammino dell'anima. I suoi <em>Dialogi</em> (593) creano la <strong>letteratura agiografica</strong> come genere: il Libro II sulla vita di <strong>Benedetto da Norcia</strong> è la nostra unica fonte sostanziale sul fondatore del monachesimo occidentale. Gregorio scrive un latino comprensibile ai chierici, evitando deliberatamente l'ornamento classico. La sua <em>Regula Pastoralis</em> sarà tradotta da Alfredo il Grande e consegnata a ogni nuovo vescovo nell'Inghilterra medievale."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "Gregorio rappresenta la <strong>sintesi agostiniana</strong> filtrata attraverso la necessità pastorale. La sua teologia enfatizza la <em>compunctio</em> — la trafittura del cuore per grazia divina — più dell'argomento scolastico. Sistematizza il <strong>purgatorio</strong> come dottrina, insegnando che le preghiere per i defunti possono aiutare le anime in uno stato intermedio. Il suo umile titolo <em>servus servorum Dei</em> (\"servo dei servi di Dio\") diventa la formula papale, ridefinendo l'autorità spirituale come servizio anziché comando. Contro la pretesa del Patriarca di Costantinopoli di essere \"Patriarca Ecumenico\", Gregorio afferma il primato di Roma rifiutando qualsiasi titolo equivalente — <strong>supremazia papale attraverso l'umiltà</strong>."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "Nel febbraio 590, <strong>Papa Pelagio II</strong> muore di peste — la stessa epidemia che devastava Costantinopoli dal 541. Roma è inondata, i suoi granai distrutti, i <strong>Longobardi</strong> premono da nord. L'Esarca bizantino a Ravenna non offre aiuto. Gregorio, ex prefetto di Roma divenuto monaco, è eletto Papa contro la sua volontà. Organizza processioni per la città, implorando la misericordia divina — la leggenda narra che ottanta persone crollarono morte durante una marcia. <strong>Castel Sant'Angelo</strong> riceve il suo nome dalla visione che Gregorio avrebbe avuto dell'Arcangelo Michele che rinfodera la spada sopra il Mausoleo di Adriano, segnalando la fine della peste."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "Gregorio è il cardine tra l'antichità e il Medioevo. I suoi <em>Dialogi</em> preservano la <strong>Regola di Benedetto</strong> per i posteri — senza la biografia di Gregorio, il fondatore del monachesimo benedettino sarebbe una figura oscura. Le sue riforme liturgiche standardizzano quello che diventerà il <strong>canto gregoriano</strong> (benché il termine sia anacronistico — la codificazione completa avviene più tardi sotto influenza carolingia). Le sue lettere ad Agostino di Canterbury (596) lanciano la conversione dell'Inghilterra anglosassone, creando la cultura manoscritta che preserverà il sapere classico. Gli Stati pontifici iniziano qui: Gregorio amministra l'approvvigionamento alimentare di Roma, negozia con i Longobardi e riempie il vuoto lasciato dalla negligenza bizantina. La Chiesa diventa non solo autorità spirituale ma <strong>governo temporale</strong>.",
+      "funFact": "Secondo la leggenda, Gregorio tentò di fuggire da Roma per evitare di diventare Papa, nascondendosi in una cesta trasportata da mercanti — ma una colonna di luce miracolosa rivelò la sua posizione ai cercatori."
+    }
+  },
+  "sources": [
+    {"url": "https://www.britannica.com/biography/St-Gregory-the-Great", "title": "Britannica: St. Gregory the Great"},
+    {"url": "https://it.wikipedia.org/wiki/Peste_di_Roma_del_590", "title": "Wikipedia: Peste di Roma del 590"},
+    {"url": "https://it.wikipedia.org/wiki/Papa_Gregorio_I", "title": "Wikipedia: Papa Gregorio I"},
+    {"url": "https://www.treccani.it/enciclopedia/gregorio-i-magno-santo", "title": "Treccani: Gregorio I Magno"},
+    {"url": "https://it.wikipedia.org/wiki/Dialogi_(Gregorio_I)", "title": "Wikipedia: Dialogi (Gregorio I)"}
+  ],
+  "image": {
+    "url": "images/590-rome-servant-of-the-servants.jpg",
+    "caption": "La statua bronzea dell'Arcangelo Michele sulla sommità di Castel Sant'Angelo, Roma, che commemora la visione di Papa Gregorio durante la peste del 590",
+    "width": 1200,
+    "height": 1148,
+    "attribution": "F l a n k e r, CC BY 3.0, via Wikimedia Commons"
+  },
+  "threads": ["monastic-preservation", "eschatological-anxiety", "translatio-studii", "gregorian-papacy"],
+  "location": {
+    "lat": 41.9031,
+    "lon": 12.4663,
+    "place": "Roma"
+  },
+  "addedDate": "2026-03-23T06:00:00Z"
+}

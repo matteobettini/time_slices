@@ -13,15 +13,21 @@
       "529→800": "Exiled Academy scholars carried texts to Persia; Syriac Christians translated them. When Alcuin revived learning at Charlemagne's court, he worked from Boethius's Latin translations — the Western branch of the same transmission.",
       "800→1453": "Alcuin preserved what Latin texts survived; when Constantinople fell, Byzantine scholars brought the Greek originals West. Bessarion's library donation completed the circuit — Greek learning returning to Italy six centuries after it left for Baghdad.",
       "800→1066": "Charlemagne's Carolingian renaissance preserved classical learning in monasteries across the Frankish Empire; the Norman conquest transplants this Continental scholarly network to England, creating the institutional framework for Oxford and Cambridge.",
-      "1066→1453": "The Norman-English connection to Continental learning prepares England to receive the Byzantine scholars fleeing Constantinople. Greek manuscripts travel through the same ecclesiastical networks Lanfranc established."
+      "1066→1453": "The Norman-English connection to Continental learning prepares England to receive the Byzantine scholars fleeing Constantinople. Greek manuscripts travel through the same ecclesiastical networks Lanfranc established.",
+      "529→590": "When Justinian closes the Academy, philosophy must find new homes. Gregory's mission to England creates one: Anglo-Saxon monasteries will become scriptoria that preserve what Rome can no longer protect.",
+      "590→800": "Gregory's letters and liturgy travel north with his missionaries. By Charlemagne's time, Alcuin of York — heir to the learning Gregory brought to England — returns to the continent to school an empire."
     },
     "eschatological-anxiety": {
       "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
-      "1000→1453": "The millennium passed; Constantinople's fall in 1453 reopened eschatological wounds. Greek scholars fleeing West carried not just manuscripts but the trauma of a Christian empire's end — history's judgment made visible."
+      "1000→1453": "The millennium passed; Constantinople's fall in 1453 reopened eschatological wounds. Greek scholars fleeing West carried not just manuscripts but the trauma of a Christian empire's end — history's judgment made visible.",
+      "410→590": "Augustine's earthly cities crumble, but the City of God endures. Gregory, inheriting that theology amid plague, embodies it: if empire fails, the Church must lead.",
+      "590→1000": "Gregory's plague theology becomes the template: catastrophe as divine warning, the Church as ark. By the year 1000, Christendom awaits the end — prepared by Gregory's pastoral eschatology."
     },
     "monastic-preservation": {
       "529→800": "Benedict's Rule established the rhythm of manuscript copying; Cassiodorus made it systematic. By Charlemagne's time, monasteries were the infrastructure of textual survival.",
-      "800→1000": "Carolingian scriptoria standardized minuscule script; Cluniac reforms spread the practice. The 'white mantle of churches' was built by the same hands that copied the texts inside them."
+      "800→1000": "Carolingian scriptoria standardized minuscule script; Cluniac reforms spread the practice. The 'white mantle of churches' was built by the same hands that copied the texts inside them.",
+      "529→590": "Benedict writes the Rule; Gregory writes Benedict's biography. The Dialogues make Monte Cassino's founder a saint, and his Rule spreads wherever Gregory's authority reaches.",
+      "590→800": "Gregory sends monks to England and promotes Benedict's Rule throughout Western Europe. Two centuries later, Charlemagne makes it the standard — the Benedictine network Gregory championed becomes the infrastructure of medieval learning."
     },
     "dialectical-method": {
       "762→1141": "The Mu'tazila debated theology with Greek logical tools; those same tools reached Paris through Arabic-Latin translation. Abelard's <em>Sic et Non</em> is dialectical method applied to Christian doctrine — the Baghdad conversation continued in French."
@@ -133,15 +139,21 @@
       "529→800": "Gli studiosi esiliati dall'Accademia portarono testi in Persia; i cristiani siriaci li tradussero. Quando Alcuino rianimò il sapere alla corte di Carlo Magno, lavorò dalle traduzioni latine di Boezio — il ramo occidentale della stessa trasmissione.",
       "800→1453": "Alcuino preservò i testi latini sopravvissuti; quando Costantinopoli cadde, gli studiosi bizantini portarono gli originali greci in Occidente. La donazione della biblioteca di Bessarione completò il circuito — il sapere greco che tornava in Italia sei secoli dopo essere partito per Baghdad.",
       "800→1066": "Il rinascimento carolingio di Carlo Magno preservò il sapere classico nei monasteri dell'Impero Franco; la conquista normanna trapianta questa rete di studio continentale in Inghilterra, creando le basi istituzionali per Oxford e Cambridge.",
-      "1066→1453": "Il collegamento normanno-inglese al sapere continentale prepara l'Inghilterra ad accogliere gli studiosi bizantini in fuga da Costantinopoli. I manoscritti greci viaggiano attraverso le stesse reti ecclesiastiche stabilite da Lanfranco."
+      "1066→1453": "Il collegamento normanno-inglese al sapere continentale prepara l'Inghilterra ad accogliere gli studiosi bizantini in fuga da Costantinopoli. I manoscritti greci viaggiano attraverso le stesse reti ecclesiastiche stabilite da Lanfranco.",
+      "529→590": "Quando Giustiniano chiude l'Accademia, la filosofia deve trovare nuove dimore. La missione di Gregorio in Inghilterra ne crea una: i monasteri anglosassoni diventeranno scriptoria che preservano ciò che Roma non può più proteggere.",
+      "590→800": "Le lettere e la liturgia di Gregorio viaggiano a nord con i suoi missionari. Ai tempi di Carlo Magno, Alcuino di York — erede del sapere che Gregorio portò in Inghilterra — torna sul continente per educare un impero."
     },
     "eschatological-anxiety": {
       "410→1000": "La caduta di Roma sembrò apocalittica ai contemporanei di Agostino; l'avvicinarsi dell'anno Mille rianimò quelle paure. Il 'bianco manto di chiese' fu in parte ringraziamento per un millennio che non finì nel fuoco.",
-      "1000→1453": "Il millennio passò; la caduta di Costantinopoli nel 1453 riaprì ferite escatologiche. Gli studiosi greci in fuga verso Occidente portavano non solo manoscritti ma il trauma della fine di un impero cristiano."
+      "1000→1453": "Il millennio passò; la caduta di Costantinopoli nel 1453 riaprì ferite escatologiche. Gli studiosi greci in fuga verso Occidente portavano non solo manoscritti ma il trauma della fine di un impero cristiano.",
+      "410→590": "Le città terrene di Agostino crollano, ma la Città di Dio perdura. Gregorio, ereditando quella teologia in tempo di peste, la incarna: se l'impero fallisce, la Chiesa deve guidare.",
+      "590→1000": "La teologia della peste di Gregorio diventa il modello: la catastrofe come monito divino, la Chiesa come arca. Intorno all'anno Mille, la cristianità attende la fine — preparata dall'escatologia pastorale di Gregorio."
     },
     "monastic-preservation": {
       "529→800": "La Regola di Benedetto stabilì il ritmo della copiatura dei manoscritti; Cassiodoro la rese sistematica. Ai tempi di Carlo Magno, i monasteri erano l'infrastruttura della sopravvivenza testuale.",
-      "800→1000": "Gli scriptoria carolingi standardizzarono la minuscola; le riforme cluniacensi diffusero la pratica. Il 'bianco manto di chiese' fu costruito dalle stesse mani che copiavano i testi al loro interno."
+      "800→1000": "Gli scriptoria carolingi standardizzarono la minuscola; le riforme cluniacensi diffusero la pratica. Il 'bianco manto di chiese' fu costruito dalle stesse mani che copiavano i testi al loro interno.",
+      "529→590": "Benedetto scrive la Regola; Gregorio scrive la biografia di Benedetto. I Dialogi rendono il fondatore di Montecassino un santo, e la sua Regola si diffonde ovunque arrivi l'autorità di Gregorio.",
+      "590→800": "Gregorio invia monaci in Inghilterra e promuove la Regola di Benedetto in tutta l'Europa occidentale. Due secoli dopo, Carlo Magno la rende lo standard — la rete benedettina sostenuta da Gregorio diventa l'infrastruttura del sapere medievale."
     },
     "dialectical-method": {
       "762→1141": "I Mu'tazila dibattevano teologia con strumenti logici greci; quegli stessi strumenti raggiunsero Parigi attraverso la traduzione arabo-latina. Il <em>Sic et Non</em> di Abelardo è il metodo dialettico applicato alla dottrina cristiana."
