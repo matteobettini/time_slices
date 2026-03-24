@@ -2528,5 +2528,79 @@
       "url": "audio/590-rome-servant-of-the-servants.mp3",
       "duration": 158
     }
+  },
+  {
+    "year": "910",
+    "id": "910-cluny-seeds-of-renewal",
+    "title": "Cluny — Seeds of Renewal",
+    "teaser": "A duke gives away his hunting forest. Vikings die at Tettenhall. Hungarians devastate the Frankish heartland. As the Carolingian world crumbles, a small monastery in Burgundy plants the seeds of medieval Christendom's renewal.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "The <strong>Carolingian artistic renaissance</strong> is fading. The great court schools of Charlemagne's heirs — Tours, Rheims, Metz — produce fewer masterpieces as political fragmentation dries up imperial patronage. Yet in northern France, the <strong>Franco-Saxon style</strong> endures, blending Carolingian elegance with the interlace patterns of Insular art. Monasteries like <strong>Saint-Amand</strong> and <strong>Saint-Bertin</strong> continue illuminating manuscripts: large decorated initials, vine scrolls, evangelist portraits in gold and purple. This is art in retreat, preserving rather than innovating — but preservation, in 910, <em>is</em> the victory. The artistic explosion of the Ottonian Renaissance forty years hence will build on what these scribes save."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "Latin literacy survives in the monasteries, barely. In England, the <strong>Alfredian literary revival</strong> continues under Alfred's son <strong>Edward the Elder</strong>, though the king himself focuses on war rather than books. <strong>Asser's Life of King Alfred</strong>, written c. 893, remains the model for vernacular biography — a Welsh monk writing Latin prose about an English king who translated Latin into English. The <strong>Anglo-Saxon Chronicle</strong>, begun under Alfred, records the Battle of Tettenhall with laconic precision: <em>'many thousands of men were killed.'</em> On the continent, monastic scriptoria copy and restock, preparing for a future they cannot see. The Rule of St Benedict itself circulates in corrected copies — the text that will define Cluny's mission."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "Philosophy as systematic inquiry barely exists in 910 — the Carolingian schools have collapsed, and the great scholastic synthesis lies two centuries away. But the <strong>Rule of St Benedict</strong> contains its own philosophy: a vision of <em>ora et labora</em> (pray and work), of time sanctified by the Divine Office, of authority exercised through humility. Cluny's founding charter articulates something radical: the monastery answers <strong>directly to the Pope</strong>, bypassing local lords and bishops. This principle — that spiritual authority transcends feudal hierarchy — will reshape medieval political thought. The charter also specifies free election of abbots, limiting dynastic control. These aren't abstract ideas; they're institutional innovations with philosophical consequences."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>September 11</strong>, <strong>William I of Aquitaine</strong> — called 'the Pious' — donates his hunting preserve at Cluny to found a Benedictine monastery under <strong>Abbot Berno</strong>. On <strong>August 5</strong>, at <strong>Tettenhall</strong>, the combined armies of Wessex and Mercia annihilate a Northumbrian Viking force, killing three kings — <strong>Eowils</strong>, <strong>Halfdan</strong>, and <strong>Ingwær</strong>. This ends major Viking raiding from the north; Edward the Elder and his sister <strong>Æthelflæd</strong> can now reconquer the Danelaw. Meanwhile, <strong>Hungarians</strong> devastate East Francia: the battles of <strong>Augsburg</strong> (June 12) and <strong>Rednitz</strong> (June 22) force the young king <strong>Louis IV 'the Child'</strong> to pay tribute. The last Carolingian ruler of the East will die next year."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The connections are generational rather than immediate. Cluny's direct papal authority removes the monastery from feudal politics, allowing it to <strong>accumulate wealth and prestige</strong> without local interference — the same model that will make the medieval papacy powerful. The Battle of Tettenhall secures England for the House of Wessex; Alfred's grandson <strong>Æthelstan</strong> will unite the kingdom in 927. The Franco-Saxon manuscripts preserve Carolingian learning until the <strong>Ottonian Renaissance</strong> revives imperial patronage. Most significantly, Cluny's reform will spread to over <strong>1,500 monasteries</strong> by 1100, reshaping European monasticism and producing four popes. The seed planted in 910 flowers for three centuries.",
+        "funFact": "William the Pious's founding charter includes a curse on anyone who interferes with Cluny: 'May they incur the wrath of God... and in the last judgment may they receive eternal damnation.' The threat worked — Cluny remained independent for 200 years."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cluny_Abbey",
+        "title": "Cluny Abbey — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Tettenhall",
+        "title": "Battle of Tettenhall — Wikipedia"
+      },
+      {
+        "url": "https://www.britannica.com/place/Cluny-Abbey",
+        "title": "Cluny Abbey — Britannica"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Lechfeld_(910)",
+        "title": "Battle of Augsburg (910) — Wikipedia"
+      },
+      {
+        "url": "https://www.khanacademy.org/humanities/medieval-world/romanesque-art/romanesque-art-in-france/a/cluny-abbey",
+        "title": "Cluny Abbey — Khan Academy"
+      }
+    ],
+    "threads": [
+      "monastic-preservation",
+      "carolingian-renaissance",
+      "translatio-studii",
+      "institutional-formation"
+    ],
+    "location": {
+      "lat": 46.4347,
+      "lon": 4.6594,
+      "place": "Cluny"
+    },
+    "addedDate": "2026-03-24T06:00:00Z",
+    "image": {
+      "url": "images/910-cluny-seeds-of-renewal.jpg",
+      "caption": "Illuminated initial from the Second Bible of Charles the Bald (c. 870), exemplifying Franco-Saxon manuscript art at its finest — the style that Burgundian monasteries preserved through the dark decades",
+      "width": 588,
+      "height": 733,
+      "attribution": "Saint-Amand Abbey, Public domain, via Wikimedia Commons"
+    },
+    "podcast": {
+      "url": "audio/910-cluny-seeds-of-renewal.mp3",
+      "duration": 190
+    }
   }
 ]

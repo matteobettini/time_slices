@@ -15,7 +15,9 @@
       "800→1066": "Charlemagne's Carolingian renaissance preserved classical learning in monasteries across the Frankish Empire; the Norman conquest transplants this Continental scholarly network to England, creating the institutional framework for Oxford and Cambridge.",
       "1066→1453": "The Norman-English connection to Continental learning prepares England to receive the Byzantine scholars fleeing Constantinople. Greek manuscripts travel through the same ecclesiastical networks Lanfranc established.",
       "529→590": "When Justinian closes the Academy, philosophy must find new homes. Gregory's mission to England creates one: Anglo-Saxon monasteries will become scriptoria that preserve what Rome can no longer protect.",
-      "590→800": "Gregory's letters and liturgy travel north with his missionaries. By Charlemagne's time, Alcuin of York — heir to the learning Gregory brought to England — returns to the continent to school an empire."
+      "590→800": "Gregory's letters and liturgy travel north with his missionaries. By Charlemagne's time, Alcuin of York — heir to the learning Gregory brought to England — returns to the continent to school an empire.",
+      "800→910": "The translatio from Rome to Aachen now scattered to monasteries across the fragmenting realm — Franco-Saxon scriptoria became the relay stations of classical learning.",
+      "910→1066": "Burgundian monasteries preserved the transmission chain until Norman conquest carried it to England — the Domesday Book's Latin clerks traced their training to Carolingian foundations."
     },
     "eschatological-anxiety": {
       "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
@@ -27,7 +29,9 @@
       "529→800": "Benedict's Rule established the rhythm of manuscript copying; Cassiodorus made it systematic. By Charlemagne's time, monasteries were the infrastructure of textual survival.",
       "800→1000": "Carolingian scriptoria standardized minuscule script; Cluniac reforms spread the practice. The 'white mantle of churches' was built by the same hands that copied the texts inside them.",
       "529→590": "Benedict writes the Rule; Gregory writes Benedict's biography. The Dialogues make Monte Cassino's founder a saint, and his Rule spreads wherever Gregory's authority reaches.",
-      "590→800": "Gregory sends monks to England and promotes Benedict's Rule throughout Western Europe. Two centuries later, Charlemagne makes it the standard — the Benedictine network Gregory championed becomes the infrastructure of medieval learning."
+      "590→800": "Gregory sends monks to England and promotes Benedict's Rule throughout Western Europe. Two centuries later, Charlemagne makes it the standard — the Benedictine network Gregory championed becomes the infrastructure of medieval learning.",
+      "800→910": "Alcuin's educational reforms created the copying culture; as political order collapsed, monasteries kept the lights on — Cluny institutionalized what individual scribes had struggled to maintain.",
+      "910→1000": "Cluny's independence from local lords created monasteries that could accumulate libraries without fear of plunder — by 1000, Gerbert drew on texts preserved through this network."
     },
     "dialectical-method": {
       "762→1141": "The Mu'tazila debated theology with Greek logical tools; those same tools reached Paris through Arabic-Latin translation. Abelard's <em>Sic et Non</em> is dialectical method applied to Christian doctrine — the Baghdad conversation continued in French."
@@ -106,7 +110,9 @@
       "1401→1504": "Brunelleschi and Ghiberti competed for the Baptistery doors; Leonardo and Michelangelo competed for the Palazzo Vecchio wall. Florentine patronage made rivalry productive."
     },
     "carolingian-renaissance": {
-      "800→1000": "Alcuin standardized script and curriculum; Gerbert added mathematics. The Carolingian project survived the Carolingians."
+      "800→1000": "Alcuin standardized script and curriculum; Gerbert added mathematics. The Carolingian project survived the Carolingians.",
+      "800→910": "As Carolingian imperial patronage fragmented, monasteries like Saint-Amand kept the tradition alive in regional scriptoria — preserving Alcuin's reforms through the storm.",
+      "910→1000": "The Franco-Saxon style survived in Burgundian monasteries until Otto I revived imperial patronage — Cluny's reforms created the institutional stability that made the Ottonian Renaissance possible."
     },
     "fragmentation": {
       "1848→1922": "The revolutions of 1848 fractured empires and ideologies; by 1922, Eliot's <em>Waste Land</em> made fragments a literary form. Political breakup became aesthetic principle.",
@@ -123,6 +129,9 @@
     },
     "martyrdom-of-reason": {
       "250→1600": "From Decian pyres to Giordano Bruno's stake: three and a half centuries separate early Christian martyrs from the philosopher who died for an infinite cosmos, yet both faced empires that demanded intellectual submission."
+    },
+    "institutional-formation": {
+      "910→1215": "Cluny's principle — spiritual authority answering directly to Rome — planted the seed; by 1215, the Fourth Lateran Council codified the institutional Church that reforming monasteries had built."
     }
   },
   "it": {
@@ -141,7 +150,9 @@
       "800→1066": "Il rinascimento carolingio di Carlo Magno preservò il sapere classico nei monasteri dell'Impero Franco; la conquista normanna trapianta questa rete di studio continentale in Inghilterra, creando le basi istituzionali per Oxford e Cambridge.",
       "1066→1453": "Il collegamento normanno-inglese al sapere continentale prepara l'Inghilterra ad accogliere gli studiosi bizantini in fuga da Costantinopoli. I manoscritti greci viaggiano attraverso le stesse reti ecclesiastiche stabilite da Lanfranco.",
       "529→590": "Quando Giustiniano chiude l'Accademia, la filosofia deve trovare nuove dimore. La missione di Gregorio in Inghilterra ne crea una: i monasteri anglosassoni diventeranno scriptoria che preservano ciò che Roma non può più proteggere.",
-      "590→800": "Le lettere e la liturgia di Gregorio viaggiano a nord con i suoi missionari. Ai tempi di Carlo Magno, Alcuino di York — erede del sapere che Gregorio portò in Inghilterra — torna sul continente per educare un impero."
+      "590→800": "Le lettere e la liturgia di Gregorio viaggiano a nord con i suoi missionari. Ai tempi di Carlo Magno, Alcuino di York — erede del sapere che Gregorio portò in Inghilterra — torna sul continente per educare un impero.",
+      "800→910": "La translatio da Roma ad Aquisgrana si disperse ora nei monasteri del regno in frammentazione — gli scriptoria franco-sassoni divennero le stazioni di rilancio della cultura classica.",
+      "910→1066": "I monasteri borgognoni preservarono la catena di trasmissione finché la conquista normanna la portò in Inghilterra — i chierici latini del Domesday Book facevano risalire la loro formazione alle fondazioni carolinge."
     },
     "eschatological-anxiety": {
       "410→1000": "La caduta di Roma sembrò apocalittica ai contemporanei di Agostino; l'avvicinarsi dell'anno Mille rianimò quelle paure. Il 'bianco manto di chiese' fu in parte ringraziamento per un millennio che non finì nel fuoco.",
@@ -153,7 +164,9 @@
       "529→800": "La Regola di Benedetto stabilì il ritmo della copiatura dei manoscritti; Cassiodoro la rese sistematica. Ai tempi di Carlo Magno, i monasteri erano l'infrastruttura della sopravvivenza testuale.",
       "800→1000": "Gli scriptoria carolingi standardizzarono la minuscola; le riforme cluniacensi diffusero la pratica. Il 'bianco manto di chiese' fu costruito dalle stesse mani che copiavano i testi al loro interno.",
       "529→590": "Benedetto scrive la Regola; Gregorio scrive la biografia di Benedetto. I Dialogi rendono il fondatore di Montecassino un santo, e la sua Regola si diffonde ovunque arrivi l'autorità di Gregorio.",
-      "590→800": "Gregorio invia monaci in Inghilterra e promuove la Regola di Benedetto in tutta l'Europa occidentale. Due secoli dopo, Carlo Magno la rende lo standard — la rete benedettina sostenuta da Gregorio diventa l'infrastruttura del sapere medievale."
+      "590→800": "Gregorio invia monaci in Inghilterra e promuove la Regola di Benedetto in tutta l'Europa occidentale. Due secoli dopo, Carlo Magno la rende lo standard — la rete benedettina sostenuta da Gregorio diventa l'infrastruttura del sapere medievale.",
+      "800→910": "Le riforme educative di Alcuino crearono la cultura della copia; al collasso dell'ordine politico, i monasteri tennero accese le luci — Cluny istituzionalizzò ciò che singoli scribi avevano lottato per mantenere.",
+      "910→1000": "L'indipendenza di Cluny dai signori locali creò monasteri che potevano accumulare biblioteche senza timore di saccheggio — nel 1000, Gerberto attinse a testi preservati attraverso questa rete."
     },
     "dialectical-method": {
       "762→1141": "I Mu'tazila dibattevano teologia con strumenti logici greci; quegli stessi strumenti raggiunsero Parigi attraverso la traduzione arabo-latina. Il <em>Sic et Non</em> di Abelardo è il metodo dialettico applicato alla dottrina cristiana."
@@ -232,7 +245,9 @@
       "1401→1504": "Brunelleschi e Ghiberti gareggiarono per le porte del Battistero; Leonardo e Michelangelo gareggiarono per la parete di Palazzo Vecchio."
     },
     "carolingian-renaissance": {
-      "800→1000": "Alcuino standardizzò scrittura e curriculum; Gerberto aggiunse la matematica. Il progetto carolingio sopravvisse ai Carolingi."
+      "800→1000": "Alcuino standardizzò scrittura e curriculum; Gerberto aggiunse la matematica. Il progetto carolingio sopravvisse ai Carolingi.",
+      "800→910": "Mentre il mecenatismo imperiale carolingio si frammentava, monasteri come Saint-Amand mantennero viva la tradizione negli scriptoria regionali — preservando le riforme di Alcuino attraverso la tempesta.",
+      "910→1000": "Lo stile franco-sassone sopravvisse nei monasteri borgognoni finché Ottone I non ripristinò il mecenatismo imperiale — le riforme di Cluny crearono la stabilità istituzionale che rese possibile il Rinascimento ottoniano."
     },
     "fragmentation": {
       "1848→1922": "Le rivoluzioni del 1848 frantumarono imperi e ideologie; nel 1922, la <em>Terra desolata</em> di Eliot fece dei frammenti una forma letteraria.",
@@ -249,6 +264,9 @@
     },
     "martyrdom-of-reason": {
       "250→1600": "Dai roghi deciani al rogo di Giordano Bruno: tre secoli e mezzo separano i primi martiri cristiani dal filosofo morto per un cosmo infinito, eppure entrambi affrontarono imperi che esigevano sottomissione intellettuale."
+    },
+    "institutional-formation": {
+      "910→1215": "Il principio di Cluny — l'autorità spirituale che risponde direttamente a Roma — piantò il seme; nel 1215, il Quarto Concilio Lateranense codificò la Chiesa istituzionale che i monasteri riformatori avevano costruito."
     }
   }
 }

@@ -2520,5 +2520,79 @@
       "url": "audio/it/590-rome-servant-of-the-servants.mp3",
       "duration": 181
     }
+  },
+  {
+    "year": "910",
+    "id": "910-cluny-seeds-of-renewal",
+    "title": "Cluny — I semi del rinnovamento",
+    "teaser": "Un duca dona la sua riserva di caccia. I vichinghi muoiono a Tettenhall. Gli ungari devastano il cuore dei regni franchi. Mentre il mondo carolingio crolla, un piccolo monastero in Borgogna pianta i semi del rinnovamento della Cristianità medievale.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Il <strong>rinascimento artistico carolingio</strong> sta svanendo. Le grandi scuole di corte degli eredi di Carlo Magno — Tours, Reims, Metz — producono sempre meno capolavori mentre la frammentazione politica prosciuga il mecenatismo imperiale. Eppure nella Francia settentrionale lo <strong>stile franco-sassone</strong> resiste, fondendo l'eleganza carolingia con i motivi a intreccio dell'arte insulare. Monasteri come <strong>Saint-Amand</strong> e <strong>Saint-Bertin</strong> continuano a miniare manoscritti: grandi iniziali decorate, volute vegetali, ritratti degli evangelisti in oro e porpora. È un'arte in ritirata, che preserva più che innovare — ma nel 910 la preservazione <em>è</em> la vittoria. L'esplosione artistica del Rinascimento ottoniano, quarant'anni dopo, si baserà su ciò che questi scribi salvano."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "L'alfabetizzazione latina sopravvive nei monasteri, a malapena. In Inghilterra il <strong>revival letterario alfrediano</strong> continua sotto il figlio di Alfredo, <strong>Edoardo il Vecchio</strong>, anche se il re si concentra sulla guerra piuttosto che sui libri. La <em>Vita di re Alfredo</em> di <strong>Asser</strong>, scritta intorno all'893, rimane il modello per la biografia in volgare — un monaco gallese che scrive prosa latina su un re inglese che traduceva il latino in inglese. La <strong>Cronaca anglosassone</strong>, iniziata sotto Alfredo, registra la battaglia di Tettenhall con laconicità: <em>'molte migliaia di uomini furono uccisi.'</em> Sul continente, gli scriptoria monastici copiano e fanno scorte, preparandosi per un futuro che non possono vedere. La stessa Regola di San Benedetto circola in copie corrette — il testo che definirà la missione di Cluny."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "La filosofia come indagine sistematica quasi non esiste nel 910 — le scuole carolinge sono crollate, e la grande sintesi scolastica è lontana due secoli. Ma la <strong>Regola di San Benedetto</strong> contiene una propria filosofia: una visione di <em>ora et labora</em> (prega e lavora), del tempo santificato dall'Ufficio Divino, dell'autorità esercitata attraverso l'umiltà. L'atto di fondazione di Cluny articola qualcosa di radicale: il monastero risponde <strong>direttamente al Papa</strong>, scavalcando signori locali e vescovi. Questo principio — che l'autorità spirituale trascende la gerarchia feudale — rimodellerà il pensiero politico medievale. L'atto specifica anche la libera elezione degli abati, limitando il controllo dinastico. Non sono idee astratte; sono innovazioni istituzionali con conseguenze filosofiche."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "L'<strong>11 settembre</strong>, <strong>Guglielmo I d'Aquitania</strong> — detto 'il Pio' — dona la sua riserva di caccia a Cluny per fondare un monastero benedettino sotto l'<strong>abate Bernone</strong>. Il <strong>5 agosto</strong>, a <strong>Tettenhall</strong>, gli eserciti combinati di Wessex e Mercia annientano una forza vichinga della Northumbria, uccidendo tre re — <strong>Eowils</strong>, <strong>Halfdan</strong> e <strong>Ingwær</strong>. Questo pone fine alle grandi incursioni vichinghe dal nord; Edoardo il Vecchio e sua sorella <strong>Ethelfleda</strong> potranno ora riconquistare il Danelaw. Nel frattempo, gli <strong>Ungari</strong> devastano la Francia Orientale: le battaglie di <strong>Augusta</strong> (12 giugno) e <strong>Rednitz</strong> (22 giugno) costringono il giovane re <strong>Ludovico IV 'il Fanciullo'</strong> a pagare tributo. L'ultimo sovrano carolingio dell'Est morirà l'anno seguente."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Le connessioni sono generazionali piuttosto che immediate. L'autorità papale diretta di Cluny rimuove il monastero dalla politica feudale, permettendogli di <strong>accumulare ricchezza e prestigio</strong> senza interferenze locali — lo stesso modello che renderà potente il papato medievale. La battaglia di Tettenhall assicura l'Inghilterra alla Casa di Wessex; il nipote di Alfredo, <strong>Æthelstan</strong>, unirà il regno nel 927. I manoscritti franco-sassoni preservano la cultura carolingia fino al <strong>Rinascimento ottoniano</strong>, quando il mecenatismo imperiale rinasce. Soprattutto, la riforma di Cluny si diffonderà a oltre <strong>1.500 monasteri</strong> entro il 1100, trasformando il monachesimo europeo e producendo quattro papi. Il seme piantato nel 910 fiorisce per tre secoli.",
+        "funFact": "L'atto di fondazione di Guglielmo il Pio include una maledizione per chiunque interferisca con Cluny: 'Che incorra nell'ira di Dio... e nel giudizio finale riceva la dannazione eterna.' La minaccia funzionò — Cluny rimase indipendente per 200 anni."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Abbazia_di_Cluny",
+        "title": "Abbazia di Cluny — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Tettenhall",
+        "title": "Battaglia di Tettenhall — Wikipedia"
+      },
+      {
+        "url": "https://www.britannica.com/place/Cluny-Abbey",
+        "title": "Abbazia di Cluny — Britannica"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Ludovico_IV_di_Germania",
+        "title": "Ludovico IV di Germania — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Guglielmo_I_d%27Aquitania",
+        "title": "Guglielmo I d'Aquitania — Wikipedia"
+      }
+    ],
+    "threads": [
+      "monastic-preservation",
+      "carolingian-renaissance",
+      "translatio-studii",
+      "institutional-formation"
+    ],
+    "location": {
+      "lat": 46.4347,
+      "lon": 4.6594,
+      "place": "Cluny"
+    },
+    "addedDate": "2026-03-24T06:00:00Z",
+    "image": {
+      "url": "images/910-cluny-seeds-of-renewal.jpg",
+      "caption": "Iniziale miniata dalla Seconda Bibbia di Carlo il Calvo (c. 870), esempio dello stile manoscritto franco-sassone al suo apice — lo stile che i monasteri borgognoni preservarono attraverso i decenni bui",
+      "width": 588,
+      "height": 733,
+      "attribution": "Abbazia di Saint-Amand, Pubblico dominio, via Wikimedia Commons"
+    },
+    "podcast": {
+      "url": "audio/it/910-cluny-seeds-of-renewal.mp3",
+      "duration": 227
+    }
   }
 ]
