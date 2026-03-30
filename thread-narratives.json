@@ -17,7 +17,9 @@
       "529→590": "When Justinian closes the Academy, philosophy must find new homes. Gregory's mission to England creates one: Anglo-Saxon monasteries will become scriptoria that preserve what Rome can no longer protect.",
       "590→800": "Gregory's letters and liturgy travel north with his missionaries. By Charlemagne's time, Alcuin of York — heir to the learning Gregory brought to England — returns to the continent to school an empire.",
       "800→910": "The translatio from Rome to Aachen now scattered to monasteries across the fragmenting realm — Franco-Saxon scriptoria became the relay stations of classical learning.",
-      "910→1066": "Burgundian monasteries preserved the transmission chain until Norman conquest carried it to England — the Domesday Book's Latin clerks traced their training to Carolingian foundations."
+      "910→1066": "Burgundian monasteries preserved the transmission chain until Norman conquest carried it to England — the Domesday Book's Latin clerks traced their training to Carolingian foundations.",
+      "590→664": "Gregory's mission planted Roman learning in Canterbury; at Whitby, it merged with Irish scholarship to create the Anglo-Saxon synthesis.",
+      "664→800": "England chose Rome, and Rome's learning flowed north through English monasteries — then back to the Continent when Alcuin arrived at Aachen."
     },
     "eschatological-anxiety": {
       "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
@@ -31,7 +33,9 @@
       "529→590": "Benedict writes the Rule; Gregory writes Benedict's biography. The Dialogues make Monte Cassino's founder a saint, and his Rule spreads wherever Gregory's authority reaches.",
       "590→800": "Gregory sends monks to England and promotes Benedict's Rule throughout Western Europe. Two centuries later, Charlemagne makes it the standard — the Benedictine network Gregory championed becomes the infrastructure of medieval learning.",
       "800→910": "Alcuin's educational reforms created the copying culture; as political order collapsed, monasteries kept the lights on — Cluny institutionalized what individual scribes had struggled to maintain.",
-      "910→1000": "Cluny's independence from local lords created monasteries that could accumulate libraries without fear of plunder — by 1000, Gerbert drew on texts preserved through this network."
+      "910→1000": "Cluny's independence from local lords created monasteries that could accumulate libraries without fear of plunder — by 1000, Gerbert drew on texts preserved through this network.",
+      "590→664": "Gregory's Dialogues canonized Benedict's Rule; Irish monks carried it to Northumbria, where Hilda's Whitby trained five future bishops.",
+      "664→800": "Whitby's educated monks seeded English scriptoria; Alcuin brought their learning to Charlemagne, launching the Carolingian preservation of antiquity."
     },
     "dialectical-method": {
       "762→1141": "The Mu'tazila debated theology with Greek logical tools; those same tools reached Paris through Arabic-Latin translation. Abelard's <em>Sic et Non</em> is dialectical method applied to Christian doctrine — the Baghdad conversation continued in French."
@@ -58,7 +62,8 @@
       "1274→1300": "As scholasticism peaked, vernacular poetry matured. Dante's <em>Vita Nuova</em> appeared in the 1290s — the language Aquinas ignored becoming literature.",
       "1300→1321": "Giotto painted what Dante wrote: the human face of divine comedy. Both used vernacular means — Tuscan dialect, naturalistic bodies — to tell sacred stories.",
       "1321→1347": "Dante proved Tuscan could bear the weight of theology; Boccaccio proved it could carry ribaldry and grief. The <em>Decameron</em>'s plague frame is the <em>Commedia</em>'s structure inverted.",
-      "1066→1215": "The Norman conquest nearly extinguishes Old English literature, but the merging of French and English will create the rich hybrid of Middle English. The same courts that consume Norman French romance begin commissioning works in the new vernacular."
+      "1066→1215": "The Norman conquest nearly extinguishes Old English literature, but the merging of French and English will create the rich hybrid of Middle English. The same courts that consume Norman French romance begin commissioning works in the new vernacular.",
+      "664→1066": "Caedmon's hymn opened English vernacular poetry; four centuries later, the Norman conquest would fracture and remake that same language."
     },
     "renaissance-humanism": {
       "1401→1453": "Florentine humanists collected manuscripts before 1453; the Greek exodus accelerated what Salutati and Bruni began. Humanism was ready for what Constantinople's scholars brought.",
@@ -152,7 +157,9 @@
       "529→590": "Quando Giustiniano chiude l'Accademia, la filosofia deve trovare nuove dimore. La missione di Gregorio in Inghilterra ne crea una: i monasteri anglosassoni diventeranno scriptoria che preservano ciò che Roma non può più proteggere.",
       "590→800": "Le lettere e la liturgia di Gregorio viaggiano a nord con i suoi missionari. Ai tempi di Carlo Magno, Alcuino di York — erede del sapere che Gregorio portò in Inghilterra — torna sul continente per educare un impero.",
       "800→910": "La translatio da Roma ad Aquisgrana si disperse ora nei monasteri del regno in frammentazione — gli scriptoria franco-sassoni divennero le stazioni di rilancio della cultura classica.",
-      "910→1066": "I monasteri borgognoni preservarono la catena di trasmissione finché la conquista normanna la portò in Inghilterra — i chierici latini del Domesday Book facevano risalire la loro formazione alle fondazioni carolinge."
+      "910→1066": "I monasteri borgognoni preservarono la catena di trasmissione finché la conquista normanna la portò in Inghilterra — i chierici latini del Domesday Book facevano risalire la loro formazione alle fondazioni carolinge.",
+      "590→664": "La missione di Gregorio piantò il sapere romano a Canterbury; a Whitby, si fuse con la cultura irlandese creando la sintesi anglosassone.",
+      "664→800": "L'Inghilterra scelse Roma, e il sapere romano fluì a nord attraverso i monasteri inglesi — poi tornò al Continente quando Alcuino arrivò ad Aquisgrana."
     },
     "eschatological-anxiety": {
       "410→1000": "La caduta di Roma sembrò apocalittica ai contemporanei di Agostino; l'avvicinarsi dell'anno Mille rianimò quelle paure. Il 'bianco manto di chiese' fu in parte ringraziamento per un millennio che non finì nel fuoco.",
@@ -166,7 +173,9 @@
       "529→590": "Benedetto scrive la Regola; Gregorio scrive la biografia di Benedetto. I Dialogi rendono il fondatore di Montecassino un santo, e la sua Regola si diffonde ovunque arrivi l'autorità di Gregorio.",
       "590→800": "Gregorio invia monaci in Inghilterra e promuove la Regola di Benedetto in tutta l'Europa occidentale. Due secoli dopo, Carlo Magno la rende lo standard — la rete benedettina sostenuta da Gregorio diventa l'infrastruttura del sapere medievale.",
       "800→910": "Le riforme educative di Alcuino crearono la cultura della copia; al collasso dell'ordine politico, i monasteri tennero accese le luci — Cluny istituzionalizzò ciò che singoli scribi avevano lottato per mantenere.",
-      "910→1000": "L'indipendenza di Cluny dai signori locali creò monasteri che potevano accumulare biblioteche senza timore di saccheggio — nel 1000, Gerberto attinse a testi preservati attraverso questa rete."
+      "910→1000": "L'indipendenza di Cluny dai signori locali creò monasteri che potevano accumulare biblioteche senza timore di saccheggio — nel 1000, Gerberto attinse a testi preservati attraverso questa rete.",
+      "590→664": "I Dialogi di Gregorio canonizzarono la Regola di Benedetto; i monaci irlandesi la portarono in Northumbria, dove la Whitby di Ilda formò cinque futuri vescovi.",
+      "664→800": "I monaci istruiti di Whitby seminarono gli scriptoria inglesi; Alcuino portò il loro sapere a Carlo Magno, avviando la preservazione carolingia dell'antichità."
     },
     "dialectical-method": {
       "762→1141": "I Mu'tazila dibattevano teologia con strumenti logici greci; quegli stessi strumenti raggiunsero Parigi attraverso la traduzione arabo-latina. Il <em>Sic et Non</em> di Abelardo è il metodo dialettico applicato alla dottrina cristiana."
@@ -193,7 +202,8 @@
       "1274→1300": "Mentre la scolastica raggiungeva l'apice, la poesia volgare maturava. La <em>Vita Nuova</em> di Dante apparve negli anni 1290.",
       "1300→1321": "Giotto dipinse ciò che Dante scrisse: il volto umano della divina commedia. Entrambi usarono mezzi volgari per raccontare storie sacre.",
       "1321→1347": "Dante dimostrò che il toscano poteva sostenere il peso della teologia; Boccaccio dimostrò che poteva portare licenziosità e dolore.",
-      "1066→1215": "La conquista normanna quasi estingue la letteratura in inglese antico, ma la fusione di francese e inglese creerà il ricco ibrido dell'inglese medio. Le stesse corti che consumano romanzi in francese normanno iniziano a commissionare opere nel nuovo volgare."
+      "1066→1215": "La conquista normanna quasi estingue la letteratura in inglese antico, ma la fusione di francese e inglese creerà il ricco ibrido dell'inglese medio. Le stesse corti che consumano romanzi in francese normanno iniziano a commissionare opere nel nuovo volgare.",
+      "664→1066": "L'inno di Caedmone aprì la poesia vernacolare inglese; quattro secoli dopo, la conquista normanna avrebbe frantumato e rifatto quella stessa lingua."
     },
     "renaissance-humanism": {
       "1401→1453": "Gli umanisti fiorentini raccoglievano manoscritti prima del 1453; l'esodo greco accelerò ciò che Salutati e Bruni avevano iniziato.",

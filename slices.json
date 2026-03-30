@@ -2602,5 +2602,75 @@
       "url": "audio/910-cluny-seeds-of-renewal.mp3",
       "duration": 190
     }
+  },
+  {
+    "year": "664",
+    "id": "664-whitby-choice-of-peter",
+    "title": "Whitby — The Choice of Peter",
+    "teaser": "A king decides how his realm will calculate Easter — and binds England to Rome. In a windswept monastery ruled by a woman, two Christian worlds collide over calendars, haircuts, and the keys to heaven.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>Insular art</strong> is reaching its first flowering in the monasteries of Ireland and Northumbria. The <strong>Book of Durrow</strong>, likely produced around this time (c. 660-680), represents the earliest surviving complete illuminated Gospel book in the Insular style — a visual synthesis that will culminate in the Book of Kells a century later. Its <strong>carpet pages</strong> weave Celtic spirals, Germanic animal interlace, and Mediterranean colour into a devotional geometry that denies classical naturalism in favour of abstract infinity. This is art made for meditation, not representation. Meanwhile, the <strong>Ruthwell Cross</strong> and <strong>Bewcastle Cross</strong> begin translating similar patterns into stone, creating monumental works that fuse Christian iconography with runic inscriptions — the visual vocabulary of a newly Christian but still Germanic world."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "At Whitby itself, a cowherd named <strong>Caedmon</strong> is about to receive, according to Bede, the miraculous gift of vernacular verse. His <em>Hymn</em> — nine alliterative lines praising God as Creator — is the earliest surviving poem in English, a crucial moment when Germanic poetic forms meet Christian content. Caedmon transforms scriptural narratives into Old English verse that monks and laypeople alike can understand. This is not translation but transmutation: the oral traditions of heroic poetry now serve salvation history. Bede, writing seventy years later, preserves only the Latin paraphrase — but the <strong>vernacular turn</strong> Caedmon represents will shape English literature for centuries, making Christianity speakable in the language of field and hall."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "The Synod debates not merely calendars but <strong>epistemological authority</strong>. Colman argues from tradition: the Celtic calculation descends from Saint Columba and ultimately from John the Evangelist. Wilfrid counters with <strong>Petrine supremacy</strong>: Christ gave the keys of heaven to Peter, and Rome preserves Peter's practice. King Oswiu's decisive question cuts to the heart: can Colman claim for Columba what Christ promised to Peter? When Colman cannot, Oswiu smiles and declares he will not risk offending heaven's gatekeeper. The theological logic is simple but profound: <strong>apostolic succession</strong> and <strong>universal authority</strong> trump local tradition. This is the moment when England chooses Roman ecclesiology over Celtic independence — a choice that will shape its relationship to continental Christendom for nine hundred years."
+      },
+      "hist": {
+        "label": "History",
+        "content": "The political stakes are concrete. <strong>King Oswiu</strong> follows Celtic practice; his wife <strong>Eanflæd</strong> follows Roman. Some years, the king celebrates Easter while the queen is still fasting for Lent — the royal household literally divided over the holiest feast. Oswiu summons the Synod to Abbess <strong>Hilda's</strong> double monastery at <strong>Streonshalh</strong> (later called Whitby). Hilda herself favours Celtic ways but accepts the outcome with grace. <strong>Bishop Colman</strong>, unable to abandon his tradition, withdraws to Iona and then to Ireland, taking relics of <strong>Aidan</strong> and some of his followers. The same year brings the <strong>Yellow Plague</strong> to Britain and a solar eclipse — portents that medieval chroniclers would interpret as divine commentary on a kingdom's turning."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The Synod's decision flows directly from <strong>Pope Gregory's</strong> mission to England in 596-7, which planted Roman Christianity in Canterbury while Celtic Christianity held the north. Now, seventy years later, those two streams must merge or separate. By choosing Rome, Oswiu ensures that English Christianity will be connected to continental learning, papal administration, and eventually Carolingian reform. The monks trained at Whitby — including five future bishops — will carry this synthesis forward. The Insular art flourishing in manuscripts like Durrow embodies the same creative fusion: Celtic pattern, Germanic vigour, Mediterranean faith. When <strong>Alcuin of York</strong> arrives at Charlemagne's court a century later, he brings this Anglo-Saxon learning to seed the Carolingian Renaissance — a transmission that began at Whitby.",
+        "funFact": "Caedmon's gift came in a dream: commanded to sing of Creation, the illiterate cowherd woke with a hymn he had never heard before — poetry received, not composed."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Synod_of_Whitby",
+        "title": "Wikipedia: Synod of Whitby"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Caedmon",
+        "title": "Britannica: Caedmon"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Book_of_Durrow",
+        "title": "Wikipedia: Book of Durrow"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Hilda_of_Whitby",
+        "title": "Wikipedia: Hilda of Whitby"
+      }
+    ],
+    "image": {
+      "url": "images/664-whitby-choice-of-peter.jpg",
+      "caption": "Carpet page from the Book of Durrow, c. 660-680 CE. This Insular illumination exemplifies the fusion of Celtic, Germanic, and Mediterranean traditions that flourished in the Irish-Northumbrian world.",
+      "width": 319,
+      "height": 480,
+      "attribution": "Trinity College Dublin, Public Domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "insular-art",
+      "vernacular-literature",
+      "translatio-studii",
+      "monastic-preservation"
+    ],
+    "location": {
+      "lat": 54.4883,
+      "lon": -0.6078,
+      "place": "Whitby"
+    },
+    "addedDate": "2026-03-30T21:00:00Z",
+    "podcast": {
+      "url": "audio/664-whitby-choice-of-peter.mp3",
+      "duration": 178
+    }
   }
 ]

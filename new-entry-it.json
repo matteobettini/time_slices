@@ -1,0 +1,49 @@
+{
+  "year": "664",
+  "id": "664-whitby-choice-of-peter",
+  "title": "Whitby — La scelta di Pietro",
+  "teaser": "Un re decide come il suo regno calcolerà la Pasqua — e lega l'Inghilterra a Roma. In un monastero battuto dal vento governato da una donna, due mondi cristiani si scontrano su calendari, tonsure e le chiavi del paradiso.",
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "L'<strong>arte insulare</strong> raggiunge la sua prima fioritura nei monasteri d'Irlanda e Northumbria. Il <strong>Libro di Durrow</strong>, prodotto probabilmente intorno a questo periodo (c. 660-680), rappresenta il più antico evangeliario miniato completo in stile insulare — una sintesi visiva che culminerà nel Libro di Kells un secolo dopo. Le sue <strong>pagine tappeto</strong> intrecciano spirali celtiche, intrecci zoomorfi germanici e colori mediterranei in una geometria devozionale che rifiuta il naturalismo classico in favore dell'infinito astratto. È arte fatta per la meditazione, non per la rappresentazione. Nel frattempo, la <strong>Croce di Ruthwell</strong> e la <strong>Croce di Bewcastle</strong> traducono motivi simili nella pietra, creando opere monumentali che fondono iconografia cristiana con iscrizioni runiche — il vocabolario visivo di un mondo appena cristiano ma ancora germanico."
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "A Whitby stessa, un bovaro di nome <strong>Caedmone</strong> sta per ricevere, secondo Beda, il dono miracoloso del verso vernacolare. Il suo <em>Inno</em> — nove versi allitterativi che lodano Dio come Creatore — è il più antico poema inglese sopravvissuto, un momento cruciale in cui le forme poetiche germaniche incontrano il contenuto cristiano. Caedmone trasforma le narrazioni scritturali in versi in antico inglese che monaci e laici possono comprendere. Non è traduzione ma trasmutazione: le tradizioni orali della poesia eroica ora servono la storia della salvezza. Beda, scrivendo settant'anni dopo, preserva solo la parafrasi latina — ma la <strong>svolta vernacolare</strong> che Caedmone rappresenta plasmerà la letteratura inglese per secoli."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "Il Sinodo dibatte non solo calendari ma <strong>autorità epistemologica</strong>. Colmano argomenta dalla tradizione: il calcolo celtico discende da San Colomba e in definitiva da Giovanni Evangelista. Vilfrido ribatte con la <strong>supremazia petrina</strong>: Cristo diede le chiavi del cielo a Pietro, e Roma preserva la pratica di Pietro. La domanda decisiva di Re Osvio va al cuore della questione: può Colmano rivendicare per Colomba ciò che Cristo promise a Pietro? Quando Colmano non può, Osvio sorride e dichiara che non rischierà di offendere il guardiano del paradiso. La logica teologica è semplice ma profonda: <strong>successione apostolica</strong> e <strong>autorità universale</strong> superano la tradizione locale. Questo è il momento in cui l'Inghilterra sceglie l'ecclesiologia romana rispetto all'indipendenza celtica."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "La posta politica è concreta. <strong>Re Osvio</strong> segue la pratica celtica; sua moglie <strong>Eanfleda</strong> segue quella romana. Alcuni anni, il re celebra la Pasqua mentre la regina sta ancora digiunando per la Quaresima — la casa reale letteralmente divisa sulla festa più santa. Osvio convoca il Sinodo nel doppio monastero della badessa <strong>Ilda</strong> a <strong>Streonshalh</strong> (poi chiamata Whitby). Ilda stessa favorisce le usanze celtiche ma accetta l'esito con grazia. <strong>Vescovo Colmano</strong>, incapace di abbandonare la sua tradizione, si ritira a Iona e poi in Irlanda, portando reliquie di <strong>Aidano</strong> e alcuni seguaci. Lo stesso anno porta la <strong>Peste Gialla</strong> in Britannia e un'eclissi solare — presagi che i cronisti medievali avrebbero interpretato come commento divino sulla svolta di un regno."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "La decisione del Sinodo discende direttamente dalla missione di <strong>Papa Gregorio</strong> in Inghilterra nel 596-7, che piantò il cristianesimo romano a Canterbury mentre il cristianesimo celtico teneva il nord. Ora, settant'anni dopo, questi due flussi devono fondersi o separarsi. Scegliendo Roma, Osvio assicura che il cristianesimo inglese sarà connesso alla cultura continentale, all'amministrazione papale e infine alla riforma carolingia. I monaci formati a Whitby — inclusi cinque futuri vescovi — porteranno avanti questa sintesi. L'arte insulare che fiorisce nei manoscritti come Durrow incarna la stessa fusione creativa: motivi celtici, vigore germanico, fede mediterranea. Quando <strong>Alcuino di York</strong> arriverà alla corte di Carlo Magno un secolo dopo, porterà questa cultura anglosassone a seminare il Rinascimento carolingio — una trasmissione che iniziò a Whitby.",
+      "funFact": "Il dono di Caedmone venne in sogno: comandato di cantare la Creazione, il bovaro analfabeta si svegliò con un inno che non aveva mai udito prima — poesia ricevuta, non composta."
+    }
+  },
+  "sources": [
+    { "url": "https://it.wikipedia.org/wiki/Sinodo_di_Whitby", "title": "Wikipedia: Sinodo di Whitby" },
+    { "url": "https://it.wikipedia.org/wiki/Caedmon", "title": "Wikipedia: Caedmone" },
+    { "url": "https://it.wikipedia.org/wiki/Libro_di_Durrow", "title": "Wikipedia: Libro di Durrow" },
+    { "url": "https://it.wikipedia.org/wiki/Ilda_di_Whitby", "title": "Wikipedia: Ilda di Whitby" }
+  ],
+  "image": {
+    "url": "images/664-whitby-choice-of-peter.jpg",
+    "caption": "Pagina tappeto dal Libro di Durrow, c. 660-680 d.C. Questa miniatura insulare esemplifica la fusione di tradizioni celtiche, germaniche e mediterranee che fiorì nel mondo irlandese-northumbro.",
+    "width": 319,
+    "height": 480,
+    "attribution": "Trinity College Dublin, Pubblico Dominio, via Wikimedia Commons"
+  },
+  "threads": ["insular-art", "vernacular-literature", "translatio-studii", "monastic-preservation"],
+  "location": {
+    "lat": 54.4883,
+    "lon": -0.6078,
+    "place": "Whitby"
+  },
+  "addedDate": "2026-03-30T21:00:00Z"
+}
