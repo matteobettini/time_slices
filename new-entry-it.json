@@ -1,0 +1,50 @@
+{
+  "year": "313",
+  "id": "313-milan-in-this-sign-conquer",
+  "title": "Milano — In questo segno, vincerai",
+  "teaser": "Due imperatori si incontrano a Milano e cambiano il mondo. La fede perseguitata diventa legale. Costantino sostiene che una visione lo ha trasformato — ma il più grande arco trionfale di Roma saccheggerà il proprio passato per celebrare il futuro.",
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "L'<strong>Arco di Costantino</strong>, dedicato nel 315, sorge accanto al Colosseo come il più grande arco trionfale di Roma — e il più singolare. Per costruire rapidamente, gli scultori prelevarono rilievi da monumenti di <strong>Traiano, Adriano e Marco Aurelio</strong>, riscolpendo le teste imperiali per farle somigliare a Costantino. Questa pratica dello <em>spolia</em> rende l'arco un palinsesto: tondi che mostrano Adriano a caccia diventano Costantino a caccia; Marco Aurelio che distribuisce l'elemosina diventa Costantino che fa lo stesso. Il <strong>fregio costantiniano</strong> di nuova fattura mostra uno stile diverso — figure tozze e ieratiche che abbandonano il naturalismo classico per la frontalità e l'enfasi. Nella <strong>Basilica Nova</strong>, iniziata da Massenzio e completata da Costantino, una <strong>statua colossale acrolita</strong> dell'imperatore guardava con occhi enormi verso il cielo — la sola testa superstite misura 2,5 metri."
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "<strong>Lattanzio</strong>, il 'Cicerone cristiano', serve come precettore del figlio di Costantino e scrive il <em>De Mortibus Persecutorum</em> (Sulla morte dei persecutori) — una cronaca trionfante di come gli imperatori che perseguitarono i cristiani fecero fine orrenda. Il testo conserva la versione latina dell'Editto di Milano stesso. Le sue <em>Divinae Institutiones</em>, completate intorno al 311, rappresentano il primo resoconto sistematico in latino della dottrina cristiana, presentando il cristianesimo come 'vera filosofia' che compie ciò che il paganesimo cercava a tentoni. <strong>Eusebio di Cesarea</strong>, appena nominato vescovo, lavora alla sua <em>Historia Ecclesiastica</em> — il testo fondativo della storiografia ecclesiastica. Entrambi gli scrittori trasformano la letteratura cristiana dall'apologetica che difende una minoranza perseguitata in narrazione trionfante della provvidenza divina realizzata."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "L'Editto di Milano articola qualcosa di nuovo: la <strong><em>libertas religionis</em></strong> — la libertà di religione. 'Ciascuno possa avere libera facoltà di praticare il culto che preferisce', dichiara, estendendo la tolleranza non solo ai cristiani ma a tutti. Segna la prima dichiarazione formale di libertà religiosa nel diritto occidentale. L'<strong>apologetica cristiana</strong> cambia registro: dove Origene argomentava contro la persecuzione, Lattanzio ora argomenta a favore di uno stato cristiano. La questione filosofica diventa non 'perché dovreste tollerarci?' ma 'come dovrebbero governare i cristiani?' Lattanzio importa l'etica ciceroniana nella teologia cristiana, mentre Eusebio sviluppa una <strong>teologia politica</strong> di unità tra chiesa e stato sotto la divina provvidenza — il modello del <em>cesaropapismo</em> bizantino."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "Il <strong>28 ottobre 312</strong>, Costantino sconfigge Massenzio alla <strong>Battaglia di Ponte Milvio</strong>, dopo una presunta visione: una croce di luce nel cielo con le parole <em>'In hoc signo vinces'</em> ('In questo segno vincerai'). Ordina di dipingere il simbolo <strong>Chi-Rho</strong> sugli scudi dei soldati. Nel <strong>febbraio 313</strong>, Costantino incontra il co-imperatore <strong>Licinio</strong> a Milano. Concordano la tolleranza religiosa, ponendo fine alla <strong>Grande Persecuzione</strong> iniziata sotto Diocleziano nel 303. L''Editto' è tecnicamente una lettera che Licinio emette in seguito da Nicomedia, ma l'accordo di Milano trasforma il cristianesimo da <em>religio illicita</em> a <em>religio licita</em>. Costantino spenderà trenta milioni di <em>solidi</em> per costruire chiese — più dell'intero bilancio militare annuale."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "L'Arco di Costantino incarna le contraddizioni del momento. La sua iscrizione accredita l'<em>instinctu divinitatis</em> — l''istinto divino' — senza nominare quale dio. Gli studiosi ancora dibattono: visione cristiana o ambiguità politica? Lo <em>spolia</em> che cannibalizza Traiano e Marco Aurelio crea legittimità visiva per associazione con i 'buoni imperatori', mentre i rozzi nuovi rilievi costantiniani abbandonano l'umanesimo classico per la frontalità ieratica — uno stile che dominerà l'<strong>arte bizantina</strong> per secoli. Lattanzio ed Eusebio, lavorando indipendentemente in lingue diverse, costruiscono la <strong>narrazione maestra</strong> del trionfo del cristianesimo: la persecuzione finisce, la provvidenza vince, l'imperatore serve Dio. Questo modello storiografico plasmerà il modo in cui l'Occidente comprende se stesso per un millennio.",
+      "funFact": "Costantino fu battezzato solo sul letto di morte nel 337 — per 24 anni dopo la sua 'conversione', rimase tecnicamente un catecumeno, non ancora pienamente cristiano."
+    }
+  },
+  "sources": [
+    { "url": "https://it.wikipedia.org/wiki/Editto_di_Milano", "title": "Editto di Milano — Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Arco_di_Costantino", "title": "Arco di Costantino — Wikipedia" },
+    { "url": "https://www.britannica.com/topic/Edict-of-Milan", "title": "Edict of Milan — Britannica" },
+    { "url": "https://it.wikipedia.org/wiki/Lattanzio", "title": "Lattanzio — Wikipedia" },
+    { "url": "https://www.treccani.it/enciclopedia/editto-di-milano/", "title": "Editto di Milano — Treccani" }
+  ],
+  "image": {
+    "url": "images/313-milan-in-this-sign-conquer.jpg",
+    "caption": "L'Arco di Costantino a Roma, dedicato nel 315 d.C. — il più grande arco trionfale romano, che incorpora spolia da monumenti precedenti per collegare il nuovo imperatore cristiano al glorioso passato di Roma",
+    "width": 1200,
+    "height": 1013,
+    "attribution": "Foto di Carcharoth, CC BY-SA 3.0, via Wikimedia Commons"
+  },
+  "threads": ["constantinian-shift", "late-antique-art", "christian-apologetics", "imperial-legitimacy"],
+  "location": {
+    "lat": 45.4642,
+    "lon": 9.19,
+    "place": "Milano"
+  },
+  "addedDate": "2026-03-31T05:00:00Z"
+}

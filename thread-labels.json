@@ -86,7 +86,11 @@
     "philosophical-autobiography": "Philosophical Autobiography",
     "fauvism": "Fauvism",
     "gregorian-papacy": "Gregorian Papacy",
-    "insular-art": "Insular Art"
+    "insular-art": "Insular Art",
+    "constantinian-shift": "Constantinian Shift",
+    "late-antique-art": "Late Antique Art",
+    "christian-apologetics": "Christian Apologetics",
+    "imperial-legitimacy": "Imperial Legitimacy"
   },
   "it": {
     "translation-movement": "Traduzione come potere",
@@ -175,6 +179,10 @@
     "philosophical-autobiography": "Autobiografia filosofica",
     "fauvism": "Fauvismo",
     "gregorian-papacy": "Papato gregoriano",
-    "insular-art": "Arte insulare"
+    "insular-art": "Arte insulare",
+    "constantinian-shift": "Svolta costantiniana",
+    "late-antique-art": "Arte tardoantica",
+    "christian-apologetics": "Apologetica cristiana",
+    "imperial-legitimacy": "Legittimità imperiale"
   }
 }
