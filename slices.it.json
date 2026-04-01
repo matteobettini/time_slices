@@ -2738,5 +2738,79 @@
       "url": "audio/it/313-milan-in-this-sign-conquer.mp3",
       "duration": 228
     }
+  },
+  {
+    "year": "1431",
+    "id": "1431-rouen-judgment-and-flame",
+    "title": "Rouen — Giudizio e fiamme",
+    "teaser": "Una contadina brucia nella piazza mentre i vescovi dibattono su chi governa la Chiesa. A Gand, van Eyck perfeziona la pittura a olio; a Firenze, il Beato Angelico dipinge il Giudizio Universale. Il vecchio ordine processa una santa come eretica — e a Parigi nasce un poeta.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "A Gand, <strong>Jan van Eyck</strong> sta completando il <em>Polittico dell'Agnello Mistico</em> — presentato nel maggio 1432, ma dipinto attivamente durante il 1431. Il polittico rivoluziona la pittura europea: la maestria di van Eyck nella <strong>velatura a olio</strong> crea una luminosità impossibile con la tempera, rendendo velluti, gioielli e incarnati con realismo senza precedenti. Intanto a Firenze, il <strong>Beato Angelico</strong> dipinge il suo <em>Giudizio Universale</em> per la chiesa camaldolese di Santa Maria degli Angeli — Cristo in trono su bianco, i salvati che salgono attraverso un giardino luminoso, i dannati trascinati nelle fiamme. La tavola trilobata si ispira alla <em>Commedia</em> dantesca e riflette l'ansia escatologica dell'epoca: il giudizio sta arrivando. Il naturalismo <strong>fiammingo primitivo</strong> e l'intensità devozionale italiana si sviluppano in parallelo, entrambi cercando di rendere visibile il sacro."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "A Parigi nasce un bambino che diventerà <strong>François Villon</strong> — il più grande poeta francese del Quattrocento, il cui <em>Grand Testament</em> darà voce all'umorismo patibolare dell'epoca, alle sue taverne e ai suoi ladri, al suo memento mori messo in versi. <strong>Christine de Pizan</strong>, che scrisse l'unico poema francese in celebrazione di Giovanna d'Arco durante la vita di Giovanna — il <em>Ditié de Jehanne d'Arc</em> del 1429 — muore intorno al 1430-1431, probabilmente prima di apprendere dell'esecuzione. <strong>Carlo, duca d'Orléans</strong>, catturato ad Azincourt nel 1415, rimane prigioniero in Inghilterra, componendo versi cortesi elegiaci; il suo riscatto arriverà solo nel 1440. La poesia <strong>volgare francese</strong> fiorisce anche nella prigionia e nella catastrofe."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Il <strong>Concilio di Basilea</strong> si apre nel luglio 1431, la più ambiziosa affermazione del <strong>conciliarismo</strong> fino a quel momento: la dottrina secondo cui un concilio generale detiene autorità superiore al papa stesso. Un giovane studioso tedesco di nome <strong>Niccolò Cusano</strong> si unisce al concilio nel 1432, rappresentando un candidato contestato all'arcivescovado di Treviri. Il suo trattato <em>De concordantia catholica</em> (1433) articolerà i principi conciliaristi prima che lui cambi drammaticamente schieramento a favore del papato. Intanto, il processo a Giovanna d'Arco espone la strumentalizzazione dell'autorità ecclesiastica: <strong>Pierre Cauchon</strong>, vescovo di Beauvais, orchestra un verdetto politico mascherato da giudizio teologico. La domanda che tormenta sia Basilea che Rouen è la stessa: chi giudica? Chi detiene le chiavi?"
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il <strong>30 maggio 1431</strong>, nella piazza del mercato di Rouen, Giovanna d'Arco — diciannove anni, nata contadina, che aveva incoronato un re e liberato Orléans dall'assedio — viene bruciata sul rogo per eresia recidiva. Aveva firmato un'abiura, poi ritrattato; il tribunale filo-inglese coglie la sua ripresa degli abiti maschili come prova di recidiva. Le sue ceneri vengono disperse nella Senna. Il <strong>16 dicembre 1431</strong>, il piccolo <strong>Enrico VI d'Inghilterra</strong> viene incoronato re di Francia a Parigi — una cerimonia che afferma la doppia monarchia, sfidando direttamente Carlo VII. La <strong>Guerra dei Cent'anni</strong> continua a logorarsi, sebbene le vittorie di Giovanna abbiano spostato l'equilibrio; il Trattato di Arras (1435) avvierà la ripresa francese. Il processo di riabilitazione di Giovanna nel 1456 annullerà il verdetto."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "L'anno 1431 mette in scena una collisione tra <strong>autorità istituzionale</strong> e <strong>visione individuale</strong>. Giovanna rivendica una rivelazione diretta — voci di santi che comandano la sua missione — e la Chiesa la condanna per aver aggirato la mediazione clericale. A Basilea, i conciliaristi affermano che la Chiesa nel suo insieme prevale sul decreto papale; a Rouen, il tribunale di un vescovo prevale sulle voci di una contadina. Entrambe sono questioni su <em>chi interpreta il sacro</em>. Il realismo iperreale di van Eyck e l'aldilà luminoso del Beato Angelico sono risposte visive alla stessa ansia: rendere l'invisibile innegabilmente <em>visibile</em>. Villon, nato mentre Giovanna muore, erediterà questo mondo di fiamme e processi — e lo deriderà con la risata amara di chi conosce il giudizio in prima persona.",
+        "funFact": "Il verbale del processo di Giovanna sopravvive quasi completo — oltre 70 sessioni di interrogatorio. Le sue risposte rivelano una compostezza e un'arguzia notevoli. Alla domanda se sapeva di essere in grazia di Dio, rispose: 'Se non lo sono, Dio ce mi metta; e se lo sono, Dio ce mi tenga.' I chierici rimasero sbalorditi — era teologicamente ineccepibile."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Processo_di_Giovanna_d%27Arco",
+        "title": "Processo di Giovanna d'Arco - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Polittico_dell%27Agnello_Mistico",
+        "title": "Polittico dell'Agnello Mistico - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Concilio_di_Basilea",
+        "title": "Concilio di Basilea - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Niccol%C3%B2_Cusano",
+        "title": "Niccolò Cusano - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Giudizio_universale_(Beato_Angelico_Firenze)",
+        "title": "Giudizio universale (Beato Angelico) - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1431-rouen-judgment-and-flame.jpg",
+      "caption": "Miniatura del XV secolo che raffigura Giovanna d'Arco al rogo",
+      "width": 1200,
+      "height": 1176,
+      "attribution": "Artista ignoto, XV secolo, Pubblico dominio, via Wikimedia Commons"
+    },
+    "threads": [
+      "conciliarism",
+      "vernacular-literature",
+      "ecclesiastical-authority",
+      "eschatological-anxiety"
+    ],
+    "location": {
+      "lat": 49.4432,
+      "lon": 1.0993,
+      "place": "Rouen"
+    },
+    "addedDate": "2026-04-01T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1431-rouen-judgment-and-flame.mp3",
+      "duration": 191
+    }
   }
 ]

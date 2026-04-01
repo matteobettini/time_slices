@@ -90,7 +90,9 @@
     "constantinian-shift": "Constantinian Shift",
     "late-antique-art": "Late Antique Art",
     "christian-apologetics": "Christian Apologetics",
-    "imperial-legitimacy": "Imperial Legitimacy"
+    "imperial-legitimacy": "Imperial Legitimacy",
+    "conciliarism": "Conciliarism",
+    "ecclesiastical-authority": "Ecclesiastical Authority"
   },
   "it": {
     "translation-movement": "Traduzione come potere",
@@ -183,6 +185,8 @@
     "constantinian-shift": "Svolta costantiniana",
     "late-antique-art": "Arte tardoantica",
     "christian-apologetics": "Apologetica cristiana",
-    "imperial-legitimacy": "Legittimità imperiale"
+    "imperial-legitimacy": "Legittimità imperiale",
+    "conciliarism": "Conciliarismo",
+    "ecclesiastical-authority": "Autorità ecclesiastica"
   }
 }

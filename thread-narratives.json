@@ -25,7 +25,9 @@
       "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
       "1000→1453": "The millennium passed; Constantinople's fall in 1453 reopened eschatological wounds. Greek scholars fleeing West carried not just manuscripts but the trauma of a Christian empire's end — history's judgment made visible.",
       "410→590": "Augustine's earthly cities crumble, but the City of God endures. Gregory, inheriting that theology amid plague, embodies it: if empire fails, the Church must lead.",
-      "590→1000": "Gregory's plague theology becomes the template: catastrophe as divine warning, the Church as ark. By the year 1000, Christendom awaits the end — prepared by Gregory's pastoral eschatology."
+      "590→1000": "Gregory's plague theology becomes the template: catastrophe as divine warning, the Church as ark. By the year 1000, Christendom awaits the end — prepared by Gregory's pastoral eschatology.",
+      "1000→1431": "The millennium's apocalyptic fears merge with reform movements; by 1431, ecclesiastical tribunals weaponise eschatology to condemn Joan as relapsed heretic.",
+      "1431→1453": "Joan's burning as 'relapsed heretic' intensifies Catholic anxieties; twenty-two years later, Constantinople's fall reads as prophecy fulfilled."
     },
     "monastic-preservation": {
       "529→800": "Benedict's Rule established the rhythm of manuscript copying; Cassiodorus made it systematic. By Charlemagne's time, monasteries were the infrastructure of textual survival.",
@@ -63,7 +65,8 @@
       "1300→1321": "Giotto painted what Dante wrote: the human face of divine comedy. Both used vernacular means — Tuscan dialect, naturalistic bodies — to tell sacred stories.",
       "1321→1347": "Dante proved Tuscan could bear the weight of theology; Boccaccio proved it could carry ribaldry and grief. The <em>Decameron</em>'s plague frame is the <em>Commedia</em>'s structure inverted.",
       "1066→1215": "The Norman conquest nearly extinguishes Old English literature, but the merging of French and English will create the rich hybrid of Middle English. The same courts that consume Norman French romance begin commissioning works in the new vernacular.",
-      "664→1066": "Caedmon's hymn opened English vernacular poetry; four centuries later, the Norman conquest would fracture and remake that same language."
+      "664→1066": "Caedmon's hymn opened English vernacular poetry; four centuries later, the Norman conquest would fracture and remake that same language.",
+      "1347→1431": "The Black Death's devastation drives vernacular expression forward; Villon is born as the French vernacular tradition prepares its darkest, wittiest poet."
     },
     "renaissance-humanism": {
       "1401→1453": "Florentine humanists collected manuscripts before 1453; the Greek exodus accelerated what Salutati and Bruni began. Humanism was ready for what Constantinople's scholars brought.",
@@ -165,7 +168,9 @@
       "410→1000": "La caduta di Roma sembrò apocalittica ai contemporanei di Agostino; l'avvicinarsi dell'anno Mille rianimò quelle paure. Il 'bianco manto di chiese' fu in parte ringraziamento per un millennio che non finì nel fuoco.",
       "1000→1453": "Il millennio passò; la caduta di Costantinopoli nel 1453 riaprì ferite escatologiche. Gli studiosi greci in fuga verso Occidente portavano non solo manoscritti ma il trauma della fine di un impero cristiano.",
       "410→590": "Le città terrene di Agostino crollano, ma la Città di Dio perdura. Gregorio, ereditando quella teologia in tempo di peste, la incarna: se l'impero fallisce, la Chiesa deve guidare.",
-      "590→1000": "La teologia della peste di Gregorio diventa il modello: la catastrofe come monito divino, la Chiesa come arca. Intorno all'anno Mille, la cristianità attende la fine — preparata dall'escatologia pastorale di Gregorio."
+      "590→1000": "La teologia della peste di Gregorio diventa il modello: la catastrofe come monito divino, la Chiesa come arca. Intorno all'anno Mille, la cristianità attende la fine — preparata dall'escatologia pastorale di Gregorio.",
+      "1000→1431": "Le paure apocalittiche del millennio si fondono con i movimenti di riforma; nel 1431, i tribunali ecclesiastici usano l'escatologia per condannare Giovanna come eretica recidiva.",
+      "1431→1453": "Il rogo di Giovanna come 'eretica recidiva' intensifica le ansie cattoliche; ventidue anni dopo, la caduta di Costantinopoli viene letta come profezia compiuta."
     },
     "monastic-preservation": {
       "529→800": "La Regola di Benedetto stabilì il ritmo della copiatura dei manoscritti; Cassiodoro la rese sistematica. Ai tempi di Carlo Magno, i monasteri erano l'infrastruttura della sopravvivenza testuale.",
@@ -203,7 +208,8 @@
       "1300→1321": "Giotto dipinse ciò che Dante scrisse: il volto umano della divina commedia. Entrambi usarono mezzi volgari per raccontare storie sacre.",
       "1321→1347": "Dante dimostrò che il toscano poteva sostenere il peso della teologia; Boccaccio dimostrò che poteva portare licenziosità e dolore.",
       "1066→1215": "La conquista normanna quasi estingue la letteratura in inglese antico, ma la fusione di francese e inglese creerà il ricco ibrido dell'inglese medio. Le stesse corti che consumano romanzi in francese normanno iniziano a commissionare opere nel nuovo volgare.",
-      "664→1066": "L'inno di Caedmone aprì la poesia vernacolare inglese; quattro secoli dopo, la conquista normanna avrebbe frantumato e rifatto quella stessa lingua."
+      "664→1066": "L'inno di Caedmone aprì la poesia vernacolare inglese; quattro secoli dopo, la conquista normanna avrebbe frantumato e rifatto quella stessa lingua.",
+      "1347→1431": "La devastazione della Peste Nera spinge avanti l'espressione volgare; Villon nasce mentre la tradizione volgare francese prepara il suo poeta più cupo e arguto."
     },
     "renaissance-humanism": {
       "1401→1453": "Gli umanisti fiorentini raccoglievano manoscritti prima del 1453; l'esodo greco accelerò ciò che Salutati e Bruni avevano iniziato.",

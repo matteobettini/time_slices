@@ -2746,5 +2746,79 @@
       "url": "audio/313-milan-in-this-sign-conquer.mp3",
       "duration": 226
     }
+  },
+  {
+    "year": "1431",
+    "id": "1431-rouen-judgment-and-flame",
+    "title": "Rouen — Judgment and Flame",
+    "teaser": "A peasant girl burns in the marketplace while bishops debate who rules the Church. In Ghent, van Eyck perfects oil painting; in Florence, Fra Angelico paints the Last Judgment. The old order tries a saint as a heretic — and a poet is born in Paris.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "In Ghent, <strong>Jan van Eyck</strong> is completing the <em>Ghent Altarpiece</em> — unveiled in May 1432, but actively painted through 1431. The polyptych revolutionises European painting: van Eyck's mastery of <strong>oil glazing</strong> creates luminosity impossible in tempera, rendering velvet, jewels, and skin with unprecedented realism. Meanwhile in Florence, <strong>Fra Angelico</strong> paints his <em>Last Judgment</em> for the Camaldolese church of Santa Maria degli Angeli — Christ enthroned in white, the saved ascending through a luminous garden, the damned dragged into flame. The trilobed panel draws on Dante's <em>Commedia</em> and reflects the era's anxious eschatology: judgment is coming. <strong>Early Netherlandish</strong> naturalism and Italian devotional intensity develop in parallel, both seeking to make the sacred visible."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "In Paris, a child is born who will become <strong>François Villon</strong> — the greatest French poet of the fifteenth century, whose <em>Grand Testament</em> will voice the era's gallows humour, its taverns and thieves, its memento mori set to verse. <strong>Christine de Pizan</strong>, who wrote the only French poem celebrating Joan of Arc during Joan's lifetime — the <em>Ditié de Jehanne d'Arc</em> of 1429 — dies around 1430-1431, probably before learning of Joan's execution. <strong>Charles, duc d'Orléans</strong>, captured at Agincourt in 1415, remains a prisoner in England, composing elegiac courtly verse; his ransom will not come until 1440. French <strong>vernacular poetry</strong> flourishes even in captivity and catastrophe."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "The <strong>Council of Basel</strong> opens in July 1431, the most ambitious assertion of <strong>conciliarism</strong> yet: the doctrine that a general council holds authority over the pope himself. A young German scholar named <strong>Nicholas of Cusa</strong> joins the council in 1432, representing a disputed candidate for the archbishopric of Trier. His treatise <em>De concordantia catholica</em> (1433) will articulate conciliarist principles before he dramatically switches allegiance to the papacy. Meanwhile, Joan of Arc's trial exposes the weaponisation of ecclesiastical authority: <strong>Pierre Cauchon</strong>, Bishop of Beauvais, orchestrates a political verdict disguised as theological judgment. The question haunting both Basel and Rouen is the same: who judges? Who holds the keys?"
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>30 May 1431</strong>, in Rouen's marketplace, Joan of Arc — nineteen years old, peasant-born, who had crowned a king and lifted the siege of Orléans — is burned at the stake for relapsed heresy. She had signed an abjuration, then recanted; the English-allied tribunal seizes on her resumption of men's clothing as proof of relapse. Her ashes are scattered into the Seine. On <strong>16 December 1431</strong>, the infant <strong>Henry VI of England</strong> is crowned King of France in Paris — a ceremony asserting dual monarchy, directly challenging Charles VII. The <strong>Hundred Years' War</strong> grinds on, though Joan's victories have shifted momentum; the Treaty of Arras (1435) will begin France's recovery. Joan's rehabilitation trial in 1456 will nullify the verdict."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year 1431 stages a collision between <strong>institutional authority</strong> and <strong>individual vision</strong>. Joan claims direct revelation — voices of saints commanding her mission — and the Church condemns her for bypassing clerical mediation. At Basel, conciliarists claim the Church as a whole trumps papal decree; in Rouen, a bishop's tribunal trumps a peasant's voices. Both are questions of <em>who interprets the sacred</em>. Van Eyck's hyperreal rendering and Fra Angelico's luminous afterlife are visual answers to the same anxiety: make the invisible undeniably <em>seen</em>. Villon, born as Joan dies, will inherit this world of flames and trials — and mock it all with the bitter laughter of someone who knows judgment firsthand.",
+        "funFact": "Joan's trial transcript survives almost complete — 70+ sessions of interrogation. Her answers reveal remarkable composure and wit. Asked if she knew she was in God's grace, she replied: 'If I am not, may God put me there; and if I am, may God keep me there.' The clergy were stunned — it was theologically flawless."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Trial_of_Joan_of_Arc",
+        "title": "Trial of Joan of Arc - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ghent_Altarpiece",
+        "title": "Ghent Altarpiece - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Council_of_Basel",
+        "title": "Council of Basel - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Nicholas_of_Cusa",
+        "title": "Nicholas of Cusa - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Last_Judgment_(Fra_Angelico,_Florence)",
+        "title": "The Last Judgment (Fra Angelico) - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1431-rouen-judgment-and-flame.jpg",
+      "caption": "A fifteenth-century illuminated manuscript depicting Joan of Arc at the stake",
+      "width": 1200,
+      "height": 1176,
+      "attribution": "Unknown artist, 15th century, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "conciliarism",
+      "vernacular-literature",
+      "ecclesiastical-authority",
+      "eschatological-anxiety"
+    ],
+    "location": {
+      "lat": 49.4432,
+      "lon": 1.0993,
+      "place": "Rouen"
+    },
+    "addedDate": "2026-04-01T05:00:00Z",
+    "podcast": {
+      "url": "audio/1431-rouen-judgment-and-flame.mp3",
+      "duration": 186
+    }
   }
 ]
