@@ -130,7 +130,8 @@
       "1889→1905": "Nietzsche's collapse and Bergson's durée left objectivity in ruins; Einstein proved even physics was built on relative sand."
     },
     "romanesque-architecture": {
-      "1000→1066": "From Otto III's renovatio to William's conquest: the same architectural language of rounded arches and massive stone walls that symbolized imperial renewal in Germany becomes the visual vocabulary of Norman domination in England."
+      "1000→1066": "From Otto III's renovatio to William's conquest: the same architectural language of rounded arches and massive stone walls that symbolized imperial renewal in Germany becomes the visual vocabulary of Norman domination in England.",
+      "1066→1077": "From the conquest's White Tower to Canossa's contested stone — architecture as political theology spreads across Europe."
     },
     "imperial-decline": {
       "180→250": "From Marcus Aurelius's philosophical acceptance of mortality to Decius's desperate religious coercion — the empire's inner life darkens as external pressures mount."
@@ -140,6 +141,9 @@
     },
     "institutional-formation": {
       "910→1215": "Cluny's principle — spiritual authority answering directly to Rome — planted the seed; by 1215, the Fourth Lateran Council codified the institutional Church that reforming monasteries had built."
+    },
+    "papal-supremacy": {
+      "1077→1300": "From Canossa's snows to Boniface's jubilee — the papacy claims supreme authority over all earthly crowns."
     }
   },
   "it": {
@@ -273,7 +277,8 @@
       "1889→1905": "Il crollo di Nietzsche e la durée di Bergson lasciarono l'oggettività in rovine; Einstein dimostrò che persino la fisica era costruita su sabbia relativa."
     },
     "romanesque-architecture": {
-      "1000→1066": "Dalla renovatio di Ottone III alla conquista di Guglielmo: lo stesso linguaggio architettonico di archi a tutto sesto e massicce mura di pietra che simboleggiava il rinnovamento imperiale in Germania diventa il vocabolario visivo del dominio normanno in Inghilterra."
+      "1000→1066": "Dalla renovatio di Ottone III alla conquista di Guglielmo: lo stesso linguaggio architettonico di archi a tutto sesto e massicce mura di pietra che simboleggiava il rinnovamento imperiale in Germania diventa il vocabolario visivo del dominio normanno in Inghilterra.",
+      "1066→1077": "Dalla Torre Bianca della conquista alla pietra contesa di Canossa — l'architettura come teologia politica si diffonde in Europa."
     },
     "imperial-decline": {
       "180→250": "Dall'accettazione filosofica della mortalità di Marco Aurelio alla coercizione religiosa disperata di Decio — la vita interiore dell'impero si oscura mentre le pressioni esterne crescono."
@@ -283,6 +288,9 @@
     },
     "institutional-formation": {
       "910→1215": "Il principio di Cluny — l'autorità spirituale che risponde direttamente a Roma — piantò il seme; nel 1215, il Quarto Concilio Lateranense codificò la Chiesa istituzionale che i monasteri riformatori avevano costruito."
+    },
+    "papal-supremacy": {
+      "1077→1300": "Dalle nevi di Canossa al giubileo di Bonifacio — il papato rivendica la suprema autorità su tutte le corone terrene."
     }
   }
 }
