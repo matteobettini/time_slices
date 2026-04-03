@@ -2890,5 +2890,75 @@
       "url": "audio/it/1968-year-world-caught-fire.mp3",
       "duration": 187
     }
+  },
+  {
+    "year": "1776",
+    "id": "1776-annus-mirabilis-liberty-reason",
+    "title": "L'Anno della Libertà e della Ragione",
+    "teaser": "In un solo anno, Adam Smith inventa l'economia, Gibbon inizia l'autopsia di Roma, Paine accende la rivoluzione e David Hume — il grande scettico — affronta la morte con serena compostezza. Tre libri e una Dichiarazione ridisegnano il mondo.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "La <strong>Royal Academy</strong> di Londra, fondata appena otto anni prima, è nel pieno del suo splendore. <strong>Joshua Reynolds</strong>, suo presidente, persegue la missione di elevare la pittura britannica al 'Grande Stile' — la pittura storica nella maniera classica. I suoi <em>Discourses</em> formano un'intera generazione. In Francia, il tardo <strong>Rococò</strong> cede il passo a un'intimità austera: <em>La lettrice</em> di <strong>Fragonard</strong> (c. 1776) brilla di una quieta luce domestica, la razionalità illuminista addomesticata. Intanto <strong>Benjamin West</strong> dipinge allegorie classiche all'ombra di Philadelphia. L'arte non ha ancora assorbito la Rivoluzione — per quello bisognerà attendere il Neoclassicismo di David — ma il linguaggio visivo della virtù repubblicana si sta preparando."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Due dei libri più consequenziali della storia appaiono a poche settimane di distanza. Il 9 marzo, <strong>Adam Smith</strong> pubblica <em>Indagine sulla natura e le cause della ricchezza delle nazioni</em> — diciassette anni di lavoro, il testo fondativo dell'<strong>economia classica</strong>. Divisione del lavoro, libero mercato, la 'mano invisibile': nasce il vocabolario del capitalismo. A febbraio, <strong>Edward Gibbon</strong> pubblica il primo volume di <em>Declino e caduta dell'Impero romano</em>, iniziando un'autopsia in sei volumi del collasso di una civiltà. La sua tesi controversa — che il cristianesimo contribuì al declino di Roma — scandalizza i devoti. Entrambi i libri condividono un metodo: osservazione empirica contro dogma, analisi sistematica contro tradizione."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Il 25 agosto, <strong>David Hume</strong> muore a Edimburgo, dopo aver scritto la propria autobiografia durante la malattia finale con distaccata ironia. Il grande <strong>empirista</strong> e <strong>scettico</strong> affronta la morte con tale serena compostezza da turbare i credenti più di quanto la sua filosofia avesse mai fatto. L'amico Adam Smith pubblica un resoconto della sua fine pacifica che causa scandalo — come osa un uomo morire bene senza religione? Intanto in Scozia, la filosofia del <strong>Senso Comune</strong> di <strong>Thomas Reid</strong> si afferma come contrappeso allo scetticismo humeano, sostenendo l'esistenza di principi primi auto-evidenti. Oltre Atlantico, il pamphlet <em>Common Sense</em> di <strong>Thomas Paine</strong> (gennaio 1776) trasforma l'astrazione filosofica in potenza rivoluzionaria: cinquantasei pagine che vendono 500.000 copie e rendono l'indipendenza pensabile."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il 4 luglio, il <strong>Secondo Congresso Continentale</strong> adotta la <strong>Dichiarazione d'Indipendenza</strong>. La prosa di Jefferson cristallizza la filosofia illuminista in azione politica: 'Riteniamo queste verità auto-evidenti.' La Rivoluzione Americana, in corso dal 1775, ha finalmente il suo manifesto. Oltre Atlantico, la Gran Bretagna perde non solo colonie ma certezze: che l'impero sia naturale, che la monarchia sia data, che l'autorità scorra dall'alto. L'influenza della Dichiarazione si diffonderà — alla Francia nel 1789, all'America Latina, a ogni rivoluzione successiva che rivendichi diritti naturali. Ma nel 1776, l'esito è incerto: l'esercito di Washington è malridotto, e la Gran Bretagna è la più grande potenza militare del mondo."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Le connessioni sono personali e documentate. <strong>Adam Smith</strong> e <strong>David Hume</strong> furono intimi amici per decenni; Smith visitò Hume sul letto di morte e pubblicò poi una controversa lettera descrivendo la sua serena fine. Entrambi erano figure centrali dell'<strong>Illuminismo scozzese</strong>, che influenzò anche <strong>Thomas Reid</strong>. Hume aveva letto e criticato in bozza gli scritti economici di Smith. <strong>Gibbon</strong>, benché inglese, si muoveva negli stessi circoli intellettuali e condivideva il metodo empirista — applicando lo scetticismo humeano alle fonti storiche. <strong>Thomas Paine</strong> attinse alla filosofia scozzese del Senso Comune per rendere accessibili gli argomenti rivoluzionari. Jefferson conosceva l'opera di Smith e corrispondeva con figure dell'Illuminismo scozzese e francese. Il 1776 segna il momento in cui la filosofia illuminista diventa fatto politico.",
+        "funFact": "La descrizione di Adam Smith della morte serena di Hume scandalizzò talmente l'establishment religioso che Smith ricevette più lettere d'odio per quella che per qualsiasi argomento contenuto nella Ricchezza delle Nazioni."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/La_ricchezza_delle_nazioni",
+        "title": "La ricchezza delle nazioni — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Declino_e_caduta_dell%27Impero_romano",
+        "title": "Declino e caduta dell'Impero romano — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/David_Hume",
+        "title": "David Hume — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Dichiarazione_d%27indipendenza_degli_Stati_Uniti_d%27America",
+        "title": "Dichiarazione d'indipendenza — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1776-annus-mirabilis-liberty-reason.jpg",
+      "caption": "La Dichiarazione d'Indipendenza di John Trumbull, raffigurante il Comitato dei Cinque che presenta la bozza al Congresso Continentale",
+      "width": 1200,
+      "height": 788,
+      "attribution": "John Trumbull, Pubblico dominio, via Wikimedia Commons"
+    },
+    "threads": [
+      "enlightenment",
+      "empiricism",
+      "scottish-enlightenment",
+      "classical-economics"
+    ],
+    "location": {
+      "lat": 39.9489,
+      "lon": -75.15,
+      "place": "Philadelphia"
+    },
+    "addedDate": "2026-04-03T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1776-annus-mirabilis-liberty-reason.mp3",
+      "duration": 193
+    }
   }
 ]

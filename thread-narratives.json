@@ -96,7 +96,8 @@
     "empiricism": {
       "1543→1687": "Vesalius trusted dissection over Galen; Newton trusted mathematics over tradition. Both empiricisms — anatomical and physical — insisted that observation trumped authority.",
       "1543→1610": "Vesalius taught physicians to cut; Galileo taught them to look through lenses — same epistemology, new instrument.",
-      "1610→1687": "Galileo's observations demanded mathematical precision; Newton provided it, fusing seeing and calculating into a single method."
+      "1610→1687": "Galileo's observations demanded mathematical precision; Newton provided it, fusing seeing and calculating into a single method.",
+      "1687→1776": "Newton's mathematical physics gave empiricism its grandest triumph; ninety years later, Hume's dying breath and Smith's invisible hand proved observation could master mind and market alike."
     },
     "scientific-revolution": {
       "1543→1687": "Copernicus repositioned the Earth; Newton explained why it stayed in orbit. The revolution Copernicus began, Newton completed.",
@@ -106,7 +107,9 @@
     },
     "enlightenment": {
       "1687→1755": "Newton's <em>Principia</em> proved the cosmos was lawful; the Lisbon earthquake asked whether it was just. Enlightenment optimism crested and cracked within seventy years.",
-      "1755→1784": "Lisbon shattered Leibnizian optimism; Kant rebuilt reason on critical foundations. 'Dare to know' was an answer to 'why did God permit this.'"
+      "1755→1784": "Lisbon shattered Leibnizian optimism; Kant rebuilt reason on critical foundations. 'Dare to know' was an answer to 'why did God permit this.'",
+      "1755→1776": "Lisbon's earthquake cracked theodicy; twenty-one years later, Philadelphia's Declaration applied reason's lessons — if God won't guarantee order, humans must create it themselves.",
+      "1776→1784": "The Declaration proved Enlightenment ideas could topple empires; eight years later, Kant dared Europeans to think for themselves — and David painted the Roman virtues that would soon devour a king."
     },
     "critical-philosophy": {
       "1755→1784": "The earthquake forced Kant to reconsider natural theology; three decades later, his Critiques limited what reason could claim. Theodicy's failure birthed epistemology's caution."
@@ -243,7 +246,8 @@
     "empiricism": {
       "1543→1687": "Vesalio si fidava della dissezione più che di Galeno; Newton si fidava della matematica più che della tradizione.",
       "1543→1610": "Vesalio insegnò ai medici a sezionare; Galileo insegnò loro a guardare attraverso lenti — stessa epistemologia, nuovo strumento.",
-      "1610→1687": "Le osservazioni di Galileo richiedevano precisione matematica; Newton la fornì, fondendo osservazione e calcolo in un unico metodo."
+      "1610→1687": "Le osservazioni di Galileo richiedevano precisione matematica; Newton la fornì, fondendo osservazione e calcolo in un unico metodo.",
+      "1687→1776": "La fisica matematica di Newton diede all'empirismo il suo trionfo più grande; novant'anni dopo, l'ultimo respiro di Hume e la mano invisibile di Smith dimostrarono che l'osservazione poteva dominare mente e mercato."
     },
     "scientific-revolution": {
       "1543→1687": "Copernico riposizionò la Terra; Newton spiegò perché restava in orbita.",
@@ -253,7 +257,9 @@
     },
     "enlightenment": {
       "1687→1755": "I <em>Principia</em> di Newton dimostrarono che il cosmo era regolato da leggi; il terremoto di Lisbona chiese se fosse giusto.",
-      "1755→1784": "Lisbona frantumò l'ottimismo leibniziano; Kant ricostruì la ragione su fondamenta critiche."
+      "1755→1784": "Lisbona frantumò l'ottimismo leibniziano; Kant ricostruì la ragione su fondamenta critiche.",
+      "1755→1776": "Il terremoto di Lisbona incrinò la teodicea; ventun anni dopo, la Dichiarazione di Philadelphia applicò le lezioni della ragione — se Dio non garantisce l'ordine, gli uomini devono crearlo da soli.",
+      "1776→1784": "La Dichiarazione dimostrò che le idee illuministe potevano abbattere imperi; otto anni dopo, Kant sfidò gli europei a pensare con la propria testa — e David dipinse le virtù romane che presto avrebbero divorato un re."
     },
     "critical-philosophy": {
       "1755→1784": "Il terremoto costrinse Kant a riconsiderare la teologia naturale; tre decenni dopo, le sue Critiche limitarono ciò che la ragione poteva pretendere."
