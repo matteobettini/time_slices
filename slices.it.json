@@ -2960,5 +2960,79 @@
       "url": "audio/it/1776-annus-mirabilis-liberty-reason.mp3",
       "duration": 193
     }
+  },
+  {
+    "year": "1492",
+    "id": "1492-spain-year-three-worlds-ended",
+    "title": "Spagna — L'anno in cui tre mondi finirono",
+    "teaser": "Granada cade, ponendo fine a otto secoli di Islam iberico. Il Decreto dell'Alhambra espelle gli ebrei. Colombo salpa verso ovest. In un solo anno, la convivencia muore, la diaspora sefardita ha inizio e si apre una nuova era di imperi.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Lo <strong>stile ispano-fiammingo</strong> domina la pittura castigliana — una fusione della tecnica ad olio nordeuropea con l'intensità devozionale spagnola. <strong>Pedro Berruguete</strong>, da poco rientrato da Urbino, porta la prospettiva italiana nelle pale d'altare spagnole; il suo <em>San Domenico presiede un autodafé</em> (c. 1495) diventerà un'icona involontaria della portata dell'Inquisizione. <strong>Fernando Gallego</strong> produce austeri capolavori castigliani segnati da panneggi angolari e severità psicologica. Nel frattempo, l'<strong>Alhambra</strong> stessa — gioiello dell'arte nasride — passa in mani cristiane. I suoi soffitti a muqarnas, gli stucchi ad arabesco e la serena geometria del Cortile dei Leoni rappresentano l'apice dell'arte islamica in Europa, ora cristallizzata nel tempo."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Il 18 agosto, <strong>Antonio de Nebrija</strong> pubblica la <em>Gramática de la lengua castellana</em> — la prima grammatica di una lingua volgare europea moderna. La presenta alla regina Isabella con una famosa giustificazione: <em>«La lingua è sempre stata compagna dell'impero.»</em> Il libro codifica ortografia, etimologia e sintassi castigliane proprio mentre il castigliano sta per diffondersi oltre gli oceani. Nel frattempo, l'espulsione disperde la <strong>cultura letteraria sefardita</strong> — poesia ebraica, commentari filosofici, traduzioni dall'arabo — verso l'Impero Ottomano, l'Italia e il Nord Africa, dove fiorirà in esilio mentre la Spagna perde la sua eredità multilingue."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "A Firenze, <strong>Lorenzo de' Medici</strong> muore l'8 aprile, e con lui l'età d'oro dell'umanesimo neoplatonico. L'<strong>Accademia Platonica</strong> da lui patrocinata — Ficino, Poliziano e il giovane Pico della Mirandola — perde il suo punto d'appoggio. L'<em>Orazione sulla dignità dell'uomo</em> di Pico (1486) aveva dichiarato l'umanità infinitamente perfettibile; ora il suo mecenate è morto, e Pico stesso si volge sempre più all'apocalitticismo di Savonarola. Intanto in Spagna, la logica inquisitoriale della <em>limpieza de sangre</em> (purezza del sangue) segna una rottura filosofica: l'ascendenza sostituisce la fede come misura dell'ortodossia, creando la prima ideologia razziale d'Europa."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il 2 gennaio, <strong>Boabdil</strong> consegna Granada a Ferdinando e Isabella, ponendo fine alla <strong>Reconquista</strong> dopo 781 anni. Il 31 marzo, il <strong>Decreto dell'Alhambra</strong> ordina a tutti gli ebrei di convertirsi o partire entro il 31 luglio — tra 40.000 e 200.000 se ne vanno, dando inizio alla <strong>diaspora sefardita</strong>. Il 3 agosto, <strong>Colombo</strong> salpa da Palos con tre navi; il 12 ottobre sbarca alle Bahamas, credendo di aver raggiunto l'Asia. L'11 agosto, <strong>Rodrigo Borgia</strong> diventa Papa Alessandro VI. Quattro eventi epocali in un solo anno: l'Iberia medievale finisce, una diaspora si disperde, un emisfero si apre e il papa più corrotto sale al trono."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Le connessioni non sono metaforiche — sono amministrative. Colombo assistette alla resa di Granada; la sua spedizione fu autorizzata nello stesso palazzo, <strong>Santa Fe</strong>, dove si negoziarono i termini della resa. L'espulsione degli ebrei e il viaggio verso le Indie furono entrambi finanziati con proprietà ebraiche e moresche confiscate. <strong>Luis de Santángel</strong>, un finanziere <em>converso</em>, finanziò personalmente il viaggio di Colombo. La grammatica di Nebrija e il diario di Colombo condividono una premessa: il castigliano come lingua di dominio in espansione. Il 1492 non è una coincidenza di date — è un unico progetto imperiale.",
+        "funFact": "La partenza di Colombo da Palos il 3 agosto coincise con la scadenza finale per l'espulsione degli ebrei. Si racconta che il porto fosse intasato di navi di rifugiati."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/1492",
+        "title": "1492 — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Decreto_dell%27Alhambra",
+        "title": "Decreto dell'Alhambra — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Viaggi_di_Cristoforo_Colombo",
+        "title": "Viaggi di Cristoforo Colombo — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Grammatica_della_lingua_castigliana",
+        "title": "Grammatica della lingua castigliana — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Arte_ispano-fiamminga",
+        "title": "Arte ispano-fiamminga — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1492-spain-year-three-worlds-ended.jpg",
+      "caption": "La resa di Granada di Francisco Pradilla (1882), raffigurante Boabdil che consegna le chiavi di Granada a Ferdinando e Isabella il 2 gennaio 1492",
+      "width": 1200,
+      "height": 769,
+      "attribution": "Francisco Pradilla, Pubblico dominio, via Wikimedia Commons"
+    },
+    "threads": [
+      "vernacular-literature",
+      "translatio-studii",
+      "renaissance-humanism",
+      "eschatological-anxiety"
+    ],
+    "location": {
+      "lat": 37.1773,
+      "lon": -3.5986,
+      "place": "Granada"
+    },
+    "addedDate": "2026-04-04T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1492-spain-year-three-worlds-ended.mp3",
+      "duration": 168
+    }
   }
 ]

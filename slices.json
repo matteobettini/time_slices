@@ -2968,5 +2968,79 @@
       "url": "audio/1776-annus-mirabilis-liberty-reason.mp3",
       "duration": 212
     }
+  },
+  {
+    "year": "1492",
+    "id": "1492-spain-year-three-worlds-ended",
+    "title": "Spain — The Year Three Worlds Ended",
+    "teaser": "Granada falls, ending eight centuries of Islamic Spain. The Alhambra Decree expels the Jews. Columbus sails west. In a single year, the convivencia dies, the Sephardic diaspora begins, and a new age of empire opens.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "The <strong>Hispano-Flemish style</strong> dominates Castilian painting — a fusion of Northern European oil technique with Spanish devotional intensity. <strong>Pedro Berruguete</strong>, recently returned from Urbino, brings Italian perspective to Spanish altarpieces; his <em>Saint Dominic Presiding over an Auto-da-fe</em> (c. 1495) will become an unintentional icon of the Inquisition's reach. <strong>Fernando Gallego</strong> produces austere Castilian masterpieces marked by angular drapery and psychological severity. Meanwhile, the <strong>Alhambra</strong> itself — the jewel of Nasrid art — passes into Christian hands. Its muqarnas ceilings, arabesque stucco, and the serene geometry of the Court of Lions represent the apex of Islamic art in Europe, now frozen in time."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "On August 18th, <strong>Antonio de Nebrija</strong> publishes the <em>Gramática de la lengua castellana</em> — the first grammar of any modern European vernacular. He presents it to Queen Isabella with a famous justification: <em>\"Language has always been the companion of empire.\"</em> The book codifies Castilian orthography, etymology, and syntax just as Castilian is about to spread across oceans. Meanwhile, the expulsion scatters <strong>Sephardic literary culture</strong> — Hebrew poetry, philosophical commentary, translations from Arabic — to the Ottoman Empire, Italy, and North Africa, where it will flourish in exile while Spain loses its multilingual heritage."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "In Florence, <strong>Lorenzo de' Medici</strong> dies on April 8th, and with him the golden age of Neoplatonic humanism. The <strong>Platonic Academy</strong> he had patronized — Ficino, Poliziano, and the young Pico della Mirandola — loses its anchor. Pico's <em>Oration on the Dignity of Man</em> (1486) had declared humanity infinitely perfectible; now his patron is dead, and Pico himself turns increasingly to Savonarola's apocalypticism. Meanwhile in Spain, the Inquisition's logic of <em>limpieza de sangre</em> (blood purity) marks a philosophical rupture: ancestry replaces faith as the measure of orthodoxy, creating Europe's first racial ideology."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On January 2nd, <strong>Boabdil</strong> surrenders Granada to Ferdinand and Isabella, ending the <strong>Reconquista</strong> after 781 years. On March 31st, the <strong>Alhambra Decree</strong> orders all Jews to convert or leave by July 31st — some 40,000–200,000 depart, beginning the <strong>Sephardic diaspora</strong>. On August 3rd, <strong>Columbus</strong> sails from Palos with three ships; on October 12th he lands in the Bahamas, believing he has reached Asia. On August 11th, <strong>Rodrigo Borgia</strong> becomes Pope Alexander VI. Four epochal events in one year: medieval Iberia ends, a diaspora scatters, a hemisphere opens, and the most corrupt pope takes the throne."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The connections are not metaphorical — they are administrative. Columbus watched Granada's surrender; his expedition was authorized in the same palace, <strong>Santa Fe</strong>, where the surrender terms were negotiated. The expulsion of the Jews and the voyage to the Indies were both funded by confiscated Jewish and Moorish property. <strong>Luis de Santángel</strong>, a <em>converso</em> financier, personally underwrote Columbus's voyage. Nebrija's grammar and Columbus's log share a premise: Castilian as the language of expanding dominion. The year 1492 isn't a coincidence of dates — it's a single imperial project.",
+        "funFact": "Columbus's departure from Palos on August 3rd coincided with the final deadline for Jewish expulsion. The harbor was reportedly clogged with refugee ships."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/1492_in_Spain",
+        "title": "1492 in Spain — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Alhambra_Decree",
+        "title": "Alhambra Decree — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Voyages_of_Christopher_Columbus",
+        "title": "Voyages of Christopher Columbus — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Gram%C3%A1tica_de_la_lengua_castellana",
+        "title": "Gramática de la lengua castellana — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Hispano-Flemish_style",
+        "title": "Hispano-Flemish Style — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1492-spain-year-three-worlds-ended.jpg",
+      "caption": "The Surrender of Granada by Francisco Pradilla (1882), depicting Boabdil handing the keys of Granada to Ferdinand and Isabella on January 2, 1492",
+      "width": 1200,
+      "height": 769,
+      "attribution": "Francisco Pradilla, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "vernacular-literature",
+      "translatio-studii",
+      "renaissance-humanism",
+      "eschatological-anxiety"
+    ],
+    "location": {
+      "lat": 37.1773,
+      "lon": -3.5986,
+      "place": "Granada"
+    },
+    "addedDate": "2026-04-04T05:00:00Z",
+    "podcast": {
+      "url": "audio/1492-spain-year-three-worlds-ended.mp3",
+      "duration": 159
+    }
   }
 ]
