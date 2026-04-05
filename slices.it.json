@@ -3034,5 +3034,79 @@
       "url": "audio/it/1492-spain-year-three-worlds-ended.mp3",
       "duration": 168
     }
+  },
+  {
+    "year": "1378",
+    "id": "1378-year-christendom-split",
+    "title": "L'Anno in cui la Cristianità si Spaccò",
+    "teaser": "A Roma e ad Avignone, due papi si scomunicano a vicenda. A Firenze, i cardatori di lana prendono il governo. A Padova, Altichiero dipinge folle ai piedi della croce. Ovunque, le vecchie certezze si sgretolano.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "A Padova, <strong>Altichiero da Zevio</strong> completa il suo monumentale affresco della <em>Crocifissione</em> nella Cappella di San Giacomo presso la Basilica di Sant'Antonio. L'opera rappresenta l'ultimo fiore del <strong>naturalismo trecentesco</strong> — la rivoluzione di Giotto assorbita e ampliata. Altichiero riempie la sua Crocifissione con oltre cento figure: soldati romani, discepoli in lutto, donne svenute, astanti indifferenti. Ritratti contemporanei appaiono ovunque — il volto di Petrarca si aggira tra la folla, Re Luigi I d'Ungheria compare nelle scene conciliari. Lo spazio è profondo, l'architettura convincente, l'emozione individualizzata. Siamo sulla soglia: ancora gotico nei fondi oro e negli archi a sesto acuto, già proto-rinascimentale nel realismo psicologico. I committenti, i Lupi di Soragna, vollero la cappella come dichiarazione di potere dinastico in tempi turbolenti."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "In Inghilterra, <strong>William Langland</strong> sta rivedendo il suo capolavoro allegorico <em>Piers Plowman</em> — il testo B, composto tra il 1377 e il 1379, trasforma il suo poema visionario in una critica feroce della società tardomedievale. Scritto in <strong>medio inglese</strong> allitterativo, segue il sognatore Will attraverso campi corrotti, contadini che non riescono a trovare la verità, e una Chiesa che ha smarrito la via. Langland scrive per lettori comuni nella loro lingua. Intanto, <strong>Caterina da Siena</strong> — mistica, diplomatica, futura Dottore della Chiesa — ha appena completato il <em>Dialogo della Divina Provvidenza</em>, dettato in estasi tra il 1377 e il 1378. Scrive in volgare toscano, non in latino, insistendo che Dio parla anche attraverso i laici. Due lingue volgari, due visioni, entrambe che esigono riforma."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Caterina da Siena incarna un nuovo tipo di autorità filosofica: la <strong>teologa mistica</strong> che aggira la mediazione clericale per rivendicare una conversazione diretta con Dio. Il suo <em>Dialogo</em> presenta Cristo come un ponte tra umano e divino — ma il ponte è accessibile a chiunque lo cerchi, non controllato da guardiani istituzionali. In Inghilterra, <strong>John Wycliffe</strong> spinge questa logica oltre. Il suo <em>De civili dominio</em> (1376-1378) sostiene che una Chiesa caduta nel peccato non ha diritto alla proprietà, che solo la Scrittura detiene autorità, che il papato stesso manca di fondamento biblico. Papa Gregorio XI condanna diciannove proposizioni di Wycliffe nel 1377, ma potenti nobili lo proteggono. Il terreno filosofico si sta spostando: il <strong>nominalismo</strong> ha separato gli universali dai particolari, e ora l'autorità stessa sembra sganciata da ogni fondamento stabile."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "L'<strong>8 aprile 1378</strong>, una folla romana circonda il conclave papale, esigendo un papa italiano. I cardinali, terrorizzati, eleggono Bartolomeo Prignano come <strong>Urbano VI</strong>. Nel giro di mesi, il suo riformismo abrasivo aliena i cardinali francesi. Il <strong>20 settembre 1378</strong>, si riuniscono a Fondi ed eleggono Roberto di Ginevra come <strong>Clemente VII</strong>, che stabilisce la sua corte ad Avignone. Inizia lo <strong>Scisma d'Occidente</strong>: due papi, ciascuno che scomunica i seguaci dell'altro, l'Europa divisa lungo linee politiche. A Firenze, in luglio, qualcosa di altrettanto inaudito: la <strong>Rivolta dei Ciompi</strong>. Cardatori di lana e lavoratori non qualificati — il <em>popolo minuto</em> senza rappresentanza corporativa — assaltano Palazzo Vecchio. <strong>Michele di Lando</strong>, un cardatore, diventa Gonfaloniere di Giustizia. Vengono create tre nuove Arti. Per sei settimane, Firenze ha un governo dei lavoratori."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "I fili convergono in un'unica domanda: <strong>chi detiene l'autorità legittima?</strong> A Roma, i cardinali dicono che la prima elezione fu coercitiva — l'autorità richiede libero consenso. Ad Avignone, Clemente VII dice che l'ufficio conta più dell'uomo. Caterina da Siena corre a Roma per difendere Urbano VI, scrivendo lettere furiose che chiamano i cardinali di Clemente <em>'demoni incarnati'</em>. Wycliffe usa lo scisma per sostenere che il papato stesso è illegittimo. A Firenze, i Ciompi chiedono perché solo i membri delle corporazioni possano governare — perché non chi lavora davvero la lana? La Crocifissione di Altichiero ci mostra l'altro lato della crisi: una folla ai piedi della croce, ogni volto distinto, ognuno che reagisce diversamente allo stesso evento. Non c'è una sola reazione autorizzata. Il centro non può reggere perché la gente ha smesso di credere che fosse mai stato il centro.",
+        "funFact": "Caterina da Siena non sapeva scrivere fino a trent'anni. Dettò il suo Dialogo ai segretari mentre era in trance estatiche, gli occhi fissi nel nulla, parlando come se prendesse la dettatura di Dio."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Scisma_d%27Occidente",
+        "title": "Wikipedia: Scisma d'Occidente"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Rivolta_dei_Ciompi",
+        "title": "Wikipedia: Rivolta dei Ciompi"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/John_Wyclif",
+        "title": "Wikipedia: John Wyclif"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Caterina_da_Siena",
+        "title": "Wikipedia: Caterina da Siena"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Altichiero",
+        "title": "Wikipedia: Altichiero"
+      }
+    ],
+    "image": {
+      "url": "images/1378-year-christendom-split.jpg",
+      "caption": "Affresco della Crocifissione di Altichiero da Zevio (c. 1376-1379) nella Cappella di San Giacomo, Basilica di Sant'Antonio, Padova",
+      "width": 1156,
+      "height": 669,
+      "attribution": "Altichiero da Zevio, Pubblico dominio, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "nominalism",
+      "vernacular-literature",
+      "papal-supremacy",
+      "proto-renaissance"
+    ],
+    "location": {
+      "lat": 41.9028,
+      "lon": 12.4964,
+      "place": "Roma"
+    },
+    "addedDate": "2026-04-05T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1378-year-christendom-split.mp3",
+      "duration": 206
+    }
   }
 ]

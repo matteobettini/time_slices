@@ -69,7 +69,9 @@
       "1066→1215": "The Norman conquest nearly extinguishes Old English literature, but the merging of French and English will create the rich hybrid of Middle English. The same courts that consume Norman French romance begin commissioning works in the new vernacular.",
       "664→1066": "Caedmon's hymn opened English vernacular poetry; four centuries later, the Norman conquest would fracture and remake that same language.",
       "1347→1431": "The Black Death's devastation drives vernacular expression forward; Villon is born as the French vernacular tradition prepares its darkest, wittiest poet.",
-      "1431→1492": "Joan of Arc's trial was recorded in French; Nebrija codified Castilian as empire's tongue—vernaculars now bore state authority."
+      "1431→1492": "Joan of Arc's trial was recorded in French; Nebrija codified Castilian as empire's tongue—vernaculars now bore state authority.",
+      "1347→1378": "Boccaccio proved Italian could carry tragedy; Langland proves English can carry prophecy. Catherine proves Tuscan can carry God.",
+      "1378→1431": "Catherine and Langland write in the people's tongue as schism splits Christendom; Villon is born as Joan dies — poetry survives institutions."
     },
     "renaissance-humanism": {
       "1401→1453": "Florentine humanists collected manuscripts before 1453; the Greek exodus accelerated what Salutati and Bruni began. Humanism was ready for what Constantinople's scholars brought.",
@@ -84,7 +86,8 @@
       "1504→1784": "Michelangelo's <em>David</em> was civic propaganda; David's <em>Oath of the Horatii</em> was revolutionary propaganda. Both deployed classical forms for political ends."
     },
     "proto-renaissance": {
-      "1300→1321": "Giotto's Bardi Chapel frescoes depicted grief with unprecedented naturalism; Dante's <em>Inferno</em> depicted sinners with unprecedented individuality. Both broke Byzantine conventions through observed humanity."
+      "1300→1321": "Giotto's Bardi Chapel frescoes depicted grief with unprecedented naturalism; Dante's <em>Inferno</em> depicted sinners with unprecedented individuality. Both broke Byzantine conventions through observed humanity.",
+      "1321→1378": "Dante's exile poetry invents psychological interiority; Altichiero paints it into faces — a hundred distinct souls at the Crucifixion."
     },
     "neoplatonism": {
       "529→1504": "When Justinian closed the Academy, Neoplatonism went underground; when Ficino opened his, it resurfaced transformed. A millennium separates the last pagan Neoplatonists from Michelangelo's Neoplatonic bodies.",
@@ -151,7 +154,11 @@
       "910→1215": "Cluny's principle — spiritual authority answering directly to Rome — planted the seed; by 1215, the Fourth Lateran Council codified the institutional Church that reforming monasteries had built."
     },
     "papal-supremacy": {
-      "1077→1300": "From Canossa's snows to Boniface's jubilee — the papacy claims supreme authority over all earthly crowns."
+      "1077→1300": "From Canossa's snows to Boniface's jubilee — the papacy claims supreme authority over all earthly crowns.",
+      "1300→1378": "Boniface VIII's Jubilee asserts universal papal sovereignty; seventy-eight years later, no one can agree which pope is sovereign."
+    },
+    "nominalism": {
+      "1347→1378": "Ockham's nominalism, born in the same plague year, destabilizes institutional authority; thirty years later, two popes proves the point."
     }
   },
   "it": {
@@ -224,7 +231,9 @@
       "1066→1215": "La conquista normanna quasi estingue la letteratura in inglese antico, ma la fusione di francese e inglese creerà il ricco ibrido dell'inglese medio. Le stesse corti che consumano romanzi in francese normanno iniziano a commissionare opere nel nuovo volgare.",
       "664→1066": "L'inno di Caedmone aprì la poesia vernacolare inglese; quattro secoli dopo, la conquista normanna avrebbe frantumato e rifatto quella stessa lingua.",
       "1347→1431": "La devastazione della Peste Nera spinge avanti l'espressione volgare; Villon nasce mentre la tradizione volgare francese prepara il suo poeta più cupo e arguto.",
-      "1431→1492": "Il processo di Giovanna d'Arco fu registrato in francese; Nebrija codificò il castigliano come lingua dell'impero—i volgari ora portavano l'autorità dello stato."
+      "1431→1492": "Il processo di Giovanna d'Arco fu registrato in francese; Nebrija codificò il castigliano come lingua dell'impero—i volgari ora portavano l'autorità dello stato.",
+      "1347→1378": "Boccaccio dimostrò che l'italiano poteva portare la tragedia; Langland dimostra che l'inglese può portare la profezia. Caterina dimostra che il toscano può portare Dio.",
+      "1378→1431": "Caterina e Langland scrivono nella lingua del popolo mentre lo scisma divide la cristianità; Villon nasce mentre Giovanna muore — la poesia sopravvive alle istituzioni."
     },
     "renaissance-humanism": {
       "1401→1453": "Gli umanisti fiorentini raccoglievano manoscritti prima del 1453; l'esodo greco accelerò ciò che Salutati e Bruni avevano iniziato.",
@@ -239,7 +248,8 @@
       "1504→1784": "Il <em>David</em> di Michelangelo era propaganda civica; il <em>Giuramento degli Orazi</em> di David era propaganda rivoluzionaria."
     },
     "proto-renaissance": {
-      "1300→1321": "Gli affreschi della Cappella Bardi di Giotto raffiguravano il dolore con naturalismo senza precedenti; l'<em>Inferno</em> di Dante raffigurava peccatori con individualità senza precedenti."
+      "1300→1321": "Gli affreschi della Cappella Bardi di Giotto raffiguravano il dolore con naturalismo senza precedenti; l'<em>Inferno</em> di Dante raffigurava peccatori con individualità senza precedenti.",
+      "1321→1378": "La poesia dell'esilio di Dante inventa l'interiorità psicologica; Altichiero la dipinge nei volti — cento anime distinte alla Crocifissione."
     },
     "neoplatonism": {
       "529→1504": "Quando Giustiniano chiuse l'Accademia, il neoplatonismo andò sottoterra; quando Ficino aprì la sua, riemerse trasformato.",
@@ -306,7 +316,11 @@
       "910→1215": "Il principio di Cluny — l'autorità spirituale che risponde direttamente a Roma — piantò il seme; nel 1215, il Quarto Concilio Lateranense codificò la Chiesa istituzionale che i monasteri riformatori avevano costruito."
     },
     "papal-supremacy": {
-      "1077→1300": "Dalle nevi di Canossa al giubileo di Bonifacio — il papato rivendica la suprema autorità su tutte le corone terrene."
+      "1077→1300": "Dalle nevi di Canossa al giubileo di Bonifacio — il papato rivendica la suprema autorità su tutte le corone terrene.",
+      "1300→1378": "Il Giubileo di Bonifacio VIII afferma la sovranità papale universale; settantotto anni dopo, nessuno concorda su quale papa sia sovrano."
+    },
+    "nominalism": {
+      "1347→1378": "Il nominalismo di Ockham, nato nello stesso anno della peste, destabilizza l'autorità istituzionale; trent'anni dopo, due papi ne sono la prova."
     }
   }
 }
