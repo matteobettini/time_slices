@@ -1,0 +1,50 @@
+{
+  "year": "1794",
+  "id": "1794-paris-terror-and-the-tiger",
+  "title": "Paris — The Terror and the Tyger",
+  "teaser": "Robespierre invents a new god while the guillotine works overtime. In London, Blake asks who made the Tyger. In a Paris prison, Condorcet writes his last testament to human progress — then dies. Reason devours its children.",
+  "dimensions": {
+    "art": {
+      "label": "Art",
+      "content": "<strong>Jacques-Louis David</strong>, the Revolution's official painter, orchestrates the <strong>Festival of the Supreme Being</strong> on June 8 — a vast spectacle at the Champ-de-Mars with artificial mountains, choirs, and Robespierre descending like a pontiff. But by Thermidor, David is imprisoned. His 1794 <em>Self-Portrait</em>, painted in his cell, shows a different man: the confident neoclassicist now gazes with uncertainty, brush in hand, as if unsure what art means after the Terror. Meanwhile in England, <strong>William Blake</strong> publishes <em>Europe a Prophecy</em> with its stunning frontispiece <em>The Ancient of Days</em> — Urizen (reason) crouched in a circle of light, compass in hand, measuring the void. Where David's neoclassicism served power, Blake's <strong>visionary Romanticism</strong> questions whether the creator-god is tyrant or liberator."
+    },
+    "lit": {
+      "label": "Literature",
+      "content": "Blake's <em>Songs of Experience</em> appears in 1794, containing the most famous question in English poetry: <em>'Tyger Tyger, burning bright / In the forests of the night / What immortal hand or eye / Could frame thy fearful symmetry?'</em> The poem interrogates creation itself — is the same god who made the gentle lamb also responsible for predatory violence? In Paris, <strong>André Chénier</strong>, a poet who supported the Revolution then denounced its excesses, smuggles verses out of Saint-Lazare prison in his laundry. His <em>Iambes</em> burn with fury against the Terror: <em>'Like a flock of bleating sheep / Soissons, Meaux, Versailles... all to the scaffold.'</em> He is executed on July 25, three days before Robespierre falls. Published posthumously in 1819, his poetry will inspire the Romantics."
+    },
+    "phil": {
+      "label": "Philosophy",
+      "content": "In hiding from the Jacobins, <strong>Condorcet</strong> writes his <em>Sketch for a Historical Picture of the Progress of the Human Mind</em> — the supreme statement of <strong>Enlightenment optimism</strong>, arguing that humanity advances inevitably toward reason, equality, and happiness through the accumulation of knowledge. He dies in prison in March, possibly by suicide, his utopian vision a stark contrast to the guillotines outside. Meanwhile, <strong>Robespierre</strong> delivers his terrifying synthesis: <em>'If the basis of popular government in peacetime is virtue, the basis during revolution is both virtue and terror.'</em> The Cult of the Supreme Being — Robespierre's attempt to replace Christianity with civic deism — recognises a creator god and the immortality of the soul. Enlightenment reason has become a new religion, complete with festivals, priests, and executions for heretics."
+    },
+    "hist": {
+      "label": "History",
+      "content": "The year 1794 marks both the apex and collapse of the <strong>Reign of Terror</strong>. The <strong>Law of 22 Prairial</strong> (June 10) accelerates executions by eliminating defence counsel and allowing only acquittal or death. In the six weeks that follow — the <strong>Great Terror</strong> — over 1,300 are guillotined in Paris alone. On <strong>9 Thermidor</strong> (July 27), the Convention turns on Robespierre himself; he is executed the next day. The <strong>Thermidorian Reaction</strong> begins: radical Jacobins are purged, the Terror ends, and the Revolution enters a more conservative phase. France has lost some 17,000 to the guillotine, countless more to civil war. The question — can revolution achieve virtue through violence? — will haunt European politics for two centuries."
+    },
+    "conn": {
+      "label": "Connections",
+      "content": "Blake's <em>Tyger</em> and Robespierre's Supreme Being both confront the same problem: <strong>what kind of creator makes a world of predation and violence?</strong> Blake answers with a question; Robespierre answers with a festival. Both reject orthodox Christianity — Blake seeing it as priestcraft, Robespierre seeing it as counter-revolutionary — but Blake distrusts <em>all</em> systems that claim to measure the infinite with compasses. His Urizen is reason-as-tyrant, the very force the Jacobins worship. Condorcet's <em>Sketch</em>, meanwhile, is the last gasp of a faith that the Terror has already refuted: humanity progressing through reason toward perfection, even as reason's disciples send each other to the scaffold. The Romantics who inherit this moment — Wordsworth, Coleridge, Byron — will carry the wound: <em>reason promised liberation, but delivered terror</em>.",
+      "funFact": "André Chénier's final poem, <em>La Jeune Captive</em>, was written for fellow prisoner Aimée de Coigny. She survived Thermidor; he did not. The poem's refrain — 'I do not want to die yet' — was read at his execution."
+    }
+  },
+  "sources": [
+    {"url": "https://en.wikipedia.org/wiki/Reign_of_Terror", "title": "Wikipedia: Reign of Terror"},
+    {"url": "https://en.wikipedia.org/wiki/Cult_of_the_Supreme_Being", "title": "Wikipedia: Cult of the Supreme Being"},
+    {"url": "https://en.wikipedia.org/wiki/Andr%C3%A9_Ch%C3%A9nier", "title": "Wikipedia: André Chénier"},
+    {"url": "https://en.wikipedia.org/wiki/Marquis_de_Condorcet", "title": "Wikipedia: Marquis de Condorcet"},
+    {"url": "https://en.wikipedia.org/wiki/The_Tyger", "title": "Wikipedia: The Tyger"}
+  ],
+  "image": {
+    "url": "images/1794-paris-terror-and-the-tiger.jpg",
+    "caption": "The Festival of the Supreme Being at the Champ-de-Mars, Paris, June 8, 1794, by Pierre-Antoine Demachy",
+    "attribution": "Pierre-Antoine Demachy, Public domain, via Wikimedia Commons",
+    "width": 1200,
+    "height": 728
+  },
+  "threads": ["enlightenment", "theodicy-crisis", "revolutionary-utopianism", "critique-of-modernity"],
+  "location": {
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "place": "Paris"
+  },
+  "addedDate": "2026-04-06T05:00:00Z"
+}

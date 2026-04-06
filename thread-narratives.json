@@ -6,7 +6,8 @@
     "theodicy-crisis": {
       "180→410": "The Antonine Plague killed millions under Marcus Aurelius; two centuries later, Augustine asked why God permitted Rome's sack. Both moments forced the question: if the cosmos is rational, why does suffering strike the virtuous?",
       "410→1347": "Augustine's <em>City of God</em> answered one theodicy crisis; the Black Death posed another. Boccaccio's plague-frame for the <em>Decameron</em> echoes Augustine's device — storytelling as refuge from catastrophe.",
-      "1347→1755": "The Black Death killed a third of Europe; the Lisbon earthquake killed in minutes. Voltaire's <em>Candide</em> mocked Leibnizian optimism the way Boccaccio's brigata fled Florentine piety — theodicy cracking under the weight of facts."
+      "1347→1755": "The Black Death killed a third of Europe; the Lisbon earthquake killed in minutes. Voltaire's <em>Candide</em> mocked Leibnizian optimism the way Boccaccio's brigata fled Florentine piety — theodicy cracking under the weight of facts.",
+      "1755→1794": "Lisbon's earthquake shattered optimism about divine providence; the Terror shattered optimism about human reason. The Romantics inherit both wounds."
     },
     "translatio-studii": {
       "410→529": "As Rome fell, Greek texts traveled east with Christian scholars. By 529, Justinian closed the Academy, pushing Neoplatonic philosophers toward Persia — the first leg of the journey that would bring Aristotle to Baghdad.",
@@ -117,7 +118,8 @@
       "1687→1755": "Newton's <em>Principia</em> proved the cosmos was lawful; the Lisbon earthquake asked whether it was just. Enlightenment optimism crested and cracked within seventy years.",
       "1755→1784": "Lisbon shattered Leibnizian optimism; Kant rebuilt reason on critical foundations. 'Dare to know' was an answer to 'why did God permit this.'",
       "1755→1776": "Lisbon's earthquake cracked theodicy; twenty-one years later, Philadelphia's Declaration applied reason's lessons — if God won't guarantee order, humans must create it themselves.",
-      "1776→1784": "The Declaration proved Enlightenment ideas could topple empires; eight years later, Kant dared Europeans to think for themselves — and David painted the Roman virtues that would soon devour a king."
+      "1776→1784": "The Declaration proved Enlightenment ideas could topple empires; eight years later, Kant dared Europeans to think for themselves — and David painted the Roman virtues that would soon devour a king.",
+      "1784→1794": "Kant's 'Dare to know' meets its test: the Revolution turns Enlightenment ideals into bloody practice, and reason becomes terror's instrument."
     },
     "critical-philosophy": {
       "1755→1784": "The earthquake forced Kant to reconsider natural theology; three decades later, his Critiques limited what reason could claim. Theodicy's failure birthed epistemology's caution."
@@ -159,6 +161,12 @@
     },
     "nominalism": {
       "1347→1378": "Ockham's nominalism, born in the same plague year, destabilizes institutional authority; thirty years later, two popes proves the point."
+    },
+    "revolutionary-utopianism": {
+      "1794→1968": "From Robespierre's Cult of Reason to 1968's revolutionary dreams: the belief that total transformation is possible — and that violence may be its price."
+    },
+    "critique-of-modernity": {
+      "1794→1968": "Blake's distrust of Urizen's compasses echoes through two centuries: from Romantic revolt against mechanical reason to 1968's rejection of technocratic rationality."
     }
   },
   "it": {
@@ -168,7 +176,8 @@
     "theodicy-crisis": {
       "180→410": "La peste antonina uccise milioni sotto Marco Aurelio; due secoli dopo, Agostino chiese perché Dio avesse permesso il sacco di Roma. Entrambi i momenti imposero la domanda: se il cosmo è razionale, perché la sofferenza colpisce i virtuosi?",
       "410→1347": "La <em>Città di Dio</em> di Agostino rispose a una crisi di teodicea; la Peste Nera ne pose un'altra. La cornice della peste nel <em>Decameron</em> di Boccaccio riecheggia il dispositivo agostiniano — il racconto come rifugio dalla catastrofe.",
-      "1347→1755": "La Peste Nera uccise un terzo dell'Europa; il terremoto di Lisbona uccise in pochi minuti. Il <em>Candido</em> di Voltaire derise l'ottimismo leibniziano come la brigata di Boccaccio era fuggita dalla pietà fiorentina — la teodicea che cede sotto il peso dei fatti."
+      "1347→1755": "La Peste Nera uccise un terzo dell'Europa; il terremoto di Lisbona uccise in pochi minuti. Il <em>Candido</em> di Voltaire derise l'ottimismo leibniziano come la brigata di Boccaccio era fuggita dalla pietà fiorentina — la teodicea che cede sotto il peso dei fatti.",
+      "1755→1794": "Il terremoto di Lisbona distrusse l'ottimismo sulla provvidenza divina; il Terrore distrusse l'ottimismo sulla ragione umana. I Romantici ereditano entrambe le ferite."
     },
     "translatio-studii": {
       "410→529": "Mentre Roma cadeva, i testi greci viaggiarono verso est con gli studiosi cristiani. Nel 529, Giustiniano chiuse l'Accademia, spingendo i filosofi neoplatonici verso la Persia — la prima tappa del viaggio che avrebbe portato Aristotele a Baghdad.",
@@ -279,7 +288,8 @@
       "1687→1755": "I <em>Principia</em> di Newton dimostrarono che il cosmo era regolato da leggi; il terremoto di Lisbona chiese se fosse giusto.",
       "1755→1784": "Lisbona frantumò l'ottimismo leibniziano; Kant ricostruì la ragione su fondamenta critiche.",
       "1755→1776": "Il terremoto di Lisbona incrinò la teodicea; ventun anni dopo, la Dichiarazione di Philadelphia applicò le lezioni della ragione — se Dio non garantisce l'ordine, gli uomini devono crearlo da soli.",
-      "1776→1784": "La Dichiarazione dimostrò che le idee illuministe potevano abbattere imperi; otto anni dopo, Kant sfidò gli europei a pensare con la propria testa — e David dipinse le virtù romane che presto avrebbero divorato un re."
+      "1776→1784": "La Dichiarazione dimostrò che le idee illuministe potevano abbattere imperi; otto anni dopo, Kant sfidò gli europei a pensare con la propria testa — e David dipinse le virtù romane che presto avrebbero divorato un re.",
+      "1784→1794": "Il 'Sapere aude' di Kant affronta la sua prova: la Rivoluzione trasforma gli ideali illuministi in pratica sanguinosa, e la ragione diventa strumento del terrore."
     },
     "critical-philosophy": {
       "1755→1784": "Il terremoto costrinse Kant a riconsiderare la teologia naturale; tre decenni dopo, le sue Critiche limitarono ciò che la ragione poteva pretendere."
@@ -321,6 +331,12 @@
     },
     "nominalism": {
       "1347→1378": "Il nominalismo di Ockham, nato nello stesso anno della peste, destabilizza l'autorità istituzionale; trent'anni dopo, due papi ne sono la prova."
+    },
+    "revolutionary-utopianism": {
+      "1794→1968": "Dal Culto della Ragione di Robespierre ai sogni rivoluzionari del 1968: la convinzione che la trasformazione totale sia possibile — e che la violenza possa esserne il prezzo."
+    },
+    "critique-of-modernity": {
+      "1794→1968": "La sfiducia di Blake nei compassi di Urizen riecheggia per due secoli: dalla rivolta romantica contro la ragione meccanica al rifiuto della razionalità tecnocratica nel 1968."
     }
   }
 }

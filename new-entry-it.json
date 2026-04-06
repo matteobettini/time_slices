@@ -1,0 +1,50 @@
+{
+  "year": "1794",
+  "id": "1794-paris-terror-and-the-tiger",
+  "title": "Parigi — Il Terrore e la Tigre",
+  "teaser": "Robespierre inventa un nuovo dio mentre la ghigliottina lavora senza sosta. A Londra, Blake chiede chi ha creato la Tigre. In una prigione parigina, Condorcet scrive il suo ultimo testamento sul progresso umano — poi muore. La Ragione divora i suoi figli.",
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "<strong>Jacques-Louis David</strong>, pittore ufficiale della Rivoluzione, orchestra la <strong>Festa dell'Essere Supremo</strong> l'8 giugno — un grandioso spettacolo al Campo di Marte con montagne artificiali, cori e Robespierre che discende come un pontefice. Ma a Termidoro David viene imprigionato. Il suo <em>Autoritratto</em> del 1794, dipinto nella cella, mostra un uomo diverso: il sicuro neoclassicista ora guarda con incertezza, pennello in mano, come se non sapesse più cosa significhi l'arte dopo il Terrore. Intanto in Inghilterra, <strong>William Blake</strong> pubblica <em>Europa: una profezia</em> con il magnifico frontespizio <em>L'Antico dei Giorni</em> — Urizen (la ragione) accovacciato in un cerchio di luce, compasso in mano, che misura il vuoto. Dove il neoclassicismo di David serviva il potere, il <strong>romanticismo visionario</strong> di Blake mette in dubbio se il dio creatore sia tiranno o liberatore."
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "I <em>Canti dell'Esperienza</em> di Blake appaiono nel 1794, contenendo la domanda più famosa della poesia inglese: <em>'Tigre Tigre, che bruci luminosa / Nelle foreste della notte / Quale mano o occhio immortale / Poté plasmare la tua terribile simmetria?'</em> La poesia interroga la creazione stessa — lo stesso dio che ha fatto il mite agnello è anche responsabile della violenza predatoria? A Parigi, <strong>André Chénier</strong>, poeta che aveva sostenuto la Rivoluzione per poi denunciarne gli eccessi, fa uscire di nascosto i suoi versi dalla prigione di Saint-Lazare nel bucato. I suoi <em>Giambi</em> ardono di furore contro il Terrore: <em>'Come un gregge di pecore belanti / Soissons, Meaux, Versailles... tutti al patibolo.'</em> Viene giustiziato il 25 luglio, tre giorni prima della caduta di Robespierre. Pubblicata postuma nel 1819, la sua poesia ispirerà i Romantici."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "Nascosto dai Giacobini, <strong>Condorcet</strong> scrive il suo <em>Abbozzo di un quadro storico dei progressi dello spirito umano</em> — la dichiarazione suprema dell'<strong>ottimismo illuminista</strong>, che sostiene che l'umanità avanza inevitabilmente verso ragione, uguaglianza e felicità attraverso l'accumulo della conoscenza. Muore in prigione a marzo, forse suicida, la sua visione utopica in stridente contrasto con le ghigliottine fuori. Nel frattempo, <strong>Robespierre</strong> pronuncia la sua terrificante sintesi: <em>'Se il fondamento del governo popolare in tempo di pace è la virtù, il fondamento durante la rivoluzione è insieme virtù e terrore.'</em> Il Culto dell'Essere Supremo — il tentativo di Robespierre di sostituire il Cristianesimo con un deismo civico — riconosce un dio creatore e l'immortalità dell'anima. La ragione illuminista è diventata una nuova religione, completa di feste, sacerdoti ed esecuzioni per gli eretici."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "L'anno 1794 segna sia l'apice che il crollo del <strong>Regno del Terrore</strong>. La <strong>Legge del 22 Pratile</strong> (10 giugno) accelera le esecuzioni eliminando il difensore e permettendo solo assoluzione o morte. Nelle sei settimane successive — il <strong>Grande Terrore</strong> — oltre 1.300 persone vengono ghigliottinate nella sola Parigi. Il <strong>9 Termidoro</strong> (27 luglio), la Convenzione si rivolta contro lo stesso Robespierre; viene giustiziato il giorno dopo. Inizia la <strong>Reazione termidoriana</strong>: i giacobini radicali vengono epurati, il Terrore finisce e la Rivoluzione entra in una fase più conservatrice. La Francia ha perso circa 17.000 persone per ghigliottina, innumerevoli altre nella guerra civile. La domanda — la rivoluzione può raggiungere la virtù attraverso la violenza? — ossessionerà la politica europea per due secoli."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "La <em>Tigre</em> di Blake e l'Essere Supremo di Robespierre affrontano lo stesso problema: <strong>che tipo di creatore fa un mondo di predazione e violenza?</strong> Blake risponde con una domanda; Robespierre risponde con una festa. Entrambi rifiutano il Cristianesimo ortodosso — Blake vedendolo come impostura clericale, Robespierre vedendolo come controrivoluzionario — ma Blake diffida di <em>tutti</em> i sistemi che pretendono di misurare l'infinito con compassi. Il suo Urizen è la ragione-come-tiranno, la stessa forza che i Giacobini adorano. L'<em>Abbozzo</em> di Condorcet, intanto, è l'ultimo sussulto di una fede che il Terrore ha già confutato: l'umanità che progredisce attraverso la ragione verso la perfezione, mentre i discepoli della ragione si mandano a vicenda al patibolo. I Romantici che ereditano questo momento — Wordsworth, Coleridge, Byron — porteranno la ferita: <em>la ragione prometteva liberazione, ma ha portato terrore</em>.",
+      "funFact": "L'ultima poesia di André Chénier, <em>La giovane prigioniera</em>, fu scritta per la compagna di prigionia Aimée de Coigny. Lei sopravvisse a Termidoro; lui no. Il ritornello — 'Non voglio ancora morire' — fu letto alla sua esecuzione."
+    }
+  },
+  "sources": [
+    {"url": "https://it.wikipedia.org/wiki/Regime_del_Terrore", "title": "Wikipedia: Regime del Terrore"},
+    {"url": "https://it.wikipedia.org/wiki/Culto_dell%27Essere_Supremo", "title": "Wikipedia: Culto dell'Essere Supremo"},
+    {"url": "https://it.wikipedia.org/wiki/Andr%C3%A9_Ch%C3%A9nier", "title": "Wikipedia: André Chénier"},
+    {"url": "https://it.wikipedia.org/wiki/Nicolas_de_Condorcet", "title": "Wikipedia: Condorcet"},
+    {"url": "https://en.wikipedia.org/wiki/The_Tyger", "title": "Wikipedia: The Tyger"}
+  ],
+  "image": {
+    "url": "images/1794-paris-terror-and-the-tiger.jpg",
+    "caption": "La Festa dell'Essere Supremo al Campo di Marte, Parigi, 8 giugno 1794, di Pierre-Antoine Demachy",
+    "attribution": "Pierre-Antoine Demachy, Pubblico dominio, via Wikimedia Commons",
+    "width": 1200,
+    "height": 728
+  },
+  "threads": ["enlightenment", "theodicy-crisis", "revolutionary-utopianism", "critique-of-modernity"],
+  "location": {
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "place": "Parigi"
+  },
+  "addedDate": "2026-04-06T05:00:00Z"
+}
