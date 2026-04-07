@@ -3182,5 +3182,79 @@
       "url": "audio/it/1794-paris-terror-and-the-tiger.mp3",
       "duration": 218
     }
+  },
+  {
+    "year": "1831",
+    "id": "1831-year-of-departures",
+    "title": "L'anno delle partenze",
+    "teaser": "Delacroix espone la Libertà tra il fumo della polvere da sparo. Hugo salva una cattedrale con l'inchiostro. Darwin salpa verso una teoria che ridefinirà la creazione. Hegel muore mentre il colera devasta l'Europa. In Virginia, Nat Turner insegna all'America che la pace della schiavitù è una menzogna. Il vecchio mondo sta partendo — ciò che verrà è terra incognita.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Al Salon del 1831, <strong>Eugène Delacroix</strong> espone <em>La Libertà che guida il popolo</em> — una Marianna a seno nudo che cammina sui cadaveri, tricolore in mano, conducendo un esercito eterogeneo di operai, borghesi e monelli attraverso il fumo della Rivoluzione di Luglio. È il <strong>Romanticismo francese</strong> fatto politica: dove il Neoclassicismo imponeva nobile compostezza, Delacroix offre caos, passione, corpi veri. Il re Luigi Filippo acquista il dipinto — poi lo nasconde. Troppo incendiario per il regime che celebra. L'opera vale a Delacroix la Legion d'Onore, ma non verrà più esposta pubblicamente fino al 1848, quando la rivoluzione tornerà. Intanto, oltre Manica, <strong>John Constable</strong> dipinge la campagna inglese con precisione scientifica, i suoi studi delle nuvole informati dalla nuova meteorologia. Culto romantico della natura e osservazione empirica imparano a coesistere."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Il 16 marzo <strong>Victor Hugo</strong> pubblica <em>Notre-Dame de Paris</em>. Il vero protagonista non è Quasimodo — è la cattedrale stessa, che Hugo descrive con amorevole dettaglio architettonico proprio perché era trascurata, vandalizzata, persino destinata alla demolizione. Il romanzo è un pamphlet travestito da storia d'amore: Hugo inventa la letteratura <strong>neogotica</strong> per salvare l'architettura gotica. Ci riesce — la popolarità del romanzo accende un movimento nazionale per il restauro. In Russia, <strong>Puškin</strong> completa gli ultimi capitoli di <em>Evgenij Onegin</em>, il «romanzo in versi» che fonda la letteratura russa moderna. Il narratore ironico, l'innovazione formale e l'ambiguità psicologica ne fanno il ponte tra Romanticismo e Realismo. <em>Il rosso e il nero</em> di Stendhal, pubblicato l'anno prima, sta trovando lettori — la sua fredda dissezione psicologica dell'ambizione anticipa i romanzi a venire."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Il 14 novembre <strong>Georg Wilhelm Friedrich Hegel</strong> muore a Berlino, probabilmente di colera. Ha sessantun anni, è all'apice della fama, essendo stato rettore dell'università appena l'anno prima. La sua morte segna la fine del più grande sistema dell'<strong>Idealismo tedesco</strong> — la filosofia dialettica dello Spirito che si realizza attraverso la storia, tesi che incontra antitesi in sintesi sempre più elevate. Ma i discepoli di Hegel si stanno già dividendo in fazioni in guerra. Gli <strong>Hegeliani di destra</strong> useranno la sua filosofia per giustificare lo stato prussiano; i <strong>Giovani hegeliani</strong> — tra cui un giovane Karl Marx, che non arriverà a Berlino fino al 1836 — la trasformeranno in un'arma contro la religione, la gerarchia e infine il capitalismo stesso. Il maestro è morto; iniziano le guerre d'interpretazione."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "In agosto, il predicatore schiavo <strong>Nat Turner</strong> guida la più sanguinosa rivolta di schiavi nella storia americana. Interpretando un'eclissi solare come comando divino, Turner e circa settanta seguaci uccidono cinquantacinque bianchi — uomini, donne e bambini — nella contea di Southampton, Virginia, prima di essere repressi. La reazione bianca è feroce: oltre cento neri, per lo più estranei ai fatti, vengono linciati. Turner sfugge alla cattura per due mesi, poi viene impiccato l'11 novembre. Il Sud risponde con brutali nuovi codici schiavisti che limitano istruzione, assemblea, persino il culto. In Europa, il Belgio dichiara l'indipendenza dai Paesi Bassi; <strong>Leopoldo I</strong> diventa il primo re dei belgi. E il 27 dicembre, un naturalista ventiduenne di nome <strong>Charles Darwin</strong> salpa da Plymouth a bordo della HMS <em>Beagle</em> — un viaggio di cinque anni che gli fornirà le osservazioni per una teoria destinata a rendere obsoleto lo Spirito hegeliano."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Le partenze sono letterali e metaforiche. Hegel muore; Darwin parte. Un sistema per spiegare tutto (Spirito, dialettica, teleologia) passa; un altro (evoluzione, selezione naturale, meccanismo materiale) sta per nascere — anche se Darwin non pubblicherà <em>L'origine delle specie</em> per quasi trent'anni. Hugo e Delacroix rispondono entrambi alla Rivoluzione di Luglio — Hugo guardando indietro alla Francia medievale, Delacroix dipingendo il presente in termini mitologici. Entrambi sono romantici protesi verso qualcosa di più grande della realtà borghese: l'architettura sacra del passato, la dea della libertà per le strade. La ribellione di Turner rivela ciò che i sistemi razionali nascondono — che milioni vivono in schiavitù, che il «progresso» è distribuito in modo diseguale, che gli ideali illuministi di libertà possono coesistere con la schiavitù. Il 1831 è un cardine: il Romanticismo al suo apice, il Realismo che si agita, e a bordo del <em>Beagle</em>, i semi di un materialismo che plasmerà l'Ottocento.",
+        "funFact": "Luigi Filippo acquistò <em>La Libertà che guida il popolo</em> con fondi statali — poi la nascose al pubblico per diciassette anni. Una rivoluzione resa sicura per i musei era ancora troppo pericolosa per le pareti."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/La_Libert%C3%A0_che_guida_il_popolo",
+        "title": "Wikipedia — La Libertà che guida il popolo"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Notre-Dame_de_Paris_(romanzo)",
+        "title": "Wikipedia — Notre-Dame de Paris"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Secondo_viaggio_del_HMS_Beagle",
+        "title": "Wikipedia — Viaggio del HMS Beagle"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Ribellione_di_Nat_Turner",
+        "title": "Wikipedia — Ribellione di Nat Turner"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel",
+        "title": "Wikipedia — G.W.F. Hegel"
+      }
+    ],
+    "image": {
+      "url": "images/1831-year-of-departures.jpg",
+      "caption": "Eugène Delacroix, La Libertà che guida il popolo (1830), a commemorazione della Rivoluzione di Luglio",
+      "width": 1200,
+      "height": 963,
+      "attribution": "Eugène Delacroix, Pubblico dominio, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "french-romanticism",
+      "gothic-revival",
+      "abolition-crisis",
+      "enlightenment"
+    ],
+    "location": {
+      "lat": 48.8606,
+      "lon": 2.3376,
+      "place": "Parigi"
+    },
+    "addedDate": "2026-04-07T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1831-year-of-departures.mp3",
+      "duration": 235
+    }
   }
 ]

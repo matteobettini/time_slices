@@ -94,7 +94,10 @@
     "conciliarism": "Conciliarism",
     "ecclesiastical-authority": "Ecclesiastical Authority",
     "scottish-enlightenment": "Scottish Enlightenment",
-    "classical-economics": "Classical Economics"
+    "classical-economics": "Classical Economics",
+    "french-romanticism": "French Romanticism",
+    "gothic-revival": "Gothic Revival",
+    "abolition-crisis": "Abolition Crisis"
   },
   "it": {
     "translation-movement": "Traduzione come potere",
@@ -191,6 +194,9 @@
     "conciliarism": "Conciliarismo",
     "ecclesiastical-authority": "Autorità ecclesiastica",
     "scottish-enlightenment": "Illuminismo scozzese",
-    "classical-economics": "Economia classica"
+    "classical-economics": "Economia classica",
+    "french-romanticism": "Romanticismo francese",
+    "gothic-revival": "Neogotico",
+    "abolition-crisis": "Crisi abolizionista"
   }
 }

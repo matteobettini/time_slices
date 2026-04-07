@@ -3190,5 +3190,79 @@
       "url": "audio/1794-paris-terror-and-the-tiger.mp3",
       "duration": 209
     }
+  },
+  {
+    "year": "1831",
+    "id": "1831-year-of-departures",
+    "title": "The Year of Departures",
+    "teaser": "Delacroix exhibits Liberty amid gunsmoke. Hugo saves a cathedral with ink. Darwin sails toward a theory that will reshape creation. Hegel dies as cholera sweeps Europe. In Virginia, Nat Turner teaches America that slavery's peace is a lie. The old world is leaving — what comes next is uncharted.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "At the Salon of 1831, <strong>Eugène Delacroix</strong> exhibits <em>Liberty Leading the People</em> — a bare-breasted Marianne striding over corpses, tricolour in hand, leading a motley army of workers, bourgeois, and street urchins through the gunsmoke of the July Revolution. This is <strong>French Romanticism</strong> made political: where Neoclassicism demanded noble restraint, Delacroix gives us chaos, passion, real bodies. King Louis-Philippe buys the painting — then hides it. Too incendiary for the regime it celebrates. The work earns Delacroix the Legion of Honor but won't be publicly displayed again until 1848, when revolution returns. Meanwhile, across the Channel, <strong>John Constable</strong> is painting the English countryside with scientific precision, his cloud studies informed by the new meteorology. Romantic nature worship and empirical observation are learning to coexist."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "On March 16th, <strong>Victor Hugo</strong> publishes <em>Notre-Dame de Paris</em>. The real protagonist isn't Quasimodo — it's the cathedral itself, which Hugo describes in loving architectural detail precisely because it was being neglected, vandalized, even slated for demolition. The novel is a polemic disguised as romance: Hugo invents <strong>gothic revival</strong> literature to save gothic architecture. He succeeds — the novel's popularity sparks a national movement for restoration. In Russia, <strong>Pushkin</strong> completes the final chapters of <em>Eugene Onegin</em>, the 'novel in verse' that invents modern Russian literature. Its ironic narrator, formal innovation, and psychological ambiguity make it the bridge between Romanticism and Realism. Stendhal's <em>Le Rouge et le Noir</em>, published the previous year, is finding readers — its cold psychological dissection of ambition pointing toward the novels to come."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "On November 14th, <strong>Georg Wilhelm Friedrich Hegel</strong> dies in Berlin, likely of cholera. He is sixty-one, at the height of his fame, having served as university rector just the year before. His death marks the end of <strong>German Idealism</strong>'s greatest system — the dialectical philosophy of Spirit realizing itself through history, thesis meeting antithesis in ever-higher synthesis. But Hegel's students are already dividing into warring camps. The <strong>Right Hegelians</strong> will use his philosophy to justify the Prussian state; the <strong>Young Hegelians</strong> — including a young Karl Marx, who won't arrive in Berlin until 1836 — will turn it into a weapon against religion, hierarchy, and eventually capitalism itself. The master is dead; the interpretation wars begin."
+      },
+      "hist": {
+        "label": "History",
+        "content": "In August, the enslaved preacher <strong>Nat Turner</strong> leads the deadliest slave rebellion in American history. Interpreting a solar eclipse as divine command, Turner and some seventy followers kill fifty-five white men, women, and children in Southampton County, Virginia, before being suppressed. The white backlash is savage: over a hundred Black people, most uninvolved, are murdered in retaliation. Turner evades capture for two months, then is hanged on November 11th. The South responds with brutal new slave codes restricting education, assembly, even worship. In Europe, Belgium declares independence from the Netherlands; <strong>Leopold I</strong> becomes the first King of the Belgians. And on December 27th, a twenty-two-year-old naturalist named <strong>Charles Darwin</strong> sails from Plymouth aboard HMS <em>Beagle</em> — a five-year voyage that will give him the observations for a theory that will make Hegel's Spirit obsolete."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The departures are literal and metaphorical. Hegel dies; Darwin embarks. One system of explaining everything (Spirit, dialectic, teleology) passes; another (evolution, natural selection, material mechanism) is about to be born — though Darwin won't publish <em>On the Origin of Species</em> for nearly three decades. Hugo and Delacroix both respond to the July Revolution — Hugo by looking backward to medieval France, Delacroix by painting the present in mythological terms. Both are Romantics reaching for something larger than bourgeois reality: the sacred architecture of the past, the goddess of liberty in the streets. Turner's rebellion reveals what rational systems obscure — that millions live in bondage, that 'progress' is unevenly distributed, that Enlightenment ideals of freedom can coexist with chattel slavery. The year 1831 is a hinge: Romanticism at its peak, Realism stirring, and aboard the <em>Beagle</em>, the seeds of a materialism that will reshape the nineteenth century.",
+        "funFact": "Louis-Philippe bought <em>Liberty Leading the People</em> with state funds — then hid it from public view for seventeen years. A revolution made safe for museums was still too dangerous for the walls."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Liberty_Leading_the_People",
+        "title": "Wikipedia — Liberty Leading the People"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Hunchback_of_Notre-Dame",
+        "title": "Wikipedia — Notre-Dame de Paris"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Second_voyage_of_HMS_Beagle",
+        "title": "Wikipedia — HMS Beagle voyage"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Nat_Turner%27s_Rebellion",
+        "title": "Wikipedia — Nat Turner's Rebellion"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel",
+        "title": "Wikipedia — G.W.F. Hegel"
+      }
+    ],
+    "image": {
+      "url": "images/1831-year-of-departures.jpg",
+      "caption": "Eugène Delacroix, Liberty Leading the People (1830), commemorating the July Revolution",
+      "width": 1200,
+      "height": 963,
+      "attribution": "Eugène Delacroix, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "french-romanticism",
+      "gothic-revival",
+      "abolition-crisis",
+      "enlightenment"
+    ],
+    "location": {
+      "lat": 48.8606,
+      "lon": 2.3376,
+      "place": "Paris"
+    },
+    "addedDate": "2026-04-07T05:00:00Z",
+    "podcast": {
+      "url": "audio/1831-year-of-departures.mp3",
+      "duration": 232
+    }
   }
 ]
