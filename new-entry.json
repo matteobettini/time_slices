@@ -1,0 +1,50 @@
+{
+  "year": "843",
+  "id": "843-verdun-birth-of-nations",
+  "title": "Verdun — The Birth of Nations",
+  "teaser": "Three brothers divide an empire and unknowingly create Europe. In the ashes of Carolingian unity, the first words of French and German are spoken — and a thousand years of conflict begins.",
+  "dimensions": {
+    "art": {
+      "label": "Art",
+      "content": "The <strong>Court School of Charles the Bald</strong> flourishes even as the empire fractures. In 845, the <strong>Vivian Bible</strong> (First Bible of Charles the Bald) will emerge from the scriptorium at Tours — a masterpiece of <strong>Carolingian illumination</strong> featuring full-page miniatures of Jerome, David, and Charles himself receiving the book. The dedication image shows the king enthroned, surrounded by courtiers, establishing visual conventions of sacred kingship that will echo through medieval art. Meanwhile, the <strong>Utrecht Psalter</strong>, completed around 820-840 at Hautvillers near Reims, represents the most revolutionary manuscript of the era: 166 pen-and-ink drawings that visualise the psalms with nervous, dynamic energy unprecedented in Western art — a style that will influence English illumination for centuries."
+    },
+    "lit": {
+      "label": "Literature",
+      "content": "The <strong>Oaths of Strasbourg</strong>, sworn in February 842, preserve the earliest surviving texts in what would become <strong>French and German</strong>. Louis the German swears in <em>lingua romana</em> (Old French) so Charles's troops can understand; Charles swears in <em>lingua teudisca</em> (Old High German) for Louis's army. The chronicler <strong>Nithard</strong> — Charlemagne's grandson — records these oaths in his <em>Historiae</em>, writing as both participant and historian. His account, completed before his death in 844, provides the only eyewitness narrative of the civil war and preserves these linguistic monuments. The deliberate use of vernacular for a political treaty marks a revolutionary moment: Latin's monopoly on formal discourse begins to crack."
+    },
+    "phil": {
+      "label": "Philosophy",
+      "content": "At Charles the Bald's court, <strong>John Scottus Eriugena</strong> arrives around 845 to lead the Palace School — the most original philosopher between Boethius and Anselm. His mastery of Greek (rare in the Latin West) allows him to translate <strong>Pseudo-Dionysius</strong> and develop a sophisticated <strong>Neoplatonism</strong> that will later be condemned as pantheistic. Meanwhile, <strong>Paschasius Radbertus</strong> at Corbie presents his treatise <em>De Corpore et Sanguine Domini</em> to Charles in 844 — the first systematic argument for what will become <strong>transubstantiation</strong>. His claim that the consecrated bread <em>is</em> Christ's historical body sparks the Carolingian Eucharist controversy, with Ratramnus offering a more symbolic interpretation. The debate prefigures conflicts that will split Western Christianity seven centuries later."
+    },
+    "hist": {
+      "label": "History",
+      "content": "On <strong>August 10, 843</strong>, at Verdun, <strong>Lothair I</strong>, <strong>Louis the German</strong>, and <strong>Charles the Bald</strong> sign the treaty that ends three years of civil war. The carnage had peaked at the <strong>Battle of Fontenoy</strong> (June 841), where perhaps 40,000 Franks slaughtered each other — contemporaries called it unprecedented. The treaty divides the Carolingian Empire into three: <strong>West Francia</strong> (future France) for Charles, <strong>East Francia</strong> (future Germany) for Louis, and <strong>Middle Francia</strong> — a fragile corridor from the North Sea to Rome — for Lothair, who keeps the imperial title. Middle Francia will prove ungovernable; its remnants (Lotharingia, Alsace-Lorraine) will be fought over for a millennium."
+    },
+    "conn": {
+      "label": "Connections",
+      "content": "The Oaths of Strasbourg reveal what the Treaty of Verdun formalises: Charlemagne's empire has become <em>linguistically</em> as well as politically divided. When kings must translate for each other's armies, the fiction of Frankish unity is dead. Yet fragmentation paradoxically stimulates culture: Charles the Bald, competing for legitimacy, becomes the greatest art patron of the age. The Vivian Bible's dedication image — the king as sacred recipient of God's word — invents visual propaganda that will serve monarchs for eight centuries. Eriugena's Greek translations preserve Neoplatonic theology that scholastics will rediscover. And the partition itself creates the template of European history: France and Germany as distinct entities, with the lands between them (Belgium, Netherlands, Alsace-Lorraine, Italy) as eternal battlegrounds.",
+      "funFact": "The Oaths of Strasbourg, sworn to unite two brothers against a third, are now studied not for their politics but as linguistic monuments — the birth certificates of the French and German languages."
+    }
+  },
+  "sources": [
+    { "url": "https://en.wikipedia.org/wiki/Treaty_of_Verdun", "title": "Treaty of Verdun - Wikipedia" },
+    { "url": "https://en.wikipedia.org/wiki/Oaths_of_Strasbourg", "title": "Oaths of Strasbourg - Wikipedia" },
+    { "url": "https://www.britannica.com/event/Treaty-of-Verdun", "title": "Treaty of Verdun - Britannica" },
+    { "url": "https://en.wikipedia.org/wiki/John_Scotus_Eriugena", "title": "John Scotus Eriugena - Wikipedia" },
+    { "url": "https://en.wikipedia.org/wiki/Paschasius_Radbertus", "title": "Paschasius Radbertus - Wikipedia" }
+  ],
+  "image": {
+    "url": "images/843-verdun-birth-of-nations.jpg",
+    "caption": "Miniature from the Grandes Chroniques de France showing Louis the Pious blessing the division of the Carolingian Empire among his three sons in 843",
+    "width": 1200,
+    "height": 852,
+    "attribution": "Grandes Chroniques de France, 15th century, Public domain, via Wikimedia Commons"
+  },
+  "threads": ["fragmentation", "vernacular-literature", "carolingian-renaissance", "translatio-studii"],
+  "location": {
+    "lat": 49.1600,
+    "lon": 5.3833,
+    "place": "Verdun"
+  },
+  "addedDate": "2026-04-08T05:00:00Z"
+}

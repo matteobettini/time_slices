@@ -21,7 +21,9 @@
       "910→1066": "Burgundian monasteries preserved the transmission chain until Norman conquest carried it to England — the Domesday Book's Latin clerks traced their training to Carolingian foundations.",
       "590→664": "Gregory's mission planted Roman learning in Canterbury; at Whitby, it merged with Irish scholarship to create the Anglo-Saxon synthesis.",
       "664→800": "England chose Rome, and Rome's learning flowed north through English monasteries — then back to the Continent when Alcuin arrived at Aachen.",
-      "1453→1492": "Greek learning fled Constantinople for Italy; now Spain expelled the heirs of Arabic translation, scattering Sephardic scholarship to the Ottoman East."
+      "1453→1492": "Greek learning fled Constantinople for Italy; now Spain expelled the heirs of Arabic translation, scattering Sephardic scholarship to the Ottoman East.",
+      "800→843": "Alcuin's educational reforms created a literate elite; when that elite fractured with the empire, each court sought scholars to legitimize its rule.",
+      "843→910": "Eriugena's translations brought Greek Neoplatonism to the Latin West; monastic scriptoria preserved these texts through the Viking storms."
     },
     "eschatological-anxiety": {
       "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
@@ -72,7 +74,9 @@
       "1347→1431": "The Black Death's devastation drives vernacular expression forward; Villon is born as the French vernacular tradition prepares its darkest, wittiest poet.",
       "1431→1492": "Joan of Arc's trial was recorded in French; Nebrija codified Castilian as empire's tongue—vernaculars now bore state authority.",
       "1347→1378": "Boccaccio proved Italian could carry tragedy; Langland proves English can carry prophecy. Catherine proves Tuscan can carry God.",
-      "1378→1431": "Catherine and Langland write in the people's tongue as schism splits Christendom; Villon is born as Joan dies — poetry survives institutions."
+      "1378→1431": "Catherine and Langland write in the people's tongue as schism splits Christendom; Villon is born as Joan dies — poetry survives institutions.",
+      "664→843": "From Caedmon's hymn in English to the Oaths of Strasbourg in French and German: the vernacular tongues of Europe begin to claim written dignity.",
+      "843→1066": "The Oaths proved vernacular could carry political weight; the Norman Conquest would force French and English into a creative collision."
     },
     "renaissance-humanism": {
       "1401→1453": "Florentine humanists collected manuscripts before 1453; the Greek exodus accelerated what Salutati and Bruni began. Humanism was ready for what Constantinople's scholars brought.",
@@ -134,11 +138,14 @@
     "carolingian-renaissance": {
       "800→1000": "Alcuin standardized script and curriculum; Gerbert added mathematics. The Carolingian project survived the Carolingians.",
       "800→910": "As Carolingian imperial patronage fragmented, monasteries like Saint-Amand kept the tradition alive in regional scriptoria — preserving Alcuin's reforms through the storm.",
-      "910→1000": "The Franco-Saxon style survived in Burgundian monasteries until Otto I revived imperial patronage — Cluny's reforms created the institutional stability that made the Ottonian Renaissance possible."
+      "910→1000": "The Franco-Saxon style survived in Burgundian monasteries until Otto I revived imperial patronage — Cluny's reforms created the institutional stability that made the Ottonian Renaissance possible.",
+      "800→843": "The educational reforms survived Charlemagne's death but not his grandsons' wars; Charles the Bald's court preserved the flame while the empire burned.",
+      "843→910": "Fragmentation concentrated patronage: Charles the Bald's scriptorium at Tours rivalled anything Charlemagne had commissioned, even as the political unity was lost."
     },
     "fragmentation": {
       "1848→1922": "The revolutions of 1848 fractured empires and ideologies; by 1922, Eliot's <em>Waste Land</em> made fragments a literary form. Political breakup became aesthetic principle.",
-      "1922→1968": "Modernist fragmentation was formal experiment; 1968's fragmentation was political program. The same broken forms served art and revolution."
+      "1922→1968": "Modernist fragmentation was formal experiment; 1968's fragmentation was political program. The same broken forms served art and revolution.",
+      "843→1848": "The fault lines of Verdun — France, Germany, and the contested lands between — would shape a millennium of European wars, from Lotharingia to Alsace-Lorraine to the revolutions of 1848."
     },
     "crisis-of-positivism": {
       "1889→1905": "Nietzsche's collapse and Bergson's durée left objectivity in ruins; Einstein proved even physics was built on relative sand."
@@ -192,7 +199,9 @@
       "910→1066": "I monasteri borgognoni preservarono la catena di trasmissione finché la conquista normanna la portò in Inghilterra — i chierici latini del Domesday Book facevano risalire la loro formazione alle fondazioni carolinge.",
       "590→664": "La missione di Gregorio piantò il sapere romano a Canterbury; a Whitby, si fuse con la cultura irlandese creando la sintesi anglosassone.",
       "664→800": "L'Inghilterra scelse Roma, e il sapere romano fluì a nord attraverso i monasteri inglesi — poi tornò al Continente quando Alcuino arrivò ad Aquisgrana.",
-      "1453→1492": "Il sapere greco fuggì da Costantinopoli verso l'Italia; ora la Spagna espulse gli eredi della traduzione araba, disperdendo l'erudizione sefardita verso l'Oriente ottomano."
+      "1453→1492": "Il sapere greco fuggì da Costantinopoli verso l'Italia; ora la Spagna espulse gli eredi della traduzione araba, disperdendo l'erudizione sefardita verso l'Oriente ottomano.",
+      "800→843": "Le riforme educative di Alcuino crearono un'élite letterata; quando quell'élite si frantumò con l'impero, ogni corte cercò studiosi per legittimare il proprio dominio.",
+      "843→910": "Le traduzioni di Eriugena portarono il neoplatonismo greco all'Occidente latino; gli scriptoria monastici preservarono questi testi attraverso le tempeste vichinghe."
     },
     "eschatological-anxiety": {
       "410→1000": "La caduta di Roma sembrò apocalittica ai contemporanei di Agostino; l'avvicinarsi dell'anno Mille rianimò quelle paure. Il 'bianco manto di chiese' fu in parte ringraziamento per un millennio che non finì nel fuoco.",
@@ -243,7 +252,9 @@
       "1347→1431": "La devastazione della Peste Nera spinge avanti l'espressione volgare; Villon nasce mentre la tradizione volgare francese prepara il suo poeta più cupo e arguto.",
       "1431→1492": "Il processo di Giovanna d'Arco fu registrato in francese; Nebrija codificò il castigliano come lingua dell'impero—i volgari ora portavano l'autorità dello stato.",
       "1347→1378": "Boccaccio dimostrò che l'italiano poteva portare la tragedia; Langland dimostra che l'inglese può portare la profezia. Caterina dimostra che il toscano può portare Dio.",
-      "1378→1431": "Caterina e Langland scrivono nella lingua del popolo mentre lo scisma divide la cristianità; Villon nasce mentre Giovanna muore — la poesia sopravvive alle istituzioni."
+      "1378→1431": "Caterina e Langland scrivono nella lingua del popolo mentre lo scisma divide la cristianità; Villon nasce mentre Giovanna muore — la poesia sopravvive alle istituzioni.",
+      "664→843": "Dall'inno di Caedmone in inglese ai Giuramenti di Strasburgo in francese e tedesco: le lingue volgari d'Europa iniziano a rivendicare dignità scritta.",
+      "843→1066": "I Giuramenti dimostrarono che il volgare poteva avere peso politico; la Conquista normanna avrebbe spinto francese e inglese in una collisione creativa."
     },
     "renaissance-humanism": {
       "1401→1453": "Gli umanisti fiorentini raccoglievano manoscritti prima del 1453; l'esodo greco accelerò ciò che Salutati e Bruni avevano iniziato.",
@@ -305,11 +316,14 @@
     "carolingian-renaissance": {
       "800→1000": "Alcuino standardizzò scrittura e curriculum; Gerberto aggiunse la matematica. Il progetto carolingio sopravvisse ai Carolingi.",
       "800→910": "Mentre il mecenatismo imperiale carolingio si frammentava, monasteri come Saint-Amand mantennero viva la tradizione negli scriptoria regionali — preservando le riforme di Alcuino attraverso la tempesta.",
-      "910→1000": "Lo stile franco-sassone sopravvisse nei monasteri borgognoni finché Ottone I non ripristinò il mecenatismo imperiale — le riforme di Cluny crearono la stabilità istituzionale che rese possibile il Rinascimento ottoniano."
+      "910→1000": "Lo stile franco-sassone sopravvisse nei monasteri borgognoni finché Ottone I non ripristinò il mecenatismo imperiale — le riforme di Cluny crearono la stabilità istituzionale che rese possibile il Rinascimento ottoniano.",
+      "800→843": "Le riforme educative sopravvissero alla morte di Carlo Magno ma non alle guerre dei suoi nipoti; la corte di Carlo il Calvo preservò la fiamma mentre l'impero bruciava.",
+      "843→910": "La frammentazione concentrò il mecenatismo: lo scriptorium di Carlo il Calvo a Tours rivaleggiava con qualsiasi cosa Carlo Magno avesse commissionato, anche mentre l'unità politica andava perduta."
     },
     "fragmentation": {
       "1848→1922": "Le rivoluzioni del 1848 frantumarono imperi e ideologie; nel 1922, la <em>Terra desolata</em> di Eliot fece dei frammenti una forma letteraria.",
-      "1922→1968": "La frammentazione modernista era esperimento formale; quella del 1968 era programma politico."
+      "1922→1968": "La frammentazione modernista era esperimento formale; quella del 1968 era programma politico.",
+      "843→1848": "Le linee di faglia di Verdun — Francia, Germania e le terre contese tra loro — avrebbero plasmato un millennio di guerre europee, dalla Lotaringia all'Alsazia-Lorena alle rivoluzioni del 1848."
     },
     "crisis-of-positivism": {
       "1889→1905": "Il crollo di Nietzsche e la durée di Bergson lasciarono l'oggettività in rovine; Einstein dimostrò che persino la fisica era costruita su sabbia relativa."
