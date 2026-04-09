@@ -3326,5 +3326,79 @@
       "url": "audio/it/843-verdun-birth-of-nations.mp3",
       "duration": 259
     }
+  },
+  {
+    "year": "732",
+    "id": "732-christendom-triple-frontier",
+    "title": "La triplice frontiera della cristianità",
+    "teaser": "Il martello franco ferma l'avanzata omayyade a Tours. Un imperatore bizantino distrugge le icone. Un monaco di Northumbria completa la prima storia d'Inghilterra. Tre frontiere della cristianità — militare, teologica, intellettuale — difese in una sola generazione.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "I <strong>Vangeli di Lindisfarne</strong> (ca. 715-720) rappresentano l'apice dell'<strong>arte insulare</strong> — quella fusione di spirali celtiche, intreccio animale germanico e tradizione mediterranea forgiata nei monasteri di Britannia e Irlanda. Creato dal vescovo <strong>Eadfrith</strong> sull'Isola Sacra, il manoscritto utilizza tecniche mutuate dall'oreficeria d'élite: le celebri pagine a tappeto dissolvono la rappresentazione in un'infinità astratta, mentre i ritratti degli evangelisti adattano modelli bizantini in qualcosa di totalmente originale. È arte devozionale che trascende le sue fonti — una teologia visiva che sostiene che la bellezza stessa possa essere preghiera. Intanto a Costantinopoli, l'imperatore <strong>Leone III</strong> ordina la rimozione delle icone dalle chiese, dando inizio alla <strong>controversia iconoclasta</strong> che sconvolgerà l'arte bizantina per oltre un secolo."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Nel 731, <strong>Beda</strong> completa la sua <em>Historia ecclesiastica gentis Anglorum</em> presso il monastero di Jarrow — la prima storia completa dell'Inghilterra e una delle più belle opere di storiografia medievale. Beda introduce tecniche ancora in uso: data gli eventi secondo il sistema <strong>Anno Domini</strong>, cita le sue fonti e distingue tra testimonianza oculare e tradizione. La sua prosa attenta trasforma la caotica conversione dei regni anglosassoni in una narrazione coerente della provvidenza. L'opera si diffonderà in tutta Europa in una generazione, consacrando Beda come 'Padre della storia inglese' e facendo della Northumbria un faro di erudizione latina ai confini del mondo conosciuto."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Dalla sicurezza del monastero di <strong>Mar Saba</strong> nella Palestina sotto controllo musulmano, <strong>Giovanni Damasceno</strong> compone i suoi <em>Tre trattati sulle immagini divine</em> (ca. 726-730) — la difesa fondamentale della <strong>venerazione delle icone</strong>. Il suo argomento è filosofico e cristologico: poiché Dio si è fatto carne visibile in Cristo, la materia stessa può trasmettere il sacro. La distinzione tra <em>latria</em> (adorazione dovuta solo a Dio) e <em>proskynesis</em> (venerazione offerta a santi e immagini) plasmerà permanentemente la teologia ortodossa e cattolica. Giovanni scrive al di là della portata dell'imperatore — il primo grande teologo a beneficiare della relativa tolleranza dell'Islam verso la vita intellettuale cristiana."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il 10 ottobre 732, <strong>Carlo Martello</strong> e la sua fanteria franca fermano l'avanzata <strong>omayyade</strong> a Tours (o Poitiers) — la penetrazione islamica più profonda nell'Europa occidentale. Il comandante omayyade <strong>Abd al-Rahman al-Ghafiqi</strong> muore in battaglia; il suo esercito si ritira in al-Andalus. Gli storici discutono se il califfato intendesse davvero conquistare permanentemente il nord, ma le conseguenze furono reali: Carlo emerge come il signore della guerra dominante in Europa, fondando la dinastia che produrrà <strong>Carlo Magno</strong>. Lo stesso decennio vede il <strong>Califfato omayyade</strong> al suo apice territoriale — dalla Spagna all'Indo — e prossimo alla crisi interna che lo frantumerà nel 750."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "La cristianità combatte su tre frontiere simultaneamente — e vince. Carlo difende la frontiera <strong>militare</strong> contro l'espansione islamica. Giovanni Damasceno difende la frontiera <strong>teologica</strong> contro l'iconoclastia imperiale, preservando il vocabolario visivo della fede. Beda difende la frontiera <strong>intellettuale</strong>, dimostrando che i 'barbari' convertiti della Britannia possono produrre erudizione alla pari dell'età dell'oro di Roma. I Vangeli di Lindisfarne incarnano questa fiducia: un'arte così compiuta da non aver bisogno di giustificazioni, creata in quello che dovrebbe essere il confine della civiltà. Quando i predoni vichinghi distruggeranno Lindisfarne nel 793, le conquiste di questa generazione avranno già seminato la <strong>Rinascita carolingia</strong> — Alcuino di York, formatosi nella Northumbria di Beda, porterà questo sapere alla corte di Carlo Magno.",
+        "funFact": "Giovanni Damasceno scrisse la sua difesa delle icone mentre viveva sotto dominio musulmano — al sicuro dall'imperatore cristiano che voleva distruggerle. L'ironia non sfuggì ai suoi contemporanei."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Battaglia_di_Poitiers_(732)",
+        "title": "Battaglia di Poitiers (732) - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Evangeliario_di_Lindisfarne",
+        "title": "Evangeliario di Lindisfarne - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Giovanni_Damasceno",
+        "title": "Giovanni Damasceno - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Historia_ecclesiastica_gentis_Anglorum",
+        "title": "Historia ecclesiastica gentis Anglorum - Wikipedia"
+      },
+      {
+        "url": "https://www.britannica.com/event/Battle-of-Tours-732",
+        "title": "Battle of Tours - Britannica"
+      }
+    ],
+    "image": {
+      "url": "images/732-christendom-triple-frontier.jpg",
+      "width": 1200,
+      "height": 1657,
+      "caption": "Incipit del Vangelo di Luca dai Vangeli di Lindisfarne (ca. 715-720), che mostra l'elaborata pagina iniziale con motivi a intreccio insulari",
+      "attribution": "Eadfrith di Lindisfarne, Pubblico dominio, via Wikimedia Commons"
+    },
+    "threads": [
+      "insular-art",
+      "monastic-preservation",
+      "iconoclasm",
+      "carolingian-renaissance"
+    ],
+    "location": {
+      "lat": 46.7811,
+      "lon": 0.5406,
+      "place": "Tours"
+    },
+    "addedDate": "2026-04-09T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/732-christendom-triple-frontier.mp3",
+      "duration": 229
+    }
   }
 ]

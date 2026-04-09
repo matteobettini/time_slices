@@ -1,0 +1,50 @@
+{
+  "year": "732",
+  "id": "732-christendom-triple-frontier",
+  "title": "Christendom's Triple Frontier",
+  "teaser": "A Frankish hammer stops the Umayyad advance at Tours. A Byzantine emperor smashes icons. A Northumbrian monk completes the first history of England. Three frontiers of Christendom — military, theological, intellectual — defended in a single generation.",
+  "dimensions": {
+    "art": {
+      "label": "Art",
+      "content": "The <strong>Lindisfarne Gospels</strong> (c. 715-720) represent the zenith of <strong>Insular art</strong> — that fusion of Celtic spirals, Germanic animal interlace, and Mediterranean tradition forged in the monasteries of Britain and Ireland. Created by Bishop <strong>Eadfrith</strong> on Holy Island, the manuscript uses techniques borrowed from elite metalwork: the famous carpet pages dissolve representation into abstract infinity, while the evangelist portraits adapt Byzantine models into something wholly original. This is devotional art that exceeds its sources — a visual theology arguing that beauty itself can be prayer. Meanwhile in Constantinople, Emperor <strong>Leo III</strong> orders icons removed from churches, beginning the <strong>Iconoclast Controversy</strong> that will convulse Byzantine art for over a century."
+    },
+    "lit": {
+      "label": "Literature",
+      "content": "In 731, <strong>Bede</strong> completes his <em>Ecclesiastical History of the English People</em> at the monastery of Jarrow — the first comprehensive history of England and one of the finest works of medieval historiography. Bede pioneers techniques still used today: he dates events by the <strong>Anno Domini</strong> system, cites his sources, and distinguishes between eyewitness testimony and tradition. His careful prose transforms the chaotic conversion of Anglo-Saxon kingdoms into a coherent narrative of providence. The work will spread across Europe within a generation, establishing Bede as 'the Father of English History' and making Northumbria a beacon of Latin learning at the edge of the known world."
+    },
+    "phil": {
+      "label": "Philosophy",
+      "content": "From the safety of the <strong>Mar Saba</strong> monastery in Muslim-controlled Palestine, <strong>John of Damascus</strong> composes his <em>Three Treatises on the Divine Images</em> (c. 726-730) — the foundational defence of <strong>icon veneration</strong>. His argument is philosophical and Christological: because God became visible flesh in Christ, matter itself can convey the sacred. The distinction between <em>latria</em> (worship owed to God alone) and <em>proskynesis</em> (veneration offered to saints and images) will shape Orthodox and Catholic theology permanently. John writes beyond the Emperor's reach — the first major theologian to benefit from Islam's relative tolerance of Christian intellectual life."
+    },
+    "hist": {
+      "label": "History",
+      "content": "On 10 October 732, <strong>Charles Martel</strong> and his Frankish infantry halt the <strong>Umayyad</strong> advance at Tours (or Poitiers) — the deepest Islamic penetration into Western Europe. The Umayyad commander <strong>Abd al-Rahman al-Ghafiqi</strong> dies in battle; his army retreats to Al-Andalus. Historians debate whether the caliphate ever intended permanent northern conquest, but the consequences were real: Charles emerges as Europe's dominant warlord, founding the dynasty that will produce <strong>Charlemagne</strong>. The same decade sees the <strong>Umayyad Caliphate</strong> at its territorial peak — from Spain to the Indus — and approaching the internal crisis that will shatter it in 750."
+    },
+    "conn": {
+      "label": "Connections",
+      "content": "Christendom is fighting on three frontiers simultaneously — and winning. Charles defends the <strong>military</strong> frontier against Islamic expansion. John of Damascus defends the <strong>theological</strong> frontier against imperial iconoclasm, preserving the visual vocabulary of faith. Bede defends the <strong>intellectual</strong> frontier, proving that the converted 'barbarians' of Britain can produce scholarship rivalling anything from Rome's golden age. The Lindisfarne Gospels embody this confidence: art so accomplished it needs no justification, created at what should be civilisation's edge. When Viking raiders destroy Lindisfarne in 793, this generation's achievement will have already seeded the <strong>Carolingian Renaissance</strong> — Alcuin of York, trained in Bede's Northumbria, will carry the learning to Charlemagne's court.",
+      "funFact": "John of Damascus wrote his defence of icons while living under Muslim rule — safe from the Christian emperor who wanted to destroy them. The irony was not lost on his contemporaries."
+    }
+  },
+  "sources": [
+    { "url": "https://en.wikipedia.org/wiki/Battle_of_Tours", "title": "Battle of Tours - Wikipedia" },
+    { "url": "https://en.wikipedia.org/wiki/Lindisfarne_Gospels", "title": "Lindisfarne Gospels - Wikipedia" },
+    { "url": "https://en.wikipedia.org/wiki/Three_Treatises_on_the_Divine_Images", "title": "Three Treatises on the Divine Images - Wikipedia" },
+    { "url": "https://en.wikipedia.org/wiki/Ecclesiastical_History_of_the_English_People", "title": "Ecclesiastical History of the English People - Wikipedia" },
+    { "url": "https://www.britannica.com/event/Battle-of-Tours-732", "title": "Battle of Tours - Britannica" }
+  ],
+  "image": {
+    "url": "images/732-christendom-triple-frontier.jpg",
+    "width": 1200,
+    "height": 1657,
+    "caption": "Opening of St Luke's Gospel from the Lindisfarne Gospels (c. 715-720), showing the elaborate incipit page with Insular interlace patterns",
+    "attribution": "Eadfrith of Lindisfarne, Public domain, via Wikimedia Commons"
+  },
+  "threads": ["insular-art", "monastic-preservation", "iconoclasm", "carolingian-renaissance"],
+  "location": {
+    "lat": 46.7811,
+    "lon": 0.5406,
+    "place": "Tours"
+  },
+  "addedDate": "2026-04-09T05:00:00Z"
+}

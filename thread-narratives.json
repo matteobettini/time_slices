@@ -42,7 +42,9 @@
       "800→910": "Alcuin's educational reforms created the copying culture; as political order collapsed, monasteries kept the lights on — Cluny institutionalized what individual scribes had struggled to maintain.",
       "910→1000": "Cluny's independence from local lords created monasteries that could accumulate libraries without fear of plunder — by 1000, Gerbert drew on texts preserved through this network.",
       "590→664": "Gregory's Dialogues canonized Benedict's Rule; Irish monks carried it to Northumbria, where Hilda's Whitby trained five future bishops.",
-      "664→800": "Whitby's educated monks seeded English scriptoria; Alcuin brought their learning to Charlemagne, launching the Carolingian preservation of antiquity."
+      "664→800": "Whitby's educated monks seeded English scriptoria; Alcuin brought their learning to Charlemagne, launching the Carolingian preservation of antiquity.",
+      "664→732": "Caedmon's vernacular hymns become Bede's Latin histories — the monasteries transform oral tradition into written scholarship. Holy Island becomes the model for how learning survives at civilization's edge.",
+      "732→800": "Bede dies in 735, but his students carry his methods to the Continent. Alcuin reorganizes Charlemagne's libraries on Northumbrian principles — and the scriptoria begin the systematic copying that will preserve antiquity."
     },
     "dialectical-method": {
       "762→1141": "The Mu'tazila debated theology with Greek logical tools; those same tools reached Paris through Arabic-Latin translation. Abelard's <em>Sic et Non</em> is dialectical method applied to Christian doctrine — the Baghdad conversation continued in French."
@@ -140,7 +142,8 @@
       "800→910": "As Carolingian imperial patronage fragmented, monasteries like Saint-Amand kept the tradition alive in regional scriptoria — preserving Alcuin's reforms through the storm.",
       "910→1000": "The Franco-Saxon style survived in Burgundian monasteries until Otto I revived imperial patronage — Cluny's reforms created the institutional stability that made the Ottonian Renaissance possible.",
       "800→843": "The educational reforms survived Charlemagne's death but not his grandsons' wars; Charles the Bald's court preserved the flame while the empire burned.",
-      "843→910": "Fragmentation concentrated patronage: Charles the Bald's scriptorium at Tours rivalled anything Charlemagne had commissioned, even as the political unity was lost."
+      "843→910": "Fragmentation concentrated patronage: Charles the Bald's scriptorium at Tours rivalled anything Charlemagne had commissioned, even as the political unity was lost.",
+      "732→800": "The scholars who illuminate Charlemagne's court — Alcuin of York above all — carry the learning of Bede's Northumbria to the Continent. The seed planted at Lindisfarne flowers at Aachen."
     },
     "fragmentation": {
       "1848→1922": "The revolutions of 1848 fractured empires and ideologies; by 1922, Eliot's <em>Waste Land</em> made fragments a literary form. Political breakup became aesthetic principle.",
@@ -175,6 +178,9 @@
     },
     "critique-of-modernity": {
       "1794→1968": "Blake's distrust of Urizen's compasses echoes through two centuries: from Romantic revolt against mechanical reason to 1968's rejection of technocratic rationality."
+    },
+    "insular-art": {
+      "664→732": "From the Book of Durrow to the Lindisfarne Gospels, Insular illumination reaches its full flowering. The Synod of Whitby binds Britain to Rome, but the monks at Lindisfarne create something wholly original — Celtic interlace, Germanic energy, Mediterranean gold fused into devotional infinity."
     }
   },
   "it": {
@@ -220,7 +226,9 @@
       "800→910": "Le riforme educative di Alcuino crearono la cultura della copia; al collasso dell'ordine politico, i monasteri tennero accese le luci — Cluny istituzionalizzò ciò che singoli scribi avevano lottato per mantenere.",
       "910→1000": "L'indipendenza di Cluny dai signori locali creò monasteri che potevano accumulare biblioteche senza timore di saccheggio — nel 1000, Gerberto attinse a testi preservati attraverso questa rete.",
       "590→664": "I Dialogi di Gregorio canonizzarono la Regola di Benedetto; i monaci irlandesi la portarono in Northumbria, dove la Whitby di Ilda formò cinque futuri vescovi.",
-      "664→800": "I monaci istruiti di Whitby seminarono gli scriptoria inglesi; Alcuino portò il loro sapere a Carlo Magno, avviando la preservazione carolingia dell'antichità."
+      "664→800": "I monaci istruiti di Whitby seminarono gli scriptoria inglesi; Alcuino portò il loro sapere a Carlo Magno, avviando la preservazione carolingia dell'antichità.",
+      "664→732": "Gli inni volgari di Caedmon diventano le storie latine di Beda — i monasteri trasformano la tradizione orale in erudizione scritta. L'Isola Sacra diventa il modello di come il sapere sopravvive ai margini della civiltà.",
+      "732→800": "Beda muore nel 735, ma i suoi allievi portano i suoi metodi sul Continente. Alcuino riorganizza le biblioteche di Carlo Magno secondo i principi di Northumbria — e gli scriptoria iniziano la copiatura sistematica che preserverà l'antichità."
     },
     "dialectical-method": {
       "762→1141": "I Mu'tazila dibattevano teologia con strumenti logici greci; quegli stessi strumenti raggiunsero Parigi attraverso la traduzione arabo-latina. Il <em>Sic et Non</em> di Abelardo è il metodo dialettico applicato alla dottrina cristiana."
@@ -318,7 +326,8 @@
       "800→910": "Mentre il mecenatismo imperiale carolingio si frammentava, monasteri come Saint-Amand mantennero viva la tradizione negli scriptoria regionali — preservando le riforme di Alcuino attraverso la tempesta.",
       "910→1000": "Lo stile franco-sassone sopravvisse nei monasteri borgognoni finché Ottone I non ripristinò il mecenatismo imperiale — le riforme di Cluny crearono la stabilità istituzionale che rese possibile il Rinascimento ottoniano.",
       "800→843": "Le riforme educative sopravvissero alla morte di Carlo Magno ma non alle guerre dei suoi nipoti; la corte di Carlo il Calvo preservò la fiamma mentre l'impero bruciava.",
-      "843→910": "La frammentazione concentrò il mecenatismo: lo scriptorium di Carlo il Calvo a Tours rivaleggiava con qualsiasi cosa Carlo Magno avesse commissionato, anche mentre l'unità politica andava perduta."
+      "843→910": "La frammentazione concentrò il mecenatismo: lo scriptorium di Carlo il Calvo a Tours rivaleggiava con qualsiasi cosa Carlo Magno avesse commissionato, anche mentre l'unità politica andava perduta.",
+      "732→800": "Gli studiosi che illuminano la corte di Carlo Magno — Alcuino di York su tutti — portano il sapere della Northumbria di Beda sul Continente. Il seme piantato a Lindisfarne fiorisce ad Aquisgrana."
     },
     "fragmentation": {
       "1848→1922": "Le rivoluzioni del 1848 frantumarono imperi e ideologie; nel 1922, la <em>Terra desolata</em> di Eliot fece dei frammenti una forma letteraria.",
@@ -353,6 +362,9 @@
     },
     "critique-of-modernity": {
       "1794→1968": "La sfiducia di Blake nei compassi di Urizen riecheggia per due secoli: dalla rivolta romantica contro la ragione meccanica al rifiuto della razionalità tecnocratica nel 1968."
+    },
+    "insular-art": {
+      "664→732": "Dal Libro di Durrow ai Vangeli di Lindisfarne, l'illuminazione insulare raggiunge la sua piena fioritura. Il Sinodo di Whitby lega la Britannia a Roma, ma i monaci di Lindisfarne creano qualcosa di totalmente originale — intreccio celtico, energia germanica, oro mediterraneo fusi in un'infinità devozionale."
     }
   }
 }
