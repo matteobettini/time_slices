@@ -112,13 +112,16 @@
       "1543→1687": "Vesalius trusted dissection over Galen; Newton trusted mathematics over tradition. Both empiricisms — anatomical and physical — insisted that observation trumped authority.",
       "1543→1610": "Vesalius taught physicians to cut; Galileo taught them to look through lenses — same epistemology, new instrument.",
       "1610→1687": "Galileo's observations demanded mathematical precision; Newton provided it, fusing seeing and calculating into a single method.",
-      "1687→1776": "Newton's mathematical physics gave empiricism its grandest triumph; ninety years later, Hume's dying breath and Smith's invisible hand proved observation could master mind and market alike."
+      "1687→1776": "Newton's mathematical physics gave empiricism its grandest triumph; ninety years later, Hume's dying breath and Smith's invisible hand proved observation could master mind and market alike.",
+      "1776→1859": "Hume's skeptical empiricism in 1776 attacked causation as mere habit. By 1859, Darwin transformed empirical observation into a grand theory—natural selection—that would finally displace metaphysical speculation from the study of life."
     },
     "scientific-revolution": {
       "1543→1687": "Copernicus repositioned the Earth; Newton explained why it stayed in orbit. The revolution Copernicus began, Newton completed.",
       "1687→1905": "Newton's absolute cosmos reigned for two centuries; Einstein shattered it in four papers from a Swiss patent office.",
       "1543→1610": "From anatomical tables to telescopes: Vesalius showed that authorities could be wrong about bodies; Galileo proved they were wrong about heavens.",
-      "1610→1687": "Galileo proved the heavens were physical; Newton proved they obeyed the same laws as falling apples — the revolution complete."
+      "1610→1687": "Galileo proved the heavens were physical; Newton proved they obeyed the same laws as falling apples — the revolution complete.",
+      "1687→1859": "Newton's Principia in 1687 showed the cosmos obeyed mathematical law. Darwin's Origin in 1859 extended scientific explanation to life itself—the diversity of species now explained by mechanism, not design. The revolution was complete.",
+      "1859→1905": "Darwin's Origin completed the mechanistic worldview. But by 1905, Einstein's special relativity would begin its dismantling—showing that even time and space were relative. Science's revolution had become permanent."
     },
     "enlightenment": {
       "1687→1755": "Newton's <em>Principia</em> proved the cosmos was lawful; the Lisbon earthquake asked whether it was just. Enlightenment optimism crested and cracked within seventy years.",
@@ -181,6 +184,12 @@
     },
     "insular-art": {
       "664→732": "From the Book of Durrow to the Lindisfarne Gospels, Insular illumination reaches its full flowering. The Synod of Whitby binds Britain to Rome, but the monks at Lindisfarne create something wholly original — Celtic interlace, Germanic energy, Mediterranean gold fused into devotional infinity."
+    },
+    "abolition-crisis": {
+      "1831→1859": "Nat Turner's rebellion in 1831 terrified the South into brutal new slave codes. A generation later, John Brown's raid at Harpers Ferry proved that white abolitionists would now take up arms. The road to Civil War was paved in blood."
+    },
+    "revolutionary-nationalism": {
+      "1848→1859": "The Springtime of Peoples in 1848 was crushed, but the dream of national self-determination survived. A decade later, at Solferino, Italian nationalists saw France defeat Austria—and the Risorgimento entered its decisive phase."
     }
   },
   "it": {
@@ -296,13 +305,16 @@
       "1543→1687": "Vesalio si fidava della dissezione più che di Galeno; Newton si fidava della matematica più che della tradizione.",
       "1543→1610": "Vesalio insegnò ai medici a sezionare; Galileo insegnò loro a guardare attraverso lenti — stessa epistemologia, nuovo strumento.",
       "1610→1687": "Le osservazioni di Galileo richiedevano precisione matematica; Newton la fornì, fondendo osservazione e calcolo in un unico metodo.",
-      "1687→1776": "La fisica matematica di Newton diede all'empirismo il suo trionfo più grande; novant'anni dopo, l'ultimo respiro di Hume e la mano invisibile di Smith dimostrarono che l'osservazione poteva dominare mente e mercato."
+      "1687→1776": "La fisica matematica di Newton diede all'empirismo il suo trionfo più grande; novant'anni dopo, l'ultimo respiro di Hume e la mano invisibile di Smith dimostrarono che l'osservazione poteva dominare mente e mercato.",
+      "1776→1859": "L'empirismo scettico di Hume nel 1776 attaccò la causalità come mera abitudine. Nel 1859, Darwin trasformò l'osservazione empirica in una grande teoria—la selezione naturale—che avrebbe definitivamente soppiantato la speculazione metafisica nello studio della vita."
     },
     "scientific-revolution": {
       "1543→1687": "Copernico riposizionò la Terra; Newton spiegò perché restava in orbita.",
       "1687→1905": "Il cosmo assoluto di Newton regnò per due secoli; Einstein lo frantumò in quattro articoli da un ufficio brevetti svizzero.",
       "1543→1610": "Dai tavoli anatomici ai cannocchiali: Vesalio mostrò che le autorità potevano sbagliare sui corpi; Galileo dimostrò che sbagliavano sui cieli.",
-      "1610→1687": "Galileo dimostrò che i cieli erano fisici; Newton dimostrò che obbedivano alle stesse leggi delle mele che cadono — la rivoluzione compiuta."
+      "1610→1687": "Galileo dimostrò che i cieli erano fisici; Newton dimostrò che obbedivano alle stesse leggi delle mele che cadono — la rivoluzione compiuta.",
+      "1687→1859": "I Principia di Newton del 1687 mostrarono che il cosmo obbediva a leggi matematiche. L'Origine delle specie di Darwin nel 1859 estese la spiegazione scientifica alla vita stessa—la diversità delle specie ora spiegata dal meccanismo, non dal disegno. La rivoluzione era compiuta.",
+      "1859→1905": "L'Origine di Darwin completò la visione meccanicistica del mondo. Ma nel 1905, la relatività speciale di Einstein avrebbe iniziato a smantellare—mostrando che persino tempo e spazio erano relativi. La rivoluzione della scienza era diventata permanente."
     },
     "enlightenment": {
       "1687→1755": "I <em>Principia</em> di Newton dimostrarono che il cosmo era regolato da leggi; il terremoto di Lisbona chiese se fosse giusto.",
@@ -365,6 +377,12 @@
     },
     "insular-art": {
       "664→732": "Dal Libro di Durrow ai Vangeli di Lindisfarne, l'illuminazione insulare raggiunge la sua piena fioritura. Il Sinodo di Whitby lega la Britannia a Roma, ma i monaci di Lindisfarne creano qualcosa di totalmente originale — intreccio celtico, energia germanica, oro mediterraneo fusi in un'infinità devozionale."
+    },
+    "abolition-crisis": {
+      "1831→1859": "La ribellione di Nat Turner nel 1831 terrorizzò il Sud inducendolo a emanare brutali nuovi codici schiavisti. Una generazione dopo, il raid di John Brown a Harpers Ferry dimostrò che gli abolizionisti bianchi avrebbero impugnato le armi. La strada verso la Guerra Civile fu lastricata di sangue."
+    },
+    "revolutionary-nationalism": {
+      "1848→1859": "La Primavera dei Popoli del 1848 fu schiacciata, ma il sogno dell'autodeterminazione nazionale sopravvisse. Un decennio dopo, a Solferino, i nazionalisti italiani videro la Francia sconfiggere l'Austria—e il Risorgimento entrò nella sua fase decisiva."
     }
   }
 }

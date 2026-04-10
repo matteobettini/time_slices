@@ -3412,5 +3412,80 @@
       "url": "audio/732-christendom-triple-frontier.mp3",
       "duration": 226
     }
+  },
+  {
+    "year": "1859",
+    "id": "1859-origins",
+    "title": "Harpers Ferry & Down — Origins",
+    "teaser": "Darwin publishes the theory that will reshape everything. John Brown raids an arsenal and reshapes America. Mill defends liberty against the majority. In Russia, Oblomov refuses to get out of bed. The old certainties are dissolving — into struggle.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "In Italy, <strong>Francesco Hayez</strong> paints <em>The Kiss</em> — a couple locked in passionate embrace against a medieval backdrop. The painting becomes an icon of the <strong>Risorgimento</strong>: romantic nationalism as visual allegory, the man's departure hinting at the volunteers leaving to fight Austria. In America, <strong>Frederic Church</strong>'s <em>The Heart of the Andes</em> draws twelve thousand paying visitors in New York — panoramic <strong>Luminism</strong> rendering nature as revelation, five by ten feet of Ecuadorian mountains suffused with transcendent light. The year also sees <strong>Édouard Manet</strong>'s <em>The Absinthe Drinker</em> rejected by the Salon — a modern Parisian subject painted with bold simplification. The gatekeepers don't know it yet, but modernism is knocking."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Charles Dickens</strong> launches <em>A Tale of Two Cities</em> in his new magazine, <em>All the Year Round</em> — revolution as resurrection, the Terror as moral crucible. <strong>George Eliot</strong>'s <em>Adam Bede</em> establishes her as the master of English <strong>psychological realism</strong>: rural England rendered with sociological precision and moral depth. In Russia, <strong>Ivan Goncharov</strong> publishes <em>Oblomov</em> — a nobleman who barely leaves his bed, the <strong>superfluous man</strong> as social diagnosis. And <strong>Edward FitzGerald</strong> quietly releases his <em>Rubáiyát of Omar Khayyám</em>, initially ignored but destined to become the Victorian era's favorite exotic pessimism: <em>\"The Moving Finger writes; and, having writ, Moves on.\"</em>"
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "On November 24th, <strong>Charles Darwin</strong> publishes <em>On the Origin of Species</em>. The first edition of 1,250 copies sells out immediately. Species are not fixed creations but mutable descendants of common ancestors, shaped by <strong>natural selection</strong> — the struggle for existence favoring variations that aid survival. It's the most important scientific work since Newton, and it will detonate through theology, ethics, and social theory for generations. The same year, <strong>John Stuart Mill</strong> publishes <em>On Liberty</em>, written with his late wife Harriet Taylor — the foundational text of modern <strong>liberalism</strong>. Against the tyranny of the majority, Mill defends the absolute sovereignty of the individual over their own body and mind: <em>\"Over himself, his own body and mind, the individual is sovereign.\"</em>"
+      },
+      "hist": {
+        "label": "History",
+        "content": "On October 16th, the abolitionist <strong>John Brown</strong> leads twenty-one men in a raid on the federal arsenal at <strong>Harpers Ferry</strong>, Virginia — intending to spark a slave insurrection. The raid fails; Brown is captured by a young <strong>Robert E. Lee</strong>, tried for treason, and hanged on December 2nd. But his composure at trial galvanizes Northern abolitionists — Emerson calls him a saint, Thoreau a martyr. The South sees terrorism; the North, prophecy. Meanwhile, at <strong>Solferino</strong> in June, French and Piedmontese forces defeat Austria in the bloodiest battle since Waterloo — forty thousand casualties in a single day. A Swiss businessman named <strong>Henry Dunant</strong> witnesses the aftermath and will found the <strong>Red Cross</strong>."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "Darwin and John Brown share more than a year. Both challenge assumptions about what can change — species, societies — and both frame change as <strong>struggle</strong>. Darwin's 'struggle for existence' will be misappropriated by Social Darwinists to justify exactly the hierarchies Brown died opposing. Mill's defense of individual liberty and experiment implicitly supports both: scientific heterodoxy and moral dissent. Even Oblomov connects — Goncharov's paralyzed nobleman is what Russia's intelligentsia feared they were becoming: all thought, no action. Dunant at Solferino and Brown at Harpers Ferry both confront massive violence and refuse to look away; one founds humanitarianism, the other martyrdom. The year 1859 is about what it costs to act on what you see.",
+        "funFact": "Darwin delayed publishing for twenty years, fearing the implications. What forced his hand? In 1858, Alfred Russel Wallace independently arrived at the same theory and wrote to Darwin announcing his intention to publish. Darwin rushed the book into print. Evolution nearly had two fathers."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species",
+        "title": "On the Origin of Species - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/John_Brown%27s_raid_on_Harpers_Ferry",
+        "title": "John Brown's Raid on Harpers Ferry - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/On_Liberty",
+        "title": "On Liberty - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Solferino",
+        "title": "Battle of Solferino - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Oblomov",
+        "title": "Oblomov - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1859-origins.jpg",
+      "alt": "The Kiss by Francesco Hayez, 1859",
+      "width": 963,
+      "height": 1200,
+      "caption": "The Kiss by Francesco Hayez, 1859 — romantic nationalism as visual allegory for the Risorgimento",
+      "attribution": "Francesco Hayez, public domain, via Wikimedia Commons (Pinacoteca di Brera, Milan)"
+    },
+    "threads": [
+      "abolition-crisis",
+      "empiricism",
+      "scientific-revolution",
+      "revolutionary-nationalism"
+    ],
+    "location": {
+      "lat": 39.3231,
+      "lon": -77.7303,
+      "place": "Harpers Ferry"
+    },
+    "addedDate": "2026-04-10T05:00:00Z",
+    "podcast": {
+      "url": "audio/1859-origins.mp3",
+      "duration": 142
+    }
   }
 ]
