@@ -3510,6 +3510,12 @@
       "url": "audio/1670-amsterdam-year-of-thinking-dangerously.mp3",
       "duration": 207
     },
-    "addedDate": "2026-04-11"
+    "addedDate": "2026-04-11",
+    "image": {
+      "url": "images/1670-amsterdam-year-of-thinking-dangerously.jpg",
+      "caption": "Portrait of Baruch Spinoza (c. 1665), unknown artist. Herzog August Bibliothek, Wolfenbüttel.",
+      "width": 1200,
+      "height": 1394
+    }
   }
 ]

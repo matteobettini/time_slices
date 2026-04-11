@@ -106,7 +106,8 @@
     "baroque": {
       "1600→1648": "Caravaggio's tenebrism dramatized Counter-Reformation piety; Rembrandt's used the same technique for Protestant inwardness. Baroque style survived the confessional divide.",
       "1600→1610": "Caravaggio's disciples scatter across Europe, carrying tenebrism from Rome's taverns to the world's salons.",
-      "1610→1648": "From Caravaggio's dramatic light, Rembrandt forges a Protestant chiaroscuro — shadow as moral inquiry, not theatrical effect."
+      "1610→1648": "From Caravaggio's dramatic light, Rembrandt forges a Protestant chiaroscuro — shadow as moral inquiry, not theatrical effect.",
+      "1648→1670": "The Baroque's theatricality turns inward: while Catholic churches stage spectacle, Dutch interiors reveal domestic light as spiritual presence — Vermeer's stillness speaks as loudly as Bernini's drama."
     },
     "empiricism": {
       "1543→1687": "Vesalius trusted dissection over Galen; Newton trusted mathematics over tradition. Both empiricisms — anatomical and physical — insisted that observation trumped authority.",
@@ -190,6 +191,12 @@
     },
     "revolutionary-nationalism": {
       "1848→1859": "The Springtime of Peoples in 1848 was crushed, but the dream of national self-determination survived. A decade later, at Solferino, Italian nationalists saw France defeat Austria—and the Risorgimento entered its decisive phase."
+    },
+    "dutch-golden-age": {
+      "1648→1670": "Independence secured, the Republic becomes Europe's richest state. Rembrandt dies poor while Vermeer paints hidden faith; Spinoza grinds lenses while thinking thoughts that will be banned."
+    },
+    "secularization": {
+      "1648→1670": "Westphalia's principle — states, not churches, determine order — now shapes thought itself. Spinoza's Tractatus separates philosophy from theology; Pascal defends faith through doubt, not authority."
     }
   },
   "it": {
@@ -299,7 +306,8 @@
     "baroque": {
       "1600→1648": "Il tenebrismo di Caravaggio drammatizzava la pietà controriformista; quello di Rembrandt usava la stessa tecnica per l'interiorità protestante.",
       "1600→1610": "I discepoli di Caravaggio si disperdono per l'Europa, portando il tenebrismo dalle taverne romane ai salotti del mondo.",
-      "1610→1648": "Dalla luce drammatica di Caravaggio, Rembrandt forgia un chiaroscuro protestante — l'ombra come indagine morale, non effetto teatrale."
+      "1610→1648": "Dalla luce drammatica di Caravaggio, Rembrandt forgia un chiaroscuro protestante — l'ombra come indagine morale, non effetto teatrale.",
+      "1648→1670": "La teatralità del Barocco si rivolge all'interno: mentre le chiese cattoliche mettono in scena lo spettacolo, gli interni olandesi rivelano la luce domestica come presenza spirituale — la quiete di Vermeer parla forte quanto il dramma di Bernini."
     },
     "empiricism": {
       "1543→1687": "Vesalio si fidava della dissezione più che di Galeno; Newton si fidava della matematica più che della tradizione.",
@@ -383,6 +391,12 @@
     },
     "revolutionary-nationalism": {
       "1848→1859": "La Primavera dei Popoli del 1848 fu schiacciata, ma il sogno dell'autodeterminazione nazionale sopravvisse. Un decennio dopo, a Solferino, i nazionalisti italiani videro la Francia sconfiggere l'Austria—e il Risorgimento entrò nella sua fase decisiva."
+    },
+    "dutch-golden-age": {
+      "1648→1670": "Assicurata l'indipendenza, la Repubblica diventa lo stato più ricco d'Europa. Rembrandt muore povero mentre Vermeer dipinge la fede nascosta; Spinoza mola lenti mentre pensa pensieri che saranno banditi."
+    },
+    "secularization": {
+      "1648→1670": "Il principio di Vestfalia — gli stati, non le chiese, determinano l'ordine — ora plasma il pensiero stesso. Il Trattato di Spinoza separa la filosofia dalla teologia; Pascal difende la fede attraverso il dubbio, non l'autorità."
     }
   }
 }
