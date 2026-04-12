@@ -98,7 +98,10 @@
     "french-romanticism": "French Romanticism",
     "gothic-revival": "Gothic Revival",
     "abolition-crisis": "Abolition Crisis",
-    "iconoclasm": "Iconoclasm"
+    "iconoclasm": "Iconoclasm",
+    "english-romanticism": "English Romanticism",
+    "gothic-literature": "Gothic Literature",
+    "climate-and-culture": "Climate and Culture"
   },
   "it": {
     "translation-movement": "Traduzione come potere",
@@ -199,6 +202,9 @@
     "french-romanticism": "Romanticismo francese",
     "gothic-revival": "Neogotico",
     "abolition-crisis": "Crisi abolizionista",
-    "iconoclasm": "Iconoclastia"
+    "iconoclasm": "Iconoclastia",
+    "english-romanticism": "Romanticismo inglese",
+    "gothic-literature": "Letteratura gotica",
+    "climate-and-culture": "Clima e cultura"
   }
 }

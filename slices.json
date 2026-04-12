@@ -3517,5 +3517,79 @@
       "width": 1200,
       "height": 1394
     }
+  },
+  {
+    "year": "1816",
+    "id": "1816-geneva-haunted-summer",
+    "title": "Geneva — The Haunted Summer",
+    "teaser": "Mount Tambora blots out the sun. At a rain-soaked villa on Lake Geneva, teenagers invent Gothic horror. Byron writes an apocalypse poem that wasn't metaphor. Coleridge finally publishes his opium dream. The skies burn red, the crops fail, and Romanticism finds its darkness.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>J.M.W. Turner</strong> begins sketching the volcanic sunsets that will define his later career — the fiery reds and oranges aren't poetic exaggeration but direct observation of Tambora's atmospheric veil. Between 1816 and 1818, he fills a sketchbook with 65 watercolours documenting skies 'dripping with gold and scarlet.' <strong>John Constable</strong> works in a different mode: his <em>Wivenhoe Park</em> (1816) renders the English countryside with scientific precision, cloud studies informed by the new meteorology. Where Turner dissolves form into light, Constable measures nature empirically — both responses to a Romantic moment that demanded close attention to weather and atmosphere."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "In June, <strong>Lord Byron</strong>, Percy Bysshe Shelley, Mary Godwin, and Byron's physician John Polidori gather at Villa Diodati on Lake Geneva — trapped indoors by incessant cold rain. Byron proposes a ghost story contest. Mary Godwin, eighteen years old, conceives <em>Frankenstein</em>; Polidori sketches what will become <em>The Vampyre</em>, the first modern vampire fiction. Byron himself writes 'Darkness' — a blank-verse vision of the sun extinguished: <em>'The bright sun was extinguish'd, and the stars / Did wander darkling in the eternal space.'</em> Not metaphor — description. Meanwhile, <strong>Coleridge</strong> finally publishes <em>Kubla Khan</em>, the fragment of an opium dream transcribed nineteen years earlier, its 'caverns measureless to man' and 'sunless sea' now eerily resonant."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Shelley</strong>'s <em>Hymn to Intellectual Beauty</em>, composed that summer, seeks an alternative to Christian theodicy — how to explain evil without a personal god? The 'unseen Power' that visits 'with inconstant glance / Each human heart and countenance' is secular, impersonal, yet still mysteriously beautiful. <strong>Hegel</strong> completes his <em>Science of Logic</em> and accepts a chair at Heidelberg, building the dialectical system that will dominate German thought. But the Year Without a Summer poses a question neither idealism nor natural theology can easily answer: what kind of cosmos produces random catastrophe? The <strong>theodicy crisis</strong> that began with Lisbon's earthquake in 1755 intensifies. Providence looks increasingly like accident."
+      },
+      "hist": {
+        "label": "History",
+        "content": "<strong>Mount Tambora</strong>'s April 1815 eruption — the largest in recorded history — ejects 150 cubic kilometres of ash and sulphur into the stratosphere. By 1816, global temperatures drop 0.4–0.7°C. In New England, frost kills crops in June; snow falls in New York in July. Europe's harvest fails catastrophically — famine stalks Germany, Switzerland, Ireland. Food riots erupt across the continent. In England, the <strong>Spa Fields riots</strong> (November–December) demand parliamentary reform as ex-soldiers and unemployed workers clash with authorities. Meanwhile, on July 9, the <strong>Congress of Tucumán</strong> declares Argentine independence from Spain — revolution continues in South America while Europe freezes under volcanic ash."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The climate catastrophe creates the conditions for <strong>Romantic darkness</strong>. Byron's 'Darkness' is not allegory — he is describing what he sees outside his window in Geneva, where fowls roosted at noon and candles were lit at midday. Mary Shelley's creature, assembled from dead matter and animated by lightning, is a creation myth for a world where nature has become terrifying and unpredictable. Turner's volcanic sunsets turn empirical observation into sublime vision — science and art fused at the moment when both confront a nature that exceeds human control. The Tambora eruption demonstrates what the philosophers couldn't prove: that the cosmos is indifferent to human flourishing. <strong>Romanticism's turn toward the dark sublime</strong> — Gothic horror, apocalyptic poetry, melancholy landscapes — is partly meteorological."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Year_Without_a_Summer",
+        "title": "Year Without a Summer — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Villa_Diodati",
+        "title": "Villa Diodati — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Darkness_(poem)",
+        "title": "Darkness (poem) — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora",
+        "title": "1815 Eruption of Mount Tambora — Wikipedia"
+      },
+      {
+        "url": "https://www.britannica.com/topic/Kubla-Khan",
+        "title": "Kubla Khan — Britannica"
+      }
+    ],
+    "image": {
+      "url": "images/1816-geneva-haunted-summer.jpg",
+      "width": 1085,
+      "height": 1200,
+      "caption": "Two Men before a Waterfall at Sunset by Johan Christian Dahl (1823) — the Romantic sublime that emerged from 1816's haunted summer",
+      "attribution": "Johan Christian Dahl, Public domain, via Metropolitan Museum of Art"
+    },
+    "threads": [
+      "english-romanticism",
+      "gothic-literature",
+      "theodicy-crisis",
+      "sublime-aesthetic",
+      "climate-and-culture"
+    ],
+    "location": {
+      "lat": 46.3059,
+      "lon": 6.2325,
+      "place": "Geneva"
+    },
+    "addedDate": "2026-04-12T05:00:00Z",
+    "podcast": {
+      "url": "audio/1816-geneva-haunted-summer.mp3",
+      "duration": 210
+    }
   }
 ]

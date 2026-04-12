@@ -3505,5 +3505,79 @@
       "width": 1200,
       "height": 1394
     }
+  },
+  {
+    "year": "1816",
+    "id": "1816-geneva-haunted-summer",
+    "title": "Ginevra — L'estate stregata",
+    "teaser": "Il Tambora oscura il sole. In una villa sul lago di Ginevra, dei ragazzi inventano l'horror gotico. Byron scrive un poema apocalittico che non è metafora. Coleridge pubblica finalmente il suo sogno d'oppio. I cieli bruciano di rosso, i raccolti falliscono, e il Romanticismo trova la sua oscurità.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "<strong>J.M.W. Turner</strong> inizia a dipingere i tramonti vulcanici che definiranno la sua carriera — i rossi e gli arancioni fiammeggianti non sono esagerazioni poetiche ma osservazione diretta del velo atmosferico del Tambora. Tra il 1816 e il 1818, riempie un taccuino con 65 acquerelli che documentano cieli 'gocciolanti d'oro e scarlatto'. <strong>John Constable</strong> lavora in modo diverso: il suo <em>Wivenhoe Park</em> (1816) ritrae la campagna inglese con precisione scientifica, gli studi delle nuvole informati dalla nuova meteorologia. Dove Turner dissolve la forma nella luce, Constable misura la natura empiricamente — entrambe risposte a un momento romantico che richiedeva un'attenzione ravvicinata al tempo atmosferico."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "In giugno, <strong>Lord Byron</strong>, Percy Bysshe Shelley, Mary Godwin e il medico di Byron, John Polidori, si riuniscono a Villa Diodati sul lago di Ginevra — intrappolati in casa dalla pioggia fredda incessante. Byron propone una gara di racconti del terrore. Mary Godwin, diciottenne, concepisce <em>Frankenstein</em>; Polidori abbozza quello che diventerà <em>Il vampiro</em>, la prima narrativa vampiresca moderna. Byron stesso scrive 'Darkness' — una visione in versi sciolti del sole estinto: <em>'Il luminoso sole era spento, e le stelle / vagavano nell'oscurità dello spazio eterno.'</em> Non metafora — descrizione. Nel frattempo, <strong>Coleridge</strong> pubblica finalmente <em>Kubla Khan</em>, il frammento di un sogno d'oppio trascritto diciannove anni prima, le sue 'caverne smisurate' e il 'mare senza sole' ora stranamente risonanti."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "L'<em>Hymn to Intellectual Beauty</em> di <strong>Shelley</strong>, composto quell'estate, cerca un'alternativa alla teodicea cristiana — come spiegare il male senza un dio personale? Il 'Potere invisibile' che visita 'con sguardo incostante / ogni cuore e viso umano' è secolare, impersonale, eppure ancora misteriosamente bello. <strong>Hegel</strong> completa la sua <em>Scienza della logica</em> e accetta una cattedra a Heidelberg, costruendo il sistema dialettico che dominerà il pensiero tedesco. Ma l'Anno senza estate pone una domanda a cui né l'idealismo né la teologia naturale possono facilmente rispondere: che tipo di cosmo produce catastrofi casuali? La <strong>crisi della teodicea</strong> iniziata con il terremoto di Lisbona nel 1755 si intensifica. La Provvidenza assomiglia sempre più al caso."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "L'eruzione del <strong>Monte Tambora</strong> dell'aprile 1815 — la più grande della storia documentata — proietta 150 chilometri cubi di cenere e zolfo nella stratosfera. Nel 1816, le temperature globali scendono di 0,4–0,7°C. Nel New England, il gelo uccide i raccolti a giugno; la neve cade a New York in luglio. Il raccolto europeo fallisce catastroficamente — la carestia colpisce Germania, Svizzera, Irlanda. Rivolte per il cibo scoppiano in tutto il continente. In Inghilterra, i <strong>moti di Spa Fields</strong> (novembre–dicembre) chiedono la riforma parlamentare mentre ex soldati e lavoratori disoccupati si scontrano con le autorità. Nel frattempo, il 9 luglio, il <strong>Congresso di Tucumán</strong> dichiara l'indipendenza argentina dalla Spagna — la rivoluzione continua in Sud America mentre l'Europa gela sotto la cenere vulcanica."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "La catastrofe climatica crea le condizioni per l'<strong>oscurità romantica</strong>. 'Darkness' di Byron non è allegoria — descrive ciò che vede dalla sua finestra a Ginevra, dove i galli si appollaiano a mezzogiorno e si accendono candele in pieno giorno. La creatura di Mary Shelley, assemblata da materia morta e animata dal fulmine, è un mito di creazione per un mondo in cui la natura è diventata terrificante e imprevedibile. I tramonti vulcanici di Turner trasformano l'osservazione empirica in visione sublime — scienza e arte fuse nel momento in cui entrambe affrontano una natura che supera il controllo umano. L'eruzione del Tambora dimostra ciò che i filosofi non potevano provare: che il cosmo è indifferente alla prosperità umana. La <strong>svolta romantica verso il sublime oscuro</strong> — horror gotico, poesia apocalittica, paesaggi melanconici — è in parte meteorologica."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Anno_senza_estate",
+        "title": "Anno senza estate — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Villa_Diodati",
+        "title": "Villa Diodati — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Darkness_(poema)",
+        "title": "Darkness (poema) — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Eruzione_del_Tambora_del_1815",
+        "title": "Eruzione del Tambora del 1815 — Wikipedia"
+      },
+      {
+        "url": "https://www.britannica.com/topic/Kubla-Khan",
+        "title": "Kubla Khan — Britannica"
+      }
+    ],
+    "image": {
+      "url": "images/1816-geneva-haunted-summer.jpg",
+      "width": 1085,
+      "height": 1200,
+      "caption": "Due uomini davanti a una cascata al tramonto di Johan Christian Dahl (1823) — il sublime romantico emerso dall'estate stregata del 1816",
+      "attribution": "Johan Christian Dahl, Pubblico dominio, via Metropolitan Museum of Art"
+    },
+    "threads": [
+      "english-romanticism",
+      "gothic-literature",
+      "theodicy-crisis",
+      "sublime-aesthetic",
+      "climate-and-culture"
+    ],
+    "location": {
+      "lat": 46.3059,
+      "lon": 6.2325,
+      "place": "Ginevra"
+    },
+    "addedDate": "2026-04-12T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1816-geneva-haunted-summer.mp3",
+      "duration": 185
+    }
   }
 ]

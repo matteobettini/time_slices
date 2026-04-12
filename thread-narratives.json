@@ -7,7 +7,8 @@
       "180→410": "The Antonine Plague killed millions under Marcus Aurelius; two centuries later, Augustine asked why God permitted Rome's sack. Both moments forced the question: if the cosmos is rational, why does suffering strike the virtuous?",
       "410→1347": "Augustine's <em>City of God</em> answered one theodicy crisis; the Black Death posed another. Boccaccio's plague-frame for the <em>Decameron</em> echoes Augustine's device — storytelling as refuge from catastrophe.",
       "1347→1755": "The Black Death killed a third of Europe; the Lisbon earthquake killed in minutes. Voltaire's <em>Candide</em> mocked Leibnizian optimism the way Boccaccio's brigata fled Florentine piety — theodicy cracking under the weight of facts.",
-      "1755→1794": "Lisbon's earthquake shattered optimism about divine providence; the Terror shattered optimism about human reason. The Romantics inherit both wounds."
+      "1755→1794": "Lisbon's earthquake shattered optimism about divine providence; the Terror shattered optimism about human reason. The Romantics inherit both wounds.",
+      "1794→1816": "The Terror showed Enlightenment reason devouring its children; Tambora showed nature doing the same. Providence looked increasingly like accident."
     },
     "translatio-studii": {
       "410→529": "As Rome fell, Greek texts traveled east with Christian scholars. By 529, Justinian closed the Academy, pushing Neoplatonic philosophers toward Persia — the first leg of the journey that would bring Aristotle to Baghdad.",
@@ -197,6 +198,9 @@
     },
     "secularization": {
       "1648→1670": "Westphalia's principle — states, not churches, determine order — now shapes thought itself. Spinoza's Tractatus separates philosophy from theology; Pascal defends faith through doubt, not authority."
+    },
+    "sublime-aesthetic": {
+      "1816→1819": "The volcanic darkness of 1816 proved Burke's sublime was no mere aesthetic theory — nature could terrify and overwhelm. Schopenhauer would systematise this into metaphysical pessimism."
     }
   },
   "it": {
@@ -207,7 +211,8 @@
       "180→410": "La peste antonina uccise milioni sotto Marco Aurelio; due secoli dopo, Agostino chiese perché Dio avesse permesso il sacco di Roma. Entrambi i momenti imposero la domanda: se il cosmo è razionale, perché la sofferenza colpisce i virtuosi?",
       "410→1347": "La <em>Città di Dio</em> di Agostino rispose a una crisi di teodicea; la Peste Nera ne pose un'altra. La cornice della peste nel <em>Decameron</em> di Boccaccio riecheggia il dispositivo agostiniano — il racconto come rifugio dalla catastrofe.",
       "1347→1755": "La Peste Nera uccise un terzo dell'Europa; il terremoto di Lisbona uccise in pochi minuti. Il <em>Candido</em> di Voltaire derise l'ottimismo leibniziano come la brigata di Boccaccio era fuggita dalla pietà fiorentina — la teodicea che cede sotto il peso dei fatti.",
-      "1755→1794": "Il terremoto di Lisbona distrusse l'ottimismo sulla provvidenza divina; il Terrore distrusse l'ottimismo sulla ragione umana. I Romantici ereditano entrambe le ferite."
+      "1755→1794": "Il terremoto di Lisbona distrusse l'ottimismo sulla provvidenza divina; il Terrore distrusse l'ottimismo sulla ragione umana. I Romantici ereditano entrambe le ferite.",
+      "1794→1816": "Il Terrore mostrò la ragione illuminista divorare i suoi figli; il Tambora mostrò la natura fare lo stesso. La Provvidenza assomigliava sempre più al caso."
     },
     "translatio-studii": {
       "410→529": "Mentre Roma cadeva, i testi greci viaggiarono verso est con gli studiosi cristiani. Nel 529, Giustiniano chiuse l'Accademia, spingendo i filosofi neoplatonici verso la Persia — la prima tappa del viaggio che avrebbe portato Aristotele a Baghdad.",
@@ -397,6 +402,9 @@
     },
     "secularization": {
       "1648→1670": "Il principio di Vestfalia — gli stati, non le chiese, determinano l'ordine — ora plasma il pensiero stesso. Il Trattato di Spinoza separa la filosofia dalla teologia; Pascal difende la fede attraverso il dubbio, non l'autorità."
+    },
+    "sublime-aesthetic": {
+      "1816→1819": "L'oscurità vulcanica del 1816 dimostrò che il sublime di Burke non era mera teoria estetica — la natura poteva terrorizzare e sopraffare. Schopenhauer avrebbe sistematizzato questo in pessimismo metafisico."
     }
   }
 }
