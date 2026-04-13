@@ -123,7 +123,8 @@
       "1543→1610": "From anatomical tables to telescopes: Vesalius showed that authorities could be wrong about bodies; Galileo proved they were wrong about heavens.",
       "1610→1687": "Galileo proved the heavens were physical; Newton proved they obeyed the same laws as falling apples — the revolution complete.",
       "1687→1859": "Newton's Principia in 1687 showed the cosmos obeyed mathematical law. Darwin's Origin in 1859 extended scientific explanation to life itself—the diversity of species now explained by mechanism, not design. The revolution was complete.",
-      "1859→1905": "Darwin's Origin completed the mechanistic worldview. But by 1905, Einstein's special relativity would begin its dismantling—showing that even time and space were relative. Science's revolution had become permanent."
+      "1859→1905": "Darwin's Origin completed the mechanistic worldview. But by 1905, Einstein's special relativity would begin its dismantling—showing that even time and space were relative. Science's revolution had become permanent.",
+      "1905→1927": "Einstein's relativity demanded reinterpretation; Heisenberg and Bohr answered with uncertainty and complementarity — the observer becomes part of the system."
     },
     "enlightenment": {
       "1687→1755": "Newton's <em>Principia</em> proved the cosmos was lawful; the Lisbon earthquake asked whether it was just. Enlightenment optimism crested and cracked within seventy years.",
@@ -201,6 +202,15 @@
     },
     "sublime-aesthetic": {
       "1816→1819": "The volcanic darkness of 1816 proved Burke's sublime was no mere aesthetic theory — nature could terrify and overwhelm. Schopenhauer would systematise this into metaphysical pessimism."
+    },
+    "existentialism": {
+      "1922→1927": "Heidegger's lectures at Freiburg crystallize into Being and Time — phenomenology confronts human finitude directly."
+    },
+    "modernism": {
+      "1922→1927": "The experimentalism of Ulysses and The Waste Land becomes Woolf's durational prose — form dissolves into time itself."
+    },
+    "stream-of-consciousness": {
+      "1922→1927": "Joyce's one day and Proust's lost time converge in Woolf: consciousness as duration, not sequence."
     }
   },
   "it": {
@@ -327,7 +337,8 @@
       "1543→1610": "Dai tavoli anatomici ai cannocchiali: Vesalio mostrò che le autorità potevano sbagliare sui corpi; Galileo dimostrò che sbagliavano sui cieli.",
       "1610→1687": "Galileo dimostrò che i cieli erano fisici; Newton dimostrò che obbedivano alle stesse leggi delle mele che cadono — la rivoluzione compiuta.",
       "1687→1859": "I Principia di Newton del 1687 mostrarono che il cosmo obbediva a leggi matematiche. L'Origine delle specie di Darwin nel 1859 estese la spiegazione scientifica alla vita stessa—la diversità delle specie ora spiegata dal meccanismo, non dal disegno. La rivoluzione era compiuta.",
-      "1859→1905": "L'Origine di Darwin completò la visione meccanicistica del mondo. Ma nel 1905, la relatività speciale di Einstein avrebbe iniziato a smantellare—mostrando che persino tempo e spazio erano relativi. La rivoluzione della scienza era diventata permanente."
+      "1859→1905": "L'Origine di Darwin completò la visione meccanicistica del mondo. Ma nel 1905, la relatività speciale di Einstein avrebbe iniziato a smantellare—mostrando che persino tempo e spazio erano relativi. La rivoluzione della scienza era diventata permanente.",
+      "1905→1927": "La relatività di Einstein richiedeva reinterpretazione; Heisenberg e Bohr risposero con incertezza e complementarità — l'osservatore diventa parte del sistema."
     },
     "enlightenment": {
       "1687→1755": "I <em>Principia</em> di Newton dimostrarono che il cosmo era regolato da leggi; il terremoto di Lisbona chiese se fosse giusto.",
@@ -405,6 +416,15 @@
     },
     "sublime-aesthetic": {
       "1816→1819": "L'oscurità vulcanica del 1816 dimostrò che il sublime di Burke non era mera teoria estetica — la natura poteva terrorizzare e sopraffare. Schopenhauer avrebbe sistematizzato questo in pessimismo metafisico."
+    },
+    "existentialism": {
+      "1922→1927": "Le lezioni di Heidegger a Friburgo si cristallizzano in Essere e tempo — la fenomenologia affronta direttamente la finitezza umana."
+    },
+    "modernism": {
+      "1922→1927": "La sperimentazione dell'Ulisse e di Terra desolata diventa la prosa durativa di Woolf — la forma si dissolve nel tempo stesso."
+    },
+    "stream-of-consciousness": {
+      "1922→1927": "La singola giornata di Joyce e il tempo perduto di Proust convergono in Woolf: la coscienza come durata, non sequenza."
     }
   }
 }
