@@ -1585,7 +1585,35 @@ document.addEventListener('click', (e) => {
   }
 });
 
+// Validate slice has required fields - returns error message or null if valid
+function validateSlice(slice) {
+  if (!slice) return 'slice is null/undefined';
+  if (!slice.id) return 'missing id';
+  if (!slice.year) return 'missing year';
+  if (!slice.title) return 'missing title';
+  if (!slice.dimensions || typeof slice.dimensions !== 'object') {
+    return 'missing or invalid dimensions object';
+  }
+  return null; // valid
+}
+
 function renderSlice(slice, isFresh = false) {
+  // Validate slice before rendering
+  const validationError = validateSlice(slice);
+  if (validationError) {
+    console.error(`Skipping malformed entry: ${validationError}`, slice);
+    const el = document.createElement('div');
+    el.className = 'entry entry-error';
+    el.innerHTML = `<div class="card" style="border: 2px solid #e06060; opacity: 0.6;">
+      <div class="card-body">
+        <div class="card-year" style="color: #e06060;">⚠️ Error</div>
+        <div class="card-title">Malformed Entry: ${slice?.id || 'unknown'}</div>
+        <div class="card-teaser" style="color: #e06060;">${validationError}</div>
+      </div>
+    </div>`;
+    return el;
+  }
+
   const dims = Object.entries(slice.dimensions).map(([key, dim]) => {
     const funFact = dim.funFact ? `<div class="fun-fact">${dim.funFact}</div>` : '';
     return `
@@ -2851,10 +2879,14 @@ function loadSlices(restoreId, restoreThread, restorePodcast) {
       items.sort((a, b) => a.year - b.year || (a.type === 'marker' ? -1 : 1));
 
       items.forEach((item) => {
-        if (item.type === 'slice') {
-          timeline.appendChild(renderSlice(item.data, item.data.id === freshestId));
-        } else {
-          timeline.appendChild(renderMarker(item.data));
+        try {
+          if (item.type === 'slice') {
+            timeline.appendChild(renderSlice(item.data, item.data.id === freshestId));
+          } else {
+            timeline.appendChild(renderMarker(item.data));
+          }
+        } catch (err) {
+          console.error(`Error rendering item:`, item, err);
         }
       });
 
