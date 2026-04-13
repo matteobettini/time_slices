@@ -3489,34 +3489,55 @@
     }
   },
   {
+    "year": "1670",
     "id": "1670-amsterdam-year-of-thinking-dangerously",
-    "year": 1670,
-    "location": "Amsterdam",
-    "title": "The Year of Thinking Dangerously",
+    "title": "Amsterdam — The Year of Thinking Dangerously",
     "teaser": "Spinoza publishes anonymously and is banned. Pascal's unfinished defense of faith appears from the grave. Molière mocks the bourgeoisie while Vermeer paints its quiet devotion. A princess negotiates a secret treaty — and dies weeks later. The Dutch Golden Age reaches its zenith before the fall.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>Johannes Vermeer</strong> completes <em>The Lacemaker</em> around 1669–1670 — at just 24 by 21 centimeters, his smallest canvas transforms domestic labour into luminous meditation. A young woman bends over her bobbins, utterly absorbed; the threads in the foreground blur as if seen through a lens, while her face and hands hold perfect focus. Vermeer's use of the <strong>camera obscura</strong> is evident in these optical effects that no human eye produces unaided. In the same years he paints <em>Allegory of the Catholic Faith</em>, a rare departure into history painting: a woman personifying Faith rests her foot on a globe, a crushed serpent beneath it. Vermeer, a Catholic convert in Protestant Holland, paints what cannot be publicly celebrated — faith practiced in the 'hidden churches' (<em>schuilkerken</em>) where Mass was permitted but not flaunted. Meanwhile, <strong>Rembrandt</strong> has been dead since October 1669, bankrupt and largely forgotten. The <strong>Dutch Golden Age</strong> continues without its greatest master, its merchant patrons preferring Vermeer's serene interiors to Rembrandt's psychological depths."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "Two posthumous works reshape French thought. <strong>Blaise Pascal's</strong> <em>Pensées</em> appears in print, eight years after his death — fragments of an unfinished apology for Christianity, arranged by the Port-Royal editors with cautious cuts. Pascal's wager emerges: even if God's existence is uncertain, the infinite reward for belief outweighs the finite cost. <em>\"The heart has its reasons which reason knows not.\"</em> Simultaneously, <strong>Molière</strong> premieres <em>Le Bourgeois gentilhomme</em> at Chambord for Louis XIV — a comedy-ballet skewering <strong>Monsieur Jourdain</strong>, who discovers he has been speaking prose all his life. Molière's satire of social climbing delights the aristocrats whose power depends on keeping merchants in their place. In Paris, <strong>Jean Racine's</strong> <em>Bérénice</em> premieres at the Hôtel de Bourgogne — a tragedy of renunciation where love yields to duty, based on the Roman emperor Titus who sent away the queen he adored. In England, <strong>John Dryden</strong> is appointed Historiographer Royal; <strong>Milton's</strong> <em>Paradise Regained</em> is licensed, to appear the following year."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "In Amsterdam, <strong>Baruch Spinoza</strong> publishes <em>Tractatus Theologico-Politicus</em> anonymously, with a false imprint claiming it was printed in Hamburg. The gambit fails: within months, the Dutch Reformed Church condemns it as <em>\"forged in hell by a renegade Jew and the devil.\"</em> Spinoza argues that Scripture must be read historically and critically, not as literal truth; that miracles are impossible because nature is God and cannot contradict itself; and that freedom of thought is essential to a peaceful state. He separates <strong>philosophy from theology</strong> — reason deals with truth, religion with piety. The <em>Tractatus</em> will be formally banned in 1674, driving his <em>Ethics</em> underground until after his death. Spinoza earns his living grinding lenses for microscopes and telescopes — the instruments that let others see clearly while his books remain veiled. Across the Channel, <strong>Cambridge Platonists</strong> like Henry More and Ralph Cudworth seek a middle way between Cartesian mechanism and Spinozan monism, defending free will and a universe penetrated by spirit."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>1 June 1670</strong>, the <strong>Secret Treaty of Dover</strong> is signed between <strong>Charles II of England</strong> and <strong>Louis XIV of France</strong>. The public treaty commits England to support France against the Dutch Republic. The secret clauses — known only to five English ministers — commit Charles to convert to Catholicism and restore the faith in England, in exchange for French subsidies and six thousand troops to suppress any rebellion. The treaty is negotiated by Charles's beloved sister <strong>Henrietta Anne</strong>, Duchess of Orléans, who crosses to Dover for fifteen days of festivities. On 30 June, three weeks after returning to France, she collapses at Saint-Cloud after drinking iced chicory water, crying <em>\"I have been poisoned!\"</em> She dies within hours at age twenty-six. An autopsy rules natural causes — likely a ruptured appendix — but suspicion falls on her husband's lover, the Chevalier de Lorraine. The <strong>Dutch Golden Age</strong> stands at its zenith: Amsterdam is the world's richest city, the Dutch East India Company dominates global trade. But 1672 approaches — the <em>Rampjaar</em>, the Disaster Year, when France, England, and German states will attack simultaneously."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year 1670 stages a collision between <strong>public performance and private truth</strong>. Spinoza publishes anonymously because stating openly what he believes would destroy him; Pascal's fragments speak from the grave because he died before finishing his argument. Vermeer paints Catholic faith in a country where Catholicism is tolerated but hidden. Charles II signs a treaty promising Catholic restoration while ruling Protestant England. Molière mocks pretension while depending entirely on royal patronage. Racine's Bérénice dramatises the painful gap between private desire and public duty — exactly what Henrietta Anne navigated between her brother and brother-in-law, dying before she could see the consequences. The Dutch Republic permits Spinoza to think freely and then bans what he thinks. The Golden Age generates both Vermeer's quiet mastery and the VOC's global exploitation. Every surface conceals another surface: prose beneath poetry, heresy beneath anonymity, conspiracy beneath diplomacy.",
+        "funFact": "Spinoza's lens-grinding was more than a modest trade — his optical work was highly regarded. Christiaan Huygens, the greatest physicist in Europe, praised Spinoza's lenses. The philosopher who saw God in nature helped others see the moons of Jupiter and the microorganisms in pond water."
+      }
+    },
     "threads": [
       "dutch-golden-age",
       "rationalism",
       "baroque",
       "secularization"
     ],
-    "art": "<strong>Johannes Vermeer</strong> completes <em>The Lacemaker</em> around 1669–1670 — at just 24 by 21 centimeters, his smallest canvas transforms domestic labour into luminous meditation. A young woman bends over her bobbins, utterly absorbed; the threads in the foreground blur as if seen through a lens, while her face and hands hold perfect focus. Vermeer's use of the <strong>camera obscura</strong> is evident in these optical effects that no human eye produces unaided. In the same years he paints <em>Allegory of the Catholic Faith</em>, a rare departure into history painting: a woman personifying Faith rests her foot on a globe, a crushed serpent beneath it. Vermeer, a Catholic convert in Protestant Holland, paints what cannot be publicly celebrated — faith practiced in the 'hidden churches' (<em>schuilkerken</em>) where Mass was permitted but not flaunted. Meanwhile, <strong>Rembrandt</strong> has been dead since October 1669, bankrupt and largely forgotten. The <strong>Dutch Golden Age</strong> continues without its greatest master, its merchant patrons preferring Vermeer's serene interiors to Rembrandt's psychological depths.",
-    "literature": "Two posthumous works reshape French thought. <strong>Blaise Pascal's</strong> <em>Pensées</em> appears in print, eight years after his death — fragments of an unfinished apology for Christianity, arranged by the Port-Royal editors with cautious cuts. Pascal's wager emerges: even if God's existence is uncertain, the infinite reward for belief outweighs the finite cost. <em>\"The heart has its reasons which reason knows not.\"</em> Simultaneously, <strong>Molière</strong> premieres <em>Le Bourgeois gentilhomme</em> at Chambord for Louis XIV — a comedy-ballet skewering <strong>Monsieur Jourdain</strong>, who discovers he has been speaking prose all his life. Molière's satire of social climbing delights the aristocrats whose power depends on keeping merchants in their place. In Paris, <strong>Jean Racine's</strong> <em>Bérénice</em> premieres at the Hôtel de Bourgogne — a tragedy of renunciation where love yields to duty, based on the Roman emperor Titus who sent away the queen he adored. In England, <strong>John Dryden</strong> is appointed Historiographer Royal; <strong>Milton's</strong> <em>Paradise Regained</em> is licensed, to appear the following year.",
-    "philosophy": "In Amsterdam, <strong>Baruch Spinoza</strong> publishes <em>Tractatus Theologico-Politicus</em> anonymously, with a false imprint claiming it was printed in Hamburg. The gambit fails: within months, the Dutch Reformed Church condemns it as <em>\"forged in hell by a renegade Jew and the devil.\"</em> Spinoza argues that Scripture must be read historically and critically, not as literal truth; that miracles are impossible because nature is God and cannot contradict itself; and that freedom of thought is essential to a peaceful state. He separates <strong>philosophy from theology</strong> — reason deals with truth, religion with piety. The <em>Tractatus</em> will be formally banned in 1674, driving his <em>Ethics</em> underground until after his death. Spinoza earns his living grinding lenses for microscopes and telescopes — the instruments that let others see clearly while his books remain veiled. Across the Channel, <strong>Cambridge Platonists</strong> like Henry More and Ralph Cudworth seek a middle way between Cartesian mechanism and Spinozan monism, defending free will and a universe penetrated by spirit.",
-    "history": "On <strong>1 June 1670</strong>, the <strong>Secret Treaty of Dover</strong> is signed between <strong>Charles II of England</strong> and <strong>Louis XIV of France</strong>. The public treaty commits England to support France against the Dutch Republic. The secret clauses — known only to five English ministers — commit Charles to convert to Catholicism and restore the faith in England, in exchange for French subsidies and six thousand troops to suppress any rebellion. The treaty is negotiated by Charles's beloved sister <strong>Henrietta Anne</strong>, Duchess of Orléans, who crosses to Dover for fifteen days of festivities. On 30 June, three weeks after returning to France, she collapses at Saint-Cloud after drinking iced chicory water, crying <em>\"I have been poisoned!\"</em> She dies within hours at age twenty-six. An autopsy rules natural causes — likely a ruptured appendix — but suspicion falls on her husband's lover, the Chevalier de Lorraine. The <strong>Dutch Golden Age</strong> stands at its zenith: Amsterdam is the world's richest city, the Dutch East India Company dominates global trade. But 1672 approaches — the <em>Rampjaar</em>, the Disaster Year, when France, England, and German states will attack simultaneously.",
-    "connections": "The year 1670 stages a collision between <strong>public performance and private truth</strong>. Spinoza publishes anonymously because stating openly what he believes would destroy him; Pascal's fragments speak from the grave because he died before finishing his argument. Vermeer paints Catholic faith in a country where Catholicism is tolerated but hidden. Charles II signs a treaty promising Catholic restoration while ruling Protestant England. Molière mocks pretension while depending entirely on royal patronage. Racine's Bérénice dramatises the painful gap between private desire and public duty — exactly what Henrietta Anne navigated between her brother and brother-in-law, dying before she could see the consequences. The Dutch Republic permits Spinoza to think freely and then bans what he thinks. The Golden Age generates both Vermeer's quiet mastery and the VOC's global exploitation. Every surface conceals another surface: prose beneath poetry, heresy beneath anonymity, conspiracy beneath diplomacy.",
-    "funFact": "Spinoza's lens-grinding was more than a modest trade — his optical work was highly regarded. Christiaan Huygens, the greatest physicist in Europe, praised Spinoza's lenses. The philosopher who saw God in nature helped others see the moons of Jupiter and the microorganisms in pond water.",
-    "podcast": {
-      "url": "audio/1670-amsterdam-year-of-thinking-dangerously.mp3",
-      "duration": 207
+    "location": {
+      "lat": 52.3676,
+      "lon": 4.9041,
+      "place": "Amsterdam"
     },
-    "addedDate": "2026-04-11",
     "image": {
       "url": "images/1670-amsterdam-year-of-thinking-dangerously.jpg",
       "caption": "Portrait of Baruch Spinoza (c. 1665), unknown artist. Herzog August Bibliothek, Wolfenbüttel.",
       "width": 1200,
       "height": 1394
-    }
+    },
+    "podcast": {
+      "url": "audio/1670-amsterdam-year-of-thinking-dangerously.mp3",
+      "duration": 207
+    },
+    "addedDate": "2026-04-11T05:10:30Z"
   },
   {
     "year": "1816",
