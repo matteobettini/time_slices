@@ -1,0 +1,49 @@
+{
+  "year": "1937",
+  "id": "1937-paris-art-against-annihilation",
+  "title": "Paris — Art Against Annihilation",
+  "teaser": "Guernica screams in gray as German bombs pulverize a Basque town. At the Paris Expo, Spanish republicans mount their pavilion of protest while Nazi and Soviet towers face off like armored titans. Gramsci dies in prison, leaving notebooks that explain how power manufactures consent. Hurston and Tolkien publish masterworks the establishment ignores.",
+  "dimensions": {
+    "art": {
+      "label": "Art",
+      "content": "The <strong>Spanish Pavilion</strong> at the Paris International Exposition becomes a sanctuary of resistance, housing <strong>Picasso</strong>'s monumental <em>Guernica</em> alongside <strong>Joan Miró</strong>'s <em>The Reaper</em> and <strong>Alexander Calder</strong>'s <em>Mercury Fountain</em> — artists weaponizing beauty against barbarism. Across the esplanade, <strong>Albert Speer</strong>'s German Pavilion and <strong>Boris Iofan</strong>'s Soviet tower face each other like armored giants, their <strong>totalitarian aesthetics</strong> of heroic scale and idealized bodies revealing the era's competing visions of human destiny. The year's governing image is Guernica's central lightbulb, that harsh electric eye illuminating atrocity — suggesting both the media apparatus that will broadcast future horrors and the persistence of <strong>Enlightenment</strong> values under assault."
+    },
+    "lit": {
+      "label": "Literature",
+      "content": "<strong>Zora Neale Hurston</strong> publishes <em>Their Eyes Were Watching God</em>, a novel of Black female self-determination that her <strong>Harlem Renaissance</strong> peers dismiss but posterity will crown as a masterpiece. <strong>John Steinbeck</strong>'s <em>Of Mice and Men</em> appears in February, while <strong>J.R.R. Tolkien</strong>'s <em>The Hobbit</em> in September opens a door to Middle-earth. In Tehran, <strong>Sadegh Hedayat</strong> writes <em>The Blind Owl</em>, a hallucinatory meditation on alienation that becomes Persian <strong>modernism</strong>'s founding text. Escape and engagement exist in productive tension — Tolkien's dark lords allegorize contemporary anxieties, while Hurston's Janie Crawford discovers that horizons are 'the beginning of everything.'"
+    },
+    "phil": {
+      "label": "Philosophy",
+      "content": "<strong>Antonio Gramsci</strong> dies in a fascist prison after eleven years of captivity, his <em>Prison Notebooks</em> containing revolutionary concepts of <strong>cultural hegemony</strong> and the <strong>organic intellectual</strong> that will reshape Marxist thought. His essential question: how do ruling classes maintain power not through force alone, but through the manufacture of consent? <strong>Edmund Husserl</strong>, banned from German universities as a Jew, continues his <em>Crisis of European Sciences</em>, diagnosing the spiritual malaise that rational thought alone cannot cure. The <strong>logical positivists</strong> gather for their last Paris Congress as their dream of purifying language seems increasingly inadequate to a world where 'blood and soil' slogans mobilize millions."
+    },
+    "hist": {
+      "label": "History",
+      "content": "The <strong>Spanish Civil War</strong> rages as a testing ground for the coming world conflagration. On <strong>April 26th</strong>, German Condor Legion planes bomb the Basque market town of <strong>Guernica</strong> — fascism's most brazen demonstration of terror warfare against civilians. The attack kills hundreds and destroys 85% of the town's buildings, providing Picasso his subject within days. Meanwhile, the <strong>Great Purge</strong> in the Soviet Union reaches its peak as Stalin eliminates perceived enemies. The <strong>Paris International Exposition</strong> opens in May, a showcase of modernity where democratic, fascist, and communist visions compete for legitimacy through architectural spectacle."
+    },
+    "conn": {
+      "label": "Connections",
+      "content": "The year crystallizes <strong>modernism</strong> under siege. While fascism demonstrates that technology can obliterate ancient cities in an afternoon, artists respond by creating works that refuse the consolations of beauty while insisting on art's moral necessity. <em>Guernica</em> offers no heroes, no narrative resolution, no color — only the fragmented testimony of suffering rendered in <strong>Cubism</strong>'s pictorial vocabulary. The bombed town, the dying republic, the imprisoned philosopher, the exiled artist — 1937 assembles the materials for understanding how civilization collapses and how cultural work might resist, record, or imaginatively transcend that collapse.",
+      "funFact": "Picasso painted Guernica in just 35 days — the same time it took the bombers to transform a medieval town into ruins and rubble."
+    }
+  },
+  "sources": [
+    { "url": "https://www.museoreinasofia.es/en/collection/artwork/guernica", "title": "Museo Reina Sofía — Guernica" },
+    { "url": "https://en.wikipedia.org/wiki/Exposition_Internationale_des_Arts_et_Techniques_dans_la_Vie_Moderne", "title": "Wikipedia — 1937 Paris Exposition" },
+    { "url": "https://en.wikipedia.org/wiki/Antonio_Gramsci", "title": "Wikipedia — Antonio Gramsci" },
+    { "url": "https://en.wikipedia.org/wiki/Their_Eyes_Were_Watching_God", "title": "Wikipedia — Their Eyes Were Watching God" }
+  ],
+  "image": {
+    "url": "images/1937-paris-art-against-annihilation.jpg",
+    "width": 1200,
+    "height": 797,
+    "caption": "Replica of the 1937 Spanish Pavilion at the Paris International Exposition, Barcelona",
+    "attribution": "Photo by Jorge Franganillo via Wikimedia Commons, CC BY 2.0"
+  },
+  "threads": ["modernism", "art-and-power", "totalitarianism", "historical-materialism", "existentialism"],
+  "location": {
+    "lat": 48.8619,
+    "lon": 2.2885,
+    "place": "Paris"
+  },
+  "addedDate": "2026-04-14T05:00:00Z"
+}

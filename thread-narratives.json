@@ -91,7 +91,8 @@
     },
     "art-and-power": {
       "1300→1504": "Giotto worked for Franciscans and Bardi bankers; Michelangelo worked for Medici and popes. Two centuries transformed patronage from devotional to dynastic.",
-      "1504→1784": "Michelangelo's <em>David</em> was civic propaganda; David's <em>Oath of the Horatii</em> was revolutionary propaganda. Both deployed classical forms for political ends."
+      "1504→1784": "Michelangelo's <em>David</em> was civic propaganda; David's <em>Oath of the Horatii</em> was revolutionary propaganda. Both deployed classical forms for political ends.",
+      "1784→1937": "David painted revolution's heroic certainties; Picasso paints war's gray screaming aftermath. The neoclassical line fractures into Cubism's testimony: art as witness to atrocity."
     },
     "proto-renaissance": {
       "1300→1321": "Giotto's Bardi Chapel frescoes depicted grief with unprecedented naturalism; Dante's <em>Inferno</em> depicted sinners with unprecedented individuality. Both broke Byzantine conventions through observed humanity.",
@@ -204,13 +205,18 @@
       "1816→1819": "The volcanic darkness of 1816 proved Burke's sublime was no mere aesthetic theory — nature could terrify and overwhelm. Schopenhauer would systematise this into metaphysical pessimism."
     },
     "existentialism": {
-      "1922→1927": "Heidegger's lectures at Freiburg crystallize into Being and Time — phenomenology confronts human finitude directly."
+      "1922→1927": "Heidegger's lectures at Freiburg crystallize into Being and Time — phenomenology confronts human finitude directly.",
+      "1927→1937": "Heidegger asked what it means to exist facing death; fascism literalizes that question as bombers turn philosophy into terror, while Husserl's banned lectures diagnose reason's spiritual crisis."
     },
     "modernism": {
-      "1922→1927": "The experimentalism of Ulysses and The Waste Land becomes Woolf's durational prose — form dissolves into time itself."
+      "1922→1927": "The experimentalism of Ulysses and The Waste Land becomes Woolf's durational prose — form dissolves into time itself.",
+      "1927→1937": "Heidegger's temporality and Woolf's dissolving narratives meet their historical test: can modernist form bear witness to mechanized atrocity? Guernica answers in Cubist screams."
     },
     "stream-of-consciousness": {
       "1922→1927": "Joyce's one day and Proust's lost time converge in Woolf: consciousness as duration, not sequence."
+    },
+    "historical-materialism": {
+      "1848→1937": "Marx diagnosed how capitalism alienates and exploits; Gramsci asks the harder question — why do the exploited consent? His Prison Notebooks forge 'hegemony' from a fascist cell."
     }
   },
   "it": {
@@ -305,7 +311,8 @@
     },
     "art-and-power": {
       "1300→1504": "Giotto lavorò per francescani e banchieri Bardi; Michelangelo lavorò per Medici e papi. Due secoli trasformarono il mecenatismo da devozionale a dinastico.",
-      "1504→1784": "Il <em>David</em> di Michelangelo era propaganda civica; il <em>Giuramento degli Orazi</em> di David era propaganda rivoluzionaria."
+      "1504→1784": "Il <em>David</em> di Michelangelo era propaganda civica; il <em>Giuramento degli Orazi</em> di David era propaganda rivoluzionaria.",
+      "1784→1937": "David dipinse le eroiche certezze della rivoluzione; Picasso dipinge il grigio urlo del dopoguerra. La linea neoclassica si frantuma nella testimonianza del Cubismo: l'arte come testimone dell'atrocità."
     },
     "proto-renaissance": {
       "1300→1321": "Gli affreschi della Cappella Bardi di Giotto raffiguravano il dolore con naturalismo senza precedenti; l'<em>Inferno</em> di Dante raffigurava peccatori con individualità senza precedenti.",
@@ -418,13 +425,18 @@
       "1816→1819": "L'oscurità vulcanica del 1816 dimostrò che il sublime di Burke non era mera teoria estetica — la natura poteva terrorizzare e sopraffare. Schopenhauer avrebbe sistematizzato questo in pessimismo metafisico."
     },
     "existentialism": {
-      "1922→1927": "Le lezioni di Heidegger a Friburgo si cristallizzano in Essere e tempo — la fenomenologia affronta direttamente la finitezza umana."
+      "1922→1927": "Le lezioni di Heidegger a Friburgo si cristallizzano in Essere e tempo — la fenomenologia affronta direttamente la finitezza umana.",
+      "1927→1937": "Heidegger chiese cosa significhi esistere di fronte alla morte; il fascismo letteralizza quella domanda mentre i bombardieri trasformano la filosofia in terrore, e le lezioni proibite di Husserl diagnosticano la crisi spirituale della ragione."
     },
     "modernism": {
-      "1922→1927": "La sperimentazione dell'Ulisse e di Terra desolata diventa la prosa durativa di Woolf — la forma si dissolve nel tempo stesso."
+      "1922→1927": "La sperimentazione dell'Ulisse e di Terra desolata diventa la prosa durativa di Woolf — la forma si dissolve nel tempo stesso.",
+      "1927→1937": "La temporalità di Heidegger e le narrazioni dissolte di Woolf incontrano la loro prova storica: può la forma modernista testimoniare l'atrocità meccanizzata? Guernica risponde in urla cubiste."
     },
     "stream-of-consciousness": {
       "1922→1927": "La singola giornata di Joyce e il tempo perduto di Proust convergono in Woolf: la coscienza come durata, non sequenza."
+    },
+    "historical-materialism": {
+      "1848→1937": "Marx diagnosticò come il capitalismo aliena e sfrutta; Gramsci pone la domanda più difficile — perché gli sfruttati consentono? I suoi Quaderni del carcere forgiano l''egemonia' da una cella fascista."
     }
   }
 }
