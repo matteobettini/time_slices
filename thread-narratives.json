@@ -24,7 +24,8 @@
       "664→800": "England chose Rome, and Rome's learning flowed north through English monasteries — then back to the Continent when Alcuin arrived at Aachen.",
       "1453→1492": "Greek learning fled Constantinople for Italy; now Spain expelled the heirs of Arabic translation, scattering Sephardic scholarship to the Ottoman East.",
       "800→843": "Alcuin's educational reforms created a literate elite; when that elite fractured with the empire, each court sought scholars to legitimize its rule.",
-      "843→910": "Eriugena's translations brought Greek Neoplatonism to the Latin West; monastic scriptoria preserved these texts through the Viking storms."
+      "843→910": "Eriugena's translations brought Greek Neoplatonism to the Latin West; monastic scriptoria preserved these texts through the Viking storms.",
+      "1492→1863": "Columbus opened the Atlantic; by 1863, Western learning itself was crossing oceans as Lincoln's rhetoric reached Europe and Renan's scholarship circulated globally."
     },
     "eschatological-anxiety": {
       "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
@@ -184,13 +185,16 @@
       "1794→1968": "From Robespierre's Cult of Reason to 1968's revolutionary dreams: the belief that total transformation is possible — and that violence may be its price."
     },
     "critique-of-modernity": {
-      "1794→1968": "Blake's distrust of Urizen's compasses echoes through two centuries: from Romantic revolt against mechanical reason to 1968's rejection of technocratic rationality."
+      "1794→1968": "Blake's distrust of Urizen's compasses echoes through two centuries: from Romantic revolt against mechanical reason to 1968's rejection of technocratic rationality.",
+      "1794→1863": "Blake's Tiger prowled against industrial darkness; seven decades later, Baudelaire championed the fleeting beauty of modern life itself.",
+      "1863→1968": "Manet exposed the nude without mythological alibi; a century later, 1968's rebels would strip away all remaining veils of institutional authority."
     },
     "insular-art": {
       "664→732": "From the Book of Durrow to the Lindisfarne Gospels, Insular illumination reaches its full flowering. The Synod of Whitby binds Britain to Rome, but the monks at Lindisfarne create something wholly original — Celtic interlace, Germanic energy, Mediterranean gold fused into devotional infinity."
     },
     "abolition-crisis": {
-      "1831→1859": "Nat Turner's rebellion in 1831 terrified the South into brutal new slave codes. A generation later, John Brown's raid at Harpers Ferry proved that white abolitionists would now take up arms. The road to Civil War was paved in blood."
+      "1831→1859": "Nat Turner's rebellion in 1831 terrified the South into brutal new slave codes. A generation later, John Brown's raid at Harpers Ferry proved that white abolitionists would now take up arms. The road to Civil War was paved in blood.",
+      "1859→1863": "John Brown's martyrdom galvanized the North; four years later, Lincoln made abolition a war aim."
     },
     "revolutionary-nationalism": {
       "1848→1859": "The Springtime of Peoples in 1848 was crushed, but the dream of national self-determination survived. A decade later, at Solferino, Italian nationalists saw France defeat Austria—and the Risorgimento entered its decisive phase."
@@ -199,7 +203,8 @@
       "1648→1670": "Independence secured, the Republic becomes Europe's richest state. Rembrandt dies poor while Vermeer paints hidden faith; Spinoza grinds lenses while thinking thoughts that will be banned."
     },
     "secularization": {
-      "1648→1670": "Westphalia's principle — states, not churches, determine order — now shapes thought itself. Spinoza's Tractatus separates philosophy from theology; Pascal defends faith through doubt, not authority."
+      "1648→1670": "Westphalia's principle — states, not churches, determine order — now shapes thought itself. Spinoza's Tractatus separates philosophy from theology; Pascal defends faith through doubt, not authority.",
+      "1670→1863": "Spinoza's radical monism undermined scriptural authority; two centuries later, Renan brought biblical criticism to the masses with his human Jesus."
     },
     "sublime-aesthetic": {
       "1816→1819": "The volcanic darkness of 1816 proved Burke's sublime was no mere aesthetic theory — nature could terrify and overwhelm. Schopenhauer would systematise this into metaphysical pessimism."
@@ -244,7 +249,8 @@
       "664→800": "L'Inghilterra scelse Roma, e il sapere romano fluì a nord attraverso i monasteri inglesi — poi tornò al Continente quando Alcuino arrivò ad Aquisgrana.",
       "1453→1492": "Il sapere greco fuggì da Costantinopoli verso l'Italia; ora la Spagna espulse gli eredi della traduzione araba, disperdendo l'erudizione sefardita verso l'Oriente ottomano.",
       "800→843": "Le riforme educative di Alcuino crearono un'élite letterata; quando quell'élite si frantumò con l'impero, ogni corte cercò studiosi per legittimare il proprio dominio.",
-      "843→910": "Le traduzioni di Eriugena portarono il neoplatonismo greco all'Occidente latino; gli scriptoria monastici preservarono questi testi attraverso le tempeste vichinghe."
+      "843→910": "Le traduzioni di Eriugena portarono il neoplatonismo greco all'Occidente latino; gli scriptoria monastici preservarono questi testi attraverso le tempeste vichinghe.",
+      "1492→1863": "Colombo aprì l'Atlantico; nel 1863, il sapere occidentale stesso attraversava gli oceani: la retorica di Lincoln raggiungeva l'Europa e gli studi di Renan circolavano globalmente."
     },
     "eschatological-anxiety": {
       "410→1000": "La caduta di Roma sembrò apocalittica ai contemporanei di Agostino; l'avvicinarsi dell'anno Mille rianimò quelle paure. Il 'bianco manto di chiese' fu in parte ringraziamento per un millennio che non finì nel fuoco.",
@@ -404,13 +410,16 @@
       "1794→1968": "Dal Culto della Ragione di Robespierre ai sogni rivoluzionari del 1968: la convinzione che la trasformazione totale sia possibile — e che la violenza possa esserne il prezzo."
     },
     "critique-of-modernity": {
-      "1794→1968": "La sfiducia di Blake nei compassi di Urizen riecheggia per due secoli: dalla rivolta romantica contro la ragione meccanica al rifiuto della razionalità tecnocratica nel 1968."
+      "1794→1968": "La sfiducia di Blake nei compassi di Urizen riecheggia per due secoli: dalla rivolta romantica contro la ragione meccanica al rifiuto della razionalità tecnocratica nel 1968.",
+      "1794→1863": "La Tigre di Blake si aggirava contro l'oscurità industriale; sette decenni dopo, Baudelaire esaltava la bellezza fugace della vita moderna stessa.",
+      "1863→1968": "Manet espose il nudo senza alibi mitologico; un secolo dopo, i ribelli del '68 avrebbero strappato tutti i veli restanti dell'autorità istituzionale."
     },
     "insular-art": {
       "664→732": "Dal Libro di Durrow ai Vangeli di Lindisfarne, l'illuminazione insulare raggiunge la sua piena fioritura. Il Sinodo di Whitby lega la Britannia a Roma, ma i monaci di Lindisfarne creano qualcosa di totalmente originale — intreccio celtico, energia germanica, oro mediterraneo fusi in un'infinità devozionale."
     },
     "abolition-crisis": {
-      "1831→1859": "La ribellione di Nat Turner nel 1831 terrorizzò il Sud inducendolo a emanare brutali nuovi codici schiavisti. Una generazione dopo, il raid di John Brown a Harpers Ferry dimostrò che gli abolizionisti bianchi avrebbero impugnato le armi. La strada verso la Guerra Civile fu lastricata di sangue."
+      "1831→1859": "La ribellione di Nat Turner nel 1831 terrorizzò il Sud inducendolo a emanare brutali nuovi codici schiavisti. Una generazione dopo, il raid di John Brown a Harpers Ferry dimostrò che gli abolizionisti bianchi avrebbero impugnato le armi. La strada verso la Guerra Civile fu lastricata di sangue.",
+      "1859→1863": "Il martirio di John Brown galvanizzò il Nord; quattro anni dopo, Lincoln rese l'abolizione un obiettivo di guerra."
     },
     "revolutionary-nationalism": {
       "1848→1859": "La Primavera dei Popoli del 1848 fu schiacciata, ma il sogno dell'autodeterminazione nazionale sopravvisse. Un decennio dopo, a Solferino, i nazionalisti italiani videro la Francia sconfiggere l'Austria—e il Risorgimento entrò nella sua fase decisiva."
@@ -419,7 +428,8 @@
       "1648→1670": "Assicurata l'indipendenza, la Repubblica diventa lo stato più ricco d'Europa. Rembrandt muore povero mentre Vermeer dipinge la fede nascosta; Spinoza mola lenti mentre pensa pensieri che saranno banditi."
     },
     "secularization": {
-      "1648→1670": "Il principio di Vestfalia — gli stati, non le chiese, determinano l'ordine — ora plasma il pensiero stesso. Il Trattato di Spinoza separa la filosofia dalla teologia; Pascal difende la fede attraverso il dubbio, non l'autorità."
+      "1648→1670": "Il principio di Vestfalia — gli stati, non le chiese, determinano l'ordine — ora plasma il pensiero stesso. Il Trattato di Spinoza separa la filosofia dalla teologia; Pascal difende la fede attraverso il dubbio, non l'autorità.",
+      "1670→1863": "Il monismo radicale di Spinoza minò l'autorità scritturale; due secoli dopo, Renan portò la critica biblica alle masse con il suo Gesù umano."
     },
     "sublime-aesthetic": {
       "1816→1819": "L'oscurità vulcanica del 1816 dimostrò che il sublime di Burke non era mera teoria estetica — la natura poteva terrorizzare e sopraffare. Schopenhauer avrebbe sistematizzato questo in pessimismo metafisico."

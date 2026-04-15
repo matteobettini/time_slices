@@ -1,0 +1,50 @@
+{
+  "year": "1863",
+  "id": "1863-year-of-scandal-and-freedom",
+  "title": "L'Anno dello Scandalo e della Libertà",
+  "teaser": "Manet scandalizza Parigi. Lincoln ridefinisce l'America. Renan umanizza Gesù. La modernità si annuncia — nuda, democratica, senza dio.",
+  "dimensions": {
+    "art": { 
+      "label": "Arte", 
+      "content": "Il <strong>Salon des Refusés</strong> apre a maggio — risposta di Napoleone III alle proteste per oltre duemila opere rifiutate. I visitatori accorrono a ridere, ma stanno assistendo a una rivoluzione. <strong>Manet</strong> con la <em>Colazione sull'erba</em> pone una donna nuda tra uomini vestiti in un contesto contemporaneo — non mitologia, ma vita moderna. Lo scandalo non è la nudità; è il rifiuto di idealizzare. Ad agosto muore <strong>Delacroix</strong> — l'ultimo grande maestro <strong>romantico</strong>. Il testimone passa a una nuova generazione che rifiuta sia la perfezione classica sia l'emotività romantica in favore del confronto diretto col presente. Il saggio di Baudelaire <em>Il pittore della vita moderna</em>, pubblicato su <em>Le Figaro</em>, fornisce il manifesto: la bellezza è ora <em>transitoria, fugace, contingente</em>."
+    },
+    "lit": { 
+      "label": "Letteratura", 
+      "content": "Il <em>Discorso di Gettysburg</em> di <strong>Lincoln</strong> — 272 parole pronunciate a novembre — ridefinisce il significato dell'America: non un contratto tra stati ma una <em>nazione concepita nella Libertà</em>. È il più importante testo retorico-politico americano mai scritto. In Francia, <strong>Jules Verne</strong> pubblica <em>Cinque settimane in pallone</em>, inaugurando il romanzo scientifico come letteratura popolare. Le <em>Note invernali su impressioni estive</em> di Dostoevskij criticano il materialismo occidentale; l'uomo del sottosuolo sta germinando. L'anno segna l'ascesa del <strong>realismo letterario</strong> in tensione con il nascente <strong>simbolismo</strong> che Baudelaire difende."
+    },
+    "phil": { 
+      "label": "Filosofia", 
+      "content": "<strong>John Stuart Mill</strong> pubblica <em>Utilitarismo</em> in volume — l'enunciazione definitiva dell'<strong>etica consequenzialista</strong>: le azioni sono giuste nella misura in cui promuovono la massima felicità per il maggior numero. La <em>Vie de Jésus</em> di <strong>Ernest Renan</strong> diventa un bestseller immediato e uno scandalo — tratta Gesù come figura storica, un affascinante maestro galileo spogliato di miracoli e divinità. È <strong>critica biblica</strong> per le masse, un attacco alle fondamenta soprannaturali del cristianesimo. Sia Mill che Renan condividono la stessa premessa: la ragione umana, non la rivelazione, fonda la verità. <strong>Positivismo</strong> e <strong>umanesimo secolare</strong> avanzano su più fronti."
+    },
+    "hist": { 
+      "label": "Storia", 
+      "content": "Il <strong>Proclama di Emancipazione</strong> entra in vigore il 1° gennaio — Lincoln trasforma la Guerra Civile dalla conservazione dell'Unione all'abolizione della schiavitù. A luglio, la battaglia di <strong>Gettysburg</strong> capovolge le sorti della guerra. In Polonia scoppia l'<strong>Insurrezione di Gennaio</strong> contro il dominio russo — una rivolta nazionalista che sarà schiacciata ma forgerà l'identità polacca per generazioni. A Londra apre la prima metropolitana al mondo — la <strong>Metropolitan Line</strong> — la modernità che scava sotto le strade. L'anno cristallizza il grande conflitto dell'epoca: autodeterminazione democratica contro ordine costituito, scienza contro tradizione, libertà contro gerarchia."
+    },
+    "conn": { 
+      "label": "Connessioni", 
+      "content": "Tutto si connette attraverso la <strong>demistificazione</strong>. Manet spoglia il nudo dell'alibi classico — lei guarda lo spettatore, moderna e senza vergogna. Renan spoglia Cristo della divinità — diventa una figura storica, per quanto ammirevole. Lincoln spoglia l'America del suo compromesso fondativo con la schiavitù — la Costituzione viene riscritta nel sangue e nella retorica. Mill spoglia l'etica del comandamento divino — la morale diventa calcolo. Persino la Metropolitan Railway spoglia il viaggio del suo romanticismo — scavando tunnel nella terra alla luce del gas, i passeggeri diventano pendolari. La <strong>modernità</strong> sta arrivando, e il suo gesto distintivo è rimuovere il velo: mostrare le cose come sono, non come la tradizione le aveva vestite.",
+      "funFact": "Quando la giuria del Salon rifiutò oltre metà delle opere presentate nel 1863, le proteste furono così forti che Napoleone III si recò personalmente a vedere cosa succedeva — e ordinò la creazione del Salon des Refusés perché il pubblico potesse giudicare da sé."
+    }
+  },
+  "sources": [
+    { "url": "https://en.wikipedia.org/wiki/Salon_des_Refus%C3%A9s", "title": "Salon des Refusés - Wikipedia" },
+    { "url": "https://en.wikipedia.org/wiki/Emancipation_Proclamation", "title": "Emancipation Proclamation - Wikipedia" },
+    { "url": "https://en.wikipedia.org/wiki/Ernest_Renan", "title": "Ernest Renan - Wikipedia" },
+    { "url": "https://en.wikipedia.org/wiki/The_Painter_of_Modern_Life", "title": "The Painter of Modern Life - Wikipedia" },
+    { "url": "https://en.wikipedia.org/wiki/Metropolitan_line", "title": "Metropolitan Line - Wikipedia" }
+  ],
+  "image": {
+    "url": "images/1863-year-of-scandal-and-freedom.jpg",
+    "width": 1200,
+    "height": 932,
+    "caption": "Édouard Manet, La Colazione sull'erba (1863), esposta al Salon des Refusés",
+    "attribution": "Édouard Manet, Public domain, via Wikimedia Commons"
+  },
+  "threads": ["secularization", "critique-of-modernity", "abolition-crisis", "translatio-studii"],
+  "location": {
+    "lat": 48.8606,
+    "lon": 2.3376,
+    "place": "Parigi"
+  },
+  "addedDate": "2026-04-15T05:00:00Z"
+}

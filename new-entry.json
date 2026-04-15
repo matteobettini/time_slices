@@ -1,0 +1,50 @@
+{
+  "year": "1863",
+  "id": "1863-year-of-scandal-and-freedom",
+  "title": "The Year of Scandal and Freedom",
+  "teaser": "Manet scandalizes Paris. Lincoln redefines America. Renan humanizes Jesus. Modernity announces itself — naked, democratic, godless.",
+  "dimensions": {
+    "art": { 
+      "label": "Art", 
+      "content": "The <strong>Salon des Refusés</strong> opens in May — Napoleon III's response to protests over 2,000 rejected paintings. Visitors crowd in to laugh, but they're witnessing a revolution. <strong>Manet</strong>'s <em>Le Déjeuner sur l'herbe</em> places a naked woman among clothed men in a contemporary setting — not mythology, but modern life. The scandal isn't the nudity; it's the refusal to idealize. In August, <strong>Delacroix</strong> dies — the last great <strong>Romantic</strong> master. The baton passes to a new generation that rejects both classical perfection and Romantic emotionalism in favor of direct confrontation with the present. Baudelaire's essay <em>The Painter of Modern Life</em>, published in <em>Le Figaro</em>, provides the manifesto: beauty is now <em>transient, fleeting, contingent</em>."
+    },
+    "lit": { 
+      "label": "Literature", 
+      "content": "<strong>Lincoln</strong>'s <em>Gettysburg Address</em> — 272 words delivered in November — redefines what America means: not a contract between states but a <em>nation conceived in Liberty</em>. It's the most important piece of American political rhetoric ever written. In France, <strong>Jules Verne</strong> publishes <em>Five Weeks in a Balloon</em>, launching scientific romance as popular literature. Dostoevsky's <em>Winter Notes on Summer Impressions</em> critiques Western materialism; the underground man is gestating. The year marks the rise of <strong>literary realism</strong> in tension with the emerging <strong>symbolism</strong> that Baudelaire champions."
+    },
+    "phil": { 
+      "label": "Philosophy", 
+      "content": "<strong>John Stuart Mill</strong> publishes <em>Utilitarianism</em> in book form — the definitive statement of <strong>consequentialist ethics</strong>: actions are right insofar as they promote the greatest happiness for the greatest number. <strong>Ernest Renan</strong>'s <em>Vie de Jésus</em> becomes an instant bestseller and scandal — treating Jesus as a historical figure, a charming Galilean teacher stripped of miracles and divinity. It's <strong>biblical criticism</strong> for the masses, attacking the supernatural foundations of Christianity. Both Mill and Renan share the same premise: human reason, not revelation, grounds truth. <strong>Positivism</strong> and <strong>secular humanism</strong> advance on multiple fronts."
+    },
+    "hist": { 
+      "label": "History", 
+      "content": "The <strong>Emancipation Proclamation</strong> takes effect on January 1st — Lincoln transforms the Civil War from preserving the Union to ending slavery. In July, the Battle of <strong>Gettysburg</strong> turns the war's tide. In Poland, the <strong>January Uprising</strong> against Russian rule begins — a nationalist insurrection that will be crushed but galvanize Polish identity for generations. In London, the world's first underground railway opens — the <strong>Metropolitan Line</strong> — modernity burrowing beneath the streets. The year crystallizes the era's great conflict: democratic self-determination versus established order, science versus tradition, freedom versus hierarchy."
+    },
+    "conn": { 
+      "label": "Connections", 
+      "content": "Everything connects through <strong>demystification</strong>. Manet strips the nude of classical alibi — she stares at the viewer, modern and unashamed. Renan strips Christ of divinity — he becomes a historical figure, however admirable. Lincoln strips America of its founding compromise with slavery — the Constitution is rewritten in blood and rhetoric. Mill strips ethics of divine command — morality becomes calculus. Even the Metropolitan Railway strips travel of its romance — tunneling through the earth by gaslight, passengers become commuters. <strong>Modernity</strong> is arriving, and its signature gesture is to remove the veil: to show things as they are, not as tradition dressed them.",
+      "funFact": "When the Salon jury rejected over half of all submitted paintings in 1863, the protests were so loud that Napoleon III personally visited to see what the fuss was about — and ordered the Salon des Refusés created so the public could judge for themselves."
+    }
+  },
+  "sources": [
+    { "url": "https://en.wikipedia.org/wiki/Salon_des_Refus%C3%A9s", "title": "Salon des Refusés - Wikipedia" },
+    { "url": "https://en.wikipedia.org/wiki/Emancipation_Proclamation", "title": "Emancipation Proclamation - Wikipedia" },
+    { "url": "https://en.wikipedia.org/wiki/Ernest_Renan", "title": "Ernest Renan - Wikipedia" },
+    { "url": "https://en.wikipedia.org/wiki/The_Painter_of_Modern_Life", "title": "The Painter of Modern Life - Wikipedia" },
+    { "url": "https://en.wikipedia.org/wiki/Metropolitan_line", "title": "Metropolitan Line - Wikipedia" }
+  ],
+  "image": {
+    "url": "images/1863-year-of-scandal-and-freedom.jpg",
+    "width": 1200,
+    "height": 932,
+    "caption": "Édouard Manet, Le Déjeuner sur l'herbe (1863), exhibited at the Salon des Refusés",
+    "attribution": "Édouard Manet, Public domain, via Wikimedia Commons"
+  },
+  "threads": ["secularization", "critique-of-modernity", "abolition-crisis", "translatio-studii"],
+  "location": {
+    "lat": 48.8606,
+    "lon": 2.3376,
+    "place": "Paris"
+  },
+  "addedDate": "2026-04-15T05:00:00Z"
+}
