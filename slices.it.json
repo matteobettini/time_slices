@@ -3819,5 +3819,80 @@
       "url": "audio/it/1863-year-of-scandal-and-freedom.mp3",
       "duration": 240
     }
+  },
+  {
+    "year": "1870",
+    "id": "1870-year-of-collapses",
+    "title": "L'anno dei crolli",
+    "teaser": "Napoleone III cade a Sedan. Roma cade all'Italia. Il Papa ripara sull'infallibilità. Un impero muore, due nazioni nascono, e l'Impressionismo fugge a Londra.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "La <strong>guerra franco-prussiana</strong> disperde gli impressionisti nascenti. <strong>Monet</strong> fugge a Londra nel settembre 1870 con moglie e figlio neonato, dipingendo <em>Il Tamigi sotto Westminster</em> attraverso la nebbia invernale — il Tamigi, non la Senna, diventa il primo paesaggio d'esilio dell'Impressionismo. <strong>Pissarro</strong> arriva lo stesso autunno, dipinge Sydenham e il Crystal Palace mentre gli giunge notizia che i soldati prussiani usano le sue tele come grembiuli da macellaio a Louveciennes. <strong>Renoir</strong> serve nella cavalleria; <strong>Bazille</strong> viene ucciso a Beaune-la-Rolande in novembre, a ventotto anni. Intanto a Monaco, in giugno, la <em>Walküre</em> di <strong>Wagner</strong> va in scena contro la sua esplicita volontà — il re Ludwig II rifiuta di aspettare Bayreuth. L'arte che definirà la modernità si forgia nella guerra, nell'esilio e nella perdita."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "<strong>Charles Dickens</strong> muore il 9 giugno, lasciando <em>Il mistero di Edwin Drood</em> per sempre incompiuto — l'ultima grande voce della letteratura vittoriana ammutolita a metà frase. Lo stesso anno, <strong>Dante Gabriel Rossetti</strong> pubblica <em>Poems</em>, molti dei quali erano stati riesumati dalla tomba della moglie Elizabeth Siddal nel cimitero di Highgate nell'ottobre 1869. Rossetti aveva sepolto l'unico manoscritto con lei nel 1862; sette anni dopo, fece riaprire la bara. Le poesie arrivarono con odore di disinfettante, impigliate in capelli che la leggenda dice continuassero a crescere. In Francia, <strong>Jules Verne</strong> pubblica <em>Ventimila leghe sotto i mari</em> — il sottomarino <em>Nautilus</em> del Capitano Nemo attacca navi da guerra con deliberata ambiguità sulla bandiera che portano, scritto mentre la guerra incombeva."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Il 18 luglio, il <strong>Concilio Vaticano I</strong> definisce l'<strong>infallibilità papale</strong> come dogma — il Papa non può errare quando parla <em>ex cathedra</em> su fede e morale. Esattamente due mesi dopo, il 20 settembre, le truppe italiane aprono la breccia di Porta Pia e pongono fine al potere temporale del Papa. <strong>Pio IX</strong> si dichiara prigioniero in Vaticano, rifiutando di riconoscere lo Stato italiano. Il paradosso è perfetto: l'autorità spirituale resa assoluta nel momento in cui svanisce la sovranità territoriale. Intanto il giovane <strong>Nietzsche</strong>, venticinquenne già professore a Basilea, serve come attendente sanitario nell'esercito prussiano, contrae dissenteria e difterite curando feriti su carri bestiame. Sta scrivendo <em>La nascita della tragedia</em>, dedicata a Wagner."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il <strong>2 settembre</strong>, Napoleone III si arrende a Sedan con 100.000 soldati — il Secondo Impero crolla in sei settimane di guerra. La <strong>Terza Repubblica</strong> viene proclamata il 4 settembre; l'imperatrice Eugenia fugge in Inghilterra. Il 19 settembre Parigi è sotto assedio; resisterà quattro mesi, con gli abitanti che mangiano animali dello zoo e topi. Il <strong>20 settembre</strong>, i bersaglieri aprono la breccia nelle Mura Aureliane a Porta Pia — Roma cade, l'unità d'Italia si compie, finisce il dominio temporale millenario del Papa. Nel gennaio 1871 l'Impero tedesco sarà proclamato a Versailles. Tre stati muoiono (Secondo Impero, Stato Pontificio, Confederazione Germanica); tre nascono (Terza Repubblica, Regno d'Italia con Roma, Impero tedesco). La carta d'Europa viene ridisegnata in otto mesi."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Tutto si connette attraverso il <strong>crollo come creazione</strong>. La tempistica del Concilio Vaticano non fu casuale — Pio IX lo convocò in parte per raccogliere sostegno contro l'avanzata italiana, poi si trovò a definire l'autorità spirituale assoluta mentre il suo regno temporale si restringeva a un solo palazzo. L'esilio londinese di Monet e Pissarro non fu mera fuga; il loro mercante <strong>Durand-Ruel</strong>, anche lui a Londra, diventerà il mecenate cruciale dell'Impressionismo, l'infrastruttura commerciale creata dalla catastrofe politica. La <em>Nascita della tragedia</em> di Nietzsche, in gestazione tra dissenteria e soldati morenti, sostiene che la tragedia greca emerse dal caos dionisiaco — la distruzione che permette la creazione. La <em>Walküre</em> di Wagner, forzata alla prima contro la sua volontà da un re che già mostrava segni della follia che l'avrebbe ucciso, avvia il ciclo operistico che reimmagina la mitologia tedesca proprio mentre la Germania si rifà militarmente.",
+        "funFact": "Durante l'assedio di Parigi, Castore e Polluce — gli elefanti del Jardin des Plantes — furono macellati e venduti ai ristoranti di lusso. La proboscide pare costasse 45 franchi alla libbra. I grandi felini dello zoo restarono invenduti: nessuno voleva comprare predatori."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/1870",
+        "title": "1870 — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presa_di_Roma",
+        "title": "Presa di Roma — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Concilio_Vaticano_I",
+        "title": "Concilio Vaticano I — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Guerra_franco-prussiana",
+        "title": "Guerra franco-prussiana — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/La_Valchiria",
+        "title": "La Valchiria — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1870-year-of-collapses.jpg",
+      "caption": "Breccia di Porta Pia, Carlo Ademollo (1880) — I bersaglieri italiani aprono la breccia nelle Mura Aureliane a Porta Pia, ponendo fine al potere temporale pontificio",
+      "attribution": "Carlo Ademollo, Pubblico dominio, via Wikimedia Commons",
+      "width": 1200,
+      "height": 635
+    },
+    "threads": [
+      "impressionism",
+      "risorgimento",
+      "papal-temporal-power",
+      "franco-prussian-war",
+      "wagnerian-mythology"
+    ],
+    "location": {
+      "lat": 41.9125,
+      "lon": 12.5086,
+      "place": "Roma (Porta Pia)"
+    },
+    "addedDate": "2026-04-16T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1870-year-of-collapses.mp3",
+      "duration": 174
+    }
   }
 ]

@@ -3831,5 +3831,80 @@
       "url": "audio/1863-year-of-scandal-and-freedom.mp3",
       "duration": 230
     }
+  },
+  {
+    "year": "1870",
+    "id": "1870-year-of-collapses",
+    "title": "The Year of Collapses",
+    "teaser": "Napoleon III falls at Sedan. Rome falls to Italy. The Pope falls back on infallibility. One empire dies, two nations are born, and Impressionism flees to London.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "The <strong>Franco-Prussian War</strong> scatters the nascent Impressionists. <strong>Monet</strong> flees to London in September 1870 with his wife and infant son, painting <em>The Thames Below Westminster</em> through winter fog — the Thames, not the Seine, becomes Impressionism's first exile landscape. <strong>Pissarro</strong> arrives the same autumn, painting Sydenham and Crystal Palace while news arrives that Prussian soldiers are using his canvases as butcher's aprons in Louveciennes. <strong>Renoir</strong> serves in the cavalry; <strong>Bazille</strong> is killed at Beaune-la-Rolande in November, twenty-eight years old. Meanwhile, in Munich in June, <strong>Wagner's</strong> <em>Die Walküre</em> premieres against his explicit wishes — King Ludwig II refuses to wait for Bayreuth. The art that will define modernity is being forged in war, exile, and loss."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Charles Dickens</strong> dies on June 9th, leaving <em>The Mystery of Edwin Drood</em> forever unfinished — Victorian literature's last great voice silenced mid-sentence. The same year, <strong>Dante Gabriel Rossetti</strong> publishes <em>Poems</em>, many of which had been exhumed from his wife Elizabeth Siddal's grave in Highgate Cemetery in October 1869. Rossetti had buried the only manuscript with her in 1862; seven years later, he had her coffin opened. The poems arrived smelling of disinfectant, tangled in hair that legend said had continued growing. In France, <strong>Jules Verne</strong> publishes <em>Twenty Thousand Leagues Under the Sea</em> — Captain Nemo's submarine <em>Nautilus</em> attacks warships with deliberate ambiguity about which nation's flag they fly, written as war loomed."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "On July 18th, the <strong>First Vatican Council</strong> defines <strong>papal infallibility</strong> as dogma — the Pope cannot err when speaking <em>ex cathedra</em> on faith and morals. Exactly two months later, on September 20th, Italian troops breach the walls at Porta Pia and end the Pope's temporal power forever. <strong>Pius IX</strong> declares himself a prisoner in the Vatican, refusing to acknowledge the Italian state. The paradox is perfect: spiritual authority made absolute at the moment territorial sovereignty vanishes. Meanwhile, the young <strong>Nietzsche</strong>, twenty-five and already a Basel professor, serves as a medical orderly in the Prussian army, contracts dysentery and diphtheria tending wounded soldiers in cattle cars. He is writing <em>The Birth of Tragedy</em>, dedicated to Wagner."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>September 2nd</strong>, Napoleon III surrenders at Sedan with 100,000 troops — the Second Empire collapses in six weeks of war. The <strong>Third Republic</strong> is declared on September 4th; Empress Eugénie flees to England. By September 19th, Paris is besieged; it will hold for four months, its inhabitants eating zoo animals and rats. On <strong>September 20th</strong>, Bersaglieri troops breach the Aurelian Walls at Porta Pia — Rome falls, Italian unification completes, the Pope's thousand-year temporal dominion ends. In January 1871, the German Empire will be proclaimed at Versailles. Three states die (Second Empire, Papal States, German Confederation); three are born (Third Republic, Kingdom of Italy with Rome, German Empire). The map of Europe is rewritten in eight months."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "Everything connects through <strong>collapse as creation</strong>. The Vatican Council's timing was no accident — Pius IX convened it partly to rally support against Italian encroachment, then found himself defining absolute spiritual authority as his temporal realm contracted to a single palace. Monet and Pissarro's London exile wasn't merely escape; their dealer <strong>Durand-Ruel</strong>, also in London, would become Impressionism's crucial patron, the commercial infrastructure created by political catastrophe. Nietzsche's <em>Birth of Tragedy</em>, germinating amid dysentery and dying soldiers, argues that Greek tragedy emerged from Dionysian chaos — destruction enabling creation. Wagner's <em>Walküre</em>, forced into premiere against his will by a king already showing signs of the madness that would kill him, begins the opera cycle that reimagines Germany's mythology just as Germany militarily remakes itself.",
+        "funFact": "During the Siege of Paris, Castor and Pollux — the elephants of the Jardin des Plantes — were butchered and sold to wealthy restaurants. The trunk reportedly fetched 45 francs per pound. The zoo's big cats went uneaten; no one wanted to buy predators."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/1870",
+        "title": "1870 — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Capture_of_Rome",
+        "title": "Capture of Rome — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/First_Vatican_Council",
+        "title": "First Vatican Council — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Franco-Prussian_War",
+        "title": "Franco-Prussian War — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Die_Walk%C3%BCre",
+        "title": "Die Walküre — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1870-year-of-collapses.jpg",
+      "caption": "Breaching the Porta Pia, Carlo Ademollo (1880) — Italian Bersaglieri breach the Aurelian Walls at Rome's Porta Pia, ending papal temporal power",
+      "attribution": "Carlo Ademollo, Public domain, via Wikimedia Commons",
+      "width": 1200,
+      "height": 635
+    },
+    "threads": [
+      "impressionism",
+      "risorgimento",
+      "papal-temporal-power",
+      "franco-prussian-war",
+      "wagnerian-mythology"
+    ],
+    "location": {
+      "lat": 41.9125,
+      "lon": 12.5086,
+      "place": "Rome (Porta Pia)"
+    },
+    "addedDate": "2026-04-16T05:00:00Z",
+    "podcast": {
+      "url": "audio/1870-year-of-collapses.mp3",
+      "duration": 174
+    }
   }
 ]
