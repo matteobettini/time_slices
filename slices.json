@@ -1127,6 +1127,83 @@
     }
   },
   {
+    "year": "1170",
+    "id": "1170-canterbury-murder-in-the-cathedral",
+    "title": "Canterbury — Murder in the Cathedral",
+    "teaser": "Four knights butcher an archbishop at vespers. A poet invents the Arthurian romance. A merchant demands Scripture in his own tongue. Notre-Dame rises over Paris. The twelfth-century renaissance reaches its violent climax: the vernacular awakens, and kings learn that martyrs are more dangerous than rebels.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>Notre-Dame de Paris</strong>, begun in 1163 by Bishop <strong>Maurice de Sully</strong>, is now seven years into construction — the choir nearing completion, the revolutionary system of <strong>flying buttresses</strong> being perfected that will allow walls to become windows. This is <strong>Early Gothic</strong> architecture reaching maturity: pointed arches, ribbed vaults, and an engineering of light that transforms masonry into theology. Where Romanesque churches were fortresses of stone, Gothic cathedrals are cages of glass, their structure externalised so the interior can dissolve into luminosity. At <strong>Sens Cathedral</strong>, the first fully Gothic building (begun 1135), pilgrims already marvel at the effect. At Chartres, the <strong>Royal Portal</strong> (c. 1145–1155) displays a new sculptural naturalism — the elongated column-statues of Old Testament kings with their serene expressions, their drapery beginning to fall as if over actual bodies. The style spreads north: Canterbury itself is rebuilding after a fire in 1174, and the murdered archbishop's cult will demand a shrine worthy of European pilgrimage."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Chrétien de Troyes</strong>, writing at the court of <strong>Marie of Champagne</strong> (daughter of Eleanor of Aquitaine), completes <em>Érec et Énide</em> around 1170 — the first <strong>Arthurian romance</strong> in the vernacular, inventing a literary form that will dominate European imagination for centuries. Where <strong>Geoffrey of Monmouth's</strong> <em>Historia Regum Britanniae</em> (c. 1136) gave Arthur pseudo-historical grandeur, Chrétien transforms the Matter of Britain into psychological drama: knights whose adventures are interior as much as external, love that conflicts with duty, the court as a laboratory of feeling. His French octosyllabic couplets create the template: <em>Cligès</em>, <em>Yvain</em>, <em>Lancelot</em>, and the unfinished <em>Perceval</em> will follow, introducing the Grail, Camelot, and Lancelot's adulterous passion to Western literature. Meanwhile, the <strong>troubadours</strong> of southern France — <strong>Bernart de Ventadorn</strong>, <strong>Raimbaut d'Aurenga</strong> — perfect <em>fin'amor</em>, codifying the rituals of courtly love that Chrétien dramatises. The vernacular is becoming a vehicle for philosophical complexity."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "In Lyon, a wealthy merchant named <strong>Peter Waldo</strong> undergoes a conversion that will reshape European Christianity. Around 1170, he commissions local clergy to translate the <strong>New Testament into the vernacular</strong> — the first such translation into a 'modern tongue' outside Latin. Reading Scripture in his own language, Waldo embraces apostolic poverty, gives away his fortune, and begins preaching on the streets. His followers, the <strong>Poor of Lyon</strong> (later Waldensians), insist that any Christian can interpret Scripture and that the true church is one of poverty, not power. The movement will be condemned as heretical in 1184, persecuted for centuries, and survive to join the Protestant Reformation — a direct line from Waldo's vernacular Bible to Luther's. Meanwhile, in the <strong>Schools of Paris</strong>, the legacy of <strong>Abelard's</strong> dialectical method continues: <strong>Peter Lombard's</strong> <em>Sentences</em> (c. 1150) has become the standard theological textbook, systematising doctrine through the <em>sic et non</em> method of juxtaposing contradictory authorities."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>29 December 1170</strong>, four knights — Reginald FitzUrse, Hugh de Morville, William de Tracy, and Richard le Breton — enter <strong>Canterbury Cathedral</strong> at vespers and hack down <strong>Thomas Becket</strong>, Archbishop of Canterbury, before the altar. Henry II's exasperated outburst — \"Will no one rid me of this turbulent priest?\" — has been taken literally. The quarrel was jurisdictional: Becket defended the Church's right to try its own clergy, resisting the <strong>Constitutions of Clarendon</strong> (1164) that would have subjected criminous clerks to royal courts. Six years of exile in France, a fragile reconciliation, then Becket's immediate excommunication of bishops who had crowned Henry's son without him. The murder transforms a difficult ally into a martyr. Within three years, <strong>Pope Alexander III</strong> canonises Becket; within a decade, Canterbury becomes Europe's premier pilgrimage site. Henry will do public penance, walking barefoot to the shrine. The Church wins."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The threads converge on a single question: <strong>who controls the sacred text?</strong> Becket died defending the Church's jurisdictional independence — its claim to interpret and administer divine law free from royal interference. Peter Waldo's vernacular Bible assault the same clerical monopoly from below, insisting that Scripture speak directly to the laity. Chrétien's romances translate Arthurian legend from Latin chronicle into French entertainment, making literary culture accessible beyond clerical elites. Even Notre-Dame's architectural revolution serves a textual purpose: the vast windows will eventually tell biblical stories in glass for those who cannot read. <strong>John of Salisbury</strong>, the finest mind of the age, connects these worlds directly — he studied under Abelard in Paris, served as Becket's secretary, and was present at the murder; his <em>Policraticus</em> (1159) theorised the limits of royal power, and he ended his career as Bishop of Chartres, patron of the cathedral schools. The twelfth-century renaissance is a vernacular revolution: the sacred, the political, and the literary all becoming speakable in new tongues.",
+        "funFact": "The knights who killed Becket expected reward; they received horror. Excommunicated immediately, they spent years on pilgrimage to the Holy Land in penance. FitzUrse reportedly died on the journey; the others disappear from history. The murder they thought would please their king destroyed them instead."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Thomas_Becket",
+        "title": "Thomas Becket — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Chr%C3%A9tien_de_Troyes",
+        "title": "Chrétien de Troyes — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Peter_Waldo",
+        "title": "Peter Waldo — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris",
+        "title": "Notre-Dame de Paris — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/John_of_Salisbury",
+        "title": "John of Salisbury — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Gothic_architecture",
+        "title": "Gothic architecture — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1170-canterbury-murder-in-the-cathedral.jpg",
+      "caption": "Earliest known portrayal of Thomas Becket's murder in Canterbury Cathedral, from a psalter c. 1200",
+      "width": 936,
+      "height": 1320
+    },
+    "threads": [
+      "gothic-architecture",
+      "vernacular-literature",
+      "translatio-studii",
+      "monastic-preservation"
+    ],
+    "location": {
+      "lat": 51.2798,
+      "lon": 1.083,
+      "place": "Canterbury"
+    },
+    "addedDate": "2026-04-17T05:00:00Z",
+    "podcast": {
+      "url": "audio/1170-canterbury-murder-in-the-cathedral.mp3",
+      "duration": 227
+    }
+  },
+  {
     "year": "1215",
     "id": "1215-year-of-foundations",
     "title": "The Year of Foundations",

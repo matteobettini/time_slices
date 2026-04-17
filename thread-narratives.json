@@ -25,7 +25,9 @@
       "1453→1492": "Greek learning fled Constantinople for Italy; now Spain expelled the heirs of Arabic translation, scattering Sephardic scholarship to the Ottoman East.",
       "800→843": "Alcuin's educational reforms created a literate elite; when that elite fractured with the empire, each court sought scholars to legitimize its rule.",
       "843→910": "Eriugena's translations brought Greek Neoplatonism to the Latin West; monastic scriptoria preserved these texts through the Viking storms.",
-      "1492→1863": "Columbus opened the Atlantic; by 1863, Western learning itself was crossing oceans as Lincoln's rhetoric reached Europe and Renan's scholarship circulated globally."
+      "1492→1863": "Columbus opened the Atlantic; by 1863, Western learning itself was crossing oceans as Lincoln's rhetoric reached Europe and Renan's scholarship circulated globally.",
+      "1066→1170": "Norman administrators brought Continental learning to England; now Chrétien de Troyes translates Arthurian legend from Latin chronicle to French romance. The same networks of court and monastery that preserved texts now transform them.",
+      "1170→1453": "Peter Waldo demanded Scripture in his own tongue; when Constantinople falls, Greek scholars bring texts West that will transform every tongue anew."
     },
     "eschatological-anxiety": {
       "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
@@ -46,7 +48,8 @@
       "590→664": "Gregory's Dialogues canonized Benedict's Rule; Irish monks carried it to Northumbria, where Hilda's Whitby trained five future bishops.",
       "664→800": "Whitby's educated monks seeded English scriptoria; Alcuin brought their learning to Charlemagne, launching the Carolingian preservation of antiquity.",
       "664→732": "Caedmon's vernacular hymns become Bede's Latin histories — the monasteries transform oral tradition into written scholarship. Holy Island becomes the model for how learning survives at civilization's edge.",
-      "732→800": "Bede dies in 735, but his students carry his methods to the Continent. Alcuin reorganizes Charlemagne's libraries on Northumbrian principles — and the scriptoria begin the systematic copying that will preserve antiquity."
+      "732→800": "Bede dies in 735, but his students carry his methods to the Continent. Alcuin reorganizes Charlemagne's libraries on Northumbrian principles — and the scriptoria begin the systematic copying that will preserve antiquity.",
+      "1000→1170": "Cluniac scriptoria copied manuscripts through the millennium; the cathedral schools — Notre-Dame, Chartres, Paris — now began to rival monastic libraries as centers of learning."
     },
     "dialectical-method": {
       "762→1141": "The Mu'tazila debated theology with Greek logical tools; those same tools reached Paris through Arabic-Latin translation. Abelard's <em>Sic et Non</em> is dialectical method applied to Christian doctrine — the Baghdad conversation continued in French."
@@ -66,7 +69,9 @@
     },
     "gothic-architecture": {
       "1141→1215": "Suger's Saint-Denis invented Gothic luminosity; by 1215, Chartres perfected it. The style spread as fast as scholastic method — both claimed to make the invisible visible.",
-      "1215→1274": "Chartres' windows taught theology in glass; the same geometric logic structured the <em>Summa</em>. Gothic and scholasticism were twin expressions of the same confidence."
+      "1215→1274": "Chartres' windows taught theology in glass; the same geometric logic structured the <em>Summa</em>. Gothic and scholasticism were twin expressions of the same confidence.",
+      "1141→1170": "Suger's Saint-Denis pioneered Gothic luminosity; now Maurice de Sully perfects the flying buttress at Notre-Dame. The walls dissolve into glass as engineering serves theology.",
+      "1170→1215": "Notre-Dame's choir rose during Becket's exile; by 1215, Chartres' west façade is complete. The style spreads across Christendom as fast as the murdered archbishop's cult."
     },
     "vernacular-literature": {
       "1215→1274": "The Fourth Lateran Council required confession in the vernacular; poets followed. Aquinas wrote in Latin, but the <em>Roman de la Rose</em> began the year before he died.",
@@ -80,7 +85,9 @@
       "1347→1378": "Boccaccio proved Italian could carry tragedy; Langland proves English can carry prophecy. Catherine proves Tuscan can carry God.",
       "1378→1431": "Catherine and Langland write in the people's tongue as schism splits Christendom; Villon is born as Joan dies — poetry survives institutions.",
       "664→843": "From Caedmon's hymn in English to the Oaths of Strasbourg in French and German: the vernacular tongues of Europe begin to claim written dignity.",
-      "843→1066": "The Oaths proved vernacular could carry political weight; the Norman Conquest would force French and English into a creative collision."
+      "843→1066": "The Oaths proved vernacular could carry political weight; the Norman Conquest would force French and English into a creative collision.",
+      "1066→1170": "The Norman conquest merged French and English into a creative collision; now Chrétien de Troyes writes Arthurian romance in French octosyllabic couplets — the vernacular conquers literary territory Latin once monopolized.",
+      "1170→1215": "Chrétien invents Arthurian romance; by 1215, the Fourth Lateran Council requires confession in the vernacular. The Church that condemned Waldo's Bible begins to speak in common tongues."
     },
     "renaissance-humanism": {
       "1401→1453": "Florentine humanists collected manuscripts before 1453; the Greek exodus accelerated what Salutati and Bruni began. Humanism was ready for what Constantinople's scholars brought.",
