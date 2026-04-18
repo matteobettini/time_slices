@@ -106,7 +106,9 @@
     "risorgimento": "Risorgimento",
     "papal-temporal-power": "Papal Temporal Power",
     "franco-prussian-war": "Franco-Prussian War",
-    "wagnerian-mythology": "Wagnerian Mythology"
+    "wagnerian-mythology": "Wagnerian Mythology",
+    "cold-war-culture": "Cold War Culture",
+    "ordinary-language-philosophy": "Ordinary Language Philosophy"
   },
   "it": {
     "translation-movement": "Traduzione come potere",
@@ -215,6 +217,8 @@
     "risorgimento": "Risorgimento",
     "papal-temporal-power": "Potere temporale papale",
     "franco-prussian-war": "Guerra franco-prussiana",
-    "wagnerian-mythology": "Mitologia wagneriana"
+    "wagnerian-mythology": "Mitologia wagneriana",
+    "cold-war-culture": "Cultura della Guerra Fredda",
+    "ordinary-language-philosophy": "Filosofia del linguaggio ordinario"
   }
 }

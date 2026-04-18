@@ -1,50 +1,50 @@
 {
-  "year": "1863",
-  "id": "1863-year-of-scandal-and-freedom",
-  "title": "The Year of Scandal and Freedom",
-  "teaser": "Manet scandalizes Paris. Lincoln redefines America. Renan humanizes Jesus. Modernity announces itself — naked, democratic, godless.",
+  "year": "1953",
+  "id": "1953-year-of-codes",
+  "title": "The Year of Codes",
+  "teaser": "Stalin dies. Godot never arrives. Watson and Crick crack life's alphabet. Wittgenstein rewrites philosophy from the grave. In Paris, two tramps wait for meaning. In Washington, the Rosenbergs go to the chair. Codes everywhere — genetic, theatrical, linguistic — and the question: what do they mean?",
   "dimensions": {
-    "art": { 
-      "label": "Art", 
-      "content": "The <strong>Salon des Refusés</strong> opens in May — Napoleon III's response to protests over 2,000 rejected paintings. Visitors crowd in to laugh, but they're witnessing a revolution. <strong>Manet</strong>'s <em>Le Déjeuner sur l'herbe</em> places a naked woman among clothed men in a contemporary setting — not mythology, but modern life. The scandal isn't the nudity; it's the refusal to idealize. In August, <strong>Delacroix</strong> dies — the last great <strong>Romantic</strong> master. The baton passes to a new generation that rejects both classical perfection and Romantic emotionalism in favor of direct confrontation with the present. Baudelaire's essay <em>The Painter of Modern Life</em>, published in <em>Le Figaro</em>, provides the manifesto: beauty is now <em>transient, fleeting, contingent</em>."
+    "art": {
+      "label": "Art",
+      "content": "<strong>Francis Bacon</strong> completes his <em>Study after Velázquez's Portrait of Pope Innocent X</em> — the screaming pontiff trapped behind vertical bars, Velázquez's serene authority dissolved into existential horror. This is the <strong>School of London</strong> announcing itself: figurative painting that refuses both abstraction's flight and realism's comfort. The Pope screams but no one hears; power has become its own prison. Across the Atlantic, <strong>Robert Rauschenberg</strong> asks Willem de Kooning for a drawing, then spends two months erasing it. The <em>Erased de Kooning Drawing</em> is <strong>Neo-Dada's</strong> answer to Abstract Expressionism's heroic gesture: art can be made by removal, meaning by absence. <strong>Edward Hopper</strong> paints <em>Office in a Small City</em> — another American alone, framed by architecture, staring at nothing we can see."
     },
-    "lit": { 
-      "label": "Literature", 
-      "content": "<strong>Lincoln</strong>'s <em>Gettysburg Address</em> — 272 words delivered in November — redefines what America means: not a contract between states but a <em>nation conceived in Liberty</em>. It's the most important piece of American political rhetoric ever written. In France, <strong>Jules Verne</strong> publishes <em>Five Weeks in a Balloon</em>, launching scientific romance as popular literature. Dostoevsky's <em>Winter Notes on Summer Impressions</em> critiques Western materialism; the underground man is gestating. The year marks the rise of <strong>literary realism</strong> in tension with the emerging <strong>symbolism</strong> that Baudelaire champions."
+    "lit": {
+      "label": "Literature",
+      "content": "On January fifth, <strong>Samuel Beckett's</strong> <em>En attendant Godot</em> premieres at Paris's tiny Théâtre de Babylone. Two tramps wait on a country road for someone who never comes. The <strong>Theatre of the Absurd</strong> is born: drama stripped of plot, character, meaning — leaving only waiting, which is to say, existence. Seventeen days later, <strong>Arthur Miller's</strong> <em>The Crucible</em> opens on Broadway, Salem's witch trials mirroring McCarthy's hearings with unmistakable precision. <strong>Ray Bradbury's</strong> <em>Fahrenheit 451</em> imagines firemen who burn books; <strong>James Baldwin's</strong> <em>Go Tell It on the Mountain</em> finds redemption in Harlem storefront churches. Ian Fleming's <em>Casino Royale</em> invents James Bond. In November, <strong>Dylan Thomas</strong> dies in New York, his last words allegedly 'I've had eighteen straight whiskies. I think that's the record.'"
     },
-    "phil": { 
-      "label": "Philosophy", 
-      "content": "<strong>John Stuart Mill</strong> publishes <em>Utilitarianism</em> in book form — the definitive statement of <strong>consequentialist ethics</strong>: actions are right insofar as they promote the greatest happiness for the greatest number. <strong>Ernest Renan</strong>'s <em>Vie de Jésus</em> becomes an instant bestseller and scandal — treating Jesus as a historical figure, a charming Galilean teacher stripped of miracles and divinity. It's <strong>biblical criticism</strong> for the masses, attacking the supernatural foundations of Christianity. Both Mill and Renan share the same premise: human reason, not revelation, grounds truth. <strong>Positivism</strong> and <strong>secular humanism</strong> advance on multiple fronts."
+    "phil": {
+      "label": "Philosophy",
+      "content": "<strong>Ludwig Wittgenstein's</strong> <em>Philosophical Investigations</em> appears posthumously — the book that unmakes his own <em>Tractatus</em>. Meaning is not a picture of reality but <strong>use in a language-game</strong>; philosophy's task is therapeutic, dissolving puzzles rather than solving them. The <strong>private language argument</strong> demolishes Cartesian interiority: there can be no language whose words refer to sensations only the speaker knows. Meanwhile, <strong>Martin Heidegger's</strong> <em>Introduction to Metaphysics</em> asks 'Why are there beings at all instead of nothing?' — the question that haunts both the atomic age and the bombed-out landscapes of Europe. In Cambridge, B.F. Skinner applies <strong>behaviorism</strong> to language learning, reducing meaning to stimulus and response — the very move Wittgenstein's language-games dismantle."
     },
-    "hist": { 
-      "label": "History", 
-      "content": "The <strong>Emancipation Proclamation</strong> takes effect on January 1st — Lincoln transforms the Civil War from preserving the Union to ending slavery. In July, the Battle of <strong>Gettysburg</strong> turns the war's tide. In Poland, the <strong>January Uprising</strong> against Russian rule begins — a nationalist insurrection that will be crushed but galvanize Polish identity for generations. In London, the world's first underground railway opens — the <strong>Metropolitan Line</strong> — modernity burrowing beneath the streets. The year crystallizes the era's great conflict: democratic self-determination versus established order, science versus tradition, freedom versus hierarchy."
+    "hist": {
+      "label": "History",
+      "content": "On <strong>March fifth</strong>, Joseph Stalin dies of a stroke in his dacha — twenty-nine years of terror ending in one man's brain hemorrhage. The <strong>Gulag</strong> begins to empty; the Thaw begins. On <strong>June seventeenth</strong>, East Berlin workers rise against increased quotas; Soviet tanks crush the revolt, killing over fifty. Two days later, <strong>Julius and Ethel Rosenberg</strong> are electrocuted at Sing Sing for atomic espionage — the first American civilians executed for spying in peacetime. On <strong>April twenty-fifth</strong>, Watson and Crick publish nine hundred words in <em>Nature</em>: 'We wish to suggest a structure for the salt of deoxyribose nucleic acid (D.N.A.).' Life itself becomes readable — a code of four letters writing every organism that has ever lived."
     },
-    "conn": { 
-      "label": "Connections", 
-      "content": "Everything connects through <strong>demystification</strong>. Manet strips the nude of classical alibi — she stares at the viewer, modern and unashamed. Renan strips Christ of divinity — he becomes a historical figure, however admirable. Lincoln strips America of its founding compromise with slavery — the Constitution is rewritten in blood and rhetoric. Mill strips ethics of divine command — morality becomes calculus. Even the Metropolitan Railway strips travel of its romance — tunneling through the earth by gaslight, passengers become commuters. <strong>Modernity</strong> is arriving, and its signature gesture is to remove the veil: to show things as they are, not as tradition dressed them.",
-      "funFact": "When the Salon jury rejected over half of all submitted paintings in 1863, the protests were so loud that Napoleon III personally visited to see what the fuss was about — and ordered the Salon des Refusés created so the public could judge for themselves."
+    "conn": {
+      "label": "Connections",
+      "content": "The year turns on a single question: <strong>what is a code?</strong> Watson and Crick decode the molecule that writes bodies; Wittgenstein argues that meaning is encoded in use, not reference; Beckett stages a play whose code resists interpretation — Godot means everything and nothing. The Rosenbergs die for passing codes; Stalin's death reveals that his terror was held together by nothing more than one mortal body — the code of Soviet authority suddenly illegible. Bacon's screaming Pope suggests that even divine authority is now just screaming into void. The Theatre of the Absurd and ordinary language philosophy arrive simultaneously because both recognize the same truth: <strong>meaning is not found but made</strong>, fragile, conventional, always at risk of dissolving into pure waiting.",
+      "funFact": "Watson and Crick's discovery relied crucially on Rosalind Franklin's X-ray diffraction images — Photo 51 — shown to them without her knowledge. She died of ovarian cancer at thirty-seven, likely from radiation exposure, and received no Nobel Prize."
     }
   },
   "sources": [
-    { "url": "https://en.wikipedia.org/wiki/Salon_des_Refus%C3%A9s", "title": "Salon des Refusés - Wikipedia" },
-    { "url": "https://en.wikipedia.org/wiki/Emancipation_Proclamation", "title": "Emancipation Proclamation - Wikipedia" },
-    { "url": "https://en.wikipedia.org/wiki/Ernest_Renan", "title": "Ernest Renan - Wikipedia" },
-    { "url": "https://en.wikipedia.org/wiki/The_Painter_of_Modern_Life", "title": "The Painter of Modern Life - Wikipedia" },
-    { "url": "https://en.wikipedia.org/wiki/Metropolitan_line", "title": "Metropolitan Line - Wikipedia" }
+    {"url": "https://en.wikipedia.org/wiki/Philosophical_Investigations", "title": "Philosophical Investigations - Wikipedia"},
+    {"url": "https://en.wikipedia.org/wiki/Waiting_for_Godot", "title": "Waiting for Godot - Wikipedia"},
+    {"url": "https://profiles.nlm.nih.gov/spotlight/sc/feature/doublehelix", "title": "The Discovery of the Double Helix - NIH"},
+    {"url": "https://en.wikipedia.org/wiki/East_German_uprising_of_1953", "title": "East German Uprising of 1953 - Wikipedia"},
+    {"url": "https://en.wikipedia.org/wiki/Study_after_Vel%C3%A1zquez%27s_Portrait_of_Pope_Innocent_X", "title": "Francis Bacon's Pope - Wikipedia"}
   ],
   "image": {
-    "url": "images/1863-year-of-scandal-and-freedom.jpg",
-    "width": 1200,
-    "height": 932,
-    "caption": "Édouard Manet, Le Déjeuner sur l'herbe (1863), exhibited at the Salon des Refusés",
-    "attribution": "Édouard Manet, Public domain, via Wikimedia Commons"
+    "url": "images/1953-year-of-codes.jpg",
+    "caption": "The original DNA double helix model built by Watson and Crick in 1953, on display at the Science Museum, London",
+    "attribution": "Alkivar, Public domain, via Wikimedia Commons",
+    "width": 960,
+    "height": 1280
   },
-  "threads": ["secularization", "critique-of-modernity", "abolition-crisis", "translatio-studii"],
+  "threads": ["existentialism", "scientific-revolution", "cold-war-culture", "ordinary-language-philosophy"],
   "location": {
-    "lat": 48.8606,
-    "lon": 2.3376,
+    "lat": 48.8566,
+    "lon": 2.3522,
     "place": "Paris"
   },
-  "addedDate": "2026-04-15T05:00:00Z"
+  "addedDate": "2026-04-18T05:00:00Z"
 }

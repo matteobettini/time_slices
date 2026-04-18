@@ -3971,5 +3971,79 @@
       "url": "audio/it/1870-year-of-collapses.mp3",
       "duration": 174
     }
+  },
+  {
+    "year": "1953",
+    "id": "1953-year-of-codes",
+    "title": "L'anno dei codici",
+    "teaser": "Stalin muore. Godot non arriva mai. Watson e Crick decifrano l'alfabeto della vita. Wittgenstein riscrive la filosofia dalla tomba. A Parigi, due vagabondi aspettano un senso. A Washington, i Rosenberg vanno sulla sedia elettrica. Codici ovunque — genetici, teatrali, linguistici — e la domanda: cosa significano?",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "<strong>Francis Bacon</strong> completa il suo <em>Studio da Velázquez del Ritratto di Papa Innocenzo X</em> — il pontefice urlante imprigionato dietro sbarre verticali, la serena autorità di Velázquez dissolta in orrore esistenziale. È la <strong>Scuola di Londra</strong> che si annuncia: pittura figurativa che rifiuta sia la fuga dell'astrazione sia il conforto del realismo. Il Papa urla ma nessuno ascolta; il potere è diventato la propria prigione. Dall'altra parte dell'Atlantico, <strong>Robert Rauschenberg</strong> chiede a Willem de Kooning un disegno, poi passa due mesi a cancellarlo. <em>Erased de Kooning Drawing</em> è la risposta <strong>Neo-Dada</strong> al gesto eroico dell'Espressionismo Astratto: l'arte può essere fatta per sottrazione, il significato per assenza. <strong>Edward Hopper</strong> dipinge <em>Office in a Small City</em> — un altro americano solo, incorniciato dall'architettura, che fissa qualcosa che non possiamo vedere."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Il cinque gennaio, <em>En attendant Godot</em> di <strong>Samuel Beckett</strong> debutta al minuscolo Théâtre de Babylone di Parigi. Due vagabondi aspettano su una strada di campagna qualcuno che non arriverà mai. Nasce il <strong>Teatro dell'Assurdo</strong>: dramma spogliato di trama, personaggio, significato — resta solo l'attesa, cioè l'esistenza. Diciassette giorni dopo, <em>Il crogiuolo</em> di <strong>Arthur Miller</strong> apre a Broadway, i processi alle streghe di Salem che rispecchiano le udienze di McCarthy con precisione inequivocabile. <em>Fahrenheit 451</em> di <strong>Ray Bradbury</strong> immagina pompieri che bruciano libri; <em>Gridalo forte</em> di <strong>James Baldwin</strong> trova la redenzione nelle chiese pentecostali di Harlem. <em>Casino Royale</em> di Ian Fleming inventa James Bond. A novembre, <strong>Dylan Thomas</strong> muore a New York, le sue ultime parole pare fossero 'Ho bevuto diciotto whisky di fila. Credo sia il record.'"
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Appaiono postume le <em>Ricerche filosofiche</em> di <strong>Ludwig Wittgenstein</strong> — il libro che disfa il suo stesso <em>Tractatus</em>. Il significato non è un'immagine della realtà ma <strong>uso in un gioco linguistico</strong>; il compito della filosofia è terapeutico, dissolvere enigmi piuttosto che risolverli. L'<strong>argomento del linguaggio privato</strong> demolisce l'interiorità cartesiana: non può esistere un linguaggio le cui parole si riferiscano a sensazioni note solo al parlante. Intanto, l'<em>Introduzione alla metafisica</em> di <strong>Martin Heidegger</strong> domanda 'Perché vi è l'ente e non il nulla?' — la domanda che ossessiona tanto l'era atomica quanto i paesaggi bombardati d'Europa. A Cambridge, B.F. Skinner applica il <strong>comportamentismo</strong> all'apprendimento linguistico, riducendo il significato a stimolo e risposta — proprio la mossa che i giochi linguistici di Wittgenstein smontano."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il <strong>cinque marzo</strong>, Stalin muore per un ictus nella sua dacia — ventinove anni di terrore che finiscono con l'emorragia cerebrale di un uomo. Il <strong>Gulag</strong> comincia a svuotarsi; inizia il Disgelo. Il <strong>diciassette giugno</strong>, gli operai di Berlino Est insorgono contro l'aumento delle quote di lavoro; i carri armati sovietici schiacciano la rivolta, uccidendo oltre cinquanta persone. Due giorni dopo, <strong>Julius ed Ethel Rosenberg</strong> vengono giustiziati sulla sedia elettrica a Sing Sing per spionaggio atomico — i primi civili americani giustiziati per spionaggio in tempo di pace. Il <strong>venticinque aprile</strong>, Watson e Crick pubblicano novecento parole su <em>Nature</em>: 'Desideriamo proporre una struttura per il sale dell'acido desossiribonucleico (D.N.A.).' La vita stessa diventa leggibile — un codice di quattro lettere che scrive ogni organismo mai esistito."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "L'anno ruota attorno a un'unica domanda: <strong>cos'è un codice?</strong> Watson e Crick decodificano la molecola che scrive i corpi; Wittgenstein sostiene che il significato è codificato nell'uso, non nel riferimento; Beckett mette in scena un'opera il cui codice resiste all'interpretazione — Godot significa tutto e niente. I Rosenberg muoiono per aver passato codici; la morte di Stalin rivela che il suo terrore era tenuto insieme da niente più che un corpo mortale — il codice dell'autorità sovietica improvvisamente illeggibile. Il Papa urlante di Bacon suggerisce che anche l'autorità divina ormai urla solo nel vuoto. Il Teatro dell'Assurdo e la filosofia del linguaggio ordinario arrivano simultaneamente perché entrambi riconoscono la stessa verità: <strong>il significato non si trova ma si fa</strong>, fragile, convenzionale, sempre a rischio di dissolversi in pura attesa.",
+        "funFact": "La scoperta di Watson e Crick si basò in modo cruciale sulle immagini di diffrazione a raggi X di Rosalind Franklin — la Foto 51 — mostrate loro a sua insaputa. Morì di cancro ovarico a trentasette anni, probabilmente per l'esposizione alle radiazioni, e non ricevette alcun Premio Nobel."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Ricerche_filosofiche",
+        "title": "Ricerche filosofiche - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Aspettando_Godot",
+        "title": "Aspettando Godot - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Struttura_del_DNA",
+        "title": "Struttura del DNA - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Rivolta_della_Germania_Est_del_1953",
+        "title": "Rivolta della Germania Est del 1953 - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Francis_Bacon_(pittore)",
+        "title": "Francis Bacon - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1953-year-of-codes.jpg",
+      "caption": "Il modello originale della doppia elica del DNA costruito da Watson e Crick nel 1953, esposto al Science Museum di Londra",
+      "attribution": "Alkivar, Pubblico dominio, tramite Wikimedia Commons",
+      "width": 960,
+      "height": 1280
+    },
+    "threads": [
+      "existentialism",
+      "scientific-revolution",
+      "cold-war-culture",
+      "ordinary-language-philosophy"
+    ],
+    "location": {
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "place": "Parigi"
+    },
+    "addedDate": "2026-04-18T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1953-year-of-codes.mp3",
+      "duration": 232
+    }
   }
 ]
