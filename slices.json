@@ -4057,5 +4057,78 @@
       "url": "audio/1953-year-of-codes.mp3",
       "duration": 212
     }
+  },
+  {
+    "year": "1714",
+    "id": "1714-year-of-locks",
+    "title": "The Year of Locks",
+    "teaser": "Leibniz writes his final metaphysics — windowless monads, each reflecting the universe alone. Pope transforms a stolen lock of hair into mock-epic satire. Mandeville argues that private vices make public virtues. Queen Anne dies without an heir; a German elector inherits England. Watteau invents a new genre of melancholy pleasure. Everything is connected — and nothing touches.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>Antoine Watteau</strong> is transforming French painting. Around 1714, he creates works that will coalesce into a new genre: the <em>fête galante</em> — elegant figures in parkland settings, poised between theater and dream. When the <strong>Académie Royale</strong> accepts him in 1717, they will invent the category specifically for him. Watteau's paintings — masked revellers, lovers mid-conversation, musicians in twilight gardens — seem to capture a moment already dissolving. He draws from <strong>Commedia dell'arte</strong> figures: Pierrot, Harlequin, Columbine — archetypes of longing and comedy. This is the birth of <strong>Rococo</strong>: lighter, more intimate than Baroque grandeur, its pleasures shadowed by transience. Watteau will die of tuberculosis at 36. His art already knows."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "In March, <strong>Alexander Pope</strong> publishes the definitive five-canto version of <em>The Rape of the Lock</em> — transforming a trivial aristocratic quarrel into mock-epic brilliance. Lord Petre had snipped a lock of Arabella Fermor's hair; Pope elevates the outrage to Homeric scale, with sylphs guarding the heroine's beauty and coffee-house politics mimicking the councils of gods. His couplets are diamond-cut: <em>'What mighty contests rise from trivial things.'</em> The six engravings by <strong>Louis Du Guernier</strong> and <strong>Claude Du Bosc</strong> give satire visual wit. Pope, 26 and already England's leading poet, demonstrates that <strong>Augustan verse</strong> can mock while it dazzles."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Leibniz</strong>, in Hanover, composes the <em>Monadology</em> — his final metaphysical statement. The universe consists of <strong>monads</strong>: simple, indivisible substances, each 'windowless,' reflecting the entire cosmos from its unique perspective. There is no interaction between substances — only a <strong>pre-established harmony</strong> ordained by God at creation. Meanwhile, in Paris, <strong>Nicolas Malebranche</strong> still defends his rival doctrine of <strong>occasionalism</strong>: God directly causes every event; creatures have no causal power. Both systems solve the same problem — how mind and body relate — by making God the hidden link. Leibniz will never see George I's London; forbidden to follow his employer to England, he dies in obscurity in 1716."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On 1 August, <strong>Queen Anne</strong> dies at Kensington Palace. Despite seventeen pregnancies, she leaves no surviving heir. The <strong>Act of Settlement</strong> (1701) passes the crown to her distant Protestant cousin: <strong>George Ludwig</strong>, Elector of Hanover, becomes <strong>George I of Great Britain</strong>. He speaks little English, prefers his German mistresses, and never learns to love his new kingdom. The <strong>Jacobites</strong> — supporters of the exiled Catholic Stuarts — will rebel within the year. In March, the <strong>Treaty of Rastatt</strong> ends the War of the Spanish Succession between France and Austria, redrawing Europe's map: Spain loses its Italian and Belgian territories to the Habsburgs."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year's works share a strange vision: <strong>everything connected yet untouching</strong>. Leibniz's monads mirror the whole universe — but have no windows, no contact. Pope's sylphs invisibly guard Belinda's beauty — intervention without trace. Watteau's revellers gather in enchanted gardens yet seem lost in private reveries, never quite meeting. <strong>Bernard Mandeville's</strong> <em>Fable of the Bees</em>, also published in 1714, argues that social prosperity emerges not from virtue but from <strong>private vices</strong> — each selfish bee unknowingly builds the hive. This is early <strong>economic thought</strong>: Adam Smith's invisible hand is prefigured. The Hanoverian succession, too, follows an impersonal mechanism — the Act of Settlement — that makes a German prince King of England without meeting his subjects.",
+        "funFact": "Leibniz's employer George I forbade him from following to England — the philosopher who argued the universe was perfectly harmonised died alone, attended only by his secretary."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Monadology",
+        "title": "Monadology - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Rape_of_the_Lock",
+        "title": "The Rape of the Lock - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Fable_of_the_Bees",
+        "title": "The Fable of the Bees - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Anne,_Queen_of_Great_Britain",
+        "title": "Anne, Queen of Great Britain - Wikipedia"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/malebranche/",
+        "title": "Nicolas Malebranche - Stanford Encyclopedia of Philosophy"
+      }
+    ],
+    "image": {
+      "url": "images/1714-year-of-locks.jpg",
+      "caption": "Frontispiece illustration from Alexander Pope's The Rape of the Lock (1714), engraved by Claude Du Bosc after Louis Du Guernier",
+      "width": 452,
+      "height": 755,
+      "attribution": "Louis Du Guernier (design) / Claude Du Bosc (engraving), Public Domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "rationalism",
+      "baroque",
+      "enlightenment"
+    ],
+    "location": {
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "place": "London"
+    },
+    "addedDate": "2026-04-19T05:00:00Z",
+    "podcast": {
+      "url": "audio/1714-year-of-locks.mp3",
+      "duration": 212
+    }
   }
 ]

@@ -117,7 +117,8 @@
       "1600→1648": "Caravaggio's tenebrism dramatized Counter-Reformation piety; Rembrandt's used the same technique for Protestant inwardness. Baroque style survived the confessional divide.",
       "1600→1610": "Caravaggio's disciples scatter across Europe, carrying tenebrism from Rome's taverns to the world's salons.",
       "1610→1648": "From Caravaggio's dramatic light, Rembrandt forges a Protestant chiaroscuro — shadow as moral inquiry, not theatrical effect.",
-      "1648→1670": "The Baroque's theatricality turns inward: while Catholic churches stage spectacle, Dutch interiors reveal domestic light as spiritual presence — Vermeer's stillness speaks as loudly as Bernini's drama."
+      "1648→1670": "The Baroque's theatricality turns inward: while Catholic churches stage spectacle, Dutch interiors reveal domestic light as spiritual presence — Vermeer's stillness speaks as loudly as Bernini's drama.",
+      "1670→1714": "From Dutch interiors to French salons: Vermeer's quiet devotion gives way to Watteau's theatrical melancholy. The Rococo is Baroque grown intimate."
     },
     "empiricism": {
       "1543→1687": "Vesalius trusted dissection over Galen; Newton trusted mathematics over tradition. Both empiricisms — anatomical and physical — insisted that observation trumped authority.",
@@ -142,7 +143,9 @@
       "1755→1776": "Lisbon's earthquake cracked theodicy; twenty-one years later, Philadelphia's Declaration applied reason's lessons — if God won't guarantee order, humans must create it themselves.",
       "1776→1784": "The Declaration proved Enlightenment ideas could topple empires; eight years later, Kant dared Europeans to think for themselves — and David painted the Roman virtues that would soon devour a king.",
       "1784→1794": "Kant's 'Dare to know' meets its test: the Revolution turns Enlightenment ideals into bloody practice, and reason becomes terror's instrument.",
-      "1794→1831": "Condorcet's faith in progress died with him; thirty-seven years later Hegel's dialectic joins it in the grave, while Darwin embarks toward a materialism that will render both obsolete."
+      "1794→1831": "Condorcet's faith in progress died with him; thirty-seven years later Hegel's dialectic joins it in the grave, while Darwin embarks toward a materialism that will render both obsolete.",
+      "1687→1714": "Newton's mathematical cosmos becomes Leibniz's metaphysical harmony. The Monadology extends what the Principia began: explaining everything by universal law.",
+      "1714→1755": "Leibniz dies defending pre-established harmony. Four decades later, Lisbon collapses — and Voltaire takes his hammer to everything Leibniz had built."
     },
     "critical-philosophy": {
       "1755→1784": "The earthquake forced Kant to reconsider natural theology; three decades later, his Critiques limited what reason could claim. Theodicy's failure birthed epistemology's caution."
@@ -231,6 +234,9 @@
     },
     "historical-materialism": {
       "1848→1937": "Marx diagnosed how capitalism alienates and exploits; Gramsci asks the harder question — why do the exploited consent? His Prison Notebooks forge 'hegemony' from a fascist cell."
+    },
+    "rationalism": {
+      "1670→1714": "Spinoza's anonymous Tractatus becomes Leibniz's official Monadology. The God-intoxicated system-builders compete to explain why mind and body seem connected when they cannot touch."
     }
   },
   "it": {
@@ -344,7 +350,8 @@
       "1600→1648": "Il tenebrismo di Caravaggio drammatizzava la pietà controriformista; quello di Rembrandt usava la stessa tecnica per l'interiorità protestante.",
       "1600→1610": "I discepoli di Caravaggio si disperdono per l'Europa, portando il tenebrismo dalle taverne romane ai salotti del mondo.",
       "1610→1648": "Dalla luce drammatica di Caravaggio, Rembrandt forgia un chiaroscuro protestante — l'ombra come indagine morale, non effetto teatrale.",
-      "1648→1670": "La teatralità del Barocco si rivolge all'interno: mentre le chiese cattoliche mettono in scena lo spettacolo, gli interni olandesi rivelano la luce domestica come presenza spirituale — la quiete di Vermeer parla forte quanto il dramma di Bernini."
+      "1648→1670": "La teatralità del Barocco si rivolge all'interno: mentre le chiese cattoliche mettono in scena lo spettacolo, gli interni olandesi rivelano la luce domestica come presenza spirituale — la quiete di Vermeer parla forte quanto il dramma di Bernini.",
+      "1670→1714": "Dagli interni olandesi ai saloni francesi: la devozione silenziosa di Vermeer cede il passo alla malinconia teatrale di Watteau. Il Rococò è il Barocco divenuto intimo."
     },
     "empiricism": {
       "1543→1687": "Vesalio si fidava della dissezione più che di Galeno; Newton si fidava della matematica più che della tradizione.",
@@ -369,7 +376,9 @@
       "1755→1776": "Il terremoto di Lisbona incrinò la teodicea; ventun anni dopo, la Dichiarazione di Philadelphia applicò le lezioni della ragione — se Dio non garantisce l'ordine, gli uomini devono crearlo da soli.",
       "1776→1784": "La Dichiarazione dimostrò che le idee illuministe potevano abbattere imperi; otto anni dopo, Kant sfidò gli europei a pensare con la propria testa — e David dipinse le virtù romane che presto avrebbero divorato un re.",
       "1784→1794": "Il 'Sapere aude' di Kant affronta la sua prova: la Rivoluzione trasforma gli ideali illuministi in pratica sanguinosa, e la ragione diventa strumento del terrore.",
-      "1794→1831": "La fede di Condorcet nel progresso morì con lui; trentasette anni dopo la dialettica hegeliana la raggiunge nella tomba, mentre Darwin salpa verso un materialismo che renderà entrambe obsolete."
+      "1794→1831": "La fede di Condorcet nel progresso morì con lui; trentasette anni dopo la dialettica hegeliana la raggiunge nella tomba, mentre Darwin salpa verso un materialismo che renderà entrambe obsolete.",
+      "1687→1714": "Il cosmo matematico di Newton diventa l'armonia metafisica di Leibniz. La Monadologia estende ciò che i Principia iniziarono: spiegare tutto con legge universale.",
+      "1714→1755": "Leibniz muore difendendo l'armonia prestabilita. Quattro decenni dopo, Lisbona crolla — e Voltaire prende il martello a tutto ciò che Leibniz aveva costruito."
     },
     "critical-philosophy": {
       "1755→1784": "Il terremoto costrinse Kant a riconsiderare la teologia naturale; tre decenni dopo, le sue Critiche limitarono ciò che la ragione poteva pretendere."
@@ -458,6 +467,9 @@
     },
     "historical-materialism": {
       "1848→1937": "Marx diagnosticò come il capitalismo aliena e sfrutta; Gramsci pone la domanda più difficile — perché gli sfruttati consentono? I suoi Quaderni del carcere forgiano l''egemonia' da una cella fascista."
+    },
+    "rationalism": {
+      "1670→1714": "Il Trattato anonimo di Spinoza diventa la Monadologia ufficiale di Leibniz. I costruttori di sistemi ebbri di Dio competono per spiegare perché mente e corpo sembrano connessi quando non possono toccarsi."
     }
   }
 }
