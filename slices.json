@@ -4130,5 +4130,79 @@
       "url": "audio/1714-year-of-locks.mp3",
       "duration": 212
     }
+  },
+  {
+    "year": "476",
+    "id": "476-ravenna-last-emperor",
+    "title": "Ravenna — The Last Emperor",
+    "teaser": "A child emperor is deposed. The imperial regalia sail east. Rome does not fall — it transforms.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>Late Antique Christian art</strong> reaches its zenith in Ravenna, now the Western capital. The <strong>Baptistery of Neon</strong>, completed just years earlier, glows with mosaics: Christ baptized in the Jordan, the twelve apostles circling in triumph. The <strong>Mausoleum of Galla Placidia</strong> still shimmers with its starry blue dome and golden crosses — art that declares eternity while empire crumbles. These works mark the transition from classical naturalism to the <strong>hieratic style</strong>: frontal figures, flattened space, bodies that serve the soul rather than the senses. Byzantine aesthetics are arriving before Byzantium itself takes over."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Sidonius Apollinaris</strong>, the last great voice of Gallo-Roman literary culture, writes letters and poetry that chronicle aristocratic life under barbarian rule. A former prefect of Rome, now Bishop of Clermont, he maintains classical Latin prose while negotiating with Visigothic kings. His nine books of letters — elegant, rhetorical, deliberately Ciceronian — will preserve a portrait of Roman provincial society at the moment of its dissolution. Meanwhile, in Athens, <strong>Proclus</strong> leads the Platonic Academy, writing commentaries that systematize Neoplatonism. Classical philosophy and classical letters both continue — just no longer in Rome."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Neoplatonism</strong> dominates philosophical life, but its geography has shifted. <strong>Proclus</strong> in Athens compiles <em>The Elements of Theology</em>, a rigorous systematization of Plotinian emanation metaphysics. His synthesis of Platonic, Orphic, and Chaldean traditions will flow through <strong>Pseudo-Dionysius</strong> into medieval Christian mysticism. The philosophical question of the age is whether the soul can ascend to the One through <strong>theurgy</strong> — ritual magic — or intellect alone. Proclus argues for both. The Academy will survive another fifty-three years before Justinian closes it, but already philosophy speaks increasingly to believers rather than citizens."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>4 September 476</strong>, the Germanic general <strong>Odoacer</strong> deposes <strong>Romulus Augustulus</strong>, the boy-emperor installed by his father Orestes the previous year. Odoacer does not claim the purple — he sends the imperial regalia to <strong>Constantinople</strong>, declaring that the West needs no emperor of its own. <strong>Julius Nepos</strong>, the legal emperor in exile in Dalmatia, technically retains the title until his assassination in 480. What changes in 476 is not sovereignty but <em>symbolism</em>: after nearly five centuries, no one in the West will call himself Augustus. The infrastructure of Roman administration — law, taxation, landholding — continues under barbarian kings."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year 476 reveals what historians now call the <strong>transformation of the Roman world</strong>. The mosaics in Ravenna are imperial art for an empire that no longer exists — commissioned by emperors, maintained by Gothic kings who consider themselves Rome's continuators. Sidonius's letters speak the language of Cicero to audiences who are increasingly Frankish or Visigothic. Proclus defends Hellenic wisdom in an empire that is becoming Christian. The old forms persist while their meanings shift: <strong>translatio imperii</strong>, the transfer of power, operates not through conquest but through gradual transformation. What looks like an ending is actually a metamorphosis.",
+        "funFact": "Romulus Augustulus was pensioned off to a villa near Naples, possibly the former estate of the legendary general Lucullus — the last Western emperor spent his retirement in a garden."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Romulus_Augustulus",
+        "title": "Wikipedia: Romulus Augustulus"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Odoacer",
+        "title": "Wikipedia: Odoacer"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/proclus/",
+        "title": "Stanford Encyclopedia of Philosophy: Proclus"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Sidonius_Apollinaris",
+        "title": "Wikipedia: Sidonius Apollinaris"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Baptistery_of_Neon",
+        "title": "Wikipedia: Baptistery of Neon"
+      }
+    ],
+    "image": {
+      "url": "images/476-ravenna-last-emperor.jpg",
+      "caption": "Golden tremissis of Romulus Augustulus, the last Western Roman Emperor, minted in Rome 475-476 AD",
+      "attribution": "Classical Numismatic Group, Inc., CC BY-SA 3.0, via Wikimedia Commons",
+      "width": 250,
+      "height": 236
+    },
+    "threads": [
+      "imperial-decline",
+      "translatio-studii",
+      "neoplatonism",
+      "late-antiquity"
+    ],
+    "location": {
+      "lat": 44.4184,
+      "lon": 12.2035,
+      "place": "Ravenna"
+    },
+    "addedDate": "2026-04-20T05:00:00Z",
+    "podcast": {
+      "url": "audio/476-ravenna-last-emperor.mp3",
+      "duration": 195
+    }
   }
 ]

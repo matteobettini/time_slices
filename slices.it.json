@@ -4118,5 +4118,79 @@
       "url": "audio/it/1714-year-of-locks.mp3",
       "duration": 215
     }
+  },
+  {
+    "year": "476",
+    "id": "476-ravenna-last-emperor",
+    "title": "Ravenna — L'Ultimo Imperatore",
+    "teaser": "Un bambino imperatore viene deposto. Le insegne imperiali salpano verso oriente. Roma non cade — si trasforma.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "L'<strong>arte cristiana tardoantica</strong> raggiunge il suo apice a Ravenna, ormai capitale dell'Occidente. Il <strong>Battistero Neoniano</strong>, completato pochi anni prima, risplende di mosaici: Cristo battezzato nel Giordano, i dodici apostoli che procedono in trionfo. Il <strong>Mausoleo di Galla Placidia</strong> brilla ancora con la sua cupola blu stellata e le croci dorate — un'arte che proclama l'eternità mentre l'impero crolla. Queste opere segnano il passaggio dal naturalismo classico allo <strong>stile ieratico</strong>: figure frontali, spazi appiattiti, corpi al servizio dell'anima piuttosto che dei sensi. L'estetica bizantina arriva prima che Bisanzio stessa prenda il controllo."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "<strong>Sidonio Apollinare</strong>, ultima grande voce della cultura letteraria gallo-romana, scrive lettere e poesie che documentano la vita aristocratica sotto il dominio barbarico. Ex prefetto di Roma, ora vescovo di Clermont, mantiene la prosa latina classica mentre negozia con i re visigoti. I suoi nove libri di lettere — eleganti, retorici, deliberatamente ciceroniani — conserveranno un ritratto della società provinciale romana nel momento della sua dissoluzione. Intanto, ad Atene, <strong>Proclo</strong> guida l'Accademia platonica, scrivendo commentari che sistematizzano il Neoplatonismo. Filosofia e lettere classiche continuano — ma non più a Roma."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Il <strong>Neoplatonismo</strong> domina la vita filosofica, ma la sua geografia è cambiata. <strong>Proclo</strong> ad Atene compila gli <em>Elementi di Teologia</em>, una rigorosa sistematizzazione della metafisica emanatista plotiniana. La sua sintesi di tradizioni platoniche, orfiche e caldaiche confluirà attraverso lo <strong>Pseudo-Dionigi</strong> nella mistica cristiana medievale. La questione filosofica dell'epoca è se l'anima possa ascendere all'Uno attraverso la <strong>teurgia</strong> — la magia rituale — o solo l'intelletto. Proclo sostiene entrambe. L'Accademia sopravvivrà altri cinquantatré anni prima che Giustiniano la chiuda, ma già la filosofia parla sempre più ai credenti piuttosto che ai cittadini."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il <strong>4 settembre 476</strong>, il generale germanico <strong>Odoacre</strong> depone <strong>Romolo Augustolo</strong>, il giovane imperatore insediato dal padre Oreste l'anno precedente. Odoacre non rivendica la porpora — invia le insegne imperiali a <strong>Costantinopoli</strong>, dichiarando che l'Occidente non ha bisogno di un proprio imperatore. <strong>Giulio Nepote</strong>, l'imperatore legittimo in esilio in Dalmazia, mantiene tecnicamente il titolo fino al suo assassinio nel 480. Ciò che cambia nel 476 non è la sovranità ma il <em>simbolismo</em>: dopo quasi cinque secoli, nessuno in Occidente si chiamerà più Augusto. L'infrastruttura dell'amministrazione romana — legge, tassazione, proprietà terriera — continua sotto i re barbarici."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "L'anno 476 rivela quella che gli storici oggi chiamano la <strong>trasformazione del mondo romano</strong>. I mosaici di Ravenna sono arte imperiale per un impero che non esiste più — commissionati da imperatori, mantenuti da re goti che si considerano continuatori di Roma. Le lettere di Sidonio parlano la lingua di Cicerone a un pubblico sempre più franco o visigoto. Proclo difende la sapienza ellenica in un impero che sta diventando cristiano. Le vecchie forme persistono mentre i loro significati mutano: la <strong>translatio imperii</strong>, il trasferimento del potere, opera non attraverso la conquista ma attraverso la graduale trasformazione. Quella che sembra una fine è in realtà una metamorfosi.",
+        "funFact": "Romolo Augustolo fu pensionato in una villa vicino a Napoli, forse l'ex tenuta del leggendario generale Lucullo — l'ultimo imperatore d'Occidente trascorse la sua pensione in un giardino."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Romolo_Augusto",
+        "title": "Wikipedia: Romolo Augusto"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Odoacre",
+        "title": "Wikipedia: Odoacre"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/proclus/",
+        "title": "Stanford Encyclopedia of Philosophy: Proclus"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Sidonio_Apollinare",
+        "title": "Wikipedia: Sidonio Apollinare"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Battistero_Neoniano",
+        "title": "Wikipedia: Battistero Neoniano"
+      }
+    ],
+    "image": {
+      "url": "images/476-ravenna-last-emperor.jpg",
+      "caption": "Tremisse aureo di Romolo Augustolo, ultimo imperatore romano d'Occidente, coniato a Roma nel 475-476",
+      "attribution": "Classical Numismatic Group, Inc., CC BY-SA 3.0, via Wikimedia Commons",
+      "width": 250,
+      "height": 236
+    },
+    "threads": [
+      "imperial-decline",
+      "translatio-studii",
+      "neoplatonism",
+      "late-antiquity"
+    ],
+    "location": {
+      "lat": 44.4184,
+      "lon": 12.2035,
+      "place": "Ravenna"
+    },
+    "addedDate": "2026-04-20T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/476-ravenna-last-emperor.mp3",
+      "duration": 181
+    }
   }
 ]

@@ -27,7 +27,9 @@
       "843→910": "Eriugena's translations brought Greek Neoplatonism to the Latin West; monastic scriptoria preserved these texts through the Viking storms.",
       "1492→1863": "Columbus opened the Atlantic; by 1863, Western learning itself was crossing oceans as Lincoln's rhetoric reached Europe and Renan's scholarship circulated globally.",
       "1066→1170": "Norman administrators brought Continental learning to England; now Chrétien de Troyes translates Arthurian legend from Latin chronicle to French romance. The same networks of court and monastery that preserved texts now transform them.",
-      "1170→1453": "Peter Waldo demanded Scripture in his own tongue; when Constantinople falls, Greek scholars bring texts West that will transform every tongue anew."
+      "1170→1453": "Peter Waldo demanded Scripture in his own tongue; when Constantinople falls, Greek scholars bring texts West that will transform every tongue anew.",
+      "410→476": "As Augustine's City of God argued that true civilization was heavenly, Ravenna's mosaics and Sidonius's letters preserved what remained of the earthly one.",
+      "476→529": "The transfer of learning accelerated: Boethius translated Greek into Latin, Benedict founded Monte Cassino, and knowledge migrated from cities to monasteries."
     },
     "eschatological-anxiety": {
       "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
@@ -108,7 +110,9 @@
     },
     "neoplatonism": {
       "529→1504": "When Justinian closed the Academy, Neoplatonism went underground; when Ficino opened his, it resurfaced transformed. A millennium separates the last pagan Neoplatonists from Michelangelo's Neoplatonic bodies.",
-      "250→529": "Plotinus's school in Rome becomes the last great pagan philosophical system; when Justinian closes the Academy in Athens, Neoplatonism has already been baptized — Augustine read Plotinus before he read Paul."
+      "250→529": "Plotinus's school in Rome becomes the last great pagan philosophical system; when Justinian closes the Academy in Athens, Neoplatonism has already been baptized — Augustine read Plotinus before he read Paul.",
+      "250→476": "Plotinus made the cosmos a ladder; Proclus made that ladder systematic. Two centuries of commentary refined the soul's ascent into a science.",
+      "476→529": "When Justinian closed the Academy, the last Neoplatonists fled to Persia — but their books stayed, flowing into Byzantine theology and Islamic philosophy."
     },
     "printing-revolution": {
       "1509→1517": "Erasmus's <em>Praise of Folly</em> circulated in printed editions; Luther's theses spread faster than any medieval protest. The press made both possible — satire and schism alike."
@@ -177,7 +181,8 @@
       "1066→1077": "From the conquest's White Tower to Canossa's contested stone — architecture as political theology spreads across Europe."
     },
     "imperial-decline": {
-      "180→250": "From Marcus Aurelius's philosophical acceptance of mortality to Decius's desperate religious coercion — the empire's inner life darkens as external pressures mount."
+      "180→250": "From Marcus Aurelius's philosophical acceptance of mortality to Decius's desperate religious coercion — the empire's inner life darkens as external pressures mount.",
+      "250→476": "The philosophy of Plotinus, forged amid third-century crisis, found its political echo: withdrawal from a world falling apart became preparation for its end."
     },
     "martyrdom-of-reason": {
       "250→1600": "From Decian pyres to Giordano Bruno's stake: three and a half centuries separate early Christian martyrs from the philosopher who died for an infinite cosmos, yet both faced empires that demanded intellectual submission."
@@ -237,6 +242,9 @@
     },
     "rationalism": {
       "1670→1714": "Spinoza's anonymous Tractatus becomes Leibniz's official Monadology. The God-intoxicated system-builders compete to explain why mind and body seem connected when they cannot touch."
+    },
+    "late-antiquity": {
+      "476→529": "What looked like Rome's fall was actually Rome's metamorphosis — Gothic kings, Byzantine emperors, and Christian philosophers all claimed its inheritance."
     }
   },
   "it": {
@@ -265,7 +273,9 @@
       "1453→1492": "Il sapere greco fuggì da Costantinopoli verso l'Italia; ora la Spagna espulse gli eredi della traduzione araba, disperdendo l'erudizione sefardita verso l'Oriente ottomano.",
       "800→843": "Le riforme educative di Alcuino crearono un'élite letterata; quando quell'élite si frantumò con l'impero, ogni corte cercò studiosi per legittimare il proprio dominio.",
       "843→910": "Le traduzioni di Eriugena portarono il neoplatonismo greco all'Occidente latino; gli scriptoria monastici preservarono questi testi attraverso le tempeste vichinghe.",
-      "1492→1863": "Colombo aprì l'Atlantico; nel 1863, il sapere occidentale stesso attraversava gli oceani: la retorica di Lincoln raggiungeva l'Europa e gli studi di Renan circolavano globalmente."
+      "1492→1863": "Colombo aprì l'Atlantico; nel 1863, il sapere occidentale stesso attraversava gli oceani: la retorica di Lincoln raggiungeva l'Europa e gli studi di Renan circolavano globalmente.",
+      "410→476": "Mentre la Città di Dio di Agostino sosteneva che la vera civiltà era celeste, i mosaici di Ravenna e le lettere di Sidonio preservarono ciò che restava di quella terrena.",
+      "476→529": "Il trasferimento del sapere accelerò: Boezio tradusse il greco in latino, Benedetto fondò Montecassino, e la conoscenza migrò dalle città ai monasteri."
     },
     "eschatological-anxiety": {
       "410→1000": "La caduta di Roma sembrò apocalittica ai contemporanei di Agostino; l'avvicinarsi dell'anno Mille rianimò quelle paure. Il 'bianco manto di chiese' fu in parte ringraziamento per un millennio che non finì nel fuoco.",
@@ -341,7 +351,9 @@
     },
     "neoplatonism": {
       "529→1504": "Quando Giustiniano chiuse l'Accademia, il neoplatonismo andò sottoterra; quando Ficino aprì la sua, riemerse trasformato.",
-      "250→529": "La scuola di Plotino a Roma diventa l'ultimo grande sistema filosofico pagano; quando Giustiniano chiude l'Accademia ad Atene, il Neoplatonismo è già stato battezzato — Agostino lesse Plotino prima di leggere Paolo."
+      "250→529": "La scuola di Plotino a Roma diventa l'ultimo grande sistema filosofico pagano; quando Giustiniano chiude l'Accademia ad Atene, il Neoplatonismo è già stato battezzato — Agostino lesse Plotino prima di leggere Paolo.",
+      "250→476": "Plotino fece del cosmo una scala; Proclo rese quella scala sistematica. Due secoli di commentari raffinarono l'ascesa dell'anima in una scienza.",
+      "476→529": "Quando Giustiniano chiuse l'Accademia, gli ultimi neoplatonici fuggirono in Persia — ma i loro libri rimasero, confluendo nella teologia bizantina e nella filosofia islamica."
     },
     "printing-revolution": {
       "1509→1517": "L'<em>Elogio della Follia</em> di Erasmo circolò in edizioni stampate; le tesi di Lutero si diffusero più velocemente di qualsiasi protesta medievale."
@@ -410,7 +422,8 @@
       "1066→1077": "Dalla Torre Bianca della conquista alla pietra contesa di Canossa — l'architettura come teologia politica si diffonde in Europa."
     },
     "imperial-decline": {
-      "180→250": "Dall'accettazione filosofica della mortalità di Marco Aurelio alla coercizione religiosa disperata di Decio — la vita interiore dell'impero si oscura mentre le pressioni esterne crescono."
+      "180→250": "Dall'accettazione filosofica della mortalità di Marco Aurelio alla coercizione religiosa disperata di Decio — la vita interiore dell'impero si oscura mentre le pressioni esterne crescono.",
+      "250→476": "La filosofia di Plotino, forgiata nella crisi del III secolo, trovò la sua eco politica: il ritiro da un mondo che crollava divenne preparazione per la sua fine."
     },
     "martyrdom-of-reason": {
       "250→1600": "Dai roghi deciani al rogo di Giordano Bruno: tre secoli e mezzo separano i primi martiri cristiani dal filosofo morto per un cosmo infinito, eppure entrambi affrontarono imperi che esigevano sottomissione intellettuale."
@@ -470,6 +483,9 @@
     },
     "rationalism": {
       "1670→1714": "Il Trattato anonimo di Spinoza diventa la Monadologia ufficiale di Leibniz. I costruttori di sistemi ebbri di Dio competono per spiegare perché mente e corpo sembrano connessi quando non possono toccarsi."
+    },
+    "late-antiquity": {
+      "476→529": "Quella che sembrava la caduta di Roma fu in realtà la sua metamorfosi: re goti, imperatori bizantini e filosofi cristiani ne rivendicarono tutti l'eredità."
     }
   }
 }
