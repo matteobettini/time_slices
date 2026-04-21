@@ -1,0 +1,50 @@
+{
+  "year": "1913",
+  "id": "1913-year-of-riots",
+  "title": "L'Anno delle Rivolte",
+  "teaser": "La Sagra della primavera di Stravinskij scatena una rissa a Parigi. Il Nudo che scende le scale di Duchamp scandalizza New York. Proust recupera il tempo perduto. Husserl mette tra parentesi la realtà stessa. L'avanguardia attacca su ogni fronte — e il vecchio mondo reagisce.",
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "Il 29 maggio, <strong>La Sagra della primavera</strong> debutta al Théâtre des Champs-Élysées. I ritmi brutali di <strong>Stravinskij</strong>, la coreografia a piedi piatti di <strong>Nijinsky</strong>, le scene primitiviste di <strong>Roerich</strong> — il pubblico esplode. Fischi, grida, pugni in platea. Nijinsky urla i tempi dalle quinte perché i ballerini non sentono la musica. Diaghilev pare abbia sorriso: <em>'Proprio quello che volevo.'</em> Tre mesi prima a New York, l'<strong>Armory Show</strong> introduce l'America al <strong>modernismo</strong> europeo. Il <em>Nudo che scende le scale</em> di Duchamp diventa il simbolo dello scandalo — i critici lo definiscono 'un'esplosione in una fabbrica di tegole.' Il <strong>Cubismo</strong> arriva come rivoluzione e scherzo insieme."
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "In novembre, <strong>Marcel Proust</strong> pubblica <em>Du côté de chez Swann</em> a proprie spese, dopo il rifiuto della <strong>NRF</strong> (André Gide lo definirà poi il suo più grande rimpianto editoriale). La madeleine inzuppata nel tè inaugura la più vasta meditazione letteraria sulla memoria e il tempo. In poesia, <em>Alcools</em> di <strong>Apollinaire</strong> elimina ogni punteggiatura — il linguaggio diventa flusso continuo, l'equivalente letterario della simultaneità <strong>cubista</strong>. Il frontespizio è un ritratto di Picasso. E <em>La morte a Venezia</em> di <strong>Thomas Mann</strong>, pubblicata in volume quest'anno, esplora la disciplina apollinea che si dissolve nell'ossessione dionisiaca mentre Aschenbach osserva un ragazzo su una spiaggia appestata."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "<strong>Edmund Husserl</strong> pubblica le <em>Ideen</em> nel numero inaugurale dello <em>Jahrbuch für Philosophie</em>, presentando la <strong>fenomenologia</strong> come idealismo trascendentale. Il metodo: l'<em>epoché</em> — mettere tra parentesi ogni assunto sul mondo esterno per indagare la coscienza pura. Husserl distingue <em>noesis</em> (l'atto di coscienza) da <em>noema</em> (ciò verso cui la coscienza è diretta). Non psicologia, ma scienza rigorosa dell'esperienza. A Gottinga e Monaco, i suoi studenti formano circoli che trasformeranno la filosofia: <strong>Heidegger</strong>, <strong>Edith Stein</strong>, <strong>Roman Ingarden</strong>. Il metodo fenomenologico si biforcherà in esistenzialismo e filosofia analitica."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "La <strong>Seconda guerra balcanica</strong> esplode in giugno quando la Bulgaria, insoddisfatta dei frutti della prima guerra, attacca gli ex alleati Serbia e Grecia. Romania e Impero Ottomano si schierano contro la Bulgaria; in agosto, il <strong>Trattato di Bucarest</strong> ridisegna ancora la mappa. I Balcani diventano ciò che saranno chiamati: la polveriera d'Europa. A New York, <strong>J.P. Morgan</strong> muore a Roma il 31 marzo; la sua morte segna la fine di un'era di titani finanziari individuali. In Russia, il <strong>processo Beilis</strong> vede un uomo ebreo assolto dall'accusa di omicidio rituale, tra l'indignazione internazionale per l'antisemitismo zarista. La miccia è accesa; agosto 1914 è a quattordici mesi."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "Il tema dell'anno è la <strong>simultaneità come assalto</strong>. Stravinskij e Nijinsky attaccano gli assunti del corpo sul ritmo; Duchamp attacca gli assunti dell'occhio sulla rappresentazione; Husserl attacca gli assunti della mente sulla realtà. Le tre strategie condividono un metodo: <em>rendere estraneo il familiare</em>. La 'Danse sacrale' della Sagra è balletto reso alieno; il Nudo è figurazione resa meccanica; l'epoché è esistenza resa provvisoria. Apollinaire — che conia il termine 'Cubismo' nel suo saggio <em>Les peintres cubistes</em> proprio quest'anno — coglie l'unità: l'arte moderna frammenta la percezione per rivelare ciò che la percezione aveva nascosto. Il pubblico si ribella perché riconosce la minaccia. Qualcosa sta finendo.",
+      "funFact": "Il Nudo di Duchamp fu respinto dalla sala cubista al Salon des Indépendants nel 1912 — i cubisti lo giudicarono troppo futurista. Un anno dopo, lo rese famoso in un paese che non aveva mai visitato."
+    }
+  },
+  "sources": [
+    { "url": "https://it.wikipedia.org/wiki/La_sagra_della_primavera", "title": "La sagra della primavera — Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Armory_Show", "title": "Armory Show — Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Alla_ricerca_del_tempo_perduto", "title": "Alla ricerca del tempo perduto — Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Edmund_Husserl", "title": "Edmund Husserl — Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Seconda_guerra_balcanica", "title": "Seconda guerra balcanica — Wikipedia" }
+  ],
+  "image": {
+    "url": "images/1913-year-of-riots.jpg",
+    "caption": "Marcel Duchamp, Nudo che scende le scale n. 2, 1912 — lo scandalo dell'Armory Show",
+    "width": 1200,
+    "height": 1979,
+    "attribution": "Philadelphia Museum of Art, pubblico dominio"
+  },
+  "threads": ["modernism", "fragmentation", "phenomenology", "cubism"],
+  "location": {
+    "lat": 48.8647,
+    "lon": 2.3014,
+    "place": "Parigi"
+  },
+  "addedDate": "2026-04-21T05:00:00Z"
+}

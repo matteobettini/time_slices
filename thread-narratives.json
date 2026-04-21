@@ -171,7 +171,9 @@
     "fragmentation": {
       "1848→1922": "The revolutions of 1848 fractured empires and ideologies; by 1922, Eliot's <em>Waste Land</em> made fragments a literary form. Political breakup became aesthetic principle.",
       "1922→1968": "Modernist fragmentation was formal experiment; 1968's fragmentation was political program. The same broken forms served art and revolution.",
-      "843→1848": "The fault lines of Verdun — France, Germany, and the contested lands between — would shape a millennium of European wars, from Lotharingia to Alsace-Lorraine to the revolutions of 1848."
+      "843→1848": "The fault lines of Verdun — France, Germany, and the contested lands between — would shape a millennium of European wars, from Lotharingia to Alsace-Lorraine to the revolutions of 1848.",
+      "1848→1913": "Revolutions fractured empires; the avant-garde now fragments perception itself. Duchamp, Stravinsky, and Husserl weaponize dislocation.",
+      "1913→1922": "The Rite's ritual violence becomes the Great War's actual violence. Joyce and Eliot inherit the fragments."
     },
     "crisis-of-positivism": {
       "1889→1905": "Nietzsche's collapse and Bergson's durée left objectivity in ruins; Einstein proved even physics was built on relative sand."
@@ -232,7 +234,8 @@
     },
     "modernism": {
       "1922→1927": "The experimentalism of Ulysses and The Waste Land becomes Woolf's durational prose — form dissolves into time itself.",
-      "1927→1937": "Heidegger's temporality and Woolf's dissolving narratives meet their historical test: can modernist form bear witness to mechanized atrocity? Guernica answers in Cubist screams."
+      "1927→1937": "Heidegger's temporality and Woolf's dissolving narratives meet their historical test: can modernist form bear witness to mechanized atrocity? Guernica answers in Cubist screams.",
+      "1913→1922": "Stravinsky's riot becomes Eliot's waste land. Nine years, one world war: modernism's experimental assault becomes its elegy."
     },
     "stream-of-consciousness": {
       "1922→1927": "Joyce's one day and Proust's lost time converge in Woolf: consciousness as duration, not sequence."
@@ -412,7 +415,9 @@
     "fragmentation": {
       "1848→1922": "Le rivoluzioni del 1848 frantumarono imperi e ideologie; nel 1922, la <em>Terra desolata</em> di Eliot fece dei frammenti una forma letteraria.",
       "1922→1968": "La frammentazione modernista era esperimento formale; quella del 1968 era programma politico.",
-      "843→1848": "Le linee di faglia di Verdun — Francia, Germania e le terre contese tra loro — avrebbero plasmato un millennio di guerre europee, dalla Lotaringia all'Alsazia-Lorena alle rivoluzioni del 1848."
+      "843→1848": "Le linee di faglia di Verdun — Francia, Germania e le terre contese tra loro — avrebbero plasmato un millennio di guerre europee, dalla Lotaringia all'Alsazia-Lorena alle rivoluzioni del 1848.",
+      "1848→1913": "Le rivoluzioni frammentarono gli imperi; ora l'avanguardia frammenta la percezione stessa. Duchamp, Stravinskij e Husserl fanno dello spaesamento un'arma.",
+      "1913→1922": "La violenza rituale della Sagra diventa violenza reale nella Grande Guerra. Joyce ed Eliot ereditano i frammenti."
     },
     "crisis-of-positivism": {
       "1889→1905": "Il crollo di Nietzsche e la durée di Bergson lasciarono l'oggettività in rovine; Einstein dimostrò che persino la fisica era costruita su sabbia relativa."
@@ -473,7 +478,8 @@
     },
     "modernism": {
       "1922→1927": "La sperimentazione dell'Ulisse e di Terra desolata diventa la prosa durativa di Woolf — la forma si dissolve nel tempo stesso.",
-      "1927→1937": "La temporalità di Heidegger e le narrazioni dissolte di Woolf incontrano la loro prova storica: può la forma modernista testimoniare l'atrocità meccanizzata? Guernica risponde in urla cubiste."
+      "1927→1937": "La temporalità di Heidegger e le narrazioni dissolte di Woolf incontrano la loro prova storica: può la forma modernista testimoniare l'atrocità meccanizzata? Guernica risponde in urla cubiste.",
+      "1913→1922": "La rivolta di Stravinskij diventa la terra desolata di Eliot. Nove anni, una guerra mondiale: l'assalto sperimentale del modernismo ne diventa l'elegia."
     },
     "stream-of-consciousness": {
       "1922→1927": "La singola giornata di Joyce e il tempo perduto di Proust convergono in Woolf: la coscienza come durata, non sequenza."

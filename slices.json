@@ -4204,5 +4204,79 @@
       "url": "audio/476-ravenna-last-emperor.mp3",
       "duration": 195
     }
+  },
+  {
+    "year": "1913",
+    "id": "1913-year-of-riots",
+    "title": "The Year of Riots",
+    "teaser": "Stravinsky's Rite of Spring ignites a brawl in Paris. Duchamp's Nude Descending a Staircase scandalizes New York. Proust recovers lost time. Husserl brackets reality itself. The avant-garde attacks on every front — and the old world fights back.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "On May 29th, <strong>The Rite of Spring</strong> premieres at the Théâtre des Champs-Élysées. <strong>Stravinsky</strong>'s brutal rhythms, <strong>Nijinsky</strong>'s stomping, flat-footed choreography, <strong>Roerich</strong>'s primitivist sets — the audience erupts. Whistles, shouts, punches thrown in the aisles. Nijinsky screams counts from the wings because the dancers can't hear the music. Diaghilev reportedly smiled: <em>'Just what I wanted.'</em> Three months earlier in New York, the <strong>Armory Show</strong> introduces America to European <strong>modernism</strong>. Duchamp's <em>Nude Descending a Staircase</em> becomes the scandal's emblem — critics call it 'an explosion in a shingle factory.' The public offers prizes to 'find the lady.' <strong>Cubism</strong> arrives as both revolution and joke."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "In November, <strong>Marcel Proust</strong> publishes <em>Du côté de chez Swann</em> at his own expense, after rejection by the <strong>NRF</strong> (André Gide later called it his greatest editorial regret). The madeleine dipped in tea begins literature's most sustained meditation on memory and time. In poetry, <strong>Apollinaire</strong>'s <em>Alcools</em> eliminates all punctuation — language becomes a continuous stream, the literary equivalent of <strong>Cubist</strong> simultaneity. The frontispiece is a portrait by Picasso. And <strong>Thomas Mann</strong>'s <em>Death in Venice</em>, published in book form this year, explores Apollonian discipline dissolving into Dionysian obsession as Aschenbach watches a boy on a plague-ridden beach."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Edmund Husserl</strong> publishes <em>Ideen</em> (Ideas) in the inaugural issue of the <em>Jahrbuch für Philosophie</em>, presenting <strong>phenomenology</strong> as transcendental idealism. The method: <em>epoché</em> — bracketing all assumptions about the external world to investigate pure consciousness. Husserl distinguishes <em>noesis</em> (the act of consciousness) from <em>noema</em> (what consciousness is directed toward). This isn't psychology but the rigorous science of experience itself. At Göttingen and Munich, his students form circles that will reshape philosophy: <strong>Heidegger</strong>, <strong>Edith Stein</strong>, <strong>Roman Ingarden</strong>. The phenomenological method will fork into existentialism and analytical philosophy."
+      },
+      "hist": {
+        "label": "History",
+        "content": "The <strong>Second Balkan War</strong> erupts in June when Bulgaria, dissatisfied with the spoils of the first war, attacks its former allies Serbia and Greece. Romania and the Ottoman Empire join against Bulgaria; by August, the <strong>Treaty of Bucharest</strong> redraws the map again. The Balkans become what they'll be called — the powder keg of Europe. In New York, <strong>J.P. Morgan</strong> dies in Rome on March 31st; his death marks the end of an era of individual financial titans. In Russia, the <strong>Beilis trial</strong> sees a Jewish man acquitted of ritual murder amid international outrage at tsarist antisemitism. The fuse is lit; August 1914 is fourteen months away."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year's theme is <strong>simultaneity as assault</strong>. Stravinsky and Nijinsky attack the body's assumptions about rhythm; Duchamp attacks the eye's assumptions about representation; Husserl attacks the mind's assumptions about reality. All three strategies share a method: <em>making the familiar strange</em>. The Rite's 'Danse sacrale' is ballet made alien; the Nude is figuration made mechanical; the epoché is existence made provisional. Apollinaire — who coined the term 'Cubism' in his essay <em>Les peintres cubistes</em> this same year — understood the unity: modern art fragments perception to reveal what perception had concealed. The audiences riot because they recognize the threat. Something is ending.",
+        "funFact": "Duchamp's Nude was rejected from the Cubist room at the Salon des Indépendants in 1912 — Cubists called it too Futurist. A year later, it made him famous in a country he'd never visited."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Rite_of_Spring",
+        "title": "The Rite of Spring — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Armory_Show",
+        "title": "Armory Show — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/In_Search_of_Lost_Time",
+        "title": "In Search of Lost Time — Wikipedia"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Edmund-Husserl",
+        "title": "Edmund Husserl — Britannica"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Second_Balkan_War",
+        "title": "Second Balkan War — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1913-year-of-riots.jpg",
+      "caption": "Marcel Duchamp, Nude Descending a Staircase No. 2, 1912 — the scandal of the Armory Show",
+      "width": 1200,
+      "height": 1979,
+      "attribution": "Philadelphia Museum of Art, public domain"
+    },
+    "threads": [
+      "modernism",
+      "fragmentation",
+      "phenomenology",
+      "cubism"
+    ],
+    "location": {
+      "lat": 48.8647,
+      "lon": 2.3014,
+      "place": "Paris"
+    },
+    "addedDate": "2026-04-21T05:00:00Z",
+    "podcast": {
+      "url": "audio/1913-year-of-riots.mp3",
+      "duration": 171
+    }
   }
 ]
