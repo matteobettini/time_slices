@@ -1,0 +1,50 @@
+{
+  "year": "1580",
+  "id": "1580-bordeaux-what-do-i-know",
+  "title": "Bordeaux — Che ne so io?",
+  "teaser": "Montaigne inventa il saggio ponendo domande che nessuno osava fare — inclusa quella se possa fidarsi delle proprie risposte. Drake completa la circumnavigazione, Filippo II ingoia il Portogallo e Palladio muore lasciando edifici che definiranno il gusto per secoli. Nel frattempo, El Greco dipinge santi dai corpi allungati che sembrano protendersi verso un cielo che non riescono del tutto ad afferrare.",
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "A Toledo, <strong>El Greco</strong> ha appena completato <em>Lo Spoglio di Cristo</em> (1577-79), la sua prima grande commissione spagnola, i cui rossi luminosi e figure allungate scandalizzano i tradizionalisti ma affascinano i mistici in cerca di equivalenti visivi dell'estasi spirituale. In agosto, <strong>Andrea Palladio</strong> muore a Maser, lasciando non solo edifici ma un sistema: i suoi <em>Quattro Libri dell'Architettura</em> (1570) diventeranno il modello per ogni cosa, dalle dimore di campagna inglesi alla forma fisica della democrazia americana. L'anno cattura la transizione dell'architettura: la sobrietà classica di Palladio sfuma mentre le distorsioni <strong>manieristiche</strong> di El Greco prefigurano l'eccesso emotivo del Barocco."
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "Il <strong>1° marzo</strong>, Montaigne firma la prefazione ai suoi <em>Saggi</em>: 'Io stesso sono la materia del mio libro.' Questa forma letteraria senza precedenti, né trattato né dialogo, inventa un nuovo modo di pensare sulla carta: esplorativo, digressivo, onesto riguardo alle contraddizioni. In giugno, il più grande poeta portoghese <strong>Luís de Camões</strong> muore a Lisbona, il suo poema epico <em>I Lusiadi</em> (1572) ha appena celebrato la gloria marittima portoghese mentre quell'impero passa sotto il controllo spagnolo. La giustapposizione è netta: Camões scrisse un epica nazionale sicura di sé; Montaigne scrive il dubbio sulla possibilità stessa della sicurezza.",
+      "funFact": "La biblioteca di Montaigne conteneva 1.500 libri — ma i suoi Saggi contengono più di 1.200 citazioni da autori classici, levigate dalla sua rilettura incessante."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "Il motto di Montaigne, <em>'Que sçay-je?'</em> — 'Che ne so io?' — fa rivivere lo <strong>scetticismo pirroniano</strong> per una generazione traumatizzata dalla certezza religiosa divenuta omicida. L'<em>Apologia di Raymond Sebond</em>, il suo saggio più lungo, smantella la pretesa umana alla conoscenza: non possiamo dimostrare di essere superiori agli animali, non possiamo fidarci dei nostri sensi, non possiamo nemmeno essere sicuri che la nostra ragione funzioni in modo coerente. Eppure questo scetticismo non è nichilismo — è liberazione dai dogmatismi che alimentano la guerra civile. Le <strong>guerre di religione francesi</strong> infuriano intorno a lui; la risposta filosofica di Montaigne è dubitare di tutto eccetto il valore della fratellanza umana e dell'onesto esame di sé."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "Il <strong>26 settembre</strong>, <strong>Francis Drake</strong> torna a Plymouth dopo aver circumnavigato il globo, il suo <em>Golden Hind</em> pieno di tesori spagnoli. Elisabetta lo farà cavaliere sul ponte, inaugurando la sfida inglese al dominio oceanico iberico. Nel frattempo, <strong>Filippo II</strong> marcia in Portogallo per reclamare il trono dopo il disastro di Alcácer Quibir, unendo l'intera penisola iberica e i suoi imperi globali sotto un'unica corona — l'<strong>Unione Iberica</strong> durerà sessant'anni. Il Libro di Concordia protestante e la Bibbia ortodossa di Ostrog appaiono entrambi nel 1580, segnando l'irrigidimento delle divisioni confessionali che lo scetticismo tollerante di Montaigne resiste silenziosamente."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "La forma del saggio che Montaigne inventa incarna la crisi epistemologica dell'epoca. Quando <strong>Copernico</strong> spostò la Terra dal centro e le <strong>guerre di religione</strong> frantumarono l'unità cristiana, le vecchie certezze crollarono. Montaigne risponde non con nuove certezze ma con un nuovo metodo — pensare in pubblico, ammettere la contraddizione, fare del sé un oggetto di studio piuttosto che un bastione di dottrina. È la nascita dell'<strong>autobiografia filosofica</strong>, che attraverserà Cartesio, Rousseau e Nietzsche. I corpi allungati di El Greco e le proporzioni serene di Palladio rappresentano risposte opposte alla stessa crisi: trascendenza estatica contro ordine classico. Entrambe plasmeranno secoli di cultura europea."
+    }
+  },
+  "sources": [
+    { "url": "https://it.wikipedia.org/wiki/Saggi_(Montaigne)", "title": "Wikipedia — Saggi (Montaigne)" },
+    { "url": "https://it.wikipedia.org/wiki/Michel_de_Montaigne", "title": "Wikipedia — Michel de Montaigne" },
+    { "url": "https://it.wikipedia.org/wiki/El_Greco", "title": "Wikipedia — El Greco" },
+    { "url": "https://it.wikipedia.org/wiki/Andrea_Palladio", "title": "Wikipedia — Andrea Palladio" },
+    { "url": "https://it.wikipedia.org/wiki/1580", "title": "Wikipedia — 1580" }
+  ],
+  "image": {
+    "url": "images/1580-bordeaux-what-do-i-know.jpg",
+    "width": 1168,
+    "height": 1594,
+    "caption": "Ritratto di Michel de Montaigne, circa 1570",
+    "attribution": "Anonimo, Pubblico dominio, via Wikimedia Commons"
+  },
+  "threads": ["renaissance-humanism", "skepticism", "counter-reformation", "vernacular-literature", "philosophical-autobiography"],
+  "location": {
+    "lat": 44.8378,
+    "lon": -0.5792,
+    "place": "Bordeaux"
+  },
+  "addedDate": "2026-04-22T05:00:00Z"
+}

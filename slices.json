@@ -4278,5 +4278,80 @@
       "url": "audio/1913-year-of-riots.mp3",
       "duration": 171
     }
+  },
+  {
+    "year": "1580",
+    "id": "1580-bordeaux-what-do-i-know",
+    "title": "Bordeaux — What Do I Know?",
+    "teaser": "Montaigne invents the essay by asking questions no one dared to ask — including whether he can trust his own answers. Drake completes his circumnavigation, Philip II swallows Portugal, and Palladio dies leaving buildings that will define taste for centuries. Meanwhile, El Greco paints saints with elongated bodies that seem to reach for a heaven they cannot quite grasp.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "In Toledo, <strong>El Greco</strong> has just completed <em>The Disrobing of Christ</em> (1577-79), his first major Spanish commission, whose luminous reds and elongated figures scandalize traditionalists but captivate mystics seeking visual equivalents for spiritual ecstasy. In August, <strong>Andrea Palladio</strong> dies in Maser, leaving behind not just buildings but a system — his <em>Four Books of Architecture</em> (1570) will become the template for everything from English country houses to American democracy's physical form. The year captures architecture's transition: Palladio's classical restraint fading as the <strong>Mannerist</strong> distortions of El Greco prefigure the emotional excess of Baroque."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "On <strong>March 1st</strong>, Montaigne signs the preface to his <em>Essays</em> — 'I am myself the matter of my book.' This unprecedented literary form, neither treatise nor dialogue, invents a new way of thinking on paper: exploratory, digressive, honest about contradiction. In June, Portugal's greatest poet <strong>Luís de Camões</strong> dies in Lisbon, his epic <em>Os Lusíadas</em> (1572) having just celebrated Portuguese maritime glory as that empire passes under Spanish control. The juxtaposition is stark: Camões wrote confident national epic; Montaigne writes doubt about the possibility of confidence itself.",
+        "funFact": "Montaigne's library contained 1,500 books — but his Essays contain more than 1,200 quotations from classical authors, worn smooth by his restless rereading."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "Montaigne's motto, <em>'Que sçay-je?'</em> — 'What do I know?' — revives <strong>Pyrrhonian skepticism</strong> for a generation traumatized by religious certainty turned murderous. The <em>Apology for Raymond Sebond</em>, his longest essay, dismantles human pretension to knowledge: we cannot prove we are superior to animals, cannot trust our senses, cannot even be sure our reason functions consistently. Yet this skepticism is not nihilism — it is liberation from the dogmatisms that fuel civil war. The <strong>French Wars of Religion</strong> rage around him; Montaigne's philosophical response is to doubt everything except the value of human fellowship and honest self-examination."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>September 26th</strong>, <strong>Francis Drake</strong> returns to Plymouth after circumnavigating the globe, his <em>Golden Hind</em> stuffed with Spanish treasure. Elizabeth will knight him on deck, inaugurating England's challenge to Iberian oceanic dominance. Meanwhile, <strong>Philip II</strong> marches into Portugal to claim the throne after the disaster of Alcácer Quibir, uniting the entire Iberian Peninsula and its global empires under one crown — the <strong>Iberian Union</strong> will last sixty years. The Protestant Book of Concord and the Orthodox Ostrog Bible both appear in 1580, marking the hardening of confessional divisions that Montaigne's tolerant skepticism quietly resists."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The essay form Montaigne invents embodies the era's epistemological crisis. When <strong>Copernicus</strong> displaced Earth from the center and <strong>religious wars</strong> shattered Christian unity, the old certainties collapsed. Montaigne responds not with new certainties but with a new method — thinking in public, admitting contradiction, making the self an object of study rather than a bastion of doctrine. This is the birth of <strong>philosophical autobiography</strong>, which will run through Descartes, Rousseau, and Nietzsche. El Greco's elongated bodies and Palladio's serene proportions represent opposing responses to the same crisis: ecstatic transcendence versus classical order. Both will shape centuries of European culture."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Essays_(Montaigne)",
+        "title": "Wikipedia — Essays (Montaigne)"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Michel_de_Montaigne",
+        "title": "Wikipedia — Michel de Montaigne"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/El_Greco",
+        "title": "Wikipedia — El Greco"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Andrea_Palladio",
+        "title": "Wikipedia — Andrea Palladio"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/1580",
+        "title": "Wikipedia — 1580"
+      }
+    ],
+    "image": {
+      "url": "images/1580-bordeaux-what-do-i-know.jpg",
+      "width": 1168,
+      "height": 1594,
+      "caption": "Portrait of Michel de Montaigne, circa 1570s",
+      "attribution": "Anonymous, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "renaissance-humanism",
+      "skepticism",
+      "counter-reformation",
+      "vernacular-literature",
+      "philosophical-autobiography"
+    ],
+    "location": {
+      "lat": 44.8378,
+      "lon": -0.5792,
+      "place": "Bordeaux"
+    },
+    "addedDate": "2026-04-22T05:00:00Z",
+    "podcast": {
+      "url": "audio/1580-bordeaux-what-do-i-know.mp3",
+      "duration": 306
+    }
   }
 ]
