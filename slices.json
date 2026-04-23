@@ -4353,5 +4353,79 @@
       "url": "audio/1580-bordeaux-what-do-i-know.mp3",
       "duration": 306
     }
+  },
+  {
+    "year": "1798",
+    "id": "1798-sleep-of-reason",
+    "title": "The Sleep of Reason",
+    "teaser": "Goya dreams of monsters while Wordsworth invents plain speech. Haydn celebrates creation as Malthus predicts famine. Napoleon sails for Egypt carrying scientists alongside soldiers. Reason wakes to find it has become something else.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>Francisco Goya</strong> completes <em>Los Caprichos</em>, eighty aquatint etchings that will be published in February 1799. Plate 43, <em>El sueño de la razón produce monstruos</em> — 'The Sleep of Reason Produces Monsters' — becomes the defining image of the age: an artist slumped at his desk while bats and owls swarm from the darkness. Is this a warning that without reason, monsters emerge? Or a confession that reason itself produces nightmares? Goya refuses to clarify. Meanwhile in Vienna, <strong>Haydn</strong>'s oratorio <em>Die Schöpfung</em> (The Creation) premieres privately on 29 April — the climax of <strong>Classical era</strong> sacred music. When the chorus sings 'Let there be light' and the orchestra explodes from pianissimo to fortissimo C major, audiences weep. Goya depicts reason's darkness; Haydn celebrates divine order. Both respond to the same revolutionary decade."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "On 4 October, a small anonymous volume appears in Bristol: <em>Lyrical Ballads, with a Few Other Poems</em>. <strong>William Wordsworth</strong> and <strong>Samuel Taylor Coleridge</strong> have quietly invented <strong>English Romanticism</strong>. Wordsworth's contribution — poems about leech-gatherers, abandoned mothers, idiot boys — uses 'the real language of men' against the polished diction of Augustan verse. Coleridge's <em>The Rime of the Ancient Mariner</em> provides the supernatural complement: guilt, redemption, and a spectral ship upon a painted ocean. The 1800 Preface will later articulate their principles, but the revolution happens here first, in practice. Poetry has turned from wit to feeling, from London to the Lake District, from aristocratic judgment to peasant speech."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "The young <strong>Schelling</strong>, just twenty-three, publishes <em>Von der Weltseele</em> (On the World Soul), inaugurating <strong>Naturphilosophie</strong> — the attempt to find the spiritual unity underlying nature's apparent diversity. Where Kant drew limits around what reason could know, Schelling's generation rushes past them. Meanwhile, <strong>Thomas Malthus</strong> publishes his anonymous <em>Essay on the Principle of Population</em>, arguing that human population grows geometrically while food supply grows only arithmetically — famine is inevitable unless 'preventive checks' intervene. Malthus writes explicitly against the utopian optimism of <strong>Condorcet</strong> and <strong>Godwin</strong>; where the Enlightenment promised progress, he promises disaster. Darwin will later credit Malthus with the key insight behind natural selection."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On 19 May, <strong>Napoleon Bonaparte</strong> sails from Toulon with 38,000 troops and 167 scholars — mathematicians, naturalists, engineers, artists — bound for Egypt. The <strong>French campaign in Egypt</strong> is both military adventure and scientific expedition; the savants will catalogue antiquities, map temples, and — in July 1799 — discover the <strong>Rosetta Stone</strong>. Napoleon's broader aim is to threaten British India, but Nelson destroys his fleet at the <strong>Battle of the Nile</strong> (1 August), stranding the army. In Ireland, the <strong>United Irishmen</strong> rise in rebellion with French support; by autumn the uprising is crushed and <strong>Wolfe Tone</strong> is dead. Revolution spreads and fails; empires adapt."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year's central tension: what happens when Enlightenment reason confronts its own limits? Goya's <em>Caprichos</em> and Malthus's <em>Essay</em> both emerge from disillusionment with revolutionary optimism — Goya had witnessed the Terror's logic, Malthus was answering Condorcet's dying hopes. Wordsworth and Coleridge, once radicals who celebrated 1789, have retreated to nature and the imagination as politics sours. Schelling's Naturphilosophie seeks unity beyond Kantian critique, while Napoleon's expedition carries Enlightenment science into imperial conquest. The connections are real: Malthus explicitly attacks Condorcet; Wordsworth and Coleridge discuss revolution's failure in their letters; Napoleon consciously models his savants on Enlightenment encyclopaedists. <strong>Romanticism</strong> emerges not as reason's opposite but as its exhausted offspring.",
+        "funFact": "Napoleon brought a portable printing press to Egypt; the savants published a newspaper — the <em>Courier de l'Égypte</em> — from Cairo, making it perhaps the first war zone with embedded journalism."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lyrical_Ballads",
+        "title": "Lyrical Ballads — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/An_Essay_on_the_Principle_of_Population",
+        "title": "An Essay on the Principle of Population — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Los_caprichos",
+        "title": "Los Caprichos — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Creation_(Haydn)",
+        "title": "The Creation (Haydn) — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/French_campaign_in_Egypt_and_Syria",
+        "title": "French campaign in Egypt and Syria — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1798-sleep-of-reason.jpg",
+      "caption": "Francisco Goya's 'The Sleep of Reason Produces Monsters' (El sueño de la razón produce monstruos), plate 43 from Los Caprichos, 1797-1798",
+      "width": 1200,
+      "height": 1815,
+      "attribution": "Francisco Goya, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "english-romanticism",
+      "enlightenment",
+      "critique-of-modernity",
+      "naturphilosophie"
+    ],
+    "location": {
+      "lat": 40.4168,
+      "lon": -3.7038,
+      "place": "Madrid"
+    },
+    "addedDate": "2026-04-23T05:00:00Z",
+    "podcast": {
+      "url": "audio/1798-sleep-of-reason.mp3",
+      "duration": 242
+    }
   }
 ]

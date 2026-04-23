@@ -4341,5 +4341,79 @@
       "url": "audio/it/1580-bordeaux-what-do-i-know.mp3",
       "duration": 276
     }
+  },
+  {
+    "year": "1798",
+    "id": "1798-sleep-of-reason",
+    "title": "Il sonno della ragione",
+    "teaser": "Goya sogna mostri mentre Wordsworth inventa il linguaggio quotidiano. Haydn celebra la creazione mentre Malthus prevede la carestia. Napoleone salpa per l'Egitto con scienziati oltre che soldati. La ragione si sveglia e scopre di essere diventata qualcos'altro.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "<strong>Francisco Goya</strong> completa <em>Los Caprichos</em>, ottanta incisioni ad acquatinta che saranno pubblicate nel febbraio 1799. La tavola 43, <em>El sueño de la razón produce monstruos</em> — 'Il sonno della ragione genera mostri' — diventa l'immagine emblematica dell'epoca: un artista accasciato alla scrivania mentre pipistrelli e gufi emergono dall'oscurità. È un monito che senza ragione emergono i mostri? O una confessione che la ragione stessa produce incubi? Goya rifiuta di chiarire. Nel frattempo a Vienna, l'oratorio di <strong>Haydn</strong> <em>Die Schöpfung</em> (La Creazione) viene eseguito in anteprima privata il 29 aprile — il culmine della musica sacra <strong>classica</strong>. Quando il coro canta 'Sia luce' e l'orchestra esplode dal pianissimo al fortissimo in do maggiore, il pubblico piange. Goya ritrae l'oscurità della ragione; Haydn celebra l'ordine divino. Entrambi rispondono allo stesso decennio rivoluzionario."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Il 4 ottobre appare a Bristol un piccolo volume anonimo: <em>Lyrical Ballads, with a Few Other Poems</em>. <strong>William Wordsworth</strong> e <strong>Samuel Taylor Coleridge</strong> hanno silenziosamente inventato il <strong>Romanticismo inglese</strong>. Il contributo di Wordsworth — poesie su raccoglitori di sanguisughe, madri abbandonate, ragazzi idioti — usa 'il vero linguaggio degli uomini' contro la dizione raffinata della poesia augustea. <em>The Rime of the Ancient Mariner</em> di Coleridge fornisce il complemento soprannaturale: colpa, redenzione, e una nave spettrale su un oceano dipinto. La Prefazione del 1800 articolerà i loro principi, ma la rivoluzione avviene qui, nella pratica. La poesia si è volta dall'arguzia al sentimento, da Londra al Lake District, dal giudizio aristocratico alla voce contadina."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Il giovane <strong>Schelling</strong>, appena ventitreenne, pubblica <em>Von der Weltseele</em> (Dell'anima del mondo), inaugurando la <strong>Naturphilosophie</strong> — il tentativo di trovare l'unità spirituale che soggiace alla diversità apparente della natura. Dove Kant aveva tracciato limiti a ciò che la ragione poteva conoscere, la generazione di Schelling li oltrepassa. Nel frattempo, <strong>Thomas Malthus</strong> pubblica anonimo il suo <em>Saggio sul principio della popolazione</em>, sostenendo che la popolazione umana cresce geometricamente mentre le risorse alimentari crescono solo aritmeticamente — la carestia è inevitabile se non intervengono 'freni preventivi'. Malthus scrive esplicitamente contro l'ottimismo utopico di <strong>Condorcet</strong> e <strong>Godwin</strong>; dove l'Illuminismo prometteva progresso, lui promette disastro. Darwin in seguito accrediterà Malthus dell'intuizione chiave dietro la selezione naturale."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il 19 maggio <strong>Napoleone Bonaparte</strong> salpa da Tolone con 38.000 soldati e 167 studiosi — matematici, naturalisti, ingegneri, artisti — diretti in Egitto. La <strong>campagna d'Egitto</strong> è insieme avventura militare e spedizione scientifica; i savants catalogheranno antichità, mapperanno templi e — nel luglio 1799 — scopriranno la <strong>Stele di Rosetta</strong>. L'obiettivo più ampio di Napoleone è minacciare l'India britannica, ma Nelson distrugge la sua flotta nella <strong>Battaglia del Nilo</strong> (1 agosto), intrappolando l'armata. In Irlanda, gli <strong>Irlandesi Uniti</strong> insorgono con supporto francese; entro l'autunno la rivolta è schiacciata e <strong>Wolfe Tone</strong> è morto. La rivoluzione si diffonde e fallisce; gli imperi si adattano."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "La tensione centrale dell'anno: cosa succede quando la ragione illuminista confronta i propri limiti? I <em>Caprichos</em> di Goya e il <em>Saggio</em> di Malthus emergono entrambi dalla disillusione verso l'ottimismo rivoluzionario — Goya aveva assistito alla logica del Terrore, Malthus rispondeva alle speranze morenti di Condorcet. Wordsworth e Coleridge, un tempo radicali che celebravano il 1789, si sono ritirati nella natura e nell'immaginazione mentre la politica si inacidisce. La Naturphilosophie di Schelling cerca l'unità oltre la critica kantiana, mentre la spedizione di Napoleone porta la scienza illuminista nella conquista imperiale. Le connessioni sono reali: Malthus attacca esplicitamente Condorcet; Wordsworth e Coleridge discutono il fallimento della rivoluzione nelle loro lettere; Napoleone modella consapevolmente i suoi savants sugli enciclopedisti illuministi. Il <strong>Romanticismo</strong> emerge non come opposto della ragione, ma come sua progenie esausta.",
+        "funFact": "Napoleone portò una stamperia portatile in Egitto; i savants pubblicarono un giornale — il <em>Courier de l'Égypte</em> — dal Cairo, rendendolo forse la prima zona di guerra con giornalismo incorporato."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Ballate_liriche",
+        "title": "Ballate liriche — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Saggio_sul_principio_della_popolazione",
+        "title": "Saggio sul principio della popolazione — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Los_caprichos",
+        "title": "Los Caprichos — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/La_creazione_(Haydn)",
+        "title": "La creazione (Haydn) — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Campagna_d%27Egitto",
+        "title": "Campagna d'Egitto — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1798-sleep-of-reason.jpg",
+      "caption": "Francisco Goya, 'Il sonno della ragione genera mostri' (El sueño de la razón produce monstruos), tavola 43 dei Caprichos, 1797-1798",
+      "width": 1200,
+      "height": 1815,
+      "attribution": "Francisco Goya, pubblico dominio, via Wikimedia Commons"
+    },
+    "threads": [
+      "english-romanticism",
+      "enlightenment",
+      "critique-of-modernity",
+      "naturphilosophie"
+    ],
+    "location": {
+      "lat": 40.4168,
+      "lon": -3.7038,
+      "place": "Madrid"
+    },
+    "addedDate": "2026-04-23T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1798-sleep-of-reason.mp3",
+      "duration": 238
+    }
   }
 ]

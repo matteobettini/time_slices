@@ -153,7 +153,9 @@
       "1784→1794": "Kant's 'Dare to know' meets its test: the Revolution turns Enlightenment ideals into bloody practice, and reason becomes terror's instrument.",
       "1794→1831": "Condorcet's faith in progress died with him; thirty-seven years later Hegel's dialectic joins it in the grave, while Darwin embarks toward a materialism that will render both obsolete.",
       "1687→1714": "Newton's mathematical cosmos becomes Leibniz's metaphysical harmony. The Monadology extends what the Principia began: explaining everything by universal law.",
-      "1714→1755": "Leibniz dies defending pre-established harmony. Four decades later, Lisbon collapses — and Voltaire takes his hammer to everything Leibniz had built."
+      "1714→1755": "Leibniz dies defending pre-established harmony. Four decades later, Lisbon collapses — and Voltaire takes his hammer to everything Leibniz had built.",
+      "1794→1798": "Condorcet's dying optimism meets Malthus's rebuttal; the guillotine's logic produces Goya's nightmares. Napoleon carries Enlightenment science to Egypt — imperialism as reason's final form.",
+      "1798→1831": "From Napoleon's savants measuring Egypt to Darwin aboard the Beagle — Enlightenment observation becomes imperial expedition becomes evolutionary science."
     },
     "critical-philosophy": {
       "1755→1784": "The earthquake forced Kant to reconsider natural theology; three decades later, his Critiques limited what reason could claim. Theodicy's failure birthed epistemology's caution."
@@ -209,7 +211,9 @@
     "critique-of-modernity": {
       "1794→1968": "Blake's distrust of Urizen's compasses echoes through two centuries: from Romantic revolt against mechanical reason to 1968's rejection of technocratic rationality.",
       "1794→1863": "Blake's Tiger prowled against industrial darkness; seven decades later, Baudelaire championed the fleeting beauty of modern life itself.",
-      "1863→1968": "Manet exposed the nude without mythological alibi; a century later, 1968's rebels would strip away all remaining veils of institutional authority."
+      "1863→1968": "Manet exposed the nude without mythological alibi; a century later, 1968's rebels would strip away all remaining veils of institutional authority.",
+      "1794→1798": "The Terror's logic of virtue-through-violence haunts Goya's monsters and Malthus's mathematical despair — reason weaponised becomes reason questioned.",
+      "1798→1863": "Goya's sleeping rationalist and Malthus's demographic doom seed Baudelaire's disgust with progress and Manet's cold gaze at modernity's hypocrisies."
     },
     "insular-art": {
       "664→732": "From the Book of Durrow to the Lindisfarne Gospels, Insular illumination reaches its full flowering. The Synod of Whitby binds Britain to Rome, but the monks at Lindisfarne create something wholly original — Celtic interlace, Germanic energy, Mediterranean gold fused into devotional infinity."
@@ -263,6 +267,9 @@
     "counter-reformation": {
       "1543→1580": "The Council of Trent hadn't yet convened when Copernicus published; by 1580 it had defined orthodoxy for three centuries. El Greco's ecstatic saints embody Counter-Reformation mysticism — reaching toward heaven through emotional intensity, not rational proportion.",
       "1580→1600": "Montaigne's skepticism was a quiet rebellion — doubt as a way to survive religious war. Bruno's cosmic vision was open defiance. The Counter-Reformation tolerated the former and burned the latter: some heresies can hide in essays, others cannot."
+    },
+    "english-romanticism": {
+      "1798→1816": "Wordsworth and Coleridge's Lyrical Ballads germinate in rain-soaked Geneva: Mary Shelley inherits their nature-worship but adds Gothic dread — Romanticism discovers its dark twin."
     }
   },
   "it": {
@@ -412,7 +419,9 @@
       "1784→1794": "Il 'Sapere aude' di Kant affronta la sua prova: la Rivoluzione trasforma gli ideali illuministi in pratica sanguinosa, e la ragione diventa strumento del terrore.",
       "1794→1831": "La fede di Condorcet nel progresso morì con lui; trentasette anni dopo la dialettica hegeliana la raggiunge nella tomba, mentre Darwin salpa verso un materialismo che renderà entrambe obsolete.",
       "1687→1714": "Il cosmo matematico di Newton diventa l'armonia metafisica di Leibniz. La Monadologia estende ciò che i Principia iniziarono: spiegare tutto con legge universale.",
-      "1714→1755": "Leibniz muore difendendo l'armonia prestabilita. Quattro decenni dopo, Lisbona crolla — e Voltaire prende il martello a tutto ciò che Leibniz aveva costruito."
+      "1714→1755": "Leibniz muore difendendo l'armonia prestabilita. Quattro decenni dopo, Lisbona crolla — e Voltaire prende il martello a tutto ciò che Leibniz aveva costruito.",
+      "1794→1798": "L'ottimismo morente di Condorcet incontra la replica di Malthus; la logica della ghigliottina produce gli incubi di Goya. Napoleone porta la scienza illuminista in Egitto — l'imperialismo come forma finale della ragione.",
+      "1798→1831": "Dai savants di Napoleone che misurano l'Egitto a Darwin a bordo del Beagle — l'osservazione illuminista diventa spedizione imperiale diventa scienza evoluzionistica."
     },
     "critical-philosophy": {
       "1755→1784": "Il terremoto costrinse Kant a riconsiderare la teologia naturale; tre decenni dopo, le sue Critiche limitarono ciò che la ragione poteva pretendere."
@@ -468,7 +477,9 @@
     "critique-of-modernity": {
       "1794→1968": "La sfiducia di Blake nei compassi di Urizen riecheggia per due secoli: dalla rivolta romantica contro la ragione meccanica al rifiuto della razionalità tecnocratica nel 1968.",
       "1794→1863": "La Tigre di Blake si aggirava contro l'oscurità industriale; sette decenni dopo, Baudelaire esaltava la bellezza fugace della vita moderna stessa.",
-      "1863→1968": "Manet espose il nudo senza alibi mitologico; un secolo dopo, i ribelli del '68 avrebbero strappato tutti i veli restanti dell'autorità istituzionale."
+      "1863→1968": "Manet espose il nudo senza alibi mitologico; un secolo dopo, i ribelli del '68 avrebbero strappato tutti i veli restanti dell'autorità istituzionale.",
+      "1794→1798": "La logica del Terrore — virtù attraverso la violenza — perseguita i mostri di Goya e la disperazione matematica di Malthus: la ragione armata diventa ragione interrogata.",
+      "1798→1863": "Il razionalista addormentato di Goya e la condanna demografica di Malthus seminano il disgusto di Baudelaire per il progresso e lo sguardo freddo di Manet sulle ipocrisie della modernità."
     },
     "insular-art": {
       "664→732": "Dal Libro di Durrow ai Vangeli di Lindisfarne, l'illuminazione insulare raggiunge la sua piena fioritura. Il Sinodo di Whitby lega la Britannia a Roma, ma i monaci di Lindisfarne creano qualcosa di totalmente originale — intreccio celtico, energia germanica, oro mediterraneo fusi in un'infinità devozionale."
@@ -522,6 +533,9 @@
     "counter-reformation": {
       "1543→1580": "Il Concilio di Trento non si era ancora riunito quando Copernico pubblicò; nel 1580 aveva definito l'ortodossia per tre secoli. I santi estatici di El Greco incarnano il misticismo della Controriforma — protendendosi verso il cielo attraverso l'intensità emotiva, non la proporzione razionale.",
       "1580→1600": "Lo scetticismo di Montaigne era una ribellione silenziosa — il dubbio come modo per sopravvivere alla guerra religiosa. La visione cosmica di Bruno era aperta sfida. La Controriforma tollerò il primo e bruciò il secondo: alcune eresie possono nascondersi nei saggi, altre no."
+    },
+    "english-romanticism": {
+      "1798→1816": "Le Lyrical Ballads di Wordsworth e Coleridge germinano nella piovosa Ginevra: Mary Shelley eredita il loro culto della natura ma aggiunge il terrore gotico — il Romanticismo scopre il suo gemello oscuro."
     }
   }
 }
