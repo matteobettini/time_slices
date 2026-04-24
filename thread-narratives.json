@@ -126,7 +126,9 @@
       "1600→1610": "Caravaggio's disciples scatter across Europe, carrying tenebrism from Rome's taverns to the world's salons.",
       "1610→1648": "From Caravaggio's dramatic light, Rembrandt forges a Protestant chiaroscuro — shadow as moral inquiry, not theatrical effect.",
       "1648→1670": "The Baroque's theatricality turns inward: while Catholic churches stage spectacle, Dutch interiors reveal domestic light as spiritual presence — Vermeer's stillness speaks as loudly as Bernini's drama.",
-      "1670→1714": "From Dutch interiors to French salons: Vermeer's quiet devotion gives way to Watteau's theatrical melancholy. The Rococo is Baroque grown intimate."
+      "1670→1714": "From Dutch interiors to French salons: Vermeer's quiet devotion gives way to Watteau's theatrical melancholy. The Rococo is Baroque grown intimate.",
+      "1610→1641": "From Caravaggio's final canvases to Claude Lorrain's luminous ports: Baroque naturalism moves from Roman chiaroscuro to French ideal landscape, while Dutch masters channel it into Protestant interiors.",
+      "1641→1648": "Van Dyck dies; Rembrandt completes The Night Watch. The Baroque splits: Catholic theatricality versus Protestant introspection, court magnificence versus civic portraiture."
     },
     "empiricism": {
       "1543→1687": "Vesalius trusted dissection over Galen; Newton trusted mathematics over tradition. Both empiricisms — anatomical and physical — insisted that observation trumped authority.",
@@ -226,7 +228,8 @@
       "1848→1859": "The Springtime of Peoples in 1848 was crushed, but the dream of national self-determination survived. A decade later, at Solferino, Italian nationalists saw France defeat Austria—and the Risorgimento entered its decisive phase."
     },
     "dutch-golden-age": {
-      "1648→1670": "Independence secured, the Republic becomes Europe's richest state. Rembrandt dies poor while Vermeer paints hidden faith; Spinoza grinds lenses while thinking thoughts that will be banned."
+      "1648→1670": "Independence secured, the Republic becomes Europe's richest state. Rembrandt dies poor while Vermeer paints hidden faith; Spinoza grinds lenses while thinking thoughts that will be banned.",
+      "1641→1648": "Rembrandt's intimate mastery while the Republic wins formal independence. Dutch painting becomes the visual culture of commercial triumph and Protestant restraint."
     },
     "secularization": {
       "1648→1670": "Westphalia's principle — states, not churches, determine order — now shapes thought itself. Spinoza's Tractatus separates philosophy from theology; Pascal defends faith through doubt, not authority.",
@@ -252,7 +255,8 @@
       "1848→1937": "Marx diagnosed how capitalism alienates and exploits; Gramsci asks the harder question — why do the exploited consent? His Prison Notebooks forge 'hegemony' from a fascist cell."
     },
     "rationalism": {
-      "1670→1714": "Spinoza's anonymous Tractatus becomes Leibniz's official Monadology. The God-intoxicated system-builders compete to explain why mind and body seem connected when they cannot touch."
+      "1670→1714": "Spinoza's anonymous Tractatus becomes Leibniz's official Monadology. The God-intoxicated system-builders compete to explain why mind and body seem connected when they cannot touch.",
+      "1641→1670": "Descartes' cogito grounds knowledge in the thinking self; Spinoza will rebuild it into geometric Ethics, fusing God and Nature, erasing the gap between subject and world."
     },
     "late-antiquity": {
       "476→529": "What looked like Rome's fall was actually Rome's metamorphosis — Gothic kings, Byzantine emperors, and Christian philosophers all claimed its inheritance."
@@ -270,6 +274,9 @@
     },
     "english-romanticism": {
       "1798→1816": "Wordsworth and Coleridge's Lyrical Ballads germinate in rain-soaked Geneva: Mary Shelley inherits their nature-worship but adds Gothic dread — Romanticism discovers its dark twin."
+    },
+    "cartesian-doubt": {
+      "1641→1648": "Descartes' Meditations inaugurates radical doubt as philosophical method; by Westphalia, doubt has become political: if God cannot settle religious truth, sovereignty must."
     }
   },
   "it": {
@@ -392,7 +399,9 @@
       "1600→1610": "I discepoli di Caravaggio si disperdono per l'Europa, portando il tenebrismo dalle taverne romane ai salotti del mondo.",
       "1610→1648": "Dalla luce drammatica di Caravaggio, Rembrandt forgia un chiaroscuro protestante — l'ombra come indagine morale, non effetto teatrale.",
       "1648→1670": "La teatralità del Barocco si rivolge all'interno: mentre le chiese cattoliche mettono in scena lo spettacolo, gli interni olandesi rivelano la luce domestica come presenza spirituale — la quiete di Vermeer parla forte quanto il dramma di Bernini.",
-      "1670→1714": "Dagli interni olandesi ai saloni francesi: la devozione silenziosa di Vermeer cede il passo alla malinconia teatrale di Watteau. Il Rococò è il Barocco divenuto intimo."
+      "1670→1714": "Dagli interni olandesi ai saloni francesi: la devozione silenziosa di Vermeer cede il passo alla malinconia teatrale di Watteau. Il Rococò è il Barocco divenuto intimo.",
+      "1610→1641": "Dalle ultime tele di Caravaggio ai porti luminosi di Claude Lorrain: il naturalismo barocco passa dal chiaroscuro romano al paesaggio ideale francese, mentre i maestri olandesi lo incanalano negli interni protestanti.",
+      "1641→1648": "Van Dyck muore; Rembrandt completa La Ronda di notte. Il Barocco si divide: teatralità cattolica contro introspezione protestante, magnificenza di corte contro ritrattistica civica."
     },
     "empiricism": {
       "1543→1687": "Vesalio si fidava della dissezione più che di Galeno; Newton si fidava della matematica più che della tradizione.",
@@ -492,7 +501,8 @@
       "1848→1859": "La Primavera dei Popoli del 1848 fu schiacciata, ma il sogno dell'autodeterminazione nazionale sopravvisse. Un decennio dopo, a Solferino, i nazionalisti italiani videro la Francia sconfiggere l'Austria—e il Risorgimento entrò nella sua fase decisiva."
     },
     "dutch-golden-age": {
-      "1648→1670": "Assicurata l'indipendenza, la Repubblica diventa lo stato più ricco d'Europa. Rembrandt muore povero mentre Vermeer dipinge la fede nascosta; Spinoza mola lenti mentre pensa pensieri che saranno banditi."
+      "1648→1670": "Assicurata l'indipendenza, la Repubblica diventa lo stato più ricco d'Europa. Rembrandt muore povero mentre Vermeer dipinge la fede nascosta; Spinoza mola lenti mentre pensa pensieri che saranno banditi.",
+      "1641→1648": "La maestria intima di Rembrandt mentre la Repubblica conquista l'indipendenza formale. La pittura olandese diventa cultura visiva del trionfo commerciale e della sobrietà protestante."
     },
     "secularization": {
       "1648→1670": "Il principio di Vestfalia — gli stati, non le chiese, determinano l'ordine — ora plasma il pensiero stesso. Il Trattato di Spinoza separa la filosofia dalla teologia; Pascal difende la fede attraverso il dubbio, non l'autorità.",
@@ -518,7 +528,8 @@
       "1848→1937": "Marx diagnosticò come il capitalismo aliena e sfrutta; Gramsci pone la domanda più difficile — perché gli sfruttati consentono? I suoi Quaderni del carcere forgiano l''egemonia' da una cella fascista."
     },
     "rationalism": {
-      "1670→1714": "Il Trattato anonimo di Spinoza diventa la Monadologia ufficiale di Leibniz. I costruttori di sistemi ebbri di Dio competono per spiegare perché mente e corpo sembrano connessi quando non possono toccarsi."
+      "1670→1714": "Il Trattato anonimo di Spinoza diventa la Monadologia ufficiale di Leibniz. I costruttori di sistemi ebbri di Dio competono per spiegare perché mente e corpo sembrano connessi quando non possono toccarsi.",
+      "1641→1670": "Il cogito di Cartesio fonda la conoscenza nel soggetto pensante; Spinoza lo ricostruirà in un'Etica geometrica, fondendo Dio e Natura, cancellando il divario tra soggetto e mondo."
     },
     "late-antiquity": {
       "476→529": "Quella che sembrava la caduta di Roma fu in realtà la sua metamorfosi: re goti, imperatori bizantini e filosofi cristiani ne rivendicarono tutti l'eredità."
@@ -536,6 +547,9 @@
     },
     "english-romanticism": {
       "1798→1816": "Le Lyrical Ballads di Wordsworth e Coleridge germinano nella piovosa Ginevra: Mary Shelley eredita il loro culto della natura ma aggiunge il terrore gotico — il Romanticismo scopre il suo gemello oscuro."
+    },
+    "cartesian-doubt": {
+      "1641→1648": "Le Meditazioni di Cartesio inaugurano il dubbio radicale come metodo filosofico; a Westfalia, il dubbio diventa politico: se Dio non può stabilire la verità religiosa, deve farlo la sovranità."
     }
   }
 }
