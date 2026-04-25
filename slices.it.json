@@ -4485,5 +4485,79 @@
       "url": "audio/it/1641-year-of-doubt.mp3",
       "duration": 188
     }
+  },
+  {
+    "year": "1886",
+    "id": "1886-paris-divided-light",
+    "title": "Parigi — La luce divisa",
+    "teaser": "L'Impressionismo muore alla sua ottava mostra. Seurat divide la luce in punti. Stevenson divide l'io in Jekyll e Hyde. Nietzsche invoca filosofi al di là del bene e del male. Emily Dickinson muore, la sua vita segreta di poesia scoperta. Tutto si scinde.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "L'<strong>ottava e ultima mostra impressionista</strong> apre a Parigi il 15 maggio — e seppellisce il movimento che celebra. <strong>Georges Seurat</strong> svela <em>Una domenica pomeriggio sull'isola della Grande-Jatte</em>, tre metri di larghezza, due anni di lavoro, composta interamente da minuscoli punti di colore puro che l'occhio fonde a distanza. Il critico Félix Fénéon conia <strong>Neo-Impressionismo</strong> per descrivere questo approccio scientifico alla luce. Dove Monet catturava impressioni fugaci, Seurat le costruisce sistematicamente. <strong>Paul Signac</strong> diventa il suo principale apostolo. A marzo, <strong>Van Gogh</strong> arriva a Parigi da Anversa; la cupa tavolozza olandese che aveva prodotto <em>I mangiatori di patate</em> si frantumerà contro la luce francese. Incontra Toulouse-Lautrec nello studio di Cormon, scopre le stampe giapponesi, sperimenta la tecnica puntinista. In due anni, i suoi colori esploderanno."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "A gennaio, <em>Lo strano caso del dottor Jekyll e del signor Hyde</em> di <strong>Robert Louis Stevenson</strong> vende 40.000 copie in sei mesi — un thriller da un soldo che perseguita la rispettabilità vittoriana. Il colpo di scena (Jekyll <em>è</em> Hyde) sconvolge i lettori; l'allegoria li consola: il male può essere contenuto, separato, controllato. Ma il messaggio va più in profondità — la rispettabilità stessa è la maschera. Il <strong>15 maggio</strong>, lo stesso giorno dell'apertura della mostra impressionista, <strong>Emily Dickinson</strong> muore ad Amherst a cinquantacinque anni. Sua sorella Lavinia scopre 1.800 poesie in un baule chiuso a chiave — una vita doppia segreta, la reclusa come rivoluzionaria. <em>Il piccolo Lord</em> di <strong>Frances Hodgson Burnett</strong> offre l'altra sensazione editoriale dell'anno — sentimentale, transatlantica, rassicurante. Il contrasto con Stevenson è totale."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>Friedrich Nietzsche</strong> pubblica <em>Al di là del bene e del male: Preludio a una filosofia dell'avvenire</em>, autofinanziato dopo il rifiuto degli editori. Il titolo è il programma: superare la morale degli schiavi che divide il mondo in bene e male, riconoscere la moralità come genealogia, prospettivismo, volontà di potenza. Invoca <strong>'nuovi filosofi'</strong> che saranno 'comandanti e legislatori'. Il libro continua l'attacco al Cristianesimo iniziato nello <em>Zarathustra</em> e anticipa la <em>Genealogia della morale</em> dell'anno successivo. Tra tre anni Nietzsche crollerà a Torino, la sua vita produttiva terminata. Ma nel 1886 è al massimo della lucidità, dissezionando le ipocrisie della morale europea con precisione chirurgica. La volontà di verità, sostiene, è essa stessa una forma della volontà di potenza."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il <strong>4 maggio</strong>, una bomba esplode a Haymarket Square, Chicago, durante una manifestazione operaia per la giornata di otto ore. La polizia spara sulla folla; muoiono sette agenti e almeno quattro civili. Otto leader anarchici vengono condannati senza prove che li colleghino all'attentatore — l'<strong>affare Haymarket</strong> diventa il martirologio del lavoro, l'origine del Primo Maggio. Cinque mesi dopo, il <strong>28 ottobre</strong>, il presidente Cleveland inaugura la <strong>Statua della Libertà</strong> nel porto di New York — il colosso di Bartholdi, lo scheletro di Eiffel, il dono francese della 'Libertà che illumina il mondo'. La giustapposizione è perfetta: la libertà proclamata mentre il lavoro viene schiacciato. In Birmania i britannici completano l'annessione. <strong>Geronimo</strong> si arrende in Arizona, ponendo fine alle Guerre Apache."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Il tema dell'anno è la <strong>divisione che rivela la profondità</strong>. Seurat divide la luce in punti; Stevenson divide l'io in maschere; Nietzsche divide la moralità in padroni e schiavi, poi invoca il superamento. Gli anarchici di Haymarket e la Statua della Libertà incarnano la stessa scissione — la libertà come ideale contro la libertà come repressione. Perfino la morte di Dickinson la incarna: la reclusa visibile nascondeva una poetessa invisibile. Il Neo-Impressionismo rende esplicito il meccanismo: avvicinati a <em>La Grande-Jatte</em> e vedi solo caos — punti colorati, segni senza senso. Fai un passo indietro e l'ordine emerge, le figure si solidificano, il pomeriggio domenicale si assembla da frammenti. È lo spettatore a compiere la sintesi. È una teoria della percezione, ma anche della società: da abbastanza lontano, tutto trova coerenza.",
+        "funFact": "Van Gogh dipinse oltre 200 opere nei suoi due anni a Parigi — più che in qualsiasi altro luogo — ma fu così trasformato dall'esperienza che in seguito raramente discusse questo periodo, come se si vergognasse di quanto aveva dovuto disimparare."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Neo-impressionismo",
+        "title": "Neo-impressionismo - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Al_di_l%C3%A0_del_bene_e_del_male",
+        "title": "Al di là del bene e del male - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Lo_strano_caso_del_dottor_Jekyll_e_del_signor_Hyde",
+        "title": "Lo strano caso del dottor Jekyll e del signor Hyde - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Rivolta_di_Haymarket",
+        "title": "Rivolta di Haymarket - Wikipedia"
+      },
+      {
+        "url": "https://www.vangoghmuseum.nl/en/art-and-stories/vincents-life-1853-1890/from-dark-to-light",
+        "title": "From Dark to Light - Van Gogh Museum"
+      }
+    ],
+    "image": {
+      "url": "images/1886-paris-divided-light.jpg",
+      "caption": "Georges Seurat, Una domenica pomeriggio sull'isola della Grande-Jatte, 1884-1886",
+      "attribution": "Georges Seurat, Pubblico dominio, tramite Wikimedia Commons",
+      "width": 1200,
+      "height": 799
+    },
+    "threads": [
+      "neo-impressionism",
+      "critique-of-modernity",
+      "fin-de-siecle",
+      "philosophical-autobiography"
+    ],
+    "location": {
+      "lat": 48.8606,
+      "lon": 2.3376,
+      "place": "Parigi"
+    },
+    "addedDate": "2026-04-25T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1886-paris-divided-light.mp3",
+      "duration": 216
+    }
   }
 ]
