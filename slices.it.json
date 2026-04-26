@@ -4559,5 +4559,61 @@
       "url": "audio/it/1886-paris-divided-light.mp3",
       "duration": 216
     }
+  },
+  {
+    "id": "1932-year-of-dark-visions",
+    "year": 1932,
+    "title": "L'Anno delle Visioni Oscure",
+    "teaser": "Huxley pubblica Il Mondo Nuovo mentre il nichilismo di Céline sconvolge Parigi. Otto Dix dipinge l'incubo della guerra mentre il fascismo reale avanza in Europa. I veterani marciano su Washington chiedendo i loro soldi; i carri armati li cacciano. Bergson chiede se il misticismo possa salvare la civiltà da se stessa.",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "place": "Parigi",
+    "threads": [
+      "critique-of-modernity",
+      "dystopia",
+      "great-depression",
+      "neue-sachlichkeit",
+      "vitalism"
+    ],
+    "art": "<strong>Otto Dix</strong> completa il suo monumentale trittico <em>La Guerra</em> — quattro pannelli di legno che raffigurano la carneficina della Prima Guerra Mondiale con la solennità di una pala d'altare rinascimentale. Il formato evoca deliberatamente la <strong>Pala di Isenheim</strong> di Grünewald, ma invece della sofferenza di Cristo vediamo soldati anonimi che marciano nella nebbia, resti scheletrici nelle trincee fangose, una figura con maschera antigas che infesta paesaggi devastati. La <strong>Neue Sachlichkeit</strong> (Nuova Oggettività) ha sostituito le urla dell'Espressionismo con una documentazione clinica. A Detroit, <strong>Frida Kahlo</strong> dipinge <em>Ospedale Henry Ford</em> — il suo corpo nudo su un letto d'ospedale, sei oggetti simbolici collegati da filamenti rossi: il feto abortito, l'orchidea, l'osso pelvico, i macchinari industriali. Il <strong>Surrealismo</strong> messicano incontra l'autobiografia mentre trasforma il trauma privato in testimonianza pubblica.",
+    "literature": "<strong>Aldous Huxley</strong> pubblica <em>Il Mondo Nuovo</em> — una distopia non di punizione ma di piacere, dove gli esseri umani sono decantati in laboratori, smistati in caste e pacificati con il soma. È una parodia del tecno-ottimismo di <strong>H.G. Wells</strong>, scritta mentre la Depressione rivela la fragilità della civiltà industriale. Il <em>Viaggio al termine della notte</em> di <strong>Louis-Ferdinand Céline</strong> fa deflagrare la letteratura francese con il suo nichilismo intriso di slang: Ferdinand Bardamu vaga dalle trincee della Prima Guerra Mondiale all'Africa coloniale alle catene di montaggio di Ford, trovando ovunque l'assurdo. <em>Luce d'agosto</em> di <strong>Faulkner</strong> esplora la violenza razziale nel Sud americano. La letteratura del 1932 non offre consolazioni — solo diagnosi.",
+    "philosophy": "<strong>Henri Bergson</strong>, ormai settantatreenne, pubblica la sua ultima grande opera: <em>Le due fonti della morale e della religione</em>. Distingue la morale <strong>chiusa</strong> — tribale, difensiva, radicata nella pressione sociale — dalla morale <strong>aperta</strong>, che scaturisce dall'esperienza mistica ed estende l'amore a tutta l'umanità. Solo il 'mistico completo' può sfondare il cerchio chiuso dell'obbligo verso la genuina libertà morale. È la risposta di Bergson alla catastrofe che si sta svolgendo intorno a lui: né la ragione né l'istinto salveranno la civiltà, solo l'<strong>amore creativo</strong> nato dal contatto diretto con l'<em>élan vital</em>. I positivisti del <strong>Circolo di Vienna</strong>, intanto, stanno fuggendo o si preparano a fuggire mentre la vita intellettuale nell'Europa germanofona si contrae.",
+    "history": "La <strong>Grande Depressione</strong> raggiunge il suo punto più basso — la disoccupazione si avvicina al 25% in America, al 30% in Germania. In luglio, l'<strong>Esercito del Bonus</strong> — 43.000 veterani della Prima Guerra Mondiale che chiedono il pagamento anticipato dei loro certificati di servizio — si accampa sulle Anacostia Flats di Washington. Il presidente Hoover ordina all'esercito di sfrattarli; <strong>Douglas MacArthur</strong> guida cavalleria e carri armati contro veterani disarmati, bruciando i loro rifugi. L'immagine distrugge Hoover. In novembre, <strong>Franklin Roosevelt</strong> vince con una valanga promettendo un 'New Deal'. In Germania, <strong>Hitler</strong> si candida alla presidenza contro Hindenburg, perde, ma il Partito Nazista diventa il più grande nel Reichstag. La macchina è pronta.",
+    "connections": "La figura ricorrente dell'anno è il <strong>veterano</strong> — i soldati scheletrici di Dix, il Bardamu di Céline, i marciatori del Bonus che dormono nei giardini del Campidoglio. I sopravvissuti della Grande Guerra sono diventati i fantasmi della società, chiedendo un riconoscimento che la civiltà rifiuta di dare. La distinzione di Bergson tra società chiuse e aperte si mappa direttamente sulla crisi politica: il fascismo offre la risposta <strong>chiusa</strong>, solidarietà tribale contro i nemici percepiti; Bergson spera in una <strong>apertura</strong> che sembra sempre più impossibile. La distopia di Huxley e il nichilismo di Céline condividono una diagnosi: la modernità ha perfezionato i suoi meccanismi di controllo, sia attraverso il piacere che lo sfruttamento, e la fuga richiede di vedere attraverso lo spettacolo.",
+    "funFact": "Quando le truppe di MacArthur bruciarono il campo dell'Esercito del Bonus, il maggiore Dwight D. Eisenhower prestava servizio come suo aiutante. Eisenhower in seguito lo definì 'una scena pietosa' e si oppose all'azione militare. I due futuri generali non andarono mai d'accordo sulle relazioni civili.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Brave_New_World",
+        "title": "Brave New World - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Journey_to_the_End_of_the_Night",
+        "title": "Journey to the End of the Night - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_War_(Dix_triptych)",
+        "title": "The War (Dix) - Wikipedia"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/bergson/",
+        "title": "Henri Bergson - Stanford Encyclopedia of Philosophy"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Bonus_Army",
+        "title": "Bonus Army - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1932-year-of-dark-visions.jpg",
+      "caption": "Veterani dell'Esercito del Bonus in viaggio verso Washington D.C. sui vagoni merci, 1932",
+      "width": 800,
+      "height": 558,
+      "attribution": "Public domain, via Wikimedia Commons"
+    },
+    "addedDate": "2026-04-26",
+    "podcast": {
+      "url": "audio/it/1932-year-of-dark-visions.mp3",
+      "duration": 287
+    }
   }
 ]

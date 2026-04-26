@@ -4575,5 +4575,61 @@
       "url": "audio/1886-paris-divided-light.mp3",
       "duration": 211
     }
+  },
+  {
+    "id": "1932-year-of-dark-visions",
+    "year": 1932,
+    "title": "The Year of Dark Visions",
+    "teaser": "Huxley publishes Brave New World while Céline's nihilism shocks Paris. Otto Dix paints war's nightmare as actual fascism rises across Europe. Veterans march on Washington demanding payment; tanks drive them out. Bergson asks whether mysticism can save civilization from itself.",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "place": "Paris",
+    "threads": [
+      "critique-of-modernity",
+      "dystopia",
+      "great-depression",
+      "neue-sachlichkeit",
+      "vitalism"
+    ],
+    "art": "<strong>Otto Dix</strong> completes his monumental triptych <em>The War</em> — four wooden panels depicting WWI's carnage with Renaissance altarpiece solemnity. The format deliberately evokes Grünewald's <strong>Isenheim Altarpiece</strong>, but instead of Christ's suffering, we see anonymous soldiers marching into fog, skeletal remains in muddy trenches, a gas-masked figure haunting devastated landscapes. <strong>Neue Sachlichkeit</strong> (New Objectivity) has replaced Expressionism's screams with clinical documentation. In Detroit, <strong>Frida Kahlo</strong> paints <em>Henry Ford Hospital</em> — her naked body on a hospital bed, six symbolic objects connected by red filaments: the miscarried fetus, the orchid, the pelvic bone, the industrial machinery. Mexican <strong>Surrealism</strong> meets autobiography as she transforms private trauma into public testimony.",
+    "literature": "<strong>Aldous Huxley</strong> publishes <em>Brave New World</em> — a dystopia not of punishment but of pleasure, where humans are decanted in laboratories, sorted into castes, and pacified with soma. It's a parody of <strong>H.G. Wells</strong>'s techno-optimism, written while the Depression reveals industrial civilization's fragility. <strong>Louis-Ferdinand Céline</strong>'s <em>Voyage au bout de la nuit</em> detonates French literature with its slang-soaked nihilism: Ferdinand Bardamu wanders from WWI trenches to colonial Africa to Ford's assembly lines, finding absurdity everywhere. <strong>Faulkner</strong>'s <em>Light in August</em> explores racial violence in the American South. The literature of 1932 offers no consolations — only diagnosis.",
+    "philosophy": "<strong>Henri Bergson</strong>, now seventy-three, publishes his final major work: <em>Les Deux Sources de la morale et de la religion</em>. It distinguishes <strong>closed</strong> morality — tribal, defensive, rooted in social pressure — from <strong>open</strong> morality, which springs from mystical experience and extends love to all humanity. Only the 'complete mystic' can break through the closed circle of obligation to genuine moral freedom. It's Bergson's answer to the catastrophe unfolding around him: neither reason nor instinct will save civilization, only <strong>creative love</strong> born of direct contact with the <em>élan vital</em>. The <strong>Vienna Circle</strong> positivists, meanwhile, are fleeing or preparing to flee as intellectual life in German-speaking Europe contracts.",
+    "history": "The <strong>Great Depression</strong> reaches its nadir — unemployment approaches 25% in America, 30% in Germany. In July, the <strong>Bonus Army</strong> — 43,000 WWI veterans demanding early payment of their service certificates — camps on Washington's Anacostia Flats. President Hoover orders the Army to evict them; <strong>Douglas MacArthur</strong> leads cavalry and tanks against unarmed veterans, burning their shelters. The image destroys Hoover. In November, <strong>Franklin Roosevelt</strong> wins by landslide promising a 'New Deal.' In Germany, <strong>Hitler</strong> runs for president against Hindenburg, loses, but the Nazi Party becomes the largest in the Reichstag. The machinery is in place.",
+    "connections": "The year's recurring figure is the <strong>veteran</strong> — Dix's skeletal soldiers, Céline's Bardamu, the Bonus marchers sleeping on Capitol grounds. The Great War's survivors have become society's ghosts, demanding recognition that civilization refuses to give. Bergson's distinction between closed and open societies maps directly onto the political crisis: fascism offers the <strong>closed</strong> answer, tribal solidarity against perceived enemies; Bergson hopes for an <strong>open</strong> breakthrough that increasingly seems impossible. Huxley's dystopia and Céline's nihilism share a diagnosis: modernity has perfected its mechanisms of control, whether through pleasure or exploitation, and escape requires seeing through the spectacle.",
+    "funFact": "When MacArthur's troops burned the Bonus Army camp, Major Dwight D. Eisenhower served as his aide. Eisenhower later called it 'a pitiful scene' and opposed the military action. The two future generals never saw eye to eye on civilian relations.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Brave_New_World",
+        "title": "Brave New World - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Journey_to_the_End_of_the_Night",
+        "title": "Journey to the End of the Night - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_War_(Dix_triptych)",
+        "title": "The War (Dix) - Wikipedia"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/bergson/",
+        "title": "Henri Bergson - Stanford Encyclopedia of Philosophy"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Bonus_Army",
+        "title": "Bonus Army - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1932-year-of-dark-visions.jpg",
+      "caption": "Bonus Army veterans traveling to Washington D.C. on freight cars, 1932",
+      "width": 800,
+      "height": 558,
+      "attribution": "Public domain, via Wikimedia Commons"
+    },
+    "podcast": {
+      "url": "audio/1932-year-of-dark-visions.mp3",
+      "duration": 238
+    },
+    "addedDate": "2026-04-26"
   }
 ]
