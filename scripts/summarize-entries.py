@@ -38,7 +38,7 @@ def main():
         entries = json.load(f)
     
     # Sort by year
-    entries_sorted = sorted(entries, key=lambda e: int(e["year"]) if e["year"].lstrip('-').isdigit() else 0)
+    entries_sorted = sorted(entries, key=lambda e: int(str(e["year"])) if str(e["year"]).lstrip('-').isdigit() else 0)
     
     # Collect data
     years_covered = []
@@ -83,7 +83,7 @@ def main():
     # Timeline gaps
     print("## Timeline Gaps")
     print()
-    years_int = [int(e["year"]) for e in entries_sorted if e["year"].lstrip('-').isdigit()]
+    years_int = [int(str(e["year"])) for e in entries_sorted if str(e["year"]).lstrip('-').isdigit()]
     years_int.sort()
     gaps = []
     for i in range(len(years_int) - 1):

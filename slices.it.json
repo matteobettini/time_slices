@@ -4615,5 +4615,79 @@
       "url": "audio/it/1932-year-of-dark-visions.mp3",
       "duration": 287
     }
+  },
+  {
+    "year": "1751",
+    "id": "1751-paris-reason-unveiled",
+    "title": "Parigi — La Ragione Svelata",
+    "teaser": "In un solo anno Diderot pubblica il primo volume dell'Encyclopédie, d'Alembert traccia l'albero del sapere umano, Voltaire reinventa la storia, Boucher dipinge Venere per Pompadour, e Thomas Gray piange i morti dimenticati d'Inghilterra. I philosophes dichiarano guerra all'ignoranza.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Il <strong>Rococò</strong> raggiunge il suo apice come stile della Parigi illuminista — non malgrado la sua sensualità, ma proprio attraverso essa. <strong>François Boucher</strong>, il pittore più in voga dell'epoca, completa la <em>Toilette di Venere</em> per il ritiro di Madame de Pompadour a Bellevue. La dea sorge circondata da putti, sete e perle — una celebrazione del piacere che rispecchia la riabilitazione della felicità terrena operata dai philosophes contro la mortificazione cristiana. Lo stesso anno Boucher diventa professore di disegno della Pompadour, ed ella emerge come la più potente mecenate dell'Illuminismo: protettrice di Voltaire, sostenitrice dell'<em>Encyclopédie</em>, arbitra del gusto del regime. La leggerezza rococò non è frivolezza: è l'estetica dell'ancien régime al servizio delle nuove idee."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "<strong>Voltaire</strong> pubblica <em>Le Siècle de Louis XIV</em>, un'opera che trasforma la storiografia stessa. Non più cronaca di re e battaglie, la storia diventa racconto della civiltà: arti, scienze, costumi, istituzioni. Voltaire identifica quattro grandi epoche dell'umanità: l'Atene di Pericle, la Roma di Augusto, l'Italia rinascimentale e la Francia di Luigi XIV. Questa è <strong>storia culturale</strong> prima ancora che il termine esista. In Inghilterra appare l'<em>Elegia scritta in un cimitero campestre</em> di <strong>Thomas Gray</strong> — forse la poesia più celebre del secolo. La sua meditazione sulla mortalità democratizza la morte: anche i 'rozzi antenati del villaggio' meritano di essere ricordati. La poesia fonda la <strong>Graveyard School</strong>, che confluirà nel Romanticismo."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Il 28 giugno appare a Parigi il primo volume dell'<strong><em>Encyclopédie, ou Dictionnaire raisonné des sciences, des arts et des métiers</em></strong>. <strong>Denis Diderot</strong> dirige la vasta impresa; <strong>Jean le Rond d'Alembert</strong> ne scrive il manifesto filosofico, il <em>Discorso preliminare</em>. D'Alembert mappa la conoscenza umana su tre facoltà — memoria, ragione, immaginazione — e ne deriva storia, filosofia e arti. Questa è <strong>epistemologia empirista</strong> resa operativa: ogni conoscenza nasce dalla sensazione, non dalla rivelazione. Chiesa e Corona riconoscono subito la minaccia; censura e condanna seguiranno. Ma il primo volume va esaurito all'istante. L'Illuminismo ha ora il suo motore."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "La Francia del 1751 è un paradosso: culturalmente dominante, politicamente fragile. <strong>Luigi XV</strong> regna ma non governa; il Parlamento di Parigi afferma la propria autorità; il debito della Guerra di Successione Austriaca incancrenisce. Madame de Pompadour, favorita ufficiale del re dal 1745, esercita un'influenza culturale che nessun ministro può eguagliare. Protegge i <em>philosophes</em> dalle persecuzioni e commissiona l'arte che definisce l'epoca. Ma questo è anche l'anno in cui le <strong>Guerre Carnatiche</strong> volgono contro la Francia in India — Robert Clive sconfigge un esercito franco-indiano ad Arni in dicembre. La Guerra dei Sette Anni si avvicina. La supremazia intellettuale francese sopravviverà a quella militare."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Ciò che unisce il 1751 è il <strong>mecenatismo che transita attraverso Pompadour</strong>. Lei protesse Voltaire a corte; incoraggiò la pubblicazione dell'<em>Encyclopédie</em>; impiegò Boucher e promosse il gusto rococò. I philosophes si muovevano in cerchie interconnesse: Voltaire contribuì articoli all'<em>Encyclopédie</em>, d'Alembert frequentava gli stessi salotti dei committenti di Boucher, e tutti attingevano alla filosofia sensista di Locke e Condillac. Persino Gray, dall'altra parte della Manica, condivide le premesse empiriste dell'epoca — la sua Elegia osserva i particolari prima di trarre conclusioni universali. Il <em>Discorso preliminare</em> è il progetto teorico; le tavole dell'<em>Encyclopédie</em> che illustrano arti e mestieri ne sono l'espressione pratica; la sensualità di Boucher ne è la dimensione estetica. Tutto è connesso.",
+        "funFact": "Il celebre frontespizio dell'Encyclopédie mostra la Verità svelata dalla Ragione e dalla Filosofia — ma l'incisione fu completata solo nel 1772, una profezia pubblicata con vent'anni di ritardo."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.britannica.com/topic/Encyclopedie",
+        "title": "Encyclopaedia Britannica: Encyclopédie"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Preliminary_Discourse_to_the_Encyclopedia_of_Diderot",
+        "title": "Wikipedia: Preliminary Discourse to the Encyclopedia of Diderot"
+      },
+      {
+        "url": "https://www.britannica.com/topic/The-Age-of-Louis-XIV",
+        "title": "Encyclopaedia Britannica: The Age of Louis XIV"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Elegy_Written_in_a_Country_Churchyard",
+        "title": "Wikipedia: Elegy Written in a Country Churchyard"
+      },
+      {
+        "url": "https://www.metmuseum.org/art/collection/search/435739",
+        "title": "The Metropolitan Museum of Art: The Toilet of Venus (Boucher)"
+      }
+    ],
+    "image": {
+      "url": "images/1751-paris-reason-unveiled.jpg",
+      "caption": "Il frontespizio dell'Encyclopédie (1772), disegnato da Charles-Nicolas Cochin e inciso da Benoît-Louis Prévost: la Verità, raggiante di luce, viene svelata dalla Ragione e dalla Filosofia mentre le Arti si radunano ai suoi piedi",
+      "width": 1200,
+      "height": 1891,
+      "attribution": "Charles-Nicolas Cochin (disegno) e Benoît-Louis Prévost (incisione), Pubblico dominio, via Wikimedia Commons"
+    },
+    "threads": [
+      "enlightenment",
+      "empiricism",
+      "rococo",
+      "cultural-history"
+    ],
+    "location": {
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "place": "Parigi"
+    },
+    "addedDate": "2026-04-27T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1751-paris-reason-unveiled.mp3",
+      "duration": 154
+    }
   }
 ]

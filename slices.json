@@ -4631,5 +4631,79 @@
       "duration": 238
     },
     "addedDate": "2026-04-26"
+  },
+  {
+    "year": "1751",
+    "id": "1751-paris-reason-unveiled",
+    "title": "Paris — Reason Unveiled",
+    "teaser": "In a single year, Diderot publishes the first volume of the Encyclopédie, d'Alembert maps the tree of human knowledge, Voltaire reinvents history, Boucher paints Venus for Pompadour, and Thomas Gray mourns England's forgotten dead. The philosophes declare war on ignorance.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "The <strong>Rococo</strong> reaches its apex as the style of Enlightenment Paris — not despite its sensuality but through it. <strong>François Boucher</strong>, the era's most fashionable painter, completes <em>The Toilet of Venus</em> for Madame de Pompadour's retreat at Bellevue. The goddess rises surrounded by putti, silks, and pearls — a celebration of pleasure that mirrors the philosophes' rehabilitation of earthly happiness against Christian mortification. This same year, Boucher becomes Pompadour's drawing professor, and she emerges as the Enlightenment's most powerful patron: protector of Voltaire, advocate for the <em>Encyclopédie</em>, and taste-maker of the regime. Rococo lightness is no frivolity; it is ancien régime aesthetics serving new ideas."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Voltaire</strong> publishes <em>Le Siècle de Louis XIV</em>, a work that transforms historiography itself. No longer a chronicle of kings and battles, history becomes the story of civilisation — arts, sciences, manners, institutions. He identifies four great ages of humanity: Periclean Athens, Augustan Rome, Renaissance Italy, and Louis XIV's France. This is <strong>cultural history</strong> before the term exists. In England, <strong>Thomas Gray</strong>'s <em>Elegy Written in a Country Churchyard</em> appears — perhaps the most famous poem of the century. Its meditation on mortality democratises death: even the 'rude forefathers of the hamlet' deserve remembrance. The poem founds the <strong>Graveyard School</strong>, which will feed into Romanticism."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "On June 28th, the first volume of the <strong><em>Encyclopédie, ou Dictionnaire raisonné des sciences, des arts et des métiers</em></strong> appears in Paris. <strong>Denis Diderot</strong> edits the vast enterprise; <strong>Jean le Rond d'Alembert</strong> writes its philosophical manifesto, the <em>Preliminary Discourse</em>. D'Alembert maps human knowledge onto three faculties — memory, reason, imagination — and derives from them history, philosophy, and the arts. This is <strong>empiricist epistemology</strong> made operational: all knowledge begins in sensation, not revelation. The Church and Crown recognise the threat immediately; censorship and condemnation will follow. But the first volume sells out instantly. Enlightenment now has its engine."
+      },
+      "hist": {
+        "label": "History",
+        "content": "France in 1751 is a paradox: culturally dominant, politically fragile. <strong>Louis XV</strong> reigns but does not rule; the Parlement of Paris asserts its authority; debt from the War of Austrian Succession festers. Madame de Pompadour, the king's official mistress since 1745, wields cultural influence unmatched by any minister. She protects the <em>philosophes</em> from prosecution and commissions art that defines the era. Yet this is also the year the <strong>Carnatic Wars</strong> turn against France in India — Robert Clive defeats a Franco-Indian force at Arni in December. The Seven Years' War approaches. France's intellectual supremacy will outlast its military power."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "What unites 1751 is <strong>patronage flowing through Pompadour</strong>. She protected Voltaire at court; she encouraged the <em>Encyclopédie</em>'s publication; she employed Boucher and promoted Rococo taste. The philosophes moved in interlocking circles: Voltaire contributed articles to the <em>Encyclopédie</em>, d'Alembert frequented the same salons as Boucher's patrons, and all drew on the sensationalist philosophy of Locke and Condillac. Even Gray, across the Channel, shares the era's empiricist assumptions — his Elegy observes particulars before drawing universal conclusions. The <em>Preliminary Discourse</em> is the theoretical blueprint; the <em>Encyclopédie</em>'s plates illustrating trades and crafts are its practical expression; Boucher's sensuality is its aesthetic dimension. Everything connects.",
+        "funFact": "The Encyclopédie's famous frontispiece shows Truth unveiled by Reason and Philosophy — but the engraving wasn't completed until 1772, making it a prophecy published twenty years late."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.britannica.com/topic/Encyclopedie",
+        "title": "Encyclopaedia Britannica: Encyclopédie"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Preliminary_Discourse_to_the_Encyclopedia_of_Diderot",
+        "title": "Wikipedia: Preliminary Discourse to the Encyclopedia of Diderot"
+      },
+      {
+        "url": "https://www.britannica.com/topic/The-Age-of-Louis-XIV",
+        "title": "Encyclopaedia Britannica: The Age of Louis XIV"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Elegy_Written_in_a_Country_Churchyard",
+        "title": "Wikipedia: Elegy Written in a Country Churchyard"
+      },
+      {
+        "url": "https://www.metmuseum.org/art/collection/search/435739",
+        "title": "The Metropolitan Museum of Art: The Toilet of Venus (Boucher)"
+      }
+    ],
+    "image": {
+      "url": "images/1751-paris-reason-unveiled.jpg",
+      "caption": "The frontispiece of the Encyclopédie (1772), designed by Charles-Nicolas Cochin and engraved by Benoît-Louis Prévost: Truth, radiating light, is unveiled by Reason and Philosophy while the Arts gather at her feet",
+      "width": 1200,
+      "height": 1891,
+      "attribution": "Charles-Nicolas Cochin (design) and Benoît-Louis Prévost (engraving), Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "enlightenment",
+      "empiricism",
+      "rococo",
+      "cultural-history"
+    ],
+    "location": {
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "place": "Paris"
+    },
+    "addedDate": "2026-04-27T05:00:00Z",
+    "podcast": {
+      "url": "audio/1751-paris-reason-unveiled.mp3",
+      "duration": 158
+    }
   }
 ]

@@ -113,7 +113,9 @@
     "cubism": "Cubism",
     "skepticism": "Skepticism",
     "naturphilosophie": "Naturphilosophie",
-    "neo-impressionism": "Neo-Impressionism"
+    "neo-impressionism": "Neo-Impressionism",
+    "rococo": "Rococo",
+    "cultural-history": "Cultural History"
   },
   "it": {
     "translation-movement": "Traduzione come potere",
@@ -229,6 +231,8 @@
     "cubism": "Cubismo",
     "skepticism": "Scetticismo",
     "naturphilosophie": "Filosofia della natura",
-    "neo-impressionism": "Neo-impressionismo"
+    "neo-impressionism": "Neo-impressionismo",
+    "rococo": "Rococò",
+    "cultural-history": "Storia culturale"
   }
 }

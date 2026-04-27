@@ -135,7 +135,9 @@
       "1543→1610": "Vesalius taught physicians to cut; Galileo taught them to look through lenses — same epistemology, new instrument.",
       "1610→1687": "Galileo's observations demanded mathematical precision; Newton provided it, fusing seeing and calculating into a single method.",
       "1687→1776": "Newton's mathematical physics gave empiricism its grandest triumph; ninety years later, Hume's dying breath and Smith's invisible hand proved observation could master mind and market alike.",
-      "1776→1859": "Hume's skeptical empiricism in 1776 attacked causation as mere habit. By 1859, Darwin transformed empirical observation into a grand theory—natural selection—that would finally displace metaphysical speculation from the study of life."
+      "1776→1859": "Hume's skeptical empiricism in 1776 attacked causation as mere habit. By 1859, Darwin transformed empirical observation into a grand theory—natural selection—that would finally displace metaphysical speculation from the study of life.",
+      "1687→1751": "Newton's Principia gave empiricism a cosmic triumph; Locke's Essay gave it a mind. D'Alembert's Preliminary Discourse synthesised both into the Encyclopédie's epistemological manifesto.",
+      "1751→1776": "The Encyclopédie's sensationalist epistemology crossed the Channel; Hume radicalised it into scepticism, Adam Smith applied it to economic behaviour."
     },
     "scientific-revolution": {
       "1543→1687": "Copernicus repositioned the Earth; Newton explained why it stayed in orbit. The revolution Copernicus began, Newton completed.",
@@ -157,7 +159,9 @@
       "1687→1714": "Newton's mathematical cosmos becomes Leibniz's metaphysical harmony. The Monadology extends what the Principia began: explaining everything by universal law.",
       "1714→1755": "Leibniz dies defending pre-established harmony. Four decades later, Lisbon collapses — and Voltaire takes his hammer to everything Leibniz had built.",
       "1794→1798": "Condorcet's dying optimism meets Malthus's rebuttal; the guillotine's logic produces Goya's nightmares. Napoleon carries Enlightenment science to Egypt — imperialism as reason's final form.",
-      "1798→1831": "From Napoleon's savants measuring Egypt to Darwin aboard the Beagle — Enlightenment observation becomes imperial expedition becomes evolutionary science."
+      "1798→1831": "From Napoleon's savants measuring Egypt to Darwin aboard the Beagle — Enlightenment observation becomes imperial expedition becomes evolutionary science.",
+      "1714→1751": "Leibniz died with his optimism intact; d'Alembert's Preliminary Discourse mapped human knowledge onto human faculties, launching the Encyclopédie as the Enlightenment's engine.",
+      "1751→1755": "The Encyclopédie proclaimed reason's sovereignty in 1751; four years later, the Lisbon earthquake shattered that confidence, forcing Voltaire to satirise the very optimism the philosophes had inherited."
     },
     "critical-philosophy": {
       "1755→1784": "The earthquake forced Kant to reconsider natural theology; three decades later, his Critiques limited what reason could claim. Theodicy's failure birthed epistemology's caution."
@@ -416,7 +420,9 @@
       "1543→1610": "Vesalio insegnò ai medici a sezionare; Galileo insegnò loro a guardare attraverso lenti — stessa epistemologia, nuovo strumento.",
       "1610→1687": "Le osservazioni di Galileo richiedevano precisione matematica; Newton la fornì, fondendo osservazione e calcolo in un unico metodo.",
       "1687→1776": "La fisica matematica di Newton diede all'empirismo il suo trionfo più grande; novant'anni dopo, l'ultimo respiro di Hume e la mano invisibile di Smith dimostrarono che l'osservazione poteva dominare mente e mercato.",
-      "1776→1859": "L'empirismo scettico di Hume nel 1776 attaccò la causalità come mera abitudine. Nel 1859, Darwin trasformò l'osservazione empirica in una grande teoria—la selezione naturale—che avrebbe definitivamente soppiantato la speculazione metafisica nello studio della vita."
+      "1776→1859": "L'empirismo scettico di Hume nel 1776 attaccò la causalità come mera abitudine. Nel 1859, Darwin trasformò l'osservazione empirica in una grande teoria—la selezione naturale—che avrebbe definitivamente soppiantato la speculazione metafisica nello studio della vita.",
+      "1687→1751": "I Principia di Newton diedero all'empirismo un trionfo cosmico; il Saggio di Locke gli diede una mente. Il Discorso preliminare di d'Alembert sintetizzò entrambi nel manifesto epistemologico dell'Encyclopédie.",
+      "1751→1776": "L'epistemologia sensista dell'Encyclopédie attraversò la Manica; Hume la radicalizzò nello scetticismo, Adam Smith la applicò al comportamento economico."
     },
     "scientific-revolution": {
       "1543→1687": "Copernico riposizionò la Terra; Newton spiegò perché restava in orbita.",
@@ -438,7 +444,9 @@
       "1687→1714": "Il cosmo matematico di Newton diventa l'armonia metafisica di Leibniz. La Monadologia estende ciò che i Principia iniziarono: spiegare tutto con legge universale.",
       "1714→1755": "Leibniz muore difendendo l'armonia prestabilita. Quattro decenni dopo, Lisbona crolla — e Voltaire prende il martello a tutto ciò che Leibniz aveva costruito.",
       "1794→1798": "L'ottimismo morente di Condorcet incontra la replica di Malthus; la logica della ghigliottina produce gli incubi di Goya. Napoleone porta la scienza illuminista in Egitto — l'imperialismo come forma finale della ragione.",
-      "1798→1831": "Dai savants di Napoleone che misurano l'Egitto a Darwin a bordo del Beagle — l'osservazione illuminista diventa spedizione imperiale diventa scienza evoluzionistica."
+      "1798→1831": "Dai savants di Napoleone che misurano l'Egitto a Darwin a bordo del Beagle — l'osservazione illuminista diventa spedizione imperiale diventa scienza evoluzionistica.",
+      "1714→1751": "Leibniz morì col suo ottimismo intatto; il Discorso preliminare di d'Alembert mappò la conoscenza umana sulle facoltà umane, lanciando l'Encyclopédie come motore dell'Illuminismo.",
+      "1751→1755": "L'Encyclopédie proclamò la sovranità della ragione nel 1751; quattro anni dopo, il terremoto di Lisbona frantumò quella fiducia, costringendo Voltaire a satirizzare proprio l'ottimismo che i philosophes avevano ereditato."
     },
     "critical-philosophy": {
       "1755→1784": "Il terremoto costrinse Kant a riconsiderare la teologia naturale; tre decenni dopo, le sue Critiche limitarono ciò che la ragione poteva pretendere."
