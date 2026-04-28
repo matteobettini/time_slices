@@ -4689,5 +4689,79 @@
       "url": "audio/it/1751-paris-reason-unveiled.mp3",
       "duration": 154
     }
+  },
+  {
+    "year": "1532",
+    "id": "1532-princes-giants-gold",
+    "title": "Principi, giganti e oro",
+    "teaser": "Il Principe di Machiavelli finalmente va in stampa, insegnando ai governanti a dominare la fortuna con l'astuzia. Rabelais scatena i suoi giganti satirici sulla Francia attonita. Tommaso Moro si dimette quando coscienza e re entrano in conflitto. E in Perù, Pizarro cattura un imperatore il cui riscatto riempirà una stanza d'oro.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "<strong>Hans Holbein il Giovane</strong> si stabilisce a Londra quest'anno, in cerca di nuovi mecenati dopo che i suoi vecchi amici—tra cui Tommaso Moro—sono caduti in disgrazia. Tra i mercanti tedeschi dello <strong>Steelyard</strong> trova commissioni. Il suo ritratto di <em>Georg Gisze</em> diventa un capolavoro di precisione <strong>nordeuropea</strong>: ogni lettera, moneta e garofano reso con esattezza allucinatoria. Il motto sul muro—<em>'Nulla sine merore voluptas'</em>—cattura l'inquietudine dell'epoca. A Parma, <strong>Correggio</strong> completa <em>Giove e Io</em> per Federico Gonzaga, un'opera di sensualità mozzafiato dove Giove si dissolve in nuvola per abbracciare la ninfa. Il <strong>Manierismo</strong> sta emergendo—un'arte che privilegia eleganza e artificio sull'armonia rinascimentale."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "A Lione, <strong>François Rabelais</strong> pubblica <em>Pantagruel</em> sotto l'anagramma 'Alcofribas Nasier'—il primo di cinque romanzi che raccontano le avventure di due giganti satirici. Il libro deride l'educazione scolastica, il clero corrotto e l'assurdità giuridica con umorismo terrestre ed erudizione enciclopedica. Pantagruel usa la lingua come ombrello; dentro la sua bocca, Rabelais descrive un'intera civiltà. È l'<strong>umanesimo rinascimentale</strong> reso carnevalesco—lo stesso spirito <em>ad fontes</em> che spinse Erasmo verso i manoscritti greci qui spinge Rabelais verso il corpo. Intanto a Roma, i tipografi rilasciano finalmente <em>Il Principe</em> di <strong>Machiavelli</strong>—cinque anni dopo la sua morte, diciannove dopo averlo scritto per Lorenzo de' Medici."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>Il Principe</strong> di Machiavelli infrange la tradizione dello 'specchio dei principi'. Dove i trattati medievali esortavano i governanti alla virtù cristiana, Machiavelli insegna la <em>virtù</em>—l'astuzia e la forza per dominare la ruota della <em>fortuna</em>. 'È meglio essere temuto che amato,' scrive, 'se non si può essere entrambi.' Il libro inaugura il <strong>realismo politico</strong>: analizza il potere come effettivamente funziona, non come i moralisti vorrebbero. La prima filosofia politica moderna. Eppure lo stesso anno Tommaso Moro—autore di <em>Utopia</em>, il polo opposto del pensiero politico—si dimette da Lord Cancelliere d'Inghilterra piuttosto che tradire la propria coscienza. Machiavelli chiede cosa funziona; Moro chiede cosa è giusto. La storia giustizierà Moro e immortalerà Machiavelli."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il <strong>15 maggio</strong>, il clero inglese si sottomette a Enrico VIII: ogni legge ecclesiastica richiede ora l'assenso reale. Il giorno dopo, <strong>Tommaso Moro si dimette</strong>—non può approvare la supremazia del re sulla Chiesa. Enrico sposerà Anna Bolena entro pochi mesi; Moro morirà sul patibolo entro tre anni. Intanto, dall'altra parte dell'Atlantico il <strong>16 novembre</strong>, <strong>Francisco Pizarro</strong> tende un'imboscata all'imperatore inca <strong>Atahualpa</strong> a Cajamarca. Centosessantotto conquistadores massacrano migliaia di inca disarmati e catturano un imperatore il cui riscatto—una stanza piena d'oro, due d'argento—ammonta a oltre seimila chilogrammi d'oro. L'<strong>Impero Inca</strong> crolla; il dominio globale della Spagna si espande."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "L'anno ruota attorno al potere—come conquistarlo, come rifiutarlo, come immaginare alternative. <strong>Il Principe</strong> di Machiavelli codifica la logica dell'acquisizione; Pizarro la mette in pratica in Perù con terrificante efficienza. Le dimissioni di Moro dimostrano che alcuni credono ancora che la coscienza prevalga sull'interesse—una posizione che Machiavelli troverebbe ingenua. I <strong>giganti di Rabelais</strong> offrono un'altra risposta: la risata contro ogni pretesa, ecclesiastica o politica. Holbein, spiazzato dalle stesse manovre politiche che Machiavelli descrive, si adatta—trova nuovi mecenati, nuovi soggetti, sopravvive dove Moro non lo farà. La <strong>sottomissione del clero</strong> e la <strong>conquista degli Inca</strong> mostrano due volti del potere europeo nel 1532: rivolgersi all'interno per spezzare la Chiesa, proiettarsi all'esterno per spezzare un impero.",
+        "funFact": "Il riscatto di Atahualpa—oltre 6.000 kg d'oro e 11.000 kg d'argento—varrebbe oggi circa 300 milioni di dollari. Pizarro lo fece comunque giustiziare."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.britannica.com/topic/The-Prince",
+        "title": "Britannica: The Prince"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Cajamarca",
+        "title": "Wikipedia: Battle of Cajamarca"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Thomas_More",
+        "title": "Wikipedia: Thomas More"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Portrait_of_Georg_Giese",
+        "title": "Wikipedia: Portrait of Georg Gisze"
+      },
+      {
+        "url": "https://www.britannica.com/topic/Gargantua-and-Pantagruel",
+        "title": "Britannica: Gargantua and Pantagruel"
+      }
+    ],
+    "image": {
+      "url": "images/1532-princes-giants-gold.jpg",
+      "caption": "Hans Holbein il Giovane, Il mercante Georg Gisze (1532). Gemäldegalerie, Berlino.",
+      "width": 960,
+      "height": 1095,
+      "attribution": "Hans Holbein il Giovane, Pubblico dominio, via Wikimedia Commons"
+    },
+    "threads": [
+      "renaissance-humanism",
+      "vernacular-literature",
+      "political-realism",
+      "conquest-of-americas"
+    ],
+    "location": {
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "place": "Londra"
+    },
+    "addedDate": "2026-04-28T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1532-princes-giants-gold.mp3",
+      "duration": 257
+    }
   }
 ]

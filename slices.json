@@ -4705,5 +4705,79 @@
       "url": "audio/1751-paris-reason-unveiled.mp3",
       "duration": 158
     }
+  },
+  {
+    "year": "1532",
+    "id": "1532-princes-giants-gold",
+    "title": "Princes, Giants, and Gold",
+    "teaser": "Machiavelli's Prince finally reaches print, teaching rulers to master fortune through cunning. Rabelais unleashes his satirical giants upon a startled France. Thomas More resigns as conscience clashes with king. And in Peru, Pizarro captures an emperor whose ransom will fill a room with gold.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>Hans Holbein the Younger</strong> settles in London this year, seeking new patrons after his former friends—including Thomas More—have fallen from royal favor. Among the German merchants of the <strong>Steelyard</strong>, he finds commissions. His portrait of <em>Georg Gisze</em> becomes a masterpiece of <strong>Northern Renaissance</strong> exactitude: every letter, coin, and carnation rendered with hallucinatory precision. The motto on the wall—<em>'Nulla sine merore voluptas'</em> ('No joy without sorrow')—captures the era's unease. In Parma, <strong>Correggio</strong> completes <em>Jupiter and Io</em> for Federico Gonzaga, a work of breathtaking sensuality where Jupiter dissolves into cloud to embrace the nymph. <strong>Mannerism</strong> is emerging—art that privileges elegance and artifice over Renaissance harmony."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "In Lyon, <strong>François Rabelais</strong> publishes <em>Pantagruel</em> under the anagram 'Alcofribas Nasier'—the first of five novels chronicling two satirical giants. The book mocks scholastic education, corrupt clergy, and legal absurdity with earthy humor and encyclopedic erudition. Pantagruel uses his tongue as an umbrella; inside his mouth, Rabelais describes an entire civilization. This is <strong>Renaissance humanism</strong> turned carnivalesque—the same <em>ad fontes</em> spirit that sent Erasmus to Greek manuscripts here sends Rabelais to the body and its functions. Meanwhile in Rome, printers finally release <strong>Machiavelli's</strong> <em>Il Principe</em>—five years after his death, nineteen years after he wrote it for Lorenzo de' Medici."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Machiavelli's Prince</strong> shatters the 'mirror for princes' tradition. Where medieval treatises exhorted rulers to Christian virtue, Machiavelli teaches <em>virtù</em>—the cunning and force to master <em>fortuna</em>'s wheel. 'It is better to be feared than loved,' he writes, 'if one cannot be both.' The book inaugurates <strong>political realism</strong>: analyzing power as it actually operates, not as moralists wish it would. The first modern political philosophy. Yet the same year Thomas More—author of <em>Utopia</em>, the opposite pole of political thought—resigns as England's Lord Chancellor rather than betray his conscience. Machiavelli asks what works; More asks what is right. History will execute More and immortalize Machiavelli."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>May 15th</strong>, England's clergy submit to Henry VIII: all ecclesiastical law now requires royal assent. The next day, <strong>Thomas More resigns</strong>—he cannot endorse the king's supremacy over the Church. Henry will marry Anne Boleyn within months; More will die on the scaffold within three years. Meanwhile, across the Atlantic on <strong>November 16th</strong>, <strong>Francisco Pizarro</strong> ambushes the Inca emperor <strong>Atahualpa</strong> at Cajamarca. One hundred sixty-eight conquistadors massacre thousands of unarmed Incas and capture an emperor whose ransom—a room filled with gold, two with silver—amounts to over six thousand kilograms of gold. The <strong>Inca Empire</strong> collapses; Spain's global dominion expands."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year pivots on power—how to seize it, how to refuse it, how to imagine alternatives. <strong>Machiavelli's Prince</strong> codifies the logic of acquisition; Pizarro enacts it in Peru with terrifying efficiency. More's resignation demonstrates that some still believe conscience trumps advantage—a position Machiavelli would find naïve. <strong>Rabelais's giants</strong> offer another response: laughter at all pretension, ecclesiastical or political. Holbein, displaced by the very political machinations Machiavelli describes, adapts—finding new patrons, new subjects, surviving where More will not. The <strong>Submission of the Clergy</strong> and the <strong>conquest of the Incas</strong> show two faces of European power in 1532: turning inward to break the Church, reaching outward to break an empire.",
+        "funFact": "Atahualpa's ransom—over 6,000 kg of gold and 11,000 kg of silver—would be worth roughly $300 million today. Pizarro executed him anyway."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.britannica.com/topic/The-Prince",
+        "title": "Britannica: The Prince"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Cajamarca",
+        "title": "Wikipedia: Battle of Cajamarca"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Thomas_More",
+        "title": "Wikipedia: Thomas More"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Portrait_of_Georg_Giese",
+        "title": "Wikipedia: Portrait of Georg Gisze"
+      },
+      {
+        "url": "https://www.britannica.com/topic/Gargantua-and-Pantagruel",
+        "title": "Britannica: Gargantua and Pantagruel"
+      }
+    ],
+    "image": {
+      "url": "images/1532-princes-giants-gold.jpg",
+      "caption": "Hans Holbein the Younger, The Merchant Georg Gisze (1532). Gemäldegalerie, Berlin.",
+      "width": 960,
+      "height": 1095,
+      "attribution": "Hans Holbein the Younger, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "renaissance-humanism",
+      "vernacular-literature",
+      "political-realism",
+      "conquest-of-americas"
+    ],
+    "location": {
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "place": "London"
+    },
+    "addedDate": "2026-04-28T05:00:00Z",
+    "podcast": {
+      "url": "audio/1532-princes-giants-gold.mp3",
+      "duration": 233
+    }
   }
 ]

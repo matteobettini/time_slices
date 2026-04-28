@@ -115,7 +115,9 @@
     "naturphilosophie": "Naturphilosophie",
     "neo-impressionism": "Neo-Impressionism",
     "rococo": "Rococo",
-    "cultural-history": "Cultural History"
+    "cultural-history": "Cultural History",
+    "political-realism": "Political Realism",
+    "conquest-of-americas": "Conquest of the Americas"
   },
   "it": {
     "translation-movement": "Traduzione come potere",
@@ -233,6 +235,8 @@
     "naturphilosophie": "Filosofia della natura",
     "neo-impressionism": "Neo-impressionismo",
     "rococo": "Rococò",
-    "cultural-history": "Storia culturale"
+    "cultural-history": "Storia culturale",
+    "political-realism": "Realismo politico",
+    "conquest-of-americas": "Conquista delle Americhe"
   }
 }
