@@ -117,7 +117,9 @@
     "rococo": "Rococo",
     "cultural-history": "Cultural History",
     "political-realism": "Political Realism",
-    "conquest-of-americas": "Conquest of the Americas"
+    "conquest-of-americas": "Conquest of the Americas",
+    "methodism": "Methodism",
+    "augustan-satire": "Augustan Satire"
   },
   "it": {
     "translation-movement": "Traduzione come potere",
@@ -237,6 +239,8 @@
     "rococo": "Rococò",
     "cultural-history": "Storia culturale",
     "political-realism": "Realismo politico",
-    "conquest-of-americas": "Conquista delle Americhe"
+    "conquest-of-americas": "Conquista delle Americhe",
+    "methodism": "Metodismo",
+    "augustan-satire": "Satira augustea"
   }
 }

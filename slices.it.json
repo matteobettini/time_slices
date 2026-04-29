@@ -4763,5 +4763,80 @@
       "url": "audio/it/1532-princes-giants-gold.mp3",
       "duration": 257
     }
+  },
+  {
+    "year": "1738",
+    "id": "1738-year-of-revivals",
+    "title": "Europa — L'anno dei risvegli",
+    "teaser": "Operai a Napoli dissotterrano una città romana sepolta. Voltaire porta Newton in Francia. Wesley sente il cuore 'stranamente riscaldato'. Samuel Johnson attacca Londra in versi. Il passato ritorna — in pietra, in scienza, in scrittura, in satira.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Nell'ottobre del 1738, sotto la direzione dell'ingegnere spagnolo <strong>Roque Joaquín de Alcubierre</strong>, gli operai del Regno di Napoli avviano il primo scavo sistematico di <strong>Ercolano</strong> — una città romana sepolta dal Vesuvio nel 79 d.C. e dimenticata per sedici secoli. Il re Carlo VII di Napoli (futuro Carlo III di Spagna) commissiona lo scavo dopo che alcuni contadini scoprono frammenti di marmo scavando un pozzo. Gli scavatori si fanno strada attraverso venti metri di detriti vulcanici solidificati, estraendo statue, bronzi e affreschi dall'oscurità. Nel giro di pochi anni, la <strong>Villa dei Papiri</strong> svelerà i suoi tesori — rotoli carbonizzati, filosofi in bronzo, un giardino d'arte sepolta. A Parigi, <strong>Jean-Siméon Chardin</strong> espone <em>La Pourvoyeuse</em> (La provveditrice) al Salon — una quieta scena domestica che si distingue dalle fantasie aristocratiche del <strong>Rococò</strong>. Dove Boucher dipinge dee e ninfe, Chardin dipinge una serva con il pane. Il passato riscoperto e il presente osservato sfidano entrambi l'artificio di corte dell'epoca."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Il 12 maggio, <strong>Samuel Johnson</strong>, ventottenne e disperatamente povero, pubblica la sua prima opera importante: <em>London: A Poem in Imitation of the Third Satire of Juvenal</em>. Duecentosessantatré versi in distici eroici attaccano la corruzione, la violenza e la venalità della Londra georgiana attraverso la voce di Thalete, che abbandona la capitale per il Galles rurale. Il poema è <strong>satira augustea</strong> nel solco di Pope, ma con un taglio politico più affilato — diretto contro il governo Whig di Robert Walpole, contro una città dove <em>'tutti i crimini sono sicuri, tranne l'odiata povertà.'</em> <strong>Alexander Pope</strong>, ancora arbitro indiscusso della poesia inglese, lo legge e chiede chi l'abbia scritto. Quando gli dicono che si tratta di un oscuro maestro di scuola di Lichfield, Pope risponde: 'Sarà presto <em>déterré</em>' — dissotterrato. Lo stesso Pope pubblica il suo <em>Epilogue to the Satires</em> nello stesso anno, la sua ultima grande opera poetica. La tradizione satirica classica — Giovenale, Orazio, Pope — trova un nuovo erede."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>Voltaire</strong> pubblica gli <em>Éléments de la philosophie de Newton</em> (Elementi della filosofia di Newton), portando la <strong>Rivoluzione Scientifica</strong> a un pubblico francese ancora dominato dai vortici cartesiani e dalla speculazione metafisica. Scritto allo Château de Cirey con la sua collaboratrice e amante <strong>Émilie du Châtelet</strong> — una matematica che avrebbe poi prodotto la traduzione francese definitiva dei <em>Principia</em> di Newton — il libro spiega gravità, ottica e moto planetario senza matematica tecnica. Voltaire presenta Newton non solo come scienziato ma come <strong>eroe illuminista</strong> — il metodo empirico contro il dogma scolastico, l'osservazione contro l'autorità. Du Châtelet fu essenziale: 'Minerva dettava, e io scrivevo,' riconobbe Voltaire. Il libro converte la Francia da Cartesio a Newton — e trasforma la scienza in un'arma contro la superstizione."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il 24 maggio, il sacerdote anglicano <strong>John Wesley</strong> partecipa a una riunione religiosa in Aldersgate Street a Londra. Qualcuno legge ad alta voce dalla prefazione di Lutero all'Epistola ai Romani. Intorno alle nove meno un quarto, Wesley annota nel suo diario: 'Sentii il mio cuore stranamente riscaldato. Sentii di confidare in Cristo, solo in Cristo per la salvezza.' L'<strong>esperienza di Aldersgate</strong> trasforma la fede intellettuale di Wesley in certezza personale — e lancia il risveglio <strong>metodista</strong> che rimodellerà il protestantesimo angloamericano. Nel frattempo, a novembre, il <strong>Trattato di Vienna</strong> pone fine alla Guerra di successione polacca, ridisegnando i confini europei: Stanislao Leszczyński rinuncia alla Polonia ma ottiene la Lorena (che passerà alla Francia alla sua morte); Francesco Stefano ottiene la Toscana; Don Carlo assicura Napoli e la Sicilia ai Borbone spagnoli. Il trattato conferma anche l'accettazione francese della <strong>Prammatica Sanzione</strong> — Maria Teresa erediterà i territori asburgici, preparando il terreno per le guerre future."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Il tema dell'anno è lo <strong>scavo</strong> — letterale e metaforico. A Ercolano, gli operai scavano attraverso la roccia vulcanica per recuperare un passato classico che darà vita al <strong>Neoclassicismo</strong> e rimodellerà il gusto europeo per un secolo. Voltaire dissotterra Newton dall'insularità inglese, traducendo la scienza empirica in filosofia illuminista. Wesley dissotterra un cristianesimo primitivo da sotto la formalità anglicana — 'religione del cuore' contro la freddezza istituzionale. Johnson dissotterra Giovenale, riportando in vita la satira romana per attaccare la corruzione hannoveriana. La parola di Pope per l'ignoto Johnson è precisa: <em>déterré</em>, dissotterrato. Tutte e quattro le figure scavano nel passato per trasformare il presente. I bronzi di Ercolano, le equazioni newtoniane, l'Epistola ai Romani di Lutero, la Terza Satira di Giovenale — ciascuno è un tesoro sepolto il cui recupero sconvolge l'ordine costituito.",
+        "funFact": "Pope non incontrò mai Johnson — morì nel 1744, mentre Johnson rimase oscuro fino al Dictionary (1755). Ma la previsione di Pope fu esatta. Nel giro di due decenni, il 'Gran Khan della letteratura' avrebbe dominato le lettere inglesi con la stessa completezza di Pope."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Ercolano_(città_antica)",
+        "title": "Ercolano — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Samuel_Johnson",
+        "title": "Samuel Johnson — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Voltaire",
+        "title": "Voltaire — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/John_Wesley",
+        "title": "John Wesley — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Trattato_di_Vienna_(1738)",
+        "title": "Trattato di Vienna (1738) — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1738-year-of-revivals.jpg",
+      "caption": "Jean-Siméon Chardin, La provveditrice (1738). Quieto realismo domestico in mezzo all'artificio del Rococò.",
+      "width": 597,
+      "height": 768,
+      "attribution": "Jean-Siméon Chardin, Pubblico dominio, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "enlightenment",
+      "rococo",
+      "neoclassicism",
+      "methodism",
+      "augustan-satire"
+    ],
+    "location": {
+      "lat": 40.8059,
+      "lon": 14.3477,
+      "place": "Napoli"
+    },
+    "addedDate": "2026-04-29T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1738-year-of-revivals.mp3",
+      "duration": 233
+    }
   }
 ]

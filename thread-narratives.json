@@ -165,7 +165,9 @@
       "1794→1798": "Condorcet's dying optimism meets Malthus's rebuttal; the guillotine's logic produces Goya's nightmares. Napoleon carries Enlightenment science to Egypt — imperialism as reason's final form.",
       "1798→1831": "From Napoleon's savants measuring Egypt to Darwin aboard the Beagle — Enlightenment observation becomes imperial expedition becomes evolutionary science.",
       "1714→1751": "Leibniz died with his optimism intact; d'Alembert's Preliminary Discourse mapped human knowledge onto human faculties, launching the Encyclopédie as the Enlightenment's engine.",
-      "1751→1755": "The Encyclopédie proclaimed reason's sovereignty in 1751; four years later, the Lisbon earthquake shattered that confidence, forcing Voltaire to satirise the very optimism the philosophes had inherited."
+      "1751→1755": "The Encyclopédie proclaimed reason's sovereignty in 1751; four years later, the Lisbon earthquake shattered that confidence, forcing Voltaire to satirise the very optimism the philosophes had inherited.",
+      "1714→1738": "From Leibniz's monads and Pope's wit to Voltaire's Newton: the Enlightenment shifts from metaphysical system to experimental science.",
+      "1738→1751": "From Voltaire's popularisation of Newton to Diderot's Encyclopédie: empirical science becomes a weapon against ignorance and superstition."
     },
     "critical-philosophy": {
       "1755→1784": "The earthquake forced Kant to reconsider natural theology; three decades later, his Critiques limited what reason could claim. Theodicy's failure birthed epistemology's caution."
@@ -293,6 +295,12 @@
     },
     "fin-de-siecle": {
       "1886→1889": "Three years from the divided light to Nietzsche's collapse: the fin-de-siècle accelerates toward its own dissolution."
+    },
+    "neoclassicism": {
+      "1738→1784": "From Herculaneum's first excavations to David's Oath of the Horatii: buried antiquity resurfaces to reshape European taste and revolutionary politics."
+    },
+    "rococo": {
+      "1738→1751": "From Chardin's domestic realism to Boucher's Venus: Rococo spans the full spectrum from aristocratic fantasy to quiet bourgeois observation."
     }
   },
   "it": {
@@ -454,7 +462,9 @@
       "1794→1798": "L'ottimismo morente di Condorcet incontra la replica di Malthus; la logica della ghigliottina produce gli incubi di Goya. Napoleone porta la scienza illuminista in Egitto — l'imperialismo come forma finale della ragione.",
       "1798→1831": "Dai savants di Napoleone che misurano l'Egitto a Darwin a bordo del Beagle — l'osservazione illuminista diventa spedizione imperiale diventa scienza evoluzionistica.",
       "1714→1751": "Leibniz morì col suo ottimismo intatto; il Discorso preliminare di d'Alembert mappò la conoscenza umana sulle facoltà umane, lanciando l'Encyclopédie come motore dell'Illuminismo.",
-      "1751→1755": "L'Encyclopédie proclamò la sovranità della ragione nel 1751; quattro anni dopo, il terremoto di Lisbona frantumò quella fiducia, costringendo Voltaire a satirizzare proprio l'ottimismo che i philosophes avevano ereditato."
+      "1751→1755": "L'Encyclopédie proclamò la sovranità della ragione nel 1751; quattro anni dopo, il terremoto di Lisbona frantumò quella fiducia, costringendo Voltaire a satirizzare proprio l'ottimismo che i philosophes avevano ereditato.",
+      "1714→1738": "Dalle monadi di Leibniz e dall'arguzia di Pope al Newton di Voltaire: l'Illuminismo passa dal sistema metafisico alla scienza sperimentale.",
+      "1738→1751": "Dalla divulgazione newtoniana di Voltaire all'Encyclopédie di Diderot: la scienza empirica diventa un'arma contro l'ignoranza e la superstizione."
     },
     "critical-philosophy": {
       "1755→1784": "Il terremoto costrinse Kant a riconsiderare la teologia naturale; tre decenni dopo, le sue Critiche limitarono ciò che la ragione poteva pretendere."
@@ -582,6 +592,12 @@
     },
     "fin-de-siecle": {
       "1886→1889": "Tre anni dalla luce divisa al crollo di Nietzsche: il fin-de-siècle accelera verso la propria dissoluzione."
+    },
+    "neoclassicism": {
+      "1738→1784": "Dai primi scavi di Ercolano al Giuramento degli Orazi di David: l'antichità sepolta riemerge per plasmare il gusto europeo e la politica rivoluzionaria."
+    },
+    "rococo": {
+      "1738→1751": "Dal realismo domestico di Chardin alla Venere di Boucher: il Rococò abbraccia l'intero spettro, dalla fantasia aristocratica alla quieta osservazione borghese."
     }
   }
 }

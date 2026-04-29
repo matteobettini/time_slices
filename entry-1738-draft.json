@@ -1,0 +1,65 @@
+{
+  "year": "1738",
+  "id": "1738-year-of-revivals",
+  "title": "Europe — The Year of Revivals",
+  "teaser": "Workers digging in Naples unearth a buried Roman city. Voltaire brings Newton to France. Wesley feels his heart 'strangely warmed.' Samuel Johnson attacks London in verse. The past returns — in stone, in science, in scripture, in satire.",
+  "dimensions": {
+    "art": {
+      "label": "Art",
+      "content": "In October 1738, under the direction of the Spanish engineer <strong>Roque Joaquín de Alcubierre</strong>, workers in the Kingdom of Naples begin the first systematic excavation of <strong>Herculaneum</strong> — a Roman city buried by Vesuvius in 79 CE and forgotten for sixteen centuries. King Charles VII of Naples (the future Charles III of Spain) commissions the dig after farmers discover marble fragments while digging a well. The excavators tunnel through twenty metres of hardite volcanic debris, pulling statues, bronzes, and frescoes from the darkness. Within years, the <strong>Villa of the Papyri</strong> yields its treasures — carbonised scrolls, bronze philosophers, a garden of buried art. In Paris, <strong>Jean-Siméon Chardin</strong> exhibits <em>La Pourvoyeuse</em> (The Return from the Market) at the Salon — a quiet domestic scene that stands apart from the aristocratic fantasies of <strong>Rococo</strong>. Where Boucher paints goddesses and nymphs, Chardin paints a servant with bread. The discovered past and the observed present both challenge the courtly artifice of the age."
+    },
+    "lit": {
+      "label": "Literature",
+      "content": "On May 12, <strong>Samuel Johnson</strong>, twenty-eight and desperately poor, publishes his first major work: <em>London: A Poem in Imitation of the Third Satire of Juvenal</em>. Two hundred sixty-three lines of heroic couplets attack the corruption, violence, and venality of Georgian London through the voice of Thales, who abandons the capital for rural Wales. The poem is <strong>Augustan satire</strong> in the mode of Pope, but with a sharper political edge — aimed at Robert Walpole's Whig government, at a city where <em>'all crimes are safe, but hated poverty.'</em> <strong>Alexander Pope</strong>, still the reigning arbiter of English verse, reads it and asks who wrote it. Told it was an obscure Lichfield schoolmaster, Pope replies: 'He will soon be <em>déterré</em>' — unearthed. Pope himself publishes his <em>Epilogue to the Satires</em> this same year, his final major poem, declaring that 'Vice is undone, and Triumph o'er the Day.' The classical satiric tradition — Juvenal, Horace, Pope — finds a new heir."
+    },
+    "phil": {
+      "label": "Philosophy",
+      "content": "<strong>Voltaire</strong> publishes <em>Éléments de la philosophie de Newton</em> (Elements of Newton's Philosophy), bringing the <strong>Scientific Revolution</strong> to a French public still dominated by Cartesian vortices and metaphysical speculation. Written at the Château de Cirey with his collaborator and lover <strong>Émilie du Châtelet</strong> — a mathematician who would later produce the definitive French translation of Newton's <em>Principia</em> — the book explains gravity, optics, and planetary motion without technical mathematics. Voltaire positions Newton not merely as a scientist but as an <strong>Enlightenment hero</strong> — the empirical method against scholastic dogma, observation against authority. 'If the whole of natural philosophy is based on the knowledge of God,' Voltaire writes, 'Newton was a most profound theologian.' Du Châtelet's contribution was essential: 'Minerva dictated, and I wrote,' Voltaire acknowledged. The book converts France from Descartes to Newton — and makes science a weapon against superstition."
+    },
+    "hist": {
+      "label": "History",
+      "content": "On May 24, the Anglican priest <strong>John Wesley</strong> attends a religious meeting on Aldersgate Street in London. Someone reads aloud from Luther's preface to Romans. At about a quarter before nine, Wesley records in his journal, 'I felt my heart strangely warmed. I felt I did trust in Christ, Christ alone for salvation.' The <strong>Aldersgate experience</strong> transforms Wesley's intellectual faith into personal assurance — and launches the <strong>Methodist</strong> revival that will reshape Anglo-American Protestantism. Meanwhile, in November, the <strong>Treaty of Vienna</strong> ends the War of the Polish Succession, redrawing European borders: Stanisław Leszczyński renounces Poland but receives Lorraine (which will pass to France at his death); Francis Stephen gains Tuscany; Don Carlos secures Naples and Sicily for the Spanish Bourbons. The treaty also confirms France's acceptance of the <strong>Pragmatic Sanction</strong> — Maria Theresa will inherit the Habsburg lands, setting the stage for the wars to come."
+    },
+    "conn": {
+      "label": "Connections",
+      "content": "The year's theme is <strong>excavation</strong> — literal and metaphorical. At Herculaneum, workers dig through volcanic rock to recover a classical past that will spark <strong>Neoclassicism</strong> and reshape European taste for a century. Voltaire excavates Newton from English insularity, translating empirical science into Enlightenment philosophy. Wesley excavates a primitive Christianity from beneath Anglican formality — 'heart religion' against institutional coldness. Johnson excavates Juvenal, reviving Roman satire to attack Hanoverian corruption. Pope's word for the unknown Johnson is exact: <em>déterré</em>, unearthed. All four figures are mining the past to transform the present. The Herculaneum bronzes, the Newtonian equations, Luther's Romans, Juvenal's Third Satire — each is a buried treasure whose recovery disrupts the settled order. Charles VII digging at Naples; Voltaire at Cirey translating empiricism; Wesley in Aldersgate feeling Scripture come alive; Johnson in his Grub Street garret channeling ancient rage — the Enlightenment advances not by inventing the new but by remembering what was forgotten.",
+      "funFact": "Pope never met Johnson — he died in 1744, while Johnson remained obscure until the Dictionary (1755). But Pope's prediction was exact. Within two decades, 'the Great Cham of literature' would dominate English letters as completely as Pope had."
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Herculaneum",
+      "title": "Herculaneum — Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/London_(Samuel_Johnson_poem)",
+      "title": "London (Samuel Johnson poem) — Wikipedia"
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/voltaire/",
+      "title": "Voltaire — Stanford Encyclopedia of Philosophy"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Aldersgate_Day",
+      "title": "Aldersgate Day — Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Vienna_(1738)",
+      "title": "Treaty of Vienna (1738) — Wikipedia"
+    }
+  ],
+  "image": {
+    "url": "images/1738-year-of-revivals.jpg",
+    "caption": "Jean-Siméon Chardin, The Return from the Market (1738). Quiet domestic realism amid the artifice of Rococo.",
+    "width": 597,
+    "height": 768,
+    "attribution": "Jean-Siméon Chardin, Public domain, via Wikimedia Commons"
+  },
+  "threads": ["enlightenment", "rococo", "neoclassicism", "methodism", "augustan-satire"],
+  "location": {
+    "lat": 40.8059,
+    "lon": 14.3477,
+    "place": "Naples"
+  },
+  "addedDate": "2026-04-29T05:00:00Z"
+}
