@@ -1,0 +1,65 @@
+{
+  "year": "1789",
+  "id": "1789-paris-rights-of-man",
+  "title": "Paris — The Rights of Man",
+  "teaser": "A mob storms a fortress and finds only seven prisoners. An assembly drafts seventeen articles that will reshape the world. In London, Blake illuminates innocence while Equiano narrates the horror of the slave trade. Bentham calculates the greatest happiness. Philosophy becomes action.",
+  "dimensions": {
+    "art": {
+      "label": "Art",
+      "content": "At the Paris Salon, <strong>Jacques-Louis David</strong> unveils <em>The Lictors Bring to Brutus the Bodies of His Sons</em> — authorities initially tried to suppress it, fearing its inflammatory implications. The painting depicts Brutus, founder of the Roman Republic, who condemned his own sons for conspiring to restore the monarchy. <strong>Neoclassicism</strong> here reaches its political apotheosis: David's severe composition, with Brutus shrouded in shadow while his family wails in the light, declares that republican virtue demands any sacrifice. After the Bastille falls in July, the painting becomes prophecy. François-Joseph Talma stages Voltaire's <em>Brutus</em> at the Comédie-Française, replicating David's exact composition on stage."
+    },
+    "lit": {
+      "label": "Literature",
+      "content": "<strong>William Blake</strong> produces <em>Songs of Innocence</em> using his revolutionary 'illuminated printing' — text and image etched together, hand-coloured for each copy. <em>The Lamb</em> and <em>The Chimney Sweeper</em> present childhood's pastoral vision while subtly indicting industrial cruelty. Blake's <strong>proto-Romanticism</strong> trusts imagination over reason, vision over calculation. Across the Atlantic crossing, <strong>Olaudah Equiano</strong> publishes <em>The Interesting Narrative of the Life of Olaudah Equiano</em> — the first widely-read autobiography by an African describing the Middle Passage. Supported by British abolitionists, it becomes a bestseller and transforms the anti-slavery movement by giving the trade a human face and voice."
+    },
+    "phil": {
+      "label": "Philosophy",
+      "content": "<strong>Jeremy Bentham</strong> formally publishes <em>An Introduction to the Principles of Morals and Legislation</em>, founding <strong>utilitarianism</strong>. Morality, Bentham argues, reduces to a calculus: the greatest happiness of the greatest number. Pain and pleasure are measurable; ethics is engineering. Where Kant's categorical imperative (the 1784 entry) grounds morality in pure reason, Bentham grounds it in consequence — a secular, quantifiable framework for social reform. Meanwhile in Paris, the <strong>Declaration of the Rights of Man and of the Citizen</strong> translates Enlightenment abstraction into law. Drafted by Lafayette with Thomas Jefferson's assistance, its seventeen articles assert that men are born free, sovereignty resides in the nation, and liberty is limited only by harm to others."
+    },
+    "hist": {
+      "label": "History",
+      "content": "On <strong>July 14</strong>, a Parisian crowd storms the Bastille seeking gunpowder. They find only seven prisoners — but the fortress is a symbol, and symbols matter. Governor de Launay is murdered; his head parades on a pike. By August, the National Assembly abolishes feudalism. The <strong>Women's March on Versailles</strong> in October, driven by bread shortages, forces Louis XVI and his family to Paris — the king is now hostage to his capital. Jefferson, observing from the American embassy, writes that France 'advances with a steady pace towards the establishment of a free constitution.' Five years later, the guillotine will be running daily."
+    },
+    "conn": {
+      "label": "Connections",
+      "content": "The year crystallises a fundamental tension: <strong>what happens when philosophy takes power?</strong> The Declaration of Rights translates Rousseau's social contract and Locke's natural rights into binding law — Lafayette had fought alongside Jefferson in the American Revolution and consulted him directly while drafting. David's Brutus visualises the cost: republican virtue may require destroying what you love. But Bentham's cold calculus and Blake's visionary innocence offer competing responses to revolutionary violence: one says optimise for aggregate happiness; the other insists some things cannot be calculated. Equiano's narrative complicates the Declaration's universalism: if all men are born free, what of those in chains? The question will tear France apart.",
+      "funFact": "The Bastille held only seven inmates on July 14: four forgers, two lunatics, and a count imprisoned at his family's request. The revolution stormed a symbol, not a dungeon."
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Declaration_of_the_Rights_of_Man_and_of_the_Citizen",
+      "title": "Declaration of the Rights of Man and of the Citizen — Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Lictors_Bring_to_Brutus_the_Bodies_of_His_Sons",
+      "title": "The Lictors Bring to Brutus the Bodies of His Sons — Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Songs_of_Innocence_and_of_Experience",
+      "title": "Songs of Innocence and of Experience — Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Interesting_Narrative_of_the_Life_of_Olaudah_Equiano",
+      "title": "The Interesting Narrative of the Life of Olaudah Equiano — Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/An_Introduction_to_the_Principles_of_Morals_and_Legislation",
+      "title": "An Introduction to the Principles of Morals and Legislation — Wikipedia"
+    }
+  ],
+  "image": {
+    "url": "images/1789-paris-rights-of-man.jpg",
+    "caption": "Le Barbier's allegorical painting of the Declaration of the Rights of Man and of the Citizen, 1789",
+    "width": 1200,
+    "height": 1521,
+    "attribution": "Jean-Jacques-François Le Barbier, Public domain, via Wikimedia Commons"
+  },
+  "threads": ["enlightenment", "utilitarianism", "revolutionary-utopianism", "abolition-crisis"],
+  "location": {
+    "lat": 48.8534,
+    "lon": 2.3488,
+    "place": "Paris"
+  },
+  "addedDate": "2026-05-01T05:00:00Z"
+}

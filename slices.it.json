@@ -4868,5 +4868,79 @@
       "url": "audio/it/1666-london-year-of-fire-and-light.mp3",
       "duration": 210
     }
+  },
+  {
+    "year": "1789",
+    "id": "1789-paris-rights-of-man",
+    "title": "Parigi — I Diritti dell'Uomo",
+    "teaser": "Una folla assalta una fortezza e trova solo sette prigionieri. Un'assemblea redige diciassette articoli che cambieranno il mondo. A Londra, Blake illumina l'innocenza mentre Equiano racconta l'orrore della tratta degli schiavi. Bentham calcola la massima felicità. La filosofia diventa azione.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Al Salon di Parigi, <strong>Jacques-Louis David</strong> presenta <em>I littori riportano a Bruto i corpi dei suoi figli</em> — le autorità inizialmente tentarono di censurarlo, temendone le implicazioni incendiarie. Il dipinto raffigura Bruto, fondatore della Repubblica Romana, che condannò i propri figli per aver cospirato per restaurare la monarchia. Il <strong>Neoclassicismo</strong> raggiunge qui la sua apoteosi politica: la composizione severa di David, con Bruto avvolto nell'ombra mentre la sua famiglia si dispera alla luce, dichiara che la virtù repubblicana esige qualsiasi sacrificio. Dopo la caduta della Bastiglia in luglio, il dipinto diventa profezia. François-Joseph Talma mette in scena il <em>Bruto</em> di Voltaire alla Comédie-Française, replicando esattamente la composizione di David."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "<strong>William Blake</strong> realizza <em>Songs of Innocence</em> con la sua rivoluzionaria 'stampa illuminata' — testo e immagine incisi insieme, colorati a mano per ogni copia. <em>The Lamb</em> e <em>The Chimney Sweeper</em> presentano la visione pastorale dell'infanzia denunciando sottilmente la crudeltà industriale. Il <strong>proto-Romanticismo</strong> di Blake privilegia l'immaginazione sulla ragione, la visione sul calcolo. Attraverso l'Atlantico, <strong>Olaudah Equiano</strong> pubblica <em>The Interesting Narrative of the Life of Olaudah Equiano</em> — la prima autobiografia ampiamente letta di un africano che descrive la Tratta atlantica. Sostenuto dagli abolizionisti britannici, diventa un bestseller e trasforma il movimento anti-schiavista dando alla tratta un volto e una voce umani."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>Jeremy Bentham</strong> pubblica formalmente <em>Introduzione ai principi della morale e della legislazione</em>, fondando l'<strong>utilitarismo</strong>. La moralità, sostiene Bentham, si riduce a un calcolo: la massima felicità per il maggior numero. Dolore e piacere sono misurabili; l'etica è ingegneria. Dove l'imperativo categorico di Kant (voce del 1784) fonda la moralità sulla ragion pura, Bentham la fonda sulle conseguenze — un quadro secolare e quantificabile per la riforma sociale. Intanto a Parigi, la <strong>Dichiarazione dei Diritti dell'Uomo e del Cittadino</strong> traduce l'astrazione illuminista in legge. Redatta da Lafayette con l'assistenza di Thomas Jefferson, i suoi diciassette articoli affermano che gli uomini nascono liberi, la sovranità risiede nella nazione, e la libertà è limitata solo dal danno agli altri."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il <strong>14 luglio</strong>, una folla parigina assalta la Bastiglia in cerca di polvere da sparo. Trova solo sette prigionieri — ma la fortezza è un simbolo, e i simboli contano. Il governatore de Launay viene ucciso; la sua testa sfila su una picca. In agosto, l'Assemblea Nazionale abolisce il feudalesimo. La <strong>Marcia delle donne su Versailles</strong> in ottobre, spinta dalla scarsità di pane, costringe Luigi XVI e la sua famiglia a Parigi — il re è ora ostaggio della sua capitale. Jefferson, osservando dall'ambasciata americana, scrive che la Francia 'avanza con passo fermo verso l'istituzione di una libera costituzione.' Cinque anni dopo, la ghigliottina funzionerà quotidianamente."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "L'anno cristallizza una tensione fondamentale: <strong>cosa succede quando la filosofia prende il potere?</strong> La Dichiarazione dei Diritti traduce il contratto sociale di Rousseau e i diritti naturali di Locke in legge vincolante — Lafayette aveva combattuto al fianco di Jefferson nella Rivoluzione Americana e lo consultò direttamente durante la stesura. Il Bruto di David visualizza il costo: la virtù repubblicana può richiedere di distruggere ciò che ami. Ma il freddo calcolo di Bentham e l'innocenza visionaria di Blake offrono risposte contrapposte alla violenza rivoluzionaria: uno dice ottimizza per la felicità aggregata; l'altro insiste che certe cose non si possono calcolare. Il racconto di Equiano complica l'universalismo della Dichiarazione: se tutti gli uomini nascono liberi, che ne è di quelli in catene? La domanda lacererà la Francia.",
+        "funFact": "La Bastiglia ospitava solo sette detenuti il 14 luglio: quattro falsari, due alienati e un conte imprigionato su richiesta della sua famiglia. La rivoluzione assaltò un simbolo, non un carcere."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Dichiarazione_dei_diritti_dell%27uomo_e_del_cittadino",
+        "title": "Dichiarazione dei diritti dell'uomo e del cittadino — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/I_littori_riportano_a_Bruto_i_corpi_dei_suoi_figli",
+        "title": "I littori riportano a Bruto i corpi dei suoi figli — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Songs_of_Innocence_and_of_Experience",
+        "title": "Songs of Innocence and of Experience — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Olaudah_Equiano",
+        "title": "Olaudah Equiano — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Introduzione_ai_principi_della_morale_e_della_legislazione",
+        "title": "Introduzione ai principi della morale e della legislazione — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1789-paris-rights-of-man.jpg",
+      "caption": "Dipinto allegorico di Le Barbier della Dichiarazione dei Diritti dell'Uomo e del Cittadino, 1789",
+      "width": 1200,
+      "height": 1521,
+      "attribution": "Jean-Jacques-François Le Barbier, Pubblico dominio, via Wikimedia Commons"
+    },
+    "threads": [
+      "enlightenment",
+      "utilitarianism",
+      "revolutionary-utopianism",
+      "abolition-crisis"
+    ],
+    "location": {
+      "lat": 48.8534,
+      "lon": 2.3488,
+      "place": "Parigi"
+    },
+    "addedDate": "2026-05-01T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1789-paris-rights-of-man.mp3",
+      "duration": 196
+    }
   }
 ]

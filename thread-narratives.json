@@ -171,7 +171,9 @@
       "1714→1751": "Leibniz died with his optimism intact; d'Alembert's Preliminary Discourse mapped human knowledge onto human faculties, launching the Encyclopédie as the Enlightenment's engine.",
       "1751→1755": "The Encyclopédie proclaimed reason's sovereignty in 1751; four years later, the Lisbon earthquake shattered that confidence, forcing Voltaire to satirise the very optimism the philosophes had inherited.",
       "1714→1738": "From Leibniz's monads and Pope's wit to Voltaire's Newton: the Enlightenment shifts from metaphysical system to experimental science.",
-      "1738→1751": "From Voltaire's popularisation of Newton to Diderot's Encyclopédie: empirical science becomes a weapon against ignorance and superstition."
+      "1738→1751": "From Voltaire's popularisation of Newton to Diderot's Encyclopédie: empirical science becomes a weapon against ignorance and superstition.",
+      "1784→1789": "Kant dared humanity to think for itself; five years later, the French Assembly put reason into law.",
+      "1789→1794": "The Declaration promised universal rights; the Terror asked who got to define them."
     },
     "critical-philosophy": {
       "1755→1784": "The earthquake forced Kant to reconsider natural theology; three decades later, his Critiques limited what reason could claim. Theodicy's failure birthed epistemology's caution."
@@ -222,7 +224,8 @@
       "1347→1378": "Ockham's nominalism, born in the same plague year, destabilizes institutional authority; thirty years later, two popes proves the point."
     },
     "revolutionary-utopianism": {
-      "1794→1968": "From Robespierre's Cult of Reason to 1968's revolutionary dreams: the belief that total transformation is possible — and that violence may be its price."
+      "1794→1968": "From Robespierre's Cult of Reason to 1968's revolutionary dreams: the belief that total transformation is possible — and that violence may be its price.",
+      "1789→1794": "The Rights of Man articulated the dream; Robespierre's guillotine enforced it."
     },
     "critique-of-modernity": {
       "1794→1968": "Blake's distrust of Urizen's compasses echoes through two centuries: from Romantic revolt against mechanical reason to 1968's rejection of technocratic rationality.",
@@ -240,7 +243,8 @@
     },
     "abolition-crisis": {
       "1831→1859": "Nat Turner's rebellion in 1831 terrified the South into brutal new slave codes. A generation later, John Brown's raid at Harpers Ferry proved that white abolitionists would now take up arms. The road to Civil War was paved in blood.",
-      "1859→1863": "John Brown's martyrdom galvanized the North; four years later, Lincoln made abolition a war aim."
+      "1859→1863": "John Brown's martyrdom galvanized the North; four years later, Lincoln made abolition a war aim.",
+      "1789→1831": "Equiano gave slavery a human voice; Nat Turner gave it an armed response."
     },
     "revolutionary-nationalism": {
       "1848→1859": "The Springtime of Peoples in 1848 was crushed, but the dream of national self-determination survived. A decade later, at Solferino, Italian nationalists saw France defeat Austria—and the Risorgimento entered its decisive phase."
@@ -474,7 +478,9 @@
       "1714→1751": "Leibniz morì col suo ottimismo intatto; il Discorso preliminare di d'Alembert mappò la conoscenza umana sulle facoltà umane, lanciando l'Encyclopédie come motore dell'Illuminismo.",
       "1751→1755": "L'Encyclopédie proclamò la sovranità della ragione nel 1751; quattro anni dopo, il terremoto di Lisbona frantumò quella fiducia, costringendo Voltaire a satirizzare proprio l'ottimismo che i philosophes avevano ereditato.",
       "1714→1738": "Dalle monadi di Leibniz e dall'arguzia di Pope al Newton di Voltaire: l'Illuminismo passa dal sistema metafisico alla scienza sperimentale.",
-      "1738→1751": "Dalla divulgazione newtoniana di Voltaire all'Encyclopédie di Diderot: la scienza empirica diventa un'arma contro l'ignoranza e la superstizione."
+      "1738→1751": "Dalla divulgazione newtoniana di Voltaire all'Encyclopédie di Diderot: la scienza empirica diventa un'arma contro l'ignoranza e la superstizione.",
+      "1784→1789": "Kant sfidò l'umanità a pensare da sé; cinque anni dopo, l'Assemblea francese tradusse la ragione in legge.",
+      "1789→1794": "La Dichiarazione promise diritti universali; il Terrore chiese chi potesse definirli."
     },
     "critical-philosophy": {
       "1755→1784": "Il terremoto costrinse Kant a riconsiderare la teologia naturale; tre decenni dopo, le sue Critiche limitarono ciò che la ragione poteva pretendere."
@@ -525,7 +531,8 @@
       "1347→1378": "Il nominalismo di Ockham, nato nello stesso anno della peste, destabilizza l'autorità istituzionale; trent'anni dopo, due papi ne sono la prova."
     },
     "revolutionary-utopianism": {
-      "1794→1968": "Dal Culto della Ragione di Robespierre ai sogni rivoluzionari del 1968: la convinzione che la trasformazione totale sia possibile — e che la violenza possa esserne il prezzo."
+      "1794→1968": "Dal Culto della Ragione di Robespierre ai sogni rivoluzionari del 1968: la convinzione che la trasformazione totale sia possibile — e che la violenza possa esserne il prezzo.",
+      "1789→1794": "I Diritti dell'Uomo articolarono il sogno; la ghigliottina di Robespierre lo impose."
     },
     "critique-of-modernity": {
       "1794→1968": "La sfiducia di Blake nei compassi di Urizen riecheggia per due secoli: dalla rivolta romantica contro la ragione meccanica al rifiuto della razionalità tecnocratica nel 1968.",
@@ -543,7 +550,8 @@
     },
     "abolition-crisis": {
       "1831→1859": "La ribellione di Nat Turner nel 1831 terrorizzò il Sud inducendolo a emanare brutali nuovi codici schiavisti. Una generazione dopo, il raid di John Brown a Harpers Ferry dimostrò che gli abolizionisti bianchi avrebbero impugnato le armi. La strada verso la Guerra Civile fu lastricata di sangue.",
-      "1859→1863": "Il martirio di John Brown galvanizzò il Nord; quattro anni dopo, Lincoln rese l'abolizione un obiettivo di guerra."
+      "1859→1863": "Il martirio di John Brown galvanizzò il Nord; quattro anni dopo, Lincoln rese l'abolizione un obiettivo di guerra.",
+      "1789→1831": "Equiano diede alla schiavitù una voce umana; Nat Turner le diede una risposta armata."
     },
     "revolutionary-nationalism": {
       "1848→1859": "La Primavera dei Popoli del 1848 fu schiacciata, ma il sogno dell'autodeterminazione nazionale sopravvisse. Un decennio dopo, a Solferino, i nazionalisti italiani videro la Francia sconfiggere l'Austria—e il Risorgimento entrò nella sua fase decisiva."
