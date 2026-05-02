@@ -1,0 +1,50 @@
+{
+  "year": "1054",
+  "id": "1054-constantinople-the-great-fracture",
+  "title": "Costantinopoli — La Grande Frattura",
+  "teaser": "Un legato papale sbatte una bolla di scomunica sull'altare di Santa Sofia. Un patriarca risponde allo stesso modo. Il cristianesimo si divide in due. Nel frattempo, una nuova stella risplende in cielo—così luminosa da essere visibile a mezzogiorno—registrata dagli astronomi dalla Cina a Baghdad, ignorata da una Chiesa troppo impegnata a dividersi per guardare in alto.",
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "Nella stessa Santa Sofia, il <strong>mosaico dell'imperatrice Zoe</strong> risplende dalla galleria sud: Cristo Pantocratore in trono tra <strong>Zoe</strong> e <strong>Costantino IX Monomaco</strong>, reso in milioni di tessere d'oro e vetro. I volti sono già stati modificati due volte con i nuovi matrimoni di Zoe; l'arte bizantina serve la politica imperiale. È lo stile <strong>medio-bizantino</strong> al suo apice: ieratico, frontale, intriso d'oro, le figure sospese nell'eternità. Contemporaneamente, in tutto l'Occidente, l'<strong>architettura romanica</strong> si diffonde lungo le vie di pellegrinaggio. Il primo stile paneuropeo dai tempi di Roma, parla attraverso archi a tutto sesto, mura massicce e volte in pietra. A Montecassino, l'abate Desiderio ha appena iniziato la ricostruzione; gli scultori riscoprono forme classiche. Due linguaggi visivi per due Chiese che ora si separano."
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "La <strong>Cronaca anglosassone</strong>, la più antica storia vernacolare d'Europa, registra quest'anno con cupa precisione: Papa Leone IX morto a Roma, una pestilenza bovina che devasta l'Inghilterra, e il <strong>conte Siward</strong> che marcia in Scozia per sconfiggere <strong>Re Macbeth</strong> a Dunsinane. Cinque secoli dopo, Shakespeare drammatizzerà questa campagna—il vero Macbeth sopravvive alla battaglia e regna altri tre anni. Nel frattempo, le prime versioni della <strong>Chanson de Roland</strong> prendono forma orale, celebrando i guerrieri carolingi contro gli infedeli. L'epica volgare si muove mentre la cronaca latina persiste: due correnti letterarie che alla fine confluiranno nelle letterature nazionali."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "A Fonte Avellana, il monaco <strong>Pier Damiani</strong> compone il <em>De divina omnipotentia</em>, confrontandosi con i limiti del potere di Dio. Può Dio annullare il passato? Può restaurare ciò che non può essere restaurato? Damiani diventa la voce dell'<strong>anti-dialettica</strong>—diffidente della logica applicata ai misteri sacri. La filosofia, insiste, deve rimanere <em>ancilla theologiae</em>, serva della teologia. Eppure il suo confronto con il problema dimostra il potere della dialettica anche mentre lo nega. Questa tensione tra fede e ragione, tra sottomissione mistica e indagine logica, definirà i due secoli successivi fino a quando <strong>Tommaso d'Aquino</strong> le sintetizzerà. Lo scisma tra le chiese rispecchia uno scisma nel metodo."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "Il <strong>16 luglio 1054</strong>, il cardinale <strong>Umberto di Silva Candida</strong> entra a grandi passi in Santa Sofia durante le preghiere pomeridiane e depone una bolla di scomunica sull'altare maggiore, denunciando il patriarca <strong>Michele Cerulario</strong>. Si scuote la polvere dai piedi e se ne va. Nel giro di pochi giorni, Cerulario scomunica a sua volta i legati papali. Papa <strong>Leone IX</strong> era morto tre mesi prima, rendendo l'intera missione giuridicamente dubbia, ma la rottura perdura. Secoli di deriva teologica—<em>filioque</em>, pane azzimo, celibato clericale, pretese papali—si cristallizzano in uno scisma formale. La Chiesa che era sopravvissuta agli imperatori ariani e alle guerre iconoclaste ora si frattura lungo una linea di faglia che non si chiuderà per nove secoli."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "Mentre i legati scagliavano anatemi a Costantinopoli, una <strong>nuova stella</strong> apparve nel Toro—<strong>SN 1054</strong>, la supernova il cui residuo chiamiamo oggi Nebulosa del Granchio. Gli astronomi cinesi registrarono una 'stella ospite' visibile di giorno per ventitré giorni. Gli studiosi arabi la annotarono; i petroglifi Chaco potrebbero raffigurarla. Le cronache europee restano in silenzio. L'ironia è perfetta: un evento cosmico testimoniato attraverso le civiltà passa inosservato dalla civiltà più impegnata a fratturarsi sulla teologia. Il mosaico di Zoe, con i suoi volti alterati per ogni nuovo imperatore, incarna il pragmatismo bizantino—dottrina fissa, politica fluida. La cautela filosofica di Damiani sul potere divino riecheggia l'ansia più profonda: se la volontà di Dio trascende la logica, cosa fonda l'autorità?",
+      "funFact": "Le scomuniche reciproche del 1054 furono formalmente revocate solo il 7 dicembre 1965, quando Papa Paolo VI e il Patriarca Atenagora I le annullarono simultaneamente—911 anni dopo il gesto drammatico del cardinale Umberto."
+    }
+  },
+  "sources": [
+    { "url": "https://plato.stanford.edu/entries/peter-damian/", "title": "Stanford Encyclopedia of Philosophy: Peter Damian" },
+    { "url": "https://it.wikipedia.org/wiki/Scisma_d%27Oriente", "title": "Wikipedia: Scisma d'Oriente" },
+    { "url": "https://it.wikipedia.org/wiki/SN_1054", "title": "Wikipedia: SN 1054 (supernova della Nebulosa del Granchio)" },
+    { "url": "https://avalon.law.yale.edu/medieval/ang11.asp", "title": "Anglo-Saxon Chronicle: Eleventh Century (Yale)" },
+    { "url": "https://www.britannica.com/art/Byzantine-art", "title": "Britannica: Byzantine Art" }
+  ],
+  "image": {
+    "url": "images/1054-constantinople-the-great-fracture.jpg",
+    "caption": "Il mosaico dell'imperatrice Zoe in Santa Sofia, Costantinopoli, raffigurante Cristo Pantocratore affiancato dall'imperatrice Zoe e da Costantino IX Monomaco",
+    "width": 1200,
+    "height": 1000,
+    "attribution": "Myrabella, Pubblico dominio, via Wikimedia Commons"
+  },
+  "threads": ["romanesque-architecture", "scholasticism", "papal-supremacy", "byzantine-transmission"],
+  "location": {
+    "lat": 41.0086,
+    "lon": 28.9802,
+    "place": "Costantinopoli"
+  },
+  "addedDate": "2026-05-02T05:00:00Z"
+}

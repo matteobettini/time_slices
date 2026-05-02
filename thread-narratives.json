@@ -67,7 +67,8 @@
       "1141→1215": "Abelard's dialectical method survived his condemnation; by Lateran IV, Aristotelian categories defined dogma. The scholastic synthesis began at Sens's defeat.",
       "1215→1274": "The Paris Aristotle ban collapsed under its own weight; Aquinas built the <em>Summa</em> on the recovered texts. Scholasticism's golden age was also its last.",
       "1274→1321": "Aquinas died with the <em>Summa</em> unfinished; Dante completed the project in verse. The <em>Commedia</em> is scholastic architecture made poetry.",
-      "1066→1141": "Lanfranc brings dialectical method from Bec Abbey to Canterbury; Anselm develops the ontological argument. The seeds planted by the Norman conquest flower in Abelard's systematic doubt at Sens — 'by doubting we come to inquiry.'"
+      "1066→1141": "Lanfranc brings dialectical method from Bec Abbey to Canterbury; Anselm develops the ontological argument. The seeds planted by the Norman conquest flower in Abelard's systematic doubt at Sens — 'by doubting we come to inquiry.'",
+      "1054→1066": "From Damian's anti-dialecticism to Lanfranc's continental method: the conquest imports systematic reasoning to England."
     },
     "gothic-architecture": {
       "1141→1215": "Suger's Saint-Denis invented Gothic luminosity; by 1215, Chartres perfected it. The style spread as fast as scholastic method — both claimed to make the invisible visible.",
@@ -204,7 +205,9 @@
     },
     "romanesque-architecture": {
       "1000→1066": "From Otto III's renovatio to William's conquest: the same architectural language of rounded arches and massive stone walls that symbolized imperial renewal in Germany becomes the visual vocabulary of Norman domination in England.",
-      "1066→1077": "From the conquest's White Tower to Canossa's contested stone — architecture as political theology spreads across Europe."
+      "1066→1077": "From the conquest's White Tower to Canossa's contested stone — architecture as political theology spreads across Europe.",
+      "1000→1054": "The 'white mantle of churches' spreads along pilgrimage routes; Romanesque becomes the first pan-European style since Rome.",
+      "1054→1066": "Norman conquerors import Romanesque mass to England; the White Tower rises where Anglo-Saxon wood once stood."
     },
     "imperial-decline": {
       "180→250": "From Marcus Aurelius's philosophical acceptance of mortality to Decius's desperate religious coercion — the empire's inner life darkens as external pressures mount.",
@@ -218,7 +221,8 @@
     },
     "papal-supremacy": {
       "1077→1300": "From Canossa's snows to Boniface's jubilee — the papacy claims supreme authority over all earthly crowns.",
-      "1300→1378": "Boniface VIII's Jubilee asserts universal papal sovereignty; seventy-eight years later, no one can agree which pope is sovereign."
+      "1300→1378": "Boniface VIII's Jubilee asserts universal papal sovereignty; seventy-eight years later, no one can agree which pope is sovereign.",
+      "1054→1077": "The schism with Constantinople sharpens Rome's claims; Gregory VII's Dictatus Papae will assert what Humbert's bull implied."
     },
     "nominalism": {
       "1347→1378": "Ockham's nominalism, born in the same plague year, destabilizes institutional authority; thirty years later, two popes proves the point."
@@ -311,6 +315,9 @@
     },
     "rococo": {
       "1738→1751": "From Chardin's domestic realism to Boucher's Venus: Rococo spans the full spectrum from aristocratic fantasy to quiet bourgeois observation."
+    },
+    "byzantine-transmission": {
+      "1054→1453": "Four centuries of estrangement: Greek manuscripts accumulate in Constantinople while the West develops Latin scholasticism."
     }
   },
   "it": {
@@ -378,7 +385,8 @@
       "1141→1215": "Il metodo dialettico di Abelardo sopravvisse alla sua condanna; al Laterano IV, le categorie aristoteliche definivano il dogma. La sintesi scolastica iniziò dalla sconfitta di Sens.",
       "1215→1274": "Il divieto parigino di Aristotele crollò sotto il proprio peso; Tommaso costruì la <em>Summa</em> sui testi recuperati. L'età d'oro della scolastica fu anche l'ultima.",
       "1274→1321": "Tommaso morì con la <em>Summa</em> incompiuta; Dante completò il progetto in versi. La <em>Commedia</em> è architettura scolastica fatta poesia.",
-      "1066→1141": "Lanfranco porta il metodo dialettico dall'Abbazia di Bec a Canterbury; Anselmo sviluppa l'argomento ontologico. I semi piantati dalla conquista normanna fioriscono nel dubbio sistematico di Abelardo a Sens — 'dubitando giungiamo all'indagine.'"
+      "1066→1141": "Lanfranco porta il metodo dialettico dall'Abbazia di Bec a Canterbury; Anselmo sviluppa l'argomento ontologico. I semi piantati dalla conquista normanna fioriscono nel dubbio sistematico di Abelardo a Sens — 'dubitando giungiamo all'indagine.'",
+      "1054→1066": "Dall'anti-dialettica di Damiani al metodo continentale di Lanfranco: la conquista importa il ragionamento sistematico in Inghilterra."
     },
     "gothic-architecture": {
       "1141→1215": "Saint-Denis di Suger inventò la luminosità gotica; nel 1215, Chartres la perfezionò. Lo stile si diffuse veloce come il metodo scolastico.",
@@ -511,7 +519,9 @@
     },
     "romanesque-architecture": {
       "1000→1066": "Dalla renovatio di Ottone III alla conquista di Guglielmo: lo stesso linguaggio architettonico di archi a tutto sesto e massicce mura di pietra che simboleggiava il rinnovamento imperiale in Germania diventa il vocabolario visivo del dominio normanno in Inghilterra.",
-      "1066→1077": "Dalla Torre Bianca della conquista alla pietra contesa di Canossa — l'architettura come teologia politica si diffonde in Europa."
+      "1066→1077": "Dalla Torre Bianca della conquista alla pietra contesa di Canossa — l'architettura come teologia politica si diffonde in Europa.",
+      "1000→1054": "Il 'bianco manto di chiese' si diffonde lungo le vie di pellegrinaggio; il romanico diventa il primo stile paneuropeo dai tempi di Roma.",
+      "1054→1066": "I conquistatori normanni portano la massa romanica in Inghilterra; la Torre Bianca sorge dove un tempo c'era legno anglosassone."
     },
     "imperial-decline": {
       "180→250": "Dall'accettazione filosofica della mortalità di Marco Aurelio alla coercizione religiosa disperata di Decio — la vita interiore dell'impero si oscura mentre le pressioni esterne crescono.",
@@ -525,7 +535,8 @@
     },
     "papal-supremacy": {
       "1077→1300": "Dalle nevi di Canossa al giubileo di Bonifacio — il papato rivendica la suprema autorità su tutte le corone terrene.",
-      "1300→1378": "Il Giubileo di Bonifacio VIII afferma la sovranità papale universale; settantotto anni dopo, nessuno concorda su quale papa sia sovrano."
+      "1300→1378": "Il Giubileo di Bonifacio VIII afferma la sovranità papale universale; settantotto anni dopo, nessuno concorda su quale papa sia sovrano.",
+      "1054→1077": "Lo scisma con Costantinopoli affina le pretese di Roma; il Dictatus Papae di Gregorio VII affermerà ciò che la bolla di Umberto implicava."
     },
     "nominalism": {
       "1347→1378": "Il nominalismo di Ockham, nato nello stesso anno della peste, destabilizza l'autorità istituzionale; trent'anni dopo, due papi ne sono la prova."
@@ -618,6 +629,9 @@
     },
     "rococo": {
       "1738→1751": "Dal realismo domestico di Chardin alla Venere di Boucher: il Rococò abbraccia l'intero spettro, dalla fantasia aristocratica alla quieta osservazione borghese."
+    },
+    "byzantine-transmission": {
+      "1054→1453": "Quattro secoli di distacco: i manoscritti greci si accumulano a Costantinopoli mentre l'Occidente sviluppa la scolastica latina."
     }
   }
 }
