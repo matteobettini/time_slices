@@ -240,7 +240,9 @@
       "1863→1886": "From Manet's scandal to Nietzsche's hammer: the critique deepens from aesthetic shock to philosophical assault on the foundations of Western morality.",
       "1886→1968": "From Nietzsche's Beyond Good and Evil to the barricades of Paris: a century of questioning whether progress is truly progress.",
       "1886→1932": "From the divided light of Impressionism to the dark visions of Depression. The forty-six years between 1886 and 1932 saw modernity's promises collapse: the Great War slaughtered millions; the economy that followed devoured the survivors. By 1932, artists like Otto Dix could only document the wreckage, while Huxley and Céline diagnosed a civilization perfecting its mechanisms of control.",
-      "1932→1968": "From dark visions to revolution. The thirty-six years between 1932 and 1968 saw fascism rise and fall, atomic weapons deployed, and new forms of domination emerge through advertising and consumption. By 1968, the critique of modernity exploded into the streets — students in Paris, Prague, Mexico City, and Chicago demanded a world that had not yet been born."
+      "1932→1968": "From dark visions to revolution. The thirty-six years between 1932 and 1968 saw fascism rise and fall, atomic weapons deployed, and new forms of domination emerge through advertising and consumption. By 1968, the critique of modernity exploded into the streets — students in Paris, Prague, Mexico City, and Chicago demanded a world that had not yet been born.",
+      "1798→1851": "From Wordsworth's pastoral elegy to Ruskin's Gothic crusade: the counter-Enlightenment hardens into architectural doctrine against the industrial machine.",
+      "1851→1863": "Ruskin's medieval idealism confronts Baudelaire's flâneur: both reject industrial uniformity, but one looks backward to cathedrals, the other forward to the alienated modern self."
     },
     "insular-art": {
       "664→732": "From the Book of Durrow to the Lindisfarne Gospels, Insular illumination reaches its full flowering. The Synod of Whitby binds Britain to Rome, but the monks at Lindisfarne create something wholly original — Celtic interlace, Germanic energy, Mediterranean gold fused into devotional infinity."
@@ -318,6 +320,9 @@
     },
     "byzantine-transmission": {
       "1054→1453": "Four centuries of estrangement: Greek manuscripts accumulate in Constantinople while the West develops Latin scholasticism."
+    },
+    "gothic-revival": {
+      "1831→1851": "Hugo's Notre-Dame awakened popular romance for the medieval; Ruskin's Stones of Venice made it philosophical doctrine — from fiction to architectural manifesto."
     }
   },
   "it": {
@@ -554,7 +559,9 @@
       "1863→1886": "Dallo scandalo di Manet al martello di Nietzsche: la critica si approfondisce dallo shock estetico all'assalto filosofico ai fondamenti della moralità occidentale.",
       "1886→1968": "Da Al di là del bene e del male di Nietzsche alle barricate di Parigi: un secolo di interrogativi sul fatto che il progresso sia davvero progresso.",
       "1886→1932": "Dalla luce divisa dell'Impressionismo alle visioni oscure della Depressione. I quarantasei anni tra il 1886 e il 1932 videro crollare le promesse della modernità: la Grande Guerra massacrò milioni di persone; l'economia che seguì divorò i sopravvissuti. Nel 1932, artisti come Otto Dix potevano solo documentare i rottami, mentre Huxley e Céline diagnosticavano una civiltà che perfezionava i suoi meccanismi di controllo.",
-      "1932→1968": "Dalle visioni oscure alla rivoluzione. I trentasei anni tra il 1932 e il 1968 videro il fascismo nascere e cadere, le armi atomiche usate, e nuove forme di dominio emergere attraverso la pubblicità e il consumo. Nel 1968, la critica della modernità esplose nelle strade — studenti a Parigi, Praga, Città del Messico e Chicago esigevano un mondo che non era ancora nato."
+      "1932→1968": "Dalle visioni oscure alla rivoluzione. I trentasei anni tra il 1932 e il 1968 videro il fascismo nascere e cadere, le armi atomiche usate, e nuove forme di dominio emergere attraverso la pubblicità e il consumo. Nel 1968, la critica della modernità esplose nelle strade — studenti a Parigi, Praga, Città del Messico e Chicago esigevano un mondo che non era ancora nato.",
+      "1798→1851": "Dall'elegia pastorale di Wordsworth alla crociata gotica di Ruskin: la contro-Illuminazione si cristallizza in dottrina architettonica contro la macchina industriale.",
+      "1851→1863": "L'idealismo medievale di Ruskin incontra il flâneur di Baudelaire: entrambi rifiutano l'uniformità industriale, ma uno guarda indietro alle cattedrali, l'altro avanti all'io moderno alienato."
     },
     "insular-art": {
       "664→732": "Dal Libro di Durrow ai Vangeli di Lindisfarne, l'illuminazione insulare raggiunge la sua piena fioritura. Il Sinodo di Whitby lega la Britannia a Roma, ma i monaci di Lindisfarne creano qualcosa di totalmente originale — intreccio celtico, energia germanica, oro mediterraneo fusi in un'infinità devozionale."
@@ -632,6 +639,9 @@
     },
     "byzantine-transmission": {
       "1054→1453": "Quattro secoli di distacco: i manoscritti greci si accumulano a Costantinopoli mentre l'Occidente sviluppa la scolastica latina."
+    },
+    "gothic-revival": {
+      "1831→1851": "Notre-Dame di Hugo risvegliò il fascino popolare per il medievale; Le pietre di Venezia di Ruskin ne fecero dottrina filosofica — dalla finzione al manifesto architettonico."
     }
   }
 }

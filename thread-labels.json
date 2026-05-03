@@ -121,7 +121,9 @@
     "methodism": "Methodism",
     "augustan-satire": "Augustan Satire",
     "restoration-literature": "Restoration Literature",
-    "utilitarianism": "Utilitarianism"
+    "utilitarianism": "Utilitarianism",
+    "positivism": "Positivism",
+    "bohemianism": "Bohemianism"
   },
   "it": {
     "translation-movement": "Traduzione come potere",
@@ -245,6 +247,8 @@
     "methodism": "Metodismo",
     "augustan-satire": "Satira augustea",
     "restoration-literature": "Letteratura della Restaurazione",
-    "utilitarianism": "Utilitarismo"
+    "utilitarianism": "Utilitarismo",
+    "positivism": "Positivismo",
+    "bohemianism": "Bohemianismo"
   }
 }

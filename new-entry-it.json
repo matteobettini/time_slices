@@ -1,50 +1,50 @@
 {
-  "year": "1054",
-  "id": "1054-constantinople-the-great-fracture",
-  "title": "Costantinopoli — La Grande Frattura",
-  "teaser": "Un legato papale sbatte una bolla di scomunica sull'altare di Santa Sofia. Un patriarca risponde allo stesso modo. Il cristianesimo si divide in due. Nel frattempo, una nuova stella risplende in cielo—così luminosa da essere visibile a mezzogiorno—registrata dagli astronomi dalla Cina a Baghdad, ignorata da una Chiesa troppo impegnata a dividersi per guardare in alto.",
+  "year": "1851",
+  "id": "1851-london-glass-cathedral",
+  "title": "Londra — La cattedrale di vetro",
+  "teaser": "Joseph Paxton costruisce un palazzo di ferro e vetro. Sei milioni di visitatori adorano all'altare del Progresso. Ruskin inizia il suo contro-vangelo: non le macchine, ma le cattedrali gotiche preservano l'anima umana. In un cottage a Chelsea, Turner muore guardando il sole.",
   "dimensions": {
     "art": {
       "label": "Arte",
-      "content": "Nella stessa Santa Sofia, il <strong>mosaico dell'imperatrice Zoe</strong> risplende dalla galleria sud: Cristo Pantocratore in trono tra <strong>Zoe</strong> e <strong>Costantino IX Monomaco</strong>, reso in milioni di tessere d'oro e vetro. I volti sono già stati modificati due volte con i nuovi matrimoni di Zoe; l'arte bizantina serve la politica imperiale. È lo stile <strong>medio-bizantino</strong> al suo apice: ieratico, frontale, intriso d'oro, le figure sospese nell'eternità. Contemporaneamente, in tutto l'Occidente, l'<strong>architettura romanica</strong> si diffonde lungo le vie di pellegrinaggio. Il primo stile paneuropeo dai tempi di Roma, parla attraverso archi a tutto sesto, mura massicce e volte in pietra. A Montecassino, l'abate Desiderio ha appena iniziato la ricostruzione; gli scultori riscoprono forme classiche. Due linguaggi visivi per due Chiese che ora si separano."
+      "content": "Il <strong>Crystal Palace</strong> stesso è l'opera d'arte definitiva dell'anno — il miracolo prefabbricato di Joseph Paxton in <strong>ghisa e vetro</strong>, eretto a Hyde Park in soli cinque mesi. Lungo 1.851 piedi (come l'anno), racchiude diciotto acri sotto 293.000 lastre di vetro, rendendo l'architettura stessa trasparente. È il <strong>Sublime Industriale</strong>: l'ingegneria come cattedrale. Eppure il 19 dicembre <strong>J.M.W. Turner</strong> muore nel suo cottage a Chelsea, guardando la luce del sole filtrare tra le nuvole — l'ultimo grande <strong>Romantico</strong>, che lascia ventimila acquerelli dove la forma si dissolve in pura luminosità. Lo stesso anno, <strong>John Ruskin</strong> pubblica il primo volume de <em>Le pietre di Venezia</em>, elogiando l'artigianato medievale contro l'uniformità meccanizzata che vedeva nella scatola di vetro di Paxton."
     },
     "lit": {
       "label": "Letteratura",
-      "content": "La <strong>Cronaca anglosassone</strong>, la più antica storia vernacolare d'Europa, registra quest'anno con cupa precisione: Papa Leone IX morto a Roma, una pestilenza bovina che devasta l'Inghilterra, e il <strong>conte Siward</strong> che marcia in Scozia per sconfiggere <strong>Re Macbeth</strong> a Dunsinane. Cinque secoli dopo, Shakespeare drammatizzerà questa campagna—il vero Macbeth sopravvive alla battaglia e regna altri tre anni. Nel frattempo, le prime versioni della <strong>Chanson de Roland</strong> prendono forma orale, celebrando i guerrieri carolingi contro gli infedeli. L'epica volgare si muove mentre la cronaca latina persiste: due correnti letterarie che alla fine confluiranno nelle letterature nazionali."
+      "content": "A Parigi, <strong>Henri Murger</strong> pubblica <em>Scènes de la vie de bohème</em>, canonizzando l'artista in difficoltà come eroe — i poeti delle soffitte e le sartine tisiche che rifiutano la rispettabilità borghese. Diventerà la <em>Bohème</em> di Puccini. La <strong>bohème</strong> nasce come controcultura: l'arte come povertà scelta rispetto al comfort. Dall'altra parte dell'Atlantico, <strong>Herman Melville</strong> pubblica <em>Moby-Dick</em>, commercialmente ignorato ma destinato alla grandezza — l'ossessiva caccia di Achab alla balena bianca come specchio oscuro della volontà della civiltà industriale di conquistare la natura. In Inghilterra fiorisce il romanzo di critica sociale: <em>Yeast</em> di <strong>Charles Kingsley</strong> esplora la povertà rurale."
     },
     "phil": {
       "label": "Filosofia",
-      "content": "A Fonte Avellana, il monaco <strong>Pier Damiani</strong> compone il <em>De divina omnipotentia</em>, confrontandosi con i limiti del potere di Dio. Può Dio annullare il passato? Può restaurare ciò che non può essere restaurato? Damiani diventa la voce dell'<strong>anti-dialettica</strong>—diffidente della logica applicata ai misteri sacri. La filosofia, insiste, deve rimanere <em>ancilla theologiae</em>, serva della teologia. Eppure il suo confronto con il problema dimostra il potere della dialettica anche mentre lo nega. Questa tensione tra fede e ragione, tra sottomissione mistica e indagine logica, definirà i due secoli successivi fino a quando <strong>Tommaso d'Aquino</strong> le sintetizzerà. Lo scisma tra le chiese rispecchia uno scisma nel metodo."
+      "content": "Auguste Comte inizia a pubblicare il suo <em>Système de politique positive</em>, delineando una <strong>Religione dell'Umanità</strong> per sostituire il cristianesimo — il <strong>positivismo</strong> come fede secolare. Dove le chiese adoravano Dio, l'Umanità stessa diventa il Grande Essere, i suoi santi i geni della scienza e dell'arte. I tre stadi di Comte (teologico, metafisico, positivo) dichiarano che la civiltà matura fonda la verità solo sui fatti osservabili. Eppure <em>Le pietre di Venezia</em> di Ruskin monta un contrattacco filosofico: il capitolo 'La natura del Gotico' sosterrà che le irregolarità dell'<strong>architettura gotica</strong> preservano l'umanità del lavoratore, mentre la standardizzazione industriale — le parti intercambiabili del Crystal Palace — asservisce l'anima alla macchina."
     },
     "hist": {
       "label": "Storia",
-      "content": "Il <strong>16 luglio 1054</strong>, il cardinale <strong>Umberto di Silva Candida</strong> entra a grandi passi in Santa Sofia durante le preghiere pomeridiane e depone una bolla di scomunica sull'altare maggiore, denunciando il patriarca <strong>Michele Cerulario</strong>. Si scuote la polvere dai piedi e se ne va. Nel giro di pochi giorni, Cerulario scomunica a sua volta i legati papali. Papa <strong>Leone IX</strong> era morto tre mesi prima, rendendo l'intera missione giuridicamente dubbia, ma la rottura perdura. Secoli di deriva teologica—<em>filioque</em>, pane azzimo, celibato clericale, pretese papali—si cristallizzano in uno scisma formale. La Chiesa che era sopravvissuta agli imperatori ariani e alle guerre iconoclaste ora si frattura lungo una linea di faglia che non si chiuderà per nove secoli."
+      "content": "La <strong>Grande Esposizione</strong> apre il 1° maggio, attirando sei milioni di visitatori — un terzo della popolazione britannica. La visione del principe Alberto: libero commercio, cooperazione internazionale, progresso industriale come pace. I profitti finanziano il distretto museale di South Kensington. Il <strong>censimento del 1851</strong> rivela uno spartiacque: per la prima volta, più britannici vivono nelle città che in campagna. L'urbanizzazione è compiuta; l'era <strong>vittoriana</strong> ha trovato la propria immagine. Ma il 2 dicembre, <strong>Luigi Napoleone Bonaparte</strong> scioglie la Repubblica francese con un colpo di stato — il nipote di Napoleone diventa dittatore, poi imperatore. Victor Hugo fugge in esilio. L'anno che celebra il progresso si chiude con la democrazia schiacciata."
     },
     "conn": {
       "label": "Connessioni",
-      "content": "Mentre i legati scagliavano anatemi a Costantinopoli, una <strong>nuova stella</strong> apparve nel Toro—<strong>SN 1054</strong>, la supernova il cui residuo chiamiamo oggi Nebulosa del Granchio. Gli astronomi cinesi registrarono una 'stella ospite' visibile di giorno per ventitré giorni. Gli studiosi arabi la annotarono; i petroglifi Chaco potrebbero raffigurarla. Le cronache europee restano in silenzio. L'ironia è perfetta: un evento cosmico testimoniato attraverso le civiltà passa inosservato dalla civiltà più impegnata a fratturarsi sulla teologia. Il mosaico di Zoe, con i suoi volti alterati per ogni nuovo imperatore, incarna il pragmatismo bizantino—dottrina fissa, politica fluida. La cautela filosofica di Damiani sul potere divino riecheggia l'ansia più profonda: se la volontà di Dio trascende la logica, cosa fonda l'autorità?",
-      "funFact": "Le scomuniche reciproche del 1054 furono formalmente revocate solo il 7 dicembre 1965, quando Papa Paolo VI e il Patriarca Atenagora I le annullarono simultaneamente—911 anni dopo il gesto drammatico del cardinale Umberto."
+      "content": "Il Crystal Palace e la cattedrale gotica incarnano la dialettica centrale del 1851: progresso contro anima. La meraviglia di vetro e ferro di Paxton era <strong>architettura come esposizione</strong> — trasparente, modulare, infinitamente riproducibile, contenente le macchine del mondo. <em>Le pietre di Venezia</em> di Ruskin, iniziate lo stesso anno, rifiutano esattamente questo: i muratori medievali scolpivano i propri grotteschi, le loro imperfezioni provavano la loro libertà. I bohémien di Murger fuggono dalla città industriale verso soffitte dove la povertà preserva l'autenticità. Turner si dissolve nella luce proprio mentre Comte sistematizza l'umanità in stadi. Persino il colpo di stato di Luigi Napoleone si collega: la fede della modernità nel progresso poteva coesistere con l'autocrazia. La Grande Esposizione prometteva pace attraverso il commercio; nel giro di due anni, iniziò la guerra di Crimea.",
+      "funFact": "Il design del Crystal Palace venne a Paxton mentre scarabocchiava durante una riunione del consiglio ferroviario. Lo basò sulla nervatura inferiore di una ninfea gigante che aveva coltivato a Chatsworth — la natura come modello per l'architettura industriale."
     }
   },
   "sources": [
-    { "url": "https://plato.stanford.edu/entries/peter-damian/", "title": "Stanford Encyclopedia of Philosophy: Peter Damian" },
-    { "url": "https://it.wikipedia.org/wiki/Scisma_d%27Oriente", "title": "Wikipedia: Scisma d'Oriente" },
-    { "url": "https://it.wikipedia.org/wiki/SN_1054", "title": "Wikipedia: SN 1054 (supernova della Nebulosa del Granchio)" },
-    { "url": "https://avalon.law.yale.edu/medieval/ang11.asp", "title": "Anglo-Saxon Chronicle: Eleventh Century (Yale)" },
-    { "url": "https://www.britannica.com/art/Byzantine-art", "title": "Britannica: Byzantine Art" }
+    { "url": "https://it.wikipedia.org/wiki/Grande_esposizione_delle_opere_dell%27industria_di_tutte_le_nazioni", "title": "Grande esposizione - Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Crystal_Palace_(Londra)", "title": "Crystal Palace - Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Le_pietre_di_Venezia", "title": "Le pietre di Venezia - Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Auguste_Comte", "title": "Auguste Comte - Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Colpo_di_Stato_in_Francia_del_1851", "title": "Colpo di Stato in Francia del 1851 - Wikipedia" }
   ],
   "image": {
-    "url": "images/1054-constantinople-the-great-fracture.jpg",
-    "caption": "Il mosaico dell'imperatrice Zoe in Santa Sofia, Costantinopoli, raffigurante Cristo Pantocratore affiancato dall'imperatrice Zoe e da Costantino IX Monomaco",
+    "url": "images/1851-london-glass-cathedral.jpg",
+    "caption": "Il Crystal Palace a Hyde Park, progettato da Joseph Paxton per la Grande Esposizione del 1851",
     "width": 1200,
-    "height": 1000,
-    "attribution": "Myrabella, Pubblico dominio, via Wikimedia Commons"
+    "height": 649,
+    "attribution": "Dickinson Brothers, Pubblico dominio, tramite Wikimedia Commons"
   },
-  "threads": ["romanesque-architecture", "scholasticism", "papal-supremacy", "byzantine-transmission"],
+  "threads": ["gothic-revival", "critique-of-modernity", "positivism", "bohemianism"],
   "location": {
-    "lat": 41.0086,
-    "lon": 28.9802,
-    "place": "Costantinopoli"
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "place": "Londra"
   },
-  "addedDate": "2026-05-02T05:00:00Z"
+  "addedDate": "2026-05-03T05:00:00Z"
 }

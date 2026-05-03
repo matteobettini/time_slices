@@ -5032,5 +5032,79 @@
       "url": "audio/1054-constantinople-the-great-fracture.mp3",
       "duration": 144
     }
+  },
+  {
+    "year": "1851",
+    "id": "1851-london-glass-cathedral",
+    "title": "London — The Glass Cathedral",
+    "teaser": "Joseph Paxton builds a palace of iron and glass. Six million visitors worship at the altar of Progress. Ruskin begins his counter-gospel: not machines, but Gothic cathedrals preserve the human soul. In a Chelsea cottage, Turner dies watching the sun.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "The <strong>Crystal Palace</strong> itself is the year's defining artwork — Joseph Paxton's prefabricated miracle of <strong>cast iron and glass</strong>, erected in Hyde Park in five months. At 1,851 feet long (matching the year), enclosing eighteen acres beneath 293,000 panes of glass, it makes architecture itself transparent. This is the <strong>Industrial Sublime</strong>: engineering as cathedral. Yet on December 19th, <strong>J.M.W. Turner</strong> dies in his Chelsea cottage, watching sunlight break through clouds — the last great <strong>Romantic</strong>, leaving behind twenty thousand watercolors dissolving form into pure luminosity. The same year, <strong>John Ruskin</strong> publishes the first volume of <em>The Stones of Venice</em>, praising medieval craftsmanship against the mechanized uniformity he saw in Paxton's glass box."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "In Paris, <strong>Henri Murger</strong> publishes <em>Scènes de la vie de bohème</em>, canonizing the struggling artist as hero — the garret poets and consumptive seamstresses who reject bourgeois respectability. It will become Puccini's <em>La Bohème</em>. <strong>Bohemianism</strong> is born as counter-culture: art as poverty chosen over comfort. Across the Atlantic, <strong>Herman Melville</strong> publishes <em>Moby-Dick</em>, commercially ignored but destined for greatness — Ahab's obsessive pursuit of the white whale a dark mirror of industrial civilization's will to conquer nature. In England, the novel of social critique flourishes: <strong>Charles Kingsley</strong>'s <em>Yeast</em> explores rural poverty, while factory fiction continues the tradition Gaskell began."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "Auguste Comte begins publishing his <em>Système de politique positive</em>, outlining a <strong>Religion of Humanity</strong> to replace Christianity — <strong>positivism</strong> as secular faith. Where churches worshipped God, Humanity itself becomes the Great Being, its saints the geniuses of science and art. Comte's three stages (theological, metaphysical, positive) declare that mature civilization grounds truth in observable facts alone. Yet Ruskin's <em>Stones of Venice</em> mounts a philosophical counter-attack: the chapter 'The Nature of Gothic' will argue that <strong>Gothic architecture's</strong> irregularities preserve the worker's humanity, while industrial standardization — the Crystal Palace's interchangeable parts — enslaves the soul to the machine."
+      },
+      "hist": {
+        "label": "History",
+        "content": "The <strong>Great Exhibition</strong> opens May 1st, drawing six million visitors — one-third of Britain's population. Prince Albert's vision: free trade, international cooperation, industrial progress as peace. The profits fund South Kensington's museum district. The <strong>1851 Census</strong> reveals a watershed: for the first time, more Britons live in towns than countryside. Urbanization is complete; the <strong>Victorian</strong> era has found its self-image. But on December 2nd, <strong>Louis-Napoleon Bonaparte</strong> dissolves the French Republic in a coup d'état — Napoleon's nephew becomes dictator, then emperor. Victor Hugo flees to exile. The year that celebrates progress ends with democracy crushed."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The Crystal Palace and the Gothic cathedral enact 1851's central dialectic: progress versus soul. Paxton's glass-and-iron marvel was <strong>architecture as exhibition</strong> — transparent, modular, endlessly reproducible, housing the world's machines. Ruskin's <em>Stones of Venice</em>, begun the same year, rejects exactly this: medieval masons carved their own grotesques, their imperfections proving their freedom. Murger's bohemians flee the industrial city for garrets where poverty preserves authenticity. Turner dissolves into light just as Comte systematizes humanity into stages. Even Louis-Napoleon's coup connects: modernity's faith in progress could coexist with autocracy. The Great Exhibition promised peace through trade; within two years, the Crimean War began.",
+        "funFact": "The Crystal Palace's design came to Paxton while doodling at a railway board meeting. He based it on the ribbed underside of a giant water lily he had grown at Chatsworth — nature providing the template for industrial architecture."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Great_Exhibition",
+        "title": "Great Exhibition - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Crystal_Palace",
+        "title": "Crystal Palace - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Stones_of_Venice_(book)",
+        "title": "The Stones of Venice - Wikipedia"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/comte/",
+        "title": "Auguste Comte - Stanford Encyclopedia of Philosophy"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/1851_French_coup_d%27%C3%A9tat",
+        "title": "1851 French coup d'état - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1851-london-glass-cathedral.jpg",
+      "caption": "The Crystal Palace in Hyde Park, designed by Joseph Paxton for the Great Exhibition of 1851",
+      "width": 1200,
+      "height": 649,
+      "attribution": "Dickinson Brothers, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "gothic-revival",
+      "critique-of-modernity",
+      "positivism",
+      "bohemianism"
+    ],
+    "location": {
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "place": "London"
+    },
+    "addedDate": "2026-05-03T05:00:00Z",
+    "podcast": {
+      "url": "audio/1851-london-glass-cathedral.mp3",
+      "duration": 146
+    }
   }
 ]
