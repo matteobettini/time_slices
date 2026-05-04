@@ -5090,5 +5090,79 @@
       "url": "audio/it/1851-london-glass-cathedral.mp3",
       "duration": 173
     }
+  },
+  {
+    "year": "1943",
+    "id": "1943-paris-freedom-under-occupation",
+    "title": "Parigi — Libertà sotto l'occupazione",
+    "teaser": "Sartre pubblica L'essere e il nulla mentre i carri armati nazisti pattugliano i boulevards. Le mosche mette in scena la resistenza attraverso il mito, mentre Camus dirige Combat in clandestinità. Nel ghetto di Varsavia, gli ebrei organizzano la prima insurrezione urbana contro il fascismo. L'esistenza precede l'essenza — ma solo se si sceglie.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Nel suo atelier di Rue des Grands-Augustins, <strong>Pablo Picasso</strong> completa <em>L'Homme au Mouton</em> (L'uomo con l'agnello), un monumentale bronzo scolpito in un solo pomeriggio dopo un anno di disegni preparatori. La figura — un uomo che stringe un agnello che si dibatte — rovescia l'iconografia cristiana del Buon Pastore in qualcosa di più crudo: né salvatore né sacrificio, ma il fatto brutale della protezione in un mondo di macellazione. Bandito dalle esposizioni, etichettato come 'degenerato', Picasso rimane a Parigi per tutta l'occupazione come atto di sfida. Quando un ufficiale tedesco, guardando una fotografia di <em>Guernica</em>, chiede 'L'ha fatto lei?', Picasso risponde: 'No, l'avete fatto voi.' I dipinti del periodo bellico — teschi, sedie vuote, donne in poltrona — comprimono lo spazio domestico in claustrofobia, oggetti ordinari carichi di peso esistenziale."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "La pièce <em>Les Mouches</em> (Le mosche) di <strong>Jean-Paul Sartre</strong> debutta il tre giugno al Théâtre de la Cité. Il mito greco di Oreste diventa un'allegoria della resistenza: l'eroe torna ad Argo, una città paralizzata dalla colpa collettiva e dalle mosche (che incarnano il rimorso), e la libera accettando la responsabilità del suo tirannicidio. I censori tedeschi, non cogliendo il sottotesto, approvano la produzione. Nel frattempo, <strong>Albert Camus</strong> entra nella rete di resistenza di <em>Combat</em> come scrittore e redattore, il suo giornalismo clandestino invoca una 'rivoluzione liberale'. Le sue <em>Lettere a un amico tedesco</em> circolano in segreto, articolando perché la resistenza è necessaria nonostante l'assurdo. L'anno cristallizza la <strong>littérature engagée</strong> — letteratura impegnata che insiste che scrivere è di per sé una forma d'azione."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>L'essere e il nulla</strong> (<em>L'Être et le néant</em>) esce da Gallimard, settecento pagine di ontologia fenomenologica che definiranno l'<strong>esistenzialismo</strong> per una generazione. Leggendo Heidegger mentre era prigioniero di guerra nel 1940-41, Sartre sviluppa il proprio sistema: la coscienza è sempre coscienza <em>di</em> qualcosa; il sé non è un'essenza nascosta ma un progetto perpetuo. I suoi concetti chiave — la <strong>malafede</strong> (l'autoinganno sulla propria libertà), l'<strong>essere-per-altri</strong> (lo sguardo che oggettivizza), la <strong>libertà radicale</strong> (siamo 'condannati a essere liberi') — emergono da quest'opera densa. Sartre afferma provocatoriamente: 'Non siamo mai stati così liberi come sotto l'occupazione tedesca.' Ogni scelta ora porta un peso assoluto; non ci sono scuse, nessun appello al dovere. <em>L'esistenza precede l'essenza</em>."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il <strong>due febbraio</strong>, la Sesta Armata tedesca si arrende a Stalingrado — il punto di svolta della guerra, duecentomila morti dell'Asse, novantamila prigionieri. La marea si è irrevocabilmente spostata verso est. Il <strong>diciannove aprile</strong>, alla vigilia di Pesach, gli ebrei del <strong>ghetto di Varsavia</strong> organizzano la prima insurrezione armata urbana contro l'occupazione nazista. Settecento combattenti con pistole e bombe fatte in casa resistono per quasi un mese contro carri armati e lanciafiamme. Il SS-Brigadeführer Stroop, che prevedeva tre giorni, ne impiega quattro settimane. L'insurrezione finisce a maggio con il ghetto raso al suolo, ma il suo significato trascende la sconfitta militare: dimostra che la resistenza è possibile, che le vittime possono diventare attori. A Kursk in luglio, la più grande battaglia di carri armati della storia pone fine per sempre alla capacità offensiva tedesca."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "L'anno condensa l'<strong>esistenzialismo</strong> da argomento di seminario a realtà vissuta. Sartre scrive che siamo le nostre scelte — e il 1943 impone scelte con posta in gioco letale: collaborare o resistere, parlare o tacere, nascondere i perseguitati o voltarsi dall'altra parte. La scelta di Picasso di rimanere a Parigi, facendo arte che rifiuta sia la propaganda che l'evasione, mette in atto ciò che Sartre teorizza. Camus, che dirige <em>Combat</em> di notte, incarna l'eroe assurdo che continua pur sapendo che il masso rotolerà di nuovo giù. I combattenti del ghetto di Varsavia, vastamente inferiori in armamento, scelgono l'azione autentica rispetto alla passività vittimistica. Persino <em>Les Mouches</em> diventa prassi: teatro come resistenza, mito come intervento politico. L'occupazione rende la filosofia concreta — la libertà non è un'astrazione ma una decisione quotidiana, e la <strong>malafede</strong> può costare vite.",
+        "funFact": "Sartre scrisse gran parte de L'essere e il nulla al Café de Flore, centellinando un solo caffè durante i pomeriggi dell'occupazione nazista — i camerieri non gli chiesero mai di andarsene."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/L%27essere_e_il_nulla",
+        "title": "L'essere e il nulla - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Rivolta_del_ghetto_di_Varsavia",
+        "title": "Rivolta del ghetto di Varsavia - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Le_mosche_(Sartre)",
+        "title": "Le mosche (Sartre) - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Pablo_Picasso",
+        "title": "Pablo Picasso - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Battaglia_di_Stalingrado",
+        "title": "Battaglia di Stalingrado - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1943-paris-freedom-under-occupation.jpg",
+      "caption": "Jean-Paul Sartre, filosofo della libertà radicale, circa millenovecentocinquanta",
+      "attribution": "Autore sconosciuto, Pubblico dominio via Wikimedia Commons",
+      "width": 571,
+      "height": 491
+    },
+    "threads": [
+      "existentialism",
+      "french-resistance",
+      "phenomenology",
+      "world-war-ii"
+    ],
+    "location": {
+      "lat": 48.8534,
+      "lon": 2.3488,
+      "place": "Parigi"
+    },
+    "addedDate": "2026-05-04T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1943-paris-freedom-under-occupation.mp3",
+      "duration": 177
+    }
   }
 ]

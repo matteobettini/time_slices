@@ -271,7 +271,9 @@
     "existentialism": {
       "1922→1927": "Heidegger's lectures at Freiburg crystallize into Being and Time — phenomenology confronts human finitude directly.",
       "1927→1937": "Heidegger asked what it means to exist facing death; fascism literalizes that question as bombers turn philosophy into terror, while Husserl's banned lectures diagnose reason's spiritual crisis.",
-      "1937→1953": "Gramsci's prison notebooks asked how power manufactures consent; Beckett's tramps discover that waiting IS existence, consent to nothing, yet still somehow here."
+      "1937→1953": "Gramsci's prison notebooks asked how power manufactures consent; Beckett's tramps discover that waiting IS existence, consent to nothing, yet still somehow here.",
+      "1937→1943": "From Gramsci's prison notebooks theorizing cultural hegemony to Sartre's Being and Nothingness: occupation transforms existentialism from academic philosophy into lived resistance.",
+      "1943→1953": "From wartime Paris to Beckett's Godot: existentialism evolves from Sartrean engagement to the Theatre of the Absurd, where waiting itself becomes the human condition."
     },
     "modernism": {
       "1922→1927": "The experimentalism of Ulysses and The Waste Land becomes Woolf's durational prose — form dissolves into time itself.",
@@ -323,6 +325,9 @@
     },
     "gothic-revival": {
       "1831→1851": "Hugo's Notre-Dame awakened popular romance for the medieval; Ruskin's Stones of Venice made it philosophical doctrine — from fiction to architectural manifesto."
+    },
+    "phenomenology": {
+      "1913→1943": "Husserl's phenomenological method travels from Göttingen to occupied Paris: Sartre reads Heidegger as a prisoner of war and builds Being and Nothingness on Husserlian foundations."
     }
   },
   "it": {
@@ -590,7 +595,9 @@
     "existentialism": {
       "1922→1927": "Le lezioni di Heidegger a Friburgo si cristallizzano in Essere e tempo — la fenomenologia affronta direttamente la finitezza umana.",
       "1927→1937": "Heidegger chiese cosa significhi esistere di fronte alla morte; il fascismo letteralizza quella domanda mentre i bombardieri trasformano la filosofia in terrore, e le lezioni proibite di Husserl diagnosticano la crisi spirituale della ragione.",
-      "1937→1953": "I quaderni di Gramsci indagavano come il potere fabbrichi il consenso; i vagabondi di Beckett scoprono che aspettare È l'esistenza, consenso al nulla, eppure ancora qui."
+      "1937→1953": "I quaderni di Gramsci indagavano come il potere fabbrichi il consenso; i vagabondi di Beckett scoprono che aspettare È l'esistenza, consenso al nulla, eppure ancora qui.",
+      "1937→1943": "Dai quaderni del carcere di Gramsci che teorizzano l'egemonia culturale a L'essere e il nulla di Sartre: l'occupazione trasforma l'esistenzialismo da filosofia accademica a resistenza vissuta.",
+      "1943→1953": "Dalla Parigi in guerra al Godot di Beckett: l'esistenzialismo evolve dall'engagement sartriano al Teatro dell'Assurdo, dove l'attesa stessa diventa la condizione umana."
     },
     "modernism": {
       "1922→1927": "La sperimentazione dell'Ulisse e di Terra desolata diventa la prosa durativa di Woolf — la forma si dissolve nel tempo stesso.",
@@ -642,6 +649,9 @@
     },
     "gothic-revival": {
       "1831→1851": "Notre-Dame di Hugo risvegliò il fascino popolare per il medievale; Le pietre di Venezia di Ruskin ne fecero dottrina filosofica — dalla finzione al manifesto architettonico."
+    },
+    "phenomenology": {
+      "1913→1943": "Il metodo fenomenologico di Husserl viaggia da Gottinga alla Parigi occupata: Sartre legge Heidegger da prigioniero di guerra e costruisce L'essere e il nulla su fondamenta husserliane."
     }
   }
 }

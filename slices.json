@@ -5106,5 +5106,79 @@
       "url": "audio/1851-london-glass-cathedral.mp3",
       "duration": 146
     }
+  },
+  {
+    "year": "1943",
+    "id": "1943-paris-freedom-under-occupation",
+    "title": "Paris — Freedom Under Occupation",
+    "teaser": "Sartre publishes Being and Nothingness while Nazi tanks patrol the boulevards. The Flies stages resistance in myth while Camus edits Combat underground. In the Warsaw Ghetto, Jews mount the first urban uprising against fascism. Existence precedes essence — but only if you choose it.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "In his Rue des Grands-Augustins studio, <strong>Pablo Picasso</strong> completes <em>L'Homme au Mouton</em> (Man with a Sheep), a monumental bronze sculpted in a single afternoon after a year of preparatory drawings. The figure — a man clutching a struggling lamb — inverts Christian Good Shepherd iconography into something rawer: neither savior nor sacrifice, but the brutal fact of protection in a world of slaughter. Banned from exhibiting, labelled 'degenerate,' Picasso remains in Paris throughout the occupation as an act of defiance. When a German officer viewing a photograph of <em>Guernica</em> asks 'Did you do that?', Picasso reportedly answers: 'No, you did.' The wartime paintings — skulls, empty chairs, women in armchairs — compress domestic space into claustrophobia, ordinary objects charged with existential weight."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Jean-Paul Sartre's</strong> play <em>Les Mouches</em> (The Flies) premieres on June third at the Théâtre de la Cité. The Greek myth of Orestes becomes an allegory of resistance: the hero returns to Argos, a city paralyzed by collective guilt and flies (embodying remorse), and liberates it by accepting responsibility for his act of tyrannicide. German censors, missing the subtext, approve the production. Meanwhile, <strong>Albert Camus</strong> joins the <em>Combat</em> resistance network as a writer and editor, his clandestine journalism calling for a 'liberal revolution.' His <em>Letters to a German Friend</em> circulate in secret, articulating why resistance is necessary despite absurdity. The year crystallizes <strong>littérature engagée</strong> — committed literature that insists writing is itself a form of action."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Being and Nothingness</strong> (<em>L'Être et le néant</em>) appears from Gallimard, seven hundred pages of phenomenological ontology that will define <strong>existentialism</strong> for a generation. Reading Heidegger while a prisoner of war in 1940-41, Sartre develops his own system: consciousness is always consciousness <em>of</em> something; the self is not a hidden essence but a perpetual project. His key concepts — <strong>bad faith</strong> (self-deception about one's freedom), <strong>being-for-others</strong> (the look that objectifies), <strong>radical freedom</strong> (we are 'condemned to be free') — emerge from this dense work. Sartre provocatively claims: 'We have never been so free as under the German Occupation.' Every choice now carries absolute weight; there are no excuses, no appeals to duty. <em>Existence precedes essence</em>."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>February second</strong>, the German Sixth Army surrenders at Stalingrad — the war's turning point, two hundred thousand Axis dead, ninety thousand captured. The tide has turned irrevocably eastward. On <strong>April nineteenth</strong>, the eve of Passover, Jews in the <strong>Warsaw Ghetto</strong> mount the first armed urban uprising against Nazi occupation. Seven hundred fighters with pistols and homemade bombs hold out for nearly a month against tanks and flamethrowers. SS-Brigadeführer Stroop, who expected three days, requires four weeks. The uprising ends in May with the ghetto razed, but its significance transcends military defeat: it proves that resistance is possible, that victims can become actors. At Kursk in July, the largest tank battle in history ends Germany's offensive capability forever."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year condenses <strong>existentialism</strong> from seminar topic to lived reality. Sartre writes that we are our choices — and 1943 forces choices with lethal stakes: collaborate or resist, speak or stay silent, hide the persecuted or look away. Picasso's choice to remain in Paris, making art that refuses both propaganda and escapism, enacts what Sartre theorizes. Camus, editing <em>Combat</em> by night, embodies the absurd hero who continues despite knowing the boulder will roll back down. The Warsaw Ghetto fighters, vastly outgunned, choose authentic action over passive victimhood. Even <em>Les Mouches</em> becomes praxis: theater as resistance, myth as political intervention. The occupation renders philosophy concrete — freedom is not an abstraction but a daily decision, and <strong>bad faith</strong> can cost lives.",
+        "funFact": "Sartre wrote much of Being and Nothingness at the Café de Flore, nursing a single coffee through Nazi-occupied afternoons — the waiters never asked him to leave."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Being_and_Nothingness",
+        "title": "Being and Nothingness - Wikipedia"
+      },
+      {
+        "url": "https://encyclopedia.ushmm.org/content/en/article/warsaw-ghetto-uprising",
+        "title": "Warsaw Ghetto Uprising - US Holocaust Memorial Museum"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Flies",
+        "title": "The Flies (Les Mouches) - Wikipedia"
+      },
+      {
+        "url": "https://www.philamuseum.org/objects/57148",
+        "title": "Man with a Sheep - Philadelphia Museum of Art"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Stalingrad",
+        "title": "Battle of Stalingrad - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1943-paris-freedom-under-occupation.jpg",
+      "caption": "Jean-Paul Sartre, philosopher of radical freedom, circa nineteen-fifty",
+      "attribution": "Unknown author, Public domain via Wikimedia Commons",
+      "width": 571,
+      "height": 491
+    },
+    "threads": [
+      "existentialism",
+      "french-resistance",
+      "phenomenology",
+      "world-war-ii"
+    ],
+    "location": {
+      "lat": 48.8534,
+      "lon": 2.3488,
+      "place": "Paris"
+    },
+    "addedDate": "2026-05-04T05:00:00Z",
+    "podcast": {
+      "url": "audio/1943-paris-freedom-under-occupation.mp3",
+      "duration": 193
+    }
   }
 ]
