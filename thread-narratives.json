@@ -156,7 +156,9 @@
       "1905→1927": "Einstein's relativity demanded reinterpretation; Heisenberg and Bohr answered with uncertainty and complementarity — the observer becomes part of the system.",
       "1927→1953": "Heisenberg shattered certainty at the quantum scale; Watson and Crick found certainty at the molecular — life's code finally legible, even as meaning dissolved elsewhere.",
       "1610→1666": "Galileo's telescope opened the heavens; Newton's prism opened light itself. The plague sent him home from Cambridge to think alone — and there, in a Lincolnshire farmhouse, modern physics was born.",
-      "1666→1687": "Newton hoarded his discoveries for two decades. Only Halley's persistence — and his pocket — brought the Principia to print. What began with a falling apple ended with the universe as equation."
+      "1666→1687": "Newton hoarded his discoveries for two decades. Only Halley's persistence — and his pocket — brought the Principia to print. What began with a falling apple ended with the universe as equation.",
+      "1859→1895": "Darwin's evolution remade biology; Röntgen's X-rays showed physics could remake vision itself — the invisible made visible at last.",
+      "1895→1905": "X-rays proved invisible radiation could penetrate matter; a decade later Einstein proved space and time themselves were mutable."
     },
     "enlightenment": {
       "1687→1755": "Newton's <em>Principia</em> proved the cosmos was lawful; the Lisbon earthquake asked whether it was just. Enlightenment optimism crested and cracked within seventy years.",
@@ -278,7 +280,8 @@
     "modernism": {
       "1922→1927": "The experimentalism of Ulysses and The Waste Land becomes Woolf's durational prose — form dissolves into time itself.",
       "1927→1937": "Heidegger's temporality and Woolf's dissolving narratives meet their historical test: can modernist form bear witness to mechanized atrocity? Guernica answers in Cubist screams.",
-      "1913→1922": "Stravinsky's riot becomes Eliot's waste land. Nine years, one world war: modernism's experimental assault becomes its elegy."
+      "1913→1922": "Stravinsky's riot becomes Eliot's waste land. Nine years, one world war: modernism's experimental assault becomes its elegy.",
+      "1895→1913": "The X-ray, cinema, and Time Machine of 1895 taught a new way of seeing; by 1913 the Fauves and Rite of Spring made those visions riot."
     },
     "stream-of-consciousness": {
       "1922→1927": "Joyce's one day and Proust's lost time converge in Woolf: consciousness as duration, not sequence."
@@ -312,7 +315,8 @@
       "1641→1648": "Descartes' Meditations inaugurates radical doubt as philosophical method; by Westphalia, doubt has become political: if God cannot settle religious truth, sovereignty must."
     },
     "fin-de-siecle": {
-      "1886→1889": "Three years from the divided light to Nietzsche's collapse: the fin-de-siècle accelerates toward its own dissolution."
+      "1886→1889": "Three years from the divided light to Nietzsche's collapse: the fin-de-siècle accelerates toward its own dissolution.",
+      "1889→1895": "Van Gogh's asylum visions and Bergson's time-philosophy seed the anxious introspection that blooms in Wilde's wit — and his destruction."
     },
     "neoclassicism": {
       "1738→1784": "From Herculaneum's first excavations to David's Oath of the Horatii: buried antiquity resurfaces to reshape European taste and revolutionary politics."
@@ -480,7 +484,9 @@
       "1905→1927": "La relatività di Einstein richiedeva reinterpretazione; Heisenberg e Bohr risposero con incertezza e complementarità — l'osservatore diventa parte del sistema.",
       "1927→1953": "Heisenberg frantumò la certezza alla scala quantistica; Watson e Crick trovarono certezza a quella molecolare — il codice della vita finalmente leggibile, anche se altrove il significato si dissolveva.",
       "1610→1666": "Il telescopio di Galileo aprì i cieli; il prisma di Newton aprì la luce stessa. La peste lo mandò a casa da Cambridge a pensare in solitudine — e lì, in una fattoria del Lincolnshire, nacque la fisica moderna.",
-      "1666→1687": "Newton accumulò le sue scoperte per due decenni. Solo la perseveranza di Halley — e il suo portafoglio — portarono i Principia alla stampa. Ciò che iniziò con una mela che cadeva finì con l'universo come equazione."
+      "1666→1687": "Newton accumulò le sue scoperte per due decenni. Solo la perseveranza di Halley — e il suo portafoglio — portarono i Principia alla stampa. Ciò che iniziò con una mela che cadeva finì con l'universo come equazione.",
+      "1859→1895": "L'evoluzione di Darwin rifece la biologia; i raggi X di Röntgen mostrarono che la fisica poteva rifare la visione stessa — l'invisibile finalmente reso visibile.",
+      "1895→1905": "I raggi X dimostrarono che radiazioni invisibili potevano penetrare la materia; un decennio dopo Einstein dimostrò che spazio e tempo stessi erano mutabili."
     },
     "enlightenment": {
       "1687→1755": "I <em>Principia</em> di Newton dimostrarono che il cosmo era regolato da leggi; il terremoto di Lisbona chiese se fosse giusto.",
@@ -602,7 +608,8 @@
     "modernism": {
       "1922→1927": "La sperimentazione dell'Ulisse e di Terra desolata diventa la prosa durativa di Woolf — la forma si dissolve nel tempo stesso.",
       "1927→1937": "La temporalità di Heidegger e le narrazioni dissolte di Woolf incontrano la loro prova storica: può la forma modernista testimoniare l'atrocità meccanizzata? Guernica risponde in urla cubiste.",
-      "1913→1922": "La rivolta di Stravinskij diventa la terra desolata di Eliot. Nove anni, una guerra mondiale: l'assalto sperimentale del modernismo ne diventa l'elegia."
+      "1913→1922": "La rivolta di Stravinskij diventa la terra desolata di Eliot. Nove anni, una guerra mondiale: l'assalto sperimentale del modernismo ne diventa l'elegia.",
+      "1895→1913": "I raggi X, il cinema e la Macchina del Tempo del 1895 insegnarono un nuovo modo di vedere; nel 1913 i Fauves e il Sacre du Printemps fecero esplodere quelle visioni."
     },
     "stream-of-consciousness": {
       "1922→1927": "La singola giornata di Joyce e il tempo perduto di Proust convergono in Woolf: la coscienza come durata, non sequenza."
@@ -636,7 +643,8 @@
       "1641→1648": "Le Meditazioni di Cartesio inaugurano il dubbio radicale come metodo filosofico; a Westfalia, il dubbio diventa politico: se Dio non può stabilire la verità religiosa, deve farlo la sovranità."
     },
     "fin-de-siecle": {
-      "1886→1889": "Tre anni dalla luce divisa al crollo di Nietzsche: il fin-de-siècle accelera verso la propria dissoluzione."
+      "1886→1889": "Tre anni dalla luce divisa al crollo di Nietzsche: il fin-de-siècle accelera verso la propria dissoluzione.",
+      "1889→1895": "Le visioni di Van Gogh dal manicomio e la filosofia del tempo di Bergson seminano l'introspezione ansiosa che fiorisce nell'arguzia di Wilde — e nella sua distruzione."
     },
     "neoclassicism": {
       "1738→1784": "Dai primi scavi di Ercolano al Giuramento degli Orazi di David: l'antichità sepolta riemerge per plasmare il gusto europeo e la politica rivoluzionaria."

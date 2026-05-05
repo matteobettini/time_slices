@@ -5180,5 +5180,79 @@
       "url": "audio/1943-paris-freedom-under-occupation.mp3",
       "duration": 193
     }
+  },
+  {
+    "year": "1895",
+    "id": "1895-year-of-new-eyes",
+    "title": "The Year of New Eyes",
+    "teaser": "Cinema is born in a Paris basement. X-rays reveal the skeleton beneath the skin. The Venice Biennale opens art to the world. Oscar Wilde premieres his masterpiece — and is destroyed for what Victorian society refuses to see.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "On <strong>April 30th</strong>, the first <strong>Venice Biennale</strong> opens in the Giardini — 224,000 visitors come to see what the organizers call an 'International Art Exhibition,' the first attempt to institutionalize contemporary art on a global scale. The same year, <strong>Alphonse Mucha</strong>'s lithographed poster for Sarah Bernhardt's <em>Gismonda</em> launches <strong>Art Nouveau</strong> as a commercial phenomenon: art enters the street. <strong>Paul Cézanne</strong> has his first solo exhibition at Ambroise Vollard's Paris gallery — the recluse of Aix finally made visible, his proto-Cubist explorations beginning to reach the avant-garde. <strong>Berthe Morisot</strong>, the great Impressionist, dies in March; the movement she helped create is yielding to new visions. And in November, <strong>Toulouse-Lautrec</strong> paints a portrait of Oscar Wilde — one celebrity of the demimonde capturing another, just as Wilde's world collapses."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "On <strong>February 14th</strong>, <em>The Importance of Being Earnest</em> premieres at London's St. James's Theatre — <strong>Oscar Wilde</strong> at the summit of his wit, satirizing the Victorian marriage plot with such lightness that the critique seems decorative. Within weeks, Wilde sues the Marquess of Queensberry for libel; by May, he is convicted of 'gross indecency' and sentenced to two years' hard labor. The <strong>Aestheticist movement</strong> dies with its prophet's imprisonment. Meanwhile, <strong>Thomas Hardy</strong> publishes <em>Jude the Obscure</em>, and the Bishop of Wakefield publicly burns his copy — the <strong>New Woman</strong> and the critique of marriage too frank for Victorian taste. Hardy will never write another novel. <strong>H.G. Wells</strong> publishes <em>The Time Machine</em>, inventing the device that will carry a century of science fiction: time itself becomes a dimension to traverse."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "In America, <strong>William James</strong> is developing <strong>pragmatism</strong> — the doctrine that truth is what works, that ideas are instruments. This American contribution to philosophy rejects both British empiricism's passive observation and German idealism's abstract systems: meaning lies in consequences, not origins. In Cambridge, James's colleague <strong>Josiah Royce</strong> represents the last great flowering of <strong>absolute idealism</strong> in the Anglophone world — a rearguard action against the pragmatic tide. The philosophical mood is empirical, future-oriented, suspicious of metaphysics. <strong>Friedrich Nietzsche</strong> has been insane since 1889, but his completed works are beginning to circulate more widely, preparing the 'transvaluation of all values' that the next century will require."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>November 8th</strong>, in Würzburg, <strong>Wilhelm Röntgen</strong> notices a fluorescent screen glowing across a darkened room while experimenting with cathode rays. He has discovered <strong>X-rays</strong> — radiation that passes through flesh to reveal bone. By December 22nd, he photographs his wife's hand, ring and skeleton visible through skin. 'I have seen my death,' she reportedly says. Six weeks later, the <strong>Lumière brothers</strong> screen moving pictures to a paying audience at the Salon Indien in Paris (<strong>December 28th</strong>) — <em>Workers Leaving the Lumière Factory</em>, cinema's first public exhibition. Two new technologies that make the invisible visible: one reveals what lies beneath surfaces, the other captures time itself."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year's theme is <strong>new forms of vision</strong> — technological, artistic, literary — and the violent reaction against what is revealed. X-rays see through the body; cinema captures motion imperceptible to the eye; Wells's time machine traverses the dimension we cannot perceive; Wilde's wit sees through Victorian propriety. But each new sight provokes resistance: Wilde imprisoned, Hardy silenced, even Röntgen's wife recoiling from her own skeleton. The Venice Biennale institutionalizes seeing — art as international exhibition, beauty as commodity. Cézanne, finally exhibited, offers a way of seeing that will take decades to comprehend. The nineteenth century is learning to see itself as others will see it: a skeleton beneath the confident flesh.",
+        "funFact": "The Lumières' first public screening on December 28, 1895, reportedly caused panic when the film of an arriving train made audiences believe they'd be struck. The story is likely exaggerated — but it captures the genuine shock of seeing reality captured and replayed."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wilhelm_R%C3%B6ntgen",
+        "title": "Wilhelm Röntgen — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/1895_in_film",
+        "title": "1895 in film — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Oscar_Wilde",
+        "title": "Oscar Wilde — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Venice_Biennale",
+        "title": "Venice Biennale — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Time_Machine",
+        "title": "The Time Machine — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1895-year-of-new-eyes.jpg",
+      "caption": "First X-ray photograph: Wilhelm Röntgen's image of his wife Anna Bertha's hand showing bones and wedding ring, December 22, 1895",
+      "width": 1200,
+      "height": 1726,
+      "attribution": "Wilhelm Röntgen, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "fin-de-siecle",
+      "aestheticism",
+      "scientific-revolution",
+      "modernism"
+    ],
+    "location": {
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "place": "Paris"
+    },
+    "addedDate": "2026-05-05T05:00:00Z",
+    "podcast": {
+      "url": "audio/1895-year-of-new-eyes.mp3",
+      "duration": 247
+    }
   }
 ]

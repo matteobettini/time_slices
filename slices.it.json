@@ -5164,5 +5164,79 @@
       "url": "audio/it/1943-paris-freedom-under-occupation.mp3",
       "duration": 177
     }
+  },
+  {
+    "year": "1895",
+    "id": "1895-year-of-new-eyes",
+    "title": "L'Anno dei Nuovi Sguardi",
+    "teaser": "Il cinema nasce in uno scantinato parigino. I raggi X svelano lo scheletro sotto la pelle. La Biennale di Venezia apre l'arte al mondo. Oscar Wilde presenta il suo capolavoro — e viene distrutto per ciò che la società vittoriana rifiuta di vedere.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Il <strong>30 aprile</strong> si inaugura la prima <strong>Biennale di Venezia</strong> ai Giardini — 224.000 visitatori accorrono per quella che gli organizzatori chiamano 'Esposizione Internazionale d'Arte', il primo tentativo di istituzionalizzare l'arte contemporanea su scala mondiale. Nello stesso anno, il manifesto litografato di <strong>Alphonse Mucha</strong> per <em>Gismonda</em> di Sarah Bernhardt lancia l'<strong>Art Nouveau</strong> come fenomeno commerciale: l'arte scende in strada. <strong>Paul Cézanne</strong> tiene la sua prima mostra personale nella galleria parigina di Ambroise Vollard — il solitario di Aix finalmente visibile, le sue esplorazioni proto-cubiste che raggiungono l'avanguardia. <strong>Berthe Morisot</strong>, grande impressionista, muore a marzo; il movimento che aveva contribuito a creare cede il passo a nuove visioni. E a novembre, <strong>Toulouse-Lautrec</strong> ritrae Oscar Wilde — una celebrità della bohème che cattura l'altra, proprio mentre il mondo di Wilde crolla."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Il <strong>14 febbraio</strong>, <em>L'importanza di chiamarsi Ernesto</em> debutta al St. James's Theatre di Londra — <strong>Oscar Wilde</strong> all'apice della sua arguzia, satireggiando la trama matrimoniale vittoriana con tale leggerezza che la critica sembra ornamento. Nel giro di settimane, Wilde querela il Marchese di Queensberry per diffamazione; a maggio è condannato per 'grave indecenza' e destinato a due anni di lavori forzati. Il movimento <strong>estetista</strong> muore con l'imprigionamento del suo profeta. Intanto <strong>Thomas Hardy</strong> pubblica <em>Jude l'Oscuro</em>, e il Vescovo di Wakefield brucia pubblicamente la sua copia — la <strong>Nuova Donna</strong> e la critica del matrimonio troppo esplicite per il gusto vittoriano. Hardy non scriverà più romanzi. <strong>H.G. Wells</strong> pubblica <em>La macchina del tempo</em>, inventando il dispositivo che porterà un secolo di fantascienza: il tempo stesso diventa dimensione da attraversare."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "In America, <strong>William James</strong> sta sviluppando il <strong>pragmatismo</strong> — la dottrina che la verità è ciò che funziona, che le idee sono strumenti. Questo contributo americano alla filosofia rifiuta sia l'osservazione passiva dell'empirismo britannico sia i sistemi astratti dell'idealismo tedesco: il significato sta nelle conseguenze, non nelle origini. A Cambridge, il collega <strong>Josiah Royce</strong> rappresenta l'ultimo grande fiorire dell'<strong>idealismo assoluto</strong> nel mondo anglofono — una retroguardia contro la marea pragmatista. L'umore filosofico è empirico, orientato al futuro, sospettoso della metafisica. <strong>Friedrich Nietzsche</strong> è pazzo dal 1889, ma le sue opere complete circolano sempre più, preparando la 'trasvalutazione di tutti i valori' che il secolo successivo richiederà."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "L'<strong>8 novembre</strong>, a Würzburg, <strong>Wilhelm Röntgen</strong> nota uno schermo fluorescente brillare dall'altra parte di una stanza buia mentre sperimenta con i raggi catodici. Ha scoperto i <strong>raggi X</strong> — radiazioni che attraversano la carne per rivelare l'osso. Il 22 dicembre fotografa la mano di sua moglie, anello e scheletro visibili attraverso la pelle. 'Ho visto la mia morte,' avrebbe detto lei. Sei settimane dopo, i <strong>fratelli Lumière</strong> proiettano immagini in movimento a un pubblico pagante al Salon Indien di Parigi (<strong>28 dicembre</strong>) — <em>L'uscita dalle officine Lumière</em>, la prima proiezione pubblica del cinema. Due nuove tecnologie che rendono visibile l'invisibile: una rivela ciò che giace sotto le superfici, l'altra cattura il tempo stesso."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Il tema dell'anno sono le <strong>nuove forme di visione</strong> — tecnologiche, artistiche, letterarie — e la violenta reazione contro ciò che viene rivelato. I raggi X vedono attraverso il corpo; il cinema cattura movimenti impercettibili all'occhio; la macchina del tempo di Wells attraversa la dimensione che non possiamo percepire; l'arguzia di Wilde vede attraverso la rispettabilità vittoriana. Ma ogni nuova visione provoca resistenza: Wilde imprigionato, Hardy messo a tacere, perfino la moglie di Röntgen che arretra davanti al proprio scheletro. La Biennale di Venezia istituzionalizza il vedere — l'arte come esposizione internazionale, la bellezza come merce. Cézanne, finalmente esposto, offre un modo di vedere che richiederà decenni per essere compreso. L'Ottocento sta imparando a vedersi come gli altri lo vedranno: uno scheletro sotto la carne sicura di sé.",
+        "funFact": "La prima proiezione pubblica dei Lumière il 28 dicembre 1895 avrebbe causato il panico quando il film di un treno in arrivo fece credere agli spettatori che sarebbero stati investiti. La storia è probabilmente esagerata — ma cattura lo shock genuino di vedere la realtà catturata e riproposta."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Wilhelm_R%C3%B6ntgen",
+        "title": "Wilhelm Röntgen — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Fratelli_Lumi%C3%A8re",
+        "title": "Fratelli Lumière — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Oscar_Wilde",
+        "title": "Oscar Wilde — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Biennale_di_Venezia",
+        "title": "Biennale di Venezia — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/La_macchina_del_tempo",
+        "title": "La macchina del tempo — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1895-year-of-new-eyes.jpg",
+      "caption": "Prima radiografia: l'immagine di Wilhelm Röntgen della mano di sua moglie Anna Bertha con anello e ossa visibili, 22 dicembre 1895",
+      "width": 1200,
+      "height": 1726,
+      "attribution": "Wilhelm Röntgen, Pubblico dominio, via Wikimedia Commons"
+    },
+    "threads": [
+      "fin-de-siecle",
+      "aestheticism",
+      "scientific-revolution",
+      "modernism"
+    ],
+    "location": {
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "place": "Parigi"
+    },
+    "addedDate": "2026-05-05T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1895-year-of-new-eyes.mp3",
+      "duration": 291
+    }
   }
 ]

@@ -1,50 +1,50 @@
 {
-  "year": "1851",
-  "id": "1851-london-glass-cathedral",
-  "title": "Londra — La cattedrale di vetro",
-  "teaser": "Joseph Paxton costruisce un palazzo di ferro e vetro. Sei milioni di visitatori adorano all'altare del Progresso. Ruskin inizia il suo contro-vangelo: non le macchine, ma le cattedrali gotiche preservano l'anima umana. In un cottage a Chelsea, Turner muore guardando il sole.",
+  "year": "1895",
+  "id": "1895-year-of-new-eyes",
+  "title": "L'Anno dei Nuovi Sguardi",
+  "teaser": "Il cinema nasce in uno scantinato parigino. I raggi X svelano lo scheletro sotto la pelle. La Biennale di Venezia apre l'arte al mondo. Oscar Wilde presenta il suo capolavoro — e viene distrutto per ciò che la società vittoriana rifiuta di vedere.",
   "dimensions": {
     "art": {
       "label": "Arte",
-      "content": "Il <strong>Crystal Palace</strong> stesso è l'opera d'arte definitiva dell'anno — il miracolo prefabbricato di Joseph Paxton in <strong>ghisa e vetro</strong>, eretto a Hyde Park in soli cinque mesi. Lungo 1.851 piedi (come l'anno), racchiude diciotto acri sotto 293.000 lastre di vetro, rendendo l'architettura stessa trasparente. È il <strong>Sublime Industriale</strong>: l'ingegneria come cattedrale. Eppure il 19 dicembre <strong>J.M.W. Turner</strong> muore nel suo cottage a Chelsea, guardando la luce del sole filtrare tra le nuvole — l'ultimo grande <strong>Romantico</strong>, che lascia ventimila acquerelli dove la forma si dissolve in pura luminosità. Lo stesso anno, <strong>John Ruskin</strong> pubblica il primo volume de <em>Le pietre di Venezia</em>, elogiando l'artigianato medievale contro l'uniformità meccanizzata che vedeva nella scatola di vetro di Paxton."
+      "content": "Il <strong>30 aprile</strong> si inaugura la prima <strong>Biennale di Venezia</strong> ai Giardini — 224.000 visitatori accorrono per quella che gli organizzatori chiamano 'Esposizione Internazionale d'Arte', il primo tentativo di istituzionalizzare l'arte contemporanea su scala mondiale. Nello stesso anno, il manifesto litografato di <strong>Alphonse Mucha</strong> per <em>Gismonda</em> di Sarah Bernhardt lancia l'<strong>Art Nouveau</strong> come fenomeno commerciale: l'arte scende in strada. <strong>Paul Cézanne</strong> tiene la sua prima mostra personale nella galleria parigina di Ambroise Vollard — il solitario di Aix finalmente visibile, le sue esplorazioni proto-cubiste che raggiungono l'avanguardia. <strong>Berthe Morisot</strong>, grande impressionista, muore a marzo; il movimento che aveva contribuito a creare cede il passo a nuove visioni. E a novembre, <strong>Toulouse-Lautrec</strong> ritrae Oscar Wilde — una celebrità della bohème che cattura l'altra, proprio mentre il mondo di Wilde crolla."
     },
     "lit": {
       "label": "Letteratura",
-      "content": "A Parigi, <strong>Henri Murger</strong> pubblica <em>Scènes de la vie de bohème</em>, canonizzando l'artista in difficoltà come eroe — i poeti delle soffitte e le sartine tisiche che rifiutano la rispettabilità borghese. Diventerà la <em>Bohème</em> di Puccini. La <strong>bohème</strong> nasce come controcultura: l'arte come povertà scelta rispetto al comfort. Dall'altra parte dell'Atlantico, <strong>Herman Melville</strong> pubblica <em>Moby-Dick</em>, commercialmente ignorato ma destinato alla grandezza — l'ossessiva caccia di Achab alla balena bianca come specchio oscuro della volontà della civiltà industriale di conquistare la natura. In Inghilterra fiorisce il romanzo di critica sociale: <em>Yeast</em> di <strong>Charles Kingsley</strong> esplora la povertà rurale."
+      "content": "Il <strong>14 febbraio</strong>, <em>L'importanza di chiamarsi Ernesto</em> debutta al St. James's Theatre di Londra — <strong>Oscar Wilde</strong> all'apice della sua arguzia, satireggiando la trama matrimoniale vittoriana con tale leggerezza che la critica sembra ornamento. Nel giro di settimane, Wilde querela il Marchese di Queensberry per diffamazione; a maggio è condannato per 'grave indecenza' e destinato a due anni di lavori forzati. Il movimento <strong>estetista</strong> muore con l'imprigionamento del suo profeta. Intanto <strong>Thomas Hardy</strong> pubblica <em>Jude l'Oscuro</em>, e il Vescovo di Wakefield brucia pubblicamente la sua copia — la <strong>Nuova Donna</strong> e la critica del matrimonio troppo esplicite per il gusto vittoriano. Hardy non scriverà più romanzi. <strong>H.G. Wells</strong> pubblica <em>La macchina del tempo</em>, inventando il dispositivo che porterà un secolo di fantascienza: il tempo stesso diventa dimensione da attraversare."
     },
     "phil": {
       "label": "Filosofia",
-      "content": "Auguste Comte inizia a pubblicare il suo <em>Système de politique positive</em>, delineando una <strong>Religione dell'Umanità</strong> per sostituire il cristianesimo — il <strong>positivismo</strong> come fede secolare. Dove le chiese adoravano Dio, l'Umanità stessa diventa il Grande Essere, i suoi santi i geni della scienza e dell'arte. I tre stadi di Comte (teologico, metafisico, positivo) dichiarano che la civiltà matura fonda la verità solo sui fatti osservabili. Eppure <em>Le pietre di Venezia</em> di Ruskin monta un contrattacco filosofico: il capitolo 'La natura del Gotico' sosterrà che le irregolarità dell'<strong>architettura gotica</strong> preservano l'umanità del lavoratore, mentre la standardizzazione industriale — le parti intercambiabili del Crystal Palace — asservisce l'anima alla macchina."
+      "content": "In America, <strong>William James</strong> sta sviluppando il <strong>pragmatismo</strong> — la dottrina che la verità è ciò che funziona, che le idee sono strumenti. Questo contributo americano alla filosofia rifiuta sia l'osservazione passiva dell'empirismo britannico sia i sistemi astratti dell'idealismo tedesco: il significato sta nelle conseguenze, non nelle origini. A Cambridge, il collega <strong>Josiah Royce</strong> rappresenta l'ultimo grande fiorire dell'<strong>idealismo assoluto</strong> nel mondo anglofono — una retroguardia contro la marea pragmatista. L'umore filosofico è empirico, orientato al futuro, sospettoso della metafisica. <strong>Friedrich Nietzsche</strong> è pazzo dal 1889, ma le sue opere complete circolano sempre più, preparando la 'trasvalutazione di tutti i valori' che il secolo successivo richiederà."
     },
     "hist": {
       "label": "Storia",
-      "content": "La <strong>Grande Esposizione</strong> apre il 1° maggio, attirando sei milioni di visitatori — un terzo della popolazione britannica. La visione del principe Alberto: libero commercio, cooperazione internazionale, progresso industriale come pace. I profitti finanziano il distretto museale di South Kensington. Il <strong>censimento del 1851</strong> rivela uno spartiacque: per la prima volta, più britannici vivono nelle città che in campagna. L'urbanizzazione è compiuta; l'era <strong>vittoriana</strong> ha trovato la propria immagine. Ma il 2 dicembre, <strong>Luigi Napoleone Bonaparte</strong> scioglie la Repubblica francese con un colpo di stato — il nipote di Napoleone diventa dittatore, poi imperatore. Victor Hugo fugge in esilio. L'anno che celebra il progresso si chiude con la democrazia schiacciata."
+      "content": "L'<strong>8 novembre</strong>, a Würzburg, <strong>Wilhelm Röntgen</strong> nota uno schermo fluorescente brillare dall'altra parte di una stanza buia mentre sperimenta con i raggi catodici. Ha scoperto i <strong>raggi X</strong> — radiazioni che attraversano la carne per rivelare l'osso. Il 22 dicembre fotografa la mano di sua moglie, anello e scheletro visibili attraverso la pelle. 'Ho visto la mia morte,' avrebbe detto lei. Sei settimane dopo, i <strong>fratelli Lumière</strong> proiettano immagini in movimento a un pubblico pagante al Salon Indien di Parigi (<strong>28 dicembre</strong>) — <em>L'uscita dalle officine Lumière</em>, la prima proiezione pubblica del cinema. Due nuove tecnologie che rendono visibile l'invisibile: una rivela ciò che giace sotto le superfici, l'altra cattura il tempo stesso."
     },
     "conn": {
       "label": "Connessioni",
-      "content": "Il Crystal Palace e la cattedrale gotica incarnano la dialettica centrale del 1851: progresso contro anima. La meraviglia di vetro e ferro di Paxton era <strong>architettura come esposizione</strong> — trasparente, modulare, infinitamente riproducibile, contenente le macchine del mondo. <em>Le pietre di Venezia</em> di Ruskin, iniziate lo stesso anno, rifiutano esattamente questo: i muratori medievali scolpivano i propri grotteschi, le loro imperfezioni provavano la loro libertà. I bohémien di Murger fuggono dalla città industriale verso soffitte dove la povertà preserva l'autenticità. Turner si dissolve nella luce proprio mentre Comte sistematizza l'umanità in stadi. Persino il colpo di stato di Luigi Napoleone si collega: la fede della modernità nel progresso poteva coesistere con l'autocrazia. La Grande Esposizione prometteva pace attraverso il commercio; nel giro di due anni, iniziò la guerra di Crimea.",
-      "funFact": "Il design del Crystal Palace venne a Paxton mentre scarabocchiava durante una riunione del consiglio ferroviario. Lo basò sulla nervatura inferiore di una ninfea gigante che aveva coltivato a Chatsworth — la natura come modello per l'architettura industriale."
+      "content": "Il tema dell'anno sono le <strong>nuove forme di visione</strong> — tecnologiche, artistiche, letterarie — e la violenta reazione contro ciò che viene rivelato. I raggi X vedono attraverso il corpo; il cinema cattura movimenti impercettibili all'occhio; la macchina del tempo di Wells attraversa la dimensione che non possiamo percepire; l'arguzia di Wilde vede attraverso la rispettabilità vittoriana. Ma ogni nuova visione provoca resistenza: Wilde imprigionato, Hardy messo a tacere, perfino la moglie di Röntgen che arretra davanti al proprio scheletro. La Biennale di Venezia istituzionalizza il vedere — l'arte come esposizione internazionale, la bellezza come merce. Cézanne, finalmente esposto, offre un modo di vedere che richiederà decenni per essere compreso. L'Ottocento sta imparando a vedersi come gli altri lo vedranno: uno scheletro sotto la carne sicura di sé.",
+      "funFact": "La prima proiezione pubblica dei Lumière il 28 dicembre 1895 avrebbe causato il panico quando il film di un treno in arrivo fece credere agli spettatori che sarebbero stati investiti. La storia è probabilmente esagerata — ma cattura lo shock genuino di vedere la realtà catturata e riproposta."
     }
   },
   "sources": [
-    { "url": "https://it.wikipedia.org/wiki/Grande_esposizione_delle_opere_dell%27industria_di_tutte_le_nazioni", "title": "Grande esposizione - Wikipedia" },
-    { "url": "https://it.wikipedia.org/wiki/Crystal_Palace_(Londra)", "title": "Crystal Palace - Wikipedia" },
-    { "url": "https://it.wikipedia.org/wiki/Le_pietre_di_Venezia", "title": "Le pietre di Venezia - Wikipedia" },
-    { "url": "https://it.wikipedia.org/wiki/Auguste_Comte", "title": "Auguste Comte - Wikipedia" },
-    { "url": "https://it.wikipedia.org/wiki/Colpo_di_Stato_in_Francia_del_1851", "title": "Colpo di Stato in Francia del 1851 - Wikipedia" }
+    { "url": "https://it.wikipedia.org/wiki/Wilhelm_R%C3%B6ntgen", "title": "Wilhelm Röntgen — Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Fratelli_Lumi%C3%A8re", "title": "Fratelli Lumière — Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Oscar_Wilde", "title": "Oscar Wilde — Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Biennale_di_Venezia", "title": "Biennale di Venezia — Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/La_macchina_del_tempo", "title": "La macchina del tempo — Wikipedia" }
   ],
   "image": {
-    "url": "images/1851-london-glass-cathedral.jpg",
-    "caption": "Il Crystal Palace a Hyde Park, progettato da Joseph Paxton per la Grande Esposizione del 1851",
+    "url": "images/1895-year-of-new-eyes.jpg",
+    "caption": "Prima radiografia: l'immagine di Wilhelm Röntgen della mano di sua moglie Anna Bertha con anello e ossa visibili, 22 dicembre 1895",
     "width": 1200,
-    "height": 649,
-    "attribution": "Dickinson Brothers, Pubblico dominio, tramite Wikimedia Commons"
+    "height": 1726,
+    "attribution": "Wilhelm Röntgen, Pubblico dominio, via Wikimedia Commons"
   },
-  "threads": ["gothic-revival", "critique-of-modernity", "positivism", "bohemianism"],
+  "threads": ["fin-de-siecle", "aestheticism", "scientific-revolution", "modernism"],
   "location": {
-    "lat": 51.5074,
-    "lon": -0.1278,
-    "place": "Londra"
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "place": "Parigi"
   },
-  "addedDate": "2026-05-03T05:00:00Z"
+  "addedDate": "2026-05-05T05:00:00Z"
 }
