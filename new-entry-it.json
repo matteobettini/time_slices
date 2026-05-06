@@ -1,50 +1,50 @@
 {
-  "year": "1895",
-  "id": "1895-year-of-new-eyes",
-  "title": "L'Anno dei Nuovi Sguardi",
-  "teaser": "Il cinema nasce in uno scantinato parigino. I raggi X svelano lo scheletro sotto la pelle. La Biennale di Venezia apre l'arte al mondo. Oscar Wilde presenta il suo capolavoro — e viene distrutto per ciò che la società vittoriana rifiuta di vedere.",
+  "year": "1808",
+  "id": "1808-year-nations-awaken",
+  "title": "L'anno in cui le nazioni si destano",
+  "teaser": "Madrid insorge contro Napoleone. Beethoven presenta due sinfonie in una sola notte. Fichte chiama i tedeschi alle armi con la filosofia. Goethe pubblica il suo patto col diavolo. La ragione universale dell'Illuminismo si frantuma nel sentimento nazionale.",
   "dimensions": {
     "art": {
       "label": "Arte",
-      "content": "Il <strong>30 aprile</strong> si inaugura la prima <strong>Biennale di Venezia</strong> ai Giardini — 224.000 visitatori accorrono per quella che gli organizzatori chiamano 'Esposizione Internazionale d'Arte', il primo tentativo di istituzionalizzare l'arte contemporanea su scala mondiale. Nello stesso anno, il manifesto litografato di <strong>Alphonse Mucha</strong> per <em>Gismonda</em> di Sarah Bernhardt lancia l'<strong>Art Nouveau</strong> come fenomeno commerciale: l'arte scende in strada. <strong>Paul Cézanne</strong> tiene la sua prima mostra personale nella galleria parigina di Ambroise Vollard — il solitario di Aix finalmente visibile, le sue esplorazioni proto-cubiste che raggiungono l'avanguardia. <strong>Berthe Morisot</strong>, grande impressionista, muore a marzo; il movimento che aveva contribuito a creare cede il passo a nuove visioni. E a novembre, <strong>Toulouse-Lautrec</strong> ritrae Oscar Wilde — una celebrità della bohème che cattura l'altra, proprio mentre il mondo di Wilde crolla."
+      "content": "Il due maggio la cavalleria francese carica per le strade di Madrid mentre i cittadini combattono con coltelli e utensili da cucina — scene che si imprimono nella memoria di <strong>Francisco Goya</strong>. Benché i suoi celebri dipinti arrivino sei anni dopo, le incisioni dei <em>Disastri della guerra</em> iniziano ora: immagini crude di atrocità che abbandonano le convenzioni eroiche per l'orrore puro. A Vienna, il concerto di Beethoven del ventidue dicembre presenta in prima assoluta sia la <em>Quinta</em> che la <em>Sesta Sinfonia</em> in una sola estenuante serata — quattro ore di musica in un teatro gelido. Il motivo d'apertura della Quinta, quattro note martellate come il destino che bussa alla porta, diventa la dichiarazione della <strong>musica romantica</strong>: la volontà individuale contro l'indifferenza cosmica."
     },
     "lit": {
       "label": "Letteratura",
-      "content": "Il <strong>14 febbraio</strong>, <em>L'importanza di chiamarsi Ernesto</em> debutta al St. James's Theatre di Londra — <strong>Oscar Wilde</strong> all'apice della sua arguzia, satireggiando la trama matrimoniale vittoriana con tale leggerezza che la critica sembra ornamento. Nel giro di settimane, Wilde querela il Marchese di Queensberry per diffamazione; a maggio è condannato per 'grave indecenza' e destinato a due anni di lavori forzati. Il movimento <strong>estetista</strong> muore con l'imprigionamento del suo profeta. Intanto <strong>Thomas Hardy</strong> pubblica <em>Jude l'Oscuro</em>, e il Vescovo di Wakefield brucia pubblicamente la sua copia — la <strong>Nuova Donna</strong> e la critica del matrimonio troppo esplicite per il gusto vittoriano. Hardy non scriverà più romanzi. <strong>H.G. Wells</strong> pubblica <em>La macchina del tempo</em>, inventando il dispositivo che porterà un secolo di fantascienza: il tempo stesso diventa dimensione da attraversare."
+      "content": "<strong>Goethe</strong> pubblica il <em>Faust, Parte Prima</em> — il coronamento di trent'anni di lavoro e il capolavoro supremo della letteratura tedesca. Faust, lo studioso che ha esaurito ogni sapere ma resta insoddisfatto, vende l'anima per l'esperienza: <em>'In principio era l'Azione.'</em> È l'<strong>eroe romantico</strong> come eterno aspirante, mai pago dei limiti, sempre proteso oltre. Il patto con <strong>Mefistofele</strong> drammatizza l'ansia centrale dell'epoca: cosa accade quando la sete di conoscenza infrange ogni confine? Faust sedurrà Margherita, causerà la sua distruzione, e continuerà ad aspirare. La tragedia non è il patto — è che l'aspirazione non finisce mai."
     },
     "phil": {
       "label": "Filosofia",
-      "content": "In America, <strong>William James</strong> sta sviluppando il <strong>pragmatismo</strong> — la dottrina che la verità è ciò che funziona, che le idee sono strumenti. Questo contributo americano alla filosofia rifiuta sia l'osservazione passiva dell'empirismo britannico sia i sistemi astratti dell'idealismo tedesco: il significato sta nelle conseguenze, non nelle origini. A Cambridge, il collega <strong>Josiah Royce</strong> rappresenta l'ultimo grande fiorire dell'<strong>idealismo assoluto</strong> nel mondo anglofono — una retroguardia contro la marea pragmatista. L'umore filosofico è empirico, orientato al futuro, sospettoso della metafisica. <strong>Friedrich Nietzsche</strong> è pazzo dal 1889, ma le sue opere complete circolano sempre più, preparando la 'trasvalutazione di tutti i valori' che il secolo successivo richiederà."
+      "content": "<strong>Johann Gottlieb Fichte</strong> pronuncia i suoi <em>Discorsi alla nazione tedesca</em> nella Berlino occupata dai francesi — quattordici lezioni che sostengono la missione spirituale unica dei tedeschi. Scrivendo dopo la catastrofica sconfitta prussiana a Jena, Fichte trasforma l'<strong>Idealismo tedesco</strong> in <strong>nazionalismo filosofico</strong>. La nazione, argomenta, non è soltanto politica — è una comunità culturale-linguistica con un proprio spirito organico. Solo attraverso l'educazione tedesca questo spirito può destarsi. Le lezioni di Fichte inaugurano una tradizione pericolosa: l'idea che le nazioni abbiano destini, che i popoli possiedano essenze, che la filosofia possa mobilitare le masse."
     },
     "hist": {
       "label": "Storia",
-      "content": "L'<strong>8 novembre</strong>, a Würzburg, <strong>Wilhelm Röntgen</strong> nota uno schermo fluorescente brillare dall'altra parte di una stanza buia mentre sperimenta con i raggi catodici. Ha scoperto i <strong>raggi X</strong> — radiazioni che attraversano la carne per rivelare l'osso. Il 22 dicembre fotografa la mano di sua moglie, anello e scheletro visibili attraverso la pelle. 'Ho visto la mia morte,' avrebbe detto lei. Sei settimane dopo, i <strong>fratelli Lumière</strong> proiettano immagini in movimento a un pubblico pagante al Salon Indien di Parigi (<strong>28 dicembre</strong>) — <em>L'uscita dalle officine Lumière</em>, la prima proiezione pubblica del cinema. Due nuove tecnologie che rendono visibile l'invisibile: una rivela ciò che giace sotto le superfici, l'altra cattura il tempo stesso."
+      "content": "La presa di Napoleone sull'Europa si stringe — poi si incrina. In marzo le truppe francesi occupano Madrid; in maggio esplode la <strong>rivolta del Dos de Mayo</strong> quando Murat tenta di portare via gli ultimi reali spagnoli. Le brutali rappresaglie francesi — esecuzioni di massa sulla collina del Príncipe Pío — accendono una guerra partigiana nazionale che dissanguerà la Francia per sei anni. Napoleone la chiamerà la sua 'ulcera spagnola.' Intanto, il primo gennaio entra in vigore l'<strong>abolizione britannica della tratta degli schiavi</strong> — il coronamento di decenni di campagne abolizioniste. Le navi britanniche non possono più trasportare persone schiavizzate attraverso l'Atlantico. La schiavitù continua, ma la criminalizzazione della tratta segna una svolta morale."
     },
     "conn": {
       "label": "Connessioni",
-      "content": "Il tema dell'anno sono le <strong>nuove forme di visione</strong> — tecnologiche, artistiche, letterarie — e la violenta reazione contro ciò che viene rivelato. I raggi X vedono attraverso il corpo; il cinema cattura movimenti impercettibili all'occhio; la macchina del tempo di Wells attraversa la dimensione che non possiamo percepire; l'arguzia di Wilde vede attraverso la rispettabilità vittoriana. Ma ogni nuova visione provoca resistenza: Wilde imprigionato, Hardy messo a tacere, perfino la moglie di Röntgen che arretra davanti al proprio scheletro. La Biennale di Venezia istituzionalizza il vedere — l'arte come esposizione internazionale, la bellezza come merce. Cézanne, finalmente esposto, offre un modo di vedere che richiederà decenni per essere compreso. L'Ottocento sta imparando a vedersi come gli altri lo vedranno: uno scheletro sotto la carne sicura di sé.",
-      "funFact": "La prima proiezione pubblica dei Lumière il 28 dicembre 1895 avrebbe causato il panico quando il film di un treno in arrivo fece credere agli spettatori che sarebbero stati investiti. La storia è probabilmente esagerata — ma cattura lo shock genuino di vedere la realtà catturata e riproposta."
+      "content": "L'anno segna la <strong>svolta politica del Romanticismo</strong>. Il nazionalismo di Fichte e la resistenza spagnola rifiutano entrambi l'universalismo napoleonico — l'idea che i principi rivoluzionari francesi debbano governare tutti i popoli. Invece, ogni nazione rivendica il proprio spirito, il proprio destino. Le sinfonie di Beethoven lo esprimono in musica: la Quinta come lotta dalle tenebre al trionfo, la Sesta come celebrazione pastorale del paesaggio tedesco. Il Faust di Goethe incarna l'individualismo romantico spinto alla distruzione — l'eterna aspirazione che Fichte incanala nel risveglio nazionale. I legami sono diretti: Fichte era stato collega di Goethe a Jena; Beethoven ammirò e poi ripudiò Napoleone. La ragione universale dell'Illuminismo si frantuma in nazioni, ciascuna rivendicando un genio unico.",
+      "funFact": "Il concerto di Beethoven di dicembre fu così freddo che il pubblico rimase in soprabito, e il soprano Josephine Killitschgy, terrorizzata e gelata, stonò l'aria 'Ah! perfido' tanto malamente che Beethoven rifiutò di rivolgerle la parola."
     }
   },
   "sources": [
-    { "url": "https://it.wikipedia.org/wiki/Wilhelm_R%C3%B6ntgen", "title": "Wilhelm Röntgen — Wikipedia" },
-    { "url": "https://it.wikipedia.org/wiki/Fratelli_Lumi%C3%A8re", "title": "Fratelli Lumière — Wikipedia" },
-    { "url": "https://it.wikipedia.org/wiki/Oscar_Wilde", "title": "Oscar Wilde — Wikipedia" },
-    { "url": "https://it.wikipedia.org/wiki/Biennale_di_Venezia", "title": "Biennale di Venezia — Wikipedia" },
-    { "url": "https://it.wikipedia.org/wiki/La_macchina_del_tempo", "title": "La macchina del tempo — Wikipedia" }
+    { "url": "https://it.wikipedia.org/wiki/Sollevamento_del_2_maggio", "title": "Wikipedia: Sollevamento del 2 maggio" },
+    { "url": "https://it.wikipedia.org/wiki/Discorsi_alla_nazione_tedesca", "title": "Wikipedia: Discorsi alla nazione tedesca" },
+    { "url": "https://it.wikipedia.org/wiki/Faust_(Goethe)", "title": "Wikipedia: Faust (Goethe)" },
+    { "url": "https://en.wikipedia.org/wiki/Beethoven_concert_of_22_December_1808", "title": "Wikipedia: Beethoven concert of 22 December 1808" },
+    { "url": "https://it.wikipedia.org/wiki/Slave_Trade_Act", "title": "Wikipedia: Slave Trade Act" }
   ],
   "image": {
-    "url": "images/1895-year-of-new-eyes.jpg",
-    "caption": "Prima radiografia: l'immagine di Wilhelm Röntgen della mano di sua moglie Anna Bertha con anello e ossa visibili, 22 dicembre 1895",
+    "url": "images/1808-year-nations-awaken.jpg",
     "width": 1200,
-    "height": 1726,
-    "attribution": "Wilhelm Röntgen, Pubblico dominio, via Wikimedia Commons"
+    "height": 927,
+    "caption": "Francisco Goya, Il 3 maggio 1808 (1814) — le esecuzioni seguite all'insurrezione di Madrid, dipinte a memoria sei anni dopo",
+    "attribution": "Francisco Goya, Pubblico dominio, via Wikimedia Commons"
   },
-  "threads": ["fin-de-siecle", "aestheticism", "scientific-revolution", "modernism"],
+  "threads": ["romantic-nationalism", "german-idealism", "napoleonic-wars", "abolition-crisis"],
   "location": {
-    "lat": 48.8566,
-    "lon": 2.3522,
-    "place": "Parigi"
+    "lat": 40.4168,
+    "lon": -3.7038,
+    "place": "Madrid"
   },
-  "addedDate": "2026-05-05T05:00:00Z"
+  "addedDate": "2026-05-06T05:00:00Z"
 }

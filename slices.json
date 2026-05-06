@@ -5254,5 +5254,79 @@
       "url": "audio/1895-year-of-new-eyes.mp3",
       "duration": 247
     }
+  },
+  {
+    "year": "1808",
+    "id": "1808-year-nations-awaken",
+    "title": "Year the Nations Awaken",
+    "teaser": "Madrid rises against Napoleon. Beethoven premieres two symphonies in a single night. Fichte calls the Germans to arms with philosophy. Goethe publishes his pact with the devil. The Enlightenment's universal reason fractures into national feeling.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "On May second, French cavalry charges through Madrid's streets while citizens fight with knives and kitchen tools — scenes that will sear themselves into <strong>Francisco Goya</strong>'s memory. Though his famous paintings come six years later, the <em>Disasters of War</em> etchings begin now: unflinching images of atrocity that abandon heroic convention for raw horror. In Vienna, <strong>Beethoven</strong>'s December twenty-second concert premieres both the <em>Fifth</em> and <em>Sixth Symphonies</em> in a single exhausting evening — four hours of music in a freezing theater. The Fifth's opening motif, four notes hammered like fate at the door, becomes <strong>Romantic music</strong>'s declaration of individual will against cosmic indifference. Where Haydn celebrated divine order, Beethoven dramatizes human struggle."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Goethe</strong> publishes <em>Faust, Part One</em> — the culmination of thirty years' work and German literature's supreme achievement. Faust, the scholar who has exhausted all learning yet remains unsatisfied, bargains his soul for experience: <em>'In the beginning was the Deed.'</em> This is the <strong>Romantic hero</strong> as eternal striver, never content with limits, always reaching beyond. The pact with <strong>Mephistopheles</strong> dramatizes the age's central anxiety: what happens when the thirst for knowledge breaks every boundary? Faust will seduce Gretchen, cause her destruction, and keep striving. The tragedy isn't the bargain — it's that striving never ends. Goethe invents the modern anti-hero."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Johann Gottlieb Fichte</strong> delivers his <em>Addresses to the German Nation</em> in French-occupied Berlin — fourteen lectures arguing that Germans possess a unique spiritual mission. Writing in the wake of Prussia's catastrophic defeat at Jena, Fichte transforms <strong>German Idealism</strong> into <strong>philosophical nationalism</strong>. The nation, he argues, isn't merely political — it's a cultural-linguistic community with its own organic spirit. Only through German education can this spirit awaken. Fichte's lectures inaugurate a dangerous tradition: the idea that nations have destinies, that peoples possess essences, that philosophy can mobilize populations. The Enlightenment's universal reason begins fragmenting into national souls."
+      },
+      "hist": {
+        "label": "History",
+        "content": "Napoleon's grip on Europe tightens — then cracks. In March, French troops occupy Madrid; in May, the <strong>Dos de Mayo uprising</strong> erupts when Murat tries to remove the remaining Spanish royals. The brutal French reprisals — mass executions on Príncipe Pío hill — ignite a nationwide guerrilla war that will bleed France for six years. Napoleon calls it his 'Spanish ulcer.' Meanwhile, on January first, the <strong>British abolition of the slave trade</strong> takes legal effect — the culmination of decades of abolitionist campaigning. British ships can no longer carry enslaved people across the Atlantic. Slavery itself continues, but the trade's criminalization marks a moral turning point. Empires are breaking and reforming."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year marks <strong>Romanticism's political turn</strong>. Fichte's nationalism and Spain's resistance both reject Napoleonic universalism — the idea that French revolutionary principles should govern all peoples. Instead, each nation claims its own spirit, its own destiny. Beethoven's symphonies express this in sound: the Fifth's struggle from darkness to triumph, the Sixth's pastoral celebration of German landscape. Goethe's Faust embodies Romantic individualism pushed to destruction — the endless striving that Fichte channels into national awakening. The connections are direct: Fichte had been Goethe's colleague at Jena; Beethoven admired then rejected Napoleon. The Enlightenment's universal reason splinters into nations, each claiming unique genius. For better and worse, the nineteenth century's nationalisms are being born.",
+        "funFact": "Beethoven's December concert was so cold that the audience sat in their overcoats, and soprano Josephine Killitschgy, terrified and freezing, botched the aria 'Ah! perfido' so badly that Beethoven refused to speak to her afterward."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dos_de_Mayo_Uprising",
+        "title": "Wikipedia: Dos de Mayo Uprising"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Addresses_to_the_German_Nation",
+        "title": "Wikipedia: Addresses to the German Nation"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Faust,_Part_One",
+        "title": "Wikipedia: Faust, Part One"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Beethoven_concert_of_22_December_1808",
+        "title": "Wikipedia: Beethoven concert of 22 December 1808"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Slave_Trade_Act_1807",
+        "title": "Wikipedia: Slave Trade Act 1807"
+      }
+    ],
+    "image": {
+      "url": "images/1808-year-nations-awaken.jpg",
+      "width": 1200,
+      "height": 927,
+      "caption": "Francisco Goya, The Third of May 1808 (1814) — the executions that followed Madrid's uprising, painted from memory six years later",
+      "attribution": "Francisco Goya, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "romantic-nationalism",
+      "german-idealism",
+      "napoleonic-wars",
+      "abolition-crisis"
+    ],
+    "location": {
+      "lat": 40.4168,
+      "lon": -3.7038,
+      "place": "Madrid"
+    },
+    "addedDate": "2026-05-06T05:00:00Z",
+    "podcast": {
+      "url": "audio/1808-year-nations-awaken.mp3",
+      "duration": 157
+    }
   }
 ]

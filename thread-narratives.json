@@ -252,7 +252,9 @@
     "abolition-crisis": {
       "1831→1859": "Nat Turner's rebellion in 1831 terrified the South into brutal new slave codes. A generation later, John Brown's raid at Harpers Ferry proved that white abolitionists would now take up arms. The road to Civil War was paved in blood.",
       "1859→1863": "John Brown's martyrdom galvanized the North; four years later, Lincoln made abolition a war aim.",
-      "1789→1831": "Equiano gave slavery a human voice; Nat Turner gave it an armed response."
+      "1789→1831": "Equiano gave slavery a human voice; Nat Turner gave it an armed response.",
+      "1789→1808": "Wilberforce's parliamentary campaign finally succeeds: in 1807 Britain bans the trade, taking effect January 1808.",
+      "1808→1831": "The trade is banned, but slavery itself persists; the fight shifts to full emancipation."
     },
     "revolutionary-nationalism": {
       "1848→1859": "The Springtime of Peoples in 1848 was crushed, but the dream of national self-determination survived. A decade later, at Solferino, Italian nationalists saw France defeat Austria—and the Risorgimento entered its decisive phase."
@@ -332,6 +334,9 @@
     },
     "phenomenology": {
       "1913→1943": "Husserl's phenomenological method travels from Göttingen to occupied Paris: Sartre reads Heidegger as a prisoner of war and builds Being and Nothingness on Husserlian foundations."
+    },
+    "romantic-nationalism": {
+      "1808→1848": "Fichte's philosophical nationalism spreads: forty years later, the Springtime of Peoples erupts across Europe."
     }
   },
   "it": {
@@ -580,7 +585,9 @@
     "abolition-crisis": {
       "1831→1859": "La ribellione di Nat Turner nel 1831 terrorizzò il Sud inducendolo a emanare brutali nuovi codici schiavisti. Una generazione dopo, il raid di John Brown a Harpers Ferry dimostrò che gli abolizionisti bianchi avrebbero impugnato le armi. La strada verso la Guerra Civile fu lastricata di sangue.",
       "1859→1863": "Il martirio di John Brown galvanizzò il Nord; quattro anni dopo, Lincoln rese l'abolizione un obiettivo di guerra.",
-      "1789→1831": "Equiano diede alla schiavitù una voce umana; Nat Turner le diede una risposta armata."
+      "1789→1831": "Equiano diede alla schiavitù una voce umana; Nat Turner le diede una risposta armata.",
+      "1789→1808": "La campagna parlamentare di Wilberforce finalmente trionfa: nel 1807 la Gran Bretagna vieta la tratta, in vigore dal primo gennaio 1808.",
+      "1808→1831": "La tratta è vietata, ma la schiavitù persiste; la lotta si sposta verso l'emancipazione totale."
     },
     "revolutionary-nationalism": {
       "1848→1859": "La Primavera dei Popoli del 1848 fu schiacciata, ma il sogno dell'autodeterminazione nazionale sopravvisse. Un decennio dopo, a Solferino, i nazionalisti italiani videro la Francia sconfiggere l'Austria—e il Risorgimento entrò nella sua fase decisiva."
@@ -660,6 +667,9 @@
     },
     "phenomenology": {
       "1913→1943": "Il metodo fenomenologico di Husserl viaggia da Gottinga alla Parigi occupata: Sartre legge Heidegger da prigioniero di guerra e costruisce L'essere e il nulla su fondamenta husserliane."
+    },
+    "romantic-nationalism": {
+      "1808→1848": "Il nazionalismo filosofico di Fichte si diffonde: quarant'anni dopo, la Primavera dei popoli esplode in tutta Europa."
     }
   }
 }
