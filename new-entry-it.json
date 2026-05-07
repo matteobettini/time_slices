@@ -1,50 +1,50 @@
 {
-  "year": "1808",
-  "id": "1808-year-nations-awaken",
-  "title": "L'anno in cui le nazioni si destano",
-  "teaser": "Madrid insorge contro Napoleone. Beethoven presenta due sinfonie in una sola notte. Fichte chiama i tedeschi alle armi con la filosofia. Goethe pubblica il suo patto col diavolo. La ragione universale dell'Illuminismo si frantuma nel sentimento nazionale.",
+  "year": "1929",
+  "id": "1929-breaking-point",
+  "title": "Il Punto di Rottura",
+  "teaser": "L'occhio è tagliato, i mercati crollano, la razionalità proclama vittoria. In un solo anno, il surrealismo invade il cinema, il modernismo conquista il museo, e Wall Street dimostra che la follia collettiva non ha nulla a che fare con la ragione. La filosofia dibatte se sia la finitezza umana o l'infinito simbolico a definirci—mentre la risposta arriva il Martedì Nero.",
   "dimensions": {
     "art": {
       "label": "Arte",
-      "content": "Il due maggio la cavalleria francese carica per le strade di Madrid mentre i cittadini combattono con coltelli e utensili da cucina — scene che si imprimono nella memoria di <strong>Francisco Goya</strong>. Benché i suoi celebri dipinti arrivino sei anni dopo, le incisioni dei <em>Disastri della guerra</em> iniziano ora: immagini crude di atrocità che abbandonano le convenzioni eroiche per l'orrore puro. A Vienna, il concerto di Beethoven del ventidue dicembre presenta in prima assoluta sia la <em>Quinta</em> che la <em>Sesta Sinfonia</em> in una sola estenuante serata — quattro ore di musica in un teatro gelido. Il motivo d'apertura della Quinta, quattro note martellate come il destino che bussa alla porta, diventa la dichiarazione della <strong>musica romantica</strong>: la volontà individuale contro l'indifferenza cosmica."
+      "content": "<strong>Un Chien Andalou</strong> debutta a Parigi il sei giugno—l'assalto più famigerato del <strong>Surrealismo</strong> alla percezione borghese. Luis Buñuel e Salvador Dalí costruiscono la sceneggiatura dalla pura logica onirica: un rasoio taglia un occhio, formiche brulicano da un palmo, asini morti si drappeggiano sui pianoforti. Il movimento surrealista, nato dal nichilismo Dada ma alla ricerca dell'inconscio piuttosto che della mera distruzione, trova nel cinema il suo mezzo perfetto. Intanto a New York, il <strong>Museum of Modern Art</strong> apre il sette novembre—appena nove giorni dopo il Martedì Nero. Tre mecenati visionarie (Abby Aldrich Rockefeller, Lillie P. Bliss, Mary Quinn Sullivan) istituzionalizzano l'avanguardia, dichiarando che l'arte moderna merita la stessa serietà curatoriale dei Vecchi Maestri."
     },
     "lit": {
       "label": "Letteratura",
-      "content": "<strong>Goethe</strong> pubblica il <em>Faust, Parte Prima</em> — il coronamento di trent'anni di lavoro e il capolavoro supremo della letteratura tedesca. Faust, lo studioso che ha esaurito ogni sapere ma resta insoddisfatto, vende l'anima per l'esperienza: <em>'In principio era l'Azione.'</em> È l'<strong>eroe romantico</strong> come eterno aspirante, mai pago dei limiti, sempre proteso oltre. Il patto con <strong>Mefistofele</strong> drammatizza l'ansia centrale dell'epoca: cosa accade quando la sete di conoscenza infrange ogni confine? Faust sedurrà Margherita, causerà la sua distruzione, e continuerà ad aspirare. La tragedia non è il patto — è che l'aspirazione non finisce mai."
+      "content": "<strong>William Faulkner</strong> pubblica <em>L'urlo e il furore</em>, l'esperimento americano più radicale del <strong>modernismo letterario</strong>. Quattro narratori, tre dei quali inaffidabili—incluso Benjy, la cui sezione frammenta il tempo in pura sensazione. Il titolo cita Macbeth: la vita come 'una storia raccontata da un idiota, piena di strepito e furore, che non significa nulla.' <em>Addio alle armi</em> di <strong>Hemingway</strong> esce lo stesso anno, ma dove Faulkner dissolve la coscienza, Hemingway la riduce all'osso. Entrambi rispondono alla distruzione delle certezze ottocentesche causata dalla guerra, ma con tecniche opposte: massima interiorità contro massima essenzialità."
     },
     "phil": {
       "label": "Filosofia",
-      "content": "<strong>Johann Gottlieb Fichte</strong> pronuncia i suoi <em>Discorsi alla nazione tedesca</em> nella Berlino occupata dai francesi — quattordici lezioni che sostengono la missione spirituale unica dei tedeschi. Scrivendo dopo la catastrofica sconfitta prussiana a Jena, Fichte trasforma l'<strong>Idealismo tedesco</strong> in <strong>nazionalismo filosofico</strong>. La nazione, argomenta, non è soltanto politica — è una comunità culturale-linguistica con un proprio spirito organico. Solo attraverso l'educazione tedesca questo spirito può destarsi. Le lezioni di Fichte inaugurano una tradizione pericolosa: l'idea che le nazioni abbiano destini, che i popoli possiedano essenze, che la filosofia possa mobilitare le masse."
+      "content": "A marzo, <strong>Heidegger</strong> e <strong>Cassirer</strong> si incontrano a Davos per il dibattito filosofico più importante del secolo. Cassirer difende il neokantismo: l'umanità trascende la finitezza attraverso le forme simboliche—linguaggio, mito, scienza—tendendo verso la verità oggettiva. Heidegger replica che il <em>Dasein</em> è fondamentalmente finito, gettato nel tempo, di fronte alla morte. A settembre, il <strong>Circolo di Vienna</strong> pubblica il suo manifesto, <em>La concezione scientifica del mondo</em>: tutte le affermazioni significative sono o verificabili empiricamente o analiticamente logiche. La metafisica è letteralmente priva di senso. Due visioni della ragione si scontrano: una abbraccia l'angoscia e la mortalità, l'altra esige precisione scientifica."
     },
     "hist": {
       "label": "Storia",
-      "content": "La presa di Napoleone sull'Europa si stringe — poi si incrina. In marzo le truppe francesi occupano Madrid; in maggio esplode la <strong>rivolta del Dos de Mayo</strong> quando Murat tenta di portare via gli ultimi reali spagnoli. Le brutali rappresaglie francesi — esecuzioni di massa sulla collina del Príncipe Pío — accendono una guerra partigiana nazionale che dissanguerà la Francia per sei anni. Napoleone la chiamerà la sua 'ulcera spagnola.' Intanto, il primo gennaio entra in vigore l'<strong>abolizione britannica della tratta degli schiavi</strong> — il coronamento di decenni di campagne abolizioniste. Le navi britanniche non possono più trasportare persone schiavizzate attraverso l'Atlantico. La schiavitù continua, ma la criminalizzazione della tratta segna una svolta morale."
+      "content": "Il <strong>Giovedì Nero</strong> (ventiquattro ottobre), il panico invade la Borsa di New York. Il <strong>Martedì Nero</strong> (ventinove ottobre), sedici milioni di azioni vengono scambiate—il ticker tape resta indietro di ore rispetto alla realtà mentre le fortune evaporano. Il Dow perderà alla fine l'ottantanove percento del suo valore. La mania speculativa dei Ruggenti Anni Venti—acquisti a margine, esuberanza irrazionale—crolla nella <strong>Grande Depressione</strong>. Quattordici miliardi di dollari svaniscono in un solo giorno. Il crollo rivela il divario tra la fiducia dei mercati e i fondamentali economici, innescando un decennio di catastrofe globale."
     },
     "conn": {
       "label": "Connessioni",
-      "content": "L'anno segna la <strong>svolta politica del Romanticismo</strong>. Il nazionalismo di Fichte e la resistenza spagnola rifiutano entrambi l'universalismo napoleonico — l'idea che i principi rivoluzionari francesi debbano governare tutti i popoli. Invece, ogni nazione rivendica il proprio spirito, il proprio destino. Le sinfonie di Beethoven lo esprimono in musica: la Quinta come lotta dalle tenebre al trionfo, la Sesta come celebrazione pastorale del paesaggio tedesco. Il Faust di Goethe incarna l'individualismo romantico spinto alla distruzione — l'eterna aspirazione che Fichte incanala nel risveglio nazionale. I legami sono diretti: Fichte era stato collega di Goethe a Jena; Beethoven ammirò e poi ripudiò Napoleone. La ragione universale dell'Illuminismo si frantuma in nazioni, ciascuna rivendicando un genio unico.",
-      "funFact": "Il concerto di Beethoven di dicembre fu così freddo che il pubblico rimase in soprabito, e il soprano Josephine Killitschgy, terrorizzata e gelata, stonò l'aria 'Ah! perfido' tanto malamente che Beethoven rifiutò di rivolgerle la parola."
+      "content": "La convergenza dell'anno è <strong>ragione contro irrazionalità</strong>—o la loro strana complicità. Il Circolo di Vienna dichiara che solo le affermazioni verificabili hanno significato; Dalí e Buñuel insistono che i sogni rivelano verità che la logica non può raggiungere. Heidegger sostiene che l'esistenza autentica richiede di confrontarsi con la mortalità; Wall Street scopre che il comportamento collettivo può essere irrazionale quanto qualsiasi incubo. Il MoMA apre tra le macerie, scommettendo che l'arte conta di più quando tutto il resto fallisce. Il narratore idiota di <strong>Faulkner</strong> e la sintassi logica del Circolo di Vienna sono immagini speculari: entrambi riducono il linguaggio ai suoi limiti, uno attraverso la riduzione ai dati sensoriali, l'altro attraverso la dissoluzione nella coscienza.",
+      "funFact": "Buñuel si presentò alla prima di Un Chien Andalou con sassi in tasca, pronto a lanciarli al pubblico in caso di attacco—ma i surrealisti applaudirono entusiasticamente."
     }
   },
   "sources": [
-    { "url": "https://it.wikipedia.org/wiki/Sollevamento_del_2_maggio", "title": "Wikipedia: Sollevamento del 2 maggio" },
-    { "url": "https://it.wikipedia.org/wiki/Discorsi_alla_nazione_tedesca", "title": "Wikipedia: Discorsi alla nazione tedesca" },
-    { "url": "https://it.wikipedia.org/wiki/Faust_(Goethe)", "title": "Wikipedia: Faust (Goethe)" },
-    { "url": "https://en.wikipedia.org/wiki/Beethoven_concert_of_22_December_1808", "title": "Wikipedia: Beethoven concert of 22 December 1808" },
-    { "url": "https://it.wikipedia.org/wiki/Slave_Trade_Act", "title": "Wikipedia: Slave Trade Act" }
+    { "url": "https://it.wikipedia.org/wiki/Un_chien_andalou", "title": "Wikipedia: Un chien andalou" },
+    { "url": "https://it.wikipedia.org/wiki/Crollo_di_Wall_Street_del_1929", "title": "Wikipedia: Crollo di Wall Street del 1929" },
+    { "url": "https://it.wikipedia.org/wiki/Martin_Heidegger", "title": "Wikipedia: Martin Heidegger" },
+    { "url": "https://it.wikipedia.org/wiki/L%27urlo_e_il_furore", "title": "Wikipedia: L'urlo e il furore" },
+    { "url": "https://it.wikipedia.org/wiki/Circolo_di_Vienna", "title": "Wikipedia: Circolo di Vienna" }
   ],
   "image": {
-    "url": "images/1808-year-nations-awaken.jpg",
-    "width": 1200,
-    "height": 927,
-    "caption": "Francisco Goya, Il 3 maggio 1808 (1814) — le esecuzioni seguite all'insurrezione di Madrid, dipinte a memoria sei anni dopo",
-    "attribution": "Francisco Goya, Pubblico dominio, via Wikimedia Commons"
+    "url": "images/1929-breaking-point.jpg",
+    "caption": "Folla radunata a Wall Street dopo il crollo della borsa, ottobre 1929",
+    "width": 718,
+    "height": 1024,
+    "attribution": "Pubblico dominio, via Wikimedia Commons"
   },
-  "threads": ["romantic-nationalism", "german-idealism", "napoleonic-wars", "abolition-crisis"],
+  "threads": ["modernism", "surrealism", "logical-positivism", "great-depression", "existentialism"],
   "location": {
-    "lat": 40.4168,
-    "lon": -3.7038,
-    "place": "Madrid"
+    "lat": 40.7069,
+    "lon": -74.0089,
+    "place": "New York"
   },
-  "addedDate": "2026-05-06T05:00:00Z"
+  "addedDate": "2026-05-07T05:00:00Z"
 }

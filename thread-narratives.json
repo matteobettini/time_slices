@@ -277,13 +277,17 @@
       "1927→1937": "Heidegger asked what it means to exist facing death; fascism literalizes that question as bombers turn philosophy into terror, while Husserl's banned lectures diagnose reason's spiritual crisis.",
       "1937→1953": "Gramsci's prison notebooks asked how power manufactures consent; Beckett's tramps discover that waiting IS existence, consent to nothing, yet still somehow here.",
       "1937→1943": "From Gramsci's prison notebooks theorizing cultural hegemony to Sartre's Being and Nothingness: occupation transforms existentialism from academic philosophy into lived resistance.",
-      "1943→1953": "From wartime Paris to Beckett's Godot: existentialism evolves from Sartrean engagement to the Theatre of the Absurd, where waiting itself becomes the human condition."
+      "1943→1953": "From wartime Paris to Beckett's Godot: existentialism evolves from Sartrean engagement to the Theatre of the Absurd, where waiting itself becomes the human condition.",
+      "1927→1929": "Two years after Being and Time, Heidegger faces Cassirer at Davos—finitude versus symbolic transcendence. The debate splits twentieth-century philosophy.",
+      "1929→1937": "From Davos to Guernica: existentialism moves from academic debate to confronting fascism, war, and the collapse of liberal civilization."
     },
     "modernism": {
       "1922→1927": "The experimentalism of Ulysses and The Waste Land becomes Woolf's durational prose — form dissolves into time itself.",
       "1927→1937": "Heidegger's temporality and Woolf's dissolving narratives meet their historical test: can modernist form bear witness to mechanized atrocity? Guernica answers in Cubist screams.",
       "1913→1922": "Stravinsky's riot becomes Eliot's waste land. Nine years, one world war: modernism's experimental assault becomes its elegy.",
-      "1895→1913": "The X-ray, cinema, and Time Machine of 1895 taught a new way of seeing; by 1913 the Fauves and Rite of Spring made those visions riot."
+      "1895→1913": "The X-ray, cinema, and Time Machine of 1895 taught a new way of seeing; by 1913 the Fauves and Rite of Spring made those visions riot.",
+      "1927→1929": "Proust's posthumous finale reaches readers as Faulkner shatters narrative from Mississippi. Stream of consciousness crosses the Atlantic, mutating in the American South.",
+      "1929→1937": "MoMA institutionalizes the avant-garde as economic collapse ravages the world. Modernism survives by becoming museum-worthy; Picasso responds to fascism with Guernica."
     },
     "stream-of-consciousness": {
       "1922→1927": "Joyce's one day and Proust's lost time converge in Woolf: consciousness as duration, not sequence."
@@ -337,6 +341,12 @@
     },
     "romantic-nationalism": {
       "1808→1848": "Fichte's philosophical nationalism spreads: forty years later, the Springtime of Peoples erupts across Europe."
+    },
+    "great-depression": {
+      "1929→1932": "Black Tuesday triggers the cascade: bank failures, unemployment, deflation. By 1932, the Dow has lost 89% and Huxley's dystopia feels prophetic."
+    },
+    "logical-positivism": {
+      "1922→1929": "From seminar discussions to public manifesto: the Vienna Circle crystallizes its programme, declaring metaphysics meaningless and science the only path to knowledge."
     }
   },
   "it": {
@@ -610,13 +620,17 @@
       "1927→1937": "Heidegger chiese cosa significhi esistere di fronte alla morte; il fascismo letteralizza quella domanda mentre i bombardieri trasformano la filosofia in terrore, e le lezioni proibite di Husserl diagnosticano la crisi spirituale della ragione.",
       "1937→1953": "I quaderni di Gramsci indagavano come il potere fabbrichi il consenso; i vagabondi di Beckett scoprono che aspettare È l'esistenza, consenso al nulla, eppure ancora qui.",
       "1937→1943": "Dai quaderni del carcere di Gramsci che teorizzano l'egemonia culturale a L'essere e il nulla di Sartre: l'occupazione trasforma l'esistenzialismo da filosofia accademica a resistenza vissuta.",
-      "1943→1953": "Dalla Parigi in guerra al Godot di Beckett: l'esistenzialismo evolve dall'engagement sartriano al Teatro dell'Assurdo, dove l'attesa stessa diventa la condizione umana."
+      "1943→1953": "Dalla Parigi in guerra al Godot di Beckett: l'esistenzialismo evolve dall'engagement sartriano al Teatro dell'Assurdo, dove l'attesa stessa diventa la condizione umana.",
+      "1927→1929": "Due anni dopo Essere e tempo, Heidegger affronta Cassirer a Davos—finitezza contro trascendenza simbolica. Il dibattito divide la filosofia del Novecento.",
+      "1929→1937": "Da Davos a Guernica: l'esistenzialismo passa dal dibattito accademico al confronto con fascismo, guerra e il crollo della civiltà liberale."
     },
     "modernism": {
       "1922→1927": "La sperimentazione dell'Ulisse e di Terra desolata diventa la prosa durativa di Woolf — la forma si dissolve nel tempo stesso.",
       "1927→1937": "La temporalità di Heidegger e le narrazioni dissolte di Woolf incontrano la loro prova storica: può la forma modernista testimoniare l'atrocità meccanizzata? Guernica risponde in urla cubiste.",
       "1913→1922": "La rivolta di Stravinskij diventa la terra desolata di Eliot. Nove anni, una guerra mondiale: l'assalto sperimentale del modernismo ne diventa l'elegia.",
-      "1895→1913": "I raggi X, il cinema e la Macchina del Tempo del 1895 insegnarono un nuovo modo di vedere; nel 1913 i Fauves e il Sacre du Printemps fecero esplodere quelle visioni."
+      "1895→1913": "I raggi X, il cinema e la Macchina del Tempo del 1895 insegnarono un nuovo modo di vedere; nel 1913 i Fauves e il Sacre du Printemps fecero esplodere quelle visioni.",
+      "1927→1929": "Il finale postumo di Proust raggiunge i lettori mentre Faulkner frantuma la narrazione dal Mississippi. Il flusso di coscienza attraversa l'Atlantico, mutando nel Sud americano.",
+      "1929→1937": "Il MoMA istituzionalizza l'avanguardia mentre il collasso economico devasta il mondo. Il modernismo sopravvive diventando degno dei musei; Picasso risponde al fascismo con Guernica."
     },
     "stream-of-consciousness": {
       "1922→1927": "La singola giornata di Joyce e il tempo perduto di Proust convergono in Woolf: la coscienza come durata, non sequenza."
@@ -670,6 +684,12 @@
     },
     "romantic-nationalism": {
       "1808→1848": "Il nazionalismo filosofico di Fichte si diffonde: quarant'anni dopo, la Primavera dei popoli esplode in tutta Europa."
+    },
+    "great-depression": {
+      "1929→1932": "Il Martedì Nero innesca la cascata: fallimenti bancari, disoccupazione, deflazione. Nel 1932, il Dow ha perso l'89% e la distopia di Huxley sembra profetica."
+    },
+    "logical-positivism": {
+      "1922→1929": "Dalle discussioni seminariali al manifesto pubblico: il Circolo di Vienna cristallizza il suo programma, dichiarando la metafisica priva di senso e la scienza l'unica via alla conoscenza."
     }
   }
 }

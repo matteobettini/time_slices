@@ -1,50 +1,50 @@
 {
-  "year": "1808",
-  "id": "1808-year-nations-awaken",
-  "title": "Year the Nations Awaken",
-  "teaser": "Madrid rises against Napoleon. Beethoven premieres two symphonies in a single night. Fichte calls the Germans to arms with philosophy. Goethe publishes his pact with the devil. The Enlightenment's universal reason fractures into national feeling.",
+  "year": "1929",
+  "id": "1929-breaking-point",
+  "title": "The Breaking Point",
+  "teaser": "The eye is sliced, the markets collapse, rationality declares victory. In a single year, surrealism invades cinema, modernism invades the museum, and Wall Street proves that collective madness has nothing to do with reason. Philosophy debates whether human finitude or symbolic infinity defines us—while the answer arrives on Black Tuesday.",
   "dimensions": {
     "art": {
       "label": "Art",
-      "content": "On May second, French cavalry charges through Madrid's streets while citizens fight with knives and kitchen tools — scenes that will sear themselves into <strong>Francisco Goya</strong>'s memory. Though his famous paintings come six years later, the <em>Disasters of War</em> etchings begin now: unflinching images of atrocity that abandon heroic convention for raw horror. In Vienna, <strong>Beethoven</strong>'s December twenty-second concert premieres both the <em>Fifth</em> and <em>Sixth Symphonies</em> in a single exhausting evening — four hours of music in a freezing theater. The Fifth's opening motif, four notes hammered like fate at the door, becomes <strong>Romantic music</strong>'s declaration of individual will against cosmic indifference. Where Haydn celebrated divine order, Beethoven dramatizes human struggle."
+      "content": "<strong>Un Chien Andalou</strong> premieres in Paris on June sixth—<strong>Surrealism</strong>'s most notorious assault on bourgeois perception. Luis Buñuel and Salvador Dalí construct their screenplay from pure dream logic: a razor slices an eye, ants crawl from a palm, dead donkeys drape across pianos. The Surrealist movement, born from Dada's nihilism but seeking the unconscious rather than mere destruction, finds its perfect medium in cinema. Meanwhile in New York, the <strong>Museum of Modern Art</strong> opens on November seventh—just nine days after Black Tuesday. Three visionary patrons (Abby Aldrich Rockefeller, Lillie P. Bliss, Mary Quinn Sullivan) institutionalize the avant-garde, declaring that modern art deserves the same curatorial seriousness as the Old Masters."
     },
     "lit": {
       "label": "Literature",
-      "content": "<strong>Goethe</strong> publishes <em>Faust, Part One</em> — the culmination of thirty years' work and German literature's supreme achievement. Faust, the scholar who has exhausted all learning yet remains unsatisfied, bargains his soul for experience: <em>'In the beginning was the Deed.'</em> This is the <strong>Romantic hero</strong> as eternal striver, never content with limits, always reaching beyond. The pact with <strong>Mephistopheles</strong> dramatizes the age's central anxiety: what happens when the thirst for knowledge breaks every boundary? Faust will seduce Gretchen, cause her destruction, and keep striving. The tragedy isn't the bargain — it's that striving never ends. Goethe invents the modern anti-hero."
+      "content": "<strong>William Faulkner</strong> publishes <em>The Sound and the Fury</em>, <strong>literary modernism</strong>'s most radical American experiment. Four narrators, three of them unreliable—including Benjy, whose section fragments time into pure sensation. The title quotes Macbeth: life as 'a tale told by an idiot, full of sound and fury, signifying nothing.' <strong>Hemingway</strong>'s <em>A Farewell to Arms</em> appears the same year, but where Faulkner dissolves consciousness, Hemingway strips it to bone. Both respond to the war's destruction of nineteenth-century certainties, but through opposite techniques: maximum interiority versus maximum restraint."
     },
     "phil": {
       "label": "Philosophy",
-      "content": "<strong>Johann Gottlieb Fichte</strong> delivers his <em>Addresses to the German Nation</em> in French-occupied Berlin — fourteen lectures arguing that Germans possess a unique spiritual mission. Writing in the wake of Prussia's catastrophic defeat at Jena, Fichte transforms <strong>German Idealism</strong> into <strong>philosophical nationalism</strong>. The nation, he argues, isn't merely political — it's a cultural-linguistic community with its own organic spirit. Only through German education can this spirit awaken. Fichte's lectures inaugurate a dangerous tradition: the idea that nations have destinies, that peoples possess essences, that philosophy can mobilize populations. The Enlightenment's universal reason begins fragmenting into national souls."
+      "content": "In March, <strong>Heidegger</strong> and <strong>Cassirer</strong> meet at Davos for the century's defining philosophical debate. Cassirer defends Neo-Kantianism: humanity transcends finitude through symbolic forms—language, myth, science—reaching toward objective truth. Heidegger counters that <em>Dasein</em> is fundamentally finite, thrown into time, facing death. In September, the <strong>Vienna Circle</strong> publishes its manifesto, <em>The Scientific Conception of the World</em>: all meaningful statements are either empirically verifiable or logically analytic. Metaphysics is literally nonsense. Two visions of reason clash: one embracing anxiety and mortality, one demanding scientific precision."
     },
     "hist": {
       "label": "History",
-      "content": "Napoleon's grip on Europe tightens — then cracks. In March, French troops occupy Madrid; in May, the <strong>Dos de Mayo uprising</strong> erupts when Murat tries to remove the remaining Spanish royals. The brutal French reprisals — mass executions on Príncipe Pío hill — ignite a nationwide guerrilla war that will bleed France for six years. Napoleon calls it his 'Spanish ulcer.' Meanwhile, on January first, the <strong>British abolition of the slave trade</strong> takes legal effect — the culmination of decades of abolitionist campaigning. British ships can no longer carry enslaved people across the Atlantic. Slavery itself continues, but the trade's criminalization marks a moral turning point. Empires are breaking and reforming."
+      "content": "On <strong>Black Thursday</strong> (October twenty-fourth), panic selling hits the New York Stock Exchange. On <strong>Black Tuesday</strong> (October twenty-ninth), sixteen million shares trade—the ticker tape runs hours behind reality as fortunes evaporate. The Dow will eventually lose eighty-nine percent of its value. The Roaring Twenties' speculative mania—margin buying, irrational exuberance—collapses into the <strong>Great Depression</strong>. Fourteen billion dollars vanishes in a single day. The crash exposes the gap between market confidence and economic fundamentals, triggering a decade of global catastrophe."
     },
     "conn": {
       "label": "Connections",
-      "content": "The year marks <strong>Romanticism's political turn</strong>. Fichte's nationalism and Spain's resistance both reject Napoleonic universalism — the idea that French revolutionary principles should govern all peoples. Instead, each nation claims its own spirit, its own destiny. Beethoven's symphonies express this in sound: the Fifth's struggle from darkness to triumph, the Sixth's pastoral celebration of German landscape. Goethe's Faust embodies Romantic individualism pushed to destruction — the endless striving that Fichte channels into national awakening. The connections are direct: Fichte had been Goethe's colleague at Jena; Beethoven admired then rejected Napoleon. The Enlightenment's universal reason splinters into nations, each claiming unique genius. For better and worse, the nineteenth century's nationalisms are being born.",
-      "funFact": "Beethoven's December concert was so cold that the audience sat in their overcoats, and soprano Josephine Killitschgy, terrified and freezing, botched the aria 'Ah! perfido' so badly that Beethoven refused to speak to her afterward."
+      "content": "The year's convergence is <strong>reason against unreason</strong>—or their strange complicity. The Vienna Circle declares that only verifiable statements have meaning; Dalí and Buñuel insist that dreams reveal truths logic cannot reach. Heidegger argues that authentic existence requires confronting mortality; Wall Street discovers that collective behavior can be as irrational as any nightmare. MoMA opens amid ruins, betting that art matters more when everything else fails. <strong>Faulkner</strong>'s idiot narrator and the Vienna Circle's logical syntax are mirror images: both strip language to its limits, one through reduction to sense-data, the other through dissolution into consciousness.",
+      "funFact": "Buñuel attended Un Chien Andalou's premiere with stones in his pockets, ready to throw at the audience if they attacked—but the Surrealists cheered instead."
     }
   },
   "sources": [
-    { "url": "https://en.wikipedia.org/wiki/Dos_de_Mayo_Uprising", "title": "Wikipedia: Dos de Mayo Uprising" },
-    { "url": "https://en.wikipedia.org/wiki/Addresses_to_the_German_Nation", "title": "Wikipedia: Addresses to the German Nation" },
-    { "url": "https://en.wikipedia.org/wiki/Faust,_Part_One", "title": "Wikipedia: Faust, Part One" },
-    { "url": "https://en.wikipedia.org/wiki/Beethoven_concert_of_22_December_1808", "title": "Wikipedia: Beethoven concert of 22 December 1808" },
-    { "url": "https://en.wikipedia.org/wiki/Slave_Trade_Act_1807", "title": "Wikipedia: Slave Trade Act 1807" }
+    { "url": "https://en.wikipedia.org/wiki/Un_Chien_Andalou", "title": "Wikipedia: Un Chien Andalou" },
+    { "url": "https://en.wikipedia.org/wiki/Wall_Street_crash_of_1929", "title": "Wikipedia: Wall Street Crash of 1929" },
+    { "url": "https://en.wikipedia.org/wiki/Cassirer%E2%80%93Heidegger_debate", "title": "Wikipedia: Cassirer-Heidegger Debate" },
+    { "url": "https://en.wikipedia.org/wiki/The_Sound_and_the_Fury", "title": "Wikipedia: The Sound and the Fury" },
+    { "url": "https://en.wikipedia.org/wiki/Vienna_Circle", "title": "Wikipedia: Vienna Circle" }
   ],
   "image": {
-    "url": "images/1808-year-nations-awaken.jpg",
-    "width": 1200,
-    "height": 927,
-    "caption": "Francisco Goya, The Third of May 1808 (1814) — the executions that followed Madrid's uprising, painted from memory six years later",
-    "attribution": "Francisco Goya, Public domain, via Wikimedia Commons"
+    "url": "images/1929-breaking-point.jpg",
+    "caption": "Crowd gathering on Wall Street after the stock market crash, October 1929",
+    "width": 718,
+    "height": 1024,
+    "attribution": "Public domain, via Wikimedia Commons"
   },
-  "threads": ["romantic-nationalism", "german-idealism", "napoleonic-wars", "abolition-crisis"],
+  "threads": ["modernism", "surrealism", "logical-positivism", "great-depression", "existentialism"],
   "location": {
-    "lat": 40.4168,
-    "lon": -3.7038,
-    "place": "Madrid"
+    "lat": 40.7069,
+    "lon": -74.0089,
+    "place": "New York"
   },
-  "addedDate": "2026-05-06T05:00:00Z"
+  "addedDate": "2026-05-07T05:00:00Z"
 }

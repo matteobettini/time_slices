@@ -5312,5 +5312,80 @@
       "url": "audio/it/1808-year-nations-awaken.mp3",
       "duration": 159
     }
+  },
+  {
+    "year": "1929",
+    "id": "1929-breaking-point",
+    "title": "Il Punto di Rottura",
+    "teaser": "L'occhio è tagliato, i mercati crollano, la razionalità proclama vittoria. In un solo anno, il surrealismo invade il cinema, il modernismo conquista il museo, e Wall Street dimostra che la follia collettiva non ha nulla a che fare con la ragione. La filosofia dibatte se sia la finitezza umana o l'infinito simbolico a definirci—mentre la risposta arriva il Martedì Nero.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "<strong>Un Chien Andalou</strong> debutta a Parigi il sei giugno—l'assalto più famigerato del <strong>Surrealismo</strong> alla percezione borghese. Luis Buñuel e Salvador Dalí costruiscono la sceneggiatura dalla pura logica onirica: un rasoio taglia un occhio, formiche brulicano da un palmo, asini morti si drappeggiano sui pianoforti. Il movimento surrealista, nato dal nichilismo Dada ma alla ricerca dell'inconscio piuttosto che della mera distruzione, trova nel cinema il suo mezzo perfetto. Intanto a New York, il <strong>Museum of Modern Art</strong> apre il sette novembre—appena nove giorni dopo il Martedì Nero. Tre mecenati visionarie (Abby Aldrich Rockefeller, Lillie P. Bliss, Mary Quinn Sullivan) istituzionalizzano l'avanguardia, dichiarando che l'arte moderna merita la stessa serietà curatoriale dei Vecchi Maestri."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "<strong>William Faulkner</strong> pubblica <em>L'urlo e il furore</em>, l'esperimento americano più radicale del <strong>modernismo letterario</strong>. Quattro narratori, tre dei quali inaffidabili—incluso Benjy, la cui sezione frammenta il tempo in pura sensazione. Il titolo cita Macbeth: la vita come 'una storia raccontata da un idiota, piena di strepito e furore, che non significa nulla.' <em>Addio alle armi</em> di <strong>Hemingway</strong> esce lo stesso anno, ma dove Faulkner dissolve la coscienza, Hemingway la riduce all'osso. Entrambi rispondono alla distruzione delle certezze ottocentesche causata dalla guerra, ma con tecniche opposte: massima interiorità contro massima essenzialità."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "A marzo, <strong>Heidegger</strong> e <strong>Cassirer</strong> si incontrano a Davos per il dibattito filosofico più importante del secolo. Cassirer difende il neokantismo: l'umanità trascende la finitezza attraverso le forme simboliche—linguaggio, mito, scienza—tendendo verso la verità oggettiva. Heidegger replica che il <em>Dasein</em> è fondamentalmente finito, gettato nel tempo, di fronte alla morte. A settembre, il <strong>Circolo di Vienna</strong> pubblica il suo manifesto, <em>La concezione scientifica del mondo</em>: tutte le affermazioni significative sono o verificabili empiricamente o analiticamente logiche. La metafisica è letteralmente priva di senso. Due visioni della ragione si scontrano: una abbraccia l'angoscia e la mortalità, l'altra esige precisione scientifica."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il <strong>Giovedì Nero</strong> (ventiquattro ottobre), il panico invade la Borsa di New York. Il <strong>Martedì Nero</strong> (ventinove ottobre), sedici milioni di azioni vengono scambiate—il ticker tape resta indietro di ore rispetto alla realtà mentre le fortune evaporano. Il Dow perderà alla fine l'ottantanove percento del suo valore. La mania speculativa dei Ruggenti Anni Venti—acquisti a margine, esuberanza irrazionale—crolla nella <strong>Grande Depressione</strong>. Quattordici miliardi di dollari svaniscono in un solo giorno. Il crollo rivela il divario tra la fiducia dei mercati e i fondamentali economici, innescando un decennio di catastrofe globale."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "La convergenza dell'anno è <strong>ragione contro irrazionalità</strong>—o la loro strana complicità. Il Circolo di Vienna dichiara che solo le affermazioni verificabili hanno significato; Dalí e Buñuel insistono che i sogni rivelano verità che la logica non può raggiungere. Heidegger sostiene che l'esistenza autentica richiede di confrontarsi con la mortalità; Wall Street scopre che il comportamento collettivo può essere irrazionale quanto qualsiasi incubo. Il MoMA apre tra le macerie, scommettendo che l'arte conta di più quando tutto il resto fallisce. Il narratore idiota di <strong>Faulkner</strong> e la sintassi logica del Circolo di Vienna sono immagini speculari: entrambi riducono il linguaggio ai suoi limiti, uno attraverso la riduzione ai dati sensoriali, l'altro attraverso la dissoluzione nella coscienza.",
+        "funFact": "Buñuel si presentò alla prima di Un Chien Andalou con sassi in tasca, pronto a lanciarli al pubblico in caso di attacco—ma i surrealisti applaudirono entusiasticamente."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Un_chien_andalou",
+        "title": "Wikipedia: Un chien andalou"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Crollo_di_Wall_Street_del_1929",
+        "title": "Wikipedia: Crollo di Wall Street del 1929"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Martin_Heidegger",
+        "title": "Wikipedia: Martin Heidegger"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/L%27urlo_e_il_furore",
+        "title": "Wikipedia: L'urlo e il furore"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Circolo_di_Vienna",
+        "title": "Wikipedia: Circolo di Vienna"
+      }
+    ],
+    "image": {
+      "url": "images/1929-breaking-point.jpg",
+      "caption": "Folla radunata a Wall Street dopo il crollo della borsa, ottobre 1929",
+      "width": 718,
+      "height": 1024,
+      "attribution": "Pubblico dominio, via Wikimedia Commons"
+    },
+    "threads": [
+      "modernism",
+      "surrealism",
+      "logical-positivism",
+      "great-depression",
+      "existentialism"
+    ],
+    "location": {
+      "lat": 40.7069,
+      "lon": -74.0089,
+      "place": "New York"
+    },
+    "addedDate": "2026-05-07T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1929-breaking-point.mp3",
+      "duration": 198
+    }
   }
 ]
