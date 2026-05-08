@@ -5403,5 +5403,82 @@
       "url": "audio/1929-breaking-point.mp3",
       "duration": 181
     }
+  },
+  {
+    "year": "1883",
+    "id": "1883-giverny-endings-and-beginnings",
+    "title": "Giverny — Endings and Beginnings",
+    "teaser": "Marx dies in London. Wagner dies in Venice. Nietzsche begins Zarathustra. Monet moves to Giverny. Krakatoa erupts, and the world's sunsets burn red for years. Everything ends; everything starts.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "On <strong>April 20th</strong>, <strong>Claude Monet</strong> moves into a rented house in Giverny, a village on the Seine sixty kilometers northwest of Paris. He will live there for forty-three years, until his death in 1926. The famous water garden doesn't exist yet — that comes later, after he buys the property in 1890 — but the light is already perfect. Monet is forty-two, <strong>Impressionism's</strong> most dedicated practitioner still chasing the impossible: to paint not things but the light that touches them. Eleven days later, <strong>Édouard Manet</strong> dies in Paris at fifty-one, his left leg amputated from locomotor ataxia caused by syphilis. Manet was never quite an Impressionist — he always wanted Salon acceptance — but he made them possible. <em>Olympia</em>, <em>Le Déjeuner sur l'herbe</em>: these scandals of the 1860s cracked open the door through which Monet and the others walked. In Brussels, <strong>Les XX</strong> forms in October, a group of twenty artists who will show the avant-garde: Rodin, Whistler, later Seurat and Van Gogh. The revolutionary energy of the 1870s has spent itself; the next rupture — Post-Impressionism — is not yet visible."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "Two children's books appear in 1883 that will outlast most 'serious' literature of the decade. In February, <strong>Carlo Collodi's</strong> <em>The Adventures of Pinocchio</em> completes its Italian serialization and appears in book form — a puppet who wants to be a real boy, darker and more moralistic than later adaptations suggest, a fable of transformation written for a nation still learning to be itself (Italy unified only thirteen years earlier). In May, <strong>Robert Louis Stevenson's</strong> <em>Treasure Island</em> appears in book form. It invents modern pirate mythology: the treasure map marked with X, the one-legged sailor with a parrot, the desert island, the ambiguous villain you can't help admiring. <strong>Long John Silver</strong> is the year's most memorable character — charming, treacherous, somehow sympathetic. <strong>Mark Twain</strong> publishes <em>Life on the Mississippi</em>, his memoir of piloting steamboats before the war, one of the first major books submitted to a publisher as typescript rather than manuscript."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Karl Marx</strong> dies in London on <strong>March 14th</strong>, stateless and nearly penniless, outlived by only two of his seven children. Eleven mourners attend the funeral at Highgate Cemetery. <strong>Friedrich Engels</strong> delivers the eulogy, declaring that Marx 'discovered the law of development of human history' as Darwin discovered the law of organic nature. Within thirty-five years, Marx's ideas will inspire the Russian Revolution; within seventy, half the world will live under governments claiming his authority. The same month Marx dies, <strong>Friedrich Nietzsche</strong> writes the first part of <em>Thus Spoke Zarathustra</em> in ten days, in a creative explosion at Rapallo on the Italian coast. The prophet descends from his mountain to announce that God is dead and the <strong>Übermensch</strong> must be born. Marx promised collective liberation through historical process; Nietzsche promises individual transformation through will. The two philosophies will haunt the twentieth century, twisted by followers neither man would recognize."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>May 24th</strong>, the <strong>Brooklyn Bridge</strong> opens after fourteen years of construction — the longest suspension bridge in the world, connecting Manhattan and Brooklyn across the East River. President Chester Arthur walks across; 150,000 people follow on opening day. The bridge is engineering as monument: Gothic towers with steel cables, industrial confidence reaching toward cathedral ambition. On <strong>October 22nd</strong>, the <strong>Metropolitan Opera</strong> opens in New York with Gounod's <em>Faust</em> — not because the city needed another opera house, but because new money (Vanderbilts, Morgans) was excluded from old money's boxes at the Academy of Music. And in August, <strong>Krakatoa</strong> explodes. The eruption on August 26-27 is among history's largest, audible three thousand miles away in Australia, generating tsunamis that kill over 36,000 people. Volcanic ash circles the globe, and for years afterward, sunsets burn red worldwide. <strong>Richard Wagner</strong> had died in Venice in February; Brahms premieres his <strong>Symphony No. 3</strong> in December — the old Romantic giants passing as new sounds emerge."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year's theme is <strong>succession</strong> — endings that are also beginnings, deaths that clear space for what comes next. Marx dies and Nietzsche rises to replace materialist revolution with spiritual transformation; both thinkers obsess over how humanity might overcome its current condition, though they imagine opposite paths. Manet dies and Monet gardens at Giverny; the provocateur who broke the Academy gives way to the patient observer who will spend forty years painting the same pond. Even the literature enacts transformation: Pinocchio wants to become a real boy; Jim Hawkins in <em>Treasure Island</em> must become a man by confronting Long John Silver's seductive wickedness. Krakatoa's eruption literalizes the theme — the island destroying itself to birth new sunsets, new possibilities for how we see. The Brooklyn Bridge performs the same logic as infrastructure: fourteen years of construction, twenty-seven workers dead, and finally a structure that will outlast everything built in 1883.",
+        "funFact": "Some scholars believe Edvard Munch's blood-red sky in <em>The Scream</em> (painted 1893) remembers Krakatoa's atmospheric aftermath — volcanic ash circling the globe literally recolored the world's sunsets for years."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Karl_Marx",
+        "title": "Karl Marx — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Thus_Spoke_Zarathustra",
+        "title": "Thus Spoke Zarathustra — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Brooklyn_Bridge",
+        "title": "Brooklyn Bridge — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/1883_eruption_of_Krakatoa",
+        "title": "1883 eruption of Krakatoa — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/%C3%89douard_Manet",
+        "title": "Édouard Manet — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Treasure_Island",
+        "title": "Treasure Island — Wikipedia"
+      }
+    ],
+    "threads": [
+      "impressionism",
+      "marxism",
+      "fin-de-siecle",
+      "gilded-age"
+    ],
+    "location": {
+      "lat": 49.0773,
+      "lon": 1.5335,
+      "place": "Giverny"
+    },
+    "addedDate": "2026-05-08T05:00:00Z",
+    "image": {
+      "url": "images/1883-giverny-endings-and-beginnings.jpg",
+      "caption": "The Grand Display of Fireworks at the Opening of the Brooklyn Bridge, May 24, 1883 — Currier & Ives lithograph, The Metropolitan Museum of Art",
+      "width": 1200,
+      "height": 973
+    },
+    "podcast": {
+      "url": "audio/1883-giverny-endings-and-beginnings.mp3",
+      "duration": 288
+    }
   }
 ]

@@ -1,0 +1,18 @@
+{
+  "id": "1883-giverny-endings-and-beginnings",
+  "year": 1883,
+  "title": "Endings and Beginnings",
+  "location": "Giverny",
+  "teaser": "Marx dies in London. Wagner dies in Venice. Nietzsche begins Zarathustra. Monet moves to Giverny. Krakatoa erupts, and the world's sunsets burn red for years. Everything ends; everything starts.",
+  "threads": ["impressionism", "marxism", "fin-de-siecle", "volcanic-catastrophe"],
+  "fun_fact": "The vivid red sunsets painted by artists in late 1883—including possibly Edvard Munch's famous 'screaming' sky—may have been inspired by volcanic ash from Krakatoa circling the globe. Nature was literally recoloring the sky.",
+  "music": {
+    "url": "https://archive.org/download/chopin_etudesop10_3_harasiewicz/chopin_etudesop10_3_harasiewicz.mp3",
+    "filename": "chopin_etudesop10_3_harasiewicz.mp3",
+    "title": "Chopin Etude Op. 10 No. 3 in E major",
+    "composer": "Frédéric Chopin",
+    "performer": "Adam Harasiewicz",
+    "start_time": 0.9,
+    "notes": "Composed in 1832, this etude (known as 'Tristesse') captures the lyrical melancholy of late Romanticism—the perfect accompaniment for a year of great endings and uncertain beginnings."
+  }
+}

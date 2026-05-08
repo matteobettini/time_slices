@@ -322,7 +322,8 @@
     },
     "fin-de-siecle": {
       "1886→1889": "Three years from the divided light to Nietzsche's collapse: the fin-de-siècle accelerates toward its own dissolution.",
-      "1889→1895": "Van Gogh's asylum visions and Bergson's time-philosophy seed the anxious introspection that blooms in Wilde's wit — and his destruction."
+      "1889→1895": "Van Gogh's asylum visions and Bergson's time-philosophy seed the anxious introspection that blooms in Wilde's wit — and his destruction.",
+      "1883→1886": "Marx and Wagner both die; Nietzsche begins Zarathustra. Three years later, Seurat's pointillism and the Statue of Liberty mark the next phase of endings-into-beginnings."
     },
     "neoclassicism": {
       "1738→1784": "From Herculaneum's first excavations to David's Oath of the Horatii: buried antiquity resurfaces to reshape European taste and revolutionary politics."
@@ -347,6 +348,9 @@
     },
     "logical-positivism": {
       "1922→1929": "From seminar discussions to public manifesto: the Vienna Circle crystallizes its programme, declaring metaphysics meaningless and science the only path to knowledge."
+    },
+    "impressionism": {
+      "1870→1883": "The Franco-Prussian War scatters the Paris art world; thirteen years later Monet settles at Giverny as Manet dies, the movement's scandalous origins yielding to patient observation."
     }
   },
   "it": {
@@ -665,7 +669,8 @@
     },
     "fin-de-siecle": {
       "1886→1889": "Tre anni dalla luce divisa al crollo di Nietzsche: il fin-de-siècle accelera verso la propria dissoluzione.",
-      "1889→1895": "Le visioni di Van Gogh dal manicomio e la filosofia del tempo di Bergson seminano l'introspezione ansiosa che fiorisce nell'arguzia di Wilde — e nella sua distruzione."
+      "1889→1895": "Le visioni di Van Gogh dal manicomio e la filosofia del tempo di Bergson seminano l'introspezione ansiosa che fiorisce nell'arguzia di Wilde — e nella sua distruzione.",
+      "1883→1886": "Marx e Wagner muoiono entrambi; Nietzsche inizia Zarathustra. Tre anni dopo, il puntinismo di Seurat e la Statua della Libertà segnano la fase successiva di conclusioni-in-nuovi-inizi."
     },
     "neoclassicism": {
       "1738→1784": "Dai primi scavi di Ercolano al Giuramento degli Orazi di David: l'antichità sepolta riemerge per plasmare il gusto europeo e la politica rivoluzionaria."
@@ -690,6 +695,9 @@
     },
     "logical-positivism": {
       "1922→1929": "Dalle discussioni seminariali al manifesto pubblico: il Circolo di Vienna cristallizza il suo programma, dichiarando la metafisica priva di senso e la scienza l'unica via alla conoscenza."
+    },
+    "impressionism": {
+      "1870→1883": "La guerra franco-prussiana disperde il mondo artistico parigino; tredici anni dopo Monet si stabilisce a Giverny mentre Manet muore, le origini scandalose del movimento cedono all'osservazione paziente."
     }
   }
 }
