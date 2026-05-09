@@ -5480,5 +5480,75 @@
       "url": "audio/1883-giverny-endings-and-beginnings.mp3",
       "duration": 288
     }
+  },
+  {
+    "year": "1558",
+    "id": "1558-four-queens-one-throne",
+    "title": "Four Queens, One Throne",
+    "teaser": "Mary Tudor dies and Elizabeth I inherits a fractured kingdom. In Geneva, John Knox publishes a blast against female rule just as a Protestant queen takes power. Meanwhile, Titian paints tragedy, du Bellay mourns Rome, and the last Holy Roman Emperor dies in a Spanish monastery.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "In Venice, <strong>Titian</strong> completes his <em>Crucifixion</em> for the Church of San Domenico in Ancona — a work of devastating emotional directness that marks his late shift toward tragedy. His <em>Martyrdom of St. Lawrence</em>, finished this same year for Philip II of Spain, bathes sacred violence in flickering torchlight. In the Netherlands, <strong>Pieter Bruegel the Elder</strong> produces <em>Landscape with the Fall of Icarus</em> and panels from his <em>Seven Deadly Sins</em> series, pioneering a vision of peasant life and moral allegory that will define Northern European <strong>genre painting</strong>. <strong>Mannerism</strong> dominates Italy — elegant distortion replacing High Renaissance harmony — while <strong>Giambologna</strong>, newly arrived in Florence from Flanders, begins the sculptural experiments that will culminate in the serpentine figures of the next generation."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "In Paris, <strong>Joachim du Bellay</strong> publishes <em>Les Antiquités de Rome</em> and <em>Les Regrets</em> — thirty-two sonnets mourning ancient glory and 191 sonnets of homesick disillusionment with papal corruption. Returning from four years as secretary to his cardinal uncle in Rome, du Bellay transforms personal disappointment into the greatest sonnet sequences of the French Renaissance. Posthumously, <strong>Marguerite de Navarre's</strong> <em>Heptaméron</em> appears — seventy-two tales modeled on Boccaccio but shot through with <strong>vernacular</strong> wit and proto-feminist critique. In Florence, <strong>Benvenuto Cellini</strong> begins his autobiography in racy popular Florentine, documenting a life of duels, escapes, and artistic triumph."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "In Geneva, <strong>John Knox</strong> publishes <em>The First Blast of the Trumpet Against the Monstrous Regiment of Women</em> — a polemic arguing that female rule violates natural law and divine order. His targets are the Catholic queens Mary Tudor and Mary of Guise, but his timing is catastrophic: within months, the Protestant <strong>Elizabeth I</strong> takes the English throne and never forgives him. Knox's theological argument — that scripture forbids women to rule — collides with political reality and loses. Meanwhile, <strong>Jean Calvin</strong> chairs the theological faculty of Geneva's new Academy, training ministers who will carry <strong>Reformed theology</strong> across Europe. The <strong>Counter-Reformation</strong> consolidates: Diego Laínez becomes the second Jesuit General, directing the Society's educational and missionary expansion."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On November 17th, <strong>Mary I</strong> dies at St. James's Palace, ending five years of Catholic restoration and Marian persecution. Hours later, her Protestant half-sister <strong>Elizabeth</strong> receives news at Hatfield House. She is twenty-five, declared illegitimate twice, imprisoned in the Tower, and now queen. Six weeks earlier, <strong>Charles V</strong> — Holy Roman Emperor, King of Spain, master of half the known world — died at the Monastery of Yuste after two years of voluntary retirement. His vast empire is already divided: Spain and the Netherlands to his son Philip II, the imperial title to his brother Ferdinand. In France, the <strong>Habsburg-Valois Wars</strong> grind toward exhaustion; next year's Peace of Cateau-Cambrésis will redraw Europe."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year pivots on sovereignty and its limits. Knox's <em>Blast</em> articulates a theological case against female rule that Elizabeth's reign will pragmatically demolish — she governs for forty-five years while Knox remains exiled from England. Charles V's retirement to a monastery represents one response to the burden of power; Elizabeth's embrace of the cult of Gloriana represents another. Du Bellay's melancholy sonnets on Rome's ruins speak to the same theme: empires fall, glory fades, only poetry endures. Titian's late religious paintings — darker, more personal, stripped of earlier confidence — suggest that the certainties of the High Renaissance are giving way to something more troubled. The <strong>Elizabethan Settlement</strong> that will emerge in 1559 attempts a middle way between Rome and Geneva, satisfying neither but creating the space for England's cultural flowering.",
+        "funFact": "Knox's Blast so enraged Elizabeth I that she banned him from England. He had to sneak back to Scotland by sea, never again setting foot on English soil."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.britannica.com/biography/Elizabeth-I",
+        "title": "Britannica: Elizabeth I"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_First_Blast_of_the_Trumpet_Against_the_Monstruous_Regiment_of_Women",
+        "title": "Wikipedia: Knox's First Blast"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Charles_V,_Holy_Roman_Emperor",
+        "title": "Wikipedia: Charles V"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Regrets",
+        "title": "Wikipedia: Du Bellay's Regrets"
+      }
+    ],
+    "image": {
+      "url": "images/1558-four-queens-one-throne.jpg",
+      "caption": "Elizabeth I in coronation robes, c. 1600 copy of lost 1559 original",
+      "width": 1200,
+      "height": 1612,
+      "attribution": "Unknown artist, after Levina Teerlinc, Public domain, via National Portrait Gallery"
+    },
+    "threads": [
+      "reformation",
+      "counter-reformation",
+      "vernacular-literature",
+      "art-and-power"
+    ],
+    "location": {
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "place": "London"
+    },
+    "addedDate": "2026-05-09T05:00:00Z",
+    "podcast": {
+      "url": "audio/1558-four-queens-one-throne.mp3",
+      "duration": 163
+    }
   }
 ]

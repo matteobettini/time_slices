@@ -5464,5 +5464,75 @@
       "url": "audio/it/1883-giverny-endings-and-beginnings.mp3",
       "duration": 278
     }
+  },
+  {
+    "year": "1558",
+    "id": "1558-four-queens-one-throne",
+    "title": "Quattro Regine, un Solo Trono",
+    "teaser": "Maria Tudor muore e Elisabetta I eredita un regno lacerato. A Ginevra, John Knox pubblica un attacco contro il governo femminile proprio mentre una regina protestante sale al potere. Intanto Tiziano dipinge la tragedia, du Bellay piange Roma, e l'ultimo grande imperatore muore in un monastero spagnolo.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "A Venezia, <strong>Tiziano</strong> completa la <em>Crocifissione</em> per la Chiesa di San Domenico ad Ancona — un'opera di devastante immediatezza emotiva che segna la sua svolta tarda verso la tragedia. Il <em>Martirio di San Lorenzo</em>, terminato nello stesso anno per Filippo II di Spagna, avvolge la violenza sacra nella luce tremolante delle fiaccole. Nei Paesi Bassi, <strong>Pieter Bruegel il Vecchio</strong> produce il <em>Paesaggio con la caduta di Icaro</em> e pannelli dalla serie dei <em>Sette Peccati Capitali</em>, pioniere di una visione della vita contadina e dell'allegoria morale che definirà la <strong>pittura di genere</strong> nordeuropea. Il <strong>Manierismo</strong> domina l'Italia — elegante distorsione al posto dell'armonia rinascimentale — mentre <strong>Giambologna</strong>, appena arrivato a Firenze dalle Fiandre, inizia gli esperimenti scultorei che culmineranno nelle figure serpentinate della generazione successiva."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "A Parigi, <strong>Joachim du Bellay</strong> pubblica <em>Les Antiquités de Rome</em> e <em>Les Regrets</em> — trentadue sonetti che piangono l'antica gloria e 191 sonetti di nostalgica disillusione per la corruzione papale. Di ritorno da quattro anni come segretario dello zio cardinale a Roma, du Bellay trasforma la delusione personale nelle più grandi raccolte di sonetti del Rinascimento francese. Postuma, appare l'<em>Heptaméron</em> di <strong>Margherita di Navarra</strong> — settantadue racconti modellati sul Boccaccio ma pervasi da arguzia <strong>volgare</strong> e critica proto-femminista. A Firenze, <strong>Benvenuto Cellini</strong> inizia la sua autobiografia in vivace fiorentino popolare, documentando una vita di duelli, fughe e trionfi artistici."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "A Ginevra, <strong>John Knox</strong> pubblica <em>Il Primo Squillo di Tromba contro il Mostruoso Governo delle Donne</em> — una polemica che sostiene come il governo femminile violi la legge naturale e l'ordine divino. I suoi bersagli sono le regine cattoliche Maria Tudor e Maria di Guisa, ma il tempismo è catastrofico: nel giro di pochi mesi, la protestante <strong>Elisabetta I</strong> sale al trono inglese e non lo perdonerà mai. L'argomento teologico di Knox — che le Scritture vietano alle donne di governare — si scontra con la realtà politica e perde. Intanto, <strong>Giovanni Calvino</strong> presiede la facoltà teologica della nuova Accademia di Ginevra, formando ministri che porteranno la <strong>teologia riformata</strong> in tutta Europa. La <strong>Controriforma</strong> si consolida: Diego Laínez diventa il secondo Generale dei Gesuiti, dirigendo l'espansione educativa e missionaria della Compagnia."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il 17 novembre, <strong>Maria I</strong> muore a St. James's Palace, ponendo fine a cinque anni di restaurazione cattolica e persecuzione mariana. Poche ore dopo, la sua sorellastra protestante <strong>Elisabetta</strong> riceve la notizia a Hatfield House. Ha venticinque anni, è stata dichiarata illegittima due volte, imprigionata nella Torre, e ora è regina. Sei settimane prima, <strong>Carlo V</strong> — Sacro Romano Imperatore, Re di Spagna, signore di metà del mondo conosciuto — era morto nel Monastero di Yuste dopo due anni di ritiro volontario. Il suo vasto impero è già diviso: Spagna e Paesi Bassi al figlio Filippo II, il titolo imperiale al fratello Ferdinando. In Francia, le <strong>Guerre d'Italia</strong> si avviano verso l'esaurimento; la Pace di Cateau-Cambrésis dell'anno successivo ridisegnerà l'Europa."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "L'anno ruota attorno alla sovranità e ai suoi limiti. Lo <em>Squillo</em> di Knox articola un caso teologico contro il governo femminile che il regno di Elisabetta demolirà pragmaticamente — lei governa per quarantacinque anni mentre Knox rimane esiliato dall'Inghilterra. Il ritiro di Carlo V in monastero rappresenta una risposta al peso del potere; l'abbraccio di Elisabetta del culto della Gloriana ne rappresenta un'altra. I sonetti malinconici di du Bellay sulle rovine di Roma parlano dello stesso tema: gli imperi cadono, la gloria svanisce, solo la poesia sopravvive. I dipinti religiosi tardi di Tiziano — più scuri, più personali, privati della fiducia precedente — suggeriscono che le certezze dell'Alto Rinascimento stanno cedendo a qualcosa di più tormentato. Il <strong>Compromesso Elisabettiano</strong> che emergerà nel 1559 tenta una via di mezzo tra Roma e Ginevra, non soddisfacendo nessuno ma creando lo spazio per la fioritura culturale inglese.",
+        "funFact": "Lo Squillo di Knox infuriò talmente Elisabetta I che lei gli proibì l'ingresso in Inghilterra. Dovette tornare di nascosto in Scozia via mare, senza mai più mettere piede sul suolo inglese."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.britannica.com/biography/Elizabeth-I",
+        "title": "Britannica: Elisabetta I"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_First_Blast_of_the_Trumpet_Against_the_Monstruous_Regiment_of_Women",
+        "title": "Wikipedia: Primo Squillo di Knox"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Charles_V,_Holy_Roman_Emperor",
+        "title": "Wikipedia: Carlo V"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Regrets",
+        "title": "Wikipedia: Les Regrets di Du Bellay"
+      }
+    ],
+    "image": {
+      "url": "images/1558-four-queens-one-throne.jpg",
+      "caption": "Elisabetta I in abiti dell'incoronazione, c. 1600, copia di originale perduto del 1559",
+      "width": 1200,
+      "height": 1612,
+      "attribution": "Artista sconosciuto, da Levina Teerlinc, Pubblico dominio, via National Portrait Gallery"
+    },
+    "threads": [
+      "reformation",
+      "counter-reformation",
+      "vernacular-literature",
+      "art-and-power"
+    ],
+    "location": {
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "place": "Londra"
+    },
+    "addedDate": "2026-05-09T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1558-four-queens-one-throne.mp3",
+      "duration": 183
+    }
   }
 ]

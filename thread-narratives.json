@@ -94,7 +94,9 @@
       "1543→1580": "Rabelais mocked scholastics in French; Montaigne philosophized in it. The essay form proves that the vernacular can carry not just satire but genuine thought — personal, exploratory, unafraid of contradiction.",
       "1492→1580": "Nebrija codified Castilian as an imperial tongue; Montaigne proves French can carry philosophy. The vernacular conquers not just epic and grammar but the most intimate form of thought.",
       "1492→1532": "Spanish conquest poems meet French satirical giants—vernacular literature expands from courts to carnivals.",
-      "1532→1580": "Rabelais's giants father Montaigne's essays—French vernacular prose invents new forms for thinking aloud."
+      "1532→1580": "Rabelais's giants father Montaigne's essays—French vernacular prose invents new forms for thinking aloud.",
+      "1532→1558": "From Rabelais's carnivalesque giants to du Bellay's melancholic sonnets: French vernacular matures into European sophistication.",
+      "1558→1580": "Du Bellay's disillusionment with Rome echoes in Montaigne's skeptical essays: vernacular prose becomes the medium of personal philosophy."
     },
     "renaissance-humanism": {
       "1401→1453": "Florentine humanists collected manuscripts before 1453; the Greek exodus accelerated what Salutati and Bruni began. Humanism was ready for what Constantinople's scholars brought.",
@@ -111,7 +113,9 @@
     "art-and-power": {
       "1300→1504": "Giotto worked for Franciscans and Bardi bankers; Michelangelo worked for Medici and popes. Two centuries transformed patronage from devotional to dynastic.",
       "1504→1784": "Michelangelo's <em>David</em> was civic propaganda; David's <em>Oath of the Horatii</em> was revolutionary propaganda. Both deployed classical forms for political ends.",
-      "1784→1937": "David painted revolution's heroic certainties; Picasso paints war's gray screaming aftermath. The neoclassical line fractures into Cubism's testimony: art as witness to atrocity."
+      "1784→1937": "David painted revolution's heroic certainties; Picasso paints war's gray screaming aftermath. The neoclassical line fractures into Cubism's testimony: art as witness to atrocity.",
+      "1504→1558": "From the Florentine duels of Michelangelo and Leonardo to the Protestant queen's coronation portrait: art serves power across the religious divide.",
+      "1558→1784": "Elizabeth I's iconic imagery gives way to the Enlightenment's neoclassical vision, but art continues to legitimize sovereign power."
     },
     "proto-renaissance": {
       "1300→1321": "Giotto's Bardi Chapel frescoes depicted grief with unprecedented naturalism; Dante's <em>Inferno</em> depicted sinners with unprecedented individuality. Both broke Byzantine conventions through observed humanity.",
@@ -312,7 +316,8 @@
     },
     "counter-reformation": {
       "1543→1580": "The Council of Trent hadn't yet convened when Copernicus published; by 1580 it had defined orthodoxy for three centuries. El Greco's ecstatic saints embody Counter-Reformation mysticism — reaching toward heaven through emotional intensity, not rational proportion.",
-      "1580→1600": "Montaigne's skepticism was a quiet rebellion — doubt as a way to survive religious war. Bruno's cosmic vision was open defiance. The Counter-Reformation tolerated the former and burned the latter: some heresies can hide in essays, others cannot."
+      "1580→1600": "Montaigne's skepticism was a quiet rebellion — doubt as a way to survive religious war. Bruno's cosmic vision was open defiance. The Counter-Reformation tolerated the former and burned the latter: some heresies can hide in essays, others cannot.",
+      "1558→1580": "The Jesuits consolidate under their second General while Montaigne's skepticism quietly resists all confessional certainties."
     },
     "english-romanticism": {
       "1798→1816": "Wordsworth and Coleridge's Lyrical Ballads germinate in rain-soaked Geneva: Mary Shelley inherits their nature-worship but adds Gothic dread — Romanticism discovers its dark twin."
@@ -351,6 +356,9 @@
     },
     "impressionism": {
       "1870→1883": "The Franco-Prussian War scatters the Paris art world; thirteen years later Monet settles at Giverny as Manet dies, the movement's scandalous origins yielding to patient observation."
+    },
+    "reformation": {
+      "1517→1558": "From Luther's theses to Knox's Blast: the Reformation fragments into national churches as Elizabeth inherits the English experiment."
     }
   },
   "it": {
@@ -441,7 +449,9 @@
       "1543→1580": "Rabelais derideva gli scolastici in francese; Montaigne filosofava nella stessa lingua. La forma del saggio dimostra che il volgare può portare non solo satira ma pensiero genuino — personale, esplorativo, senza paura della contraddizione.",
       "1492→1580": "Nebrija codificò il castigliano come lingua imperiale; Montaigne dimostra che il francese può portare filosofia. Il volgare conquista non solo l'epica e la grammatica ma la forma più intima di pensiero.",
       "1492→1532": "Poemi di conquista spagnoli incontrano giganti satirici francesi—la letteratura volgare si espande dalle corti ai carnevali.",
-      "1532→1580": "I giganti di Rabelais generano i saggi di Montaigne—la prosa francese in volgare inventa nuove forme per pensare ad alta voce."
+      "1532→1580": "I giganti di Rabelais generano i saggi di Montaigne—la prosa francese in volgare inventa nuove forme per pensare ad alta voce.",
+      "1532→1558": "Dai giganti carnevaleschi di Rabelais ai sonetti malinconici di du Bellay: il volgare francese matura in raffinatezza europea.",
+      "1558→1580": "La disillusione di du Bellay verso Roma riecheggia nei saggi scettici di Montaigne: la prosa volgare diventa il mezzo della filosofia personale."
     },
     "renaissance-humanism": {
       "1401→1453": "Gli umanisti fiorentini raccoglievano manoscritti prima del 1453; l'esodo greco accelerò ciò che Salutati e Bruni avevano iniziato.",
@@ -458,7 +468,9 @@
     "art-and-power": {
       "1300→1504": "Giotto lavorò per francescani e banchieri Bardi; Michelangelo lavorò per Medici e papi. Due secoli trasformarono il mecenatismo da devozionale a dinastico.",
       "1504→1784": "Il <em>David</em> di Michelangelo era propaganda civica; il <em>Giuramento degli Orazi</em> di David era propaganda rivoluzionaria.",
-      "1784→1937": "David dipinse le eroiche certezze della rivoluzione; Picasso dipinge il grigio urlo del dopoguerra. La linea neoclassica si frantuma nella testimonianza del Cubismo: l'arte come testimone dell'atrocità."
+      "1784→1937": "David dipinse le eroiche certezze della rivoluzione; Picasso dipinge il grigio urlo del dopoguerra. La linea neoclassica si frantuma nella testimonianza del Cubismo: l'arte come testimone dell'atrocità.",
+      "1504→1558": "Dai duelli fiorentini tra Michelangelo e Leonardo al ritratto dell'incoronazione della regina protestante: l'arte serve il potere oltre il divario religioso.",
+      "1558→1784": "L'iconografia di Elisabetta I cede alla visione neoclassica dell'Illuminismo, ma l'arte continua a legittimare il potere sovrano."
     },
     "proto-renaissance": {
       "1300→1321": "Gli affreschi della Cappella Bardi di Giotto raffiguravano il dolore con naturalismo senza precedenti; l'<em>Inferno</em> di Dante raffigurava peccatori con individualità senza precedenti.",
@@ -659,7 +671,8 @@
     },
     "counter-reformation": {
       "1543→1580": "Il Concilio di Trento non si era ancora riunito quando Copernico pubblicò; nel 1580 aveva definito l'ortodossia per tre secoli. I santi estatici di El Greco incarnano il misticismo della Controriforma — protendendosi verso il cielo attraverso l'intensità emotiva, non la proporzione razionale.",
-      "1580→1600": "Lo scetticismo di Montaigne era una ribellione silenziosa — il dubbio come modo per sopravvivere alla guerra religiosa. La visione cosmica di Bruno era aperta sfida. La Controriforma tollerò il primo e bruciò il secondo: alcune eresie possono nascondersi nei saggi, altre no."
+      "1580→1600": "Lo scetticismo di Montaigne era una ribellione silenziosa — il dubbio come modo per sopravvivere alla guerra religiosa. La visione cosmica di Bruno era aperta sfida. La Controriforma tollerò il primo e bruciò il secondo: alcune eresie possono nascondersi nei saggi, altre no.",
+      "1558→1580": "I Gesuiti si consolidano sotto il secondo Generale mentre lo scetticismo di Montaigne resiste silenziosamente a ogni certezza confessionale."
     },
     "english-romanticism": {
       "1798→1816": "Le Lyrical Ballads di Wordsworth e Coleridge germinano nella piovosa Ginevra: Mary Shelley eredita il loro culto della natura ma aggiunge il terrore gotico — il Romanticismo scopre il suo gemello oscuro."
@@ -698,6 +711,9 @@
     },
     "impressionism": {
       "1870→1883": "La guerra franco-prussiana disperde il mondo artistico parigino; tredici anni dopo Monet si stabilisce a Giverny mentre Manet muore, le origini scandalose del movimento cedono all'osservazione paziente."
+    },
+    "reformation": {
+      "1517→1558": "Dalle tesi di Lutero allo Squillo di Knox: la Riforma si frammenta in chiese nazionali mentre Elisabetta eredita l'esperimento inglese."
     }
   }
 }
