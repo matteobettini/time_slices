@@ -29,7 +29,9 @@
       "1066→1170": "Norman administrators brought Continental learning to England; now Chrétien de Troyes translates Arthurian legend from Latin chronicle to French romance. The same networks of court and monastery that preserved texts now transform them.",
       "1170→1453": "Peter Waldo demanded Scripture in his own tongue; when Constantinople falls, Greek scholars bring texts West that will transform every tongue anew.",
       "410→476": "As Augustine's City of God argued that true civilization was heavenly, Ravenna's mosaics and Sidonius's letters preserved what remained of the earthly one.",
-      "476→529": "The transfer of learning accelerated: Boethius translated Greek into Latin, Benedict founded Monte Cassino, and knowledge migrated from cities to monasteries."
+      "476→529": "The transfer of learning accelerated: Boethius translated Greek into Latin, Benedict founded Monte Cassino, and knowledge migrated from cities to monasteries.",
+      "1170→1241": "Toledo translates Aristotle into Latin; Frederick's Sicily becomes a second conduit, funneling Averroës directly into European philosophy.",
+      "1241→1453": "Michael Scot's translations feed scholastic Paris; two centuries later, Byzantine scholars fleeing Constantinople bring the original Greek."
     },
     "eschatological-anxiety": {
       "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
@@ -61,7 +63,9 @@
       "762→1543": "Baghdad's astronomers refined Ptolemaic mathematics; Copernicus used those refinements to overturn Ptolemy. The heliocentric model emerged from the Islamic astronomical tradition that corrected the Greeks.",
       "1543→1687": "Copernicus mathematized the heavens; Newton mathematized motion itself. The <em>Principia</em>'s universal gravitation completed what <em>De Revolutionibus</em> began — nature as equation.",
       "1543→1610": "Copernicus reasoned that the Earth might move; Galileo saw Jupiter's moons and proved that it must.",
-      "1610→1687": "Kepler read Galileo and derived elliptical orbits; Newton read both and unified celestial and terrestrial physics in one equation."
+      "1610→1687": "Kepler read Galileo and derived elliptical orbits; Newton read both and unified celestial and terrestrial physics in one equation.",
+      "762→1241": "Baghdad's House of Wisdom preserves Greek geometry through five centuries; Frederick II builds it into octagonal stone at Castel del Monte.",
+      "1241→1543": "Frederick's celestial castle alignments prefigure the mathematical universe; Copernicus makes geometry rotate the Earth around the Sun."
     },
     "scholasticism": {
       "1141→1215": "Abelard's dialectical method survived his condemnation; by Lateran IV, Aristotelian categories defined dogma. The scholastic synthesis began at Sens's defeat.",
@@ -96,7 +100,9 @@
       "1492→1532": "Spanish conquest poems meet French satirical giants—vernacular literature expands from courts to carnivals.",
       "1532→1580": "Rabelais's giants father Montaigne's essays—French vernacular prose invents new forms for thinking aloud.",
       "1532→1558": "From Rabelais's carnivalesque giants to du Bellay's melancholic sonnets: French vernacular matures into European sophistication.",
-      "1558→1580": "Du Bellay's disillusionment with Rome echoes in Montaigne's skeptical essays: vernacular prose becomes the medium of personal philosophy."
+      "1558→1580": "Du Bellay's disillusionment with Rome echoes in Montaigne's skeptical essays: vernacular prose becomes the medium of personal philosophy.",
+      "1215→1241": "German courtly poetry proves the vernacular can rival Latin; at Frederick's court, Italian poets prove it can invent new forms entirely.",
+      "1241→1274": "The sonnet travels from Sicily to Tuscany; within a generation, Dante will set a nine-year-old's first glimpse of Beatrice to verse."
     },
     "renaissance-humanism": {
       "1401→1453": "Florentine humanists collected manuscripts before 1453; the Greek exodus accelerated what Salutati and Bruni began. Humanism was ready for what Constantinople's scholars brought.",
@@ -148,7 +154,8 @@
       "1687→1776": "Newton's mathematical physics gave empiricism its grandest triumph; ninety years later, Hume's dying breath and Smith's invisible hand proved observation could master mind and market alike.",
       "1776→1859": "Hume's skeptical empiricism in 1776 attacked causation as mere habit. By 1859, Darwin transformed empirical observation into a grand theory—natural selection—that would finally displace metaphysical speculation from the study of life.",
       "1687→1751": "Newton's Principia gave empiricism a cosmic triumph; Locke's Essay gave it a mind. D'Alembert's Preliminary Discourse synthesised both into the Encyclopédie's epistemological manifesto.",
-      "1751→1776": "The Encyclopédie's sensationalist epistemology crossed the Channel; Hume radicalised it into scepticism, Adam Smith applied it to economic behaviour."
+      "1751→1776": "The Encyclopédie's sensationalist epistemology crossed the Channel; Hume radicalised it into scepticism, Adam Smith applied it to economic behaviour.",
+      "1241→1543": "Frederick II's empirical ornithology whispers through Arabic translations into scholastic halls, until Vesalius opens actual bodies and Copernicus reopens the heavens."
     },
     "scientific-revolution": {
       "1543→1687": "Copernicus repositioned the Earth; Newton explained why it stayed in orbit. The revolution Copernicus began, Newton completed.",
@@ -389,7 +396,9 @@
       "843→910": "Le traduzioni di Eriugena portarono il neoplatonismo greco all'Occidente latino; gli scriptoria monastici preservarono questi testi attraverso le tempeste vichinghe.",
       "1492→1863": "Colombo aprì l'Atlantico; nel 1863, il sapere occidentale stesso attraversava gli oceani: la retorica di Lincoln raggiungeva l'Europa e gli studi di Renan circolavano globalmente.",
       "410→476": "Mentre la Città di Dio di Agostino sosteneva che la vera civiltà era celeste, i mosaici di Ravenna e le lettere di Sidonio preservarono ciò che restava di quella terrena.",
-      "476→529": "Il trasferimento del sapere accelerò: Boezio tradusse il greco in latino, Benedetto fondò Montecassino, e la conoscenza migrò dalle città ai monasteri."
+      "476→529": "Il trasferimento del sapere accelerò: Boezio tradusse il greco in latino, Benedetto fondò Montecassino, e la conoscenza migrò dalle città ai monasteri.",
+      "1170→1241": "Toledo traduce Aristotele in latino; la Sicilia di Federico diventa un secondo canale, incanalando Averroè direttamente nella filosofia europea.",
+      "1241→1453": "Le traduzioni di Michele Scoto alimentano la Parigi scolastica; due secoli dopo, gli studiosi bizantini in fuga da Costantinopoli portano il greco originale."
     },
     "eschatological-anxiety": {
       "410→1000": "La caduta di Roma sembrò apocalittica ai contemporanei di Agostino; l'avvicinarsi dell'anno Mille rianimò quelle paure. Il 'bianco manto di chiese' fu in parte ringraziamento per un millennio che non finì nel fuoco.",
@@ -420,7 +429,9 @@
       "762→1543": "Gli astronomi di Baghdad perfezionarono la matematica tolemaica; Copernico usò quei perfezionamenti per rovesciare Tolomeo. Il modello eliocentrico emerse dalla tradizione astronomica islamica.",
       "1543→1687": "Copernico matematizzò i cieli; Newton matematizzò il moto stesso. La gravitazione universale dei <em>Principia</em> completò ciò che il <em>De Revolutionibus</em> aveva iniziato.",
       "1543→1610": "Copernico ragionò che la Terra potesse muoversi; Galileo vide le lune di Giove e dimostrò che doveva.",
-      "1610→1687": "Keplero lesse Galileo e derivò le orbite ellittiche; Newton lesse entrambi e unificò fisica celeste e terrestre in una sola equazione."
+      "1610→1687": "Keplero lesse Galileo e derivò le orbite ellittiche; Newton lesse entrambi e unificò fisica celeste e terrestre in una sola equazione.",
+      "762→1241": "La Casa della Saggezza di Baghdad preserva la geometria greca per cinque secoli; Federico II la costruisce in pietra ottagonale a Castel del Monte.",
+      "1241→1543": "Gli allineamenti celesti del castello di Federico prefigurano l'universo matematico; Copernico fa ruotare la Terra attorno al Sole attraverso la geometria."
     },
     "scholasticism": {
       "1141→1215": "Il metodo dialettico di Abelardo sopravvisse alla sua condanna; al Laterano IV, le categorie aristoteliche definivano il dogma. La sintesi scolastica iniziò dalla sconfitta di Sens.",
@@ -451,7 +462,9 @@
       "1492→1532": "Poemi di conquista spagnoli incontrano giganti satirici francesi—la letteratura volgare si espande dalle corti ai carnevali.",
       "1532→1580": "I giganti di Rabelais generano i saggi di Montaigne—la prosa francese in volgare inventa nuove forme per pensare ad alta voce.",
       "1532→1558": "Dai giganti carnevaleschi di Rabelais ai sonetti malinconici di du Bellay: il volgare francese matura in raffinatezza europea.",
-      "1558→1580": "La disillusione di du Bellay verso Roma riecheggia nei saggi scettici di Montaigne: la prosa volgare diventa il mezzo della filosofia personale."
+      "1558→1580": "La disillusione di du Bellay verso Roma riecheggia nei saggi scettici di Montaigne: la prosa volgare diventa il mezzo della filosofia personale.",
+      "1215→1241": "La poesia cortese tedesca dimostra che il volgare può rivaleggiare col latino; alla corte di Federico, i poeti italiani dimostrano che può inventare forme del tutto nuove.",
+      "1241→1274": "Il sonetto viaggia dalla Sicilia alla Toscana; nel giro di una generazione, Dante metterà in versi il primo sguardo di un bambino di nove anni su Beatrice."
     },
     "renaissance-humanism": {
       "1401→1453": "Gli umanisti fiorentini raccoglievano manoscritti prima del 1453; l'esodo greco accelerò ciò che Salutati e Bruni avevano iniziato.",
@@ -503,7 +516,8 @@
       "1687→1776": "La fisica matematica di Newton diede all'empirismo il suo trionfo più grande; novant'anni dopo, l'ultimo respiro di Hume e la mano invisibile di Smith dimostrarono che l'osservazione poteva dominare mente e mercato.",
       "1776→1859": "L'empirismo scettico di Hume nel 1776 attaccò la causalità come mera abitudine. Nel 1859, Darwin trasformò l'osservazione empirica in una grande teoria—la selezione naturale—che avrebbe definitivamente soppiantato la speculazione metafisica nello studio della vita.",
       "1687→1751": "I Principia di Newton diedero all'empirismo un trionfo cosmico; il Saggio di Locke gli diede una mente. Il Discorso preliminare di d'Alembert sintetizzò entrambi nel manifesto epistemologico dell'Encyclopédie.",
-      "1751→1776": "L'epistemologia sensista dell'Encyclopédie attraversò la Manica; Hume la radicalizzò nello scetticismo, Adam Smith la applicò al comportamento economico."
+      "1751→1776": "L'epistemologia sensista dell'Encyclopédie attraversò la Manica; Hume la radicalizzò nello scetticismo, Adam Smith la applicò al comportamento economico.",
+      "1241→1543": "L'ornitologia empirica di Federico II sussurra attraverso traduzioni arabe nelle aule scolastiche, finché Vesalio apre i corpi reali e Copernico riapre i cieli."
     },
     "scientific-revolution": {
       "1543→1687": "Copernico riposizionò la Terra; Newton spiegò perché restava in orbita.",

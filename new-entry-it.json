@@ -1,0 +1,50 @@
+{
+  "year": "1241",
+  "id": "1241-palermo-wonder-of-the-world",
+  "title": "Palermo — Lo Stupore del Mondo",
+  "teaser": "Mentre i cavalieri mongoli annientano gli eserciti cristiani a Legnica e Mohi, Federico II siede scomunicato in Sicilia, componendo trattati di falconeria e proteggendo gli inventori del sonetto. La sua corte parla sei lingue. Il Papa muore assediato. Oriente e Occidente si scontrano ai confini del mondo.",
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "<strong>Castel del Monte</strong> sorge in Puglia, con le sue otto torri ottagonali che incarnano una sintesi di forme classiche, islamiche e gotiche senza precedenti nell'architettura medievale. Federico II ha commissionato questa residenza di caccia (1240–1250 circa) come pura geometria fatta pietra: l'ottagono media tra il quadrato terrestre e il cerchio celeste, i suoi allineamenti segnano solstizi ed equinozi. Niente fossato, niente ponte levatoio — è una dichiarazione di <em>cosmo matematico</em>, non di potenza militare. La sintesi <strong>siculo-bizantina</strong> appare anche nelle botteghe di mosaico di Palermo, dove artigiani formati a Costantinopoli servono un sovrano che legge l'arabo e corrisponde con i sultani d'Egitto."
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "La <strong>Scuola Siciliana</strong> di poesia fiorisce alla corte di Federico, creando il primo italiano letterario. <strong>Giacomo da Lentini</strong>, notaio dell'imperatore, ha inventato il <strong>sonetto</strong> — quattordici versi endecasillabi che daranno forma alla poesia europea per otto secoli. I poeti siciliani adattano i temi dell'amor cortese dei trovatori provenzali ma li rendono nella propria lingua, affermando l'italiano come lingua di alta cultura. Federico stesso compone versi. Quando Dante loderà il <em>'volgare illustre'</em>, ne traccerà l'origine qui, in questa corte poliglotta dove arabo, greco, latino e siciliano si mescolano."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "Federico sta componendo il <em>De arte venandi cum avibus</em>, il suo trattato di falconeria che insiste nel descrivere le cose <em>'sicut sunt'</em> — come sono realmente. Contraddice Aristotele quando le sue osservazioni differiscono, sperimenta sugli avvoltoi per verificare se cacciano con l'olfatto, e impiega <strong>Michele Scoto</strong> per tradurre testi scientifici arabi. È <strong>empirismo</strong> prima che la parola esista: conoscenza fondata sull'osservazione piuttosto che sull'autorità. Le traduzioni di Scoto dei commenti aristotelici di Averroè fluiscono da Palermo verso Parigi e Oxford, seminando la sintesi scolastica che Tommaso d'Aquino completerà una generazione dopo."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "In aprile, gli eserciti mongoli di <strong>Batu Khan</strong> distruggono i difensori dell'Europa cristiana in due giorni: il duca Enrico II cade a <strong>Legnica</strong> (9 aprile); gli ungheresi di re Béla IV vengono annientati a <strong>Mohi</strong> (11 aprile). Solo la morte del Gran Khan Ögödei salva l'Europa da ulteriore devastazione. Intanto Federico II, due volte scomunicato, assedia Roma stessa. <strong>Papa Gregorio IX</strong> muore in agosto con l'esercito dell'imperatore alle porte. Federico è chiamato <em>'Stupor Mundi'</em> — lo Stupore del Mondo — dai suoi ammiratori, Anticristo dai nemici. La sua lotta con il papato definirà il secolo."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "La corte di Federico rappresenta un <strong>Rinascimento prematuro</strong>: forme classiche riscoperte, sapere arabo assorbito, volgare elevato, metodo empirico praticato — il tutto un secolo prima di Petrarca. Le stesse reti di traduzione che portano Averroè attraverso la Sicilia alimenteranno la rivoluzione scolastica a Parigi. Il sonetto che Giacomo inventa viaggerà dalla Sicilia alla Toscana, dove Dante e Petrarca lo perfezioneranno. Eppure questa sintesi è fragile: Federico muore nel 1250, la sua stirpe si estingue; il sogno svevo di un impero mediterraneo muore con lui. I Mongoli tornano indietro, risparmiando all'Europa una resa dei conti che non avrebbe potuto sopravvivere.",
+      "funFact": "Federico condusse un famoso esperimento per scoprire il 'linguaggio naturale' dell'umanità allevando bambini senza parola — si dice che morirono, dimostrando solo che i neonati hanno bisogno del contatto umano per sopravvivere."
+    }
+  },
+  "sources": [
+    { "url": "https://it.wikipedia.org/wiki/Federico_II_di_Svevia", "title": "Wikipedia: Federico II di Svevia" },
+    { "url": "https://it.wikipedia.org/wiki/Castel_del_Monte", "title": "Wikipedia: Castel del Monte" },
+    { "url": "https://it.wikipedia.org/wiki/Scuola_siciliana", "title": "Wikipedia: Scuola Siciliana" },
+    { "url": "https://it.wikipedia.org/wiki/De_arte_venandi_cum_avibus", "title": "Wikipedia: De arte venandi cum avibus" },
+    { "url": "https://it.wikipedia.org/wiki/Invasione_mongola_dell%27Europa", "title": "Wikipedia: Invasione mongola dell'Europa" }
+  ],
+  "image": {
+    "url": "images/1241-palermo-wonder-of-the-world.jpg",
+    "caption": "Ingresso di Castel del Monte, la fortezza ottagonale costruita da Federico II",
+    "width": 1200,
+    "height": 1765,
+    "attribution": "Bernard Gagnon, CC0, via Wikimedia Commons"
+  },
+  "threads": ["translatio-studii", "vernacular-literature", "empiricism", "mathematical-cosmos"],
+  "location": {
+    "lat": 38.1157,
+    "lon": 13.3615,
+    "place": "Palermo"
+  },
+  "addedDate": "2026-05-10T05:00:00Z"
+}

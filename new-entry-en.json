@@ -1,50 +1,50 @@
 {
-  "year": "1895",
-  "id": "1895-year-of-new-eyes",
-  "title": "The Year of New Eyes",
-  "teaser": "Cinema is born in a Paris basement. X-rays reveal the skeleton beneath the skin. The Venice Biennale opens art to the world. Oscar Wilde premieres his masterpiece — and is destroyed for what Victorian society refuses to see.",
+  "year": "1241",
+  "id": "1241-palermo-wonder-of-the-world",
+  "title": "Palermo — The Wonder of the World",
+  "teaser": "While Mongol horsemen annihilate Christian armies at Legnica and Mohi, Frederick II sits excommunicate in Sicily, composing treatises on falconry and patronising the inventors of the sonnet. His court speaks six languages. The Pope dies besieged. East and West collide at the edge of the world.",
   "dimensions": {
     "art": {
       "label": "Art",
-      "content": "On <strong>April 30th</strong>, the first <strong>Venice Biennale</strong> opens in the Giardini — 224,000 visitors come to see what the organizers call an 'International Art Exhibition,' the first attempt to institutionalize contemporary art on a global scale. The same year, <strong>Alphonse Mucha</strong>'s lithographed poster for Sarah Bernhardt's <em>Gismonda</em> launches <strong>Art Nouveau</strong> as a commercial phenomenon: art enters the street. <strong>Paul Cézanne</strong> has his first solo exhibition at Ambroise Vollard's Paris gallery — the recluse of Aix finally made visible, his proto-Cubist explorations beginning to reach the avant-garde. <strong>Berthe Morisot</strong>, the great Impressionist, dies in March; the movement she helped create is yielding to new visions. And in November, <strong>Toulouse-Lautrec</strong> paints a portrait of Oscar Wilde — one celebrity of the demimonde capturing another, just as Wilde's world collapses."
+      "content": "<strong>Castel del Monte</strong> rises in Apulia, its eight octagonal towers embodying a synthesis of Classical, Islamic, and Gothic forms unprecedented in medieval architecture. Frederick II has commissioned this hunting lodge (c. 1240–1250) as pure geometry made stone: the octagon mediates between the earthly square and the heavenly circle, its alignments marking solstices and equinoxes. No moat, no drawbridge — this is a statement of <em>mathematical cosmos</em>, not military might. The <strong>Sicilian-Byzantine</strong> synthesis appears too in the mosaic workshops of Palermo, where craftsmen trained in Constantinople serve a ruler who reads Arabic and corresponds with Egyptian sultans."
     },
     "lit": {
       "label": "Literature",
-      "content": "On <strong>February 14th</strong>, <em>The Importance of Being Earnest</em> premieres at London's St. James's Theatre — <strong>Oscar Wilde</strong> at the summit of his wit, satirizing the Victorian marriage plot with such lightness that the critique seems decorative. Within weeks, Wilde sues the Marquess of Queensberry for libel; by May, he is convicted of 'gross indecency' and sentenced to two years' hard labor. The <strong>Aestheticist movement</strong> dies with its prophet's imprisonment. Meanwhile, <strong>Thomas Hardy</strong> publishes <em>Jude the Obscure</em>, and the Bishop of Wakefield publicly burns his copy — the <strong>New Woman</strong> and the critique of marriage too frank for Victorian taste. Hardy will never write another novel. <strong>H.G. Wells</strong> publishes <em>The Time Machine</em>, inventing the device that will carry a century of science fiction: time itself becomes a dimension to traverse."
+      "content": "The <strong>Sicilian School</strong> of poetry flourishes at Frederick's court, creating the first literary Italian. <strong>Giacomo da Lentini</strong>, the emperor's notary, has invented the <strong>sonnet</strong> — fourteen lines of endecasillabi that will shape European poetry for eight centuries. The Sicilian poets adapt Provençal troubadour themes of courtly love but render them in their own tongue, establishing Italian as a language of high culture. Frederick himself composes verse. When Dante later praises <em>'il volgare illustre'</em> (the illustrious vernacular), he traces its origin here, to this polyglot court where Arabic, Greek, Latin, and Sicilian intermingle."
     },
     "phil": {
       "label": "Philosophy",
-      "content": "In America, <strong>William James</strong> is developing <strong>pragmatism</strong> — the doctrine that truth is what works, that ideas are instruments. This American contribution to philosophy rejects both British empiricism's passive observation and German idealism's abstract systems: meaning lies in consequences, not origins. In Cambridge, James's colleague <strong>Josiah Royce</strong> represents the last great flowering of <strong>absolute idealism</strong> in the Anglophone world — a rearguard action against the pragmatic tide. The philosophical mood is empirical, future-oriented, suspicious of metaphysics. <strong>Friedrich Nietzsche</strong> has been insane since 1889, but his completed works are beginning to circulate more widely, preparing the 'transvaluation of all values' that the next century will require."
+      "content": "Frederick is composing <em>De arte venandi cum avibus</em>, his treatise on falconry that insists on describing things <em>'sicut sunt'</em> — as they actually are. He contradicts Aristotle when his own observations differ, experiments on vultures to test whether they hunt by smell, and employs <strong>Michael Scot</strong> to translate Arabic scientific texts. This is <strong>empiricism</strong> before the word exists: knowledge grounded in observation rather than authority. Scot's translations of Averroës's Aristotle commentaries flow from Palermo into Paris and Oxford, seeding the scholastic synthesis that Aquinas will complete a generation later."
     },
     "hist": {
       "label": "History",
-      "content": "On <strong>November 8th</strong>, in Würzburg, <strong>Wilhelm Röntgen</strong> notices a fluorescent screen glowing across a darkened room while experimenting with cathode rays. He has discovered <strong>X-rays</strong> — radiation that passes through flesh to reveal bone. By December 22nd, he photographs his wife's hand, ring and skeleton visible through skin. 'I have seen my death,' she reportedly says. Six weeks later, the <strong>Lumière brothers</strong> screen moving pictures to a paying audience at the Salon Indien in Paris (<strong>December 28th</strong>) — <em>Workers Leaving the Lumière Factory</em>, cinema's first public exhibition. Two new technologies that make the invisible visible: one reveals what lies beneath surfaces, the other captures time itself."
+      "content": "In April, <strong>Batu Khan</strong>'s Mongol armies destroy Christian Europe's defenders in two days: Duke Henry II falls at <strong>Legnica</strong> (April 9); King Béla IV's Hungarians are annihilated at <strong>Mohi</strong> (April 11). Only the Great Khan Ögedei's death saves Europe from further devastation. Meanwhile Frederick II, twice excommunicated, besieges Rome itself. <strong>Pope Gregory IX</strong> dies in August with the emperor's army at the gates. Frederick is called <em>'Stupor Mundi'</em> — the Wonder of the World — by admirers, Antichrist by his enemies. His struggle with the papacy will define the century."
     },
     "conn": {
       "label": "Connections",
-      "content": "The year's theme is <strong>new forms of vision</strong> — technological, artistic, literary — and the violent reaction against what is revealed. X-rays see through the body; cinema captures motion imperceptible to the eye; Wells's time machine traverses the dimension we cannot perceive; Wilde's wit sees through Victorian propriety. But each new sight provokes resistance: Wilde imprisoned, Hardy silenced, even Röntgen's wife recoiling from her own skeleton. The Venice Biennale institutionalizes seeing — art as international exhibition, beauty as commodity. Cézanne, finally exhibited, offers a way of seeing that will take decades to comprehend. The nineteenth century is learning to see itself as others will see it: a skeleton beneath the confident flesh.",
-      "funFact": "The Lumières' first public screening on December 28, 1895, reportedly caused panic when the film of an arriving train made audiences believe they'd be struck. The story is likely exaggerated — but it captures the genuine shock of seeing reality captured and replayed."
+      "content": "Frederick's court represents a <strong>premature Renaissance</strong>: classical forms revived, Arabic learning absorbed, vernacular elevated, empirical method practiced — all a century before Petrarch. The same translation networks that bring Averroës through Sicily will fuel the scholastic revolution in Paris. The sonnet Giacomo invents will travel from Sicily to Tuscany, where Dante and Petrarch will perfect it. Yet this synthesis is fragile: Frederick dies in 1250, his line extinguished; the Hohenstaufen dream of Mediterranean empire dies with him. The Mongols turn back, sparing Europe a reckoning it could not have survived.",
+      "funFact": "Frederick conducted a famous experiment to discover humanity's 'natural language' by raising children without speech — they reportedly died, proving only that babies need human contact to survive."
     }
   },
   "sources": [
-    { "url": "https://en.wikipedia.org/wiki/Wilhelm_R%C3%B6ntgen", "title": "Wilhelm Röntgen — Wikipedia" },
-    { "url": "https://en.wikipedia.org/wiki/1895_in_film", "title": "1895 in film — Wikipedia" },
-    { "url": "https://en.wikipedia.org/wiki/Oscar_Wilde", "title": "Oscar Wilde — Wikipedia" },
-    { "url": "https://en.wikipedia.org/wiki/Venice_Biennale", "title": "Venice Biennale — Wikipedia" },
-    { "url": "https://en.wikipedia.org/wiki/The_Time_Machine", "title": "The Time Machine — Wikipedia" }
+    { "url": "https://en.wikipedia.org/wiki/Frederick_II,_Holy_Roman_Emperor", "title": "Wikipedia: Frederick II" },
+    { "url": "https://en.wikipedia.org/wiki/Castel_del_Monte,_Apulia", "title": "Wikipedia: Castel del Monte" },
+    { "url": "https://en.wikipedia.org/wiki/Sicilian_School", "title": "Wikipedia: Sicilian School" },
+    { "url": "https://en.wikipedia.org/wiki/De_arte_venandi_cum_avibus", "title": "Wikipedia: De arte venandi cum avibus" },
+    { "url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Europe", "title": "Wikipedia: Mongol Invasion of Europe" }
   ],
   "image": {
-    "url": "images/1895-year-of-new-eyes.jpg",
-    "caption": "First X-ray photograph: Wilhelm Röntgen's image of his wife Anna Bertha's hand showing bones and wedding ring, December 22, 1895",
+    "url": "images/1241-palermo-wonder-of-the-world.jpg",
+    "caption": "Castel del Monte entrance, the octagonal fortress built by Frederick II",
     "width": 1200,
-    "height": 1726,
-    "attribution": "Wilhelm Röntgen, Public domain, via Wikimedia Commons"
+    "height": 1765,
+    "attribution": "Bernard Gagnon, CC0, via Wikimedia Commons"
   },
-  "threads": ["fin-de-siecle", "aestheticism", "scientific-revolution", "modernism"],
+  "threads": ["translatio-studii", "vernacular-literature", "empiricism", "mathematical-cosmos"],
   "location": {
-    "lat": 48.8566,
-    "lon": 2.3522,
-    "place": "Paris"
+    "lat": 38.1157,
+    "lon": 13.3615,
+    "place": "Palermo"
   },
-  "addedDate": "2026-05-05T05:00:00Z"
+  "addedDate": "2026-05-10T05:00:00Z"
 }

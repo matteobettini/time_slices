@@ -5550,5 +5550,79 @@
       "url": "audio/1558-four-queens-one-throne.mp3",
       "duration": 163
     }
+  },
+  {
+    "year": "1241",
+    "id": "1241-palermo-wonder-of-the-world",
+    "title": "Palermo — The Wonder of the World",
+    "teaser": "While Mongol horsemen annihilate Christian armies at Legnica and Mohi, Frederick II sits excommunicate in Sicily, composing treatises on falconry and patronising the inventors of the sonnet. His court speaks six languages. The Pope dies besieged. East and West collide at the edge of the world.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>Castel del Monte</strong> rises in Apulia, its eight octagonal towers embodying a synthesis of Classical, Islamic, and Gothic forms unprecedented in medieval architecture. Frederick II has commissioned this hunting lodge (c. 1240–1250) as pure geometry made stone: the octagon mediates between the earthly square and the heavenly circle, its alignments marking solstices and equinoxes. No moat, no drawbridge — this is a statement of <em>mathematical cosmos</em>, not military might. The <strong>Sicilian-Byzantine</strong> synthesis appears too in the mosaic workshops of Palermo, where craftsmen trained in Constantinople serve a ruler who reads Arabic and corresponds with Egyptian sultans."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "The <strong>Sicilian School</strong> of poetry flourishes at Frederick's court, creating the first literary Italian. <strong>Giacomo da Lentini</strong>, the emperor's notary, has invented the <strong>sonnet</strong> — fourteen lines of endecasillabi that will shape European poetry for eight centuries. The Sicilian poets adapt Provençal troubadour themes of courtly love but render them in their own tongue, establishing Italian as a language of high culture. Frederick himself composes verse. When Dante later praises <em>'il volgare illustre'</em> (the illustrious vernacular), he traces its origin here, to this polyglot court where Arabic, Greek, Latin, and Sicilian intermingle."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "Frederick is composing <em>De arte venandi cum avibus</em>, his treatise on falconry that insists on describing things <em>'sicut sunt'</em> — as they actually are. He contradicts Aristotle when his own observations differ, experiments on vultures to test whether they hunt by smell, and employs <strong>Michael Scot</strong> to translate Arabic scientific texts. This is <strong>empiricism</strong> before the word exists: knowledge grounded in observation rather than authority. Scot's translations of Averroës's Aristotle commentaries flow from Palermo into Paris and Oxford, seeding the scholastic synthesis that Aquinas will complete a generation later."
+      },
+      "hist": {
+        "label": "History",
+        "content": "In April, <strong>Batu Khan</strong>'s Mongol armies destroy Christian Europe's defenders in two days: Duke Henry II falls at <strong>Legnica</strong> (April 9); King Béla IV's Hungarians are annihilated at <strong>Mohi</strong> (April 11). Only the Great Khan Ögedei's death saves Europe from further devastation. Meanwhile Frederick II, twice excommunicated, besieges Rome itself. <strong>Pope Gregory IX</strong> dies in August with the emperor's army at the gates. Frederick is called <em>'Stupor Mundi'</em> — the Wonder of the World — by admirers, Antichrist by his enemies. His struggle with the papacy will define the century."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "Frederick's court represents a <strong>premature Renaissance</strong>: classical forms revived, Arabic learning absorbed, vernacular elevated, empirical method practiced — all a century before Petrarch. The same translation networks that bring Averroës through Sicily will fuel the scholastic revolution in Paris. The sonnet Giacomo invents will travel from Sicily to Tuscany, where Dante and Petrarch will perfect it. Yet this synthesis is fragile: Frederick dies in 1250, his line extinguished; the Hohenstaufen dream of Mediterranean empire dies with him. The Mongols turn back, sparing Europe a reckoning it could not have survived.",
+        "funFact": "Frederick conducted a famous experiment to discover humanity's 'natural language' by raising children without speech — they reportedly died, proving only that babies need human contact to survive."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Frederick_II,_Holy_Roman_Emperor",
+        "title": "Wikipedia: Frederick II"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Castel_del_Monte,_Apulia",
+        "title": "Wikipedia: Castel del Monte"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Sicilian_School",
+        "title": "Wikipedia: Sicilian School"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/De_arte_venandi_cum_avibus",
+        "title": "Wikipedia: De arte venandi cum avibus"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Europe",
+        "title": "Wikipedia: Mongol Invasion of Europe"
+      }
+    ],
+    "image": {
+      "url": "images/1241-palermo-wonder-of-the-world.jpg",
+      "caption": "Castel del Monte entrance, the octagonal fortress built by Frederick II",
+      "width": 1200,
+      "height": 1765,
+      "attribution": "Bernard Gagnon, CC0, via Wikimedia Commons"
+    },
+    "threads": [
+      "translatio-studii",
+      "vernacular-literature",
+      "empiricism",
+      "mathematical-cosmos"
+    ],
+    "location": {
+      "lat": 38.1157,
+      "lon": 13.3615,
+      "place": "Palermo"
+    },
+    "addedDate": "2026-05-10T05:00:00Z",
+    "podcast": {
+      "url": "audio/1241-palermo-wonder-of-the-world.mp3",
+      "duration": 182
+    }
   }
 ]
