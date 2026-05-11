@@ -145,7 +145,8 @@
       "1610→1641": "From Caravaggio's final canvases to Claude Lorrain's luminous ports: Baroque naturalism moves from Roman chiaroscuro to French ideal landscape, while Dutch masters channel it into Protestant interiors.",
       "1641→1648": "Van Dyck dies; Rembrandt completes The Night Watch. The Baroque splits: Catholic theatricality versus Protestant introspection, court magnificence versus civic portraiture.",
       "1648→1666": "Peace brought spectacle. Dutch restraint and Continental extravagance became twin responses to the same post-war question: how do you make meaning after God has been weaponised?",
-      "1666→1670": "Fire cleared London's medieval clutter; Wren filled the void with rational Baroque. Meanwhile Vermeer painted Catholic devotion in Protestant disguise — hidden churches, hidden faith, luminous surfaces."
+      "1666→1670": "Fire cleared London's medieval clutter; Wren filled the void with rational Baroque. Meanwhile Vermeer painted Catholic devotion in Protestant disguise — hidden churches, hidden faith, luminous surfaces.",
+      "1571→1600": "The infant born at Milan in September 1571 — Michelangelo Merisi, called Caravaggio — will mature into the first Baroque painter. His chiaroscuro revolutionizes art: where Venice celebrated luminosity, he makes darkness itself dramatic."
     },
     "empiricism": {
       "1543→1687": "Vesalius trusted dissection over Galen; Newton trusted mathematics over tradition. Both empiricisms — anatomical and physical — insisted that observation trumped authority.",
@@ -169,7 +170,9 @@
       "1610→1666": "Galileo's telescope opened the heavens; Newton's prism opened light itself. The plague sent him home from Cambridge to think alone — and there, in a Lincolnshire farmhouse, modern physics was born.",
       "1666→1687": "Newton hoarded his discoveries for two decades. Only Halley's persistence — and his pocket — brought the Principia to print. What began with a falling apple ended with the universe as equation.",
       "1859→1895": "Darwin's evolution remade biology; Röntgen's X-rays showed physics could remake vision itself — the invisible made visible at last.",
-      "1895→1905": "X-rays proved invisible radiation could penetrate matter; a decade later Einstein proved space and time themselves were mutable."
+      "1895→1905": "X-rays proved invisible radiation could penetrate matter; a decade later Einstein proved space and time themselves were mutable.",
+      "1543→1571": "From dissection to destiny: Vesalius opened the body, Copernicus opened the cosmos — and in December 1571, the man who would prove them both right, Johannes Kepler, drew his first breath.",
+      "1571→1610": "Born in the year of Lepanto, Kepler will grow to explain the cosmos mathematically — while Caravaggio, born the same year, uses light to explain the human soul. Both revolutionize their fields with precision and drama."
     },
     "enlightenment": {
       "1687→1755": "Newton's <em>Principia</em> proved the cosmos was lawful; the Lisbon earthquake asked whether it was just. Enlightenment optimism crested and cracked within seventy years.",
@@ -324,7 +327,9 @@
     "counter-reformation": {
       "1543→1580": "The Council of Trent hadn't yet convened when Copernicus published; by 1580 it had defined orthodoxy for three centuries. El Greco's ecstatic saints embody Counter-Reformation mysticism — reaching toward heaven through emotional intensity, not rational proportion.",
       "1580→1600": "Montaigne's skepticism was a quiet rebellion — doubt as a way to survive religious war. Bruno's cosmic vision was open defiance. The Counter-Reformation tolerated the former and burned the latter: some heresies can hide in essays, others cannot.",
-      "1558→1580": "The Jesuits consolidate under their second General while Montaigne's skepticism quietly resists all confessional certainties."
+      "1558→1580": "The Jesuits consolidate under their second General while Montaigne's skepticism quietly resists all confessional certainties.",
+      "1558→1571": "From Elizabeth's accession to Lepanto: the Counter-Reformation consolidates while Rome organizes its great military answer to Protestant defiance. Pope Pius V's Holy League proves that Catholic Europe can still act as one.",
+      "1571→1580": "Lepanto's glory fades into Montaigne's doubt. The Counter-Reformation's military triumph gives way to philosophical skepticism — as religious wars continue, a French essayist asks 'Que sçay-je?' and invents a new way of thinking."
     },
     "english-romanticism": {
       "1798→1816": "Wordsworth and Coleridge's Lyrical Ballads germinate in rain-soaked Geneva: Mary Shelley inherits their nature-worship but adds Gothic dread — Romanticism discovers its dark twin."
@@ -507,7 +512,8 @@
       "1610→1641": "Dalle ultime tele di Caravaggio ai porti luminosi di Claude Lorrain: il naturalismo barocco passa dal chiaroscuro romano al paesaggio ideale francese, mentre i maestri olandesi lo incanalano negli interni protestanti.",
       "1641→1648": "Van Dyck muore; Rembrandt completa La Ronda di notte. Il Barocco si divide: teatralità cattolica contro introspezione protestante, magnificenza di corte contro ritrattistica civica.",
       "1648→1666": "La pace portò lo spettacolo. La sobrietà olandese e l'esuberanza continentale divennero risposte gemelle alla stessa domanda postbellica: come si crea significato dopo che Dio è stato usato come arma?",
-      "1666→1670": "Il fuoco liberò Londra dal suo disordine medievale; Wren riempì il vuoto con un Barocco razionale. Nel frattempo Vermeer dipinse la devozione cattolica sotto mentite spoglie protestanti — chiese nascoste, fede nascosta, superfici luminose."
+      "1666→1670": "Il fuoco liberò Londra dal suo disordine medievale; Wren riempì il vuoto con un Barocco razionale. Nel frattempo Vermeer dipinse la devozione cattolica sotto mentite spoglie protestanti — chiese nascoste, fede nascosta, superfici luminose.",
+      "1571→1600": "Il bambino nato a Milano nel settembre 1571 — Michelangelo Merisi, detto Caravaggio — diventerà il primo pittore barocco. Il suo chiaroscuro rivoluziona l'arte: dove Venezia celebrava la luminosità, lui rende drammatica l'oscurità stessa."
     },
     "empiricism": {
       "1543→1687": "Vesalio si fidava della dissezione più che di Galeno; Newton si fidava della matematica più che della tradizione.",
@@ -531,7 +537,9 @@
       "1610→1666": "Il telescopio di Galileo aprì i cieli; il prisma di Newton aprì la luce stessa. La peste lo mandò a casa da Cambridge a pensare in solitudine — e lì, in una fattoria del Lincolnshire, nacque la fisica moderna.",
       "1666→1687": "Newton accumulò le sue scoperte per due decenni. Solo la perseveranza di Halley — e il suo portafoglio — portarono i Principia alla stampa. Ciò che iniziò con una mela che cadeva finì con l'universo come equazione.",
       "1859→1895": "L'evoluzione di Darwin rifece la biologia; i raggi X di Röntgen mostrarono che la fisica poteva rifare la visione stessa — l'invisibile finalmente reso visibile.",
-      "1895→1905": "I raggi X dimostrarono che radiazioni invisibili potevano penetrare la materia; un decennio dopo Einstein dimostrò che spazio e tempo stessi erano mutabili."
+      "1895→1905": "I raggi X dimostrarono che radiazioni invisibili potevano penetrare la materia; un decennio dopo Einstein dimostrò che spazio e tempo stessi erano mutabili.",
+      "1543→1571": "Dalla dissezione al destino: Vesalio aprì il corpo, Copernico aprì il cosmo — e nel dicembre 1571, l'uomo che avrebbe dato ragione a entrambi, Giovanni Keplero, fece il suo primo respiro.",
+      "1571→1610": "Nato nell'anno di Lepanto, Keplero crescerà per spiegare matematicamente il cosmo — mentre Caravaggio, nato lo stesso anno, usa la luce per spiegare l'anima umana. Entrambi rivoluzionano i loro campi con precisione e dramma."
     },
     "enlightenment": {
       "1687→1755": "I <em>Principia</em> di Newton dimostrarono che il cosmo era regolato da leggi; il terremoto di Lisbona chiese se fosse giusto.",
@@ -686,7 +694,9 @@
     "counter-reformation": {
       "1543→1580": "Il Concilio di Trento non si era ancora riunito quando Copernico pubblicò; nel 1580 aveva definito l'ortodossia per tre secoli. I santi estatici di El Greco incarnano il misticismo della Controriforma — protendendosi verso il cielo attraverso l'intensità emotiva, non la proporzione razionale.",
       "1580→1600": "Lo scetticismo di Montaigne era una ribellione silenziosa — il dubbio come modo per sopravvivere alla guerra religiosa. La visione cosmica di Bruno era aperta sfida. La Controriforma tollerò il primo e bruciò il secondo: alcune eresie possono nascondersi nei saggi, altre no.",
-      "1558→1580": "I Gesuiti si consolidano sotto il secondo Generale mentre lo scetticismo di Montaigne resiste silenziosamente a ogni certezza confessionale."
+      "1558→1580": "I Gesuiti si consolidano sotto il secondo Generale mentre lo scetticismo di Montaigne resiste silenziosamente a ogni certezza confessionale.",
+      "1558→1571": "Dall'ascesa di Elisabetta a Lepanto: la Controriforma si consolida mentre Roma organizza la sua grande risposta militare alla sfida protestante. La Lega Santa di Pio V dimostra che l'Europa cattolica può ancora agire come una.",
+      "1571→1580": "La gloria di Lepanto sfuma nel dubbio di Montaigne. Il trionfo militare della Controriforma cede il passo allo scetticismo filosofico — mentre le guerre di religione continuano, un saggista francese chiede 'Que sçay-je?' e inventa un nuovo modo di pensare."
     },
     "english-romanticism": {
       "1798→1816": "Le Lyrical Ballads di Wordsworth e Coleridge germinano nella piovosa Ginevra: Mary Shelley eredita il loro culto della natura ma aggiunge il terrore gotico — il Romanticismo scopre il suo gemello oscuro."

@@ -52,18 +52,31 @@ def main():
         loc = entry.get("location", {})
         threads = entry.get("threads", [])
         
+        # Handle location as either dict or string
+        if isinstance(loc, dict):
+            place = loc.get("place", "Unknown")
+        elif isinstance(loc, str):
+            place = loc
+        else:
+            place = "Unknown"
+        
         years_covered.append({
             "year": year,
             "id": eid,
             "title": title,
-            "place": loc.get("place", "Unknown")
+            "place": place
         })
         
         for t in threads:
             threads_counter[t] += 1
         
         if loc:
-            locations.append(loc.get("place", "Unknown"))
+            if isinstance(loc, dict):
+                locations.append(loc.get("place", "Unknown"))
+            elif isinstance(loc, str):
+                locations.append(loc)
+            else:
+                locations.append("Unknown")
     
     # Output summary
     print("# Time Slices — Entry Summary")

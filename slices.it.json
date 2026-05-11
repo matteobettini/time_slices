@@ -5608,5 +5608,44 @@
       "url": "audio/it/1241-palermo-wonder-of-the-world.mp3",
       "duration": 155
     }
+  },
+  {
+    "id": "1571-lepanto-blood-on-wine-dark-sea",
+    "year": 1571,
+    "title": "Sangue sul Mare Color Vino",
+    "teaser": "Duecento galee si scontrano nel golfo di Patrasso — l'ultima grande battaglia di navi a remi, e il momento in cui la Cristianità smette di fuggire. A Milano nasce un pittore che rivoluzionerà la luce. A dicembre arriva un astronomo che rivoluzionerà le orbite. Venezia commissiona vittorie; Cervantes perde una mano; i futuri maestri dell'oscurità e del movimento fanno i loro primi respiri.",
+    "location": {
+      "place": "Lepanto (Golfo di Patrasso)",
+      "coordinates": {
+        "lat": 38.3333,
+        "lng": 21.3333
+      }
+    },
+    "threads": [
+      "counter-reformation",
+      "baroque",
+      "scientific-revolution",
+      "venetian-painting",
+      "ottoman-confrontation"
+    ],
+    "content": {
+      "art": "A Venezia domina il grande triumvirato: <strong>Tiziano</strong>, ormai ottantenne, <strong>Tintoretto</strong> e <strong>Paolo Veronese</strong>. La notizia di Lepanto arriva in ottobre e la città esplode in celebrazioni artistiche. Veronese dipinge <em>Agostino Barbarigo</em>, il comandante veneziano morto in battaglia, che stringe una freccia turca — un ritratto di martirio in abito militare. Tintoretto inizia la sua monumentale <em>Battaglia di Lepanto</em>, trasformando il caos navale in teatro vorticoso. Il <strong>colorito veneziano</strong> — la sensuale priorità del colore sulla linea fiorentina — raggiunge la sua fase matura. Ma a Milano, quel settembre, nasce un bambino di nome <strong>Michelangelo Merisi</strong>. Prenderà il nome del paese della sua famiglia: <strong>Caravaggio</strong>. Quarant'anni dopo, il suo radicale chiaroscuro — figure che emergono dall'oscurità in una luce teatrale intensa — demolirà proprio la luminosità che Venezia ha perfezionato. Il futuro della pittura arriva piangendo mentre Venezia celebra la sua ultima grande vittoria.",
+      "literature": "A Lepanto, un soldato spagnolo di ventitré anni di nome <strong>Miguel de Cervantes</strong> combatte a bordo della galea <em>Marquesa</em>. Riceve tre colpi di archibugio — due al petto, uno che storpia permanentemente la mano sinistra. Chiamerà poi Lepanto <em>'il più nobile e memorabile evento che i secoli passati abbiano visto o le generazioni future possano sperare di vedere.'</em> La mano che perde non è quella con cui scrive; il <em>Quijote</em> sopravvive. A Londra, la <strong>Stationers' Company</strong> consolida il controllo sulla stampa — l'infrastruttura per l'esplosione letteraria elisabettiana. A Firenze muore <strong>Benvenuto Cellini</strong> in febbraio, la sua scandalosa <em>Autobiografia</em> in volgare fiorentino ancora inedita. Aspetterà due secoli, poi ispirerà Goethe e Berlioz. La tradizione memorialistica rinascimentale — voce personale, energia spavalderia, la vita come arte — passa in altre mani.",
+      "philosophy": "La <strong>Controriforma</strong> consolida la sua vittoria intellettuale. Il Concilio di Trento (1545–1563) ha definito la dottrina cattolica contro la sfida protestante; ora i suoi decreti prendono forma istituzionale. Nel 1571, Papa <strong>Pio V</strong> — che ha assemblato la Lega Santa — pubblica il <strong>Messale Romano</strong>, standardizzando la Messa in latino per quattro secoli. Lo stesso papa istituisce la festa della Madonna della Vittoria per commemorare Lepanto, attribuendo il trionfo alla devozione del rosario. Eppure il 27 dicembre, nella città luterana di Weil der Stadt, nasce <strong>Giovanni Keplero</strong>. Le sue <em>leggi del moto planetario</em> — scoperte attraverso la matematica protestante applicata alle osservazioni danesi — dimostreranno infine che la cosmologia aristotelica cattolica aveva torto sui cieli. La Chiesa celebra la vittoria militare sull'Islam mentre l'uomo che rovescerà il suo cosmo fa il primo respiro.",
+      "history": "Il <strong>7 ottobre 1571</strong>, nel golfo di Patrasso al largo della Grecia occidentale, oltre 400 galee si scontrano nell'ultima grande battaglia di navi a remi. La <strong>Lega Santa</strong> — Spagna, Venezia, gli Stati Pontifici, Genova, Savoia, i Cavalieri di Malta — affronta la flotta ottomana sotto il comando di <strong>Müezzinzade Ali Pascià</strong>. <strong>Don Giovanni d'Austria</strong>, il figlio illegittimo ventiquattrenne dell'imperatore Carlo V, comanda le forze cristiane. La battaglia si decide in poche ore: 40.000 morti ottomani, 230 navi ottomane catturate o distrutte, 12.000 schiavi cristiani liberati dalle galee. Il mito dell'invincibilità navale ottomana si frantuma. Eppure le conseguenze strategiche sono ambigue: Venezia firma una pace separata nel 1573, cedendo Cipro; gli ottomani ricostruiscono la flotta in un anno. Ciò che rimane è psicologico: la Cristianità può vincere. I secoli di difensiva sono finiti.",
+      "connections": "L'anno ruota attorno a <strong>luce e violenza</strong>. Lepanto si combatte per il controllo delle rotte mediterranee, ma il suo significato è simbolico — una civiltà che si era ritirata per un secolo scopre di poter avanzare. I pittori veneziani rispondono con il colore come trionfo: le scene di battaglia di Tintoretto, l'ammiraglio martire di Veronese, tutta quella luminosità dorata mediterranea. Eppure il neonato Caravaggio prenderà la luce mediterranea e la trasformerà in qualcosa di completamente diverso — teatrale, diretto, psicologico. La sua <em>Conversione di San Paolo</em> usa l'oscurità come spazio, la luce come evento. Keplero, nato lo stesso anno, scoprirà che le orbite planetarie sono ellissi, non cerchi — che il cosmo stesso è organizzato dalla luce, con il sole in uno dei fuochi. Cellini muore mentre Caravaggio nasce; il <strong>Barocco</strong> emerge dai gesti allungati del Manierismo; l'osservazione inizia a prevalere sull'autorità. La Lepanto che Cervantes sopravvive ossessionerà la sua narrativa — la prigionia ad Algeri che segue plasma la visione del <em>Quijote</em> di illusione e resistenza. La vittoria del 1571 crea la fiducia del Siglo de Oro spagnolo; gli uomini presenti alla battaglia definiranno il secolo a venire."
+    },
+    "funFact": "Cervantes era così orgoglioso delle sue ferite di Lepanto che chiamava la sua mano sinistra inutile 'per la maggior gloria della destra.' I due colpi al petto guarirono; la mano mai. Trentaquattro anni dopo, quella mano destra scrisse il primo romanzo moderno.",
+    "addedDate": "2026-05-11T05:04:48Z",
+    "podcast": {
+      "url": "audio/it/1571-lepanto-blood-on-wine-dark-sea.mp3",
+      "duration": 163
+    },
+    "image": {
+      "url": "images/1571-lepanto-blood-on-wine-dark-sea.jpg",
+      "caption": "La Battaglia di Lepanto di Paolo Veronese, c. 1572",
+      "width": 850,
+      "height": 1045
+    }
   }
 ]
