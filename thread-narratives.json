@@ -31,7 +31,9 @@
       "410→476": "As Augustine's City of God argued that true civilization was heavenly, Ravenna's mosaics and Sidonius's letters preserved what remained of the earthly one.",
       "476→529": "The transfer of learning accelerated: Boethius translated Greek into Latin, Benedict founded Monte Cassino, and knowledge migrated from cities to monasteries.",
       "1170→1241": "Toledo translates Aristotle into Latin; Frederick's Sicily becomes a second conduit, funneling Averroës directly into European philosophy.",
-      "1241→1453": "Michael Scot's translations feed scholastic Paris; two centuries later, Byzantine scholars fleeing Constantinople bring the original Greek."
+      "1241→1453": "Michael Scot's translations feed scholastic Paris; two centuries later, Byzantine scholars fleeing Constantinople bring the original Greek.",
+      "1492→1564": "The Spanish conquest disperses knowledge westward; 1564 sees Renaissance mastery pass to a new generation — Shakespeare, Galileo, and Marlowe all born as Michelangelo dies.",
+      "1564→1863": "From Michelangelo's death to Manet's scandal — three centuries of artistic transmission, from Renaissance mastery through Baroque, Rococo, Romanticism, to Impressionism's rupture."
     },
     "eschatological-anxiety": {
       "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
@@ -172,7 +174,9 @@
       "1859→1895": "Darwin's evolution remade biology; Röntgen's X-rays showed physics could remake vision itself — the invisible made visible at last.",
       "1895→1905": "X-rays proved invisible radiation could penetrate matter; a decade later Einstein proved space and time themselves were mutable.",
       "1543→1571": "From dissection to destiny: Vesalius opened the body, Copernicus opened the cosmos — and in December 1571, the man who would prove them both right, Johannes Kepler, drew his first breath.",
-      "1571→1610": "Born in the year of Lepanto, Kepler will grow to explain the cosmos mathematically — while Caravaggio, born the same year, uses light to explain the human soul. Both revolutionize their fields with precision and drama."
+      "1571→1610": "Born in the year of Lepanto, Kepler will grow to explain the cosmos mathematically — while Caravaggio, born the same year, uses light to explain the human soul. Both revolutionize their fields with precision and drama.",
+      "1543→1564": "Copernicus and Vesalius both publish in 1543, revolutionizing astronomy and anatomy. Vesalius dies in 1564; three days earlier, Galileo is born to continue the work.",
+      "1564→1571": "Galileo's birth and Vesalius's death mark the transition from anatomical to astronomical observation; Kepler's birth at Lepanto continues the chain."
     },
     "enlightenment": {
       "1687→1755": "Newton's <em>Principia</em> proved the cosmos was lawful; the Lisbon earthquake asked whether it was just. Enlightenment optimism crested and cracked within seventy years.",
@@ -329,7 +333,9 @@
       "1580→1600": "Montaigne's skepticism was a quiet rebellion — doubt as a way to survive religious war. Bruno's cosmic vision was open defiance. The Counter-Reformation tolerated the former and burned the latter: some heresies can hide in essays, others cannot.",
       "1558→1580": "The Jesuits consolidate under their second General while Montaigne's skepticism quietly resists all confessional certainties.",
       "1558→1571": "From Elizabeth's accession to Lepanto: the Counter-Reformation consolidates while Rome organizes its great military answer to Protestant defiance. Pope Pius V's Holy League proves that Catholic Europe can still act as one.",
-      "1571→1580": "Lepanto's glory fades into Montaigne's doubt. The Counter-Reformation's military triumph gives way to philosophical skepticism — as religious wars continue, a French essayist asks 'Que sçay-je?' and invents a new way of thinking."
+      "1571→1580": "Lepanto's glory fades into Montaigne's doubt. The Counter-Reformation's military triumph gives way to philosophical skepticism — as religious wars continue, a French essayist asks 'Que sçay-je?' and invents a new way of thinking.",
+      "1558→1564": "The Counter-Reformation's institutional machinery — the Index, the Jesuits, the Tridentine decrees — consolidates between Mary Tudor's death and Calvin's.",
+      "1564→1571": "From the Index's promulgation to Lepanto's victory — the Counter-Reformation moves from censorship to crusade, intellectual control to military triumph."
     },
     "english-romanticism": {
       "1798→1816": "Wordsworth and Coleridge's Lyrical Ballads germinate in rain-soaked Geneva: Mary Shelley inherits their nature-worship but adds Gothic dread — Romanticism discovers its dark twin."
@@ -370,7 +376,11 @@
       "1870→1883": "The Franco-Prussian War scatters the Paris art world; thirteen years later Monet settles at Giverny as Manet dies, the movement's scandalous origins yielding to patient observation."
     },
     "reformation": {
-      "1517→1558": "From Luther's theses to Knox's Blast: the Reformation fragments into national churches as Elizabeth inherits the English experiment."
+      "1517→1558": "From Luther's theses to Knox's Blast: the Reformation fragments into national churches as Elizabeth inherits the English experiment.",
+      "1558→1564": "Elizabeth takes England Protestant in 1558; Calvin dies in 1564, leaving the Reformation's second generation to interpret his systematic theology."
+    },
+    "anatomical-revolution": {
+      "1543→1564": "Vesalius's revolutionary anatomy textbook of 1543 overturned Galen — but in 1564, Vesalius himself dies, leaving observational method as his legacy."
     }
   },
   "it": {
@@ -403,7 +413,9 @@
       "410→476": "Mentre la Città di Dio di Agostino sosteneva che la vera civiltà era celeste, i mosaici di Ravenna e le lettere di Sidonio preservarono ciò che restava di quella terrena.",
       "476→529": "Il trasferimento del sapere accelerò: Boezio tradusse il greco in latino, Benedetto fondò Montecassino, e la conoscenza migrò dalle città ai monasteri.",
       "1170→1241": "Toledo traduce Aristotele in latino; la Sicilia di Federico diventa un secondo canale, incanalando Averroè direttamente nella filosofia europea.",
-      "1241→1453": "Le traduzioni di Michele Scoto alimentano la Parigi scolastica; due secoli dopo, gli studiosi bizantini in fuga da Costantinopoli portano il greco originale."
+      "1241→1453": "Le traduzioni di Michele Scoto alimentano la Parigi scolastica; due secoli dopo, gli studiosi bizantini in fuga da Costantinopoli portano il greco originale.",
+      "1492→1564": "La conquista spagnola disperde la conoscenza verso ovest; nel 1564 la maestria rinascimentale passa a una nuova generazione — Shakespeare, Galileo e Marlowe nascono tutti mentre Michelangelo muore.",
+      "1564→1863": "Dalla morte di Michelangelo allo scandalo di Manet — tre secoli di trasmissione artistica, dalla maestria rinascimentale attraverso Barocco, Rococò, Romanticismo, fino alla rottura impressionista."
     },
     "eschatological-anxiety": {
       "410→1000": "La caduta di Roma sembrò apocalittica ai contemporanei di Agostino; l'avvicinarsi dell'anno Mille rianimò quelle paure. Il 'bianco manto di chiese' fu in parte ringraziamento per un millennio che non finì nel fuoco.",
@@ -539,7 +551,9 @@
       "1859→1895": "L'evoluzione di Darwin rifece la biologia; i raggi X di Röntgen mostrarono che la fisica poteva rifare la visione stessa — l'invisibile finalmente reso visibile.",
       "1895→1905": "I raggi X dimostrarono che radiazioni invisibili potevano penetrare la materia; un decennio dopo Einstein dimostrò che spazio e tempo stessi erano mutabili.",
       "1543→1571": "Dalla dissezione al destino: Vesalio aprì il corpo, Copernico aprì il cosmo — e nel dicembre 1571, l'uomo che avrebbe dato ragione a entrambi, Giovanni Keplero, fece il suo primo respiro.",
-      "1571→1610": "Nato nell'anno di Lepanto, Keplero crescerà per spiegare matematicamente il cosmo — mentre Caravaggio, nato lo stesso anno, usa la luce per spiegare l'anima umana. Entrambi rivoluzionano i loro campi con precisione e dramma."
+      "1571→1610": "Nato nell'anno di Lepanto, Keplero crescerà per spiegare matematicamente il cosmo — mentre Caravaggio, nato lo stesso anno, usa la luce per spiegare l'anima umana. Entrambi rivoluzionano i loro campi con precisione e dramma.",
+      "1543→1564": "Copernico e Vesalio pubblicano entrambi nel 1543, rivoluzionando astronomia e anatomia. Vesalio muore nel 1564; tre giorni prima nasce Galileo per continuare l'opera.",
+      "1564→1571": "La nascita di Galileo e la morte di Vesalio segnano la transizione dall'osservazione anatomica a quella astronomica; la nascita di Keplero a Lepanto continua la catena."
     },
     "enlightenment": {
       "1687→1755": "I <em>Principia</em> di Newton dimostrarono che il cosmo era regolato da leggi; il terremoto di Lisbona chiese se fosse giusto.",
@@ -696,7 +710,9 @@
       "1580→1600": "Lo scetticismo di Montaigne era una ribellione silenziosa — il dubbio come modo per sopravvivere alla guerra religiosa. La visione cosmica di Bruno era aperta sfida. La Controriforma tollerò il primo e bruciò il secondo: alcune eresie possono nascondersi nei saggi, altre no.",
       "1558→1580": "I Gesuiti si consolidano sotto il secondo Generale mentre lo scetticismo di Montaigne resiste silenziosamente a ogni certezza confessionale.",
       "1558→1571": "Dall'ascesa di Elisabetta a Lepanto: la Controriforma si consolida mentre Roma organizza la sua grande risposta militare alla sfida protestante. La Lega Santa di Pio V dimostra che l'Europa cattolica può ancora agire come una.",
-      "1571→1580": "La gloria di Lepanto sfuma nel dubbio di Montaigne. Il trionfo militare della Controriforma cede il passo allo scetticismo filosofico — mentre le guerre di religione continuano, un saggista francese chiede 'Que sçay-je?' e inventa un nuovo modo di pensare."
+      "1571→1580": "La gloria di Lepanto sfuma nel dubbio di Montaigne. Il trionfo militare della Controriforma cede il passo allo scetticismo filosofico — mentre le guerre di religione continuano, un saggista francese chiede 'Que sçay-je?' e inventa un nuovo modo di pensare.",
+      "1558→1564": "L'apparato istituzionale della Controriforma — l'Indice, i Gesuiti, i decreti tridentini — si consolida tra la morte di Maria Tudor e quella di Calvino.",
+      "1564→1571": "Dalla promulgazione dell'Indice alla vittoria di Lepanto — la Controriforma passa dalla censura alla crociata, dal controllo intellettuale al trionfo militare."
     },
     "english-romanticism": {
       "1798→1816": "Le Lyrical Ballads di Wordsworth e Coleridge germinano nella piovosa Ginevra: Mary Shelley eredita il loro culto della natura ma aggiunge il terrore gotico — il Romanticismo scopre il suo gemello oscuro."
@@ -737,7 +753,11 @@
       "1870→1883": "La guerra franco-prussiana disperde il mondo artistico parigino; tredici anni dopo Monet si stabilisce a Giverny mentre Manet muore, le origini scandalose del movimento cedono all'osservazione paziente."
     },
     "reformation": {
-      "1517→1558": "Dalle tesi di Lutero allo Squillo di Knox: la Riforma si frammenta in chiese nazionali mentre Elisabetta eredita l'esperimento inglese."
+      "1517→1558": "Dalle tesi di Lutero allo Squillo di Knox: la Riforma si frammenta in chiese nazionali mentre Elisabetta eredita l'esperimento inglese.",
+      "1558→1564": "Elisabetta porta l'Inghilterra al protestantesimo nel 1558; Calvino muore nel 1564, lasciando alla seconda generazione della Riforma l'interpretazione della sua teologia sistematica."
+    },
+    "anatomical-revolution": {
+      "1543→1564": "Il rivoluzionario trattato di anatomia di Vesalio del 1543 rovesciò Galeno — ma nel 1564, Vesalio stesso muore, lasciando il metodo osservazionale come sua eredità."
     }
   }
 }

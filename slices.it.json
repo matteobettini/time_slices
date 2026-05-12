@@ -5647,5 +5647,80 @@
       "width": 850,
       "height": 1045
     }
+  },
+  {
+    "year": "1564",
+    "id": "1564-year-of-passing-torches",
+    "title": "L'Anno del Passaggio di Testimone",
+    "teaser": "Michelangelo muore scolpendo la sua ultima Pietà. Tre giorni prima nasce Galileo. Due mesi dopo viene battezzato Shakespeare. Calvin e Vesalio li seguono nella tomba. In un solo anno, il Rinascimento consegna la sua opera incompiuta all'età dell'osservazione — l'arte alla scienza, la fede al dubbio.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "<strong>Michelangelo</strong> muore a Roma il 18 febbraio, a ottantotto anni, con i segni dello scalpello ancora freschi sulla <em>Pietà Rondanini</em> — una scultura incompiuta che stava scolpendo sei giorni prima della morte. Dove la sua prima <em>Pietà</em> in San Pietro mostrava un dolore levigato, quest'opera finale spoglia il marmo fino alle ossa: figure allungate che si fondono nell'astrazione, il corpo di Cristo che si dissolve nell'abbraccio della madre. È il punto d'arrivo del <strong>Manierismo</strong>, che punta oltre lo stile stesso. A Venezia, <strong>Tintoretto</strong> vince la commissione per il soffitto della Scuola di San Rocco con la sua tipica audacia — presentando un dipinto finito del <em>San Rocco in Gloria</em> quando i concorrenti avevano offerto solo bozzetti. Le sue composizioni vorticose e il drammatico <strong>chiaroscuro</strong> preparano il terreno per il Barocco. <strong>Veronese</strong> completa il suo <em>Martirio di San Giorgio</em>, tutto violenza teatrale e colori sontuosi. I maestri veneziani ora dominano, ma il loro allievo Caravaggio nascerà tra sette anni."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Il 26 aprile, a Stratford-upon-Avon, il registro parrocchiale della Chiesa della Santissima Trinità annota: <em>'Gulielmus filius Johannes Shakspere'</em> — William, figlio di John Shakespeare, battezzato. Due mesi prima, il 26 febbraio, a Canterbury, era stato battezzato <strong>Christopher Marlowe</strong> — il poeta che si lancerà attraverso <em>Tamerlano</em> e il <em>Dottor Faust</em> prima di morire in una rissa da taverna a ventinove anni. I due più grandi drammaturghi di lingua inglese arrivano a sessanta giorni di distanza. In Scozia appare il primo <strong>Salterio Scozzese</strong> — salmi in volgare per il culto riformato, preparando il terreno per la Bibbia di Re Giacomo. A Roma, <strong>Lucrezia Di Siena</strong> firma un contratto con una compagnia della Commedia dell'arte, diventando la prima attrice professionista ben documentata nella storia europea."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Il 27 maggio, <strong>Giovanni Calvino</strong> muore a Ginevra, a cinquantaquattro anni, dopo aver trasformato una città in un laboratorio del Cristianesimo riformato. La sua <em>Istituzione della Religione Cristiana</em> — che sistematizza la predestinazione, la sovranità divina e la depravazione dell'uomo — plasmerà il pensiero protestante per secoli. Entro pochi mesi, Papa Pio IV promulga l'<strong>Index Librorum Prohibitorum</strong>, l'Indice Tridentino dei Libri Proibiti, con dieci regole per la censura che governeranno la vita intellettuale cattolica fino al 1966. La Controriforma si consolida; la Riforma perde il suo architetto. Nel frattempo, in ottobre, <strong>Andrea Vesalio</strong> — che aveva rivoluzionato l'anatomia con il suo <em>De Humani Corporis Fabrica</em> del 1543 — muore sull'isola greca di Zante, di ritorno da un pellegrinaggio a Gerusalemme. Il fondatore dell'anatomia osservazionale segue il fondatore della teologia riformata nella tomba."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il 25 luglio, <strong>Ferdinando I</strong>, Imperatore del Sacro Romano Impero e fratello di Carlo V, muore a Vienna. Gli succede <strong>Massimiliano II</strong> — un sovrano di temperamento tollerante che proteggerà i protestanti in un impero sempre più polarizzato. In dicembre, <strong>Ivan il Terribile</strong> invia una lettera di abdicazione da Mosca, accusando i boiardi di tradimento, poi si ritira ad Alexandrovskaya Sloboda con il tesoro di stato. Lo stratagemma funziona: il popolo lo implora di tornare, e lui torna — esigendo potere assoluto e creando l'<strong>Opričnina</strong>, uno stato nello stato che risponde solo a lui. La <strong>Guerra dei Sette Anni del Nord</strong> infuria in Scandinavia; i conquistadores spagnoli avanzano nelle Americhe; il mondo è violento, in espansione, incerto. Il Concilio di Trento si è appena concluso (1563); i suoi decreti vengono implementati in tutta l'Europa cattolica."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "La coincidenza di morti e nascite nel 1564 è meno coincidenza che cerniera. <strong>Michelangelo</strong> muore avendo esaurito la fede dell'Alto Rinascimento nella forma perfetta; la sua ultima Pietà abbandona la finitura per l'intensità spirituale. <strong>Calvino</strong> muore avendo sistematizzato la teologia della Riforma; i suoi successori combatteranno sulle interpretazioni invece di innovare. <strong>Vesalio</strong> muore avendo dimostrato che le autorità antiche (Galeno) potevano sbagliare — che l'osservazione vince sulla tradizione. In questo spazio, arrivano i neonati: <strong>Galileo</strong>, che applicherà il metodo anatomico di Vesalio ai cieli; <strong>Shakespeare</strong> e <strong>Marlowe</strong>, che trasformeranno le domande di Calvino sul destino e il libero arbitrio in teatro. L'<strong>Indice</strong> cerca di congelare la conoscenza; la stampa rifiuta. Tre giorni separano la nascita di Galileo dalla morte di Michelangelo — come se la creazione si fermasse per passare i suoi strumenti.",
+        "funFact": "Michelangelo stava lavorando alla Pietà Rondanini sei giorni prima della morte. La scultura incompiuta — il volto di Cristo appena abbozzato, i corpi che si fondono — rappresenta la sua dichiarazione artistica finale: la perfezione abbandonata per la forza spirituale grezza."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/1564",
+        "title": "1564 - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Michelangelo_Buonarroti",
+        "title": "Michelangelo Buonarroti - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Giovanni_Calvino",
+        "title": "Giovanni Calvino - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Indice_dei_libri_proibiti",
+        "title": "Indice dei libri proibiti - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Andrea_Vesalio",
+        "title": "Andrea Vesalio - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1564-year-of-passing-torches.jpg",
+      "caption": "Dettaglio dalla Creazione di Adamo di Michelangelo sulla volta della Cappella Sistina, un capolavoro del Rinascimento che lasciò dietro di sé nel 1564",
+      "width": 1200,
+      "height": 544,
+      "attribution": "Michelangelo, Pubblico dominio, via Wikimedia Commons"
+    },
+    "threads": [
+      "counter-reformation",
+      "reformation",
+      "scientific-revolution",
+      "anatomical-revolution",
+      "translatio-studii"
+    ],
+    "location": {
+      "lat": 41.9029,
+      "lon": 12.4534,
+      "place": "Roma"
+    },
+    "addedDate": "2026-05-12T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1564-year-of-passing-torches.mp3",
+      "duration": 190
+    }
   }
 ]

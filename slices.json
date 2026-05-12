@@ -5663,5 +5663,80 @@
       "width": 850,
       "height": 1045
     }
+  },
+  {
+    "year": "1564",
+    "id": "1564-year-of-passing-torches",
+    "title": "The Year of Passing Torches",
+    "teaser": "Michelangelo dies chiseling his final Pietà. Three days earlier, Galileo is born. Two months later, Shakespeare is baptized. Calvin and Vesalius follow them to the grave. In a single year, the Renaissance hands its unfinished work to the age of observation — art to science, faith to doubt.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>Michelangelo</strong> dies in Rome on February eighteenth, aged eighty-eight, his chisel marks still fresh on the <em>Pietà Rondanini</em> — an unfinished sculpture he was carving six days before death. Where his early <em>Pietà</em> in St. Peter's showed polished grief, this final work strips marble to its bones: elongated figures merging into abstraction, Christ's body dissolving into his mother's embrace. It is <strong>Mannerism's</strong> endpoint, pointing past style altogether. In Venice, <strong>Tintoretto</strong> wins the commission for the Scuola di San Rocco's ceiling with characteristic audacity — presenting a finished painting of <em>Saint Roch in Glory</em> when competitors offered only sketches. His swirling compositions and dramatic <strong>chiaroscuro</strong> are preparing the ground for the Baroque. <strong>Veronese</strong> completes his <em>Martyrdom of Saint George</em>, all theatrical violence and sumptuous color. The Venetian masters now dominate, but their student Caravaggio is seven years from birth."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "On April twenty-sixth, in Stratford-upon-Avon, the parish register of Holy Trinity Church records: <em>'Gulielmus filius Johannes Shakspere'</em> — William, son of John Shakespeare, baptized. Two months earlier, on February twenty-sixth, in Canterbury, <strong>Christopher Marlowe</strong> was baptized — the poet who will blaze through <em>Tamburlaine</em> and <em>Doctor Faustus</em> before dying in a tavern brawl at twenty-nine. The two greatest dramatists of the English language arrive within sixty days. In Scotland, the first <strong>Scottish Psalter</strong> appears — vernacular psalms for Reformed worship, preparing the ground for the King James Bible. In Rome, <strong>Lucrezia Di Siena</strong> signs a contract with a Commedia dell'arte troupe, becoming the first well-documented professional actress in European history."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "On May twenty-seventh, <strong>John Calvin</strong> dies in Geneva, aged fifty-four, having transformed a city into a laboratory of Reformed Christianity. His <em>Institutes of the Christian Religion</em> — systematizing predestination, divine sovereignty, and the depravity of man — will shape Protestant thought for centuries. Within months, Pope Pius IV promulgates the <strong>Index Librorum Prohibitorum</strong>, the Tridentine Index of Forbidden Books, with ten rules for censorship that will govern Catholic intellectual life until 1966. The Counter-Reformation consolidates; the Reformation loses its architect. Meanwhile, in October, <strong>Andreas Vesalius</strong> — who revolutionized anatomy with his 1543 <em>De Humani Corporis Fabrica</em> — dies on the Greek island of Zakynthos, returning from a Jerusalem pilgrimage. The founder of observational anatomy follows the founder of Reformed theology to the grave."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On July twenty-fifth, <strong>Ferdinand I</strong>, Holy Roman Emperor and brother of Charles V, dies in Vienna. <strong>Maximilian II</strong> succeeds him — a ruler of tolerant temperament who will shelter Protestants in an increasingly polarized empire. In December, <strong>Ivan the Terrible</strong> sends a letter of abdication from Moscow, accusing the boyars of treason, then withdraws to Alexandrovskaya Sloboda with the state treasury. The stratagem works: the people beg him to return, and he does — demanding absolute power and creating the <strong>Oprichnina</strong>, a state within the state answerable only to himself. The <strong>Northern Seven Years' War</strong> rages in Scandinavia; Spanish conquistadors push through the Americas; the world is violent, expanding, uncertain. The Council of Trent has just closed (1563); its decrees are being implemented across Catholic Europe."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The coincidence of deaths and births in 1564 is less coincidence than hinge. <strong>Michelangelo</strong> dies having exhausted the High Renaissance's faith in perfect form; his final Pietà abandons finish for spiritual intensity. <strong>Calvin</strong> dies having systematized Reformation theology; his successors will fight over interpretations rather than innovate. <strong>Vesalius</strong> dies having demonstrated that ancient authorities (Galen) could be wrong — that observation trumps tradition. Into this space, the newborns arrive: <strong>Galileo</strong>, who will turn Vesalius's anatomical method on the heavens; <strong>Shakespeare</strong> and <strong>Marlowe</strong>, who will turn Calvin's questions about fate and free will into theater. The <strong>Index</strong> tries to freeze knowledge; the printing press refuses. Three days separate Galileo's birth from Michelangelo's death — as if creation paused to hand off its tools.",
+        "funFact": "Michelangelo was working on the Pietà Rondanini six days before his death. The unfinished sculpture — Christ's face merely roughed in, bodies merging — represents his final artistic statement: perfection abandoned for raw spiritual force."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/1564",
+        "title": "1564 - Wikipedia"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Michelangelo",
+        "title": "Michelangelo - Britannica"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/John_Calvin",
+        "title": "John Calvin - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Index_Librorum_Prohibitorum",
+        "title": "Index Librorum Prohibitorum - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Andreas_Vesalius",
+        "title": "Andreas Vesalius - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1564-year-of-passing-torches.jpg",
+      "caption": "Detail from Michelangelo's Creation of Adam on the Sistine Chapel ceiling, a masterwork of the Renaissance that he left behind in 1564",
+      "width": 1200,
+      "height": 544,
+      "attribution": "Michelangelo, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "counter-reformation",
+      "reformation",
+      "scientific-revolution",
+      "anatomical-revolution",
+      "translatio-studii"
+    ],
+    "location": {
+      "lat": 41.9029,
+      "lon": 12.4534,
+      "place": "Rome"
+    },
+    "addedDate": "2026-05-12T05:00:00Z",
+    "podcast": {
+      "url": "audio/1564-year-of-passing-torches.mp3",
+      "duration": 171
+    }
   }
 ]
