@@ -1,7 +1,8 @@
 {
   "en": {
     "stoicism": {
-      "125→180": "Epictetus taught at Nicopolis; his student Arrian compiled the <em>Discourses</em>. Marcus Aurelius read them in Greek and wrote his own meditations in the same tradition — the emperor-philosopher completing what the slave-philosopher began."
+      "125→180": "Epictetus taught at Nicopolis; his student Arrian compiled the <em>Discourses</em>. Marcus Aurelius read them in Greek and wrote his own meditations in the same tradition — the emperor-philosopher completing what the slave-philosopher began.",
+      "-49→125": "From Cicero's crisis-tested practical Stoicism to Epictetus's school in Nicopolis: the philosophy of inner freedom passed through centuries of Roman transmission, refined by the tension between duty to the dying Republic and acceptance of what lies beyond control."
     },
     "theodicy-crisis": {
       "180→410": "The Antonine Plague killed millions under Marcus Aurelius; two centuries later, Augustine asked why God permitted Rome's sack. Both moments forced the question: if the cosmos is rational, why does suffering strike the virtuous?",
@@ -385,7 +386,8 @@
   },
   "it": {
     "stoicism": {
-      "125→180": "Epitteto insegnava a Nicopoli; il suo allievo Arriano compilò i <em>Discorsi</em>. Marco Aurelio li lesse in greco e scrisse le proprie meditazioni nella stessa tradizione — l'imperatore-filosofo completando ciò che il filosofo-schiavo aveva iniziato."
+      "125→180": "Epitteto insegnava a Nicopoli; il suo allievo Arriano compilò i <em>Discorsi</em>. Marco Aurelio li lesse in greco e scrisse le proprie meditazioni nella stessa tradizione — l'imperatore-filosofo completando ciò che il filosofo-schiavo aveva iniziato.",
+      "-49→125": "Dallo stoicismo pratico di Cicerone, forgiato nella crisi, alla scuola di Epitteto a Nicopoli: la filosofia della libertà interiore attraversò secoli di trasmissione romana, raffinata dalla tensione tra il dovere verso la Repubblica morente e l'accettazione di ciò che sfugge al controllo."
     },
     "theodicy-crisis": {
       "180→410": "La peste antonina uccise milioni sotto Marco Aurelio; due secoli dopo, Agostino chiese perché Dio avesse permesso il sacco di Roma. Entrambi i momenti imposero la domanda: se il cosmo è razionale, perché la sofferenza colpisce i virtuosi?",

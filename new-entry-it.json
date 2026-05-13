@@ -1,0 +1,41 @@
+{
+  "year": "-49",
+  "id": "49bce-the-die-is-cast",
+  "title": "Il Dado È Tratto",
+  "teaser": "Un generale attraversa un fiume con una sola legione. La Repubblica non muore in una grande battaglia, ma in una questione legale. Cicerone scrive lettere invece che orazioni. Gli scultori scolpiscono rughe come argomento morale. Tutto ciò che Roma ha costruito in cinque secoli diventa un gioco d'azzardo.",
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "Il <strong>ritratto veristico</strong> raggiunge il suo apice filosofico negli ultimi decenni della Repubblica Romana. Proprio mentre lo Stato crolla, gli scultori scolpiscono volti con un'onestà senza precedenti: rughe profonde, capelli radi, nei, guance cadenti. Non è semplice realismo — è <em>argomentazione morale</em>. Dove il ritratto greco idealizzava la bellezza del corpo, il <strong>verismo</strong> romano celebra ciò che l'età e la lotta hanno scritto sul volto. I busti esposti nei <em>lararia</em> patrizi (santuari domestici) e portati in processione come <em>imagines</em> di cera ai funerali affermano: la virtù è visibile nella carne segnata. L'uomo che ha servito lo Stato, combattuto le sue guerre, ricoperto le sue magistrature — il suo volto lo dimostra. È il <strong>mos maiorum</strong> (la via degli antenati) scolpito nel marmo. Ma negli stessi anni Roma è inondata di scultura greca — saccheggiata dalle città conquistate, copiata da artigiani greci ridotti in schiavitù. La tensione tra bellezza greca e severità romana rispecchia la crisi politica: i vecchi valori possono sopravvivere alla ricchezza e al cosmopolitismo dell'impero?"
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "<strong>Cicerone</strong>, il più grande oratore della Repubblica, tace nei tribunali e si volge alla corrispondenza. Le lettere che scrive nel 49 a.C. — conservate nelle raccolte <em>Ad Atticum</em> e <em>Ad Familiares</em> — registrano una mente che osserva il proprio mondo crollare in tempo reale. Il 4 gennaio torna a Roma; nel giro di pochi giorni, l'avanzata di Cesare lo costringe a fuggire. Le lettere rivelano la sua paralisi: <em>'Se seguo Pompeo, mi condanno a combattere contro le mie proprietà; se resto, devo adulare il tiranno.'</em> La sua corrispondenza con <strong>Attico</strong>, l'amico più caro, diventa un capolavoro di psicologia politica — non discorsi per il Foro ma angoscia privata, strategia, pettegolezzi e filosofia intrecciati. Queste lettere saranno riscoperte da <strong>Petrarca</strong> nel 1345, accendendo il recupero rinascimentale dell'umanesimo classico. Ciò che sopravvive alla morte della Repubblica non è la sua costituzione, ma il tentativo di un uomo di capire perché tutto era fallito."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "La crisi costringe gli intellettuali romani ad affrontare la domanda più profonda della loro tradizione: che cosa deve fare un uomo giusto quando lo Stato stesso diventa criminale? Cicerone, formato nello <strong>scetticismo accademico</strong> e nello <strong>stoicismo</strong>, vede i suoi impegni filosofici messi alla prova dagli eventi. Gli Stoici insegnano che la virtù è sufficiente per la felicità, che il saggio rimane sereno indipendentemente dalle circostanze esterne. Ma come risponde il saggio quando un generale dissolve la Repubblica? Cicerone trascorrerà i cinque anni successivi lottando con questo problema — scrivendo trattati sull'<strong>amicizia</strong>, sulla <strong>vecchiaia</strong>, sulla <strong>divinazione</strong>, e infine il <em>De Officiis</em> (I Doveri), dove sostiene che l'obbligo morale persiste anche quando l'ordine politico crolla. La tradizione filosofica romana, che era stata in gran parte derivativa delle scuole greche, trova la sua voce distintiva in questa crisi: non speculazione astratta ma <em>saggezza pratica</em> per cittadini di una repubblica morente."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "Nella notte del <strong>10-11 gennaio 49 a.C.</strong>, <strong>Giulio Cesare</strong> guida la Tredicesima Legione attraverso il <strong>Rubicone</strong> — un piccolo fiume che segna il confine tra la sua provincia della Gallia Cisalpina e l'Italia vera e propria. La legge romana proibisce a qualsiasi generale di portare truppe armate oltre questa linea; farlo è alto tradimento, punibile con la morte. Cesare avrebbe citato il commediografo greco Menandro: <em>'anerriphtho kybos'</em> — 'il dado è tratto.' La frase riconosce che l'esito è ormai fuori dal suo controllo. <strong>Pompeo</strong> e la maggior parte dei senatori fuggono da Roma, poi dall'Italia, verso la Grecia — incapaci di raccogliere forze abbastanza in fretta per resistere alle legioni veterane di Cesare. A dicembre, Cesare viene nominato <strong>dittatore</strong>, la prima delle sue quattro dittature. Non restaurerà la Repubblica; verrà assassinato nel tentativo di trascenderla. I meccanismi costituzionali che avevano governato Roma per quasi cinque secoli — l'equilibrio di consoli, Senato e tribuni — si dissolvono in poche settimane. Il secolo successivo sarà guerra civile, proscrizioni, e infine l'autocrazia di Augusto."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "L'arte e la politica dell'anno condividono un unico tema: <strong>la visibilità del carattere</strong>. Il ritratto veristico insiste che il valore morale può essere letto nelle linee di un volto — che il <em>mos maiorum</em> lascia tracce fisiche. L'attraversamento di Cesare si basa sull'affermazione opposta: che la volontà di un solo uomo può prevalere su cinque secoli di consuetudine. Le lettere di Cicerone esistono proprio perché le vecchie forme — l'orazione pubblica, il dibattito senatoriale — sono diventate impossibili. Quando il Foro si chiude, la filosofia si apre; quando il discorso pubblico fallisce, la corrispondenza privata diventa letteratura. Le <em>imagines</em> nei <em>lararia</em> aristocratici guardano dall'alto i discendenti che hanno appena visto crollare la costituzione dei loro antenati. La Repubblica non muore per conquista esterna ma per la contraddizione al suo centro: un impero troppo vasto per le istituzioni di una città-stato, ricchezza troppo concentrata per la virtù repubblicana, generali troppo potenti per il controllo civile. Il dado era stato tratto molto prima che Cesare raggiungesse il Rubicone.",
+      "funFact": "Il Rubicone era così insignificante che la sua esatta posizione fu dimenticata per secoli. Gli autori romani lo descrivono come un piccolo torrente stagionale; nel Rinascimento, gli studiosi litigavano su quale fosso di scolo dell'Emilia-Romagna meritasse quel nome. Nel 1933, Mussolini dichiarò il fiume Fiumicino essere l'antico Rubicone — per ragioni propagandistiche, non archeologiche."
+    }
+  },
+  "threads": [
+    "republican-collapse",
+    "stoicism",
+    "veristic-portraiture",
+    "political-philosophy"
+  ],
+  "location": {
+    "lat": 41.9028,
+    "lon": 12.4964,
+    "place": "Roma"
+  },
+  "addedDate": "2026-05-13T05:00:00Z"
+}

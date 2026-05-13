@@ -131,7 +131,10 @@
     "napoleonic-wars": "Napoleonic Wars",
     "surrealism": "Surrealism",
     "marxism": "Marxism",
-    "gilded-age": "Gilded Age"
+    "gilded-age": "Gilded Age",
+    "republican-collapse": "The Death of the Republic",
+    "veristic-portraiture": "Veristic Portraiture",
+    "political-philosophy": "Political Philosophy"
   },
   "it": {
     "translation-movement": "Traduzione come potere",
@@ -265,6 +268,9 @@
     "napoleonic-wars": "Guerre napoleoniche",
     "surrealism": "Surrealismo",
     "marxism": "Marxismo",
-    "gilded-age": "Età Dorata"
+    "gilded-age": "Età Dorata",
+    "republican-collapse": "La Morte della Repubblica",
+    "veristic-portraiture": "Ritratto Veristico",
+    "political-philosophy": "Filosofia Politica"
   }
 }
