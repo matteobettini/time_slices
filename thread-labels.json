@@ -134,7 +134,12 @@
     "gilded-age": "Gilded Age",
     "republican-collapse": "The Death of the Republic",
     "veristic-portraiture": "Veristic Portraiture",
-    "political-philosophy": "Political Philosophy"
+    "political-philosophy": "Political Philosophy",
+    "civil-rights-movement": "Civil Rights Movement",
+    "beat-generation": "Beat Generation",
+    "pop-art-origins": "Pop Art Origins",
+    "absurdism": "Absurdism",
+    "de-stalinization": "De-Stalinization"
   },
   "it": {
     "translation-movement": "Traduzione come potere",
@@ -271,6 +276,11 @@
     "gilded-age": "Età Dorata",
     "republican-collapse": "La Morte della Repubblica",
     "veristic-portraiture": "Ritratto Veristico",
-    "political-philosophy": "Filosofia Politica"
+    "political-philosophy": "Filosofia Politica",
+    "civil-rights-movement": "Movimento per i Diritti Civili",
+    "beat-generation": "Beat Generation",
+    "pop-art-origins": "Origini della Pop Art",
+    "absurdism": "Assurdismo",
+    "de-stalinization": "Destalinizzazione"
   }
 }
