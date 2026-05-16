@@ -105,7 +105,8 @@
       "1532→1558": "From Rabelais's carnivalesque giants to du Bellay's melancholic sonnets: French vernacular matures into European sophistication.",
       "1558→1580": "Du Bellay's disillusionment with Rome echoes in Montaigne's skeptical essays: vernacular prose becomes the medium of personal philosophy.",
       "1215→1241": "German courtly poetry proves the vernacular can rival Latin; at Frederick's court, Italian poets prove it can invent new forms entirely.",
-      "1241→1274": "The sonnet travels from Sicily to Tuscany; within a generation, Dante will set a nine-year-old's first glimpse of Beatrice to verse."
+      "1241→1274": "The sonnet travels from Sicily to Tuscany; within a generation, Dante will set a nine-year-old's first glimpse of Beatrice to verse.",
+      "1580→1824": "Montaigne's personal essays find their darkest heir: Leopardi's Operette Morali turn the vernacular confession into cosmic despair, stripping philosophy of Latin dignity."
     },
     "renaissance-humanism": {
       "1401→1453": "Florentine humanists collected manuscripts before 1453; the Greek exodus accelerated what Salutati and Bruni began. Humanism was ready for what Constantinople's scholars brought.",
@@ -265,7 +266,9 @@
       "1932→1968": "From dark visions to revolution. The thirty-six years between 1932 and 1968 saw fascism rise and fall, atomic weapons deployed, and new forms of domination emerge through advertising and consumption. By 1968, the critique of modernity exploded into the streets — students in Paris, Prague, Mexico City, and Chicago demanded a world that had not yet been born.",
       "1798→1851": "From Wordsworth's pastoral elegy to Ruskin's Gothic crusade: the counter-Enlightenment hardens into architectural doctrine against the industrial machine.",
       "1851→1863": "Ruskin's medieval idealism confronts Baudelaire's flâneur: both reject industrial uniformity, but one looks backward to cathedrals, the other forward to the alienated modern self.",
-      "1968→1972": "The barricades fall; the critique deepens. Deleuze and Guattari ask: what if desire itself is colonized?"
+      "1968→1972": "The barricades fall; the critique deepens. Deleuze and Guattari ask: what if desire itself is colonized?",
+      "1798→1824": "Goya's Caprichos nightmares migrate north: Leopardi's Operette Morali strip reason's last consolations, while Delacroix paints massacre without redemption.",
+      "1824→1851": "Leopardi's cosmic pessimism spreads through European letters; the Crystal Palace will attempt to answer despair with industrial triumph — and fail to convince."
     },
     "insular-art": {
       "664→732": "From the Book of Durrow to the Lindisfarne Gospels, Insular illumination reaches its full flowering. The Synod of Whitby binds Britain to Rome, but the monks at Lindisfarne create something wholly original — Celtic interlace, Germanic energy, Mediterranean gold fused into devotional infinity."
@@ -291,7 +294,8 @@
       "1670→1863": "Spinoza's radical monism undermined scriptural authority; two centuries later, Renan brought biblical criticism to the masses with his human Jesus."
     },
     "sublime-aesthetic": {
-      "1816→1819": "The volcanic darkness of 1816 proved Burke's sublime was no mere aesthetic theory — nature could terrify and overwhelm. Schopenhauer would systematise this into metaphysical pessimism."
+      "1816→1819": "The volcanic darkness of 1816 proved Burke's sublime was no mere aesthetic theory — nature could terrify and overwhelm. Schopenhauer would systematise this into metaphysical pessimism.",
+      "1819→1824": "Friedrich's fog-shrouded wanderer meets Delacroix's massacre without heroes: the sublime darkens from metaphysical vertigo to witnessed atrocity."
     },
     "existentialism": {
       "1922→1927": "Heidegger's lectures at Freiburg crystallize into Being and Time — phenomenology confronts human finitude directly.",
@@ -368,7 +372,9 @@
       "1913→1943": "Husserl's phenomenological method travels from Göttingen to occupied Paris: Sartre reads Heidegger as a prisoner of war and builds Being and Nothingness on Husserlian foundations."
     },
     "romantic-nationalism": {
-      "1808→1848": "Fichte's philosophical nationalism spreads: forty years later, the Springtime of Peoples erupts across Europe."
+      "1808→1848": "Fichte's philosophical nationalism spreads: forty years later, the Springtime of Peoples erupts across Europe.",
+      "1808→1824": "The Dos de Mayo spirit crosses the Mediterranean: Byron dies fighting for Greek freedom, transforming philhellenism from salon sentiment into armed crusade.",
+      "1824→1848": "Byron's Greek martyrdom becomes the template: 1848's revolutionaries will invoke the poet-warrior across Europe, from Paris barricades to Hungarian plains."
     },
     "great-depression": {
       "1929→1932": "Black Tuesday triggers the cascade: bank failures, unemployment, deflation. By 1932, the Dow has lost 89% and Huxley's dystopia feels prophetic."
@@ -493,7 +499,8 @@
       "1532→1558": "Dai giganti carnevaleschi di Rabelais ai sonetti malinconici di du Bellay: il volgare francese matura in raffinatezza europea.",
       "1558→1580": "La disillusione di du Bellay verso Roma riecheggia nei saggi scettici di Montaigne: la prosa volgare diventa il mezzo della filosofia personale.",
       "1215→1241": "La poesia cortese tedesca dimostra che il volgare può rivaleggiare col latino; alla corte di Federico, i poeti italiani dimostrano che può inventare forme del tutto nuove.",
-      "1241→1274": "Il sonetto viaggia dalla Sicilia alla Toscana; nel giro di una generazione, Dante metterà in versi il primo sguardo di un bambino di nove anni su Beatrice."
+      "1241→1274": "Il sonetto viaggia dalla Sicilia alla Toscana; nel giro di una generazione, Dante metterà in versi il primo sguardo di un bambino di nove anni su Beatrice.",
+      "1580→1824": "I saggi personali di Montaigne trovano il loro erede più oscuro: le Operette Morali di Leopardi trasformano la confessione in volgare in disperazione cosmica, spogliando la filosofia della dignità latina."
     },
     "renaissance-humanism": {
       "1401→1453": "Gli umanisti fiorentini raccoglievano manoscritti prima del 1453; l'esodo greco accelerò ciò che Salutati e Bruni avevano iniziato.",
@@ -653,7 +660,9 @@
       "1932→1968": "Dalle visioni oscure alla rivoluzione. I trentasei anni tra il 1932 e il 1968 videro il fascismo nascere e cadere, le armi atomiche usate, e nuove forme di dominio emergere attraverso la pubblicità e il consumo. Nel 1968, la critica della modernità esplose nelle strade — studenti a Parigi, Praga, Città del Messico e Chicago esigevano un mondo che non era ancora nato.",
       "1798→1851": "Dall'elegia pastorale di Wordsworth alla crociata gotica di Ruskin: la contro-Illuminazione si cristallizza in dottrina architettonica contro la macchina industriale.",
       "1851→1863": "L'idealismo medievale di Ruskin incontra il flâneur di Baudelaire: entrambi rifiutano l'uniformità industriale, ma uno guarda indietro alle cattedrali, l'altro avanti all'io moderno alienato.",
-      "1968→1972": "Le barricate cadono; la critica si approfondisce. Deleuze e Guattari chiedono: e se il desiderio stesso fosse colonizzato?"
+      "1968→1972": "Le barricate cadono; la critica si approfondisce. Deleuze e Guattari chiedono: e se il desiderio stesso fosse colonizzato?",
+      "1798→1824": "Gli incubi dei Caprichos di Goya migrano a nord: le Operette Morali di Leopardi spogliano le ultime consolazioni della ragione, mentre Delacroix dipinge il massacro senza redenzione.",
+      "1824→1851": "Il pessimismo cosmico di Leopardi si diffonde nelle lettere europee; il Crystal Palace tenterà di rispondere alla disperazione con il trionfo industriale — senza convincere."
     },
     "insular-art": {
       "664→732": "Dal Libro di Durrow ai Vangeli di Lindisfarne, l'illuminazione insulare raggiunge la sua piena fioritura. Il Sinodo di Whitby lega la Britannia a Roma, ma i monaci di Lindisfarne creano qualcosa di totalmente originale — intreccio celtico, energia germanica, oro mediterraneo fusi in un'infinità devozionale."
@@ -679,7 +688,8 @@
       "1670→1863": "Il monismo radicale di Spinoza minò l'autorità scritturale; due secoli dopo, Renan portò la critica biblica alle masse con il suo Gesù umano."
     },
     "sublime-aesthetic": {
-      "1816→1819": "L'oscurità vulcanica del 1816 dimostrò che il sublime di Burke non era mera teoria estetica — la natura poteva terrorizzare e sopraffare. Schopenhauer avrebbe sistematizzato questo in pessimismo metafisico."
+      "1816→1819": "L'oscurità vulcanica del 1816 dimostrò che il sublime di Burke non era mera teoria estetica — la natura poteva terrorizzare e sopraffare. Schopenhauer avrebbe sistematizzato questo in pessimismo metafisico.",
+      "1819→1824": "Il viandante avvolto nella nebbia di Friedrich incontra il massacro senza eroi di Delacroix: il sublime si oscura dalla vertigine metafisica all'atrocità testimoniata."
     },
     "existentialism": {
       "1922→1927": "Le lezioni di Heidegger a Friburgo si cristallizzano in Essere e tempo — la fenomenologia affronta direttamente la finitezza umana.",
@@ -756,7 +766,9 @@
       "1913→1943": "Il metodo fenomenologico di Husserl viaggia da Gottinga alla Parigi occupata: Sartre legge Heidegger da prigioniero di guerra e costruisce L'essere e il nulla su fondamenta husserliane."
     },
     "romantic-nationalism": {
-      "1808→1848": "Il nazionalismo filosofico di Fichte si diffonde: quarant'anni dopo, la Primavera dei popoli esplode in tutta Europa."
+      "1808→1848": "Il nazionalismo filosofico di Fichte si diffonde: quarant'anni dopo, la Primavera dei popoli esplode in tutta Europa.",
+      "1808→1824": "Lo spirito del Dos de Mayo attraversa il Mediterraneo: Byron muore combattendo per la libertà greca, trasformando il filellenismo da sentimento da salotto in crociata armata.",
+      "1824→1848": "Il martirio greco di Byron diventa il modello: i rivoluzionari del 1848 invocheranno il poeta-guerriero in tutta Europa, dalle barricate parigine alle pianure ungheresi."
     },
     "great-depression": {
       "1929→1932": "Il Martedì Nero innesca la cascata: fallimenti bancari, disoccupazione, deflazione. Nel 1932, il Dow ha perso l'89% e la distopia di Huxley sembra profetica."
