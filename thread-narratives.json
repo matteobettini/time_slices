@@ -271,7 +271,9 @@
       "1798→1824": "Goya's Caprichos nightmares migrate north: Leopardi's Operette Morali strip reason's last consolations, while Delacroix paints massacre without redemption.",
       "1824→1851": "Leopardi's cosmic pessimism spreads through European letters; the Crystal Palace will attempt to answer despair with industrial triumph — and fail to convince.",
       "1851→1854": "Ruskin's critique of industrial uniformity finds its literary echo; Dickens's Hard Times and Thoreau's Walden both reject the machine age's reduction of humans to functions.",
-      "1854→1863": "From philosophical critique to artistic scandal; what Kierkegaard condemns in Christendom and Dickens in industry, Manet will expose in bourgeois respectability."
+      "1854→1863": "From philosophical critique to artistic scandal; what Kierkegaard condemns in Christendom and Dickens in industry, Manet will expose in bourgeois respectability.",
+      "1824→1842": "Schopenhauer's pessimism finds confirmation in Gogol's satire—both anatomize a world of empty striving, serfdom both literal and metaphorical.",
+      "1842→1851": "From Gogol's dead souls to Melville's white whale—the critique of modern emptiness crosses the Atlantic, finding new monsters in American waters."
     },
     "insular-art": {
       "664→732": "From the Book of Durrow to the Lindisfarne Gospels, Insular illumination reaches its full flowering. The Synod of Whitby binds Britain to Rome, but the monks at Lindisfarne create something wholly original — Celtic interlace, Germanic energy, Mediterranean gold fused into devotional infinity."
@@ -404,6 +406,9 @@
     },
     "post-structuralism": {
       "1968→1972": "Derrida's différance becomes Anti-Oedipus—from deconstruction of text to deconstruction of desire."
+    },
+    "positivism": {
+      "1842→1851": "Comte's Course complete, the Religion of Humanity follows—positivism evolves from philosophy to quasi-faith, science as the new church."
     }
   },
   "it": {
@@ -671,7 +676,9 @@
       "1798→1824": "Gli incubi dei Caprichos di Goya migrano a nord: le Operette Morali di Leopardi spogliano le ultime consolazioni della ragione, mentre Delacroix dipinge il massacro senza redenzione.",
       "1824→1851": "Il pessimismo cosmico di Leopardi si diffonde nelle lettere europee; il Crystal Palace tenterà di rispondere alla disperazione con il trionfo industriale — senza convincere.",
       "1851→1854": "La critica di Ruskin all'uniformità industriale trova eco letterario; Tempi difficili di Dickens e Walden di Thoreau rifiutano entrambi la riduzione dell'umano a funzione operata dall'età delle macchine.",
-      "1854→1863": "Dalla critica filosofica allo scandalo artistico; ciò che Kierkegaard condanna nella cristianità e Dickens nell'industria, Manet lo esporrà nella rispettabilità borghese."
+      "1854→1863": "Dalla critica filosofica allo scandalo artistico; ciò che Kierkegaard condanna nella cristianità e Dickens nell'industria, Manet lo esporrà nella rispettabilità borghese.",
+      "1824→1842": "Il pessimismo di Schopenhauer trova conferma nella satira di Gogol—entrambi anatomizzano un mondo di sforzi vuoti, servitù sia letterale che metaforica.",
+      "1842→1851": "Dalle anime morte di Gogol alla balena bianca di Melville—la critica del vuoto moderno attraversa l'Atlantico, trovando nuovi mostri nelle acque americane."
     },
     "insular-art": {
       "664→732": "Dal Libro di Durrow ai Vangeli di Lindisfarne, l'illuminazione insulare raggiunge la sua piena fioritura. Il Sinodo di Whitby lega la Britannia a Roma, ma i monaci di Lindisfarne creano qualcosa di totalmente originale — intreccio celtico, energia germanica, oro mediterraneo fusi in un'infinità devozionale."
@@ -804,6 +811,9 @@
     },
     "post-structuralism": {
       "1968→1972": "La différance di Derrida diventa l'Anti-Edipo—dalla decostruzione del testo alla decostruzione del desiderio."
+    },
+    "positivism": {
+      "1842→1851": "Completato il Corso di Comte, segue la Religione dell'Umanità—il positivismo evolve da filosofia a quasi-fede, la scienza come nuova chiesa."
     }
   }
 }

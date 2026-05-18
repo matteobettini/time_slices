@@ -139,7 +139,10 @@
     "beat-generation": "Beat Generation",
     "pop-art-origins": "Pop Art Origins",
     "absurdism": "Absurdism",
-    "de-stalinization": "De-Stalinization"
+    "de-stalinization": "De-Stalinization",
+    "russian-literature": "Russian Literature",
+    "industrial-capitalism": "Industrial Capitalism",
+    "unequal-treaties": "Unequal Treaties"
   },
   "it": {
     "translation-movement": "Traduzione come potere",
@@ -281,6 +284,9 @@
     "beat-generation": "Beat Generation",
     "pop-art-origins": "Origini della Pop Art",
     "absurdism": "Assurdismo",
-    "de-stalinization": "Destalinizzazione"
+    "de-stalinization": "Destalinizzazione",
+    "russian-literature": "Letteratura russa",
+    "industrial-capitalism": "Capitalismo industriale",
+    "unequal-treaties": "Trattati ineguali"
   }
 }
