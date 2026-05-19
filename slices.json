@@ -6123,5 +6123,78 @@
       "url": "audio/1842-dead-souls.mp3",
       "duration": 187
     }
+  },
+  {
+    "year": "1762",
+    "id": "1762-vienna-year-of-upheaval",
+    "title": "Vienna — The Year of Upheaval",
+    "teaser": "Rousseau publishes two books that will fuel revolutions. Gluck invents modern opera in Vienna. Catherine seizes Russia in a palace coup. Britain captures Havana and Manila from Spain. A Protestant merchant is tortured to death in Toulouse. The old orders crack; new forms of sovereignty — political, artistic, individual — emerge from the rubble.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "On <strong>October 5th</strong>, Christoph Willibald <strong>Gluck's</strong> <em>Orfeo ed Euridice</em> premieres at Vienna's Burgtheater before Empress Maria Theresa — and opera is transformed. The librettist <strong>Ranieri de' Calzabigi</strong> and Gluck had conspired to strip away the extravagances of <em>opera seria</em>: the interminable <em>da capo</em> arias showcasing castrato virtuosity, the convoluted subplots, the spectacle divorced from drama. In their place: <strong>'noble simplicity.'</strong> Orpheus's grief is direct; the Furies are terrifying; the plot moves. The opera's most famous aria, <em>'Che farò senza Euridice?'</em>, achieves its power through restraint — melody as pure emotion. This is <strong>operatic Neoclassicism</strong>: returning to Greek ideals by rejecting Baroque elaboration. In England, <strong>James Stuart</strong> and <strong>Nicholas Revett</strong> publish the first volume of <em>The Antiquities of Athens</em> — the first accurate survey of ancient Greek architecture, shifting the classical revival from Roman models to Greek originals and launching the <strong>Greek Revival</strong> that will reshape European and American building for a century."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "In April, <strong>Jean-Jacques Rousseau</strong> publishes <em>Du contrat social</em> — 'Man is born free, and everywhere he is in chains.' The <strong>Social Contract</strong> argues that legitimate political authority can only derive from a social contract among free individuals, creating a 'general will' that represents their collective sovereignty. It is a direct assault on divine-right monarchy. Within a month, the book is banned in France and publicly burned in Rousseau's native Geneva. In May comes <em>Émile, ou De l'éducation</em> — a treatise on child development disguised as a novel, arguing that children should develop according to nature, free from the distorting corruptions of civilization. The Parlement of Paris condemns it; arrest warrants are issued; Rousseau flees to Switzerland. Two books, both banned, both burned — and both will be read by the men who make the French and American revolutions. Robespierre will keep the <em>Social Contract</em> by his bed."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "Rousseau's twin publications mark a philosophical rupture. The <em>Social Contract</em> inverts the Hobbesian premise: where Hobbes argued that humans surrender freedom to sovereign power for security, Rousseau insists that true sovereignty remains with the people — the 'general will' cannot be transferred to kings. This is <strong>popular sovereignty</strong> as doctrine, incompatible with absolute monarchy. <em>Émile</em> extends the critique to individual development: society corrupts natural goodness; education should protect the child from civilization's deformations until reason matures. Both books share a premise devastating to the <em>ancien régime</em>: neither political nor moral authority is given from above. Meanwhile, Voltaire — who despises Rousseau personally — takes up the <strong>Calas affair</strong>. On March 10th, <strong>Jean Calas</strong>, a sixty-four-year-old Protestant merchant, is broken on the wheel in Toulouse, convicted of murdering his son to prevent his conversion to Catholicism. Voltaire investigates, concludes Calas was innocent, and begins a three-year campaign that will result in posthumous exoneration. His <em>Treatise on Tolerance</em> (1763) will emerge directly from the case — Enlightenment as active intervention against judicial murder."
+      },
+      "hist": {
+        "label": "History",
+        "content": "The <strong>Seven Years' War</strong> enters its final act with dramatic reversals. On January 5th, Empress Elisabeth of Russia dies; her nephew <strong>Peter III</strong>, a fervent admirer of Frederick the Great, immediately withdraws Russia from the war against Prussia — the 'Miracle of the House of Brandenburg' that saves Frederick from certain defeat. But Peter's reign lasts only months. On <strong>July 9th</strong>, his wife orchestrates a palace coup; she will rule as <strong>Catherine II</strong>, 'the Great,' for thirty-four years, transforming Russia into a European great power while corresponding with Voltaire and Diderot about Enlightenment ideals she will never fully implement. In the Caribbean and Pacific, <strong>Britain</strong> strikes at Spain: Havana falls on August 13th after a two-month siege; Manila falls in October. The world's first truly global war reshapes empires: by next year's peace, France will cede Canada and Louisiana, Spain will recover Havana but lose Florida, and Britain will dominate three continents. In a secret treaty at Fontainebleau (November 13th), France cedes Louisiana to Spain — the Mississippi passes from French to Spanish sovereignty without a shot, preparing the ground for the Louisiana Purchase forty years later."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year's theme is <strong>legitimacy in crisis</strong> — and new forms of authority emerging from the wreckage. Rousseau attacks divine-right monarchy at its theoretical root: if sovereignty belongs to the general will, kings are merely executives who can be dismissed. Catherine's coup demonstrates the principle negatively — a German princess seizes the Russian throne by conspiracy and maintains it by competence, not hereditary right. Gluck's operatic reform attacks artistic authority: the virtuoso singer no longer dictates to composer and audience; drama's demands override star vanity. Stuart and Revett's careful measurements of Athenian ruins assert that true classical authority lies in Greek originals, not Roman copies or Renaissance interpretations — archaeology becomes a form of cultural criticism. Even the Calas affair fits the pattern: Voltaire challenges judicial authority by mobilizing public opinion, inventing the modern intellectual's role as conscience of power. The Seven Years' War redistributes imperial legitimacy across continents; Rousseau redistributes political legitimacy to peoples; Gluck redistributes artistic legitimacy to dramatic coherence. <strong>1762 is the year authority loses its givenness</strong> — and must be earned, argued, demonstrated, or seized.",
+        "funFact": "Catherine's husband Peter III was strangled eight days after his deposition — officially he died of 'hemorrhoidal colic.' Catherine reigned for thirty-four years, corresponded with Voltaire about freedom, and expanded serfdom to millions more Russian peasants."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Social_Contract",
+        "title": "The Social Contract — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Orfeo_ed_Euridice",
+        "title": "Orfeo ed Euridice — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Catherine_the_Great",
+        "title": "Catherine the Great — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Jean_Calas",
+        "title": "Jean Calas — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/1762",
+        "title": "1762 — Wikipedia"
+      }
+    ],
+    "threads": [
+      "enlightenment",
+      "neoclassicism",
+      "political-philosophy"
+    ],
+    "location": {
+      "lat": 48.2082,
+      "lon": 16.3738,
+      "place": "Vienna"
+    },
+    "addedDate": "2026-05-19T05:00:00Z",
+    "image": {
+      "url": "images/1762-vienna-year-of-upheaval.jpg",
+      "width": 862,
+      "height": 1200,
+      "caption": "Portrait of Jean-Jacques Rousseau by Maurice Quentin de La Tour, circa 1753",
+      "attribution": "Maurice Quentin de La Tour, Public domain, via Wikimedia Commons"
+    },
+    "podcast": {
+      "url": "audio/1762-vienna-year-of-upheaval.mp3",
+      "duration": 145
+    }
   }
 ]
