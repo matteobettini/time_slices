@@ -197,7 +197,9 @@
       "1714→1738": "From Leibniz's monads and Pope's wit to Voltaire's Newton: the Enlightenment shifts from metaphysical system to experimental science.",
       "1738→1751": "From Voltaire's popularisation of Newton to Diderot's Encyclopédie: empirical science becomes a weapon against ignorance and superstition.",
       "1784→1789": "Kant dared humanity to think for itself; five years later, the French Assembly put reason into law.",
-      "1789→1794": "The Declaration promised universal rights; the Terror asked who got to define them."
+      "1789→1794": "The Declaration promised universal rights; the Terror asked who got to define them.",
+      "1755→1762": "From Lisbon's earthquake — which shattered theodicy — Voltaire moves toward human agency. Rousseau's Social Contract provides the mechanism: sovereignty belongs to the general will, not God or kings.",
+      "1762→1776": "Rousseau's banned books circulate underground. Jefferson reads The Social Contract while drafting a declaration that will hold these truths to be self-evident — that governments derive their just powers from the consent of the governed."
     },
     "critical-philosophy": {
       "1755→1784": "The earthquake forced Kant to reconsider natural theology; three decades later, his Critiques limited what reason could claim. Theodicy's failure birthed epistemology's caution."
@@ -365,7 +367,9 @@
       "1883→1886": "Marx and Wagner both die; Nietzsche begins Zarathustra. Three years later, Seurat's pointillism and the Statue of Liberty mark the next phase of endings-into-beginnings."
     },
     "neoclassicism": {
-      "1738→1784": "From Herculaneum's first excavations to David's Oath of the Horatii: buried antiquity resurfaces to reshape European taste and revolutionary politics."
+      "1738→1784": "From Herculaneum's first excavations to David's Oath of the Horatii: buried antiquity resurfaces to reshape European taste and revolutionary politics.",
+      "1738→1762": "Pompeii's rediscovery inspires a return to classical sources. Stuart and Revett measure Athenian ruins with scientific precision; Gluck strips opera to Greek ideals. The Baroque gives way to 'noble simplicity.'",
+      "1762→1784": "Gluck's operatic reform spreads through Vienna to Paris. Stuart and Revett's measurements guide architects across Europe. David's Oath of the Horatii will complete the translation of classical virtue into revolutionary politics."
     },
     "rococo": {
       "1738→1751": "From Chardin's domestic realism to Boucher's Venus: Rococo spans the full spectrum from aristocratic fantasy to quiet bourgeois observation."
@@ -409,6 +413,9 @@
     },
     "positivism": {
       "1842→1851": "Comte's Course complete, the Religion of Humanity follows—positivism evolves from philosophy to quasi-faith, science as the new church."
+    },
+    "political-philosophy": {
+      "-49→1762": "From Caesar's crossing of the Rubicon — where law met ambition — through centuries of divine-right monarchy, Rousseau finally inverts the premise: sovereignty originates in the people, not in conquerors or God. The Social Contract proposes a voluntary foundation for political authority."
     }
   },
   "it": {
@@ -602,7 +609,9 @@
       "1714→1738": "Dalle monadi di Leibniz e dall'arguzia di Pope al Newton di Voltaire: l'Illuminismo passa dal sistema metafisico alla scienza sperimentale.",
       "1738→1751": "Dalla divulgazione newtoniana di Voltaire all'Encyclopédie di Diderot: la scienza empirica diventa un'arma contro l'ignoranza e la superstizione.",
       "1784→1789": "Kant sfidò l'umanità a pensare da sé; cinque anni dopo, l'Assemblea francese tradusse la ragione in legge.",
-      "1789→1794": "La Dichiarazione promise diritti universali; il Terrore chiese chi potesse definirli."
+      "1789→1794": "La Dichiarazione promise diritti universali; il Terrore chiese chi potesse definirli.",
+      "1755→1762": "Dal terremoto di Lisbona — che infranse la teodicea — Voltaire si muove verso l'agentività umana. Il Contratto sociale di Rousseau fornisce il meccanismo: la sovranità appartiene alla volontà generale, non a Dio o ai re.",
+      "1762→1776": "I libri banditi di Rousseau circolano clandestinamente. Jefferson legge Il Contratto sociale mentre redige una dichiarazione che riterrà evidenti queste verità — che i governi derivano i loro giusti poteri dal consenso dei governati."
     },
     "critical-philosophy": {
       "1755→1784": "Il terremoto costrinse Kant a riconsiderare la teologia naturale; tre decenni dopo, le sue Critiche limitarono ciò che la ragione poteva pretendere."
@@ -770,7 +779,9 @@
       "1883→1886": "Marx e Wagner muoiono entrambi; Nietzsche inizia Zarathustra. Tre anni dopo, il puntinismo di Seurat e la Statua della Libertà segnano la fase successiva di conclusioni-in-nuovi-inizi."
     },
     "neoclassicism": {
-      "1738→1784": "Dai primi scavi di Ercolano al Giuramento degli Orazi di David: l'antichità sepolta riemerge per plasmare il gusto europeo e la politica rivoluzionaria."
+      "1738→1784": "Dai primi scavi di Ercolano al Giuramento degli Orazi di David: l'antichità sepolta riemerge per plasmare il gusto europeo e la politica rivoluzionaria.",
+      "1738→1762": "La riscoperta di Pompei ispira un ritorno alle fonti classiche. Stuart e Revett misurano le rovine ateniesi con precisione scientifica; Gluck riduce l'opera agli ideali greci. Il Barocco cede il passo alla 'nobile semplicità.'",
+      "1762→1784": "La riforma operistica di Gluck si diffonde da Vienna a Parigi. Le misurazioni di Stuart e Revett guidano gli architetti in tutta Europa. Il Giuramento degli Orazi di David completerà la traduzione della virtù classica in politica rivoluzionaria."
     },
     "rococo": {
       "1738→1751": "Dal realismo domestico di Chardin alla Venere di Boucher: il Rococò abbraccia l'intero spettro, dalla fantasia aristocratica alla quieta osservazione borghese."
@@ -814,6 +825,9 @@
     },
     "positivism": {
       "1842→1851": "Completato il Corso di Comte, segue la Religione dell'Umanità—il positivismo evolve da filosofia a quasi-fede, la scienza come nuova chiesa."
+    },
+    "political-philosophy": {
+      "-49→1762": "Dall'attraversamento del Rubicone da parte di Cesare — dove la legge incontrò l'ambizione — attraverso secoli di monarchia di diritto divino, Rousseau finalmente inverte la premessa: la sovranità ha origine nel popolo, non nei conquistatori o in Dio. Il Contratto sociale propone un fondamento volontario per l'autorità politica."
     }
   }
 }
