@@ -142,7 +142,9 @@
     "de-stalinization": "De-Stalinization",
     "russian-literature": "Russian Literature",
     "industrial-capitalism": "Industrial Capitalism",
-    "unequal-treaties": "Unequal Treaties"
+    "unequal-treaties": "Unequal Treaties",
+    "crusade-ideology": "Crusade Ideology",
+    "courtly-culture": "Courtly Culture"
   },
   "it": {
     "translation-movement": "Traduzione come potere",
@@ -287,6 +289,8 @@
     "de-stalinization": "Destalinizzazione",
     "russian-literature": "Letteratura russa",
     "industrial-capitalism": "Capitalismo industriale",
-    "unequal-treaties": "Trattati ineguali"
+    "unequal-treaties": "Trattati ineguali",
+    "crusade-ideology": "Ideologia delle Crociate",
+    "courtly-culture": "Cultura Cortese"
   }
 }
