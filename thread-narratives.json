@@ -36,7 +36,9 @@
       "1492→1564": "The Spanish conquest disperses knowledge westward; 1564 sees Renaissance mastery pass to a new generation — Shakespeare, Galileo, and Marlowe all born as Michelangelo dies.",
       "1564→1863": "From Michelangelo's death to Manet's scandal — three centuries of artistic transmission, from Renaissance mastery through Baroque, Rococo, Romanticism, to Impressionism's rupture.",
       "1170→1191": "Thomas Becket's murder shook intellectual Paris; Maimonides and Averroes kept Aristotle flowing from Islamic courts to Christian schools.",
-      "1191→1241": "After Saladin, Frederick II's court in Palermo became the great translation hub — Arabic philosophy to Latin, Greek science to Italian."
+      "1191→1241": "After Saladin, Frederick II's court in Palermo became the great translation hub — Arabic philosophy to Latin, Greek science to Italian.",
+      "1492→1520": "As Spain reaches the New World, Aztec treasures arrive in Europe — Dürer marvels at their craftsmanship.",
+      "1520→1564": "With Raphael dead, the torch passes to Michelangelo — and to the newborn Galileo who will redirect inquiry from heaven to observation."
     },
     "eschatological-anxiety": {
       "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
@@ -122,7 +124,9 @@
       "1543→1580": "Vesalius and Copernicus trusted their eyes over ancient texts; Montaigne trusts his own experience over philosophical systems. The humanist project reaches its self-critical phase: to observe ourselves as carefully as we observe stars and bodies.",
       "1517→1580": "Luther used humanism's textual tools to explode the Church; Montaigne uses them to explode certainty itself. The humanist return to sources becomes a return to the self — the only text you can truly read.",
       "1517→1532": "The print revolution spreads humanist ideas beyond Italy; Machiavelli's Prince applies ad fontes method to politics itself.",
-      "1532→1580": "From Machiavelli's political analysis to Montaigne's personal essay—humanism turns inward, examining the self."
+      "1532→1580": "From Machiavelli's political analysis to Montaigne's personal essay—humanism turns inward, examining the self.",
+      "1517→1520": "The rupture begins: Luther weaponizes humanist scholarship against Rome itself.",
+      "1520→1532": "After Raphael's death and Luther's break, humanism splits — Erasmus stays Catholic, others follow Luther."
     },
     "art-and-power": {
       "1300→1504": "Giotto worked for Franciscans and Bardi bankers; Michelangelo worked for Medici and popes. Two centuries transformed patronage from devotional to dynastic.",
@@ -142,7 +146,8 @@
       "476→529": "When Justinian closed the Academy, the last Neoplatonists fled to Persia — but their books stayed, flowing into Byzantine theology and Islamic philosophy."
     },
     "printing-revolution": {
-      "1509→1517": "Erasmus's <em>Praise of Folly</em> circulated in printed editions; Luther's theses spread faster than any medieval protest. The press made both possible — satire and schism alike."
+      "1509→1517": "Erasmus's <em>Praise of Folly</em> circulated in printed editions; Luther's theses spread faster than any medieval protest. The press made both possible — satire and schism alike.",
+      "1517→1520": "Luther's three treatises sell tens of thousands in months — the press becomes the Reformation's engine."
     },
     "baroque": {
       "1600→1648": "Caravaggio's tenebrism dramatized Counter-Reformation piety; Rembrandt's used the same technique for Protestant inwardness. Baroque style survived the confessional divide.",
@@ -407,7 +412,9 @@
     },
     "reformation": {
       "1517→1558": "From Luther's theses to Knox's Blast: the Reformation fragments into national churches as Elizabeth inherits the English experiment.",
-      "1558→1564": "Elizabeth takes England Protestant in 1558; Calvin dies in 1564, leaving the Reformation's second generation to interpret his systematic theology."
+      "1558→1564": "Elizabeth takes England Protestant in 1558; Calvin dies in 1564, leaving the Reformation's second generation to interpret his systematic theology.",
+      "1517→1520": "From academic disputation to open rupture: Luther burns the papal bull and excommunication follows.",
+      "1520→1558": "After Luther's break, Protestantism fragments and spreads — by Elizabeth's accession, England has its own reformed Church."
     },
     "anatomical-revolution": {
       "1543→1564": "Vesalius's revolutionary anatomy textbook of 1543 overturned Galen — but in 1564, Vesalius himself dies, leaving observational method as his legacy."
@@ -464,7 +471,9 @@
       "1492→1564": "La conquista spagnola disperde la conoscenza verso ovest; nel 1564 la maestria rinascimentale passa a una nuova generazione — Shakespeare, Galileo e Marlowe nascono tutti mentre Michelangelo muore.",
       "1564→1863": "Dalla morte di Michelangelo allo scandalo di Manet — tre secoli di trasmissione artistica, dalla maestria rinascimentale attraverso Barocco, Rococò, Romanticismo, fino alla rottura impressionista.",
       "1170→1191": "L'omicidio di Thomas Becket scosse la Parigi intellettuale; Maimonide e Averroè mantennero Aristotele fluente dalle corti islamiche alle scuole cristiane.",
-      "1191→1241": "Dopo Saladino, la corte di Federico II a Palermo divenne il grande hub di traduzione — filosofia araba in latino, scienza greca in italiano."
+      "1191→1241": "Dopo Saladino, la corte di Federico II a Palermo divenne il grande hub di traduzione — filosofia araba in latino, scienza greca in italiano.",
+      "1492→1520": "Mentre la Spagna raggiunge il Nuovo Mondo, i tesori aztechi arrivano in Europa — Dürer si meraviglia della loro maestria.",
+      "1520→1564": "Con Raffaello morto, la fiaccola passa a Michelangelo — e al neonato Galileo che reindirizzerà l'indagine dal cielo all'osservazione."
     },
     "eschatological-anxiety": {
       "410→1000": "La caduta di Roma sembrò apocalittica ai contemporanei di Agostino; l'avvicinarsi dell'anno Mille rianimò quelle paure. Il 'bianco manto di chiese' fu in parte ringraziamento per un millennio che non finì nel fuoco.",
@@ -545,7 +554,9 @@
       "1543→1580": "Vesalio e Copernico si fidarono dei propri occhi più che dei testi antichi; Montaigne si fida della propria esperienza più che dei sistemi filosofici. Il progetto umanistico raggiunge la sua fase autocritica: osservare noi stessi con la stessa cura con cui osserviamo stelle e corpi.",
       "1517→1580": "Lutero usò gli strumenti testuali dell'umanesimo per far esplodere la Chiesa; Montaigne li usa per far esplodere la certezza stessa. Il ritorno umanistico alle fonti diventa ritorno al sé — l'unico testo che puoi veramente leggere.",
       "1517→1532": "La rivoluzione della stampa diffonde le idee umaniste oltre l'Italia; Il Principe di Machiavelli applica il metodo ad fontes alla politica stessa.",
-      "1532→1580": "Dall'analisi politica di Machiavelli al saggio personale di Montaigne—l'umanesimo si rivolge verso l'interno, esaminando il sé."
+      "1532→1580": "Dall'analisi politica di Machiavelli al saggio personale di Montaigne—l'umanesimo si rivolge verso l'interno, esaminando il sé.",
+      "1517→1520": "La rottura inizia: Lutero usa l'erudizione umanistica come arma contro Roma stessa.",
+      "1520→1532": "Dopo la morte di Raffaello e la rottura di Lutero, l'umanesimo si divide — Erasmo resta cattolico, altri seguono Lutero."
     },
     "art-and-power": {
       "1300→1504": "Giotto lavorò per francescani e banchieri Bardi; Michelangelo lavorò per Medici e papi. Due secoli trasformarono il mecenatismo da devozionale a dinastico.",
@@ -565,7 +576,8 @@
       "476→529": "Quando Giustiniano chiuse l'Accademia, gli ultimi neoplatonici fuggirono in Persia — ma i loro libri rimasero, confluendo nella teologia bizantina e nella filosofia islamica."
     },
     "printing-revolution": {
-      "1509→1517": "L'<em>Elogio della Follia</em> di Erasmo circolò in edizioni stampate; le tesi di Lutero si diffusero più velocemente di qualsiasi protesta medievale."
+      "1509→1517": "L'<em>Elogio della Follia</em> di Erasmo circolò in edizioni stampate; le tesi di Lutero si diffusero più velocemente di qualsiasi protesta medievale.",
+      "1517→1520": "I tre trattati di Lutero vendono decine di migliaia di copie in pochi mesi — la stampa diventa il motore della Riforma."
     },
     "baroque": {
       "1600→1648": "Il tenebrismo di Caravaggio drammatizzava la pietà controriformista; quello di Rembrandt usava la stessa tecnica per l'interiorità protestante.",
@@ -830,7 +842,9 @@
     },
     "reformation": {
       "1517→1558": "Dalle tesi di Lutero allo Squillo di Knox: la Riforma si frammenta in chiese nazionali mentre Elisabetta eredita l'esperimento inglese.",
-      "1558→1564": "Elisabetta porta l'Inghilterra al protestantesimo nel 1558; Calvino muore nel 1564, lasciando alla seconda generazione della Riforma l'interpretazione della sua teologia sistematica."
+      "1558→1564": "Elisabetta porta l'Inghilterra al protestantesimo nel 1558; Calvino muore nel 1564, lasciando alla seconda generazione della Riforma l'interpretazione della sua teologia sistematica.",
+      "1517→1520": "Dalla disputa accademica alla rottura aperta: Lutero brucia la bolla papale e segue la scomunica.",
+      "1520→1558": "Dopo la rottura di Lutero, il protestantesimo si frammenta e si diffonde — all'ascesa di Elisabetta, l'Inghilterra ha la sua Chiesa riformata."
     },
     "anatomical-revolution": {
       "1543→1564": "Il rivoluzionario trattato di anatomia di Vesalio del 1543 rovesciò Galeno — ma nel 1564, Vesalio stesso muore, lasciando il metodo osservazionale come sua eredità."

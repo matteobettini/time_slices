@@ -1,0 +1,50 @@
+{
+  "year": "1520",
+  "id": "1520-year-of-ruptures",
+  "title": "L'Anno delle Rotture",
+  "teaser": "Raffaello muore il Venerdì Santo, con la sua incompiuta Trasfigurazione accanto al feretro. A Wittenberg, Lutero brucia la bolla papale. Al Campo del Drappo d'Oro, due re inscenano una parata di unità destinata al fallimento. A Tenochtitlan, gli Aztechi cacciano Cortés nella Noche Triste. Solimano diventa sultano. Vecchi mondi finiscono; nuovi non sono ancora nati.",
+  "dimensions": {
+    "art":  { 
+      "label": "Arte",         
+      "content": "Il Venerdì Santo, sei aprile, <strong>Raffaello</strong> muore a Roma a trentasette anni. Il suo ultimo capolavoro, <em>La Trasfigurazione</em>, giace incompiuto accanto al suo feretro. Dove la metà superiore mostra la gloria divina di Cristo sul Monte Tabor, quella inferiore raffigura il fallimento degli apostoli nel guarire un ragazzo indemoniato — una tensione tra trascendenza e incapacità umana che punta oltre l'armonia dell'<strong>Alto Rinascimento</strong> verso l'intensità psicologica del <strong>Manierismo</strong>. <strong>Giulio Romano</strong> completa l'opera, ma i contemporanei capirono: con Raffaello, qualcosa era finito. Intanto, <strong>Dürer</strong> viaggia nei Paesi Bassi, disegnando ogni cosa — il suo diario registra incontri con artisti, la visione di tesori aztechi inviati da Cortés, la presenza all'incoronazione di Carlo V ad Aquisgrana." 
+    },
+    "lit":  { 
+      "label": "Letteratura",  
+      "content": "Il 1520 di Lutero è un torrente di stampa. In agosto, <em>Alla nobiltà cristiana della nazione tedesca</em> chiama i governanti secolari a riformare la Chiesa — scritto in tedesco, vende quattromila copie in tre settimane. In ottobre, <em>La cattività babilonese della Chiesa</em> attacca il sistema sacramentale in latino accademico. In novembre, <em>La libertà del cristiano</em> offre una sintesi teologica: 'Un cristiano è signore libero sopra ogni cosa e non soggetto a nessuno; un cristiano è servo volenteroso di ogni cosa e soggetto a tutti.' Tre trattati in quattro mesi, ciascuno più lontano da Roma. La <strong>stampa</strong> ha trovato il suo contenuto rivoluzionario; la <strong>Riforma</strong> ha trovato la sua voce." 
+    },
+    "phil": { 
+      "label": "Filosofia",  
+      "content": "La <em>Libertà del cristiano</em> di Lutero ridefinisce la libertà stessa. La libertà medievale significava scegliere tra bene e male; Lutero dissolve la scelta. La volontà è <em>schiava</em> — gli umani non possono scegliere la salvezza. Eppure la fede libera completamente: giustificato dalla grazia, il cristiano non ha bisogno di opere, indulgenze, mediazione sacerdotale. Non è la fiduciosa auto-costruzione dell'<strong>umanesimo rinascimentale</strong> ma la sua negazione teologica: libertà attraverso la resa. Il dieci dicembre, Lutero brucia pubblicamente la bolla papale <em>Exsurge Domine</em> insieme a volumi di diritto canonico. Il falò alla Porta Elster di Wittenberg segna il punto di non ritorno. La scomunica arriva in gennaio." 
+    },
+    "hist": { 
+      "label": "Storia",     
+      "content": "Quattro imperi ruotano. In giugno, <strong>Enrico VIII</strong> e <strong>Francesco I</strong> si incontrano al <strong>Campo del Drappo d'Oro</strong> — diciotto giorni di tornei e banchetti su tessuti dorati, una fantasia di unità cavalleresca che non cambia nulla. In settembre, <strong>Solimano il Magnifico</strong> diventa sultano ottomano, iniziando un regno di quarantasei anni che minaccerà Vienna e dominerà il Mediterraneo. Il ventitré ottobre, <strong>Carlo V</strong> viene incoronato Re di Germania ad Aquisgrana — Dürer assiste e disegna. E nella notte del trenta giugno, <strong>La Noche Triste</strong>: gli Aztechi cacciano <strong>Cortés</strong> da Tenochtitlan, centinaia di spagnoli annegano nelle strade rialzate appesantiti dall'oro rubato. La conquista non è finita — ma l'impero di Montezuma ha dimostrato di saper combattere." 
+    },
+    "conn": { 
+      "label": "Connessioni", 
+      "content": "Ciò che rompe il 1520 è la collisione di universalismi. L'<strong>Alto Rinascimento</strong> credeva nell'antichità recuperata come ideale universale — Raffaello dipinse Platone e Aristotele come se la loro armonia fosse eterna. La <strong>Cristianità</strong> credeva in un'unica Chiesa sotto un unico Papa. L'<strong>Impero</strong> credeva in un unico imperatore che regnasse su tutte le nazioni cristiane. Tutte e tre si incrinano in questo solo anno. Raffaello muore lasciando trascendenza e fallimento irrisolti su un'unica tela. I trattati di Lutero rendono inevitabile lo scisma protestante. Il Campo del Drappo d'Oro non può mascherare la rivalità tra Francia e Spagna asburgica. L'ascesa di Solimano aggiunge l'impero islamico al quadro. E nelle Americhe, un mondo che la Cristianità non conosceva combatte contro la conquista. L'anno non è una transizione ma una rottura.", 
+      "funFact": "Dürer, all'incoronazione di Carlo V ad Aquisgrana, vide anche i tesori aztechi inviati da Cortés e scrisse nel suo diario: 'Non ho mai visto nulla in tutti i miei giorni che abbia così deliziato il mio cuore come queste cose.'" 
+    }
+  },
+  "sources": [
+    { "url": "https://it.wikipedia.org/wiki/Trasfigurazione_(Raffaello)", "title": "Wikipedia: Trasfigurazione (Raffaello)" },
+    { "url": "https://it.wikipedia.org/wiki/La_libert%C3%A0_del_cristiano", "title": "Wikipedia: La libertà del cristiano" },
+    { "url": "https://it.wikipedia.org/wiki/Campo_del_Drappo_d%27Oro", "title": "Wikipedia: Campo del Drappo d'Oro" },
+    { "url": "https://it.wikipedia.org/wiki/La_Noche_Triste", "title": "Wikipedia: La Noche Triste" },
+    { "url": "https://it.wikipedia.org/wiki/Solimano_il_Magnifico", "title": "Wikipedia: Solimano il Magnifico" }
+  ],
+  "image": {
+    "url": "images/1520-year-of-ruptures.jpg",
+    "caption": "La Trasfigurazione di Raffaello (1516-1520), il dipinto che stava accanto al suo feretro il Venerdì Santo del 1520",
+    "width": 1067,
+    "height": 1608,
+    "attribution": "Raffaello, Pubblico dominio, via Wikimedia Commons"
+  },
+  "threads": ["renaissance-humanism", "reformation", "translatio-studii", "printing-revolution"],
+  "location": {
+    "lat": 41.9029,
+    "lon": 12.4534,
+    "place": "Roma"
+  },
+  "addedDate": "2026-05-22T05:00:00Z"
+}

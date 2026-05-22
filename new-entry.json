@@ -1,0 +1,50 @@
+{
+  "year": "1520",
+  "id": "1520-year-of-ruptures",
+  "title": "The Year of Ruptures",
+  "teaser": "Raphael dies on Good Friday, his unfinished Transfiguration standing at his bier. In Wittenberg, Luther burns the papal bull. At the Field of Cloth of Gold, two kings stage a pageant of doomed unity. In Tenochtitlan, the Aztecs drive out Cortés on La Noche Triste. Suleiman becomes sultan. Old worlds end; new ones are not yet born.",
+  "dimensions": {
+    "art":  { 
+      "label": "Art",         
+      "content": "On Good Friday, April sixth, <strong>Raphael</strong> dies in Rome at thirty-seven. His final masterpiece, <em>The Transfiguration</em>, stands unfinished at the head of his bier. Where the upper half shows Christ's divine glory on Mount Tabor, the lower half depicts the apostles' failure to cure a possessed boy — a tension between transcendence and human incapacity that points beyond <strong>High Renaissance</strong> harmony toward <strong>Mannerism's</strong> psychological intensity. <strong>Giulio Romano</strong> completes the work, but contemporaries understood: with Raphael, something had ended. Meanwhile, <strong>Dürer</strong> travels through the Netherlands, sketching everything — his diary records meeting artists, viewing Aztec treasures sent by Cortés, attending Charles V's coronation in Aachen. Northern precision meets Southern grace one last time." 
+    },
+    "lit":  { 
+      "label": "Literature",  
+      "content": "Luther's 1520 is a torrent of print. In August, <em>Address to the Christian Nobility of the German Nation</em> calls on secular rulers to reform the Church — written in German, selling four thousand copies in three weeks. In October, <em>The Babylonian Captivity of the Church</em> attacks the sacramental system in scholarly Latin. In November, <em>On the Freedom of a Christian</em> offers a theological synthesis: 'A Christian is a perfectly free lord of all, subject to none; a Christian is a perfectly dutiful servant of all, subject to all.' Three treatises in four months, each pushing further from Rome. The <strong>printing press</strong> has found its revolutionary content; the <strong>Reformation</strong> has found its voice." 
+    },
+    "phil": { 
+      "label": "Philosophy",  
+      "content": "Luther's <em>Freedom of a Christian</em> redefines liberty itself. Medieval freedom meant choosing between good and evil; Luther dissolves the choice. The will is <em>bound</em> — humans cannot choose salvation. Yet faith liberates utterly: justified by grace, the Christian needs no works, no indulgences, no priestly mediation. This is not <strong>Renaissance humanism's</strong> confident self-fashioning but its theological negation: freedom through surrender. On December tenth, Luther publicly burns the papal bull <em>Exsurge Domine</em> along with volumes of canon law. The bonfire at Wittenberg's Elster Gate marks the point of no return. Excommunication follows in January. The medieval synthesis of reason and revelation, already strained, now cracks open." 
+    },
+    "hist": { 
+      "label": "History",     
+      "content": "Four empires pivot. In June, <strong>Henry VIII</strong> and <strong>Francis I</strong> meet at the <strong>Field of Cloth of Gold</strong> — eighteen days of tournaments and feasts on golden fabric, a fantasy of chivalric unity that changes nothing. In September, <strong>Suleiman the Magnificent</strong> becomes Ottoman sultan, beginning a forty-six-year reign that will threaten Vienna and dominate the Mediterranean. On October twenty-third, <strong>Charles V</strong> is crowned King of Germany in Aachen — Dürer watches and sketches. And on the night of June thirtieth, <strong>La Noche Triste</strong>: the Aztecs drive <strong>Cortés</strong> from Tenochtitlan, hundreds of Spaniards drowning in the causeways weighed down by stolen gold. The conquest is not over — but the empire of Moctezuma has shown it can fight back." 
+    },
+    "conn": { 
+      "label": "Connections", 
+      "content": "What ruptures 1520 is the collision of universalisms. The <strong>High Renaissance</strong> believed in recovered antiquity as universal ideal — Raphael painted Plato and Aristotle as if their harmony were eternal. <strong>Christendom</strong> believed in one Church under one Pope. <strong>The Empire</strong> believed in one emperor ruling all Christian nations. All three crack in this single year. Raphael dies leaving transcendence and failure unresolved on one canvas. Luther's treatises make Protestant schism inevitable. The Field of Cloth of Gold cannot paper over the rivalry between France and Habsburg Spain. Suleiman's accession adds Islamic empire to the mix. And in the Americas, a world Christianity never knew fights back against conquest. The year is not a transition but a rupture — the moment when the medieval synthesis visibly ends, though what replaces it remains unclear for another century.", 
+      "funFact": "Dürer, attending Charles V's coronation in Aachen, also viewed Aztec treasures sent by Cortés and wrote in his diary: 'I have seen nothing in all my days that so delighted my heart as these things.'" 
+    }
+  },
+  "sources": [
+    { "url": "https://en.wikipedia.org/wiki/Transfiguration_(Raphael)", "title": "Wikipedia: Transfiguration (Raphael)" },
+    { "url": "https://en.wikipedia.org/wiki/On_the_Freedom_of_a_Christian", "title": "Wikipedia: On the Freedom of a Christian" },
+    { "url": "https://en.wikipedia.org/wiki/Field_of_the_Cloth_of_Gold", "title": "Wikipedia: Field of the Cloth of Gold" },
+    { "url": "https://en.wikipedia.org/wiki/La_Noche_Triste", "title": "Wikipedia: La Noche Triste" },
+    { "url": "https://en.wikipedia.org/wiki/Suleiman_the_Magnificent", "title": "Wikipedia: Suleiman the Magnificent" }
+  ],
+  "image": {
+    "url": "images/1520-year-of-ruptures.jpg",
+    "caption": "Raphael's Transfiguration (1516-1520), the painting that stood at his deathbed on Good Friday 1520",
+    "width": 1067,
+    "height": 1608,
+    "attribution": "Raphael, Public domain, via Wikimedia Commons"
+  },
+  "threads": ["renaissance-humanism", "reformation", "translatio-studii", "printing-revolution"],
+  "location": {
+    "lat": 41.9029,
+    "lon": 12.4534,
+    "place": "Rome"
+  },
+  "addedDate": "2026-05-22T05:00:00Z"
+}
