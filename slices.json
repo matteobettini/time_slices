@@ -6382,5 +6382,79 @@
       "url": "audio/1520-year-of-ruptures.mp3",
       "duration": 185
     }
+  },
+  {
+    "year": "1874",
+    "id": "1874-paris-birth-of-impressionism",
+    "title": "Paris — The Birth of Impressionism",
+    "teaser": "Thirty artists revolt against the Academy in a photographer's old studio. Verdi mourns Manzoni. Strauss waltzes through Vienna. Wagner completes his gods' twilight. Nietzsche searches for educators. Art stops asking permission.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "On <strong>April 15th</strong>, thirty artists open their own exhibition at <strong>35 Boulevard des Capucines</strong> — the former studio of photographer <strong>Nadar</strong>. They call themselves the <em>Société anonyme des artistes peintres, sculpteurs, graveurs</em>, but critic <strong>Louis Leroy</strong>'s mocking review in <em>Le Charivari</em> on April 25th gives them their real name: staring at Monet's <em>Impression, Sunrise</em>, he sneers that wallpaper in its embryonic state is more finished. <strong>Impressionism</strong> is born as an insult. The exhibitors include <strong>Monet</strong>, <strong>Renoir</strong>, <strong>Degas</strong>, <strong>Pissarro</strong>, <strong>Morisot</strong>, <strong>Sisley</strong>, and <strong>Cézanne</strong> — the movement's core. They reject the <strong>Salon</strong> system entirely: no jury, no medals, no hierarchy. What they share is technique: broken brushwork, outdoor painting, the fugitive effects of light. They are painting not things but perception itself."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Thomas Hardy</strong>'s <em>Far from the Madding Crowd</em> begins serial publication in <em>The Cornhill Magazine</em> in January, his first major success. Hardy invents <strong>Wessex</strong> — a fictional region mapping onto real Dorset — where rural England persists against modernity's encroachments. <strong>Bathsheba Everdene</strong> runs her own farm; the novel's realism lies in its attention to agricultural rhythms, sheep-washing, harvest suppers. Meanwhile, <strong>Gustave Flaubert</strong> publishes <em>La Tentation de Saint Antoine</em>, his hallucinatory prose-poem depicting the desert father besieged by visions of heresy, sensuality, and nothingness. Flaubert had worked on it for twenty-five years. Where Hardy grounds fiction in English soil, Flaubert dissolves the self into phantasmagoria — two paths forward from <strong>Realism</strong>."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Friedrich Nietzsche</strong>, twenty-nine and already a Basel professor, publishes <em>Schopenhauer als Erzieher</em> (<em>Schopenhauer as Educator</em>), the third of his <strong>Untimely Meditations</strong>. It is less about Schopenhauer than about what an educator must be: not someone who transmits knowledge but someone who <em>liberates</em>, who helps you become what you already are. <em>'Your true educators reveal to you what is the genuine original sense and basic stuff of your being.'</em> The essay attacks German academic culture's sterile specialization. Nietzsche seeks <strong>authentic selfhood</strong> through struggle, not credentials. He is already moving beyond Schopenhauer's pessimism toward the affirmation of life that will define his mature work — but still believes Wagner's art might provide the cultural regeneration Germany needs."
+      },
+      "hist": {
+        "label": "History",
+        "content": "<strong>Benjamin Disraeli</strong> becomes British Prime Minister on February 20th, beginning a transformative Conservative ministry that will pass landmark social reforms: public health acts, housing acts, labour protections. In <strong>Spain</strong>, the chaotic <strong>First Republic</strong> collapses: General <strong>Pavía</strong> had dissolved the Cortes in January; on December 29th, a military <em>pronunciamiento</em> restores the <strong>Bourbon monarchy</strong> under <strong>Alfonso XII</strong>. Meanwhile in Vienna on <strong>April 5th</strong> — ten days before the Impressionists open — <strong>Johann Strauss II</strong>'s <em>Die Fledermaus</em> premieres at the Theater an der Wien, crystallizing Viennese operetta at its champagne-and-waltzes peak. And in Milan on <strong>May 22nd</strong>, <strong>Verdi</strong> himself conducts the premiere of his <em>Requiem</em> at San Marco church — a tribute to <strong>Alessandro Manzoni</strong>, dead exactly one year."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year's unifying theme is <strong>art declaring independence</strong>. The Impressionists bypass the Salon jury entirely — they don't reform the system, they ignore it. Nietzsche attacks the German university with similar directness: true education happens through encounter with exceptional individuals, not institutions. Hardy creates his own fictional geography; Flaubert spends a quarter-century on a vision no publisher wanted. Even Verdi's Requiem is personal — written not for commission but for the novelist he revered. Wagner, completing <em>Götterdämmerung</em>'s music in November, works toward Bayreuth: a theater he will build himself, for performances on his terms. Strauss may seem the exception — <em>Die Fledermaus</em> delights its audience without challenging it — but its success proves that art can thrive outside official sanction. Everywhere, creators are making their own institutions.",
+        "funFact": "Louis Leroy intended 'Impressionism' as mockery. The artists embraced it anyway — turning criticism into identity, insult into manifesto."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/First_Impressionist_Exhibition",
+        "title": "Wikipedia: First Impressionist Exhibition"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Far_from_the_Madding_Crowd",
+        "title": "Wikipedia: Far from the Madding Crowd"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Untimely_Meditations",
+        "title": "Wikipedia: Untimely Meditations (Nietzsche)"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Requiem_(Verdi)",
+        "title": "Wikipedia: Verdi Requiem"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Die_Fledermaus",
+        "title": "Wikipedia: Die Fledermaus"
+      }
+    ],
+    "image": {
+      "url": "images/1874-paris-birth-of-impressionism.jpg",
+      "caption": "Claude Monet, Impression, Sunrise (1872), the painting that gave Impressionism its name when critic Louis Leroy mockingly called the 1874 exhibition 'Impressionists'",
+      "width": 1200,
+      "height": 931,
+      "attribution": "Claude Monet, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "impressionism",
+      "critique-of-modernity",
+      "vernacular-literature",
+      "fin-de-siecle"
+    ],
+    "location": {
+      "lat": 48.8708,
+      "lon": 2.3315,
+      "place": "Paris"
+    },
+    "addedDate": "2026-05-23T05:00:00Z",
+    "podcast": {
+      "url": "audio/1874-paris-birth-of-impressionism.mp3",
+      "duration": 174
+    }
   }
 ]

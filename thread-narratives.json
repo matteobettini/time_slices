@@ -112,7 +112,8 @@
       "1215→1241": "German courtly poetry proves the vernacular can rival Latin; at Frederick's court, Italian poets prove it can invent new forms entirely.",
       "1241→1274": "The sonnet travels from Sicily to Tuscany; within a generation, Dante will set a nine-year-old's first glimpse of Beatrice to verse.",
       "1580→1824": "Montaigne's personal essays find their darkest heir: Leopardi's Operette Morali turn the vernacular confession into cosmic despair, stripping philosophy of Latin dignity.",
-      "1824→1854": "Byron's Romantic death-in-exile gives way to Thoreau's deliberate retreat; literature moves from heroic gesture to intimate witness."
+      "1824→1854": "Byron's Romantic death-in-exile gives way to Thoreau's deliberate retreat; literature moves from heroic gesture to intimate witness.",
+      "1854→1874": "Thoreau's Walden grounded American transcendentalism in New England soil; Hardy's Wessex did the same for English fiction, inventing a regional geography that would bear his vision of rural fate."
     },
     "renaissance-humanism": {
       "1401→1453": "Florentine humanists collected manuscripts before 1453; the Greek exodus accelerated what Salutati and Bruni began. Humanism was ready for what Constantinople's scholars brought.",
@@ -285,7 +286,9 @@
       "1851→1854": "Ruskin's critique of industrial uniformity finds its literary echo; Dickens's Hard Times and Thoreau's Walden both reject the machine age's reduction of humans to functions.",
       "1854→1863": "From philosophical critique to artistic scandal; what Kierkegaard condemns in Christendom and Dickens in industry, Manet will expose in bourgeois respectability.",
       "1824→1842": "Schopenhauer's pessimism finds confirmation in Gogol's satire—both anatomize a world of empty striving, serfdom both literal and metaphorical.",
-      "1842→1851": "From Gogol's dead souls to Melville's white whale—the critique of modern emptiness crosses the Atlantic, finding new monsters in American waters."
+      "1842→1851": "From Gogol's dead souls to Melville's white whale—the critique of modern emptiness crosses the Atlantic, finding new monsters in American waters.",
+      "1863→1874": "Manet's scandals at the Salon gave the next generation the courage to bypass it entirely; when the Impressionists opened their own show in 1874, they finished what Le Déjeuner sur l'herbe had started.",
+      "1874→1886": "The Impressionists' institutional rebellion bore fruit: by 1886, Seurat and the Neo-Impressionists could build on their precedent, fragmenting light into points as Monet had fragmented it into brushstrokes."
     },
     "insular-art": {
       "664→732": "From the Book of Durrow to the Lindisfarne Gospels, Insular illumination reaches its full flowering. The Synod of Whitby binds Britain to Rome, but the monks at Lindisfarne create something wholly original — Celtic interlace, Germanic energy, Mediterranean gold fused into devotional infinity."
@@ -377,7 +380,8 @@
       "1889→1895": "Van Gogh's asylum visions and Bergson's time-philosophy seed the anxious introspection that blooms in Wilde's wit — and his destruction.",
       "1883→1886": "Marx and Wagner both die; Nietzsche begins Zarathustra. Three years later, Seurat's pointillism and the Statue of Liberty mark the next phase of endings-into-beginnings.",
       "1889→1890": "Van Gogh paints through collapse; his death crystallizes the decade's vertigo.",
-      "1890→1895": "Dickinson's posthumous emergence; Wilde's rise and catastrophic fall — the decade accelerates toward its climax."
+      "1890→1895": "Dickinson's posthumous emergence; Wilde's rise and catastrophic fall — the decade accelerates toward its climax.",
+      "1874→1883": "Strauss's Die Fledermaus captured Vienna at its champagne zenith; within a decade, Wagner would be dead, Nietzsche descending into madness, and the century's end already casting its shadow."
     },
     "neoclassicism": {
       "1738→1784": "From Herculaneum's first excavations to David's Oath of the Horatii: buried antiquity resurfaces to reshape European taste and revolutionary politics.",
@@ -408,7 +412,9 @@
       "1922→1929": "From seminar discussions to public manifesto: the Vienna Circle crystallizes its programme, declaring metaphysics meaningless and science the only path to knowledge."
     },
     "impressionism": {
-      "1870→1883": "The Franco-Prussian War scatters the Paris art world; thirteen years later Monet settles at Giverny as Manet dies, the movement's scandalous origins yielding to patient observation."
+      "1870→1883": "The Franco-Prussian War scatters the Paris art world; thirteen years later Monet settles at Giverny as Manet dies, the movement's scandalous origins yielding to patient observation.",
+      "1870→1874": "The Franco-Prussian War scattered the painters to London; when they reconvened in Paris, they had dealer connections and a shared determination to exhibit on their own terms.",
+      "1874→1883": "The first exhibition established the model; by 1883, Monet had retreated to Giverny to pursue the fugitive effects of light in his own garden, institutionalizing the outdoor studio."
     },
     "reformation": {
       "1517→1558": "From Luther's theses to Knox's Blast: the Reformation fragments into national churches as Elizabeth inherits the English experiment.",
@@ -542,7 +548,8 @@
       "1215→1241": "La poesia cortese tedesca dimostra che il volgare può rivaleggiare col latino; alla corte di Federico, i poeti italiani dimostrano che può inventare forme del tutto nuove.",
       "1241→1274": "Il sonetto viaggia dalla Sicilia alla Toscana; nel giro di una generazione, Dante metterà in versi il primo sguardo di un bambino di nove anni su Beatrice.",
       "1580→1824": "I saggi personali di Montaigne trovano il loro erede più oscuro: le Operette Morali di Leopardi trasformano la confessione in volgare in disperazione cosmica, spogliando la filosofia della dignità latina.",
-      "1824→1854": "La morte romantica in esilio di Byron lascia il posto al ritiro deliberato di Thoreau; la letteratura passa dal gesto eroico alla testimonianza intima."
+      "1824→1854": "La morte romantica in esilio di Byron lascia il posto al ritiro deliberato di Thoreau; la letteratura passa dal gesto eroico alla testimonianza intima.",
+      "1854→1874": "Il Walden di Thoreau radicò il trascendentalismo americano nella terra del New England; il Wessex di Hardy fece lo stesso per la narrativa inglese, inventando una geografia regionale che avrebbe portato la sua visione del destino rurale."
     },
     "renaissance-humanism": {
       "1401→1453": "Gli umanisti fiorentini raccoglievano manoscritti prima del 1453; l'esodo greco accelerò ciò che Salutati e Bruni avevano iniziato.",
@@ -715,7 +722,9 @@
       "1851→1854": "La critica di Ruskin all'uniformità industriale trova eco letterario; Tempi difficili di Dickens e Walden di Thoreau rifiutano entrambi la riduzione dell'umano a funzione operata dall'età delle macchine.",
       "1854→1863": "Dalla critica filosofica allo scandalo artistico; ciò che Kierkegaard condanna nella cristianità e Dickens nell'industria, Manet lo esporrà nella rispettabilità borghese.",
       "1824→1842": "Il pessimismo di Schopenhauer trova conferma nella satira di Gogol—entrambi anatomizzano un mondo di sforzi vuoti, servitù sia letterale che metaforica.",
-      "1842→1851": "Dalle anime morte di Gogol alla balena bianca di Melville—la critica del vuoto moderno attraversa l'Atlantico, trovando nuovi mostri nelle acque americane."
+      "1842→1851": "Dalle anime morte di Gogol alla balena bianca di Melville—la critica del vuoto moderno attraversa l'Atlantico, trovando nuovi mostri nelle acque americane.",
+      "1863→1874": "Gli scandali di Manet al Salon diedero alla generazione successiva il coraggio di aggirarlo del tutto; quando gli Impressionisti aprirono la propria mostra nel 1874, completarono ciò che Le Déjeuner sur l'herbe aveva iniziato.",
+      "1874→1886": "La ribellione istituzionale degli Impressionisti portò i suoi frutti: nel 1886, Seurat e i Neo-Impressionisti poterono costruire sul loro precedente, frammentando la luce in punti come Monet l'aveva frammentata in pennellate."
     },
     "insular-art": {
       "664→732": "Dal Libro di Durrow ai Vangeli di Lindisfarne, l'illuminazione insulare raggiunge la sua piena fioritura. Il Sinodo di Whitby lega la Britannia a Roma, ma i monaci di Lindisfarne creano qualcosa di totalmente originale — intreccio celtico, energia germanica, oro mediterraneo fusi in un'infinità devozionale."
@@ -807,7 +816,8 @@
       "1889→1895": "Le visioni di Van Gogh dal manicomio e la filosofia del tempo di Bergson seminano l'introspezione ansiosa che fiorisce nell'arguzia di Wilde — e nella sua distruzione.",
       "1883→1886": "Marx e Wagner muoiono entrambi; Nietzsche inizia Zarathustra. Tre anni dopo, il puntinismo di Seurat e la Statua della Libertà segnano la fase successiva di conclusioni-in-nuovi-inizi.",
       "1889→1890": "Van Gogh dipinge attraverso il crollo; la sua morte cristallizza la vertigine del decennio.",
-      "1890→1895": "L'emergere postumo di Dickinson; l'ascesa e la caduta catastrofica di Wilde — il decennio accelera verso il suo culmine."
+      "1890→1895": "L'emergere postumo di Dickinson; l'ascesa e la caduta catastrofica di Wilde — il decennio accelera verso il suo culmine.",
+      "1874→1883": "Il pipistrello di Strauss catturò Vienna al suo apice di champagne; entro un decennio Wagner sarebbe morto, Nietzsche sceso nella follia, e la fine del secolo già proiettava la sua ombra."
     },
     "neoclassicism": {
       "1738→1784": "Dai primi scavi di Ercolano al Giuramento degli Orazi di David: l'antichità sepolta riemerge per plasmare il gusto europeo e la politica rivoluzionaria.",
@@ -838,7 +848,9 @@
       "1922→1929": "Dalle discussioni seminariali al manifesto pubblico: il Circolo di Vienna cristallizza il suo programma, dichiarando la metafisica priva di senso e la scienza l'unica via alla conoscenza."
     },
     "impressionism": {
-      "1870→1883": "La guerra franco-prussiana disperde il mondo artistico parigino; tredici anni dopo Monet si stabilisce a Giverny mentre Manet muore, le origini scandalose del movimento cedono all'osservazione paziente."
+      "1870→1883": "La guerra franco-prussiana disperde il mondo artistico parigino; tredici anni dopo Monet si stabilisce a Giverny mentre Manet muore, le origini scandalose del movimento cedono all'osservazione paziente.",
+      "1870→1874": "La guerra franco-prussiana disperse i pittori a Londra; quando si riunirono a Parigi, avevano contatti con galleristi e una determinazione condivisa di esporre alle proprie condizioni.",
+      "1874→1883": "La prima mostra stabilì il modello; nel 1883, Monet si era ritirato a Giverny per inseguire gli effetti fugaci della luce nel proprio giardino, istituzionalizzando lo studio all'aperto."
     },
     "reformation": {
       "1517→1558": "Dalle tesi di Lutero allo Squillo di Knox: la Riforma si frammenta in chiese nazionali mentre Elisabetta eredita l'esperimento inglese.",
