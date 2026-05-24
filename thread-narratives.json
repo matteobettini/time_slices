@@ -113,7 +113,9 @@
       "1241→1274": "The sonnet travels from Sicily to Tuscany; within a generation, Dante will set a nine-year-old's first glimpse of Beatrice to verse.",
       "1580→1824": "Montaigne's personal essays find their darkest heir: Leopardi's Operette Morali turn the vernacular confession into cosmic despair, stripping philosophy of Latin dignity.",
       "1824→1854": "Byron's Romantic death-in-exile gives way to Thoreau's deliberate retreat; literature moves from heroic gesture to intimate witness.",
-      "1854→1874": "Thoreau's Walden grounded American transcendentalism in New England soil; Hardy's Wessex did the same for English fiction, inventing a regional geography that would bear his vision of rural fate."
+      "1854→1874": "Thoreau's Walden grounded American transcendentalism in New England soil; Hardy's Wessex did the same for English fiction, inventing a regional geography that would bear his vision of rural fate.",
+      "1580→1605": "Montaigne's Essays, probing the self in French, yield to Cervantes's novel — the first fiction to make a mad reader its hero.",
+      "1605→1824": "Don Quixote's ironic consciousness becomes the template for European fiction; Byron reads Cervantes before inventing the Byronic hero."
     },
     "renaissance-humanism": {
       "1401→1453": "Florentine humanists collected manuscripts before 1453; the Greek exodus accelerated what Salutati and Bruni began. Humanism was ready for what Constantinople's scholars brought.",
@@ -160,7 +162,9 @@
       "1641→1648": "Van Dyck dies; Rembrandt completes The Night Watch. The Baroque splits: Catholic theatricality versus Protestant introspection, court magnificence versus civic portraiture.",
       "1648→1666": "Peace brought spectacle. Dutch restraint and Continental extravagance became twin responses to the same post-war question: how do you make meaning after God has been weaponised?",
       "1666→1670": "Fire cleared London's medieval clutter; Wren filled the void with rational Baroque. Meanwhile Vermeer painted Catholic devotion in Protestant disguise — hidden churches, hidden faith, luminous surfaces.",
-      "1571→1600": "The infant born at Milan in September 1571 — Michelangelo Merisi, called Caravaggio — will mature into the first Baroque painter. His chiaroscuro revolutionizes art: where Venice celebrated luminosity, he makes darkness itself dramatic."
+      "1571→1600": "The infant born at Milan in September 1571 — Michelangelo Merisi, called Caravaggio — will mature into the first Baroque painter. His chiaroscuro revolutionizes art: where Venice celebrated luminosity, he makes darkness itself dramatic.",
+      "1600→1605": "Caravaggio's tenebrism spreads from Rome to Mantua via rejected commissions and Rubens's advocacy — scandal becomes currency.",
+      "1605→1610": "The rejected Death of the Virgin travels from Rome to Mantua; Caravaggio flees murder charges, spreading chiaroscuro to Naples and Malta."
     },
     "empiricism": {
       "1543→1687": "Vesalius trusted dissection over Galen; Newton trusted mathematics over tradition. Both empiricisms — anatomical and physical — insisted that observation trumped authority.",
@@ -170,7 +174,9 @@
       "1776→1859": "Hume's skeptical empiricism in 1776 attacked causation as mere habit. By 1859, Darwin transformed empirical observation into a grand theory—natural selection—that would finally displace metaphysical speculation from the study of life.",
       "1687→1751": "Newton's Principia gave empiricism a cosmic triumph; Locke's Essay gave it a mind. D'Alembert's Preliminary Discourse synthesised both into the Encyclopédie's epistemological manifesto.",
       "1751→1776": "The Encyclopédie's sensationalist epistemology crossed the Channel; Hume radicalised it into scepticism, Adam Smith applied it to economic behaviour.",
-      "1241→1543": "Frederick II's empirical ornithology whispers through Arabic translations into scholastic halls, until Vesalius opens actual bodies and Copernicus reopens the heavens."
+      "1241→1543": "Frederick II's empirical ornithology whispers through Arabic translations into scholastic halls, until Vesalius opens actual bodies and Copernicus reopens the heavens.",
+      "1543→1605": "Vesalius dissected; Bacon synthesises. From anatomical observation to a programme for all knowledge: see, test, verify.",
+      "1605→1610": "Bacon's Advancement reaches Galileo's generation; the telescope will prove his programme right — observation trumps authority."
     },
     "scientific-revolution": {
       "1543→1687": "Copernicus repositioned the Earth; Newton explained why it stayed in orbit. The revolution Copernicus began, Newton completed.",
@@ -367,7 +373,8 @@
       "1558→1571": "From Elizabeth's accession to Lepanto: the Counter-Reformation consolidates while Rome organizes its great military answer to Protestant defiance. Pope Pius V's Holy League proves that Catholic Europe can still act as one.",
       "1571→1580": "Lepanto's glory fades into Montaigne's doubt. The Counter-Reformation's military triumph gives way to philosophical skepticism — as religious wars continue, a French essayist asks 'Que sçay-je?' and invents a new way of thinking.",
       "1558→1564": "The Counter-Reformation's institutional machinery — the Index, the Jesuits, the Tridentine decrees — consolidates between Mary Tudor's death and Calvin's.",
-      "1564→1571": "From the Index's promulgation to Lepanto's victory — the Counter-Reformation moves from censorship to crusade, intellectual control to military triumph."
+      "1564→1571": "From the Index's promulgation to Lepanto's victory — the Counter-Reformation moves from censorship to crusade, intellectual control to military triumph.",
+      "1600→1605": "Bruno's ashes barely cold, the papacy cycles through three incumbents in a year while Catholic conspirators plot to blow up Protestant England."
     },
     "english-romanticism": {
       "1798→1816": "Wordsworth and Coleridge's Lyrical Ballads germinate in rain-soaked Geneva: Mary Shelley inherits their nature-worship but adds Gothic dread — Romanticism discovers its dark twin."
@@ -549,7 +556,9 @@
       "1241→1274": "Il sonetto viaggia dalla Sicilia alla Toscana; nel giro di una generazione, Dante metterà in versi il primo sguardo di un bambino di nove anni su Beatrice.",
       "1580→1824": "I saggi personali di Montaigne trovano il loro erede più oscuro: le Operette Morali di Leopardi trasformano la confessione in volgare in disperazione cosmica, spogliando la filosofia della dignità latina.",
       "1824→1854": "La morte romantica in esilio di Byron lascia il posto al ritiro deliberato di Thoreau; la letteratura passa dal gesto eroico alla testimonianza intima.",
-      "1854→1874": "Il Walden di Thoreau radicò il trascendentalismo americano nella terra del New England; il Wessex di Hardy fece lo stesso per la narrativa inglese, inventando una geografia regionale che avrebbe portato la sua visione del destino rurale."
+      "1854→1874": "Il Walden di Thoreau radicò il trascendentalismo americano nella terra del New England; il Wessex di Hardy fece lo stesso per la narrativa inglese, inventando una geografia regionale che avrebbe portato la sua visione del destino rurale.",
+      "1580→1605": "I Saggi di Montaigne, che esplorano il sé in francese, cedono il passo al romanzo di Cervantes — la prima narrativa a fare di un lettore folle il proprio eroe.",
+      "1605→1824": "La coscienza ironica del Don Chisciotte diventa il modello per la narrativa europea; Byron legge Cervantes prima di inventare l'eroe byroniano."
     },
     "renaissance-humanism": {
       "1401→1453": "Gli umanisti fiorentini raccoglievano manoscritti prima del 1453; l'esodo greco accelerò ciò che Salutati e Bruni avevano iniziato.",
@@ -596,7 +605,9 @@
       "1641→1648": "Van Dyck muore; Rembrandt completa La Ronda di notte. Il Barocco si divide: teatralità cattolica contro introspezione protestante, magnificenza di corte contro ritrattistica civica.",
       "1648→1666": "La pace portò lo spettacolo. La sobrietà olandese e l'esuberanza continentale divennero risposte gemelle alla stessa domanda postbellica: come si crea significato dopo che Dio è stato usato come arma?",
       "1666→1670": "Il fuoco liberò Londra dal suo disordine medievale; Wren riempì il vuoto con un Barocco razionale. Nel frattempo Vermeer dipinse la devozione cattolica sotto mentite spoglie protestanti — chiese nascoste, fede nascosta, superfici luminose.",
-      "1571→1600": "Il bambino nato a Milano nel settembre 1571 — Michelangelo Merisi, detto Caravaggio — diventerà il primo pittore barocco. Il suo chiaroscuro rivoluziona l'arte: dove Venezia celebrava la luminosità, lui rende drammatica l'oscurità stessa."
+      "1571→1600": "Il bambino nato a Milano nel settembre 1571 — Michelangelo Merisi, detto Caravaggio — diventerà il primo pittore barocco. Il suo chiaroscuro rivoluziona l'arte: dove Venezia celebrava la luminosità, lui rende drammatica l'oscurità stessa.",
+      "1600→1605": "Il tenebrismo di Caravaggio si diffonde da Roma a Mantova attraverso commissioni rifiutate e il patrocinio di Rubens — lo scandalo diventa valuta.",
+      "1605→1610": "La Morte della Vergine rifiutata viaggia da Roma a Mantova; Caravaggio fugge le accuse di omicidio, diffondendo il chiaroscuro a Napoli e Malta."
     },
     "empiricism": {
       "1543→1687": "Vesalio si fidava della dissezione più che di Galeno; Newton si fidava della matematica più che della tradizione.",
@@ -606,7 +617,9 @@
       "1776→1859": "L'empirismo scettico di Hume nel 1776 attaccò la causalità come mera abitudine. Nel 1859, Darwin trasformò l'osservazione empirica in una grande teoria—la selezione naturale—che avrebbe definitivamente soppiantato la speculazione metafisica nello studio della vita.",
       "1687→1751": "I Principia di Newton diedero all'empirismo un trionfo cosmico; il Saggio di Locke gli diede una mente. Il Discorso preliminare di d'Alembert sintetizzò entrambi nel manifesto epistemologico dell'Encyclopédie.",
       "1751→1776": "L'epistemologia sensista dell'Encyclopédie attraversò la Manica; Hume la radicalizzò nello scetticismo, Adam Smith la applicò al comportamento economico.",
-      "1241→1543": "L'ornitologia empirica di Federico II sussurra attraverso traduzioni arabe nelle aule scolastiche, finché Vesalio apre i corpi reali e Copernico riapre i cieli."
+      "1241→1543": "L'ornitologia empirica di Federico II sussurra attraverso traduzioni arabe nelle aule scolastiche, finché Vesalio apre i corpi reali e Copernico riapre i cieli.",
+      "1543→1605": "Vesalio dissezionava; Bacon sintetizza. Dall'osservazione anatomica a un programma per ogni sapere: osservare, verificare, testare.",
+      "1605→1610": "L'Advancement di Bacon raggiunge la generazione di Galileo; il telescopio dimostrerà la validità del suo programma — l'osservazione supera l'autorità."
     },
     "scientific-revolution": {
       "1543→1687": "Copernico riposizionò la Terra; Newton spiegò perché restava in orbita.",
@@ -803,7 +816,8 @@
       "1558→1571": "Dall'ascesa di Elisabetta a Lepanto: la Controriforma si consolida mentre Roma organizza la sua grande risposta militare alla sfida protestante. La Lega Santa di Pio V dimostra che l'Europa cattolica può ancora agire come una.",
       "1571→1580": "La gloria di Lepanto sfuma nel dubbio di Montaigne. Il trionfo militare della Controriforma cede il passo allo scetticismo filosofico — mentre le guerre di religione continuano, un saggista francese chiede 'Que sçay-je?' e inventa un nuovo modo di pensare.",
       "1558→1564": "L'apparato istituzionale della Controriforma — l'Indice, i Gesuiti, i decreti tridentini — si consolida tra la morte di Maria Tudor e quella di Calvino.",
-      "1564→1571": "Dalla promulgazione dell'Indice alla vittoria di Lepanto — la Controriforma passa dalla censura alla crociata, dal controllo intellettuale al trionfo militare."
+      "1564→1571": "Dalla promulgazione dell'Indice alla vittoria di Lepanto — la Controriforma passa dalla censura alla crociata, dal controllo intellettuale al trionfo militare.",
+      "1600→1605": "Le ceneri di Bruno ancora calde, il papato alterna tre pontefici in un anno mentre cospiratori cattolici tramano per far saltare l'Inghilterra protestante."
     },
     "english-romanticism": {
       "1798→1816": "Le Lyrical Ballads di Wordsworth e Coleridge germinano nella piovosa Ginevra: Mary Shelley eredita il loro culto della natura ma aggiunge il terrore gotico — il Romanticismo scopre il suo gemello oscuro."

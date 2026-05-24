@@ -6425,5 +6425,79 @@
       "url": "audio/it/1874-paris-birth-of-impressionism.mp3",
       "duration": 196
     }
+  },
+  {
+    "year": "1605",
+    "id": "1605-year-of-masks",
+    "title": "L'Anno delle Maschere",
+    "teaser": "Cervantes inventa il romanzo moderno con un cavaliere che non distingue la fantasia dalla realtà. Bacon sostiene che la conoscenza debba servire il bene dell'umanità. Guy Fawkes si nasconde in una cantina sotto il Parlamento. A Roma, tre uomini indossano la tiara papale in un solo anno. Tutti fingono di essere ciò che non sono.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "A Roma, <strong>Caravaggio</strong> completa la <em>Morte della Vergine</em> (c. 1604-1606), un dipinto così disturbantemente naturalistico che i monaci carmelitani che lo avevano commissionato per Santa Maria della Scala rifiutano di accettarlo. Si mormora che Caravaggio abbia usato come modella per Maria una prostituta annegata — vera o no che sia la storia, l'opera scandalizza perché raffigura la morte sacra come semplicemente umana: piedi gonfi, capo reclinato, dolore ordinario. È il <strong>Barocco</strong> come provocazione, soggetti sacri spogliati di ogni idealizzazione. Peter Paul Rubens, in visita a Roma, la definisce una delle migliori opere di Caravaggio. Il Duca di Mantova acquisterà ciò che i monaci hanno rifiutato."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Il <strong>16 gennaio</strong>, la prima parte de <em>El ingenioso hidalgo don Quijote de la Mancha</em> appare nelle librerie di Madrid. <strong>Cervantes</strong>, ormai cinquantasettenne, ex soldato e schiavo che ha trascorso anni come drammaturgo fallito, inventa una nuova forma letteraria: il <strong>romanzo moderno</strong>. Don Chisciotte legge troppi romanzi cavallereschi e parte per diventare cavaliere errante — attacca mulini a vento che crede giganti, libera criminali che immagina nobili oppressi. La satira taglia in entrambe le direzioni: deride sia l'idealista folle sia il mondo che non può accogliere l'idealismo. Nel frattempo, <strong>Shakespeare</strong> sta componendo il <em>Re Lear</em> (fine 1605-inizio 1606), un altro studio su delusione e verità."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>Francis Bacon</strong> pubblica <em>The Advancement of Learning</em>, un manifesto per un nuovo tipo di conoscenza. Dove la scolastica medievale apprezzava la contemplazione fine a se stessa, Bacon sostiene che il sapere debba migliorare la vita umana — la conoscenza come potere sulla natura, non mero ornamento della mente. Propone una classificazione sistematica di tutti i campi d'indagine, distinguendo la vera filosofia dalla 'conoscenza superba' che serve solo a decorare. È l'<strong>empirismo</strong> come programma: osservare, sperimentare, verificare. Il libro ispirerà l'<em>Encyclopédie</em> di Diderot un secolo e mezzo dopo."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il <strong>5 novembre</strong>, Thomas Knyvet scopre <strong>Guy Fawkes</strong> a guardia di trentasei barili di polvere da sparo sotto il Parlamento. La <strong>Congiura delle Polveri</strong> mirava a far saltare in aria il Re Giacomo I durante l'apertura del Parlamento, per poi mettere sul trono la figlia cattolica del re, Elisabetta. Fawkes e i suoi complici saranno impiccati, sventrati e squartati. A Roma, <strong>tre papi</strong> indossano la tiara in un solo anno: Clemente VIII muore a marzo; Leone XI viene eletto ma muore dopo soli ventisei giorni; Paolo V finalmente stabilizza la sede. A Mosca, <strong>Falso Dmitrij I</strong> — un impostore che sostiene di essere il figlio assassinato di Ivan il Terribile — viene incoronato Zar con il supporto polacco."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "L'anno ruota attorno a <strong>maschere e imposture</strong>. Don Chisciotte finge di essere un cavaliere; i suoi 'nemici' sono mulini che fingono di essere giganti — o forse i mulini sono esattamente ciò che sembrano e la maschera è la follia di Chisciotte. Guy Fawkes si nasconde sotto il Parlamento, la fede cattolica che indossa il costume della lealtà. Il Falso Dmitrij convince una nazione di essere un principe morto ritornato. Persino il papato alterna tre volti in un anno. L'<em>Advancement</em> di Bacon smaschera un impostore diverso: la conoscenza perseguita per prestigio anziché per utilità. Caravaggio spoglia i soggetti sacri delle loro maschere sante, rivelando l'ordinaria morte umana. Il Seicento inizia chiedendosi cosa si celi dietro la performance — e se ci sia qualcosa.",
+        "funFact": "Il primo giornale del mondo, <em>Relation aller Fürnemmen</em>, inizia le pubblicazioni a Strasburgo quest'anno — inaugurando un'epoca in cui le maschere sarebbero state più difficili da mantenere."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/1605",
+        "title": "1605 - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Don_Chisciotte_della_Mancia",
+        "title": "Don Chisciotte della Mancia - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Advancement_of_Learning",
+        "title": "The Advancement of Learning - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Congiura_delle_polveri",
+        "title": "Congiura delle polveri - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Morte_della_Vergine_(Caravaggio)",
+        "title": "Morte della Vergine (Caravaggio) - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1605-year-of-masks.jpg",
+      "caption": "Frontespizio della prima edizione del Don Chisciotte (1605) di Miguel de Cervantes",
+      "width": 1099,
+      "height": 1762,
+      "attribution": "Pubblico dominio, tramite Wikimedia Commons"
+    },
+    "threads": [
+      "baroque",
+      "counter-reformation",
+      "empiricism",
+      "vernacular-literature"
+    ],
+    "location": {
+      "lat": 40.4168,
+      "lon": -3.7038,
+      "place": "Madrid"
+    },
+    "addedDate": "2026-05-24T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1605-year-of-masks.mp3",
+      "duration": 192
+    }
   }
 ]

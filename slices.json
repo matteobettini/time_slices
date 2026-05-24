@@ -6456,5 +6456,79 @@
       "url": "audio/1874-paris-birth-of-impressionism.mp3",
       "duration": 174
     }
+  },
+  {
+    "year": "1605",
+    "id": "1605-year-of-masks",
+    "title": "The Year of Masks",
+    "teaser": "Cervantes invents the modern novel with a knight who cannot tell fantasy from reality. Bacon argues that knowledge should serve human welfare. Guy Fawkes hides in a cellar beneath Parliament. In Rome, three men wear the papal tiara in a single year. Everyone is pretending to be something they are not.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "In Rome, <strong>Caravaggio</strong> completes <em>Death of the Virgin</em> (c. 1604-1606), a painting so disturbingly naturalistic that the Carmelite monks who commissioned it for Santa Maria della Scala refuse to accept it. Rumor claims Caravaggio used a drowned prostitute as his model for Mary — whether true or not, the work scandalizes because it depicts holy death as merely human: swollen feet, lolling head, ordinary grief. This is <strong>Baroque</strong> as provocation, sacred subjects stripped of idealisation. Peter Paul Rubens, visiting Rome, declares it one of Caravaggio's finest works. The Duke of Mantua will buy what the monks rejected."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "On <strong>January 16th</strong>, the first part of <em>El ingenioso hidalgo don Quixote de la Mancha</em> appears in Madrid bookshops. <strong>Cervantes</strong>, now fifty-seven, a former soldier and slave who has spent years as a failed playwright, invents a new literary form: the <strong>modern novel</strong>. Don Quixote reads too many chivalric romances and rides out to become a knight-errant — attacking windmills he believes are giants, freeing criminals he imagines are oppressed nobles. The satire cuts two ways: mocking both the mad idealist and the world that cannot accommodate idealism. Meanwhile, <strong>Shakespeare</strong> is composing <em>King Lear</em> (late 1605-early 1606), another study of delusion and truth."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Francis Bacon</strong> publishes <em>The Advancement of Learning</em>, a manifesto for a new kind of knowledge. Where medieval scholasticism prized contemplation for its own sake, Bacon argues that learning must improve human life — knowledge as power over nature, not merely ornament for the mind. He proposes a systematic classification of all fields of inquiry, distinguishing true philosophy from 'proud knowledge' that merely decorates. This is <strong>empiricism</strong> as programme: observe, experiment, test. The book will inspire Diderot's <em>Encyclopédie</em> a century and a half later."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>November 5th</strong>, Thomas Knyvet discovers <strong>Guy Fawkes</strong> guarding thirty-six barrels of gunpowder beneath Parliament. The <strong>Gunpowder Plot</strong> aimed to blow up King James I during the State Opening, installing the king's Catholic daughter Elizabeth on the throne. Fawkes and his co-conspirators will be hanged, drawn, and quartered. In Rome, <strong>three popes</strong> wear the tiara in a single year: Clement VIII dies in March; Leo XI is elected but dies after just twenty-six days; Paul V finally stabilises the seat. In Moscow, <strong>False Dmitry I</strong> — a pretender claiming to be Ivan the Terrible's murdered son — is crowned Tsar with Polish support."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year turns on <strong>masks and imposture</strong>. Don Quixote pretends to be a knight; his 'enemies' are windmills pretending to be giants — or perhaps windmills are exactly what they seem and the mask is Quixote's madness. Guy Fawkes hides beneath Parliament, Catholic faith wearing the costume of loyalty. False Dmitry persuades a nation he is a dead prince returned. Even the papacy cycles through three faces in a year. Bacon's <em>Advancement</em> unmasks a different impostor: knowledge pursued for prestige rather than use. Caravaggio strips sacred subjects of their holy masks, revealing ordinary human death. The seventeenth century begins by asking what lies beneath the performance — and whether anything does.",
+        "funFact": "The world's first newspaper, <em>Relation aller Fürnemmen</em>, begins publication in Strasbourg this year — inaugurating an age when masks would be harder to maintain."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/1605",
+        "title": "1605 - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Don_Quixote",
+        "title": "Don Quixote - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Advancement_of_Learning",
+        "title": "The Advancement of Learning - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+        "title": "Gunpowder Plot - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Death_of_the_Virgin_(Caravaggio)",
+        "title": "Death of the Virgin (Caravaggio) - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1605-year-of-masks.jpg",
+      "caption": "Title page of the first edition of Don Quixote (1605) by Miguel de Cervantes",
+      "width": 1099,
+      "height": 1762,
+      "attribution": "Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "baroque",
+      "counter-reformation",
+      "empiricism",
+      "vernacular-literature"
+    ],
+    "location": {
+      "lat": 40.4168,
+      "lon": -3.7038,
+      "place": "Madrid"
+    },
+    "addedDate": "2026-05-24T05:00:00Z",
+    "podcast": {
+      "url": "audio/1605-year-of-masks.mp3",
+      "duration": 187
+    }
   }
 ]
