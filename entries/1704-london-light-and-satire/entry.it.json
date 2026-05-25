@@ -1,0 +1,40 @@
+{
+  "id": "1704-london-light-and-satire",
+  "year": 1704,
+  "title": "Luce e Satira",
+  "location": "Londra",
+  "teaser": "Newton pubblica Opticks — la luce scomposta in colori. Swift pubblica Una storia della botte — la religione scomposta in assurdità. Marlborough vince a Blenheim e infrange l'invincibilità francese. Locke muore in ottobre, il suo empirismo non confutato. Leibniz completa la sua replica ma la trattiene. L'Illuminismo affila i suoi strumenti.",
+  "threads": [
+    "scientific-revolution",
+    "empiricism",
+    "enlightenment",
+    "augustan-satire"
+  ],
+  "image": {
+    "file": "newton-opticks-1704.jpg",
+    "alt": "Frontespizio della prima edizione di Opticks di Newton (1704)",
+    "caption": "La prima edizione di Opticks di Newton (1704), pubblicata in inglese anziché in latino — la scienza che parla al pubblico colto.",
+    "source": "Wikimedia Commons (pubblico dominio)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Opticks.jpg"
+  },
+  "sections": {
+    "art": "Il <strong>Barocco inglese</strong> nella ritrattistica raggiunge il suo apice sotto <strong>Godfrey Kneller</strong>, ora pittore principale della regina Anna. I suoi ritratti della monarca — non adulatori, dignitosi, drappeggiati in ermellino e insegne reali — rifiutano l'idealizzazione continentale per una schiettezza distintamente inglese. Kneller dipinge ciò che vede: i lineamenti pesanti di Anna, la sua presenza imponente. Il risultato è propaganda attraverso l'onestà. Nel frattempo, la <strong>Cattedrale di San Paolo</strong> di <strong>Christopher Wren</strong> si avvicina al completamento (consacrata nel 1697, terminata nel 1710) — il capolavoro dell'architettura barocca inglese. Dove il Barocco italiano e francese vortica di emozione, la cupola di Wren afferma la chiarezza matematica: l'edificio progettato da un geometra che era anche astronomo. In Francia, <strong>Antoine Watteau</strong> è ancora uno sconosciuto, lavora nella pittura di scene teatrali; le sue <em>fêtes galantes</em> arriveranno tra un decennio. Il Rococò sta arrivando, ma il 1704 appartiene ancora alla <strong>Grande Maniera</strong> — ritratti che affermano lo status, architettura che afferma l'ordine.",
+
+    "literature": "<strong>Jonathan Swift</strong> pubblica <em>Una storia della botte</em> anonimamente a Londra — la sua prima grande opera, una feroce parodia dell'entusiasmo religioso e della presunzione intellettuale. Tre fratelli (Pietro, Martino, Giacomo — che rappresentano cattolicesimo, anglicanesimo, dissidentismo) ereditano cappotti che è loro vietato alterare; li alterano all'infinito. L'allegoria espone come il cristianesimo sia stato corrotto dalla vanità umana. Ma il vero bersaglio di Swift è più ampio: i <strong>Moderni</strong> che credono di aver superato gli Antichi, i progettisti e sistematizzatori la cui fiducia supera la loro competenza. Le digressioni sopraffanno il racconto — uno scherzo formale sull'incoerenza intellettuale. La regina Anna lo trova blasfemo; costa a Swift ogni speranza di preferenza episcopale. Aveva scritto troppo bene. Accanto alla Storia, la <em>Battaglia dei libri</em> di Swift estende la querelle tra Antichi e Moderni in forma di finto poema epico. Nello stesso anno, <strong>Daniel Defoe</strong> pubblica <em>La tempesta</em>, documentando la Grande Tempesta del novembre 1703 che uccise 8.000 persone — proto-giornalismo, fatti raccolti dai testimoni. La prosa inglese sta diventando strumentale: satira, reportage, argomentazione.",
+
+    "philosophy": "Il <strong>28 ottobre 1704</strong>, <strong>John Locke</strong> muore a Oates nell'Essex, all'età di settantadue anni. Il fondatore dell'empirismo — che aveva sostenuto che la mente inizia come una <em>tabula rasa</em>, che tutta la conoscenza deriva dall'esperienza — lascia dietro di sé una rivoluzione intellettuale solo a metà compiuta. Il suo <em>Saggio sull'intelletto umano</em> (1689) aveva sfidato le idee innate; la sua filosofia politica aveva giustificato la Gloriosa Rivoluzione. Ad Hannover, <strong>Leibniz</strong> completa i suoi <em>Nuovi saggi sull'intelletto umano</em> — una confutazione punto per punto dell'empirismo di Locke, difendendo le idee innate attraverso la metafora del marmo venato: la forma preesiste allo scalpello dello scultore. Ma quando Locke muore, Leibniz trattiene la pubblicazione — sembra sconveniente attaccare un uomo che non può rispondere. I <em>Nuovi saggi</em> non appariranno fino al 1765. Nel frattempo, <strong>Newton</strong> pubblica <em>Opticks</em> — in inglese, non in latino — dimostrando che la luce bianca è composita, che il colore è una proprietà fisica misurabile dalla rifrazione. Newton ha aspettato la morte di <strong>Robert Hooke</strong> nel 1703 prima di pubblicare; Hooke aveva contestato le sue teorie ottiche per decenni. I morti non possono obiettare.",
+
+    "history": "La <strong>Guerra di successione spagnola</strong> svolta decisamente a <strong>Blenheim</strong> il 13 agosto 1704. Il <strong>Duca di Marlborough</strong> e il <strong>Principe Eugenio di Savoia</strong> sbaragliano l'esercito franco-bavarese sul Danubio; il maresciallo Tallard viene catturato; 30.000 soldati francesi e bavaresi vengono uccisi, feriti o fatti prigionieri. Il mito dell'invincibilità francese sotto <strong>Luigi XIV</strong> è infranto. Vienna è salva; la Grande Alleanza tiene. Blenheim è la più grande vittoria continentale inglese dai tempi di Azincourt — e Marlborough la celebrerà costruendo <strong>Blenheim Palace</strong>, progettato da Vanbrugh, un monumento alla propria gloria. Pochi giorni prima, il 4 agosto, una flotta anglo-olandese sotto l'<strong>Ammiraglio Rooke</strong> conquista <strong>Gibilterra</strong> — un ripensamento strategico che diventa permanente: la Gran Bretagna la detiene ancora. Il Trattato di Utrecht (1713) confermerà entrambe le acquisizioni. Il regno della regina Anna, vecchio di appena due anni, è definito da questi trionfi; Sarah Churchill, Duchessa di Marlborough, rimane la più stretta confidente della regina — per ora.",
+
+    "connections": "L'anno 1704 mette in scena una rivoluzione metodologica. <em>Opticks</em> di Newton dimostra come <strong>decomporre</strong> — scomporre la luce bianca nei colori costituenti, rivelare la struttura nascosta sotto l'apparente unità. <em>Una storia della botte</em> di Swift compie la stessa operazione sulla religione e sulla conoscenza: sotto il cappotto senza cuciture della pratica cristiana giacciono secoli di aggiunte, alterazioni, corruzioni umane. Entrambe le opere sono <strong>analitiche</strong>: smontano ciò che sembrava intero. L'empirismo di Locke è il fondamento filosofico — conoscenza costruita da idee semplici combinate, non rivelata intera dal cielo. La replica soppressa di Leibniz sostiene l'opposto: la struttura è innata, la forma precede l'esperienza. Il dibattito plasmerà la filosofia per secoli. Anche Blenheim è una sorta di decomposizione: la macchina militare francese apparentemente invincibile scomposta in prigionieri e cadaveri. Il metodo dell'Illuminismo sta emergendo — smontalo, guarda come funziona, ricostruisci dai primi principi. Newton con i prismi, Swift con la satira, Marlborough con la cavalleria."
+  },
+  "funFact": "Newton ritardò la pubblicazione di Opticks per oltre un decennio, in parte per evitare rinnovate dispute con Robert Hooke, che aveva contestato le sue teorie ottiche sin dagli anni 1670. Hooke morì nel marzo 1703. Newton pubblicò nel 1704. Aveva aspettato.",
+  "audioFiles": {
+    "art": "art.mp3",
+    "literature": "literature.mp3",
+    "philosophy": "philosophy.mp3",
+    "history": "history.mp3",
+    "connections": "connections.mp3",
+    "funFact": "funfact.mp3"
+  }
+}

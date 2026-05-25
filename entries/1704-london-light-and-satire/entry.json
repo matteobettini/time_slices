@@ -1,0 +1,40 @@
+{
+  "id": "1704-london-light-and-satire",
+  "year": 1704,
+  "title": "Light and Satire",
+  "location": "London",
+  "teaser": "Newton publishes Opticks — light decomposed into colour. Swift publishes A Tale of a Tub — religion decomposed into absurdity. Marlborough wins Blenheim and shatters French invincibility. Locke dies in October, his empiricism unrefuted. Leibniz completes his rebuttal but withholds it. The Enlightenment sharpens its instruments.",
+  "threads": [
+    "scientific-revolution",
+    "empiricism",
+    "enlightenment",
+    "augustan-satire"
+  ],
+  "image": {
+    "file": "newton-opticks-1704.jpg",
+    "alt": "First edition title page of Newton's Opticks (1704)",
+    "caption": "The first edition of Newton's Opticks (1704), published in English rather than Latin — science speaking to the educated public.",
+    "source": "Wikimedia Commons (public domain)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Opticks.jpg"
+  },
+  "sections": {
+    "art": "<strong>English Baroque</strong> portraiture reaches its zenith under <strong>Godfrey Kneller</strong>, now principal painter to Queen Anne. His portraits of the monarch — unflattering, dignified, draped in ermine and royal regalia — reject Continental idealisation for a distinctly English plainness. Kneller paints what he sees: Anne's heavy features, her forceful presence. The result is propaganda through honesty. Meanwhile, <strong>Christopher Wren</strong>'s <strong>St Paul's Cathedral</strong> rises toward completion (consecrated 1697, finished 1710) — the masterpiece of English Baroque architecture. Where Italian and French Baroque swirls with emotion, Wren's dome asserts mathematical clarity: the building designed by a geometer who was also an astronomer. In France, <strong>Antoine Watteau</strong> is still an unknown, working in theatrical scene-painting; his <em>fêtes galantes</em> lie a decade away. The Rococo is coming, but 1704 still belongs to the <strong>Grand Manner</strong> — portraits that assert status, architecture that asserts order.",
+
+    "literature": "<strong>Jonathan Swift</strong> publishes <em>A Tale of a Tub</em> anonymously in London — his first major work, a savage parody of religious enthusiasm and intellectual pretension. Three brothers (Peter, Martin, Jack — representing Catholicism, Anglicanism, Dissent) inherit coats they are forbidden to alter; they alter them endlessly. The allegory exposes how Christianity has been corrupted by human vanity. But Swift's real target is broader: the <strong>Moderns</strong> who believe they have surpassed the Ancients, the projectors and systematizers whose confidence outstrips their competence. The digressions overwhelm the tale — a formal joke about intellectual incoherence. Queen Anne found it blasphemous; it cost Swift any hope of episcopal preferment. He had written too well. Alongside the Tale, Swift's <em>Battle of the Books</em> extends the Ancient-Modern quarrel into mock-epic form. In the same year, <strong>Daniel Defoe</strong> publishes <em>The Storm</em>, documenting the Great Storm of November 1703 that killed 8,000 people — proto-journalism, fact gathered from witnesses. English prose is becoming instrumental: satire, reportage, argument.",
+
+    "philosophy": "On <strong>28 October 1704</strong>, <strong>John Locke</strong> dies at Oates in Essex, aged seventy-two. The founding empiricist — who argued that the mind begins as a <em>tabula rasa</em>, that all knowledge derives from experience — leaves behind an intellectual revolution only half-complete. His <em>Essay Concerning Human Understanding</em> (1689) had challenged innate ideas; his political philosophy had justified the Glorious Revolution. In Hanover, <strong>Leibniz</strong> completes his <em>New Essays on Human Understanding</em> — a point-by-point refutation of Locke's empiricism, defending innate ideas through the metaphor of veined marble: the form pre-exists the sculptor's chisel. But when Locke dies, Leibniz withholds publication — it seems unseemly to attack a man who cannot reply. The <em>New Essays</em> will not appear until 1765. Meanwhile, <strong>Newton</strong> publishes <em>Opticks</em> — in English, not Latin — demonstrating that white light is composite, that colour is a physical property measurable by refraction. Newton waited until <strong>Robert Hooke</strong>'s death in 1703 before publishing; Hooke had disputed his optical theories for decades. The dead cannot object.",
+
+    "history": "The <strong>War of the Spanish Succession</strong> turns decisively at <strong>Blenheim</strong> on 13 August 1704. The <strong>Duke of Marlborough</strong> and <strong>Prince Eugene of Savoy</strong> crush the Franco-Bavarian army on the Danube; Marshal Tallard is captured; 30,000 French and Bavarian troops are killed, wounded, or taken prisoner. The myth of French invincibility under <strong>Louis XIV</strong> is shattered. Vienna is saved; the Grand Alliance holds. Blenheim is England's greatest continental victory since Agincourt — and Marlborough will celebrate it by building <strong>Blenheim Palace</strong>, designed by Vanbrugh, a monument to his own glory. Days earlier, on 4 August, an Anglo-Dutch fleet under <strong>Admiral Rooke</strong> captures <strong>Gibraltar</strong> — a strategic afterthought that becomes permanent: Britain still holds it. The Treaty of Utrecht (1713) will confirm both acquisitions. Queen Anne's reign, barely two years old, is defined by these triumphs; Sarah Churchill, Duchess of Marlborough, remains the Queen's closest confidante — for now.",
+
+    "connections": "The year 1704 stages a methodological revolution. Newton's <em>Opticks</em> demonstrates how to <strong>decompose</strong> — break white light into constituent colours, reveal the hidden structure beneath apparent unity. Swift's <em>Tale of a Tub</em> performs the same operation on religion and learning: beneath the seamless coat of Christian practice lie centuries of human additions, alterations, corruptions. Both works are <strong>analytical</strong>: they take apart what had seemed whole. Locke's empiricism is the philosophical foundation — knowledge built from simple ideas combined, not revealed whole from heaven. Leibniz's suppressed rebuttal argues the opposite: structure is innate, form precedes experience. The debate will shape philosophy for centuries. Blenheim, too, is a kind of decomposition: the apparently invincible French military machine broken into prisoners and corpses. The Enlightenment's method is emerging — take it apart, see how it works, rebuild from first principles. Newton with prisms, Swift with satire, Marlborough with cavalry."
+  },
+  "funFact": "Newton delayed publishing Opticks for over a decade, partly to avoid renewed disputes with Robert Hooke, who had challenged his optical theories since the 1670s. Hooke died in March 1703. Newton published in 1704. He waited.",
+  "audioFiles": {
+    "art": "art.mp3",
+    "literature": "literature.mp3",
+    "philosophy": "philosophy.mp3",
+    "history": "history.mp3",
+    "connections": "connections.mp3",
+    "funFact": "funfact.mp3"
+  }
+}

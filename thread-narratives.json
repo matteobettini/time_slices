@@ -176,7 +176,9 @@
       "1751→1776": "The Encyclopédie's sensationalist epistemology crossed the Channel; Hume radicalised it into scepticism, Adam Smith applied it to economic behaviour.",
       "1241→1543": "Frederick II's empirical ornithology whispers through Arabic translations into scholastic halls, until Vesalius opens actual bodies and Copernicus reopens the heavens.",
       "1543→1605": "Vesalius dissected; Bacon synthesises. From anatomical observation to a programme for all knowledge: see, test, verify.",
-      "1605→1610": "Bacon's Advancement reaches Galileo's generation; the telescope will prove his programme right — observation trumps authority."
+      "1605→1610": "Bacon's Advancement reaches Galileo's generation; the telescope will prove his programme right — observation trumps authority.",
+      "1687→1704": "Locke dies, his Essay unrefuted. Knowledge through experience becomes orthodoxy.",
+      "1704→1751": "From Locke's death to Hume's Enquiry — empiricism deepens into skepticism about causation and the self."
     },
     "scientific-revolution": {
       "1543→1687": "Copernicus repositioned the Earth; Newton explained why it stayed in orbit. The revolution Copernicus began, Newton completed.",
@@ -194,7 +196,9 @@
       "1543→1571": "From dissection to destiny: Vesalius opened the body, Copernicus opened the cosmos — and in December 1571, the man who would prove them both right, Johannes Kepler, drew his first breath.",
       "1571→1610": "Born in the year of Lepanto, Kepler will grow to explain the cosmos mathematically — while Caravaggio, born the same year, uses light to explain the human soul. Both revolutionize their fields with precision and drama.",
       "1543→1564": "Copernicus and Vesalius both publish in 1543, revolutionizing astronomy and anatomy. Vesalius dies in 1564; three days earlier, Galileo is born to continue the work.",
-      "1564→1571": "Galileo's birth and Vesalius's death mark the transition from anatomical to astronomical observation; Kepler's birth at Lepanto continues the chain."
+      "1564→1571": "Galileo's birth and Vesalius's death mark the transition from anatomical to astronomical observation; Kepler's birth at Lepanto continues the chain.",
+      "1687→1704": "Newton follows the Principia with Opticks — completing the mathematical framework that will dominate physics for two centuries.",
+      "1704→1859": "From Newton's optics to Darwin's evolution — the empirical method conquers biology as thoroughly as it conquered physics."
     },
     "enlightenment": {
       "1687→1755": "Newton's <em>Principia</em> proved the cosmos was lawful; the Lisbon earthquake asked whether it was just. Enlightenment optimism crested and cracked within seventy years.",
@@ -214,7 +218,9 @@
       "1784→1789": "Kant dared humanity to think for itself; five years later, the French Assembly put reason into law.",
       "1789→1794": "The Declaration promised universal rights; the Terror asked who got to define them.",
       "1755→1762": "From Lisbon's earthquake — which shattered theodicy — Voltaire moves toward human agency. Rousseau's Social Contract provides the mechanism: sovereignty belongs to the general will, not God or kings.",
-      "1762→1776": "Rousseau's banned books circulate underground. Jefferson reads The Social Contract while drafting a declaration that will hold these truths to be self-evident — that governments derive their just powers from the consent of the governed."
+      "1762→1776": "Rousseau's banned books circulate underground. Jefferson reads The Social Contract while drafting a declaration that will hold these truths to be self-evident — that governments derive their just powers from the consent of the governed.",
+      "1687→1704": "From the Principia to the Opticks — Newton gives the Enlightenment its method and its confidence.",
+      "1704→1714": "A decade of method: from Newton's prisms to Leibniz's monads, the philosophical landscape solidifies."
     },
     "critical-philosophy": {
       "1755→1784": "The earthquake forced Kant to reconsider natural theology; three decades later, his Critiques limited what reason could claim. Theodicy's failure birthed epistemology's caution."
@@ -447,6 +453,9 @@
     },
     "aristotelian-synthesis": {
       "1191→1274": "Averroes' commentaries, banned in Islam, traveled through Latin translation to Paris; Aquinas built his synthesis fighting Averroist interpreters."
+    },
+    "augustan-satire": {
+      "1704→1738": "From Swift's Tale of a Tub to Pope's Dunciad — Augustan satire matures from religious parody to comprehensive cultural critique."
     }
   },
   "it": {
@@ -619,7 +628,9 @@
       "1751→1776": "L'epistemologia sensista dell'Encyclopédie attraversò la Manica; Hume la radicalizzò nello scetticismo, Adam Smith la applicò al comportamento economico.",
       "1241→1543": "L'ornitologia empirica di Federico II sussurra attraverso traduzioni arabe nelle aule scolastiche, finché Vesalio apre i corpi reali e Copernico riapre i cieli.",
       "1543→1605": "Vesalio dissezionava; Bacon sintetizza. Dall'osservazione anatomica a un programma per ogni sapere: osservare, verificare, testare.",
-      "1605→1610": "L'Advancement di Bacon raggiunge la generazione di Galileo; il telescopio dimostrerà la validità del suo programma — l'osservazione supera l'autorità."
+      "1605→1610": "L'Advancement di Bacon raggiunge la generazione di Galileo; il telescopio dimostrerà la validità del suo programma — l'osservazione supera l'autorità.",
+      "1687→1704": "Locke muore, il suo Saggio non confutato. La conoscenza attraverso l'esperienza diventa ortodossia.",
+      "1704→1751": "Dalla morte di Locke all'Enquiry di Hume — l'empirismo si approfondisce in scetticismo sulla causalità e sul sé."
     },
     "scientific-revolution": {
       "1543→1687": "Copernico riposizionò la Terra; Newton spiegò perché restava in orbita.",
@@ -637,7 +648,9 @@
       "1543→1571": "Dalla dissezione al destino: Vesalio aprì il corpo, Copernico aprì il cosmo — e nel dicembre 1571, l'uomo che avrebbe dato ragione a entrambi, Giovanni Keplero, fece il suo primo respiro.",
       "1571→1610": "Nato nell'anno di Lepanto, Keplero crescerà per spiegare matematicamente il cosmo — mentre Caravaggio, nato lo stesso anno, usa la luce per spiegare l'anima umana. Entrambi rivoluzionano i loro campi con precisione e dramma.",
       "1543→1564": "Copernico e Vesalio pubblicano entrambi nel 1543, rivoluzionando astronomia e anatomia. Vesalio muore nel 1564; tre giorni prima nasce Galileo per continuare l'opera.",
-      "1564→1571": "La nascita di Galileo e la morte di Vesalio segnano la transizione dall'osservazione anatomica a quella astronomica; la nascita di Keplero a Lepanto continua la catena."
+      "1564→1571": "La nascita di Galileo e la morte di Vesalio segnano la transizione dall'osservazione anatomica a quella astronomica; la nascita di Keplero a Lepanto continua la catena.",
+      "1687→1704": "Newton fa seguire ai Principia l'Opticks — completando il quadro matematico che dominerà la fisica per due secoli.",
+      "1704→1859": "Dall'ottica di Newton all'evoluzione di Darwin — il metodo empirico conquista la biologia tanto completamente quanto aveva conquistato la fisica."
     },
     "enlightenment": {
       "1687→1755": "I <em>Principia</em> di Newton dimostrarono che il cosmo era regolato da leggi; il terremoto di Lisbona chiese se fosse giusto.",
@@ -657,7 +670,9 @@
       "1784→1789": "Kant sfidò l'umanità a pensare da sé; cinque anni dopo, l'Assemblea francese tradusse la ragione in legge.",
       "1789→1794": "La Dichiarazione promise diritti universali; il Terrore chiese chi potesse definirli.",
       "1755→1762": "Dal terremoto di Lisbona — che infranse la teodicea — Voltaire si muove verso l'agentività umana. Il Contratto sociale di Rousseau fornisce il meccanismo: la sovranità appartiene alla volontà generale, non a Dio o ai re.",
-      "1762→1776": "I libri banditi di Rousseau circolano clandestinamente. Jefferson legge Il Contratto sociale mentre redige una dichiarazione che riterrà evidenti queste verità — che i governi derivano i loro giusti poteri dal consenso dei governati."
+      "1762→1776": "I libri banditi di Rousseau circolano clandestinamente. Jefferson legge Il Contratto sociale mentre redige una dichiarazione che riterrà evidenti queste verità — che i governi derivano i loro giusti poteri dal consenso dei governati.",
+      "1687→1704": "Dai Principia all'Opticks — Newton dà all'Illuminismo il suo metodo e la sua fiducia.",
+      "1704→1714": "Un decennio di metodo: dai prismi di Newton alle monadi di Leibniz, il paesaggio filosofico si solidifica."
     },
     "critical-philosophy": {
       "1755→1784": "Il terremoto costrinse Kant a riconsiderare la teologia naturale; tre decenni dopo, le sue Critiche limitarono ciò che la ragione poteva pretendere."
@@ -890,6 +905,9 @@
     },
     "aristotelian-synthesis": {
       "1191→1274": "I commentari di Averroè, banditi nell'Islam, viaggiarono in traduzione latina fino a Parigi; Tommaso costruì la sua sintesi combattendo gli interpreti averroisti."
+    },
+    "augustan-satire": {
+      "1704→1738": "Dalla Storia della botte di Swift alla Dunciade di Pope — la satira augustea matura dalla parodia religiosa alla critica culturale complessiva."
     }
   }
 }
