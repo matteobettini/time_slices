@@ -164,7 +164,8 @@
       "1666→1670": "Fire cleared London's medieval clutter; Wren filled the void with rational Baroque. Meanwhile Vermeer painted Catholic devotion in Protestant disguise — hidden churches, hidden faith, luminous surfaces.",
       "1571→1600": "The infant born at Milan in September 1571 — Michelangelo Merisi, called Caravaggio — will mature into the first Baroque painter. His chiaroscuro revolutionizes art: where Venice celebrated luminosity, he makes darkness itself dramatic.",
       "1600→1605": "Caravaggio's tenebrism spreads from Rome to Mantua via rejected commissions and Rubens's advocacy — scandal becomes currency.",
-      "1605→1610": "The rejected Death of the Virgin travels from Rome to Mantua; Caravaggio flees murder charges, spreading chiaroscuro to Naples and Malta."
+      "1605→1610": "The rejected Death of the Virgin travels from Rome to Mantua; Caravaggio flees murder charges, spreading chiaroscuro to Naples and Malta.",
+      "1714→1727": "From Watteau's fêtes galantes to Newton's apotheosis: the decorative gives way to the monumental as England buries its philosopher-king."
     },
     "empiricism": {
       "1543→1687": "Vesalius trusted dissection over Galen; Newton trusted mathematics over tradition. Both empiricisms — anatomical and physical — insisted that observation trumped authority.",
@@ -178,7 +179,9 @@
       "1543→1605": "Vesalius dissected; Bacon synthesises. From anatomical observation to a programme for all knowledge: see, test, verify.",
       "1605→1610": "Bacon's Advancement reaches Galileo's generation; the telescope will prove his programme right — observation trumps authority.",
       "1687→1704": "Locke dies, his Essay unrefuted. Knowledge through experience becomes orthodoxy.",
-      "1704→1751": "From Locke's death to Hume's Enquiry — empiricism deepens into skepticism about causation and the self."
+      "1704→1751": "From Locke's death to Hume's Enquiry — empiricism deepens into skepticism about causation and the self.",
+      "1704→1727": "Locke dies; Newton is deified. Voltaire absorbs both — English observation becomes French philosophy's weapon against the ancien régime.",
+      "1727→1751": "From Newton's funeral to the Encyclopédie: what Voltaire absorbed in London, d'Alembert and Diderot systematize for France."
     },
     "scientific-revolution": {
       "1543→1687": "Copernicus repositioned the Earth; Newton explained why it stayed in orbit. The revolution Copernicus began, Newton completed.",
@@ -198,7 +201,9 @@
       "1543→1564": "Copernicus and Vesalius both publish in 1543, revolutionizing astronomy and anatomy. Vesalius dies in 1564; three days earlier, Galileo is born to continue the work.",
       "1564→1571": "Galileo's birth and Vesalius's death mark the transition from anatomical to astronomical observation; Kepler's birth at Lepanto continues the chain.",
       "1687→1704": "Newton follows the Principia with Opticks — completing the mathematical framework that will dominate physics for two centuries.",
-      "1704→1859": "From Newton's optics to Darwin's evolution — the empirical method conquers biology as thoroughly as it conquered physics."
+      "1704→1859": "From Newton's optics to Darwin's evolution — the empirical method conquers biology as thoroughly as it conquered physics.",
+      "1704→1727": "From Opticks to apotheosis: Newton refines his system, then becomes the system's symbol — buried like a king, worshipped like a saint.",
+      "1727→1859": "Newton's method — observe, measure, calculate — spreads from physics to biology. Darwin applies it to life itself."
     },
     "enlightenment": {
       "1687→1755": "Newton's <em>Principia</em> proved the cosmos was lawful; the Lisbon earthquake asked whether it was just. Enlightenment optimism crested and cracked within seventy years.",
@@ -220,7 +225,9 @@
       "1755→1762": "From Lisbon's earthquake — which shattered theodicy — Voltaire moves toward human agency. Rousseau's Social Contract provides the mechanism: sovereignty belongs to the general will, not God or kings.",
       "1762→1776": "Rousseau's banned books circulate underground. Jefferson reads The Social Contract while drafting a declaration that will hold these truths to be self-evident — that governments derive their just powers from the consent of the governed.",
       "1687→1704": "From the Principia to the Opticks — Newton gives the Enlightenment its method and its confidence.",
-      "1704→1714": "A decade of method: from Newton's prisms to Leibniz's monads, the philosophical landscape solidifies."
+      "1704→1714": "A decade of method: from Newton's prisms to Leibniz's monads, the philosophical landscape solidifies.",
+      "1714→1727": "Leibniz dies in obscurity; Newton is buried with princes. The transfer of philosophical prestige from continent to island begins.",
+      "1727→1738": "Voltaire, returned from exile, publishes his Lettres philosophiques — England's lessons transmitted to France, with consequences."
     },
     "critical-philosophy": {
       "1755→1784": "The earthquake forced Kant to reconsider natural theology; three decades later, his Critiques limited what reason could claim. Theodicy's failure birthed epistemology's caution."
@@ -616,7 +623,8 @@
       "1666→1670": "Il fuoco liberò Londra dal suo disordine medievale; Wren riempì il vuoto con un Barocco razionale. Nel frattempo Vermeer dipinse la devozione cattolica sotto mentite spoglie protestanti — chiese nascoste, fede nascosta, superfici luminose.",
       "1571→1600": "Il bambino nato a Milano nel settembre 1571 — Michelangelo Merisi, detto Caravaggio — diventerà il primo pittore barocco. Il suo chiaroscuro rivoluziona l'arte: dove Venezia celebrava la luminosità, lui rende drammatica l'oscurità stessa.",
       "1600→1605": "Il tenebrismo di Caravaggio si diffonde da Roma a Mantova attraverso commissioni rifiutate e il patrocinio di Rubens — lo scandalo diventa valuta.",
-      "1605→1610": "La Morte della Vergine rifiutata viaggia da Roma a Mantova; Caravaggio fugge le accuse di omicidio, diffondendo il chiaroscuro a Napoli e Malta."
+      "1605→1610": "La Morte della Vergine rifiutata viaggia da Roma a Mantova; Caravaggio fugge le accuse di omicidio, diffondendo il chiaroscuro a Napoli e Malta.",
+      "1714→1727": "Dalle fêtes galantes di Watteau all'apoteosi di Newton: il decorativo cede al monumentale mentre l'Inghilterra seppellisce il suo filosofo-re."
     },
     "empiricism": {
       "1543→1687": "Vesalio si fidava della dissezione più che di Galeno; Newton si fidava della matematica più che della tradizione.",
@@ -630,7 +638,9 @@
       "1543→1605": "Vesalio dissezionava; Bacon sintetizza. Dall'osservazione anatomica a un programma per ogni sapere: osservare, verificare, testare.",
       "1605→1610": "L'Advancement di Bacon raggiunge la generazione di Galileo; il telescopio dimostrerà la validità del suo programma — l'osservazione supera l'autorità.",
       "1687→1704": "Locke muore, il suo Saggio non confutato. La conoscenza attraverso l'esperienza diventa ortodossia.",
-      "1704→1751": "Dalla morte di Locke all'Enquiry di Hume — l'empirismo si approfondisce in scetticismo sulla causalità e sul sé."
+      "1704→1751": "Dalla morte di Locke all'Enquiry di Hume — l'empirismo si approfondisce in scetticismo sulla causalità e sul sé.",
+      "1704→1727": "Locke muore; Newton viene divinizzato. Voltaire assorbe entrambi — l'osservazione inglese diventa l'arma della filosofia francese contro l'ancien régime.",
+      "1727→1751": "Dal funerale di Newton all'Encyclopédie: ciò che Voltaire assorbì a Londra, d'Alembert e Diderot sistematizzano per la Francia."
     },
     "scientific-revolution": {
       "1543→1687": "Copernico riposizionò la Terra; Newton spiegò perché restava in orbita.",
@@ -650,7 +660,9 @@
       "1543→1564": "Copernico e Vesalio pubblicano entrambi nel 1543, rivoluzionando astronomia e anatomia. Vesalio muore nel 1564; tre giorni prima nasce Galileo per continuare l'opera.",
       "1564→1571": "La nascita di Galileo e la morte di Vesalio segnano la transizione dall'osservazione anatomica a quella astronomica; la nascita di Keplero a Lepanto continua la catena.",
       "1687→1704": "Newton fa seguire ai Principia l'Opticks — completando il quadro matematico che dominerà la fisica per due secoli.",
-      "1704→1859": "Dall'ottica di Newton all'evoluzione di Darwin — il metodo empirico conquista la biologia tanto completamente quanto aveva conquistato la fisica."
+      "1704→1859": "Dall'ottica di Newton all'evoluzione di Darwin — il metodo empirico conquista la biologia tanto completamente quanto aveva conquistato la fisica.",
+      "1704→1727": "Da Opticks all'apoteosi: Newton perfeziona il suo sistema, poi diventa il simbolo del sistema — sepolto come un re, venerato come un santo.",
+      "1727→1859": "Il metodo di Newton — osservare, misurare, calcolare — si diffonde dalla fisica alla biologia. Darwin lo applica alla vita stessa."
     },
     "enlightenment": {
       "1687→1755": "I <em>Principia</em> di Newton dimostrarono che il cosmo era regolato da leggi; il terremoto di Lisbona chiese se fosse giusto.",
@@ -672,7 +684,9 @@
       "1755→1762": "Dal terremoto di Lisbona — che infranse la teodicea — Voltaire si muove verso l'agentività umana. Il Contratto sociale di Rousseau fornisce il meccanismo: la sovranità appartiene alla volontà generale, non a Dio o ai re.",
       "1762→1776": "I libri banditi di Rousseau circolano clandestinamente. Jefferson legge Il Contratto sociale mentre redige una dichiarazione che riterrà evidenti queste verità — che i governi derivano i loro giusti poteri dal consenso dei governati.",
       "1687→1704": "Dai Principia all'Opticks — Newton dà all'Illuminismo il suo metodo e la sua fiducia.",
-      "1704→1714": "Un decennio di metodo: dai prismi di Newton alle monadi di Leibniz, il paesaggio filosofico si solidifica."
+      "1704→1714": "Un decennio di metodo: dai prismi di Newton alle monadi di Leibniz, il paesaggio filosofico si solidifica.",
+      "1714→1727": "Leibniz muore in oscurità; Newton viene sepolto con i principi. Inizia il trasferimento del prestigio filosofico dal continente all'isola.",
+      "1727→1738": "Voltaire, tornato dall'esilio, pubblica le Lettres philosophiques — le lezioni inglesi trasmesse alla Francia, con conseguenze."
     },
     "critical-philosophy": {
       "1755→1784": "Il terremoto costrinse Kant a riconsiderare la teologia naturale; tre decenni dopo, le sue Critiche limitarono ciò che la ragione poteva pretendere."

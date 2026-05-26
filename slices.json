@@ -6568,5 +6568,79 @@
       "funFact": "funfact.mp3"
     },
     "addedDate": "2026-05-25"
+  },
+  {
+    "year": "1727",
+    "id": "1727-london-passing-of-the-torch",
+    "title": "London — The Passing of the Torch",
+    "teaser": "Newton is buried like a king in Westminster Abbey — the first scientist accorded such honor. Voltaire watches from the crowd, absorbing the lesson that England honors its philosophers. In October, Handel's coronation anthems thunder for George II. Across the Channel, Canaletto captures Venice in a new way: not grandeur but daily life. Thomson publishes Summer, poetry turning toward nature. Hales measures sap in plants. An age of system-builders dies; an age of observers begins.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "In Venice, <strong>Canaletto</strong> paints <em>The Stonemason's Yard</em> — a revolutionary departure from his later postcard views. Here is Venice as a living city: workmen chiselling stone, laundry strung between buildings, a mother comforting a fallen child. The bell tower of Santa Maria della Carità (which will collapse in 1744) looms over quotidian labor. This is the birth of <strong>intimate vedutismo</strong> — not the Grand Tour souvenir but observed life. In London, <strong>William Hogarth</strong> struggles for recognition, winning a lawsuit against an employer who claimed he was 'merely an engraver.' His satirical vision — art as moral commentary — is still forming; within a decade, <em>A Harlot's Progress</em> will make his reputation."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>James Thomson</strong> publishes <em>Summer</em>, the second installment of <em>The Seasons</em> — blank verse poetry that treats nature not as classical backdrop but as subject in itself. Thomson's descriptions of heat, storms, and rural labor anticipate <strong>Romanticism</strong> by half a century, infusing landscape with philosophical wonder and scientific observation. Meanwhile, <strong>Alexander Pope</strong> and <strong>Jonathan Swift</strong> prepare <em>Miscellanies</em>, their collaborative volumes of prose and verse satire. Pope is privately drafting <em>The Dunciad</em>, his savage attack on literary mediocrity. Swift's <em>Gulliver's Travels</em>, published the previous year, still scandalizes London — its 'modest proposal' for human reason not yet delivered."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Newton</strong> dies on March 20th, the last of the great system-builders. His funeral on March 28th is attended by dukes and earls; the Lord Chancellor carries his pall. <strong>Voltaire</strong>, in English exile, witnesses the spectacle and draws a lesson he will broadcast across Europe: in England, a philosopher is honored like a prince. Voltaire is meeting <strong>Pope</strong>, <strong>Swift</strong>, and <strong>Gay</strong>; learning of <strong>Locke's</strong> empiricism; absorbing the constitutional liberty he will contrast with French absolutism. <strong>George Berkeley</strong>, pursuing his Bermuda college scheme, is received by the new queen. The year marks a handoff: from mathematical certainty to empirical observation, from building systems to testing them."
+      },
+      "hist": {
+        "label": "History",
+        "content": "<strong>George I</strong> dies on June 11th while traveling to Hanover; his son becomes <strong>George II</strong>. On October 11th, the coronation at Westminster Abbey features <strong>Handel's</strong> four Coronation Anthems — <em>Zadok the Priest</em> will sound at every British coronation thereafter. Handel, newly naturalized as a British subject, becomes the musical voice of Hanoverian legitimacy. In February, Spain besieges <strong>Gibraltar</strong>, attempting to reclaim the rock; by June, British reinforcements and French diplomacy force a truce. In Edinburgh, the <strong>Royal Bank of Scotland</strong> is founded by royal charter — Jacobite suspicion having tainted the existing Bank of Scotland."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year's theme is <strong>inheritance and transmission</strong>. Newton's state funeral transmits a message: natural philosophy deserves royal honor. Voltaire receives that message and will spend decades transmitting it to France. Handel's anthems transmit royal legitimacy through sacred music; <em>Zadok the Priest</em> becomes a ritual technology for coronations. Thomson's poetry transmits scientific observation into verse — he had read Newton and Locke, and <em>The Seasons</em> reflects their empirical spirit. Canaletto transmits Venice to English patrons who will never visit. Even Hales's <em>Vegetable Staticks</em> (published this year) transmits Newton's quantitative method to botany — measuring sap pressure where Newton measured gravitational force. The torch passes from system to observation, from Latin to vernacular, from court to public.",
+        "funFact": "Voltaire learned the apple legend from Newton's niece, Catherine Conduitt. He was the first to publish the story, ensuring an apocryphal fruit would define Newton's image forever."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.westminster-abbey.org/abbey-commemorations/commemorations/sir-isaac-newton",
+        "title": "Westminster Abbey - Sir Isaac Newton"
+      },
+      {
+        "url": "https://www.nationalgallery.org.uk/paintings/canaletto-the-stonemason-s-yard",
+        "title": "National Gallery - Canaletto: The Stonemason's Yard"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/voltaire/",
+        "title": "Stanford Encyclopedia of Philosophy - Voltaire"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Stephen-Hales",
+        "title": "Britannica - Stephen Hales"
+      },
+      {
+        "url": "https://www.poetryfoundation.org/poets/james-thomson",
+        "title": "Poetry Foundation - James Thomson"
+      }
+    ],
+    "image": {
+      "url": "images/1727-london-passing-of-the-torch.jpg",
+      "caption": "Canaletto, The Stonemason's Yard (c. 1725-28)",
+      "width": 1200,
+      "height": 928,
+      "attribution": "Canaletto, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "scientific-revolution",
+      "empiricism",
+      "enlightenment",
+      "baroque"
+    ],
+    "location": {
+      "lat": 51.4994,
+      "lon": -0.1278,
+      "place": "London"
+    },
+    "addedDate": "2026-05-26T05:00:00Z",
+    "podcast": {
+      "url": "audio/1727-london-passing-of-the-torch.mp3",
+      "duration": 162
+    }
   }
 ]

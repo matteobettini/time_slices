@@ -6537,5 +6537,79 @@
       "funFact": "funfact.mp3"
     },
     "addedDate": "2026-05-25"
+  },
+  {
+    "year": "1727",
+    "id": "1727-london-passing-of-the-torch",
+    "title": "Londra — Il passaggio del testimone",
+    "teaser": "Newton viene sepolto come un re nell'Abbazia di Westminster — il primo scienziato a ricevere tale onore. Voltaire osserva dalla folla, assorbendo la lezione che l'Inghilterra onora i suoi filosofi. A ottobre, gli inni per l'incoronazione di Handel risuonano per Giorgio II. Oltre Manica, Canaletto cattura Venezia in modo nuovo: non la grandiosità ma la vita quotidiana. Thomson pubblica Summer, poesia che si rivolge alla natura. Hales misura la linfa nelle piante. Un'epoca di costruttori di sistemi muore; un'epoca di osservatori inizia.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "A Venezia, <strong>Canaletto</strong> dipinge <em>Il cortile degli scalpellini</em> — una partenza rivoluzionaria dalle sue successive vedute da cartolina. Qui c'è Venezia come città vivente: operai che scolpiscono la pietra, panni stesi tra gli edifici, una madre che consola un bambino caduto. Il campanile di Santa Maria della Carità (che crollerà nel 1744) domina il lavoro quotidiano. È la nascita del <strong>vedutismo intimo</strong> — non il souvenir del Grand Tour ma la vita osservata. A Londra, <strong>William Hogarth</strong> lotta per il riconoscimento, vincendo una causa contro un datore di lavoro che sosteneva fosse 'solo un incisore.' La sua visione satirica — l'arte come commento morale — si sta ancora formando; entro un decennio, <em>La carriera di una prostituta</em> costruirà la sua reputazione."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "<strong>James Thomson</strong> pubblica <em>Summer</em>, la seconda parte di <em>The Seasons</em> — poesia in versi sciolti che tratta la natura non come sfondo classico ma come soggetto in sé. Le descrizioni di caldo, tempeste e lavoro rurale anticipano il <strong>Romanticismo</strong> di mezzo secolo, infondendo nel paesaggio meraviglia filosofica e osservazione scientifica. Nel frattempo, <strong>Alexander Pope</strong> e <strong>Jonathan Swift</strong> preparano i <em>Miscellanies</em>, i loro volumi collaborativi di prosa e versi satirici. Pope sta privatamente redigendo <em>The Dunciad</em>, il suo feroce attacco alla mediocrità letteraria. I <em>Viaggi di Gulliver</em> di Swift, pubblicati l'anno precedente, scandalizzano ancora Londra."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>Newton</strong> muore il 20 marzo, l'ultimo dei grandi costruttori di sistemi. Il suo funerale il 28 marzo vede la partecipazione di duchi e conti; il Lord Cancelliere porta il feretro. <strong>Voltaire</strong>, in esilio inglese, assiste allo spettacolo e ne trae una lezione che trasmetterà attraverso l'Europa: in Inghilterra, un filosofo viene onorato come un principe. Voltaire incontra <strong>Pope</strong>, <strong>Swift</strong> e <strong>Gay</strong>; apprende dell'empirismo di <strong>Locke</strong>; assorbe la libertà costituzionale che contrasterà con l'assolutismo francese. <strong>George Berkeley</strong>, che persegue il suo progetto di college alle Bermuda, viene ricevuto dalla nuova regina. L'anno segna un passaggio: dalla certezza matematica all'osservazione empirica, dalla costruzione di sistemi alla loro verifica."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "<strong>Giorgio I</strong> muore l'11 giugno durante un viaggio verso Hannover; suo figlio diventa <strong>Giorgio II</strong>. L'11 ottobre, l'incoronazione all'Abbazia di Westminster presenta i quattro <strong>Inni per l'incoronazione di Handel</strong> — <em>Zadok the Priest</em> risuonerà a ogni incoronazione britannica successiva. Handel, da poco naturalizzato suddito britannico, diventa la voce musicale della legittimità hannoveriana. A febbraio, la Spagna assedia <strong>Gibilterra</strong>, tentando di riconquistare la rocca; entro giugno, i rinforzi britannici e la diplomazia francese impongono una tregua. A Edimburgo viene fondata la <strong>Royal Bank of Scotland</strong> con carta reale."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Il tema dell'anno è <strong>eredità e trasmissione</strong>. Il funerale di stato di Newton trasmette un messaggio: la filosofia naturale merita onori regali. Voltaire riceve quel messaggio e passerà decenni a trasmetterlo alla Francia. Gli inni di Handel trasmettono legittimità reale attraverso la musica sacra; <em>Zadok the Priest</em> diventa una tecnologia rituale per le incoronazioni. La poesia di Thomson trasmette l'osservazione scientifica in versi — aveva letto Newton e Locke, e <em>The Seasons</em> riflette il loro spirito empirico. Canaletto trasmette Venezia ai mecenati inglesi che non la visiteranno mai. Persino i <em>Vegetable Staticks</em> di Hales (pubblicati quest'anno) trasmettono il metodo quantitativo di Newton alla botanica. Il testimone passa dal sistema all'osservazione, dal latino al volgare, dalla corte al pubblico.",
+        "funFact": "Voltaire apprese la leggenda della mela dalla nipote di Newton, Catherine Conduitt. Fu il primo a pubblicare la storia, assicurando che un frutto apocrifo avrebbe definito l'immagine di Newton per sempre."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.westminster-abbey.org/abbey-commemorations/commemorations/sir-isaac-newton",
+        "title": "Westminster Abbey - Sir Isaac Newton"
+      },
+      {
+        "url": "https://www.nationalgallery.org.uk/paintings/canaletto-the-stonemason-s-yard",
+        "title": "National Gallery - Canaletto: The Stonemason's Yard"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/voltaire/",
+        "title": "Stanford Encyclopedia of Philosophy - Voltaire"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Stephen-Hales",
+        "title": "Britannica - Stephen Hales"
+      },
+      {
+        "url": "https://www.poetryfoundation.org/poets/james-thomson",
+        "title": "Poetry Foundation - James Thomson"
+      }
+    ],
+    "image": {
+      "url": "images/1727-london-passing-of-the-torch.jpg",
+      "caption": "Canaletto, Il cortile degli scalpellini (c. 1725-28)",
+      "width": 1200,
+      "height": 928,
+      "attribution": "Canaletto, Pubblico dominio, via Wikimedia Commons"
+    },
+    "threads": [
+      "scientific-revolution",
+      "empiricism",
+      "enlightenment",
+      "baroque"
+    ],
+    "location": {
+      "lat": 51.4994,
+      "lon": -0.1278,
+      "place": "Londra"
+    },
+    "addedDate": "2026-05-26T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1727-london-passing-of-the-torch.mp3",
+      "duration": 163
+    }
   }
 ]
