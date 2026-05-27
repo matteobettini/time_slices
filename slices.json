@@ -6642,5 +6642,79 @@
       "url": "audio/1727-london-passing-of-the-torch.mp3",
       "duration": 162
     }
+  },
+  {
+    "year": "1835",
+    "id": "1835-year-of-myths",
+    "title": "The Year of Myths",
+    "teaser": "The Kalevala gives Finland its epic. Andersen publishes his first fairy tales. Strauss dismantles the Gospel miracles. Darwin reaches the Galapagos. Tocqueville anatomizes American democracy. The year mythmaking becomes a science — and science begins making new myths.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "At the <strong>Royal Academy</strong> and the <strong>Salon</strong>, <strong>J.M.W. Turner</strong> exhibits <em>The Burning of the Houses of Lords and Commons</em> — Parliament ablaze, the Thames reflecting apocalyptic light, architecture dissolving into pure color. Turner had witnessed the fire in October 1834 and sketched it from a boat. The painting abandons topographical accuracy for atmospheric truth: the sublime made visible. Across Europe, <strong>Caspar David Friedrich</strong> paints <em>The Stages of Life</em> — five ships at various distances from shore, five figures (including the artist himself) contemplating mortality. That June, a stroke will cripple his ability to paint in oils. Meanwhile, <strong>Fox Talbot</strong> exposes the first photographic negatives at Lacock Abbey — images fixed by chemistry, not imagination. Victor Cousin introduces the phrase <em>l'art pour l'art</em>: art for art's sake, divorced from moral instruction."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "On May 8th, <strong>Hans Christian Andersen</strong> publishes <em>Fairy Tales Told for Children</em> — four stories including 'The Tinderbox' and 'The Princess and the Pea.' Critics dismiss them; Andersen will write 167 more. On February 28th, <strong>Elias Lönnrot</strong> publishes the <em>Kalevala</em>, assembling Finnish oral poetry into a national epic that will inspire Sibelius, Tolkien, and Finnish independence itself. In France, <strong>Balzac</strong> publishes <em>Père Goriot</em> — the novel that becomes the foundation of his <em>Comédie humaine</em>, its method of returning characters across books creating a literary universe as comprehensive as any myth. <strong>Gogol</strong> publishes <em>Arabesques</em> and <em>Mirgorod</em>, including 'Diary of a Madman' and 'Taras Bulba.' Across Europe, the <strong>German Federal Convention</strong> bans the Young Germany writers — Heine, Gutzkow, and others — declaring their works dangerous to public morality."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "A twenty-seven-year-old theologian named <strong>David Friedrich Strauss</strong> begins publishing <em>Das Leben Jesu, kritisch bearbeitet</em> — 'The Life of Jesus, Critically Examined.' Applying Hegelian philosophy to the Gospels, Strauss argues that miracles are not lies but <strong>myths</strong>: imaginative expressions of religious truth created by early Christian communities. The book costs him his career (a Zurich professorship is rescinded; his effigy is burned) but revolutionizes biblical scholarship. Meanwhile in Paris, <strong>Alexis de Tocqueville</strong> publishes the first volume of <em>De la démocratie en Amérique</em>, analyzing how equality both liberates and threatens — the <strong>tyranny of the majority</strong>, the restless anxiety of democratic man. Both works treat their subjects as phenomena to be explained, not mysteries to be revered."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On September 15th, <strong>Charles Darwin</strong> arrives at the Galápagos Islands aboard HMS <em>Beagle</em>. He will spend five weeks observing finches, tortoises, and mockingbirds — data that will gestate for twenty-four years before producing a theory that makes myth of Genesis. On October 2nd, the <strong>Battle of Gonzales</strong> opens the Texas Revolution: settlers refuse to surrender a cannon, raise a flag reading 'Come and Take It,' and fire on Mexican troops. Andrew Jackson has just paid off the entire national debt — the only time in American history. The first German railway opens between Nürnberg and Fürth. Halley's Comet returns. <strong>Mark Twain</strong> is born on November 30th, as the comet passes — he will die on its return in 1910. The Great Fire of New York destroys 700 buildings in December."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year's common theme is <strong>mythmaking as method</strong>. Lönnrot doesn't transcribe Finnish folklore — he assembles, edits, and shapes fragments into an epic that creates national identity. Strauss doesn't debunk Jesus — he explains how religious communities transform historical figures into mythic ones. Tocqueville doesn't celebrate democracy — he analyzes how it manufactures consent while generating anxiety. Darwin (though he won't publish for decades) is gathering the data that will replace the myth of creation with the mechanism of selection. Even Turner's Parliament dissolves solid architecture into pure impression — myth over document. The Romantics had believed in myth; the generation of 1835 begins <strong>studying how myths are made</strong>. This is the hinge between Romanticism and positivism, between reverence and analysis. Andersen's fairy tales, supposedly for children, are full of death, longing, and transformation — the mythic patterns of human experience dressed in modern clothes.",
+        "funFact": "The Kalevala so influenced Finnish national consciousness that Kalevala Day (February 28th) is now a Finnish flag-flying day. Tolkien learned Finnish specifically to read it in the original."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/1835_in_literature",
+        "title": "Wikipedia: 1835 in literature"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/David_Strauss",
+        "title": "Wikipedia: David Friedrich Strauss"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Democracy_in_America",
+        "title": "Wikipedia: Democracy in America"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Kalevala",
+        "title": "Wikipedia: Kalevala"
+      },
+      {
+        "url": "https://www.clevelandart.org/art/1942.647",
+        "title": "Cleveland Museum of Art: Turner's Burning of Parliament"
+      }
+    ],
+    "image": {
+      "url": "images/1835-year-of-myths.jpg",
+      "caption": "J.M.W. Turner, The Burning of the Houses of Lords and Commons, October 16, 1834 (1835)",
+      "width": 900,
+      "height": 668,
+      "attribution": "J.M.W. Turner, Cleveland Museum of Art, Public Domain"
+    },
+    "threads": [
+      "vernacular-literature",
+      "critique-of-modernity",
+      "scientific-revolution",
+      "enlightenment"
+    ],
+    "location": {
+      "lat": 55.6761,
+      "lon": 12.5683,
+      "place": "Copenhagen"
+    },
+    "addedDate": "2026-05-27T05:00:00Z",
+    "podcast": {
+      "url": "audio/1835-year-of-myths.mp3",
+      "duration": 202
+    }
   }
 ]

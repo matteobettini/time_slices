@@ -115,7 +115,10 @@
       "1824→1854": "Byron's Romantic death-in-exile gives way to Thoreau's deliberate retreat; literature moves from heroic gesture to intimate witness.",
       "1854→1874": "Thoreau's Walden grounded American transcendentalism in New England soil; Hardy's Wessex did the same for English fiction, inventing a regional geography that would bear his vision of rural fate.",
       "1580→1605": "Montaigne's Essays, probing the self in French, yield to Cervantes's novel — the first fiction to make a mad reader its hero.",
-      "1605→1824": "Don Quixote's ironic consciousness becomes the template for European fiction; Byron reads Cervantes before inventing the Byronic hero."
+      "1605→1824": "Don Quixote's ironic consciousness becomes the template for European fiction; Byron reads Cervantes before inventing the Byronic hero.",
+      "1831→1835": "From Hugo's French Gothic to Andersen's Danish fairy tales, vernacular literature asserts its cultural authority. The Kalevala does for Finnish identity what Notre-Dame de Paris did for Gothic architecture: creates a sacred past from accessible language.",
+      "1824→1835": "From Byron's Romantic philhellenism to the Kalevala's nation-making, vernacular literature becomes politics. The oral traditions Lönnrot collects in 1835 will shape Finnish identity as decisively as Byron's death in 1824 shaped Greek independence.",
+      "1835→1854": "From Finnish epic to American vernacular. The Kalevala creates national identity from oral fragments in 1835; Thoreau's Walden creates American literature from the language of woods and ponds in 1854. Both prove that authentic voice need not speak Greek or Latin."
     },
     "renaissance-humanism": {
       "1401→1453": "Florentine humanists collected manuscripts before 1453; the Greek exodus accelerated what Salutati and Bruni began. Humanism was ready for what Constantinople's scholars brought.",
@@ -203,7 +206,10 @@
       "1687→1704": "Newton follows the Principia with Opticks — completing the mathematical framework that will dominate physics for two centuries.",
       "1704→1859": "From Newton's optics to Darwin's evolution — the empirical method conquers biology as thoroughly as it conquered physics.",
       "1704→1727": "From Opticks to apotheosis: Newton refines his system, then becomes the system's symbol — buried like a king, worshipped like a saint.",
-      "1727→1859": "Newton's method — observe, measure, calculate — spreads from physics to biology. Darwin applies it to life itself."
+      "1727→1859": "Newton's method — observe, measure, calculate — spreads from physics to biology. Darwin applies it to life itself.",
+      "1831→1835": "Darwin's departure aboard the Beagle in 1831 becomes data in 1835 at the Galápagos. The finches he observes there will eventually produce a theory of nature that makes Newton's mechanics look like a prelude — evolution as mechanism, creation as myth.",
+      "1727→1835": "A century after Newton's death, his mechanical universe still governs physics. But Darwin aboard the Beagle is collecting data that will extend mechanism from matter to life itself — natural selection as the clockwork of biology.",
+      "1835→1859": "The finches Darwin observes at the Galápagos will gestate for twenty-four years. In 1859, On the Origin of Species transforms biology from natural history into natural science, and makes Genesis a myth among myths."
     },
     "enlightenment": {
       "1687→1755": "Newton's <em>Principia</em> proved the cosmos was lawful; the Lisbon earthquake asked whether it was just. Enlightenment optimism crested and cracked within seventy years.",
@@ -227,7 +233,9 @@
       "1687→1704": "From the Principia to the Opticks — Newton gives the Enlightenment its method and its confidence.",
       "1704→1714": "A decade of method: from Newton's prisms to Leibniz's monads, the philosophical landscape solidifies.",
       "1714→1727": "Leibniz dies in obscurity; Newton is buried with princes. The transfer of philosophical prestige from continent to island begins.",
-      "1727→1738": "Voltaire, returned from exile, publishes his Lettres philosophiques — England's lessons transmitted to France, with consequences."
+      "1727→1738": "Voltaire, returned from exile, publishes his Lettres philosophiques — England's lessons transmitted to France, with consequences.",
+      "1824→1835": "Between Leopardi's cosmic pessimism and Tocqueville's democratic analysis, the Enlightenment's confidence in reason fractures. Both writers examine their subjects with scientific precision — but one finds only suffering, the other finds both liberation and new forms of tyranny.",
+      "1831→1835": "Hegel's death marks the end of systematic philosophy. By 1835, Tocqueville is analyzing democracy without celebrating it, and Strauss is deconstructing religion with scientific method. Enlightenment confidence in reason becomes the tool for critique rather than the ground for faith."
     },
     "critical-philosophy": {
       "1755→1784": "The earthquake forced Kant to reconsider natural theology; three decades later, his Critiques limited what reason could claim. Theodicy's failure birthed epistemology's caution."
@@ -307,7 +315,10 @@
       "1824→1842": "Schopenhauer's pessimism finds confirmation in Gogol's satire—both anatomize a world of empty striving, serfdom both literal and metaphorical.",
       "1842→1851": "From Gogol's dead souls to Melville's white whale—the critique of modern emptiness crosses the Atlantic, finding new monsters in American waters.",
       "1863→1874": "Manet's scandals at the Salon gave the next generation the courage to bypass it entirely; when the Impressionists opened their own show in 1874, they finished what Le Déjeuner sur l'herbe had started.",
-      "1874→1886": "The Impressionists' institutional rebellion bore fruit: by 1886, Seurat and the Neo-Impressionists could build on their precedent, fragmenting light into points as Monet had fragmented it into brushstrokes."
+      "1874→1886": "The Impressionists' institutional rebellion bore fruit: by 1886, Seurat and the Neo-Impressionists could build on their precedent, fragmenting light into points as Monet had fragmented it into brushstrokes.",
+      "1831→1835": "Hegel's death in 1831 left history without its philosopher of progress. By 1835, his students were splitting into factions — and Strauss's mythic reading of the Gospels weaponized Hegelian method against Christianity itself, while Tocqueville analyzed democracy's anxious restlessness.",
+      "1824→1835": "Leopardi's dialogues with death and Tocqueville's analysis of democratic anxiety share a common method: both treat their subjects as symptoms to be diagnosed rather than ideals to be celebrated. Modernity makes possible both cosmic pessimism and political science.",
+      "1835→1842": "From Strauss's mythic Jesus to Gogol's dead souls, the critique of modernity expands. Both reveal how systems — religious doctrine, serfdom — transform human beings into abstractions, spirits into property."
     },
     "insular-art": {
       "664→732": "From the Book of Durrow to the Lindisfarne Gospels, Insular illumination reaches its full flowering. The Synod of Whitby binds Britain to Rome, but the monks at Lindisfarne create something wholly original — Celtic interlace, Germanic energy, Mediterranean gold fused into devotional infinity."
@@ -574,7 +585,10 @@
       "1824→1854": "La morte romantica in esilio di Byron lascia il posto al ritiro deliberato di Thoreau; la letteratura passa dal gesto eroico alla testimonianza intima.",
       "1854→1874": "Il Walden di Thoreau radicò il trascendentalismo americano nella terra del New England; il Wessex di Hardy fece lo stesso per la narrativa inglese, inventando una geografia regionale che avrebbe portato la sua visione del destino rurale.",
       "1580→1605": "I Saggi di Montaigne, che esplorano il sé in francese, cedono il passo al romanzo di Cervantes — la prima narrativa a fare di un lettore folle il proprio eroe.",
-      "1605→1824": "La coscienza ironica del Don Chisciotte diventa il modello per la narrativa europea; Byron legge Cervantes prima di inventare l'eroe byroniano."
+      "1605→1824": "La coscienza ironica del Don Chisciotte diventa il modello per la narrativa europea; Byron legge Cervantes prima di inventare l'eroe byroniano.",
+      "1831→1835": "Dal gotico francese di Hugo alle fiabe danesi di Andersen, la letteratura vernacolare afferma la propria autorità culturale. Il Kalevala fa per l'identità finlandese ciò che Notre-Dame de Paris fece per l'architettura gotica: crea un passato sacro attraverso una lingua accessibile.",
+      "1824→1835": "Dal filellenismo romantico di Byron al Kalevala che costruisce una nazione, la letteratura vernacolare diventa politica. Le tradizioni orali che Lönnrot raccoglie nel 1835 plasmeranno l'identità finlandese in modo altrettanto decisivo di quanto la morte di Byron nel 1824 plasmò l'indipendenza greca.",
+      "1835→1854": "Dall'epica finlandese al vernacolo americano. Il Kalevala crea identità nazionale da frammenti orali nel 1835; il Walden di Thoreau crea letteratura americana dal linguaggio dei boschi e degli stagni nel 1854. Entrambi dimostrano che la voce autentica non deve parlare greco o latino."
     },
     "renaissance-humanism": {
       "1401→1453": "Gli umanisti fiorentini raccoglievano manoscritti prima del 1453; l'esodo greco accelerò ciò che Salutati e Bruni avevano iniziato.",
@@ -662,7 +676,10 @@
       "1687→1704": "Newton fa seguire ai Principia l'Opticks — completando il quadro matematico che dominerà la fisica per due secoli.",
       "1704→1859": "Dall'ottica di Newton all'evoluzione di Darwin — il metodo empirico conquista la biologia tanto completamente quanto aveva conquistato la fisica.",
       "1704→1727": "Da Opticks all'apoteosi: Newton perfeziona il suo sistema, poi diventa il simbolo del sistema — sepolto come un re, venerato come un santo.",
-      "1727→1859": "Il metodo di Newton — osservare, misurare, calcolare — si diffonde dalla fisica alla biologia. Darwin lo applica alla vita stessa."
+      "1727→1859": "Il metodo di Newton — osservare, misurare, calcolare — si diffonde dalla fisica alla biologia. Darwin lo applica alla vita stessa.",
+      "1831→1835": "La partenza di Darwin a bordo del Beagle nel 1831 diventa dato nel 1835 alle Galápagos. I fringuelli che osserva là produrranno infine una teoria della natura che fa sembrare la meccanica di Newton un preludio — l'evoluzione come meccanismo, la creazione come mito.",
+      "1727→1835": "Un secolo dopo la morte di Newton, il suo universo meccanico governa ancora la fisica. Ma Darwin a bordo del Beagle sta raccogliendo dati che estenderanno il meccanismo dalla materia alla vita stessa — la selezione naturale come meccanismo dell'orologeria biologica.",
+      "1835→1859": "I fringuelli che Darwin osserva alle Galápagos matureranno per ventiquattro anni. Nel 1859, L'Origine delle Specie trasforma la biologia da storia naturale a scienza naturale, e fa della Genesi un mito tra i miti."
     },
     "enlightenment": {
       "1687→1755": "I <em>Principia</em> di Newton dimostrarono che il cosmo era regolato da leggi; il terremoto di Lisbona chiese se fosse giusto.",
@@ -686,7 +703,9 @@
       "1687→1704": "Dai Principia all'Opticks — Newton dà all'Illuminismo il suo metodo e la sua fiducia.",
       "1704→1714": "Un decennio di metodo: dai prismi di Newton alle monadi di Leibniz, il paesaggio filosofico si solidifica.",
       "1714→1727": "Leibniz muore in oscurità; Newton viene sepolto con i principi. Inizia il trasferimento del prestigio filosofico dal continente all'isola.",
-      "1727→1738": "Voltaire, tornato dall'esilio, pubblica le Lettres philosophiques — le lezioni inglesi trasmesse alla Francia, con conseguenze."
+      "1727→1738": "Voltaire, tornato dall'esilio, pubblica le Lettres philosophiques — le lezioni inglesi trasmesse alla Francia, con conseguenze.",
+      "1824→1835": "Tra il pessimismo cosmico di Leopardi e l'analisi democratica di Tocqueville, la fiducia illuministica nella ragione si frantuma. Entrambi gli scrittori esaminano i loro soggetti con precisione scientifica — ma uno trova solo sofferenza, l'altro trova sia liberazione che nuove forme di tirannia.",
+      "1831→1835": "La morte di Hegel segna la fine della filosofia sistematica. Nel 1835, Tocqueville analizza la democrazia senza celebrarla, e Strauss decostruisce la religione con metodo scientifico. La fiducia illuministica nella ragione diventa strumento di critica piuttosto che fondamento di fede."
     },
     "critical-philosophy": {
       "1755→1784": "Il terremoto costrinse Kant a riconsiderare la teologia naturale; tre decenni dopo, le sue Critiche limitarono ciò che la ragione poteva pretendere."
@@ -766,7 +785,10 @@
       "1824→1842": "Il pessimismo di Schopenhauer trova conferma nella satira di Gogol—entrambi anatomizzano un mondo di sforzi vuoti, servitù sia letterale che metaforica.",
       "1842→1851": "Dalle anime morte di Gogol alla balena bianca di Melville—la critica del vuoto moderno attraversa l'Atlantico, trovando nuovi mostri nelle acque americane.",
       "1863→1874": "Gli scandali di Manet al Salon diedero alla generazione successiva il coraggio di aggirarlo del tutto; quando gli Impressionisti aprirono la propria mostra nel 1874, completarono ciò che Le Déjeuner sur l'herbe aveva iniziato.",
-      "1874→1886": "La ribellione istituzionale degli Impressionisti portò i suoi frutti: nel 1886, Seurat e i Neo-Impressionisti poterono costruire sul loro precedente, frammentando la luce in punti come Monet l'aveva frammentata in pennellate."
+      "1874→1886": "La ribellione istituzionale degli Impressionisti portò i suoi frutti: nel 1886, Seurat e i Neo-Impressionisti poterono costruire sul loro precedente, frammentando la luce in punti come Monet l'aveva frammentata in pennellate.",
+      "1831→1835": "La morte di Hegel nel 1831 lasciò la storia senza il suo filosofo del progresso. Nel 1835, i suoi studenti si stavano dividendo in fazioni — e la lettura mitica dei Vangeli di Strauss usò il metodo hegeliano come arma contro il cristianesimo stesso, mentre Tocqueville analizzava l'ansiosa irrequietezza della democrazia.",
+      "1824→1835": "I dialoghi di Leopardi con la morte e l'analisi tocquevilliana dell'ansia democratica condividono un metodo comune: entrambi trattano i loro soggetti come sintomi da diagnosticare piuttosto che ideali da celebrare. La modernità rende possibili sia il pessimismo cosmico che la scienza politica.",
+      "1835→1842": "Dal Gesù mitico di Strauss alle anime morte di Gogol, la critica della modernità si espande. Entrambi rivelano come i sistemi — la dottrina religiosa, la servitù della gleba — trasformino gli esseri umani in astrazioni, gli spiriti in proprietà."
     },
     "insular-art": {
       "664→732": "Dal Libro di Durrow ai Vangeli di Lindisfarne, l'illuminazione insulare raggiunge la sua piena fioritura. Il Sinodo di Whitby lega la Britannia a Roma, ma i monaci di Lindisfarne creano qualcosa di totalmente originale — intreccio celtico, energia germanica, oro mediterraneo fusi in un'infinità devozionale."

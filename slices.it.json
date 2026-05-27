@@ -6611,5 +6611,79 @@
       "url": "audio/it/1727-london-passing-of-the-torch.mp3",
       "duration": 163
     }
+  },
+  {
+    "year": "1835",
+    "id": "1835-year-of-myths",
+    "title": "L'anno dei miti",
+    "teaser": "Il Kalevala dà alla Finlandia la sua epica nazionale. Andersen pubblica le sue prime fiabe. Strauss smantella i miracoli evangelici. Darwin raggiunge le Galápagos. Tocqueville analizza la democrazia americana. L'anno in cui la creazione di miti diventa scienza — e la scienza inizia a creare nuovi miti.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Alla <strong>Royal Academy</strong> e al <strong>Salon</strong>, <strong>J.M.W. Turner</strong> espone <em>L'incendio della Camera dei Lord e dei Comuni</em> — il Parlamento in fiamme, il Tamigi che riflette una luce apocalittica, l'architettura che si dissolve in puro colore. Turner aveva assistito all'incendio nell'ottobre 1834 e lo aveva schizzato da una barca. Il dipinto abbandona l'accuratezza topografica per la verità atmosferica: il sublime reso visibile. In tutta Europa, <strong>Caspar David Friedrich</strong> dipinge <em>Le età della vita</em> — cinque navi a varie distanze dalla riva, cinque figure (incluso l'artista stesso) che contemplano la mortalità. A giugno, un ictus comprometterà la sua capacità di dipingere a olio. Nel frattempo, <strong>Fox Talbot</strong> realizza i primi negativi fotografici a Lacock Abbey — immagini fissate dalla chimica, non dall'immaginazione. Victor Cousin introduce l'espressione <em>l'art pour l'art</em>: l'arte per l'arte, svincolata dall'insegnamento morale."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "L'8 maggio, <strong>Hans Christian Andersen</strong> pubblica <em>Fiabe raccontate per i bambini</em> — quattro storie tra cui 'L'acciarino' e 'La principessa sul pisello'. I critici le snobbano; Andersen ne scriverà altre 167. Il 28 febbraio, <strong>Elias Lönnrot</strong> pubblica il <em>Kalevala</em>, assemblando la poesia orale finlandese in un'epica nazionale che ispirerà Sibelius, Tolkien e l'indipendenza finlandese stessa. In Francia, <strong>Balzac</strong> pubblica <em>Papà Goriot</em> — il romanzo che diventa la pietra angolare della sua <em>Commedia umana</em>, il cui metodo di far ritornare i personaggi attraverso diversi libri crea un universo letterario completo come qualsiasi mito. <strong>Gogol</strong> pubblica <em>Arabeschi</em> e <em>Mirgorod</em>, inclusi 'Memorie di un pazzo' e 'Taras Bul'ba'. In tutta Europa, la <strong>Dieta Federale tedesca</strong> mette al bando gli scrittori della Giovane Germania — Heine, Gutzkow e altri — dichiarando le loro opere pericolose per la morale pubblica."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "Un teologo ventisettenne di nome <strong>David Friedrich Strauss</strong> inizia a pubblicare <em>Das Leben Jesu, kritisch bearbeitet</em> — 'La vita di Gesù esaminata criticamente'. Applicando la filosofia hegeliana ai Vangeli, Strauss sostiene che i miracoli non sono menzogne ma <strong>miti</strong>: espressioni immaginative di verità religiose create dalle prime comunità cristiane. Il libro gli costa la carriera (una cattedra a Zurigo viene revocata; il suo fantoccio viene bruciato) ma rivoluziona gli studi biblici. Nel frattempo a Parigi, <strong>Alexis de Tocqueville</strong> pubblica il primo volume di <em>La democrazia in America</em>, analizzando come l'uguaglianza liberi e al tempo stesso minacci — la <strong>tirannia della maggioranza</strong>, l'inquietudine ansiosa dell'uomo democratico. Entrambe le opere trattano i loro soggetti come fenomeni da spiegare, non misteri da venerare."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il 15 settembre, <strong>Charles Darwin</strong> arriva alle isole Galápagos a bordo della HMS <em>Beagle</em>. Trascorrerà cinque settimane osservando fringuelli, tartarughe e tordi beffeggiatori — dati che matureranno per ventiquattro anni prima di produrre una teoria che farà del Genesi un mito. Il 2 ottobre, la <strong>Battaglia di Gonzales</strong> apre la Rivoluzione del Texas: i coloni rifiutano di consegnare un cannone, alzano una bandiera con scritto 'Venite a prenderlo' e aprono il fuoco sulle truppe messicane. Andrew Jackson ha appena estinto l'intero debito nazionale — l'unica volta nella storia americana. La prima ferrovia tedesca apre tra Norimberga e Fürth. La cometa di Halley torna. <strong>Mark Twain</strong> nasce il 30 novembre, mentre la cometa passa — morirà al suo ritorno nel 1910. Il Grande Incendio di New York distrugge 700 edifici a dicembre."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Il tema comune dell'anno è la <strong>creazione di miti come metodo</strong>. Lönnrot non trascrive il folklore finlandese — assembla, edita e plasma frammenti in un'epica che crea identità nazionale. Strauss non smaschera Gesù — spiega come le comunità religiose trasformino figure storiche in mitiche. Tocqueville non celebra la democrazia — analizza come essa produca consenso generando al contempo ansia. Darwin (anche se non pubblicherà per decenni) sta raccogliendo i dati che sostituiranno il mito della creazione con il meccanismo della selezione. Persino il Parlamento di Turner dissolve l'architettura solida in pura impressione — mito oltre documento. I Romantici avevano creduto nel mito; la generazione del 1835 inizia a <strong>studiare come i miti vengono creati</strong>. Questa è la cerniera tra Romanticismo e positivismo, tra reverenza e analisi. Le fiabe di Andersen, apparentemente per bambini, sono piene di morte, desiderio e trasformazione — i modelli mitici dell'esperienza umana vestiti con abiti moderni.",
+        "funFact": "Il Kalevala influenzò così profondamente la coscienza nazionale finlandese che il Giorno del Kalevala (28 febbraio) è oggi una giornata di bandiera in Finlandia. Tolkien imparò il finlandese appositamente per leggerlo in originale."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Kalevala",
+        "title": "Wikipedia: Kalevala"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/David_Friedrich_Strauss",
+        "title": "Wikipedia: David Friedrich Strauss"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/La_democrazia_in_America",
+        "title": "Wikipedia: La democrazia in America"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Hans_Christian_Andersen",
+        "title": "Wikipedia: Hans Christian Andersen"
+      },
+      {
+        "url": "https://www.clevelandart.org/art/1942.647",
+        "title": "Cleveland Museum of Art: Turner"
+      }
+    ],
+    "image": {
+      "url": "images/1835-year-of-myths.jpg",
+      "caption": "J.M.W. Turner, L'incendio della Camera dei Lord e dei Comuni, 16 ottobre 1834 (1835)",
+      "width": 900,
+      "height": 668,
+      "attribution": "J.M.W. Turner, Cleveland Museum of Art, Pubblico Dominio"
+    },
+    "threads": [
+      "vernacular-literature",
+      "critique-of-modernity",
+      "scientific-revolution",
+      "enlightenment"
+    ],
+    "location": {
+      "lat": 55.6761,
+      "lon": 12.5683,
+      "place": "Copenaghen"
+    },
+    "addedDate": "2026-05-27T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1835-year-of-myths.mp3",
+      "duration": 225
+    }
   }
 ]
