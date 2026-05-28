@@ -184,7 +184,9 @@
       "1687→1704": "Locke dies, his Essay unrefuted. Knowledge through experience becomes orthodoxy.",
       "1704→1751": "From Locke's death to Hume's Enquiry — empiricism deepens into skepticism about causation and the self.",
       "1704→1727": "Locke dies; Newton is deified. Voltaire absorbs both — English observation becomes French philosophy's weapon against the ancien régime.",
-      "1727→1751": "From Newton's funeral to the Encyclopédie: what Voltaire absorbed in London, d'Alembert and Diderot systematize for France."
+      "1727→1751": "From Newton's funeral to the Encyclopédie: what Voltaire absorbed in London, d'Alembert and Diderot systematize for France.",
+      "1776→1843": "Hume's skepticism and Smith's observation-based economics find their methodological codification in Mill's System of Logic — empiricism becomes systematic science.",
+      "1843→1859": "Mill's inductive canons provide the methodological framework; Darwin applies them to organic life, transforming empiricism from philosophy into revolutionary biology."
     },
     "scientific-revolution": {
       "1543→1687": "Copernicus repositioned the Earth; Newton explained why it stayed in orbit. The revolution Copernicus began, Newton completed.",
@@ -318,7 +320,9 @@
       "1874→1886": "The Impressionists' institutional rebellion bore fruit: by 1886, Seurat and the Neo-Impressionists could build on their precedent, fragmenting light into points as Monet had fragmented it into brushstrokes.",
       "1831→1835": "Hegel's death in 1831 left history without its philosopher of progress. By 1835, his students were splitting into factions — and Strauss's mythic reading of the Gospels weaponized Hegelian method against Christianity itself, while Tocqueville analyzed democracy's anxious restlessness.",
       "1824→1835": "Leopardi's dialogues with death and Tocqueville's analysis of democratic anxiety share a common method: both treat their subjects as symptoms to be diagnosed rather than ideals to be celebrated. Modernity makes possible both cosmic pessimism and political science.",
-      "1835→1842": "From Strauss's mythic Jesus to Gogol's dead souls, the critique of modernity expands. Both reveal how systems — religious doctrine, serfdom — transform human beings into abstractions, spirits into property."
+      "1835→1842": "From Strauss's mythic Jesus to Gogol's dead souls, the critique of modernity expands. Both reveal how systems — religious doctrine, serfdom — transform human beings into abstractions, spirits into property.",
+      "1842→1843": "Comte declares theology dead; Kierkegaard insists the individual cannot be dissolved into any system — positivism and existentialism emerge as rival responses to modernity's disenchantment.",
+      "1843→1851": "Kierkegaard's dread and Carlyle's Mammonism diagnose industrial alienation; the Crystal Palace will celebrate and embody everything they feared."
     },
     "insular-art": {
       "664→732": "From the Book of Durrow to the Lindisfarne Gospels, Insular illumination reaches its full flowering. The Synod of Whitby binds Britain to Rome, but the monks at Lindisfarne create something wholly original — Celtic interlace, Germanic energy, Mediterranean gold fused into devotional infinity."
@@ -347,7 +351,8 @@
     },
     "sublime-aesthetic": {
       "1816→1819": "The volcanic darkness of 1816 proved Burke's sublime was no mere aesthetic theory — nature could terrify and overwhelm. Schopenhauer would systematise this into metaphysical pessimism.",
-      "1819→1824": "Friedrich's fog-shrouded wanderer meets Delacroix's massacre without heroes: the sublime darkens from metaphysical vertigo to witnessed atrocity."
+      "1819→1824": "Friedrich's fog-shrouded wanderer meets Delacroix's massacre without heroes: the sublime darkens from metaphysical vertigo to witnessed atrocity.",
+      "1824→1843": "From Beethoven's Ninth to Turner's vortices, the sublime migrates from sound to light — both dissolve form in overwhelming sensory intensity."
     },
     "existentialism": {
       "1922→1927": "Heidegger's lectures at Freiburg crystallize into Being and Time — phenomenology confronts human finitude directly.",
@@ -357,7 +362,8 @@
       "1943→1953": "From wartime Paris to Beckett's Godot: existentialism evolves from Sartrean engagement to the Theatre of the Absurd, where waiting itself becomes the human condition.",
       "1927→1929": "Two years after Being and Time, Heidegger faces Cassirer at Davos—finitude versus symbolic transcendence. The debate splits twentieth-century philosophy.",
       "1929→1937": "From Davos to Guernica: existentialism moves from academic debate to confronting fascism, war, and the collapse of liberal civilization.",
-      "1854→1922": "Kierkegaard's attack on Christendom is translated; Heidegger and the Vienna Circle debate whether existence precedes essence or essence is meaningless."
+      "1854→1922": "Kierkegaard's attack on Christendom is translated; Heidegger and the Vienna Circle debate whether existence precedes essence or essence is meaningless.",
+      "1843→1854": "Kierkegaard invents the vocabulary of existential dread; Thoreau's Walden will put similar questions about authentic existence to the American experiment."
     },
     "modernism": {
       "1922→1927": "The experimentalism of Ulysses and The Waste Land becomes Woolf's durational prose — form dissolves into time itself.",
@@ -654,7 +660,9 @@
       "1687→1704": "Locke muore, il suo Saggio non confutato. La conoscenza attraverso l'esperienza diventa ortodossia.",
       "1704→1751": "Dalla morte di Locke all'Enquiry di Hume — l'empirismo si approfondisce in scetticismo sulla causalità e sul sé.",
       "1704→1727": "Locke muore; Newton viene divinizzato. Voltaire assorbe entrambi — l'osservazione inglese diventa l'arma della filosofia francese contro l'ancien régime.",
-      "1727→1751": "Dal funerale di Newton all'Encyclopédie: ciò che Voltaire assorbì a Londra, d'Alembert e Diderot sistematizzano per la Francia."
+      "1727→1751": "Dal funerale di Newton all'Encyclopédie: ciò che Voltaire assorbì a Londra, d'Alembert e Diderot sistematizzano per la Francia.",
+      "1776→1843": "Lo scetticismo di Hume e l'economia basata sull'osservazione di Smith trovano la loro codificazione metodologica nel Sistema di logica di Mill — l'empirismo diventa scienza sistematica.",
+      "1843→1859": "I canoni induttivi di Mill forniscono il quadro metodologico; Darwin li applica alla vita organica, trasformando l'empirismo da filosofia a biologia rivoluzionaria."
     },
     "scientific-revolution": {
       "1543→1687": "Copernico riposizionò la Terra; Newton spiegò perché restava in orbita.",
@@ -788,7 +796,9 @@
       "1874→1886": "La ribellione istituzionale degli Impressionisti portò i suoi frutti: nel 1886, Seurat e i Neo-Impressionisti poterono costruire sul loro precedente, frammentando la luce in punti come Monet l'aveva frammentata in pennellate.",
       "1831→1835": "La morte di Hegel nel 1831 lasciò la storia senza il suo filosofo del progresso. Nel 1835, i suoi studenti si stavano dividendo in fazioni — e la lettura mitica dei Vangeli di Strauss usò il metodo hegeliano come arma contro il cristianesimo stesso, mentre Tocqueville analizzava l'ansiosa irrequietezza della democrazia.",
       "1824→1835": "I dialoghi di Leopardi con la morte e l'analisi tocquevilliana dell'ansia democratica condividono un metodo comune: entrambi trattano i loro soggetti come sintomi da diagnosticare piuttosto che ideali da celebrare. La modernità rende possibili sia il pessimismo cosmico che la scienza politica.",
-      "1835→1842": "Dal Gesù mitico di Strauss alle anime morte di Gogol, la critica della modernità si espande. Entrambi rivelano come i sistemi — la dottrina religiosa, la servitù della gleba — trasformino gli esseri umani in astrazioni, gli spiriti in proprietà."
+      "1835→1842": "Dal Gesù mitico di Strauss alle anime morte di Gogol, la critica della modernità si espande. Entrambi rivelano come i sistemi — la dottrina religiosa, la servitù della gleba — trasformino gli esseri umani in astrazioni, gli spiriti in proprietà.",
+      "1842→1843": "Comte dichiara morta la teologia; Kierkegaard insiste che l'individuo non può essere dissolto in alcun sistema — positivismo ed esistenzialismo emergono come risposte rivali al disincanto della modernità.",
+      "1843→1851": "L'angoscia di Kierkegaard e il Mammonismo di Carlyle diagnosticano l'alienazione industriale; il Crystal Palace celebrerà e incarnerà tutto ciò che temevano."
     },
     "insular-art": {
       "664→732": "Dal Libro di Durrow ai Vangeli di Lindisfarne, l'illuminazione insulare raggiunge la sua piena fioritura. Il Sinodo di Whitby lega la Britannia a Roma, ma i monaci di Lindisfarne creano qualcosa di totalmente originale — intreccio celtico, energia germanica, oro mediterraneo fusi in un'infinità devozionale."
@@ -817,7 +827,8 @@
     },
     "sublime-aesthetic": {
       "1816→1819": "L'oscurità vulcanica del 1816 dimostrò che il sublime di Burke non era mera teoria estetica — la natura poteva terrorizzare e sopraffare. Schopenhauer avrebbe sistematizzato questo in pessimismo metafisico.",
-      "1819→1824": "Il viandante avvolto nella nebbia di Friedrich incontra il massacro senza eroi di Delacroix: il sublime si oscura dalla vertigine metafisica all'atrocità testimoniata."
+      "1819→1824": "Il viandante avvolto nella nebbia di Friedrich incontra il massacro senza eroi di Delacroix: il sublime si oscura dalla vertigine metafisica all'atrocità testimoniata.",
+      "1824→1843": "Dalla Nona di Beethoven ai vortici di Turner, il sublime migra dal suono alla luce — entrambi dissolvono la forma in un'intensità sensoriale travolgente."
     },
     "existentialism": {
       "1922→1927": "Le lezioni di Heidegger a Friburgo si cristallizzano in Essere e tempo — la fenomenologia affronta direttamente la finitezza umana.",
@@ -827,7 +838,8 @@
       "1943→1953": "Dalla Parigi in guerra al Godot di Beckett: l'esistenzialismo evolve dall'engagement sartriano al Teatro dell'Assurdo, dove l'attesa stessa diventa la condizione umana.",
       "1927→1929": "Due anni dopo Essere e tempo, Heidegger affronta Cassirer a Davos—finitezza contro trascendenza simbolica. Il dibattito divide la filosofia del Novecento.",
       "1929→1937": "Da Davos a Guernica: l'esistenzialismo passa dal dibattito accademico al confronto con fascismo, guerra e il crollo della civiltà liberale.",
-      "1854→1922": "L'attacco di Kierkegaard alla cristianità viene tradotto; Heidegger e il Circolo di Vienna dibattono se l'esistenza preceda l'essenza o se l'essenza sia priva di senso."
+      "1854→1922": "L'attacco di Kierkegaard alla cristianità viene tradotto; Heidegger e il Circolo di Vienna dibattono se l'esistenza preceda l'essenza o se l'essenza sia priva di senso.",
+      "1843→1854": "Kierkegaard inventa il vocabolario dell'angoscia esistenziale; il Walden di Thoreau porrà domande simili sull'esistenza autentica all'esperimento americano."
     },
     "modernism": {
       "1922→1927": "La sperimentazione dell'Ulisse e di Terra desolata diventa la prosa durativa di Woolf — la forma si dissolve nel tempo stesso.",

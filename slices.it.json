@@ -6685,5 +6685,79 @@
       "url": "audio/it/1835-year-of-myths.mp3",
       "duration": 225
     }
+  },
+  {
+    "year": "1843",
+    "id": "1843-year-of-dread",
+    "title": "Copenaghen — L'anno dell'angoscia",
+    "teaser": "Kierkegaard frantuma l'edificio hegeliano con tre libri in otto mesi. Dickens evoca i fantasmi del capitalismo. Turner dissolve la forma in pura luce. Mill codifica la logica mentre Carlyle denuncia il nesso del denaro. Da Copenaghen a Londra, i costi spirituali della modernità esigono il loro conto.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "<strong>J.M.W. Turner</strong> espone due dipinti gemelli alla Royal Academy che spingono la sua arte verso l'astrazione pura. <em>Luce e colore (Teoria di Goethe) – Il mattino dopo il diluvio</em> vortica in giallo e oro dove Mosè diventa appena visibile mentre scrive la Genesi immerso in uno splendore primordiale. Il suo pendant, <em>Ombra e oscurità – La sera del diluvio</em>, sprofonda in un caos blu-nero. Turner attingeva dalla <strong>Teoria dei colori di Goethe</strong>, secondo cui il colore nasce dall'interazione di luce e tenebra piuttosto che dallo spettro newtoniano — il colore come emozione, non come misura. Nello stesso anno, il ventiquattrenne <strong>John Ruskin</strong> pubblica il primo volume di <em>Modern Painters</em>, difendendo Turner dai critici che liquidavano le sue opere tarde come informi. Il manifesto di Ruskin sulla <strong>'verità della natura'</strong> ridefinisce il valore estetico: l'arte deve rendere non le superfici ma le essenze."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Il <strong>diciannove dicembre</strong>, <strong>Charles Dickens</strong> pubblica <em>Canto di Natale</em> — seimila copie esaurite entro la vigilia. La visita dei tre spiriti a Scrooge è una storia di fantasmi sul capitalismo industriale: le catene forgiate da Marley 'anello dopo anello', le workhouse che Scrooge approva, la morte evitabile di Tiny Tim. Il racconto inventa il sentimentalismo natalizio moderno denunciando i rapporti economici moderni. In aprile, <strong>Thomas Carlyle</strong> pubblica <em>Past and Present</em>, contrapponendo Bury St Edmunds medievale sotto l'abate Samson all'Inghilterra contemporanea del 'nesso del denaro'. Dove il monastero aveva gerarchia organica e obblighi reciproci, la società industriale offre solo la brutale astrazione del salario. La diagnosi di Carlyle — il <strong>Mammonismo</strong>, il culto del denaro come unico legame sociale — influenzerà tutti, da Dickens a Marx."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "A Copenaghen, <strong>Søren Kierkegaard</strong> pubblica tre libri in otto mesi che frantumano l'edificio sistematico hegeliano. <em>Aut-Aut</em> (febbraio) presenta la vita estetica e quella etica come genuinamente incompatibili — nessuna sintesi, solo scelta. <em>Timore e tremore</em> (sedici ottobre) assume il sacrificio di Isacco come caso limite: la fede esige la 'sospensione teleologica dell'etico', un salto oltre ogni giustificazione razionale. <em>La ripetizione</em> esce lo stesso giorno, esplorando se l'autenticità possa essere recuperata o solo creata ex novo. Kierkegaard scrive da una ferita personale — il fidanzamento spezzato con Regine Olsen ossessiona ogni pagina. Intanto a Londra, <strong>John Stuart Mill</strong> pubblica <em>Sistema di logica</em> dopo dodici anni di lavoro, stabilendo le fondamenta metodologiche dell'<strong>empirismo</strong>. I cinque canoni dell'induzione di Mill diventano gli strumenti del ragionamento scientifico. Dove Kierkegaard si immerge nella verità soggettiva, Mill codifica il metodo oggettivo."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il <strong>ventisei giugno</strong>, <strong>Hong Kong</strong> viene formalmente stabilita come colonia della Corona britannica, ratificando il Trattato di Nanchino che pose fine alla Prima guerra dell'oppio. La Gran Bretagna ottiene un punto d'appoggio permanente in Cina, inaugurando un secolo di 'trattati ineguali'. Il <strong>diciotto maggio</strong>, la <strong>Disruption della Chiesa di Scozia</strong> vede oltre quattrocento ministri abbandonare l'Assemblea Generale per fondare la Free Church, rifiutando il controllo statale sulle nomine ecclesiastiche — il più grande scisma nella storia scozzese. Il <strong>diciannove luglio</strong>, la <strong>SS Great Britain</strong> di Isambard Kingdom Brunel viene varata a Bristol, prima nave oceanica a combinare scafo in ferro e propulsione a elica. Partecipa il Principe Alberto. Con quasi cento metri di lunghezza, è la più grande nave mai costruita — il prototipo di ogni nave moderna."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "La convergenza dell'anno è <strong>la crisi spirituale della modernità industriale</strong>. Dickens e Carlyle attaccano lo stesso bersaglio — un'Inghilterra dove il denaro ha dissolto ogni altro legame — da angolazioni diverse: redenzione sentimentale contro denuncia profetica. I dipinti di Turner letteralizzano la dissoluzione: la forma solida si scioglie in puro affetto, il mondo materiale diventa sentimento. Kierkegaard fornisce la diagnosi filosofica: la totalità hegeliana è falsa; l'esistenza è singolare, angosciata, irriducibile a sistema. Il suo concetto di <strong>Angst</strong> — l'angoscia di fronte alla possibilità infinita — nomina ciò che l'età industriale produce: libertà senza fondamento. La <em>Logica</em> di Mill offre il programma alternativo: metodo rigoroso come baluardo contro il caos. La SS Great Britain e la colonizzazione di Hong Kong dimostrano i poteri materiali che questa civiltà possiede; la letteratura e la filosofia dell'anno rivelano il disagio per ciò che quei poteri costano all'anima.",
+        "funFact": "Kierkegaard pubblicò Aut-Aut, Timore e tremore e La ripetizione sotto tre diversi pseudonimi nello stesso anno — credeva che la comunicazione indiretta fosse l'unico modo onesto per affrontare la verità esistenziale."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Timore_e_tremore",
+        "title": "Timore e tremore - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Canto_di_Natale",
+        "title": "Canto di Natale - Wikipedia"
+      },
+      {
+        "url": "https://www.tate.org.uk/art/artworks/turner-light-and-colour-goethes-theory-the-morning-after-the-deluge-moses-writing-the-book-n00532",
+        "title": "Light and Colour (Goethe's Theory) - Tate"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Passato_e_presente_(saggio)",
+        "title": "Passato e presente - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Sistema_di_logica_deduttiva_e_induttiva",
+        "title": "Sistema di logica - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1843-year-of-dread.jpg",
+      "caption": "J.M.W. Turner, Luce e colore (Teoria di Goethe) – Il mattino dopo il diluvio – Mosè scrive il libro della Genesi, 1843",
+      "width": 573,
+      "height": 572,
+      "attribution": "J.M.W. Turner, Pubblico dominio, via Wikimedia Commons"
+    },
+    "threads": [
+      "existentialism",
+      "critique-of-modernity",
+      "empiricism",
+      "sublime-aesthetic"
+    ],
+    "location": {
+      "lat": 55.6761,
+      "lon": 12.5683,
+      "place": "Copenaghen"
+    },
+    "addedDate": "2026-05-28T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1843-year-of-dread.mp3",
+      "duration": 207
+    }
   }
 ]

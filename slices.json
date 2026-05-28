@@ -6716,5 +6716,79 @@
       "url": "audio/1835-year-of-myths.mp3",
       "duration": 202
     }
+  },
+  {
+    "year": "1843",
+    "id": "1843-year-of-dread",
+    "title": "Copenhagen — The Year of Dread",
+    "teaser": "Kierkegaard shatters Hegelian system-building with three books in eight months. Dickens conjures capitalism's ghosts. Turner dissolves form into pure light. Mill codifies logic while Carlyle denounces the cash nexus. From Copenhagen to London, the spiritual costs of modernity demand their reckoning.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>J.M.W. Turner</strong> exhibits two paired paintings at the Royal Academy that push his art toward pure abstraction. <em>Light and Colour (Goethe's Theory) – The Morning after the Deluge</em> swirls yellow and gold into a vortex where Moses becomes barely visible, writing Genesis amid primal radiance. Its companion, <em>Shade and Darkness – The Evening of the Deluge</em>, spirals into blue-black chaos. Turner drew from <strong>Goethe's Theory of Colours</strong>, which proposed that colour arises from the interplay of light and darkness rather than Newton's spectrum — colour as emotion, not measurement. That same year, twenty-four-year-old <strong>John Ruskin</strong> publishes the first volume of <em>Modern Painters</em>, defending Turner against critics who dismissed his late work as formless. Ruskin's manifesto of <strong>'truth to nature'</strong> redefines aesthetic value: art must render not surfaces but essences, the forces that animate the visible world."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "On <strong>December nineteenth</strong>, <strong>Charles Dickens</strong> publishes <em>A Christmas Carol</em> — six thousand copies sell out by Christmas Eve. Scrooge's visitation by three spirits is a ghost story about industrial capitalism: the chains Marley forged 'link by link,' the workhouses Scrooge endorses, Tiny Tim's preventable death. The novella invents modern Christmas sentiment while indicting modern economic relations. In April, <strong>Thomas Carlyle</strong> publishes <em>Past and Present</em>, contrasting medieval Bury St Edmunds under Abbot Samson with contemporary England's 'cash nexus.' Where the monastery had organic hierarchy and mutual obligation, industrial society offers only the brutal abstraction of wages. Carlyle's diagnosis — <strong>Mammonism</strong>, the worship of money as society's only bond — will influence everyone from Dickens to Marx."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "In Copenhagen, <strong>Søren Kierkegaard</strong> publishes three books in eight months that shatter Hegelian system-building. <em>Either/Or</em> (February) presents the aesthetic and ethical lives as genuinely incompatible — no synthesis, only choice. <em>Fear and Trembling</em> (October sixteenth) takes Abraham's sacrifice of Isaac as the ultimate test case: faith demands the 'teleological suspension of the ethical,' a leap beyond rational justification. <em>Repetition</em> appears the same day, exploring whether authentic selfhood can be recovered or only created anew. Kierkegaard writes from personal wound — his broken engagement to Regine Olsen haunts every page. Meanwhile in London, <strong>John Stuart Mill</strong> publishes <em>A System of Logic</em> after twelve years' labour, establishing <strong>empiricism's</strong> methodological foundations. Mill's five canons of induction become the toolkit of scientific reasoning. Where Kierkegaard plunges into subjective truth, Mill codifies objective method."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>June twenty-sixth</strong>, <strong>Hong Kong</strong> is formally established as a British Crown Colony, ratifying the Treaty of Nanking that ended the First Opium War. Britain gains a permanent foothold in China, beginning a century of 'unequal treaties.' On <strong>May eighteenth</strong>, the <strong>Disruption of the Church of Scotland</strong> sees over four hundred ministers walk out of the General Assembly to form the Free Church, rejecting state control over clerical appointments — the largest schism in Scottish history. On <strong>July nineteenth</strong>, Isambard Kingdom Brunel's <strong>SS Great Britain</strong> launches at Bristol, the first ocean-going ship to combine an iron hull with screw propulsion. Prince Albert attends. At nearly a hundred metres, she is the largest vessel ever built — the prototype of every modern ship."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year's convergence is <strong>the spiritual crisis of industrial modernity</strong>. Dickens and Carlyle attack the same target — an England where money has dissolved all other bonds — from different angles: sentimental redemption versus prophetic denunciation. Turner's paintings literalise the dissolution: solid form melting into pure affect, the material world becoming feeling. Kierkegaard provides the philosophical diagnosis: Hegelian totality is false; existence is singular, anxious, irreducible to system. His concept of <strong>Angst</strong> — dread before infinite possibility — names what the industrial age produces: freedom without foundation. Mill's <em>Logic</em> offers the counter-programme: rigorous method as bulwark against chaos. The SS Great Britain and Hong Kong's colonisation demonstrate the material powers this civilisation commands; the year's literature and philosophy reveal its unease about what those powers cost the soul.",
+        "funFact": "Kierkegaard published Either/Or, Fear and Trembling, and Repetition under three different pseudonyms in the same year — he believed indirect communication was the only honest way to approach existential truth."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Fear_and_Trembling",
+        "title": "Fear and Trembling - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/A_Christmas_Carol",
+        "title": "A Christmas Carol - Wikipedia"
+      },
+      {
+        "url": "https://www.tate.org.uk/art/artworks/turner-light-and-colour-goethes-theory-the-morning-after-the-deluge-moses-writing-the-book-n00532",
+        "title": "Light and Colour (Goethe's Theory) - Tate"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Past_and_Present_(book)",
+        "title": "Past and Present - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/A_System_of_Logic",
+        "title": "A System of Logic - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1843-year-of-dread.jpg",
+      "caption": "J.M.W. Turner, Light and Colour (Goethe's Theory) – The Morning after the Deluge – Moses Writing the Book of Genesis, 1843",
+      "width": 573,
+      "height": 572,
+      "attribution": "J.M.W. Turner, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "existentialism",
+      "critique-of-modernity",
+      "empiricism",
+      "sublime-aesthetic"
+    ],
+    "location": {
+      "lat": 55.6761,
+      "lon": 12.5683,
+      "place": "Copenhagen"
+    },
+    "addedDate": "2026-05-28T05:00:00Z",
+    "podcast": {
+      "url": "audio/1843-year-of-dread.mp3",
+      "duration": 205
+    }
   }
 ]
