@@ -6790,5 +6790,80 @@
       "url": "audio/1843-year-of-dread.mp3",
       "duration": 205
     }
+  },
+  {
+    "year": "1934",
+    "id": "1934-year-of-long-knives",
+    "title": "The Year of Long Knives",
+    "teaser": "Hitler purges his own movement while Mao begins his march into legend. Totalitarianism codifies itself — in Berlin, in Moscow, in Hollywood. Yet Paris publishes Tropic of Cancer, Max Ernst collages nightmares, and a young philosopher in Vienna asks how we know what's true.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>Max Ernst</strong> publishes <em>Une semaine de bonté</em> (A Week of Kindness), 182 collages assembled in three weeks from Victorian engravings — bird-headed men, lion-bodied women, floods and earthquakes rendered with nightmare precision. This is <strong>Surrealism</strong>'s graphic masterpiece: Ernst slices the 19th century's respectable illustrations into nightmares of desire and violence, each day governed by an element (mud, blood, darkness). In <strong>Leni Riefenstahl</strong>, art serves opposite masters: she films the September Nuremberg Rally with revolutionary techniques — sweeping crane shots, heroic low angles, synchronized editing to Wagner — transforming political spectacle into cinema. <em>Triumph of the Will</em> (released 1935) will become totalitarian aesthetics' defining monument, demonstrating that avant-garde technique serves power as easily as it subverts it."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Henry Miller</strong>'s <em>Tropic of Cancer</em> appears in September from the Obelisk Press in Paris — a book so sexually explicit that U.S. Customs immediately bans it (until 1961). Miller's plotless, ecstatic prose destroys the boundary between autobiography and fiction, between obscenity and philosophy. <strong>F. Scott Fitzgerald</strong> publishes <em>Tender Is the Night</em>, his portrait of American expatriate dissolution, while <strong>Robert Graves</strong> gives antiquity a cynical modern voice in <em>I, Claudius</em>. <strong>Samuel Beckett</strong>'s first prose collection <em>More Pricks Than Kicks</em> appears, already pared toward the void. Meanwhile, in Moscow the First <strong>Congress of Soviet Writers</strong> formally adopts <em>Socialist Realism</em> as mandatory doctrine: art must be \"national in form, socialist in content\" — the bureaucratic murder of the avant-garde."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "<strong>Karl Popper</strong> publishes <em>Logik der Forschung</em> (The Logic of Scientific Discovery) through the Vienna Circle, though he critiques their <strong>logical positivism</strong> from within. His central claim: science advances not through verification but <em>falsification</em> — a theory is scientific only if it specifies what would disprove it. The Vienna Circle debates verification while fascism rises outside their seminar rooms. In <strong>Barmen</strong>, Germany, theologian <strong>Karl Barth</strong> drafts the Barmen Declaration (May 31), rejecting the Nazi-aligned \"German Christians\" movement: \"Jesus Christ, as he is attested for us in Holy Scripture, is the one Word of God\" — theology as political resistance, faith refusing to be nationalized."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>June 30</strong>, the <em>Night of the Long Knives</em> begins: Hitler orders the SS to murder the SA leadership, including Ernst Röhm, along with conservative rivals and old enemies. At least 85 people die in three days — extrajudicial murder dressed as national salvation. On August 2, President Hindenburg dies; Hitler merges the offices of Chancellor and President, becoming <em>Führer</em>. The <strong>Wehrmacht</strong> swears personal loyalty oaths to Hitler, not to Germany. In October, <strong>Mao Zedong</strong>'s Communists begin the <em>Long March</em> — a 6,000-mile retreat from Nationalist forces that will forge the myth of revolutionary endurance and establish Mao's leadership. In Hollywood, the <strong>Hays Code</strong> is strictly enforced from July 1: cinema censors sex, violence, and moral ambiguity. Three systems of control crystallize simultaneously."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year maps the border between freedom and control. The same <strong>avant-garde techniques</strong> that Ernst uses to expose bourgeois nightmares — collage, montage, fragmented imagery — Riefenstahl deploys to glorify fascist spectacle. Both are modernist methods; their politics diverge completely. Miller's <em>Tropic of Cancer</em> appears in Paris precisely because Paris still permits what New York, Berlin, and Moscow forbid — the year's geography of censorship is also a map of where thought remains possible. Popper's falsificationism, written as the Vienna Circle debates, will outlast logical positivism itself, becoming science's self-understanding — but Popper will soon flee Vienna as the world his philosophy describes collapses into ideological warfare.",
+        "funFact": "The Hays Code banned showing husband and wife in the same bed on screen — while Tropic of Cancer, published the same year, describes sex with a frankness American readers wouldn't legally encounter for another 27 years."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Night_of_the_Long_Knives",
+        "title": "Night of the Long Knives — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Tropic_of_Cancer_(novel)",
+        "title": "Tropic of Cancer (novel) — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Logic_of_Scientific_Discovery",
+        "title": "The Logic of Scientific Discovery — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Une_semaine_de_bont%C3%A9",
+        "title": "Une semaine de bonté — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Socialist_realism",
+        "title": "Socialist realism — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1934-year-of-long-knives.jpg",
+      "caption": "Rioters clash with mounted police on the Place de la Concorde during the February 6, 1934 crisis in Paris",
+      "width": 1200,
+      "height": 888,
+      "attribution": "Unknown author, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "totalitarianism",
+      "surrealism",
+      "modernism",
+      "logical-positivism",
+      "critique-of-modernity"
+    ],
+    "location": {
+      "lat": 52.52,
+      "lon": 13.405,
+      "place": "Berlin"
+    },
+    "addedDate": "2026-05-29T05:00:00Z",
+    "podcast": {
+      "url": "audio/1934-year-of-long-knives.mp3",
+      "duration": 186
+    }
   }
 ]

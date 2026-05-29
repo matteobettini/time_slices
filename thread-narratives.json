@@ -322,7 +322,9 @@
       "1824→1835": "Leopardi's dialogues with death and Tocqueville's analysis of democratic anxiety share a common method: both treat their subjects as symptoms to be diagnosed rather than ideals to be celebrated. Modernity makes possible both cosmic pessimism and political science.",
       "1835→1842": "From Strauss's mythic Jesus to Gogol's dead souls, the critique of modernity expands. Both reveal how systems — religious doctrine, serfdom — transform human beings into abstractions, spirits into property.",
       "1842→1843": "Comte declares theology dead; Kierkegaard insists the individual cannot be dissolved into any system — positivism and existentialism emerge as rival responses to modernity's disenchantment.",
-      "1843→1851": "Kierkegaard's dread and Carlyle's Mammonism diagnose industrial alienation; the Crystal Palace will celebrate and embody everything they feared."
+      "1843→1851": "Kierkegaard's dread and Carlyle's Mammonism diagnose industrial alienation; the Crystal Palace will celebrate and embody everything they feared.",
+      "1932→1934": "Huxley's dystopia finds its laboratory: the year totalitarianism codifies itself in Germany, Russia, and Hollywood.",
+      "1934→1968": "From control to explosion: the systems of suppression crystallized in thirty-four shatter in sixty-eight's revolts."
     },
     "insular-art": {
       "664→732": "From the Book of Durrow to the Lindisfarne Gospels, Insular illumination reaches its full flowering. The Synod of Whitby binds Britain to Rome, but the monks at Lindisfarne create something wholly original — Celtic interlace, Germanic energy, Mediterranean gold fused into devotional infinity."
@@ -372,7 +374,9 @@
       "1895→1913": "The X-ray, cinema, and Time Machine of 1895 taught a new way of seeing; by 1913 the Fauves and Rite of Spring made those visions riot.",
       "1927→1929": "Proust's posthumous finale reaches readers as Faulkner shatters narrative from Mississippi. Stream of consciousness crosses the Atlantic, mutating in the American South.",
       "1929→1937": "MoMA institutionalizes the avant-garde as economic collapse ravages the world. Modernism survives by becoming museum-worthy; Picasso responds to fascism with Guernica.",
-      "1937→1972": "From Guernica's scream to Szeemann's concepts—modernism's object yields to post-modern idea."
+      "1937→1972": "From Guernica's scream to Szeemann's concepts—modernism's object yields to post-modern idea.",
+      "1929→1934": "From Wall Street crash to Nazi consolidation: modernist technique survives, now serving both liberation and control.",
+      "1934→1937": "The year of long knives gives way to Guernica: modernism responds to the violence it had witnessed crystallize."
     },
     "stream-of-consciousness": {
       "1922→1927": "Joyce's one day and Proust's lost time converge in Woolf: consciousness as duration, not sequence.",
@@ -446,7 +450,8 @@
       "1929→1932": "Black Tuesday triggers the cascade: bank failures, unemployment, deflation. By 1932, the Dow has lost 89% and Huxley's dystopia feels prophetic."
     },
     "logical-positivism": {
-      "1922→1929": "From seminar discussions to public manifesto: the Vienna Circle crystallizes its programme, declaring metaphysics meaningless and science the only path to knowledge."
+      "1922→1929": "From seminar discussions to public manifesto: the Vienna Circle crystallizes its programme, declaring metaphysics meaningless and science the only path to knowledge.",
+      "1929→1934": "The Vienna Circle's verification debates bear fruit as Popper publishes his falsificationist critique from within their orbit."
     },
     "impressionism": {
       "1870→1883": "The Franco-Prussian War scatters the Paris art world; thirteen years later Monet settles at Giverny as Manet dies, the movement's scandalous origins yielding to patient observation.",
@@ -480,6 +485,12 @@
     },
     "augustan-satire": {
       "1704→1738": "From Swift's Tale of a Tub to Pope's Dunciad — Augustan satire matures from religious parody to comprehensive cultural critique."
+    },
+    "surrealism": {
+      "1929→1934": "From manifesto to masterpiece: Ernst's collage nightmares realize what Breton's declarations had promised."
+    },
+    "totalitarianism": {
+      "1934→1937": "From purge to intervention: the systems tested in thirty-four wage war in Spain by thirty-seven."
     }
   },
   "it": {
@@ -798,7 +809,9 @@
       "1824→1835": "I dialoghi di Leopardi con la morte e l'analisi tocquevilliana dell'ansia democratica condividono un metodo comune: entrambi trattano i loro soggetti come sintomi da diagnosticare piuttosto che ideali da celebrare. La modernità rende possibili sia il pessimismo cosmico che la scienza politica.",
       "1835→1842": "Dal Gesù mitico di Strauss alle anime morte di Gogol, la critica della modernità si espande. Entrambi rivelano come i sistemi — la dottrina religiosa, la servitù della gleba — trasformino gli esseri umani in astrazioni, gli spiriti in proprietà.",
       "1842→1843": "Comte dichiara morta la teologia; Kierkegaard insiste che l'individuo non può essere dissolto in alcun sistema — positivismo ed esistenzialismo emergono come risposte rivali al disincanto della modernità.",
-      "1843→1851": "L'angoscia di Kierkegaard e il Mammonismo di Carlyle diagnosticano l'alienazione industriale; il Crystal Palace celebrerà e incarnerà tutto ciò che temevano."
+      "1843→1851": "L'angoscia di Kierkegaard e il Mammonismo di Carlyle diagnosticano l'alienazione industriale; il Crystal Palace celebrerà e incarnerà tutto ciò che temevano.",
+      "1932→1934": "La distopia di Huxley trova il suo laboratorio: l'anno in cui il totalitarismo si codifica in Germania, Russia e Hollywood.",
+      "1934→1968": "Dal controllo all'esplosione: i sistemi di repressione cristallizzati nel trentaquattro si frantumano nelle rivolte del sessantotto."
     },
     "insular-art": {
       "664→732": "Dal Libro di Durrow ai Vangeli di Lindisfarne, l'illuminazione insulare raggiunge la sua piena fioritura. Il Sinodo di Whitby lega la Britannia a Roma, ma i monaci di Lindisfarne creano qualcosa di totalmente originale — intreccio celtico, energia germanica, oro mediterraneo fusi in un'infinità devozionale."
@@ -848,7 +861,9 @@
       "1895→1913": "I raggi X, il cinema e la Macchina del Tempo del 1895 insegnarono un nuovo modo di vedere; nel 1913 i Fauves e il Sacre du Printemps fecero esplodere quelle visioni.",
       "1927→1929": "Il finale postumo di Proust raggiunge i lettori mentre Faulkner frantuma la narrazione dal Mississippi. Il flusso di coscienza attraversa l'Atlantico, mutando nel Sud americano.",
       "1929→1937": "Il MoMA istituzionalizza l'avanguardia mentre il collasso economico devasta il mondo. Il modernismo sopravvive diventando degno dei musei; Picasso risponde al fascismo con Guernica.",
-      "1937→1972": "Dall'urlo di Guernica ai concetti di Szeemann—l'oggetto del modernismo cede all'idea postmoderna."
+      "1937→1972": "Dall'urlo di Guernica ai concetti di Szeemann—l'oggetto del modernismo cede all'idea postmoderna.",
+      "1929→1934": "Dal crollo di Wall Street al consolidamento nazista: la tecnica modernista sopravvive, servendo ora sia la liberazione che il controllo.",
+      "1934→1937": "L'anno dei lunghi coltelli cede il passo a Guernica: il modernismo risponde alla violenza che aveva visto cristallizzarsi."
     },
     "stream-of-consciousness": {
       "1922→1927": "La singola giornata di Joyce e il tempo perduto di Proust convergono in Woolf: la coscienza come durata, non sequenza.",
@@ -922,7 +937,8 @@
       "1929→1932": "Il Martedì Nero innesca la cascata: fallimenti bancari, disoccupazione, deflazione. Nel 1932, il Dow ha perso l'89% e la distopia di Huxley sembra profetica."
     },
     "logical-positivism": {
-      "1922→1929": "Dalle discussioni seminariali al manifesto pubblico: il Circolo di Vienna cristallizza il suo programma, dichiarando la metafisica priva di senso e la scienza l'unica via alla conoscenza."
+      "1922→1929": "Dalle discussioni seminariali al manifesto pubblico: il Circolo di Vienna cristallizza il suo programma, dichiarando la metafisica priva di senso e la scienza l'unica via alla conoscenza.",
+      "1929→1934": "I dibattiti del Circolo di Vienna sulla verifica danno frutto quando Popper pubblica la sua critica falsificazionista dalla loro orbita."
     },
     "impressionism": {
       "1870→1883": "La guerra franco-prussiana disperde il mondo artistico parigino; tredici anni dopo Monet si stabilisce a Giverny mentre Manet muore, le origini scandalose del movimento cedono all'osservazione paziente.",
@@ -956,6 +972,12 @@
     },
     "augustan-satire": {
       "1704→1738": "Dalla Storia della botte di Swift alla Dunciade di Pope — la satira augustea matura dalla parodia religiosa alla critica culturale complessiva."
+    },
+    "surrealism": {
+      "1929→1934": "Dal manifesto al capolavoro: gli incubi-collage di Ernst realizzano ciò che le dichiarazioni di Breton avevano promesso."
+    },
+    "totalitarianism": {
+      "1934→1937": "Dall'epurazione all'intervento: i sistemi testati nel trentaquattro fanno la guerra in Spagna nel trentasette."
     }
   }
 }

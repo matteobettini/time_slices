@@ -6759,5 +6759,80 @@
       "url": "audio/it/1843-year-of-dread.mp3",
       "duration": 207
     }
+  },
+  {
+    "year": "1934",
+    "id": "1934-year-of-long-knives",
+    "title": "L'anno dei lunghi coltelli",
+    "teaser": "Hitler epura il suo stesso movimento mentre Mao inizia la sua marcia nella leggenda. Il totalitarismo si codifica — a Berlino, a Mosca, a Hollywood. Eppure Parigi pubblica Tropico del Cancro, Max Ernst collage incubi, e un giovane filosofo a Vienna si chiede come sappiamo cosa è vero.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "<strong>Max Ernst</strong> pubblica <em>Une semaine de bonté</em> (Una settimana di bontà), 182 collage assemblati in tre settimane da incisioni vittoriane — uomini con teste di uccello, donne con corpi di leone, alluvioni e terremoti resi con precisione da incubo. È il capolavoro grafico del <strong>Surrealismo</strong>: Ernst taglia le rispettabili illustrazioni dell'Ottocento trasformandole in incubi di desiderio e violenza, ogni giorno governato da un elemento (fango, sangue, oscurità). In <strong>Leni Riefenstahl</strong>, l'arte serve padroni opposti: filma il Raduno di Norimberga di settembre con tecniche rivoluzionarie — riprese aeree, angolazioni eroiche dal basso, montaggio sincronizzato su Wagner — trasformando lo spettacolo politico in cinema. <em>Il trionfo della volontà</em> (uscito nel 1935) diventerà il monumento definitivo dell'estetica totalitaria, dimostrando che la tecnica d'avanguardia serve il potere con la stessa facilità con cui lo sovverte."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "<em>Tropico del Cancro</em> di <strong>Henry Miller</strong> appare a settembre dalla Obelisk Press di Parigi — un libro così sessualmente esplicito che la dogana americana lo bandisce immediatamente (fino al 1961). La prosa estatica e senza trama di Miller distrugge il confine tra autobiografia e finzione, tra oscenità e filosofia. <strong>F. Scott Fitzgerald</strong> pubblica <em>Tenera è la notte</em>, il suo ritratto della dissoluzione degli espatriati americani, mentre <strong>Robert Graves</strong> dà all'antichità una voce moderna e cinica in <em>Io, Claudio</em>. La prima raccolta in prosa di <strong>Samuel Beckett</strong>, <em>More Pricks Than Kicks</em>, appare già protesa verso il vuoto. Intanto, a Mosca il Primo <strong>Congresso degli Scrittori Sovietici</strong> adotta formalmente il <em>Realismo socialista</em> come dottrina obbligatoria: l'arte deve essere \"nazionale nella forma, socialista nel contenuto\" — l'assassinio burocratico dell'avanguardia."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "<strong>Karl Popper</strong> pubblica <em>Logik der Forschung</em> (La logica della scoperta scientifica) attraverso il Circolo di Vienna, pur criticandone il <strong>positivismo logico</strong> dall'interno. La sua tesi centrale: la scienza progredisce non attraverso la verifica ma attraverso la <em>falsificazione</em> — una teoria è scientifica solo se specifica cosa la sconfesserebbe. Il Circolo di Vienna dibatte sulla verifica mentre il fascismo cresce fuori dalle loro aule. A <strong>Barmen</strong>, in Germania, il teologo <strong>Karl Barth</strong> redige la Dichiarazione di Barmen (31 maggio), rifiutando il movimento dei \"Cristiani Tedeschi\" allineato ai nazisti: \"Gesù Cristo, come ci è attestato nella Sacra Scrittura, è l'unica Parola di Dio\" — la teologia come resistenza politica, la fede che rifiuta di essere nazionalizzata."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Il <strong>30 giugno</strong> inizia la <em>Notte dei lunghi coltelli</em>: Hitler ordina alle SS di assassinare la leadership delle SA, incluso Ernst Röhm, insieme a rivali conservatori e vecchi nemici. Almeno 85 persone muoiono in tre giorni — omicidi extragiudiziali travestiti da salvezza nazionale. Il 2 agosto Hindenburg muore; Hitler fonde le cariche di Cancelliere e Presidente, diventando <em>Führer</em>. La <strong>Wehrmacht</strong> giura fedeltà personale a Hitler, non alla Germania. In ottobre, i comunisti di <strong>Mao Zedong</strong> iniziano la <em>Lunga Marcia</em> — una ritirata di 10.000 chilometri dalle forze nazionaliste che forgerà il mito della resistenza rivoluzionaria e stabilirà la leadership di Mao. A Hollywood, il <strong>Codice Hays</strong> viene applicato rigorosamente dal 1° luglio: il cinema censura sesso, violenza e ambiguità morale. Tre sistemi di controllo si cristallizzano simultaneamente."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "L'anno traccia il confine tra libertà e controllo. Le stesse <strong>tecniche d'avanguardia</strong> che Ernst usa per svelare gli incubi borghesi — collage, montaggio, immagini frammentate — Riefenstahl le impiega per glorificare lo spettacolo fascista. Entrambi sono metodi modernisti; le loro politiche divergono completamente. Il <em>Tropico del Cancro</em> di Miller appare a Parigi precisamente perché Parigi permette ancora ciò che New York, Berlino e Mosca vietano — la geografia della censura dell'anno è anche una mappa di dove il pensiero rimane possibile. Il falsificazionismo di Popper, scritto mentre il Circolo di Vienna dibatte, sopravviverà al positivismo logico stesso, diventando l'autocomprensione della scienza — ma Popper presto fuggirà da Vienna mentre il mondo che la sua filosofia descrive crolla nella guerra ideologica.",
+        "funFact": "Il Codice Hays vietava di mostrare marito e moglie nello stesso letto sullo schermo — mentre Tropico del Cancro, pubblicato lo stesso anno, descriveva il sesso con una franchezza che i lettori americani non avrebbero legalmente incontrato per altri 27 anni."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Notte_dei_lunghi_coltelli",
+        "title": "Notte dei lunghi coltelli — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Tropico_del_Cancro_(romanzo)",
+        "title": "Tropico del Cancro (romanzo) — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Logica_della_scoperta_scientifica",
+        "title": "Logica della scoperta scientifica — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Une_semaine_de_bont%C3%A9",
+        "title": "Une semaine de bonté — Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Realismo_socialista",
+        "title": "Realismo socialista — Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1934-year-of-long-knives.jpg",
+      "caption": "Manifestanti si scontrano con la polizia a cavallo sulla Place de la Concorde durante la crisi del 6 febbraio 1934 a Parigi",
+      "width": 1200,
+      "height": 888,
+      "attribution": "Autore sconosciuto, Pubblico dominio, via Wikimedia Commons"
+    },
+    "threads": [
+      "totalitarianism",
+      "surrealism",
+      "modernism",
+      "logical-positivism",
+      "critique-of-modernity"
+    ],
+    "location": {
+      "lat": 52.52,
+      "lon": 13.405,
+      "place": "Berlino"
+    },
+    "addedDate": "2026-05-29T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/1934-year-of-long-knives.mp3",
+      "duration": 220
+    }
   }
 ]
