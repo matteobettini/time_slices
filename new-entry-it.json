@@ -1,0 +1,50 @@
+{
+  "year": "1802",
+  "id": "1802-paris-phony-peace",
+  "title": "Parigi — La pace illusoria",
+  "teaser": "Napoleone fa pace con l'Inghilterra, col Papa e con la schiavitù. Chateaubriand difende il cristianesimo attraverso la bellezza mentre de Staël attacca la tirannia attraverso la finzione. A Jena, Hegel comincia a smontare la ragione. Tutti si preparano a una guerra che non è mai finita davvero.",
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "Al <strong>Salon del 1802</strong>, il primo accessibile ai visitatori britannici da un decennio grazie alla pace di Amiens, <strong>Anne-Louis Girodet</strong> svela <em>Ossian che riceve gli spettri degli eroi francesi</em> — una visione fantasmagorica commissionata da Napoleone per la Malmaison. Generali spettrali fluttuano attraverso nebbie fosforescenti verso il bardo leggendario, le loro forme si dissolvono in vapore. Girodet, allievo di <strong>Jacques-Louis David</strong> nel rigore del <strong>Neoclassicismo</strong>, si è liberato: il neoclassicismo diventa <strong>Romanticismo</strong>, la ragione cede al sogno. Accanto, il <em>Ritratto di Madame Récamier</em> di <strong>François Gérard</strong> offre un'eleganza più fredda — lo stile Impero che si cristallizza nella ritrattistica. Il Salon stesso diventa teatro politico: Napoleone lo usa per proiettare un'immagine di supremazia culturale anche mentre la guerra incombe."
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "<strong>François-René de Chateaubriand</strong> pubblica <em>Il genio del Cristianesimo</em> — cinque volumi che difendono il cattolicesimo non attraverso la teologia ma attraverso l'estetica. Cattedrali gotiche, romanzi medievali, il sublime nelle Scritture: il cristianesimo, sostiene Chateaubriand, è semplicemente più <em>bello</em> della ragione illuminista. Il tempismo è perfetto — Napoleone ha appena firmato il <strong>Concordato</strong>, e l'apologia di Chateaubriand per la fede diventa propaganda quasi ufficiale. Nel frattempo, <strong>Germaine de Staël</strong> pubblica <em>Delphine</em>, un romanzo epistolare su una donna brillante distrutta dalle convenzioni sociali. Napoleone si vede attaccato nella critica del romanzo alla tirannia e all'intolleranza; presto ne esilierà l'autrice. Queste due opere definiscono i poli opposti del <strong>primo Romanticismo francese</strong>: una riconcilia l'arte con l'autorità, l'altra insiste che il genio non può sottomettersi."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "A <strong>Jena</strong>, centro nevralgico dell'<strong>Idealismo tedesco</strong>, <strong>Hegel</strong> e <strong>Schelling</strong> lanciano il <em>Giornale critico di filosofia</em>. Il saggio di Hegel <em>Fede e sapere</em> attacca Kant, Jacobi e Fichte — l'intera generazione precedente — per aver lasciato soggetto e oggetto irrimediabilmente separati. La soluzione, insiste Hegel, deve essere una filosofia dell'<strong>identità</strong> che superi i limiti della riflessione. Sta gettando le fondamenta; la <em>Fenomenologia dello Spirito</em> è a cinque anni di distanza. Oltre Manica, <strong>William Paley</strong> pubblica <em>Teologia naturale</em> — l'argomento del disegno intelligente nella sua forma più influente. Un orologio implica un orologiaio; dunque, la natura implica Dio. Darwin demolirà questo argomento; per ora, rappresenta la comoda alleanza della filosofia britannica con la religione stabilita."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "Il venticinque marzo, Gran Bretagna e Francia firmano il <strong>Trattato di Amiens</strong> — la prima pace in nove anni. Durerà quattordici mesi. Napoleone usa la tregua per consolidarsi: in agosto, un plebiscito lo conferma <strong>Console a vita</strong>. Più ominoso, firma la <strong>Legge del 20 maggio</strong>, ripristinando la schiavitù nelle colonie francesi. In giugno, <strong>Toussaint Louverture</strong> viene attirato in trappola e arrestato a Saint-Domingue; morirà in una prigione francese. La <strong>Rivoluzione haitiana</strong> continua senza di lui — e avrà successo proprio perché le truppe di Napoleone muoiono di febbre gialla mentre tentano di reimporre la schiavitù. La Gran Bretagna fonda <strong>West Point</strong>; Napoleone istituisce la <strong>Légion d'honneur</strong>. Entrambi gli imperi si preparano al prossimo round."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "Il tema dell'anno è la <strong>riconciliazione come strategia</strong>. Il Concordato di Napoleone col Papa e il <em>Genio</em> di Chateaubriand lavorano in concerto: la religione torna in Francia, ma addomesticata, al servizio dello Stato invece che sfidarlo. De Staël rifiuta questo patto — e viene esiliata per questo. Gli eroi spettrali di Girodet similmente oscillano tra due mondi: ufficialmente celebrano i generali di Napoleone, artisticamente abbandonano la disciplina classica che David rappresenta. Anche l'attacco di Hegel ai limiti kantiani risponde al momento politico: dopo che la Rivoluzione ha divorato i suoi figli, la filosofia deve trovare nuove fondamenta oltre la mera critica. La Rivoluzione haitiana, nel frattempo, espone i limiti della riconciliazione: libertà illuminista per i bianchi, schiavitù restaurata per i neri. La pace di Amiens è illusoria non solo diplomaticamente ma filosoficamente — tutti sanno che le contraddizioni sono insostenibili.",
+      "funFact": "Il dipinto <em>Ossian</em> di Girodet era basato su una bufala letteraria: le 'traduzioni' settecentesche di James Macpherson di un bardo gaelico del terzo secolo erano in gran parte inventate. A Napoleone non importava — dormiva sotto il quadro alla Malmaison."
+    }
+  },
+  "sources": [
+    {"url": "https://it.wikipedia.org/wiki/Trattato_di_Amiens_(1802)", "title": "Trattato di Amiens - Wikipedia"},
+    {"url": "https://it.wikipedia.org/wiki/Il_genio_del_cristianesimo", "title": "Il genio del cristianesimo - Wikipedia"},
+    {"url": "https://it.wikipedia.org/wiki/Concordato_del_1801", "title": "Concordato del 1801 - Wikipedia"},
+    {"url": "https://fr.wikipedia.org/wiki/Salon_de_1802", "title": "Salon de 1802 - Wikipédia"},
+    {"url": "https://it.wikipedia.org/wiki/Toussaint_Louverture", "title": "Toussaint Louverture - Wikipedia"}
+  ],
+  "image": {
+    "url": "images/1802-paris-phony-peace.jpg",
+    "caption": "Ossian che riceve gli spettri degli eroi francesi di Anne-Louis Girodet de Roussy-Trioson, 1802",
+    "width": 1000,
+    "height": 1022,
+    "attribution": "Anne-Louis Girodet de Roussy-Trioson, Pubblico dominio, via Web Gallery of Art"
+  },
+  "threads": ["napoleonic-wars", "german-idealism", "abolition-crisis", "enlightenment"],
+  "location": {
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "place": "Parigi"
+  },
+  "addedDate": "2026-05-30T05:00:00Z"
+}

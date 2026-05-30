@@ -6865,5 +6865,79 @@
       "url": "audio/1934-year-of-long-knives.mp3",
       "duration": 186
     }
+  },
+  {
+    "year": "1802",
+    "id": "1802-paris-phony-peace",
+    "title": "Paris — The Phony Peace",
+    "teaser": "Napoleon makes peace with England, with the Pope, and with slavery. Chateaubriand defends Christianity through beauty while de Staël attacks tyranny through fiction. In Jena, Hegel begins dismantling reason. Everyone prepares for a war that hasn't quite ended.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "At the <strong>Salon of 1802</strong>, the first accessible to British visitors in a decade thanks to the Peace of Amiens, <strong>Anne-Louis Girodet</strong> unveils <em>Ossian Receiving the Ghosts of French Heroes</em> — a phantasmagoric vision commissioned by Napoleon for Malmaison. Spectral generals float through phosphorescent mist toward the legendary bard, their forms dissolving into vapor. Girodet, trained by <strong>Jacques-Louis David</strong> in strict <strong>Neoclassicism</strong>, has broken free: this is neoclassicism becoming <strong>Romanticism</strong>, reason yielding to dream. Nearby, <strong>François Gérard</strong>'s <em>Madame Récamier</em> offers cooler elegance — the Empire style crystallizing in portraiture. The Salon itself becomes political theater: Napoleon uses it to project an image of cultural supremacy even as war looms."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>François-René de Chateaubriand</strong> publishes <em>Le Génie du Christianisme</em> — five volumes defending Catholicism not through theology but through aesthetics. Gothic cathedrals, medieval romances, the sublime in scripture: Christianity, Chateaubriand argues, is simply more <em>beautiful</em> than Enlightenment reason. The timing is perfect — Napoleon has just signed the <strong>Concordat</strong>, and Chateaubriand's apologia for faith becomes quasi-official propaganda. Meanwhile, <strong>Germaine de Staël</strong> publishes <em>Delphine</em>, an epistolary novel about a brilliant woman destroyed by social convention. Napoleon sees himself attacked in the novel's critique of tyranny and intolerance; he will soon exile its author. These two works define opposing poles of <strong>early French Romanticism</strong>: one reconciling art with authority, the other insisting that genius cannot submit."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "At <strong>Jena</strong>, the nerve center of <strong>German Idealism</strong>, <strong>Hegel</strong> and <strong>Schelling</strong> launch the <em>Critical Journal of Philosophy</em>. Hegel's essay <em>Faith and Knowledge</em> attacks Kant, Jacobi, and Fichte — the entire previous generation — for leaving subject and object hopelessly sundered. The solution, Hegel insists, must be a philosophy of <strong>identity</strong> that overcomes reflection's limits. He is laying foundations; the <em>Phenomenology of Spirit</em> is five years away. Across the Channel, <strong>William Paley</strong> publishes <em>Natural Theology</em> — the argument from design in its most influential form. A watch implies a watchmaker; therefore, nature implies God. Darwin will demolish this argument; for now, it represents British philosophy's comfortable alliance with established religion."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On March twenty-fifth, Britain and France sign the <strong>Treaty of Amiens</strong> — the first peace in nine years. It will last fourteen months. Napoleon uses the breathing room to consolidate: in August, a plebiscite confirms him <strong>Consul for Life</strong>. More ominously, he signs the <strong>Law of 20 May</strong>, reinstating slavery in French colonies. In June, <strong>Toussaint Louverture</strong> is tricked into arrest in Saint-Domingue; he will die in a French prison. The <strong>Haitian Revolution</strong> continues without him — and will succeed precisely because Napoleon's troops die of yellow fever while trying to reimpose bondage. Britain establishes <strong>West Point</strong>; Napoleon establishes the <strong>Légion d'honneur</strong>. Both empires prepare for the next round."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year's theme is <strong>reconciliation as strategy</strong>. Napoleon's Concordat with the Pope and Chateaubriand's <em>Génie</em> work in concert: religion returns to France, but tamed, serving the state rather than challenging it. De Staël refuses this bargain — and is exiled for it. Girodet's ghostly heroes similarly straddle worlds: officially celebrating Napoleon's generals, artistically abandoning the classical discipline that David represents. Even Hegel's attack on Kantian limits responds to the political moment: after the Revolution devoured its children, philosophy must find new foundations beyond mere critique. The Haitian Revolution, meanwhile, exposes the reconciliation's limits: Enlightenment liberty for whites, slavery restored for Blacks. The Peace of Amiens is phony not just diplomatically but philosophically — everyone knows the contradictions are unsustainable.",
+        "funFact": "Girodet's <em>Ossian</em> painting was based on a literary hoax: James Macpherson's eighteenth-century 'translations' of a third-century Gaelic bard were largely fabricated. Napoleon didn't care — he slept beneath the painting at Malmaison."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Treaty_of_Amiens",
+        "title": "Treaty of Amiens - Wikipedia"
+      },
+      {
+        "url": "https://www.britannica.com/topic/The-Genius-of-Christianity",
+        "title": "The Genius of Christianity - Britannica"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Concordat_of_1801",
+        "title": "Concordat of 1801 - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Salon_of_1802",
+        "title": "Salon of 1802 - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Toussaint_Louverture",
+        "title": "Toussaint Louverture - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1802-paris-phony-peace.jpg",
+      "caption": "Ossian Receiving the Ghosts of French Heroes by Anne-Louis Girodet de Roussy-Trioson, 1802",
+      "width": 1000,
+      "height": 1022,
+      "attribution": "Anne-Louis Girodet de Roussy-Trioson, Public domain, via Web Gallery of Art"
+    },
+    "threads": [
+      "napoleonic-wars",
+      "german-idealism",
+      "abolition-crisis",
+      "enlightenment"
+    ],
+    "location": {
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "place": "Paris"
+    },
+    "addedDate": "2026-05-30T05:00:00Z",
+    "podcast": {
+      "url": "audio/1802-paris-phony-peace.mp3",
+      "duration": 177
+    }
   }
 ]

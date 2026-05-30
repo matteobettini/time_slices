@@ -237,7 +237,9 @@
       "1714→1727": "Leibniz dies in obscurity; Newton is buried with princes. The transfer of philosophical prestige from continent to island begins.",
       "1727→1738": "Voltaire, returned from exile, publishes his Lettres philosophiques — England's lessons transmitted to France, with consequences.",
       "1824→1835": "Between Leopardi's cosmic pessimism and Tocqueville's democratic analysis, the Enlightenment's confidence in reason fractures. Both writers examine their subjects with scientific precision — but one finds only suffering, the other finds both liberation and new forms of tyranny.",
-      "1831→1835": "Hegel's death marks the end of systematic philosophy. By 1835, Tocqueville is analyzing democracy without celebrating it, and Strauss is deconstructing religion with scientific method. Enlightenment confidence in reason becomes the tool for critique rather than the ground for faith."
+      "1831→1835": "Hegel's death marks the end of systematic philosophy. By 1835, Tocqueville is analyzing democracy without celebrating it, and Strauss is deconstructing religion with scientific method. Enlightenment confidence in reason becomes the tool for critique rather than the ground for faith.",
+      "1798→1802": "Goya's monsters haunt Enlightenment reason; now Napoleon domesticates what the Revolution produced. The Concordat reconciles Church and state on the state's terms.",
+      "1802→1831": "After Napoleon's fall, Romanticism inherits the Enlightenment's contradictions: universal reason that produced both liberation and terror, progress that restored slavery."
     },
     "critical-philosophy": {
       "1755→1784": "The earthquake forced Kant to reconsider natural theology; three decades later, his Critiques limited what reason could claim. Theodicy's failure birthed epistemology's caution."
@@ -336,7 +338,9 @@
       "1789→1808": "Wilberforce's parliamentary campaign finally succeeds: in 1807 Britain bans the trade, taking effect January 1808.",
       "1808→1831": "The trade is banned, but slavery itself persists; the fight shifts to full emancipation.",
       "1831→1854": "Nat Turner's rebellion echoes through two decades; by 1854 the Kansas-Nebraska Act makes slavery's expansion a political crisis that will fracture America.",
-      "1854→1859": "Kansas bleeds; the Republican Party forms; John Brown's raid at Harpers Ferry transforms the slavery question into armed prophecy."
+      "1854→1859": "Kansas bleeds; the Republican Party forms; John Brown's raid at Harpers Ferry transforms the slavery question into armed prophecy.",
+      "1789→1802": "The Revolution's 1794 abolition of slavery reaches Napoleon's desk—and is reversed. Toussaint Louverture's autonomous Saint-Domingue becomes intolerable.",
+      "1802→1808": "Napoleon's slavery restoration backfires: Haiti declares independence in 1804, and Britain abolishes the slave trade in 1807. The contradiction proves unsustainable."
     },
     "revolutionary-nationalism": {
       "1848→1859": "The Springtime of Peoples in 1848 was crushed, but the dream of national self-determination survived. A decade later, at Solferino, Italian nationalists saw France defeat Austria—and the Risorgimento entered its decisive phase."
@@ -491,6 +495,12 @@
     },
     "totalitarianism": {
       "1934→1937": "From purge to intervention: the systems tested in thirty-four wage war in Spain by thirty-seven."
+    },
+    "german-idealism": {
+      "1802→1808": "Hegel's Critical Journal critique prepares the ground; by 1808, Fichte transforms philosophy into nationalism. The Phenomenology of Spirit arrives in 1807."
+    },
+    "napoleonic-wars": {
+      "1802→1808": "The phony peace shatters in 1803. By 1808, Napoleon controls Europe—but Spain rises, and the ulcer bleeds France for six years."
     }
   },
   "it": {
@@ -724,7 +734,9 @@
       "1714→1727": "Leibniz muore in oscurità; Newton viene sepolto con i principi. Inizia il trasferimento del prestigio filosofico dal continente all'isola.",
       "1727→1738": "Voltaire, tornato dall'esilio, pubblica le Lettres philosophiques — le lezioni inglesi trasmesse alla Francia, con conseguenze.",
       "1824→1835": "Tra il pessimismo cosmico di Leopardi e l'analisi democratica di Tocqueville, la fiducia illuministica nella ragione si frantuma. Entrambi gli scrittori esaminano i loro soggetti con precisione scientifica — ma uno trova solo sofferenza, l'altro trova sia liberazione che nuove forme di tirannia.",
-      "1831→1835": "La morte di Hegel segna la fine della filosofia sistematica. Nel 1835, Tocqueville analizza la democrazia senza celebrarla, e Strauss decostruisce la religione con metodo scientifico. La fiducia illuministica nella ragione diventa strumento di critica piuttosto che fondamento di fede."
+      "1831→1835": "La morte di Hegel segna la fine della filosofia sistematica. Nel 1835, Tocqueville analizza la democrazia senza celebrarla, e Strauss decostruisce la religione con metodo scientifico. La fiducia illuministica nella ragione diventa strumento di critica piuttosto che fondamento di fede.",
+      "1798→1802": "I mostri di Goya infestano la ragione illuminista; ora Napoleone addomestica ciò che la Rivoluzione ha prodotto. Il Concordato riconcilia Chiesa e Stato alle condizioni dello Stato.",
+      "1802→1831": "Dopo la caduta di Napoleone, il Romanticismo eredita le contraddizioni dell'Illuminismo: la ragione universale che ha prodotto sia liberazione che terrore, il progresso che ha restaurato la schiavitù."
     },
     "critical-philosophy": {
       "1755→1784": "Il terremoto costrinse Kant a riconsiderare la teologia naturale; tre decenni dopo, le sue Critiche limitarono ciò che la ragione poteva pretendere."
@@ -823,7 +835,9 @@
       "1789→1808": "La campagna parlamentare di Wilberforce finalmente trionfa: nel 1807 la Gran Bretagna vieta la tratta, in vigore dal primo gennaio 1808.",
       "1808→1831": "La tratta è vietata, ma la schiavitù persiste; la lotta si sposta verso l'emancipazione totale.",
       "1831→1854": "La ribellione di Nat Turner riecheggia per due decenni; nel 1854 il Kansas-Nebraska Act trasforma l'espansione della schiavitù in una crisi politica che fratturerà l'America.",
-      "1854→1859": "Il Kansas sanguina; nasce il Partito Repubblicano; il raid di John Brown a Harpers Ferry trasforma la questione schiavista in profezia armata."
+      "1854→1859": "Il Kansas sanguina; nasce il Partito Repubblicano; il raid di John Brown a Harpers Ferry trasforma la questione schiavista in profezia armata.",
+      "1789→1802": "L'abolizione della schiavitù del 1794 arriva sulla scrivania di Napoleone—e viene rovesciata. La Saint-Domingue autonoma di Toussaint Louverture diventa intollerabile.",
+      "1802→1808": "Il ripristino della schiavitù di Napoleone si ritorce: Haiti dichiara l'indipendenza nel 1804, e la Gran Bretagna abolisce la tratta degli schiavi nel 1807. La contraddizione si rivela insostenibile."
     },
     "revolutionary-nationalism": {
       "1848→1859": "La Primavera dei Popoli del 1848 fu schiacciata, ma il sogno dell'autodeterminazione nazionale sopravvisse. Un decennio dopo, a Solferino, i nazionalisti italiani videro la Francia sconfiggere l'Austria—e il Risorgimento entrò nella sua fase decisiva."
@@ -978,6 +992,12 @@
     },
     "totalitarianism": {
       "1934→1937": "Dall'epurazione all'intervento: i sistemi testati nel trentaquattro fanno la guerra in Spagna nel trentasette."
+    },
+    "german-idealism": {
+      "1802→1808": "La critica del Giornale critico di Hegel prepara il terreno; entro il 1808, Fichte trasforma la filosofia in nazionalismo. La Fenomenologia dello Spirito arriva nel 1807."
+    },
+    "napoleonic-wars": {
+      "1802→1808": "La pace illusoria si frantuma nel 1803. Entro il 1808, Napoleone controlla l'Europa—ma la Spagna insorge, e l'ulcera dissangua la Francia per sei anni."
     }
   }
 }
