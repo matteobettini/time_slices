@@ -38,7 +38,9 @@
       "1170→1191": "Thomas Becket's murder shook intellectual Paris; Maimonides and Averroes kept Aristotle flowing from Islamic courts to Christian schools.",
       "1191→1241": "After Saladin, Frederick II's court in Palermo became the great translation hub — Arabic philosophy to Latin, Greek science to Italian.",
       "1492→1520": "As Spain reaches the New World, Aztec treasures arrive in Europe — Dürer marvels at their craftsmanship.",
-      "1520→1564": "With Raphael dead, the torch passes to Michelangelo — and to the newborn Galileo who will redirect inquiry from heaven to observation."
+      "1520→1564": "With Raphael dead, the torch passes to Michelangelo — and to the newborn Galileo who will redirect inquiry from heaven to observation.",
+      "1564→1623": "Shakespeare dies; his colleagues rescue him. The transmission of learning now includes theatrical memory preserved by printing-house devotion.",
+      "1623→1863": "The Folio survives, copied and treasured: by 1863, Shakespeare has become global cultural property, translated into every language of empire and resistance."
     },
     "eschatological-anxiety": {
       "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
@@ -153,7 +155,8 @@
     },
     "printing-revolution": {
       "1509→1517": "Erasmus's <em>Praise of Folly</em> circulated in printed editions; Luther's theses spread faster than any medieval protest. The press made both possible — satire and schism alike.",
-      "1517→1520": "Luther's three treatises sell tens of thousands in months — the press becomes the Reformation's engine."
+      "1517→1520": "Luther's three treatises sell tens of thousands in months — the press becomes the Reformation's engine.",
+      "1520→1623": "The press that spread Luther's theses now preserves Shakespeare: Heminges and Condell's Folio bets that print will outlast playhouse memory."
     },
     "baroque": {
       "1600→1648": "Caravaggio's tenebrism dramatized Counter-Reformation piety; Rembrandt's used the same technique for Protestant inwardness. Baroque style survived the confessional divide.",
@@ -168,7 +171,9 @@
       "1571→1600": "The infant born at Milan in September 1571 — Michelangelo Merisi, called Caravaggio — will mature into the first Baroque painter. His chiaroscuro revolutionizes art: where Venice celebrated luminosity, he makes darkness itself dramatic.",
       "1600→1605": "Caravaggio's tenebrism spreads from Rome to Mantua via rejected commissions and Rubens's advocacy — scandal becomes currency.",
       "1605→1610": "The rejected Death of the Virgin travels from Rome to Mantua; Caravaggio flees murder charges, spreading chiaroscuro to Naples and Malta.",
-      "1714→1727": "From Watteau's fêtes galantes to Newton's apotheosis: the decorative gives way to the monumental as England buries its philosopher-king."
+      "1714→1727": "From Watteau's fêtes galantes to Newton's apotheosis: the decorative gives way to the monumental as England buries its philosopher-king.",
+      "1610→1623": "Caravaggio's tenebrism travels north: Honthorst brings candlelit drama from Rome to Utrecht, seeding the Dutch Golden Age's obsession with light.",
+      "1623→1641": "Baroque expands: from Bernini's papal commissions to Van Dyck's court portraits to Rembrandt's intimate interiors, light becomes the medium of meaning."
     },
     "empiricism": {
       "1543→1687": "Vesalius trusted dissection over Galen; Newton trusted mathematics over tradition. Both empiricisms — anatomical and physical — insisted that observation trumped authority.",
@@ -211,7 +216,9 @@
       "1727→1859": "Newton's method — observe, measure, calculate — spreads from physics to biology. Darwin applies it to life itself.",
       "1831→1835": "Darwin's departure aboard the Beagle in 1831 becomes data in 1835 at the Galápagos. The finches he observes there will eventually produce a theory of nature that makes Newton's mechanics look like a prelude — evolution as mechanism, creation as myth.",
       "1727→1835": "A century after Newton's death, his mechanical universe still governs physics. But Darwin aboard the Beagle is collecting data that will extend mechanism from matter to life itself — natural selection as the clockwork of biology.",
-      "1835→1859": "The finches Darwin observes at the Galápagos will gestate for twenty-four years. In 1859, On the Origin of Species transforms biology from natural history into natural science, and makes Genesis a myth among myths."
+      "1835→1859": "The finches Darwin observes at the Galápagos will gestate for twenty-four years. In 1859, On the Origin of Species transforms biology from natural history into natural science, and makes Genesis a myth among myths.",
+      "1610→1623": "From telescope to method: Galileo moves from showing new facts to arguing how all facts should be read — in the mathematical language of nature.",
+      "1623→1666": "Il Saggiatore's mathematical epistemology becomes Newton's mathematical physics: the book of nature yields to those who learn its geometric grammar."
     },
     "enlightenment": {
       "1687→1755": "Newton's <em>Principia</em> proved the cosmos was lawful; the Lisbon earthquake asked whether it was just. Enlightenment optimism crested and cracked within seventy years.",
@@ -540,7 +547,9 @@
       "1170→1191": "L'omicidio di Thomas Becket scosse la Parigi intellettuale; Maimonide e Averroè mantennero Aristotele fluente dalle corti islamiche alle scuole cristiane.",
       "1191→1241": "Dopo Saladino, la corte di Federico II a Palermo divenne il grande hub di traduzione — filosofia araba in latino, scienza greca in italiano.",
       "1492→1520": "Mentre la Spagna raggiunge il Nuovo Mondo, i tesori aztechi arrivano in Europa — Dürer si meraviglia della loro maestria.",
-      "1520→1564": "Con Raffaello morto, la fiaccola passa a Michelangelo — e al neonato Galileo che reindirizzerà l'indagine dal cielo all'osservazione."
+      "1520→1564": "Con Raffaello morto, la fiaccola passa a Michelangelo — e al neonato Galileo che reindirizzerà l'indagine dal cielo all'osservazione.",
+      "1564→1623": "Shakespeare muore; i suoi colleghi lo salvano. La trasmissione del sapere ora include la memoria teatrale preservata dalla devozione delle stamperie.",
+      "1623→1863": "Il Folio sopravvive, copiato e custodito: nel 1863, Shakespeare è diventato patrimonio culturale globale, tradotto in ogni lingua dell'impero e della resistenza."
     },
     "eschatological-anxiety": {
       "410→1000": "La caduta di Roma sembrò apocalittica ai contemporanei di Agostino; l'avvicinarsi dell'anno Mille rianimò quelle paure. Il 'bianco manto di chiese' fu in parte ringraziamento per un millennio che non finì nel fuoco.",
@@ -650,7 +659,8 @@
     },
     "printing-revolution": {
       "1509→1517": "L'<em>Elogio della Follia</em> di Erasmo circolò in edizioni stampate; le tesi di Lutero si diffusero più velocemente di qualsiasi protesta medievale.",
-      "1517→1520": "I tre trattati di Lutero vendono decine di migliaia di copie in pochi mesi — la stampa diventa il motore della Riforma."
+      "1517→1520": "I tre trattati di Lutero vendono decine di migliaia di copie in pochi mesi — la stampa diventa il motore della Riforma.",
+      "1520→1623": "La stampa che diffuse le tesi di Lutero ora preserva Shakespeare: il Folio di Heminges e Condell scommette che la stampa durerà più della memoria teatrale."
     },
     "baroque": {
       "1600→1648": "Il tenebrismo di Caravaggio drammatizzava la pietà controriformista; quello di Rembrandt usava la stessa tecnica per l'interiorità protestante.",
@@ -665,7 +675,9 @@
       "1571→1600": "Il bambino nato a Milano nel settembre 1571 — Michelangelo Merisi, detto Caravaggio — diventerà il primo pittore barocco. Il suo chiaroscuro rivoluziona l'arte: dove Venezia celebrava la luminosità, lui rende drammatica l'oscurità stessa.",
       "1600→1605": "Il tenebrismo di Caravaggio si diffonde da Roma a Mantova attraverso commissioni rifiutate e il patrocinio di Rubens — lo scandalo diventa valuta.",
       "1605→1610": "La Morte della Vergine rifiutata viaggia da Roma a Mantova; Caravaggio fugge le accuse di omicidio, diffondendo il chiaroscuro a Napoli e Malta.",
-      "1714→1727": "Dalle fêtes galantes di Watteau all'apoteosi di Newton: il decorativo cede al monumentale mentre l'Inghilterra seppellisce il suo filosofo-re."
+      "1714→1727": "Dalle fêtes galantes di Watteau all'apoteosi di Newton: il decorativo cede al monumentale mentre l'Inghilterra seppellisce il suo filosofo-re.",
+      "1610→1623": "Il tenebrismo di Caravaggio viaggia verso nord: Honthorst porta il dramma a lume di candela da Roma a Utrecht, seminando l'ossessione per la luce dell'Età d'Oro olandese.",
+      "1623→1641": "Il Barocco si espande: dalle commissioni papali di Bernini ai ritratti di corte di Van Dyck agli interni intimi di Rembrandt, la luce diventa il mezzo del significato."
     },
     "empiricism": {
       "1543→1687": "Vesalio si fidava della dissezione più che di Galeno; Newton si fidava della matematica più che della tradizione.",
@@ -708,7 +720,9 @@
       "1727→1859": "Il metodo di Newton — osservare, misurare, calcolare — si diffonde dalla fisica alla biologia. Darwin lo applica alla vita stessa.",
       "1831→1835": "La partenza di Darwin a bordo del Beagle nel 1831 diventa dato nel 1835 alle Galápagos. I fringuelli che osserva là produrranno infine una teoria della natura che fa sembrare la meccanica di Newton un preludio — l'evoluzione come meccanismo, la creazione come mito.",
       "1727→1835": "Un secolo dopo la morte di Newton, il suo universo meccanico governa ancora la fisica. Ma Darwin a bordo del Beagle sta raccogliendo dati che estenderanno il meccanismo dalla materia alla vita stessa — la selezione naturale come meccanismo dell'orologeria biologica.",
-      "1835→1859": "I fringuelli che Darwin osserva alle Galápagos matureranno per ventiquattro anni. Nel 1859, L'Origine delle Specie trasforma la biologia da storia naturale a scienza naturale, e fa della Genesi un mito tra i miti."
+      "1835→1859": "I fringuelli che Darwin osserva alle Galápagos matureranno per ventiquattro anni. Nel 1859, L'Origine delle Specie trasforma la biologia da storia naturale a scienza naturale, e fa della Genesi un mito tra i miti.",
+      "1610→1623": "Dal telescopio al metodo: Galileo passa dal mostrare nuovi fatti al sostenere come tutti i fatti dovrebbero essere letti — nel linguaggio matematico della natura.",
+      "1623→1666": "L'epistemologia matematica del Saggiatore diventa la fisica matematica di Newton: il libro della natura cede a chi impara la sua grammatica geometrica."
     },
     "enlightenment": {
       "1687→1755": "I <em>Principia</em> di Newton dimostrarono che il cosmo era regolato da leggi; il terremoto di Lisbona chiese se fosse giusto.",

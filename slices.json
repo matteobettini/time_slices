@@ -6939,5 +6939,79 @@
       "url": "audio/1802-paris-phony-peace.mp3",
       "duration": 177
     }
+  },
+  {
+    "year": "1623",
+    "id": "1623-immortality-in-folio",
+    "title": "Immortality in Folio",
+    "teaser": "Shakespeare's colleagues rescue eighteen plays from oblivion. Galileo declares nature's language is mathematics. A new pope befriends science while Protestant armies die at Stadtlohn. Two roads to immortality — through art or through knowledge — converge in a single year.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "<strong>Gerard van Honthorst</strong> paints <em>The Concert</em> in Utrecht — a burst of candlelit color brought back from Rome. Honthorst had studied <strong>Caravaggio's</strong> chiaroscuro in Italy, earning the nickname <em>Gherardo delle Notti</em> (Gerard of the Nights) for his mastery of artificial light. Now the <strong>Utrecht Caravaggisti</strong> transplant that dramatic technique to Protestant Holland, where it will influence Rembrandt and the Dutch Golden Age. In Rome, <strong>Gian Lorenzo Bernini</strong> sculpts his intense <em>Self-Portrait</em>, all fierce eyes and flowing hair — the Baroque genius at twenty-four, already reshaping papal patronage. The <strong>Droeshout portrait</strong> engraved for Shakespeare's First Folio is awkward as art but priceless as document: the only contemporary image we have to verify against the poet's death mask."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "Seven years after Shakespeare's death, his fellow actors <strong>John Heminges</strong> and <strong>Henry Condell</strong> publish <em>Mr. William Shakespeare's Comedies, Histories, & Tragedies</em> — the <strong>First Folio</strong>. Of the thirty-six plays collected, eighteen exist in no other source: <em>Macbeth</em>, <em>The Tempest</em>, <em>Twelfth Night</em>, <em>Julius Caesar</em>, and more would have vanished without this act of devotion. About 750 copies were printed; 235 survive today. Ben Jonson contributes a prefatory poem declaring Shakespeare 'not of an age, but for all time' — a prophecy fulfilled by the book that made it possible. In Spain, <strong>Pedro Calderón de la Barca</strong> debuts as a playwright with <em>Amor, honor y poder</em>, beginning a career that will rival Lope de Vega's."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "In October, <strong>Galileo</strong> publishes <em>Il Saggiatore</em> (The Assayer), dedicated to the newly elected Pope <strong>Urban VIII</strong>. The book's explicit argument concerns comets — and on that question Galileo is wrong. But its implicit argument reshapes knowledge itself: <em>'Philosophy is written in this grand book, the universe... It is written in the language of mathematics.'</em> Where scholastics debated Aristotle's texts, Galileo insists we read nature directly through observation and geometry. This is the <strong>scientific revolution</strong> as epistemological rupture — not new facts alone, but a new way of knowing. Urban VIII, still an ally of science, receives the work with delight. Their friendship will not survive the decade."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On <strong>August 6th</strong>, two pivotal events coincide. In Rome, Cardinal <strong>Maffeo Barberini</strong> is elected Pope Urban VIII — a humanist, poet, and patron of Galileo who will transform Baroque Rome. At Stadtlohn in Westphalia, <strong>Tilly's</strong> Catholic League army destroys <strong>Christian of Brunswick's</strong> Protestant force: 6,000 dead, 4,000 captured, all artillery lost. The <strong>Battle of Stadtlohn</strong> ends the Palatinate phase of the <strong>Thirty Years' War</strong>, crushing Protestant hopes in the Empire. Frederick V, the 'Winter King' of Bohemia, abandons his campaigns. Maximilian of Bavaria gains the Palatinate's electoral vote. On June 19th, <strong>Blaise Pascal</strong> is born in Clermont — the future author of probability theory and the <em>Pensées</em>."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The year poses a question: how does meaning survive? Heminges and Condell answer through <strong>preservation</strong> — gathering scattered quartos and playhouse manuscripts into a single book, betting that print will outlast memory. Galileo answers through <strong>method</strong> — arguing that nature's truths, unlike texts, cannot be corrupted by copyists because mathematics transcends language. Urban VIII's election momentarily aligns <strong>Church and inquiry</strong>; the Barberini bees on <em>Il Saggiatore's</em> title page signal that Rome and science might be friends. Stadtlohn shows what happens when ideas fail to preserve themselves: Protestant Germany's resistance collapses, and with it a generation's dreams of religious settlement. Pascal, born this year, will eventually argue that both paths — reason and faith — meet in the wager's infinite stakes.",
+        "funFact": "The Droeshout engraving on the First Folio's title page was made by a twenty-one-year-old who almost certainly never saw Shakespeare alive — he worked from an earlier, now-lost portrait."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/First_Folio",
+        "title": "First Folio — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Assayer",
+        "title": "The Assayer — Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Stadtlohn",
+        "title": "Battle of Stadtlohn — Wikipedia"
+      },
+      {
+        "url": "https://www.nga.gov/research/publications/online-editions/dutch-paintings-seventeenth-century-concert-1623",
+        "title": "Van Honthorst's Concert — National Gallery of Art"
+      },
+      {
+        "url": "https://galileo.library.rice.edu/chr/urban_viii.html",
+        "title": "Urban VIII — The Galileo Project"
+      }
+    ],
+    "image": {
+      "url": "images/1623-immortality-in-folio.jpg",
+      "caption": "Title page of Shakespeare's First Folio (1623), featuring the Droeshout portrait",
+      "width": 950,
+      "height": 1513,
+      "attribution": "Martin Droeshout, Public domain, via Wikimedia Commons (Beinecke Library, Yale University)"
+    },
+    "threads": [
+      "printing-revolution",
+      "scientific-revolution",
+      "baroque",
+      "translatio-studii"
+    ],
+    "location": {
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "place": "London"
+    },
+    "addedDate": "2026-05-31T05:00:00Z",
+    "podcast": {
+      "url": "audio/1623-immortality-in-folio.mp3",
+      "duration": 208
+    }
   }
 ]
