@@ -1,50 +1,49 @@
 {
-  "year": "1623",
-  "id": "1623-immortality-in-folio",
-  "title": "Immortalità in Folio",
-  "teaser": "I colleghi di Shakespeare salvano diciotto opere dall'oblio. Galileo dichiara che la natura parla in linguaggio matematico. Un nuovo papa si allea con la scienza mentre gli eserciti protestanti cadono a Stadtlohn. Due strade verso l'immortalità — attraverso l'arte o attraverso la conoscenza — convergono in un solo anno.",
+  "year": "1527",
+  "id": "1527-rome-when-paradise-burned",
+  "title": "Roma — Quando il Paradiso Bruciò",
+  "teaser": "Le truppe imperiali saccheggiano la Città Eterna per otto mesi mentre il papa si rifugia in Castel Sant'Angelo. Il Rinascimento muore tra fiamme e pestilenza. Gli artisti si disperdono per l'Europa, portando con sé uno stile nuovo e inquieto: il Manierismo. A Firenze, Pontormo dipinge figure che sembrano fluttuare nel dolore. Ciò che fu spezzato non potrà mai essere restaurato.",
   "dimensions": {
     "art": {
       "label": "Arte",
-      "content": "<strong>Gerard van Honthorst</strong> dipinge <em>Il Concerto</em> a Utrecht — un'esplosione di colori illuminati a candela, riportata da Roma. Honthorst aveva studiato il <strong>chiaroscuro di Caravaggio</strong> in Italia, guadagnandosi il soprannome di <em>Gherardo delle Notti</em> per la sua maestria della luce artificiale. Ora i <strong>caravaggisti di Utrecht</strong> trapiantano quella tecnica drammatica nell'Olanda protestante, dove influenzerà Rembrandt e l'Età d'Oro olandese. A Roma, <strong>Gian Lorenzo Bernini</strong> scolpisce il suo intenso <em>Autoritratto</em>, tutto occhi di fuoco e capelli fluenti — il genio del Barocco a ventiquattro anni, già impegnato a ridefinire il mecenatismo papale. Il <strong>ritratto Droeshout</strong> inciso per il First Folio è goffo come opera d'arte ma inestimabile come documento: l'unica immagine contemporanea che abbiamo per confrontare con la maschera mortuaria del poeta."
+      "content": "A Firenze, mentre Roma brucia, <strong>Jacopo Pontormo</strong> completa la sua <em>Deposizione dalla Croce</em> nella Cappella Capponi — un'opera che incarna la frantumazione delle certezze rinascimentali. Nessuna croce è visibile. Nessun terreno ancora le figure. I corpi si avvolgono verso l'alto in rosa acidi e azzurri impossibili, il dolore reso senza peso. Questo è il <strong>Manierismo</strong>: un'arte che abbandona l'armonia classica per l'intensità emotiva, l'eleganza spinta fino al disagio. Il Sacco disperde la generazione che l'ha creato. <strong>Rosso Fiorentino</strong>, imprigionato dalle truppe imperiali, fugge infine in Francia. <strong>Parmigianino</strong>, catturato mentre dipingeva, scappa a Bologna. <strong>Perino del Vaga</strong> raggiunge Genova. In un decennio, lo stile manierista che questi artisti portano con sé trasformerà le corti da Fontainebleau a Praga — una diaspora del trauma trasformata in estetica."
     },
     "lit": {
       "label": "Letteratura",
-      "content": "Sette anni dopo la morte di Shakespeare, i suoi colleghi attori <strong>John Heminges</strong> e <strong>Henry Condell</strong> pubblicano <em>Mr. William Shakespeare's Comedies, Histories, & Tragedies</em> — il <strong>First Folio</strong>. Delle trentasei opere raccolte, diciotto non esistono in nessun'altra fonte: <em>Macbeth</em>, <em>La Tempesta</em>, <em>La dodicesima notte</em>, <em>Giulio Cesare</em> e altre sarebbero svanite senza questo atto di devozione. Furono stampate circa 750 copie; 235 sopravvivono oggi. Ben Jonson contribuisce con una poesia prefatoria dichiarando Shakespeare 'non di un'epoca, ma per tutti i tempi' — una profezia realizzata dal libro che la rese possibile. In Spagna, <strong>Pedro Calderón de la Barca</strong> debutta come drammaturgo con <em>Amor, honor y poder</em>, iniziando una carriera che rivaleggerà con quella di Lope de Vega."
+      "content": "<strong>Baldassare Castiglione</strong> invia il manoscritto del suo <em>Libro del Cortegiano</em> alla stamperia Aldina di Venezia — apparirà nel millequattrocentoventotto. Scritto nell'arco di vent'anni come memoriale della corte di Urbino, il <em>Cortegiano</em> codifica la <strong>sprezzatura</strong>: l'arte di far sembrare facili le cose difficili, di nascondere lo sforzo sotto una grazia disinvolta. Il libro diventa il manuale di comportamento dell'Europa, tradotto in sei lingue. Eppure la sua eleganza è già nostalgica. Le piccole corti italiane che il <em>Cortegiano</em> idealizza vengono schiacciate tra gli eserciti asburgici e francesi. Lo stesso Castiglione, nunzio papale presso Carlo V in Spagna, apprende della distruzione di Roma per lettera — e viene incolpato da Clemente VII per non averla impedita. Muore nel millequattrocentoventinove, col cuore spezzato."
     },
     "phil": {
       "label": "Filosofia",
-      "content": "In ottobre, <strong>Galileo</strong> pubblica <em>Il Saggiatore</em>, dedicato al neoeletto Papa <strong>Urbano VIII</strong>. L'argomento esplicito del libro riguarda le comete — e su questo Galileo ha torto. Ma il suo argomento implicito ridefinisce la conoscenza stessa: <em>'La filosofia è scritta in questo grandissimo libro che continuamente ci sta aperto innanzi agli occhi... Egli è scritto in lingua matematica.'</em> Dove gli scolastici dibattevano i testi di Aristotele, Galileo insiste che dobbiamo leggere la natura direttamente attraverso l'osservazione e la geometria. Questa è la <strong>rivoluzione scientifica</strong> come rottura epistemologica — non solo nuovi fatti, ma un nuovo modo di conoscere. Urbano VIII, ancora alleato della scienza, accoglie l'opera con entusiasmo. La loro amicizia non sopravviverà al decennio."
+      "content": "Il Sacco appare a molti come un giudizio divino. I <strong>Lanzichenecchi</strong> luterani tra le truppe imperiali credono che Roma sia Babilonia, il papa l'Anticristo — e agiscono di conseguenza, profanando reliquie e sbeffeggiando la Messa. Gli apologeti cattolici ribattono che Dio punisce una Chiesa corrotta. Entrambe le interpretazioni presuppongono una <strong>storia provvidenziale</strong>: gli eventi rivelano la volontà divina. Ma la pura casualità dell'orrore — soldati affamati per mesi ora ubriachi di vino da altare, cardinali tenuti in ostaggio, suore vendute ai mercati — mette a dura prova la teodicea. <strong>Erasmo</strong>, che aveva deriso la corruzione clericale con arguzia, ora osserva la Cristianità lacerarsi. Il suo <strong>umanesimo scettico</strong>, che cercava la riforma attraverso l'educazione e l'ironia, sembra impotente di fronte alle certezze di Lutero e ai cannoni imperiali."
     },
     "hist": {
       "label": "Storia",
-      "content": "Il <strong>6 agosto</strong>, due eventi cruciali coincidono. A Roma, il cardinale <strong>Maffeo Barberini</strong> viene eletto Papa Urbano VIII — umanista, poeta e mecenate di Galileo, trasformerà la Roma barocca. A Stadtlohn in Vestfalia, l'esercito della <strong>Lega Cattolica</strong> di <strong>Tilly</strong> distrugge la forza protestante di <strong>Cristiano di Brunswick</strong>: 6.000 morti, 4.000 prigionieri, tutta l'artiglieria perduta. La <strong>Battaglia di Stadtlohn</strong> conclude la fase palatina della <strong>Guerra dei Trent'Anni</strong>, schiacciando le speranze protestanti nell'Impero. Federico V, il 'Re d'Inverno' di Boemia, abbandona le sue campagne. Massimiliano di Baviera ottiene il voto elettorale del Palatinato. Il 19 giugno nasce a Clermont <strong>Blaise Pascal</strong> — il futuro autore della teoria della probabilità e dei <em>Pensieri</em>."
+      "content": "Il sei maggio, ventimila truppe ammutinate — Lanzichenecchi tedeschi, veterani spagnoli, mercenari italiani — violano le mura di Roma. Il loro comandante, <strong>Carlo di Borbone</strong>, muore nel primo assalto, colpito mentre scala una scala. Senza guida e senza paga da mesi, l'esercito scatena otto mesi di terrore. <strong>Papa Clemente VII</strong> fugge attraverso il <em>Passetto di Borgo</em> verso Castel Sant'Angelo, dove rimane assediato mentre la sua città brucia. La <strong>Guardia Svizzera</strong> muore quasi al completo — centoquarantasette su centottantanove — per fargli guadagnare tempo. La popolazione di Roma precipita da cinquantacinquemila a diecimila per omicidi, carestia e peste. Il Sacco termina solo quando la pestilenza costringe l'esercito a marciare verso sud. <strong>Carlo V</strong> nega ogni responsabilità ma ottiene un papa che non oserà mai più sfidarlo."
     },
     "conn": {
       "label": "Connessioni",
-      "content": "L'anno pone una domanda: come sopravvive il significato? Heminges e Condell rispondono attraverso la <strong>conservazione</strong> — raccogliendo quarto sparsi e manoscritti teatrali in un unico libro, scommettendo che la stampa durerà più della memoria. Galileo risponde attraverso il <strong>metodo</strong> — sostenendo che le verità della natura, a differenza dei testi, non possono essere corrotte dai copisti perché la matematica trascende il linguaggio. L'elezione di Urbano VIII allinea momentaneamente <strong>Chiesa e ricerca</strong>; le api dei Barberini sul frontespizio del <em>Saggiatore</em> segnalano che Roma e scienza potrebbero essere amiche. Stadtlohn mostra cosa accade quando le idee non riescono a preservarsi: la resistenza della Germania protestante crolla, e con essa i sogni di una generazione per un accordo religioso. Pascal, nato quest'anno, sosterrà infine che entrambe le strade — ragione e fede — si incontrano nella posta infinita della scommessa.",
-      "funFact": "L'incisione Droeshout sul frontespizio del First Folio fu realizzata da un ventunenne che quasi certamente non vide mai Shakespeare da vivo — lavorò su un ritratto precedente, oggi perduto."
+      "content": "I fili si intrecciano in un unico paradosso: <strong>la distruzione diventa trasmissione</strong>. Gli artisti che fuggono da Roma portano il Manierismo in corti che altrimenti non l'avrebbero mai visto — Rosso alla corte di Francesco I a Fontainebleau, Primaticcio a seguire, fondando la prima scuola dell'arte rinascimentale francese. Il <em>Cortegiano</em> di Castiglione, pubblicato mentre la vecchia cultura di corte muore, diventa il modello del comportamento cortigiano in tutta l'Europa protestante e cattolica. Anche la <strong>Controriforma</strong> emerge in parte dal trauma del Sacco: la Chiesa che si ricostruisce dopo il millecinquecentoventisette sarà più snella, più disciplinata, più ansiosa della propria immagine. L'Alto Rinascimento non finisce con un lamento ma con un'esplosione — e le schegge seminano nuova vita attraverso il continente.",
+      "funFact": "Benvenuto Cellini sostenne di aver personalmente ucciso il Duca di Borbone durante l'assalto — uno dei tanti racconti autocelebrativi della sua autobiografia che gli storici guardano con scetticismo."
     }
   },
   "sources": [
-    { "url": "https://en.wikipedia.org/wiki/First_Folio", "title": "First Folio — Wikipedia" },
-    { "url": "https://it.wikipedia.org/wiki/Il_Saggiatore_(saggio)", "title": "Il Saggiatore — Wikipedia" },
-    { "url": "https://en.wikipedia.org/wiki/Battle_of_Stadtlohn", "title": "Battaglia di Stadtlohn — Wikipedia" },
-    { "url": "https://www.nga.gov/research/publications/online-editions/dutch-paintings-seventeenth-century-concert-1623", "title": "Il Concerto di Van Honthorst — National Gallery of Art" },
-    { "url": "https://galileo.library.rice.edu/chr/urban_viii.html", "title": "Urbano VIII — The Galileo Project" }
+    { "url": "https://it.wikipedia.org/wiki/Sacco_di_Roma_(1527)", "title": "Sacco di Roma (1527) - Wikipedia" },
+    { "url": "https://ehne.fr/en/encyclopedia/themes/arts-in-europe/migration-and-artistic-identities/sack-rome-1527-triumph-mannerism-in-europe", "title": "EHNE: Il Sacco di Roma e il Manierismo" },
+    { "url": "https://it.wikipedia.org/wiki/Il_Cortegiano", "title": "Il Libro del Cortegiano - Wikipedia" },
+    { "url": "https://it.wikipedia.org/wiki/Deposizione_(Pontormo)", "title": "Deposizione di Pontormo - Wikipedia" }
   ],
   "image": {
-    "url": "images/1623-immortality-in-folio.jpg",
-    "caption": "Frontespizio del First Folio di Shakespeare (1623), con il ritratto Droeshout",
-    "width": 950,
-    "height": 1513,
-    "attribution": "Martin Droeshout, Pubblico dominio, via Wikimedia Commons (Beinecke Library, Yale University)"
+    "url": "images/1527-rome-when-paradise-burned.jpg",
+    "caption": "La Deposizione dalla Croce di Pontormo, apice dell'arte manierista dipinta durante la devastazione di Roma",
+    "width": 1200,
+    "height": 1925,
+    "attribution": "Jacopo Pontormo, Pubblico dominio, tramite Wikimedia Commons"
   },
-  "threads": ["printing-revolution", "scientific-revolution", "baroque", "translatio-studii"],
+  "threads": ["counter-reformation", "renaissance-humanism", "translatio-studii", "baroque"],
   "location": {
-    "lat": 51.5074,
-    "lon": -0.1278,
-    "place": "Londra"
+    "lat": 41.9029,
+    "lon": 12.4534,
+    "place": "Roma"
   },
-  "addedDate": "2026-05-31T05:00:00Z"
+  "addedDate": "2026-06-01T05:00:00Z"
 }

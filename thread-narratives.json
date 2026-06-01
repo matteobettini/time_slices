@@ -40,7 +40,9 @@
       "1492→1520": "As Spain reaches the New World, Aztec treasures arrive in Europe — Dürer marvels at their craftsmanship.",
       "1520→1564": "With Raphael dead, the torch passes to Michelangelo — and to the newborn Galileo who will redirect inquiry from heaven to observation.",
       "1564→1623": "Shakespeare dies; his colleagues rescue him. The transmission of learning now includes theatrical memory preserved by printing-house devotion.",
-      "1623→1863": "The Folio survives, copied and treasured: by 1863, Shakespeare has become global cultural property, translated into every language of empire and resistance."
+      "1623→1863": "The Folio survives, copied and treasured: by 1863, Shakespeare has become global cultural property, translated into every language of empire and resistance.",
+      "1520→1527": "The printing press accelerates Luther's Reformation; seven years later, books and artists alike flee Rome, carrying Italian culture to new courts.",
+      "1527→1564": "The diaspora of Roman artists seeds Mannerism across Europe; by Michelangelo's death, Italian styles have transformed courts from Fontainebleau to Prague."
     },
     "eschatological-anxiety": {
       "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
@@ -134,7 +136,9 @@
       "1517→1532": "The print revolution spreads humanist ideas beyond Italy; Machiavelli's Prince applies ad fontes method to politics itself.",
       "1532→1580": "From Machiavelli's political analysis to Montaigne's personal essay—humanism turns inward, examining the self.",
       "1517→1520": "The rupture begins: Luther weaponizes humanist scholarship against Rome itself.",
-      "1520→1532": "After Raphael's death and Luther's break, humanism splits — Erasmus stays Catholic, others follow Luther."
+      "1520→1532": "After Raphael's death and Luther's break, humanism splits — Erasmus stays Catholic, others follow Luther.",
+      "1520→1527": "Luther's rupture with Rome intensifies; seven years later, imperial troops make humanism's dream of peaceful reform through education a bitter irony.",
+      "1527→1532": "Castiglione's Courtier appears posthumously, codifying humanist ideals of sprezzatura as the culture that produced them collapses; Machiavelli's Prince follows."
     },
     "art-and-power": {
       "1300→1504": "Giotto worked for Franciscans and Bardi bankers; Michelangelo worked for Medici and popes. Two centuries transformed patronage from devotional to dynastic.",
@@ -173,7 +177,8 @@
       "1605→1610": "The rejected Death of the Virgin travels from Rome to Mantua; Caravaggio flees murder charges, spreading chiaroscuro to Naples and Malta.",
       "1714→1727": "From Watteau's fêtes galantes to Newton's apotheosis: the decorative gives way to the monumental as England buries its philosopher-king.",
       "1610→1623": "Caravaggio's tenebrism travels north: Honthorst brings candlelit drama from Rome to Utrecht, seeding the Dutch Golden Age's obsession with light.",
-      "1623→1641": "Baroque expands: from Bernini's papal commissions to Van Dyck's court portraits to Rembrandt's intimate interiors, light becomes the medium of meaning."
+      "1623→1641": "Baroque expands: from Bernini's papal commissions to Van Dyck's court portraits to Rembrandt's intimate interiors, light becomes the medium of meaning.",
+      "1527→1571": "The artists scattered by the Sack—Rosso, Parmigianino, Perino—carry Mannerist elegance to courts across Europe; by Lepanto, this restless style governs Catholic visual culture."
     },
     "empiricism": {
       "1543→1687": "Vesalius trusted dissection over Galen; Newton trusted mathematics over tradition. Both empiricisms — anatomical and physical — insisted that observation trumped authority.",
@@ -419,7 +424,8 @@
       "1571→1580": "Lepanto's glory fades into Montaigne's doubt. The Counter-Reformation's military triumph gives way to philosophical skepticism — as religious wars continue, a French essayist asks 'Que sçay-je?' and invents a new way of thinking.",
       "1558→1564": "The Counter-Reformation's institutional machinery — the Index, the Jesuits, the Tridentine decrees — consolidates between Mary Tudor's death and Calvin's.",
       "1564→1571": "From the Index's promulgation to Lepanto's victory — the Counter-Reformation moves from censorship to crusade, intellectual control to military triumph.",
-      "1600→1605": "Bruno's ashes barely cold, the papacy cycles through three incumbents in a year while Catholic conspirators plot to blow up Protestant England."
+      "1600→1605": "Bruno's ashes barely cold, the papacy cycles through three incumbents in a year while Catholic conspirators plot to blow up Protestant England.",
+      "1527→1558": "The Sack's trauma catalyzes reform: a humiliated Church begins the doctrinal and disciplinary tightening that will culminate in the Council of Trent."
     },
     "english-romanticism": {
       "1798→1816": "Wordsworth and Coleridge's Lyrical Ballads germinate in rain-soaked Geneva: Mary Shelley inherits their nature-worship but adds Gothic dread — Romanticism discovers its dark twin."
@@ -549,7 +555,9 @@
       "1492→1520": "Mentre la Spagna raggiunge il Nuovo Mondo, i tesori aztechi arrivano in Europa — Dürer si meraviglia della loro maestria.",
       "1520→1564": "Con Raffaello morto, la fiaccola passa a Michelangelo — e al neonato Galileo che reindirizzerà l'indagine dal cielo all'osservazione.",
       "1564→1623": "Shakespeare muore; i suoi colleghi lo salvano. La trasmissione del sapere ora include la memoria teatrale preservata dalla devozione delle stamperie.",
-      "1623→1863": "Il Folio sopravvive, copiato e custodito: nel 1863, Shakespeare è diventato patrimonio culturale globale, tradotto in ogni lingua dell'impero e della resistenza."
+      "1623→1863": "Il Folio sopravvive, copiato e custodito: nel 1863, Shakespeare è diventato patrimonio culturale globale, tradotto in ogni lingua dell'impero e della resistenza.",
+      "1520→1527": "La stampa accelera la Riforma di Lutero; sette anni dopo, libri e artisti fuggono insieme da Roma, portando la cultura italiana in nuove corti.",
+      "1527→1564": "La diaspora degli artisti romani semina il Manierismo in tutta Europa; alla morte di Michelangelo, gli stili italiani hanno trasformato le corti da Fontainebleau a Praga."
     },
     "eschatological-anxiety": {
       "410→1000": "La caduta di Roma sembrò apocalittica ai contemporanei di Agostino; l'avvicinarsi dell'anno Mille rianimò quelle paure. Il 'bianco manto di chiese' fu in parte ringraziamento per un millennio che non finì nel fuoco.",
@@ -638,7 +646,9 @@
       "1517→1532": "La rivoluzione della stampa diffonde le idee umaniste oltre l'Italia; Il Principe di Machiavelli applica il metodo ad fontes alla politica stessa.",
       "1532→1580": "Dall'analisi politica di Machiavelli al saggio personale di Montaigne—l'umanesimo si rivolge verso l'interno, esaminando il sé.",
       "1517→1520": "La rottura inizia: Lutero usa l'erudizione umanistica come arma contro Roma stessa.",
-      "1520→1532": "Dopo la morte di Raffaello e la rottura di Lutero, l'umanesimo si divide — Erasmo resta cattolico, altri seguono Lutero."
+      "1520→1532": "Dopo la morte di Raffaello e la rottura di Lutero, l'umanesimo si divide — Erasmo resta cattolico, altri seguono Lutero.",
+      "1520→1527": "La rottura di Lutero con Roma si intensifica; sette anni dopo, le truppe imperiali rendono il sogno umanistico di una riforma pacifica tramite l'educazione un'amara ironia.",
+      "1527→1532": "Il Cortegiano di Castiglione appare postumo, codificando gli ideali umanistici della sprezzatura mentre la cultura che li ha prodotti crolla; segue Il Principe di Machiavelli."
     },
     "art-and-power": {
       "1300→1504": "Giotto lavorò per francescani e banchieri Bardi; Michelangelo lavorò per Medici e papi. Due secoli trasformarono il mecenatismo da devozionale a dinastico.",
@@ -677,7 +687,8 @@
       "1605→1610": "La Morte della Vergine rifiutata viaggia da Roma a Mantova; Caravaggio fugge le accuse di omicidio, diffondendo il chiaroscuro a Napoli e Malta.",
       "1714→1727": "Dalle fêtes galantes di Watteau all'apoteosi di Newton: il decorativo cede al monumentale mentre l'Inghilterra seppellisce il suo filosofo-re.",
       "1610→1623": "Il tenebrismo di Caravaggio viaggia verso nord: Honthorst porta il dramma a lume di candela da Roma a Utrecht, seminando l'ossessione per la luce dell'Età d'Oro olandese.",
-      "1623→1641": "Il Barocco si espande: dalle commissioni papali di Bernini ai ritratti di corte di Van Dyck agli interni intimi di Rembrandt, la luce diventa il mezzo del significato."
+      "1623→1641": "Il Barocco si espande: dalle commissioni papali di Bernini ai ritratti di corte di Van Dyck agli interni intimi di Rembrandt, la luce diventa il mezzo del significato.",
+      "1527→1571": "Gli artisti dispersi dal Sacco—Rosso, Parmigianino, Perino—portano l'eleganza manierista alle corti di tutta Europa; a Lepanto, questo stile inquieto domina la cultura visiva cattolica."
     },
     "empiricism": {
       "1543→1687": "Vesalio si fidava della dissezione più che di Galeno; Newton si fidava della matematica più che della tradizione.",
@@ -923,7 +934,8 @@
       "1571→1580": "La gloria di Lepanto sfuma nel dubbio di Montaigne. Il trionfo militare della Controriforma cede il passo allo scetticismo filosofico — mentre le guerre di religione continuano, un saggista francese chiede 'Que sçay-je?' e inventa un nuovo modo di pensare.",
       "1558→1564": "L'apparato istituzionale della Controriforma — l'Indice, i Gesuiti, i decreti tridentini — si consolida tra la morte di Maria Tudor e quella di Calvino.",
       "1564→1571": "Dalla promulgazione dell'Indice alla vittoria di Lepanto — la Controriforma passa dalla censura alla crociata, dal controllo intellettuale al trionfo militare.",
-      "1600→1605": "Le ceneri di Bruno ancora calde, il papato alterna tre pontefici in un anno mentre cospiratori cattolici tramano per far saltare l'Inghilterra protestante."
+      "1600→1605": "Le ceneri di Bruno ancora calde, il papato alterna tre pontefici in un anno mentre cospiratori cattolici tramano per far saltare l'Inghilterra protestante.",
+      "1527→1558": "Il trauma del Sacco catalizza la riforma: una Chiesa umiliata avvia quel consolidamento dottrinale e disciplinare che culminerà nel Concilio di Trento."
     },
     "english-romanticism": {
       "1798→1816": "Le Lyrical Ballads di Wordsworth e Coleridge germinano nella piovosa Ginevra: Mary Shelley eredita il loro culto della natura ma aggiunge il terrore gotico — il Romanticismo scopre il suo gemello oscuro."

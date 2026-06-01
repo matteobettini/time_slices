@@ -7013,5 +7013,75 @@
       "url": "audio/1623-immortality-in-folio.mp3",
       "duration": 208
     }
+  },
+  {
+    "year": "1527",
+    "id": "1527-rome-when-paradise-burned",
+    "title": "Rome — When Paradise Burned",
+    "teaser": "Imperial troops sack the Eternal City for eight months while the pope cowers in Castel Sant'Angelo. The High Renaissance dies in fire and plague. Artists scatter across Europe, carrying a new, anxious style called Mannerism. In Florence, Pontormo paints figures that seem to float in grief. What was broken can never be restored.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "In Florence, as Rome burns, <strong>Jacopo Pontormo</strong> completes his <em>Deposition from the Cross</em> in the Capponi Chapel — a work that embodies the shattering of Renaissance certainties. No cross is visible. No ground anchors the figures. Bodies spiral upward in acidic pinks and impossible blues, grief made weightless. This is <strong>Mannerism</strong>: art that abandons classical harmony for emotional intensity, elegance pushed to unease. The Sack disperses the generation that created it. <strong>Rosso Fiorentino</strong>, imprisoned by the imperial troops, eventually flees to France. <strong>Parmigianino</strong>, captured while painting, escapes to Bologna. <strong>Perino del Vaga</strong> reaches Genoa. Within a decade, the Mannerist style these artists carry will reshape courts from Fontainebleau to Prague — a diaspora of trauma transformed into aesthetic."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "<strong>Baldassare Castiglione</strong> sends his manuscript of <em>Il Libro del Cortegiano</em> to the Aldine Press in Venice — it will appear in fourteen twenty-eight. Written over twenty years as a memorial to the court of Urbino, the <em>Courtier</em> codifies <strong>sprezzatura</strong>: the art of making difficult things look effortless, of concealing effort beneath graceful ease. The book becomes Europe's conduct manual, translated into six languages. Yet its elegance is already nostalgic. The small Italian courts the <em>Courtier</em> idealizes are being crushed between Habsburg and Valois armies. Castiglione himself, serving as papal nuncio to Charles V in Spain, learns of Rome's destruction by letter — and is blamed by Clement VII for failing to prevent it. He dies in fourteen twenty-nine, heartbroken."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "The Sack appears to many as divine judgment. Lutheran <strong>Landsknechts</strong> among the imperial troops believe Rome is Babylon, the pope the Antichrist — and they act accordingly, desecrating relics and mocking the Mass. Catholic apologists counter that God punishes a church grown corrupt. Both interpretations assume <strong>providential history</strong>: events reveal divine will. But the sheer randomness of the horror — soldiers who starved for months now drunk on altar wine, cardinals held for ransom, nuns sold in markets — strains theodicy. <strong>Erasmus</strong>, who had mocked clerical corruption with wit, now watches Christendom tear itself apart. His <strong>skeptical humanism</strong>, which sought reform through education and irony, seems powerless before Luther's certainties and imperial cannons alike."
+      },
+      "hist": {
+        "label": "History",
+        "content": "On May sixth, twenty thousand mutinous troops — German Landsknechts, Spanish veterans, Italian mercenaries — breach Rome's walls. Their commander, <strong>Charles de Bourbon</strong>, dies in the first assault, shot while scaling a ladder. Leaderless and unpaid for months, the army unleashes eight months of terror. <strong>Pope Clement VII</strong> flees through the <em>Passetto di Borgo</em> to Castel Sant'Angelo, where he remains besieged while his city burns. The <strong>Swiss Guard</strong> dies almost to a man — one hundred forty-seven of one hundred eighty-nine — buying him time. Rome's population drops from fifty-five thousand to ten thousand through murder, famine, and plague. The Sack ends only when pestilence forces the army south. <strong>Charles V</strong> disavows responsibility but gains a pope who will never again defy him."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "The threads converge in a single paradox: <strong>destruction becomes transmission</strong>. The artists who flee Rome carry Mannerism to courts that would never have seen it otherwise — Rosso to Francis I at Fontainebleau, Primaticcio following after, founding the first school of French Renaissance art. Castiglione's <em>Courtier</em>, published as the old court culture dies, becomes the template for courtly behavior across Protestant and Catholic Europe alike. Even the <strong>Counter-Reformation</strong> emerges partly from the Sack's trauma: the Church that rebuilds after fifteen twenty-seven will be leaner, more disciplined, more anxious about its image. The High Renaissance ends not with a whimper but with an explosion — and the shrapnel seeds new growth across the continent.",
+        "funFact": "Benvenuto Cellini claimed to have personally shot the Duke of Bourbon during the assault — one of several self-aggrandizing accounts in his autobiography that historians view skeptically."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(1527)",
+        "title": "Sack of Rome (1527) - Wikipedia"
+      },
+      {
+        "url": "https://ehne.fr/en/encyclopedia/themes/arts-in-europe/migration-and-artistic-identities/sack-rome-1527-triumph-mannerism-in-europe",
+        "title": "EHNE: Sack of Rome and Mannerism"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Book_of_the_Courtier",
+        "title": "The Book of the Courtier - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Deposition_from_the_Cross_(Pontormo)",
+        "title": "Pontormo's Deposition - Wikipedia"
+      }
+    ],
+    "image": {
+      "url": "images/1527-rome-when-paradise-burned.jpg",
+      "caption": "Pontormo's Deposition from the Cross, a pinnacle of Mannerist art painted during Rome's devastation",
+      "width": 1200,
+      "height": 1925,
+      "attribution": "Jacopo Pontormo, Public domain, via Wikimedia Commons"
+    },
+    "threads": [
+      "counter-reformation",
+      "renaissance-humanism",
+      "translatio-studii",
+      "baroque"
+    ],
+    "location": {
+      "lat": 41.9029,
+      "lon": 12.4534,
+      "place": "Rome"
+    },
+    "addedDate": "2026-06-01T05:00:00Z",
+    "podcast": {
+      "url": "audio/1527-rome-when-paradise-burned.mp3",
+      "duration": 200
+    }
   }
 ]

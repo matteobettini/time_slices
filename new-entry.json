@@ -1,50 +1,49 @@
 {
-  "year": "1623",
-  "id": "1623-immortality-in-folio",
-  "title": "Immortality in Folio",
-  "teaser": "Shakespeare's colleagues rescue eighteen plays from oblivion. Galileo declares nature's language is mathematics. A new pope befriends science while Protestant armies die at Stadtlohn. Two roads to immortality — through art or through knowledge — converge in a single year.",
+  "year": "1527",
+  "id": "1527-rome-when-paradise-burned",
+  "title": "Rome — When Paradise Burned",
+  "teaser": "Imperial troops sack the Eternal City for eight months while the pope cowers in Castel Sant'Angelo. The High Renaissance dies in fire and plague. Artists scatter across Europe, carrying a new, anxious style called Mannerism. In Florence, Pontormo paints figures that seem to float in grief. What was broken can never be restored.",
   "dimensions": {
     "art": {
       "label": "Art",
-      "content": "<strong>Gerard van Honthorst</strong> paints <em>The Concert</em> in Utrecht — a burst of candlelit color brought back from Rome. Honthorst had studied <strong>Caravaggio's</strong> chiaroscuro in Italy, earning the nickname <em>Gherardo delle Notti</em> (Gerard of the Nights) for his mastery of artificial light. Now the <strong>Utrecht Caravaggisti</strong> transplant that dramatic technique to Protestant Holland, where it will influence Rembrandt and the Dutch Golden Age. In Rome, <strong>Gian Lorenzo Bernini</strong> sculpts his intense <em>Self-Portrait</em>, all fierce eyes and flowing hair — the Baroque genius at twenty-four, already reshaping papal patronage. The <strong>Droeshout portrait</strong> engraved for Shakespeare's First Folio is awkward as art but priceless as document: the only contemporary image we have to verify against the poet's death mask."
+      "content": "In Florence, as Rome burns, <strong>Jacopo Pontormo</strong> completes his <em>Deposition from the Cross</em> in the Capponi Chapel — a work that embodies the shattering of Renaissance certainties. No cross is visible. No ground anchors the figures. Bodies spiral upward in acidic pinks and impossible blues, grief made weightless. This is <strong>Mannerism</strong>: art that abandons classical harmony for emotional intensity, elegance pushed to unease. The Sack disperses the generation that created it. <strong>Rosso Fiorentino</strong>, imprisoned by the imperial troops, eventually flees to France. <strong>Parmigianino</strong>, captured while painting, escapes to Bologna. <strong>Perino del Vaga</strong> reaches Genoa. Within a decade, the Mannerist style these artists carry will reshape courts from Fontainebleau to Prague — a diaspora of trauma transformed into aesthetic."
     },
     "lit": {
       "label": "Literature",
-      "content": "Seven years after Shakespeare's death, his fellow actors <strong>John Heminges</strong> and <strong>Henry Condell</strong> publish <em>Mr. William Shakespeare's Comedies, Histories, & Tragedies</em> — the <strong>First Folio</strong>. Of the thirty-six plays collected, eighteen exist in no other source: <em>Macbeth</em>, <em>The Tempest</em>, <em>Twelfth Night</em>, <em>Julius Caesar</em>, and more would have vanished without this act of devotion. About 750 copies were printed; 235 survive today. Ben Jonson contributes a prefatory poem declaring Shakespeare 'not of an age, but for all time' — a prophecy fulfilled by the book that made it possible. In Spain, <strong>Pedro Calderón de la Barca</strong> debuts as a playwright with <em>Amor, honor y poder</em>, beginning a career that will rival Lope de Vega's."
+      "content": "<strong>Baldassare Castiglione</strong> sends his manuscript of <em>Il Libro del Cortegiano</em> to the Aldine Press in Venice — it will appear in fourteen twenty-eight. Written over twenty years as a memorial to the court of Urbino, the <em>Courtier</em> codifies <strong>sprezzatura</strong>: the art of making difficult things look effortless, of concealing effort beneath graceful ease. The book becomes Europe's conduct manual, translated into six languages. Yet its elegance is already nostalgic. The small Italian courts the <em>Courtier</em> idealizes are being crushed between Habsburg and Valois armies. Castiglione himself, serving as papal nuncio to Charles V in Spain, learns of Rome's destruction by letter — and is blamed by Clement VII for failing to prevent it. He dies in fourteen twenty-nine, heartbroken."
     },
     "phil": {
       "label": "Philosophy",
-      "content": "In October, <strong>Galileo</strong> publishes <em>Il Saggiatore</em> (The Assayer), dedicated to the newly elected Pope <strong>Urban VIII</strong>. The book's explicit argument concerns comets — and on that question Galileo is wrong. But its implicit argument reshapes knowledge itself: <em>'Philosophy is written in this grand book, the universe... It is written in the language of mathematics.'</em> Where scholastics debated Aristotle's texts, Galileo insists we read nature directly through observation and geometry. This is the <strong>scientific revolution</strong> as epistemological rupture — not new facts alone, but a new way of knowing. Urban VIII, still an ally of science, receives the work with delight. Their friendship will not survive the decade."
+      "content": "The Sack appears to many as divine judgment. Lutheran <strong>Landsknechts</strong> among the imperial troops believe Rome is Babylon, the pope the Antichrist — and they act accordingly, desecrating relics and mocking the Mass. Catholic apologists counter that God punishes a church grown corrupt. Both interpretations assume <strong>providential history</strong>: events reveal divine will. But the sheer randomness of the horror — soldiers who starved for months now drunk on altar wine, cardinals held for ransom, nuns sold in markets — strains theodicy. <strong>Erasmus</strong>, who had mocked clerical corruption with wit, now watches Christendom tear itself apart. His <strong>skeptical humanism</strong>, which sought reform through education and irony, seems powerless before Luther's certainties and imperial cannons alike."
     },
     "hist": {
       "label": "History",
-      "content": "On <strong>August 6th</strong>, two pivotal events coincide. In Rome, Cardinal <strong>Maffeo Barberini</strong> is elected Pope Urban VIII — a humanist, poet, and patron of Galileo who will transform Baroque Rome. At Stadtlohn in Westphalia, <strong>Tilly's</strong> Catholic League army destroys <strong>Christian of Brunswick's</strong> Protestant force: 6,000 dead, 4,000 captured, all artillery lost. The <strong>Battle of Stadtlohn</strong> ends the Palatinate phase of the <strong>Thirty Years' War</strong>, crushing Protestant hopes in the Empire. Frederick V, the 'Winter King' of Bohemia, abandons his campaigns. Maximilian of Bavaria gains the Palatinate's electoral vote. On June 19th, <strong>Blaise Pascal</strong> is born in Clermont — the future author of probability theory and the <em>Pensées</em>."
+      "content": "On May sixth, twenty thousand mutinous troops — German Landsknechts, Spanish veterans, Italian mercenaries — breach Rome's walls. Their commander, <strong>Charles de Bourbon</strong>, dies in the first assault, shot while scaling a ladder. Leaderless and unpaid for months, the army unleashes eight months of terror. <strong>Pope Clement VII</strong> flees through the <em>Passetto di Borgo</em> to Castel Sant'Angelo, where he remains besieged while his city burns. The <strong>Swiss Guard</strong> dies almost to a man — one hundred forty-seven of one hundred eighty-nine — buying him time. Rome's population drops from fifty-five thousand to ten thousand through murder, famine, and plague. The Sack ends only when pestilence forces the army south. <strong>Charles V</strong> disavows responsibility but gains a pope who will never again defy him."
     },
     "conn": {
       "label": "Connections",
-      "content": "The year poses a question: how does meaning survive? Heminges and Condell answer through <strong>preservation</strong> — gathering scattered quartos and playhouse manuscripts into a single book, betting that print will outlast memory. Galileo answers through <strong>method</strong> — arguing that nature's truths, unlike texts, cannot be corrupted by copyists because mathematics transcends language. Urban VIII's election momentarily aligns <strong>Church and inquiry</strong>; the Barberini bees on <em>Il Saggiatore's</em> title page signal that Rome and science might be friends. Stadtlohn shows what happens when ideas fail to preserve themselves: Protestant Germany's resistance collapses, and with it a generation's dreams of religious settlement. Pascal, born this year, will eventually argue that both paths — reason and faith — meet in the wager's infinite stakes.",
-      "funFact": "The Droeshout engraving on the First Folio's title page was made by a twenty-one-year-old who almost certainly never saw Shakespeare alive — he worked from an earlier, now-lost portrait."
+      "content": "The threads converge in a single paradox: <strong>destruction becomes transmission</strong>. The artists who flee Rome carry Mannerism to courts that would never have seen it otherwise — Rosso to Francis I at Fontainebleau, Primaticcio following after, founding the first school of French Renaissance art. Castiglione's <em>Courtier</em>, published as the old court culture dies, becomes the template for courtly behavior across Protestant and Catholic Europe alike. Even the <strong>Counter-Reformation</strong> emerges partly from the Sack's trauma: the Church that rebuilds after fifteen twenty-seven will be leaner, more disciplined, more anxious about its image. The High Renaissance ends not with a whimper but with an explosion — and the shrapnel seeds new growth across the continent.",
+      "funFact": "Benvenuto Cellini claimed to have personally shot the Duke of Bourbon during the assault — one of several self-aggrandizing accounts in his autobiography that historians view skeptically."
     }
   },
   "sources": [
-    { "url": "https://en.wikipedia.org/wiki/First_Folio", "title": "First Folio — Wikipedia" },
-    { "url": "https://en.wikipedia.org/wiki/The_Assayer", "title": "The Assayer — Wikipedia" },
-    { "url": "https://en.wikipedia.org/wiki/Battle_of_Stadtlohn", "title": "Battle of Stadtlohn — Wikipedia" },
-    { "url": "https://www.nga.gov/research/publications/online-editions/dutch-paintings-seventeenth-century-concert-1623", "title": "Van Honthorst's Concert — National Gallery of Art" },
-    { "url": "https://galileo.library.rice.edu/chr/urban_viii.html", "title": "Urban VIII — The Galileo Project" }
+    { "url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(1527)", "title": "Sack of Rome (1527) - Wikipedia" },
+    { "url": "https://ehne.fr/en/encyclopedia/themes/arts-in-europe/migration-and-artistic-identities/sack-rome-1527-triumph-mannerism-in-europe", "title": "EHNE: Sack of Rome and Mannerism" },
+    { "url": "https://en.wikipedia.org/wiki/The_Book_of_the_Courtier", "title": "The Book of the Courtier - Wikipedia" },
+    { "url": "https://en.wikipedia.org/wiki/The_Deposition_from_the_Cross_(Pontormo)", "title": "Pontormo's Deposition - Wikipedia" }
   ],
   "image": {
-    "url": "images/1623-immortality-in-folio.jpg",
-    "caption": "Title page of Shakespeare's First Folio (1623), featuring the Droeshout portrait",
-    "width": 950,
-    "height": 1513,
-    "attribution": "Martin Droeshout, Public domain, via Wikimedia Commons (Beinecke Library, Yale University)"
+    "url": "images/1527-rome-when-paradise-burned.jpg",
+    "caption": "Pontormo's Deposition from the Cross, a pinnacle of Mannerist art painted during Rome's devastation",
+    "width": 1200,
+    "height": 1925,
+    "attribution": "Jacopo Pontormo, Public domain, via Wikimedia Commons"
   },
-  "threads": ["printing-revolution", "scientific-revolution", "baroque", "translatio-studii"],
+  "threads": ["counter-reformation", "renaissance-humanism", "translatio-studii", "baroque"],
   "location": {
-    "lat": 51.5074,
-    "lon": -0.1278,
-    "place": "London"
+    "lat": 41.9029,
+    "lon": 12.4534,
+    "place": "Rome"
   },
-  "addedDate": "2026-05-31T05:00:00Z"
+  "addedDate": "2026-06-01T05:00:00Z"
 }
