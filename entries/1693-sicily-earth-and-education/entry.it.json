@@ -1,0 +1,50 @@
+{
+  "id": "1693-sicily-earth-and-education",
+  "year": "1693",
+  "title": "Terra ed Educazione",
+  "location": {
+    "lat": 37.5,
+    "lon": 15.1,
+    "place": "Sicilia"
+  },
+  "teaser": "Un terremoto catastrofico distrugge la Sicilia orientale, uccidendo 60.000 persone — e genera poi un miracolo architettonico barocco. Locke pubblica il suo trattato sull'educazione, sostenendo che i bambini nascono come tabule rase. Halley inventa la scienza attuariale. Congreve trasforma la commedia inglese. The Ladies' Mercury diventa la prima rivista femminile. Madame de La Fayette, inventrice del romanzo psicologico, muore a Parigi. Un anno di distruzione e reinvenzione — il vecchio mondo che crolla, nuove idee che nascono.",
+  "threads": ["baroque", "empiricism", "enlightenment", "scientific-revolution", "mortality"],
+  "dimensions": {
+    "art": {
+      "label": "Arte",
+      "content": "L'**11 gennaio 1693**, la terra sconvolse la Sicilia orientale. Il **terremoto del Val di Noto** — magnitudo 7,4, il più potente nella storia italiana documentata — uccise 60.000 persone, distrusse cinquanta città e rase al suolo Catania, dove due terzi della popolazione perì in quattro minuti di scossa apocalittica. Seguì uno tsunami, devastando la costa ionica. Il terreno stesso si aprì in fessure lunghe centinaia di metri.\n\nPoi accadde qualcosa di straordinario: dalle macerie, la Sicilia si reinventò.\n\nIl **Viceregno Spagnolo** ordinò una ricostruzione completa, e gli architetti locali — molti formati a Roma ma che lavoravano con sensibilità distintamente siciliane — crearono lo stile ora chiamato **Barocco siciliano**: esuberante, teatrale, unicamente giocoso. Maschere ghignanti e putti adornano le facciate; balconi si curvano verso l'esterno su volute in ferro battuto; chiese coronate da elaborati campanili sorgono su cascate di scale esterne. La stessa pietra lavica dell'Etna — grigia e nera — fu scolpita in elementi decorativi contrastanti, incarnando il chiaroscuro amato dal Barocco.\n\n**Catania**, **Noto**, **Ragusa**, **Modica** — otto città ricostruite in questo stile omogeneo formano ora un Patrimonio dell'Umanità UNESCO, descritto come \"il culmine e l'ultima fioritura dell'arte barocca in Europa.\" L'architettura della catastrofe divenne il più grande risultato artistico della Sicilia."
+    },
+    "lit": {
+      "label": "Letteratura",
+      "content": "**William Congreve**, a ventitré anni, irrompe sui palcoscenici londinesi con due opere che definiscono la **Restoration comedy**. A marzo, *The Old Bachelor* debutta al Drury Lane con enorme successo — **John Dryden** stesso rivide il copione e dichiarò il giovane drammaturgo \"il miglior poeta comico vivente.\"\n\nA Parigi, **Madame de La Fayette** muore a maggio, lasciando un'eredità rivoluzionaria. La sua *La Princesse de Clèves* (1678) — pubblicata anonimamente — inventò il **romanzo psicologico**, privilegiando l'esperienza interiore di una donna conflittuale sull'azione esterna.\n\n**The Ladies' Mercury** appare a Londra — solo quattro numeri, da febbraio a marzo — ma il suo significato è enorme: il **primo periodico specificatamente per donne**. Inaugura la rivista femminile come genere."
+    },
+    "phil": {
+      "label": "Filosofia",
+      "content": "**John Locke** pubblica *Some Thoughts Concerning Education*, e le implicazioni sono vaste. Basandosi sulla teoria della *tabula rasa* del suo *Essay Concerning Human Understanding* (1689), Locke sostiene che i bambini arrivano con menti come lavagne vuote — nessuna idea innata, nessuna virtù o vizio predeterminato. \"Nove parti su dieci di ciò che sono gli uomini, buoni o cattivi, utili o no, viene dalla loro educazione.\"\n\n**Edmond Halley** applica il rigore matematico alla mortalità stessa. Usando **documenti demografici di Breslavia**, costruisce la prima **tavola di sopravvivenza scientifica**: un modello matematico che correla età e probabilità di morte. Halley usa questo per calcolare il prezzo delle **rendite vitalizie**. Assicurazioni, pensioni, demografia: intere industrie tracciano le loro fondamenta matematiche al suo articolo del 1693.\n\n**William Penn** pubblica *An Essay towards the Present and Future Peace of Europe*, proponendo un **Parlamento Europeo** — un'assemblea di nazioni che potrebbe arbitrare dispute e prevenire guerre. Il sogno dell'internazionalismo cooperativo inizia qui."
+    },
+    "hist": {
+      "label": "Storia",
+      "content": "La **Guerra dei Nove Anni** prosegue — la grande coalizione di Inghilterra, Repubblica Olandese, Spagna, Sacro Romano Impero e Savoia contro la Francia di **Luigi XIV**. A giugno, la **Battaglia di Lagos** al largo del Portogallo vede la flotta mediterranea francese sconfiggere il convoglio anglo-olandese. A luglio, la **Battaglia di Landen** nei Paesi Bassi spagnoli diventa uno degli scontri più sanguinosi della guerra.\n\nLa Sicilia — dove colpì il terremoto — appartiene alla **Spagna**, parte della vasta eredità asburgica. Il **College of William & Mary** riceve la carta reale in Virginia. **Tituba** viene rilasciata dalla prigione dopo tredici mesi. **John Harrison**, futuro inventore del cronometro marino che risolverà il problema della longitudine, nasce nello Yorkshire."
+    },
+    "conn": {
+      "label": "Connessioni",
+      "content": "I fili del 1693 convergono su questioni di **mortalità** e **malleabilità** — cosa ci uccide, cosa ci plasma, cosa rimane.\n\nLe **tavole di sopravvivenza di Halley** e il **terremoto siciliano** affrontano entrambi la morte statisticamente. Halley trasforma la mortalità in distribuzioni di probabilità; la Sicilia trasforma la morte di massa in rinascita architettonica.\n\nLa **tabula rasa di Locke** si connette alla ricostruzione siciliana in modi inaspettati. Se le menti arrivano vuote e sono plasmate dall'esperienza, anche le città possono essere rifatte — non solo ricostruite, ma *riprogettate* secondo principi razionali. Le città barocche che sorgono dalle macerie presentano una pianificazione urbana consapevole: schemi a griglia, viste monumentali, approcci teatrali alle chiese.",
+      "funFact": "Il consiglio di Locke sull'educazione includeva alcune raccomandazioni sorprendentemente specifiche. Per indurire i bambini contro il freddo, suggeriva che i loro piedi \"fossero lavati ogni giorno in acqua fredda, e che le loro scarpe fossero così sottili da lasciare entrare l'acqua ogni volta che si avvicinavano.\" Il filosofo che sosteneva che le menti arrivano vuote apparentemente credeva che i piedi dovessero arrivare bagnati."
+    }
+  },
+  "addedDate": "2026-06-02T05:05:55Z",
+  "sources": [
+    {"url": "https://en.wikipedia.org/wiki/1693_Sicily_earthquake", "title": "Terremoto del Val di Noto 1693 — Wikipedia"},
+    {"url": "https://en.wikipedia.org/wiki/Some_Thoughts_Concerning_Education", "title": "Some Thoughts Concerning Education — Wikipedia"},
+    {"url": "https://en.wikipedia.org/wiki/William_Congreve", "title": "William Congreve — Wikipedia"},
+    {"url": "https://en.wikipedia.org/wiki/Sicilian_Baroque", "title": "Barocco siciliano — Wikipedia"},
+    {"url": "https://en.wikipedia.org/wiki/Madame_de_La_Fayette", "title": "Madame de La Fayette — Wikipedia"}
+  ],
+  "image": {
+    "url": "images/1693-sicily-earth-and-education.jpg",
+    "caption": "Cattedrale di Noto, ricostruita in stile Barocco siciliano dopo il terremoto del 1693",
+    "width": 1200,
+    "height": 1043,
+    "attribution": "Aurelio Barco (Tsjaalansen), CC BY-SA 3.0, via Wikimedia Commons"
+  }
+}

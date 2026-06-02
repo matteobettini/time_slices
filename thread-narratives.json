@@ -178,7 +178,9 @@
       "1714→1727": "From Watteau's fêtes galantes to Newton's apotheosis: the decorative gives way to the monumental as England buries its philosopher-king.",
       "1610→1623": "Caravaggio's tenebrism travels north: Honthorst brings candlelit drama from Rome to Utrecht, seeding the Dutch Golden Age's obsession with light.",
       "1623→1641": "Baroque expands: from Bernini's papal commissions to Van Dyck's court portraits to Rembrandt's intimate interiors, light becomes the medium of meaning.",
-      "1527→1571": "The artists scattered by the Sack—Rosso, Parmigianino, Perino—carry Mannerist elegance to courts across Europe; by Lepanto, this restless style governs Catholic visual culture."
+      "1527→1571": "The artists scattered by the Sack—Rosso, Parmigianino, Perino—carry Mannerist elegance to courts across Europe; by Lepanto, this restless style governs Catholic visual culture.",
+      "1670→1693": "From Spinoza's Amsterdam, where baroque philosophy challenged orthodoxies with geometric precision, we move south to Sicily's earthquake zone — where catastrophe became the occasion for baroque architecture's final flowering. Sicilian Baroque, rising from the rubble of the 1693 earthquake, would transform the Val di Noto into UNESCO's 'culmination of Baroque art in Europe.' Destruction birthed theatrical splendor.",
+      "1693→1714": "From Sicily's earthquake ruins, where Baroque architecture rose to rebuild fifty devastated towns, we leap to London's sophisticated commerce. By 1714, the ornamental exuberance that characterized Continental Baroque was giving way to Enlightenment restraint — mathematical proportion replacing theatrical excess, Newton's rational cosmos reflected in Palladian symmetry."
     },
     "empiricism": {
       "1543→1687": "Vesalius trusted dissection over Galen; Newton trusted mathematics over tradition. Both empiricisms — anatomical and physical — insisted that observation trumped authority.",
@@ -196,7 +198,9 @@
       "1704→1727": "Locke dies; Newton is deified. Voltaire absorbs both — English observation becomes French philosophy's weapon against the ancien régime.",
       "1727→1751": "From Newton's funeral to the Encyclopédie: what Voltaire absorbed in London, d'Alembert and Diderot systematize for France.",
       "1776→1843": "Hume's skepticism and Smith's observation-based economics find their methodological codification in Mill's System of Logic — empiricism becomes systematic science.",
-      "1843→1859": "Mill's inductive canons provide the methodological framework; Darwin applies them to organic life, transforming empiricism from philosophy into revolutionary biology."
+      "1843→1859": "Mill's inductive canons provide the methodological framework; Darwin applies them to organic life, transforming empiricism from philosophy into revolutionary biology.",
+      "1687→1693": "Six years after Newton's Principia revolutionized physics through mathematical demonstration, Locke applies empiricism to the mind itself. Some Thoughts Concerning Education extends his tabula rasa theory — all knowledge comes from experience, therefore education shapes character. Meanwhile, Halley applies empirical methods to mortality data from Breslau, inventing actuarial science. From celestial mechanics to human development: empiricism remakes every domain.",
+      "1693→1704": "From Locke's educational treatise, where tabula rasa theory becomes practical pedagogy, to Newton's Opticks — light itself decomposed into constituent colours through prismatic experiment. Empiricism continues its march: what can be observed, measured, and tested replaces what was merely believed. The same year Locke dies, Newton publishes his optical experiments in English rather than Latin, democratizing scientific knowledge."
     },
     "scientific-revolution": {
       "1543→1687": "Copernicus repositioned the Earth; Newton explained why it stayed in orbit. The revolution Copernicus began, Newton completed.",
@@ -223,7 +227,9 @@
       "1727→1835": "A century after Newton's death, his mechanical universe still governs physics. But Darwin aboard the Beagle is collecting data that will extend mechanism from matter to life itself — natural selection as the clockwork of biology.",
       "1835→1859": "The finches Darwin observes at the Galápagos will gestate for twenty-four years. In 1859, On the Origin of Species transforms biology from natural history into natural science, and makes Genesis a myth among myths.",
       "1610→1623": "From telescope to method: Galileo moves from showing new facts to arguing how all facts should be read — in the mathematical language of nature.",
-      "1623→1666": "Il Saggiatore's mathematical epistemology becomes Newton's mathematical physics: the book of nature yields to those who learn its geometric grammar."
+      "1623→1666": "Il Saggiatore's mathematical epistemology becomes Newton's mathematical physics: the book of nature yields to those who learn its geometric grammar.",
+      "1687→1693": "Newton's Principia had unified celestial and terrestrial physics under mathematical law. Now Halley — who funded that publication — applies the same spirit to mortality itself, constructing life tables from demographic data that enable insurance pricing. Locke extends empirical method to education. The Royal Society network that produced the Principia continues producing knowledge: astronomy, demography, pedagogy all fall under scientific scrutiny.",
+      "1693→1704": "From Halley's mortality tables and Locke's educational empiricism, the Scientific Revolution continues to expand its domain. By 1704, Newton's Opticks demonstrates that light itself can be analyzed experimentally — white light decomposed through prisms into the spectrum. The methods that explained planetary motion now explain color, life expectancy, mental development. Nothing remains safely mysterious."
     },
     "enlightenment": {
       "1687→1755": "Newton's <em>Principia</em> proved the cosmos was lawful; the Lisbon earthquake asked whether it was just. Enlightenment optimism crested and cracked within seventy years.",
@@ -251,7 +257,9 @@
       "1824→1835": "Between Leopardi's cosmic pessimism and Tocqueville's democratic analysis, the Enlightenment's confidence in reason fractures. Both writers examine their subjects with scientific precision — but one finds only suffering, the other finds both liberation and new forms of tyranny.",
       "1831→1835": "Hegel's death marks the end of systematic philosophy. By 1835, Tocqueville is analyzing democracy without celebrating it, and Strauss is deconstructing religion with scientific method. Enlightenment confidence in reason becomes the tool for critique rather than the ground for faith.",
       "1798→1802": "Goya's monsters haunt Enlightenment reason; now Napoleon domesticates what the Revolution produced. The Concordat reconciles Church and state on the state's terms.",
-      "1802→1831": "After Napoleon's fall, Romanticism inherits the Enlightenment's contradictions: universal reason that produced both liberation and terror, progress that restored slavery."
+      "1802→1831": "After Napoleon's fall, Romanticism inherits the Enlightenment's contradictions: universal reason that produced both liberation and terror, progress that restored slavery.",
+      "1687→1693": "The Principia established that universal laws govern all motion. Now Locke extends rational inquiry to the human mind itself: if children arrive as blank slates shaped by experience rather than original sin, then society can be reformed through education. William Penn publishes his proposal for European federation. Halley calculates mortality mathematically. Everywhere, reason challenges tradition — the Enlightenment's core project takes shape.",
+      "1693→1704": "Locke's educational theories and Halley's actuarial tables — both expressions of Enlightenment faith that reason can remake human affairs — lead toward the flowering of 1704. Newton's Opticks appears in accessible English; Swift's Tale of a Tub anatomizes religious enthusiasm; Locke dies but his ideas multiply. The tools of rational inquiry sharpen; the targets — tradition, superstition, arbitrary authority — come into clearer focus."
     },
     "critical-philosophy": {
       "1755→1784": "The earthquake forced Kant to reconsider natural theology; three decades later, his Critiques limited what reason could claim. Theodicy's failure birthed epistemology's caution."
@@ -688,7 +696,9 @@
       "1714→1727": "Dalle fêtes galantes di Watteau all'apoteosi di Newton: il decorativo cede al monumentale mentre l'Inghilterra seppellisce il suo filosofo-re.",
       "1610→1623": "Il tenebrismo di Caravaggio viaggia verso nord: Honthorst porta il dramma a lume di candela da Roma a Utrecht, seminando l'ossessione per la luce dell'Età d'Oro olandese.",
       "1623→1641": "Il Barocco si espande: dalle commissioni papali di Bernini ai ritratti di corte di Van Dyck agli interni intimi di Rembrandt, la luce diventa il mezzo del significato.",
-      "1527→1571": "Gli artisti dispersi dal Sacco—Rosso, Parmigianino, Perino—portano l'eleganza manierista alle corti di tutta Europa; a Lepanto, questo stile inquieto domina la cultura visiva cattolica."
+      "1527→1571": "Gli artisti dispersi dal Sacco—Rosso, Parmigianino, Perino—portano l'eleganza manierista alle corti di tutta Europa; a Lepanto, questo stile inquieto domina la cultura visiva cattolica.",
+      "1670→1693": "Dall'Amsterdam di Spinoza, dove la filosofia barocca sfidava l'ortodossia con precisione geometrica, ci spostiamo verso sud nella zona sismica siciliana — dove la catastrofe divenne occasione per l'ultimo fiorire dell'architettura barocca. Il Barocco siciliano, sorto dalle macerie del terremoto del 1693, avrebbe trasformato la Val di Noto nel 'culmine dell'arte barocca in Europa' secondo l'UNESCO. La distruzione generò splendore teatrale.",
+      "1693→1714": "Dalle rovine del terremoto siciliano, dove l'architettura barocca risorse per ricostruire cinquanta città devastate, saltiamo al sofisticato commercio londinese. Nel 1714, l'esuberanza ornamentale che caratterizzava il Barocco continentale stava cedendo alla moderazione illuminista — la proporzione matematica sostituiva l'eccesso teatrale, il cosmo razionale di Newton si rifletteva nella simmetria palladiana."
     },
     "empiricism": {
       "1543→1687": "Vesalio si fidava della dissezione più che di Galeno; Newton si fidava della matematica più che della tradizione.",
@@ -706,7 +716,9 @@
       "1704→1727": "Locke muore; Newton viene divinizzato. Voltaire assorbe entrambi — l'osservazione inglese diventa l'arma della filosofia francese contro l'ancien régime.",
       "1727→1751": "Dal funerale di Newton all'Encyclopédie: ciò che Voltaire assorbì a Londra, d'Alembert e Diderot sistematizzano per la Francia.",
       "1776→1843": "Lo scetticismo di Hume e l'economia basata sull'osservazione di Smith trovano la loro codificazione metodologica nel Sistema di logica di Mill — l'empirismo diventa scienza sistematica.",
-      "1843→1859": "I canoni induttivi di Mill forniscono il quadro metodologico; Darwin li applica alla vita organica, trasformando l'empirismo da filosofia a biologia rivoluzionaria."
+      "1843→1859": "I canoni induttivi di Mill forniscono il quadro metodologico; Darwin li applica alla vita organica, trasformando l'empirismo da filosofia a biologia rivoluzionaria.",
+      "1687→1693": "Sei anni dopo che il Principia di Newton rivoluzionò la fisica attraverso la dimostrazione matematica, Locke applica l'empirismo alla mente stessa. Some Thoughts Concerning Education estende la sua teoria della tabula rasa — tutta la conoscenza viene dall'esperienza, quindi l'educazione forma il carattere. Nel frattempo, Halley applica metodi empirici ai dati sulla mortalità di Breslavia, inventando la scienza attuariale. Dalla meccanica celeste allo sviluppo umano: l'empirismo rifà ogni campo.",
+      "1693→1704": "Dal trattato pedagogico di Locke, dove la teoria della tabula rasa diventa pedagogia pratica, all'Opticks di Newton — la luce stessa scomposta nei colori costituenti attraverso esperimenti prismatici. L'empirismo prosegue la sua marcia: ciò che può essere osservato, misurato e testato sostituisce ciò che era semplicemente creduto. Lo stesso anno in cui Locke muore, Newton pubblica i suoi esperimenti ottici in inglese anziché latino, democratizzando la conoscenza scientifica."
     },
     "scientific-revolution": {
       "1543→1687": "Copernico riposizionò la Terra; Newton spiegò perché restava in orbita.",
@@ -733,7 +745,9 @@
       "1727→1835": "Un secolo dopo la morte di Newton, il suo universo meccanico governa ancora la fisica. Ma Darwin a bordo del Beagle sta raccogliendo dati che estenderanno il meccanismo dalla materia alla vita stessa — la selezione naturale come meccanismo dell'orologeria biologica.",
       "1835→1859": "I fringuelli che Darwin osserva alle Galápagos matureranno per ventiquattro anni. Nel 1859, L'Origine delle Specie trasforma la biologia da storia naturale a scienza naturale, e fa della Genesi un mito tra i miti.",
       "1610→1623": "Dal telescopio al metodo: Galileo passa dal mostrare nuovi fatti al sostenere come tutti i fatti dovrebbero essere letti — nel linguaggio matematico della natura.",
-      "1623→1666": "L'epistemologia matematica del Saggiatore diventa la fisica matematica di Newton: il libro della natura cede a chi impara la sua grammatica geometrica."
+      "1623→1666": "L'epistemologia matematica del Saggiatore diventa la fisica matematica di Newton: il libro della natura cede a chi impara la sua grammatica geometrica.",
+      "1687→1693": "Il Principia di Newton aveva unificato la fisica celeste e terrestre sotto la legge matematica. Ora Halley — che finanziò quella pubblicazione — applica lo stesso spirito alla mortalità stessa, costruendo tavole di sopravvivenza da dati demografici che permettono il calcolo delle assicurazioni. Locke estende il metodo empirico all'educazione. La rete della Royal Society che produsse il Principia continua a produrre conoscenza: astronomia, demografia, pedagogia cadono tutte sotto lo scrutinio scientifico.",
+      "1693→1704": "Dalle tavole di mortalità di Halley e dall'empirismo educativo di Locke, la Rivoluzione Scientifica continua ad espandere il suo dominio. Nel 1704, l'Opticks di Newton dimostra che la luce stessa può essere analizzata sperimentalmente — la luce bianca scomposta attraverso prismi nello spettro. I metodi che spiegavano il moto planetario ora spiegano il colore, l'aspettativa di vita, lo sviluppo mentale. Nulla rimane al sicuro dal mistero."
     },
     "enlightenment": {
       "1687→1755": "I <em>Principia</em> di Newton dimostrarono che il cosmo era regolato da leggi; il terremoto di Lisbona chiese se fosse giusto.",
@@ -761,7 +775,9 @@
       "1824→1835": "Tra il pessimismo cosmico di Leopardi e l'analisi democratica di Tocqueville, la fiducia illuministica nella ragione si frantuma. Entrambi gli scrittori esaminano i loro soggetti con precisione scientifica — ma uno trova solo sofferenza, l'altro trova sia liberazione che nuove forme di tirannia.",
       "1831→1835": "La morte di Hegel segna la fine della filosofia sistematica. Nel 1835, Tocqueville analizza la democrazia senza celebrarla, e Strauss decostruisce la religione con metodo scientifico. La fiducia illuministica nella ragione diventa strumento di critica piuttosto che fondamento di fede.",
       "1798→1802": "I mostri di Goya infestano la ragione illuminista; ora Napoleone addomestica ciò che la Rivoluzione ha prodotto. Il Concordato riconcilia Chiesa e Stato alle condizioni dello Stato.",
-      "1802→1831": "Dopo la caduta di Napoleone, il Romanticismo eredita le contraddizioni dell'Illuminismo: la ragione universale che ha prodotto sia liberazione che terrore, il progresso che ha restaurato la schiavitù."
+      "1802→1831": "Dopo la caduta di Napoleone, il Romanticismo eredita le contraddizioni dell'Illuminismo: la ragione universale che ha prodotto sia liberazione che terrore, il progresso che ha restaurato la schiavitù.",
+      "1687→1693": "Il Principia stabilì che leggi universali governano ogni movimento. Ora Locke estende l'indagine razionale alla mente umana stessa: se i bambini arrivano come lavagne vuote formate dall'esperienza anziché dal peccato originale, allora la società può essere riformata attraverso l'educazione. William Penn pubblica la sua proposta di federazione europea. Halley calcola la mortalità matematicamente. Ovunque, la ragione sfida la tradizione — il progetto centrale dell'Illuminismo prende forma.",
+      "1693→1704": "Le teorie educative di Locke e le tavole attuariali di Halley — entrambe espressioni della fede illuminista che la ragione possa rifare gli affari umani — conducono al fiorire del 1704. L'Opticks di Newton appare in inglese accessibile; A Tale of a Tub di Swift anatomizza l'entusiasmo religioso; Locke muore ma le sue idee si moltiplicano. Gli strumenti dell'indagine razionale si affinano; gli obiettivi — tradizione, superstizione, autorità arbitraria — diventano più chiari."
     },
     "critical-philosophy": {
       "1755→1784": "Il terremoto costrinse Kant a riconsiderare la teologia naturale; tre decenni dopo, le sue Critiche limitarono ciò che la ragione poteva pretendere."
