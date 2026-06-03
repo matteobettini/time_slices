@@ -7127,5 +7127,79 @@
       "url": "audio/it/1693-sicily-earth-and-education.mp3",
       "duration": 199
     }
+  },
+  {
+    "year": "890",
+    "id": "890-winchester-light-of-learning",
+    "title": "Winchester — La luce del sapere",
+    "teaser": "Un re guerriero che da bambino sapeva a malapena leggere ora traduce Boezio per il suo popolo. I vichinghi si stabiliscono come vicini cristiani. In Irlanda, i monaci illuminano l'ultimo grande libro dei Vangeli. Il sapere sopravvive — in inglese.",
+    "dimensions": {
+      "art": {
+        "label": "Arte",
+        "content": "Ad <strong>Armagh</strong>, i monaci irlandesi completano i <strong>Vangeli di Mac Durnan</strong> — l'ultimo grande capolavoro dell'<strong>arte insulare</strong>. Le sue iniziali intrecciate e le pagine a tappeto continuano una tradizione che risale attraverso Kells e Lindisfarne, ma le incursioni vichinghe hanno disperso gli scriptoria. Nel frattempo, alla corte di Alfredo, gli artigiani producono il <strong>Gioiello di Alfredo</strong> — un capolavoro d'oro, smalto e cristallo di rocca con l'iscrizione <em>'Alfredo mi fece fare.'</em> Serviva come impugnatura per un puntatore da manoscritti, simbolo dell'impegno del re per l'alfabetizzazione. Sul continente fiorisce l'<strong>intaglio dell'avorio carolingio</strong>; la Situla del Met (860–880) mostra Cristo in trono con dignità classica — il vocabolario visivo che i traduttori di Alfredo incontreranno nelle fonti latine."
+      },
+      "lit": {
+        "label": "Letteratura",
+        "content": "Il <strong>programma di traduzioni</strong> di Alfredo raggiunge il suo apice. La <em>Regula Pastoralis</em> di Gregorio Magno, inviata ad ogni vescovado con un prezioso puntatore, si apre con la prefazione di Alfredo che lamenta il crollo intellettuale dell'Inghilterra: <em>'Il sapere era così completamente decaduto in Inghilterra che erano pochissimi... quelli capaci di tradurre una lettera dal latino.'</em> Traduce la <strong>Consolazione della Filosofia di Boezio</strong> in prosa anglosassone — adattando liberamente, aggiungendo commenti cristiani, creando la prima letteratura filosofica in una lingua vernacolare europea. La <strong>Cronaca anglosassone</strong>, compilata intorno all'890, stabilisce una narrazione storica inglese continua da Cesare al presente. Non sono mere traduzioni — è la nascita della prosa inglese."
+      },
+      "phil": {
+        "label": "Filosofia",
+        "content": "La <em>Consolazione della Filosofia</em> in antico inglese trasforma il neoplatonismo di Boezio per le menti anglosassoni. Dove Boezio chiede come possa esistere il male se Dio è buono, Alfredo riformula la domanda attraverso la <strong>teologia cristiana</strong> e la pratica del governo. Le sue aggiunte enfatizzano la provvidenza divina che guida gli affari terreni — rilevante per un re che nel 878 aveva quasi perso tutto contro i vichinghi. Il concetto di <em>wyrd</em> (fato) si fonde con la provvidenza cristiana. La filosofia diventa letteratura sapienziale: accessibile, pratica, vernacolare. Alfredo insiste che tutti i ragazzi liberi imparino a <strong>leggere l'inglese</strong> prima del latino — un'affermazione radicale: il sapere non deve essere rinchiuso in una lingua d'élite."
+      },
+      "hist": {
+        "label": "Storia",
+        "content": "Intorno all'890, l'<strong>Inghilterra</strong> di Alfredo si sta stabilizzando. Nel 886 aveva riconquistato <strong>Londra</strong> diventando il primo re che tutti gli inglesi al di fuori del Danelaw accettarono come sovrano. Il <strong>Trattato con Guthrum</strong> stabilì confini formali tra sassoni e danesi. Ora, verso l'890, <strong>Guthrum stesso muore</strong> — il signore della guerra vichingo che aveva quasi distrutto il Wessex, sconfitto a Edington nel 878, battezzato con Alfredo come padrino, regnante sull'East Anglia come re cristiano 'Æthelstan.' Il sistema dei <em>burh</em> fortifica il territorio sassone con città presidiate. La corte di Alfredo a Winchester diventa un centro del <strong>sapere europeo</strong>, attirando studiosi dalla Mercia, dal Galles e dal continente franco."
+      },
+      "conn": {
+        "label": "Connessioni",
+        "content": "Il programma di Alfredo continua consapevolmente le <strong>ambizioni carolinge</strong> — la corte di Carlo Magno aveva fatto rinascere il sapere latino, ma Alfredo va oltre, traducendo <em>nella</em> lingua volgare. L'immagine del Gioiello di Alfredo (forse Cristo come Sapienza, forse la Vista) collega cultura visiva e testuale: il puntatore guida gli occhi attraverso pagine manoscritte che preservano il sapere classico. Quando i monaci irlandesi illuminano i Vangeli di Mac Durnan, continuano la <strong>tradizione insulare</strong> che per prima cristianizzò gli anglosassoni. I fili si intrecciano: filosofia romana (Boezio), cristianesimo mediterraneo (Gregorio), arte insulare, rinascita carolingia — tutto converge in un piccolo regno che lotta per sopravvivere, producendo le fondamenta della cultura letteraria inglese.",
+        "funFact": "La prefazione di Alfredo alla Regula Pastoralis include un æstel — un puntatore del valore di cinquanta mancusi, circa un mese di salario per un artigiano qualificato. Il Gioiello di Alfredo potrebbe essere uno di questi: un preziosissimo strumento di lettura, perché il sapere ne valeva la pena."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://it.wikipedia.org/wiki/Alfredo_il_Grande",
+        "title": "Alfredo il Grande - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/De_consolatione_philosophiae",
+        "title": "De consolatione philosophiae - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Alfred_Jewel",
+        "title": "Alfred Jewel - Wikipedia"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Guthrum",
+        "title": "Guthrum - Wikipedia"
+      },
+      {
+        "url": "https://www.wga.hu/html_m/zgothic/miniatur/0851-900/2other/2irish2.html",
+        "title": "Vangeli di Mac Durnan - Web Gallery of Art"
+      }
+    ],
+    "image": {
+      "url": "images/890-winchester-light-of-learning.jpg",
+      "width": 1054,
+      "height": 1200,
+      "caption": "Situla carolingia in avorio (secchiello per acqua benedetta), c. 860–880, mostrante Cristo in trono — la cultura visiva che i traduttori di Alfredo incontrarono nelle loro fonti latine.",
+      "attribution": "The Metropolitan Museum of Art, Pubblico Dominio"
+    },
+    "threads": [
+      "monastic-preservation",
+      "vernacular-literature",
+      "translatio-studii",
+      "insular-art"
+    ],
+    "location": {
+      "lat": 51.0632,
+      "lon": -1.308,
+      "place": "Winchester"
+    },
+    "addedDate": "2026-06-03T05:00:00Z",
+    "podcast": {
+      "url": "audio/it/890-winchester-light-of-learning.mp3",
+      "duration": 147
+    }
   }
 ]

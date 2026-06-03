@@ -7158,5 +7158,79 @@
       "url": "audio/1693-sicily-earth-and-education.mp3",
       "duration": 181
     }
+  },
+  {
+    "year": "890",
+    "id": "890-winchester-light-of-learning",
+    "title": "Winchester — The Light of Learning",
+    "teaser": "A warrior king who could barely read as a child now translates Boethius for his people. Vikings settle as Christian neighbours. In Ireland, monks illuminate the last great Gospel book. Learning survives — in English.",
+    "dimensions": {
+      "art": {
+        "label": "Art",
+        "content": "In <strong>Armagh</strong>, Irish monks complete the <strong>Mac Durnan Gospels</strong> — the last great masterpiece of <strong>Insular illumination</strong>. Its interlaced initials and carpet pages continue a tradition stretching back through Kells and Lindisfarne, but Viking disruptions have scattered the scriptoria. Meanwhile, at Alfred's court, artisans produce the <strong>Alfred Jewel</strong> — a gold, enamel, and rock crystal masterpiece inscribed <em>'Alfred ordered me made.'</em> It served as the handle of a manuscript pointer, symbolizing the king's commitment to literacy. On the continent, <strong>Carolingian ivory carving</strong> flourishes; the Met's Situla from 860–880 shows Christ enthroned in classical dignity — the visual vocabulary Alfred's translators will encounter in their Latin sources."
+      },
+      "lit": {
+        "label": "Literature",
+        "content": "Alfred's <strong>translation programme</strong> reaches its peak. The <em>Pastoral Care</em> of Gregory the Great, sent to every bishopric with a jeweled pointer, opens with Alfred's preface lamenting England's intellectual collapse: <em>'So completely had learning fallen away in England that there were very few... who could translate a letter from Latin.'</em> He translates <strong>Boethius's Consolation of Philosophy</strong> into Old English prose — adapting freely, adding Christian commentary, creating the first philosophical literature in a vernacular European language. The <strong>Anglo-Saxon Chronicle</strong>, compiled around 890, establishes a continuous English historical narrative from Caesar to the present. These aren't merely translations — they're the birth of English prose."
+      },
+      "phil": {
+        "label": "Philosophy",
+        "content": "The Old English <em>Consolation of Philosophy</em> transforms Boethius's Neoplatonism for Anglo-Saxon minds. Where Boethius asks how evil exists if God is good, Alfred reshapes the question through <strong>Christian theology</strong> and practical kingship. His additions emphasize divine providence guiding earthly affairs — relevant for a king who nearly lost everything to Vikings in 878. The concept of <em>wyrd</em> (fate) merges with Christian providence. Philosophy becomes wisdom literature: accessible, practical, vernacular. Alfred insists all free-born boys learn to <strong>read English</strong> before Latin — a radical claim that knowledge shouldn't be locked in an elite language. The democratisation of learning begins."
+      },
+      "hist": {
+        "label": "History",
+        "content": "By 890, Alfred's <strong>England</strong> is stabilising. In 886, he recaptured <strong>London</strong> and became the first king all English outside the Danelaw accepted as ruler. The <strong>Treaty with Guthrum</strong> established formal borders between Saxon and Dane. Now, around 890, <strong>Guthrum himself dies</strong> — the Viking warlord who nearly destroyed Wessex, defeated at Edington in 878, baptised with Alfred as godfather, ruling East Anglia as the Christian king 'Æthelstan.' The burh system fortifies Saxon territory with garrisoned towns. Alfred's court at Winchester becomes a centre of <strong>European learning</strong>, drawing scholars from Mercia, Wales, and the Frankish continent."
+      },
+      "conn": {
+        "label": "Connections",
+        "content": "Alfred's programme consciously continues <strong>Carolingian ambitions</strong> — Charlemagne's court had revived Latin learning, but Alfred goes further, translating <em>into</em> the vernacular. The Alfred Jewel's image (possibly Christ as Wisdom, possibly Sight) connects visual and textual culture: the pointer guides eyes across manuscript pages that preserve classical learning. When Irish monks illuminate the Mac Durnan Gospels, they continue the <strong>Insular tradition</strong> that first Christianised the Anglo-Saxons. The threads interweave: Roman philosophy (Boethius), Mediterranean Christianity (Gregory), Insular artistry, Carolingian revival — all converging in a small kingdom fighting for survival, producing the foundations of English literary culture.",
+        "funFact": "Alfred's preface to the Pastoral Care includes an æstel — a pointer worth fifty mancuses, about a month's wages for a skilled craftsman. The Alfred Jewel may be one of these: an astonishingly valuable reading aid, because learning was worth it."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Alfred_the_Great",
+        "title": "Alfred the Great - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Old_English_Boethius",
+        "title": "Old English Boethius - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Alfred_Jewel",
+        "title": "Alfred Jewel - Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Guthrum",
+        "title": "Guthrum - Wikipedia"
+      },
+      {
+        "url": "https://www.wga.hu/html_m/zgothic/miniatur/0851-900/2other/2irish2.html",
+        "title": "Mac Durnan Gospels - Web Gallery of Art"
+      }
+    ],
+    "image": {
+      "url": "images/890-winchester-light-of-learning.jpg",
+      "width": 1054,
+      "height": 1200,
+      "caption": "Carolingian ivory Situla (holy water bucket), c. 860–880, showing Christ enthroned — the visual culture Alfred's translators encountered in their Latin sources.",
+      "attribution": "The Metropolitan Museum of Art, Public Domain"
+    },
+    "threads": [
+      "monastic-preservation",
+      "vernacular-literature",
+      "translatio-studii",
+      "insular-art"
+    ],
+    "location": {
+      "lat": 51.0632,
+      "lon": -1.308,
+      "place": "Winchester"
+    },
+    "addedDate": "2026-06-03T05:00:00Z",
+    "podcast": {
+      "url": "audio/890-winchester-light-of-learning.mp3",
+      "duration": 141
+    }
   }
 ]

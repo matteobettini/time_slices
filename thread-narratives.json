@@ -42,7 +42,9 @@
       "1564→1623": "Shakespeare dies; his colleagues rescue him. The transmission of learning now includes theatrical memory preserved by printing-house devotion.",
       "1623→1863": "The Folio survives, copied and treasured: by 1863, Shakespeare has become global cultural property, translated into every language of empire and resistance.",
       "1520→1527": "The printing press accelerates Luther's Reformation; seven years later, books and artists alike flee Rome, carrying Italian culture to new courts.",
-      "1527→1564": "The diaspora of Roman artists seeds Mannerism across Europe; by Michelangelo's death, Italian styles have transformed courts from Fontainebleau to Prague."
+      "1527→1564": "The diaspora of Roman artists seeds Mannerism across Europe; by Michelangelo's death, Italian styles have transformed courts from Fontainebleau to Prague.",
+      "843→890": "From Verdun's fragmentation emerges linguistic consciousness — the Oaths of Strasbourg proving Romance and Germanic have split. Alfred completes the logic: if languages differ, translate the classics into each. Latin's monopoly cracks.",
+      "890→910": "Alfred's translations prove classical wisdom can survive in vernacular prose. When Cluny reformers restore Latin rigour a generation later, they inherit manuscripts these English schools preserved. The transmission continues through both channels."
     },
     "eschatological-anxiety": {
       "410→1000": "Rome's fall seemed apocalyptic to Augustine's contemporaries; the approach of the year 1000 revived those fears. The 'white mantle of churches' was partly thanksgiving for a millennium that didn't end in fire.",
@@ -65,7 +67,9 @@
       "664→800": "Whitby's educated monks seeded English scriptoria; Alcuin brought their learning to Charlemagne, launching the Carolingian preservation of antiquity.",
       "664→732": "Caedmon's vernacular hymns become Bede's Latin histories — the monasteries transform oral tradition into written scholarship. Holy Island becomes the model for how learning survives at civilization's edge.",
       "732→800": "Bede dies in 735, but his students carry his methods to the Continent. Alcuin reorganizes Charlemagne's libraries on Northumbrian principles — and the scriptoria begin the systematic copying that will preserve antiquity.",
-      "1000→1170": "Cluniac scriptoria copied manuscripts through the millennium; the cathedral schools — Notre-Dame, Chartres, Paris — now began to rival monastic libraries as centers of learning."
+      "1000→1170": "Cluniac scriptoria copied manuscripts through the millennium; the cathedral schools — Notre-Dame, Chartres, Paris — now began to rival monastic libraries as centers of learning.",
+      "800→890": "Charlemagne's court schools preserve classical learning in Latin; Alfred's Winchester translates it into English. Both kings recognise that monasteries hold civilisation's memory — but Alfred democratises access, demanding vernacular literacy.",
+      "890→910": "As Alfred's Winchester programme establishes vernacular learning, Cluny's foundation redirects monasticism toward reform. Both movements recognise monasteries as civilisation's repositories — Alfred for English literature, Cluny for Latin Christendom."
     },
     "dialectical-method": {
       "762→1141": "The Mu'tazila debated theology with Greek logical tools; those same tools reached Paris through Arabic-Latin translation. Abelard's <em>Sic et Non</em> is dialectical method applied to Christian doctrine — the Baghdad conversation continued in French."
@@ -122,7 +126,9 @@
       "1605→1824": "Don Quixote's ironic consciousness becomes the template for European fiction; Byron reads Cervantes before inventing the Byronic hero.",
       "1831→1835": "From Hugo's French Gothic to Andersen's Danish fairy tales, vernacular literature asserts its cultural authority. The Kalevala does for Finnish identity what Notre-Dame de Paris did for Gothic architecture: creates a sacred past from accessible language.",
       "1824→1835": "From Byron's Romantic philhellenism to the Kalevala's nation-making, vernacular literature becomes politics. The oral traditions Lönnrot collects in 1835 will shape Finnish identity as decisively as Byron's death in 1824 shaped Greek independence.",
-      "1835→1854": "From Finnish epic to American vernacular. The Kalevala creates national identity from oral fragments in 1835; Thoreau's Walden creates American literature from the language of woods and ponds in 1854. Both prove that authentic voice need not speak Greek or Latin."
+      "1835→1854": "From Finnish epic to American vernacular. The Kalevala creates national identity from oral fragments in 1835; Thoreau's Walden creates American literature from the language of woods and ponds in 1854. Both prove that authentic voice need not speak Greek or Latin.",
+      "843→890": "The Oaths of Strasbourg document vernacular speech for political necessity; Alfred's translations create vernacular literature by royal programme. What Verdun revealed — that Latin no longer united Christendom — Winchester transforms into artistic opportunity.",
+      "890→1066": "Alfred's programme creates a vernacular literary tradition that flowers for 175 years — the Anglo-Saxon Chronicle continues until 1154, homilies and poetry flourish. Norman Conquest shatters but doesn't destroy it; English goes underground before resurging in Middle English."
     },
     "renaissance-humanism": {
       "1401→1453": "Florentine humanists collected manuscripts before 1453; the Greek exodus accelerated what Salutati and Bruni began. Humanism was ready for what Constantinople's scholars brought.",
@@ -349,7 +355,8 @@
       "1934→1968": "From control to explosion: the systems of suppression crystallized in thirty-four shatter in sixty-eight's revolts."
     },
     "insular-art": {
-      "664→732": "From the Book of Durrow to the Lindisfarne Gospels, Insular illumination reaches its full flowering. The Synod of Whitby binds Britain to Rome, but the monks at Lindisfarne create something wholly original — Celtic interlace, Germanic energy, Mediterranean gold fused into devotional infinity."
+      "664→732": "From the Book of Durrow to the Lindisfarne Gospels, Insular illumination reaches its full flowering. The Synod of Whitby binds Britain to Rome, but the monks at Lindisfarne create something wholly original — Celtic interlace, Germanic energy, Mediterranean gold fused into devotional infinity.",
+      "732→890": "From Bede's Northumbrian golden age to Alfred's Winchester, the Insular tradition transforms. Viking raids scatter Irish and English scriptoria, yet the Mac Durnan Gospels prove the art survives — even as Continental influences merge with Celtic interlace."
     },
     "abolition-crisis": {
       "1831→1859": "Nat Turner's rebellion in 1831 terrified the South into brutal new slave codes. A generation later, John Brown's raid at Harpers Ferry proved that white abolitionists would now take up arms. The road to Civil War was paved in blood.",
@@ -565,7 +572,9 @@
       "1564→1623": "Shakespeare muore; i suoi colleghi lo salvano. La trasmissione del sapere ora include la memoria teatrale preservata dalla devozione delle stamperie.",
       "1623→1863": "Il Folio sopravvive, copiato e custodito: nel 1863, Shakespeare è diventato patrimonio culturale globale, tradotto in ogni lingua dell'impero e della resistenza.",
       "1520→1527": "La stampa accelera la Riforma di Lutero; sette anni dopo, libri e artisti fuggono insieme da Roma, portando la cultura italiana in nuove corti.",
-      "1527→1564": "La diaspora degli artisti romani semina il Manierismo in tutta Europa; alla morte di Michelangelo, gli stili italiani hanno trasformato le corti da Fontainebleau a Praga."
+      "1527→1564": "La diaspora degli artisti romani semina il Manierismo in tutta Europa; alla morte di Michelangelo, gli stili italiani hanno trasformato le corti da Fontainebleau a Praga.",
+      "843→890": "Dalla frammentazione di Verdun emerge la coscienza linguistica — i Giuramenti di Strasburgo dimostrano che romanzo e germanico si sono separati. Alfredo completa la logica: se le lingue differiscono, traduci i classici in ciascuna. Il monopolio del latino si incrina.",
+      "890→910": "Le traduzioni di Alfredo dimostrano che la saggezza classica può sopravvivere nella prosa volgare. Quando i riformatori di Cluny ristabiliscono il rigore latino una generazione dopo, ereditano manoscritti che queste scuole inglesi hanno preservato. La trasmissione continua attraverso entrambi i canali."
     },
     "eschatological-anxiety": {
       "410→1000": "La caduta di Roma sembrò apocalittica ai contemporanei di Agostino; l'avvicinarsi dell'anno Mille rianimò quelle paure. Il 'bianco manto di chiese' fu in parte ringraziamento per un millennio che non finì nel fuoco.",
@@ -587,7 +596,9 @@
       "590→664": "I Dialogi di Gregorio canonizzarono la Regola di Benedetto; i monaci irlandesi la portarono in Northumbria, dove la Whitby di Ilda formò cinque futuri vescovi.",
       "664→800": "I monaci istruiti di Whitby seminarono gli scriptoria inglesi; Alcuino portò il loro sapere a Carlo Magno, avviando la preservazione carolingia dell'antichità.",
       "664→732": "Gli inni volgari di Caedmon diventano le storie latine di Beda — i monasteri trasformano la tradizione orale in erudizione scritta. L'Isola Sacra diventa il modello di come il sapere sopravvive ai margini della civiltà.",
-      "732→800": "Beda muore nel 735, ma i suoi allievi portano i suoi metodi sul Continente. Alcuino riorganizza le biblioteche di Carlo Magno secondo i principi di Northumbria — e gli scriptoria iniziano la copiatura sistematica che preserverà l'antichità."
+      "732→800": "Beda muore nel 735, ma i suoi allievi portano i suoi metodi sul Continente. Alcuino riorganizza le biblioteche di Carlo Magno secondo i principi di Northumbria — e gli scriptoria iniziano la copiatura sistematica che preserverà l'antichità.",
+      "800→890": "Le scuole di corte di Carlo Magno preservano il sapere classico in latino; la Winchester di Alfredo lo traduce in inglese. Entrambi i re riconoscono che i monasteri custodiscono la memoria della civiltà — ma Alfredo democratizza l'accesso, esigendo l'alfabetizzazione in volgare.",
+      "890→910": "Mentre il programma di Winchester di Alfredo stabilisce il sapere vernacolare, la fondazione di Cluny reindirizza il monachesimo verso la riforma. Entrambi i movimenti riconoscono i monasteri come depositari della civiltà — Alfredo per la letteratura inglese, Cluny per la cristianità latina."
     },
     "dialectical-method": {
       "762→1141": "I Mu'tazila dibattevano teologia con strumenti logici greci; quegli stessi strumenti raggiunsero Parigi attraverso la traduzione arabo-latina. Il <em>Sic et Non</em> di Abelardo è il metodo dialettico applicato alla dottrina cristiana."
@@ -640,7 +651,9 @@
       "1605→1824": "La coscienza ironica del Don Chisciotte diventa il modello per la narrativa europea; Byron legge Cervantes prima di inventare l'eroe byroniano.",
       "1831→1835": "Dal gotico francese di Hugo alle fiabe danesi di Andersen, la letteratura vernacolare afferma la propria autorità culturale. Il Kalevala fa per l'identità finlandese ciò che Notre-Dame de Paris fece per l'architettura gotica: crea un passato sacro attraverso una lingua accessibile.",
       "1824→1835": "Dal filellenismo romantico di Byron al Kalevala che costruisce una nazione, la letteratura vernacolare diventa politica. Le tradizioni orali che Lönnrot raccoglie nel 1835 plasmeranno l'identità finlandese in modo altrettanto decisivo di quanto la morte di Byron nel 1824 plasmò l'indipendenza greca.",
-      "1835→1854": "Dall'epica finlandese al vernacolo americano. Il Kalevala crea identità nazionale da frammenti orali nel 1835; il Walden di Thoreau crea letteratura americana dal linguaggio dei boschi e degli stagni nel 1854. Entrambi dimostrano che la voce autentica non deve parlare greco o latino."
+      "1835→1854": "Dall'epica finlandese al vernacolo americano. Il Kalevala crea identità nazionale da frammenti orali nel 1835; il Walden di Thoreau crea letteratura americana dal linguaggio dei boschi e degli stagni nel 1854. Entrambi dimostrano che la voce autentica non deve parlare greco o latino.",
+      "843→890": "I Giuramenti di Strasburgo documentano il parlato vernacolare per necessità politica; le traduzioni di Alfredo creano letteratura vernacolare per programma regio. Ciò che Verdun rivelò — che il latino non univa più la cristianità — Winchester lo trasforma in opportunità artistica.",
+      "890→1066": "Il programma di Alfredo crea una tradizione letteraria vernacolare che fiorisce per 175 anni — la Cronaca anglosassone continua fino al 1154, omelie e poesia fioriscono. La conquista normanna la spezza ma non la distrugge; l'inglese va in clandestinità prima di risorgere nel medio inglese."
     },
     "renaissance-humanism": {
       "1401→1453": "Gli umanisti fiorentini raccoglievano manoscritti prima del 1453; l'esodo greco accelerò ciò che Salutati e Bruni avevano iniziato.",
@@ -867,7 +880,8 @@
       "1934→1968": "Dal controllo all'esplosione: i sistemi di repressione cristallizzati nel trentaquattro si frantumano nelle rivolte del sessantotto."
     },
     "insular-art": {
-      "664→732": "Dal Libro di Durrow ai Vangeli di Lindisfarne, l'illuminazione insulare raggiunge la sua piena fioritura. Il Sinodo di Whitby lega la Britannia a Roma, ma i monaci di Lindisfarne creano qualcosa di totalmente originale — intreccio celtico, energia germanica, oro mediterraneo fusi in un'infinità devozionale."
+      "664→732": "Dal Libro di Durrow ai Vangeli di Lindisfarne, l'illuminazione insulare raggiunge la sua piena fioritura. Il Sinodo di Whitby lega la Britannia a Roma, ma i monaci di Lindisfarne creano qualcosa di totalmente originale — intreccio celtico, energia germanica, oro mediterraneo fusi in un'infinità devozionale.",
+      "732→890": "Dall'età d'oro della Northumbria di Beda alla Winchester di Alfredo, la tradizione insulare si trasforma. Le incursioni vichinghe disperdono gli scriptoria irlandesi e inglesi, eppure i Vangeli di Mac Durnan dimostrano che l'arte sopravvive — anche mentre le influenze continentali si fondono con l'intreccio celtico."
     },
     "abolition-crisis": {
       "1831→1859": "La ribellione di Nat Turner nel 1831 terrorizzò il Sud inducendolo a emanare brutali nuovi codici schiavisti. Una generazione dopo, il raid di John Brown a Harpers Ferry dimostrò che gli abolizionisti bianchi avrebbero impugnato le armi. La strada verso la Guerra Civile fu lastricata di sangue.",
